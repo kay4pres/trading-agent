@@ -1,0 +1,40 @@
+# Byte-compiled / optimized Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.env
+
+# Trading data
+data/
+*.csv
+*.parquet
+
+# Credentials / secrets
+**/*.enc
+**/*.key
+config/telegram_token*
+**/credentials*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large media
+*.mp4
+*.wav
+*.ogg
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Whisper models
+models/
