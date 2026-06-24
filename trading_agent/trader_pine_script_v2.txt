@@ -1,0 +1,132 @@
+// This Pine Script® code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © Mavis_Trader
+
+//@version=5
+strategy("Trader - Warrior Trading Five Pillars Strategy", overlay=true, default_qty_type=strategy.percent_of_equity, default_qty_value=10)
+
+// ============================================================
+// WARRIOR TRADING FIVE PILLARS OF STOCK SELECTION
+// ============================================================
+// Pillar 1: Price $2-$20
+// Pillar 2: Up at least 10% from previous close
+// Pillar 3: Relative Volume > 5x average
+// Pillar 4: News catalyst present
+// Pillar 5: Float < 20 million shares
+// ============================================================
+// Entry: First pullback after momentum confirmation
+// Exit: RSI overbought OR momentum reversal
+// ============================================================
+
+// === INPUTS ===
+// Pillar 1: Price Range
+minPrice = input.float(2.0, title="Min Price ($)")
+maxPrice = input.float(20.0, title="Max Price ($)")
+
+// Pillar 2: Minimum % Gain
+minGainPercent = input.float(10.0, title="Min % Gain from Close")
+
+// Pillar 3: Relative Volume
+volumeMultiplier = input.float(5.0, title="Relative Volume Multiplier")
+
+// Momentum Indicators
+rsiLength = input.int(14, title="RSI Length")
+rsiOverbought = input.int(70, title="RSI Overbought")
+dmiLength = input.int(14, title="DMI Length")
+adxThreshold = input.int(25, title="ADX Threshold")
+
+// Moving Average for Pullback Entry
+maType = input.string("EMA", title="MA Type", options=["SMA", "EMA", "VWMA"])
+maLength = input.int(20, title="MA Length")
+
+// === CALCULATIONS ===
+// Pillar 1: Price in range
+inPriceRange = close >= minPrice and close <= maxPrice
+
+// Pillar 2: % gain from previous close
+percentGain = ((close - close[1]) / close[1]) * 100
+meetsMinGain = percentGain >= minGainPercent
+
+// Pillar 3: Relative Volume
+avgVolume = ta.sma(volume, 20)
+relativeVolume = volume / avgVolume
+highVolume = relativeVolume >= volumeMultiplier
+
+// Pillar 4: News (manual check - can't detect in script)
+// Note: Scanner alerts for news are used alongside this
+
+// Momentum Indicators
+rsi = ta.rsi(close, rsiLength)
+[diPlus, diMinus, adxValue] = ta.dmi(dmiLength, 14)
+
+// Moving Average
+ma = maType == "SMA" ? ta.sma(close, maLength) : maType == "EMA" ? ta.ema(close, maLength) : ta.vwma(close, maLength)
+
+// === FIVE PILLARS FILTER ===
+// All five pillars must be met
+pillar1_Price = inPriceRange
+pillar2_Gain = meetsMinGain
+pillar3_Volume = highVolume
+pillar4_News = true // Manual check required
+pillar5_Float = true // Manual check required (requires external data)
+
+allPillars = pillar1_Price and pillar2_Gain and pillar3_Volume
+
+// === MOMENTUM CONFIRMATION ===
+hasMomentum = rsi > 50 and adxValue > adxThreshold
+bullishMomentum = hasMomentum and diPlus > diMinus
+
+// === ENTRY SIGNALS ===
+// Rule: First Pullback after momentum + pillars met
+// Buy when: all pillars met, momentum exists, price pulls back to MA, then bounces
+pullbackEntry = bullishMomentum and (close > ma) and (close[1] < ma[1] or close[2] < ma[2])
+
+// Strong entry: all pillars + momentum + pullback
+strongEntry = allPillars and pullbackEntry
+
+// === EXIT SIGNALS ===
+exitSignal = rsi > rsiOverbought or (diMinus > diPlus)
+
+// === DEBUG PLOTS ===
+// Show pillar status in data window
+plot(percentGain, title="% Gain", color=color.orange, display=display.all)
+
+// === PLOTTING ===
+plot(ma, title="EMA", color=color.blue, linewidth=2)
+
+// RSI gauge
+hline(rsiOverbought, "RSI Overbought", color=color.red, linestyle=hline.style_dashed)
+hline(50, "RSI 50", color=color.gray, linestyle=hline.style_dotted)
+
+// === ALERTS (Visual Only - Use TradingView Scanner for real alerts) ===
+plotshape(strongEntry and not strongEntry[1], title="Entry", location=location.belowbar, 
+     color=color.green, style=shape.triangleup, size=size.large)
+plotshape(exitSignal and not exitSignal[1], title="Exit", location=location.abovebar, 
+     color=color.red, style=shape.triangledown, size=size.large)
+
+// === STRATEGY ===
+if (strongEntry)
+    strategy.entry(id="Long", direction=strategy.long)
+
+if (exitSignal)
+    strategy.close(id="Long")
+
+// === LABELS ===
+if (strongEntry and not strongEntry[1])
+    label.new(bar_index, low, "BUY\nPillars OK", color=color.green, textcolor=color.white, style=label.style_label_up)
+    
+if (exitSignal and not exitSignal[1])
+    label.new(bar_index, high, "SELL", color=color.red, textcolor=color.white, style=label.style_label_down)
+
+// ============================================================
+// NOTES FOR KAY (Portfolio Manager):
+// ============================================================
+// This script identifies stocks that meet the Five Pillars:
+// - Pillar 1: Price $2-$20 (adjustable)
+// - Pillar 2: Up 10%+ from yesterday (adjustable)
+// - Pillar 3: Volume > 5x average (adjustable)
+// - Pillar 4: News catalyst (check manually!)
+// - Pillar 5: Float < 20M (check manually!)
+//
+// This is a SCANNER, not an automated trader.
+// Review each signal before trading.
+// ============================================================

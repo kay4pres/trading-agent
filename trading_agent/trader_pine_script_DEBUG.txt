@@ -1,0 +1,81 @@
+// This Pine Script® code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © Mavis_Trader
+
+//@version=5
+strategy("Trader - DEBUG Five Pillars", overlay=true, default_qty_type=strategy.percent_of_equity, default_qty_value=10)
+
+// ============================================================
+// DEBUG VERSION - Shows why signals aren't firing
+// ============================================================
+
+// === INPUTS ===
+minPrice = input.float(2.0, title="Min Price ($)")
+maxPrice = input.float(50.0, title="Max Price ($)")  // Relaxed to $50
+minGainPercent = input.float(5.0, title="Min % Gain")  // Relaxed to 5%
+volumeMultiplier = input.float(2.0, title="Volume Multiplier")  // Relaxed to 2x
+rsiLength = input.int(14, title="RSI Length")
+rsiOverbought = input.int(70, title="RSI Overbought")
+dmiLength = input.int(14, title="DMI Length")
+adxThreshold = input.int(20, title="ADX Threshold")  // Relaxed to 20
+maLength = input.int(20, title="MA Length")
+
+// === CALCULATIONS ===
+rsi = ta.rsi(close, rsiLength)
+[diPlus, diMinus, adxValue] = ta.dmi(dmiLength, 14)
+avgVolume = ta.sma(volume, 20)
+relativeVolume = volume / avgVolume
+ma = ta.ema(close, maLength)
+
+// === FIVE PILLARS (INDIVIDUAL) ===
+pillar1_Price = close >= minPrice and close <= maxPrice
+pillar2_Gain = ((close - close[1]) / close[1]) * 100 >= minGainPercent
+pillar3_Volume = relativeVolume >= volumeMultiplier
+pillar4_Momentum = rsi > 50 and diPlus > diMinus
+pillar5_Pullback = close > ma and (close[1] < ma[1] or close[2] < ma[2])
+
+// === DEBUG PLOTS (show pillar status as lines) ===
+plot(pillar1_Price ? 1 : 0, title="P1 Price", color=color.blue, display=display.all)
+plot(pillar2_Gain ? 2 : 0, title="P2 Gain", color=color.green, display=display.all)
+plot(pillar3_Volume ? 3 : 0, title="P3 Volume", color=color.orange, display=display.all)
+plot(pillar4_Momentum ? 4 : 0, title="P4 Momentum", color=color.purple, display=display.all)
+plot(pillar5_Pullback ? 5 : 0, title="P5 Pullback", color=color.red, display=display.all)
+
+// === COMBINED SIGNAL (relaxed) ===
+// Fire if: Price OK + (Gain OR Volume OR Momentum) + Pullback
+relaxedSignal = pillar1_Price and pillar5_Pullback and (pillar2_Gain or pillar3_Volume or pillar4_Momentum)
+
+// All pillars strict
+allPillars = pillar1_Price and pillar2_Gain and pillar3_Volume and pillar4_Momentum and pillar5_Pullback
+
+// === PLOTTING ===
+plot(ma, title="EMA", color=color.blue, linewidth=2)
+hline(rsiOverbought, "RSI OB", color=color.red, linestyle=hline.style_dashed)
+hline(50, "RSI 50", color=color.gray, linestyle=hline.style_dotted)
+
+// === SIGNALS ===
+plotshape(relaxedSignal and not relaxedSignal[1], title="RELAXED Entry", 
+     location=location.belowbar, color=color.green, style=shape.triangleup, size=size.huge)
+
+plotshape(allPillars and not allPillars[1], title="STRICT Entry", 
+     location=location.belowbar, color=color.lime, style=shape.triangleup, size=size.small)
+
+// === STRATEGY ===
+if (relaxedSignal)
+    strategy.entry(id="Relaxed", direction=strategy.long)
+
+// === DEBUG LABELS ===
+debugText = "Price: " + (pillar1_Price ? "✓" : "✗") +
+     "\nGain: " + (pillar2_Gain ? "✓" : "✗") +
+     "\nVolume: " + (pillar3_Volume ? "✓" : "✗") +
+     "\nMomentum: " + (pillar4_Momentum ? "✓" : "✗") +
+     "\nPullback: " + (pillar5_Pullback ? "✓" : "✗")
+
+if (barstate.islast)
+    label.new(bar_index, high, debugText, color=color.black, textcolor=color.white, 
+         style=label.style_label_down, size=size.small)
+
+// ============================================================
+// CHECK DATA WINDOW FOR PILLAR VALUES
+// ============================================================
+plot(relativeVolume, title="Rel Volume", color=color.yellow, display=display.data_window)
+plot(((close - close[1]) / close[1]) * 100, title="% Gain", color=color.teal, display=display.data_window)

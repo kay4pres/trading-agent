@@ -1,0 +1,48 @@
+// This Pine Script® code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © Mavis_Trader
+
+//@version=5
+strategy("Trader - Simple Momentum", overlay=true, default_qty_type=strategy.percent_of_equity, default_qty_value=10)
+
+// === SIMPLE MOMENTUM STRATEGY ===
+
+// === INPUTS ===
+fastLen = input.int(9, "Fast MA")
+slowLen = input.int(21, "Slow MA")
+rsiLen = input.int(14, "RSI Length")
+rsiOB = input.int(70, "RSI Overbought")
+rsiOS = input.int(30, "RSI Oversold")
+
+// === CALCULATIONS ===
+rsi = ta.rsi(close, rsiLen)
+fastMA = ta.ema(close, fastLen)
+slowMA = ta.ema(close, slowLen)
+
+// === SIMPLE ENTRY/EXIT ===
+// Long when price above slow MA, RSI in range, and fast MA crosses above slow MA
+longCondition = ta.crossover(fastMA, slowMA) and rsi < rsiOB and rsi > rsiOS
+// Exit when RSI overbought or fast MA crosses below slow MA
+exitCondition = ta.crossunder(fastMA, slowMA) or rsi > rsiOB
+
+// === PLOTS ===
+plot(fastMA, "Fast MA", color=color.lime)
+plot(slowMA, "Slow MA", color=color.red)
+hline(rsiOB, "Overbought", color=color.red, linestyle=hline.style_dashed)
+hline(rsiOS, "Oversold", color=color.green, linestyle=hline.style_dashed)
+
+// === SIGNALS ===
+plotshape(longCondition, title="Long", location=location.belowbar, 
+     color=color.green, style=shape.triangleup, size=size.large)
+plotshape(exitCondition, title="Exit", location=location.abovebar, 
+     color=color.red, style=shape.triangledown, size=size.large)
+
+// === STRATEGY ORDERS ===
+if (longCondition)
+    strategy.entry("Long", strategy.long)
+
+if (exitCondition)
+    strategy.close("Long")
+
+// === ALERTS ===
+alertcondition(longCondition, title="Long Entry", message="🚀 LONG: MA Cross Up + RSI OK")
+alertcondition(exitCondition, title="Exit Signal", message="🔴 EXIT: MA Cross Down OR RSI Overbought")

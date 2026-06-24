@@ -1,0 +1,291 @@
+Source: E:\Me\TradingAgent\knowledge\raw\Chapter1-Becoming a Day Trader\chapter1\Chapter1.pdf
+Extracted: 12703 characters
+============================================================
+
+ CHAPTER 1. BECOMING A DAY TRADER 
+Copyright © 2024 Warrior Trading™ 
+All rights reserved. 
+Day Trading: The Basics 
+1. Becoming a Day Trader 
+2. Picking Stocks for Day Trading 
+3. Account Types 
+4. Fundamental Analysis 
+5. Technical Analysis (Stock Charts) 
+6. Trading Platform Walk-Through 
+7. Order Types 
+8. Level 1 Market Depth & Order Entry 
+9. Level 2 Market Depth & Hot Keys 
+10. Time & Sales 
+11. Stock Halts 
+12. Scanning 101 
+13. Preparing to Trade 
+14. The Psychology of Trading 
+15. Day Trading as a Business, The Learning Path on 
+a Timeline and Your Personality T est 
+T oday’s Lesson 
+ 1. Getting Ready to Go Pro with the Warrior Pro Membership 
+ 2. The Tools Required to Day Trade 
+ 3. The Equipment Required to Day Trade 
+ 4. Creating Tax Free Income for the Future 
+ 5. Setting your Targets & Goals 
+ 6. Leading Causes of Failure 
+ 7. What does success look like for you? 
+ 
+  
+1. Getting Ready to Go Pro with the Warrior Pro Membership 
+ Step 1. Watch EVERY Chapter of the Day Trading: The Basics  
+ Step 2. Log into the Day Trading Chat Room as often as possible to watch me trading. 
+ Step 3. Begin using a trading simulator as soon as you feel comfortable to start testing the waters. 
+ Step 4. DO NOT TRADE WITH REAL MONEY until you’ve completed the Pre-Trading Checklist in the 
+Day Trading: Strategies & Scaling course. 
+ Step 5. Do NOT mirror trade with real money (blindly following). 
+ 
+Don’t skip classes! Trading is hard. Put as much effort into this as you can. Don’t try to take 
+short cuts. Build a solid foundation. This is a marathon, not a sprint. 
+ 
+Day Trading Strategies 
+  
+Momentum Counter Trend 
+I’m a Momentum Trader, First and Foremost 
+  
+
+Through Day Trading: The Basics and Day Trading: 
+Strategies & Scaling You will Learn… 
+   Why I focus on momentum trading. 
+ How I choose stocks to day trade and how I ﬁnd them in real-time 
+ How I manage risk. 
+ Where I get in, and where I get out (exact entry/exit indicators, candlestick patterns, and written strategies) 
+ My back tested Analytics of over 25,000 trades that support the strategy I teach. 
+ How I use technical analysis to give me an edge in my trading. 
+ How I read market data on the Level 2 and Time & Sales feed. 
+ How I’ve setup my trading software to empower me to trade quickly and efficiently. 
+ How I manage emotions after big losses. 
+ My Business Plan/Trading Plan which is the roadmap for my success. 
+We’re going to start with the Basics 
+As we continue, I will ﬁll in detail around these 
+basic concepts and I will share more 
+advanced concepts as well. 
+
+2. The T ools Required to Day Trade 
+ Charting: I use Day Trade Dash for my charting because we offer 10 second charts and we ﬁlter out ADFN quotes in order to provide clean 
+charts. 
+ 
+ Scans:  I use Day Trade Dash 
+News: We have an API for news feeds that go right into the Day Trade Dash Platform. 
+ 
+ Reporting: I use TraderVue for my metrics.  I can import trades from my Broker into TraderVue. 
+ 
+ Trading: I’ve used many different brokers over the years. I currently use Lightspeed Trading. They cater to institutional traders and also 
+retail traders who trade with large positions and need advanced order routing technology. Many of our members prefer Charles Schwab 
+and use ThinkorSwim due to commission free trading. I think this is a good broker, especially when getting started. 
+3. The Equipment Required to Day Trade 
+
+I’ve Always Used Laptops… 
+I love the ﬂexibility and portability 
+ When I ﬁrst started trading I couldn’t afford to travel…All I had was a laptop. So that’s what I used. 
+But I liked it. And as I started to ﬁnd success, I began to travel. I realized I could trade from anywhere 
+in the world as long as I had my laptop and an stable internet connection. 
+ 
+ Eventually I bought a couple of portable travel monitors so I could have more than just my laptop 
+screen. At this point, I’ll often spend a good portion of the year on my traveling trading station. 
+
+Trading in Europe 
+
+Trading in the Caribbean 
+
+Trading with Friends 
+
+Trading in a Van! 
+
+Trading on an Island 
+
+Trading on an Airplane...Trading on a Boat! 
+
+Setting Up Your Trading Station 
+1. Trading Computer 
+2. External  Monitors 
+3. Monitor Mounts & Racks 
+4. Misc Equipment/Cables 
+
+Setting Up Your Trading Station 
+ Lenovo Gaming Laptop = $900-1,250 
+◦500 GB Solid State Drive 
+◦16-32GB RAM 
+◦Gaming Graphics Card 
+◦No Touch Screens 
+◦No Glossy Screen (hurts your eyes) 
+◦15” or 17” monitor 
+ Falcon Trading Computers = $1,500 - 3,000. 
+
+I use 24” External Monitors 
+Asus 24” Monitors  ($133/ea on Amazon) 
+Portable USB Monitor by Asus 
+ Asus 15” 1080 USB Monitor ($180/ea on Amazon) 
+Get the Rack with Elbows! 
+ Mount-It Multi-Monitor Rack ($89 on Amazon) 
+Misc Equipment / Cables 
+Diamond USB to HDMI Adapter ($49 ea on Amazon) 
+Portable Multi-Monitor Clips 
+ Ten One Design Mountie+ Mount Large Tablets ($29 on Amazon) 
+
+Setting Up Your Trading Station 
+ USB Adapter Cable , this is like an 
+extension cord for the USB port. ($14 on 
+Amazon) 
+
+Setting Up Your Trading Station 
+ 1. Trading Computer (I prefer laptop, but you can choose what you like best) 
+◦Lenovo gaming computers are my favorite, but Falcon trading computers are also great. 
+◦Macs are more expensive and institutional trading software doesn’t work on them. 
+ 2. External  Monitors 
+◦Asus 24” Monitors or Portable USB Monitor 
+ 3. Monitor Mounts & Racks (optional) 
+◦Triple Mount-It Multi-Monitor Mount/Rack: $89 on Amazon 
+ 4. Misc 
+◦T en One Design Mountie+ Mount Large Tablets: $29 on Amazon 
+◦Diamond USB to HDMI Adapters 
+◦USB Adapter with 4 extra ports 
+
+4. Creating Tax Free Income for the Future 
+ In the US you can trade in a regular account where you take out the proﬁts right 
+away. In this account, you’ll pay income tax. 
+ However, you can also trade in an IRA (individual retirement account). In these 
+accounts, there is no income tax on the proﬁt you make. 
+ For the reason, every trader should have a regular account for income to cover cost 
+of living, and an IRA account for growing tax free proﬁts. 
+Trading in a Tax Free Account & Reinvesting 
+Day Trading Proﬁts 
+ In my opinion, you’d be doing yourself a disservice if you don’t reinvest some of your 
+day trading proﬁts in order to capitalize on long term growth. 
+ 
+I actively day trade in my retirement account to grow it quickly and reinvest the proﬁt 
+for long term growth.  
+Compound Interest at 8-10% per year 
+If I can earn $200/day, I’ll be saving and reinvesting $50k of my proﬁts/year TAX 
+FREE.  If I do that for 10 years I’ll have saved $500,000 but it will grow to over 
+$869,193 thanks to dividends and compound interest. 
+If I’m able to do it for 20 years, $1mil saved = $2.7mil .  
+The growth curve increases exponentially as you begin earning compound interest 
+on your earlier gains.  The earlier you start, the more you’ll have! 
+
+When I Reinvest Day Trading Proﬁts, I move them to 
+LOWER RISK long term investments. 
+ Lowest Risk/Return  = Passive Long Term for Dividends Investing returning 5-10% return/year 
+Highest Risk/Return  = Day Trading can return 100%+ per year or even per month with small 
+accounts 
+ From $583 to $100k in 45 days was over 17,000%  return. 
+ From $583 to $1mil was over 170,000% return. 
+ From $583 to $10 million was 1,700,000%  return. 
+These returns would not be scalable to $50k, $500k, or $5mil account starting balances. 
+  
+
+Moving Proﬁts from High Risk to Low Risk 
+ Most traders keep anywhere from $5k-100k in their active trading accounts. 
+ By consistently reinvesting proﬁts (instead of just spending them) after 5-10 years of 
+proﬁtable trading and active reinvesting, you can actually earn more money on 
+dividends from passive income than from active trading . 
+ This is the ultimate in ﬁnancial independence. 
+  
+Alternative Investments in a Self Directed IRA 
+ You can invest in Real-Estate and other asset classes with self-directed IRAs. 
+ This allows you to diversify your investment portfolio and not be 100% concentrated 
+in equities. 
+   
+4. How much money do YOU  need to live comfortably? 
+How much money would you need saved in the bank to retire today? 
+Everyone’s answer is unique to their personal circumstances, but there are 
+popular formulas used to ﬁnd this magic number! 
+
+The Rule of 4% 
+The rule of 4% states that you can withdraw 4%/yr from an account 
+invested in the stock market forever, without depleting the account. 
+How is that possible? 
+The average account growth is 7-10% per year, historically, so when you 
+draw 4% the account is still able to continue to keep up with inﬂation and 
+not lose value. 
+
+The Rule of 300 and the Rule of 4% 
+This rule states that your monthly expenses x 300 is the amount of 
+money needed to retire. 
+What is your magic retirement number? 
+If I spend $5k/mo ($60k/yr) I need to have… 
+$5k x 300 = $1.5mil in savings to retire comfortably.  
+$1.5mil x 4%/yr = $60,000.  
+
+5. What does Success look like for you? 
+
+$1k/day = a 6.25 mil Retirement Account 
+One of the incredible things about trading is that this is a skill that lasts a lifetime.  I’ve never 
+met a successful trader who said “I’m going to quit trading because I’m worn out of making 
+$1k/hr in 2hrs/day.” 
+Being a trader and working a couple hours each morning feels like retirement to me.  That 
+$1,000/day or $250,000/year of income is the equivalent of living off of 6.25mil in a 
+retirement account. (Remember the rule of 4% (6.25mil * 4% = $250k)).   That’s the power of 
+having the skill to trade!  You’ll create a perpetual source of income. 
+
+Be Smart and Reinvest! 
+Once you are a proﬁtable trader, reinvest as much of your trading proﬁts as you can 
+until you’ve saved up to your retirement goal. 
+Once you hit your retirement goal, all the proﬁts from trading are icing on the cake, 
+and you’ve achieved complete ﬁnancial independence.  You will be among the 1%. 
+
+Create Your 5-Year and 10-Year Financial Goals 
+Set your goals. 
+Make your plan. 
+Start working towards realizing those goals today! 
+
+Dumb Ferrari 
+ At age 40, let’s say you’re looking at 
+spending $4k/mo on a 3-year Ferrari 
+lease because hey, when you’re 
+making $30k/mo day trading why 
+not?! 
+If that $144k (over 3 years) was 
+instead invested in the market and 
+returned 8% annually…by 65 you’d 
+have nearly $1 million dollars. 
+
+Smart Ferrari 
+(make choices that align with long term goals) 
+
+Have the resolve to stick to your plans 
+Many of us make short term ﬁnancial decisions that are inconsistent with long term goals. 
+Before making any big ﬁnancial decisions it’s important to analyze how it ﬁts into your long 
+term goals of self sufficiency and ﬁnancial independence. 
+6. Why do Traders Fail? 
+Leading causes of failure 
+1. Lack of Strategy 
+2. Inability to maintain the discipline required to follow the RULES of the strategy. 
+Secondary contributors to failure 
+1. Disposition not aligned with the risk taking nature of trading 
+2. Aptitude for making quick decisions and using computer software 
+3. Using incorrect equipment (trading on mobile app) 
+4. Inability to concentrate, absorb and retain new information 
+5. Lack of emotional intelligence (inability to recognize emotions of fear, greed, anger, frustration, in self or others) 
+
+The Right Way T o Learn 
+
+7. Setting Your Deﬁnition of Success 
+What does success in trading mean to you? 
+How much money do you want to be making per day, per month, per year? 
+Are you prepared for the reality that in the ﬁrst 3-6 months of following the trading plan I’ve 
+prepared for you, you will NOT be earning any signiﬁcant proﬁt. (The ﬁrst 3-6 months in SIM 
+trading then proof of concept trading with small size in a real-money account). 
+Can you have the discipline to follow the path laid out for you? 
+
+The ﬁrst year is about survival 
+As a beginner trader most people set a goal of $100-200/day trading. But this is not about 
+making a lot of money. It’s about proof of concept. Can you be consistent? 
+Survive till you thrive. The longer you can keep your head above water (avoiding blow ups, 
+not taking unnecessary risks, preventing big losses), the more time you’ll be able to spend in 
+the market. At a certain point, learning to survive will teach you how to thrive. You’ll learn 
+what NOT to do. 
+
+Dedicate yourself to the Path to Success 
+1.Don’t trade with real money until you have proven that you can make money for at 
+least 1 month in a simulated trading environment. 
+2. Ask yourself: How am I going to approach this new endeavour?  There will be times 
+you are frustrated, exhausted, and confused.  Be forgiving towards yourself.  You are 
+working to learn something that is NOT easy. 
+Blank slide for additional 
+note-taking 
