@@ -43,8 +43,14 @@ def is_market_open():
     return market_open <= current_utc <= market_close and now.weekday() < 5
 
 def get_gap_up_stocks():
-    """Get stocks from watchlist that gapped up today"""
-    gap_stocks = []
+    """
+    Get stocks from watchlist that gapped up today OR are already running.
+    FIXED: The gap happened at open — we want stocks that are UP from yesterday
+    (they gapped, pulled back, and now might be ready for first pullback entry).
+    During market hours, we scan ALL stocks in watchlist.
+    """
+    stocks = []
+    market_open_flag = is_market_open()
     
     for ticker in WATCHLIST:
         try:
@@ -57,17 +63,41 @@ def get_gap_up_stocks():
             yesterday_close = hist['Close'].iloc[-2]
             gap_pct = ((today_close - yesterday_close) / yesterday_close) * 100
             
-            if gap_pct >= INTRADAY_PARAMS['min_gap_pct']:
-                gap_stocks.append({
-                    'ticker': ticker,
-                    'today_close': today_close,
-                    'yesterday_close': yesterday_close,
-                    'gap_pct': gap_pct,
-                })
+            # Include if: (1) actively gapping NOW, OR (2) already up ≥5% from yesterday (gap happened)
+            # During market hours: scan everything that's up from yesterday
+            # Before market: only scan actual gap-ups
+            if market_open_flag:
+                # Market is open — scan ALL stocks that are up from yesterday
+                if gap_pct >= INTRADAY_PARAMS['min_gap_pct']:
+                    stocks.append({
+                        'ticker': ticker,
+                        'today_close': today_close,
+                        'yesterday_close': yesterday_close,
+                        'gap_pct': gap_pct,
+                        'status': 'GAP_UP' if market_open_flag else 'PRE_MARKET'
+                    })
+                elif gap_pct >= 3.0:  # Also include moderately strong stocks
+                    stocks.append({
+                        'ticker': ticker,
+                        'today_close': today_close,
+                        'yesterday_close': yesterday_close,
+                        'gap_pct': gap_pct,
+                        'status': 'RUNNING'
+                    })
+            else:
+                # Pre-market — only actual gap-ups
+                if gap_pct >= INTRADAY_PARAMS['min_gap_pct']:
+                    stocks.append({
+                        'ticker': ticker,
+                        'today_close': today_close,
+                        'yesterday_close': yesterday_close,
+                        'gap_pct': gap_pct,
+                        'status': 'PRE_MARKET_GAP'
+                    })
         except Exception as e:
             print(f'  ⚠ {ticker}: {e}')
     
-    return gap_stocks
+    return stocks
 
 def calculate_intraday_indicators(df):
     """Calculate RSI, EMA, Volume ratio for 5-min bars"""
@@ -219,9 +249,10 @@ def run_pipeline():
         print('  No gap-up stocks found in watchlist. Market might be closed or no setups.')
         return []
     
-    print(f'  Found {len(gap_stocks)} gap-up stocks:')
+    print(f'  Found {len(gap_stocks)} candidate stocks:')
     for s in sorted(gap_stocks, key=lambda x: x['gap_pct'], reverse=True):
-        print(f'    {s["ticker"]}: +{s["gap_pct"]:.1f}% (${s["today_close"]:.2f})')
+        status = s.get('status', '?')
+        print(f'    {s["ticker"]}: +{s["gap_pct"]:.1f}% (${s["today_close"]:.2f}) [{status}]')
     
     # Step 2: Scan each gap-up stock for 5-min signals
     print('\n📊 Step 2: Scanning 5-min bars for signals...')
