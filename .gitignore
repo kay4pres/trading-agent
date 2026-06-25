@@ -38,3 +38,6 @@ Thumbs.db
 
 # Whisper models
 models/
+
+# Course materials
+knowledge/

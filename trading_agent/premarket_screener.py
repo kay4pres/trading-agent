@@ -20,6 +20,7 @@ import json
 sys.path.insert(0, str(Path(__file__).parent))
 from fincept_connector   import get_batch_quotes, get_historical, get_info
 from news_providers      import get_company_news, score_catalyst
+from tradingview_connector import fetch_ross_universe, tv_to_signal_rows
 
 # ── Config ────────────────────────────────────────────────────────────────────
 DATA_DIR      = Path(r'E:\Me\TradingAgent\data')
@@ -146,22 +147,16 @@ def check_pillars(quote: Dict, info: Dict) -> Dict[str, Any]:
 
 def check_catalyst(symbol: str, news_list: List[Dict]) -> Dict[str, Any]:
     """
-    Evaluate P4: News catalyst (delegate to news_providers.score_catalyst).
-    news_list is ignored — we now use get_company_news() directly.
+    Evaluate P4: News catalyst.
+    Always fetches fresh via get_company_news() so recent_count is computed
+    correctly and AV quota is respected (sentinel inside get_company_news).
     """
-    if not news_list:
-        # No news provided — try fetching directly
-        try:
-            news_result = get_company_news(symbol, count=10)
-        except Exception:
-            news_result = {'articles': [], 'recent_count': 0, 'top_headline': 'No news', 'provider': 'none'}
-    else:
-        # Wrap the provided list in the format score_catalyst expects
+    try:
+        news_result = get_company_news(symbol, count=10)
+    except Exception:
         news_result = {
-            'articles':    news_list,
-            'recent_count': len(news_list),
-            'top_headline': (news_list[0].get('title') or news_list[0].get('summary', ''))[:80],
-            'provider':    'yfinance',
+            'articles': [], 'recent_count': 0, 'top_headline': 'No news',
+            'provider': 'none', 'sentiment_score': 0, 'bullish_pct': 0
         }
     return score_catalyst(news_result)
 
@@ -170,20 +165,68 @@ def check_catalyst(symbol: str, news_list: List[Dict]) -> Dict[str, Any]:
 # MAIN SCREENER
 # ═══════════════════════════════════════════════════════════════════════════════
 
-def load_tradingview_csv(path: Path) -> List[str]:
-    """Extract tickers from TradingView scanner export CSV."""
+def load_tradingview_csv(path: Path) -> List[Dict[str, Any]]:
+    """
+    Parse TradingView scanner export CSV.
+    Returns list of dicts with normalized field names.
+    TradingView CSV format: Symbol, Description, Price, Price change % 1 day,
+    Relative volume 1 day, Volume 1 day, Market cap, etc.
+    """
     import csv
-    symbols = []
+    rows = []
     try:
-        with open(path, 'r', encoding='utf-8') as f:
+        with open(path, 'r', encoding='utf-8-sig') as f:  # utf-8-sig strips BOM
             reader = csv.DictReader(f)
             for row in reader:
-                sym = row.get('Ticker', row.get('Symbol', '')).strip()
-                if sym:
-                    symbols.append(sym.upper())
+                sym = row.get('Symbol', '').strip()
+                if not sym:
+                    continue
+                # Normalize TradingView column names
+                price_str = row.get('Price', '0').replace(',', '')
+                gap_str   = row.get('Price change %, 1 day', '0').replace(',', '')
+                rv_str    = row.get('Relative volume, 1 day', '0').replace(',', '')
+                vol_str   = row.get('Volume, 1 day', '0').replace(',', '')
+                try:
+                    price = float(price_str)
+                except (ValueError, TypeError):
+                    price = 0
+                try:
+                    gap = float(gap_str)
+                except (ValueError, TypeError):
+                    gap = 0
+                try:
+                    rv = float(rv_str)
+                except (ValueError, TypeError):
+                    rv = 0
+                try:
+                    vol = float(vol_str)
+                except (ValueError, TypeError):
+                    vol = 0
+                rows.append({
+                    'symbol':       sym.upper(),
+                    'short_name':   row.get('Description', ''),
+                    'price':        price,
+                    'gap_pct':      round(gap, 2),
+                    'rel_vol':      round(rv, 1),
+                    'volume':       int(vol),
+                    'tv_row':       row,  # full raw row for reference
+                })
     except Exception as e:
         print(f"  ⚠️  Could not read TradingView CSV: {e}")
-    return symbols
+    return rows
+
+
+def _find_latest_tv_csv() -> Optional[Path]:
+    """Find the most recent TradingView CSV export in the incoming folder."""
+    incoming = Path(r'E:\Me\TradingAgent\data\incoming')
+    if not incoming.exists():
+        return None
+    csvs = list(incoming.glob("*_????-??-??.csv"))
+    if not csvs:
+        csvs = list(incoming.glob("*.csv"))
+    if not csvs:
+        return None
+    return max(csvs, key=lambda p: p.stat().st_mtime)
 
 
 def run_screener(
@@ -191,37 +234,64 @@ def run_screener(
     tv_export_path: Optional[Path] = None,
     use_finviz: bool = False,
     min_score: float = 2.0,
+    use_tv_api: bool = True,
 ) -> List[Dict[str, Any]]:
     """
     Main screener entry point.
 
-    Args:
-        symbols:        explicit list of tickers to scan
-        tv_export_path: path to TradingView scanner CSV
-        use_finviz:    (reserved) use Finviz web scraper as primary
-        min_score:     minimum Five Pillars score to include (default 2.0)
+    Data priority:
+      1. TradingView Premium API (live, real-time) — if use_tv_api=True
+      2. TradingView CSV export (incoming folder)
+      3. TradingView CSV path override
+      4. Explicit symbols list
+      5. DEFAULT_UNIVERSE fallback
 
     Returns:
-        ranked list of signals dicts
+        ranked list of signal dicts
     """
     today_str = datetime.now().strftime('%Y-%m-%d %H:%M Berlin')
 
     # ── Step 1: Determine universe ──────────────────────────────────────────
-    if tv_export_path and tv_export_path.exists():
-        print(f"  📊 Loading from TradingView export: {tv_export_path.name}")
-        universe = load_tradingview_csv(tv_export_path)
-    elif symbols:
-        universe = symbols
-    else:
-        print("  📊 Using default universe (no TV export found)")
-        universe = DEFAULT_UNIVERSE
+    tv_rows = []      # list of dicts from TV source (CSV or API)
+    symbol_list = []  # flat list of ticker strings
 
-    print(f"  Scanning {len(universe)} symbols...")
+    # Priority 1: TradingView Premium API
+    if use_tv_api:
+        tv_df = fetch_ross_universe()
+        if not tv_df.empty:
+            tv_rows = tv_to_signal_rows(tv_df)
+            symbol_list = [r['symbol'] for r in tv_rows]
+            print(f"  📊 TV Premium API: {len(tv_rows)} real-time setups")
+
+    # Priority 2: CSV export (only if TV API not used or failed)
+    if not tv_rows:
+        if tv_export_path and tv_export_path.exists():
+            print(f"  📊 Loading from TV export: {tv_export_path.name}")
+            tv_rows = load_tradingview_csv(tv_export_path)
+            symbol_list = [r['symbol'] for r in tv_rows]
+        else:
+            auto_path = _find_latest_tv_csv()
+            if auto_path:
+                print(f"  📊 Auto-detected TV export: {auto_path.name}")
+                tv_rows = load_tradingview_csv(auto_path)
+                symbol_list = [r['symbol'] for r in tv_rows]
+
+    # Priority 3: Explicit symbol list
+    if not tv_rows and symbols:
+        symbol_list = symbols
+        print(f"  📊 Using explicit symbol list ({len(symbols)} symbols)")
+
+    # Priority 4: Default universe
+    if not tv_rows and not symbol_list:
+        symbol_list = DEFAULT_UNIVERSE
+        print("  📊 Using default universe")
+
+    print(f"  Scanning {len(symbol_list)} symbols...")
 
     # ── Step 2: Batch quote all symbols ──────────────────────────────────────
     quotes = {}
     try:
-        raw_quotes = get_batch_quotes(universe)
+        raw_quotes = get_batch_quotes(symbol_list)
         for q in raw_quotes:
             sym = q.get('symbol', '')
             if sym:
@@ -231,64 +301,106 @@ def run_screener(
         print(f"  ❌ Quote fetch failed: {e}")
         return []
 
-    # ── Step 3: Info + news for each (parallel-ish, batch where possible) ────
+    # ── Step 3: Build a TV lookup dict for enriched data ────────────────────
+    tv_lookup = {r['symbol']: r for r in tv_rows}
+
+    # ── Step 4: Info + news + scoring for each symbol ────────────────────────
     results = []
-    for sym in universe:
-        quote = quotes.get(sym)
+    for sym in symbol_list:
+        tv_data = tv_lookup.get(sym, {})
+        quote   = quotes.get(sym)
+
         if not quote or quote.get('price', 0) == 0:
             continue
+
+        # Use TV-enriched data where available, fall back to yfinance
+        if tv_data:
+            price   = tv_data.get('price',   quote.get('price', 0))
+            gap_pct = tv_data.get('gap_pct', 0)
+            rel_vol = tv_data.get('rel_vol', 0)
+            volume  = tv_data.get('volume',  quote.get('volume', 0))
+        else:
+            prev_close = quote.get('previous_close', quote.get('price', 0))
+            price      = quote.get('price', 0)
+            gap_pct    = ((price - prev_close) / prev_close * 100) if prev_close else 0
+            avg_vol    = quote.get('average_volume', 0)
+            rel_vol    = quote.get('volume', 0) / avg_vol if avg_vol else 0
+            volume     = quote.get('volume', 0)
+
+        # Build a quote-like dict for check_pillars (it expects these keys)
+        enriched_quote = {
+            'price':          price,
+            'previous_close': quote.get('previous_close', price),
+            'volume':         volume,
+            'high':           quote.get('high', price),
+            'low':            quote.get('low',  price),
+        }
 
         try:
             info = get_info(sym)
         except Exception:
             info = {}
 
-        # News (top 10 articles — Finnhub → AlphaVantage → yfinance)
+        # News — Finnhub → AlphaVantage → yfinance (fresh fetch, recent_count computed)
         try:
             news_result = get_company_news(sym, count=10)
         except Exception:
-            news_result = {'articles': [], 'recent_count': 0, 'top_headline': '', 'provider': 'none'}
+            news_result = {'articles': [], 'recent_count': 0, 'top_headline': '',
+                           'provider': 'none', 'sentiment_score': 0, 'bullish_pct': 0}
 
-        pillars = check_pillars(quote, info)
-        catalyst = check_catalyst(sym, news_result.get('articles', []))
+        pillars  = check_pillars(enriched_quote, info)
+        catalyst = check_catalyst(sym, [])  # always fetches fresh internally
 
-        # Add P4 score
-        pillars['P4_catalyst']  = catalyst['P4_catalyst']
-        pillars['news_summary'] = catalyst['news_summary']
-        total_score = pillars['score'] + catalyst['P4_catalyst']
+        # Override with TV data where it is more reliable
+        if tv_data:
+            pillars['gap_pct'] = tv_data.get('gap_pct', pillars['gap_pct'])
+            pillars['rel_vol'] = tv_data.get('rel_vol', pillars['rel_vol'])
+
+        # Recompute P2 (gap) and P3 (RV) from TV data if available
+        p2_score = 1.0 if pillars['gap_pct'] >= 10 else (0.5 if pillars['gap_pct'] >= 5 else 0)
+        p3_score = 1.0 if pillars['rel_vol'] >= 5 else (0.5 if pillars['rel_vol'] >= 3 else 0)
+
+        p4_score   = catalyst['P4_catalyst']
+        total_score = round(p2_score + p3_score + p4_score, 1)
 
         if total_score < min_score:
             continue
 
         results.append({
             'symbol':       sym,
-            'short_name':   pillars.get('short_name', ''),
-            'price':        round(quote.get('price', 0), 2),
-            'gap_pct':      pillars['gap_pct'],
-            'rel_vol':      pillars['rel_vol'],
+            'short_name':   tv_data.get('short_name', pillars.get('short_name', '')),
+            'price':        round(price, 2),
+            'gap_pct':      round(pillars['gap_pct'], 2),
+            'rel_vol':      round(pillars['rel_vol'], 1),
             'float_m':      pillars.get('float_m'),
-            'total_score':  round(total_score, 1),
-            'pillars':      pillars['pillars'],
+            'total_score':  total_score,
+            'p2_gap':       round(pillars['gap_pct'], 1),
+            'p3_rv':        round(pillars['rel_vol'], 1),
+            'p4_catalyst':  round(p4_score, 2),
             'news_summary': catalyst['news_summary'],
+            'news_count':   catalyst.get('news_count', 0),
+            'sentiment':    catalyst.get('sentiment', 0),
+            'news_provider': catalyst.get('news_provider', 'none'),
+            'pillars':      pillars['pillars'],
             'risk_flags':   pillars['risk_flags'],
             'rejects':      pillars['rejects'],
             'scan_time':    today_str,
         })
 
-    # ── Step 4: Rank by total score ─────────────────────────────────────────
+    # ── Step 5: Rank by total score ─────────────────────────────────────────
     results.sort(key=lambda x: x['total_score'], reverse=True)
-
     print(f"\n  🎯 {len(results)} signals (score ≥ {min_score})")
     return results
 
 
 def format_watchlist_row(r: Dict) -> str:
     """Format a single row for display/CSV."""
-    flags = ', '.join(r['risk_flags']) if r['risk_flags'] else ''
-    news = r['news_summary'][:60] if r['news_summary'] else '—'
+    flags  = ', '.join(r['risk_flags']) if r['risk_flags'] else ''
+    p4_lbl = f"P4={r.get('p4_catalyst', 0):.2f}"
+    news   = r['news_summary'][:55] if r['news_summary'] else '—'
     return (
-        f"  {r['symbol']:<6} ${r['price']:<6} gap={r['gap_pct']:>+5.1f}% "
-        f"rv={r['rel_vol']:.1f}× score={r['total_score']:.1f} "
+        f"  {r['symbol']:<6} ${r['price']:<5} gap={r['gap_pct']:>+5.1f}% "
+        f"rv={r['rel_vol']:.1f}× {p4_lbl} score={r['total_score']:.1f} "
         f"{flags} | {news}"
     )
 
@@ -299,14 +411,13 @@ def save_watchlist(results: List[Dict], path: Path):
     with open(path, 'w', newline='', encoding='utf-8') as f:
         w = csv.DictWriter(f, fieldnames=[
             'symbol','short_name','price','gap_pct','rel_vol','float_m',
-            'total_score','pillars','news_summary','risk_flags','rejects','scan_time'
+            'total_score','p2_gap','p3_rv','p4_catalyst',
+            'news_summary','news_count','sentiment','news_provider',
+            'risk_flags','rejects','scan_time'
         ])
         w.writeheader()
         for r in results:
-            row = {k: v for k, v in r.items()}
-            row['pillars']   = json.dumps(row['pillars'])
-            row['risk_flags']= json.dumps(row['risk_flags'])
-            row['rejects']   = json.dumps(row['rejects'])
+            row = {k: v for k, v in r.items() if k not in ('pillars',)}
             w.writerow(row)
     print(f"  💾 Saved: {path.name}")
 
@@ -322,6 +433,7 @@ if __name__ == '__main__':
     parser.add_argument('--tv-csv', type=Path, help='Path to TradingView scanner CSV')
     parser.add_argument('--min-score', type=float, default=2.0, help='Min score threshold (default 2.0)')
     parser.add_argument('--save', action='store_true', help='Save watchlist CSV')
+    parser.add_argument('--no-tv-api', action='store_true', help='Skip TV Premium API, use CSV/fallback only')
     args = parser.parse_args()
 
     print("=" * 60)
@@ -329,9 +441,10 @@ if __name__ == '__main__':
     print("=" * 60)
 
     results = run_screener(
-        symbols      = args.symbols,
+        symbols        = args.symbols,
         tv_export_path = args.tv_csv,
-        min_score    = args.min_score,
+        min_score      = args.min_score,
+        use_tv_api    = not args.no_tv_api,
     )
 
     if results:
@@ -341,6 +454,7 @@ if __name__ == '__main__':
             print(format_watchlist_row(r))
         if args.save:
             save_watchlist(results, WATCHLIST_FILE)
+            print(f"  💾 {WATCHLIST_FILE.name}")
     else:
         print("\n  No signals found above threshold.")
         print("  Try lowering --min-score or check data sources.")

@@ -8,13 +8,31 @@ from pathlib import Path
 import json
 
 DATA_DIR = Path(r'E:\Me\TradingAgent\data')
+WATCHLIST_DIR = DATA_DIR / 'watchlists'
 DATA_DIR.mkdir(exist_ok=True)
 
 # === CONFIG ===
-WATCHLIST = [
-    'SOFI', 'AMD', 'GME', 'RIVN', 'PLTR', 'NVDA', 'TSLA',
-    'NIO', 'SNAP', 'ROKU', 'COIN', 'MSTR', 'SMCI', 'DXYN'
-]
+
+def load_todays_watchlist():
+    """Load today's watchlist CSV if it exists, otherwise fall back to hardcoded list."""
+    try:
+        today_str = datetime.now().strftime('%Y%m%d')
+        candidates = sorted(WATCHLIST_DIR.glob(f'watchlist_{today_str}.csv'))
+        if candidates:
+            df = pd.read_csv(candidates[-1])
+            tickers = df['symbol'].dropna().tolist()
+            print(f'Loaded {len(tickers)} stocks from {candidates[-1].name}')
+            return tickers
+    except Exception as e:
+        print(f'Could not load watchlist: {e}')
+    
+    # Fallback
+    return [
+        'SOFI', 'AMD', 'GME', 'RIVN', 'PLTR', 'NVDA', 'TSLA',
+        'NIO', 'SNAP', 'ROKU', 'COIN', 'MSTR', 'SMCI', 'DXYN'
+    ]
+
+WATCHLIST = load_todays_watchlist()
 
 # 5-Minute bars config
 INTERVAL = '5m'
@@ -199,20 +217,30 @@ def scan_intraday(ticker, gap_pct):
             
             if score >= INTRADAY_PARAMS['score_threshold']:
                 # Check for FIRST PULLBACK pattern:
-                # Recent high, then pullback, now pushing up
+                # 1) Find today's opening bar (first bar of current trading day)
+                # 2) Track intraday high since open
+                # 3) Flag when price pulls back ≥3% from intraday high, then starts recovering
                 bar_idx = stock.index.get_loc(idx)
                 
                 # Need at least 10 bars of history
                 if bar_idx < 10:
                     continue
                 
-                recent = stock.iloc[max(0, bar_idx-10):bar_idx+1]
-                recent_max = recent['Close'].max()
+                # Identify today's bars (same date as current bar)
+                current_date = idx.date()
+                today_bars = stock[stock.index.date == current_date]
                 
-                # Is this a pullback from recent highs?
-                is_pullback = (row['Close'] < recent_max * 1.03) and (row['Close'] > recent_max * 0.95)
+                if len(today_bars) == 0:
+                    continue
                 
-                # Is price recovering? (above EMA, RSI rising)
+                # Intraday high since today's open
+                intraday_high = today_bars['High'].max()
+                
+                # Pullback: price has pulled back ≥3% from intraday high, now pushing up
+                pullback_pct = (intraday_high - row['Close']) / intraday_high
+                is_pullback = (pullback_pct >= 0.03) and (pullback_pct <= 0.12)
+                
+                # Is price recovering? (above EMA, RSI in range)
                 ema_cross = row['Close'] > row['EMA_9']
                 
                 if is_pullback and ema_cross:

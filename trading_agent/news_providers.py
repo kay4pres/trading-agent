@@ -249,7 +249,8 @@ def get_company_news(symbol: str, count: int = 10) -> Dict[str, Any]:
     bullish_count  = 0
 
     # Try Alpha Vantage directly for sentiment scores (free tier: real scores)
-    av_data = _alphavantage_news(symbol)
+    # Only call if Finnhub returned articles (avoid burning AV quota unnecessarily)
+    av_data = _alphavantage_news(symbol) if articles else []
     if av_data:
         scores = [a.get('sentiment', 0) for a in av_data
                   if isinstance(a.get('sentiment'), (int, float))]
@@ -334,7 +335,8 @@ def score_catalyst(news_result: Dict[str, Any]) -> Dict[str, Any]:
     else:
         score = 0.0
         label = "NONE"
-        headline = news_result.get('articles', [{}])[0].get('headline', '')[:80] or 'No recent news'
+        articles = news_result.get('articles') or []
+        headline = (articles[0].get('headline') or articles[0].get('title', ''))[:80] if articles else 'No recent news'
 
     return {
         'P4_catalyst':    score,
