@@ -221,19 +221,55 @@ def answer_callback(callback_id: str, text: str, show_alert: bool = True):
 # Subclass-safe event: set by app.py when it wants to stop the loop
 _stop_polling = threading.Event()
 
+# Whitelist: accept commands only from these chat IDs
+_ALLOWED_CHATS = {'8750722880', '-5581171035'}
+
+# Path map for key storage
+_KEY_PATHS = {
+    'finnhub':      Path(r'E:\Me\TradingAgent\config\finnhub_key.enc'),
+    'alphavantage': Path(r'E:\Me\TradingAgent\config\alphavantage_key.enc'),
+}
+
+
+def _store_key(provider: str, key: str) -> bool:
+    """Store an API key securely using DPAPI via PowerShell subprocess."""
+    path = _KEY_PATHS.get(provider.lower())
+    if not path:
+        return False
+    ps = (
+        f"$k='{key.replace(chr(39), chr(39)+chr(39))}'; "
+        f"$s=ConvertTo-SecureString $k -AsPlainText -Force; "
+        f"$s | ConvertFrom-SecureString | Out-File '{path}' -Encoding UTF8"
+    )
+    try:
+        r = subprocess.run(['powershell', '-Command', ps],
+                          capture_output=True, text=True, timeout=15)
+        return r.returncode == 0
+    except Exception:
+        return False
+
+
+def _reply_to_chat(chat_id: str, text: str):
+    """Send a reply message to a specific Telegram chat."""
+    _api_request('sendMessage', {
+        'chat_id':    chat_id,
+        'text':       text,
+        'parse_mode': 'Markdown',
+    })
+
 
 def poll_callbacks(callback_handler=None):
     """
-    Background thread: polls Telegram for callback_query updates every 5s.
-    Calls `callback_handler(action, symbol, price, score, callback_id, chat_id, message_id)`
-    when a button is pressed.
+    Background thread: polls Telegram for updates every 5s.
+    - callback_query (button press) → callback_handler
+    - text message /key commands from allowed chats
     """
     global _last_update_id
     while not _stop_polling.wait(5):
         try:
             updates = _api_request('getUpdates', {
-                'offset':      _last_update_id + 1,
-                'timeout':     25,
+                'offset':  _last_update_id + 1,
+                'timeout': 25,
             })
             if not (updates and updates.get('ok')):
                 continue
@@ -241,51 +277,78 @@ def poll_callbacks(callback_handler=None):
             for upd in updates.get('result', []):
                 _last_update_id = upd.get('update_id', _last_update_id)
 
-                # Look for callback_query (button press)
+                # ── Callback query (button press) ──────────────────────────────
                 cq = upd.get('callback_query', {})
-                if not cq:
+                if cq:
+                    callback_id = cq.get('id', '')
+                    msg = cq.get('message', {})
+                    chat_id    = str(msg.get('chat', {}).get('id', ''))
+                    message_id = msg.get('message_id', 0)
+                    data       = cq.get('data', '')
+
+                    if not data:
+                        continue
+
+                    parts = data.split(':')
+                    if len(parts) != 4:
+                        continue
+                    action, symbol, price_str, score_str = parts
+                    price = float(price_str)
+                    score = float(score_str)
+
+                    _pending_signals.pop(message_id, None)
+                    label_map = {'approve': f'Approved {symbol} at ${price}',
+                                 'deny':    f'Denied {symbol}',
+                                 'skip':    f'Skipped {symbol}'}
+                    answer_callback(callback_id, label_map.get(action, f'{action} {symbol}'), show_alert=True)
+                    edit_message_buttons(chat_id, message_id, action, symbol, price)
+                    if callback_handler:
+                        callback_handler(action.upper(), symbol, price, score, chat_id, message_id)
+                    print(f"[telegram] Button: {action.upper()} {symbol}")
                     continue
 
-                callback_id = cq.get('id', '')
-                msg = cq.get('message', {})
-                chat_id     = str(msg.get('chat', {}).get('id', ''))
-                message_id  = msg.get('message_id', 0)
-                data        = cq.get('data', '')
-
-                if not data:
+                # ── Text message (/key commands) ────────────────────────────────
+                msg = upd.get('message', {})
+                if not msg:
                     continue
 
-                # Parse callback_data: "approve:SOFI:17.31:4.5"
-                parts = data.split(':')
-                if len(parts) != 4:
+                chat_id = str(msg.get('chat', {}).get('id', ''))
+                text    = (msg.get('text', '') or msg.get('caption', '')).strip()
+
+                if chat_id not in _ALLOWED_CHATS or not text.startswith('/key'):
                     continue
-                action, symbol, price_str, score_str = parts
-                price = float(price_str)
-                score = float(score_str)
 
-                sig = _pending_signals.get(message_id, {})
-                sig.setdefault('symbol', symbol)
-                sig.setdefault('price', price)
-                sig.setdefault('score', score)
+                # Parse: /key finnhub YOUR_KEY_HERE
+                parts = text.split(' ', 2)
+                if len(parts) < 3:
+                    _reply_to_chat(chat_id,
+                        "Usage: `/key finnhub YOUR_API_KEY`\n"
+                        "Example: `/key finnhub abc123xyz`")
+                    continue
 
-                print(f"[telegram] Button pressed: {action.upper()} {symbol} (msg={message_id})")
+                _, provider, api_key = parts
+                api_key = api_key.strip()
 
-                # Remove from pending
-                _pending_signals.pop(message_id, None)
+                if provider.lower() not in _KEY_PATHS:
+                    _reply_to_chat(chat_id,
+                        f"Unknown provider: `{provider}`\n"
+                        "Use `finnhub` or `alphavantage`.")
+                    continue
 
-                # Toast confirmation to user
-                label_map = {'approve': f'✅ Approved {symbol} at ${price}', 
-                             'deny':    f'❌ Denied {symbol}', 
-                             'skip':    f'⏭️ Skipped {symbol}'}
-                toast = label_map.get(action, f'{action} {symbol}')
-                answer_callback(callback_id, toast, show_alert=True)
+                if len(api_key) < 8:
+                    _reply_to_chat(chat_id, "That doesn't look like a valid API key. Try again.")
+                    continue
 
-                # Update message to show decision
-                edit_message_buttons(chat_id, message_id, action, symbol, price)
-
-                # Call user handler if provided (app.py wires this to /api/decision)
-                if callback_handler:
-                    callback_handler(action.upper(), symbol, price, score, chat_id, message_id)
+                ok = _store_key(provider, api_key)
+                if ok:
+                    _reply_to_chat(chat_id,
+                        f"✅ *{provider.capitalize()}* key stored securely.\n"
+                        f"File: `E:\\Me\\TradingAgent\\config\\{provider.lower()}_key.enc`\n\n"
+                        f"Restarting dashboard will activate it.")
+                    print(f"[telegram] Key stored: {provider}")
+                else:
+                    _reply_to_chat(chat_id,
+                        f"❌ Failed to store {provider} key. Check logs.")
 
         except Exception as e:
             print(f"[telegram poll] error: {e}")
@@ -296,7 +359,7 @@ def start_polling(callback_handler=None):
     """Start the polling thread. Call once at app startup."""
     t = threading.Thread(target=poll_callbacks, args=(callback_handler,), daemon=True)
     t.start()
-    print("[telegram] Polling thread started — listening for button presses")
+    print("[telegram] Polling thread started — listening for button presses and /key commands")
 
 
 def stop_polling():
