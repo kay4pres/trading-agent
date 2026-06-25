@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kay's Day Trade Dashboard</title>
+<style>
+  :root {
+    --bg:        #0d1117;
+    --surface:   #161b22;
+    --border:    #30363d;
+    --text:      #e6edf3;
+    --muted:     #8b949e;
+    --green:     #3fb950;
+    --red:       #f85149;
+    --orange:    #f0883e;
+    --yellow:    #d29922;
+    --blue:      #58a6ff;
+    --pill-on:  #238636;
+    --pill-off: #6e7681;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    font-size: 14px;
+  }
+
+  /* ── Header ─────────────────────────────────────────────────────── */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .logo {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--orange);
+    letter-spacing: 1px;
+  }
+  .logo span { color: var(--muted); font-weight: 400; font-size: 13px; }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .market-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .status-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--pill-off);
+  }
+  .status-dot.open { background: var(--green); box-shadow: 0 0 6px var(--green); }
+  .status-dot.premkt { background: var(--yellow); box-shadow: 0 0 6px var(--yellow); }
+
+  .clock { font-size: 22px; font-weight: 700; color: var(--text); font-variant-numeric: tabular-nums; }
+  .last-scan { font-size: 11px; color: var(--muted); }
+
+  /* ── Main layout ─────────────────────────────────────────────────── */
+  .main {
+    display: grid;
+    grid-template-columns: 340px 1fr 280px;
+    gap: 0;
+    height: calc(100vh - 57px);
+  }
+
+  /* ── Panels ──────────────────────────────────────────────────────── */
+  .panel {
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .panel-header {
+    padding: 10px 14px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+  .panel-body { overflow-y: auto; flex: 1; }
+
+  /* ── Watchlist ──────────────────────────────────────────────────── */
+  .stock-row {
+    display: grid;
+    grid-template-columns: 60px 1fr 52px 44px;
+    gap: 8px;
+    align-items: center;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .stock-row:hover { background: #1c2128; }
+  .stock-row.selected { background: #1c2d1c; border-left: 3px solid var(--green); }
+  .stock-row.decided { opacity: 0.5; }
+
+  .sym { font-weight: 700; font-size: 15px; color: var(--blue); }
+  .gap-badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  .gap-badge.pos { background: #1f3a1f; color: var(--green); }
+  .gap-badge.neg { background: #3a1f1f; color: var(--red); }
+  .gap-badge.neu { background: #2a2a2a; color: var(--muted); }
+
+  .score-badge {
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+  }
+  .score-badge.hot  { color: var(--green); }
+  .score-badge.ok  { color: var(--yellow); }
+  .score-badge.cold{ color: var(--muted); }
+
+  .stock-meta { font-size: 11px; color: var(--muted); }
+  .stock-meta .name { color: var(--text); font-size: 12px; }
+
+  /* ── Signal Detail ───────────────────────────────────────────────── */
+  .detail { padding: 0; }
+
+  .no-signal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--muted);
+    gap: 12px;
+    font-size: 13px;
+  }
+  .no-signal-icon { font-size: 40px; opacity: 0.3; }
+
+  .signal-header {
+    padding: 20px 20px 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  .signal-symbol {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--blue);
+    line-height: 1;
+  }
+  .signal-name { color: var(--muted); margin-top: 4px; font-size: 13px; }
+  .signal-price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .signal-price { font-size: 28px; font-weight: 700; }
+  .signal-gap { font-size: 16px; font-weight: 700; }
+  .signal-score { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+  /* Pillars */
+  .pillars-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .pillar {
+    background: var(--surface);
+    padding: 12px 14px;
+    text-align: center;
+  }
+  .pillar-name {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .pillar-val {
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .pillar-val.pass { color: var(--green); }
+  .pillar-val.warn { color: var(--yellow); }
+  .pillar-val.fail { color: var(--red); }
+  .pillar-val.unk  { color: var(--muted); }
+
+  /* Notes / news */
+  .news-row { padding: 12px 14px; border-bottom: 1px solid var(--border); }
+  .news-label { font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+  .news-text { font-size: 12px; color: var(--text); line-height: 1.4; }
+
+  /* Risk flags */
+  .risk-flags { padding: 10px 14px; display: flex; gap: 6px; flex-wrap: wrap; }
+  .risk-tag {
+    font-size: 10px; font-weight: 700;
+    padding: 3px 8px; border-radius: 4px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .risk-tag.warn  { background: #3a2a00; color: var(--yellow); }
+  .risk-tag.danger{ background: #3a1a1a; color: var(--red); }
+  .risk-tag.info  { background: #1a2a3a; color: var(--blue); }
+
+  /* Action buttons */
+  .actions {
+    padding: 16px 14px;
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+  }
+  .btn {
+    flex: 1;
+    padding: 14px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: opacity 0.15s, transform 0.1s;
+    letter-spacing: 0.5px;
+  }
+  .btn:hover { opacity: 0.85; transform: translateY(-1px); }
+  .btn:active { transform: translateY(0); }
+  .btn-approve  { background: var(--green); color: #fff; }
+  .btn-deny     { background: var(--red);   color: #fff; }
+  .btn-skip     { background: var(--border); color: var(--text); }
+
+  /* Scan button */
+  .scan-btn {
+    padding: 4px 10px;
+    background: var(--orange);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .scan-btn:hover { opacity: 0.85; }
+  .scan-btn.running { background: var(--muted); cursor: default; }
+
+  /* ── Right panel: Decisions + P&L ──────────────────────────────── */
+  .pnl-bar {
+    padding: 16px 14px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .pnl-box { text-align: center; }
+  .pnl-label { font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+  .pnl-val { font-size: 20px; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .pnl-val.pos { color: var(--green); }
+  .pnl-val.neg { color: var(--red); }
+  .pnl-val.neu { color: var(--muted); }
+
+  .decisions-list { padding: 0; }
+  .dec-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    border-bottom: 1px solid var(--border);
+    font-size: 12px;
+  }
+  .dec-icon { font-size: 14px; }
+  .dec-sym { font-weight: 700; color: var(--blue); }
+  .dec-action { font-weight: 700; }
+  .dec-action.approve { color: var(--green); }
+  .dec-action.deny    { color: var(--red); }
+  .dec-action.skip    { color: var(--muted); }
+  .dec-time { font-size: 10px; color: var(--muted); margin-left: auto; }
+
+  /* ── Strategy bar ───────────────────────────────────────────────── */
+  .strategy-bar {
+    background: #1a2400;
+    border: 1px solid #3a4a00;
+    border-radius: 6px;
+    margin: 14px;
+    padding: 10px 12px;
+    font-size: 11px;
+    color: #9db84d;
+    line-height: 1.5;
+  }
+  .strategy-bar strong { color: #c4d83a; }
+
+  /* ── Refresh indicator ────────────────────────────────────────────── */
+  .refresh-bar {
+    height: 3px;
+    background: var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  .refresh-fill {
+    height: 100%;
+    background: var(--orange);
+    transition: width 1s linear;
+    width: 0%;
+  }
+
+  /* ── Scrollbar ─────────────────────────────────────────────────── */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">KAY'S DAY TRADE <span>Dashboard</span></div>
+  <div class="header-right">
+    <div class="last-scan">Last scan: <span id="last-scan">—</span></div>
+    <div class="market-status">
+      <div class="status-dot" id="status-dot"></div>
+      <span id="market-label">CHECKING</span>
+    </div>
+    <div class="clock" id="clock">—:—</div>
+  </div>
+</header>
+
+<div class="main">
+
+  <!-- LEFT: Watchlist -->
+  <div class="panel" id="panel-watchlist">
+    <div class="panel-header">
+      <span>📋 Watchlist</span>
+      <button class="scan-btn" id="scan-btn" onclick="manualScan()">▶ SCAN</button>
+    </div>
+    <div class="refresh-bar"><div class="refresh-fill" id="refresh-fill"></div></div>
+    <div class="panel-body" id="watchlist-body">
+      <div class="no-signal">
+        <div class="no-signal-icon">📊</div>
+        <div>No signals yet.<br>Run a scan to find setups.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CENTER: Signal Detail -->
+  <div class="panel detail" id="panel-detail">
+    <div class="panel-header">
+      <span>📊 Signal Detail</span>
+    </div>
+    <div class="panel-body" id="detail-body" style="display:flex;flex-direction:column;">
+      <div class="no-signal" id="no-signal-msg">
+        <div class="no-signal-icon">🎯</div>
+        <div>Click a symbol on the left<br>to view the full signal</div>
+      </div>
+      <div id="signal-content" style="display:none;display:flex;flex-direction:column;flex:1;">
+        <div class="signal-header">
+          <div class="signal-symbol" id="sig-symbol">—</div>
+          <div class="signal-name" id="sig-name">—</div>
+          <div class="signal-price-row">
+            <div class="signal-price" id="sig-price">$—</div>
+            <div class="signal-gap" id="sig-gap">—</div>
+          </div>
+          <div class="signal-score" id="sig-score">Score: —/5</div>
+        </div>
+
+        <!-- Five Pillars -->
+        <div class="pillars-grid" id="pillars-grid">
+          <!-- filled by JS -->
+        </div>
+
+        <!-- News -->
+        <div class="news-row" id="news-section">
+          <div class="news-label">📰 Catalyst</div>
+          <div class="news-text" id="sig-news">—</div>
+        </div>
+
+        <!-- Risk flags -->
+        <div class="risk-flags" id="risk-flags"></div>
+
+        <!-- Strategy tip -->
+        <div class="strategy-bar" id="strategy-tip">
+          <strong>⚡ Ross's Rule:</strong> <span id="tip-text">Select a signal to see the trade setup tip.</span>
+        </div>
+
+        <!-- Actions -->
+        <div class="actions">
+          <button class="btn btn-approve" onclick="sendDecision('APPROVE')">✅ APPROVE</button>
+          <button class="btn btn-deny"    onclick="sendDecision('DENY')">❌ DENY</button>
+          <button class="btn btn-skip"    onclick="sendDecision('SKIP')">⏭️ SKIP</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: Decisions + P&L -->
+  <div class="panel" id="panel-right">
+    <div class="panel-header">
+      <span>📈 Decisions</span>
+    </div>
+    <div class="pnl-bar">
+      <div class="pnl-box">
+        <div class="pnl-label">Today's P&L</div>
+        <div class="pnl-val" id="pnl-today">$0.00</div>
+      </div>
+      <div class="pnl-box">
+        <div class="pnl-label">Decisions</div>
+        <div class="pnl-val" id="dec-count">0</div>
+      </div>
+    </div>
+    <div class="panel-body">
+      <div class="decisions-list" id="decisions-list"></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ── State ────────────────────────────────────────────────────────────────────
+let state = { signals: [], selected: null, decisions: [], pnl: 0 };
+let refreshInterval = 30;  // seconds
+let timeSinceRefresh = 0;
+let timer;
+
+// ── Clock ─────────────────────────────────────────────────────────────────────
+function updateClock() {
+  const now = new Date();
+  const berlin = new Date(now.toLocaleString('en-US', { timeZone: 'Europe/Berlin' }));
+  const h = String(berlin.getHours()).padStart(2,'0');
+  const m = String(berlin.getMinutes()).padStart(2,'0');
+  document.getElementById('clock').textContent = h + ':' + m;
+
+  // Market status
+  const hour = berlin.getHours(), min = berlin.getMinutes();
+  const totalMins = hour * 60 + min;
+  const day = berlin.getDay();
+  const dot = document.getElementById('status-dot');
+  const label = document.getElementById('market-label');
+
+  const isWeekend = day === 0 || day === 6;
+  const isPremkt  = day >= 1 && day <= 5 && totalMins >= 13*60 && totalMins < 15*60+30;
+  const isOpen    = day >= 1 && day <= 5 && totalMins >= 15*60+30 && totalMins < 21*60;
+  const isAfter  = day >= 1 && day <= 5 && totalMins >= 21*60;
+
+  if (isWeekend) { dot.className='status-dot'; label.textContent='WEEKEND'; }
+  else if (isPremkt) { dot.className='status-dot premkt'; label.textContent='PRE-MARKET'; }
+  else if (isOpen) { dot.className='status-dot open'; label.textContent='MARKET OPEN'; }
+  else if (isAfter) { dot.className='status-dot'; label.textContent='AFTER HOURS'; }
+  else { dot.className='status-dot'; label.textContent='MARKET CLOSED'; }
+
+  // Refresh bar
+  timeSinceRefresh++;
+  const pct = Math.min(100, (timeSinceRefresh / refreshInterval) * 100);
+  document.getElementById('refresh-fill').style.width = pct + '%';
+}
+
+// ── Fetch state ────────────────────────────────────────────────────────────────
+async function fetchState() {
+  try {
+    const r = await fetch('/api/state');
+    state = await r.json();
+    timeSinceRefresh = 0;
+    renderAll();
+  } catch(e) {
+    console.error('fetch error:', e);
+  }
+}
+
+async function manualScan() {
+  const btn = document.getElementById('scan-btn');
+  btn.textContent = '⏳ SCANNING...';
+  btn.className = 'scan-btn running';
+  try {
+    await fetch('/api/scan', { method:'POST', headers:{'Content-Type':'application/json'}, body: '{}' });
+    await fetchState();
+  } finally {
+    btn.textContent = '▶ SCAN';
+    btn.className = 'scan-btn';
+  }
+}
+
+async function sendDecision(action) {
+  if (!state.selected) return;
+  const body = {
+    symbol: state.selected.symbol,
+    action: action,
+    price:  state.selected.price,
+    score:  state.selected.total_score,
+    notes:  ''
+  };
+  try {
+    await fetch('/api/decision', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify(body)
+    });
+    await fetchState();
+  } catch(e) { console.error(e); }
+}
+
+async function selectSymbol(symbol) {
+  try {
+    const r = await fetch('/api/select/' + symbol);
+    const data = await r.json();
+    state.selected = data.signal;
+    renderDetail();
+    renderWatchlist();
+  } catch(e) { console.error(e); }
+}
+
+// ── Render ────────────────────────────────────────────────────────────────────
+function renderAll() {
+  renderWatchlist();
+  renderDetail();
+  renderDecisions();
+  document.getElementById('last-scan').textContent = state.last_scan || '—';
+}
+
+function renderWatchlist() {
+  const body = document.getElementById('watchlist-body');
+  const signals = state.signals || [];
+
+  if (!signals.length) {
+    body.innerHTML = `<div class="no-signal"><div class="no-signal-icon">📊</div><div>No signals found.<br>Run a scan.</div></div>`;
+    return;
+  }
+
+  body.innerHTML = signals.map(s => {
+    const gapCss = s.gap_pct > 0 ? 'pos' : s.gap_pct < 0 ? 'neg' : 'neu';
+    const scoreCss = s.total_score >= 4 ? 'hot' : s.total_score >= 2.5 ? 'ok' : 'cold';
+    const rowClass = state.selected?.symbol === s.symbol ? 'selected' : '';
+    const decidedClass = s.decided ? 'decided' : '';
+
+    return `
+    <div class="stock-row ${rowClass} ${decidedClass}" onclick="selectSymbol('${s.symbol}')">
+      <div class="sym">${s.symbol}</div>
+      <div class="stock-meta">
+        <div class="name">${s.short_name || '—'}</div>
+        <div>RV ${s.rel_vol}x · ${s.float_m ? s.float_m+'M flt' : '—'}</div>
+      </div>
+      <div><span class="gap-badge ${gapCss}">${s.gap_pct >= 0 ? '+' : ''}${s.gap_pct}%</span></div>
+      <div><span class="score-badge ${scoreCss}">${s.total_score}</span></div>
+    </div>`;
+  }).join('');
+}
+
+function renderDetail() {
+  const noMsg = document.getElementById('no-signal-msg');
+  const content = document.getElementById('signal-content');
+  const s = state.selected;
+
+  if (!s) {
+    noMsg.style.display = 'flex';
+    content.style.display = 'none';
+    return;
+  }
+
+  noMsg.style.display = 'none';
+  content.style.display = 'flex';
+
+  document.getElementById('sig-symbol').textContent = s.symbol;
+  document.getElementById('sig-name').textContent  = s.short_name || '—';
+  document.getElementById('sig-price').textContent  = '$' + s.price.toFixed(2);
+  const gapEl = document.getElementById('sig-gap');
+  gapEl.textContent = (s.gap_pct >= 0 ? '+' : '') + s.gap_pct + '%';
+  gapEl.style.color = s.gap_pct > 0 ? 'var(--green)' : s.gap_pct < 0 ? 'var(--red)' : 'var(--muted)';
+  document.getElementById('sig-score').textContent = `Score: ${s.total_score}/5 · RelVol ${s.rel_vol}x`;
+
+  // Pillars
+  const p = s.pillars_detail || {};
+  const pScore = p.score || 0;
+  const p4 = p.P4_catalyst ?? '?';
+
+  document.getElementById('pillars-grid').innerHTML = `
+    ${pillarCell('P1 PRICE', '$2–$20', s.price >= 2 && s.price <= 20 ? 'pass' : 'fail', s.price >= 2 && s.price <= 20 ? '✅' : '❌')}
+    ${pillarCell('P2 GAP',   '≥10%',     s.gap_pct >= 10 ? 'pass' : s.gap_pct >= 5 ? 'warn' : 'fail', s.gap_pct >= 10 ? '✅' : s.gap_pct >= 5 ? '⚠️' : '❌')}
+    ${pillarCell('P3 REL VOL', '≥5× avg', s.rel_vol >= 5 ? 'pass' : s.rel_vol >= 3 ? 'warn' : 'fail', s.rel_vol >= 5 ? '✅' : s.rel_vol >= 3 ? '⚠️' : '❌')}
+    ${pillarCell('P4 NEWS',  'Catalyst', p4 >= 1 ? 'pass' : p4 >= 0.5 ? 'warn' : 'fail', p4 >= 1 ? '✅' : p4 >= 0.5 ? '⚠️' : '❌')}
+    ${pillarCell('P5 FLOAT',  '<20M',     s.float_m && s.float_m < 20 ? 'pass' : s.float_m ? 'fail' : 'unk', s.float_m && s.float_m < 20 ? '✅' : s.float_m ? '❌' : '?')}
+    ${pillarCell('TOTAL', 'Min 3/5', pScore + (p4 >= 1 ? 1 : p4 >= 0.5 ? 0.5 : 0) >= 4 ? 'pass' : pScore + (p4 >= 1 ? 1 : p4 >= 0.5 ? 0.5 : 0) >= 2.5 ? 'warn' : 'fail', s.total_score)}
+  `;
+
+  // News
+  document.getElementById('sig-news').textContent = s.news_summary || 'No news detected';
+
+  // Risk flags
+  const rf = document.getElementById('risk-flags');
+  if (s.risk_flags && s.risk_flags.length) {
+    rf.innerHTML = s.risk_flags.map(f => {
+      if (f.includes('HALT')) return `<span class="risk-tag danger">${f}</span>`;
+      if (f.includes('WARN')) return `<span class="risk-tag warn">${f}</span>`;
+      return `<span class="risk-tag info">${f}</span>`;
+    }).join('');
+    rf.style.display = 'flex';
+  } else {
+    rf.style.display = 'none';
+  }
+
+  // Strategy tip
+  const tips = {
+    pass: `<strong>✅ Signal qualifies.</strong> Target +20¢/share, stop 10–15¢, 2:1 minimum. Breakout or bailout — out in 2 min if not profitable.`,
+    warn: `<strong>⚠️ Partial signal.</strong> Proceed with caution — consider smaller size.`,
+    fail: `<strong>❌ Below threshold.</strong> Score ${s.total_score}/5 — need 3+ for a trade.`,
+  };
+  const tipKey = s.total_score >= 4 ? 'pass' : s.total_score >= 2.5 ? 'warn' : 'fail';
+  document.getElementById('tip-text').textContent = tips[tipKey];
+}
+
+function pillarCell(name, rule, css, val) {
+  return `<div class="pillar">
+    <div class="pillar-name">${name}<br><span style="font-weight:400;font-size:9px;">${rule}</span></div>
+    <div class="pillar-val ${css}">${val}</div>
+  </div>`;
+}
+
+function renderDecisions() {
+  const pnlToday = state.decisions
+    ? state.decisions.filter(d => d.action === 'APPROVE').length
+    : 0;
+  const count = state.decisions ? state.decisions.length : 0;
+
+  const pnlEl = document.getElementById('pnl-today');
+  pnlEl.textContent = count + ' trades';
+  pnlEl.className = 'pnl-val ' + (count > 0 ? 'pos' : 'neu');
+  document.getElementById('dec-count').textContent = count;
+
+  const list = document.getElementById('decisions-list');
+  const decs = (state.decisions || []).slice(-15).reverse();
+
+  if (!decs.length) {
+    list.innerHTML = `<div style="padding:20px 14px;color:var(--muted);font-size:12px;text-align:center;">No decisions yet today.<br>Approve a signal to start.</div>`;
+    return;
+  }
+
+  list.innerHTML = decs.map(d => {
+    const icon = d.action === 'APPROVE' ? '✅' : d.action === 'DENY' ? '❌' : '⏭️';
+    const t = new Date(d.timestamp);
+    const time = String(t.getHours()).padStart(2,'0') + ':' + String(t.getMinutes()).padStart(2,'0');
+    return `<div class="dec-row">
+      <span class="dec-icon">${icon}</span>
+      <span class="dec-sym">${d.symbol}</span>
+      <span class="dec-action ${d.action.toLowerCase()}">${d.action}</span>
+      <span class="dec-time">${time}</span>
+    </div>`;
+  }).join('');
+}
+
+// ── Init ─────────────────────────────────────────────────────────────────────
+setInterval(updateClock, 1000);
+updateClock();
+fetchState();
+setInterval(fetchState, refreshInterval * 1000);
+</script>
+</body>
+</html>
