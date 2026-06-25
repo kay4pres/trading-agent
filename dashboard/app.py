@@ -14,7 +14,9 @@ from flask_cors import CORS
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from trading_agent.fincept_connector import get_batch_quotes, get_info, get_news, get_historical
 from trading_agent.premarket_screener import check_pillars, check_catalyst, DEFAULT_UNIVERSE
-from trading_agent.telegram_sender import send_alert, send_signal
+from trading_agent.telegram_sender import (
+    send_alert, send_signal_with_buttons, start_polling, _pending_signals
+)
 
 app = Flask(__name__, template_folder='static', static_folder='static')
 CORS(app)
@@ -143,22 +145,86 @@ def run_scan(min_score=3.0, symbols=None):
     return results
 
 
+# Track symbols we've already alerted today (avoid spamming same signal)
+_alerted_today: set = set()
+_last_alert_date: str = ''
+
+
 def scan_thread():
     """Background scanner — runs every 5 minutes during market hours."""
+    global _alerted_today, _last_alert_date
     while True:
         if market_status():
+            today = berlin_now().strftime('%Y-%m-%d')
+            if today != _last_alert_date:
+                _alerted_today = set()
+                _last_alert_date = today
+
             try:
                 signals = run_scan(min_score=2.5)
-                state['signals']   = signals
-                state['watchlist'] = signals
-                state['last_scan'] = berlin_now().strftime('%H:%M')
+                state['signals']    = signals
+                state['watchlist']  = signals
+                state['last_scan']  = berlin_now().strftime('%H:%M')
                 state['market_open'] = True
+
+                # Fire Telegram alert for new top signals (score >= 3.5, not yet alerted)
+                for sig in signals:
+                    sym = sig['symbol']
+                    if sig['total_score'] >= 3.5 and sym not in _alerted_today:
+                        _alerted_today.add(sym)
+                        try:
+                            send_signal_with_buttons(
+                                symbol    = sig['symbol'],
+                                action    = 'BUY',
+                                price     = sig['price'],
+                                gap       = sig['gap_pct'],
+                                score     = sig['total_score'],
+                                rel_vol   = sig['rel_vol'],
+                                float_m   = sig.get('float_m') or 0,
+                                notes     = sig.get('news_summary', ''),
+                                risk_flags= sig.get('risk_flags', []),
+                            )
+                            print(f"[scanner] Telegram alert sent for {sym} score={sig['total_score']}")
+                        except Exception as te:
+                            print(f"[scanner] Telegram alert failed: {te}")
+
                 print(f"[scanner] scanned {len(signals)} signals at {state['last_scan']}")
             except Exception as e:
                 print(f"[scanner] error: {e}")
         else:
             state['market_open'] = berlin_now().strftime('%H:%M') >= '14:00'
         time.sleep(300)  # 5 min
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# TELEGRAM CALLBACK HANDLER
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def on_telegram_button(action: str, symbol: str, price: float, score: float,
+                       chat_id: str, message_id: int):
+    """
+    Called by the Telegram polling thread when Kay taps a button.
+    Records the decision directly in state (no HTTP round-trip).
+    """
+    global state
+    decision = {
+        'timestamp': berlin_now().isoformat(),
+        'symbol':    symbol,
+        'action':   action,
+        'price':    price,
+        'notes':    'via Telegram button',
+        'score':    score,
+    }
+    # Mark signal as decided
+    for s in state['signals']:
+        if s['symbol'] == symbol:
+            s['decided']  = True
+            s['decision'] = action
+            break
+
+    state['decisions'].append(decision)
+    save_decisions(state['decisions'])
+    print(f"[telegram] Decision recorded: {action} {symbol} @ ${price}")
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -279,6 +345,9 @@ if __name__ == '__main__':
     # Start background scanner thread
     t = threading.Thread(target=scan_thread, daemon=True)
     t.start()
+
+    # Start Telegram polling thread (listens for button presses)
+    start_polling(callback_handler=on_telegram_button)
 
     print(f"Dashboard starting at http://localhost:5050")
     app.run(host='0.0.0.0', port=5050, debug=False)
