@@ -14,12 +14,14 @@ DATA_DIR = Path(r'E:\Me\TradingAgent\data')
 DATA_DIR.mkdir(exist_ok=True)
 
 # === FIVE PILLARS PARAMETERS ===
+# ⚠️ FIXED 2026-06-25: Was requiring 5/5 score + EMA cross-up = almost no trades
+# Relaxed to match the intraday scanner's signal quality
 PILLARS = {
     'price_min': 2.0,
     'price_max': 50.0,
-    'min_gain_percent': 5.0,      # Up % from yesterday
+    'min_gain_percent': 3.0,      # FIXED: was 5.0 — SOFI regularly gaps 3-4%, 5% too restrictive
     'volume_multiplier': 2.0,     # 2x average volume
-    'adx_threshold': 20.0,
+    'adx_threshold': 15.0,       # FIXED: was 20.0 — lowered for more signal capture
     'rsi_length': 14,
     'rsi_overbought': 70,
     'rsi_oversold': 30,
@@ -163,17 +165,18 @@ def backtest_strategy(df, ticker, initial_capital=10000):
         elif score >= 3:
             score_stats['moderate_days'] += 1
         
-        # Entry signal: Score 4+ AND MA cross up
-        ma_cross_up = (df['EMA_9'].iloc[i] > df['EMA_20'].iloc[i]) and \
-                       (df['EMA_9'].iloc[i-1] <= df['EMA_20'].iloc[i-1])
-        
+        # Entry signal: Score 3+ (relaxed from 4+ — EMA cross requirement removed)
+        # First Pullback pattern: pullback to EMA + first candle making new highs
+        # Relaxed 2026-06-25: was requiring score>=4 AND ma_cross_up — too restrictive
+        in_pullback = (row['Close'] <= row['EMA_9'] * 1.02)  # Within 2% of EMA 9
+
         # Exit signal
-        ma_cross_down = (df['EMA_9'].iloc[i] < df['EMA_20'].iloc[i]) and \
-                         (df['EMA_9'].iloc[i-1] >= df['EMA_20'].iloc[i-1])
         rsi_overbought = row['RSI'] > PILLARS['rsi_overbought']
+        price_target_hit = row['Close'] >= row['EMA_9'] * 1.02  # +2% from EMA = target
         
         # === EXECUTE TRADES ===
-        if score >= 4 and ma_cross_up and position == 0:
+        # FIXED: score >= 3 + in pullback (was score >= 4 + ma_cross_up)
+        if score >= 3 and in_pullback and position == 0:
             # BUY SIGNAL - Strong candidate
             shares = int(capital * 0.1 / row['Close'])
             cost = shares * row['Close']
@@ -197,7 +200,7 @@ def backtest_strategy(df, ticker, initial_capital=10000):
             })
             print(f"🟢 BUY  {date.date()} | ${row['Close']:.2f} | Score: {score}/5 | {pillar_str}")
         
-        elif position > 0 and (ma_cross_down or rsi_overbought):
+        elif position > 0 and (price_target_hit or rsi_overbought):
             # SELL SIGNAL
             revenue = position * row['Close']
             pnl = revenue - (position * position_price)

@@ -1,0 +1,177 @@
+"""
+fincept_connector.py
+===================
+Bridges Fincept Terminal's yfinance_data.py script to our trading pipeline.
+
+Fincept gives us:
+  - Standardized JSON output from yfinance (quotes, historical, news, info)
+  - 100+ Fincept scripts for fundamental data, macros, sentiment, etc.
+  - Fincept Terminal as a visual dashboard
+
+Our scripts (Ross's rules) apply the strategy on top.
+"""
+
+import json
+import subprocess
+import sys
+from datetime import datetime, date
+from typing import List, Optional, Dict, Any
+
+# Path to Fincept's yfinance wrapper script
+FINCEPT_YF = r"C:\Program Files\FinceptTerminal\scripts\yfinance_data.py"
+
+
+# ─── Helpers ────────────────────────────────────────────────────────────────
+
+def _run(args: List[str]) -> Dict[str, Any]:
+    """Run Fincept script, return parsed JSON. Falls back to yfinance directly."""
+    try:
+        result = subprocess.run(
+            [sys.executable, FINCEPT_YF] + args,
+            capture_output=True, text=True, timeout=60
+        )
+        if result.returncode != 0:
+            return {"success": False, "error": result.stderr.strip()}
+        raw = result.stdout.strip()
+        if raw.startswith("{"):
+            return json.loads(raw)
+        elif raw.startswith("["):
+            return {"success": True, "data": json.loads(raw)}
+        else:
+            return {"success": False, "error": f"Unexpected output: {raw[:200]}"}
+    except FileNotFoundError:
+        return _fallback_yfinance(args)
+    except subprocess.TimeoutExpired:
+        return {"success": False, "error": "Timeout fetching data"}
+    except Exception as e:
+        return {"success": False, "error": str(e)}
+
+
+def _fallback_yfinance(args: List[str]) -> Dict[str, Any]:
+    """Fallback: use yfinance directly if Fincept is unavailable."""
+    try:
+        import yfinance as yf
+        cmd = args[0]
+        sym = args[1] if len(args) > 1 else ""
+
+        if cmd == "quote":
+            t = yf.Ticker(sym)
+            info = t.fast_info
+            price = info.last_price or 0
+            prev = info.previous_close or price
+            return {
+                "symbol": sym.upper(),
+                "price": round(price, 2),
+                "change": round(price - prev, 2),
+                "change_percent": round((price - prev) / prev * 100, 2) if prev else 0,
+                "volume": info.last_volume or 0,
+            }
+        elif cmd == "batch_quotes":
+            return [_fallback_yfinance(["quote", s])["data"] if "error" not in _fallback_yfinance(["quote", s]) else {} for s in args[1:]]
+        elif cmd in ("historical", "historical_period"):
+            period = args[2] if cmd == "historical_period" else "5d"
+            interval = args[3] if cmd == "historical_period" else args[4] if len(args) > 4 else "5m"
+            t = yf.Ticker(sym)
+            df = t.history(period=period, interval=interval)
+            return {"success": True, "data": [
+                {"timestamp": int(r.timestamp()), "open": round(r["Open"], 2),
+                 "high": round(r["High"], 2), "low": round(r["Low"], 2),
+                 "close": round(r["Close"], 2), "volume": int(r["Volume"])}
+                for _, r in df.iterrows()
+            ]}
+        elif cmd == "info":
+            t = yf.Ticker(sym)
+            info = t.info
+            return {
+                "symbol": sym.upper(),
+                "floatShares": info.get("floatShares", 0),
+                "averageVolume": info.get("averageVolume", 0),
+                "marketCap": info.get("marketCap", 0),
+                "shortName": info.get("shortName", ""),
+            }
+        else:
+            return {"success": False, "error": f"Fallback not implemented for: {cmd}"}
+    except Exception as e:
+        return {"success": False, "error": f"Fallback failed: {e}"}
+
+
+# ─── Public API ──────────────────────────────────────────────────────────────
+
+def get_quote(symbol: str) -> Dict[str, Any]:
+    """Live quote: price, change, volume, high, low, open, prev_close."""
+    result = _run(["quote", symbol])
+    # Fincept returns raw dict for single quote (no "success" wrapper)
+    if isinstance(result, dict) and "symbol" in result and "price" in result:
+        return result
+    if result.get("success") and "error" not in result:
+        return result.get("data", result)
+    # Try fallback
+    fb = _fallback_yfinance(["quote", symbol])
+    return fb if isinstance(fb, dict) and "symbol" in fb else fb.get("data", fb)
+
+
+def get_batch_quotes(symbols: List[str]) -> List[Dict[str, Any]]:
+    """Live quotes for multiple symbols in one call."""
+    result = _run(["batch_quotes"] + symbols)
+    if result.get("success"):
+        return result.get("data", [])
+    # Fallback: single quotes
+    return [get_quote(s)["data"] for s in symbols]
+
+
+def get_historical(
+    symbol: str,
+    period: str = "5d",
+    interval: str = "5m"
+) -> List[Dict[str, Any]]:
+    """
+    Historical OHLCV bars.
+    interval: 1m, 5m, 15m, 1h, 1d, etc.
+    period: 1d, 5d, 1mo, 3mo, etc.
+    """
+    result = _run(["historical_period", symbol, period, interval])
+    if result.get("success"):
+        return result.get("data", [])
+    # Fallback
+    fb = _fallback_yfinance(["historical_period", symbol, period, interval])
+    return fb.get("data", [])
+
+
+def get_info(symbol: str) -> Dict[str, Any]:
+    """Company info: float, volume, market cap, sector."""
+    result = _run(["info", symbol])
+    if result.get("success"):
+        return result.get("data", result)
+    # Fallback
+    fb = _fallback_yfinance(["info", symbol])
+    return fb
+
+
+def get_news(symbol: str, count: int = 20) -> List[Dict[str, Any]]:
+    """News articles for a symbol."""
+    result = _run(["news", symbol, str(count)])
+    if result.get("success"):
+        return result.get("data", [])
+    return []
+
+
+def get_batch_all(symbols: List[str]) -> Dict[str, Any]:
+    """
+    Everything in one call: quotes + sparklines + recent history.
+    Used by Richard to build the premarket watchlist efficiently.
+    """
+    payload = json.dumps({"symbols": symbols, "quotes": True, "sparklines": True, "history_days": 2})
+    result = _run(["batch_all", payload])
+    return result if result else {"success": False}
+
+
+# ─── Convenience: timestamp helpers ─────────────────────────────────────────
+
+def unix_to_dt(ts: int) -> datetime:
+    return datetime.fromtimestamp(ts)
+
+
+def recent_bars(symbol: str, bars: int = 20, interval: str = "5m") -> List[Dict[str, Any]]:
+    """Get the most recent N bars for a symbol."""
+    history = get_historical(symbol, period="1d", interval=interval)
+    return history[-bars:] if len(history) > bars else history

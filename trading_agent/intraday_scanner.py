@@ -141,11 +141,12 @@ def score_bar(row, ticker, gap_pct):
         details['P1'] = '❌'
     
     # P2: Gap up % (already confirmed gap-up stock)
+    # FIXED: use min_gap_pct config instead of hardcoded 10%
     if gap_pct >= 10:
         score += 1
         details['P2'] = '🔥'
     elif gap_pct >= INTRADAY_PARAMS['min_gap_pct']:
-        score += 0.5
+        score += 1  # was 0.5 — full point for meeting threshold
         details['P2'] = '✅'
     else:
         details['P2'] = '❌'
