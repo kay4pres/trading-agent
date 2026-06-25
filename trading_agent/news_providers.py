@@ -33,8 +33,15 @@ def _read_token(filename: str) -> Optional[str]:
     path = TOKEN_DIR / filename
     if not path.exists():
         return None
+    try:
+        raw = path.read_text(encoding='utf-8')
+    except Exception:
+        return None
+    # Strip UTF-8 BOM if present (PowerShell 5.1 adds BOM with -Encoding UTF8)
+    if raw.startswith('\ufeff'):
+        raw = raw[1:]
     ps = (
-        f"$b = Get-Content '{path}' -Raw; "
+        f"$b = '{raw.strip()}'; "
         f"$s = ConvertTo-SecureString $b; "
         f"[System.Runtime.InteropServices.Marshal]::PtrToStringAuto("
         f"[System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($s))"
@@ -192,32 +199,32 @@ def _yfinance_news(symbol: str, count: int = 5) -> List[Dict[str, Any]]:
 def get_company_news(symbol: str, count: int = 10) -> Dict[str, Any]:
     """
     Fetch company news from all available providers.
+    Strategy:
+      - Finnhub for article count + headline quality (free, comprehensive)
+      - Alpha Vantage for real sentiment scores (free, limited calls)
+      - yfinance as final fallback
+
     Returns dict with:
       - articles: list of normalized news items
-      - provider: which provider succeeded ('finnhub', 'alphavantage', 'yfinance', 'none')
-      - sentiment_score: -1 to +1 from best available source
+      - provider: which news provider succeeded
+      - sentiment_score: -1 to +1 from Alpha Vantage (best free sentiment data)
       - bullish_pct: % bullish articles
-      - error: error message if all failed
     """
-    today_str  = date.today().strftime('%Y-%m-%d')
-    yesterday  = (date.today() - timedelta(days=1)).strftime('%Y-%m-%d')
-
     articles = []
+    av_articles = []  # Alpha Vantage articles (for sentiment)
 
-    # Try Finnhub first (most comprehensive free news)
+    # 1. Get articles from Finnhub (best coverage on free tier)
     articles = _finnhub_news(symbol, count)
     provider = 'finnhub'
-    sentiment_data = {}
 
-    if articles:
-        sentiment_data = _finnhub_sentiment(symbol)
-    else:
-        # Try Alpha Vantage
+    if not articles:
+        # 2. Fall back to Alpha Vantage (has sentiment but fewer articles)
         articles = _alphavantage_news(symbol)
+        av_articles = articles
         provider = 'alphavantage'
 
     if not articles:
-        # Fallback to yfinance/Fincept
+        # 3. Final fallback to yfinance/Fincept
         articles = _yfinance_news(symbol, count)
         provider = 'yfinance'
 
@@ -230,28 +237,31 @@ def get_company_news(symbol: str, count: int = 10) -> Dict[str, Any]:
             'error':         'All news providers failed',
         }
 
-    # Extract sentiment score
+    # Count articles from today/yesterday (handles Unix timestamps in seconds)
+    recent = [
+        a for a in articles
+        if _is_recent(a.get('datetime') or a.get('time_published'))
+    ]
+    recent_count = len(recent)
+
+    # Extract sentiment — Alpha Vantage has real sentiment on free tier
     sentiment_score = 0
     bullish_count  = 0
 
-    if sentiment_data and 'sentimentScore' in sentiment_data:
-        sentiment_score = sentiment_data.get('sentimentScore', 0)
-        bullish_count   = sentiment_data.get('buzz', 0)
-
-    # Count articles from today/yesterday
-    recent = [
-        a for a in articles
-        if _is_recent(a.get('datetime') or a.get('time_published') or '')
-    ]
-
-    recent_count = len(recent)
-
-    # Alpha Vantage sentiment
-    if provider == 'alphavantage' and articles:
-        scores = [a.get('sentiment', 0) for a in articles if isinstance(a.get('sentiment'), (int, float))]
+    # Try Alpha Vantage directly for sentiment scores (free tier: real scores)
+    av_data = _alphavantage_news(symbol)
+    if av_data:
+        scores = [a.get('sentiment', 0) for a in av_data
+                  if isinstance(a.get('sentiment'), (int, float))]
         if scores:
             sentiment_score = sum(scores) / len(scores)
-        bullish_count = sum(1 for a in articles if a.get('sentiment_label', '') in ('Bullish', 'Somewhat-Bullish'))
+        bullish_count = sum(
+            1 for a in av_data
+            if a.get('sentiment_label', '') in ('Bullish', 'Somewhat-Bullish')
+        )
+    else:
+        # Finnhub sentiment is premium-only on free tier — skip it
+        pass
 
     return {
         'articles':         articles,
@@ -263,14 +273,31 @@ def get_company_news(symbol: str, count: int = 10) -> Dict[str, Any]:
     }
 
 
-def _is_recent(dt_str: str) -> bool:
-    """Check if a date/datetime string is from today or yesterday."""
-    if not dt_str:
+def _is_recent(dt_val) -> bool:
+    """Check if a datetime value is from today or yesterday.
+    Handles: Unix timestamp in seconds (int), Unix timestamp in ms (int),
+    or ISO date string (str).
+    """
+    if not dt_val:
         return False
-    today_str    = date.today().strftime('%Y-%m-%d')
-    yesterday    = (date.today() - timedelta(days=1)).strftime('%Y-%m-%d')
-    dt_str_clean = str(dt_str)[:10]  # just the date part
-    return dt_str_clean in (today_str, yesterday)
+    try:
+        if isinstance(dt_val, int):
+            # Unix timestamp — could be seconds or milliseconds, try both
+            ts = dt_val
+            if ts > 1e12:  # looks like milliseconds
+                dt = datetime.fromtimestamp(ts / 1000)
+            else:          # treat as seconds
+                dt = datetime.fromtimestamp(ts)
+        elif isinstance(dt_val, str):
+            # ISO date string
+            dt = datetime.fromisoformat(dt_val.replace('Z', '+00:00'))
+        else:
+            return False
+        today_str = date.today().strftime('%Y-%m-%d')
+        yesterday = (date.today() - timedelta(days=1)).strftime('%Y-%m-%d')
+        return dt.strftime('%Y-%m-%d') in (today_str, yesterday)
+    except Exception:
+        return False
 
 
 # ── P4 Catalyst Score ─────────────────────────────────────────────────────────

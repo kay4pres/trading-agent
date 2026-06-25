@@ -29,8 +29,15 @@ _last_update_id = 0
 
 def _get_token() -> Optional[str]:
     """Decrypt PowerShell SecureString via PowerShell subprocess."""
+    try:
+        raw = TOKEN_PATH.read_text(encoding='utf-8')
+    except Exception:
+        return None
+    # Strip UTF-8 BOM if present (PowerShell 5.1 adds BOM with -Encoding UTF8)
+    if raw.startswith('\ufeff'):
+        raw = raw[1:]
     ps = (
-        f"$b = Get-Content '{TOKEN_PATH}' -Raw; "
+        f"$b = '{raw.strip()}'; "
         f"$s = ConvertTo-SecureString $b; "
         f"[System.Runtime.InteropServices.Marshal]::PtrToStringAuto("
         f"[System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($s))"
@@ -232,20 +239,30 @@ _KEY_PATHS = {
 
 
 def _store_key(provider: str, key: str) -> bool:
-    """Store an API key securely using DPAPI via PowerShell subprocess."""
+    """
+    Store an API key securely using DPAPI.
+    Pipelines plaintext → SecureString → encrypted bytes directly (no BOM, no file I/O via PS).
+    """
     path = _KEY_PATHS.get(provider.lower())
     if not path:
         return False
-    ps = (
-        f"$k='{key.replace(chr(39), chr(39)+chr(39))}'; "
-        f"$s=ConvertTo-SecureString $k -AsPlainText -Force; "
-        f"$s | ConvertFrom-SecureString | Out-File '{path}' -Encoding UTF8"
-    )
+    # Escape key for PowerShell single-quote context
+    escaped = key.replace("'", "''")
+    ps = f"$k='{escaped}'; ConvertTo-SecureString $k -AsPlainText -Force | ConvertFrom-SecureString"
     try:
-        r = subprocess.run(['powershell', '-Command', ps],
-                          capture_output=True, text=True, timeout=15)
-        return r.returncode == 0
-    except Exception:
+        r = subprocess.run(
+            ['powershell', '-Command', ps],
+            capture_output=True, text=True, timeout=15
+        )
+        if r.returncode != 0:
+            print(f"[_store_key] PS error: {r.stderr}")
+            return False
+        encrypted = r.stdout
+        # Write bytes directly — no BOM
+        path.write_bytes(encrypted.encode('utf-8'))
+        return True
+    except Exception as e:
+        print(f"[_store_key] exception: {e}")
         return False
 
 
@@ -315,7 +332,12 @@ def poll_callbacks(callback_handler=None):
                 chat_id = str(msg.get('chat', {}).get('id', ''))
                 text    = (msg.get('text', '') or msg.get('caption', '')).strip()
 
-                if chat_id not in _ALLOWED_CHATS or not text.startswith('/key'):
+                print(f"[telegram] Text msg from {chat_id}: {text[:60]}")
+
+                if chat_id not in _ALLOWED_CHATS:
+                    continue
+
+                if not text.startswith('/key'):
                     continue
 
                 # Parse: /key finnhub YOUR_KEY_HERE
@@ -364,3 +386,50 @@ def start_polling(callback_handler=None):
 
 def stop_polling():
     _stop_polling.set()
+
+
+# ── Inbox poller (for Mavis session to call directly) ─────────────────────────
+_INBOX_LAST_ID = 0
+
+
+def poll_inbox() -> list:
+    """
+    Check Telegram for new messages. Returns list of message dicts.
+    Safe to call from any context (Mavis session, cron, etc.).
+    Call this regularly from Mavis to stay in sync with Kay's Telegram messages.
+    """
+    global _INBOX_LAST_ID
+    try:
+        updates = _api_request('getUpdates', {
+            'offset':  _INBOX_LAST_ID + 1,
+            'timeout': 0,  # non-blocking
+        })
+        if not (updates and updates.get('ok')):
+            return []
+        results = []
+        for upd in updates.get('result', []):
+            uid = upd.get('update_id', 0)
+            _INBOX_LAST_ID = max(_INBOX_LAST_ID, uid)
+            if 'message' in upd:
+                m = upd['message']
+                results.append({
+                    'update_id': uid,
+                    'chat_id':   str(m.get('chat', {}).get('id', '')),
+                    'chat_name': m.get('chat', {}).get('title', '') or m.get('chat', {}).get('first_name', ''),
+                    'text':      (m.get('text', '') or m.get('caption', '')).strip(),
+                    'timestamp': m.get('date', 0),
+                })
+            elif 'callback_query' in upd:
+                cq = upd['callback_query']
+                results.append({
+                    'update_id': uid,
+                    'chat_id':   str(cq.get('message', {}).get('chat', {}).get('id', '')),
+                    'type':      'callback',
+                    'data':      cq.get('data', ''),
+                    'callback_id': cq.get('id', ''),
+                })
+        return results
+    except Exception as e:
+        print(f'[telegram inbox] poll error: {e}')
+        return []
+
