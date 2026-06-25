@@ -286,6 +286,7 @@ def scan_thread():
                 premarket = load_premarket_watchlist()
                 if premarket:
                     state['watchlist'] = premarket
+                    state['signals']   = premarket  # renderWatchlist reads state.signals
                     print(f"[scanner] Loaded {len(premarket)} premarket signals for {today}")
 
             try:
