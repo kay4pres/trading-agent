@@ -1,9 +1,9 @@
 # Trading Agent
 
-AI-powered day trading agent built on Warrior Trading methodology.
+AI-powered day trading agent built on Trading methodology.
 
 ## What It Does
-- Learns from Warrior Trading course material
+- Learns from Trading course material
 - Scans for stocks matching the "Five Pillars" criteria
 - Backtests strategies on historical data
 - Generates trading signals via Pine Script on TradingView
