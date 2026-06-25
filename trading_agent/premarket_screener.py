@@ -1,13 +1,13 @@
 """
 premarket_screener.py
-====================
+===================
 Richard's pre-market watchlist builder.
 Runs at 14:00 Berlin — ranked watchlist ready by 14:25.
 
 Data flow:
   Fincept (yfinance) ──► Five Pillars + Ch2 Risk Rules ──► Ranked Watchlist
   TradingView CSV (Kay) ──► same pipeline
-  Finnhub News ──► Catalyst check
+  Finnhub / AlphaVantage ──► P4 Catalyst check (via news_providers.py)
 """
 
 import sys
@@ -18,7 +18,8 @@ import json
 
 # ── Local imports ─────────────────────────────────────────────────────────────
 sys.path.insert(0, str(Path(__file__).parent))
-from fincept_connector import get_batch_quotes, get_historical, get_info, get_news
+from fincept_connector   import get_batch_quotes, get_historical, get_info
+from news_providers      import get_company_news, score_catalyst
 
 # ── Config ────────────────────────────────────────────────────────────────────
 DATA_DIR      = Path(r'E:\Me\TradingAgent\data')
@@ -145,33 +146,24 @@ def check_pillars(quote: Dict, info: Dict) -> Dict[str, Any]:
 
 def check_catalyst(symbol: str, news_list: List[Dict]) -> Dict[str, Any]:
     """
-    Evaluate P4: News catalyst.
-    Returns catalyst score and summary.
+    Evaluate P4: News catalyst (delegate to news_providers.score_catalyst).
+    news_list is ignored — we now use get_company_news() directly.
     """
     if not news_list:
-        return {'P4_catalyst': 0, 'news_summary': 'No recent news', 'news_count': 0}
-
-    # Count news from today / yesterday
-    today = datetime.now().date()
-    recent = [
-        n for n in news_list
-        if hasattr(n.get('providerPublishTime', 0) or 0, 'date') or
-           (isinstance(n.get('time'), str) and TODAY.strftime('%Y') in n.get('time', ''))
-    ]
-
-    if len(news_list) >= 2:
-        return {
-            'P4_catalyst':  1,
-            'news_summary': news_list[0].get('title', news_list[0].get('summary', ''))[:80],
-            'news_count':  len(news_list),
+        # No news provided — try fetching directly
+        try:
+            news_result = get_company_news(symbol, count=10)
+        except Exception:
+            news_result = {'articles': [], 'recent_count': 0, 'top_headline': 'No news', 'provider': 'none'}
+    else:
+        # Wrap the provided list in the format score_catalyst expects
+        news_result = {
+            'articles':    news_list,
+            'recent_count': len(news_list),
+            'top_headline': (news_list[0].get('title') or news_list[0].get('summary', ''))[:80],
+            'provider':    'yfinance',
         }
-    elif len(news_list) == 1:
-        return {
-            'P4_catalyst':  0.5,
-            'news_summary': news_list[0].get('title', news_list[0].get('summary', ''))[:80],
-            'news_count':  1,
-        }
-    return {'P4_catalyst': 0, 'news_summary': 'No news found', 'news_count': 0}
+    return score_catalyst(news_result)
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -251,14 +243,14 @@ def run_screener(
         except Exception:
             info = {}
 
-        # News (top 3 articles)
+        # News (top 10 articles — Finnhub → AlphaVantage → yfinance)
         try:
-            news = get_news(sym, count=3)
+            news_result = get_company_news(sym, count=10)
         except Exception:
-            news = []
+            news_result = {'articles': [], 'recent_count': 0, 'top_headline': '', 'provider': 'none'}
 
         pillars = check_pillars(quote, info)
-        catalyst = check_catalyst(sym, news)
+        catalyst = check_catalyst(sym, news_result.get('articles', []))
 
         # Add P4 score
         pillars['P4_catalyst']  = catalyst['P4_catalyst']

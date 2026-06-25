@@ -12,8 +12,9 @@ from flask_cors import CORS
 
 # ── Local imports ──────────────────────────────────────────────────────────────
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from trading_agent.fincept_connector import get_batch_quotes, get_info, get_news, get_historical
-from trading_agent.premarket_screener import check_pillars, check_catalyst, DEFAULT_UNIVERSE
+from trading_agent.fincept_connector import get_batch_quotes, get_info, get_historical
+from trading_agent.premarket_screener import check_pillars, DEFAULT_UNIVERSE
+from trading_agent.news_providers import get_company_news, score_catalyst
 from trading_agent.telegram_sender import (
     send_alert, send_signal_with_buttons, start_polling, _pending_signals
 )
@@ -110,15 +111,17 @@ def run_scan(min_score=3.0, symbols=None):
         except Exception:
             info = {}
 
+        # ── P4: News catalyst (Finnhub → AlphaVantage → yfinance) ─────────────
         try:
-            news = get_news(sym, 3)
+            news_result = get_company_news(sym, count=10)
         except Exception:
-            news = []
+            news_result = {'articles': [], 'recent_count': 0, 'top_headline': '', 'provider': 'none'}
 
-        pillars = check_pillars(q, info)
-        catalyst = check_catalyst(sym, news)
-        pillars['P4_catalyst']  = catalyst['P4_catalyst']
-        pillars['news_summary'] = catalyst['news_summary']
+        catalyst = score_catalyst(news_result)
+        pillars['P4_catalyst']   = catalyst['P4_catalyst']
+        pillars['news_summary']  = catalyst['news_summary']
+        pillars['news_count']    = catalyst['news_count']
+        pillars['news_provider'] = catalyst.get('news_provider', 'none')
 
         total = pillars['score'] + catalyst['P4_catalyst']
 
@@ -132,9 +135,10 @@ def run_scan(min_score=3.0, symbols=None):
             'float_m':      pillars.get('float_m'),
             'total_score':  round(total, 1),
             'pillars':      pillars['pillars'],
-            'news_summary': catalyst['news_summary'],
-            'news_count':   catalyst['news_count'],
-            'risk_flags':   pillars.get('risk_flags', []),
+            'news_summary':  catalyst['news_summary'],
+            'news_count':    catalyst['news_count'],
+            'news_provider': catalyst.get('news_provider', 'none'),
+            'risk_flags':    pillars.get('risk_flags', []),
             'pillars_detail': pillars,
             'scan_time':    today_str,
             'decided':      False,
