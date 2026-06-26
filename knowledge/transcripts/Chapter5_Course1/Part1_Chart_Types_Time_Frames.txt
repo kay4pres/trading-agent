@@ -1,0 +1,302 @@
+# Segments: 17
+# Transcribed: 2026-06-26T19:06:40.047632
+
+[00:00:01] All right, so we're going to go ahead and jump in here with chapter 5 of day trading the basics.
+[00:00:06] This is where we're getting into technical analysis,
+[00:00:09] and this is the longest and most comprehensive section of day trading the basics, which makes sense.
+[00:00:16] Because as day traders, technical analysis is the biggest skill that you're going to need to master.
+[00:00:22] Of course, we're going to talk about some of the various components that are also important to being a successful trader.
+[00:00:28] Being able to use your trading platform, read level 2, order depths, time and sales, etc.
+[00:00:36] So all of that is coming soon, but I think it's really important that you get a really solid foundation in technical analysis.
+[00:00:43] So this chapter is split into multiple parts. The first part is on chart types and timeframes.
+[00:00:51] So the charts that I use are called candlestick charts.
+[00:00:56] There are many different types of charts out there, in fact, but what's really interesting is that the vast majority of active traders in the stock market specifically use candlestick charts.
+[00:01:10] We're developed in the 1700s in Japan to track rice futures, and they create a supply and demand chart.
+[00:01:19] And what's actually interesting is that the person who created the Japanese candlestick chart that we use today actually created two different types of charts.
+[00:01:28] One was it is the chart that I'm going to show you right now.
+[00:01:32] And the other is called the Hakanashi chart, which is an averaging chart.
+[00:01:37] So it's smooth.
+[00:00:00] out the price action by blending the average price over several candlestick periods.
+[00:00:07] Those aren't charts that are really used very frequently, although some traders will
+[00:00:13] periodically use them. But the reason they're not used as frequently is because it
+[00:00:18] does make it harder to read by themselves signals because it's blending the candlesticks
+[00:00:23] with average price. So as it turned out, his creation of the candlestick charts now
+[00:00:30] 300 years later are still being used by traders all around the world. Bar charts, those
+[00:00:36] were developed a little bit later, they didn't gain the same popularity as candlestick
+[00:00:41] charts. Line charts are another type of chart. And the problem with a line chart, which you
+[00:00:46] may already know, is that a line chart basically looks like this. So sometimes you'll
+[00:00:53] see on, you know, the news or CNBC, they'll track, you know, where's the Dow Jones
+[00:00:58] Industrial average today, and they'll show kind of a real-time line going up and down
+[00:01:02] like this. And what that line is getting its information from is the last price.
+[00:01:08] It's the last price of an order that went through. So it's just sort of ticking up and
+[00:01:14] down, up and down based on the last price. But those aren't the type of charts that
+[00:01:19] an active trader would use because they don't really help you truly
+[00:01:24] understand the sentiment behind the price action. And that's really what we're trying
+[00:01:31] to do. In fact, if we're going to get real, what we're trying to do is predict
+[00:01:36] the future.
+[00:00:00] Frater is to are able to predict the future.
+[00:00:02] We'll be the ones who make the most money.
+[00:00:04] Now I've found it's very hard.
+[00:00:06] For me to predict what a stock is gonna do in five weeks.
+[00:00:10] It's hard to predict what it'll do in five days.
+[00:00:12] It's hard, hard or it'll predict what it'll do in five hours.
+[00:00:15] Five minutes?
+[00:00:17] Now we're getting into a range
+[00:00:18] that's a little bit more reasonable.
+[00:00:20] So making an accurate prediction
+[00:00:22] of what a stock is gonna do over the next five to 10 minutes,
+[00:00:26] that really is at the heart of day trading.
+[00:00:29] So we've got our candlestick charts
+[00:00:32] and we read charts interestingly from right to left.
+[00:00:39] And the reason we do that is because we're looking
+[00:00:41] at the most recent price action first.
+[00:00:45] So I'll be showing you, of course,
+[00:00:47] as we go through this number of different examples
+[00:00:52] of candlestick charts.
+[00:00:53] So you'll really get a good sense of what this looks like.
+[00:00:57] So here we go, this is a candlestick chart
+[00:01:01] and the reason we read it right to left
+[00:01:03] is because on the right side of the chart here is today.
+[00:01:07] This is today's price.
+[00:01:09] So we naturally start by looking at the latest price
+[00:01:13] and then we look back at the historical price.
+[00:01:16] So we're reading it from the right to the left.
+[00:01:18] Now this is a daily candlestick chart
+[00:01:21] and what that means is that every single one
+[00:01:24] of these candles represents one day of price action.
+[00:01:30] One whole day.
+[00:01:33] Now in the next section,
+[00:01:34] I'm gonna break down the anatomy
+[00:01:36] of each one of these candlesticks.
+[00:00:00] but right now I just want to introduce what candlesticks are and the time frames that I use in my
+[00:00:06] trading. So with daily charts, basically for the entire history of daily charts, a daily chart
+[00:00:16] begins at 930 a.m., a daily candle that me that is, and it ends at 4 p.m. So the candle that's
+[00:00:26] created, whether it's red or green, of course, wouldn't be blue. But whether it's red or green,
+[00:00:30] the candle that's created is all of the price action that occurred from 930 a.m. to 4 p.m.,
+[00:00:36] which is our regular trading hours. What is interesting is that the entire pre-market session
+[00:00:43] from 4 a.m. until 930. And the after hours extended session from 4 p.m. till a p.m.
+[00:00:53] are not included on daily charts. That's by default that they haven't been included. And that's
+[00:01:00] because historically the volume that occurs outside of regular trading hours is so light that
+[00:01:09] you'll occasionally see one order creates a large flush. And the reason the stock is able to go so low
+[00:01:17] is because, of course, during regular trading hours, there are no, sorry, during pre-market
+[00:01:22] extended hours, there are no stop orders. And the good to cancel orders are not present,
+[00:01:28] which means the people that might have stopped out, their orders aren't even live on the market yet.
+[00:01:34] They are taken off the market. So if someone's really desperate.
+[00:00:00] to get in or out pre-market, they're going to typically get a worse fill on a thinly traded
+[00:00:05] stock. This has been historically true. And so for that reason, daily charts don't include
+[00:00:11] the pre-market highs or lows. And the after-hours highs and lows. However, in today's market,
+[00:00:18] that is beginning to change because of the level of volume that we see pre-market in after-hours.
+[00:00:26] When a stock meets our five pillars of stock selection and has a catalyst. Now, in the past five
+[00:00:32] years ago, I never traded pre-market. I didn't trade pre-market because there was nothing
+[00:00:37] to trade. And then the reason was because everyone waited until the 930 opening belt. And then
+[00:00:43] that changed during the pandemic. So now, at this point, I start, you know, quite early each day,
+[00:00:50] usually by seven a.m. I'm sitting here trading. So I suspect in time platforms will begin to change
+[00:00:58] the default settings on the candlestick charts to include pre-market in after-hours trading.
+[00:01:06] Now, I could be wrong that may not happen, but it wouldn't surprise me if it does happen. So
+[00:01:14] for the time being, you know, as we sit right now, these candlestick charts that are on the daily chart,
+[00:01:22] are representing the time from 930 a.m. Eastern Standard Time until 4 p.m. That is our window.
+[00:01:30] Now, I'm trying to recall here, um, if, and those of you.
+[00:00:00] guys tuning into this live class, can you remind me, did we already go over,
+[00:00:05] did I already tell you the story of why and sort of the moment where I started trading
+[00:00:10] pre-market and when that shift occurred? Because now as I'm trying to think back, I can't
+[00:00:16] remember if I mentioned that just the other day in a recap just conversationaly, or if I
+[00:00:23] actually covered it in one of the earlier chapters. So I like teaching these classes live,
+[00:00:31] so you guys are able to give me that feedback. So I see that, you know, I didn't truly
+[00:00:42] just market hours. Okay, so so this is what I'll say, just to make sure we're on the same page here.
+[00:00:51] I had this one slide in, it was chapter two part one about large caps versus small caps,
+[00:01:01] where I talked about, or it was, yeah, where I was talking about the types of
+[00:01:07] stocks that I trade and I introduced market hours. So when I started trading many years ago,
+[00:01:17] we had pre-market trading and we had regular hours and we had after hours. And for the most part,
+[00:01:24] there were, there was no volume pre-market. So you would have a stock that put out breaking news,
+[00:01:31] and most companies will put out breaking news during the pre-market session or after hours, which
+[00:01:37] historically,
+[00:00:00] was because it gave traders a chance to sort of digest the news before the next trading
+[00:00:05] session. But because we had pre-market after hours trading, if the news is really good
+[00:00:09] or really bad, people will just start trading it right away. This is especially true with companies
+[00:00:14] like Facebook, Apple, Amazon, Netflix, Google. They put out earnings at 4 p.m. 435 p.m.
+[00:00:20] and people are trading the reaction instantly. So five years ago, and for the entire career
+[00:00:26] leading up to that, and this was four years ago. In 2020, during the pandemic, the way I had
+[00:00:34] was trading up until that time was each day I would sit down around 9 a.m. I would sit down in 9 a.m.
+[00:00:40] and I would pull up my stock scanner at 9 a.m. And what I would typically see would be, you know,
+[00:00:46] a collection of stocks that were gapping up, just like this, except they had no volume. They all
+[00:00:52] had like 30,000 shares, maybe 40,000 shares, almost no volume. But I would go through each one of
+[00:00:58] these stocks, and I would go through my five steps, my five pillars, the stock selection.
+[00:01:02] I would check the price, I would check the percentage, it's up, I would check the relative volume,
+[00:01:06] which typically was very, very low. But I would look at the average daily volume to try to figure
+[00:01:11] out how much of volume it'll need to be five times above average. I would check the news
+[00:01:16] catalyst, and I would check the flow. I would create a watch list, and I would typically be saying,
+[00:01:21] okay, this is a stock that I'm watching. I would look at the previous day's clothes,
+[00:01:27] and I would look at the price that it's sort of showing right now, and the second the market opened,
+[00:01:32] I would be watching to place my buy order. In fact, I don't even think, I knew it that
+[00:00:00] time, how to trade pre-market. So I didn't trade pre-market ever, and then something changed.
+[00:00:07] During the pandemic and it was at the very beginning of the pandemic when we were all in this lockdown,
+[00:00:12] and there was an incredible amount of interest in the market. All of a sudden people were working from home
+[00:00:16] and they were not working at all, and so they were getting into trading. Anyway, and there was
+[00:00:21] some big influencers out there, what's this name, the guy from barstools who typically does
+[00:00:28] sports betting, all the sports games were canceled, so it's like, all right, I'm going to play the
+[00:00:32] stock market. So you have a lot of people that were coming in that really didn't have a lot of experience,
+[00:00:36] but in any case, we were all sitting here, you know, I remember one morning with the top five stocks
+[00:00:43] on watch, and I had one I really liked, and I was sort of waiting for that 930 opening bell,
+[00:00:48] the starting gates to open, right? And all of a sudden, the stock starts squeezing at like 928,
+[00:00:54] 929, right before 930, and I had my price level, I knew the price I wanted to buy at,
+[00:01:00] and it started coming up to it, and I was like, I'm buying, I bought, and all of a sudden I was like,
+[00:01:05] I'm in pre-market. I didn't even know my order would go through. I just all of a sudden I was in
+[00:01:10] pre-market, and then the stock ended up squeezing up at 930 as it typically would,
+[00:01:15] and I was like, wow, that was crazy. Guess what happens the next day, same thing,
+[00:01:20] next day, same thing, except it starts moving back earlier and earlier and earlier, because now
+[00:01:25] traders are trying to get the jump on that 930 opening bell, and within a couple of weeks,
+[00:01:32] as soon as a stock would have breaking news, if it was that 9 a.m. top of the hour,
+[00:01:36] traders were scrambling to be the-
+[00:00:00] first one to start trading it, and then people stopped waiting until the opening bill.
+[00:00:05] And so the headlines that come out, of course we have a lot of international companies
+[00:00:09] that are listed on the US market, so some of those will put out headlines in the middle
+[00:00:12] of the night. So right at 4 a.m. sometimes we'll see a stock that starts to pop up.
+[00:00:18] The only thing is that most retail traders can't trade before 7 a.m.
+[00:00:23] Most retail brokers in the US don't allow it. So I think it's just like customer support
+[00:00:27] hours or whatever. So for that reason, although there's some volume between 4 a.m. and 7 a.m.
+[00:00:33] that are that's generated by international, maybe European Asian traders who are trading the
+[00:00:38] US market with their brokers that allow it from that early hour, there's not usually as much
+[00:00:43] volume until 7 a.m. and then right at 7 a.m. what we typically see is a stock has been trading,
+[00:00:49] you know, from 4 a.m. to 7 a.m. volumes like this and at 7 a.m. boom, it spikes up.
+[00:00:55] And then you know what still happens at 9 30, boom, it goes up even higher. And so this is the trend
+[00:01:01] that we've seen now for for the last 4 years. And so as a result, I start trading essentially
+[00:01:06] as soon as that news headline comes out, if it's at 7 a.m. it's at 7 a.m. it's at 7 a.m. it's at 7 30
+[00:01:11] is 7 30. It's at 8 a.m. it's at 8 a.m. whatever the case is. And I know the headlines are usually
+[00:01:16] coming out at the top and the bottom of the hour. So of course, you already know that I'm using
+[00:01:20] my stock scanners to find these stocks in real time. These are these scanners are essentially like
+[00:01:26] my sonar or radar searching the market for things that are moving. So this morning, CING, which was
+[00:01:32] also my big winner yesterday, was popping up on the scanner. And this was interesting because
+[00:00:00] The headline on this stock was a European patent and so I think that explains why it popped up at 4am because European traders were jumping on it
+[00:00:09] So it then pulls back and then coming into 7am we see volume increase
+[00:00:14] So lighter volume between 4am and 7 right at 7am volume increases then look at 930 volume goes up even more
+[00:00:22] so
+[00:00:24] But it's even still currently when we look at a daily chart
+[00:00:27] The daily chart is only including the price action from of the the price action that occurs between the hours of 930am and 4pm
+[00:00:38] That's historically the way daily charts have been and they so they they remain for the time being at least
+[00:00:44] So in my trading, I'm always using a daily chart because the daily chart is the big picture
+[00:00:51] That giving me the context of this stock if you said hey, there's a great stock
+[00:00:56] And it's at five dollars. I'm gonna want context five dollars. Oh, is that good? It's a bad
+[00:01:03] Did it used to be at 50 or did it used to be at 50 cents so the daily chart gives us context and also when we look at the daily chart
+[00:01:10] We can start to develop and understanding of potential areas of support or resistance
+[00:01:17] So daily charts are of course
+[00:01:20] Very important however as day traders
+[00:01:23] We got to get a little more dialed in now the thing that's gonna be really interesting that you're gonna notice is that
+[00:01:28] The patterns that you're gonna learn the candlestick patterns. We see these on all time frames
+[00:01:35] So right now on this daily chart
+[00:00:00] You'll see we've got a big move up, a pullback, a move higher, a pullback, a pullback, a move higher, a pullback, a move higher, a pullback, a move higher, a pullback, a move higher, a pullback, a move higher.
+[00:00:10] This is the type of pattern that is a, this is a momentum pattern. This is the type of thing that will trade.
+[00:00:17] And in fact, if we were looking at this on a one minute chart, not a daily but a one minute chart, we would be watching these little pullbacks for an entry.
+[00:00:25] You're going to learn more about that when we get into the candlestick patterns, but what I want you to realize is that the patterns that you see are going to be universal to all timeframes.
+[00:00:35] Okay, so now let's look at the five minute chart.
+[00:00:38] So of course I use the daily chart, that's the big picture.
+[00:00:42] And then when I'm looking at intraday charts, an intraday chart is zooming into that daily candle, right?
+[00:00:49] So if we have a daily candle, that is a big green candle like this.
+[00:00:54] How is that candle created?
+[00:00:56] I mean, we obviously know it's a green candle, so it certainly means that the stock price went up.
+[00:01:03] The candle opened and it squeezed up and it closed.
+[00:01:06] But what if we could zoom into this candle?
+[00:01:09] If we zoom into this candle, we blow it up and we take one day and we break it into every single one of its five minute increments.
+[00:01:17] What we would see are these five minute candlesticks where the price is moving up.
+[00:01:22] And then probably the price moves down a little bit and then it moves back up.
+[00:01:27] And for all we know in the middle of the day it could have gone like this.
+[00:01:31] And then it could have rallied back up to close to the top.
+[00:01:34] We don't know without zooming in.
+[00:00:00] So we have to zoom in to this chart from the daily into the five-minute. So I use the five-minute
+[00:00:08] time frame. There are some traders. If they're specifically, if they're holding for longer periods
+[00:00:14] time, then I might hold for that might use hourly charts, or maybe a 15-minute chart,
+[00:00:22] most active day traders are not using those timeframes because they just move a little too slowly
+[00:00:28] and we're generally trading fairly quickly. So the longest intraday time frame that I use
+[00:00:35] is my five-minute chart. So the five-minute chart, what that means is that every one of these
+[00:00:40] candles is showing you the price action that occurred within five minutes. Now the market begins trading
+[00:00:49] at 4 a.m. So that means our first five-minute candle closes at 4 o 5 a.m. So every five minutes from
+[00:01:01] that point forward through the day, all the way till 8 p.m. Five-minute candles are opening and closing,
+[00:01:08] opening and closing. So they always open and close at a zero or a five, right? So 4 o 5, 4, 10,
+[00:01:15] 4, 15, 15, 4, 20, 4, 20, 4, 20, 4, 30, etc. Now the next shortest time frame I use
+[00:01:24] after the five minutes, sometimes I'm thinking, okay, the five-minute chart looks good,
+[00:01:28] but I need to get even more zoomed in. How can I get even more zoomed in? Boom, we go to the one-minute chart.
+[00:01:34] So now we're going to go to the one-minute. This now-
+[00:00:00] takes a five minute candle and breaks it into five, one minute candles, right?
+[00:00:05] So we're getting zoomed and zoomed in, and the thing that's really incredible here is that
+[00:00:10] the more you zoom in, the more detail you see behind the move, but the pattern can remain very
+[00:00:16] much the same. You'll keep seeing the same pattern, the same pattern. So here on a one minute chart
+[00:00:23] and don't worry if you don't know what all of these mean yet. This is all going to be covered
+[00:00:27] in this chapter, chapter five, technical analysis, so all of that's coming soon. These are
+[00:00:32] different technical indicators. These are the volume bars, which tell us how many shares of
+[00:00:36] volume occurred during each one of these candlestick periods. So these are the technical indicators
+[00:00:41] that we use and they all tell us something different that helps us make that prediction
+[00:00:45] of what this stock is going to do over the next 5, 10, 15 minutes. So in this case, again, we've got
+[00:00:51] that nice rally up. We've got a pullback, a rally up, a pullback, a rally up, a bigger pullback,
+[00:00:56] another rally up. And so this is the stock that I traded yesterday and you saw that I was up,
+[00:01:01] I think it was 12,000 dollars on it. So I got a number of trades trading this one minute chart
+[00:01:06] as it was squeezing higher. Now if we really want to get zoomed in, you could even go down to a
+[00:01:12] 10 second chart, a 10 second chart, there's six of them in each candle, 60 seconds in a one
+[00:01:19] minute candle. So you have six, 10 second charts. And so while this right here, one, two, three,
+[00:01:26] four, five, six represents basically one minute, it would be a green candle, a big green candle.
+[00:01:33] And sometimes traders would say, Ross, I don't understand why you bought it, eight-
+[00:00:00] in 20 cents, all I see on this is a big green candle, and I say, well, if you were watching
+[00:00:07] the depth of market, if you're watching the level two, what you would have noticed is that
+[00:00:12] it tapped a high of about 824, it dipped down about 812, and when it came back up, I bought.
+[00:00:19] I can't see that on the one-minute candle, and so that's when I realized,
+[00:00:23] especially in a teaching tool, I had to break the one-minute candle into even smaller segments
+[00:00:29] so you could better see it. So the 10-second chart for me is very much a teaching tool
+[00:00:35] to help show you these micro pullbacks that occur when a stock is experiencing big momentum.
+[00:00:43] I also will use them while I'm trading to a certain extent, but I don't spend all my time trading staring
+[00:00:51] at the level two, sorry, staring at the chart right here. I actually spend a lot more time
+[00:00:56] staring at the level two, which is this window here. So I use the chart to help me understand
+[00:01:04] context and to help me develop what I think is a low-risk entry point. And then once I take
+[00:01:10] that trade, and I'm about to take that trade, and I'm in that trade, I'm really focusing a lot more
+[00:01:15] on this window right here, which is showing me the current price action in the market. So you're
+[00:01:21] going to learn more about that as we continue on in this class, so don't worry.
+[00:01:25] All right, so this is a sort of, you know, fractals study where the firm here, the large shape of
+[00:01:32] the firm on the daily, is the same as the shape on the five-minute, which...
+[00:00:00] which is the same as the shape on the one minute,
+[00:00:03] which is the same as the shape on the 10 second, right?
+[00:00:06] And this is true in the financial markets
+[00:00:08] where these patterns repeat.
+[00:00:09] So once you learn the patterns,
+[00:00:12] it doesn't really matter what time frame you're trading them on,
+[00:00:14] your choice of time frame will be based on
+[00:00:17] ultimately your risk tolerance
+[00:00:19] and the financial instrument that you're trading.
+[00:00:22] I choose to trade short duration
+[00:00:25] where my average hold times are about five minutes long,
+[00:00:28] although some of them can be as short as a few seconds
+[00:00:31] if the trade works really, really well instantaneously.
+[00:00:35] So I think that that is the place to trade
+[00:00:38] because to me trading quickly reduces exposure risk,
+[00:00:41] you can get in, you can get out,
+[00:00:43] you don't have to overstay your welcome,
+[00:00:45] but if you choose to trade a slower moving time frame
+[00:00:47] like the five minute or the 15 minute or the daily,
+[00:00:50] it's fine and everything that you're gonna learn
+[00:00:52] will still apply equally
+[00:00:55] because you'll see these exact same patterns.
+[00:00:57] And the language of technical analysis carries through.
+[00:01:00] So sometimes traders will ask me, Ross,
+[00:01:02] how do you know when a candle stick is gonna close?
+[00:01:05] Cause sometimes I'll say, okay,
+[00:01:07] we've got 10 seconds left on this candle.
+[00:01:09] So the way I do that is by understanding
+[00:01:13] that pre-market opens at 4am,
+[00:01:15] and so therefore the first one minute candle closes at 401
+[00:01:19] and the first five minute candle closes at 405.
+[00:01:22] And so at the top of the clock, essentially,
+[00:01:26] is when each candle's closing on the one minute,
+[00:01:29] and then 405, 410, 415.
+[00:01:31] And so I keep a clock right down here
+[00:01:34] on the trading platform, that way I can see the exact time.
+[00:00:00] So right here I can look at this and I can say, okay, that's how many seconds we have left until this current five minute candle closes, which we'll close at 7.45.
+[00:00:10] So we've got 22 seconds left right now on this candle. And as that candle gets closer to closing, I'll continue to watch that time.
+[00:00:18] And something that is sort of interesting is that as these candles get closer to the end, so right now it's 10.49 and 20 seconds.
+[00:00:28] So the shape of the candle is still forming, right? Because this candle is the one minute chart include 60 seconds of price action.
+[00:00:38] So while we're watching the market, the candle is still forming. Now I'm watching of course also on my level two.
+[00:00:45] And I can see the price action. I can see the sellers. And then I glance and I see, oh, we've got 15 seconds left on this candle.
+[00:00:53] What shape is it going to look like when it finally closes?
+[00:00:57] Now if it closes near the top, that's going to naturally change the shape of the candle.
+[00:01:02] If it closes near the bottom, then that's going to change the shape as well. And the shape of the candle communicates a message.
+[00:01:10] You may not yet learn or know how to read the message that's being communicated, but I assure you that candle has communicated a very clear message to me.
+[00:01:22] I'll give you a hint. This is telling me that there's weakness in the stock.
+[00:01:27] This topping tail always communicates weakness because although the price moved higher, it wasn't able to hold those levels.
+[00:01:35] So we would call that a topping tail.
+[00:00:00] We're going to get into more detail on the anatomy of these candles in the next section.
+[00:00:06] So let's go ahead and jump into Chapter 5, Part 2.

@@ -1,0 +1,160 @@
+# Segments: 8
+# Transcribed: 2026-06-26T19:29:16.784856
+
+[00:00:01] Okay, so now we're gonna talk about top and bottom reversals, so a bottom reversal looks like a stock selling off
+[00:00:08] You've got a series of red candles typically consecutive red candles one two three four five
+[00:00:14] Maybe more you can have 10 15 red candles in a row and imagine if you had 15 red
+[00:00:20] Cams in a row that first candle that goes green would feel very significant
+[00:00:25] It feels like that could give us a really big pop and it typically does
+[00:00:30] Unless the reason we've had 15 red candles in a row is because the company has put out
+[00:00:36] Terrible news in which case if it does pop
+[00:00:39] The pop will be very short lived in fact most likely it'll be a bare flag for
+[00:00:45] Continued sell off lower and
+[00:00:47] inversely a top reversal is when you have a stock that has you know five 10 15 green candles in a row
+[00:00:52] And so that first candle that goes red feels like okay, this should reverse
+[00:00:57] Unless the stock has a really strong catalyst in which case
+[00:01:01] We're just gonna get that both flag up at the top for the next leg higher
+[00:01:06] so
+[00:01:07] These top and bottom reversals can be used as part of a counter trend trade
+[00:01:13] Trading strategy where you're trading against the trend you're trying to predict the change in direction
+[00:01:18] But they can also just be used
+[00:01:21] Sort of more for trend-based traders to acknowledge that okay
+[00:01:26] We're getting to a point where the trend is getting exhausted and I better look for possible
+[00:01:31] Versal signals, so I'm not still holding if the trend does change. There's a decision of deciding just to
+[00:00:00] get out when the trend shifts and then also to get out and to trade the other direction.
+[00:00:05] I will say that most beginner traders should not attempt to flip flop where you go from
+[00:00:11] long to short or short back to long because it's confusing to do that and if you end up
+[00:00:17] losing both long and short you will feel so I rate. But it feels like it should be
+[00:00:24] impossible and yet it's so easy to do. So it's better to just kind of pick one direction
+[00:00:30] and focus on that when you're learning. It's like when you're playing tennis you can be
+[00:00:33] left handed to right handed. You can't be both. You can try to be both but you're not going to be
+[00:00:37] good at both. You choose one and that's kind of the way it is with trading. One of the other things
+[00:00:42] that's interesting with trading is that if you're trying to trade both directions there are times
+[00:00:50] we're being short and being long are in two very separate areas and there's other times where
+[00:00:55] they overlap. So some people are still long while shorts are accumulating position and so if you're
+[00:01:02] trading both directions and you're in the overlap you're going to be unsure of which one you should
+[00:01:07] focus on. So a reversal pattern has the following characteristics. In a top or bottom reversal pattern
+[00:01:13] we look for a long series of consecutive candles that have increasing volume. Then the first
+[00:01:19] candle close in the opposite direction is a confirmation that the trend is shifting. In this pattern
+[00:01:25] we often look for a doji candle around the high or the low as the indicator that the trend is
+[00:01:32] getting exhausted and we're starting to get a tug of war inside this move.
+[00:00:00] This is an example, for instance, of a stock that had a higher float, but had a very strong
+[00:00:04] trend. It just kept going higher and higher and higher. You had momentary pullbacks, but this
+[00:00:10] thing just kept rallying. And then that candle at the top is our classic doji candle, right?
+[00:00:16] So you've got the top, the tapping tail, little bottom and tail. It's also the highest volume
+[00:00:21] candle of the day. So we would call that the volume top. The top, high of day, is also the highest
+[00:00:26] volume, that's a volume top. So now if you're short on this, your stop is the high and you're
+[00:00:31] shorting the first candle that gives you a confirmation, which is going lower. So the first
+[00:00:36] candle that make a new low versus the previous candle. Now if you're long, you would probably have
+[00:00:42] been in this for maybe down here, maybe you added in one of these areas around a half dollar
+[00:00:46] a whole dollar. And hopefully you're just taking off a little profit as it goes higher, still holding
+[00:00:51] a core position and waiting for the first real solid exit indicator, which for you wouldn't be
+[00:00:58] the first candle going red. It would actually probably be as this doji candle is forming.
+[00:01:04] So while this doji candle is forming, something that is worth noting is that when we're trading
+[00:01:12] and we're watching these patterns form in real time, these candles are still changing shape.
+[00:01:19] So if this is a one-minute chart, we know that the candle closes at the top of each minute.
+[00:01:24] So if we saw this was a starting till like a doji candle, but there was still 45 seconds left
+[00:01:31] in the candle. Then we would probably say, well, you know, let's give this a second because there's still
+[00:00:00] lot of time left in this candle. It might not end up being a doji. It might end up turning
+[00:00:04] into a green candle with a little bottoming tail in which case that's fine. So if you're
+[00:00:11] if you're telling you watching this in real time, you have to pay attention to the clock.
+[00:00:16] So if it's a one minute candle, it closes every minute. It's a five minute candle,
+[00:00:19] closes every five minutes, right? And those are four, four, five, four, ten, four,
+[00:00:24] fifteen, four, twenty, four, twenty, five, four, thirty, etcetera. So you're paying attention
+[00:00:29] to how much time is left in this candle. And then the shape that candle is beginning to form
+[00:00:34] as the time is running out, the likelihood becomes higher and higher that that will be the
+[00:00:39] shape that the candle takes. In which case, if it's not a good candle, you've got to get
+[00:00:44] out. So right here, you've got that candle with the high. And so if you're a long and you
+[00:00:50] saw with only 15 seconds left that this is going to be a doji, you probably just get out
+[00:00:55] and not not risk it. Now it's true, there was a little red candle back here and another one
+[00:00:59] here and they kept going higher. But generally, especially after a big extension like that
+[00:01:05] with these big green candles, we know we're a reverse so it's likely coming. So then this has
+[00:01:10] that doji at the top and then it sells up, pops up and then sells off more, a little bare flag,
+[00:01:16] a little bare flag, pops up but then kind of unwinds and just goes sideways. Now on this chart,
+[00:01:21] you'll see that I have my Bollinger bands indicator turned on. I only do that when I'm specifically
+[00:01:27] looking for reversal trades. So in this case, this probably was on a scanner, looking for stocks
+[00:01:33] that had 10 consecutive green candles in a row. It's a scanner that I used because
+[00:00:00] When you have 10 candles in a row, I look at the stock to see if we're going to get a reversal.
+[00:00:05] Either shorting it back down or buying the dip to come back up.
+[00:00:09] It's not usually a big winner, but you can sometimes chip away little base hits on these reverse types of reversal traits.
+[00:00:16] And so when a candle is fully outside the bowl in your bands,
+[00:00:19] and the price action is rising the top bowl in your band,
+[00:00:22] that also is an indicator that tells us we're very extended,
+[00:00:25] and a correction would be back down towards the midpoint of the bowl in your band,
+[00:00:29] or potentially, you know, if it really pulls back more all the way to the lower bowl in your band,
+[00:00:35] which would be an extreme reversal.
+[00:00:37] Here again, we've got this rally up, so halts, halts, dipping, ripping,
+[00:00:41] another halts, another halts, doji candle, fully outside the bowl in your bands.
+[00:00:46] Very high risk.
+[00:00:48] Hands up, red candle follows, it sells off, it dips back down,
+[00:00:52] and so that marks a top reversal.
+[00:00:55] The highest volume was actually on the red candle, not the high of day,
+[00:00:58] but still that definitely marks the high.
+[00:01:01] We sell off, we end up coming back down to the support of the nine moving average,
+[00:01:05] before slowly rallying back up,
+[00:01:07] but there's not very strong bullish patterns on this to be honest.
+[00:01:12] It kind of just goes very quickly, halting up,
+[00:01:16] and then sort of rallies back up here,
+[00:01:19] but not a lot of clean patterns.
+[00:01:21] So a stock that was just not quite as rational.
+[00:01:24] Now, when you're trading against the trend,
+[00:01:26] the MACD will still be positive.
+[00:01:28] So if you're taking a short here, you're trading against the MACD,
+[00:01:30] which is also riskier.
+[00:01:32] If you're taking, you know, a short up here,
+[00:01:35] the MACD is starting to turn over, so maybe you've got...
+[00:00:00] a little bit more of trend, a longer-term trend shift, but these are the extreme moments
+[00:00:05] that a lot of people like because it's instant resolution, if it works right away or it doesn't.
+[00:00:10] So now in this one we've got another long series of green candles moving up,
+[00:00:14] we get up to the top here and finally we end up having this higher volume red candle
+[00:00:20] where it kind of unwinds. That first candle that's red and in the second one that goes lower
+[00:00:25] is the candle under candle formation. So we've talked about candle over candle formations,
+[00:00:31] right? So candle one candle here, next candle is candle over candle. So candle under candle is
+[00:00:37] candle and the next candle goes lower. So the candle under candle is bearish,
+[00:00:42] candle over candle is bullish. So in this case that candle under candle formation is bearish,
+[00:00:48] and of course indicates that the trend which was already quite extended is beginning to reverse.
+[00:00:54] So now this is another one with that doji right there at the top. So very typical that we see
+[00:01:00] that doji forming right up near the top. Now this is Tesla, this is a higher price stock,
+[00:01:05] but just an example of the trend still getting exhausted as you can see in this particular instance.
+[00:01:11] So rally up, exhausted trend, little pullback, and then kind of rallies back up.
+[00:01:17] This is one of those stocks that does have more of the cult following. So with the cult following
+[00:01:22] there are more people that are watching it every day. However, some of them have very deep
+[00:01:27] pockets, and some of them will try to bully the market a little bit with really big orders.
+[00:01:32] Institutional traders will do this. So you've got to be careful if you're trying to day train a large
+[00:01:37] cap stock.
+[00:00:00] like Tesla because there's investors out there with far more capital than you that are also
+[00:00:05] competing to trade that same stock and to make money. Now this one BMGL big sell-off here, right?
+[00:00:14] This goes from $8 a share all the way down to like three bucks and then it bounces up off the
+[00:00:19] lows. Now I'm not sure if this was one of those foreign listed companies. I've talked about my
+[00:00:24] head and I don't know, but multiple halts going down and then finally it does eventually
+[00:00:29] spring off those lows. Halting down, halting down, halting down, halting down, halting down,
+[00:00:35] the first halting up is usually significant. So we have stocks that are halting often when they're
+[00:00:41] strong going up. They haul two, three times going up and then they'll halt going down. Usually
+[00:00:46] when they halt going down, they'll halt going down a number of times and then when they reverse
+[00:00:50] a halt going up. So if you can time the first change in direction for the halt going up,
+[00:00:55] you can usually get a nice bounce. This one ends up putting in a pretty decent bounce from like
+[00:00:59] $3.5 bucks. But again, this is higher risk stuff but it's a reverse impact. Here a strong
+[00:01:08] sell-off down here and then a bounce off the low, bottoming tail and then that squeeze back up.
+[00:01:14] Now in this case, is it really worth trading it? Honestly probably not, it's fairly light
+[00:01:19] volume but it just shows that those extremes that we experience from time to time. Here,
+[00:01:26] another sell-off sort of bottoms out here and then rallies back up, a little bounce off the low,
+[00:01:32] another strong period of selling off. How many rent counts do we have in a row? Two, four.
+[00:00:00] Number six, eight, first count to go green, gives us a little bounce.
+[00:00:04] So long series is selling off candles, first count to make a new high, gives a little bounce.
+[00:00:09] So if you're only looking for 10 or 15 cents a share, 20 cents a share, you know these
+[00:00:13] can work to give you that little bounce off the low, or the little short off the top.
+[00:00:18] The only problem with shorting, of course, is that you have to be able to borrow shares.
+[00:00:22] You can't do it in a cash account, you need to be a margin account, you can't do it in
+[00:00:26] Roth IRA, and if you have to borrow shares and you have to pay the low-cating fees, so that
+[00:00:30] cuts into your profitability.
+[00:00:32] So in that way, buying dips is going to be a little bit easier than shorting tops for
+[00:00:37] reversal traders.
+[00:00:39] Here we have a stock that, you know, rallied up, double top up here with the two topping
+[00:00:44] tails, sells off bounces, back up, sells off again.
+[00:00:48] Now we draw a kind of descending line here, and descending resistance, and it comes back down
+[00:00:55] here bounces right off that level of potential support.
+[00:00:59] That could be a spot to consider a dip, and you do get a nice bounce back up.
+[00:01:03] In this case, it's a higher price stock with bigger spreads.
+[00:01:06] So for me, probably not worth it, but it's something you could have considered.
+[00:01:11] Okay, so now you've seen a couple of reversal patterns, let's get into looking at horizontal
+[00:01:17] and ascending and descending support and resistance lines.

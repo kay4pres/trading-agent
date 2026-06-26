@@ -1,0 +1,158 @@
+# Segments: 7
+# Transcribed: 2026-06-26T19:19:36.140856
+
+[00:00:00] The weighted average price is an important technical indicator that we use on our intra-day charts.
+[00:00:05] So something that we pay a lot of attention to is the way the price reacts when it's very close to VWAP.
+[00:00:12] When we are above the VWAP, the bulls are in control, we're bullish.
+[00:00:16] And when we're below the VWAP, the bears are in control.
+[00:00:19] So when we have a swing from below to above, we cross over a VWAP breakout, a shift in control is taking place.
+[00:00:28] The shift is between the sellers and the buyers.
+[00:00:31] So traditionally, a lot of short sellers will trade stocks or below VWAP, they're bearish,
+[00:00:36] and they short them on pops, and they look for them to fade.
+[00:00:39] And they come back up towards VWAP, and they short them some more, and then they fade.
+[00:00:42] And then they short them some more, and then they fade.
+[00:00:44] They short it some more, and then they fade.
+[00:00:46] And they're kind of expecting that they'll just sort of unwind back down.
+[00:00:49] And often into the closing bell, people that have been holding it, give up,
+[00:00:53] and the momentum kind of falls apart.
+[00:00:56] That's not uncommon at all.
+[00:00:58] But what can also happen is what you see right here,
+[00:01:00] where suddenly the VWAP breaks, we get a price break right at this level,
+[00:01:06] and there's a surge of buying.
+[00:01:08] And now suddenly, the bulls have regained control.
+[00:01:12] And so now, as you have this shift in control, people who are short are forced to cover.
+[00:01:20] And long traders are jumping in, now that the long bias traders have taken control
+[00:01:24] in the bulls are in charge.
+[00:01:25] So you get that first big swing up, the first pullback, Rally's higher.
+[00:01:29] And now, anyone who is thinking I'm going to add sure, and maybe it'll come back down,
+[00:01:33] they're covering, and we continue to push higher, and we're seeing increases.
+[00:00:00] volume. So a view app breakout can be very powerful. However, often they occur later in the
+[00:00:07] day. So unless you're sitting here all day long, you may end up missing it. So the volume
+[00:00:12] way at average price is the average price of the stock over the course of the day factoring
+[00:00:18] in volume. So it is the most accurate average price of a stock. When the price is below,
+[00:00:25] we're below our average when the price above, we're above our average. So when stocks have
+[00:00:30] high relative volume, the view app will be an important place to watch because it's where
+[00:00:35] we're going to have a tug of war and it's a battle of control. Who's going to dominate? So right here
+[00:00:41] for instance, the stock squeezes up so quickly on such high volume that the volume way to average
+[00:00:47] price is like right underneath the current price. And then suddenly right here, we get a false breakout.
+[00:00:54] And it's a fairly dramatic one. The first one in a candle makes the new high,
+[00:00:58] so this is the place where we take that set up. Now remember, word of caution,
+[00:01:02] look how extended this is off the nine moving average. This is a stock that went from $2 to
+[00:01:07] six bucks in like two candles. So it's very extended, which does increase the risk of a false breakout.
+[00:01:13] The volume profile, however, is good. The MACD is certainly open. The news is just come out.
+[00:01:19] And so on this pullback right here, I might have gone ahead and taken that trade
+[00:01:22] on the first candle to make a new high. It pops up here to six dollars. That's the whole dollar.
+[00:01:28] It fails to break through that psychological resistance, which it needed to break in order to
+[00:01:32] retest the pre-market high. And the second it failed there, if it started to drop, I would have gotten out.
+[00:00:00] And I might be getting out with a small winner.
+[00:00:02] I might be getting out with a small loser,
+[00:00:04] but I'd be out before we get this big drop.
+[00:00:07] The big drop, high volume selling,
+[00:00:09] shorts, also added in position
+[00:00:11] because now we have a confirmed false breakout.
+[00:00:14] It sells off a bit more, the MACD flips to negative.
+[00:00:18] Then we kind of curl up,
+[00:00:19] and some traders might be watching this
+[00:00:21] for a potential break of the VWAP.
+[00:00:23] But the MACD is negative.
+[00:00:25] The moving averages are converging.
+[00:00:27] They're moving back together.
+[00:00:29] We had this big move,
+[00:00:31] and now things are kind of cooling off.
+[00:00:33] So this move right here, this is a trap.
+[00:00:36] It's a bull trap.
+[00:00:37] Byers get in looking for the breakthrough to VWAP
+[00:00:40] and they get a nasty rejection as shorts are stronger.
+[00:00:43] Short-to-ever reason to be more aggressive.
+[00:00:45] We already have one false breakout.
+[00:00:47] The MACD is negative.
+[00:00:49] We're clearly, we're selling off.
+[00:00:52] We're stair-stepping down, right?
+[00:00:53] This is a momentary pop-up,
+[00:00:55] but there's enough reasons for them to bet against it.
+[00:00:57] And so it pops up here, they add short,
+[00:00:59] and it fades even more.
+[00:01:01] So that's AVWAP rejection,
+[00:01:03] which would also end up looking like a fade off the VWAP.
+[00:01:08] This is another pop pullback.
+[00:01:11] It's tries to go higher in it can't.
+[00:01:13] So topping tails up here, that's a little bearish.
+[00:01:16] Sells off, below VWAP.
+[00:01:18] Sort of back above VWAP for a second,
+[00:01:19] but there's no pattern right in there that we trade.
+[00:01:22] It pulls back, MACD is negative.
+[00:01:24] Higher volume on the red candles.
+[00:01:26] It comes back up towards the VWAP.
+[00:01:28] I'm not buying that to try to anticipate a break of VWAP.
+[00:01:31] The volume profile has a red candle MACD is negative.
+[00:01:34] I'm gonna let it be.
+[00:01:35] Short sellers are gonna add to their short here.
+[00:00:00] right against the equilibrium price of the stock,
+[00:00:03] because even though it's near the equilibrium price,
+[00:00:06] our indicators are bearish, they're negative.
+[00:00:08] And so then you get that fade off the V-wap.
+[00:00:12] Now in this case, this stock is clearly trending down,
+[00:00:16] and so each time it pops up to the V-wap,
+[00:00:18] this is basically just an area to short against this level
+[00:00:21] for a fade back lower. It pops up to the V-wap,
+[00:00:24] and then short for a fade back down. We call it the V-wap fade.
+[00:00:28] So we break the V-wap, we come back up, we test it,
+[00:00:31] we fail to break above that resistance, and then we unwind and fade back down.
+[00:00:36] So a lot of short sellers, while some will short counter trend trading,
+[00:00:40] they'll short as soon as something is spiking up,
+[00:00:42] that's incredibly risky, because it goes up 500% their smoke.
+[00:00:47] But instead, some shorts who have a bit more wisdom
+[00:00:50] and have been in the market a little bit longer,
+[00:00:52] wait for stocks to be clearly trending down,
+[00:00:55] and then take short positions and just let the stock unwind.
+[00:00:58] The problem is you have to be more patient. You've got a hold longer.
+[00:01:01] You've got to be more patient for the V-wap test to occur.
+[00:01:04] You've got to hold it longer, but you can get that longer unwind.
+[00:01:08] Traders are looking for quick entries and quick exits.
+[00:01:10] Like me, we're buying here, buying here, and shorts that have that same desire
+[00:01:14] to have quick entries and exits are just going to try to short these extensions
+[00:01:19] and hope to cover quickly on drops back down.
+[00:01:22] But it's hard to do that, because you're trading against the trend.
+[00:01:25] You're truly, completely against the trend.
+[00:01:28] Here we have a rally, consolidation, a breakout, pull back.
+[00:01:32] First candle pops up, it doesn't make a new high,
+[00:01:35] sells off a bit more, pops up, dips, dips.
+[00:00:00] Dips down and now we're doing fades off the V-Web. We dip down. We come back up
+[00:00:06] But we can't break over V-Web too much selling likely the MACD is negative. We unwind a bit more
+[00:00:12] We come back up here and this time in the afternoon
+[00:00:15] It was able to regain the V-Web. Surprising, but it did broke 14 and is up going to 15 all the way up to 16
+[00:00:22] Goes from red on the day versus the open degree on the day, but then before the close it kind of unwinds again
+[00:00:28] It's not common for me to try to trade this setup later in the day
+[00:00:32] Now this is the V-Web fade again, and in this case you can see how we have that
+[00:00:39] Sort of strong drop-alope V-Web. It comes back up. It tests that level. You can't get above it. It's resistance
+[00:00:46] fades comes up again tries a second time
+[00:00:50] Can't do it comes up yet again and even more dramatic rejection
+[00:00:54] So what's happening? Why is that rejection getting more dramatic?
+[00:00:58] Well at this point, you've got a clear trend. We're stair stepping down and so every time it comes up to this level
+[00:01:04] While there may be some some buyers who are buying either covering shorts being afraid
+[00:01:09] You know, it's gonna curl and break or maybe some buyers looking for the break. There's more sellers in total
+[00:01:15] You get that big rejection more sellers in total and then buyers bail and boom you get that flush now
+[00:01:21] Not to get into more of the complexities, but if this was a stock that was not on short sale restriction
+[00:01:28] Then that would have fueled the people selling on the bid so bailing out pushing it lower. This one pops up and then selling up again as long as it didn't
+[00:00:00] short-sale restriction, you can get a really big drop there. On this one here we've got
+[00:00:05] the sub-bwap trap, so an early pop-up for in the morning, we sell off five in the morning,
+[00:00:11] six in the morning, seven a.m. we pop up, we pull back, 8 a.m. we squeeze up again, so here below
+[00:00:18] v-wap and it kind of squeezes through, so then we're above v-wap, we pull back, hold that level,
+[00:00:23] back above, back down to it, the opening bell pops, drops, now we're below v-wap.
+[00:00:29] We're bearish, we sell off, pops up for a second, but now we're also below our moving averages,
+[00:00:34] so we're below the moving averages, and we're below the v-wap, which is not what we want to see,
+[00:00:41] and then it comes back up right here, hits v-wap, right, so resistance, and this is probably
+[00:00:46] where short-sale restriction is going to fade, and then suddenly boom, 11 a.m. it rips through v-wap,
+[00:00:52] and it halts going up, then it dips, and rips higher, all we have to 7.50, all we have to
+[00:00:58] 8.29, if then comes back down, bounces right off v-wap, comes back up, tries to go higher,
+[00:01:05] a little rejection, comes back down, and now we're kind of dealing with like a little ascending
+[00:01:09] support trend line here, eventually it comes back down, bounces off of v-wap, bear flag,
+[00:01:15] and it goes lower and continues lower, so you can see how well this is trading around that v-wap.
+[00:01:21] Now if you didn't have v-wap on your chart, you would not have realized some of the very
+[00:01:25] significant levels here for bounces, or potentially for the breakout spots, so the v-wap is
+[00:01:32] such an important indicator. Here we've got this rally early, rallying up, pulling back, come
+[00:00:00] up, pulling back, popping up, flush down, so sort of supported the V-wap. Then we're
+[00:00:05] below it here. We pop up resistance of the V-wap, we sell off, we come back up, we kind
+[00:00:10] of rally back up, tapping V-wap once, twice, and that also becomes a double top, and then
+[00:00:16] a fade. So it's sort of multi, those two patterns kind of happening at the same time.
+[00:00:21] And this is often the case of the more that the V-wap is identifying the V-wap. The more

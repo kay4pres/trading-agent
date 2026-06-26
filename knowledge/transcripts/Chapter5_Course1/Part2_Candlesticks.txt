@@ -1,0 +1,595 @@
+# Segments: 27
+# Transcribed: 2026-06-26T19:08:13.923352
+
+[00:00:03] We're going to continue here with Chapter 5, Part 2.
+[00:00:07] This is going to break down for you the anatomy of those individual candlesticks.
+[00:00:12] And I'm going to share with you some of the most common candlesticks formations and what
+[00:00:18] they mean.
+[00:00:19] And if you, I'm laughing because I'm thinking about ancient Egypt and trying to learn
+[00:00:25] what these high-reglifts mean, and you need to have the Rosetta stone that's like the
+[00:00:31] translation between different languages.
+[00:00:33] So maybe someday, there'll be people who use, I should probably carve it in stone just
+[00:00:38] so it's really here for the long haul.
+[00:00:40] But what you're going to learn is that each one of these shapes, which on the surface
+[00:00:45] might seem obscure, or you might not understand them, have a significant meaning behind
+[00:00:50] them.
+[00:00:51] And so this is really what I mean, where you are learning a language.
+[00:00:56] This is the language of the financial market.
+[00:00:59] And once you know it, you can read it fluently, you can speak it, you can explain it
+[00:01:05] to people, you can probably teach it to someone.
+[00:01:07] It just takes a matter of time to really immerse yourself in the culture and the community
+[00:01:13] of people that speak the language, and you to just, you know, get the experience.
+[00:01:17] The time sitting here at your desk, looking at these charts.
+[00:01:20] So as active traders, we obviously rely heavily on stock charts.
+[00:01:24] And stock charts are a form of technical analysis.
+[00:01:27] And when we're looking for our very specific patterns, because these patterns, we've
+[00:01:32] come to recognize when we see this particular pattern, it means...
+[00:00:00] This is going to happen, think about weather patterns.
+[00:00:03] When you see a really dark cloud come over the sky,
+[00:00:07] you know what's going to happen next.
+[00:00:10] You develop this relationship of seeing something,
+[00:00:14] a reaction to it, and then sort of knowing this,
+[00:00:18] this was going to follow this.
+[00:00:19] So these are related, they're connected.
+[00:00:22] One of the things that is really important to me
+[00:00:25] is that I try to keep my charts very clean.
+[00:00:27] I try to keep them very simple
+[00:00:29] because I don't want to over complicate it.
+[00:00:32] There's such a thing called analysis paralysis
+[00:00:34] where you add so many technical indicators to your chart
+[00:00:38] that you get yourself lost.
+[00:00:40] You start getting mixed signals.
+[00:00:42] So often it's best to rely on a much smaller handful
+[00:00:48] of indicators that are well-respected
+[00:00:52] that are used by potentially millions of traders
+[00:00:55] around the world and that will give you the most clear signals.
+[00:00:59] I like to think that candlestick charts
+[00:01:02] give fairly clear buy and sell signals.
+[00:01:06] And sometimes I compare it to traffic lights.
+[00:01:09] When you're driving through town or through the city
+[00:01:12] or whatever, and you see a green light,
+[00:01:14] you know exactly what that means.
+[00:01:16] Everyone knows what that means.
+[00:01:19] It is the universal language of traffic law, right?
+[00:01:23] The rules of the road.
+[00:01:24] You know what an orange or yellow light means.
+[00:01:26] You know what a red light means.
+[00:01:28] These have become ingrained in our language, essentially.
+[00:01:34] And the reason that they work is because everyone uses them.
+[00:00:00] So if all of a sudden you put traffic lights out and you changed all the colors and you change the orders.
+[00:00:05] Instead of being you know up and down, you just made it in a circle and there's four colors.
+[00:00:09] There's pink, there's purple, there's, you know, cyan, the kind of light green or blue.
+[00:00:16] And then there's a, I don't know, black, you know, something like that.
+[00:00:20] What would you do? You would have no idea what to do, right?
+[00:00:24] So the reason traffic laws work is because everyone respects them.
+[00:00:30] If no one used stop signs, people would be blowing through, they'd be crashing.
+[00:00:33] But you know what's really interesting.
+[00:00:35] During the pandemic, a lot of new traders came in to the market and it began seeing some unusual price action.
+[00:00:41] And I think the reason this was happening was because new traders weren't seeing the stop signs.
+[00:00:47] And so they would blow right through the stop sign, which is to say, they would buy it a place that pretty much everyone knows.
+[00:00:53] Everyone knows is not the place to buy.
+[00:00:56] And then we would be shocked because we'd be like, the stock is still going up.
+[00:00:59] This makes no sense at all.
+[00:01:01] And it would throw a lot of traders off.
+[00:01:03] So, so that seems to have subsided a bit, which is good.
+[00:01:09] But it was something that I attributed to having so many newer traders in the market that they just didn't understand kind of the,
+[00:01:16] the rules of the market and then that created this sort of inconsistent price action,
+[00:01:21] especially on certain types of stocks, like the large cap stocks.
+[00:01:25] So, let's break down the anatomy of each individual candlestick.
+[00:01:30] Again, it doesn't matter what time it occurs on.
+[00:01:32] Daily, five minute, one minute, ten second.
+[00:01:35] The candle is going to be the same, the anatomy is the same.
+[00:00:00] no matter what. So a candle is going to communicate four pieces of information. You have the
+[00:00:07] open, which is the bottom of the body and so terms. So this is the body and these are upper
+[00:00:16] shadows, lower shadows, or also called upper candle wicks and lower candle wicks. So you've got
+[00:00:22] the real body of the candle, the body and then the upper and the lower candle wicks. You've got the
+[00:00:27] open at the bottom of a green candle and the clothes is at the top. So a candle needs to be
+[00:00:33] colored based on whether it went up or down because otherwise you wouldn't be able to understand
+[00:00:38] where was the open and where was the clothes. The only thing different about a red candle is that the
+[00:00:43] open at the top and they close at the bottom. So some people who are colorblind will have the
+[00:00:50] green candle be solid and the red candle will be hollow. So you've got more distinct like black
+[00:00:56] and white, just better contrast. So you could choose as you'd like. If you want to go totally unusual
+[00:01:03] and just do completely different colors, that's okay, too. But this is what's of course
+[00:01:08] a standard. So this is the anatomy of an individual candlestick. And if we pull up an actual
+[00:01:15] live chart, as I indicated before, what's very interesting is that you get to actually sort of
+[00:01:22] see these candlesticks forming in real time. So we'll do the 10 second chart so you'll see the
+[00:01:27] candlesticks opening and closing. So this candlestick is closing right now and a new candlestick
+[00:01:33] just opened. It opened? It's green.
+[00:00:00] right? I zoom in here even more if you want. So it's currently got and then that close.
+[00:00:05] This one opened and now it's moving down. So you could see, and of course, this is a 10 second
+[00:00:10] chart. So these candles are opening and closing and very quickly. They don't have a lot of time
+[00:00:16] for the price action to move. All those you could see from this candle back here,
+[00:00:20] 10 seconds was enough for it to drop actually quite a bit. So as each of these candles open and
+[00:00:27] close, when they close, they're creating a permanent record of the price action of that candle.
+[00:00:35] The high, the low, the open and the close. All right. So we'll jump back out of that.
+[00:00:42] We'll jump back into the slides here. So the size of the candle body communicates sentiment.
+[00:00:51] The larger the body, the stronger the sentiment, right? That makes sense. If you have a really
+[00:00:59] huge tall green candle, that communicates a lot of strong sentiment. And if you have a really huge
+[00:01:06] red candle, that communicates strong sentiment as well. The opposite direction, of course.
+[00:01:12] What a candle it tells us is that there was a battle. So that upper candle wick or that lower
+[00:01:18] candle wick shows that while the price dropped in the case of a lower candle wick, it came back up.
+[00:01:25] So sellers brought it down and buyers pulled it right back up. In the case of an upper candle wick,
+[00:01:31] the price squeezes, but sellers pull it back down. So that results in the sentiment that an upper
+[00:01:37] candle wick shows that there's a lot of difference between the lower candle wick and the lower candle wick.
+[00:00:00] the wick is bearish because they showed the sellers were stronger and pulled the candle back
+[00:00:06] down by the end of the candlestick period. Naturally, a ten second candle wick is not going
+[00:00:14] to carry the same weight as a one minute or a five minute or a daily candle wick. These happen
+[00:00:22] and have such relatively, it's such a short period of time with such a small amount of volume,
+[00:00:29] relatively speaking, that these just don't carry the same level of significance as a one minute
+[00:00:36] wood carry. I ultimately a one minute would be six times more significant and a five minute
+[00:00:42] would be 30 times more significant in theory, right? Just based on multiple. And then the daily
+[00:00:49] would be that exponentially more significant. So when I look at this chart, for instance, usually
+[00:00:55] the way I do my technical analysis is I start with the biggest timeframe, which is the daily
+[00:01:00] and I break down the levels and we'll talk about how to do that as we continue. And then I look at the
+[00:01:04] five minute and we break down the levels of this as well. And then we get into the one minute in
+[00:01:11] the ten second. So really, it kind of is like a hierarchy where the the daily should look good,
+[00:01:17] the five minute should look good, and then it's worth considering the one minute in the ten second.
+[00:01:21] If only the ten second looks good, and this is bad, and this is bad, and this is bad,
+[00:01:27] it's not realistic to expect much will work. You really need the timeframe to align.
+[00:01:34] So we call it multi time frame alignment.
+[00:00:00] When all time frames are giving you that positive signal that yes, this does look good.
+[00:00:06] So an upper candle wick is bearish and a lower candle wick is bullish. So now I want to present you
+[00:00:12] with important candlestick shapes that you're going to need to learn. These are, let's see,
+[00:00:17] two, four, six, eight, of probably the most important letters of the alphabet of technical analysis.
+[00:00:26] These, this is the, the critical components of learning the language. So we're going to go through
+[00:00:30] them one by one. The long body candle, as you already know, shows extreme strength in the market.
+[00:00:38] The price opens at the bottom of the candle and then surges and closes at the top of the
+[00:00:43] candle. It's a very bullish indicator. This is the same of course with a long body red candle
+[00:00:49] except that it's an extreme sign of weakness. So this is what long body candles look like.
+[00:00:54] Usually a stock maybe we'll start moving up on sort of smaller volume and, and smaller candles
+[00:01:02] and then as it moves higher, the candles get bigger and bigger. So let me present you with a scenario.
+[00:01:08] What would it mean right here? And what would you expect if you were seeing something like this
+[00:01:15] occurred? What are you kind of thinking is going to happen next? Now some of you may be
+[00:01:22] contrarian and you think, oh, this is extended. It's going to reverse. But what I see is that each
+[00:01:27] candle is getting bigger than the last. This is a really strong sign of bullish sentiment.
+[00:01:35] Now what if I drew it a little differently? What if I-
+[00:00:00] like this, and like this, and like this, and like this, and then like that.
+[00:00:07] What would that mean to you?
+[00:00:09] Now I think the contrarian would be right.
+[00:00:13] The sentiment and the trend is becoming exhausted.
+[00:00:17] The candles are getting smaller as they're going higher.
+[00:00:20] And in fact, they're culminating at the top of the candle that opens and closes it
+[00:00:24] almost the same price, which is showing an ultimate battle.
+[00:00:28] There's indecision up here.
+[00:00:30] You're going to learn that there's a name for that candle.
+[00:00:32] I'll teach it to you in just a second.
+[00:00:34] So long body candles communicate sentiment,
+[00:00:37] and seeing back to back long body candles getting bigger and bigger and bigger,
+[00:00:42] communicates even more sentiment through a multi candlestick pattern.
+[00:00:47] Just one individual candlestick certainly that communicates something,
+[00:00:51] but then when you have three in a row, that's a pattern.
+[00:00:54] And that's communicating an even stronger message.
+[00:00:57] So we have the individual candlesticks and then the way they align together
+[00:01:01] to further reaffirm the position that they may be already indicating.
+[00:01:07] So beyond long body candles, and here's a couple right here.
+[00:01:11] This is a great example on a five minute chart, where you had a stock that was sort of more or less
+[00:01:16] trading sideways, and then all of a sudden look at this.
+[00:01:20] Big long body candle, one, and a second one follows it.
+[00:01:25] So that is really strong sentiment.
+[00:01:28] Now some might say, how do I exactly measure a long body candle?
+[00:01:33] How big does it need to be?
+[00:01:36] I would say that...
+[00:00:00] visually it should stand out. If it doesn't stand out to you visually, then it's probably not
+[00:00:05] big enough that other traders would really notice it. So these candles to me when I look at them,
+[00:00:10] they're bigger than all of the candles that preceded them, right? So you've got sort of these
+[00:00:16] small candle, small candles, and then boom, that's a big candle. And that's that to me is important
+[00:00:22] for a long body candle. So you can see right here, these of course, small, small, small, and then
+[00:00:27] these are getting bigger and bigger, that's what you want to see. So now let's go into short body
+[00:00:39] candles. So a short body candle, in contrast to a long body candle, it communicates just less
+[00:00:47] sentiment, you know, short little, stubby little candles, eh, you know, stuff's kind of nothing,
+[00:00:56] you know, the problem is when they occur up here, they send a real message, right?
+[00:01:03] And that's because of context, five long body candles in a row, and then a tiny little short
+[00:01:09] body candle, that is sending a message. But if you have, in contrast, let's just say, you know,
+[00:01:16] a stock that's more or less doing, you know, the, the barcode, then usually when it's barcoding,
+[00:01:23] these are all small body candles, and they really don't mean anything at all. So small body
+[00:01:30] candles in the context of sideways consolidation don't carry as much meaning. And this is actually
+[00:00:00] something that's important to learn is that generally speaking, any of the candlestick
+[00:00:04] shapes, that we, a lot of the candlestick shapes, not any of them, but a lot of the candlesticks
+[00:00:10] we talk about don't carry a lot of weight when a stock is not trending. So when a stock
+[00:00:17] is range bound, your candlesticks don't carry the same weight. They're not communicating
+[00:00:24] sentiment, because the very fact the stock is going sideways is already telling us everything
+[00:00:29] we need to know. It's when a stock is experiencing momentum like this that we're really
+[00:00:35] trying to make the prediction of is this going to keep going higher and I should buy it
+[00:00:39] here or is it going to reverse? And I think in this case, we've got some good reasons to
+[00:00:44] believe it's going to reverse because the candlestick are getting smaller as the trend
+[00:00:48] gets higher. And in this case, it looks like we've got a bit more room for what is potentially
+[00:00:53] turning into a short squeeze, a true parabolic move. Not to say that that doesn't carry
+[00:01:00] risk to trade because it's certainly volatile and extended, but there will be ways to
+[00:01:03] trade this using micro pullbacks as you're going to learn. So short body candles like this
+[00:01:08] one here at the beginning of this sell-off or this one here at the bottom just don't carry
+[00:01:13] as much meaning. Now a doji candle is a fascinating candle where the open and the clothes are
+[00:01:21] more or less at the same price. So if we zoom in on this candle right here, we'll just erase
+[00:01:30] this and we'll zoom in on it. So we had our nice green candles and then they start getting
+[00:01:35] smaller and smaller.
+[00:00:00] and smaller until they culminated in a doji.
+[00:00:05] The open and the clothes are the same.
+[00:00:07] Now, it's very, very rare to have a candle like this,
+[00:00:11] where it opens and closes at the same exact price,
+[00:00:15] and during that period, didn't go up or down.
+[00:00:19] You really don't ever see that,
+[00:00:22] because within the, I mean,
+[00:00:24] maybe you would see it on a 10 second chart,
+[00:00:26] a stock that had very light volume,
+[00:00:28] but even on a one minute chart,
+[00:00:30] it's very rare to see that.
+[00:00:31] But opening and closing in the same price
+[00:00:33] is not uncommon, and usually when it didn't cases,
+[00:00:35] there's a battle.
+[00:00:36] So buyers brought it up, sellers pulled it back down,
+[00:00:40] and then they kind of balanced out right in the middle.
+[00:00:43] And so if this is communicating a strong trend,
+[00:00:46] there's no doubt that this is communicating the trend
+[00:00:49] is beginning to shift,
+[00:00:51] and that there's a battle going on,
+[00:00:53] because let's say this is a one minute chart.
+[00:00:56] So if that's a one minute chart,
+[00:00:57] it consists of one, two, three, four, five, six,
+[00:01:02] 10 second candles.
+[00:01:03] So let's try to predict
+[00:01:05] or visualize what it looked like.
+[00:01:07] It opened here, and let's just say it squeezed up,
+[00:01:13] and then it opened at the top,
+[00:01:15] and it sold off all the way to the bottom,
+[00:01:17] and one big candle, right?
+[00:01:20] And then maybe it bounces back up a little bit,
+[00:01:24] and then it comes back down a little bit,
+[00:01:28] and then once again, back up a little bit,
+[00:01:31] and then back down to close,
+[00:01:34] oops, more or less where it started.
+[00:01:36] Screwed up that last one, beep.
+[00:00:00] get the idea. So the net is that we opened, and we closed, we hit a high, we hit a low,
+[00:00:07] and but it didn't touch that. So we've got this candlestick shape. So you could zoom in on any
+[00:00:12] candle you want. I mean, you could zoom from a 10 second to a one second if you really want to,
+[00:00:17] but they're not that there's really any point in doing that, but you could. You could zoom from
+[00:00:21] one second to a millisecond. I suppose, right? You could always get more granular, especially in a
+[00:00:26] thickly traded market. There's just a point that it wouldn't really be worth it. But nonetheless,
+[00:00:31] a candle of indecision is something to pay really close attention to when you have a trend that is
+[00:00:39] been really strong and you're thinking that maybe there's going to be a shift. And so what's extremely
+[00:00:44] common is that we'll see for instance, strong trending up resulting in a doji, a pullback like this
+[00:00:53] resulting in another doji and another, oops, another move back higher, resulting in another doji.
+[00:01:01] So you keep seeing these doji's marking out the highs and the lows that is very common.
+[00:01:08] Now, what's also interesting is that it's very common that in here, you'll see a lot of doji's.
+[00:01:14] So what does a doji mean in this area? Well, remember, a doji is a candle of indecision.
+[00:01:21] So a doji during a period that's already range bound, it means nothing. It's a candle of indecision
+[00:01:29] during a period that's already indecisive. So it has no bearing. It really doesn't matter. A small body
+[00:01:35] candle, a doji, and there's several different...
+[00:00:00] different types of doggies that I'm going to explain,
+[00:00:02] but they really don't have any bearing at all.
+[00:00:04] So it's only when we're in a trending market
+[00:00:08] that these carry significance and weight.
+[00:00:12] So let's talk about the four types of doggies.
+[00:00:16] Number one, and let me just scroll down here.
+[00:00:18] We've got, you've already learned about our standard doggie
+[00:00:22] right here.
+[00:00:23] So our standard doggie is basically an open and a close
+[00:00:27] at the exact same price with sort of a matching high and low.
+[00:00:32] So you see how we have, it sort of looks like,
+[00:00:35] more or less a cross.
+[00:00:37] So I'll just draw it right here.
+[00:00:39] This is our standard doggie right there.
+[00:00:44] Now the next one that I'll teach you
+[00:00:46] is probably the easiest to understand.
+[00:00:49] And it's a long, legged doggie.
+[00:00:52] Still open and close at the same price,
+[00:00:54] but the candlesticks are bigger.
+[00:00:56] So that one is this one on the far right,
+[00:00:59] the long legged doggie right there.
+[00:01:00] So see how you've got just a longer upper candle,
+[00:01:03] a longer lower candle, it just means there's a bigger battle
+[00:01:07] that's going on, which isn't, it's just,
+[00:01:11] it is what it is.
+[00:01:11] There's a bigger battle that's occurring at that price.
+[00:01:14] A smaller doggie shows the range is a bit more compressed,
+[00:01:19] which is probably gonna make it easier to continue to trade
+[00:01:23] that stock.
+[00:01:24] When you see a long legged doggie,
+[00:01:27] it indicates that there's big swings
+[00:01:30] and it's gonna be hard of a man's risk moving forward
+[00:01:33] because it's two perhaps two volatile.
+[00:01:37] Now the next,
+[00:00:00] two types of doggies are gravestone doggies and drag and fly doggies. A gravestone doggie
+[00:00:09] has this name because it's got a flat little bottom right there at the open close and then
+[00:00:14] this taller wick almost as if it's a gravestone in a cemetery, right? So it's got an ominous name
+[00:00:20] you see a gravestone doggie at the top of the move. Let's think about the anatomy of what's
+[00:00:26] happening on that candle. That's a very interesting candle to me. So the price has been moving up.
+[00:00:32] We've got you know green green long body candles whatever and then right here we have this
+[00:00:38] candle that opens. So remember with these candles we open at the bottom we close at the top.
+[00:00:43] We open at the bottom we close the top. So basically we keep moving and every now and then
+[00:00:47] they'll be a tiny little candle wick but those don't really mean too much. So we open we close.
+[00:00:53] We open right here we squeeze up so the candles looking really, really, really good and then
+[00:01:01] we drop all the way back down. Now it doesn't really matter if it's green or red because with this
+[00:01:08] tells us that sellers have already come in. It's a gravestone doggie, it's an ominous reversal
+[00:01:15] indicator. Confirmation will be if the next candle pushes lower. One of the things that you're
+[00:01:22] going to learn about is a pattern called candle over candle. So candle over candle. A candle
+[00:01:33] over candle pattern occurs when you've got a candle and the next one moves up.
+[00:00:00] higher, and then it moves higher and higher and higher. So every time a candle moves higher than the previous candle, it's a candle over candle, over candle, over candle, over candle, under candle. So, candle over candle is great, candle, under candle, not so great, at least if you're a long bias trader. Now we're changing trends.
+[00:00:26] We're starting to pull back. And at this point, I'm not going to be a buyer, while this is pulling back until the trend changes, candle over candle. Now we've got to change.
+[00:00:39] So the two spots where we're changing direction is right here and right here. Right now it's possible there could have been another one back here. Let's just say for the sake of argument, we could have changed directions right there before the reversal backup.
+[00:00:52] So, but these are very important spots to watch. When a stock has strong momentum, I sort of think of it as, if you think of, you know, the ocean and these sort of waves that come in. When the tide is coming in, each wave goes up and pushes a little further than the last and then it comes back. But when it comes back, it doesn't go back further than the last, because it keeps rolling a little higher, a little higher, a little higher.
+[00:01:17] And with candlestick charts in a trending market, it's very much the same that they keep pushing a little higher, a little higher, a little higher.
+[00:01:25] And then when you have this candle under candle, now the tide's coming back out.
+[00:01:30] So we don't want to Bible the tide's rolling out. We want to wait for that next wave to roll up, right, to make that first trend.
+[00:00:00] sort of change and that's the spot to watch.
+[00:00:02] Candle over Candle, Candle under Candle.
+[00:00:04] We're going to come back to these two concepts shortly.
+[00:00:07] So now you know the grapes don't doji.
+[00:00:09] It's an ominous candle, it's not one that we like to see.
+[00:00:12] The dragonfly doji is actually showing a bit of optimism,
+[00:00:17] a bit of optimism, at least depending on when it occurs.
+[00:00:22] So let's look at the whiteboard here.
+[00:00:25] So if this opened right here, it opened
+[00:00:29] and it sold off, right?
+[00:00:32] And then it came right back up.
+[00:00:35] It's still showing some indecision
+[00:00:38] because it shouldn't have dropped down that far, right?
+[00:00:42] What we would have preferred is that this candle
+[00:00:43] had just continued higher like that.
+[00:00:45] So it chose not to do that and instead, in fact, sold off.
+[00:00:50] So sellers did come in and that created some downward pressure.
+[00:00:54] But buyers ultimately were stronger.
+[00:00:58] And by the end, had bid it all the way back up.
+[00:01:02] And so sometimes we will see a dragonfly doji
+[00:01:05] in the middle of a run-up, which is kind of like
+[00:01:08] a short little shake out, shaking out the weekends
+[00:01:12] during the GameStop saga.
+[00:01:15] I learned a lot of new phrases.
+[00:01:16] You've got diamond hands, you've got paper hands.
+[00:01:18] I have lettuce hands.
+[00:01:19] These have no structure.
+[00:01:21] I'm too afraid to hold anything.
+[00:01:23] So I've got these weak little lettuce hands.
+[00:01:25] And it makes me a great day trader.
+[00:01:27] It doesn't make me good at yellow trading
+[00:01:29] where you buy and hold with diamond hands forever.
+[00:01:32] But in any case, people with weak little lettuce hands
+[00:01:34] like mine might get shaken out here for a moment.
+[00:00:00] And then boom, we rally back up.
+[00:00:03] And in fact, short sellers might go short here
+[00:00:06] because they think, oh, trend is exhausting.
+[00:00:09] But buyers did buy it back up by the end of that candle
+[00:00:13] and then now we get another big push higher.
+[00:00:16] So a dragonfly doji, you know, it's of the three or of the four.
+[00:00:23] It's the best case scenario doji you could see
+[00:00:26] because it doesn't have the topping tail.
+[00:00:29] Remember that the topping tails communicate bearish sentiment
+[00:00:33] because the price went up and was pushed back down.
+[00:00:35] So this just communicates the bearish sentiment in the fact
+[00:00:38] that price dropped, but it finished back higher.
+[00:00:41] So a dragonfly doji is not terrible.
+[00:00:44] And then in the context of a downtrend
+[00:00:46] where the market is selling off like this,
+[00:00:49] a dragonfly doji is communicating almost the same
+[00:00:53] as the gravestone doji accepted in reverse.
+[00:00:57] The buyers are already coming in.
+[00:00:59] They're already coming in and sending the price back up,
+[00:01:02] which means as soon as this candle opens,
+[00:01:04] if it pushes just a little higher, we already have what?
+[00:01:08] Candle over candle occurring.
+[00:01:10] So a dragonfly doji, when it occurs in the downside,
+[00:01:14] can be the beginning of a reversal.
+[00:01:16] Just as a gravestone doji, when it occurs to the upside,
+[00:01:20] can be the beginning of a reversal coming back down.
+[00:01:24] So those are our four types of doji.
+[00:01:26] We've got standard doji, long leg doji, gravestone doji,
+[00:01:30] and the dragonfly doji.
+[00:01:34] Okay, so you've learned quite a bit here.
+[00:01:35] And this is actually a nice example where...
+[00:00:00] look at these candles getting bigger and bigger and bigger and bigger and bigger culminating in
+[00:00:05] a doji at the top. So finally we got to the point where the trend was exhausted. You had this big
+[00:00:11] candle while some people would have said it's getting extended. It kept pushing higher,
+[00:00:15] kept pushing higher, kept pushing higher. And once you have that doji, that is your clear exit signal.
+[00:00:21] So if you were on the highway and all of a sudden you came up to a traffic light,
+[00:00:25] this right here is that yellow light. It's saying slow down, buddy. We're about to turn red.
+[00:00:32] So this is your fair warning to get out. Get out right there when you see that doji
+[00:00:38] candle because what's coming typically is a red candle. Now this is an indicator of a reversal
+[00:00:44] and the red candle confirms it when it goes candle under candle. It is possible that it could
+[00:00:50] just be shaking out paper handed lettuce traders, but most likely it's not. Most likely it's not.
+[00:00:57] Usually it does result in a true reversal. Now the next candlestick shape is called a hammer
+[00:01:05] candlestick. A hammer candlestick can occur at the bottom of a cell-off or a pullback.
+[00:01:12] When this candlestick shape occurs during sideways consolidation, as with others, it's pretty
+[00:01:18] much meaningless. But at the bottom of a cell-off or a pullback, it indicates a bottom
+[00:01:24] getting hammered out. The fact that the price dropped during the candlestick period and then
+[00:01:29] came back up to close, you know, the top is significant. So let me show you what the shape is and then
+[00:01:34] I'll explain this more. So this is what they...
+[00:00:00] camera looks like. So the stock is selling off selling off. It's like a dragon
+[00:00:04] fly doji. It encompasses a dragon fly doji, but it goes a step further and
+[00:00:10] actually has the little small body up here at top. So it's hammering out the base,
+[00:00:14] kind of like a mallet. See how it looks a little bit like a mallet? So the low is the
+[00:00:19] new base. The stock sold off and then buyers rallied it back up and it even
+[00:00:24] closed strong. Now if this could close red and it's still a hammer candle, because of
+[00:00:30] the bottoming tail that is bullish. The bottoming tail is bullish. If it's a red
+[00:00:35] candle, it indicates there was still some weakness. If it's a green candle, it
+[00:00:39] confirms that the reversal is already beginning. And then the candle over
+[00:00:43] candle is just further reaffirming now. So the fact that the price dropped during
+[00:00:49] the candlestick period, oops, and then came back up to close near the top is
+[00:00:53] very significant. Buyers rallied the price back up. So in this context, a
+[00:00:57] reversal, it could indicate that stock is beginning to change directions, especially
+[00:01:00] if that candle closes in the green. Now in the context of a pullback, here you
+[00:01:07] got, you know, two four six eight green cams in a row. You've got a couple red
+[00:01:10] candles. This isn't a reversal. This this set up here, you know, this could be a
+[00:01:15] stock that's generally been trending up and it's just on a pullback. It could
+[00:01:20] also be a stock that's been generally trending down. And it's finally reversing
+[00:01:23] off those lows. Either way, it's indicating a reversal. Right here, this is a pullback
+[00:01:29] set up and notice that bottoming tail. See the low down there a five, sort of
+[00:01:34] bottoms out there off of five, and then bounces back.
+[00:00:00] back up through 580 up to 6 back up and then long body candles that follow.
+[00:00:04] So your first indicator here was that bottoming tail.
+[00:00:08] That was the beginning of telling you maybe this is going to bounce.
+[00:00:11] Now this stock has a couple other things going for it, which I'll just comment on since
+[00:00:15] we have the chart up.
+[00:00:18] You have some nice volume here, nice high volume on the green candles, and relatively
+[00:00:24] low volume on the pullback.
+[00:00:26] That communicates that there's more people buying than selling.
+[00:00:30] So these volume bars are an indicator that you'll continuously on the charts.
+[00:00:34] They're very important because they tell us behind each one of these candles how many
+[00:00:39] shares of volume are trading, changing hands.
+[00:00:43] This is another example here where you've got that big rally up.
+[00:00:46] You've got the pullback right here, and you could even say that these bottoming tails
+[00:00:52] are significant, and they do lead to a short-term bounce.
+[00:00:55] Now the bounce stalls out, and then slows down.
+[00:01:00] So this is a trade where you could either get in, have a small profit, or get in and
+[00:01:04] get out break even.
+[00:01:06] Wouldn't be a big loss because it gave you the indicator right here with those topping
+[00:01:09] tails that it wasn't able to sustain the move.
+[00:01:12] So the bottoming tail is bullish, and then it goes right to a topping tail just after
+[00:01:16] that.
+[00:01:17] That's not great.
+[00:01:18] It then sells off a little bit more, and then look at this bottoming tail.
+[00:01:21] From bottoming tail, hammering out the base, it never goes back to that level.
+[00:01:26] So with your stop at the low that candle, getting in in this area gives you a nice little
+[00:01:30] rally, pulls back, nice little rally, and then it pushes even further.
+[00:01:34] That's not bad.
+[00:01:36] The next candlestick for me.
+[00:00:00] is a shooting star. Now, a shooting star is also sometimes called an inverted hammer. A shooting
+[00:00:07] star can only occur during an up trend. So it occurs at the top of an up trend, which should
+[00:00:14] be several nice green cams in a row. And this, as you might imagine, is a bearish indicator.
+[00:00:21] It has that long-topping tail, which we know is a bearish indicator, right? That upper candle
+[00:00:26] is always bearish. The body, whether it's red or green, doesn't really, I mean, it makes
+[00:00:31] a difference if it's, if it's red, it's definitely worse. It tells us the reversal's already begun.
+[00:00:37] But if it's green, it's still not good. It shows us at the stock squeezed up and then the seller's
+[00:00:41] pulled it back down and we closed down here. Now, if we're a green candle, we can give it a second.
+[00:00:48] But once we get candle under candle, it's over. We're on now a pullback. And if it's a red candle,
+[00:00:53] the reversal truly has already begun and the next candle going red is only confirming it. So it's
+[00:01:00] very common that will see a really big move up that tops with a shooting star. And the problem
+[00:01:06] with the shooting stars that when the stock maybe later comes back up, usually you have resistance
+[00:01:12] at around the top of this candle because of the bearish sentiment that it communicates to other traders.
+[00:01:18] What it told other traders is that the last time the stock came up here, it rejected pretty violently.
+[00:01:23] It did not hold that level. So people are going to be a little nervous to buy at that level.
+[00:01:28] The inverses true with the bottom down here, the bottoming tail. The last time the stock dropped
+[00:01:34] it got right back up. Drop, down gets bought right back up. So, body-
+[00:00:00] coming tails can encourage more traders to buy if it does dip down to that level.
+[00:00:05] But a topping tail like this one here, well, when the stock starts to get extended,
+[00:00:09] people get a little nervous that you could get another rejection.
+[00:00:12] This is a good example.
+[00:00:14] And this is actually an example here.
+[00:00:16] We've got a couple things we can cover.
+[00:00:17] So here we've got a couple nice long body candles and then a topping tail, indicator of
+[00:00:22] a possible reversal.
+[00:00:24] It pulls back, but we don't get candle under candle, it pushes higher, pushes higher,
+[00:00:29] and another topping tail.
+[00:00:30] It pulls back, but we never get a candle under candle until right here.
+[00:00:35] That's the first candle right there that red one to go candle under candle.
+[00:00:39] Topping tail, sort of a double top, it pushes higher, pushes higher, and then ends up being
+[00:00:44] a shooting star candle with the upper candle wick and it's red, and then that leads to
+[00:00:49] a further pull back.
+[00:00:50] And it never ends up really recovering off of that level.
+[00:00:54] This is another example here where you've got a long body candle, a small topping tail,
+[00:00:58] pulls back, rallies up, small topping tail, small topping tail, small topping tail, finally
+[00:01:03] the topping tail, and then it turns into a red candle.
+[00:01:06] And now you could just tell the stock is having the hard time holding these levels.
+[00:01:11] This is an example where you've got a big move, and then the candles are getting smaller
+[00:01:15] and smaller and smaller and smaller until finally we're getting that correction.
+[00:01:20] Here you could see another example of the shooting star right there with that topping tail
+[00:01:25] and another example of it right here.
+[00:01:27] This one's red, this one's green, still resulted in candle under candle, and I don't
+[00:01:32] recall this one, but in any case, you could see that topping tail, it's very noticeable.
+[00:01:37] It's also very...
+[00:00:00] common right here, because this is right up against the previous high. So it tried to break
+[00:00:05] through it, but previously, it wasn't able to hold that level. And so it sort of made it an even
+[00:00:11] better place to be shorting for a rejection. It breaks through it. It can't hold it. Now we're reversing
+[00:00:17] and that's clearly our kind of double top hide. This is another shooting star bordering on
+[00:00:24] a gravestone doge, because the opening clothes are so close together, but it is technically
+[00:00:29] a shooting star because it has a smaller body. All right. Now, the next candle is called a
+[00:00:35] hanging man candle. This is also an ominous name for a candle. This appears at the top of a trend.
+[00:00:42] It's defined by a small body at the top and a longer lower candle. So after a series of green
+[00:00:50] candles coming up like this, it is bearish, but it's not as bearish as a shooting star. A shooting star is
+[00:00:56] more bearish. Now, a hanging man is also kind of funny because a hanging man candle is a hammer.
+[00:01:05] Right. That's a hammer candle. It's bullish when it's at the bottom of a move. You've got the hammer,
+[00:01:10] but it's bearish when it's up at the top. So when it's up at the top right here, obviously that's
+[00:01:16] bearish. That's weakness, but when it's at the bottom, it's bullish. So the reason it's bearish up
+[00:01:23] here is because you have this cell off and then yes, it rallies back up, but you know, you did have
+[00:01:30] that cell off. So similar to the dragonfly doji, sometimes you'll have that cell off and then it shakes
+[00:01:36] people out and then it does rally.
+[00:00:00] which is great but it is you know something to be a little cautious of because we don't usually
+[00:00:04] love to see that dip. All right, so then we've got bullish and gulfing candles and a bullish
+[00:00:12] and gulfing candle is when you have a, oops, well there it is. I don't have to drive. You have a
+[00:00:18] small body candle and then the next candle opens lower and it closes higher, fully engulfing
+[00:00:23] that previous candle. It's that much bigger. So small candle, big candle. That is very bullish.
+[00:00:31] That's a bullish engulfing candle. These don't occur that often on intraday charts. And the reason
+[00:00:39] they don't occur that often on intraday charts is because usually the stock doesn't close here
+[00:00:45] and then open way lower, right? It usually closes in an opens at more or less the same price.
+[00:00:51] That's typically the way candlesticks occur. However, if this was a daily chart, it's possible
+[00:00:56] a stock would close here and then overnight trade or sell more and then the next day it opens
+[00:01:02] lower and rallies back up. That creates a gap on the chart which we'll talk about coming up soon
+[00:01:08] here in chapter five. So a bearish engulfing candle is the exact opposite. It's a terrible
+[00:01:13] candle to see if we were holding a long position and although it's not common on intraday chart
+[00:01:19] if it does happen, it's certainly a bad sign. It could happen if a stock halted up,
+[00:01:25] opened higher and then sold off all the way down. Again, it doesn't happen that often,
+[00:01:31] but it's a long body candle in the context that it's so much larger than the previous candle.
+[00:00:00] So it just communicates a really strong negative sentiment.
+[00:00:04] So once again, candlesticks are only significant.
+[00:00:07] When you're looking at them in a trending market, number one, when you're looking at candlesticks in the market,
+[00:00:13] it's going sideways.
+[00:00:14] There's not a lot to gain from the shapes that they're created.
+[00:00:19] There's not a lot of sentiment to read.
+[00:00:21] Sideways market is sideways.
+[00:00:23] But furthermore, candlesticks and the language that we're trying to read,
+[00:00:28] the buy and sell signals that we're trying to see are really only going to be,
+[00:00:33] they're really going to work correctly on the right financial instruments,
+[00:00:38] which is to say if we pull up, let's say,
+[00:00:42] serious satellite radio, right?
+[00:00:44] We pull up Siri.
+[00:00:45] This is one that it's not worth trying to read candlestick patterns on it,
+[00:00:50] because it's generally range bound.
+[00:00:52] It's just not going to be easy.
+[00:00:53] Now we try to go to a large cap.
+[00:00:55] You try to read them on a large cap.
+[00:00:58] You're going to see a lot of unpredictable price action.
+[00:01:01] Big candlesticks, big surprises,
+[00:01:03] the result of institutional traders moving in out of the market.
+[00:01:06] So this is going to be difficult to trade.
+[00:01:08] Where you're going to find more predictability is on the small cap lower price stocks
+[00:01:13] that of course I've been trading for many years.
+[00:01:15] And you can see right here, CING,
+[00:01:17] rallying back up, making a nice move here,
+[00:01:20] sort of around, what is it, 1130?
+[00:01:23] So a nice squeeze there.
+[00:01:25] Somewhat surprising that it was able to hold over this area,
+[00:01:29] that was forming resistance.
+[00:01:31] But I bet this is a five minute chart.
+[00:01:33] If we looked on the one minute,
+[00:01:34] are we going to see a little micro pullback?
+[00:00:00] So on the one minute we've got a pullback right here, we've got a pullback right here
+[00:00:04] So it's already giving you the first and second pullback and those are the patterns that I'm going to be teaching you about
+[00:00:09] So in order to read those patterns, you naturally need to understand what each of that individual canals six mean
+[00:00:15] So if we watch this in real time right now
+[00:00:18] You're seeing a little bit of a bottoming tail forming
+[00:00:22] Which is a little bearish right now? It doesn't mean that the stock is going to drop, but it's a little bearish
+[00:00:27] This candle has how much time left on it
+[00:00:30] About 25 seconds and you can tell it's a little battle here, right?
+[00:00:34] It's sort of pushing higher, but then pulling back now if we pull up the level two
+[00:00:39] We pull up the level two we could watch here to get a better sense of what's happening
+[00:00:44] Now this is rallying pushing a little bit higher
+[00:00:47] So it kind of was shaking out some traders on that dip and then it pushes higher
+[00:00:52] There's a 41,000 share buyer right there. This is reading level two and so it's a fairly strong
+[00:00:58] Move to the upside so that's that's great to see
+[00:01:01] And actually though what we would be paying attention to is as it continues trading does it move higher?
+[00:01:07] Does the volume increase and when do we get that small body candle or that doji candle that indicates the trend is getting exhausted?
+[00:01:16] I think this is one of those examples where
+[00:01:18] You had probably short sellers who felt fairly confident on it shorting off of these upper candle wicks from earlier
+[00:01:25] But this is a stock that does have news
+[00:01:27] And the news was a European pattern and it was well received yesterday and the stock is continuing today
+[00:01:33] So it tried to fail, but then boom rallies back up so
+[00:00:00] So these are the right type of stocks to be focusing on.
+[00:00:03] And so when you're doing your technical analysis and you're starting to learn about
+[00:00:06] how to read candlestick charts, I want to make sure you're focusing on naturally the right
+[00:00:11] stocks to trade.
+[00:00:12] Candlestick, candlesticks and low volume stocks are unpredictable, they're not closely
+[00:00:16] watched.
+[00:00:17] So that's not valid.
+[00:00:19] Candlesticks on sideways stocks, additionally not valid, not a lot of people pay attention
+[00:00:25] to them.
+[00:00:26] Okay.
+[00:00:27] So with that, I want to also remind you.
+[00:00:29] One last word of advice or word of wisdom, I shouldn't say advice.
+[00:00:34] A word of wisdom is that you'll hear me use the words hammer, doggie, shooting star, inverted
+[00:00:40] hammer, etc.
+[00:00:41] Many times throughout this class and while you're tuning in to the chat room and you're
+[00:00:45] listening to my broadcast, I don't want you to get overwhelmed as you're learning these
+[00:00:49] new terms and you're learning the language.
+[00:00:51] The more you listen, the more you're watching the charts, the more you immerse yourself
+[00:00:57] in this culture and community, the better you will pick it up.
+[00:01:02] So there's a certain degree of just gaining experience and continuing to practice.
+[00:01:07] So stick with it because before you know it, this is all going to be second nature.
+[00:01:12] All right.
+[00:01:13] So with that, we're going to continue on with Chapter 5, Part 3.

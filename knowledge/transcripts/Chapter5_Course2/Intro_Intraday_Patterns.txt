@@ -1,0 +1,260 @@
+# Intro to Intraday Chart Patterns.mp4
+# Transcribed: 2026-06-26T19:17:42.337332
+# Duration: 31.1 minutes
+# Model: faster-whisper tiny
+# Language: en
+
+[00:00:00] After five on intraday chart patterns, I'm going to do an intro to this chapter right here,
+[00:00:06] and then each one of the patterns will have a separate class, so it'll be very easy for you to go back later
+[00:00:12] and do a refresher if needed on one specific pattern. And if there's perhaps a brand new pattern that
+[00:00:21] I don't currently trade, but maybe presents itself in the future, then it'll be easy for me to add that.
+[00:00:28] And there are new patterns that I will be teaching this this time around that weren't part of
+[00:00:35] the last version of this class because they are actually new patterns that are presented themselves.
+[00:00:40] And now we see them on a regular basis. So the market is always changing, we have to be able to evolve.
+[00:00:45] And so anyways, let's go ahead and jump in here with chapter five. So one of the first things that I want to do
+[00:00:51] at the beginning of chapter five here is talk about the concept of time. So every
+[00:00:57] candlestick chart pattern we're looking at will be based on a time frame. And of course,
+[00:01:02] there's a number of different time frames that traders use. I tend to have most of my trades
+[00:01:08] and most of my examples on either the five minute or the one minute chart periodically. You'll see me
+[00:01:14] with a 10 second chart every now and then, I'll have a 15 minute time frame. And the examples I'm
+[00:01:19] going to show you below, or as we continue on in this course, are on all these different time frames.
+[00:01:26] So you can have the same exact pattern, you know, a bull flag for instance, that pattern
+[00:01:32] it can exist on a time frame, daily chart, intraday time frame doesn't matter. But what I think is
+[00:01:37] interesting is that when we're trading in real time, we're watching these candles actually forming.
+[00:01:44] All of the examples that I'm giving you are of course screenshots of a picture and time.
+[00:01:50] So you can see the full pattern completed. But in real time, we have to watch the pattern forming
+[00:01:58] and then make a prediction of how it's actually going to resolve. So for instance, if we have
+[00:02:02] three candles that have moved up like this, and let's say this is a one minute chart,
+[00:02:07] we have to be paying close attention to the time. So 60 seconds, all right. So these are,
+[00:02:13] there's a one minute chart. So we're watching tick tick tick tick tick tick tick tick tick,
+[00:02:17] as we get closer to the top of the minute. And the reason we're watching is because let's say
+[00:02:21] this next candle opens. The candle opens, so the time is begun. Now if it immediately squeezes
+[00:02:28] higher, we're like okay, this looks great. But then let's say suddenly this something happens.
+[00:02:34] Some cell orders go through the tape and this drops back down. So we still have the
+[00:02:40] candle wick because remember every candle communicates four pieces of information, the open,
+[00:02:45] the close, the high and the low. So the open is already fixed. That's already been determined.
+[00:02:51] This now is the high and the price is dropping down. Now what if this all of a sudden comes
+[00:02:56] back down to this area? Well, this is both at the moment, the low and what would be the close
+[00:03:02] if this candle close right now? So in this moment, all of a sudden it looks like we have a red
+[00:03:07] candle and the price is reversing. This would be an exit indicator. But if suddenly with 15,
+[00:03:14] 20 seconds left in the candle, there was a surge of volume, then the stock could squeeze back up
+[00:03:20] and end up closing, green at the top of the candle. And in fact, what was red down here,
+[00:03:26] no longer is going to be red. It will be just a bottoming tail. So these candles in real time
+[00:03:33] are fluid. They're changing until the time closes. So the reason this is important is because
+[00:03:40] let's say we have this stock that's made this nice move up. And then the next candle opens and
+[00:03:45] we'll just say it goes red. It pulls back. And then the next candle opens and we'll say maybe for a moment
+[00:03:50] it was actually going green and we were like, oh gosh, this is only going to pull back for a second
+[00:03:54] before it searches higher. But then it ends up, no, it closes as another red candle. So the high point
+[00:04:01] is just a little upper candle. And then the next candle opens and goes red again and we're like,
+[00:04:06] oh boy, this thing's going lower. But then it reverses. So we have a little bottoming tail
+[00:04:11] and the candle actually ends up closing green. Now if that candle ends up closing green,
+[00:04:17] that's a signal. Because now even though this hasn't made a new high or still trending down,
+[00:04:24] it's clearly showed the candle's green. We sort of bounced off the lows. And so that
+[00:04:29] now sets us up that this next candle that opens could make that confirmation of surging higher.
+[00:04:36] So is there a way while this candle was forming that we could have known that this might
+[00:04:41] become a bi-signal or some kind of initial indicator that the trend is about to shift? And
+[00:04:48] and we can. So if we notice, of course, that the candle is red, then we're, you know,
+[00:04:53] okay, it's red. We're still selling off. How much time, however, is left in this candle.
+[00:04:58] So let's say it's still got 45 seconds left. So we're still going to keep watching it.
+[00:05:02] And as we get closer to the candle closing, then the shape and its signal is going to become fixed.
+[00:05:09] So if the candle suddenly in the last, you know, 30 seconds shifts and ends up becoming green,
+[00:05:16] then we know, okay, now the candle's green and we only have 15 seconds left. Now 10, 9, 8, 7.
+[00:05:23] All right, here we go. This is giving us our first initial confirmation that the trend may be shifting.
+[00:05:29] And so when I show you all of these chart examples, what you're seeing is the historical pattern,
+[00:05:36] the screenshot of the chart. But in order for me to execute on the tray in real time,
+[00:05:41] I had to make the decision as the pattern was forming that, okay, here is my first indicator.
+[00:05:47] I'm going to take a position, right? And so to be able to do that in real time requires a pretty
+[00:05:53] deep understanding of the pattern and the relationship between the candlesticks forming,
+[00:06:00] the order is going through the level two, the time and sales, the amount of time left on the
+[00:06:05] candle. So it's very interconnected. Now what I encourage you to do is to print out examples of
+[00:06:12] a lot of these chart patterns I'm going to share with you here during chapter five and to put them around
+[00:06:16] your desk, especially the first pullback pattern, which is the bull flag that I'm going to teach you,
+[00:06:22] because that's one of my favorite patterns that I trade almost every day. You're definitely
+[00:06:26] going to want examples of that. That pattern is that this is that pattern. So have lots of examples
+[00:06:32] of this around. So when you start seeing this forming right here, you're going to start to be like,
+[00:06:36] okay, I think I can make a prediction of what's about to happen, right? I see what's starting to
+[00:06:42] happen and that's where to a certain extent as a trader, we're making a prediction. We're predicting
+[00:06:49] what's going to happen next. We only see half the pattern, but we can visualize how it's
+[00:06:54] going to resolve. We're able to visualize that because these patterns are that they're so
+[00:07:00] recognizable and they have clear meaning that other traders see them and recognize that these patterns
+[00:07:08] are a low risk opportunity to buy a stock that's strong. And we know that when it's on stock
+[00:07:13] that meets all five pillars of stock selection, you know, that it's a stock that has a good daily chart
+[00:07:17] that that all reaffirms that this is more likely than not to work in our favor. And then when we
+[00:07:23] have our own historical data that shows that we're trading with 80% accuracy, you know, for example,
+[00:07:30] 75% accuracy, the neck is just even more conviction to go ahead and take these trades. So I just
+[00:07:35] wanted to kind of start this episode and this chapter by kind of revisiting this concept of time.
+[00:07:41] And another item that I just want to touch on is the importance of the volume profile. So the
+[00:07:49] volume profile is the actual volume bars that are occurring on each one of these candles. So for
+[00:07:57] instance, here what we like to see is increasing volume as the price moves higher and on a pullback,
+[00:08:03] we like to see light volume consolidation. If we saw the inverse, light volume buying and then
+[00:08:11] high volume selling, that would tell us a very different story. So the candlesticks are important,
+[00:08:17] no doubt. But the volume that occurs inside each of these candlesticks is also very important
+[00:08:23] because it helps communicate the sentiment behind the move. So a light volume move,
+[00:08:28] followed by high volume selling, people are taking profit. So that is going to leave us not very
+[00:08:34] confident to take a position here. Whereas if it was very light volume selling on the pullback,
+[00:08:39] but high volume on the acceleration, we're going to feel pretty good. Now sometimes we'll have
+[00:08:44] examples where a stock is very strong. It's been very strong and as it moves higher and higher and
+[00:08:53] higher, the volume starts to decline. We call that a divergence where the price is moving higher,
+[00:08:59] the volume is declining. That can be indicative that a reversal is coming. People are no longer
+[00:09:04] feeling confident continuing to buy it. But when we see that the volume is increasing, even further,
+[00:09:09] then usually there's a really strong catalyst behind this move. And if we get even a momentary pullback
+[00:09:16] on light volume, people are going to take that as the opportunity to jump in something that's
+[00:09:20] strong. So these pullback patterns are my absolute favorite. And as we get into this class,
+[00:09:26] in this chapter, you're going to learn that. And we're going to start the chapter by talking
+[00:09:31] about high-day breakouts, which is when the pullback occurs right at the high,
+[00:09:35] then we'll talk about the bull flags, then we'll talk about ABCD patterns,
+[00:09:39] then we'll get into, let's see, double tops, cup and handle patterns, and moving average pullbacks.
+[00:09:45] And as we get further into the classes, you'll realize that a lot of the patterns actually
+[00:09:50] feature this little pullback right here. They're just feature it in slightly different variations.
+[00:09:57] So it's different variations of kind of our same pattern. The psychology behind why this works
+[00:10:02] so well is because you have something that's really strong, and it's pulling back just for a moment.
+[00:10:07] The pullback, if it pulls back and holds, means that we have a new level of support.
+[00:10:13] So if I get in right here, my stop is right here, my max loss. Whereas if I bought just kind of in the
+[00:10:18] middle of this move up, one of my max loss would be like way back here where previous support was.
+[00:10:24] Now, we're going to, in this chapter, I'm going to be giving you all of these examples of some
+[00:10:29] my favorite chart patterns. But, but we're going to get into a lot more detail talking about
+[00:10:35] your stops, your max loss, and your specific entry points when we get into chapters 7 and 8
+[00:10:42] specifically, but also in some of the additional chapters, when we're talking about strategy.
+[00:10:49] So patterns by themselves are not strategy. They're just a candlestick pattern,
+[00:10:52] but we're going to turn it into a strategy when we talk about the type of stock will trade the pattern
+[00:10:57] on and precisely what our entries are, what our max losses, what the ratio is between risk and
+[00:11:03] reward. Okay, so that kind of sets the stage. But I do think we should also take a moment
+[00:11:08] to kind of take a look back at what we've already discussed in a couple of these previous chapters
+[00:11:15] before we get too far ahead of ourselves. Okay, so what do we already know? Well, we've already learned
+[00:11:21] about managing risk, using two to one profit loss ratio, minimum 50% success target, right?
+[00:11:26] We now understand the five pillars of stock selection, how important it is that we focus on
+[00:11:30] stocks that have high relative volume. We know that the catalyst is what creates that big move.
+[00:11:36] And so in chapter 4, when we're talking about daily charts, with gaps and windows,
+[00:11:41] we understood that it doesn't generally do us a lot of good to look for candlestick chart patterns
+[00:11:47] on a daily chart because what creates those big green candles are not typically just purely a
+[00:11:53] technical breakout. It's some underlying news event that's taking place. So today, we're going to
+[00:12:00] break down the interday chart patterns that become part of the trading strategies that I'll be
+[00:12:06] introducing as we get further along into chapters 789, 10, and so on. These patterns by themselves
+[00:12:16] are not strategies. We're just observing patterns in the market. They become strategies when we
+[00:12:22] create parameters around, when we trade them, the time of day we trade them, where we get in,
+[00:12:27] where we get out, specifically how we manage our risk. And that is what creates a strategy.
+[00:12:35] So I know some of you will watch this and we'd be excited to start trading when you see one of
+[00:12:40] these patterns, but remember there's a lot more that we're going to add. This is the foundation,
+[00:12:45] but there's a lot more that's coming. Okay, so we already talked about interday versus daily charts
+[00:12:52] in chapter 4 that when we have a super strong stock, it can override a poor daily chart. However,
+[00:13:00] a great daily chart will never override a poor interday chart. So if we have, if there's a lack of
+[00:13:07] interday volume, if there's a lack of a catalyst, it doesn't matter how good the daily chart is,
+[00:13:12] it's just not going to work. So our focus is first and foremost, big catalyst, high relative
+[00:13:18] volume, now we have a chart. Now we have a stock that we can work with today. Daily chart gives us
+[00:13:23] context. Is it one of the stock types, the daily chart stock types that has the potential
+[00:13:29] to do something really exceptional, or is it maybe a little bit more average? We're going to factor
+[00:13:33] that in. And then we're just looking on the interday chart for any pattern to appear that we see,
+[00:13:40] we recognize, and that we believe will give us a lower risk opportunity to jump in something
+[00:13:46] that's strong, so we can participate in the next leg higher. That's really what it's all about.
+[00:13:51] So high relative volume makes the pattern. So this is what's so important. Do we have high
+[00:13:57] relative volume? Do we have float rotation? Right, that's the relationship of volume and float.
+[00:14:03] So if you've got 10 million shares of volume and you've got a 1 million share float,
+[00:14:07] you have 10 times float rotation, higher float rotation, generally results in bigger moves.
+[00:14:13] So float rotation is important. Of course, there's the variable that you can have high float
+[00:14:19] rotation, but if the company is not letting their share price go higher because they're selling,
+[00:14:24] that will obviously put a damper on momentum. But nonetheless float rotation with high relative volume,
+[00:14:30] and if we're seeing the stock is trending higher, we're seeing volume coming in at breakout spots,
+[00:14:36] then we can reasonably expect that patterns that continue to present themselves will work
+[00:14:42] relatively well, more often than they will. Now what is the best time frame to trade on?
+[00:14:49] And I'm referring to charting time frames. Longer time frames such as the five minute, oops, sorry,
+[00:14:55] the five minute or the 15 minute, there we go. It can work very well. They're well respected,
+[00:15:01] and the longer the time frame traders have more time to see the pattern forming and then therefore
+[00:15:08] to participate in that move up. However, in fast moving markets, if I wait for a five minute or
+[00:15:16] a 15 minute pattern to form, I will likely miss the entire first leg of the move up that's
+[00:15:21] occurring on the one minute time frame. If you've got breaking news and the news is really strong,
+[00:15:26] this thing is going to start squeezing up and by the time the five minute is pulling back,
+[00:15:30] the stock can already be up 300%. So you'll have missed the whole move. So although I will use
+[00:15:36] the five minute time frame from time to time, and I will use even the 15 minute periodically,
+[00:15:41] you will typically see me trading on the one minute chart. If the stock is really strong,
+[00:15:47] we're going to be focused on the one minute chart. Now sub one minute time frames, like the 10
+[00:15:51] second, five second or 15 second, 30 second chart, those can be helpful for visualizing the volatility
+[00:16:00] that's occurring inside of one minute candle, but they're not as well respected, they're not as
+[00:16:04] common. So you've got to be a little bit careful, and I wouldn't put all my weight onto a 10 second
+[00:16:10] time frame. They're helpful, but the one minute is going to be more significant. So then
+[00:16:17] multi time frame alignment is this concept that we discussed during day trading the basics where
+[00:16:23] both the one minute chart, for instance, and the five minute, are giving us the same signals.
+[00:16:29] But that's not always the case. Sometimes we'll have two time frames that are actually
+[00:16:33] contradicting each other. So an example of this would be, if let's say, on the five minute
+[00:16:38] time frame, so we'll pull up our whiteboard here. Let's just say for example,
+[00:16:44] that the one minute chart, I'm just going to do lines instead of full candles. So on the one-minute
+[00:16:49] chart, stock squeezes up here, and then ends up dropping down. So that's a five minute,
+[00:16:55] those are five minutes. So what does that candle look like? The open at the low squeezes up,
+[00:17:01] the close was the low of this candle here, and it's got a topping tail. So we would interpret
+[00:17:08] that topping tail to be a little bearish. So even if this ends up coming right back up here,
+[00:17:14] then basically what's happening is you have a topping tail, and then this candle's coming right
+[00:17:17] back up, is this a five minute pattern? No, it's not. Now this is a first pullback, and it's
+[00:17:25] okay on the one-minute, but in this instance we do not have multi-time frame alignment. We have
+[00:17:31] a one-minute pattern, and a five minute is just sort of not quite right. Now it's not terrible.
+[00:17:37] What would be certainly far worse for instance would be if this ended up, well, you know,
+[00:17:44] I don't know, let's say it opened more like that, or like this. So this candle ends up actually,
+[00:17:51] you know, having this topping tail, and being red, you know, so it's actually red. Well,
+[00:17:56] in this case it would be like more like this. But but you get the idea. So if the five-minute
+[00:18:00] candle is bright red, and then this starts to rally back up here, and it pulls back,
+[00:18:06] that even though we've got this sort of green candle, if this one was on high volume,
+[00:18:11] it's just going to throw off this pattern. So traders are going to look at this, and they're
+[00:18:15] going to be like, okay, well, yeah, maybe on the one-minute, there's a pattern here for an entry
+[00:18:22] for the breakthrough this level. But the five-minute is so strange. You've got this high volume red
+[00:18:27] candle, you know, sort of lighter volume, green candle, let's just say, and then another red candle.
+[00:18:32] Those are giving you contradicting signals. So we don't like to see time frames diverge,
+[00:18:40] and the signals are giving us. We would prefer to see what we call multi-time frame alignment.
+[00:18:45] Again, however, on the one-minute chart, when something is first spiking up with breaking news,
+[00:18:50] we don't really have to worry about multi-time frame alignment because what is the five-minute
+[00:18:54] look like? The five-minute's just a big green candle. So there's no issue. There's no problem. But
+[00:18:59] it becomes an issue after the one-minute hits pulled back for a little bit, you know, we've kind of
+[00:19:04] gone sideways, and now, you know, we're kind of evaluating, not just the one-minute chart, but also the five-minute.
+[00:19:11] So this is an example of opportunities on both time frames. So this is the one-minute chart,
+[00:19:17] and this is the five-minute, and it's the same stock. So you could have been someone
+[00:19:22] only trading this on the five-minute chart, and the moves were so big that you, you know,
+[00:19:28] it totally went without you, and you would have missed it if you just trade on five-minute.
+[00:19:32] In this case, it pops up. It goes sideways, and then right here's a potential entry point. It
+[00:19:37] goes up more, take profit, and then it goes sideways, another potential entry point. It goes
+[00:19:43] up more, it goes sideways, another potential entry point. It goes up a little bit more, pulls back just
+[00:19:48] for a second, a little higher, and then it starts to roll over. So on the five-minute chart here,
+[00:19:53] you have three, you know, pretty clear potential setups, increasing volume, and that doesn't look
+[00:19:59] bad. On the one-minute chart, you initially had this first pop-up, which occurred right here.
+[00:20:05] That was the first pop-up. Then it goes sideways. Now, could you have taken this trade kind of
+[00:20:10] right in here? If you took that trade right in there, that was this candle. So both the one-minute
+[00:20:16] and the five-minute were sort of lining up there. It pops up, it pulls back, but you could have
+[00:20:21] taken another trade right here if you wanted to, and that would have been inside this candle.
+[00:20:26] You can't see it on a five-minute, but it is a little teeny little pullback right there,
+[00:20:30] and then that pushed higher, and then it pulls back. Dips down, pops back up, dips back down,
+[00:20:36] and it breaks right here, and that ends up being our second five-minute setup. And it works
+[00:20:41] on the one-minute. So you've got multi-time free alignment. They're both giving you that confirmation.
+[00:20:45] And truthfully, you could have trade this stock entirely on the one-minute without even looking
+[00:20:49] at the five-minute. You could have traded entirely on the five-minute without even looking at the
+[00:20:52] one-minute. Either one would have been okay, or if you're using both of them, then you're looking
+[00:20:58] and you're just making sure that, you know, you don't have one-time frame that's giving you
+[00:21:03] some big red flag. Because if it is, then that's something to be aware of. Here's an example
+[00:21:09] where the opportunities were only on the one-minute chart. So this stock pops up at the opening
+[00:21:14] bell, squeezes into a halt. So it's halted up. It opens. It dips for a second, then rips over
+[00:21:20] two-fifty, goes into another halt. So a potential entry down here was at a half-dollar of
+[00:21:25] two-fifty on that dip and rip out of the halt. Now if you're looking at the five-minute chart,
+[00:21:30] all of those trades were right in this candle. By the time you get a five-minute pullback,
+[00:21:34] it's like way up here. And so this set up here, that would have been fine to do that
+[00:21:39] little pullback trade. It's in this area on the five-minute. There's no five-minute setup.
+[00:21:43] Right here's a fine pullback trade. That's inside this candle, no five-minute setup.
+[00:21:49] Right by the time you get a five-minute setup, it will even pass this area, and it doesn't
+[00:21:53] end up working out very well. So all of that is to say that the entry-day chart patterns that
+[00:22:00] I'm going to share with you are patterns that you will find on all entry-day chart timeframes.
+[00:22:05] You could find them on 10 second, one-minute, five-minute, 15-minute, 60-minute. You could find them
+[00:22:09] on any timeframes. The question is, which timeframes are you going to see the cleanest
+[00:22:15] resolution on those breakouts? Where you can get in with the minimal amount of risk and it works.
+[00:22:22] One of the problems with the five-minute chart is because these five-minute patterns
+[00:22:27] have taken longer to form typically the range between the bottom of the pattern, which is our
+[00:22:34] max loss, and the top is larger. So a larger range usually means you've got a bigger stop,
+[00:22:40] which means you have to take smaller size. Whereas if you're trading on the one-minute time frame,
+[00:22:45] you're using the one-minute, you're not setting your stop way down there, you're setting your stop
+[00:22:49] right under the low of that previous pullback. So one-minute chart allows for tighter stops,
+[00:22:56] which means you could take bigger size. So you could get in quicker, you can get profit quicker,
+[00:23:01] you jump out quicker. So I really prefer using the one-minute time frame. There are times that
+[00:23:08] I've taken all the one-minute trades, and I capitalize on it the best I could, and now we're seeing
+[00:23:14] a five-minute setup, and I'm like, okay, well, I'll add a little icing on the cake by taking a
+[00:23:18] couple trades on the five-minute chart as well. And if the five-minute starts to pull away,
+[00:23:22] then who knows, maybe there'll be some more one-minute setups, and I can trade those as well.
+[00:23:26] But for the most part, most of trading you're going to see me do is very quick, and it's using
+[00:23:32] utilizing one-minute charts with the level two, the time and sales, and potentially a little bit of
+[00:23:40] a 10-15 second chart mixed in there as well, you know, just to kind of get a little early signal
+[00:23:46] on something that might be starting to show some strength. All right, so with that, that gives you
+[00:23:53] the intro here to chapter five, and we're going to get started with the first intraday setup,
+[00:24:01] which is the high-of-date breakout, and the low-day breakdown, including flat top breakouts,
+[00:24:06] and flat bottom breakdowns. All right, let's jump into that class right now.

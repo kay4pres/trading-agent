@@ -1,0 +1,728 @@
+# Segments: 30
+# Transcribed: 2026-06-26T19:10:06.953199
+
+[00:00:02] All right, so we're going to go ahead and jump back in here with chapter five on technical analysis, and this is part three multi candlestick chart patterns.
+[00:00:10] Now you already have the building blocks of these chart patterns because you've learned each of the individual candlestick shapes that will make up the pattern.
+[00:00:21] So now you know the letters we're putting them together and these are going to form words.
+[00:00:25] This is part of the language of the financial markets.
+[00:00:28] Now, there are just like with the alphabet, you can create thousands of words.
+[00:00:33] With these different candlestick shapes, we can create hundreds of different patterns.
+[00:00:39] However, I really focus on just a small handful of patterns.
+[00:00:44] I think I mentioned the book in our one of our last classes by Annie Doe called Thinking in Bets, where she talked about her brother who was teaching her poker.
+[00:00:54] And he said, only play these hands.
+[00:00:58] It doesn't mean they're the only hands you could possibly play, but these are the ones that I think have the best probability of success.
+[00:01:04] And I want to encourage you to do the same.
+[00:01:06] And so in this chapter, I'm going to share with you the pattern that is my number one top favorite that you can start using right now.
+[00:01:18] You can apply the five pillars of stock selection to find the right stocks and then you can use this pattern.
+[00:01:24] I'm going to share with you to trade it.
+[00:01:26] And as always, you should be practicing this in the simulator.
+[00:01:29] So while you're testing a brand new strategy, you're doing in a safe environment where you're not going to risk taking a big loss.
+[00:01:36] Okay, so let's go ahead and.
+[00:00:00] Beginling the sort of framework for how these multi-canistic patterns work.
+[00:00:06] The first concept is this candle over candle phrase that I've already mentioned
+[00:00:12] just the last class.
+[00:00:13] So in a candle over candle pattern, the first candle establishes the high and the low.
+[00:00:21] And then the second candle breaking the high, the previous candle forms a candle over candle pattern.
+[00:00:29] So again, just to refresh your memory, this is the candle. That's candle number one.
+[00:00:35] That's the high. That's the low right down there. That is candle over candle.
+[00:00:41] So the moment we get the candle over candle, that is what we're paying attention to.
+[00:00:47] Now as we're watching these candles forming in real time, you know, it's it's easier to see that moment
+[00:00:53] breaks. When we look at a candlestick pattern in a screenshot, and of course I've got a lot of them that
+[00:00:59] I'll be sharing with you, you're seeing the way it happened. So that's sort of historical.
+[00:01:05] And one of the things that is really interesting is the process of being able initially to recognize
+[00:01:12] the complete pattern on a chart. That's sort of the first step. So you're going to start to learn
+[00:01:17] to recognize these individual candlestick shapes that you know, the shooting star, the doji,
+[00:01:22] the different types of doji's dragonfly gravestone, long-legged standard doji.
+[00:01:26] You're going to see these on the chart. And then you're going to start to see the candlestick
+[00:01:30] formations, the multi-camlestick patterns, you're saying, oh, that, that's that pattern I know.
+[00:01:36] And then what you're going to realize.
+[00:00:00] is that these patterns as they occur in real time.
+[00:00:08] You'll see this much about, and now what you have to do
+[00:00:13] is visualize what's coming next.
+[00:00:16] So that means you're starting to visualize,
+[00:00:18] I think we're going to get one of these,
+[00:00:20] and then I think we're going to get maybe one of these,
+[00:00:23] and then maybe one of these,
+[00:00:25] and one of these, and then this is the spot
+[00:00:29] I'm going to want to jump in for one of these.
+[00:00:32] Right? So now half of it's already existed,
+[00:00:35] and the other half you're visualizing.
+[00:00:38] And this is the exciting part where you have such a good picture
+[00:00:41] of the pattern that you could see just the first part of it,
+[00:00:44] and you can predict what's coming.
+[00:00:47] Right? That's where we're predicting the future.
+[00:00:49] So that's where it gets really exciting.
+[00:00:51] But of course, you've got to have a good foundation
+[00:00:53] and understanding what all these patterns look like
+[00:00:55] at the point where you can recognize them very quickly.
+[00:00:58] So the candel over candlestick pattern,
+[00:01:01] that to two candel pattern, requires two candles.
+[00:01:05] The base candle, and then the one that crosses over.
+[00:01:08] And of course, candle under candle is the same
+[00:01:10] or requires two patterns.
+[00:01:12] So that is our most basic multi candlestick pattern.
+[00:01:16] It's the simplest one that you can have.
+[00:01:18] It's a two candle pattern.
+[00:01:20] You've got the base candle, which has a high and a low,
+[00:01:24] and then you've got the candle that resolves.
+[00:01:27] Sometimes I'll call this base candle a trigger candle
+[00:01:31] because the high is my trigger to buy.
+[00:01:34] And the low, well, it could be a trigger.
+[00:00:00] to short if it's inverted, but generally it's just that that would be my stop loss. So if I
+[00:00:06] buy right here my max loss would be if it goes back down because then we're doing candle under
+[00:00:13] candle. So the top is my buy the bottom is myself and this becomes a trigger, right? That
+[00:00:19] candles the trigger. And sometimes the next candle will be right inside it. It doesn't make a new
+[00:00:24] higher new list. There's no action. And then this candle becomes a possible trigger candle and
+[00:00:28] it's the following candle that goes higher. By the way, when you have a candle that is really
+[00:00:34] tiny, it's called an inside candle. It's inside the previous candle's range. And usually just
+[00:00:42] for what it's worth inside candles, don't carry as much significance as a candle that has made a
+[00:00:50] candle over candle or a candle under candle because it's in range. So it's sort of like a bit of hesitation.
+[00:00:57] So to help you walk away from day trading the basics with one candlestick pattern that you'll
+[00:01:01] understand that easily recognize on the charts. I'm going to teach you about the bull flag,
+[00:01:05] also known as the pullback pattern. And so when you hear me talking about first pullback, second pullback,
+[00:01:11] third pullback, it's generally taking the form of the bull flag pattern. This is a candlestick
+[00:01:18] pattern that's been traded for, I don't even know how long, but this has been around for
+[00:01:23] as long as charts have been around. So it consists of a green leg up a pullback and then we buy
+[00:01:31] the trigger candle, stop as at the low of that trigger candle, entries at the top, as soon as this
+[00:01:37] candle breaks the...
+[00:00:00] We call it the first candle to make a new high, which creates the candle over candle formation.
+[00:00:06] So the psychology behind this pattern and I'll turn off my video so you can read the whole slide.
+[00:00:12] Is that we first have a rapid move up that attracts traders, right?
+[00:00:18] So when we get that rapid move up, no doubt the stock is going to be hitting our high day momentum scanner.
+[00:00:24] It may even be moving up on the top gainer scanner.
+[00:00:28] So it starts to become obvious. This is a specially true when the move is driven by breaking news.
+[00:00:36] Number two, the first pullback formed is by some profit taking from people who were holding before the news came out.
+[00:00:44] And it's also possibly generated by some early short selling.
+[00:00:50] People who think, oh, this thing's popping up. I'm just going to short it for the reversal.
+[00:00:54] If the first pullback hold, at least 50% of the move up, long biased traders will begin buying the pullback for the next leg higher.
+[00:01:08] And shorts get forced to cover with their stop at the high of the day as the price makes a second leg higher.
+[00:01:16] Typically I buy the first pullback and the second pullback after a stock start squeezing, thanks to breaking news.
+[00:01:22] After the first and second pullback, I usually don't want to overstay my welcome.
+[00:01:28] I will trade the first and second pullback on the one minute chart and then I will also trade the first and second pullback on the five minute chart.
+[00:00:00] So I can trade the exact same pattern, but on different time frames.
+[00:00:04] So now let's get zoomed in here.
+[00:00:07] Before I do that, I want to do a little whiteboard work here.
+[00:00:12] I'm not kind of break down this psychology.
+[00:00:15] So let's imagine here that we've got a stock that's got breaking news at 8 AM.
+[00:00:21] Breaking news top of the hour, the stocks got FDA approval.
+[00:00:26] Okay, what happened?
+[00:00:27] Instantaneously, within a fraction of a second, the stock pops up.
+[00:00:32] How's that happen?
+[00:00:33] It's the HFT, high frequency trading algos.
+[00:00:37] And the market makers responding to that order flow.
+[00:00:42] So as those orders are coming through, the market makers,
+[00:00:46] who are always trying to buy and sell by and sell, make the market,
+[00:00:50] pull away their sell orders, because they don't want to short a stock that's popping up with
+[00:00:55] a good news.
+[00:00:56] And so suddenly, the stock squeezes higher.
+[00:00:59] Now we're going to talk about algos scalping and how those algorithms actually work in
+[00:01:04] day trading strategies and scaling.
+[00:01:06] So I'll be filling in detail around that.
+[00:01:07] But for right now, we get the stock that squeezes up.
+[00:01:10] So as it squeezes up here, let's say it goes up 12% in that first candle.
+[00:01:16] So in this first candle, as it starts squeezing up, what's going to happen?
+[00:01:20] It's going to start hitting our high of day momentum scanner right here.
+[00:01:24] So stock's going to be hitting the scanner as it squeezes higher.
+[00:01:28] Boom, boom, boom, boom.
+[00:01:30] So we're going to get audio alerts.
+[00:01:31] We're going to see how much it's up from the close.
+[00:01:33] What the relative volume is, what the flow is, what the total volume.
+[00:01:37] So volume.
+[00:00:00] is what the price is, of course, time and day symbol and everything else.
+[00:00:04] At that point, we can click on the symbol.
+[00:00:06] We can check to see what the catalyst is that's driving this stock higher.
+[00:00:09] We see that there's a clear headline.
+[00:00:11] We pull up the 10 second chart, well first, as always, we check our daily chart for nearby
+[00:00:16] resistance, which you're going to learn about more as we continue on chapter 5.
+[00:00:20] We check the five minute.
+[00:00:21] We check the one minute and then we get zoomed in to the 10 second chart and we start
+[00:00:25] pulling up our level 2 so we can take an entry right here.
+[00:00:31] So as we pull up the level 2, we're now watching the chart and let's say it just blast
+[00:00:36] through up another big candle and now it's up 35% on the day.
+[00:00:41] That's great.
+[00:00:42] Maybe very likely we have not yet traded it because it's basically gone straight up.
+[00:00:48] So now we have a moment where we get the first, let's say little doji, and then a little
+[00:00:54] bit of profit taking comes in.
+[00:00:56] So at this point, the high frequency trading algorithm has helped fuel that initial spike.
+[00:01:02] Now traders get to see who are holding this prior to the spike.
+[00:01:06] Holy smokes, I'm up 12% and they might just say I'm out of this thing.
+[00:01:09] The stock is garbage, I'm so glad to sell it and the stock could come all the way back
+[00:01:14] down.
+[00:01:15] It may be some traders say you know, that headline isn't very good.
+[00:01:20] In fact, it's actually the same headline they put out a month ago.
+[00:01:23] It means nothing and they short it and the stock comes down.
+[00:01:26] Okay, maybe that happens.
+[00:01:28] If that happens, there's no trade for us because there was never a setup.
+[00:01:33] What is a setup?
+[00:01:34] A setup is a multi-candlestick pattern that we're familiar.
+[00:00:00] with that we know we can trade with an edge that helps us predict what's going to happen next.
+[00:00:05] So, as this stock is pulling back, we don't mind if it pulls back about 50% of the move,
+[00:00:11] but it can't pull back more than that. And I'd prefer it doesn't pull back more than 75%.
+[00:00:16] This is sort of the most bullish when it pulls back just about 75% and then right here,
+[00:00:21] let's say we have a little bottoming tail. You have a little bottoming tail green candle right there,
+[00:00:28] and then now we're looking for that first candle to make a new high. So, what's happening here is all
+[00:00:33] of the traders who missed this first spike, which would have been pretty much everyone except for
+[00:00:38] the high frequency trading algorithms because it came out of nowhere, are watching this stock that's now
+[00:00:43] up 30% with news and it's holding this level. And so we're watching this candle right here that
+[00:00:50] if we zoom in on that is our trigger candle. We're watching this next candle as it opens and of
+[00:00:56] course, as a candle opens, we're watching it as it's making potentially new highs, new lows.
+[00:01:01] So, we're zoomed in here. We know the high that previous candle and we're watching as the
+[00:01:06] candle's moving up moving down and we're waiting to see if it can break the high of the previous
+[00:01:11] candle, which we know to the price because we see it right on our chart. It breaks that price
+[00:01:18] boom, we're executing by orders. We're in and it squeezes back up and it moves through the high,
+[00:01:25] fantastic. Now it's up let's say 55% on the day. It pulls back again. Small little pull back right here.
+[00:01:34] Maybe a little bottoming tail on this one too. And now traders who...
+[00:00:00] We missed the first move, the spike,
+[00:00:02] and missed the first pullback
+[00:00:03] are gonna get in right here.
+[00:00:04] They're gonna say, holy smokes, this thing is so strong.
+[00:00:06] I'm buying this pullback right here, the last one worked.
+[00:00:09] And so usually the first pullback
+[00:00:10] of a second pullback work really well on a strong stock.
+[00:00:14] Once you've got the first in the second
+[00:00:16] traders who come in up here, they're like, oh, god,
+[00:00:18] I miss the first one, I miss the second one.
+[00:00:21] Maybe I need to wait for this to pull back a little bit longer.
+[00:00:24] And so usually at that point,
+[00:00:26] if this is a one minute chart,
+[00:00:28] we've got 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 candles.
+[00:00:33] So what is our five minute chart look like?
+[00:00:36] Most likely our five minute chart looks like
+[00:00:38] one green candle and a second green candle
+[00:00:41] may be with a small little top.
+[00:00:44] So now traders who just use five minute charts are saying,
+[00:00:48] I need to wait for that first pullback.
+[00:00:50] So that's gonna take another five minutes, another five minutes
+[00:00:53] and then right here, you get a little bottoming tail.
+[00:00:56] And now finally, the five minute traders
+[00:00:59] saying, I'm ready to take a trade.
+[00:01:01] And there you get your first five minute pullback.
+[00:01:04] And so this is a thing that's really incredible.
+[00:01:06] You can get a one minute first and second pullback.
+[00:01:09] And then you can turn around to the exact same thing
+[00:01:10] on the same stock on the five minute time frame.
+[00:01:14] Trade the first pullback.
+[00:01:15] And then it goes up and trade the second pullback.
+[00:01:17] And in fact, what I often will do
+[00:01:19] is as we're getting this breakout right here
+[00:01:22] on the five minute chart, as it's squeezing higher,
+[00:01:25] if we zoom in right here, we blow up those candles.
+[00:01:29] So we've got one, two, three, four, five, six,
+[00:01:31] seven, eight, nine, 10 candles.
+[00:01:34] What usually what you'll see is the first candle
+[00:01:36] popped up right here.
+[00:00:00] Right there the second candle maybe popped up and then you get a one minute micro pull back
+[00:00:07] It's the first one minute pull back after a fresh five minute break out and then you get another one minute pull back
+[00:00:14] And so we just continue trading this same pattern we're trading on the five minute
+[00:00:19] We're trading on the one minute, but this is the pattern we're focusing on that first pull back
+[00:00:24] So you can apply this to your trading today and you should you should of course
+[00:00:29] In a simulator to practice and test it out
+[00:00:32] So the psychology essentially is you've got a stock that's really strong and
+[00:00:37] Traitors want to buy it and shorts who maybe were over confident shorting of the being of the move
+[00:00:43] Our forced to cover and that creates even more buying volume
+[00:00:48] So the entry on this setup is the first
+[00:00:53] Candle to make a new high after that first pull back
+[00:00:57] That's the apex point of the bull flag and it can also be a flat top break up the flat top is when
+[00:01:04] It squeezes up like this and it pulls back
+[00:01:09] Basically like this and just sits right right under the high and then blast through right here
+[00:01:15] So it's called a flat top breakout. It doesn't even really pull back
+[00:01:18] But that's that's fine as well. It's just a slight variation of the same pattern essentially
+[00:01:24] So if I'm entering so so one thing that I'll note is that as you gain experience
+[00:01:30] Trading these types of stocks sometimes when you see that stock first popping up. You see how strong it is
+[00:00:00] And when you see it dipping down, you might start to get confident taking a starter position
+[00:00:07] to anticipate that it is going to break that trigger of that first cannon making you high.
+[00:00:13] That's getting a little fancy. You're not there yet, but you may see me do that at times.
+[00:00:18] If I'm entering early, typically what triggers that early entry is either the stock breaking
+[00:00:23] through a psychological level, just below the apex point, such as a half dollar or a
+[00:00:29] whole dollar. Something that you're going to learn is that a lot of stocks trade with a great
+[00:00:35] deal of respect to half dollars and whole dollars. So if I draw this here, I'm just going to fill
+[00:00:47] this in here. So this is $3, this is $3.50, this is $4.50. And the reason this happens is because
+[00:01:05] a lot of traders will set profit targets at half dollars and whole dollars. They'll buy it,
+[00:01:11] maybe they're in a $2 and they're like, I want to take profit, I'll just put my cell order at $3.
+[00:01:16] So what ends up happening is a lot of people cluster cell orders up around these levels.
+[00:01:22] And then people don't really put cell orders at like $3.12 or $3.4 or $3.21 or $3.32.
+[00:01:28] The next spot, obvious spot, is right around the half dollar. And so you end up having these
+[00:01:32] areas where there's a big sort of cluster of cell orders and then not too many, then another cluster.
+[00:00:00] And then not too many, and then another cluster, and then not too many, and then another cluster right up here.
+[00:00:05] And so the result, if you think about this, is that as we're trading a stock, it starts to squeeze up right here.
+[00:00:13] It pulls all the way up to the squeeze all the way up to three, and then it hits some of those cell orders.
+[00:00:18] So now the people that are buying are buying from the cellar, so it's got a little bit of resistance here.
+[00:00:24] And usually that results in a momentary pullback.
+[00:00:28] And then, with strength, if there's enough volume on this candle, we break through that level.
+[00:00:33] And then once we're above that level, what sometimes happens is we'll have our micro pullback here to retest it.
+[00:00:40] And the question there is, can this $3 level hold now a support?
+[00:00:45] It was previously resistance, can it now become support?
+[00:00:48] And if it can, then we're clear to the next level, which we usually go up to.
+[00:00:55] We pull back for a moment, and then we break through it.
+[00:00:59] And then sometimes we'll pull back again just for a second, retest it, can we hold it?
+[00:01:03] And if we can, we're clear to the next level.
+[00:01:06] And so we see pullback pop, little pullback bigger pop, pullback pop, little pullback bigger pop.
+[00:01:12] And this continues as stocks move up through half dollars and hold dollars.
+[00:01:17] It's just because of the psychology of traders selling at these levels.
+[00:01:21] Now, sometimes when you get a higher price stock, people won't sell as much at the half dollar.
+[00:01:27] These levels are really going to be consolidated at whole dollars.
+[00:01:30] But usually on the lower price stocks, we will see these sellers consolidate around half dollars and whole dollars.
+[00:00:00] So that means that sometimes, if we see a stock pop up and let's say for whatever reason,
+[00:00:07] this stock happens to pop up and it goes to 310.
+[00:00:11] It's a little unusual, but let's just say it blue right through 3 goes right up to 310.
+[00:00:17] Then in this area here, as it pulls back down, let's say it dips down to 3 and let's
+[00:00:23] just say when it dips down to 3, I pull up my depth of market, which is a tool that you're
+[00:00:29] going to learn how to use.
+[00:00:30] And I see on the bid, which is here on the left, a buyer who's got an order sitting there
+[00:00:36] by 20,000 shares.
+[00:00:39] And I think, wait a second, that person wants to buy 20,000 shares right here at $3.
+[00:00:44] That person without order is creating a degree of support.
+[00:00:48] We call it bid support, buying support.
+[00:00:53] And so what I might say is, I'm not going to wait for the first candle to make a new
+[00:00:56] high here.
+[00:00:57] I'm going to go ahead and I'm going to jump in his orders at $3.
+[00:01:02] I'll get in at 301, 302, maybe 305, as close as I can get into his order because here's
+[00:01:09] the way I think of it.
+[00:01:10] If I get in right there, I'm getting in and his order becomes my max loss.
+[00:01:17] Because what'll happen is if the price drops down to $3.
+[00:01:22] As long as he owns more shares than I own, I can always just sell him my shares.
+[00:01:28] So he's right there at $3.
+[00:01:29] So if I'm in at $3.05 with $10,000 shares, and we drop down to $3, I can see his order on
+[00:01:35] the bid, and if it goes from $20,000.
+[00:00:00] to 18 to 17 to 16 to 15 to 14, 13, 12, 11, 10, 9, then I see, oh, people are selling.
+[00:00:08] I better get out too, and I can get out.
+[00:00:11] But now I have a psychological level of support right there.
+[00:00:14] And it's very common that that happens.
+[00:00:16] So now instead of waiting for the first cable to make a new high,
+[00:00:19] I was able to get in right here at about 305.
+[00:00:22] Let's say first cable to make a new highest 310.
+[00:00:24] So now I'm in about 5 cents early, which is great.
+[00:00:27] And when we get that resolution, the profit will be bigger.
+[00:00:31] So you will learn all about that in a lot more details we continue on in this course,
+[00:00:35] especially as we get into stradges and scaling.
+[00:00:37] That gets a little more advanced because it gets into tape reading,
+[00:00:41] reading the flow of the market.
+[00:00:43] But once you learn, you're going to be really impressed.
+[00:00:47] So when I take a trade, what I look for is that surge of buying on the level two.
+[00:00:53] I always would prefer to have a slightly early entry,
+[00:00:56] because it does offset the risk of getting caught in what's called a bulltrap,
+[00:01:00] or a false breakout.
+[00:01:02] A bulltrap or a false breakout is when the stock pops up,
+[00:01:05] but then quickly reverses back down.
+[00:01:07] Now I can always bail out on that trade and take a loss,
+[00:01:11] but naturally the lower my initial entry,
+[00:01:13] the smaller the loss will be if we get that reversal.
+[00:01:17] Now almost immediately upon entering the trade,
+[00:01:19] I want to see the price moving up as a day trader.
+[00:01:23] And as a high relatively high speed day trader,
+[00:01:26] focusing on one minute and five minute charts,
+[00:01:28] if I'm not green on a trade within a minute of getting in it,
+[00:01:32] I timed it wrong.
+[00:01:33] I screwed up.
+[00:01:34] Now it's okay, I can just jump out, I can always get back in,
+[00:01:37] but that means that...
+[00:00:00] But within a minute of getting into a trade, I want to see that I am in the green.
+[00:00:04] If I timed my entry right, and I viewed the pattern correctly, I should be in the green
+[00:00:10] that quickly.
+[00:00:11] If the price moves down immediately, my timing is obviously wrong, and if I have just
+[00:00:15] a very small starter position, I can hold with my stop set at the low of the pull back
+[00:00:21] of the bull flag, and I could look to add in your support, or I might just have to stop
+[00:00:26] out.
+[00:00:27] However, if I go read immediately on trade, I have to say that I usually change my perspective
+[00:00:33] from this being a big winner to just getting out break even and just reducing the loss,
+[00:00:38] because the best trades don't start by putting me in the red right away, but some of the
+[00:00:42] worst trades do.
+[00:00:43] So it's better when it goes red that I kind of change my bias and say, you know what, let's
+[00:00:47] just try to get out with this little damage as possible.
+[00:00:50] That's probably going to be the safest thing.
+[00:00:53] But this is a type of trade that when it works well, it'll work almost immediately.
+[00:00:58] And the early entry allows me to start accumulating a position as we see volume coming in,
+[00:01:03] and then I can add to it as the price squeeze is higher, especially as short start covering.
+[00:01:09] So the target on a bull flag and the first pull back is always a squeeze through high
+[00:01:13] of day, but if the pull back was a bigger one, down to the 50% line, perhaps, then there
+[00:01:19] is an increased risk that when it comes back up, it'll form what's called a double top.
+[00:01:25] So a double top is when we'll back this up and we're going to retrace it down to the 50%
+[00:01:31] line.
+[00:01:32] We pull back here all the way down to the 50% line.
+[00:01:37] And then we get-
+[00:00:00] our first candle that makes a new high, that's our entry. But because we pull back so far,
+[00:00:04] we may find resistance right around here, especially if this is at a whole dollar. If that's
+[00:00:12] at a whole dollar, then it means we ran into resistance at the whole dollar in the first try.
+[00:00:16] We pulled all the way back down, let's say, to 350, we started at three, and now we're back here
+[00:00:22] at this level. So we're probably, in this case, going to pull back one more time. And this is the
+[00:00:29] creation of what's called an ABCD pattern. ABCD pattern, you've got ABCD. This is a pattern that I
+[00:00:42] trade frequently. And ABCD pattern is created when a bull flag double tops and has to pull back
+[00:00:51] one more time. We will also sometimes call this pattern depending on the shape, a cup, and handle pattern.
+[00:00:59] So you've got a double top form by the cup, and then this is the handle, and that's where we take the
+[00:01:04] trade back higher. So those are patterns that you're going to learn in more detail in the strategies
+[00:01:09] and scaling portion, of course. But if right now you just trade the first pull back. That pattern
+[00:01:16] alone. The nice thing about focusing on just 15, 10, 15, 20 cent winners is that there are
+[00:01:22] ample opportunities just about every day to trade the first pull back.
+[00:01:28] And ABCD pattern, that doesn't happen every day, a perfect one, a cup and handle pattern.
+[00:01:32] We don't see that every day. Head and shoulders. I mean, I'm sure you could find one somewhere in
+[00:01:36] the market, but on the stock.
+[00:00:00] it also meets our criteria for being worth trading, not every day. But a pullback, first pullback,
+[00:00:06] you can find a first pullback setup and a micro pullback, almost every single day. So it's a great
+[00:00:12] pattern to learn as you're getting started. So again, if we have that deep pullback down in the
+[00:00:19] 50% retracement, when we come back up, we may form an ABCD pattern, which is fine. I'll take my
+[00:00:25] profit and get out, let it form fully, and then I can always get back in for that second pattern.
+[00:00:32] Now, the risk factors on this setup is that, well, naturally, you of course want to keep a tight
+[00:00:38] stop, right? So your stop has to be the low of the pattern. These stocks are typically very strong.
+[00:00:44] However, a false breakout or a double top rejection, that's not impossible. So you've got to be
+[00:00:49] aware of what your max loss is, of course, before taking the trade. And one of the things that's
+[00:00:53] very important is I can firm there's no big sellers on the level two before I take the trade.
+[00:00:59] I also want to confirm the position of the 90MA on the intraday chart, the 200MA on the daily chart,
+[00:01:06] and observe if there is any nearby level of potential daily resistance. We're going to talk
+[00:01:11] about that a little bit more in the upcoming sections of chapter five. And then I look at the
+[00:01:17] current price, the size of the initial pullback, and I try to figure out what the position
+[00:01:22] size I can take would be. So, of all the patterns I trade, the bull flag is the most common,
+[00:01:28] and it's because traders don't want to wait. All you get is a momentary pullback, and then it pushes
+[00:01:32] higher. The ABCD pattern can be more powerful because a longer period-
+[00:00:00] consolidation has given more traders the opportunity to see the set up in a
+[00:00:03] participate, but I still prefer the first pullback in the form of a bull flag. Your
+[00:00:09] stop loss, low will pullback, or you could use an arbitrary stop of just 5 to 10 or 20 cents,
+[00:00:15] but here's the problem. If you use an arbitrary stop, instead of the stop that's at the
+[00:00:21] correct place on the chart. Here I'll show you an example. So this is the animation, squeezing
+[00:00:27] up hitting high day mama scanner, we wait for it to pull back, pull back, and now we're
+[00:00:31] looking for the first candle making you high. So we had candle over candle, candle over candle over
+[00:00:36] candle, candle under candle, flat here, watching this candle making you high. Stop is at the low of this
+[00:00:43] pullback. If this is our trigger candle and boom, that's the entry. So we're in right there, that's the
+[00:00:48] entry, that's your max loss. So let's say that's 10 cents a share. All right. So that was 10 cents a
+[00:00:54] share, then this is probably 40 cents and that's a great profit to loss ratio. You stand to gain
+[00:00:59] four times what you're risking. But let's just say this was a dollar a share, and maybe that's
+[00:01:05] four dollars a share. But you said I don't want to risk a dollar a share on this trade. So I think I'm
+[00:01:11] just going to take a 15 cents stop on it. And what might happen is it pops up, but it dips down
+[00:01:18] just for a fraction of a second, stops you out, and then it rips back up. But it never actually
+[00:01:25] broke the technical low of the pattern, which nullified and made the pattern void. The pattern
+[00:01:31] is broken when this level breaks. So if you say your stop arbitrarily hot.
+[00:00:00] just because you say I don't want to lose more than 10 cents a share, so I'm just
+[00:00:03] gonna put it here, you might get stopped out prematurely and the pattern works
+[00:00:07] anyways, so that's a word to the wise. Alright, so now back to this slide here. So
+[00:00:13] profit target on this is obviously you want to at least match whatever you're
+[00:00:17] risking, so if you're gonna risk 10 cents, you've got to be able to make 10 cents.
+[00:00:20] And the way I figure that out is just by looking at what my entry point is versus
+[00:00:25] the high of day, right? My target is high of day, so if my entry is 330 and the
+[00:00:30] high of day is 360, then I've got a 37 profit target. So as long as my stop is
+[00:00:35] less than that, I'll take the trade. But I would prefer if possible that whatever
+[00:00:41] I stand to gain is more than what I stand to lose on the trade. That would
+[00:00:47] create a positive profit to loss ratio. And I always think it's better to aim
+[00:00:50] for that. So and I'm always gonna take the breakout or bail out philosophy when I'm
+[00:00:55] trading, so if I get in, let's just say, and it goes up nine cents, and then it
+[00:01:01] starts to stall out, I'm not gonna say, I can't sell it if I'm not up 10 cents. I'm
+[00:01:05] just gonna get out. I'll take the nine cents on that trade. Maybe the next one
+[00:01:08] will give me 11. So I'm getting out based on an exit indicator, not because it
+[00:01:13] just hit a certain number. I have to see an exit indicator. Now getting into
+[00:01:18] exit indicators, kind of also requires an understanding of what we need to see
+[00:01:26] happen when we take a position. So I'll explain that in just a moment. Now is
+[00:01:31] a side note, in strong market, rather than sell maybe half my position, or sorry,
+[00:01:36] rather than sell my entire position.
+[00:00:00] when I'm up 20, 30 cents, I may add to my position
+[00:00:05] or just try to hold for a bigger move.
+[00:00:08] This is gonna be a little bit more advanced
+[00:00:11] and I could probably remove it from this section
+[00:00:13] of the slide deck and reserve it for the strategies
+[00:00:15] and scaling portion of the course
+[00:00:17] because scaling in and scaling out is just a little more advanced.
+[00:00:22] I think for most beginner traders,
+[00:00:23] one entry and one exit is the cleanest way to do it
+[00:00:27] and then the next level is one entry and two exits.
+[00:00:30] So one buy and then sell half, sell half,
+[00:00:33] to try to hold a little longer.
+[00:00:35] And then after that, it's maybe two buys scaling in
+[00:00:39] and two sells scaling out.
+[00:00:41] So kind of moving into that.
+[00:00:43] But initially, the easiest way for a beginner to start
+[00:00:46] is with one entry, one exit.
+[00:00:48] And then when you've got your keyboard,
+[00:00:50] you set your keyboard up so you've got one key to buy
+[00:00:53] and one key to sell.
+[00:00:54] So buy order, sell order and then a cancel order, buy it.
+[00:00:59] And then that's all you need.
+[00:01:00] You need three orders, three hot keys essentially.
+[00:01:03] Shift one to buy 100 shares, control Z to sell 100 shares
+[00:01:07] and control Q or to cancel or escape to cancel,
+[00:01:11] depending on which software you're using.
+[00:01:13] And that would be adequate.
+[00:01:15] So that's a really good starting place.
+[00:01:16] I think for a lot of beginner traders.
+[00:01:19] Okay, so now you've seen the anatomy
+[00:01:22] of the individual candlesticks.
+[00:01:23] You've seen this first multi candlestick pattern.
+[00:01:26] The first one I suppose was the candlestick over candle.
+[00:01:28] But now you've seen this most popular one,
+[00:01:31] my absolute favorite.
+[00:01:33] And now let me show you a couple of examples.
+[00:01:36] This is a stock that would give us...
+[00:00:00] this big squeeze up, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, how many green cams in a row do we have
+[00:00:05] here?
+[00:00:06] 2, 4, 6, 8, 10, 12, 14, 16 and a row, okay, volume is increasing, then we get two red
+[00:00:13] candles, a little bit of a pullback, bottoming tail, what's a bottoming tail signify, bullish
+[00:00:18] ness, buyers are coming into it.
+[00:00:20] First Caleb making new hires right there, that's your entry, that's your stop, your
+[00:00:24] profit target is high a day, and whoa, look at that, right back to the high, that's
+[00:00:28] a quick trade.
+[00:00:29] That's a trade, this is a one minute chart where within two minutes, you go from $3 and
+[00:00:35] 70 cents to $4.70, you're talking about 20% move in two minutes, you only need to do that
+[00:00:42] a couple times a day to have a great, really, if you do that a couple times a day, you're
+[00:00:47] going to have a great career as a trader, it's just about being consistent, looking
+[00:00:51] for those opportunities, jumping in, jumping out, not overstaying you're welcome, focus
+[00:00:56] on one trade a day as a beginner, that's your trade, here's another one, or actually this
+[00:01:01] is the same one.
+[00:01:02] We got that pullback, we got that dip right there, and then look at this, it rips up.
+[00:01:07] Now I cap my losers, but I don't want to cap my winners.
+[00:01:11] So what that means is that I have a hard stop on my loss, but I don't want to sell my
+[00:01:16] winner until I see a valid exit indicator.
+[00:01:19] So I promised I would talk about exit indicators.
+[00:01:23] Let's first talk about entry, it's not indicator, it's so the moment you buy the moment
+[00:01:36] you get in.
+[00:00:00] I want to walk you through what we want to see the moment after you get in.
+[00:00:04] Your entry indicator here is simply the first candle that makes a new high.
+[00:00:09] I'm drawing this pattern backwards.
+[00:00:11] But that's your entry indicator is the first candle that makes a new high.
+[00:00:15] But the moment you get in, what you want to see.
+[00:00:18] So what you want to see, and I'm going to draw a picture of two little eyeballs.
+[00:00:23] So what you want to see when you're looking at this, you want to look at this and see number one
+[00:00:28] that the price is moving up quickly.
+[00:00:32] You want to see no big sellers.
+[00:00:37] Three, no resistance.
+[00:00:40] You're going to learn about what resistance looks like.
+[00:00:42] And essentially, if you see the price moving up quickly, you see no big sellers and no resistance.
+[00:00:48] Right after you bought, you are in good shape.
+[00:00:51] And that's a trade that I'm going to hold as long as I can.
+[00:00:55] When will I stop holding it?
+[00:00:57] So the exit indicators.
+[00:01:00] So exit indicators.
+[00:01:05] Number one, the price stops going up and starts going flat.
+[00:01:11] When the price stops going up and starts going flat, it's a risk that it could start going down.
+[00:01:16] Now it may keep going higher, but it's a risk it could start going down.
+[00:01:20] So if the price starts going flat, that's an exit indicator.
+[00:01:23] If we start seeing big sellers, big sellers on the level two,
+[00:01:28] that's an exit indicator.
+[00:01:30] If we start coming up to resistance, perhaps it's on the daily level,
+[00:01:34] perhaps it's some type of intraday ascending decent.
+[00:00:00] then boom, that's a spot that we want to recognize and get out. So, if I get in a position,
+[00:00:06] and let's say this goes up 20 cents, 40 cents, 60 cents, 80 cents a share, and then I see my first
+[00:00:13] exit indicator. At that point, I might just sell half, because I'm already up so much
+[00:00:19] that I could afford to let it pull back, and I might let it pull back a little bit, and maybe it
+[00:00:24] gives me a little pullback, but I'm in from down here. That's my entry. So, maybe what I'll
+[00:00:30] do in this case is I'll sell half, and I'll say, you know what? I'll hold the rest as long as it
+[00:00:35] holds over what was this level. Let's say $4. As long as it holds support at four, I'll keep
+[00:00:41] holding the rest of my position. So, then let's say it holds four, and then uh oh, we got another green
+[00:00:47] candle coming in. You now can decide to take profit as it squeezes higher, or even to add back the
+[00:00:53] half you sold, because you've got a new pattern that's forming, and that would be fine as well.
+[00:00:58] I often will do both. So, it's just continuing to watch these patterns forming. So, the exit
+[00:01:03] indicators is when the price stops going up, it starts to stall out, and I guess another one here,
+[00:01:09] is you want to see volume coming in. So, you want to see volume increasing. So, if volume starts
+[00:01:14] decreasing when you get after, you know, you're in the trade full a bit, that's another indicator
+[00:01:20] that we may have a problem. So, price starts slowing down, big sellers come in, we start coming
+[00:01:25] to resistance, or the volume starts decreasing. Those are all exit indicators. As long as you don't
+[00:01:30] see any of those, then you've got to stock that as a potential to make a big move. So, this one right here
+[00:01:35] on the charts, you can see, went from 2 to 3.
+[00:00:00] $50, $50, $50, $50, $50, $50, $50, $50,
+[00:00:02] $50, $50, $50, $50, all the way to $9, $10,
+[00:00:04] is a share.
+[00:00:06] And then a quick seller.
+[00:00:08] So once you got that first camel,
+[00:00:10] it'll make a new ha, a new low.
+[00:00:11] That was right here.
+[00:00:12] First camel made a new low right there.
+[00:00:14] That was your first, I mean, and again,
+[00:00:17] that's definitely an exit indicator as well.
+[00:00:19] But you should be able to be getting out before that happens.
+[00:00:22] Before you get that exit indicator,
+[00:00:24] there's going to be, you're already going to see the selling
+[00:00:25] coming in before it actually makes a new low.
+[00:00:28] So I could add that as a fifth exit indicator,
+[00:00:31] but you should already see that one.
+[00:00:33] This is another nice set up green candle.
+[00:00:36] So here the stock is going to hit the scanners.
+[00:00:38] Then it pulls back.
+[00:00:40] Your entry is right here.
+[00:00:41] You take profit once it starts to stall out.
+[00:00:44] It pulls back, bottoming tail.
+[00:00:46] And then another first camel to make a new high.
+[00:00:48] These are five minutes set up.
+[00:00:49] So you got your first five minute, your second five minute,
+[00:00:52] and the second one actually worked out better than the first one.
+[00:00:54] That's very common that the waves get bigger
+[00:00:58] and bigger as more traders start noticing the stock
+[00:01:01] and volume increases.
+[00:01:03] This is what we love to see.
+[00:01:05] But ultimately, what goes up can come back down.
+[00:01:08] And so you want to make sure you don't over trade
+[00:01:10] what I call the back side of the move.
+[00:01:14] So how do we differentiate that this is on the front?
+[00:01:17] And this pull back right here isn't just a dip
+[00:01:19] for another leg higher.
+[00:01:22] That's a great question.
+[00:01:23] And we're going to continue talking about that
+[00:01:25] as we go through chapter five.
+[00:01:27] So there's indicators that I use.
+[00:01:29] And there's a couple of other little secrets
+[00:01:31] that I have that help me big time
+[00:01:33] avoid over trading the back side.
+[00:01:35] As you listen to my commentary in the chat room every day.
+[00:00:00] You'll get a, you'll really pick up the things that I'm looking for.
+[00:00:03] But I'll talk about it more as we continue through chapter five.
+[00:00:06] Okay, so this is another one.
+[00:00:07] High volume green bars here, squeezing up, light volume pull back, pulling back,
+[00:00:12] bottoming tail, max loss is the bottom of the pull back.
+[00:00:15] That's the entry right there.
+[00:00:16] That's the trigger candle.
+[00:00:18] Your green candles where you bought.
+[00:00:19] Remember, you don't wait until this green candle closes.
+[00:00:23] This candle is actively moving up.
+[00:00:26] You buy it the second, it breaks over 21.
+[00:00:29] That's what I'm doing.
+[00:00:30] The second, it breaks 21 here.
+[00:00:31] I'm in my target's 22.
+[00:00:33] And as it goes higher, now I'm just watching see if I get an exit indicator.
+[00:00:37] And if I don't get an exit indicator,
+[00:00:39] then there's no real reason for me to sell other than maybe saying,
+[00:00:43] I'll sell, you know, a quarter of the position just to protect myself a little bit,
+[00:00:48] because I'm up so much.
+[00:00:49] I should take a little profit off the table.
+[00:00:52] One of the things that I'll tell you and you'll hear me say is,
+[00:00:55] it's important to pay yourself when you have the profit.
+[00:00:58] So you may see other people who make more money.
+[00:01:00] I'll see other people out there who make more money than me,
+[00:01:03] but it's important to pay yourself.
+[00:01:04] Because at the end of the day, when you're up 15, 20, 30 cents a share,
+[00:01:09] that's a winner.
+[00:01:10] Pay yourself for that.
+[00:01:12] Now if you're only trading 10 shares right now,
+[00:01:14] I understand why you might think,
+[00:01:16] wow, 10 shares isn't enough for me to take profit on 15 cents a share.
+[00:01:22] So let me tell you something.
+[00:01:26] I hear this a lot.
+[00:01:27] I hear a lot of beginner traders say, Ross,
+[00:01:30] I have a small account.
+[00:01:31] I've got a thousand bucks, $2,000.
+[00:01:33] I can only trade 100 shares.
+[00:01:34] I want to grow this account.
+[00:01:36] So that means I'm going to-
+[00:00:00] 100 shares, but I'm not going to sell it till the stocks of, you know, a 50 cents a dollar
+[00:00:05] share $2 a share. In other words, what they're trying to do essentially is hit a home run,
+[00:00:11] because you're trying to get in something at $2 and sell it at three for a 50% return.
+[00:00:15] Yeah, I'd love to do that every day also. It's really hard. It's hard for me and I've been doing
+[00:00:20] this for more than a decade. So when you think, and I'm not trying to pick on anyone here,
+[00:00:25] but generally speaking, if you are thinking, I'm just going to hold this 100 share position
+[00:00:30] and just till I get a dollar share, you're setting the bar way too high. That's unrealistic,
+[00:00:36] it's unreasonable. Don't do that. So what I learned is that most of the successful traders out there
+[00:00:43] are very diligent about getting in, cutting their losses quickly if it goes wrong,
+[00:00:49] keeping the losses small, and when they have profit being a bit defensive and taking some of
+[00:00:54] that off the table, because once you take a little profit off the table and you set your stop,
+[00:01:00] at least mentally, that you'll get out if it goes back to break even, you've now ensured that you've
+[00:01:04] got a winner. If you do that on every trade you take, even if the stock only goes up 10 cents a share,
+[00:01:10] you'll have high accuracy. It's traders who go up 10 cents 20 cents a share, but don't take anything
+[00:01:15] off the table that watch it disappear. And it's super frustrating. You need the small wins right now.
+[00:01:22] Those victories, not only are they good for your count, small wins do add up over time,
+[00:01:26] it's also a big boost to self confidence. Because look, if you can capture 15 cents a day
+[00:01:33] consistently with 100 shares, I get it. It's only 15 bucks a day.
+[00:00:00] But you now have proven that you have the skill, you have the process, and you have the strategy that can consistently produce profit.
+[00:00:08] The only difference between 15, since today, the only difference between 15 dollars a day, and 150 a day, it's going from 100 shares to 1000 shares.
+[00:00:16] And then from 1,000 to 2,000 to 6,000 to 8,000 to 10,000 to 15,000.
+[00:00:20] And next thing, you know, you're doing 1,500, 2,000, 3,000 dollars a day.
+[00:00:25] It starts with bass, hit, trading.
+[00:00:28] So I'm really a big believer in this.
+[00:00:31] Some of you guys know, so I live in New England, I grew up in Vermont.
+[00:00:35] And one of the things that I used to do when I was young was I would go over to my uncle's house in New Hampshire
+[00:00:41] And he would tap all the maple trees in the spring to make maple syrup.
+[00:00:45] And I remember going there and he had this sugar house who was down by the stream, it was really beautiful.
+[00:00:50] And so once I had my two sons, my boys, I said, I'm going to start tapping the trees and giving them that experience that was so meaningful to me.
+[00:01:01] And so we started tapping the trees.
+[00:01:03] And so I've got about 40 acres of land here, a lot of it is old growth sugar maple.
+[00:01:08] So I tap the trees and I've got about 50 taps out.
+[00:01:11] Now on a good day, those taps will each produce at least a gallon of sap.
+[00:01:18] On some days when it's really running, I'll get two gallons or more, which means from those 50 taps, I'm coming out with 150 potentially gallons over the course of two days.
+[00:01:27] 150 gallons of sap.
+[00:01:30] Now the ratio of sap to syrup is that you only get two, it's only 2% sugar content.
+[00:01:37] So you've got a boil.
+[00:00:00] off 98% of the water to concentrate it down to sap.
+[00:00:05] And I have us a relatively small evaporator.
+[00:00:08] It's on a wood stove outside
+[00:00:10] and I've got a stack of firewood.
+[00:00:12] And so on that evaporator,
+[00:00:14] I can only boil at top capacity seven gallons an hour.
+[00:00:20] So that means, and you'll see me in the winter time,
+[00:00:22] I hustle out, I feed the fire
+[00:00:24] and I come back when we've got a break or whatever.
+[00:00:27] And so seven gallons an hour, 10 hours,
+[00:00:30] that's only 70 gallons.
+[00:00:32] So, and if I run it at through the night,
+[00:00:34] which I will, I still am not gonna get up
+[00:00:36] every 45 minutes to feed the fire.
+[00:00:38] So I had a problem.
+[00:00:40] I realized I need to figure out how to get ahead.
+[00:00:44] And so I asked myself,
+[00:00:45] what are the big maple syrup producers doing?
+[00:00:49] And what I learned is that they use reverse osmosis systems
+[00:00:53] to concentrate the sap to bring it up to about
+[00:00:57] 8% sugar content before processing it in the evaporator.
+[00:01:02] So when they run it through the reverse osmosis system,
+[00:01:05] it extracts the pure water.
+[00:01:07] And the byproduct it leaves you is higher concentrate sap.
+[00:01:12] So I looked into them and it cost $25,000.
+[00:01:15] And I was like, this is a backyard hobby.
+[00:01:19] I'm gonna be producing syrup at the rate of $5,000 a gallon.
+[00:01:23] There's no way, because I'm a good year.
+[00:01:25] I'm only getting six, maybe seven gallons of syrup.
+[00:01:27] So I thought this is gonna, that's ridiculous.
+[00:01:29] And then I learned that, well, wait a second,
+[00:01:32] I do have a reverse osmosis system
+[00:01:35] that is for the ice maker, right?
+[00:00:00] to make sure your ice is clean.
+[00:00:01] A lot of people have that.
+[00:00:03] And so I thought, what if I just take
+[00:00:05] that reverse osmosis system,
+[00:00:07] I get two of the membranes,
+[00:00:09] I get a little pump,
+[00:00:10] and I just run it through that.
+[00:00:13] So I run from one five gallon bucket to the other,
+[00:00:15] and all of a sudden, my sap goes up to 8%.
+[00:00:18] What I have done is I've reduced
+[00:00:20] my boiling time by 75%.
+[00:00:24] Now, it was easy for me to think full circle
+[00:00:27] that I shouldn't do what the professionals are doing
+[00:00:29] because I don't have enough money.
+[00:00:31] I mean, I could, but that I didn't want to.
+[00:00:34] It would be easy for me to think,
+[00:00:35] I'm just gonna have to do it the old fashioned way
+[00:00:37] and just make it harder on myself
+[00:00:39] by boiling and boiling and boiling.
+[00:00:41] But instead, I thought maybe there's a way
+[00:00:43] I can do what they're doing, but on my own scale.
+[00:00:45] And that's what I want you to do.
+[00:00:47] I want you to take that 15, 20 cent a share win.
+[00:00:50] Even though it's only with 10 shares
+[00:00:51] or maybe a hundred shares,
+[00:00:53] you're doing the same thing
+[00:00:55] that the more successful traders are doing.
+[00:00:57] You're following the same process,
+[00:00:58] you're just scaling it to your level.
+[00:01:00] And if you can follow that process consistently,
+[00:01:03] that's something you can scale up.
+[00:01:06] Okay.
+[00:01:07] So with that said, let's go ahead
+[00:01:09] and jump into the next chapter in chapter five.
+[00:01:13] It'll be chapter five, part four on support and resistance.
+[00:01:17] And you can see right here,
+[00:01:18] this is just another really great example
+[00:01:20] where you've got this stock that's just trending higher,
+[00:01:24] momentary pullback, trending higher, pullback,
+[00:01:26] trending higher, pullback.
+[00:01:28] These are the dips that we're buying,
+[00:01:30] buying the dips, selling it to the breakout,
+[00:01:32] buying the dip, selling it to the breakout.
+[00:01:34] And I consistently find that for me,
+[00:01:37] the,
+[00:00:00] time of day that I make the most money is in the morning just to give you guys some
+[00:00:05] context. So I know some of you are thinking, oh, I could do this all day long and you
+[00:00:09] could. But I've consistently found in my career that I do the best in the early part of
+[00:00:14] the day. So let's look at days and times here. So this is this is the window. And the reason
+[00:00:20] I do the best during this time is because this is when stocks are reacting to the
+[00:00:25] breaking news. The breaking news comes out pre-market. It comes out overnight and the
+[00:00:30] stocks during these first two hours a day are reacting to those headlines. Now if
+[00:00:34] you're a large cap trader, you may start trading in this range here when Netflix
+[00:00:39] Apple, Google, etc. Amazon Apple, Facebook, when they're reporting their earnings.
+[00:00:44] But I don't trade that strategy because I find it as I've said really hard to fight
+[00:00:48] the algorithm and to trade against those institutional traders. So know your spot in
+[00:00:54] the market and I'm going to tell you, if you can get good at just one setup, even if
+[00:01:00] you only trade that setup once a day or even if you only trade it once a week, just one
+[00:01:05] setup. That is enough to keep your head above water. Survive till you thrive. Okay, let's
+[00:01:12] jump into chapter five, part four on support and resistance.

@@ -1,0 +1,234 @@
+# Segments: 10
+# Transcribed: 2026-06-26T19:28:48.987426
+
+[00:00:01] So, what a system short seller is doing is they're using a very primitive algorithm to execute trades on the market and rather than being a discretionary trader where they have to sit in front of their computer and manually press the buy and sell button and deal with emotions and everything else they instead want to automate their trade.
+[00:00:21] So, just as me as a long bias trader might say, oh, I'd like to create an algorithm where anytime there's a stock with a float of less than 10 million shares that has breaking news that spikes up more than 10% in one candle, I'm going to have my algorithm initiate a buy order for 1000 shares.
+[00:00:38] Set a 10 cent stop on it. Now, of course, you can't set stops pre-market, so that's a problem. But let's just say, if the unrealized P&L goes negative more than, you know, 10 cents a share, send a sell order to the market.
+[00:00:51] So, I could do all that. However, I have tried to do that, and it was not successful. And I spend a lot of time trying to develop an algorithm for trading to the long side to take the emotion and discretion out of it and I did not find it as possible for me.
+[00:01:06] And I think that it would be naive of me to think that I could somehow outcompete these PhDs working at hedge funds in, you know, teams of, you know, several dozen who are putting the best minds in the world together to figure out algorithms to print money from the market.
+[00:01:24] That me, I'm somehow going to be able to do it, come on, let's get real. As retail traders, we don't have the tools or the data at or disposal to have the edge that we would need. However, some people have continued to try.
+[00:00:00] and there are companies out there that sell software so you can do it.
+[00:00:03] And so system short selling has become popular
+[00:00:06] and it refers to a short selling strategy
+[00:00:08] where retail trader uses their own algorithm to short stocks
+[00:00:11] and they use a systematic approach rather than discretionary.
+[00:00:15] The algorithm will run whether they're awake or asleep or runs by itself.
+[00:00:18] So these people that sell the software
+[00:00:21] sells you the idea that you can make money in the market
+[00:00:23] you don't even have to be here. It just makes money all by itself.
+[00:00:26] You give it the rules and it'll just trade the markets for you.
+[00:00:29] So the rules give the program dictate how it'll trade.
+[00:00:33] They're not highly sophisticated algorithms
+[00:00:35] and they obviously deal with issues of latency, lag time,
+[00:00:38] which is and slippage, which all heavily impact how well it performs
+[00:00:43] compared to any potential back test that you've run.
+[00:00:46] So you can have so many at back test well
+[00:00:48] and then you run it and it doesn't perform well.
+[00:00:50] That's what happened to me.
+[00:00:51] I would back test it would be good.
+[00:00:52] I would run it and with slippage and the difference between entries and exits
+[00:00:56] and then the difference between the stop and where I was supposed to get out
+[00:00:59] and where I did get out, wiped out all the profit.
+[00:01:01] It could not make money with it.
+[00:01:02] So anyways, these pieces of software are marketed to retail traders
+[00:01:06] as a way to make money in the market without sitting there.
+[00:01:09] So it's a service sales gimmick in my opinion.
+[00:01:12] This system's short strategy is to short.
+[00:01:15] Anytime a stock goes up more than a certain number of cents per share
+[00:01:19] so every 50 cents I'm going to add 100 shares.
+[00:01:22] So add add add add add add add add.
+[00:01:26] Or every 25% it goes up I'm going to add a thousand shares.
+[00:01:29] So 1,025, 1,050 percent, 1,075 percent, 1,0100 percent.
+[00:01:35] And just you basically you just create a system.
+[00:00:00] And it's just add, add, add, add, add.
+[00:00:01] And that's what it always looks like when they do this.
+[00:00:04] So when you have the stock spiking up here on an algo spike,
+[00:00:08] you've got an algo spike in the stock is squeezing up.
+[00:00:11] You have other traders out there running high frequency
+[00:00:14] trading algorithms who are having orders that execute automatically
+[00:00:17] every x cents or x per cent.
+[00:00:21] So they're taking little bits of positions.
+[00:00:23] And so they accumulate an average price.
+[00:00:25] Let's say right around here.
+[00:00:26] So average price, let's say, is $2.
+[00:00:29] So this went from $1 to $3 a share.
+[00:00:32] So it's $300 per cent move and their average price is $2.
+[00:00:37] And what they're hoping to do, of course,
+[00:00:39] is they let it go red on them
+[00:00:41] because they're adding, adding, adding, adding
+[00:00:42] into the spike.
+[00:00:43] And then what they're expecting and really
+[00:00:46] praying will happen, is that this algo spike
+[00:00:49] will get reversed and it'll come back down.
+[00:00:51] And many times that will happen.
+[00:00:54] And so it comes back down, comes back down, comes back down,
+[00:00:57] and then they buy back their shares at $150
+[00:01:00] and they're up, you know, whatever, 500 bucks or whatever it is.
+[00:01:03] This is not big money trading.
+[00:01:05] You're not going to make $50,000 to an unalgoer them.
+[00:01:08] But these are people they're trying to make, you know,
+[00:01:10] $100, $200 a day, maybe $500 worth of.
+[00:01:13] So relatively small position size is relatively small accounts
+[00:01:17] and trading share sizes that aren't going to really
+[00:01:20] probably move the market too much.
+[00:01:22] So they can get filled without too much slippage.
+[00:01:25] So the idea is they're trading against the trend.
+[00:01:28] The trend gets exhausted, squeeze, stock,
+[00:01:31] because it's a big squeeze and then they revert.
+[00:01:33] And that's reversion trading.
+[00:01:35] So you're trading for reversal, counter trend and...
+[00:00:00] it comes back. And it's a strategy design to capitalize on extreme moves and then cover
+[00:00:04] when the price comes back to equilibrium, which is around the view app. However, what happens
+[00:00:10] when a stock goes from $5 to $50 a share in a matter of minutes? What do you think happens?
+[00:00:16] These system short sellers, their accounts go to zero and they have to start over.
+[00:00:22] And usually, you know, they'll fund the account with a couple thousand bucks and it may be a cash account
+[00:00:28] they're adding, adding adding, they take one trade a day basically doing this strategy.
+[00:00:32] And then the account, they get liquidated, it goes to zero. They have to start over.
+[00:00:36] So they fund the account with a normal money. The platform that's letting them do it is happy to take
+[00:00:41] their money and they do it again and it works and it works and it works and works and then it does.
+[00:00:46] And this is what I have seen every single time I've seen the P&L curve a system of a system short seller.
+[00:00:53] It looks like this. We'll do blue. So their equity curve looks like this.
+[00:00:57] Slow growth, slow growth, slow growth, slow back to zero. Give it all back in one day.
+[00:01:04] It could be months of progress, gone in one day. Black Swan event that will never happen again.
+[00:01:10] Slow growth, slow growth, slow growth, son of a gun it happened again. That's what it always looks like.
+[00:01:16] Because every couple of weeks, every couple months, there's another stock that goes from $2 to $50 a share
+[00:01:23] and the account is gone. Now, in the meantime, the people that sell that software, they don't really care
+[00:01:28] because they're not trading their own money with it, right? If it was such a good algorithm,
+[00:01:33] they wouldn't share. So they let other people use this algorithm. It works.
+[00:00:00] little while high-success rate, but then the inevitable big squeeze happens, every few weeks,
+[00:00:04] every few months blows up their account, and it always ends the same way.
+[00:00:08] This is the biggest flaw with trying to trade against the trend.
+[00:00:13] Now on the other hand, if you use that algorithm to buy, every time something popped up,
+[00:00:17] you know, 10%, would that work better?
+[00:00:20] There are certainly times where we have algos fights, where we get the pop, and then it
+[00:00:23] comes all the way back down, and so you would lose money.
+[00:00:27] To be honest, trading, in my opinion, is too complex to try to automate to a primitive
+[00:00:34] algorithm.
+[00:00:35] Now if you had the resources at your disposal to, you know, you were a hedge fund manager,
+[00:00:42] and you could hire all these people to create an algorithm, you know, that's possible.
+[00:00:46] But think about a hedge fund manager like Bill Akman.
+[00:00:49] His hedge fund managers, I think, like 18 billion dollars, he has something like 25 employees.
+[00:00:57] He doesn't run these algorithms.
+[00:00:59] What he's doing is he makes a thesis about a company.
+[00:01:03] He really likes x company, whatever it is, and he takes a multi-billion dollar position in
+[00:01:08] that company, and he holds it for months or years.
+[00:01:12] He tries to get a position on the board of directors, you know, so he's not using these
+[00:01:18] dinky algorithms to try to scalp half a penny a share out of the market from retail
+[00:01:22] traders.
+[00:01:24] But then there are other institutional firms that work with these big brokers, you know,
+[00:01:30] Robin Hood, and I think we're swimming this in that.
+[00:01:33] And those firms run algorithms, and those algorithms are designed to...
+[00:00:00] Basically, they, I don't know what the right word is, but they facilitate orders getting sent to the market.
+[00:00:09] It's a very complex system, and so they have algorithms that are running to manage these orders coming in from clients going out to the market.
+[00:00:16] But a lot of these orders don't actually even go to the market.
+[00:00:20] You're with a commission free broker, so commission free broker here, and this is an NSDQ over here, that's NASDAQ.
+[00:00:29] Your orders, they don't go to NASDAQ, they go to the wholesaler.
+[00:00:35] So the wholesaler broker fills your orders back to here, and is using the quotes off NASDAQ.
+[00:00:42] So they're using the quotes of NASDAQ to execute your orders, and your orders go through the time and sales.
+[00:00:48] But they're actually being executed here by the wholesaler.
+[00:00:51] So this gets into a whole layer of market structure, the way the market works, what happens to your orders when you send to the market?
+[00:00:59] And all of this speaks to the fact that if you're a retail trader trying to create an algorithm,
+[00:01:04] there's a whole lot about the market and probably don't understand.
+[00:01:08] So for me, I'm not trying to use any algorithms.
+[00:01:11] I tried it.
+[00:01:12] It doesn't work, and I've now researched enough to know that that was naive of me to think it would.
+[00:01:17] So that's okay.
+[00:01:18] And so for me, I'm a discretionary trader.
+[00:01:20] I sit down every day and I trade.
+[00:01:22] But what we know is that these system short sellers are active in the market.
+[00:01:27] And so we have these big spikes, Algo spikes, and they revert 100%.
+[00:01:32] We know that there's probably some system short sellers that won on that trade.
+[00:01:36] They made some money as it came.
+[00:00:00] back down, and then it slowly rallies back up.
+[00:00:03] But then there, and then this is another instance where they went, right?
+[00:00:06] It pops up, you get a full reversal, it drops back down, maybe those algorithms were kind of
+[00:00:11] off-base with thinking the news was good, sometimes you get that knee jerk reaction and
+[00:00:15] then it reverses the other way, sometimes they even end up going red.
+[00:00:19] So the algorithm was completely wrong to even initiate a buy order, but it's just the way
+[00:00:25] the market is.
+[00:00:26] Sometimes the companies put out headlines that seem intentionally misleading to try to trick
+[00:00:31] the algorithms, it's really fascinating.
+[00:00:34] So we get into that, you know, in another episode or another class, but then here the
+[00:00:40] year of the times where the short sellers just subver and instill loss.
+[00:00:43] From $4 to $28 a share, it doesn't revert, it comes down to 16, and then it goes higher.
+[00:00:51] And so adding, adding, adding at, you know, $450, $55, $6, $57, max loss at 10, they're
+[00:00:59] out of position, and then it goes up to 14, 18.
+[00:01:01] I mean, obviously this happened so quick, you might not have even been able to trade to
+[00:01:05] the long side, although I did, on this particular day, I did trade the stock to the long
+[00:01:09] side, and I made $65,000 on it.
+[00:01:12] So it popped up, we had a micro pullback here, we got a squeeze up, first count to make
+[00:01:16] a new high right here, and then another curl here, this is a little tricky, but I made
+[00:01:20] some good money on it, but the system short sellers got smoked immediately.
+[00:01:25] Here's another one, instant Algo spike from $550 up to $850, and although it pulled back
+[00:01:30] a little bit, it really, it never pulled back in a meaningful way.
+[00:01:34] So the initial spike, pretty much held, and then it just rallied higher.
+[00:00:00] Here's another one where, you know, with 10 second chart, just instant spike.
+[00:00:05] So it's an algo spike, right?
+[00:00:07] But it continues higher.
+[00:00:09] And so those early shorts aren't off the hook.
+[00:00:11] And in fact, when they buy to cover, right?
+[00:00:15] So now we go back to the whiteboard, we're on the level two.
+[00:00:18] And suddenly, you know, they've got that $2 average,
+[00:00:20] or would we say it was a $3 average, doesn't matter.
+[00:00:23] So I think we said it was a $2 average.
+[00:00:25] So they've got their $2 average down here.
+[00:00:27] And all of a sudden, the bid is $5.50.
+[00:00:32] And the ask is $6.
+[00:00:35] And so now they're like, all right, I got to cover this position.
+[00:00:38] Well, the system forces them to cover,
+[00:00:41] because they've hit their max loss.
+[00:00:43] So what do they have to do?
+[00:00:44] They have to send an order.
+[00:00:45] And it's a buy order.
+[00:00:46] And so even though it might only be 1,000 shares,
+[00:00:49] or whatever it happens to be, that's another order.
+[00:00:52] Markets, he's coming in.
+[00:00:53] They pull their order back.
+[00:00:54] Now it's showing 610.
+[00:00:56] And so all of those short sellers
+[00:00:59] then are fueling, even the next leg higher.
+[00:01:02] So their algorithm is actually adding
+[00:01:04] and fueling the alga spike and making it even bigger,
+[00:01:08] which is pretty amazing.
+[00:01:10] So we're in a market right now.
+[00:01:11] We're seeing huge swings.
+[00:01:14] And the fact is, a lot of this is all based
+[00:01:17] on initially a breaking news headline.
+[00:01:20] So when that news first comes out,
+[00:01:22] we get that first pop.
+[00:01:24] And then that's where I'm just back to watching.
+[00:01:26] The first set if we talked about here in chapter five,
+[00:01:28] the little break of high a day, or our first pull back.
+[00:01:31] That's what I'm watching.
+[00:01:33] And sometimes, you know, it's going to be shorts
+[00:01:35] that are covering and getting squeezed,
+[00:01:36] because our system shorts seller.
+[00:00:00] and they're using a primitive system, and it is what it is, sometimes it's high frequency
+[00:00:04] trading algorithms that are sort of facilitating or almost perpetuating the squeeze by pulling
+[00:00:10] their orders away from the market, and then retail traders are jumping on, and if we're
+[00:00:14] in a hot market where sentiment is really strong, and where this stock, for instance, meets
+[00:00:19] the profile of other stocks that have made the big move, has a system short seller counter
+[00:00:24] factor in all of that information. You know, they can't, and so they could have really good results
+[00:00:29] in one market and then really terrible results in another, and what we know is that as discretionary
+[00:00:34] traders, we're here every day in the trenches. We're putting in the time. All right,
+[00:00:39] so I'm here every day, you're listening to my commentary, and I'm saying, this is a stock
+[00:00:43] that meets all five pillars. We're in a hot market. It meets the profile of the type of
+[00:00:47] stocks that are making big moves. I'm buying this micro pullback right here. I'm putting my money
+[00:00:52] where my mouth is. I'm taking 20,000 shares of it, and next thing you know, it's at nine dollars
+[00:00:56] them up 20 grand, and then it's at 10 in them up 40. It hits a high of 11. I up 50,000, I take
+[00:01:02] profit off the table. I had back 10,000 shares here, making another five grand. Another dip,
+[00:01:07] add back, another pop right here, rejects. Maybe I end up taking a loss, lose five grand off the top,
+[00:01:13] and I say, okay, that's it. I'm done. First loss, I'm stepping back, taking my foot off the gas,
+[00:01:19] I've got one good money on the day. And that's, that's more or less, I mean, very,
+[00:01:24] very much a summary. But that's, that's the way I approach trading every day. So, the Algo spike,
+[00:01:30] sometimes we can capitalize on it, usually we're buying on the first pullback right after it,
+[00:01:35] and then riding that momentum higher. But that initials...
+[00:00:00] spike, you know, it's just so interesting. I would just say though if that initial spike
+[00:00:03] pops up and then you look back into the immediately reversed, it may be because the news
+[00:00:08] wasn't actually that good. System short sellers won, the algorithm got a little
+[00:00:12] haywire completely reversed and maybe it curls back up later and people realized that
+[00:00:17] now actually that news was okay, this was just sort of the system shorts were too
+[00:00:22] heavy or whatever the case is. I don't know, but other times we just get that quick
+[00:00:26] pop and then that reversal. So I think that I almost wonder if, you know, it's
+[00:00:33] it's just, it's very interesting the way it happens. Like you get this sort of
+[00:00:36] burst of liquidity and then it's kind of over. So now let's talk about the round trip.

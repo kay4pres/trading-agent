@@ -1,0 +1,404 @@
+# Segments: 22
+# Transcribed: 2026-06-26T19:14:55.634292
+
+[00:00:02] Okay, so as we continue on here with chapter five, part seven, popular technical indicators.
+[00:00:07] You'll recognize that we've already had some discussion of these indicators.
+[00:00:10] It just in passing as I pulled up charts and kind of made a little mention of them.
+[00:00:14] But at this point, I'm going to solidify the indicators that I use and share with you just a couple that I may not use in my trading all that often,
+[00:00:22] but I think are valuable for you to know about.
+[00:00:24] And I'll say that there are literally thousands of different technical indicators that you could use.
+[00:00:30] It's kind of unbelievable how many different indicators there are.
+[00:00:34] And it speaks to the fact that so many people are trying to find the Holy Grail.
+[00:00:38] That perfect indicator that tells you when to buy and when to sell that's right, 100% of the time.
+[00:00:44] And I'm sorry to say, I have not yet found it and I don't believe it exists.
+[00:00:50] I don't think there will ever be a trading strategy is right, 100% of the time.
+[00:00:56] Having said that, I do think using the common most well respected indicators makes a lot of sense because those indicators will generate signals.
+[00:01:06] If you're not seeing those signals, the buy signals to sell signals, I think you're at a bit of a disadvantage.
+[00:01:12] So using the most commonly used indicators is a smart move.
+[00:01:17] Okay, so as you know, I think technical indicators are complex formulas that provide context for current price action.
+[00:01:25] Many technical indicators, however, lag behind price action because they have to take the current price.
+[00:01:33] They put it into their formula and then they take more recent.
+[00:00:00] or slightly recent price, and factor that in as well.
+[00:00:04] And so it's sort of this trailing indicator
+[00:00:06] that trails and lags behind price.
+[00:00:09] There's no question that if you want to really see
+[00:00:12] what's happening with the price,
+[00:00:14] it's going to be watching level two and time and sales.
+[00:00:18] This is direct, that's a pipeline of the data
+[00:00:21] right from the market of the current price.
+[00:00:24] But even though the indicators tend to lag,
+[00:00:27] there are some indicators that I really think are very valuable
+[00:00:31] and that I use my trading every single day.
+[00:00:34] So the first type of indicator that I'm using are called
+[00:00:37] moving averages.
+[00:00:39] Moving averages are averaging the price
+[00:00:42] over a set period of time.
+[00:00:44] So moving averages will vary between time frames.
+[00:00:47] So what that means is that a 200 period moving average
+[00:00:52] will have a different price on the five minute versus the daily.
+[00:00:55] I'll show you what I mean.
+[00:00:56] So we'll pull this up here.
+[00:00:59] So the 200 EMA exponential moving average right here.
+[00:01:03] The 200 EMA is at $5.07 on the five minute chart.
+[00:01:08] So I might say the 200s at five.
+[00:01:10] And then you might say, wait a second,
+[00:01:12] the 200 right here on the daily chart is at $15.70.
+[00:01:18] How can the 200 moving average be at a different price?
+[00:01:22] Because it's the average price over the last 200 candles.
+[00:01:25] And the average price over the last 200 daily candles
+[00:01:29] encompasses a much larger range of price
+[00:01:32] than the last 200 five minute candles.
+[00:01:36] And similarly, then the last 200.
+[00:00:00] 1 minute candles. So moving averages will vary from time frame to time frame. Your 9
+[00:00:06] EMA on your 5 minute will be different than the 9 EMA on the 1 minute. But that's okay.
+[00:00:11] They form a level of support on both time frames. So the 9 EMA on the 1 minute will be
+[00:00:19] support, just as the 9 EMA on the 5 minute support. And the 200 EMA is support and resistance
+[00:00:25] on all time frames. However, it is most well respected on the daily chart. The 200 EMA
+[00:00:33] on the daily is one of the most respected technical indicators. So if you, if you were
+[00:00:41] only going to use the 200 EMA for instance on one time frame, that would be the time frame
+[00:00:45] you'd want to use. Now I want to talk about simple moving averages versus exponential moving
+[00:00:52] averages. So because there's really two types. A simple moving average is simply the average
+[00:00:58] price over set period of time. So you have 1, 2, 3, 4, 4, 5, 6, 7, 8, 9, 10. So you've got 10 candles.
+[00:01:10] You add these all up. So 1 plus 2 plus 3 plus 4 plus 5 plus 6 plus 7, et cetera, et cetera.
+[00:01:16] Equals X. And then divided that by the number of candles 10 divided by 10 equals your average.
+[00:01:24] So it's just a very simple formula to get your simple moving average. However,
+[00:01:31] what the exponential moving average does, it's a little different, is it says 1, 2,
+[00:00:00] 2, 3, 4, 5, 6, 7, 8, 9, 10, 7, 8, 9, 10, we're more recent.
+[00:00:09] So aren't these more valuable than 1, 2, 3, and 4?
+[00:00:14] So what it does is it actually waits the more recent price action more heavily.
+[00:00:20] So I don't know what the average was of 1 through 10, but if you add them all up and then
+[00:00:26] divide it by 10, but whatever it is for simple, let's just say it's 5.
+[00:00:30] Or the simple, what it would be for the EMA would probably be closer to 7.5.
+[00:00:36] Because the EMA is always going to wait more recent price action heavier.
+[00:00:41] And so it's always going to be a faster moving indicator than your simple moving average.
+[00:00:48] So if we looked at it on a chart, the way it would look is we see a stock that's squeezing
+[00:00:53] up like this and then pulls back for a moment, dips down.
+[00:00:59] And then pushes higher and then pulls back again and then pushes higher.
+[00:01:05] And the way our simple moving average would look is something kind of like this.
+[00:01:12] And the way our exponential moving average would look is like this.
+[00:01:17] The exponential is always going to move up in price faster as the price moves higher.
+[00:01:23] And so most active traders are using the exponential moving average because it does move
+[00:01:29] more closely with the current price.
+[00:01:32] And so what I end up doing in my trading is I use a combination of these moving averages.
+[00:00:00] and I'll show you what those are in just a moment.
+[00:00:03] Okay, so my favorite moving averages
+[00:00:06] are the 9, the 20, and the 200.
+[00:00:09] So if we jump back over here
+[00:00:11] and these are all EMAs, exponential moving averages.
+[00:00:15] So I've got the 9 in gray, 9 EMA,
+[00:00:22] and then we've got the 20, which is in blue.
+[00:00:24] So the 20's always gonna be a little bit below
+[00:00:27] when the price is moving up.
+[00:00:29] And then we've got the 200,
+[00:00:31] which is way down here, 200 EMA.
+[00:00:35] And those are the three moving averages that I'm using.
+[00:00:38] And what I found is that generally speaking,
+[00:00:40] when a stock is trending up,
+[00:00:42] it'll often come down right to about the support
+[00:00:47] right here of our 9 EMA, 9 EMA before moving higher.
+[00:00:53] If the stock comes all the way down to the 20,
+[00:00:56] usually that's telling us that we're due
+[00:00:59] for a pullback on the five minute chart.
+[00:01:01] So if this is the one minute, pull back to the 9,
+[00:01:04] these are dips, buying these dips, buying these dips.
+[00:01:06] We pull back to the 20.
+[00:01:08] Now we've probably already had our first and second pullback.
+[00:01:11] And what's happening is, you know,
+[00:01:13] we've pulled back down here.
+[00:01:15] And this is probably the spot where, you know,
+[00:01:18] it's the third pullback, which we know,
+[00:01:19] we don't usually like as much.
+[00:01:21] And then it kind of dip down here
+[00:01:23] and comes down to the 20.
+[00:01:25] So at this point right here,
+[00:01:27] what this would look like on the five minute chart,
+[00:01:30] one, two, three, four, five.
+[00:01:32] So first five minute candle is big green.
+[00:01:34] One, two, three, four, five.
+[00:01:35] Second one is pretty big green.
+[00:01:37] And then the second,
+[00:00:00] Right here is one red candle followed by a second red candle.
+[00:00:03] So now, wait a second, our five minute chart is starting to form a bull flag.
+[00:00:07] And what's probably happening on that five minute chart is starting to get close to
+[00:00:10] what moving average, the nine on the five minute.
+[00:00:15] So again, this sort of fractal of this is the same time frame.
+[00:00:19] We're trading this exact pattern except we've now switched time frames from one minute to five minute.
+[00:00:24] So we switched charts and we jump over to the five minute.
+[00:00:27] So we then trade that first pull back on the five minute and we're still using one minute
+[00:00:31] and five minute in conjunction because once we start to have our first breakout on the five minute
+[00:00:36] right here, most likely that first breakout will give you a little micro pull back like this on the one
+[00:00:42] minute that can be your opportunity to jump in if you missed the early entry.
+[00:00:47] Now, for a long time, I've used the nine EMA.
+[00:00:51] At one point, I used a 10 EMA and then I realized it seemed like a lot of people were talking
+[00:00:57] about the nine EMA. And I was like, I don't know why because most people will use like the 20,
+[00:01:03] maybe the 50, the 100, the 200. So then the nine kind of comes out of nowhere, but nonetheless,
+[00:01:08] I adopted the nine as well and I've stuck with it and I actually do find it really helpful.
+[00:01:14] So I'm using the nine EMA, which is just a little faster than the 10,
+[00:01:18] because it's a shorter period of time. I'm using the 20 and I'm using the 200.
+[00:01:22] And you can use these three indicators on all time frames because the patterns will be the same.
+[00:01:28] So the daily, the one minute, the five minute, sorry, the 10 second, the one minute, the five minute,
+[00:01:35] the daily, if you're going to go from smallest to biggest.
+[00:00:00] And if you want to use them on 15 minute time frame, that's fine as well.
+[00:00:03] So those are the indicators that I'm using on all of my charts.
+[00:00:07] So if we back this up for a second, what you're going to see here,
+[00:00:12] due to the two, right here, is we've got the nine, the 20, and the 200.
+[00:00:21] Now this orange one is a different indicator, so I'll show you that one in a second.
+[00:00:25] But I have this on all my time frames.
+[00:00:27] Now I think my 10 second chart does not have the 200 on it, just usually because it's too far away.
+[00:00:34] And so it's not, it's just not that helpful. But anyways, it's okay to hide it on one time frame
+[00:00:39] if you don't find yourself using it all that much. It's not that big of a deal to do that.
+[00:00:44] All right, so now let's go, let's see, back into our slide deck.
+[00:00:51] Okay, so the moving average settings.
+[00:00:54] So I want to show you how to set your moving average on your chart.
+[00:00:59] So what I'll do here is I'll just go and open a brand new chart.
+[00:01:04] I'll pop it out here and I'll walk you through how to add these moving averages.
+[00:01:15] So let's I'll just delete everything off the chart just for a second just to make it clear.
+[00:01:22] And we'll start from scratch. Here we're to this. Now of course, if you're using
+[00:01:30] if you're using our software, you can also load my templates and then you can launch just like that.
+[00:00:00] case. If you're not using my template or you're not using our software, then this is what we do.
+[00:00:03] So we go usually there's indicators or studies. So you click on that, you type in moving average
+[00:00:11] and you could choose just simple moving average or exponential. It doesn't say simple. It just
+[00:00:16] says moving average or exponential. So I click exponential and automatically has added the
+[00:00:22] exponential moving average right here. So I now click on my settings and I check the inputs.
+[00:00:28] It's already said at nine, which is great. It's set the source, the close of the last
+[00:00:32] candle, which is correct. The smoothing line, we're actually not going to be displaying. So that
+[00:00:40] doesn't matter. Don't worry about that. And then we're going to change the color to gray.
+[00:00:46] And you could change how bold you want it if you want to make it a little bit more bold or whatever
+[00:00:49] the case is. Okay, so that's our nine moving average and then we're going to go to moving averages.
+[00:00:56] And we're going to do the same exact thing. I'll click it two more times. So we'll do one more
+[00:01:01] for the 20. So I'll make it that brighter color inputs 20 save and then we'll do the same thing
+[00:01:11] right here for the 200. So 200, oops, right there, style, like that, like that. So now we've got,
+[00:01:27] let's see, S-O-N-D. So this stock popping up here. So now we've got our nine EMA.
+[00:01:34] And you can see on the one minute chart, the nine EMA typically is pretty close.
+[00:00:00] the price action. But right here, the 9 AMA is down at $5. So we'd be kind of
+[00:00:05] watching us see if this pulls back to five and then bounces up higher. And the
+[00:00:09] 20 is even further down and the 200 is a way as a way as a way as well. So this one
+[00:00:18] yeah, it's kind of extended off of its moving averages in a way. So then if we switch
+[00:00:22] to the five minute chart, you have your same indicators, your same moving averages right
+[00:00:27] there and you switch to your daily chart and you have your same indicators. Now the
+[00:00:31] only thing that I like to do on the daily is as I said, because there's a lot of
+[00:00:35] traders that don't know about exponential moving averages, they just use simple
+[00:00:42] and since the 200 is so important, I have a second simple moving, I have a second
+[00:00:47] moving average, which is dotted as the simple. So right there, we've got the simple
+[00:00:53] moving average right here dotted. That way I know maybe I should consider this a little bit
+[00:00:59] of a caution flag because there'll be some traders that might try to sell against the
+[00:01:06] simple moving average. So I just leave it like that. And with that, I have my moving
+[00:01:11] averages added to the chart. So it really is fairly simple. You can save your layout and then
+[00:01:16] you're good to go. Okay, so and now let me show you a couple of examples here
+[00:01:24] of resistance at the 200. So this is a stock. I had resistance at the 200. It broke
+[00:01:30] above it. Came back below it. Resistance at that level. Having a hard time closing above it.
+[00:01:36] Resistance at the 200.
+[00:00:00] So now imagine if you didn't have your 200 moving average on, you'd probably be buying right here for this bull flag in the move higher.
+[00:00:07] Right? You got to have those moving averages on so you see the same levels that other people are seeing.
+[00:00:12] This is another example here. This is moving average support. So we've got breaking the 200 holding support, squeezing up, pulling back, holding support at the 200, pulling away, back down, support at the 200.
+[00:00:24] So the 200 moving average is providing support. Once again, resistance at the 200 right there, almost to the penny, resistance at the 200 right there, almost to the penny.
+[00:00:35] This one way above the 200. So it had supported the 200. It starts to pull away and it just goes higher.
+[00:00:42] So that's nice because we're not under the 200. Now in the past, I would say, and this is another example, resistance at the 200.
+[00:00:50] So the 200. In the past, I would say, you know, you have to be really careful about the 200.
+[00:00:57] And you do. The only thing I'll say is that, so if a stock has a lot of room to the 200, then I'll trade it below.
+[00:01:04] I've no problem trading something below the 200. But once it starts to get within like 10% of the 200, then I'm kind of like, we're getting a little close this resistance level.
+[00:01:15] I'm going to do, I'm sort of expecting to see sellers. But if we can break above it and hold above it, then I'm interested.
+[00:01:21] So that's where we need to see the break above on high volume, the pull back, test, prove it and hold, and then next leg higher.
+[00:01:29] Here, once again, resistance at the 200, M. So it's going to be a constant theme of a 200, M.
+[00:00:00] is that this price, that's going to be a problem.
+[00:00:03] So the second technical indicator that I use in my trading.
+[00:00:06] The first one, moving averages, we're using the 9, the 20, and the 200.
+[00:00:11] EMA on all time frames and the 200 SMA on the daily only.
+[00:00:16] The second indicator I'm using is the volume weighted average price.
+[00:00:20] The volume weight average price is like a moving average, because it takes the average
+[00:00:26] price to the stock over the course of the day.
+[00:00:29] So once again, the VWAP is what's it going to, what it's going to do is you've got the
+[00:00:36] price that moved up and moved down, moved up, moved up, let's just say, for instance.
+[00:00:41] And so your moving average, let's just say you're 20 moving average is going to be kind
+[00:00:46] of like that.
+[00:00:47] Your volume weighted average price, what it's going to do is it's actually going to look at all
+[00:00:51] of the volume that occurred on all these candles.
+[00:00:54] So let's say no volume occurred up here, but a lot of volume at the very beginning.
+[00:00:59] Your volume weighted average price is going to stay lower, because this was where we had
+[00:01:05] the most volume was around this sort of window of price.
+[00:01:09] So this takes the average, sorry, the average price, the average price, and the volume
+[00:01:17] that occurred at those prices to tell you what the average price of the stock is over
+[00:01:24] the course of the entire day.
+[00:01:27] So this is actually our true equilibrium point.
+[00:01:32] This is the spot where if we're above it, we're bullish.
+[00:01:36] If we're below it, we're
+[00:00:00] bearish. This is our average price over the course of the day and this is not a
+[00:00:05] based on a number of periods like the 9, the 20, or the 200. This is based purely on
+[00:00:14] the total price and the total volume beginning at 4 a.m. So the volume weighted average price is an
+[00:00:23] interday indicator only. It does not work on your daily charts at all and it doesn't matter
+[00:00:30] if you're looking at it on the one minute, the 5 minute, the 15 minute because it'll always be
+[00:00:36] the same because the amount of volume that occurred and the prices are the same no matter what time
+[00:00:42] from you're looking at because it all accumulates to the exact same thing right here. Now I will say
+[00:00:47] there's a lot of platforms if you're really zoomed in here it will only load the volume
+[00:00:54] weight average price for the number of candles you're zoomed in on and that can actually create an
+[00:00:59] incorrect reading for your V-wap. So you need to scroll out and then zoom back in so it loads those
+[00:01:06] candles and then zoom back in. It's a little annoying but that unfortunately is just something that we
+[00:01:11] kind of deal with and so actually to help address that issue if you're if you're ever in doubt
+[00:01:18] about oh wait my V-wap says 993 here on the 5 minute but on the 1 minute says 988 which one's right
+[00:01:27] I'm always going to defer to the 5 minute because the 5 minute almost always is able to load the
+[00:01:32] full number of candles whereas the 1 minute sometimes doesn't and the 10 second often does not
+[00:00:00] So, in order to get the best reading, usually looking at your longest slowest moving time frame is going to be the best for the VWAP, but I still keep it on all of them.
+[00:00:11] So you can see here, in this case, the volume weight average price has been lagging. Well, actually that's not true.
+[00:00:18] Initially, the volume weight average price was moving higher than the 9 in the 20, because there was so much volume that occurred at the beginning of the move.
+[00:00:26] So it actually moved higher, and then it sort of dipped below, and was between the 9 in the 20, I don't carry any significance about, you know, it's position really relative to these, I just, it's just an observation.
+[00:00:38] And then it comes up here and ends up being a little bit lower, because look lighter volume.
+[00:00:44] So even though the price is staying up here, it's on lighter volume.
+[00:00:47] So this volume in here, this was sort of the most volume that we had, and ended up being, you know, kind of in these candles right in here.
+[00:00:55] We started to get a little lighter volume going higher. So anyways, that is our volume weighted average price.
+[00:01:01] You will see me talk about this a lot, because there's a number of strategies where I'm trading to buy dips off of the WAP, because it's support.
+[00:01:10] It's the equilibrium price, it's the support level, if you're above it, and it's resistance if you're below it.
+[00:01:16] So when a stock is below it, people will often short when it comes back up to it for a fade off the WAP.
+[00:01:22] But we can also have a VWAP breakout where it looks like a short and then it breaks a VWAP and rips right back to the high.
+[00:01:29] And you can have a VWAP breakdown where it looks like support and then it flushes and goes down towards the lows.
+[00:01:35] So we'll talk about how to trade around VWAP.
+[00:00:00] quite a bit as we get into the stradges and scaling course. But for right now, just
+[00:00:05] know that it's an indicator that you're going to want to pop on your charts. So you can
+[00:00:09] do that. Again, here, I'll just do it here. So you just go to scroll over to FX right there,
+[00:00:17] and then view app, just like that. And there's no settings for it. It's just view app is standard
+[00:00:24] across, it's just standard, standard view app. So you pop it on, I've changed mine to orange,
+[00:00:30] and then that's that. So your volume weight average price is the second indicator. And although
+[00:00:36] I often have had as a dotted line, recently, I've made it solid. So it's a little easier for me to read.
+[00:00:43] Especially because when it's dotted, sometimes, you know, you're kind of like, well, wait, what
+[00:00:47] does it right now? Is it touching it or is it below it above it? Anyways, it's okay if it's dotted,
+[00:00:52] if your dots can be close together, or if you want it, if you don't want it dotted, that's fine too.
+[00:00:59] So volume weight average price. Okay, indicator number three is RSI relative strength index.
+[00:01:05] This is a popular indicator that a lot of traders use. It tells us the strength or
+[00:01:10] weakness of a stock, and it's oscillating between zero and a hundred, although technically,
+[00:01:15] it can go above and below, but it rarely does. When the RSI relative strength is below 20,
+[00:01:22] the stock is considered to be oversold. It can only be oversold for so long before it bounces, right?
+[00:01:29] And when it's above 80, it's considered overbought, and it can only remain overbought for so long before it
+[00:01:33] reverses. So a lot of traders who use RSI,
+[00:00:00] are using it in conjunction with a reversal strategy where they're looking for the extensions
+[00:00:05] to shore the move back down. So it's more commonly used for traders who are trying to trade
+[00:00:12] reversals and especially on large caps. Small cap traders do it times use RSI and something that
+[00:00:20] you can notice is when your RSI is trending. So right here we're trending up and then right there
+[00:00:27] we sort of break trends start trending down. And even though we come back up here to a new
+[00:00:32] high, the RSI never makes it back to its previous high, which is a bit of a divergence. And you
+[00:00:38] have a divergence where the price is doing something different than what the indicators is sort of
+[00:00:42] suggesting. That can be worth paying attention to, meaning that the move may not hold. It may come
+[00:00:49] back down. But in any case, for me and my trading right now, momentum trading to the long side,
+[00:00:57] I'm not currently using RSI on my charts. I use it primarily if I'm doing reversal trading.
+[00:01:05] And another indicator that I'll use during reversal trading, which I'll just mention briefly,
+[00:01:09] is Bollinger Bands. So Bollinger Bands and RSI relative strength index are two popular
+[00:01:17] indicators for reversal trading. And what you're looking for are candles that are up outside
+[00:01:23] the Bollinger Bands. Bollinger Bands encompass 90% of all the price action. And when the price
+[00:01:30] action is outside the top of the band or the bottom of the band, it can indicate that we're
+[00:01:35] obviously trading at 10% of it.
+[00:00:00] streams. So we're at the 10th percentile of or 90th percentile of extreme level. And we likely won't
+[00:00:06] remain that way for long, so it's worth watching for a possible reversal. But it's not a blind
+[00:00:11] spot just to go short, because these stocks can also stay at high levels and move quickly when they're
+[00:00:16] in these ranges. So you could see the RSI was very extended in these areas. And in fact, the RSI
+[00:00:24] was trending down while the price was trending up, which is a divergence, which could have given
+[00:00:28] someone in this case of a false sense of confidence shorting it when in fact, there was an
+[00:00:33] underlying catalyst that made this very strong. So since it's primarily a reversal indicator,
+[00:00:40] it's not one that I find super helpful for momentum trading. But I do think it's important to be
+[00:00:46] aware of relative strength and bulinger bands, because some traders will, you'll hear traders
+[00:00:51] discuss them. So the RSI is based on a 14 period length. The upper band is at 80 and the lower band
+[00:00:59] is at 20. All right, number four is the MACD. Now the MACD, like RSI is a very popular indicator
+[00:01:06] that a lot of people have on their charts, MACD stands for moving average convergence divergence
+[00:01:12] indicator. It is an oscillating indicator that moves up and down, up and down, up and down,
+[00:01:18] as the price moves up and down. It is a lagging indicator, meaning it lags behind price action.
+[00:01:23] It needs the price action to occur before it can react. The MACD settings that I use are
+[00:01:30] 12, 26 and 9. Fast length, slow length and signal length. I've got my histogram,
+[00:01:36] my MACD and my signal line.
+[00:00:00] And I use the MACD personally on the one-minute time frame.
+[00:00:06] Although occasionally I'll pop it on my five-minute chart as well.
+[00:00:09] This indicator has been super helpful for me.
+[00:00:13] What it tells us is when the moving averages are diverging,
+[00:00:17] they're moving apart.
+[00:00:18] So the nine is moving away from the 20 here,
+[00:00:20] because the price is moving up quickly.
+[00:00:22] And then they tell us when the moving averages are converging,
+[00:00:25] they're moving close together, because the price range is compressing.
+[00:00:28] What I have found consistently is that I make the most money
+[00:00:32] when the MACD is above the signal line.
+[00:00:35] So in this blue line is above the orange line,
+[00:00:38] that's when I make the most money.
+[00:00:39] I could actually, if I want, change it to red to green,
+[00:00:41] because when the green is above the red, that's when I do the best.
+[00:00:45] But nonetheless, however you color, it doesn't really matter.
+[00:00:49] The theme is the same.
+[00:00:50] So when the MACD is above the signal line,
+[00:00:52] that's where I focus on trading the most aggressively.
+[00:00:56] You're going to learn that as we continue on with the strategies in scaling course.
+[00:01:00] And you're going to see it in a lot of my live trading examples,
+[00:01:02] a lot of my recaps, and just as I'm talking about stocks,
+[00:01:05] I'll say, I don't know, MACD is negative right now.
+[00:01:08] I'm not sure it's worth it.
+[00:01:10] There are times where we'll swing back from negative to positive,
+[00:01:13] and I'll take that trade.
+[00:01:14] I'm not typically trading just a blind MACD crossover
+[00:01:17] without anything else.
+[00:01:19] It's an indicator that helps reaffirm what I am seeing on the chart.
+[00:01:23] But in this case, we had this really nice move earlier,
+[00:01:26] and then it got choppy.
+[00:01:28] And so it's going to take a bit of effort for this to get back to the highs,
+[00:01:32] not that it's impossible, but it'll take some effort.
+[00:01:34] So, indeed, this one, we'll look at the MACD here.
+[00:00:00] Here, MACD was open earlier through this area.
+[00:00:03] As we got this squeeze, it then was closed right through here.
+[00:00:07] Kind of went positive, negative, positive, negative.
+[00:00:09] But then as we broke through to new highs, it opened up big time right here.
+[00:00:13] So now it's just closed again.
+[00:00:15] So now the window is closed and you've got to wait for it to set up again.
+[00:00:19] Now, something that I'll often do is I will, I will refer to the five minute chart.
+[00:00:25] So I can copy and paste this put on the five minute chart and I'll say, well, the one minute
+[00:00:29] is closing, but the five minute is still open.
+[00:00:31] So our five minute MACD is giving a little bit of a different indicator here.
+[00:00:37] But, you know, we start with the big picture, but then we got to be zoomed in.
+[00:00:40] And if the five minute says, sure, it looks okay, but the one minute says, nope, not ready yet,
+[00:00:45] then I've got to wait.
+[00:00:47] So I generally find that for me, for my purpose, it gives me the best signal when I'm using
+[00:00:54] it just on the one minute timeframe.
+[00:00:56] So I just want to see it on the one minute chart.
+[00:00:58] I don't want to see it on any other time frames, just the one minute.
+[00:01:01] That's it.
+[00:01:03] Okay.
+[00:01:04] So that's our MACD.
+[00:01:06] Number five are volume bars.
+[00:01:09] Volume bars are critical.
+[00:01:11] These are displaying the number of shares that were traded during each candlestick period.
+[00:01:17] And I look at these bars very closely and they create a pattern.
+[00:01:21] Some people will call that pattern a profile.
+[00:01:25] But, secondly, there is an indicator that is actually called volume profile.
+[00:01:31] If you go to volume, see it's volume profile visible range.
+[00:00:00] And this is going to actually be an indicator that shows you the amount of volume that
+[00:00:06] occurred at different prices. So while these bars here are the amount of volume that occurred
+[00:00:11] at different times, right, they're on the time access down here, volume occurring in these
+[00:00:16] individual candles, this is telling us the volume that occurred at the different prices on the
+[00:00:22] price access. And this is a technically volume profile while this would just be a volume pattern,
+[00:00:31] maybe that you notice. But what we typically like to see is that a stock is showing increasing
+[00:00:38] volume as the move is progressing. We don't usually like to see this decreasing volume, not really
+[00:00:46] great. The bigger increase in this area is more significant, higher volume, higher volume,
+[00:00:52] but then decreasing again. V-racks, but you can see here, this is where the most volume has occurred
+[00:00:59] on this stock today. And this also creates a little bit of what some people call the POC, which is the
+[00:01:05] point of control. So this is sort of the area where we're seeing the biggest battle between buyers and
+[00:01:11] sellers. And that's what the volume is telling us in this case. The volume told us that we had the
+[00:01:16] highest volume at this time right here, but clearly we're way above it. So now what's the price where
+[00:01:22] we've had the most volume and that would indicate it's right around this 11, 80 level. So this is where
+[00:01:28] we're experiencing a tug of war. And in fact, in this instance, that level is a little bit above our
+[00:01:33] volume-weight average price. And partly, that's because there was still a lot of volume-
+[00:00:00] that did occur down in these levels. It just happens that this was a little bit higher.
+[00:00:04] So you could use the volume profile as well if you want. But you'll often hear me talk about
+[00:00:10] volume profile and volume patterns and watching to see increasing volume. Or noting that we've
+[00:00:16] got increasing volume, uh oh, highest volume candles red. That's not good. Increasing volume,
+[00:00:23] green candles. That's good. But when the highest volume candles are red, that's always a bit
+[00:00:28] of a warning sign. I don't like seeing that. So volume is important and you've got to make
+[00:00:33] sure you color your volume based on the color of the candle. So just having your volume, for instance,
+[00:00:39] in in blue would not be helpful. So some people, no, I don't think some platforms will do it by default.
+[00:00:49] They'll have both colors, um, the same or both up and down candles the same. So I think it's really
+[00:00:56] that it's colored based on the color of the candle. So you could see, oh, that was a high volume
+[00:01:01] red candle. Right. So we look back at V-Rax. We see high volume red candle, high volume red candle,
+[00:01:06] high volume red candle. That sends a message. We want to receive that message because this is
+[00:01:11] communicating that this is stock that tends to have big days, high volume days, and they tend to go
+[00:01:16] red. In fact, today, we may go red if this keeps selling off. So recognizing that pattern is very
+[00:01:22] important. And those are really the indicators that I'm using in my trade. So again, just to reiterate,
+[00:01:29] I've got, um, number one, the, uh, moving averages, MAs, and I'm using the nine, the twan-
+[00:00:00] and the 200 EMA, EMA, EMA, and I've also got the 200 SMA daily only. Then we've got number
+[00:00:11] two volume weighted average price. Number three, I'm using MACD. I'm skipping over RSI, even though
+[00:00:20] you may choose to use it if you're going to do more reversal trading, and then number four,
+[00:00:25] volume bars, volume bars, and optionally the volume profile. So this right here, this is what
+[00:00:36] I need, and I don't need more. So yes, bowl under bands, b bands, and RSI, optional, that's more
+[00:00:44] for reversal trading, but for momentum trading, buying the first pullback, these are what you're
+[00:00:50] going to use. Okay, so that concludes chapter five, part seven, part six. Now we're going to continue
+[00:00:57] on with chapter five, part seven.

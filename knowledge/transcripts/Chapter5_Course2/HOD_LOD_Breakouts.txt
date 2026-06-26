@@ -1,0 +1,494 @@
+# Segments: 22
+# Transcribed: 2026-06-26T19:26:09.259504
+
+[00:00:02] Okay, so the high-to-day breakout and low-day breakdown, including flat top breakouts and flat bottom breakdown patterns,
+[00:00:09] are calistic patterns occur when the price is right at the highs or right at the lows.
+[00:00:16] So if we look at this example right here, you'll see how the price squeezed up,
+[00:00:21] and then is basically hanging out right around the high.
+[00:00:25] We have this resistance here. We keep tapping these levels, and then finally, we break through.
+[00:00:31] So if you took an entry right here, you are pretty literally buying the high-of-day.
+[00:00:37] If this is the high-of-day, maybe you get in a couple cents underneath that level,
+[00:00:41] but you're basically, and you would be doing that to anticipate that it's going to break,
+[00:00:45] but basically you're getting in right at high-of-day. Why would anyone want to buy at the high-of-day?
+[00:00:51] Isn't that an awfully extended entry? Well, you're right, but there are some good reasons.
+[00:00:56] So a high-of-day entry or a flat top breakout pattern, right? So this has the appearance of sort of a flat top.
+[00:01:03] And sometimes stocks will have this pattern where they keep hitting this level.
+[00:01:09] So they tap this level for a long time before finally they break.
+[00:01:13] So in a high-of-day breakout or a flat top breakout, typically we have two or three green candles that have been moving up
+[00:01:20] that are followed as sharply by two or so candles of consolidation.
+[00:01:25] These are pullback candles. They can be red or they can green, be green,
+[00:01:29] but these candles are just slightly below or at the high-of-day price.
+[00:01:34] Continue consolidation will ultimately rest.
+[00:00:00] on the nine exponential moving average.
+[00:00:03] Now it's very common for flat top and flat bottoms to occur around half dollars
+[00:00:08] and whole dollars because they are psychological areas of supporter resistance.
+[00:00:13] So if we jump on to the chart we're going to draw the first three green
+[00:00:16] canals that usually form this pattern. So one, two, three.
+[00:00:21] Now, sometimes it's fewer. There are times where it could be one huge green candle like this
+[00:00:26] or sometimes where it's, you know, one candle and then two candles.
+[00:00:30] But regardless, we have a pretty rapid move up followed by a period of pulling back.
+[00:00:38] But we're not pulling way back like this. We don't do that.
+[00:00:42] We pull back but for the most part, we keep trading right underneath the high.
+[00:00:48] So we kind of dip for a second and then we're back up for a second
+[00:00:52] and maybe maybe we dip down just a little bit more.
+[00:00:56] And then we come back up just a little bit more.
+[00:00:58] But basically what's happening is we are consolidating right underneath the high.
+[00:01:05] And so if this is four dollars, that would be very common.
+[00:01:08] Now this might be happening because when we look at the level two
+[00:01:12] and we'll get into tape reading in level two in chapter six.
+[00:01:14] But when we look at the level two, we see maybe there's a 25,000 share seller at four dollars.
+[00:01:21] So there's a level of resistance. Maybe that's why we haven't broke.
+[00:01:23] We don't always know exactly, but there's some resistance here.
+[00:01:27] Now what we do know is that our exponential moving averages,
+[00:01:30] so our nine for instance, when the stock first start popping up was way down here.
+[00:01:35] But as the price moves higher, the nine-
+[00:00:00] the EMA comes closer as well.
+[00:00:02] Eventually, getting right underneath support.
+[00:00:04] A right underneath this, these candles,
+[00:00:07] which create support.
+[00:00:08] So when you have the support of the moving average here,
+[00:00:11] you get to this point where the price has to do something,
+[00:00:14] there's an apex.
+[00:00:16] It's either going to break out to the upside through this level
+[00:00:20] or it's going to break below the 9 EMA.
+[00:00:23] And if it breaks below the 9 EMA, then the bears are in charge.
+[00:00:27] And if it breaks above this resistance,
+[00:00:29] then the bulls are in charge.
+[00:00:31] And we don't know which one is going to happen.
+[00:00:33] But if we look at this stock, and we said,
+[00:00:35] this stock meets all five pillars of stock selection.
+[00:00:39] It's got breaking news, it's got, you know, good catalyst.
+[00:00:42] Then this consolidation is more likely to resolve
+[00:00:46] to the upside, as long as the company and our insiders
+[00:00:50] aren't selling too many shares.
+[00:00:52] That's the only thing that would really stop it from pushing higher.
+[00:00:54] So if the market is strong, we've got good sentiment in the market.
+[00:00:58] Shorts aren't super, super overly confident
+[00:01:00] and trying to kind of bully this and knock it back down.
+[00:01:03] Then we should see that this will break through this level,
+[00:01:07] right as it approaches, the top, which is the high a day.
+[00:01:10] So in that case, if you bought during the consolidation,
+[00:01:14] you'd end up buying and holding,
+[00:01:16] perhaps for longer than you might like.
+[00:01:19] And so one of the ways I often will trade this pattern
+[00:01:22] is I wait for the breakout to occur.
+[00:01:26] So this is a perfect example of this pattern.
+[00:01:29] The stock squeezed up and it pulled back, squeezed up and it pulled back.
+[00:01:34] Comes back up and then it's sort of consolidating right in this area.
+[00:00:00] Now, notice how our moving averages are right underneath supporting the price right here.
+[00:00:04] Now, this happens to be at 572, which is sort of an unusual price to see such a long period of consolidation,
+[00:00:12] but nonetheless, that's what happened. And so, right here, we break out.
+[00:00:17] Now, notice the timeframe of this chart. This happens to be a five-minute chart.
+[00:00:21] So, this was consolidating more or less all morning and into the afternoon before finally,
+[00:00:28] at like 230 in the afternoon, breaking out and going from 570 up to 630.
+[00:00:33] So, how would you have possibly been able to time this trade? Well, there's a couple different
+[00:00:38] strategies that people could use. Some traders who are short the stock, let's say, for example,
+[00:00:43] and expect that it's just going to fade and go lower. If they're short the stock,
+[00:00:49] they would accumulate their position right underneath this level, and they could set a live
+[00:00:53] stop order, for instance, at 572 or 573. And that's a buy stop. So, what it'll do is if the stock
+[00:01:01] breaks over their trigger price, let's say it's 572, it'll send a market order to buy the shares
+[00:01:07] to cover. So, while a short seller could set a buy stop order right there at 572, a long
+[00:01:14] bias trader could do the same thing. Along bias trader could say, you know, I'm not going to
+[00:01:19] sit here and watch this all day. I don't want to miss it. I'm just going to set a buy stop order
+[00:01:22] right here at 573. And if it breaks that, then it's going to send me a market order to get
+[00:01:27] in the trade. I don't like doing that. I think that's risky. I don't want to have an order
+[00:01:32] to acquire a position when I'm not sitting right there. So, if we...
+[00:00:00] zoom in on this right here, right here, something is interesting, something interesting
+[00:00:04] is happening inside that five minute candle, right there, we're going to draw it for you.
+[00:00:11] We had the stock that, of course, had popped up and it had been more or less kind of going
+[00:00:15] sideways for this long period of time, there were some green candlestone red candles, but
+[00:00:18] just it's just like this.
+[00:00:19] And then it popped up and the five minute candle looks like this, and then like this.
+[00:00:27] So what is happening inside that five minute candle?
+[00:00:30] Let's zoom that in right down here and I'm going to draw the 10-1 minute candles that
+[00:00:34] created this five minute candle.
+[00:00:36] So my expectation is that the stock had been going sideways, sideways, sideways, and
+[00:00:41] then suddenly, boom, it popped up, finally, it broke out, maybe two candles popped up,
+[00:00:47] and then we pulled back, one, two, three.
+[00:00:51] Now we know it pulled back because we have a topping tail, right?
+[00:00:54] If we didn't have that topping tail, it wouldn't, it didn't pull back.
+[00:00:57] Because we have that topping tail, we know that it pulled back before the close to this
+[00:01:01] candle.
+[00:01:02] Okay.
+[00:01:03] So then what likely happened on the next candle, it continued just a little bit lower.
+[00:01:07] In fact, it might have even just, well, didn't go quite that low, sometimes they'll
+[00:01:12] come all the way down to retest this resistance level.
+[00:01:15] So it was resistance, right here, and then now is it going to become support.
+[00:01:20] In this case, it didn't actually go quite that low.
+[00:01:21] It dipped down just a little bit more, and then it started surging up.
+[00:01:26] And so then this candle here is green, but it has that little bottoming tail there showing
+[00:01:30] that it dipped down before pushing higher.
+[00:01:32] So in fact, what I would have done on this is I would have let the shorts cover right
+[00:01:36] there, let them cover, let the-
+[00:00:00] create that first spike and then let it pull back and if it holds this level if it doesn't break back
+[00:00:06] below the support level then I'm a buyer right here. If it breaks back below the support level
+[00:00:11] which it could do then it could end up being a trap where buyers got trapped getting into high
+[00:00:18] short stop out and it ends up reversing anyways. We're going to talk about that a little bit later
+[00:00:24] in this chapter because that pattern where it pops up and then reverses where basically the
+[00:00:31] candle ends up looking like this. It's a red candle with a sort of you know shooting star.
+[00:00:38] It spikes up and then it reverses back down here and closes red. That's called a jackknife.
+[00:00:44] And a jackknife candle is something that we definitely want to be aware of we want to avoid.
+[00:00:50] So I don't use by stops to initiate orders because I don't want to get caught in a jackknife.
+[00:00:55] Instead I'll let it break. I'll let it pull back and if it holds I'm jumping it. So in this case
+[00:01:00] although the example as you can see is on the five minute time frame I would have executed the
+[00:01:05] trade using that one minute pull back right in that area. So that little pull back right there and
+[00:01:11] then as it continues higher there's another little pull back there and another little pull back up here.
+[00:01:15] We know that because we can see on the topping tails so we can draw the conclusion of what
+[00:01:20] was happening inside that candle. Now this right here on the other hand is a flat top breakout
+[00:01:26] that occurred on the five minute chart and this one actually was occurring during after hours trading.
+[00:01:31] So it's 4pm and all of a sudden the stock squeezes up after hours. It pulls back and pops up again.
+[00:00:00] it pulls back, it comes up again, consolidation right through here and then finally it pulls
+[00:00:05] away and does the same thing, a little topping tail, dips down, that's the one minute set up to
+[00:00:10] add. Another little one minute pull back and it pushes higher, a little dip and then it surges
+[00:00:15] back up, a little dip and then it surges back up, a dip surges back up. And this is not going
+[00:00:20] up going from about a dollar to 20 here to a dollar 75 in after hours trade, which is a pretty
+[00:00:25] impressive move. This is another flat top breakout pattern, although we don't yet see whether or
+[00:00:32] not we're going to get the breakout. So what do you think? Do you think we're going to get the breakout
+[00:00:37] here? I'm going to guess no. I'm going to guess that this is flat top breakout, a flat top, this is
+[00:00:44] just going to be resistance. It's resistance here, two big tops, so sold off came back up failed
+[00:00:50] and then here it's coming back up, that's the level 315. We know that's the price,
+[00:00:56] but it won't surprise us if we see resistance there. Now, two things could happen. One is it fails
+[00:01:02] and it just sells off. The second thing is it consolidates under this level, it can't break it,
+[00:01:07] it consolidates under it and then it breaks higher. And I suppose the third thing that could
+[00:01:11] happen is that it breaks through it right away and then it comes back and retest it improves it
+[00:01:16] and hold it as support before surging higher. The two ways that I would trade it is if we had
+[00:01:20] a consolidation below and then we would get in for the break through that flat top breakout or if
+[00:01:26] we had a consolidation just above proving that that level is now support. And the way we would find
+[00:01:31] this stock is because it would be hitting our high day momentum scanners it squeezes up right here
+[00:01:35] and we would pull up the chart and see... Oh!
+[00:00:00] So we've got nearby horizontal resistance, right here.
+[00:00:03] So of course on the daily we could also be looking at gaps and windows and asking if
+[00:00:07] we have an issue with the 200 moving average or ascending or descending resistance, but
+[00:00:11] on the intraday level we can already see that we've got something that we should pay attention
+[00:00:15] to.
+[00:00:16] So resistance right here.
+[00:00:17] So if this popped up on our scanner or maybe we noticed that this was one of the leading
+[00:00:21] after hours gainers, that's another scanner that I run where I'm always looking for stocks
+[00:00:28] during our after hour session to see if we've got anything that's moving.
+[00:00:32] So if we have an after hours top gainer that's squeezing, then you know that's something
+[00:00:36] that I'll pay attention to.
+[00:00:38] Oops.
+[00:00:40] So.
+[00:00:41] All right.
+[00:00:42] So let's see.
+[00:00:43] So we looked at this one here with the resistance up at $3.15, flat top breakout pattern.
+[00:00:49] This is another one and this one's on a little bit of a more expensive stock.
+[00:00:53] But you can see that very clear resistance there at $55 a share.
+[00:00:58] I'll have the half dollar whole dollar, psychological resistance right there and then finally
+[00:01:02] it breaks.
+[00:01:03] Again, on the five minute time frame, so likely we had a breakout, we can hope that maybe
+[00:01:08] there was a little pullback before it pushed higher, can't say for shirts and older example.
+[00:01:14] But a very clear instance there of a flat top breakout.
+[00:01:19] Long period of consolidation, sort of serves two purposes.
+[00:01:23] One shorts, sort of, are going to get fed up that it's not failing and start to think,
+[00:01:29] oh, I got to be careful about this and on the other hand, longs have more time to see it
+[00:01:33] to potentially get themselves ready to initiate a trade if it breaks that.
+[00:00:00] this is another flat top break out, this one's a little bit of a shorter pattern where
+[00:00:07] we pop up, we hit about 503, so right around the whole dollar, then we kind of are consolidating
+[00:00:13] right under 5, we pull back, we kind of come back up, still consolidating, and then we
+[00:00:18] have that surge of volume, 250,000 shares, and we break through 5 and go straight to 550.
+[00:00:24] We go up 10% instantly, and so this is an example where there may have been a big
+[00:00:29] dollar sitting right there, like 503, and it just wasn't breaking, and then maybe here,
+[00:00:35] maybe initially it was like 25,000 shares, and then after some buyers, maybe it went
+[00:00:40] down to 15,000, and then here it goes to 2000, and it breaks, and then boom, you get
+[00:00:46] that instant pop, shorter covering, they're giving up, and longs are jumping in to see
+[00:00:51] how high this thing will go.
+[00:00:54] Right here is a little flat top break out right under $7 a share, so the stock squeezed up here,
+[00:00:59] and yes, an entry right here at 7 is an entry at high of day.
+[00:01:04] But it feels sort of like we've got support here, we've got the 90MA right underneath us,
+[00:01:10] we've got this long period consolidation, certainly the low of the pullback is down here,
+[00:01:14] it's not that far, what's our upside potential?
+[00:01:17] Well, we will look for a move up to the next half dollar a whole dollar.
+[00:01:20] We know that a lot of these stocks will trade with respect to these levels.
+[00:01:25] So 7, 7, 50, 8, 8, 50.
+[00:01:29] You can see how the chart is showing the half dollars in the whole dollars here,
+[00:01:33] but it's just so common, and I'll just draw this really quickly.
+[00:00:00] So if we have this stock here, for example, 5, 5, 50, 6, 6, 50, 7, 7, 50, what you'll notice
+[00:00:10] if you were actually looking at the order book is that the majority of the orders are
+[00:00:14] going to exist right around the whole dollar and the half dollar.
+[00:00:19] So you'll have all these orders, for instance, if this is going up, all of these cell orders
+[00:00:25] are going to be kind of right in these areas here.
+[00:00:29] And so if we can break over 5, the price starts moving up here, and we can break over
+[00:00:34] 5.
+[00:00:35] We break through those cellars.
+[00:00:36] We hold over 5, then we usually have a pretty clean shot up to 5, 50.
+[00:00:40] Then we have resistance, we got to break through those cellars, we break through, we
+[00:00:44] got to move up to 6.
+[00:00:45] We pull back, we break through, we got to move to 6, 50, we pull back, we break through, we
+[00:00:49] got to move to 7, we pull back, we might pop over 7, we might dip down for a second.
+[00:00:54] Maybe there are some shorts who are like, now this thing is going to reject, but if
+[00:00:56] it holds 7, previous resistance becomes support, and then we squeeze up towards 7, 50.
+[00:01:03] Again, maybe we pop right over 7, 50, then we test it, we hold it, and then we're going
+[00:01:07] up to 8.
+[00:01:08] So it's very common that you see when you see big cellars that they're at half
+[00:01:12] dollars and hold dollars.
+[00:01:14] So because this is something that occurs as a result of the psychology of people just
+[00:01:20] placing orders around numbers and kind of logical price points that are in their mind,
+[00:01:27] we often see that the candlestick charts, the inter-day charts, also correspond.
+[00:01:33] So resistance is 6, 50, breaks through, goes right to 7, consolidation under 7.
+[00:00:00] Break through grows right up to 750 breaks above it. Now back below it resistance resistance
+[00:00:05] Break so over 750 goes up to just under eight pulls back consolidation can still hold over 750
+[00:00:11] It does
+[00:00:12] bounces off that level and then squeezes up here and goes right from eight to eight 50
+[00:00:17] So it blows through any sellers there. It was so strong on that candle
+[00:00:21] So this is going to be very common and this is a theme that we're going to come back to in a number
+[00:00:27] Throughout this whole course. We're going to keep coming back to this
+[00:00:31] a topic of
+[00:00:33] Here we go again. There's an entry right around the half dollar the whole dollar in really all of the patterns
+[00:00:37] We will notice
+[00:00:39] This is this happens a lot. So
+[00:00:42] Flat top breakouts right underneath half dollars and whole dollars very common here
+[00:00:47] Hold dollar of 30 flat top breakout and then it goes and the entry is right at the high a day
+[00:00:53] It's not pulling back
+[00:00:55] This is not really a pullback pattern. This is buying at the higher day, but it's a wedge
+[00:00:59] See how it's an ascending wedge
+[00:01:02] So the wedge is ascended. You've got the the flat top and then the price action is squeezed into this little area and then either
+[00:01:10] We'll break up or break down. It really has to do one at one of the two because the wedge is coming to an apex point
+[00:01:16] So here we push through higher. We've got the support of the moving average. We've got the stock that's got a sub one million share flow
+[00:01:24] Obviously it's up a lot today
+[00:01:25] Down here from six dollars all the way to thirty nine dollars a share and that breakout results in the squeeze from thirty all of it to forty dollars a share
+[00:01:33] Which is phenomenal. We love to see and we've like that
+[00:01:37] This one
+[00:00:00] here, sort of pulls away at the open up to three,
+[00:00:04] hold dollar, dips down, rallies, back up,
+[00:00:07] breaks over three, dips down, holds, curls up,
+[00:00:10] comes back down to three, back up, now 350.
+[00:00:14] So a little flat top right there around 350,
+[00:00:17] and then it squeezes and moves up to four,
+[00:00:20] and all the way to four, 50, and a little higher
+[00:00:22] up towards four, 70.
+[00:00:24] Pulls back, comes back up here to about four, 70,
+[00:00:26] and then goes sideways.
+[00:00:27] But that right there is our little flat top breakout
+[00:00:30] pattern.
+[00:00:32] So now we'll look at some flat bottom breakdown patterns.
+[00:00:35] Now, these are the inverse, and these can be either
+[00:00:38] traded to the short side, or they can be an indicator
+[00:00:42] certainly to stop out, or they're depending on the position
+[00:00:47] they can be watched for a possible reversal, which
+[00:00:52] would be a bear trap.
+[00:00:53] So let's just back this up for a second.
+[00:00:56] What would a bull trap look like around these levels?
+[00:00:59] So a bull trap here would be potentially
+[00:01:02] it breaks the flat top, and then reverses back down.
+[00:01:05] You get that jackknife, right?
+[00:01:07] So this area broke the flat top, and then comes back down.
+[00:01:10] So that's a little bull trap up there.
+[00:01:12] And then eventually it ends up squeezing.
+[00:01:15] Now, this right here is a bear trap.
+[00:01:18] Because it actually broke below 750, it broke psychological
+[00:01:22] support, and so shorts might have added there,
+[00:01:24] thinking, OK, we're going to fade lower, and then they get trapped.
+[00:01:28] So it's called a bear trap, because the shorts
+[00:01:31] who are bears in the market are trapped, and suddenly
+[00:01:35] they're getting pinched, because now the stock's going the other way.
+[00:00:00] a bulltrap is when the buyer's jump in
+[00:00:02] and then suddenly the stock reverses the other way.
+[00:00:04] So we get sort of tripped and so in this case here
+[00:00:09] a bulltrap would have looked like popping
+[00:00:11] and then immediately reversing
+[00:00:13] and then trending back down.
+[00:00:15] So this is it's risky to assume
+[00:00:18] that you're gonna have a bulltrap
+[00:00:20] on something that is trending up 500%
+[00:00:23] and is incredibly strong.
+[00:00:25] Clearly the bulls are in charge.
+[00:00:27] So what if you have something
+[00:00:29] in the sense of this pattern here
+[00:00:31] where the stock is still up,
+[00:00:33] this is actually the same stock.
+[00:00:34] It went from $2 a share to $40
+[00:00:37] and then right here is showing a flat bottom.
+[00:00:41] Now what if we took the position that,
+[00:00:44] yes it's a flat bottom but could the bears get trapped?
+[00:00:50] What if it dip down here
+[00:00:51] and then rips right back up?
+[00:00:54] That could be bullish.
+[00:00:55] So we could watch a flat bottom breakdown
+[00:00:59] for the inverse which would be to buy it
+[00:01:01] expecting a bear trap.
+[00:01:03] Now, a couple things to note.
+[00:01:05] This is currently trading below
+[00:01:06] the volume weighted average price
+[00:01:08] which means the bears at this moment
+[00:01:10] are in control of the interday price action.
+[00:01:13] So this would not be actually a good place
+[00:01:15] to try to do that type of trade.
+[00:01:17] It would be far better to try to do a flat bottom
+[00:01:20] false breakout, a set fall false break down essentially.
+[00:01:23] If it was occurring above volume weight average price
+[00:01:27] because then we would get that rally back up
+[00:01:29] and the bulls are still generally in control.
+[00:01:32] But in this case, the bulls are not in control.
+[00:01:34] The bears are in control.
+[00:01:35] The breakdown succeeds and the stock.
+[00:00:00] sells off and goes lower. This is an example, though, where, you know, maybe we would be thinking
+[00:00:06] a little differently about it. We've got support, flat bottom support, support right here, and so,
+[00:00:13] you know, this could have been a spot where if it dipped and then it ripped right back above
+[00:00:17] that we could have a bear trap and then we're looking for a quick rally back through the high.
+[00:00:21] The people covering shorts are adding and the buyers who are like, oh, this thing looks like
+[00:00:26] is going to squeeze through the highs or jumping in. So this is a context where the stock is
+[00:00:32] generally bullish and the flat bottom breakdown could be an opportunity to buy a dip if it rips
+[00:00:38] right back up. In this case, it goes lower on few candles. It does come back up, but now it's doing
+[00:00:44] this very typical pattern where support, support, support, support becomes resistance, resistance,
+[00:00:52] so, you know, later if it breaks back above it, but that's not a bull trap, that's just
+[00:00:57] a bear trap, that's just the trend to shift it. This is another flat bottom breakdown here
+[00:01:04] on the five-minute chart, so the price had rallied and then sold off, sold off, the sold off,
+[00:01:11] and then we finally flush and break through that level. We try to come back up and get above it,
+[00:01:15] we can't hold it and we're back below it. So this level, which was right around $84 a share,
+[00:01:21] ended up being fairly significant for the stock. It was a breakdown price and, you know,
+[00:01:25] possibly is a price to keep on watch in the coming sessions as it may end up, you know,
+[00:01:31] having some significance there with support and resistance. Sometimes they will hold for several days.
+[00:00:00] it's a battle around those levels.
+[00:00:02] This stock almost not quite.
+[00:00:06] Almost could have been like a little flat top break out here,
+[00:00:09] but it wasn't exactly ends up rallying.
+[00:00:11] Goes down, here, pops up, sells off support around 17.
+[00:00:17] Pops up comes back down, support around 17.
+[00:00:20] So what's creating that support down there?
+[00:00:23] Well, clearly, there's a buyer, and it's not breaking.
+[00:00:27] Now it's odd because it's below the volume-way
+[00:00:29] average price, which is this orange doted line.
+[00:00:31] So we don't know exactly why there's buying support at this level,
+[00:00:36] but evidently there is.
+[00:00:38] And so 17 currently is support, but if this buyer finally breaks,
+[00:00:43] then we would probably fade and sell it quite a bit more.
+[00:00:46] And the odds would be higher that eventually it will fade,
+[00:00:49] because the stock is below VWAP and the bears are in control.
+[00:00:52] So we don't know, it could be someone buying
+[00:00:55] who shorted into the move-up here,
+[00:00:58] and is trying to buy back their position,
+[00:01:00] but they could just cancel their order and buy back lower,
+[00:01:04] because they seem like that buyer single-handedly
+[00:01:07] cropping up this stock, and they can only sit there for so long
+[00:01:10] before eventually sellers are gonna sell into them.
+[00:01:14] Now in this case, we've got another little flat bottom break down,
+[00:01:17] so stock sells off, goes sort of sideways, and then unwinds.
+[00:01:24] And then we get that bigger drop.
+[00:01:25] From 55, back down to 52.
+[00:01:27] Again, higher price stock, not something you'd see me trade
+[00:01:30] on a typical day, but a good example of a flat bottom break down.
+[00:01:37] This right here.
+[00:00:00] Here's another flat bottom right there, so the stock sort of had a wedge right in this
+[00:00:04] area, broke away, squeezed up, pulled back, popped up, sold off.
+[00:00:09] We'll talk about those patterns more when we get to that section of this chapter five.
+[00:00:14] But then consolidation here and then flushes and then pops up, goes lower, pops up and
+[00:00:20] goes lower.
+[00:00:21] And each of these are what we call little bare flags.
+[00:00:25] So it drops down, the price pops up for a second, then it goes lower.
+[00:00:29] It pops up for a second, then goes lower, pops up for a second, then goes lower.
+[00:00:33] We do the same thing in reverse, pop up, pull back, go higher, pop up, pull back, go higher,
+[00:00:39] pull back, go higher.
+[00:00:40] A bull flag, going up, a bearish flag, going down.
+[00:00:44] The flag aside was consolidation, following the big candle.
+[00:00:47] So it's bearish, if the big candle was red and it's bullish, if the big candle is green.
+[00:00:54] Here we've got sort of, I have to zoom out on this a little bit.
+[00:00:58] So bottom here, through to here, and it finally breaks down there.
+[00:01:03] There's also a smaller one right here that broke right here, but then caught support at
+[00:01:08] this low right here.
+[00:01:09] So a little bit of a more complicated pattern here with multiple levels of support and
+[00:01:14] resistance, a little bit of a higher price stock, support and resistance, you know, it's,
+[00:01:22] we've got bigger ranges, but clearly there's some areas here where there were some
+[00:01:27] buyers down there on that double bottom, and then some buyers down there around 1450,
+[00:01:31] and then it ended up selling off a bit more.
+[00:01:36] In this, this is the example here.
+[00:00:00] of a bear trap. Okay, so that's a bear trap. So this is going sideways, pops up,
+[00:00:05] sells off, pops up, sells off, and then drops, and probably the shorts were like,
+[00:00:10] here we go, this thing's going to unwind and go down all day long. And then, uh-oh,
+[00:00:15] it comes right back up and then it goes again. But this also was very difficult.
+[00:00:20] You can see these big pops and rejections, pops and rejections. So I think
+[00:00:25] longs also got trapped on this a couple times on some of these big moves, thinking
+[00:00:29] it was going to really pull away and then just slams back down. So this might have
+[00:00:33] even just been longs bailing out. I don't even know if it necessarily would have been
+[00:00:37] in this case shorts going short, but in any case, you do have that little
+[00:00:41] bottoming tail and then it reverses course and surges back up. So flat bottom
+[00:00:47] breakdowns are a smaller component to the strategies that you'll see me
+[00:00:53] teaching you later in this course. Flat top breakouts are more common of the two,
+[00:01:00] especially with those entries right under high a day on something that's really strong.
+[00:01:05] Because what we often see is, you know, we'll have that stock that suddenly has the
+[00:01:11] catalyst, you know, breaking news event at like 8 a.m. And just suddenly surges like straight
+[00:01:16] up to 6. And then we get, you know, a little bit of a pullback, maybe for just a candle,
+[00:01:23] taps back up to the 6-dollar level, there's a seller and then taps 6-1 more time or
+[00:01:28] like, okay, 3 taps, you know, this thing is holding here and then finally, you know, boom,
+[00:01:34] it breaks through that level. Maybe it comes back down, reed.
+[00:00:00] test the supportive six and then if it holds we're going up to 650 we pull back
+[00:00:04] for a second then up to seven pull back for a second and up to 750 and usually
+[00:00:08] what happens is as these are gaining more momentum momentum the moves get bigger and
+[00:00:14] the volume bars let's say we have the volume bars and here high volume on that
+[00:00:17] first candle and then kind of lighter volume during consolidation and then
+[00:00:21] more volume on this one and then kind of lighter volume and then increasing volume
+[00:00:26] and then increasing volume as these candles get bigger so we like to see
+[00:00:30] increasing volume kind of correlate with these moves higher if we have
+[00:00:36] decreasing volume we're suddenly it's moving higher but now the volume's
+[00:00:40] going down that's a day virgins and that indicates to us that although there
+[00:00:46] are some people that are still buying this generally people are nervous to be
+[00:00:49] buying it at this level and what can happen is you can get it like big drop
+[00:00:54] back down as the trend reverses so we want to pay attention to the volume
+[00:01:00] profile here in a sense this is the volume profile just in the in the
+[00:01:06] visual sense of is the volume increasing or is it decreasing right and this is
+[00:01:12] that that those are sort of those subtle hints that we look at that give us the
+[00:01:16] indicator that this is going to continue rallying up or that we may be more
+[00:01:20] likely that's going to pull back so when we're talking about volume
+[00:01:24] if we look at these charts on this chart we've got much more volume on the
+[00:01:29] green candles than we do on the red candles buying volume is dominating on
+[00:01:33] that particular chart on this particular chart buying volume is
+[00:00:00] is high, but there are a few higher volume red candles, certainly as we got a little
+[00:00:05] later in the day, and there's a few right here that are not insignificant.
+[00:00:09] On this one, high volume buying, volume increases, volume surging higher, and then volume
+[00:00:16] decreasing right here, as it makes the second attempt, that is a divergence.
+[00:00:22] If that volume had been higher, then we would have expected it's going to push higher,
+[00:00:26] the volume tapered off, and then it comes back up here, but on even lighter volume
+[00:00:31] than before, so that's not going to have the strength to get back up to the high.
+[00:00:34] If it couldn't do it, if it couldn't go higher at this point with that volume, why would it
+[00:00:38] work now? And then the volume shifts to the sellers, as it breaks, and sells off a bit more.
+[00:00:45] On this one, the selling is very strong on the red candles, so sellers are dominating,
+[00:00:51] which makes sense. The stock is selling off. There's a little bit of green there, but generally,
+[00:00:56] even in this consolidation, there's much more selling. So that volume profile is really telling us
+[00:01:01] who's in charge of this, and that gives us an early indicator of which direction this pattern
+[00:01:06] is more likely to resolve it. This one here, lighter volume buying, a little light volume pullback,
+[00:01:12] nice volume comes in on this candle that pushes to a new high, but then a couple of topping
+[00:01:17] tails, indicating it can't pull away, and this is interesting. High volume on this candle,
+[00:01:22] but it doesn't go higher. That means that people were selling into that candle. So even though
+[00:01:28] there was a lot of volume, people sold into the mood. So seeing a high volume candle,
+[00:01:33] that is a smaller size candle, the only way that happens is if...
+[00:00:00] All of that buying was offset by someone else selling. So we don't like to see that. Back to this pattern here
+[00:00:06] Generally stronger on the by side, but then a stronger sell-off right there, you know, through this period
+[00:00:14] It doesn't look as bearish on the volume profile on as the chart sort of shows us, but
+[00:00:21] But nonetheless, we have a few breakdown candles like right there that hurt and then after hours on lighter volume
+[00:00:27] The stock dropped even a bit more
+[00:00:31] This one generally high volume buying high volume green candles nice volume profile
+[00:00:38] High volume candle is the high of the day, but it has that topping tail dip-stown topping tail topping tail topping tail
+[00:00:46] Reverse is and then a higher volume
+[00:00:48] Sweet there of sell orders comes in and that knocks the stock over
+[00:00:53] This one very nice volume on the first leg higher and this is an example where if you waited for a five-minute pattern
+[00:01:00] You didn't get it right this thing just went straight up without a five-minute pullback
+[00:01:04] Then it pulls back but by that point the volume is so much lower and even when it tries to come back up
+[00:01:10] The volume's lighter than the initial move so it's not able to push higher and then here highest volume candle the day is red
+[00:01:17] And I think that spells disaster for this as it starts to unwind as the day goes on
+[00:01:22] So that was the volume profile on the flat bottom breakdowns on the high of day breakouts
+[00:01:28] We'd like to see high volume occurring and kind of right going into the level that's resistance and then high volume on the break through that level
+[00:01:36] So that's bullish
+[00:00:00] we like to see. Here, this is a little bit of a concern that one red candle,
+[00:00:05] well hard to tell. Looks like it's right here. So, came up to this high and then big red candle,
+[00:00:11] consolidation consolidation on lighter volume, but right after that bigger red candle,
+[00:00:17] that would have had me a little nervous to be buying this, especially considering it's a higher
+[00:00:20] price stock. Higher price stocks usually have bigger spreads. Here, nice volume on the green
+[00:00:26] candles, the buyers are definitely dominating. We like to see that. That's good to see.
+[00:00:30] Right here, definitely, except for this candle right there, more volume has been on the green
+[00:00:36] candles, so the buyers are also dominating. So, you could see how the volume, the volume pain here,
+[00:00:44] is critical in order to really understand what's happening behind these candles. You really
+[00:00:51] shouldn't look at candles without volume turned off. Right here, big rally on day one,
+[00:00:57] and then day two light volume after hours, and here, the volume is relatively light, which also
+[00:01:04] sort of makes a prediction that if it couldn't go higher on this level of volume, why is it going
+[00:01:09] to go higher today on half the volume? It kind of doesn't make sense. It doesn't mean it's impossible,
+[00:01:14] because it could happen, but it doesn't make sense. Really nice volume profile here, high volume buying,
+[00:01:21] sideways sideways, and then that volume comes in as we push higher. So, we'll definitely like to
+[00:01:26] see that. And this one, except for high volume at the open, where it kind of went red, and then
+[00:01:32] rally back to green, giving us what we call a red-to-green move. The volume came in, it was a-
+[00:00:00] able to overcome those levels,
+[00:00:01] and then high volume buying as we broke through that area.
+[00:00:05] All right, so now we've looked at the volume profile
+[00:00:07] on these different setups, and we're ready to go ahead
+[00:00:10] and jump into our next pattern of chapter five,
+[00:00:13] which is the bull flag and the bear flag.
+[00:00:16] Okay, let's get to it.

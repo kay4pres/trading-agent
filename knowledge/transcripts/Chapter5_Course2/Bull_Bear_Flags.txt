@@ -1,0 +1,415 @@
+# Segments: 17
+# Transcribed: 2026-06-26T19:20:49.399045
+
+[00:00:00] Okay, so we're going to continue on here with Chapter 5,
+[00:00:03] enter the chart patterns with both flags and bare flags.
+[00:00:07] Now, this is probably going to be one of the patterns
+[00:00:11] that you'll see me trade almost every day.
+[00:00:15] It's just a very common pattern.
+[00:00:17] The psychology behind the pattern makes a lot of sense.
+[00:00:21] Basically, what is occurring is initially
+[00:00:25] the price squeeze is up very quickly.
+[00:00:27] So that rapid squeeze attracts a lot of interest.
+[00:00:31] The stock is hitting scanners.
+[00:00:33] You know, of course, I have our scanners that we're using,
+[00:00:36] but traders all around the world have different types of scanners
+[00:00:39] that they're using.
+[00:00:40] So they get kind of zoned in on a stock making the big move.
+[00:00:43] And then everyone's waiting to get in.
+[00:00:46] And although some people will just buy it,
+[00:00:48] the second hit's the scanner and just try to ride that momentum,
+[00:00:51] others are going to, you know, rightfully be a bit more cautious
+[00:00:55] and wait for a pullback where you can manage your risk.
+[00:00:59] So the way we trade this set up is we let it pull back
+[00:01:02] and we're buying the first camel to make a new high.
+[00:01:05] So when we were talking about the flat top breakout pattern,
+[00:01:10] in the instance of a flat top breakout pattern,
+[00:01:13] our entry was either the moment we broke through that high
+[00:01:18] if we've been consolidating underneath it for a while,
+[00:01:22] or if we missed that breakout, which is very common,
+[00:01:25] because they can happen just sort of at random,
+[00:01:27] that it breaks, it then pulls back,
+[00:01:29] and then on that first pullback, we're jumping in.
+[00:01:32] Now, of course, there's going to be some red candles in here,
+[00:01:34] but you get the idea.
+[00:01:36] Now, that's going to be a little different.
+[00:00:00] with the bull flag, with a bull flag, the pattern is formed by this initial spike and
+[00:00:07] then we have a couple candles of pullback, but it really does pull back well off of the high, right?
+[00:00:13] This is the distance between the current candle and the high, so, and one of the things it's also very important with this pattern, as well as the flat top breakouts, and
+[00:00:23] Breakdowns, is to watch your volume profile, so we want to see high volume on that initial candle,
+[00:00:29] high volume here, light volume on the selling candles, and then volume increase as we come back up through the new high.
+[00:00:37] If it were the inverse, light volume on the first candle and high volume on the selling candles, that's telling us that people are in general in total, not accumulating the stock to buy it.
+[00:00:50] But instead unloading the stock to sell it, getting out, distributing it because it just doesn't, for whatever reason, they don't like it.
+[00:00:57] So, you know, trading momentum is all about trading what is trending, and being in touch with the emotions that other traders are experiencing, and there's no better way to really measure that than by actually looking at the volume bars.
+[00:01:12] So high volume buying, that's communicating the emotion and the sentiment behind the stock, light volume pullback, that's great, and then we look for the volume to come back in for the next like higher.
+[00:01:22] So, a bull flag, and the bear flag is the inverse, a bull flag has the following characteristics.
+[00:01:29] It can be as little as one big green candle, same as a flat top break out, but it's often several candles that are green of increasing volume.
+[00:00:00] Moving up, followed by usually two or more red candles.
+[00:00:05] These candles cannot break the high at the previous candle.
+[00:00:08] So what that looks like is the first candle is squeezing up.
+[00:00:12] And again, it can be one candle, it can be two candles,
+[00:00:15] it could be three candles, we'll just draw it like this.
+[00:00:18] In fact, well, this gives me a moment just to talk about the sentiment here
+[00:00:23] because I drew that candle a little bit smaller.
+[00:00:26] Well, what if the next candle was kind of like this,
+[00:00:30] and then like this, and then like this?
+[00:00:32] What does that tell in this?
+[00:00:34] That's telling us just in the shape of the candles,
+[00:00:36] the trend is getting exhausted.
+[00:00:38] And what we would probably expect to see
+[00:00:39] from the volume profile down here is high volume,
+[00:00:43] and that the volume is actually decreasing
+[00:00:46] because the candles are getting smaller, right?
+[00:00:48] So that would tell us that we're getting ready to roll over.
+[00:00:50] So we wouldn't want to see that, we would rather see
+[00:00:53] two kind of high volume candles like this,
+[00:00:56] where the volume was actually higher on the second candle.
+[00:01:00] So we get our two candles moving up,
+[00:01:02] and then the next candle opens, and it pulls back a little bit.
+[00:01:06] The next candle opens and pulls back again.
+[00:01:09] What we don't want is for the next candle to open
+[00:01:12] and to suddenly push higher.
+[00:01:13] I mean, we're okay with that happening,
+[00:01:15] but if it happens too soon,
+[00:01:17] then we haven't gotten a chance for the bull fly to four.
+[00:01:20] So if this candle opens and then immediately goes higher,
+[00:01:24] one candle of pullback is not a bull fly.
+[00:01:27] We would actually call that a micro pullback.
+[00:01:31] And a micro pullback is fine, but it's just a different pattern,
+[00:01:36] and generally carries a little bit more risk.
+[00:00:00] because our moving averages are usually going to be further away.
+[00:00:04] Because the stock is barely pulled back for almost just a moment,
+[00:00:07] a micro pullback before pushing higher.
+[00:00:09] So this is going to work if the stock has really good news.
+[00:00:13] And it's only pulling back for a second
+[00:00:15] because the news is so good, right?
+[00:00:17] But otherwise, that's a little riskier.
+[00:00:19] So what we prefer to see for the bull flag
+[00:00:23] is that we pull back for one candle, we pull back for two candles.
+[00:00:26] Maybe we even pull back for three candles.
+[00:00:29] Maybe we pull back for more than three candles.
+[00:00:31] Well, now this is starting to feel like there's just too much salary.
+[00:00:35] We had a couple of candles up and now we're having one, two, three, four, five,
+[00:00:39] selling candles.
+[00:00:40] And if the volume on these were increasing, well, that's definitely a problem.
+[00:00:44] So we're paying attention to our volume profile.
+[00:00:47] We don't mind letting it pull back, but as a rule of thumb,
+[00:00:50] I generally would say that I don't want to see this pull back on the bull flag
+[00:00:55] more than 50% of the move up.
+[00:00:58] So let's say that's the 50% mark right there.
+[00:01:01] It pulls back more than 50% of this move up here
+[00:01:05] than to me, the sellers are in control, and that's not great.
+[00:01:09] But pulling back 70% or whatever, that's fine.
+[00:01:13] I don't have a problem with that.
+[00:01:14] So 60% or whatever, as long as it's not more than half.
+[00:01:17] So then what we're looking for is the first candle
+[00:01:20] to make a new pie.
+[00:01:22] So a perfect bull flag will come right down to the nine EMA
+[00:01:26] on the five minute chart.
+[00:01:27] And now the perfect bull flag on the one minute chart
+[00:01:29] will come down right to the nine EMA on the one minute chart.
+[00:01:31] So right down to that moving average.
+[00:01:33] Should not retrace more than 50% of the original move.
+[00:01:36] Now I would particularly like chart.
+[00:00:00] the first and second pullback after the stock begins making a strong move up.
+[00:00:05] These are typically, these pullbacks will typically take the form of pull flags,
+[00:00:09] although they may look like a flat top breakout pattern or they may be a micro pullback.
+[00:00:14] So the fact is, we have a stock that has breaking news.
+[00:00:17] It's hit our scanners and squeezing up.
+[00:00:19] We pulled up the daily chart, everything checks out there, no issues.
+[00:00:22] Maybe it's a recent reverse split and we're like, ooh, this has a lot of potential.
+[00:00:26] It pops up to big green candles in a row.
+[00:00:28] We're waiting for a pullback.
+[00:00:30] What's it going to give us?
+[00:00:31] Is it going to give us a micro pullback?
+[00:00:32] We'll give us a flat top breakout.
+[00:00:34] We'll give us a pull flag.
+[00:00:35] We don't know, but these are the patterns that we understand so far,
+[00:00:39] and that we're willing to trade.
+[00:00:40] So if it shows us one of the patterns we understand,
+[00:00:43] where we figure that if we get in, we're managing our risk and we've got good upside,
+[00:00:47] then we take the trade.
+[00:00:48] If it ends up not giving us a clean pattern, then we don't take the trade.
+[00:00:51] In spite of the stock, meeting all five pillars of stock selection,
+[00:00:54] otherwise being good, if it unfortunately just doesn't,
+[00:00:57] give us a set up, we don't take a trade.
+[00:00:59] So then where do we actually execute the trade on the bull flag?
+[00:01:03] So on the bull flag, what we're looking for is the first candle to make a new high.
+[00:01:08] So this is now beginning a discussion of pivots and changing directions.
+[00:01:14] So here we were moving up and then we began moving down.
+[00:01:17] And we knew we were moving down because we had one red candle,
+[00:01:20] and then the second one went lower.
+[00:01:23] So now we're trending down for one, two, three candles have gone red.
+[00:01:27] So the next candle opens and remember candles open about the price of the clothes.
+[00:01:32] So it opens here, and let's say it goes down a little bit more.
+[00:01:37] So initially when it goes,
+[00:00:00] down a little bit more, that candle would actually be red, right? So it goes down a little
+[00:00:03] bit more and we're like, oh boy, this thing's still going lower. So it goes down a little
+[00:00:07] bit more. And then all of a sudden it reverses and it surges back up. So what price would
+[00:00:14] have to break in order for us to start to feel bullish about this? You might sort of instinctively
+[00:00:19] say the high of day. And you would be absolutely right. But there's an earlier price that
+[00:00:24] could break that would be significant. And it would be the first candle to break the high of
+[00:00:29] the previous candle. So if this candle has a high right there, the high that candle is, you know,
+[00:00:35] 305, then if this breaks, it dips down here, let's say it dip down for a second bottoming
+[00:00:40] tail, then it comes up, it breaks 305. The second it breaks that level right there, I'm a buyer.
+[00:00:47] So I'm now buying on this green candle, and I got in as soon as it broke over 305.
+[00:00:53] Then we look for continuation back up to the high. So this is our first profit target right here,
+[00:00:59] and then hopefully it continues higher. And of course we're watching half dollars and
+[00:01:02] hold dollars. So if this was around 350, then we'd be looking for a move up to four,
+[00:01:07] knowing that we typically trade in these ranges. So if the first candle to make a new high was
+[00:01:12] right here at 305, well, what we know is that that's just above, of course, the hold dollar of
+[00:01:18] three. And the stock is right at the nine moving average. So although this would be a little bit
+[00:01:24] aggressive. There's two ways you could trade it. One is, you buy the second the price crosses three.
+[00:01:30] You don't wait for this candle to close. It's the second the price crosses three, oh sorry,
+[00:01:36] three, oh five, that you're a-
+[00:00:00] buyer. That's where you get in the second it crosses. The other thing you could do is you
+[00:00:05] can get in just slightly below two cents below three cents below and what would give you
+[00:00:10] the conviction to do that is if number one you felt that you had a very tight stop relative
+[00:00:16] to the load this pullback and number two if you were watching the level two and the time
+[00:00:21] and sales and you saw a lot of other buyers getting it. Now we're going to talk about
+[00:00:25] tap reading in chapter six so that's coming soon but just so you know there are some ways
+[00:00:30] that you can anticipate that this pattern will resolve in our favor. Of course one of the
+[00:00:36] ways is by paying attention to the volume profile but another way is by actually looking
+[00:00:39] at the time and sales and the level two that will in real-time show us the orders that
+[00:00:43] are going through the market. So now let's look at an example of the bull flag. So here we have
+[00:00:49] a stock that presumably had breaking news right here. It initially pops up on light volume
+[00:00:55] goes sort of sideways then it pulls a little higher, pulls a little higher, pulls a little
+[00:00:59] higher, volume is increasing that's good and then look at this. Highest volume candle of the day
+[00:01:07] is red. We don't love that profile it dips down here and then this candle surges back up
+[00:01:15] and as we break through that high of six dollars the whole dollar then's up going all the way
+[00:01:19] to six fifty and then it goes all the way up to seven and it goes all the way up to just
+[00:01:23] under seven fifty. So although we did have this issue here with a higher volume red candle
+[00:01:28] it was able to reclaim that level. Look at the candle that happened right here. It broke through
+[00:01:33] six as noted by the topping tail and then it dipped back down.
+[00:00:00] Once it held six, this actually would have been one of those trades where we'd probably
+[00:00:05] Maybe if we already had a cushion if I already had a cushion on the day, I would have taken the risk of buying this in spite of that red candle
+[00:00:12] Depends on the catalyst depends on the flow depends on how much I was up on the day
+[00:00:16] But what I could have also done is I could have let it go ahead and break through that level and then let it dip down right here
+[00:00:21] And then bought right there at about 625 and I still would have had a nice trade up to 650 up towards 7 and then this right here
+[00:00:29] There's another little pullback that's a micro pullback for the push higher
+[00:00:33] Now although we have only one red candle this second candle, it didn't have to be red
+[00:00:39] But it was a candle that did not make a new high
+[00:00:43] So it was just sort of a sideways candle and then right here the volume came right back in
+[00:00:48] So there is perhaps something that would have given us a edge on this to take a trade could have been on the level two
+[00:00:55] The time and sales it could have been knowledge about the stock or the news catalyst the condition of the overall market the chart itself not picture perfect
+[00:01:04] But it's not it's not the worst that I've ever seen either
+[00:01:09] This one's going to be a little bit better. So in this example here we've got
+[00:01:13] 3, 4, 5, 6, 7 green candles in a row and the volume is increasing as it's moving higher and then we get a pullback
+[00:01:21] So 1, 2, 3 candles up and then 1, 2 candles a pullback
+[00:01:25] It rests this candles green but it's on light volume. We're not a buyer necessarily because it's a green candle because we're waiting for the first candle to actually make a new high and
+[00:01:34] Boy when that happened volume came in right there at that
+[00:00:00] but surge of volume, highest volume canle of the day,
+[00:00:03] and the stock went from 370 all the way up to 420.
+[00:00:07] Now, one of the things that is important to recognize
+[00:00:09] is no two patterns are exactly like.
+[00:00:13] There's always to be some variation.
+[00:00:14] And so we're looking at these patterns.
+[00:00:17] We're looking at some examples of their picture perfect.
+[00:00:20] They're the appear picture perfect.
+[00:00:21] Some that are a little bit sloppy or not quite as clean.
+[00:00:24] And I think it's a good idea to print out a number
+[00:00:27] of these patterns that you can use as a resources.
+[00:00:29] So you can have them kind of around your desk.
+[00:00:31] But recognize that sometimes the pattern
+[00:00:33] that gets presents to us is a little different
+[00:00:36] from the textbook pattern that we were looking for.
+[00:00:38] And then we have to make the decision of,
+[00:00:40] do we have enough things going for us in our favor
+[00:00:43] on this particular stock, on this particular day,
+[00:00:45] where we feel we can manage our risk
+[00:00:47] and it's worth taking the trade.
+[00:00:48] Or is this one that we should sit on the sidelines?
+[00:00:51] So on this one, it appears like a pretty good pattern.
+[00:00:54] I don't know that I would have had any problem
+[00:00:57] pulling the trigger on it.
+[00:00:58] The one that we just looked at before
+[00:01:00] has a little bit of an issue of higher volume,
+[00:01:01] but in total you did have some nice big green candles.
+[00:01:04] So that's good and volume certainly came back into it
+[00:01:07] as it pushed higher.
+[00:01:08] What about the next one?
+[00:01:10] So here again, you've got two candles rallying.
+[00:01:13] The highest one is slightly higher volume red,
+[00:01:16] and then we pull back for a few candles.
+[00:01:18] So dipping down, dipping down, dipping down,
+[00:01:21] a few topping tail camels in a row.
+[00:01:24] So a little bit of indecision.
+[00:01:26] But then sure enough, that first candle
+[00:01:27] that makes a new high breaks over the high of that candle,
+[00:01:30] and we get a surge of volume.
+[00:01:32] So I could have my level two up on this.
+[00:01:35] I could be watching and know that my entry point.
+[00:00:00] is the second league break over, what is that?
+[00:00:02] Like, 378, and just watch it.
+[00:00:05] Do we get volume?
+[00:00:06] If I start suddenly seeing a surge of buying volume,
+[00:00:09] I could say, you know what,
+[00:00:10] I'm gonna pull the trigger.
+[00:00:11] I'm gonna get in this at $2.75 or $2.85.
+[00:00:15] Maybe I'm getting in a little higher,
+[00:00:17] but I'm waiting until I have a confirmation.
+[00:00:19] Because on this one, I wasn't,
+[00:00:21] I didn't have quite the level of conviction
+[00:00:22] that it was gonna work.
+[00:00:23] Topping tails, a little higher volume,
+[00:00:25] but sure enough, it's working.
+[00:00:27] Now, of course, we also have the potential trade
+[00:00:29] right up around the half dollar.
+[00:00:30] So that would be, if the stock popped up to the half dollar,
+[00:00:33] sometimes they'll pull back for a moment,
+[00:00:35] and you could take a trade on the break out,
+[00:00:37] and then you're looking for a move up towards 350,
+[00:00:39] which is a bit higher.
+[00:00:40] This one in total, only had about 40 cents of range.
+[00:00:44] Not bad, still enough to get that 20 cents,
+[00:00:46] which is sort of that daily,
+[00:00:48] while the goal for, you know, a good trade, 20 cents a share,
+[00:00:50] but not a huge amount of attention.
+[00:00:55] This one has a bit of multi-time frame alignment.
+[00:00:58] So on the one minute, volume's a little lighter,
+[00:01:00] it pulls back, it comes back up,
+[00:01:02] and it seems that we sort of have a little bit of resistance
+[00:01:04] here at about 387.
+[00:01:06] On the five minute chart, it shows nice volume profile,
+[00:01:11] light volume selling, relatively light,
+[00:01:13] and then first camel makes a new high right here,
+[00:01:16] which looks like that first camel
+[00:01:18] would make a new high was actually right around here
+[00:01:21] on the five minute chart.
+[00:01:22] It was down just a little lower.
+[00:01:24] So I don't think I would have taken that trade
+[00:01:26] because this is not a one minute setup.
+[00:01:28] It's a five minute setup,
+[00:01:30] but we don't have multi-time frame alignment,
+[00:01:32] and if I don't have a good one minute pattern,
+[00:01:33] then I don't feel like I can manage my risk.
+[00:01:36] So if I took this on a five minute with an entry key.
+[00:00:00] here, my stop is down here, which means I would have been buying right about here with
+[00:00:04] a stop down here, okay, or I could just wait to get in here, right, which is a better, a little
+[00:00:10] bit of a better setup, and then that would have been buying the break through the high.
+[00:00:13] So you've got a bull flag on the five-minute chart, and the one minute is kind of giving you,
+[00:00:18] you know, a little bit of a different pattern, almost a flat top breakout, but then right here,
+[00:00:22] that first pullback on the one minute is a bull flag. So now we've got three, four candles up,
+[00:00:28] a couple candles pullback, first candle making new high, right there's the entry,
+[00:00:31] and then we squeeze up to 433, which is pretty nice. This is another nice pattern, 1, 2, 3,
+[00:00:39] 4, 5 green candles, pulling back, higher volume on the first candle, later volume on the second,
+[00:00:45] basis out on the third, volume comes back in right there, as we rally from 424 back up towards 450.
+[00:00:51] Again, not a huge amount of range on this particular stock, but you know, you can't complain,
+[00:00:57] green is good. And remember, in this chapter, I'm just showing you the patterns. I'm not
+[00:01:01] really trying to give you all the details of your entry and exit, you know, points,
+[00:01:06] I mean, I'm kind of highlighting it, but we're going to get into that in a lot more detail when we get
+[00:01:10] into chapter 789 and 10 when we're talking about the strategy involved with how to trade these stocks
+[00:01:17] when they're exhibiting these patterns. So right now we're still laying the groundwork. Okay,
+[00:01:22] so on this one, caution, shooting star than a high volume red candle. So this one squeezes up
+[00:01:29] but that big topping tail right there, that's not great, and then the next candle's red,
+[00:01:34] and it's fairly high volume, and this starts to pull back.
+[00:00:00] So now, you know, is this something that we could feel comfortable buying right here?
+[00:00:04] Our stop is really the low of the pattern.
+[00:00:07] It's kind of a ways away.
+[00:00:08] We're looking at eight here and the low is down around 720.
+[00:00:12] So with that big, topping tail,
+[00:00:15] I would always feel nervous buying for that move back up
+[00:00:18] because of that upper candlewick.
+[00:00:20] Now there's a strategy that I'll teach you,
+[00:00:23] called the Wick Reclaim,
+[00:00:25] where we have a candlewick and then it makes no sense
+[00:00:28] because it's inherently bearish,
+[00:00:29] but the stock does rally back up and shorts get squeezed,
+[00:00:32] but it's something that we really only see in a particularly hot market.
+[00:00:36] So now let's talk about the bear flag.
+[00:00:39] The bear flag is the inverse oops of the bull flag,
+[00:00:42] so it occurs during a downtrend.
+[00:00:45] So the stock is trending down,
+[00:00:47] selling off sideways and then goes lower.
+[00:00:50] Sideways and then goes lower.
+[00:00:52] Sideways and then goes lower.
+[00:00:54] So this is one that's been trending down kind of like all more
+[00:00:57] than you can see.
+[00:00:59] And when we're trading both flags,
+[00:01:00] usually we look for that move up,
+[00:01:02] trending sideways, trending up,
+[00:01:04] sideways, trending up sideways.
+[00:01:06] And usually I like the first pullback
+[00:01:08] and I like the second pullback and by the third,
+[00:01:10] I'm kind of like all right,
+[00:01:11] let's not over stay our welcome.
+[00:01:13] Notice here highest volume is early
+[00:01:15] and then the volume kind of dwindles.
+[00:01:17] So when the volume sort of fades out like that,
+[00:01:20] I do start to worry that we could get a reversal.
+[00:01:23] Either when it happens in the context of a downtrend like this
+[00:01:26] or when it happens in the context of an uptrend.
+[00:01:29] But in any case there we have that just consecutive
+[00:01:32] bear flags going lower and lower and lower.
+[00:01:35] Here this is kind of interesting.
+[00:00:00] A big move up and then a sharp move down with this small little pop after that big red
+[00:00:06] candle. This right in here is a bear flag. Even though it's in the context of what was
+[00:00:12] almost potentially going to be a bull flag, it's this and to be fair, it is still within
+[00:00:18] the 50% retracement, but it's such a large red candle. It would be so much better if
+[00:00:23] this is popped up, it's stopped pulling back there, another gradual candles here and then
+[00:00:28] it gives a chance for that nine moving average to get underneath the price for support
+[00:00:33] and then we rally back up. But here it just comes all the way back down to the nine. It
+[00:00:38] bounces up just for a moment and then it fades lower and then goes sideways and then
+[00:00:43] unwinds again. So that those are bear flags and then those are those can be tough.
+[00:00:50] Here you've got a rally up and then sell off a little bear flag and a step lower, a little
+[00:00:55] bear flag and a step lower. So one of the things that I think is important to recognize
+[00:01:01] is this concept of trending and stare stepping. I call it stare stepping. So when a stock
+[00:01:09] is stare stepping up, what that means to me is that it's moving up, big candle and then
+[00:01:14] going sideways for a moment and then next step up and then going sideways for a moment.
+[00:01:18] Step up, going sideways for a moment. So this kind of looks like stairs, right? We're
+[00:01:23] stare stepping up. Well that's all fine and then at some point it ends up dropping.
+[00:01:30] Now when it drops right here and it goes sideways at this moment, we don't know for sure.
+[00:01:36] This might just be kind of a more extended pull.
+[00:00:00] back and then we kind of rally back up and then we're still stair stepping up. So it's
+[00:00:05] possible that we could get just like a little dip there but the confirmation is if
+[00:00:09] you have one step down and then you push lower. Because now you're really stair stepping
+[00:00:15] down and now we're stair stepping down. We're stair stepping down, we're stair stepping
+[00:00:19] down and then we suddenly do this. And so if it holds that level we have two options.
+[00:00:27] One, it was just a momentary drop and then we keep going lower. And the other is
+[00:00:31] that this then pulls back sort of pulls back here and then steps back up. So what we usually
+[00:00:40] look for is sort of a double bottom for stair stepping higher. And what we often get is
+[00:00:45] a sort of double top before we stair step down. So it might have been that we kind
+[00:00:49] of came up here for one more second and then flush back down and it's sort of like it's
+[00:00:55] a pull back for a second and then came back up and then dropped back down. So double top
+[00:01:00] or double bottom. So as traders, we like to buy pullbacks when something is trending higher,
+[00:01:08] certainly. But when something is changing directions, this is also an area where we pay
+[00:01:13] a lot of attention because then we can be in at the beginning of the next whole leg of stair
+[00:01:19] stepping up. And we don't necessarily need, I mean we can be trading all of the dips as well.
+[00:01:23] But if we have that first entry down here, we've got very minimal risk because we're right
+[00:01:28] in your support. So I call this a pivot. So we've pivoted from stair stepping down to
+[00:01:36] right in this area, stair stepping up.
+[00:00:00] And you'll see a bunch of examples of this as we continue to go to the classes, but basically, you know, you sort of have that point where suddenly the trend has changed.
+[00:00:08] So, usually it's pretty easy to spot that first sort of we're stair stepping down, and then, uh-oh, I thought we were going to go lower, but we just went up.
+[00:00:18] Or we were stair stepping up, and I thought we were going to go higher here, and then suddenly we just dropped down. You know, that's not what we were expecting, and so that has communicated shift in trend.
+[00:00:28] So, people who are holding potentially with a whole move are now cell cell cell.
+[00:00:33] Are people who are shorting for the whole move are now by, by, by. So, this is where we often see increases in volume as we're changing directions.
+[00:00:42] So, uh, pit pivots and shifts in trend are very important to pay attention to.
+[00:00:48] So, this is an example where, you know, we're more or less trending up, trending up, trending up, and then we kind of have a bigger step down, right?
+[00:00:56] Pop up for a second, and now we're stair stepping down officially, and we're bare flagging.
+[00:01:01] This one, we're bare flagging. We drop down sideways, we drop down sideways, we drop down sideways.
+[00:01:07] And this is the one minute here, and this is the five minute here, and if you're waiting for a five minute setup, you never got it.
+[00:01:13] You had to take the trades on the one minute, or you would miss the whole thing.
+[00:01:17] This one here, initially pops up, pulls back, looks like it could be a little flat top kind of break out here in a way, there's a bit of a wedge, but then it kind of unwinds.
+[00:01:27] You know, sort of drops down, sells off at the open, it sells off even harder, and then does this little bare flag at the low, almost a flat bottom break down, before the next leg lower.
+[00:00:00] Here we've got nice stair stepping up nice rallies. Sometimes I think of this as like the tide
+[00:00:06] It's sort of rolling in and then all of a sudden you realize wait the tide's not coming in anymore
+[00:00:12] We've just had a couple of highs that were lower and
+[00:00:16] Although you can get a momentary sort of pullback and in this case another push higher
+[00:00:22] You know, it is you sort of see here a little bit of pullback for a second and then it pulls away again
+[00:00:28] We've got to watch this really closely because this is the moment of truth and when that happens
+[00:00:32] It's it's over pops up bare flag and then drops down bare flag and then sells off again
+[00:00:38] Little bare flag sells off and now the trends getting a little exhaust and we might start to see a little rally back up
+[00:00:44] But I don't usually trade that rally down that far. It's below V-wap. I would rather be trading these strong up trends
+[00:00:52] We're having big green candles high volume and not overstay my welcome
+[00:00:57] Here big pop up pulls back sideways bare flag resolves down sideways the bare flag resolves down yet again
+[00:01:05] here
+[00:01:06] sells off bare flag resolves down bare flag resolves down
+[00:01:11] So if you are a short seller an interested in short selling and you're looking one of these stocks
+[00:01:17] And it's easy to bar where the shares are really cheap then you're watching this drop the little pop and then the next leg lower
+[00:01:24] Little pop the next leg lower, and you're setting your stops around the high of that step
+[00:01:29] So you're still stair stepping down and the stop becomes around the high so then if all of a sudden we take a step up
+[00:01:35] You're
+[00:01:36] Stop in this case when
+[00:00:00] in the top of that step. You're looking for the drop, but as soon as it popped up, you have
+[00:00:04] to jump out. Okay, so now we're going to go ahead and jump into chapter 5,
+[00:00:09] the chart patterns, the A, B, C, D pattern.

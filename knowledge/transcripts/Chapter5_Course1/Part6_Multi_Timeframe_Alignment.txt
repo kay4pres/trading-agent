@@ -1,0 +1,251 @@
+# Segments: 10
+# Transcribed: 2026-06-26T19:13:26.698010
+
+[00:00:02] Okay, so we're going to continue on here chapter five part six multi time frame alignment.
+[00:00:07] I've already talked a little bit about this, um, sometimes what traders will ask
+[00:00:12] Ross, which time frame should I use?
+[00:00:16] Because as you've seen, you could pull up really any time frame, you could find patterns.
+[00:00:20] You could find a bull fly on a daily, a five minute, a one minute, a ten second chart,
+[00:00:25] some traders use 15 minute, 60 minute, four hour charts.
+[00:00:29] I mean, you've got all all these different time frames that different people will use.
+[00:00:32] So which time frame is right for you?
+[00:00:35] One of the things that I look for is multi time frame alignment, which means I want to see
+[00:00:43] if I'm looking at a chart on, let's say the one minute, because I'm thinking about doing a day trade
+[00:00:48] and I'm looking for a fairly quick resolution.
+[00:00:51] I don't want to forget about the fact that there's a five minute chart I should check, right?
+[00:00:55] Because the one minute is occurring within the context of a five minute time frame in a five minute chart.
+[00:01:01] So I have to look at that five minute chart because it's possible that the five minute chart
+[00:01:06] is giving me a big red flag saying stop, don't buy here.
+[00:01:11] Maybe there's a giant red topping tail.
+[00:01:14] We know those big topping tails are bearish.
+[00:01:16] The price squeezed up and then it came back down.
+[00:01:18] Maybe it's on a really high red volume.
+[00:01:21] And although you should be able to notice some of the candles that would have created that five minute pattern on the one minute chart,
+[00:01:31] it is possible that you could be so focused on the one minute that you miss something that's occurring on the five minute time frame.
+[00:00:00] So, ultimately, whatever timeframe you want to trade on is going to be based on the speed
+[00:00:08] that you want to trade. If you want to trade quickly the way I do, you're going to want to use
+[00:00:12] one minute and five minute timeframes. If you want to trade more slowly, you could trade
+[00:00:17] five minute and 15 minute timeframes, or you could go further step back and use 15 minute and
+[00:00:22] 60 minute timeframes. The only thing I would caution is that in this market of small cap stocks,
+[00:00:29] what we see is that if you're trading on a 60 minute timeframe, you are missing so much of the
+[00:00:35] action that occurs, sometimes within minutes. And if we look at just some of the examples of the
+[00:00:41] stocks from today, you know, ALZN on a five minute chart. I mean, you can see we barely had a pullback.
+[00:00:47] So, you really had to trade this on the one minute, and this ended up going up over 700 percent.
+[00:00:53] So, if you were a 15 minute, 60 minute trader, you probably would have missed this whole move. So,
+[00:00:58] I think realistically, five minute, 15 minute is probably the slowest that you should consider
+[00:01:04] if you're thinking about trading small caps and one minute, five minute is better. And then
+[00:01:08] using the 10 second chart can just be in conjunction when you have something like this that's kind
+[00:01:12] of popping up quickly. Just, you know, have a quick eye on it. But generally speaking, I think you'll
+[00:01:18] probably do the best focusing on the one minute and the five minute. Okay, so all the examples
+[00:01:23] that I'm going to show you are going to be one minute, five minute multi-time frame alignment.
+[00:01:29] Now, I want to share some circumstances when I would be less inclined to use the one minute chart.
+[00:01:35] If a stock is extremely expensive.
+[00:00:00] on the five minute chart, then the problem with trading on the one minute is that if it starts to roll over,
+[00:00:07] it's probably going to pull back quite a bit because the five minute is so extended.
+[00:00:11] The second is if the stock is already experienced more than two pullbacks on the one minute chart,
+[00:00:17] then we already had our first move up, our first one minute pullback, our second leg higher,
+[00:00:22] our second one minute pullback, and our third push higher.
+[00:00:25] So if we're pulling back up here, this is our third pullback.
+[00:00:28] At that point, it's time to start waiting for a new five minute pattern.
+[00:00:33] So if the stock is already experienced two or more pullbacks on the one minute chart,
+[00:00:38] then I'm less likely to use the one minute and wait for the first five minute set up.
+[00:00:42] I'm also less likely to rely on the one minute on higher price stocks because they can be very choppy with lots of fake outs.
+[00:00:48] So they pop on the one minute and then dramatically flush back down and stop you out,
+[00:00:53] which is super frustrating.
+[00:00:55] So on higher price stocks with larger spreads between the bid and the offer,
+[00:00:59] you need even more conviction to take the trade and that conviction is going to come from looking at
+[00:01:04] longer timeframes because five minute and 15 minute long charts have a lot of time to form.
+[00:01:12] So there's a lot more traders that begin to see the opportunity,
+[00:01:15] which then creates more volume when it finally breaks out.
+[00:01:20] Number four, if the one minute chart is extremely extended off the 20 exponential moving average,
+[00:01:26] I'll be more cautious even though I may still take a trade.
+[00:01:29] And number five, I rarely take a one minute entry if the one minute price is below the 20 EMA.
+[00:01:36] So these are circumstances.
+[00:00:00] this is where I'm not likely to use the one minute chart.
+[00:00:02] Circumstance is when I would use the one minute chart
+[00:00:05] is when a stock meets all of our criteria
+[00:00:07] for having big potential, right?
+[00:00:09] It meets the five pillars of stock selections,
+[00:00:11] it's got the flow, it's got the relative volume,
+[00:00:13] it's got the percentage change, it's got the news,
+[00:00:15] the price is just right, it hits my high-day momentum scanner,
+[00:00:18] I'm gonna look for that first one minute pullback,
+[00:00:20] even if it's a micro pullback to jump in for the next like higher.
+[00:00:25] And number two, when a stock meets all of our criteria
+[00:00:27] and it is just broken out on the five minute time frame.
+[00:00:30] So we had a five minute bull flag forming, we break out,
+[00:00:34] and now I'm gonna take the first one minute pullback,
+[00:00:36] following the fresh breakout.
+[00:00:38] So that's again an example of using one minute and five minute
+[00:00:41] charts in conjunction.
+[00:00:43] So now you're gonna see sort of the way
+[00:00:45] I usually am looking at the market.
+[00:00:46] I'm looking at a stock and I have the one minute
+[00:00:49] and the five minute side by side.
+[00:00:51] Same stock, but two time frames.
+[00:00:54] Now down here below, I usually have my daily chart
+[00:00:57] and then I have my 10 second chart down here
+[00:00:59] and I have my news window over here.
+[00:01:01] So I can see what the news is,
+[00:01:02] I can keep an eye on the 10 second chart,
+[00:01:04] keep an eye on the daily chart
+[00:01:06] for areas of potential resistance.
+[00:01:08] But primarily, this is where I'm looking,
+[00:01:10] the one minute and the five minute.
+[00:01:12] So in this case here, we've got a nice five minute squeeze,
+[00:01:15] three, four, five minute candles in a row that are green,
+[00:01:18] a pullback, first candle making new high, that's a bull flag.
+[00:01:21] So that occurred a little bit on the earlier side,
+[00:01:24] so it's cut out when we're zoomed in here.
+[00:01:27] But then let's see, so we pull back,
+[00:01:29] actually the pullback was right,
+[00:01:32] so this pullback here was right here.
+[00:01:35] So then we break out right there.
+[00:00:00] And that's a breakout. I probably would have been happy to trade on the one-minute timeframe.
+[00:00:04] It squeezes up to a high here, and then it drops down.
+[00:00:07] So we have the red candle forming here, and it's up forming a red candle on the five-minute as well.
+[00:00:12] Higher volume selling, it pulls back, it bounces up, it pulls back, it pops up, it pulls back, and now it pulls away.
+[00:00:19] Sideways popping up. So right in there is a small bull flag.
+[00:00:23] Right in here is another sort of bull flag, but it's more noticeable on the five-minute.
+[00:00:28] So I'm really not seeing anything on the five-minute that's telling me to walk away, except maybe our topping tails,
+[00:00:35] which indicate it might be better for me to buy off of support.
+[00:00:39] And that's when I draw on my ascending support trend line, and I see, huh, held there, maybe I could buy a dip here,
+[00:00:45] maybe I could buy a dip down here, and we got a couple of nice trades on it.
+[00:00:49] So this is the one-minute and the five-minute again. In this case, the five-minute, three huge green candles in a row.
+[00:00:55] But on the one-minute, we know that there was a micro pullback right there, just a small little dip, and an opportunity to get in to ride that next wave higher.
+[00:01:03] Then it goes sideways here, it pushes a little higher.
+[00:01:06] This is an area where the five-minute is extended off of its nine-moving average.
+[00:01:10] The nine is in gray, the 20 is in blue.
+[00:01:13] So it's a little extended off those moving averages on the five-minute, which always makes a five-minute bull flag, riskier to take.
+[00:01:21] You can see it pushes a little higher on the one-minute, and then rejects, pushes a little higher, and then rejects again.
+[00:01:26] Once again, five-minute on the left, where we can see the sort of bull flags forming, here, not perfect, but you can see them forming,
+[00:01:34] and then the one-minute, we see these patterns resolving.
+[00:01:37] So this...
+[00:00:00] This is an example here, where we move up, we sell off, we come down, and then we sort
+[00:00:05] of base out.
+[00:00:06] I really like that basing out pattern, and when I look at that on the five minute, and
+[00:00:10] I see, okay, we've rallied off the low.
+[00:00:13] We have bottoming tails, which tell us the buyers came back in, and if we break through
+[00:00:17] this level, where's my target, or retest a higher day, and so you get that squeeze right
+[00:00:22] back to the high.
+[00:00:25] This is another example of five minute, one minute multi-time frame alignment, bull flag,
+[00:00:29] bull flag, bull flag, so sort of it's cleaner on the five minute, but you can see these
+[00:00:35] pullbacks on the one minute.
+[00:00:37] This is a nice pullback on the one minute, it breaks over that 80 cent mark and squeezes
+[00:00:41] up higher.
+[00:00:42] So we've got to keep both of these time frames on watch, and when there's an obvious, let's
+[00:00:46] say, huge red candle here, then we're going to see it on the one minute we should, but
+[00:00:50] we know that this is saying, uh, uh, gotta leave this one alone, it's not ready.
+[00:00:56] Another example here of clean bull flags on the five minute chart, the move up sideways,
+[00:01:01] the move up sideways, and on the one minute, they're a little bit more like consolidation
+[00:01:06] and then break out, and it breaks at the first candle to make a new high in the five
+[00:01:10] minute.
+[00:01:11] So the five minute chart's really what's in play here, it breaks, and then first one
+[00:01:15] minute pullback right here, following a fresh break out.
+[00:01:19] And now we take that trade, get a move up there, then it pulls back, we're all out, wait,
+[00:01:23] and then it pops up.
+[00:01:24] Again, first one minute pullback, following a fresh break out, and it pushes higher.
+[00:01:28] It pulls back, and then again, it goes higher.
+[00:01:31] We like the first and the second pullback when we get to the third, it's getting a little
+[00:01:34] risky.
+[00:01:35] Same here, first and second bull flag.
+[00:00:00] So that's our five minute time frame, and then this is the same stock on the one minute.
+[00:00:05] Consolidation pops up little pull back after the fresh break out because now the five minute is making a new high.
+[00:00:11] So we're going candle over candle and we squeeze here up to this level.
+[00:00:16] We then pull back and we pull away again.
+[00:00:19] This one doesn't even pull back after that break out.
+[00:00:21] We just start squeezing.
+[00:00:24] H M N Y, squeezing up, five minute bull flag, squeezing up, five minute bull flag.
+[00:00:30] It starts to pop up buying that first dip following the breakout right there, and it goes higher.
+[00:00:36] One of the things I can tell you is that the more you trade, the more time you spend in the chat room,
+[00:00:41] the more time you spend practicing in the simulator and listening to me trade,
+[00:00:45] the more all of this will become just like part of your sort of language.
+[00:00:51] Again, it's immersing yourself in the community and becoming fluent in this language of the financial markets which is technical analysis.
+[00:01:00] And naturally a big component to being able to trade in the way that I'm trading is being able to pull up the depth of the market, the level two,
+[00:01:09] because then this adds a whole other layer.
+[00:01:12] So again, going back to this concept of adding pillars to your foundation of learning how to trade.
+[00:01:18] We've got stock selection, we've got risk management, we've got fundamental analysis, we've got technical analysis.
+[00:01:25] We're going to talk about depth of market and level two different types of orders that you can use.
+[00:01:30] You've got to talk about how to use the platforms.
+[00:01:33] And so all of these we talk about high level.
+[00:01:36] So you understand and introduce the concepts.
+[00:00:00] And then we continue to come back and build on them.
+[00:00:04] And you'll realize how interconnected they all are.
+[00:00:07] Because ultimately, you can't be trading just purely
+[00:00:11] based on the chart.
+[00:00:12] I mean, I know some people do,
+[00:00:14] but it would be sort of silly.
+[00:00:16] It would be like trying to,
+[00:00:18] I don't know, build a house without a power drill.
+[00:00:20] It's like, you could,
+[00:00:22] but why make it more difficult for yourself?
+[00:00:24] It's like trying to drive with one eye closed.
+[00:00:26] You're welcome to do it, but why?
+[00:00:28] Like, you're just going to have less information.
+[00:00:31] That's a better analogy,
+[00:00:32] because you're driving with one eye closed.
+[00:00:34] You just have a little bit less data that's coming in, right?
+[00:00:37] So, you know, obviously I'm not trying to give anyone
+[00:00:42] a hard time who only has one eye,
+[00:00:44] because I'm sure you've gotten used to it
+[00:00:46] and you're able to do just fine.
+[00:00:48] But generally speaking, if you have both that you're disposal,
+[00:00:51] you'd like to probably use both, right?
+[00:00:53] You wouldn't voluntarily choose to just use one eye.
+[00:00:56] And same with trading.
+[00:00:57] You shouldn't voluntarily choose to use less data
+[00:01:01] than is available because you just don't want to learn it.
+[00:01:05] Because it's going to give you an edge,
+[00:01:07] and that is important.
+[00:01:09] Okay, so, and this one right here,
+[00:01:12] again, showing that ascension up,
+[00:01:14] little pullback, ascension up,
+[00:01:16] and this is the pullback occurring on the one minute.
+[00:01:19] So, we're zoomed in here on the one minute,
+[00:01:21] but we glance over and see,
+[00:01:22] is there anything concerning on the five minute?
+[00:01:25] Well, you do have a topping tail candle that's red.
+[00:01:28] It's a bit of a doji, not a perfect doji,
+[00:01:31] but you know, higher volume red candle,
+[00:01:34] higher volume red candle right there,
+[00:01:36] but we notice, and this is all,
+[00:00:00] This is what's really helpful.
+[00:00:01] So here we have a little divergence.
+[00:00:04] This shows the highest volume candle at that time was red.
+[00:00:07] But when we look at it on the one minute,
+[00:00:08] we actually noticed that the green candle before that
+[00:00:11] was a bigger candle in volume.
+[00:00:13] Now the red one wasn't small,
+[00:00:15] but the next green one was pretty high volume as well.
+[00:00:18] So now this starts to give a little more perspective.
+[00:00:21] Just looking on the five minute,
+[00:00:22] you probably would have said red high volume candle I'm out.
+[00:00:25] But that candle began here.
+[00:00:27] One, two, three, four, five.
+[00:00:30] So three out of those five candles were actually green.
+[00:00:33] So yes, it's red because it closed lower than it opened,
+[00:00:37] but the one minute gives a little bit more perspective on that.
+[00:00:41] And now if it's still holding up here over 240
+[00:00:44] and buyers come back in, well, there we go.
+[00:00:46] We're now seeing a move back to the high and on high volume.
+[00:00:50] So that's another, that's another thing
+[00:00:52] that's nice about multi-time frame,
+[00:00:54] having multiple time frames up
+[00:00:56] is that sometimes you'll see something
+[00:00:58] that you might have written off
+[00:01:00] if you only used just one time frame.
+[00:01:02] It goes both ways, vice versa.
+[00:01:04] You could have something that you really like on the one minute
+[00:01:07] and then the five minute is really giving you
+[00:01:09] a very strong signal not to trade it
+[00:01:11] and you realize that that's correct.
+[00:01:12] And then there's times where you'll see
+[00:01:14] there's a five-minute signal that's saying, don't trade it.
+[00:01:16] And you'll realize, well, wait a second, actually.
+[00:01:19] Some people might see that, but I think in truth,
+[00:01:22] you've got some good strength here.
+[00:01:24] And this volume is important to notice.
+[00:01:27] We'll candle it actually occurred on.
+[00:01:30] So with that, we're gonna go ahead
+[00:01:31] and jump into chapter five, part seven, popular.
+[00:00:00] technical indicators.

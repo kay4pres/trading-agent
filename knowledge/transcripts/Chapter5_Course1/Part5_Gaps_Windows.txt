@@ -1,0 +1,447 @@
+# Segments: 22
+# Transcribed: 2026-06-26T19:12:40.058572
+
+[00:00:01] Okay, so we're going to go ahead and jump back in here with chapter five, part five on gaps and windows on daily charts.
+[00:00:10] So this is an important concept that you're going to want to understand in order to help you evaluate the strength or potential weaknesses in a daily chart.
+[00:00:22] So as part of my process each day, of course, it starts by sitting down, looking at the scanners and evaluating each one of the stocks are on the scanners to see how well they meet the five pillars of stock selection.
+[00:00:35] Now they could meet all five pillars of stock selection, but we then haven't, well, I guess, one of, so just to preface.
+[00:00:46] The five pillars of stock selection are really about the specific stock, before taking a trade, of course, a stock has to meet all those criteria and then you do your technical analysis.
+[00:00:59] I don't do my technical analysis on a stock if it doesn't meet my five criteria for being the right type of stock to trade.
+[00:01:05] So first step is stock meets those five pillars of stock selection and then we're getting an technical analysis.
+[00:01:11] So we could have a stock that perfectly meets all five pillars, but we get into the technical analysis, we start analyzing our daily chart and right away, we see we've gotten nearby resistance, this is going to be a problem.
+[00:01:25] So I want to help you be able to learn to identify gaps and windows on a daily chart and to distinguish the difference between the two, which are sometimes people will use the terminology.
+[00:00:00] So I want you to understand which is which.
+[00:00:04] So, of course, as you know, we reach hearts from right to left,
+[00:00:07] although it is counterintuitive we read from right to left
+[00:00:10] in the sense that the most recent price action is the most important.
+[00:00:15] In fact, it's so important that it can actually negate
+[00:00:18] the technical levels of older price action.
+[00:00:21] So if a stock previously had a lot of resistance,
+[00:00:25] let's say around $8, but it's currently trading at $8.50,
+[00:00:29] then that previous resistance is no longer important.
+[00:00:32] We're above it, right?
+[00:00:33] So the more recent price action is much more important.
+[00:00:37] If you're reading from oldest to newest, it wouldn't make sense.
+[00:00:43] So again, just as an example, if a stock three months ago had resistance at 10,
+[00:00:47] but now it's trading between 12 and 14,
+[00:00:49] that resistance at 10 is no longer significant.
+[00:00:52] We would instead focus on potential resistance around that high,
+[00:00:56] maybe 14.
+[00:00:58] So I look from right to left to search for nearby areas of support or resistance.
+[00:01:05] So these are the rules of charting.
+[00:01:07] And I'm going to close my video here just so you can see all of these.
+[00:01:11] So number one, we read from most recent historical,
+[00:01:14] which is from right to left, looking for nearby supporter resistance.
+[00:01:17] You cannot skip candles.
+[00:01:20] I'll show you what that means just a moment.
+[00:01:22] A large candle will block any price action that came before it.
+[00:01:27] It's called shadow theory or the window theory.
+[00:01:32] So it's that anything that occurred before that candle.
+[00:00:00] is no longer valid.
+[00:00:01] So let me draw an example here of what I mean by that.
+[00:00:03] So let's say for instance, we've got a stock
+[00:00:07] that made a nice move up here, had some resistance, pulled back,
+[00:00:14] came back up to this area, had resistance, pulled back,
+[00:00:20] and then on this day, surges up to here.
+[00:00:25] So now, let's just say it's been several months
+[00:00:30] later the stock, maybe pulled back a little bit,
+[00:00:34] this would be red candles, but whatever.
+[00:00:36] And you're thinking, all right, well, maybe you have a short bias.
+[00:00:40] You're thinking, I'm going to short this stock, for instance.
+[00:00:43] And you look back here and you say, well,
+[00:00:45] I'm going to short this level here.
+[00:00:47] And I would say this level is no longer valid
+[00:00:51] because it was broken on this day right here.
+[00:00:55] That was resistance, but because this candle broke that level,
+[00:01:00] this is no longer resistance that's valid.
+[00:01:03] And so in other words, this green candle here
+[00:01:06] casts a shadow backwards.
+[00:01:10] It casts a shadow backwards and anything behind it.
+[00:01:13] Well, it was broken by this price action
+[00:01:16] in this candle here.
+[00:01:17] So if we're really looking for nearby support
+[00:01:20] after we're selling off, we're really
+[00:01:22] going to be looking at the low of this candle as the nearest level.
+[00:01:25] Because this candle right here is created this big block
+[00:01:28] where anything behind it is no longer significant
+[00:01:31] because the price action broke it right here.
+[00:01:34] So that's the concept of shadow theory that large candles like this.
+[00:00:00] cast a shadow backwards and anything that's in that shadow is no longer relevant for your technical analysis
+[00:00:06] and that actually is really helpful. It makes it easier in a lot of ways for you because now you can just
+[00:00:10] focus on looking really ultimately for these really big candles because those are going to help you
+[00:00:16] understand areas of support and resistance. Alright now number three we always look for obvious
+[00:00:22] patterns and obvious support and resistance levels. It should be obvious to all the trainers out there
+[00:00:28] if it's obvious to them they're they're going to see it and it's coming back to that
+[00:00:33] conversation about traffic lights and the rules of the road. If everyone sees a stop sign and it has the same shape
+[00:00:39] and the same color then everyone's going to respect it. It becomes well respected and obvious. So a
+[00:00:44] very clear technical pattern, a very clear level of support, people are going to be buying off that
+[00:00:49] level. They're going to be buying that breakout for the next light higher, a very obvious level of resistance,
+[00:00:54] people are going to be selling there. So in order to be able to distinguish what is or is not
+[00:01:00] obvious, of course you have to be able to understand what support and resistance looks like period.
+[00:01:05] Now you already understand ascending and descending support lines and resistance lines and you
+[00:01:10] understand horizontal support and resistance lines because we've already learned about that. In this
+[00:01:16] section we're going to be talking about the gaps in the windows. Now number four we always look for
+[00:01:21] price action around psychological areas of support and resistance support and resistance,
+[00:01:28] which are half dollars and whole dollars. We look for our gaps in windows. A gap or window should be large
+[00:01:35] which generally means it's about two times the size.
+[00:00:00] of an average candlestick. So if a candle, if we have a gap, but it's a very tiny gap,
+[00:00:06] you can't see it, most people won't notice it. So a gap or window has to be large. This is
+[00:00:10] going to make more sense as I pull up charts and start to show you examples. So you'll be
+[00:00:15] able to print out this slide and then you can come back to it. And then number six gaps can only
+[00:00:20] be formed when a stock opens higher or lower than it closed on the previous day and windows can only
+[00:00:26] be formed, although they can be another word for gap. It's incorrect because a window truly
+[00:00:32] is the distance between the top and the bottom of a very large candle. Okay, so this right here is
+[00:00:40] an example of a gap. Okay, so what we have here is a stock that was strong on this day and it closed at a
+[00:00:48] high it looks like about $1.75. And then the next day it opens at like $3.10 cents. So it creates this gap
+[00:00:58] on the chart. The way a gap is created is because there was an imbalance between the buyers and
+[00:01:05] the sellers. There were already so many buyers bidding to buy the stock at a higher level than the
+[00:01:12] previous day that when it opened the next day it opened higher. So essentially and this this has happened
+[00:01:18] of course this happens all the time but in the case just for example of game stuff. So when Roorn
+[00:01:23] Kitty came out and said that he had bought whatever million number of shares he bought a game
+[00:01:27] stop, all of a sudden previously I think the price was like you know $25 a share or something like that.
+[00:01:35] And as soon as people found out that he was buying, they're like $3.10 cents.
+[00:00:00] Holy smokes I want to get in I'm gonna I'll get in a 26 and someone's like no I'll get in a 27 right I'm getting in the 27 is fine
+[00:00:08] Someone else like I'll get in at 28 28 forget that I'm getting in at 30 and so all of a sudden
+[00:00:14] You have these people who are bidding higher and higher and higher
+[00:00:17] So these are the buyers on the bid and on the offer
+[00:00:21] What and on the ask while you may have initially had sellers the 26 27 28 and 30 dollars the buyers are stronger
+[00:00:28] They're buying them up so now these people who were selling their sellers are getting eaten up by these buyers
+[00:00:34] And I've got a buyer at 33 you've got one at 36 and all of a sudden you can see the price is moving up and now
+[00:00:42] We have the match where now the lowest price offer is let's say
+[00:00:45] $38 and just like that you're gapping up 20 or 30 percent because the bid and the the offer
+[00:00:53] They have to match right so you've got your lowest price buyer or sorry
+[00:00:58] You've got your highest price seller and you you're
+[00:01:01] Sorry, you've got your lowest
+[00:01:04] price
+[00:01:05] You've got your highest price buyer right here and your lowest price seller and they're coming to a match right here and that creates the auction at that given moment
+[00:01:15] Okay, so the result of a gap is that on the chart
+[00:01:20] You end up having this big sort of block of empty space right all of a sudden we were we go from here to here
+[00:01:28] So when we look at charts and we're gonna look at a bunch of examples of them we see a lot of these gaps now
+[00:01:34] This is a gap that I would say is sizable because it's
+[00:00:00] It's definitely more than two times the size of a regular candle, just approximately, right?
+[00:00:04] It's noticeable.
+[00:00:05] It stands out.
+[00:00:07] In fact, there's a small gap back here, but it's not really that noticeable, right?
+[00:00:12] So it's not big enough.
+[00:00:14] So we want to make sure that if we are trying to do technical analysis based on the gap
+[00:00:19] that it is obvious, and it should be obvious to the naked eye.
+[00:00:22] You don't have to measure it.
+[00:00:23] It should just be noticeably large on a chart.
+[00:00:26] This is another example of a gap up.
+[00:00:28] So on this day, the stock had basically no volume.
+[00:00:31] It closed at $2.48.
+[00:00:33] The next day, the company puts out news.
+[00:00:35] They've got a bragging news headline, and all of a sudden it ends up opening at $5.50.
+[00:00:42] Now, of course, we know that the way this ultimately worked was that most likely at 5am,
+[00:00:50] 6am, 7am, the company put out news and pre-market traders started to jump on it.
+[00:00:56] They bought that first pullback.
+[00:00:58] And by the time the bell rings at 9.30, it's showing a gap on the chart.
+[00:01:04] Because remember, daily charts are showing the price action that occurred between 9.30am and 4pm.
+[00:01:11] So the action pre-market or after hours is what can create the gap, but that's not always the case.
+[00:01:18] Because you do have stocks that will have breaking news that comes out at 2am the morning.
+[00:01:23] And so in that case, before the open at 4am, you already have traders who are bidding a higher price,
+[00:01:30] then whatever was the closing price of the previous session.
+[00:01:34] So then that creates an actual gap higher.
+[00:00:00] And later in this class, we'll talk,
+[00:00:02] and we'll certainly expand on it in strategies and scaling,
+[00:00:05] we'll talk about circuit breaker halts,
+[00:00:07] and how an imbalance can be created
+[00:00:10] during a circuit breaker halt that also results in a gap,
+[00:00:14] where the price opens higher or lower than it had closed.
+[00:00:18] So this is a very noticeable gap on the chart, right?
+[00:00:21] So that's a gap.
+[00:00:24] This right here, very noticeable gap.
+[00:00:26] From a dollar, 40, all the way up, well actually,
+[00:00:28] it's very noticeable because it generally trades
+[00:00:30] in a smaller range.
+[00:00:31] In fact, based on the size, it's only about 40 cents.
+[00:00:34] But still, it's a very noticeable gap, right there,
+[00:00:37] a 40-cent gap.
+[00:00:38] If we go back to this one, this was a $2.50 gap,
+[00:00:42] and it doesn't happen to look as big,
+[00:00:44] but that's partly because of the scale of the chart,
+[00:00:46] going from $2 to $18 a share.
+[00:00:50] All right, now this is a gap down.
+[00:00:52] So this is not uncommon either.
+[00:00:54] You'll have a company that puts out bad news,
+[00:00:57] maybe a earnings miss.
+[00:00:59] Sometimes, and this is very common
+[00:01:00] with pharmaceutical and biotech companies,
+[00:01:03] they will put out news that their clinical trials
+[00:01:07] didn't go as planned.
+[00:01:08] And all of a sudden, boom, overnight,
+[00:01:11] it can drop 60%, 80%, especially if that was sort of,
+[00:01:15] that company's one primary drug that they were working on,
+[00:01:18] which is the case for a lot of these really small companies
+[00:01:22] that are focusing on these types of new treatments.
+[00:01:25] So I'm not sure if that was the case with this particular company,
+[00:01:28] but you can see very clearly a very large gap.
+[00:01:32] So now, when I talk about this shadow theory,
+[00:01:36] I will argue that this...
+[00:00:00] large gap right here is going to negate all of the price action right here. So if the stock
+[00:00:06] starts coming back up here here here in this area, some people would say, oh, we're going to run
+[00:00:12] in a resistance right here, right? That's going to be a resistance level because it's the low there
+[00:00:17] and you look to the left and you look over and that's what you're going to hit. And what I would
+[00:00:21] argue is that this gap flush through all of that support that might have been there that's going
+[00:00:28] to create resistance and really the only level that we have is all the way back to the bottom
+[00:00:34] of this candle before the gap. That's going to be what we would call gap fill. So filling the
+[00:00:41] entire gap is going to be the logical target if we start to get into the gap because ultimately
+[00:00:48] this price action is negated by that shadow theory. Now one of the things that I'll acknowledge
+[00:00:54] is that in today's market you do have a lot of traders that may not respect the technical kind
+[00:01:03] of rules of technical analysis. So you may have some traders who are like, nope, I see that
+[00:01:10] and I think that's a stop sign so I'm going to slow down here when I see it. And this is created a
+[00:01:16] little bit of a challenge for traders like myself who believe in a very kind of
+[00:01:24] specific rule of the way you're supposed to do technical analysis. Because you'll see price
+[00:01:31] action that kind of feels like it is undermining what we've always been told and what we've always
+[00:00:00] because of some traders that haven't been trained
+[00:00:03] and haven't really learned how to do technical analysis
+[00:00:06] the right way, but are trading with enough share size
+[00:00:09] that their big sell orders at these levels
+[00:00:12] are going to be noticed on the market
+[00:00:14] and are going to create in that sense a level of resistance.
+[00:00:18] So we'll talk more about that in a few minutes.
+[00:00:21] This is another example of a gap down.
+[00:00:23] So here we had some bad news, stop because going up
+[00:00:27] and then all of some bad news comes out
+[00:00:29] and the next day it's a dollar a share.
+[00:00:31] So now on the chart, you have this huge gap right in here.
+[00:00:36] That is a gap, that blue space.
+[00:00:38] So you can see it's trying to come up once,
+[00:00:41] it's trying to come up a second time,
+[00:00:42] it's trying to come up a third time.
+[00:00:44] And in fact, it has made the gap a little smaller
+[00:00:46] because the gap initially was basically this big,
+[00:00:51] but when the price came up here,
+[00:00:53] it made the gap just a little bit smaller.
+[00:00:55] So it began to fill the gap but not entirely.
+[00:00:59] This is another example of a gap down.
+[00:01:01] We see these kind of charts all the time.
+[00:01:03] You'll see, you know, you have this nice move, whatever,
+[00:01:05] and then boom, big gap down, sideways, sideways.
+[00:01:09] And now you've got a gap here from $12.34 up
+[00:01:12] to $59 a share.
+[00:01:14] That is a huge gap.
+[00:01:17] So this has a massive gap on the chart.
+[00:01:20] Now, windows or pockets on daily chart
+[00:01:23] are a little different than a gap.
+[00:01:25] A gap is formed when the price opens or closes
+[00:01:29] significantly higher or lower than the previous day.
+[00:01:32] These are all gaps.
+[00:01:34] And they're visible with a naked eye on a chart
+[00:01:36] because you could just see, there's this empty...
+[00:00:00] space, right? The chart all of a sudden is just trading much higher than the previous level.
+[00:00:05] So those are gaps. A gap up and a gap down. A pocket or a window. I call, I tend to call them
+[00:00:12] windows. Some people will call them a pocket. A pocket or a window forms on a daily chart
+[00:00:18] through a long candle. It's a long body candle that creates that window. Sometimes someone will
+[00:00:27] call that a gap on the chart, but it's not a gap. It's a window. And so this is what it looks like.
+[00:00:34] If we look at this chart and we're saying, oh, where's, you know, how high is this thing going to go?
+[00:00:40] Well, we look to the left, right? We're reading from right to left. We look to the left. We look
+[00:00:44] over and maybe we mark the high this candle right here, which is about 877. Right? So we mark that
+[00:00:51] high right there. Okay, if that's probably, you know, that was that high right there. And then we look to the
+[00:00:56] left. We see a red candle and we have to go to the top of it and we see, oh, okay, 1950.
+[00:01:02] So what do we call this space between 877 and 1950? It's not a gap because it didn't gap. There's
+[00:01:08] no gap on the chart. It's a window where you can call it a pocket. It's a window on the chart where
+[00:01:13] there's no resistance from 877 until 1950. And the reason is because you have a huge candle right
+[00:01:21] here. So when we look at resistance levels, remember, what are the three areas that we look at?
+[00:01:27] Horizontal support and resistance, right? So if we have a horizontal level of support and resistance,
+[00:01:33] that can create a window. That could be the beginning of a window. That could create resistance.
+[00:00:00] And we could have resistance at that's ascending or descending.
+[00:00:05] And we could have resistance at our moving average.
+[00:00:08] So, our 200DMA.
+[00:00:09] Those are the three types of resistance that we will typically see on a daily chart.
+[00:00:14] So, number one, horizontal resistance formed by highs and lows,
+[00:00:19] number two, ascending and descending resistance,
+[00:00:21] number three moving average resistance.
+[00:00:24] And typically it's a 200DMA.
+[00:00:26] Now, in this case, we know that my 200DMA is always in purple.
+[00:00:30] So, we're above the 200DMA.
+[00:00:32] And we don't really have any ascending or descending resistance.
+[00:00:36] So, in this case, we have 877 and then we have 1950.
+[00:00:41] And that gives us a window.
+[00:00:43] A 10-point window with room from 877 to 1950, where there's no resistance.
+[00:00:48] So, if we can get into that window, that's exciting.
+[00:00:51] And that's what we look for.
+[00:00:52] Because what that tells us is this is an area that has a lot of potential.
+[00:00:55] It may not realize all of it.
+[00:00:57] It's going to ultimately depend on the catalyst and the imbalance between supply and demand.
+[00:01:01] But the lack of resistance is a good thing.
+[00:01:05] Now, gap fill on a daily chart is when there's a large gap created on the chart.
+[00:01:11] And in the future, the stock starts to get back into the area of the gap.
+[00:01:15] And the next level of horizontal resistance in the form of price action
+[00:01:20] will be once the gap is completely closed.
+[00:01:22] This can offer a large mass space for potential price action.
+[00:01:26] It is important, however, to be aware of the other areas of resistance that could be formed
+[00:01:30] inside the gap, which could be your 200DMA, for instance, or ascending or descending supporter resistance.
+[00:01:37] And as always, the gap...
+[00:00:00] should be visually large than the average candle size and order to be significant. So this is a chart that we can
+[00:00:06] break down for a moment. So we pulled up this chart and we looked left and up, left and up.
+[00:00:12] Initially back here, this is the day we gap. We opened it like nine dollars, it's kind of crazy chart.
+[00:00:19] And we looked to the left and we see maybe the high of this candle here, little resistance,
+[00:00:24] maybe a little bit in here. And then we have this candle here. The top of that candle
+[00:00:29] is the bottom of a gap. So now you've got room all the way back here to 1430.
+[00:00:36] So we've got a gap from 1265 to 1430, which is this area right here. That's a gap. And then what
+[00:00:42] do we have here from 1430 up to 1936? Right here, that red candle forms a window. So we've got a gap
+[00:00:51] and then we've got a window. And then from 1936, what's the next area? Well, we have the 200
+[00:00:58] DMA right here. The 200 DMA crosses the price action right around like 1970 or something like that
+[00:01:04] 1950. So that is an area of resistance. It's not a gap. It's not a window. It's not a horizontal
+[00:01:10] level or a sending descending, but it's the 200 DMA. And then you look to the left and up in the next
+[00:01:16] level is 2111. And then we look to the left and up and we see, well, there's just small little areas
+[00:01:21] here. And each of those could create potential resistance. We would prefer a chart that just has
+[00:01:27] lots of big gaps in windows, because then once it breaks through each one, it has a lot of room to go
+[00:01:33] before you're running into any resistance areas. But in this case, that 200 DMA.
+[00:00:00] combined with that resistance at 21-11, that ended up being the top of the move. So this is a
+[00:00:06] typical daily chart that has both gaps, windows, and a 200DMA. It doesn't have really obvious
+[00:00:15] ascending or descending. You maybe could say there could have been something in there that it was
+[00:00:20] able to get through, coming down this way, that broke, so that's not valid, coming down this way,
+[00:00:27] of course, it's already above that. So that might have been the only one, something in that
+[00:00:31] area, and it's possible that pre-market it ran into it and then pushed through. I don't recall.
+[00:00:38] So this is another example where we pull up this type of stock, and honestly, I like it.
+[00:00:43] And you'll notice a lot of the stocks that I trade are stocks have been being up for a long time.
+[00:00:49] One of the things that I've kind of noticed is that we have this trend in the market,
+[00:00:54] especially with small caps, where a lot of these small caps will sell off, sell off, sell off,
+[00:00:58] and then it'll bounce up like 300%. And then they'll sell off, sell off, sell off, and then they'll
+[00:01:03] bounce up 300%. And then they'll sell off, sell off, sell off some more. And often as they're selling
+[00:01:08] off, they'll do a reverse split. You know, they might do an offering, but then another reverse split
+[00:01:14] reducing the flow. So the flow gets lower and lower and lower, and then you get these big
+[00:01:18] pops off the low. There's an expression that the bulls take the stairs, and the bears take the
+[00:01:26] window, which is that stocks often trend up like this until we have a bear market. And we get a
+[00:01:33] big drop. And then you get a nice kind of slow trend back.
+[00:00:00] up and then you get another big drop. And when you're trading stocks that are more or less
+[00:00:06] at all time highs, this tends to be what happens. You get this kind of slow grinding higher
+[00:00:12] and then you get sort of the panic drop of maybe some bad news comes out and people are like,
+[00:00:17] wow, this is really extended. Maybe I should just bail out. And so I find it actually more difficult
+[00:00:24] to trade stocks that are trading at like their all-time highs versus trading stocks
+[00:00:29] or at their all-time lows. Because you get that same kind of thing. It's weak. It's been trending
+[00:00:33] down. And then you've got catalyst today and boom, we get that squeeze up. And so as we continue on
+[00:00:39] through this course, you're going to see a lot of examples of charts like this that are pretty
+[00:00:43] beaten up. And then end up having a catalyst and making a huge move. Now, if I just, you know, show you
+[00:00:49] my P&L from today. So sitting at 27,256 dollars right now, ALZN, let's pull up this chart.
+[00:00:56] So ALZN, this is an example of a stock that, as you can see, basically was at its all-time low
+[00:01:03] yesterday. Today, they came out with news. Now, let's do our analysis on this chart, just as an
+[00:01:09] example. So you can almost probably the first thing you see is that we ran almost perfectly into the
+[00:01:15] 200DMA, right? We went right into that 200DMA. Now, if we look to the left and over, right,
+[00:01:22] are there any gaps or windows? So we've got this high here, 1290. And then we look to the left and
+[00:01:30] up. And that gives us a window up to 1920. And then we've got a little tiny window there.
+[00:00:00] tiny there's not that's that when they're that close together it's more like resistance. And then above 255 you've got a gap up to 2573. So once we started to get up higher it was like, okay, we've got really nothing until 19. Then we've got a little bit of resistance until 21 or 255 and then we've got another big window or a gap in that case. So here we had, you know, a couple of windows.
+[00:00:28] Then a little one window, a little resistance, the 200 EMA and a gap right up here. And again, being up chart curling off the low recent reverse split reverse split V racks was the other one that I traded today. This one this one's been a little bit trickier.
+[00:00:45] You could see that it actually tried to bounce up back in June and then sold off and then sort of started the other day Friday, I guess, and then kind of starts to pull away here again.
+[00:00:57] As I looked at this one, I thought once again, we've got a large window here, which is basically the bottom of this candle five 60 all the way to the top of this candle at 851 and then a couple little levels of resistance here and then opens up for another window up to 1070 and in this case, we were above our 200 EMA and neither of these really had any obvious, you know, descending or ascending resistance levels just because of the way the chart was built out.
+[00:01:25] When you have a stock that's at closer to all time highs, you're more likely to have ascending resistance levels listed definitely not at all time highs, but let's just pull up.
+[00:00:00] This one for instance. So when you have a stock that's been trending up, then you're going to be more likely to be able to connect those kind of trend lines.
+[00:00:07] And then those can be a problem in the future when you come up to that level, right? Because now it's like, okay, we're going to run into this level in addition to, you know,
+[00:00:17] Maybe we've got the horizontal level right here, which is the high that candle and kind of another level right here.
+[00:00:25] So when you have a stock that's trending up, you're more likely to have ascending levels connecting highs to create a channel.
+[00:00:32] When it's trending down, you'll have some descending ones like this coming down, but next thing you know, you've got news in your above it.
+[00:00:39] So just like that, it's out of play. It's no longer significant.
+[00:00:43] Okay, so we'll jump back into the slide deck here. Let's see, full screen.
+[00:00:53] So CING gap window was formed up here.
+[00:00:59] So from the low with this candle to the high, this candle's a window, but you've got your 200DMA right there.
+[00:01:05] And this one actually also has this dotted line. I'm going to tell you what that is.
+[00:01:10] That's our 200SMA simple moving average.
+[00:01:14] In just a moment when we continue with chapter five, there's another section chapter five that's dedicated to technical indicators.
+[00:01:21] And during that section, I'll explain each of these different moving averages that I use, why use what's one's over the others.
+[00:01:27] But I do have the simple endotted and then the exponential in solid.
+[00:01:33] Another example here of a gap bill.
+[00:00:00] So, oh, let's see, let me just back this up.
+[00:00:04] So, if on this chart right here, Gap Fill would be,
+[00:00:10] if we break 24 and go all the way to 3684,
+[00:00:14] that would be perfect Gap Fill.
+[00:00:16] We would fill the Gap with the price action.
+[00:00:18] So, right here we filled the Gap.
+[00:00:20] So, pre-market during our analysis,
+[00:00:24] technical analysis, we marked out that 685 was the top
+[00:00:28] of this sort of resistence area, which ended up being the bottom
+[00:00:32] of a Gap that gave us room up to the bottom.
+[00:00:34] This candle over here, which was at 860.
+[00:00:36] So, we had a nice Gap here from 685 to 860.
+[00:00:40] We were squeezing up on news, and once we got into that Gap,
+[00:00:44] there was no resistance.
+[00:00:46] The 200 is way up here.
+[00:00:48] You know, that there was no,
+[00:00:50] these lows back here weren't that low,
+[00:00:52] but even if they had come low and come back up,
+[00:00:54] we're not going to look at that area,
+[00:00:56] because it was broken by the Gap,
+[00:00:58] and shadow theory says nothing behind that Gap
+[00:01:02] is significant anymore.
+[00:01:04] So, now you've got all of this room,
+[00:01:06] and you get nice Gap Fill.
+[00:01:08] This is another example of really nice Gap Fill.
+[00:01:10] So, this stock, you know, was trending down,
+[00:01:12] right Gap's down, sells off hard,
+[00:01:16] and then here has news and curls from 250 up to 381,
+[00:01:20] and we knew at 381, that was the beginning of the Gap.
+[00:01:24] From 381 to 655, Gap Fill.
+[00:01:28] So, we have all this room here with no resistance,
+[00:01:31] and we end up filling the Gap almost completely.
+[00:01:34] So, as I'm trading, you're going to hear me talk a lot
+[00:01:36] about Gap's and Windows.
+[00:00:00] Now, we could pull up another chart here and I'll show you kind of my process, so let's just pull up a random chart, APDN.
+[00:00:09] All right, so APDN full screen, how do I begin?
+[00:00:13] So I look at the current price and I start reading from left to right.
+[00:00:18] So obviously we're in this area here, so I start looking over into about the same price area.
+[00:00:24] And I'm going to mark out this level here because that looks like the beginning of a window, right?
+[00:00:29] Right, from 354 to 472.
+[00:00:32] And so that's a window right there.
+[00:00:34] Now, our 200DMA is up here around 8, EMA and SMA are close together.
+[00:00:39] And between the current high and 352, you've got a little, you know, it's just some resistance, but nothing, nothing significant.
+[00:00:48] It's not like a very clear double top or a flat top that's been unable to break.
+[00:00:53] Yes, you've got $3, which is psychological resistance, but it doesn't show that the price kept hitting that level.
+[00:00:59] So it's probably not an issue.
+[00:01:01] 354 just over psychological resistance could be an issue, but probably is okay.
+[00:01:08] So realistically, we have a window right here.
+[00:01:11] And then above that, there's nothing super significant for a while.
+[00:01:16] Let's see another one, SOND.
+[00:01:19] So we pull this up, this one, biggest issue is we're very close to 200 moving average here and about five, you know, 40 or whatever that is.
+[00:01:28] So we're near the 200, we could look to the left and up, I don't see any gaps.
+[00:01:34] I don't see really too many windows either formed by big candle.
+[00:00:00] may be over 625, you would have room to the top of this candle here at 749, so that's a bit of a window.
+[00:00:10] But not a lot of windows on this particular one.
+[00:00:13] I think V-Rax, we already looked at ALZN, we already looked at TNXP, a little bit of a cheaper one, but we can pull it up anyways.
+[00:00:23] So definitely a stock that's beaten up, recent reverse split, always good to check that 200 EMA, SMA, 200 EMA up there.
+[00:00:31] A lot of big red candles with higher volume, and today is another one, so definitely a stock that has a tendency of selling off hard.
+[00:00:39] It's a 59 cents right now.
+[00:00:41] Realistically, if we zoom in here and we've got a zoom in, you can see actually there are some gaps.
+[00:00:48] So you've got a gap here to oops, I remember you got to press the control button to get your candle to get your trend line to snap to the closest higher low of the candle you're on.
+[00:01:01] So this is a tough chart, it's not likely that we're going to get into these levels, but if we did, you know, technically you do have some gaps in windows here with a lot of space.
+[00:01:16] I mean, that gets you up to 320, too. So you've got a gap, small window, small window more resistance really, it's not really a big window gap, small window bigger window gap, and then up here you've got another bigger window.
+[00:01:32] So, you know, you start to sort of map that out, and next thing you know, you can get a good sense.
+[00:00:00] to the levels that you have in play.
+[00:00:01] And there's going to be some stocks where you pull up,
+[00:00:03] you start doing your technical analysis,
+[00:00:05] and you've got nothing.
+[00:00:06] There's nothing nearby.
+[00:00:07] So it's like, wow, if this thing starts to go,
+[00:00:10] I mean, we really have a lot of room up to 25.
+[00:00:14] There's just not a lot of resistance.
+[00:00:15] And that's ultimately what you want to see.
+[00:00:17] If you're looking for a stock that really has the potential
+[00:00:22] to make a nice big move.
+[00:00:23] We like to see that the daily chart is open,
+[00:00:26] there's not obvious nearby resistance.
+[00:00:28] Now, one of the things that I'll say that can be really annoying
+[00:00:31] is especially if you're doing technical analysis on large caps.
+[00:00:37] You could do your technical analysis on the large cap,
+[00:00:40] and you could say, oh, you know, we've got resistance here,
+[00:00:44] and gaps in windows here.
+[00:00:45] And then I'll have a sudden, some big economic data comes out
+[00:00:49] in the market, and it's just totally negates all that technical analysis.
+[00:00:53] This is especially true if you're trying to do it on the S&P 500.
+[00:00:56] So be mindful of that on small caps,
+[00:00:59] your technical analysis is going to work better.
+[00:01:02] And the things that will allow a stock to break through levels of resistance
+[00:01:06] will be when it's trading with a really good catalyst, strong news.
+[00:01:10] So that's ultimately what you're going to want to see.
+[00:01:12] You're going to want to see strong news headlines.
+[00:01:14] That's going to create that momentum.
+[00:01:16] And then that's where we're going to look for some nice price action.
+[00:01:21] Okay, so I think that should give you a good sense of gaps and windows
+[00:01:26] and as always, each day, when you log into the chat room
+[00:01:30] and you're watching me doing my technical analysis,
+[00:01:32] you're going to see me demonstrating exactly what I'm just sharing with you now.
+[00:01:36] Drawing these gaps in windows.
+[00:00:00] and those identifying them,
+[00:00:01] looking for a sending these sending support trend lines,
+[00:00:04] and, of course, looking at the position of the 200DMA.
+[00:00:07] All right, so with that, we will continue on
+[00:00:09] with chapter five, part six.

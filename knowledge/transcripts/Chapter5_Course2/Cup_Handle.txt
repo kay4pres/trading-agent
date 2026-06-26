@@ -1,0 +1,93 @@
+# Cup and Handle Pattern.mp4
+# Transcribed: 2026-06-26T19:22:49.285176
+# Duration: 8.5 minutes
+# Model: faster-whisper tiny
+# Language: en
+
+[00:00:00] Okay, so the cup and handle pattern, as I was saying, is formed by a double top that then
+[00:00:09] doesn't totally fail. So a double top can be this pattern where we get the move up.
+[00:00:16] It's called pulse back and then we come up again and so we get the double top there and this takes the form of looking almost like a cup.
+[00:00:24] And then if it pulls back here, that is considered the handle.
+[00:00:29] So the cup and the handle right here and then we're buying here for this breakout and we're using the low of the handle as support.
+[00:00:39] Now if we got it in right here, we're support. It's way down here. So it's too far away.
+[00:00:44] But with the handle, now we can better manage our risk on this position.
+[00:00:49] So, cup and handles are, they are patterns that I'll trade quite a lot. Obviously they're not as good as some of
+[00:00:58] the other patterns that we've already discussed. They're not as, I don't like them as much as buying a first pull back, a micro pull back or
+[00:01:06] flat top or eight cows or even ABCD patterns. But you know, we do see this pattern formed from time to time.
+[00:01:12] So here's a double top that rejects and here's a double top that turns into a little cup and handle.
+[00:01:21] Now I suppose you could say both of these ultimately ended up pulling back a bit,
+[00:01:26] but this did lead room for profit right here. Buying the first candle making new high, high volume surge,
+[00:01:32] MACD is positive, volume profile is good. So now we're stacking on multiple layers of confirmation.
+[00:01:39] And I'm going to take that trade. And again, when I'm trading, you guys get to listen to me,
+[00:01:43] you get to watch while I'm trading. So I know as you go through this class, it's probably like,
+[00:01:48] wow, there's a lot of stuff to try to keep organized in my mind. And there is,
+[00:01:54] but at the same time, the more you hear me sort of reiterating and repeating and
+[00:01:59] trading these patterns and commenting on these little subtle things like the MACD and the volume profile,
+[00:02:05] you know, or the half dollars or the whole dollars, the more you'll be like, yo, yeah, yeah, I
+[00:02:09] can remember that. We talked about that in class. So here we get another rally up, a pull back,
+[00:02:15] back up, dips down, back up, double top pulls back and then rips through that level into a
+[00:02:22] circuit breaker hall. So this was a little later in the afternoon. MACD was positive.
+[00:02:27] Volume profile was pretty good. A couple of red volume, you know, higher volume red candles there,
+[00:02:32] especially that rejection. But, you know, it's, it's tolerable. We can still work with that.
+[00:02:37] This was the example that I already showed you. This one here is another example,
+[00:02:42] formed by the topping tails. So I don't like that one as much, you know, topping tail,
+[00:02:48] topping tail and then we go. But nonetheless, the entry here on this was right under the
+[00:02:54] whole dollar of five. So we're taking the trade right there. Now on that type of setup,
+[00:02:59] I would have definitely, as always, been using level two, but paying really close attention to the
+[00:03:04] whole dollar. So is it possible here that there was a big seller right around five? And that's why
+[00:03:09] it couldn't break previously. Maybe. So then when it comes back up, I'd be watching us see,
+[00:03:14] is that seller still there? How big is the order? And then if it starts to get bought up,
+[00:03:19] it goes 50,000, 40, 30, 20, you know, 15. And then I might get in right there just before it breaks.
+[00:03:25] And then boom, we pop up to 550. We dip down, we go right up to six and to six, 50. Wow,
+[00:03:31] that's a really strong breakout on a cup in handle formation. Here we get the double top,
+[00:03:38] then the cup, and then right there is the handle. So the handle and then that first
+[00:03:42] can't make any new high. So in fact, if you were really zoomed in here, this is just a bull flag.
+[00:03:48] That's all it is. This is the first pullback, right? This is rallying up, this first pullback.
+[00:03:52] It's when you zoom out that you get the context of this being a cup in handle. So, you know,
+[00:03:58] but probably one of the reasons it does work so well is because people that are zoomed in,
+[00:04:02] they just see the very simple pullback pattern here, which is bullish, and so they buy it.
+[00:04:07] I recognize that it's part of a slightly bigger pattern, but, you know, it's not the end of the
+[00:04:12] world if you didn't see that. Same here, rallys up, and then you get the first pullback,
+[00:04:16] and then it squeezes higher. It happens to be a cup in handle formation, because of the double top.
+[00:04:21] But even if you didn't see that and you were just trading the first pullback, you know, that would be okay.
+[00:04:27] Here's another one, a high here, high there, sells off, rallies back up, big top there,
+[00:04:34] then it pulls back, then it comes back up. Now, this one's a little bit lopsided.
+[00:04:40] It's actually quite lopsided. So, this one, you know, comes back up here, and this is the handle.
+[00:04:46] So, it's sort of like a tilted cup in handle. It's not perfect, but like I said,
+[00:04:52] not all patterns are going to be picture perfect. Some of them are going to be a little sloppy,
+[00:04:56] or not quite right. And so, you could interpret this as an, in fact, an ABCD pattern,
+[00:05:01] occurring right above VWAP. And then your target is a retest to the high a day,
+[00:05:06] which is the first test right there. So, probably not really barely call it a cup in handle,
+[00:05:11] but you get the idea. This one, all right, we've got the high, we've got the pullback,
+[00:05:17] we come back up. So, a little bit more of a V-shaped cup, wouldn't balance well on a table,
+[00:05:22] but that's okay. Then a little pullback there, and then it rallies, another little pullback there,
+[00:05:28] and then it rallies higher. Note with this pullback, how extended we are off of our nine moving average.
+[00:05:33] So, taking that little dip trade there on that micro pullback, when we're this extended off
+[00:05:38] the moving average, is a bit risky. You could take it, but it's a little risky. This is much better,
+[00:05:43] though, because we're right at the nine moving average. So, paying attention to those moving
+[00:05:47] averages. Double top here, both with sort of, you know, volume, high volume red candle, red candle,
+[00:05:55] high candle wicks. Then it comes back up, and then it pushes through breaking through six,
+[00:06:00] the whole dollar, and going up to six, 20. This one popping up, dipping down, popping up, dipping down,
+[00:06:07] nice little micro pullback there, right underneath five. This looks very similar to one of the
+[00:06:11] other ones I showed, but it might be the same one. But in any case, nice move there, and then a
+[00:06:18] bigger red candle, it dips down, and then it surges a little bit higher there up towards seven.
+[00:06:24] It's pretty big breakout. This one has a double top, as you can see here, then the consolidation,
+[00:06:31] and right there, we pull away. And this goes from 588 up to six, 657 up to a hot level,
+[00:06:37] opens, dips and rips up to eight up to nine, nine, 50, 10, then opens, dips and rips up to almost
+[00:06:44] 12, 50 pulls back, pops up, and then it starts to kind of unwind as it comes back down.
+[00:06:53] So, same, same stock. This was the five minute chart. This is the one minute chart. So,
+[00:06:58] showing kind of different, just same pattern, of course, but on the one minute, more consolidation,
+[00:07:03] you can see visually, and you can see this pullback right here more obviously. So, that's a nice
+[00:07:09] little pullback pattern there as well. Here on this one, we've got the high here, the high here,
+[00:07:17] the little candle, or the little handle right here. So, boom, that's our cup, that's our handle.
+[00:07:23] And then the first candle to make a new high is the breakout. Volume increasing, as it's rallying
+[00:07:28] back up, MACD is positive. On this one here, we've got the high here, sort of a double top right
+[00:07:36] there, not perfect, dips down, first candle to make a new high, breaks through that high,
+[00:07:42] profit, dips down, pops up, dips down, pops up, dips down, pops up, not really a clean spot to add
+[00:07:48] back on it, even though it grinds higher. Then we're sort of stair stepping down, then we break
+[00:07:53] and pivot and start stepping up, pull back, and push a little higher. But you can tell this one
+[00:07:58] just not as clean. It's a 500,000 share float, very low float stock from 260 up to 5, but the
+[00:08:06] personality that stock is showing that it's just a little heavier. You can see the areas where the MACD
+[00:08:10] is open, areas where the MACD is closed, and then it opens again. All right, so now we're going to jump
+[00:08:17] into chapter 5, inter-day chart patterns. We're going to look at the head and shoulders pattern
+[00:08:22] and the inverted head and shoulders pattern. These are two that you'll see me trade quite a bit.

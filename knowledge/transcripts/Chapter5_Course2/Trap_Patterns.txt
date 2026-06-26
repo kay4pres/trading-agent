@@ -1,0 +1,505 @@
+# Segments: 24
+# Transcribed: 2026-06-26T19:22:27.606793
+
+[00:00:00] All right, so we're going to jump in here with bull traps, bear traps, liquidity traps, and jackknife candles.
+[00:00:06] These are all different types of traps that exist in the market.
+[00:00:11] And they exist on candlestick charts and in the level two where we have a high degree of conviction.
+[00:00:18] We think this is going to work and then the rug gets pulled out from underneath us and we're shocked.
+[00:00:24] Now, once you gain familiarity with these different types of traps and the places, they're most likely to occur,
+[00:00:31] you will stop having that same degree of conviction that you have just before they happen,
+[00:00:36] because you're going to start to recognize that, uh-oh, this actually could be a trap that's about to form,
+[00:00:42] so I'm not going to go ahead and jump in this one.
+[00:00:44] But we have to be careful of traps.
+[00:00:46] A trap is when we see a pattern that initially resolves in our favor, so it looks really good,
+[00:00:51] and we might be in it, and then it immediately rejects and reverse, it'll do a reverse trap.
+[00:00:56] So, if it pops up, it then slams back down.
+[00:01:00] These can trap bears or bulls equally.
+[00:01:03] And so if both bears and bulls get trapped, who's benefiting from all of this?
+[00:01:08] Well, there's high frequency trading algorithm, market makers, and institutional traders,
+[00:01:13] who are benefiting from the liquidity created by the buying and selling of bulls bailing out,
+[00:01:19] and then bears bailing out.
+[00:01:21] So, and as we know, some of these companies do not let their stock price go very high before they start selling shares.
+[00:01:29] So if they have an investment banker sort of on the back end selling shares, what they need is volatility.
+[00:01:35] So they might let the stock kind of start to rip up, and-
+[00:00:00] And then they pull the rug out, force people to stop out, or they let the stock start
+[00:00:03] to drop, and then they come in with a bit.
+[00:00:06] So they kind of fake people out both ways to create more liquidity to sell more shares,
+[00:00:13] to unwind even more.
+[00:00:15] And so this is the reality in the market, it's going to be more prevalent on some stocks
+[00:00:19] and others.
+[00:00:20] And so when we see a stock, where we are seeing big traps, usually I just steer clear of it.
+[00:00:26] I say, you know what?
+[00:00:27] That's enough.
+[00:00:28] I'm not going to trade that stock anymore.
+[00:00:30] Maybe I had some profit on it, and I'm going to walk away in the green.
+[00:00:33] Maybe I lost some money on it, and I don't want to throw away any more money on a stock that
+[00:00:37] is just not behaving nicely.
+[00:00:40] So what creates a higher likelihood of a trap?
+[00:00:43] Well, if a stock is quite extended off the 9EMA, there's a higher risk because it's extended
+[00:00:50] the big short seller or a big seller could come in and send out a big sell order and
+[00:00:55] kind of dumped the stock back down.
+[00:00:58] And then anyone who's in that's up high is going to panic sell, bail out, and that creates
+[00:01:02] that capitulation and that flush back down.
+[00:01:06] On the other hand, if a stock has already made a very large move, there will be traders
+[00:01:11] that are targeting it for a short.
+[00:01:13] The company may be selling, insiders may be selling, and so, you know, it's already made
+[00:01:18] a big move.
+[00:01:19] It may not even be super extended, but because it's up so much, it has a higher likelihood
+[00:01:23] of attracting insiders and short sellers who want to sell against those gains.
+[00:01:30] The third item that creates a higher likelihood of a trap is regular trading hours.
+[00:01:36] Why is that?
+[00:01:37] So you have a higher likelihood.
+[00:00:00] you have traps between 930 and 4pm, then you do pre-market in after hours. Yes, you do,
+[00:00:05] because during regular trading hours we have stop stop orders by stop and cell stop orders,
+[00:00:13] which means we have stop hunting from the market makers, and we have market orders, which
+[00:00:18] create bigger swings. So all of that results in more liquidity when you have these false breakouts.
+[00:00:26] More liquidity is what these guys are looking for. And the number four, if the stock has already
+[00:00:31] shown, a tendency for false breakouts. Both on the day today, but even if you remember it from
+[00:00:38] previous days, maybe even months ago when the stock had news, it's more likely to do it again,
+[00:00:43] because there's just it's a personality of the stock, perhaps the underwriters, and the investment
+[00:00:48] bankers that are involved with doing offerings, maybe the insiders, the sophistication of the
+[00:00:52] people that are on the inside that are selling. We don't always know, maybe it's the people that
+[00:00:56] are shorting it, you know, like that person that has shorted 750,000 shares of a stock with no
+[00:01:01] news, it was super confident, you know, it could be the sentiment in the market. We don't always
+[00:01:05] know exactly what it is, but if a stock is showing that tendency, it's better just take our hands off
+[00:01:11] and wait for something better. They'll always be another stock around the corner. Now it is true
+[00:01:16] that traders who are fast may be able to be profitable even during a false breakout, and I am one of
+[00:01:22] those traders. There are times we have a false breakout and I still walk away with profit because
+[00:01:25] I was quick enough. Jackknives are one of the exceptions. It is very hard to make money on a jackknife
+[00:01:32] if you are in it before it happens, and I do have a strategy however for trading jackkn.
+[00:00:00] knife that we'll talk about later in the course, but it's for how to respond right after
+[00:00:06] the Jackknife has occurred and so anyway, so it's that gets a little bit more complex.
+[00:00:12] But in any case, traders who are a little bit slower may be depending on the broker
+[00:00:16] you're using, and if you don't have hot keys and things like that, a trap is just going
+[00:00:21] to cost you money, so you gotta be aware of it.
+[00:00:24] Okay, so here's an example of this stock, and this is clearly a trap.
+[00:00:29] Squeezed up, it looks great, it's a nice move, it does a sideways consolidation,
+[00:00:36] which we would call a bull flag, or the first pullback, and instead of the first pullback
+[00:00:40] working, it fails, epically, big red candle, and then even bigger red candle as it drops
+[00:00:46] back down, so would you have gotten caught in that trap?
+[00:00:51] Are there any indicators that we could have looked at that would have told us that there's
+[00:00:55] a higher likelihood that this will fail?
+[00:00:57] The first and most obvious one to me is the topping tail candle that was the high of
+[00:01:03] day.
+[00:01:04] Topping tail candle on high of day, that's the volume top, it's the high day with volume,
+[00:01:10] with that big topping tail, we know those candles are bearish.
+[00:01:14] What happened during those big topping tails?
+[00:01:16] The stock squeezed up, which was awesome, and then sellers pulled it all the way back
+[00:01:22] down.
+[00:01:23] So even though this technically closed as a doji, opening and closing of the same price,
+[00:01:28] in the context of this move up, that is bearish.
+[00:01:33] It might as well be red, it actually would be better if it were red, because it would
+[00:01:36] be more obvious to the bull.
+[00:00:00] holes that this is not a good setup, because it's green, it's actually worse because
+[00:00:04] it makes you think, oh, this is a big green candle, only just barely, and with that huge
+[00:00:09] topping tail, it's not good.
+[00:00:11] A second dogey topping tail in a row, that's a candle of indecision.
+[00:00:14] A third one here, this is a spinning top, it has a small little body, another candle of
+[00:00:19] indecision.
+[00:00:20] And then it pushes a little higher, but how could you trust buying this area here, which
+[00:00:25] is shown it refuses to hold up in those prices?
+[00:00:29] You can't.
+[00:00:30] So the topping tails here are your indicator, not to trust this.
+[00:00:33] It ends up popping up reversing, and that's not a shock.
+[00:00:36] Now if you would buy it in right here, it does pop up, so you would have been green for
+[00:00:40] a moment.
+[00:00:41] You might have had a chance to get out with a little profit, or with a small loss, there's
+[00:00:45] no reason you should still be holding it down here into this candle.
+[00:00:49] But the MACD on this would have been positive.
+[00:00:51] It was the beginning of the move, it was the first leg up, so the only real indicator
+[00:00:55] that this was not going to work were these topping tails right here.
+[00:00:59] Okay, so what about this?
+[00:01:01] Here we have a liquidity trap, and so the liquidity trap is when we get this high volume
+[00:01:07] candle right here where we swing up, and then we immediately reverse back down.
+[00:01:12] So there's a couple different ways that this can happen, but what we know is that a lot
+[00:01:17] of these stocks during regular trading hours, of course, traders will put out stop orders.
+[00:01:22] So if a short says, I'm going to short this thing, let's say they short it right in
+[00:01:26] the area.
+[00:01:27] Now this actually is also a little false breakout.
+[00:01:30] We got a nice pop here, high volume green candle.
+[00:01:34] It pulls back, first candle makes a new high here, pushes a-
+[00:00:00] little higher and then it reverses, not super dramatic. This by the way here is also a liquidity trap,
+[00:00:06] high volume red candle, and you can see the way it opened, popped, dropped, and then it's closed.
+[00:00:12] So these right here and right here are both liquidity traps, and you can see the high volume candle,
+[00:00:18] and we would say we could also call those jackmaps, because it's this just this very violent move,
+[00:00:26] way up and then way back down, and then closing in the red. Jackknife's almost always close in the red.
+[00:00:32] So if you are a short seller, and maybe you're shorted with your stop right here at this level here,
+[00:00:38] because you're thinking, okay, it seems like it's unwinding, the MACD is going negative.
+[00:00:42] So you're short on the stock, it pops up, you add a little bit more short, it pops up here,
+[00:00:47] you might be a little nervous, and then right here you're like, I better get out. So you buy to cover your
+[00:00:52] short position, and what is a long trader do, a long trader jumps in, possibly with a market order.
+[00:00:58] So when those orders are received, the high frequency trading algorithms, they see those orders
+[00:01:02] come in, they're making the market, they're sitting on the bit of the offer. When they see that big order
+[00:01:07] come in, they pull their order back as quick as they can, and they move it up a few cents,
+[00:01:11] so you fill it a higher price. So this is very common, we're going to talk about this more in chapter six,
+[00:01:17] when it comes to market makers, and high frequency trading algorithms and dark pools and
+[00:01:22] some more interesting stuff. But just for right now, what's important to know is that during regular
+[00:01:27] trading hours, due to the presence of stop orders, both sell, stop, and buy, stop, and market orders,
+[00:01:34] the market makers will take advantage. And so what you got right here.
+[00:00:00] here was a swing of market orders, basically sending the stock up, maybe with some limit
+[00:00:04] orders as well. And then all of a sudden, a flood of cell orders likely executed by one
+[00:00:11] of the institutional trading firms, or perhaps some algorithms, send the stock flushing
+[00:00:15] back down, and everyone who bought right here panics out. It drops back down. Now, sometimes
+[00:00:22] they will actually buy after that flush back down because they're doing the exact same thing
+[00:00:28] the other direction. You send the market order to sell, and they're moving their order
+[00:00:32] out of the way, and then they buy your shares, and then the price pops right back up.
+[00:00:37] It's incredibly sophisticated, the algorithms that are run, and they are being developed and
+[00:00:42] maintained by MIT graduates. Some of the smartest people in the world, and they're working
+[00:00:48] for hedge funds, managing huge amounts of money, and basically creating these scripts and programs
+[00:00:55] to automatically try to extract profit from the market. This is nothing new. People have
+[00:01:00] been doing this since the beginning of really electronic trading. So it's not new, but it's
+[00:01:07] always been this allure. You know that, oh, could I create this computer that will just print
+[00:01:14] money from the market? And because the markets are always changing, it is extremely difficult.
+[00:01:20] You would be naive for any of us as retail traders to think that we could possibly compete
+[00:01:24] at creating an algorithm that we produce profit. When some of the biggest hedge funds in the world
+[00:01:29] are hiring dozens and maybe hundreds of people to try to do it in just inside one firm,
+[00:01:36] spending millions of dollars a year.
+[00:00:00] Now, the type of stocks are more likely to use these algorithms on will be large cap stocks.
+[00:00:08] However, market makers make the market on a number of different securities.
+[00:00:13] And so, when they make the market, they are sitting on both the bid and the offer.
+[00:00:18] They're basically participating in the game of arbitrage.
+[00:00:22] So, at any time someone wants to sell, they're there to buy shares.
+[00:00:25] And anytime you want to buy, they'll go ahead and sell you shares.
+[00:00:28] So, they're making the market by both buying and selling at the same time.
+[00:00:33] To anyone who wants to come along.
+[00:00:35] But what they know is that they'll be another trader who will come along soon enough.
+[00:00:39] So, if they buy your shares, then they'll sell your shares to the next person.
+[00:00:42] But in the interim, they want to make money.
+[00:00:45] So, how do they do that?
+[00:00:46] Well, they've got to be making sure that they don't keep the spread too tight.
+[00:00:49] Because the spread is too tight.
+[00:00:51] You've got like a one cent spread or really tight spread.
+[00:00:53] There's not as much money to make for them.
+[00:00:55] So, number one, they're going to want to keep the spread a little bit bigger.
+[00:00:58] And then, if they want to make money, they're also going to have to think about, alright.
+[00:01:02] I can't be long too much of the stock.
+[00:01:05] So, if it starts dropping very quickly and people start selling,
+[00:01:09] I've got to pull back my buyers.
+[00:01:11] Or if suddenly people start buying it, I don't want to become short the stock.
+[00:01:15] So, I've got to pull back my sellers and all of this is happening algorithmically in real time.
+[00:01:22] And it's an incredible to watch, and I'm getting on to a little tangent here.
+[00:01:26] It's incredible to watch some of the data feeds to see how quickly these orders are reacting,
+[00:01:32] and even reacting to each other and moving around.
+[00:01:36] And this is part...
+[00:00:00] of the institutional trading firms that add structure to the market. Because without them,
+[00:00:09] naturally the spreads would be much, much bigger. There wouldn't necessarily be someone that
+[00:00:13] wanted to buy when you want to sell. And there wouldn't be someone right to sell when you want to buy.
+[00:00:18] So if you took all of the institutional traders out of the market entirely, it would be a much
+[00:00:22] thinner marketplace. So they have a purpose, but they also have their own motive, which is to make money.
+[00:00:32] And they don't have an obligation or fiduciary obligation to you to do it's in the best interest of you.
+[00:00:37] You're not their client. They are competing in the market to make money. And they will make money off of
+[00:00:42] your order flow. And if they can trick you into selling and then they'll buy your shares and pops back up,
+[00:00:48] then that's fair game. So liquidity traps are common. And this is a great example right there of a
+[00:00:56] jackknife. Look at that. So what happened here was the stock had been consolidating for some time.
+[00:01:02] And then suddenly it rips higher. And what could be the case in this example is let's say there
+[00:01:08] were a lot of stock orders that people had at $12, who were short. So they set their stop at $12,
+[00:01:14] which means if the stock breaks $12, their brokers are going to press the buy button and get them out of
+[00:01:20] a position. So it's a stop order for a short sale. So it's going to go as a market order. So if it breaks
+[00:01:26] $12, it's triggering a market order. So the institutional traders, they can see every stop order
+[00:01:33] that's on the book. So if they saw that there was 500,000 shares, let's just say for the sake of
+[00:00:00] argument in stop orders at 12. Then what they know is that if they can push the stock up to 12,
+[00:00:06] all of those orders will fire. Now that's sending a half million shares of market orders
+[00:00:11] right up here. So they could actually push it up and then simultaneously flip out and have
+[00:00:17] their mark have those market orders be buying shares from them. So they buy it up to the trigger
+[00:00:23] and then as the market orders execute, they make sure that when they buy, they're buying the
+[00:00:28] shares that they just bought. So it's selling, you're basically, you're, their shares are
+[00:00:34] being sold out to these people. Now at the same time what they could do if they wanted to
+[00:00:41] is they could oversell a stock. So they could not only sell the shares they had just bought to
+[00:00:45] push it up, they could also flip short. And so then all of a sudden you get a panic back down
+[00:00:52] and then anyone who bought here to go along is also getting stopped out because let's say a
+[00:00:58] trader was thinking, I like this if it can break over 12. So I'm going to set a buy stop order
+[00:01:04] to initiate a brand new position at $12. So it's not just short sellers doing buy stop orders
+[00:01:10] to cover positions. It could be a long trader who's saying, I might not be in front of my
+[00:01:13] computer so just send the buy order there and then I'll come back and check on it later.
+[00:01:18] That is a bit of an amateur strategy. I don't like putting out stop orders because I don't want
+[00:01:22] to show them to those market makers and those institutional traders, but other people do.
+[00:01:26] And there's a lot more traders in the market that we'll do it. And so boom all of a sudden
+[00:01:30] liquidity. Those orders are triggered, big pop and a big rejection. And this can also be an
+[00:01:36] opportunity where the...
+[00:00:00] So maybe an investment banker doing an underwriting for a secondary offering can dump shares onto the market.
+[00:00:08] So push it up and then create basically just push it right over the edge so you get all of those orders to execute and then it flushes back down.
+[00:00:16] And unfortunately, this is one of these things that we will see in the market from time to time.
+[00:00:21] And it doesn't feel fair necessarily and, you know, to the extent that it's even, it's ethical.
+[00:00:30] I don't think that it really is, but it happens.
+[00:00:34] And there's a lot of things that happen in the market with short selling and these Chinese stock selling shares on the open market and they could short selling.
+[00:00:42] That just, you know, it's, it's, there's some dirty practices out there and it's unfortunate, but it's the reality.
+[00:00:49] But we see a stock that is exhibiting those kind of behaviors I usually just leave it alone and I wait for something else.
+[00:00:55] But one of the things that I've recognized is that these big rejections and jackknives are much more common during regular hours when you have stop orders and market orders than pre market or after hours.
+[00:01:08] So here we have another squeeze up first pull back and then rejection.
+[00:01:13] There was no reason really that this was telling me it was going to fail.
+[00:01:17] This was a fine setup, a little extended off our nine moving average.
+[00:01:22] Okay, but after such a big run up from 14 up to from 7 up to 14, a big move like that, usually the first pull back would work better.
+[00:01:30] So I'm surprised it didn't work better, but what could have happened in this case is it started to pop up and then there's a short seller out there who said, you know what?
+[00:00:00] This stock has no business being up this much. Maybe it has no news. I'm just gonna short
+[00:00:04] You know 200,000 shares and a huge sell order goes through and all of a sudden panic
+[00:00:10] It costs a flush stop orders get fired and boom you've got a high volume red candle and then that
+[00:00:17] That's part of the history of the stock now. That's the chart and that's gonna be sort of casting a shadow in a way forward
+[00:00:24] Where everything you look back at that and it's like I can't trust it anymore
+[00:00:27] And so that becomes a pretty nasty full trap
+[00:00:31] This is a jackknife right here. So or a bulltrap you could say so it pops up for a second
+[00:00:36] And then a huge reversal back down and it's a big red candle
+[00:00:40] So we don't like seeing those, but
+[00:00:43] Unfortunately, we do see them from time to time and note that that occurred just after 10 a.m. So during regular trading hours
+[00:00:52] Here again during regular trading hours. We have a pop and then a reversal back down
+[00:00:57] We have the pop and then the reversal back down
+[00:00:59] So that's the one-minute chart. That's the five-minute
+[00:01:02] So it squeezed up and then we started consolidating sideways and then right there you have that jackknife move
+[00:01:09] So it pops up, it fakes everyone out and then liquidity trap
+[00:01:12] They dump it right back down. Bulltrap, then a bear trap. Okay, so this one is a little bit hard to see
+[00:01:20] Just because of the color of the candle. So right here
+[00:01:23] This actually has a topping tail that goes up to here. So it's consolidating. It pops up drops down
+[00:01:29] So the bulls get trapped. They bail out. Shorts take over there and control and then it rips back up and goes higher anyways
+[00:01:37] That
+[00:00:00] is not a jackknife. That is just a bit more tug of war that can happen between buyers and sellers.
+[00:00:06] I don't see that quite as being as alarming. It just happens from time to time. The stock,
+[00:00:13] I suppose, why did I have a higher likelihood of doing this? It wasn't really going parabolic.
+[00:00:18] It was just kind of grinding higher, and these stocks that are grinding higher, it can be more of a
+[00:00:24] fight between the buyers and the sellers. It really doesn't shock too much. This here,
+[00:00:31] little bulltrap, but also because we had that topping tail right there. That was an indicator that
+[00:00:36] this would have a higher likelihood of doing it again. Topping tail, and it comes up double top against
+[00:00:42] that level. This here was a topping tail. First candle makes a new high, but only by a few cents.
+[00:00:48] That's predictable because of the topping tail. It tries to come up again. It is able to finally pull
+[00:00:54] away, but for me being a little lower price of $2, and with this kind of price action showing
+[00:01:00] already, and it being regular trading hours, I'd probably say it's not worth it. Here, this example
+[00:01:08] I already showed you, so let me just clear that one out. Okay, so not that one out. This one here,
+[00:01:17] we've got basically two little traps. So, oops, back up. So, we sort of sell off going into the open,
+[00:01:26] and it starts to pop up, so maybe some bulls buy this, but the MACD was 100% negative. The 90
+[00:01:33] M.A. was below the 20. MACD was negative. This was not a good set.
+[00:00:00] It reverses and goes lower. Okay, then it comes back up. It tries to break through view
+[00:00:04] up again and reverses really hard and flushes down. I would not have wanted to trade this.
+[00:00:10] While you could argue that this could have potentially been a red-to-green move,
+[00:00:15] because of the high volume at the open, it's a risky move. It's risky. This is the thing.
+[00:00:22] This is now part of the history of the stock, and it's just so bearish. It's really hard to trust
+[00:00:27] that that would have been okay to trade. Here we have a five minute, very brief, full flag
+[00:00:34] that gives us a rejection. We sold off, we rallied back up, we sold off, we rallied back up,
+[00:00:39] big rejection. I probably wouldn't have traded that because it's really not a very clean pattern.
+[00:00:45] It's volatile. It's all over the place. It's just not clean. This one, a little jackknit. Well,
+[00:00:51] a small jackknife here. It sort of pops up and then slams back down. So as soon as it pops up,
+[00:00:57] something that'll sometimes happen with these is, as they pop up, there'll be a lot of people buying,
+[00:01:04] but then right on the ask, you realize that there's a lot of orders going through,
+[00:01:10] but the price isn't moving up. So now you realize that all of these people have bought
+[00:01:14] from a hidden seller. Someone was selling shares, but their whole order wasn't displayed.
+[00:01:20] Then what ends up happening is once people realize they bought from a hidden seller, they're like,
+[00:01:25] I got a bail. So they sell on the bid. But if there's not an equal sized hidden buyer,
+[00:01:31] then when all those people sell on the bid, the price drops. And then as it's dropping,
+[00:01:36] people start getting more people.
+[00:00:00] I can stop down and then some shorts jump in.
+[00:00:02] So this could have been a hidden seller up here,
+[00:00:06] maybe around the high of 420, that's possible.
+[00:00:09] And when we get into chapter six on reading level two,
+[00:00:12] you'll learn more about how to identify hidden buyers
+[00:00:15] and hidden selves.
+[00:00:16] Couple topping tails here, that one is more of a false breakout.
+[00:00:21] This one sort of squeezed up, we pulled back,
+[00:00:23] a little chopped there, very choppy price action,
+[00:00:26] pushes higher, rejects, tries to push higher,
+[00:00:29] rejects, and then at the open,
+[00:00:32] two more big rejections.
+[00:00:33] So it was predictable that it would reject at the open
+[00:00:35] and it had already been showing these rejections
+[00:00:37] pre-market.
+[00:00:38] This is not a safe stock to trade.
+[00:00:40] So for me, once I recognize that, I just say,
+[00:00:44] nope, we've got a red flag, flag on the plate.
+[00:00:46] We're not trading this, leaving it alone, not touching it.
+[00:00:49] That's supposed to be a flag, a picture of a flag.
+[00:00:53] This here is a little bull trap.
+[00:00:55] The bulls get in up here too high.
+[00:00:57] It gets flushed back down, then the shorts get
+[00:01:00] in a little too low, and it rips back up.
+[00:01:03] Very frustrating, especially on a stock with a 2.8 range.
+[00:01:06] From $12 and nearly 14, you know,
+[00:01:09] you got in here with 5000 shares at 13.
+[00:01:12] You're stopping out for a $5,000 loss.
+[00:01:14] You get short here with 5000 shares,
+[00:01:16] you're stopping out here for a $5,000 loss.
+[00:01:19] What's worse is that some traders will get in,
+[00:01:21] they'll stop out, then they'll add back,
+[00:01:23] and then they'll stop out again.
+[00:01:25] And that's when you're trading from pure emotion.
+[00:01:28] You're not following the rules anymore.
+[00:01:29] There's no pattern here, you're just frustrated,
+[00:01:32] and you're just looking at the prices,
+[00:01:34] and how I was in right here, and then I stopped out.
+[00:01:36] And now it's back, I'm gonna get back it.
+[00:00:00] of the same price that the pattern doesn't justify. And the fact that it showed this type of
+[00:00:04] rejection clearly indicates this is not a stock that's trustworthy unfortunately. You know,
+[00:00:10] it's just, it's just the reality that's not. So here, um, halt up, halt up, halt up, halt down,
+[00:00:19] then bouncing, curling back up, first pull back. All right, squeeze his higher, drops down,
+[00:00:27] bottoming tail, nice, rallies back up, hops up, and then right there, jackknife, jackknife,
+[00:00:35] candle, high volume candle, that's a liquidity trap. So they trap the longs, they might trap the
+[00:00:41] shorts, but the shorts probably actually dominated on this. And this could be one of those examples
+[00:00:46] where it was the, it was insider selling, uh, or the company selling shares. So as soon as it broke
+[00:00:52] over, you know, $10, maybe when it came up here the first time, they dumped a batch of shares,
+[00:00:57] maybe they dumped a batch of shares here. So 50,000 shares there, 50,000 shares there,
+[00:01:02] you know, another 50,000 shares there, and then here selling, you know, 25,000, 25,000. And so by the
+[00:01:09] end of the morning, they may have sold, you know, 200,000 shares of the stock, and average price of,
+[00:01:16] you know, $8 a share. They're raising millions of dollars for the company. That goes on the balance
+[00:01:22] sheet of the company. Now, the company is allowed to do that if they file the shelf registration.
+[00:01:27] We talked about shelf registrations when we talked about stock selection. So if they have a shelf
+[00:01:31] registration, they're, they're allowed to do that. And even though it might feel like the investment bank,
+[00:00:00] thinkers not being ethical, they don't have any ethical obligation to us, they have
+[00:00:06] an ethical obligation to the company that they work for, and their goal is to raise money
+[00:00:12] for the company.
+[00:00:13] Now it would be obviously bad if to raise money for the company they sold so many shares
+[00:00:20] the stock price went to 20 cents a share, right?
+[00:00:22] They would have overdone it.
+[00:00:23] They would have oversold that's bad, that's a problem for shareholders, but if every
+[00:00:27] time it pops up, they'd dump a little more, dump a little more, and at the end of the
+[00:00:32] day, the stock is able to be more or less the same price as the previous day than they've
+[00:00:37] actually done a great job, because the stock price didn't really hurt, sure, intro day traders
+[00:00:42] got hurt, but they don't care about us, so, you know, they're happy, and that's the practice
+[00:00:48] that'll continue happening.
+[00:00:50] But again, this is one that occurred during regular trading hours.
+[00:00:54] This is another Jackknife, higher volume right there on that candle, so Jackknife, and then
+[00:00:59] this one ends up rallying back up, but then it sells off with even higher volume once it
+[00:01:04] gets higher.
+[00:01:06] So this might be one of those instances where the company sold shares here, maybe a little
+[00:01:11] bit of a dump, it could be institutional traders, you know, I don't know, we speculate.
+[00:01:16] It's always speculation, because at the end of the day we don't know, now that's not
+[00:01:21] entirely true.
+[00:01:22] It's not speculation that comes from nowhere, where it comes from, is when a couple
+[00:01:26] days later, we see the headline that the company has just finished raising $5 million in
+[00:01:32] the secondary offering, and then we're like, oh, well, that explains why we saw all
+[00:01:36] those Jackknaps.
+[00:00:00] So, but in the moment when we're seeing the jackknife, we don't know for sure that's what's causing it.
+[00:00:06] But it's a reasonable conclusion.
+[00:00:09] The only other conclusions really would be that there's either really big traders out there that are pushing the stock one way or another to try to fake people out or to try to cause stops to fire.
+[00:00:22] But that doesn't really make as much sense unless they're one of the institutional traders that are making the market.
+[00:00:31] Because they make the market if they can buy your shares back lower, right?
+[00:00:35] And then they turn around and sell them at a higher price.
+[00:00:38] So, market makers, institutional traders who make the market, and investment bankers who are conducting secondary offerings on behalf of companies are the two most likely culprits for these types of jackknife moves.
+[00:00:51] And then there's that rally backup all the way back up to 670 and then even higher volume selling as it comes back down.
+[00:00:59] So, you know, if the company wants to let it run, maybe the investment banker says all right, let's dump it here and then we're going to take our hand off for a second.
+[00:01:07] We'll let people rally it back up, let shorts get trapped, they'll think it's over, they get squeezed and then we'll dump it again.
+[00:01:13] Now, longs get smoked, shorts got squeezed and then we'll take our foot off the gas again, let it go again.
+[00:01:19] Our took our foot off the break, I suppose, as it were, and then dump some more shares on the next pop.
+[00:01:24] So, it's in a lot of ways with these companies, they are in control of how much they want to let their stock go up.
+[00:01:32] And so, when we see a stock make a huge move, then that tells us that the company doesn't...
+[00:00:00] need to raise money right now. Interesting. They don't need to raise money. So if their price
+[00:00:05] is going higher, that's great. And, you know, maybe that positions them to either maybe insiders
+[00:00:14] could sell some of their own shares, which would be a small percentage of shares, executing
+[00:00:19] on their options contracts, which employees sometimes have. Or maybe, of course, employees could
+[00:00:25] borrow against their stock to invest in something else. And if the stock price is higher,
+[00:00:30] they can borrow more money. Or perhaps they're trying to position the company to get bought out
+[00:00:37] by another company. Or maybe try to get the company to trade it a price where it just becomes
+[00:00:43] very attractive. Even to, it becomes a midcap stock. It's no longer a small cap. And then maybe it's
+[00:00:49] attractive to mutual funds and things like that that invest in up and coming biotech growth stocks,
+[00:00:54] or whatever the case may be. So we don't always know why one company would allow their stock to go
+[00:00:59] from $6 to $2,500 a share. That was the Chinese company HKD. And then why another one would
+[00:01:07] be doing a secondary offering when the stock's up only 50%. One is more desperate for money than the
+[00:01:12] other. It might seem. Or one maybe has a different outlook. We just don't know. It's speculation.
+[00:01:19] So here we have a little, a little bulltrap up there, pops up, and then drops back down. That's
+[00:01:25] not a super dramatic one. This is one's a little lower price, but you can see that kind of swing in the
+[00:01:30] price action there. Big Jackknife right there. And this is actually the strategy that I'm going to
+[00:01:36] teach you guys in...
+[00:00:00] is a chapter 7 or 8 where one of the strategies I have is after the Jackknife to buy the
+[00:00:06] dip and set my stop at the low of the pullback. It's a little risky. I wouldn't take
+[00:00:11] full size on that setup, but often after that panic, buying when other people are
+[00:00:17] panicking, selling, tends to work well unless there's a breaking news event that
+[00:00:24] justifies the selling. If news just came out that, you know, the CFO is admitted that
+[00:00:30] there's fraud or something, then you know, you probably don't want to buy a giant red
+[00:00:35] candle. But if there's no news to account for this, then we attribute it to one of
+[00:00:41] the other more likely, you know, causes in which case once the selling is done, it may
+[00:00:48] kind of grind back up. Sometimes it's just a short move, and then sometimes it ends up
+[00:00:53] being a bigger move, and anyone, you know, who shorted it gets stopped out, goes back
+[00:00:58] up, and anyone who's long, who got stopped out, gets back in because they're so frustrated.
+[00:01:03] They're like, screw it. I'm all, I'm back in, and next thing you know, it's halted up,
+[00:01:07] and then, uh, through new high of day, this thing could actually put in a bit of a squeeze.
+[00:01:13] So, you know, that's where things can get, uh, a little bit crazy. But, yeah, in this
+[00:01:17] case here, you had that Jackknife, that big flush all the way back down, and then a
+[00:01:22] little bounce off the low, high volume on that selling, and then the slow grind back up.
+[00:01:28] Here, another big Jackknife candle right there, so that squeeze up, and then that flush
+[00:01:33] back down. This is the MACD, just in a different visual form.
+[00:00:00] I'd just change the colors so I could see more clearly
+[00:00:02] that I would only trade when it was green.
+[00:00:04] So MACD here was negative,
+[00:00:06] so I wouldn't have taken that trade anyways.
+[00:00:08] Only trading when the MACD's positive.
+[00:00:10] You can always go into the settings on your MACD,
+[00:00:14] if you want, and change the colors.
+[00:00:16] So if you go on to, so this is our one minute chart,
+[00:00:21] where we have the MACD, I'm just gonna pull up a chart,
+[00:00:25] just to see something a little bit more clear with clearly.
+[00:00:28] So let's go back to, we'll get this one just right now.
+[00:00:34] So here on SGBX, you could see this kind of rally back up.
+[00:00:38] So this is our MACD.
+[00:00:40] So you could go in here to style,
+[00:00:43] and you could turn off the histogram if you wanted to.
+[00:00:47] You could change the signal to be, for instance,
+[00:00:51] area like that, and you could make it red,
+[00:00:54] and then you change this to be green,
+[00:00:57] and make that area.
+[00:00:59] And then I'm only gonna trade when I can see the green,
+[00:01:02] and we're above the signal line, or we're above the zero line down here.
+[00:01:06] So this is an area, so it makes some times a little bit more black
+[00:01:09] and white.
+[00:01:10] If it's negative down here, we wouldn't trade that
+[00:01:12] because we're actually below the zero line.
+[00:01:15] So I've done that at times, and then I switch it back.
+[00:01:18] I'm like, well, I guess I actually don't know if I like that.
+[00:01:21] So right now, I just have my standard settings right there.
+[00:01:24] Okay, so now we'll jump back out of there,
+[00:01:27] and we'll move that up here.
+[00:01:29] And there's another jackknife right there.
+[00:01:32] So that's the liquidity trap, the pop,
+[00:01:34] and then the flush, and then buying the dip
+[00:01:37] for that rally back.
+[00:00:00] up. Again, it doesn't always work. One of things to pay attention to is the time. Because
+[00:00:07] if bad news is coming out, usually those headlines are going to get released at the top
+[00:00:11] of the bottom of the hour. So, you know, even during regular trading hours. So, 10 am, 10
+[00:00:17] 30, 11 am, they already know, you know, and then they scheduled the news. So, they're scheduling
+[00:00:24] it, you know, just, they're putting it out there. So, as soon as it hits the wire, it's
+[00:00:29] going to get circulated, people will see the headline and the stock will drop automatically
+[00:00:33] from high frequency trading algorithms that see bad news in the headline and pull back their
+[00:00:38] bi orders and or flip short on the stock instantaneously. So, when we have a jackknife,
+[00:00:44] I almost always am like, oh, is this actual news? And then I check the time. And if it's
+[00:00:48] like, no, it's 11, 18 in the morning. And then, okay, it's not news. So, let the panic happen
+[00:00:55] and then, you know, buy up down here and look for that reversal going back up.
+[00:01:01] Another jackknife right there. Again, many of these during regular trading hours, in this
+[00:01:06] case, the MACD was negative. So, this isn't a setup that I would have traded, but, you
+[00:01:11] know, when you point it out, it's like, ah, these are really nasty. Look at that jackknife,
+[00:01:15] high volume rejection. And unfortunately, a lot of beginner traders end up losing money on
+[00:01:20] these kind of jackknives because they just don't know better. They're trading against
+[00:01:24] the MACD, they're trading later in the morning. They just don't understand kind of the mechanisms,
+[00:01:29] you know, that are going on behind the scenes that result in these types of candles. And that
+[00:01:32] are going to prevent the stock from trading more cleanly. But again, these dips can be bought.
+[00:00:00] opportunities. The Jackknife can be. This one actually had two of them there. And I will sometimes
+[00:00:06] take that side of the trade. Now this one I did show you guys already. We had those sort of double
+[00:00:13] bottom right here, sort of dip down, dip down, then rallies. And this sort of broke down here
+[00:00:18] looked like it was going down and then rallies back up. But when you start having a lot of
+[00:00:23] topping tail candles, these do become a little bit, they become harder to trust because you just
+[00:00:28] can't count on the move sustaining. A little, maybe bolt trapped and a little bear trap,
+[00:00:33] then it kind of comes back up, choppy price action. Another big jackknife, you don't want
+[00:00:38] to see that. Another couple more jackknife right here, a big rejection there, drop them down,
+[00:00:46] and then another one right here. So yeah, you know, this is one of these things in the market that
+[00:00:52] you just got to be aware of that jackknife kind of rejection. So break out or bail out.
+[00:01:00] Here's what I'm going to say. Don't overstay you're welcome. Don't stay trapped in the wrong
+[00:01:04] direction. There's no way to prevent getting caught in a bolt trap from time to time. It will happen.
+[00:01:08] It even, it happens to me. The best remedy though is to exit immediately just to get out of the
+[00:01:13] trade. And to learn to recognize some of the red flags that can indicate a higher likely
+[00:01:18] hitable traps, such as the previous history of false breakouts, the extended chart,
+[00:01:23] perhaps seeing large sellers on the level two, perhaps the time of day. Maybe the float, the
+[00:01:28] price, the presence of a secondary offering. Where the companies from? If you can look into the
+[00:01:32] filings or you listen to me, if I go and look at them, you know, which underwriters involved in this
+[00:01:37] company.
+[00:00:00] are they an underwriter who has a history of
+[00:00:02] causing jacknights on other stocks?
+[00:00:04] Because then that's something we should be aware of.
+[00:00:06] So bolt traps and bear traps can happen
+[00:00:08] ultimately in any pattern for a variety of reasons.
+[00:00:12] And so the best thing you could do is just
+[00:00:14] step out, take the loss if it's a loss and recognize,
+[00:00:17] okay, that stocks are not super easy.
+[00:00:19] Ask yourself if there's anything you could have done
+[00:00:21] that would have or anything you should have looked at that would have indicated
+[00:00:24] that was about to happen.
+[00:00:25] So you could have prevented the loss.
+[00:00:28] But at the end of the day nobody's right 100% of time.
+[00:00:31] I'm certainly not.
+[00:00:31] I have my fair share of losses and you will too.
+[00:00:34] So you just got to cut them quickly and then move on.
+[00:00:37] Okay, so with that we're going to jump into the next part here on
+[00:00:42] in chapter five which is the difference between the front side
+[00:00:45] and the back side of a move.
+[00:00:47] All right, this is going to be some interesting stuff.

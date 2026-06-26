@@ -1,0 +1,98 @@
+# Round Trips.mp4
+# Transcribed: 2026-06-26T19:28:13.360558
+# Duration: 13.7 minutes
+# Model: faster-whisper tiny
+# Language: en
+
+[00:00:00] So, the round trip, this is when a stock pops up, like RECT, and then gives back all of its gains.
+[00:00:07] Now, as I mentioned before, we might interpret this to mean that, oh, this is a stock that must have just had really bad news.
+[00:00:14] Or this is a stock that, you know, shouldn't have even popped up to begin with.
+[00:00:20] It was just a weird, algo spike, and then it rolled over.
+[00:00:25] But what we don't know is whether or not insiders are selling, whether or not the company's selling.
+[00:00:30] So, there's a lot of variables that we're not really sure about.
+[00:00:33] But the very fact is, the stock squeezed up it made a big move.
+[00:00:37] It went up over a hundred percent, 200 percent, maybe even more, and then it gave it all back.
+[00:00:43] Heavy volume selling.
+[00:00:45] And so, a round trip inherently is bearish.
+[00:00:49] There may be times where we trade around trip on the front side of the move, before the MACD crosses over,
+[00:00:55] having no idea, you know, of course, with the rest of the day it's going to hold,
+[00:00:58] we're buying the pull back, we ride the momentum, and then it starts to kind of break down.
+[00:01:03] So, we're done trading it, maybe we give back 10 percent off the top, whatever.
+[00:01:06] But we cut our loss, we move on, and then we just watch it slowly, unwind.
+[00:01:10] And it's like, wow.
+[00:01:12] And then, next thing you know, the stock's actually red versus the previous day's close.
+[00:01:16] And you're like, are you serious?
+[00:01:18] So, what was that about?
+[00:01:20] How was there that much selling?
+[00:01:24] Who was selling?
+[00:01:25] Was that short sellers?
+[00:01:27] They were shorting something that was this far down.
+[00:01:29] Would you really short something way down here?
+[00:01:32] I mean, the stock was up here.
+[00:01:34] Or is this the company, you know, liquidating?
+[00:01:37] Or something that, you know, we'll talk about a bit more.
+[00:01:40] You know, it's one of these things we can get into more detail on.
+[00:01:43] But when these companies, when they raise money, one of the things that they'll often do is they'll sell
+[00:01:48] Warrens to institutional traders, which gives those institutional traders the right to sell stock.
+[00:01:55] And so there may be institutional traders out there that bought those Warrens.
+[00:01:59] And they're now executing them on the open market, so they're selling and caching in, taking profit.
+[00:02:05] So it could be institutional traders with Warrens.
+[00:02:08] It could be, you know, could be individual investors who've been holding for a while.
+[00:02:14] It could be the company doing a secondary offering.
+[00:02:17] You know, we don't really know.
+[00:02:19] But the net result is that there is more selling than there is buying.
+[00:02:23] And when there's more selling than there is buying, and, you know, clearly the price is not holding, then we step off.
+[00:02:30] We just accept that, all right, this is one that we've just got to let, you know, be with it is.
+[00:02:34] Not going to fight it, not going to, you know, overstep our welcome or over stare welcome.
+[00:02:38] I'm just going to accept that this is one of those stocks that unfortunately seems like it wants to do a round trip and we're going to let it take the round trip ticket.
+[00:02:48] So we do see this from time to time.
+[00:02:51] It is inherently bearish.
+[00:02:53] The more you see it, the more you worry that system short sellers will get more aggressive and just think I'm just going to keep adding and keep adding.
+[00:03:00] Because, you know, these just keep fading and what that's going to do in the short run is it's going to create more resistance as these move higher.
+[00:03:08] Because the shorts are going to be like, oh my gosh, I can't believe I stopped out here and then it's ended up coming all the way back down.
+[00:03:14] So we're going to start giving these a little bit more room holding a little longer.
+[00:03:18] And that'll work until, you know, as we saw in the previous example, it'll work until it fails epically.
+[00:03:26] But in the interim during a colder market, it can create heavier resistance.
+[00:03:32] So then when things are cold, you've got to really sort of bat and down the hatches and be willing just to sit on your hands and trade either with very small size or potentially not trade at all if it's it's a really cold market.
+[00:03:45] Now, having traded through bear markets, having traded through market crashes.
+[00:03:50] I certainly have had my fair share of no trade days.
+[00:03:54] I've never had a no trade week. I've never had a no trade month.
+[00:03:58] It's never been that bad. So, you know, I and even during the worst bear market and the worst stock market crashes, I still had green years as a day trader.
+[00:04:10] It's because I'm cash overnight.
+[00:04:12] So when I see an opportunity, I'm able to strike and then when it doesn't look good, I step out and when it gets choppy and we start seeing a lot around trips.
+[00:04:19] I just sit on the sidelines. So sometimes when I'm looking at the scanners in the morning, I'll notice that, you know,
+[00:04:25] this stock that hit it for in the morning or whatever the case is had, you know, this had now go spike. So, oh, there's an algos spike there for in the morning. So something really early.
+[00:04:36] This one looks like popped up a little bit early, then sort of pulled back.
+[00:04:40] I don't know if I'd really say that was an algos spike or not, but anyways, kind of rallied back up.
+[00:04:45] But if I look at these stocks and they start seeing, oh, there's a number of algos spikes and they're reversing.
+[00:04:52] Or there's a number of round trips and I, you know, I just factor that into, okay, this is the sentiment of the market today.
+[00:05:00] And until we have something that proves us, you know, wrong, I'm just going to assume that things are going to be a little bit choppy or I'm willing to step up to the plate.
+[00:05:08] We see something that looks better and opens up, but I've got to be patient.
+[00:05:13] So in those markets, we'll have the initial spike, which is going to have sellers kind of lined up.
+[00:05:19] It'll fade back down and what we instead look for rather than trying to participate in that first pop.
+[00:05:25] I mean, look, I'll trade the first pop until I'm no longer expecting and seeing price action that supports it.
+[00:05:31] This one was a fine example. This one worked.
+[00:05:33] But if we saw this, you know, start to fail every time, then we would sell the sidelines and we would wait and we would wait for curling patterns.
+[00:05:40] And then that's where we're back to trading the curl.
+[00:05:42] So the initial spike, the initial fade, even if it's a full round trip,
+[00:05:46] and then let the dust settle and see if people start to come back to it.
+[00:05:50] They realize, actually, this has decent news. And actually, you know, the floats pretty low on this thing.
+[00:05:55] And the daily charts pretty good. And then all of a sudden, you get that big squeeze.
+[00:05:59] And now it's game time. And we've got another stock in play.
+[00:06:02] So it's not uncommon to see around trip and then a rally back up.
+[00:06:07] As you saw, a couple of those examples already here in chapter five.
+[00:06:11] Okay. So with that, we are going, so that's, this is the only example for the round trip.
+[00:06:16] You'll see more examples when you're in the chat room, no doubt.
+[00:06:19] This is more or less what it looks like.
+[00:06:20] Some people call it a Christmas tree. All green on one side, all red on the other.
+[00:06:24] If this is my Christmas tree, I'd put the red side up against the wall, so I didn't even see it.
+[00:06:28] But yeah, it's that v pattern.
+[00:06:31] Sometimes we see it inverted where there's a big drop and then a recovery.
+[00:06:37] But that's, like I said, not as common because the market prevents those big drops.
+[00:06:42] So we see them more of like steady sell off and then kind of bouncing back up.
+[00:06:46] But these ones are a bit more common because there's nothing stopping a stock going up 300, 500,
+[00:06:52] a thousand percent potentially in as little as, you know, a minute.
+[00:06:57] If there were enough buyers and the market makers pulled off on the bits.
+[00:07:01] So, all right, so you learned a ton here in chapter five.
+[00:07:06] I may add another set up but until then you can continue on to either the next set up in chapter five,
+[00:07:14] or on to chapter six.

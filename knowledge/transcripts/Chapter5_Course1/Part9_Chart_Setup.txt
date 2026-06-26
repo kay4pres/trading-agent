@@ -1,0 +1,161 @@
+# Segments: 8
+# Transcribed: 2026-06-26T19:16:21.375723
+
+[00:00:01] Okay, so now I'm going to walk you through how I set up my charts on my monitors.
+[00:00:07] We already talked about this a little bit in chapter one, is I kind of laid out for you my preferred trading station set up.
+[00:00:15] But I'll just reiterate that here and also I'll show you some examples of kind of how screenshots really of how my charts are laid out.
+[00:00:22] So I'm going to walk you through out of set up your charts, making sure you add the correct indicators and adjust the settings,
+[00:00:28] getting your charts to look the exact same as mine, because naturally if you're trading the same strategy as me,
+[00:00:33] I want to make sure you're seeing the market through the same lens that I'm seeing it.
+[00:00:38] So how do we set up your charts?
+[00:00:40] Well, as you know, we need the following indicators.
+[00:00:43] The nine, the 20, the 200 EMA.
+[00:00:46] Don't we've got the volume-weight average price, V-wap, standard settings.
+[00:00:50] We need the MACD, standard settings, and we need volume bars.
+[00:00:55] Now to look for that multi time frame alignment, I'm going to have the one minute and the five minute side by side.
+[00:01:01] So I'll have the five minute, then the one minute right next to it.
+[00:01:04] The 10 second chart zoomed in here, the daily, and then a breaking news feed.
+[00:01:09] So I can see the news of the stock that I'm trading at that moment.
+[00:01:13] So that's what this looks like right here.
+[00:01:16] So in fact, if you looked at my layout, my entire kind of computer system here, this is what you would see.
+[00:01:23] Monitor one is right here.
+[00:01:25] So monitor one is these are the stocks that I'm trading at that kind of moment.
+[00:01:31] The way I have this, and I'll zoom this in, please.
+[00:01:33] This monitor one, monitor two, and monitor three.
+[00:01:36] So monitor one.
+[00:00:00] one, we'll just make this bigger for a second.
+[00:00:02] This is my, oops, I gotta bring this to the front.
+[00:00:05] Let's see, so order, bring to front.
+[00:00:09] So monitor one right here.
+[00:00:11] This has my trading software on it.
+[00:00:14] So I've got my trading software, which is my level two,
+[00:00:17] my order entry window, level two, order entry,
+[00:00:21] and I can watch up to four stocks at the same time.
+[00:00:24] So this is showing me my PNL, where I'm at on the day,
+[00:00:27] my orders that have gone through, any active orders
+[00:00:30] are currently live, my low K button.
+[00:00:32] So I can see what the cost of shares to borrow is.
+[00:00:35] And then I've got the level, sorry, the time in sales right here.
+[00:00:39] This is showing all the quotes for the stock that's in focus.
+[00:00:42] This is my low flow top gainer scanner.
+[00:00:46] And then this right here is the chat room,
+[00:00:47] where I can see what people are typing and answer questions.
+[00:00:50] So that's my laptop monitor.
+[00:00:53] Now, the monitor above my laptop looks like this.
+[00:00:56] This is the one that you guys always see on my screen share.
+[00:01:00] So this is right here, it looks like this.
+[00:01:04] And this is where I've got one, two, three, four charts
+[00:01:07] with the news feed, my scanners, and my PNL
+[00:01:10] is broadcasting, so of course members can see it.
+[00:01:13] And then my third monitor is this one right here,
+[00:01:17] which is a close-up of basically, it's four stocks on,
+[00:01:21] sorry, it's two stocks on watch, and I have four charts
+[00:01:24] for each one.
+[00:01:25] So one minute, the five minute, the daily, and then the 10 second.
+[00:01:29] So these are four charts for one stock,
+[00:01:32] and then these are four charts for another stock.
+[00:01:35] So here I've got the S&P 500, and here I've got the...
+[00:00:00] this other stock ALZN, which I was trading today.
+[00:00:03] Okay, so now let's back these up.
+[00:00:05] The way I have this set up is this monitor
+[00:00:10] and this monitor are always right above and below each other.
+[00:00:13] The reason I like this is because I usually have my mouse
+[00:00:16] down here on this monitor on my level two, right here,
+[00:00:20] where I'm actually actively trading,
+[00:00:22] so that would be right here.
+[00:00:24] And I wanna be on a quickly move my mouse up to the chart
+[00:00:28] to align it, to draw a new line,
+[00:00:31] to kind of get zoomed in on it,
+[00:00:32] and then come right back down to trading.
+[00:00:34] So I'm going back and forth here,
+[00:00:37] like a million times a day, right here.
+[00:00:39] And then I'm maybe typing a new symbol in,
+[00:00:41] arranging the five minute,
+[00:00:43] looking at the one minute checking the daily, checking the news.
+[00:00:45] But I'm going back and forth here most of the time.
+[00:00:48] My other chart over here on this extra monitor,
+[00:00:52] these have a couple of stocks I'm kind of half watching.
+[00:00:54] Some days I have stocks I'm watching very closely.
+[00:00:58] And other days I just say, well,
+[00:00:59] I'll put that stock on my side chart,
+[00:01:01] it's literally on the side.
+[00:01:03] And maybe I'll just keep an eye on it,
+[00:01:06] look if it starts to squeeze, I'll know.
+[00:01:08] Or I'll just put the S&P 500 up there
+[00:01:10] just to have a look at the overall market.
+[00:01:12] But that's generally kind of what my layout looks like.
+[00:01:15] So we've got my trading screen down here
+[00:01:19] with my order entry window right there,
+[00:01:21] and then we've got this right here.
+[00:01:23] So the way I set this up is I go ahead into indicators
+[00:01:28] and I add my indicators.
+[00:01:30] I add the nine, the 20, the VWAP, and the 200.
+[00:01:33] And then I save the chart, I click save right there
+[00:01:36] and you could save it as you'd like, make a.
+[00:00:00] copy and save it, and then what I do is I go over to the second chart, which you could
+[00:00:05] always open another chart going into the toolbar and clicking charts. Although, as I say,
+[00:00:10] we're always updating the software so some of the functionality may change a little bit,
+[00:00:14] but anyways, right now you can either load the extra chart from right here so you can click
+[00:00:19] on this, open another chart, or maybe we'll have it as a widget, you can click the widget,
+[00:00:24] drag it in. And then what I do is I usually will load, load layout,
+[00:00:29] I'll load the one that I just edited. So I'll load the, you know, purple five minute. All right.
+[00:00:35] And then I say, okay, this is actually just perfect. I'm going to change it to a one minute.
+[00:00:43] And now I've got to save as, make a copy, I'm going to make a copy, I'm going to say one minute
+[00:00:51] purple. The way this software works is you actually need to save a layout for each time frame,
+[00:00:58] because when you save your layout, it remembers what time you set it to. So if these are all five
+[00:01:05] minute purple, layout, they'll all be five minute time frames. So I need to have a one minute purple,
+[00:01:10] a five minute purple, a 10 second purple right down here and so on and so forth. So the easiest
+[00:01:15] way to do it is to make one and then load it. And then just, if you, oops, forgot to add the
+[00:01:21] MACD. So click on that MACD. We'll add that and then let's move pain up. I'll put it right there like that.
+[00:01:31] Actually, now I can't remember, is this how I usually have it? I think this is how I usually have it.
+[00:01:34] Now I've got myself all turned around. Anyways, it's fine. So I'll just save that.
+[00:00:00] that looks good. And then I save the layout. And we're good to go. So that gives me my one minute,
+[00:00:07] my five minute, my daily is the same. The only difference there is I don't have of course the
+[00:00:12] Mac D, but I do have that 200 SMA right here. That's a simple moving average. And then the 10
+[00:00:20] second doesn't have the 200, it doesn't have the Mac D. So it's just the VWAP, the 9 and the 20.
+[00:00:27] Again, I like to keep it simple. If you want to have them all be exactly the same and have the
+[00:00:31] 200 on the 10 second and Mac D on all of them, that's fine. But when you hear me talking about
+[00:00:37] Mac D, 99% of time, I'm referring to the one minute chart. I'm saying, oh, Mac D's going negative.
+[00:00:42] And I'm talking about the one minute. So you can always ask for clarification if you're not sure,
+[00:00:46] but this is how I have this set up. And then on my pop out monitor, so with the software, you can
+[00:00:54] pop out a window, and then you could go ahead and load four more charts. So one, two, three, four,
+[00:01:03] five, six, seven, eight, right, as many as you want, really. Within, I guess, reason of your computer's
+[00:01:09] capability. And then you can go in here and you can load your charts again. Now the other thing to
+[00:01:17] note is you want to make sure you link to a different color because links, if I link to this,
+[00:01:24] this will be linked to this chart back here. So even though it's on another monitor,
+[00:01:28] it'll still stay linked to the same color that you've got set up here. So you just want to choose
+[00:01:33] a different color for your external monitor, so we'll make that purple, whatever.
+[00:00:00] them all together, and then when you update one, change the symbol, it'll change all
+[00:00:03] four, and you just make sure you're layout. You can load your layouts here, so you can
+[00:00:08] load your layouts, the one-minute purple, five-minute, et cetera, et cetera. All right, so that's
+[00:00:13] basically how I have it set up. And if you have the monitor space, then you can make, look,
+[00:00:18] I mean, you could duplicate one of these and have an additional one as well. For me, I think
+[00:00:24] your minimum viable product is basically the three monitors as I've laid it out for you.
+[00:00:29] I think this is sort of the ideal trading station, and when I'm traveling, which you see me
+[00:00:34] on my traveling trading station all the time, I've made a tremendous amount of money on it.
+[00:00:40] That's all I have. Keep it simple. You don't need a travel with 11 external monitors. It's
+[00:00:46] overkill. This is adequate. Because for me, the way I trade, I focus on one stock at a time.
+[00:00:53] I rarely have positions in two stocks at the same time, very rarely. So one stock at a time,
+[00:00:59] that's the one I'm really focused on, and I like a lot. That's the sort of that one level
+[00:01:03] two window. And then, all right, maybe I've got two other stocks I'm watching. So realistically,
+[00:01:09] 90% of the time, I'm not using all four of my level two windows for stocks I'm watching.
+[00:01:16] And sometimes just to save a little bit of data, what I'll actually do is,
+[00:01:22] I'll just type something like that just to clear it out. Well, that's a stock. So just go like that.
+[00:01:28] That way, I don't have anything on there. So I just have ALNZ, ALZN, whatever it was.
+[00:01:34] So I've got this one on watch, and then this one. And these are the two I'm watching.
+[00:00:00] Maybe this is the one that I'm trading right now, so that's going to be the chart that's right up top, and then the second one's the one I've got on watch, and that's right here.
+[00:00:09] And sometimes as a day goes on, I'll be sort of switching between those two, but this is the way I've got my setup laid out.
+[00:00:17] So again, I think the goal here is that in order to perform technical analysis, you want to make sure you've got a nice layout, you can easily see your charts.
+[00:00:28] You can easily blow up the daily chart to see what you need to see.
+[00:00:31] Usually for me, once I've done my analysis on the daily chart, and I've kind of said, all right, we've got a level here, and then above that we go to the left and up, nothing really until like up here.
+[00:00:41] These levels are kind of smaller.
+[00:00:43] Oh, maybe there's a little pivot right here, kind of like a little high there, so pivot high came back down, so maybe that could be a double top.
+[00:00:51] Once I've done that, then I can back out that chart, and I don't really need to constantly be looking at the daily chart.
+[00:00:57] As long as I can see my levels right here, that's kind of all I need for the time being.
+[00:01:02] So that's why that daily chart usually stays small, because once I've checked it, I'm good.
+[00:01:07] And then the 10 second, the one minute and the five minute stay, you know, relatively equal size.
+[00:01:12] You know, you could zoom them in as you'd like to get more, you know, kind of really a close view, but it's just whatever you prefer in your comfortable with.
+[00:01:21] So one minute, five minute, the 10 second down here.
+[00:01:26] So that's how I've got my my setup laid out here.
+[00:01:30] I hope this is helpful for you guys and we're going to go ahead and continue on finally to chapter six.
+[00:00:00] We made our way through Chapter 5, so let's go ahead and jump in to Chapter 6.

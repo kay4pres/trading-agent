@@ -1,0 +1,222 @@
+# Segments: 10
+# Transcribed: 2026-06-26T19:19:00.857807
+
+[00:00:00] Okay, so now we're going to talk about the algo spike algo spikes are something that we see all the time
+[00:00:08] Specifically because the strategy that I'm trading and that so many other small cap momentum traders are focusing on is trading breaking news
+[00:00:17] So one of the things that's tricky about news is that there's news headlines that come out all day long on all the different stocks in the market
+[00:00:24] I mean there are some companies that put out a headline almost every single day or are tagged in a headline
+[00:00:30] That makes it seem like that company has some news headline that includes that company's name
+[00:00:36] Nearly every day so just because a company has news doesn't mean it's worth trading the way
+[00:00:42] Ultimately we find that something is worth trading is because the price moves up and then as it moves up
+[00:00:48] We check to see why and we notice that there is a catalyst
+[00:00:53] So this is an example right here of what's called an algo spike
+[00:00:58] So basically all of a sudden this stock starts
+[00:01:02] Start surging and it goes from two to three to four to five to six all the way up here to high of nearly six dollars in 50 cents
+[00:01:11] Incredible and then it comes all the way back down
+[00:01:14] So what happened in that moment right there?
+[00:01:18] So we got to get on the way board to better understand this because two things were going on number one
+[00:01:24] The company had a news headline. Okay, so you've got breaking news that breaking news hits the market
+[00:01:31] So as soon as that news comes out the stock has naturally a bid and an app
+[00:00:00] as all stocks do. So initially, the price was down at around $2, maybe by $2.20.
+[00:00:07] It might have been a big spread because initially, the stock had zero volume, so nobody
+[00:00:13] was watching it. But this news came out and some Algo out there, we don't know who was running
+[00:00:19] it, but some Algo out there, read the news, was able through that algorithm to see the current
+[00:00:26] quote of the stock and say, you know what? I like it. Initiated automatically in order,
+[00:00:31] let's say, for $10,000 shares at $2.20. Now as soon as that order got sent, the market maker
+[00:00:37] that was sitting on the ask sees the market, sees the order come in for $10,000 shares and is like,
+[00:00:43] oh, and before the order gets filled, they start moving the price up. So maybe some of the order
+[00:00:50] fills at $2.20. So 100 shares fills at $2.20. And then another 100 shares, or maybe a thousand,
+[00:00:57] fills at $2.25. And then another thousand fills at $2.35. And all of a sudden, by the time
+[00:01:03] this full 10,000 share order is filled, they've gotten slippage, maybe all the way up to $2.45.
+[00:01:09] 25 cents a slippage. Now then thinkable for a stock with no volume early in the morning. So now
+[00:01:14] all of a sudden, the level 2 has gone from $2.25. So the spread has opened up in a big way.
+[00:01:22] And so this person has their 10,000 shares, but the stock has immediately begun to spike. So as it spikes,
+[00:01:29] other trading algorithms are going to see that this stock is spiking. It has news and they're going
+[00:01:35] to initiate their own orders. To buy another...
+[00:00:00] 10,000 shares. Maybe they're starting to do bigger orders, but we're just going to use this for example.
+[00:00:04] Maybe there's 100,000 shares. So 245, all of a sudden the market makers see that or it comes in.
+[00:00:10] It pulls it to 255, fills some of the order. That's to 65. Then to 75, then it goes up to 3.
+[00:00:16] Starts moving really quickly. And the big moves up. Maybe some traders,
+[00:00:20] and other algorithms are like, oh, I'm going to try to buy this, but I execute my orders on the bid.
+[00:00:25] So now the bid is like, let's say 280.
+[00:00:27] So now I've got a bid that's 280. The ask is 325.
+[00:00:31] And now you've got another big green candle. So now all of a sudden this stock is moving.
+[00:00:38] And it's these high frequency trading algorithms trading against each other, buying and selling.
+[00:00:43] And some of them, maybe sold, some of them are still adding.
+[00:00:46] So as this is spiking up, naturally the stock is going to start hitting scanners.
+[00:00:51] So we have certain minimum volume criteria on our scanners,
+[00:00:54] but it won't take long at all for this to start hitting scanners.
+[00:00:57] 50,000 shares of volume, 75, 100, 150, 200,000 shares of volume,
+[00:01:01] stocks up 100%, 200%, now 300%.
+[00:01:04] So as it squeezing up inside of that one minute candle, people get audio alerts within a second.
+[00:01:11] Of course with our scanners, but we use the similar technology the other people have used before.
+[00:01:16] So scanning the market in real time.
+[00:01:18] So algorithms are getting this information, retail traders are getting it,
+[00:01:22] and some people begin acting on it. They decide to execute trades.
+[00:01:26] So now you may have a couple retail traders that start to execute trades.
+[00:01:29] They'd have to be very quick to get in this early.
+[00:01:32] So maybe not within the first 10 seconds, but maybe within the first 30 seconds.
+[00:00:00] So the initial spike is created purely by high frequency trading algorithms.
+[00:00:04] It squeezes up, squeezes up, squeezes up, and so the way it works is that as all of these orders are coming through,
+[00:00:12] the market maker for fear of inadvertently becoming short, a huge position on the stock pulls back their orders,
+[00:00:19] so they keep moving their orders higher.
+[00:00:21] So more orders come in and because of the way orders are routed,
+[00:00:26] the market maker has an obligation to fill what they're showing here,
+[00:00:30] but then they don't have to fill the whole order.
+[00:00:32] If an order is for 25,000 shares, and they're only showing 100 shares,
+[00:00:36] they only have to fill 100, and then they can cancel their order and move it to a higher price.
+[00:00:41] So now 395.
+[00:00:42] So then this person suffers slippage.
+[00:00:44] The market maker, however, doesn't end up being short of stock.
+[00:00:47] Or maybe, well, maybe they do they're selling it to a higher price.
+[00:00:50] But they keep moving their orders higher and higher and higher.
+[00:00:53] So next thing you know, all of a sudden, you're going to see $4 on the ass.
+[00:00:56] Then 480, 490, then 5, and suddenly in an instant, you can see 650.
+[00:01:02] You can see 7.
+[00:01:03] You can see 8.
+[00:01:04] You can see 10.
+[00:01:05] And I've seen this happen.
+[00:01:06] We're all of a sudden it shows 12.
+[00:01:08] And that's so 16.
+[00:01:09] Then it's 18.
+[00:01:10] And that's 22.
+[00:01:12] And I've literally seen stocks on an Algo spike.
+[00:01:15] Go up to over $50 a share in an nearly an instant.
+[00:01:20] It's unbelievable.
+[00:01:23] These are the computers just reacting off of each other.
+[00:01:26] Now, this is something that we'll talk about when we get into one of the next chapters.
+[00:01:34] There was a time where we also had flat...
+[00:00:00] crashes in the market, where these algos work to the other way.
+[00:00:03] They started dropping and selling and stocks would sell and short sellers would sell.
+[00:00:08] And you could have a stock that would lose 50% of its value in an instant.
+[00:00:12] And then it would usually bounce right back up because it was oversold by the algorithm
+[00:00:16] that was gone, hey, why?
+[00:00:17] And so there's certain mechanisms in the market that prevent this from happening going down.
+[00:00:23] But they don't have anything to prevent it from going up because, you know, of course,
+[00:00:26] it's the market.
+[00:00:27] Everyone wants their stock to go up.
+[00:00:28] So no one's going to encourage the regulators to put in some mechanism that will prevent
+[00:00:32] that from happening.
+[00:00:34] So a stock can go from $2 to $50 a share in three minutes.
+[00:00:38] And I've literally seen it happen.
+[00:00:40] If you are quick, you can participate in this spike.
+[00:00:44] But I'm going to warn you, this is high risk stuff because as quick as they go up
+[00:00:47] as you can see, they can come right back down.
+[00:00:50] Because these algorithms are feeding off of each other and they're, it's, it's,
+[00:00:54] exasperating the volatility, what was initially designed to create more liquidity in the market
+[00:01:02] these market makers.
+[00:01:03] They actually amplify the volatility and reduce the liquidity when they pull out their orders.
+[00:01:10] When they pull their orders off the book, then all of a sudden, you've got a much thinner market
+[00:01:14] and you have much bigger moves.
+[00:01:16] It's very interesting.
+[00:01:17] So contrary to what they're really supposed to be doing.
+[00:01:21] But then when ends up happening, it's all of a sudden, this thing goes up to
+[00:01:24] you know, $6 a share and maybe there's a short seller or there's an insider who's like,
+[00:01:30] oh, gosh, this is unbelievable.
+[00:01:31] I'm going to sell 50,000 shares.
+[00:01:34] They try to sell 50,000 shares.
+[00:01:36] The bid is, let's say, 550.
+[00:00:00] And the bitter sees that order come through and is like, ah, ah, no, no, no, no, I'm canceling my order.
+[00:00:06] Here, you can have the 100 shares I showed you, but now my order's going down to 450.
+[00:00:11] And suddenly the stock tanks all the way down, big red calendar 450.
+[00:00:16] And then some of that order executes and then they drop the order even more to 350.
+[00:00:20] They're dropping it big time.
+[00:00:21] And now we're all the way back down.
+[00:00:24] So these algo spikes can also result in a full reversal, which we actually call a round trip.
+[00:00:33] Now, sometimes these round trips can happen within an instant.
+[00:00:36] As you can see in this example here, it happens almost within a second.
+[00:00:39] Other times the round trips take a little bit longer.
+[00:00:42] As the initial spike was generated by these high frequency trading algorithms.
+[00:00:47] But then retail traders kind of jumped on and kept trading it and they kind of supported it.
+[00:00:52] They held it up.
+[00:00:53] There weren't any inciders that were dumping big positions.
+[00:00:55] So it just kind of held at this sustained level for a little while until the wind sort of comes out of the sale and it starts to unwind.
+[00:01:04] So it's the day goes on.
+[00:01:06] It might kind of settle back down.
+[00:01:08] And eventually do a round trip, but not as dramatically as one spike up and then one complete reversal.
+[00:01:14] So algo spikes are not new.
+[00:01:17] They have been around for really as long as the market has had the earliest digital trading algorithms that we're executing orders.
+[00:01:27] And even certain retail traders that we execute orders very, very quickly dating back to the late 80s and the 1990s.
+[00:01:34] So this isn't new.
+[00:01:36] They're becoming more sophisticated.
+[00:00:00] it. To the extent that some of them may try to use AI and learning models to improve
+[00:00:06] that may be the case. But nonetheless, we do see that they create some of these anomalies
+[00:00:13] where you got a big spike and then it comes all the way back down. And then as you can see
+[00:00:16] here, the stock did end up rallying back up. You know, it did, people were like, okay, you
+[00:00:21] know, well, that was crazy. But actually, I do like the stock. So, you know, let's see what this
+[00:00:26] thing is going to do. And so it did end up giving us some opportunities, which then kind of
+[00:00:30] feeds into what I was mentioned before, which is that curling pattern. So you get that initial spike
+[00:00:35] and then you kind of get the curl. Other times you get the initial spike, as you got right here,
+[00:00:40] big algo spike squeezes up and then it kind of unwinds and that sort of bit. And then this was
+[00:00:46] at four in the morning, really early. But then all of a sudden here going into 630, it kind of curls
+[00:00:52] up again. It tries again. And then coming into 7 AM, you know, it gives us another move all the way
+[00:00:58] up here. And this has huge range. So this algo spike went from $6 to $19 a share in one minute,
+[00:01:06] two minutes, nearly instant. And then comes all the way back down to 6. And then rallies back up again.
+[00:01:14] And this was not an algo spike. Not to say that the price action wasn't influenced by the market
+[00:01:21] makers pulling back their orders. Because they do that any time there's height and volatility.
+[00:01:26] So they don't inadvertently just leave an order to sell 100,000 shares and let people buy it.
+[00:01:31] They're now short. And the stock goes up $10 a share in their down a million bucks. So making the market is
+[00:00:00] very risky. If you're making the market, you're offering to buy any time someone wants to sell
+[00:00:06] and you're willing to sell any time someone wants to buy. So you could inadvertently,
+[00:00:10] if you oversell your position, become short or inadvertently, if you over buy a position,
+[00:00:14] become long. So unless you're going to sit there as a market maker at your desk,
+[00:00:19] managing the positions you're posting, which is what they did in the 80s and the 90s,
+[00:00:24] but eventually they made they automated it. So now they automate it to these algorithms that
+[00:00:29] are automatically moving the bids and adjusting them based on the flow data. So when all the
+[00:00:35] sudden a lot of orders are starting to come in the market makers pull back, they let that liquidity
+[00:00:39] out, they let it have a big move, and then when it starts to slow down, they fill back in.
+[00:00:45] Because they're trying to manage their own risk. You know, they're, yes, they're making the market,
+[00:00:50] they're trying to make money, but they actually in a way would make more money in a relatively
+[00:00:55] stable sideways market, but where there's high volume. Because every time someone's buying and
+[00:01:00] selling, it's across the spread. So if you've got a 5 cents spread, 10,000 shares is 500 bucks.
+[00:01:05] So every time they do a 10,000 share trade, they make 500 bucks. You know, they do 100 of those
+[00:01:10] day, and they're having a great day, right? So that's kind of the whole thing with making the market,
+[00:01:15] but when you have highly volatile stocks like this, there will be fewer market makers that are
+[00:01:20] even willing to take the risk. And so that actually perpetuates how big these algo spikes can be.
+[00:01:27] Because there's only a few market makers that are even sitting on the market. So suddenly if there's
+[00:01:31] no one sitting on the market, could you actually have no one on the ask? No one's selling?
+[00:00:00] This is crazy. I've seen it happen before.
+[00:00:02] This is, it's crazy. So, all you see are buyers.
+[00:00:06] 7, 8, 9, 10. The buyers are on the bid. There's nobody selling.
+[00:00:10] There is no sell order. There's only buyers.
+[00:00:14] It shouldn't happen. But I've seen it happen before.
+[00:00:17] So, that's, and I'll go spike to such an extent
+[00:00:21] that some of the high frequency trading algorithms that are making the market
+[00:00:24] just simply shut off. And they said, we're not making the market for the stock.
+[00:00:27] It's too volatile. We're just offline, automatic, you know, kill switch.
+[00:00:32] This is another algo spike on the one-minute chart from 450 up to 8 bucks
+[00:00:37] and then it retraced it pulled back.
+[00:00:39] All right. Here's another algo spike on a 10 second chart from $2 up to about $10.
+[00:00:45] And so, this, if you were quick, 30 seconds, 40 seconds in, you could have bought that dip there at
+[00:00:50] at 6 and rode the momentum up to 8. So, how would we have seen that?
+[00:00:54] We would have seen it as the stock was hitting our scanners right here.
+[00:00:57] Check the float, check the volume, check the price, pull up the chart, check the news,
+[00:01:02] and then pull up the level 2 and execute the order buying this little micro pullback.
+[00:01:06] And I would have been happy to do that. Another algo spike kind of pulls back,
+[00:01:11] pops up a little bit more, pulls back. And then it's not till a little bit later in the
+[00:01:15] morning that it breaks out. And this is where more traders evidently jumped into it.
+[00:01:20] That's not really, that's not an algo spike based on this. This was the initial spike.
+[00:01:25] And then this is just people jumping in it and then the market makers pulling their orders back.
+[00:01:30] This was now a spike at the beginning and it held and the stock kind of rallies up,
+[00:01:34] right, pulls back, rallies higher, ends up going from $2 to $2.
+[00:00:00] $11 a share.
+[00:00:01] So there are some people that will try to create algorithms
+[00:00:06] where they will execute orders simply if a stock
+[00:00:09] is moving up a certain percentage.
+[00:00:11] These are very primitive algorithms.
+[00:00:12] They're not like AI or machine learning anything.
+[00:00:15] It's just if a stock moves up 10% in one minute
+[00:00:19] by me shares.
+[00:00:20] Now, I don't do that.
+[00:00:23] I am a discretionary trader.
+[00:00:24] I use my discretion to press the buy and sell button.
+[00:00:28] I would never just automate it to a computer
+[00:00:30] and trust the computer to execute trades on my behalf,
+[00:00:33] buying a stock up in 75 or 100%.
+[00:00:36] Just because it's moving higher.
+[00:00:38] Because there's just too many variables.
+[00:00:40] I couldn't take that risk.
+[00:00:42] But some people do take that risk.
+[00:00:44] And some people do it at the opposite direction
+[00:00:47] and they're called system short sellers.
+[00:00:50] So we're going to learn about that in this next section.

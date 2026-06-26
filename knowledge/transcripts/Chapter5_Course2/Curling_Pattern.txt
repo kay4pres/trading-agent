@@ -1,0 +1,243 @@
+# Curling Pattern.mp4
+# Transcribed: 2026-06-26T19:23:16.112081
+# Duration: 10.3 minutes
+# Model: faster-whisper tiny
+# Language: en
+
+[00:00:00] is a pattern that I didn't use to trade.
+[00:00:03] This is not one of the OG patterns
+[00:00:06] that was one of the first trading patterns I understood.
+[00:00:09] This is one of the ones that's been a more recent development.
+[00:00:12] The curling pattern, like the pulling away pattern,
+[00:00:15] is a bit more complex.
+[00:00:16] So what happens here is the stock initially spikes up
+[00:00:21] and then drops back down and then curls all the way back up.
+[00:00:26] It's such a strange pattern.
+[00:00:27] This is a five minute chart.
+[00:00:29] So you can see here we have this big topping tail
+[00:00:32] and then the price obviously squeezed up to 850
+[00:00:35] comes all the way back down to five
+[00:00:37] and then somehow manages to rally all the way back up.
+[00:00:41] This is bizarre and then it ends up selling off
+[00:00:44] in this particular instance.
+[00:00:46] So what is going on that allows this curling pattern
+[00:00:50] to exist?
+[00:00:52] Here's another example.
+[00:00:53] We have this big squeeze here
+[00:00:55] and then it pulls back, pulls back
+[00:00:57] and then all of a sudden it's back at the highs.
+[00:01:00] It's not an inverted head and shoulders pattern.
+[00:01:03] It's kind of a break of a pivot.
+[00:01:07] It's not an ABCD pattern.
+[00:01:08] It's what is it?
+[00:01:09] It's a curling pattern.
+[00:01:11] Why the curling?
+[00:01:12] Here's another example.
+[00:01:14] This one, this big rally up right here, pulling back
+[00:01:18] and then we're looking for that curl coming back up.
+[00:01:21] Give you another example here.
+[00:01:22] Pops up earlier, sells off, goes sideways
+[00:01:26] and then starts to ramp back up
+[00:01:28] and you get that big move.
+[00:01:30] Here's another one.
+[00:01:31] This one pops up earlier, sells off
+[00:01:33] is actually below V-wap
+[00:01:35] and then suddenly curls back up.
+[00:01:38] That one's probably going to be one of the hardest to trade
+[00:01:40] because it went below V-wap.
+[00:01:42] It went almost possibly red on the day
+[00:01:46] and then rallies much later.
+[00:01:48] So if we go back to this one right here,
+[00:01:52] what sometimes happens on these stocks
+[00:01:55] is when you have one candle where it squeezes up
+[00:01:58] really quickly like that.
+[00:02:00] What's occurring is the stock initially has a catalyst.
+[00:02:05] So right here we have news, right?
+[00:02:08] So we have a news event and the stock squeezes up.
+[00:02:11] So how is it squeezing up?
+[00:02:13] There are high frequency trading algorithms
+[00:02:15] that are reading the news
+[00:02:17] and executing orders instantaneously.
+[00:02:19] So they're sending a buy order.
+[00:02:21] Now the market makers, the institutional traders
+[00:02:24] have algorithms that are making the market,
+[00:02:26] see the buy order come in.
+[00:02:28] Maybe it's 10,000 shares.
+[00:02:29] And they're like, ooh, someone's put in a big buy order.
+[00:02:32] We're going to cancel our sell order
+[00:02:34] that was currently at three,
+[00:02:35] and we're going to move it to three, 25.
+[00:02:38] And then all of a sudden, there's another buy order
+[00:02:40] that goes through at three, 25.
+[00:02:42] And they're like, oh, we better move our order up to three, 70.
+[00:02:45] We're moving it up because what's going to happen
+[00:02:46] is if the market maker sells, let's say, 100,000 shares.
+[00:02:51] And this suddenly squeezes up to $20 a share
+[00:02:54] and we find out that it's a buyout.
+[00:02:56] The market makers in trouble.
+[00:02:58] They've now shortened 100,000 shares,
+[00:03:00] whatever it was, of this stock at less than four bucks,
+[00:03:03] they're going to lose a ton of money.
+[00:03:05] So they can't just sell infinite amounts of shares.
+[00:03:09] So while they can also try to be using algorithms
+[00:03:11] to read the news, they can be using algorithms
+[00:03:14] to read the price action.
+[00:03:16] And when the price action is suddenly squeezing up,
+[00:03:18] they're going to cancel their orders.
+[00:03:20] So they're going to let the algorithms, the other,
+[00:03:23] they're competing algorithms in the market.
+[00:03:25] They're going to let the other algorithms
+[00:03:27] that are executing orders on the breaking news,
+[00:03:29] basically generate their own algos spike.
+[00:03:31] So the stock starts rapidly spiking up,
+[00:03:33] spiking up, spiking up, computer-generated spike.
+[00:03:36] Now, if you're very quick, you might be able to jump into this,
+[00:03:40] but sometimes this can happen in like a second.
+[00:03:42] It just goes straight up.
+[00:03:45] So then, okay, it starts hitting our scanners.
+[00:03:48] So now we get the attention that this thing is moving.
+[00:03:52] We pull it up, other retail traders pull it up.
+[00:03:54] Some of them jump in, too.
+[00:03:55] Retail traders try to buy to capitalize on this spike.
+[00:03:59] And we call this, we do call this the algos spike.
+[00:04:01] So it's an algos spike.
+[00:04:03] It's generally, initially, generated by high-frequency
+[00:04:08] iterating algorithms, and then it's amplified
+[00:04:10] by the fact that algorithms pull their orders off the book
+[00:04:13] to allow this big spike.
+[00:04:15] But what ends up happening is after such a huge spike
+[00:04:18] up here, people start taking profit.
+[00:04:20] And then, shorts look at this, and they're like,
+[00:04:23] why is this thing up so much?
+[00:04:24] In fact, some short sellers run their own algo
+[00:04:28] that every 10% they'll short, you know, 1,000 shares.
+[00:04:32] So 10%, 20%, 40%, 80%, 100%, so now they're short,
+[00:04:37] 10,000 shares adding adding adding adding adding adding adding adding.
+[00:04:41] It starts to drop back down, maybe other traders add back,
+[00:04:44] retail traders, whatever, to the short side.
+[00:04:48] They're adding back, it comes back down.
+[00:04:50] And now, people that chased it, maybe bail out
+[00:04:53] and the price ends up coming all the way back down.
+[00:04:56] And all of this right here can be generated
+[00:04:59] by the high-frequency trading algorithm, algorithm, algorithm.
+[00:05:03] So it's an algos spike.
+[00:05:05] But where the curl comes from is when this thing pulls back
+[00:05:09] and then people realize, wait a second,
+[00:05:12] the news was actually pretty good.
+[00:05:14] So this little burst of pop and drop
+[00:05:19] is one thing, but this is actually good news on a stock
+[00:05:23] that meets our five pillars stock selection.
+[00:05:26] And it's still, even right now, let's say,
+[00:05:28] maybe it's still up 50%, it's still the leading gainer
+[00:05:31] in the market.
+[00:05:32] And so people start buying the step
+[00:05:34] and starts popping up a little bit.
+[00:05:36] And then we start getting the first pullback
+[00:05:40] and then that works.
+[00:05:41] And then the second pullback.
+[00:05:43] And then that works.
+[00:05:44] And next thing you know, we're trading what we call a curl.
+[00:05:48] It's very interesting because this isn't something
+[00:05:50] that used to happen, at least as I can recall, is often.
+[00:05:54] But because of the increase in the number of high-frequency
+[00:05:57] trading algorithms, they kind of execute all of these trades
+[00:06:00] against each other, create this big spike.
+[00:06:03] And then we get this unwind, where it comes back down.
+[00:06:06] Now, of course, sometimes they keep going higher,
+[00:06:08] but oftentimes there's this sort of moment of rest.
+[00:06:11] And sometimes it only pulls back a little bit.
+[00:06:13] And then retail traders are jumping right on it.
+[00:06:16] But other times, if this is very early in the morning,
+[00:06:18] or for whatever other reason, people are just spreads
+[00:06:22] or too big, it just feels too risky.
+[00:06:24] People don't trade it, it comes back down.
+[00:06:26] And then this is kind of when trading actually begins,
+[00:06:29] like real trading, retail trading.
+[00:06:32] And then that's where we're trading this curl back up.
+[00:06:34] But it's tough because we're looking at this
+[00:06:37] and we're thinking about, well, what was our pre-market high?
+[00:06:43] Because this is the high of debt.
+[00:06:45] So until it gets back to a new high,
+[00:06:46] it sort of inherently feels a little bit bearish.
+[00:06:49] I mean, we're not totally sure exactly what's going on here.
+[00:06:53] So this is one version of the curl
+[00:06:56] that we see from time to time.
+[00:06:58] And this is generated specifically by the alga spike.
+[00:07:01] We're going to talk more about alga spikes soon.
+[00:07:03] So don't worry about that.
+[00:07:04] You're going to learn more about that.
+[00:07:05] So that's the alga spike that creates that curl,
+[00:07:09] which is probably what happened in this case here.
+[00:07:12] So you have that initial spike, it surges higher
+[00:07:15] than it drops down.
+[00:07:17] So sort of things regroup a little bit.
+[00:07:19] And then people are like, well, actually, I like this.
+[00:07:22] And then it kind of rallies back up and pushes higher.
+[00:07:25] But then ultimately, it ends up unwinding
+[00:07:27] as you can see.
+[00:07:28] And in fact, coming almost all the way back down.
+[00:07:31] So now we look at this and we're sort of left wondering,
+[00:07:34] who was right about the news?
+[00:07:36] We have that initial spike, then it sold off, and we don't know.
+[00:07:40] And maybe this came down, not because the news was bad,
+[00:07:43] but because the company had side to sell shares.
+[00:07:46] Sometimes we interpret, oh, the stock sold off,
+[00:07:48] that must mean the news was bad.
+[00:07:50] Not necessarily.
+[00:07:51] The news could be great.
+[00:07:53] But if the company sold a million shares
+[00:07:55] on the open market, 100,000 every 10 minutes or whatever
+[00:07:58] for a couple hours, that's going to be a lot of selling pressure.
+[00:08:02] So what they did was they basically extracted profit
+[00:08:05] and put it, took it out of the market,
+[00:08:07] and put it on their balance sheet.
+[00:08:09] So now we're going to have $5 million on their balance sheet.
+[00:08:12] They could use that to fund the next six months of R&D
+[00:08:15] on this maybe new drug that they're working on,
+[00:08:17] that they announced has positive clinical trials, phase one,
+[00:08:22] clinical trials.
+[00:08:23] So maybe they're raising money to go through phase two.
+[00:08:25] And then in six months, or eight months, whatever,
+[00:08:28] we'll see a headline that phase two went well.
+[00:08:30] And we have the same kind of thing, a big spike,
+[00:08:32] and that sells off all day.
+[00:08:33] And we're like, that's weird.
+[00:08:34] Phase two, clinical trials were good.
+[00:08:37] And then another year later, phase three.
+[00:08:40] And a huge spike, phase three, clinical trials were great.
+[00:08:43] And that sells off again.
+[00:08:44] Well, now they're raising money,
+[00:08:45] because they've got another drug they're going to work on.
+[00:08:47] And the drug that got through phase three,
+[00:08:50] they're going to try to send it for FDA approval,
+[00:08:52] or whatever cases.
+[00:08:53] So drawing the conclusion that the crisis going down means
+[00:09:00] the news is bad is not always accurate.
+[00:09:03] I suppose, can you say the inverse, if the crisis going up,
+[00:09:06] is it possible that the news isn't good,
+[00:09:08] but that maybe someone who's short the stock
+[00:09:11] is just getting squeezed?
+[00:09:13] You could argue that, and that's possible.
+[00:09:16] And that could happen from time to time.
+[00:09:18] So I suppose at the end of the day,
+[00:09:20] our job is to trade the price action.
+[00:09:22] The price action that's right in front of us,
+[00:09:25] and if it's very bullish, we're training it alongside.
+[00:09:28] And if we see that the, you know,
+[00:09:30] MACD has gone negative, and we've switched
+[00:09:32] from the front side to the back side, then we're hands off.
+[00:09:35] And it doesn't matter why that's happened,
+[00:09:37] we don't have to overthink it that much.
+[00:09:38] We just trade the price action.
+[00:09:40] That's our job.
+[00:09:41] Trade the price action and manage risk.
+[00:09:44] Okay, so let's now jump into the next section.
+[00:09:48] We're going to talk more about those algo spikes,
+[00:09:51] and the big candles that they create on our inter-day charts.
+[00:09:55] This is definitely some interesting stuff.
+[00:09:57] And we'll talk more about the high frequency
+[00:10:00] trading algorithms in chapter six,
+[00:10:01] and we're talking about tape reading,
+[00:10:03] level two, how you route your orders to different markets,
+[00:10:07] and so on and so forth.
+[00:10:08] But let's get into it a little bit more here with the algo spike.
