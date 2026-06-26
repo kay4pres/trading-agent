@@ -1,0 +1,930 @@
+[
+  {
+    "id": "c15_001",
+    "chapter": "Ch15 Trading Plan",
+    "topic": "First Pullback Setup",
+    "question": "What is Ross Cameron's exact entry rule for the First Pullback setup?",
+    "options": [
+      "A) Buy when the stock gaps up at market open",
+      "B) Buy the first candle to make a NEW HIGH after the pullback",
+      "C) Buy when the stock touches the 9 EMA",
+      "D) Buy when relative volume exceeds 10×"
+    ],
+    "correct": "B",
+    "explanation": "Ross's rule: 'I let it pull back and I'm buying the first candle to make a new high.' The entry is the candle that BREAKS the high of the pullback candles.",
+    "difficulty": "easy",
+    "source_rule": "c15_trading_plan_rules.md §3"
+  },
+  {
+    "id": "c15_002",
+    "chapter": "Ch15 Trading Plan",
+    "topic": "First Pullback Setup",
+    "question": "You enter a First Pullback trade. The stock pulls back for 6 candles before making a new high. Should you take this trade?",
+    "options": [
+      "A) Yes — more pullback time means more conviction",
+      "B) No — if pullback is more than 4 candles, the setup is too weak",
+      "C) Yes — if the stop is under $0.20 it's fine",
+      "D) No — you should only trade 1-minute pullbacks"
+    ],
+    "correct": "B",
+    "explanation": "Ross says: 'If pullback is >4 candles = too weak, skip the trade.' Also: if retracement is >50% = too weak. Both apply here.",
+    "difficulty": "medium",
+    "source_rule": "c15_trading_plan_rules.md §3"
+  },
+  {
+    "id": "c15_003",
+    "chapter": "Ch15 Trading Plan",
+    "topic": "First Pullback Setup",
+    "question": "A stock gaps up on news and pulls back 60% of its initial spike. Can you take the First Pullback entry?",
+    "options": [
+      "A) Yes — the pullback confirms support",
+      "B) No — if retracement exceeds 50%, the setup is too weak to enter",
+      "C) Yes — but only if the stock is still above VWAP",
+      "D) No — only trade pullbacks on the 5-minute chart"
+    ],
+    "correct": "B",
+    "explanation": "Ross's rule: 'If retracement is >50% = too weak, skip.' A 60% retracement means most of the initial momentum has already been absorbed — the trade lacks the explosive potential required.",
+    "difficulty": "medium",
+    "source_rule": "c15_trading_plan_rules.md §3"
+  },
+  {
+    "id": "c15_004",
+    "chapter": "Ch15 Trading Plan",
+    "topic": "Risk Management",
+    "question": "Your entry is at $8.50, the pullback low is $8.10. The stock trades at $8.10 — should you be stopped out?",
+    "options": [
+      "A) Yes — the stop is at the pullback low, so $8.10 is the exit",
+      "B) No — stops are placed just below round numbers, not at pullback lows",
+      "C) Yes — but only if the candle closes below $8.10",
+      "D) No — wait for the next candle to make a new low"
+    ],
+    "correct": "A",
+    "explanation": "Ross's primary stop is the low of the pullback pattern. When price reaches the pullback low, exit immediately. 'Cap losers, let winners run.'",
+    "difficulty": "easy",
+    "source_rule": "c15_trading_plan_rules.md §3"
+  },
+  {
+    "id": "c15_005",
+    "chapter": "Ch15 Trading Plan",
+    "topic": "Risk Management",
+    "question": "You want to enter a trade but your calculated stop would be $0.30 from entry. What should you do?",
+    "options": [
+      "A) Enter with 50 shares to halve your dollar risk",
+      "B) Skip the trade — stop must allow a $0.40+ target to maintain 2:1 minimum",
+      "C) Use a tighter $0.10 stop instead of ATR",
+      "D) Enter and use a mental stop at entry price"
+    ],
+    "correct": "B",
+    "explanation": "Ross: 'If stop > $0.20/share = do not take the trade — need $0.40+ target to maintain 2:1.' A $0.30 stop means you'd need a $0.60 target just to hit 2:1 minimum.",
+    "difficulty": "medium",
+    "source_rule": "c15_trading_plan_rules.md §3"
+  },
+  {
+    "id": "c15_006",
+    "chapter": "Ch15 Trading Plan",
+    "topic": "Risk Management",
+    "question": "You're in a trade and the stock has been in position for 90 seconds with no new high. What should you do?",
+    "options": [
+      "A) Hold — the 2-minute rule only applies to losing trades",
+      "B) Exit — the 2-minute time-based rule has been triggered",
+      "C) Hold until the stop is hit",
+      "D) Average down to lower your cost basis"
+    ],
+    "correct": "B",
+    "explanation": "Ross's time-based exit: 'If no resolution after ~2 minutes and no new high = exit.' The clock starts at entry. 90 seconds = still watching, but track this closely.",
+    "difficulty": "easy",
+    "source_rule": "c15_trading_plan_rules.md §3"
+  },
+  {
+    "id": "c15_007",
+    "chapter": "Ch15 Trading Plan",
+    "topic": "Risk Management",
+    "question": "Which is NOT one of Ross's five exit priority rules?",
+    "options": [
+      "A) Stock breaks low of pullback = immediate exit",
+      "B) 2 minutes in position with no new high = exit",
+      "C) Price crosses the 200-day moving average = exit",
+      "D) Resistance appears (double top forming) = exit"
+    ],
+    "correct": "C",
+    "explanation": "The 5 exit priorities are: (1) break pullback low, (2) resistance appears, (3) volume profile shifts, (4) 2-min time rule, (5) pre-defined target. The 200 MA is checked on the daily chart BEFORE entry, not as an exit trigger.",
+    "difficulty": "hard",
+    "source_rule": "c15_trading_plan_rules.md §3"
+  },
+  {
+    "id": "c15_008",
+    "chapter": "Ch15 Trading Plan",
+    "topic": "Position Sizing",
+    "question": "You're in the Alpha phase. What is your maximum share size and what's your daily trade limit?",
+    "options": [
+      "A) 100 shares, 1 trade per day",
+      "B) 100 shares, unlimited trades per day",
+      "C) 50 shares, 3 trades per day",
+      "D) 100 shares, 5 trades per day"
+    ],
+    "correct": "B",
+    "explanation": "Alpha phase: 100 shares max, unlimited trades per day. Goal is experience and skill conversion, not profit. Beta phase introduces the 1 trade/day limit.",
+    "difficulty": "easy",
+    "source_rule": "c15_trading_plan_rules.md §1"
+  },
+  {
+    "id": "c15_009",
+    "chapter": "Ch15 Trading Plan",
+    "topic": "Position Sizing",
+    "question": "You are in Beta phase. What is the single most important rule about trading frequency?",
+    "options": [
+      "A) Trade as many setups as possible to build experience",
+      "B) Maximum 1 trade per day — 'trade the best, leave the rest'",
+      "C) Take every signal that passes the Five Pillars",
+      "D) Trade only in the first 30 minutes after market open"
+    ],
+    "correct": "B",
+    "explanation": "Beta phase = 1 trade/day maximum. Ross: 'Trade the best, leave the rest.' Stop after first trade — avoid spiraling. Track Alpha and Beta trades separately.",
+    "difficulty": "easy",
+    "source_rule": "c15_trading_plan_rules.md §1"
+  },
+  {
+    "id": "c15_010",
+    "chapter": "Ch15 Trading Plan",
+    "topic": "Position Sizing",
+    "question": "You've had 10 profitable days in Beta phase. What happens next?",
+    "options": [
+      "A) You immediately go live with real money",
+      "B) You scale up to 150 shares while keeping 1 trade/day",
+      "C) You double your share size to 200 shares",
+      "D) You stay at 100 shares for another 20 profitable days"
+    ],
+    "correct": "B",
+    "explanation": "Ross's scaling rule: 10 profitable days → scale from 100 → 150 shares. Another 10 profitable days → 200 shares. Continue 10-day increment scaling. This is proof of concept before going live.",
+    "difficulty": "medium",
+    "source_rule": "c15_trading_plan_rules.md §1"
+  },
+  {
+    "id": "c15_011",
+    "chapter": "Ch15 Trading Plan",
+    "topic": "Five Pillars",
+    "question": "The 'Honey Crisp' sweet spot for price is $5-$10. What is the acceptable range for a trade?",
+    "options": [
+      "A) $1.00 - $5.00",
+      "B) $2.00 - $20.00",
+      "C) $5.00 - $20.00",
+      "D) $10.00 - $50.00"
+    ],
+    "correct": "B",
+    "explanation": "Acceptable range: $2-$20. Sweet spot: $5-$10. Below $2 = penny stock risk. Above $20 = institutional name, harder to move, limited % gain potential.",
+    "difficulty": "easy",
+    "source_rule": "c15_trading_plan_rules.md §4"
+  },
+  {
+    "id": "c15_012",
+    "chapter": "Ch15 Trading Plan",
+    "topic": "Five Pillars",
+    "question": "A stock has a 19.99M float, $19.99 price, 5× RV, and is up 10% today. It passes all Five Pillars technically. Should you trade it?",
+    "options": [
+      "A) Yes — it passes all five pillars",
+      "B) No — it's barely passing everything; the probability is low",
+      "C) Yes — but only with a larger stop",
+      "D) Only if it's the #1 stock on your scanner"
+    ],
+    "correct": "B",
+    "explanation": "Ross: 'If stock barely meets criteria (19.99M float, $19.99 price, 5× RV, 10% up) = LOW probability.' An exceptional stock (1M float, $7, 60% up, 10× RV, breaking news) = HIGH probability.",
+    "difficulty": "medium",
+    "source_rule": "c15_trading_plan_rules.md §4"
+  },
+  {
+    "id": "c15_013",
+    "chapter": "Ch15 Trading Plan",
+    "topic": "Level 2 / Tape Reading",
+    "question": "You're checking Level 2 before entering. You see 4 stacked buyers on the bid and 1 large seller. What does this tell you?",
+    "options": [
+      "A) The stock is about to gap down",
+      "B) This is bullish — buyers outnumber sellers significantly",
+      "C) You should wait for the seller to exit",
+      "D) This indicates Easy to Borrow — avoid going long"
+    ],
+    "correct": "B",
+    "explanation": "Stacked buyers on bid = bullish conviction. Ross: '4 buyers vs 1 seller = bullish.' Also: 'Green on tape = get in; red = get out or don't enter.' Time & Sales confirms buying pressure.",
+    "difficulty": "easy",
+    "source_rule": "c15_trading_plan_rules.md §2"
+  },
+  {
+    "id": "c15_014",
+    "chapter": "Ch15 Trading Plan",
+    "topic": "Level 2 / Tape Reading",
+    "question": "What does 'green on tape' mean in Ross's system?",
+    "options": [
+      "A) The stock's candlesticks are turning green",
+      "B) The stock is up for the day",
+      "C) Bursts of buying pressure are showing in Time & Sales — a conviction signal",
+      "D) The stock has passed all Five Pillars"
+    ],
+    "correct": "C",
+    "explanation": "Ross: 'Green on tape = get in; red = get out or don't enter.' This refers to Time & Sales — green text = buy transactions hitting the tape, showing buying pressure.",
+    "difficulty": "easy",
+    "source_rule": "c15_trading_plan_rules.md §2"
+  },
+  {
+    "id": "c15_015",
+    "chapter": "Ch15 Trading Plan",
+    "topic": "Daily Chart Check",
+    "question": "You're checking the daily chart. The 200-day moving average shows strong resistance above. What should you do?",
+    "options": [
+      "A) Skip the trade entirely — the daily is bearish",
+      "B) Flag it as awareness but don't let it override relative strength if intraday is strong",
+      "C) Short the stock instead of going long",
+      "D) Wait for the stock to close above the 200 MA before trading"
+    ],
+    "correct": "B",
+    "explanation": "Ross: 'In high RV stocks, the 200 MA can be blown through — awareness, not a hard stop.' Prior resistance levels: flag them but don't let them override RV strength from the intraday catalyst.",
+    "difficulty": "medium",
+    "source_rule": "c15_trading_plan_rules.md §2"
+  },
+  {
+    "id": "c15_016",
+    "chapter": "Ch15 Trading Plan",
+    "topic": "Execution Workflow",
+    "question": "In Ross's 5-step system, what is the correct order?",
+    "options": [
+      "A) Intraday chart → Scanner → Daily chart → Level 2 → News",
+      "B) Scanner → News → Intraday chart → Daily chart → Level 2",
+      "C) News → Scanner → Level 2 → Daily chart → Intraday chart",
+      "D) Daily chart → Intraday chart → Level 2 → News → Scanner"
+    ],
+    "correct": "B",
+    "explanation": "The 5-step system: (1) Scanner — find momentum, (2) Catalyst — confirm news, (3) Intraday chart — check pattern and volume, (4) Daily chart — check resistance, (5) Level 2 + Execute.",
+    "difficulty": "medium",
+    "source_rule": "c15_trading_plan_rules.md §2"
+  },
+  {
+    "id": "scanner_001",
+    "chapter": "Scanners & Screeners",
+    "topic": "Scanner vs Screener",
+    "question": "What's the key difference between a scanner and a screener?",
+    "options": [
+      "A) A scanner is for beginners, a screener is for professionals",
+      "B) A scanner is static and runs on demand, a screener updates continuously",
+      "C) A scanner is dynamic and real-time, a screener is static and runs on demand",
+      "D) They are the same thing — different names for the same tool"
+    ],
+    "correct": "C",
+    "explanation": "Ross: 'A screener is a picture of the past; a scanner is seeing the market right now.' Scanners (like Warrior) update continuously. Screeners (like Finviz) run on demand.",
+    "difficulty": "easy",
+    "source_rule": "scanner_screener_rules.md §9"
+  },
+  {
+    "id": "scanner_002",
+    "chapter": "Scanners & Screeners",
+    "topic": "Five Pillars",
+    "question": "What is the minimum Relative Volume (P1) required to consider a trade?",
+    "options": [
+      "A) 2× average daily volume",
+      "B) 3× average daily volume",
+      "C) 5× average daily volume — 10×+ ideal",
+      "D) 20× average daily volume"
+    ],
+    "correct": "C",
+    "explanation": "P1 — Relative Volume: Minimum 5× average daily volume. Ideal: 10× or higher. High RV = big supply/demand imbalance = explosive intraday moves.",
+    "difficulty": "easy",
+    "source_rule": "scanner_screener_rules.md §2"
+  },
+  {
+    "id": "scanner_003",
+    "chapter": "Scanners & Screeners",
+    "topic": "Five Pillars",
+    "question": "Why is float size so critical for day trading setups?",
+    "options": [
+      "A) Large float stocks move faster",
+      "B) Smaller float = easier to squeeze, bigger percentage moves",
+      "C) Float doesn't matter as long as price is under $20",
+      "D) Only institutional traders care about float"
+    ],
+    "correct": "B",
+    "explanation": "Ross: 'Smaller float = easier to squeeze, bigger % moves.' Micro (1-5M) = ideal. Low (5-20M) = good. Medium (20-100M) = harder to move. Large (100M+) = institutional, avoid.",
+    "difficulty": "easy",
+    "source_rule": "scanner_screener_rules.md §2"
+  },
+  {
+    "id": "scanner_004",
+    "chapter": "Scanners & Screeners",
+    "topic": "Five Pillars",
+    "question": "Which Pillar is the strictest and least flexible?",
+    "options": [
+      "A) Price level",
+      "B) Catalyst",
+      "C) Float size",
+      "D) Relative Volume"
+    ],
+    "correct": "C",
+    "explanation": "Ross: 'Float = LOW flexibility — strictest filter.' Float >5M is a no-go on alert scanners. Price, % gain, and RV all have medium flexibility. Float has none.",
+    "difficulty": "medium",
+    "source_rule": "scanner_screener_rules.md §9"
+  },
+  {
+    "id": "scanner_005",
+    "chapter": "Scanners & Screeners",
+    "topic": "Five Pillars",
+    "question": "What does 'fresh breaking news' mean as a P2 catalyst requirement?",
+    "options": [
+      "A) Any news from the past month",
+      "B) News from the past year about the company",
+      "C) News within the last 1-2 hours — active, right-now catalyst",
+      "D) Social media posts about the stock"
+    ],
+    "correct": "C",
+    "explanation": "P2 Catalyst: Fresh breaking news within the last 1-2 hours (ideally <60 min old). Old news = faded catalyst. In hot markets: no-news but obvious stock = acceptable as 2nd priority.",
+    "difficulty": "easy",
+    "source_rule": "scanner_screener_rules.md §2"
+  },
+  {
+    "id": "scanner_006",
+    "chapter": "Scanners & Screeners",
+    "topic": "Scanner Types",
+    "question": "Ross uses exactly 3 scanner types. Which is NOT one of them?",
+    "options": [
+      "A) Small Cap High Day",
+      "B) Top Gainer",
+      "C) Low Float Breakout",
+      "D) Continuation"
+    ],
+    "correct": "C",
+    "explanation": "The 3 scanners are: (1) Small Cap High Day, (2) Top Gainer, (3) Continuation. Ross: '9 out of 10 times the stock is hitting one of my scanners.' Low Float Breakout is not one of the named three.",
+    "difficulty": "medium",
+    "source_rule": "scanner_screener_rules.md §1"
+  },
+  {
+    "id": "scanner_007",
+    "chapter": "Scanners & Screeners",
+    "topic": "Scanner Types",
+    "question": "You have audio alerts turned ON. You hear rapid 'ding-ding-ding-ding' from your scanner. What does this mean?",
+    "options": [
+      "A) The scanner is malfunctioning — check your settings",
+      "B) One stock is mildly interesting today",
+      "C) A stock is repeatedly hitting your scanner criteria — ACT NOW",
+      "D) The market is closed"
+    ],
+    "correct": "C",
+    "explanation": "Ross: 'Rapid ding-ding-ding = stock repeatedly hitting scanner = very interesting.' Single ding = might be noise. Rapid fire = high conviction signal requiring immediate attention.",
+    "difficulty": "easy",
+    "source_rule": "scanner_screener_rules.md §7"
+  },
+  {
+    "id": "scanner_008",
+    "chapter": "Scanners & Screeners",
+    "topic": "Scanner Types",
+    "question": "Which scanner do you use for a 'snapshot' of gap stocks at exactly 9:30am market open?",
+    "options": [
+      "A) Top Gainer (runs live 4am-8pm)",
+      "B) Small Cap High Day",
+      "C) Top Gapper (stops at 9:30am)",
+      "D) After Hours Top Gainer"
+    ],
+    "correct": "C",
+    "explanation": "Top Gapper stops at 9:30am, preserving a 'snapshot' of the gap picture at open. Top Gainer runs live and keeps updating. Use Top Gapper to compare: 'what was the market picture at 9:30 vs now?'",
+    "difficulty": "medium",
+    "source_rule": "scanner_screener_rules.md §9"
+  },
+  {
+    "id": "scanner_009",
+    "chapter": "Scanners & Screeners",
+    "topic": "Daily Process",
+    "question": "What are the three specific times Ross runs scanner checks? (Night, Morning, Pre-market)",
+    "options": [
+      "A) 6am, 9am, 3pm",
+      "B) 7-8pm (night), 6am (morning), 7am (watchlist build)",
+      "C) 5am, 9:30am, 4pm",
+      "D) 8pm, 7am, 2pm"
+    ],
+    "correct": "B",
+    "explanation": "Ross's exact daily process: (1) 7-8 PM: After hours scan — candidates for next morning. (2) 6 AM: Pre-market top gainers — the ONLY thing he looks at at 6am. (3) 7 AM: Build watchlist, 5-10 stocks max.",
+    "difficulty": "medium",
+    "source_rule": "scanner_screener_rules.md §4"
+  },
+  {
+    "id": "scanner_010",
+    "chapter": "Scanners & Screeners",
+    "topic": "Five Pillars",
+    "question": "What does P5 (Chart Pattern) require for entry confirmation?",
+    "options": [
+      "A) The stock closes above the 200-day moving average",
+      "B) First candle making a new high, or bull flag / flat top breakout confirmation",
+      "C) Three consecutive green candles on the daily chart",
+      "D) The stock crosses above VWAP on high volume"
+    ],
+    "correct": "B",
+    "explanation": "P5 — Chart Pattern: First candle making new high = entry confirmation. Also: bull flag / squeeze-up, flat top breakout. Avoid: stocks already extended with no pullback (chasing).",
+    "difficulty": "easy",
+    "source_rule": "scanner_screener_rules.md §2"
+  },
+  {
+    "id": "scanner_011",
+    "chapter": "Scanners & Screeners",
+    "topic": "Red Flags",
+    "question": "A stock shows Easy to Borrow (ETB) status. What does this tell you about squeeze potential?",
+    "options": [
+      "A) High squeeze potential — lots of shares available to borrow for shorting",
+      "B) Low squeeze potential — shares are easy to borrow so short sellers won't panic",
+      "C) ETB status has no relationship to squeeze potential",
+      "D) The stock is about to gap up"
+    ],
+    "correct": "B",
+    "explanation": "Hard to Borrow (HTB) = potential short squeeze (fewer shares available = panic covering when price rises). Easy to Borrow = institutional name, lots of shares, less squeeze potential.",
+    "difficulty": "medium",
+    "source_rule": "c4_part2_stock_types_rules.md §4"
+  },
+  {
+    "id": "scanner_012",
+    "chapter": "Scanners & Screeners",
+    "topic": "Red Flags",
+    "question": "The bid-ask spread on a stock is $0.15 wide. Should you trade it?",
+    "options": [
+      "A) Yes — wide spreads mean more volatility",
+      "B) No — if spread > $0.10, it's harder to trade, avoid it",
+      "C) Yes — but only if you use market orders",
+      "D) No — only trade stocks with spreads under $0.01"
+    ],
+    "correct": "B",
+    "explanation": "Ross: 'Wider spread = harder to trade, avoid if spread > $0.10.' A $0.15 spread means you're buying at the ask and selling at the bid — instant 15-cent headwind on every trade.",
+    "difficulty": "easy",
+    "source_rule": "c15_trading_plan_rules.md §2"
+  },
+  {
+    "id": "c5_001",
+    "chapter": "Ch5 Intraday Patterns",
+    "topic": "Timeframes",
+    "question": "What are Ross's PRIMARY intraday timeframes for trade setup and entry timing?",
+    "options": [
+      "A) 15-minute for setup, 5-minute for entry",
+      "B) 1-minute and 5-minute charts",
+      "C) 30-minute and 1-hour charts",
+      "D) Daily for setup, 5-minute for entry"
+    ],
+    "correct": "B",
+    "explanation": "Ross: 'I tend to have most of my trades on either the 5-minute or the 1-minute chart.' 10-second is secondary (precise entry timing), 15-minute for context only.",
+    "difficulty": "easy",
+    "source_rule": "c5_intraday_patterns_rules.md P1"
+  },
+  {
+    "id": "c5_002",
+    "chapter": "Ch5 Intraday Patterns",
+    "topic": "Timeframes",
+    "question": "A candle on your 1-minute chart is still forming — it has 45 seconds left. What should you do?",
+    "options": [
+      "A) Act immediately based on the current candle shape",
+      "B) Wait — don't act on incomplete candles; wait for the candle to close and confirm",
+      "C) Enter on the close of the previous candle",
+      "D) Exit any open positions immediately"
+    ],
+    "correct": "B",
+    "explanation": "Ross: 'The candle signal only becomes fixed at close.' A candle with 45 seconds left can completely reverse. 'Keep watching; don't act on incomplete candles.' Wait for confirmation.",
+    "difficulty": "easy",
+    "source_rule": "c5_intraday_patterns_rules.md P1"
+  },
+  {
+    "id": "c5_003",
+    "chapter": "Ch5 Intraday Patterns",
+    "topic": "Bull Flag Volume Profile",
+    "question": "In a valid bull flag, what is the CORRECT volume profile?",
+    "options": [
+      "A) Light volume on the spike candle, heavy volume on the pullback",
+      "B) Equal volume on both the spike and pullback",
+      "C) HIGH volume on spike, LIGHT volume on pullback, volume INCREASES on continuation",
+      "D) No volume requirement — price action alone confirms the pattern"
+    ],
+    "correct": "C",
+    "explanation": "Volume profile is the key differentiator. High volume spike = conviction. Light volume pullback = profit-taking, not distribution. Volume returning on continuation = confirmed pattern. If inverted: distribution, do NOT enter.",
+    "difficulty": "medium",
+    "source_rule": "c5_intraday_patterns_rules.md P2"
+  },
+  {
+    "id": "c5_004",
+    "chapter": "Ch5 Intraday Patterns",
+    "topic": "Bull Flag",
+    "question": "In a bull flag, the red pullback candles break above the high of the previous green candle. What does this mean?",
+    "options": [
+      "A) The pattern is strengthening — enter long immediately",
+      "B) This is NOT a valid bull flag — red candles cannot break the previous candle's high",
+      "C) The stock is about to gap down",
+      "D) You should switch to a short position"
+    ],
+    "correct": "B",
+    "explanation": "Ross: 'These candles cannot break the high of the previous candle.' If red candles are making new highs, the selling is too strong — this is not a bull flag, it's distribution. Skip the trade.",
+    "difficulty": "medium",
+    "source_rule": "c5_intraday_patterns_rules.md P2"
+  },
+  {
+    "id": "c5_005",
+    "chapter": "Ch5 Intraday Patterns",
+    "topic": "Bull Flag",
+    "question": "You see a stock that spiked up 30% on news and is now pulling back. The spike had heavy volume but the pullback has been on massive volume too. Should you enter?",
+    "options": [
+      "A) Yes — heavy volume means institutional interest",
+      "B) No — heavy volume on the pullback = distribution (selling), not accumulation",
+      "C) Yes — but only with a very tight stop",
+      "D) Only if the pullback has lasted more than 10 candles"
+    ],
+    "correct": "B",
+    "explanation": "Volume inversion: 'Light volume on the spike + heavy volume on the pullback = distribution.' If distribution is occurring, the initial buyers are selling. This is NOT the pattern you want.",
+    "difficulty": "medium",
+    "source_rule": "c5_intraday_patterns_rules.md P2"
+  },
+  {
+    "id": "c5_006",
+    "chapter": "Ch5 Intraday Patterns",
+    "topic": "VWAP",
+    "question": "A stock crosses from BELOW VWAP to ABOVE VWAP. What does this signal?",
+    "options": [
+      "A) The bears are taking control",
+      "B) A shift in control from sellers to buyers — bullish bias",
+      "C) The stock will definitely gap up tomorrow",
+      "D) This is only relevant for short sellers"
+    ],
+    "correct": "B",
+    "explanation": "VWAP breakout: price crosses from below to above = shift in control from sellers to buyers. Shorts are forced to cover. Long traders jump in. This is a bullish signal.",
+    "difficulty": "easy",
+    "source_rule": "c5_intraday_patterns_rules.md P4"
+  },
+  {
+    "id": "c5_007",
+    "chapter": "Ch5 Intraday Patterns",
+    "topic": "VWAP",
+    "question": "You notice a stock has surged so fast that VWAP is sitting right underneath the current price. What does this mean?",
+    "options": [
+      "A) The stock is in a strong uptrend — add to position",
+      "B) The stock is very extended from VWAP — false breakout risk is HIGH",
+      "C) VWAP will automatically adjust to the new price",
+      "D) This is an ideal entry point"
+    ],
+    "correct": "B",
+    "explanation": "Ross: 'Very extended off the 9 MA = increases risk of false breakout.' Same logic applies to VWAP. When VWAP is right under price after a fast surge, the pullback can happen violently. Tighten your stop.",
+    "difficulty": "medium",
+    "source_rule": "c5_intraday_patterns_rules.md P4"
+  },
+  {
+    "id": "c5_008",
+    "chapter": "Ch5 Intraday Patterns",
+    "topic": "Trap Patterns",
+    "question": "You enter a trade and immediately the price reverses against you — you're in a trap. What is Ross's rule?",
+    "options": [
+      "A) Average down — the stock will recover",
+      "B) Hold until your stop is hit",
+      "C) Exit immediately — small winner or small loser, both are correct",
+      "D) Double your position to lower your average cost"
+    ],
+    "correct": "C",
+    "explanation": "Ross: 'If caught in a trap = exit immediately. Small winner OR small loser — both are correct outcomes. Do NOT average down. Do NOT hold hoping for recovery.' A trap that drops $0.50 can become a $2.00 loss if you hold.",
+    "difficulty": "easy",
+    "source_rule": "c5_intraday_patterns_rules.md P5"
+  },
+  {
+    "id": "c5_009",
+    "chapter": "Ch5 Intraday Patterns",
+    "topic": "Trap Patterns",
+    "question": "What is a liquidity trap?",
+    "options": [
+      "A) A stock that has zero volume",
+      "B) A stock trading only on the NYSE",
+      "C) Price sweeps above/below a key level, triggering retail stops, then immediately reverses",
+      "D) A stock with a bid-ask spread of exactly $0.01"
+    ],
+    "correct": "C",
+    "explanation": "Liquidity trap: price sweeps above/below a key level (often stop-hunting), triggering retail traders' stops, then immediately reverses. The market maker or institution has taken the opposite side of all those stopped-out trades.",
+    "difficulty": "medium",
+    "source_rule": "c5_intraday_patterns_rules.md P5"
+  },
+  {
+    "id": "c5_010",
+    "chapter": "Ch5 Intraday Patterns",
+    "topic": "Trap Patterns",
+    "question": "What does a Jackknife Candle look like and what does it signal?",
+    "options": [
+      "A) A small-bodied candle with long wicks — mild reversal signal",
+      "B) A sharp, sudden reversal candle with large body and small wicks — extreme momentum reversal signal",
+      "C) A Doji candle — no directional bias",
+      "D) A gap-up candle — continuation signal"
+    ],
+    "correct": "B",
+    "explanation": "Jackknife Candle: sharp, sudden reversal — large body, small wicks. This signals extreme momentum reversal. When you see it, exit immediately in the direction of the reversal.",
+    "difficulty": "easy",
+    "source_rule": "c5_intraday_patterns_rules.md P5"
+  },
+  {
+    "id": "c5_011",
+    "chapter": "Ch5 Intraday Patterns",
+    "topic": "HOD/LOD Breakouts",
+    "question": "A stock is consolidating near its High of Day and then breaks above it on increasing volume. What is this called and what is your action?",
+    "options": [
+      "A) Double top — exit all positions",
+      "B) HOD Breakout — enter long on the first candle making a new high",
+      "C) Gap and go — wait for the next day to enter",
+      "D) Liquidity trap — short the stock"
+    ],
+    "correct": "B",
+    "explanation": "HOD (High of Day) Breakout: price breaks above today's high on increasing volume = continuation long. Entry: first candle making new HOD after consolidation. Note: HOD breakouts often happen later in the day — be patient.",
+    "difficulty": "medium",
+    "source_rule": "c5_intraday_patterns_rules.md P7"
+  },
+  {
+    "id": "c5_012",
+    "chapter": "Ch5 Intraday Patterns",
+    "topic": "Pivot Rules",
+    "question": "What are pivot points and how are they labeled?",
+    "options": [
+      "A) Moving averages: 9 EMA, 20 EMA, 50 EMA",
+      "B) Calculated S/R levels: R3 > R2 > R1 > Pivot > S1 > S2 > S3",
+      "C) Candlestick patterns: hammer, doji, engulfing",
+      "D) Volume levels: high volume nodes"
+    ],
+    "correct": "B",
+    "explanation": "Pivots = calculated S/R levels based on prior day's H/L/close. Labels: R3 > R2 > R1 > Pivot > S1 > S2 > S3. Price bouncing between levels = range-bound. Breaking through = trend day.",
+    "difficulty": "easy",
+    "source_rule": "c5_intraday_patterns_rules.md P8"
+  },
+  {
+    "id": "c5_013",
+    "chapter": "Ch5 Intraday Patterns",
+    "topic": "Algo Spikes",
+    "question": "An algo-driven stock spikes up suddenly on a news catalyst. Where is the highest-probability entry?",
+    "options": [
+      "A) Chase the spike immediately at the current price",
+      "B) Wait for the post-algo pullback — the first pullback after the spike",
+      "C) Wait until tomorrow's market open",
+      "D) Only trade stocks that don't have algo involvement"
+    ],
+    "correct": "B",
+    "explanation": "Algo spikes: the post-algo pullback is the highest-probability entry. The initial spike is driven by algorithms. The pullback = retail and algo repositioning. This is where the bull flag forms.",
+    "difficulty": "easy",
+    "source_rule": "c5_intraday_patterns_rules.md P10"
+  },
+  {
+    "id": "c5_014",
+    "chapter": "Ch5 Intraday Patterns",
+    "topic": "System Short Sellers",
+    "question": "What happens when system short sellers are forced to cover simultaneously?",
+    "options": [
+      "A) The stock gaps down",
+      "B) A short squeeze — rapid upward spike as shorts cover",
+      "C) The stock goes into consolidation",
+      "D) VWAP becomes the new support level"
+    ],
+    "correct": "B",
+    "explanation": "System Short Sellers: algos and funds that short on specific conditions. When price crosses VWAP or fills the gap, they're forced to cover simultaneously = SHORT SQUEEZE. High short interest + positive catalyst = explosive potential.",
+    "difficulty": "easy",
+    "source_rule": "c5_intraday_patterns_rules.md P20"
+  },
+  {
+    "id": "c5_015",
+    "chapter": "Ch5 Intraday Patterns",
+    "topic": "Dynamic S/R",
+    "question": "Why is the 9 EMA so important as a dynamic support/resistance level?",
+    "options": [
+      "A) It is the most widely watched moving average by momentum traders",
+      "B) It is calculated by the SEC to indicate fair value",
+      "C) It only works on daily charts",
+      "D) It has no significance in day trading"
+    ],
+    "correct": "A",
+    "explanation": "The 9 EMA is the most widely watched moving average by momentum/scalp traders. It acts as dynamic S/R. 'Very extended off the 9 MA = increased risk of false breakout.' In a strong trend, price respects the 9 EMA as support.",
+    "difficulty": "easy",
+    "source_rule": "c5_intraday_patterns_rules.md P9"
+  },
+  {
+    "id": "c5_016",
+    "chapter": "Ch5 Intraday Patterns",
+    "topic": "ABCD Pattern",
+    "question": "In an ABCD pattern, at what Fibonacci level does point C typically pull back to?",
+    "options": [
+      "A) 23.6% retracement only",
+      "B) 50% retracement only",
+      "C) 38.2% to 78.6% retracement of AB",
+      "D) C always pulls back to exactly the 50% level"
+    ],
+    "correct": "C",
+    "explanation": "ABCD pattern: C typically retraces 38.2%–78.6% of the AB move. Entry at C confirmation → target D = equal to AB distance. This is a measured move pattern.",
+    "difficulty": "hard",
+    "source_rule": "c5_intraday_patterns_rules.md P6"
+  },
+  {
+    "id": "c5_017",
+    "chapter": "Ch5 Intraday Patterns",
+    "topic": "Frontside vs Backside",
+    "question": "What is 'frontside' momentum trading and why is it preferred over 'backside'?",
+    "options": [
+      "A) Frontside = trading at market open; backside = trading at close",
+      "B) Frontside = riding the direction of the main momentum; backside = fading toward key levels",
+      "C) Frontside = day trading; backside = swing trading",
+      "D) They are the same strategy with different names"
+    ],
+    "correct": "B",
+    "explanation": "Frontside = WITH the trend (riding momentum). Backside = AGAINST momentum, fading toward key levels like VWAP. Short sellers typically use backside. Day traders prefer frontside = higher probability.",
+    "difficulty": "medium",
+    "source_rule": "c5_intraday_patterns_rules.md P18"
+  },
+  {
+    "id": "c4_001",
+    "chapter": "Ch4 Daily Chart Patterns",
+    "topic": "Six Pillars (Daily)",
+    "question": "What are the 6 criteria Ross checks on the daily chart before considering a trade?",
+    "options": [
+      "A) Price, volume, float, catalyst, P/E ratio, market cap",
+      "B) Clean price action, volume confirmation, catalyst presence, S/R clarity, favorable R/R, tradeable price range",
+      "C) RSI, MACD, Bollinger Bands, VWAP, EMA, ATR",
+      "D) Earnings date, dividend yield, institutional ownership, short interest, float, price"
+    ],
+    "correct": "B",
+    "explanation": "The 6 daily chart criteria: (1) Clean price action, (2) Volume confirmation, (3) Catalyst presence, (4) Support/resistance clarity, (5) Favorable risk/reward setup, (6) Tradeable price range ($2-$20).",
+    "difficulty": "medium",
+    "source_rule": "c4_part1_chart_patterns_rules.md §1"
+  },
+  {
+    "id": "c4_002",
+    "chapter": "Ch4 Daily Chart Patterns",
+    "topic": "Six Pillars (Daily)",
+    "question": "Ross says 'A daily chart looks good does not mean that I'll buy that stock.' What does this mean?",
+    "options": [
+      "A) The daily chart is irrelevant for intraday trading",
+      "B) Daily chart explains WHY the stock moved; intraday confirms the actual entry",
+      "C) You should never look at the daily chart",
+      "D) Only trade stocks with bad daily charts"
+    ],
+    "correct": "B",
+    "explanation": "Daily chart shows the 'why' (catalyst, trend direction, resistance). Intraday confirms the 'when' (entry timing). A good daily + good intraday = trade. Good daily alone = not enough.",
+    "difficulty": "medium",
+    "source_rule": "c4_part1_chart_patterns_rules.md §5"
+  },
+  {
+    "id": "c4_003",
+    "chapter": "Ch4 Daily Stock Types",
+    "topic": "Float Types",
+    "question": "What is the difference between a 'nano float' and a 'micro float' stock?",
+    "options": [
+      "A) Nano = 5-20M shares, Micro = 1-5M shares",
+      "B) Nano = <1M shares (explosive but highest risk), Micro = 1-5M shares (Ross's preferred range)",
+      "C) They are the same — different terms for the same thing",
+      "D) Nano = institutional names, Micro = retail-focused companies"
+    ],
+    "correct": "B",
+    "explanation": "Nano float: <1M shares — explosive but highest risk. Micro float: 1-5M shares — ideal for Ross. Smaller float = easier to squeeze = bigger % moves. Larger float = harder to move.",
+    "difficulty": "easy",
+    "source_rule": "c4_part2_stock_types_rules.md §3"
+  },
+  {
+    "id": "c4_004",
+    "chapter": "Ch4 Daily Stock Types",
+    "topic": "Gap Types",
+    "question": "What's the difference between a 'gap and go' and a 'gap fill'?",
+    "options": [
+      "A) They are the same — different names for the same pattern",
+      "B) Gap and go = stock gaps up and continues higher; gap fill = stock gaps up then fades back to fill the gap",
+      "C) Gap and go = stock gaps down; gap fill = stock gaps up",
+      "D) Gap fill only happens on the daily chart"
+    ],
+    "correct": "B",
+    "explanation": "Gap and go: full gap up, continues higher = ideal. Gap fill: gap up then fades back to fill the gap area. Ross: 'Fading the gap' = shorting the overextension after a gap. Partial gaps (gap partially filled, then continues) are also tradeable.",
+    "difficulty": "medium",
+    "source_rule": "c4_part2_stock_types_rules.md §4"
+  },
+  {
+    "id": "c4_005",
+    "chapter": "Ch4 Daily Stock Types",
+    "topic": "SSR",
+    "question": "What is the Short Sale Restriction (SSR) and when does it apply?",
+    "options": [
+      "A) SSR means you need special permission to trade — applies to all stocks",
+      "B) SSR = T (threshold) day = stock cannot be shorted on an uptick; resets daily based on price movement",
+      "C) SSR only applies to large-cap stocks",
+      "D) SSR means the stock has very low short interest"
+    ],
+    "correct": "B",
+    "explanation": "SSR (Short Sale Restriction) = T day = stock cannot be shorted except on an uptick. CB = circuit breaker. SSR is checked daily. Avoid short entries when SSR is on — your shorting ability is restricted.",
+    "difficulty": "hard",
+    "source_rule": "c15_trading_plan_rules.md §2"
+  },
+  {
+    "id": "c3_001",
+    "chapter": "Ch3 News Catalyst",
+    "topic": "Catalyst Types",
+    "question": "A stock has a technical bull flag pattern but NO news catalyst. The market is neutral. What should you do?",
+    "options": [
+      "A) Enter anyway — technical patterns are enough",
+      "B) No catalyst + cold market = skip. 'Technical catalyst alone isn't usually enough to give us a ton of volume.'",
+      "C) Only enter if the stock is above VWAP",
+      "D) Use a larger stop since there's no catalyst risk"
+    ],
+    "correct": "B",
+    "explanation": "Ross: 'Technical catalyst alone isn't usually enough to give us a ton of volume.' In hot market: no-news but obvious stock = acceptable as 2nd priority. In neutral/cold market: need the catalyst.",
+    "difficulty": "medium",
+    "source_rule": "c3_part2_news_catalyst_rules.md §1"
+  },
+  {
+    "id": "c3_002",
+    "chapter": "Ch3 News Catalyst",
+    "topic": "Catalyst Types",
+    "question": "What types of news catalysts typically create the best day trading setups?",
+    "options": [
+      "A) Old news from 3 months ago",
+      "B) Social media posts only",
+      "C) Earnings beats, FDA approvals, big contracts, partnerships, upgrades",
+      "D) General market commentary"
+    ],
+    "correct": "C",
+    "explanation": "Catalysts that work: earnings beats, FDA approvals, big contracts, partnerships, upgrades, M&A rumors. These create the supply/demand imbalance needed for explosive intraday moves. Relative volume of 253,000× is possible with the right catalyst.",
+    "difficulty": "easy",
+    "source_rule": "c3_part2_news_catalyst_rules.md §1"
+  },
+  {
+    "id": "c3_003",
+    "chapter": "Ch3 News Catalyst",
+    "topic": "Watchlist Building",
+    "question": "What's the maximum number of stocks Ross keeps on his daily watchlist?",
+    "options": [
+      "A) 20-30 stocks",
+      "B) 5-10 stocks max",
+      "C) 50+ stocks for maximum opportunity",
+      "D) Only 1 stock at a time"
+    ],
+    "correct": "B",
+    "explanation": "Ross: Narrow down to 5-10 stocks max before market open. Focus on quality over quantity. A small watchlist = focused attention = better trade execution.",
+    "difficulty": "easy",
+    "source_rule": "c3_part5_watchlist_rules.md §3"
+  },
+  {
+    "id": "c3_004",
+    "chapter": "Ch3 News Catalyst",
+    "topic": "Risk Management",
+    "question": "Ross says 'when we get in, our max loss is determined. We're not exposing ourselves to unlimited risk.' What does this mean?",
+    "options": [
+      "A) You should risk 50% of your account per trade",
+      "B) Max loss is defined BEFORE entering — not during the trade",
+      "C) You can adjust your stop mid-trade based on price action",
+      "D) Stop losses are optional in day trading"
+    ],
+    "correct": "B",
+    "explanation": "Max loss is set before entry — it doesn't change during the trade based on emotions. 'Cap losers, let winners run.' Not exposing yourself to unlimited risk = always know your exit before you're in.",
+    "difficulty": "easy",
+    "source_rule": "c3_part5_watchlist_rules.md §4"
+  },
+  {
+    "id": "risk_001",
+    "chapter": "Risk Management",
+    "topic": "Position Sizing",
+    "question": "What is the minimum profit target per share in Alpha phase?",
+    "options": [
+      "A) $0.05/share",
+      "B) $0.10/share",
+      "C) $0.20/share minimum",
+      "D) $1.00/share"
+    ],
+    "correct": "C",
+    "explanation": "Alpha phase profit target: +$0.20/share minimum. Preferred: $0.25-0.50/share. Ross: must have realistic potential to make 25-50¢/share minimum.",
+    "difficulty": "easy",
+    "source_rule": "c15_trading_plan_rules.md §3"
+  },
+  {
+    "id": "risk_002",
+    "chapter": "Risk Management",
+    "topic": "Position Sizing",
+    "question": "What is the 2:1 risk/reward rule and why does it matter?",
+    "options": [
+      "A) You need $2 profit for every $1 risk — without this minimum, the trade doesn't have enough edge",
+      "B) You risk $2 for every $1 in your account",
+      "C) You take 2 trades for every 1 you skip",
+      "D) The stop must be 2× the target"
+    ],
+    "correct": "A",
+    "explanation": "2:1 minimum: profit target must be 2× the stop distance. $0.20 target requires ≤$0.10 stop. If stop = $0.30, you need $0.60 target just to hit 2:1. Without 2:1, the math of trading works against you.",
+    "difficulty": "easy",
+    "source_rule": "c15_trading_plan_rules.md §3"
+  },
+  {
+    "id": "risk_003",
+    "chapter": "Risk Management",
+    "topic": "Position Sizing",
+    "question": "You average down on a losing trade. What is Ross's view on this?",
+    "options": [
+      "A) Averaging down is a valid strategy to lower your cost basis",
+      "B) Never average down — it increases your risk and is driven by emotion",
+      "C) Averaging down is fine if the stock has good fundamentals",
+      "D) Only average down if your position size is below 100 shares"
+    ],
+    "correct": "B",
+    "explanation": "Ross: 'Do NOT average down.' If caught in a trap: 'exit immediately, small winner or small loser = both correct.' Averaging down is emotional — it comes from hoping the stock will recover rather than accepting the loss.",
+    "difficulty": "easy",
+    "source_rule": "c5_intraday_patterns_rules.md P5"
+  },
+  {
+    "id": "risk_004",
+    "chapter": "Risk Management",
+    "topic": "ATR-Based Stops",
+    "question": "When is the intraday 5-minute ATR preferred over the 3-month daily ATR for stop calculation?",
+    "options": [
+      "A) Always use 3-month daily ATR — it's more accurate",
+      "B) 3-month daily ATR picks up massive historical moves that don't reflect today's volatility",
+      "C) ATR doesn't matter for day trading",
+      "D) Only use ATR on stocks above $20"
+    ],
+    "correct": "B",
+    "explanation": "3-month daily ATR can pick up massive single-day moves (e.g., SDOT: $10.51 ATR → 2× = $21 stop distance for a $13 stock). Intraday 5-min ATR captures today's actual volatility. For day trading, today's volatility is more relevant.",
+    "difficulty": "hard",
+    "source_rule": "brief.md (ATR backtest 2026-06-26)"
+  }
+]
