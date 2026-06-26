@@ -9,6 +9,7 @@ from pathlib import Path
 from datetime import datetime, date
 from flask import Flask, jsonify, request, render_template
 from flask_cors import CORS
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeoutError
 
 # ── Local imports ──────────────────────────────────────────────────────────────
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -395,16 +396,20 @@ def api_scan():
 
 @app.route('/api/select/<symbol>')
 def api_select(symbol):
-    """Select a symbol to view details."""
+    """Select a symbol to view details — bar fetch has 10s timeout to prevent UI freeze."""
     sig = next((s for s in state['signals'] if s['symbol'] == symbol), None)
     if sig:
-        # Get intraday bars for the selected stock
         bars = []
         try:
-            raw_bars = get_historical(symbol, period='1d', interval='5m')
-            bars = raw_bars[-78:] if len(raw_bars) > 78 else raw_bars  # last ~6.5h
-        except Exception:
-            pass
+            with ThreadPoolExecutor(max_workers=1) as executor:
+                future = executor.submit(get_historical, symbol, '1d', '5m')
+                raw_bars = future.result(timeout=10)  # 10s max — prevents UI freeze
+            bars = raw_bars[-78:] if raw_bars and len(raw_bars) > 78 else (raw_bars or [])
+        except FuturesTimeoutError:
+            bars = []
+            print(f"[WARN] get_historical timed out for {symbol}")
+        except Exception as e:
+            print(f"[WARN] get_historical failed for {symbol}: {e}")
         state['selected'] = sig
         return jsonify({'ok': True, 'signal': sig, 'bars': bars})
     return jsonify({'ok': False, 'error': 'symbol not found'})

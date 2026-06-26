@@ -38,6 +38,23 @@ WATCHLIST = load_todays_watchlist()
 INTERVAL = '5m'
 LOOKBACK_PERIOD = '5d'  # Last 5 trading days
 
+# === POSITIONS GUARD — skip alerts on stocks we already hold ===
+POSITIONS_FILE = Path(r'E:\Me\TradingAgent\data\positions.json')
+
+def get_open_symbols():
+    """Return set of symbols currently in an open position."""
+    if not POSITIONS_FILE.exists():
+        return set()
+    try:
+        with open(POSITIONS_FILE) as f:
+            state = json.load(f)
+        return {
+            sym for sym, pos in state.get("positions", {}).items()
+            if pos.get("status") == "OPEN"
+        }
+    except Exception:
+        return set()
+
 # Five Pillars (relaxed for intraday)
 INTRADAY_PARAMS = {
     'price_min': 2.0,
@@ -296,13 +313,19 @@ def run_pipeline():
         if signals:
             print(f'    Found {len(signals)} signal(s)!')
     
-    # Step 3: Rank signals
+    # Step 3: Filter out stocks we already hold, then rank signals
     print(f'\n📊 Step 3: Ranking {len(all_signals)} total signals...')
-    
+
+    held = get_open_symbols()
+    if held:
+        before = len(all_signals)
+        all_signals = [s for s in all_signals if s['ticker'] not in held]
+        print(f'  [SKIP] Already in position: {held} — filtered {before - len(all_signals)} signal(s)')
+
     if not all_signals:
         print('  No signals meeting threshold. Pipeline complete.')
         return []
-    
+
     # Sort by score descending, then by volume ratio
     ranked = sorted(all_signals, key=lambda x: (x['score'], x['volume_ratio']), reverse=True)
     

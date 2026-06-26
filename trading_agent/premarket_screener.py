@@ -29,6 +29,22 @@ WATCHLIST_DIR.mkdir(exist_ok=True)
 
 TODAY = date.today()
 WATCHLIST_FILE = WATCHLIST_DIR / f"watchlist_{TODAY.strftime('%Y%m%d')}.csv"
+POSITIONS_FILE = DATA_DIR / 'positions.json'
+
+# ── Positions Guard ────────────────────────────────────────────────────────────
+def get_open_symbols():
+    """Return set of symbols currently in an open position."""
+    if not POSITIONS_FILE.exists():
+        return set()
+    try:
+        with open(POSITIONS_FILE) as f:
+            state = json.load(f)
+        return {
+            sym for sym, pos in state.get("positions", {}).items()
+            if pos.get("status") == "OPEN"
+        }
+    except Exception:
+        return set()
 
 # ── Default universe (top movers watchlist) ───────────────────────────────────
 # These are the stocks Richard checks each morning when no TradingView export
@@ -387,7 +403,13 @@ def run_screener(
             'scan_time':    today_str,
         })
 
-    # ── Step 5: Rank by total score ─────────────────────────────────────────
+    # ── Step 5: Filter held stocks, then rank by total score ──────────────────
+    held = get_open_symbols()
+    if held:
+        before = len(results)
+        results = [r for r in results if r['symbol'] not in held]
+        print(f"  [SKIP] Already in position: {held} — filtered {before - len(results)} signal(s)")
+
     results.sort(key=lambda x: x['total_score'], reverse=True)
     print(f"\n  🎯 {len(results)} signals (score ≥ {min_score})")
     return results

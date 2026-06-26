@@ -61,6 +61,25 @@ TRANSCRIPTS = {
         "priority": 7,
         "description": "Short selling mechanics — easy vs hard to borrow",
     },
+    # ── Course 1: Chapters 12-15 (Basic Course) ──────────────────────────────
+    "ch12_scanning": {
+        "source": RAW_DIR / "1. Day Trading The Basics" / "Chapter12" / "Chapter 12 Scanning 101.mp4",
+        "output": TRANSCRIPT_DIR / "Chapter 12" / "Scanning_101.txt",
+        "priority": 8,
+        "description": "Scanner setup and operation — CRITICAL for Richard's pipeline",
+    },
+    "ch13_psychology": {
+        "source": RAW_DIR / "1. Day Trading The Basics" / "Chapter13" / "Chapter 13 The Psychology of Trading.mp4",
+        "output": TRANSCRIPT_DIR / "Chapter 13" / "Psychology_of_Trading.txt",
+        "priority": 9,
+        "description": "Hot buttons, fear/greed, emotional management",
+    },
+    "ch14_preparing": {
+        "source": RAW_DIR / "1. Day Trading The Basics" / "Chapter14" / "Chapter 14 Preparing to Start Trading.mp4",
+        "output": TRANSCRIPT_DIR / "Chapter 14" / "Preparing_to_Start_Trading.txt",
+        "priority": 10,
+        "description": "Broker setup, platform config, paper trading checklist",
+    },
 }
 
 
