@@ -335,8 +335,29 @@ def on_telegram_button(action: str, symbol: str, price: float, score: float,
     """
     Called by the Telegram polling thread when Kay taps a button.
     Records the decision directly in state (no HTTP round-trip).
+    APPROVE also calls Trader's open_position() to create a real tracked position.
     """
     global state
+
+    # ── APPROVE: open position in Trader ───────────────────────────────────
+    if action == 'APPROVE':
+        from trading_agent.trader_agent import open_position as trader_open
+        target = round(price + 0.20, 2)
+        stop   = round(price - 0.10, 2)
+        trader_open(
+            symbol=symbol,
+            direction='long',
+            entry_price=price,
+            quantity=100,
+            target=target,
+            stop=stop,
+            signal_score=score,
+            rules_applied=['P1', 'P2', 'P3', 'P4', 'P5'],
+            signal_type='First Pullback (dashboard APPROVE)'
+        )
+        print(f"[telegram] Position opened: {symbol} LONG 100 @ ${price}")
+
+    # ── Record decision ────────────────────────────────────────────────────
     decision = {
         'timestamp': berlin_now().isoformat(),
         'symbol':    symbol,

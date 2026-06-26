@@ -134,8 +134,9 @@ def llm_call(prompt: str, model: str = 'minimax/MiniMax-M2.7') -> str:
 # ── Enrichment ─────────────────────────────────────────────────────────────────
 
 def enrich_signal(sig: dict) -> dict:
-    """Add yesterday close, float, news to a signal."""
-    sym = sig['ticker']
+    """Add yesterday close, float, news to a signal.
+    Handles both 'symbol' (dashboard/premarket) and 'ticker' (intraday scanner)."""
+    sym = sig.get('symbol') or sig.get('ticker', 'UNKNOWN')
     enriched = {
         'symbol': sym,
         'price': sig.get('price', 0),
@@ -332,13 +333,17 @@ def main():
         print("[Bull/Bear] No signals found")
         return
 
-    # Filter by threshold and held symbols
-    candidates = [s for s in signals if s.get('score', 0) >= BULL_BEAR_THRESHOLD and s['ticker'] not in held]
+    # Filter by threshold and held symbols (handle both 'symbol' and 'ticker' field names)
+    candidates = [
+        s for s in signals
+        if s.get('score', 0) >= BULL_BEAR_THRESHOLD
+        and (s.get('symbol') or s.get('ticker', '')) not in held
+    ]
     if not candidates:
         print(f"[Bull/Bear] No signals >= {BULL_BEAR_THRESHOLD} score — skipping")
         return
 
-    print(f"[Bull/Bear] {len(candidates)} candidate(s): {[s['ticker'] for s in candidates]}")
+    print(f"[Bull/Bear] {len(candidates)} candidate(s): {[s.get('symbol') or s.get('ticker') for s in candidates]}")
 
     for sig_raw in candidates:
         sig = enrich_signal(sig_raw)

@@ -10,6 +10,7 @@ Usage:
 import json, time, sys, os
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+import pandas as pd
 
 # Config
 POSITIONS_FILE = Path(r"E:\Me\TradingAgent\data\positions.json")
@@ -56,6 +57,97 @@ def get_live_price(symbol):
     except Exception as e:
         print(f"[WARN] Could not fetch price for {symbol}: {e}")
         return None
+
+
+def get_atr(symbol):
+    """
+    Calculate ATR from INTRADAY 5-min bars (today's volatility).
+    Uses median True Range over last 14 bars — robust to spikes on volatile days.
+    This captures the stock's actual day-range, which is what Ross traders watch.
+    """
+    try:
+        bars = get_historical(symbol, period='5d', interval='5m')
+    except Exception:
+        return None
+
+    if not bars or len(bars) < 20:
+        return None
+
+    # Use today's bars only (last ~78 5-min bars = full trading day)
+    today = datetime.now().strftime('%Y-%m-%d')
+    today_bars = [b for b in bars if datetime.fromtimestamp(b['timestamp']).strftime('%Y-%m-%d') == today]
+
+    use_bars = today_bars if len(today_bars) >= 10 else bars[-60:]
+
+    tr_values = []
+    for i in range(1, len(use_bars)):
+        high = use_bars[i]['high']
+        low = use_bars[i]['low']
+        prev_close = use_bars[i-1]['close']
+        tr = max(high - low, abs(high - prev_close), abs(low - prev_close))
+        tr_values.append(tr)
+
+    if len(tr_values) < 5:
+        return None
+
+    # Median is robust to single-bar spikes on volatile days
+    import statistics
+    atr = statistics.median(tr_values[-14:]) if len(tr_values) >= 14 else statistics.mean(tr_values[-5:])
+    return round(atr, 4)
+
+
+def calc_stop_target(symbol, entry_price, pullback_low=None):
+    """
+    Ross Cameron-style stop/target calculation.
+
+    Rules:
+    - Target: entry + $0.20 (minimum, Ross standard)
+    - ATR-stop: entry - 2×ATR  (adapts to volatility)
+    - Pullback-stop: pullback_low (if provided)
+    - Final stop: max(ATR-stop, pullback_low)  OR entry - $0.20, whichever is tighter
+    - MINIMUM 2:1 ratio: skip trade if stop would be more than $0.20 below entry
+      (i.e., $0.20 must always be our minimum stop distance)
+    - Wider stops only if pullback_low naturally provides it
+
+    Returns (stop, target, skip_reason) where skip_reason is None if tradeable.
+    """
+    atr = get_atr(symbol)
+    atr_stop = round(entry_price - 2 * atr, 2) if atr else None
+
+    # Ross minimum: $0.20 stop distance
+    ross_min_stop = round(entry_price - 0.20, 2)
+
+    if pullback_low is not None:
+        # Use pullback low as primary stop, but must be within $0.20 of entry
+        if entry_price - pullback_low > 0.20:
+            # Stop too wide — Ross would skip this trade
+            return None, None, f"STOP_WIDE: pullback ${pullback_low:.2f} is ${entry_price - pullback_low:.2f} below entry (max $0.20)"
+        stop = pullback_low
+    elif atr_stop is not None:
+        # Use ATR-based stop, respect Ross minimum
+        if entry_price - atr_stop > 0.20:
+            # ATR gives wider than $0.20 — use the tighter stop to maintain 2:1
+            # This is the ATR giving us a wider stop for volatile stocks
+            # But we still need 2:1: target = entry + 0.20, stop = ross_min_stop
+            stop = ross_min_stop
+            print(f"[WARN] {symbol}: ATR-stop ${atr_stop:.2f} wider than $0.20 minimum — using ${stop:.2f}")
+        else:
+            stop = atr_stop
+    else:
+        # No ATR data — fall back to Ross minimum
+        stop = ross_min_stop
+
+    target = round(entry_price + 0.20, 2)
+
+    # Final 2:1 check
+    stop_distance = entry_price - stop
+    target_distance = target - entry_price
+    if stop_distance < 0.10:
+        return None, None, f"STOP_TIGHT: stop distance ${stop_distance:.2f} < $0.10 minimum"
+    if target_distance / stop_distance < 2.0:
+        return None, None, f"SKIP: R:R would be {target_distance/stop_distance:.1f}:1 < 2:1 required"
+
+    return round(stop, 4), target, None
 
 def send_telegram(message):
     """Send message to Kay's Trading Team via telegram_sender module."""
@@ -146,27 +238,59 @@ def check_two_min_rule(state, symbol, pos, live_price):
         # Rule failed — price didn't make new high, exit now
         return True, "2MIN_RULE"
 
-def open_position(symbol, direction, entry_price, quantity, target, stop,
-                 signal_score, rules_applied, signal_type):
-    """Open a new position. Called by Richard or manual entry."""
-    state = load_positions()
+def open_position(symbol, direction, entry_price, quantity, target=None, stop=None,
+                 signal_score=0, rules_applied=None, signal_type="First Pullback",
+                 pullback_low=None, skip_if_bad_rr=True):
+    """
+    Open a new position. Uses ATR-based stops automatically.
 
+    Args:
+        symbol, direction, entry_price, quantity — required
+        target: if None, calculated as entry + $0.20
+        stop: if None, uses ATR-based calculation
+        pullback_low: if provided, used as primary stop (Ross's rule)
+        skip_if_bad_rr: if True (default), skips trade when 2:1 can't be maintained
+    """
+    if rules_applied is None:
+        rules_applied = []
+
+    state = load_positions()
     if symbol in state["positions"]:
         print(f"[WARN] {symbol} already in position — skipping open")
         return False
 
+    # Calculate ATR-based stop/target
+    calc_stop, calc_target, skip_reason = calc_stop_target(
+        symbol, entry_price, pullback_low=pullback_low
+    )
+
+    if skip_reason and skip_if_bad_rr:
+        print(f"[SKIP] {symbol} @ ${entry_price:.2f} — {skip_reason}")
+        send_telegram(f"⏭️ SKIPPED: {symbol} @ ${entry_price:.2f}\n{skip_reason}")
+        return False
+
+    stop = round(stop, 4) if stop is not None else calc_stop
+    target = round(target, 4) if target is not None else calc_target
+
+    if stop is None or target is None:
+        print(f"[ERROR] {symbol}: could not calculate stop/target")
+        return False
+
+    atr = get_atr(symbol)
     now = now_amsterdam()
     two_min_exit = (now + timedelta(minutes=2)).isoformat()
 
-    state["positions"][symbol] = {
+    pos = {
         "symbol": symbol,
         "direction": direction,
         "entry_price": round(entry_price, 4),
         "quantity": quantity,
-        "target": round(target, 4),
-        "stop": round(stop, 4),
+        "target": target,
+        "stop": stop,
         "target_amount": round(target - entry_price, 4),
         "stop_amount": round(entry_price - stop, 4),
+        "atr": atr,
+        "atr_stop_distance": round(2 * atr, 4) if atr else None,
         "status": "OPEN",
         "opened_at": now.isoformat(),
         "exited_at": None,
@@ -181,17 +305,20 @@ def open_position(symbol, direction, entry_price, quantity, target, stop,
         "entry_candle_time": None
     }
 
+    state["positions"][symbol] = pos
     save_positions(state)
 
+    rr = (target - entry_price) / (entry_price - stop) if entry_price != stop else 0
     msg = (
         f"🚀 ENTRY: {symbol}\n"
         f"{direction.upper()} {quantity} shares @ ${entry_price:.2f}\n"
         f"Target: ${target:.2f} (+${target-entry_price:.2f})\n"
-        f"Stop: ${stop:.2f} (-${entry_price-stop:.2f})\n"
-        f"Score: {signal_score:.1f}/5 | Signal: {signal_type}"
+        f"Stop: ${stop:.2f} (-${entry_price-stop:.2f}) | ATR: ${atr:.4f if atr else '?'}\n"
+        f"R:R = {rr:.1f}:1 | Score: {signal_score:.1f}/5\n"
+        f"{signal_type}"
     )
     send_telegram(msg)
-    print(f"[ENTRY] {symbol} {direction.upper()} @ ${entry_price:.2f}")
+    print(f"[ENTRY] {symbol} {direction.upper()} @ ${entry_price:.2f} | T:{target} S:{stop} | ATR:{atr} | R:R:{rr:.1f}:1")
     return True
 
 def monitor_loop():
