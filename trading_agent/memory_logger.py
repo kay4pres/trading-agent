@@ -55,8 +55,8 @@ def log_trade(trade: dict) -> str:
 | Exit Reason | {reason} |
 {"| Notes | " + notes + " |" if notes else ""}
 
-**What I learned:**
-<!-- Kay — write your reflection here -->
+**What Trader learned:**
+<!-- Trader — write your reflection here after each trade. Why did it work? What would you do differently? How will this change your next decision? -->
 
 ---
 """
