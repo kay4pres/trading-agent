@@ -213,70 +213,120 @@ def score_bar(row, ticker, gap_pct):
     
     return score, details
 
+def first_pullback_filter(row, today_bars, atr):
+    """
+    Ross's First Pullback filter — is this a VALID first pullback entry?
+
+    Rules:
+    1. Pullback depth: stock must be 1.5×–3× ATR below intraday high.
+       Below 1.5× ATR = pullback not deep enough (no entry discount).
+       Above 3× ATR = pullback too deep, ATR stop too tight, skip.
+    2. Recovery: price above EMA_9 (not still falling).
+    3. RSI recovering: 40–70 (not oversold panic, not overheated).
+    4. NOT extended: pullback must be ≤ 30% of the gap from yesterday.
+
+    Returns (is_valid, reason_str).
+    """
+    intraday_high = today_bars['High'].max()
+    intraday_low  = today_bars['Low'].min()
+
+    # Pullback depth in $ and as % of gap
+    pullback_dollar = intraday_high - row['Close']
+    pullback_pct    = pullback_dollar / intraday_high if intraday_high > 0 else 0
+
+    today_gap = intraday_high  # today's high from yesterday's close (approx)
+    if atr <= 0:
+        return False, "no ATR data"
+
+    # Rule 1: pullback must be 1.5×–3× ATR (enough discount, not too deep)
+    if pullback_dollar < 1.5 * atr:
+        return False, f"pullback too shallow ({pullback_dollar:.2f} < 1.5× ATR {atr:.2f})"
+    if pullback_dollar > 3.0 * atr:
+        return False, f"pullback too deep ({pullback_dollar:.2f} > 3× ATR {atr:.2f})"
+
+    # Rule 2: price recovering — above EMA_9
+    if row['Close'] <= row['EMA_9']:
+        return False, "price below EMA_9 (still falling)"
+
+    # Rule 3: RSI recovering, not overheated
+    rsi = row.get('RSI', 50)
+    if rsi < 40 or rsi > 75:
+        return False, f"RSI {rsi:.0f} out of recovery range (40–75)"
+
+    # Rule 4: not extended — pullback ≤ 30% of gap
+    gap_range = intraday_high - intraday_low
+    if gap_range > 0 and pullback_pct > 0.30:
+        return False, f"pullback {pullback_pct:.1%} > 30% of intraday range"
+
+    return True, "valid first pullback"
+
+
 def scan_intraday(ticker, gap_pct):
     """Scan 5-min bars for a single stock"""
     try:
         stock = yf.download(ticker, period=LOOKBACK_PERIOD, interval=INTERVAL, progress=False)
         if isinstance(stock.columns, pd.MultiIndex):
             stock.columns = stock.columns.get_level_values(0)
-        
+
         if len(stock) < 30:
             return []
-        
+
         stock = calculate_intraday_indicators(stock)
-        
+
         signals = []
         for idx, row in stock.iterrows():
             if pd.isna(row['RSI']) or pd.isna(row['Vol_Ratio']):
                 continue
-            
+
             score, details = score_bar(row, ticker, gap_pct)
-            
+
             if score >= INTRADAY_PARAMS['score_threshold']:
-                # Check for FIRST PULLBACK pattern:
-                # 1) Find today's opening bar (first bar of current trading day)
-                # 2) Track intraday high since open
-                # 3) Flag when price pulls back ≥3% from intraday high, then starts recovering
                 bar_idx = stock.index.get_loc(idx)
-                
-                # Need at least 10 bars of history
+
+                # Need at least 10 bars of history for meaningful ATR
                 if bar_idx < 10:
                     continue
-                
-                # Identify today's bars (same date as current bar)
+
+                # Today's bars for intraday high/low context
                 current_date = idx.date()
                 today_bars = stock[stock.index.date == current_date]
-                
+
                 if len(today_bars) == 0:
                     continue
-                
-                # Intraday high since today's open
+
+                atr = row.get('ATR', 0)
+                if atr <= 0:
+                    continue
+
+                # Compute intraday high for pullback context
                 intraday_high = today_bars['High'].max()
-                
-                # Pullback: price has pulled back ≥3% from intraday high, now pushing up
-                pullback_pct = (intraday_high - row['Close']) / intraday_high
-                is_pullback = (pullback_pct >= 0.03) and (pullback_pct <= 0.12)
-                
-                # Is price recovering? (above EMA, RSI in range)
-                ema_cross = row['Close'] > row['EMA_9']
-                
-                if is_pullback and ema_cross:
-                    signals.append({
-                        'datetime': idx,
-                        'ticker': ticker,
-                        'price': row['Close'],
-                        'score': score,
-                        'rsi': row['RSI'],
-                        'volume_ratio': row['Vol_Ratio'],
-                        'gap_pct': gap_pct,
-                        'atr': row.get('ATR', 0),
-                        'ema_9': row['EMA_9'],
-                        'pillars': details,
-                        'pattern': 'FIRST_PULLBACK',
-                    })
-        
+                intraday_low  = today_bars['Low'].min()
+
+                # First Pullback filter — replaces hardcoded % check
+                is_valid, reason = first_pullback_filter(row, today_bars, atr)
+                if not is_valid:
+                    continue
+
+                signals.append({
+                    'datetime': idx,
+                    'ticker': ticker,
+                    'price': row['Close'],
+                    'score': score,
+                    'rsi': row['RSI'],
+                    'volume_ratio': row['Vol_Ratio'],
+                    'gap_pct': gap_pct,
+                    'atr': atr,
+                    'ema_9': row['EMA_9'],
+                    'pillars': details,
+                    'pattern': 'FIRST_PULLBACK',
+                    'intraday_high': round(float(intraday_high), 3),
+                    'pullback_dollar': round(float(intraday_high) - row['Close'], 3),
+                    'pullback_atr_ratio': round((float(intraday_high) - row['Close']) / atr, 1) if atr > 0 else 0,
+                    'intraday_low': round(float(intraday_low), 3),
+                })
+
         return signals
-    
+
     except Exception as e:
         print(f'  ⚠ {ticker}: {e}')
         return []

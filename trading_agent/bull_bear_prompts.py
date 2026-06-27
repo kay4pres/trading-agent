@@ -28,6 +28,11 @@ class BullBearSignal:
     target: float
     stop: float
     qty: int = 100
+    # ATR pullback context (from first_pullback_filter)
+    intraday_high: float = 0.0
+    intraday_low: float = 0.0
+    pullback_dollar: float = 0.0
+    pullback_atr_ratio: float = 0.0
     # Computed
     target_amount: float = 0.0
     stop_amount: float = 0.0
