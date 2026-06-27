@@ -95,7 +95,6 @@ Write-Output $secret
     if result.returncode != 0 or not result.stdout.strip():
         raise RuntimeError("Secret entry cancelled or failed")
     return result.stdout.strip()
-    return result.stdout.strip()
 
 
 # ── Alpaca Data Client ─────────────────────────────────────────────────────────
@@ -141,9 +140,9 @@ class AlpacaData:
     def get_quote(self, symbol: str) -> Optional[dict]:
         """Latest quote for a symbol."""
         try:
-            from alpaca.data.requests import LatestQuoteRequest
-            req = LatestQuoteRequest(symbol_or_symbols=[symbol])
-            quotes = self.client.get_latest_quote(req)
+            from alpaca.data.requests import StockLatestQuoteRequest
+            req = StockLatestQuoteRequest(symbol_or_symbols=[symbol])
+            quotes = self.client.get_stock_latest_quote(req)
             q = quotes[symbol]
             return {
                 'symbol':    symbol,
@@ -158,9 +157,9 @@ class AlpacaData:
     def get_bar(self, symbol: str, minutes: int = 5) -> Optional[dict]:
         """Latest N-minute bar for a symbol."""
         try:
-            from alpaca.data.requests import LatestBarRequest
-            req = LatestBarRequest(symbol_or_symbols=[symbol])
-            bars = self.client.get_latest_bar(req)
+            from alpaca.data.requests import StockLatestBarRequest
+            req = StockLatestBarRequest(symbol_or_symbols=[symbol])
+            bars = self.client.get_stock_latest_bar(req)
             b = bars[symbol]
             return {
                 'symbol':    symbol,
