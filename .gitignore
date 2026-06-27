@@ -41,3 +41,13 @@ models/
 
 # Course materials
 knowledge/
+
+# Temp/debug scripts
+run_debate.py
+run_debate_today.py
+temp_quote.py
+temp_today_signals.py
+
+# Local config and vault (never commit)
+config/
+vault/
