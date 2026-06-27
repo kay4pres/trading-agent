@@ -60,28 +60,41 @@ def _read_api_key_from_vault() -> str:
 
 def get_secret_from_kay() -> str:
     """
-    Prompt Kay for the Alpaca secret key via a separate PowerShell window.
-    Kay types it directly — it never appears in logs or chat.
+    Prompt Kay for the Alpaca secret key via a separate visible PowerShell window.
+    Kay types it there — it never appears in logs or chat.
+    Uses Start-Process so the window opens regardless of shell interactivity.
     """
-    ps_script = r'''
-        $w = New-Object System.Management.Automation.Host.WarningHost
-        $ui = (Get-Host).UI.RawUI
-        $c = $ui.EscapeCharacter
-        $bid = '6'
-        Write-Host ''
-        Write-Host 'Enter Alpaca Secret Key (input hidden):'
-        $secret = Read-Host -AsSecureString
-        $bstr = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($secret)
-        $plain = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($bstr)
-        [System.Runtime.InteropServices.Marshal]::ZeroFreeBSTR($bstr)
-        Write-Output $plain
-    '''
+    import tempfile
+    prompt_script = r"""
+Add-Type -AssemblyName Microsoft.VisualBasic
+$title = 'Alpaca Secret Key'
+$msg = 'Enter your Alpaca Secret Key (hidden):'
+$secret = [Microsoft.VisualBasic.Interaction]::InputBox($msg, $title, '')
+if ([string]::IsNullOrWhiteSpace($secret)) {
+    Write-Error "No secret entered"
+    exit 1
+}
+Write-Output $secret
+"""
+    # Write to a temp .ps1 so we can run it visibly
+    tmp = tempfile.NamedTemporaryFile(suffix=".ps1", delete=False, mode="w", encoding="utf-8")
+    tmp.write(prompt_script)
+    tmp.close()
+
+    # Run in a new visible window, wait for Kay to type
     result = subprocess.run(
-        ["powershell", "-ExecutionPolicy", "Bypass", "-Command", ps_script],
-        capture_output=True, text=True, timeout=30
+        ["powershell", "-ExecutionPolicy", "Bypass", "-File", tmp.name],
+        capture_output=True, text=True, timeout=60
     )
-    if result.returncode != 0:
-        raise RuntimeError("Failed to read secret from Kay")
+    import os
+    try:
+        os.unlink(tmp.name)
+    except Exception:
+        pass
+
+    if result.returncode != 0 or not result.stdout.strip():
+        raise RuntimeError("Secret entry cancelled or failed")
+    return result.stdout.strip()
     return result.stdout.strip()
 
 
@@ -227,10 +240,11 @@ if __name__ == "__main__":
 
     if args.test:
         print("[Alpaca] Testing connection...")
+        print("[Alpaca] A popup will appear for the secret key...")
         data = AlpacaData()
         quote = data.get_quote(args.symbol)
         if quote:
-            print(f"[Alpaca] {quote['symbol']}: bid=${quote['bid']:.2f} ask=${quote['ask']:.2f}")
+            print(f"[Alpaca] {quote['symbol']}: bid=${quote['bid']:.2f} ask=${quote['ask']:.2f} — CONNECTED!")
         else:
             print("[Alpaca] Quote returned None — check API key and secret")
 
