@@ -60,7 +60,7 @@ def get_open_symbols() -> set:
 
 def auto_open(result: dict):
     """Open position via trader_agent.open_position."""
-    from trading_agent.trader_agent import open_position
+    from trader_agent import open_position
     sig = result.get('signal', result)
     opened = open_position(
         symbol=sig['symbol'],

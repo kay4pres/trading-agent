@@ -173,7 +173,7 @@ def check_exit(state, symbol, pos, live_price):
     return False, None
 
 def execute_exit(state, symbol, pos, reason, live_price):
-    """Close position, write to history, send notification."""
+    """Close position, write to history, send notification, log to journal."""
     exit_price = live_price
     qty = pos["quantity"]
 
@@ -182,12 +182,13 @@ def execute_exit(state, symbol, pos, reason, live_price):
     else:
         pnl = (pos["entry_price"] - exit_price) * qty
 
+    pnl_percent = round(pnl / (pos["entry_price"] * qty) * 100, 2)
     pos["status"] = "CLOSED"
     pos["exited_at"] = now_amsterdam().isoformat()
     pos["exit_reason"] = reason
     pos["exit_price"] = round(exit_price, 4)
     pos["pnl"] = round(pnl, 4)
-    pos["pnl_percent"] = round(pnl / (pos["entry_price"] * qty) * 100, 2)
+    pos["pnl_percent"] = pnl_percent
 
     # Move to history
     state["history"].append(pos)
@@ -196,6 +197,9 @@ def execute_exit(state, symbol, pos, reason, live_price):
     # Save
     save_positions(state)
 
+    # Log to trade journal
+    _log_to_journal(symbol, pos, exit_price, reason, pnl, pnl_percent)
+
     # Notify
     emoji = "✅" if pnl > 0 else "❌"
     direction = pos["direction"].upper()
@@ -203,13 +207,36 @@ def execute_exit(state, symbol, pos, reason, live_price):
         f"{emoji} EXIT: {symbol}\n"
         f"{direction} {qty} shares @ ${exit_price:.2f}\n"
         f"Reason: {reason}\n"
-        f"P&L: ${pnl:.2f} ({pos['pnl_percent']:.1f}%)\n"
+        f"P&L: ${pnl:.2f} ({pnl_percent:.1f}%)\n"
         f"Target was ${pos['target']:.2f} | Stop was ${pos['stop']:.2f}"
     )
     send_telegram(msg)
 
     print(f"[EXIT] {symbol} {reason} @ ${exit_price:.2f} | P&L: ${pnl:.2f}")
     return True
+
+
+def _log_to_journal(symbol, pos, exit_price, reason, pnl, pnl_percent):
+    """Append closed trade to the trade journal."""
+    try:
+        from memory_logger import log_trade
+        log_trade({
+            "symbol": symbol,
+            "action": pos.get("direction", "LONG").upper(),
+            "entry_price": pos["entry_price"],
+            "exit_price": round(exit_price, 4),
+            "exit_reason": reason,
+            "pnl": round(pnl, 2),
+            "pnl_pct": round(pnl_percent, 2),
+            "closed_at": now_amsterdam().isoformat(),
+            "notes": (
+                f"Signal: {pos.get('entry_signal','?')} | "
+                f"Score: {pos.get('signal_score','?')}/5 | "
+                f"ATR: {pos.get('atr','?')}"
+            ),
+        })
+    except Exception as e:
+        print(f"[Memory] Failed to log trade: {e}")
 
 def check_two_min_rule(state, symbol, pos, live_price):
     """
