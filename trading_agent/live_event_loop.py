@@ -314,23 +314,73 @@ def start_live_loop(watchlist: list[str], secret: str):
         handler.stop()
 
 
+def load_watchlist_symbols(csv_path: Path = None) -> list[str]:
+    """
+    Read symbols from Richard's premarket watchlist CSV.
+    Falls back to today's dated watchlist, then to watchlist_latest.csv.
+    Returns list of ticker symbols sorted by score (highest first).
+    """
+    if csv_path is None:
+        csv_path = DATA_DIR / "watchlists" / "watchlist_latest.csv"
+
+    if not csv_path.exists():
+        # Try today's dated file
+        today_str = datetime.now(AMSTERDAM_TZ).strftime("%Y%m%d")
+        csv_path = DATA_DIR / "watchlists" / f"watchlist_{today_str}.csv"
+
+    if not csv_path.exists():
+        return []
+
+    try:
+        import csv
+        symbols = []
+        with open(csv_path, newline='', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                sym = row.get('symbol', '').strip().upper()
+                if sym:
+                    symbols.append(sym)
+        return symbols
+    except Exception as e:
+        print(f"[Watchlist] Failed to read {csv_path}: {e}")
+        return []
+
+
 if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="Live event-driven trading loop")
-    parser.add_argument("--watchlist", default="AAPL,TSLA,SOFI,AMD,NVDA",
-                        help="Comma-separated symbols")
+    parser.add_argument("--watchlist", default=None,
+                        help="Comma-separated symbols (overrides watchlist_latest.csv)")
     parser.add_argument("--secret", action="store_true",
                         help="Prompt for Alpaca secret key")
+    parser.add_argument("--from-csv", type=Path,
+                        default=DATA_DIR / "watchlists" / "watchlist_latest.csv",
+                        help="Path to watchlist CSV (default: watchlist_latest.csv)")
     args = parser.parse_args()
 
-    symbols = [s.strip().upper() for s in args.watchlist.split(",")]
+    # Resolve symbols: CLI arg > CSV > nothing
+    if args.watchlist:
+        symbols = [s.strip().upper() for s in args.watchlist.split(",") if s.strip()]
+        print(f"[LiveLoop] Using CLI symbols: {symbols}")
+    else:
+        symbols = load_watchlist_symbols(args.from_csv)
+        if symbols:
+            print(f"[LiveLoop] Loaded {len(symbols)} symbols from {args.from_csv.name}: {symbols}")
+        else:
+            print("[LiveLoop] No watchlist found — use --watchlist or ensure Richard's premarket ran today")
+            symbols = []
 
-    if args.secret:
+    if not symbols:
+        parser.print_help()
+        print("\nNo symbols available. Options:")
+        print("  1. Run Richard's premarket screener first:")
+        print("     py -3 trading_agent\\premarket_screener.py --save")
+        print("  2. Or pass symbols manually:")
+        print("     py -3 trading_agent\\live_event_loop.py --watchlist AAPL,TSLA --secret")
+    elif args.secret:
         from alpaca_connector import get_secret_from_kay
         secret = get_secret_from_kay()
         start_live_loop(symbols, secret)
     else:
         parser.print_help()
-        print("\nTo run with live data:")
-        print("  py -3 trading_agent\\live_event_loop.py --watchlist AAPL,TSLA --secret")

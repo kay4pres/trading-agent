@@ -477,6 +477,9 @@ if __name__ == '__main__':
         if args.save:
             save_watchlist(results, WATCHLIST_FILE)
             print(f"  💾 {WATCHLIST_FILE.name}")
+            # Also write a stable "latest" alias for live_event_loop.py
+            save_watchlist(results, WATCHLIST_DIR / "watchlist_latest.csv")
+            print(f"  💾 watchlist_latest.csv")
     else:
         print("\n  No signals found above threshold.")
         print("  Try lowering --min-score or check data sources.")
