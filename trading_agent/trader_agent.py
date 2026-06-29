@@ -59,6 +59,23 @@ def get_live_price(symbol):
         return None
 
 
+def get_historical(symbol, period='5d', interval='5m'):
+    """Fetch 5-min bars via yfinance. Returns list of dicts with timestamp/high/low/close."""
+    import yfinance as yf
+    ticker = yf.Ticker(symbol)
+    df = ticker.history(period=period, interval=interval)
+    if df.empty:
+        return []
+    bars = []
+    for ts, row in df.iterrows():
+        bars.append({
+            'timestamp': ts.timestamp(),
+            'high': float(row['High']),
+            'low': float(row['Low']),
+            'close': float(row['Close']),
+        })
+    return bars
+
 def get_atr(symbol):
     """
     Calculate ATR from INTRADAY 5-min bars (today's volatility).

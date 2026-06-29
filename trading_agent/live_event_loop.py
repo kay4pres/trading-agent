@@ -111,12 +111,10 @@ def monitor_positions():
                     )
                     if should_exit_2min:
                         execute_exit(state, symbol, pos, reason_2min, live_price)
-                        on_exit(symbol, reason_2min, live_price, pos)
                         continue
                     should_exit, reason = check_exit(state, symbol, pos, live_price)
                     if should_exit:
                         execute_exit(state, symbol, pos, reason, live_price)
-                        on_exit(symbol, reason, live_price, pos)
                         continue
 
             # 2. Poll for new debate results
