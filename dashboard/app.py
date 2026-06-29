@@ -85,6 +85,9 @@ state = {
     'pnl':          0.0,
     'last_scan':    None,
     'market_open':  False,
+    'positions':     [],   # open positions from live_event_loop
+    'trades':       [],   # closed trades from live_event_loop
+    'bull_bear':     [],  # recent Bull/Bear verdicts
 }
 
 
@@ -116,6 +119,76 @@ def save_decisions(decisions):
     """Save decisions to disk."""
     with open(DECISIONS_FILE, 'w') as f:
         json.dump(decisions[-100:], f, indent=2, default=str)
+
+
+def load_trading_engine_state():
+    """
+    Load positions and Bull/Bear results from the live_event_loop pipeline.
+    Called every minute by scan_thread to keep dashboard in sync.
+    """
+    global state
+
+    # ── Positions ──────────────────────────────────────────────────────────────
+    positions_file = DATA_DIR / 'positions.json'
+    if positions_file.exists():
+        try:
+            with open(positions_file, 'r') as f:
+                data = json.load(f)
+
+            open_pos = []
+            closed = []
+            for sym, pos in data.get('positions', {}).items():
+                if pos.get('status') == 'OPEN':
+                    open_pos.append({'symbol': sym, **pos})
+            for trade in data.get('history', []):
+                closed.append(trade)
+
+            # Compute live P&L for open positions
+            if open_pos:
+                syms = [p['symbol'] for p in open_pos]
+                try:
+                    quotes = get_batch_quotes(syms)
+                    price_map = {q.get('symbol'): q.get('price', 0) for q in (quotes if isinstance(quotes, list) else [])}
+                except Exception:
+                    price_map = {}
+
+                for p in open_pos:
+                    live = price_map.get(p['symbol'], p.get('entry_price', 0))
+                    p['live_price'] = round(live, 4)
+                    p['live_pnl'] = round((live - p.get('entry_price', 0)) * p.get('quantity', 100), 2)
+            else:
+                price_map = {}
+
+            state['positions'] = open_pos
+            state['trades']   = closed[-10:]  # last 10 closed
+            total_pnl = sum(t.get('pnl', 0) for t in closed)
+            state['pnl'] = round(total_pnl, 2)
+
+        except Exception as e:
+            print(f"[dashboard] positions error: {e}")
+
+    # ── Bull/Bear results ───────────────────────────────────────────────────
+    bb_file = DATA_DIR / 'bull_bear_results.json'
+    if bb_file.exists():
+        try:
+            with open(bb_file, 'r') as f:
+                bb_data = json.load(f)
+            debates = bb_data.get('debates', [])
+            # Keep last 5, strip full LLM text (too long for UI)
+            trimmed = []
+            for d in debates[-5:]:
+                trimmed.append({
+                    'symbol':      d.get('symbol', '?'),
+                    'verdict':     d.get('verdict', '?'),
+                    'conviction':  d.get('conviction', 0),
+                    'debated_at':  d.get('debated_at', ''),
+                    'bull_short':  (d.get('bull', '') or '')[:120],
+                    'bear_short':  (d.get('bear', '') or '')[:120],
+                    'rm_short':    (d.get('research_manager', '') or '')[:200],
+                })
+            state['bull_bear'] = trimmed
+        except Exception as e:
+            print(f"[dashboard] bull_bear error: {e}")
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -319,25 +392,58 @@ def scan_thread():
                             print(f"[scanner] Telegram alert failed: {te}")
 
                 print(f"[scanner] scanned {len(signals)} signals at {state['last_scan']}")
+
+                # Sync with live_event_loop pipeline
+                load_trading_engine_state()
             except Exception as e:
                 print(f"[scanner] error: {e}")
         else:
             state['market_open'] = berlin_now().strftime('%H:%M') >= '14:00'
-        time.sleep(300)  # 5 min
+        time.sleep(60)  # 1 min — also syncs positions/Bull-Bear
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # TELEGRAM CALLBACK HANDLER
 # ═══════════════════════════════════════════════════════════════════════════════
 
-def on_telegram_button(action: str, symbol: str, price: float, score: float,
-                       chat_id: str, message_id: int):
+def on_telegram_button(action: str, symbol: str = None, price: float = None, score: float = None,
+                       chat_id: str = None, message_id: int = None):
     """
     Called by the Telegram polling thread when Kay taps a button.
     Records the decision directly in state (no HTTP round-trip).
     APPROVE also calls Trader's open_position() to create a real tracked position.
+
+    Handles two call signatures:
+    - Signal buttons (6 args): action, symbol, price, score, chat_id, message_id
+    - Tollgate buttons (4 args): action, run_id, chat_id, message_id  [symbol/price/score=None]
     """
     global state
+
+    # ── Tollgate buttons: TOLLGATE_PROCEED | TOLLGATE_ESCALATE | TOLLGATE_ABORT ─
+    if action.startswith('TOLLGATE_'):
+        run_id = symbol  # symbol param carries run_id for tollgate calls
+        decision = action.replace('TOLLGATE_', '').lower()
+        tollgate_file = DATA_DIR / 'tollgate_decisions.json'
+        try:
+            if tollgate_file.exists():
+                decisions = json.loads(tollgate_file.read_text(encoding='utf-8'))
+            else:
+                decisions = {}
+            decisions[run_id] = {
+                'decision': decision,
+                'chat_id': str(chat_id or ''),
+            }
+            tollgate_file.write_text(json.dumps(decisions, indent=2, default=str), encoding='utf-8')
+            print(f"[telegram] Tollgate decision written: /{decision} for run {run_id}")
+        except Exception as e:
+            print(f"[telegram] Failed to write tollgate decision: {e}")
+        return
+
+    # ── Signal buttons ───────────────────────────────────────────────────
+    # Guard against None values from tollgate-style calls leaking through
+    if symbol is None or price is None or score is None:
+        print(f"[telegram] on_telegram_button skipped: missing signal fields (action={action})")
+        return
 
     # ── APPROVE: open position in Trader ───────────────────────────────────
     if action == 'APPROVE':
@@ -400,6 +506,9 @@ def api_state():
         'last_scan':    state['last_scan'],
         'market_open':   state['market_open'],
         'berlin_time':  berlin_now().strftime('%H:%M'),
+        'positions':    state['positions'],
+        'trades':      state['trades'],
+        'bull_bear':   state['bull_bear'],
     })
 
 
@@ -481,6 +590,145 @@ def api_decision():
 def api_history():
     """Return full decision history."""
     return jsonify(state['decisions'][-50:])
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# TRADINGVIEW WEBHOOK
+# ═══════════════════════════════════════════════════════════════════════════════
+
+@app.route('/webhook/tradingview', methods=['POST'])
+def webhook_tradingview():
+    """
+    Receive TradingView Pine Script alert → create a pending signal.
+
+    TradingView sends JSON like:
+    {
+        "symbol":    "AAPL",
+        "price":     "150.25",
+        "action":    "buy",      # "buy" or "sell"
+        "qty":       "100",      # optional, defaults to 100
+        "target":    "150.75",   # optional
+        "stop":      "149.75",   # optional
+        "tv_alert":  "First Pullback AAPL",  # optional description
+        "score":     "4.5",      # optional, Kay's manual confidence
+    }
+
+    Mode B (Kay-driven): adds to signals_live.json → Kay approves via dashboard/Telegram.
+    Mode C (auto): run Bull/Bear inline → auto-open if conviction >= threshold.
+
+    Returns 200 always (TradingView expects ACK within 5s).
+    """
+    try:
+        data = request.get_json(force=True)
+    except Exception:
+        return jsonify({'ok': False, 'error': 'invalid JSON'}), 400
+
+    symbol = (data.get('symbol') or '').upper().strip()
+    if not symbol:
+        return jsonify({'ok': False, 'error': 'no symbol'}), 400
+
+    # ── Dedup: already in open position? ──────────────────────────────────
+    positions_file = DATA_DIR / 'positions.json'
+    if positions_file.exists():
+        try:
+            with open(positions_file) as f:
+                pos_data = json.load(f)
+            if symbol in pos_data.get('positions', {}):
+                print(f"[Webhook TV] {symbol} already in position — ignoring")
+                return jsonify({'ok': True, 'action': 'ignored', 'reason': 'already_held'}), 200
+        except Exception:
+            pass
+
+    # ── Dedup: already debated / pending? ─────────────────────────────────
+    signal_file = DATA_DIR / 'signals_live.json'
+    if signal_file.exists():
+        try:
+            with open(signal_file) as f:
+                existing = json.load(f)
+            existing_list = existing if isinstance(existing, list) else [existing]
+            for sig in existing_list:
+                if sig.get('symbol', '').upper() == symbol and not sig.get('decided'):
+                    print(f"[Webhook TV] {symbol} already pending — ignoring")
+                    return jsonify({'ok': True, 'action': 'ignored', 'reason': 'already_pending'}), 200
+        except Exception:
+            pass
+
+    # ── Parse fields ───────────────────────────────────────────────────────
+    try:
+        price = float(data.get('price', 0))
+    except (TypeError, ValueError):
+        price = 0.0
+
+    try:
+        qty = int(data.get('qty', 100))
+    except (TypeError, ValueError):
+        qty = 100
+
+    target_raw = data.get('target')
+    stop_raw   = data.get('stop')
+    target = float(target_raw) if target_raw else round(price + 0.20, 2)
+    stop   = float(stop_raw)   if stop_raw   else round(price - 0.10, 2)
+
+    score = float(data.get('score', 4.5))
+
+    tv_alert_desc = data.get('tv_alert', 'TradingView Pine Alert')
+
+    # ── Build signal ──────────────────────────────────────────────────────
+    signal = {
+        'symbol':         symbol,
+        'price':         price,
+        'yesterday_close': price,    # TV alert doesn't carry yesterday close
+        'gap_pct':       0.0,       # TV alert fires on chart pattern, not gap
+        'float_m':       0.0,
+        'rel_vol':       0.0,
+        'rsi':           50.0,
+        'news':          tv_alert_desc,
+        'score':         score,
+        'p1': 'manual', 'p2': 'manual', 'p3': 'manual', 'p4': 'manual', 'p5': 'manual',
+        'target':        target,
+        'stop':          stop,
+        'qty':           qty,
+        'debated':       False,
+        'decided':       False,
+        'source':        'tv_webhook',
+        'tv_alert':      tv_alert_desc,
+        'created_at':    berlin_now().isoformat(),
+    }
+
+    # ── Append to signals_live.json ───────────────────────────────────────
+    signals = []
+    if signal_file.exists():
+        try:
+            with open(signal_file, encoding='utf-8') as f:
+                signals = json.load(f)
+            signals = signals if isinstance(signals, list) else [signals]
+        except Exception:
+            signals = []
+
+    signals.append(signal)
+    signal_file.parent.mkdir(parents=True, exist_ok=True)
+    with open(signal_file, 'w', encoding='utf-8') as f:
+        json.dump(signals, f, indent=2, default=str)
+
+    # ── Notify Kay ────────────────────────────────────────────────────────
+    rr = (target - price) / (price - stop) if price != stop else 0
+    msg = (
+        f"📺 TV Alert — {symbol}\n"
+        f"Price: ${price} | Qty: {qty}\n"
+        f"Target: ${target} | Stop: ${stop}\n"
+        f"R:R = {rr:.1f}:1 | Score: {score}/5\n"
+        f"Alert: {tv_alert_desc}\n"
+        f"\n"
+        f"✅ Approve: /approve {symbol}\n"
+        f"❌ Deny:    /deny {symbol}"
+    )
+    try:
+        send_alert(msg)
+    except Exception as e:
+        print(f"[Webhook TV] Telegram error: {e}")
+
+    print(f"[Webhook TV] {symbol} added from TV — awaiting Kay approval")
+    return jsonify({'ok': True, 'action': 'queued', 'symbol': symbol}), 200
 
 
 # ═══════════════════════════════════════════════════════════════════════════════

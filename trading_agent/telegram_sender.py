@@ -83,6 +83,63 @@ def send_message(text: str, parse_mode: str = 'Markdown') -> bool:
     return result is not None and result.get('ok', False)
 
 
+def send_tollgate_message(
+    query: str,
+    confidence: float,
+    verdict: str,
+    data_gaps: list,
+    run_id: str,
+    domain: str = "trading",
+) -> Optional[Dict[str, Any]]:
+    """
+    Send a tollgate decision request to Kay's Telegram group.
+    Uses callback_data buttons — requires start_tollgate_listener() to be running.
+    """
+    verdict_emoji = {
+        "PASS": "✅", "REVIEW": "⚠️", "REJECTED": "🚫",
+        "TOLLGATE": "🚧", "PASS-KAY-OVERRIDE": "✅*",
+    }.get(verdict, "❓")
+
+    lines = [
+        f"{verdict_emoji} <b>TOLLGATE — Evidence Gap</b>",
+        f"─────────────────────",
+        f"<b>Query:</b> {query}",
+        f"<b>Confidence:</b> {confidence * 100:.0f}% — <i>{verdict}</i>",
+        f"<b>Domain:</b> {domain}",
+    ]
+
+    if data_gaps:
+        lines.append("")
+        lines.append("<b>Data Gaps:</b>")
+        for gap in data_gaps[:4]:
+            lines.append(f"  ⚠️ {gap[:150]}")
+
+    lines.append("")
+    lines.append(f"<b>Tap a button below to decide:</b>")
+    lines.append(f"<i>Run: {run_id}</i>")
+
+    text = "\n".join(lines)
+
+    payload = {
+        'chat_id':    CHAT_ID,
+        'text':       text,
+        'parse_mode': 'HTML',
+        'reply_markup': json.dumps({
+            'inline_keyboard': [[
+                {'text': '✅ PROCEED',  'callback_data': f'tollgate:proceed:{run_id}'},
+                {'text': '🔍 ESCALATE', 'callback_data': f'tollgate:escalate:{run_id}'},
+                {'text': '🚫 ABORT',    'callback_data': f'tollgate:abort:{run_id}'},
+            ]]
+        }),
+    }
+
+    result = _api_request('sendMessage', payload)
+    ok = result is not None and result.get('ok', False)
+    if ok:
+        print(f"[telegram_sender] Tollgate sent for run {run_id}")
+    return result
+
+
 def send_signal_with_buttons(
     symbol: str,
     action: str,
@@ -185,6 +242,126 @@ def send_watchlist(symbols: list, scan_time: str) -> bool:
     return send_message('\n'.join(lines))
 
 
+# ═══════════════════════════════════════════════════════════════════════════════
+# TOLLGATE LISTENER — background thread for button callbacks
+# ═══════════════════════════════════════════════════════════════════════════════
+
+_tollgate_listener_running = False
+
+
+def _tollgate_callback_handler(cmd: str, run_id: str, chat_id: str) -> None:
+    """Called by the polling loop when a tollgate button is tapped."""
+    emoji_map = {'proceed': '✅', 'escalate': '🔍', 'abort': '🚫'}
+    label_map = {'proceed': 'Proceeding', 'escalate': 'Escalating', 'abort': 'Aborting'}
+    _write_tollgate_decision(run_id, cmd, chat_id)
+    _reply_to_chat(chat_id,
+        f"{emoji_map.get(cmd, '❓')} <b>{label_map.get(cmd, cmd.upper())}</b>\n"
+        f"Run <code>{run_id}</code> — researcher will act now."
+    )
+    print(f"[telegram] Tollgate button: /{cmd} for run {run_id}")
+
+
+# ── File-based IPC for researcher tollgate decisions ───────────────────────────
+_TOLLGATE_FILE = Path(r'E:\Me\TradingAgent\data\tollgate_decisions.json')
+
+def _write_tollgate_decision(run_id: str, decision: str, chat_id: str) -> None:
+    """Write a tollgate decision to the shared JSON file for the researcher to read."""
+    try:
+        # Load existing decisions
+        if _TOLLGATE_FILE.exists():
+            decisions = json.loads(_TOLLGATE_FILE.read_text(encoding='utf-8'))
+        else:
+            decisions = {}
+        # Overwrite with latest decision for this run_id
+        decisions[run_id] = {
+            'decision': decision,
+            'chat_id': chat_id,
+            'ts': _api_request('getMe', {})['result']['username'] if False else '',  # placeholder
+        }
+        _TOLLGATE_FILE.write_text(json.dumps(decisions, indent=2, default=str), encoding='utf-8')
+    except Exception as e:
+        print(f"[telegram] Failed to write tollgate decision: {e}")
+
+
+def _tollgate_polling_loop() -> None:
+    """
+    Background thread: polls Telegram every 2s for tollgate callback_query updates.
+    Uses non-blocking getUpdates — offset tracked globally via _INBOX_LAST_ID
+    so it never competes with poll_inbox().
+    """
+    global _tollgate_listener_running, _INBOX_LAST_ID
+    while _tollgate_listener_running:
+        try:
+            # Use offset=_INBOX_LAST_ID+1 (same state as poll_inbox)
+            updates = _api_request('getUpdates', {
+                'offset':  _INBOX_LAST_ID + 1,
+                'timeout': 0,  # non-blocking — returns immediately
+            })
+            if not (updates and updates.get('ok')):
+                time.sleep(2)
+                continue
+
+            for upd in updates.get('result', []):
+                _INBOX_LAST_ID = upd.get('update_id', _INBOX_LAST_ID)
+                cq = upd.get('callback_query', {})
+                if not cq:
+                    continue
+                data = cq.get('data', '')
+                if not data or not data.startswith('tollgate:'):
+                    continue
+                parts = data.split(':')
+                if len(parts) != 3:
+                    continue
+                _, cmd, run_id = parts
+                chat_id = str(cq.get('message', {}).get('chat', {}).get('id', ''))
+                callback_id = cq.get('id', '')
+                answer_callback(callback_id, f"Received: /{cmd} for {run_id}", show_alert=True)
+                _tollgate_callback_handler(cmd, run_id, chat_id)
+
+        except Exception as e:
+            print(f"[telegram tollgate loop] error: {e}")
+            time.sleep(3)
+        else:
+            time.sleep(2)
+
+
+def start_tollgate_listener() -> None:
+    """
+    Start the background Telegram polling thread for tollgate button callbacks.
+    Call once at startup. Thread runs until the process exits.
+    Idempotent — safe to call multiple times.
+    """
+    global _tollgate_listener_running
+    if _tollgate_listener_running:
+        return
+    _tollgate_listener_running = True
+    t = threading.Thread(target=_tollgate_polling_loop, daemon=True)
+    t.start()
+    print("[telegram] Tollgate listener started — button callbacks will be processed")
+
+
+def get_tollgate_decision(run_id: str, timeout: float = None) -> Optional[dict]:
+    """
+    Check if Kay tapped a button for the given run_id by reading data/tollgate_decisions.json.
+    Returns {'decision': 'proceed'|'escalate'|'abort', 'chat_id': '...'}
+    or None if no decision yet (blocks up to timeout seconds, or forever if timeout=None).
+    """
+    deadline = time.time() + timeout if timeout else None
+    while True:
+        if _TOLLGATE_FILE.exists():
+            try:
+                decisions = json.loads(_TOLLGATE_FILE.read_text(encoding='utf-8'))
+                if run_id in decisions:
+                    result = decisions.pop(run_id)
+                    _TOLLGATE_FILE.write_text(json.dumps(decisions, indent=2, default=str), encoding='utf-8')
+                    return result
+            except Exception as e:
+                print(f"[telegram] Error reading tollgate decisions: {e}")
+        if deadline and time.time() >= deadline:
+            return None
+        time.sleep(0.5)
+
+
 def edit_message_buttons(chat_id: str, message_id: int, action: str, symbol: str, price: float):
     """Replace inline buttons with the decision that was made."""
     emoji_map = {'approve': '✅', 'deny': '❌', 'skip': '⏭️'}
@@ -205,6 +382,32 @@ def edit_message_buttons(chat_id: str, message_id: int, action: str, symbol: str
         'parse_mode': 'HTML',
     })
     # Clear the reply markup (remove buttons)
+    _api_request('editMessageReplyMarkup', {
+        'chat_id':    chat_id,
+        'message_id': message_id,
+        'reply_markup': json.dumps({'inline_keyboard': []}),
+    })
+
+
+def _edit_tollgate_message(chat_id: str, message_id: int, action: str, run_id: str):
+    """Replace tollgate buttons with the decision that was made."""
+    emoji_map = {'proceed': '✅', 'escalate': '🔍', 'abort': '🚫'}
+    label_map  = {'proceed': 'PROCEEDING', 'escalate': 'ESCALATING', 'abort': 'ABORTED'}
+    emoji = emoji_map.get(action, '❓')
+    label = label_map.get(action, action.upper())
+
+    new_text = (
+        f"{emoji} <b>{label}</b>\n"
+        f"─────────────────────\n"
+        f"<i>Kay's decision received for run {run_id}</i>\n"
+        f"<i>Researcher agent will act on this shortly.</i>"
+    )
+    _api_request('editMessageText', {
+        'chat_id':    chat_id,
+        'message_id': message_id,
+        'text':       new_text,
+        'parse_mode': 'HTML',
+    })
     _api_request('editMessageReplyMarkup', {
         'chat_id':    chat_id,
         'message_id': message_id,
@@ -275,6 +478,86 @@ def _reply_to_chat(chat_id: str, text: str):
     })
 
 
+def _handle_approve(chat_id: str, symbol: str):
+    """Handle /approve SYMBOL — open position and notify Kay."""
+    signals_file = Path(r'E:\Me\TradingAgent\data\signals_live.json')
+    if not signals_file.exists():
+        _reply_to_chat(chat_id, f"⚠️ No signals found — nothing to approve for {symbol}")
+        return
+
+    try:
+        signals = json.loads(signals_file.read_text(encoding='utf-8'))
+    except Exception:
+        _reply_to_chat(chat_id, f"⚠️ Could not read signals file for {symbol}")
+        return
+
+    sig = None
+    for s in (signals if isinstance(signals, list) else [signals]):
+        if s.get('symbol', '').upper() == symbol.upper() and not s.get('decided'):
+            sig = s
+            break
+
+    if not sig:
+        _reply_to_chat(chat_id, f"⚠️ No pending signal found for {symbol}")
+        return
+
+    # Try to open the position via trader_agent
+    try:
+        sys.path.insert(0, str(Path(__file__).parent))
+        from trader_agent import open_position as trader_open
+        opened = trader_open(
+            symbol=sig['symbol'],
+            direction='long',
+            entry_price=sig['price'],
+            quantity=sig.get('qty', 100),
+            target=sig.get('target'),
+            stop=sig.get('stop'),
+            signal_score=sig.get('score', 4.5),
+            rules_applied=[f"P{i}" for i in range(1, 6) if sig.get(f'p{i}')],
+            signal_type=f"TV Webhook (Kay approved)",
+        )
+    except Exception as e:
+        opened = False
+        print(f"[telegram approve] trader_agent error: {e}")
+
+    # Mark signal as decided
+    _mark_signal_decided(symbol.upper(), 'APPROVED')
+
+    if opened:
+        _reply_to_chat(chat_id,
+            f"✅ *APPROVED — {symbol}*\n"
+            f"Position opened. Watch for exit alerts.")
+    else:
+        _reply_to_chat(chat_id,
+            f"⚠️ {symbol} already in position or trade rejected.\n"
+            f"Check positions.json.")
+
+
+def _handle_deny(chat_id: str, symbol: str):
+    """Handle /deny SYMBOL — skip signal and notify Kay."""
+    _mark_signal_decided(symbol.upper(), 'DENIED')
+    _reply_to_chat(chat_id, f"❌ *DENIED — {symbol}*\nSignal skipped.")
+
+
+def _mark_signal_decided(symbol: str, decision: str):
+    """Mark a signal as decided in signals_live.json."""
+    signals_file = Path(r'E:\Me\TradingAgent\data\signals_live.json')
+    if not signals_file.exists():
+        return
+    try:
+        signals = json.loads(signals_file.read_text(encoding='utf-8'))
+        changed = False
+        for s in (signals if isinstance(signals, list) else [signals]):
+            if s.get('symbol', '').upper() == symbol.upper() and not s.get('decided'):
+                s['decided'] = True
+                s['decision'] = decision
+                changed = True
+        if changed:
+            signals_file.write_text(json.dumps(signals, indent=2, default=str), encoding='utf-8')
+    except Exception as e:
+        print(f"[telegram] Error marking {symbol} decided: {e}")
+
+
 def poll_callbacks(callback_handler=None):
     """
     Background thread: polls Telegram for updates every 5s.
@@ -306,6 +589,30 @@ def poll_callbacks(callback_handler=None):
                     if not data:
                         continue
 
+                    # ── Tollgate buttons: tollgate:<action>:<run_id> ───────────
+                    if data.startswith('tollgate:'):
+                        parts = data.split(':')
+                        if len(parts) == 3:
+                            _, action, run_id = parts
+                            label_map = {
+                                'proceed':  'Proceeding with research — auto-accepted',
+                                'escalate': 'Escalating — lead researcher will dig deeper',
+                                'abort':    'Research aborted',
+                            }
+                            answer_callback(
+                                callback_id,
+                                label_map.get(action, f'Tollgate: {action}'),
+                                show_alert=True,
+                            )
+                            _edit_tollgate_message(chat_id, message_id, action, run_id)
+                            # Write to shared file so researcher can read without competing polls
+                            _write_tollgate_decision(run_id, action, chat_id)
+                            if callback_handler:
+                                callback_handler(f'TOLLGATE_{action.upper()}', run_id, chat_id, message_id)
+                            print(f"[telegram] Tollgate: {action.upper()} {run_id}")
+                            continue
+
+                    # ── Signal buttons: approve:<sym>:<price>:<score> ───────────
                     parts = data.split(':')
                     if len(parts) != 4:
                         continue
@@ -338,6 +645,26 @@ def poll_callbacks(callback_handler=None):
                     continue
 
                 if not text.startswith('/key'):
+                    # ── /approve SYMBOL ─────────────────────────────────────────
+                    if text.startswith('/approve'):
+                        parts = text.split()
+                        if len(parts) < 2:
+                            _reply_to_chat(chat_id, "Usage: `/approve SOFI`")
+                            continue
+                        symbol = parts[1].upper().strip()
+                        _handle_approve(chat_id, symbol)
+                        continue
+
+                    # ── /deny SYMBOL ───────────────────────────────────────────
+                    if text.startswith('/deny'):
+                        parts = text.split()
+                        if len(parts) < 2:
+                            _reply_to_chat(chat_id, "Usage: `/deny SOFI`")
+                            continue
+                        symbol = parts[1].upper().strip()
+                        _handle_deny(chat_id, symbol)
+                        continue
+
                     continue
 
                 # Parse: /key finnhub YOUR_KEY_HERE
@@ -390,13 +717,18 @@ def stop_polling():
 
 # ── Inbox poller (for Mavis session to call directly) ─────────────────────────
 _INBOX_LAST_ID = 0
+_TOLLGATE_COMMANDS = {'proceed', 'escalate', 'abort'}
 
 
-def poll_inbox() -> list:
+def poll_inbox(tollgate_handler=None) -> list:
     """
     Check Telegram for new messages. Returns list of message dicts.
     Safe to call from any context (Mavis session, cron, etc.).
-    Call this regularly from Mavis to stay in sync with Kay's Telegram messages.
+
+    Args:
+        tollgate_handler: Optional callback(cmd: str, run_id: str, chat_id: str).
+            Called immediately when a tollgate command is received (/proceed, /escalate, /abort).
+            If provided, the command is processed and acknowledged without returning in results.
     """
     global _INBOX_LAST_ID
     try:
@@ -410,15 +742,40 @@ def poll_inbox() -> list:
         for upd in updates.get('result', []):
             uid = upd.get('update_id', 0)
             _INBOX_LAST_ID = max(_INBOX_LAST_ID, uid)
+
+            # ── Text message ───────────────────────────────────────────────────
             if 'message' in upd:
                 m = upd['message']
+                chat_id = str(m.get('chat', {}).get('id', ''))
+                text    = (m.get('text', '') or m.get('caption', '')).strip()
+
+                # ── Tollgate command: /proceed <run_id>, /escalate <run_id>, /abort <run_id> ─
+                if text.startswith('/') and tollgate_handler:
+                    parts = text.strip().split(' ', 1)
+                    cmd   = parts[0][1:]   # strip leading '/'
+                    run_id = parts[1] if len(parts) > 1 else ""
+
+                    if cmd in _TOLLGATE_COMMANDS and run_id:
+                        emoji_map   = {'proceed': '✅', 'escalate': '🔍', 'abort': '🚫'}
+                        label_map   = {'proceed': 'Proceeding', 'escalate': 'Escalating', 'abort': 'Aborting'}
+                        # Acknowledge Kay immediately
+                        _reply_to_chat(chat_id,
+                            f"{emoji_map[cmd]} <b>{label_map[cmd]}</b>\n"
+                            f"Run <code>{run_id}</code> — researcher will act on this now."
+                        )
+                        tollgate_handler(cmd, run_id, chat_id)
+                        continue   # don't add to results — already handled
+
+                # Normal message — add to results
                 results.append({
                     'update_id': uid,
-                    'chat_id':   str(m.get('chat', {}).get('id', '')),
+                    'chat_id':   chat_id,
                     'chat_name': m.get('chat', {}).get('title', '') or m.get('chat', {}).get('first_name', ''),
-                    'text':      (m.get('text', '') or m.get('caption', '')).strip(),
+                    'text':      text,
                     'timestamp': m.get('date', 0),
                 })
+
+            # ── Callback query ─────────────────────────────────────────────────
             elif 'callback_query' in upd:
                 cq = upd['callback_query']
                 results.append({
@@ -428,6 +785,7 @@ def poll_inbox() -> list:
                     'data':      cq.get('data', ''),
                     'callback_id': cq.get('id', ''),
                 })
+
         return results
     except Exception as e:
         print(f'[telegram inbox] poll error: {e}')
