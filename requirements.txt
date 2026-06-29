@@ -1,0 +1,23 @@
+# Trading Agent — Docker image dependencies
+# Install: pip install -r requirements.txt
+
+# Web framework
+Flask>=3.0.0
+flask-cors>=4.0.0
+
+# Data providers
+yfinance>=0.2.36
+requests>=2.31.0
+
+# Telegram bot
+python-telegram-bot>=20.7
+
+# Process management inside container
+croniter>=2.0.0
+
+# Data handling
+pandas>=2.0.0
+numpy>=1.26.0
+
+# Local model (Whisper)
+# faster-whisper is installed separately — see Dockerfile

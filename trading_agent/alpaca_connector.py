@@ -58,15 +58,34 @@ def _read_api_key_from_vault() -> str:
     return result.stdout.strip()
 
 
-def _read_secret_from_vault() -> str | None:
-    """Read Alpaca secret from DPAPI vault. Returns None if not yet stored."""
-    vault_path = Path(__file__).parent.parent / "vault" / "alpaca_secret.enc"
-    if not vault_path.exists():
+def _read_secret_from_vault(vault_dir: str | None = None) -> str | None:
+    """
+    Read Alpaca secret from vault.
+
+    Docker mode (vault_dir set):
+        Checks {vault_dir}/ALPACA_SECRET_KEY.env — plain text written by entrypoint.sh.
+    Windows mode (vault_dir None):
+        Falls back to DPAPI-decrypted alpaca_secret.enc.
+    """
+    if vault_dir is None:
+        vault_dir = str(Path(__file__).parent.parent / "vault")
+
+    # Docker: plain-text env file written by entrypoint
+    docker_secret_path = Path(vault_dir) / "ALPACA_SECRET_KEY.env"
+    if docker_secret_path.exists():
+        secret = docker_secret_path.read_text(encoding="utf-8").strip()
+        if secret:
+            return secret
+
+    # Windows: DPAPI-decrypted vault (legacy path)
+    vault_enc_path = Path(vault_dir) / "alpaca_secret.enc"
+    if not vault_enc_path.exists():
         return None
+
     ps_script = fr'''
         $ErrorAction = 'Stop'
         try {{
-            $secret = Get-Content '{vault_path}' -Raw -Encoding UTF8
+            $secret = Get-Content '{vault_enc_path}' -Raw -Encoding UTF8
             $encrypted = [Convert]::FromBase64String($secret.Trim())
             $decrypted = [System.Security.Cryptography.ProtectedData]::Unprotect(
                 $encrypted, $null,
@@ -86,14 +105,92 @@ def _read_secret_from_vault() -> str | None:
     return result.stdout.strip()
 
 
-def get_secret_from_kay() -> str:
+def _store_secret_to_vault(secret: str) -> bool:
+    """
+    Store Alpaca secret to DPAPI vault. Uses Python ctypes to call Windows DPAPI
+    directly -- no PowerShell dependency.
+
+    Entropy parameter (optional_entropy) defaults to None, meaning current-user-only
+    scope. The same Windows user account is required to decrypt.
+    """
+    import ctypes
+    from ctypes import wintype
+
+    vault_path = Path(__file__).parent.parent / "vault" / "alpaca_secret.enc"
+    vault_path.parent.mkdir(parents=True, exist_ok=True)
+
+    class DATA_BLOB(ctypes.Structure):
+        _fields_ = [
+            ("cbData", wintype.DWORD),
+            ("pbData", ctypes.POINTER(ctypes.c_byte)),
+        ]
+
+    CRYPTPROTECT_UI_FORBIDDEN = 0x1
+
+    try:
+        # Load DLLs
+        crypt32 = ctypes.WinDLL("Crypt32.dll")
+        kernel32 = ctypes.WinDLL("Kernel32.dll")
+
+        crypt32.CryptProtectData.argtypes = [
+            ctypes.POINTER(DATA_BLOB),  # pDataIn
+            ctypes.c_wchar_p,            # szDataDescr (optional, can be NULL)
+            ctypes.POINTER(DATA_BLOB),  # pOptionalEntropy
+            ctypes.c_void_p,            # pvReserved (must be NULL)
+            ctypes.c_void_p,            # pPromptStruct (NULL = no UI)
+            ctypes.DWORD,               # dwFlags
+            ctypes.POINTER(DATA_BLOB),  # pDataOut
+        ]
+        crypt32.CryptProtectData.restype = wintype.BOOL
+
+        kernel32.LocalFree.argtypes = [wintype.HLOCAL]
+        kernel32.LocalFree.restype = wintype.HLOCAL
+
+        # Build input blob
+        secret_bytes = secret.encode("utf-16-le")  # DPAPI expects UTF-16 LE
+        in_blob = DATA_BLOB(
+            cbData=len(secret_bytes),
+            pbData=(ctypes.c_byte * len(secret_bytes)).from_buffer_copy(secret_bytes),
+        )
+
+        out_blob = DATA_BLOB()
+
+        ok = crypt32.CryptProtectData(
+            ctypes.byref(in_blob),
+            None,  # no description
+            None,  # no optional entropy
+            None,  # reserved
+            None,  # no prompt
+            CRYPTPROTECT_UI_FORBIDDEN,
+            ctypes.byref(out_blob),
+        )
+
+        if not ok:
+            raise ctypes.WinError()
+
+        # Extract encrypted bytes from output blob
+        encrypted = bytes(out_blob.pbData[:out_blob.cbData])
+        kernel32.LocalFree(out_blob.pbData)
+
+        # Encode to base64 for safe storage
+        import base64
+        b64 = base64.b64encode(encrypted).decode("ascii")
+        vault_path.write_text(b64 + "\n", encoding="utf-8")
+        return True
+
+    except Exception as e:
+        print(f"[_store_secret_to_vault] DPAPI failed: {e}")
+        return False
+
+
+def get_secret_from_kay(vault_dir: str | None = None) -> str:
     """
     Get the Alpaca secret key.
-    First checks vault/alpaca_secret.enc (DPAPI, no popup).
+    First checks vault (Docker .env file or Windows DPAPI, no popup).
     Falls back to InputBox popup if vault is empty.
     """
     # Try vault first (auto-start path)
-    vault_secret = _read_secret_from_vault()
+    vault_secret = _read_secret_from_vault(vault_dir=vault_dir)
     if vault_secret:
         return vault_secret
 
@@ -266,7 +363,8 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="Alpaca live data connector")
     parser.add_argument("--test", action="store_true", help="Test connection with a quote")
-    parser.add_argument("--secret", action="store_true", help="Prompt for secret key and show status")
+    parser.add_argument("--secret", action="store_true", help="Prompt for secret key, test connection, store to vault")
+    parser.add_argument("--store-secret", dest="store_secret", metavar="SECRET", help="Store secret to vault non-interactively")
     parser.add_argument("--symbol", default="AAPL", help="Symbol for --test")
     args = parser.parse_args()
 
@@ -285,9 +383,27 @@ if __name__ == "__main__":
         data = AlpacaData()
         quote = data.get_quote(args.symbol)
         if quote:
+            # Store secret to vault on successful connection
+            secret = data.secret
+            if secret and _store_secret_to_vault(secret):
+                print("[Alpaca] Secret stored to vault ✅")
             print(f"[Alpaca] Connected! {quote['symbol']}: bid=${quote['bid']:.2f} ask=${quote['ask']:.2f}")
         else:
             print("[Alpaca] Connection failed — check key and secret")
+
+    elif args.store_secret:
+        secret = args.store_secret
+        if _store_secret_to_vault(secret):
+            print(f"[Alpaca] Secret stored to vault ✅")
+            # Verify it reads back correctly
+            from alpaca_connector import _read_secret_from_vault
+            stored = _read_secret_from_vault()
+            if stored == secret:
+                print("[Alpaca] Vault verification: PASS ✅")
+            else:
+                print("[Alpaca] Vault verification: FAIL — read back mismatch")
+        else:
+            print("[Alpaca] Store failed — check PowerShell DPAPI access")
 
     else:
         parser.print_help()

@@ -355,6 +355,9 @@ if __name__ == "__main__":
     parser.add_argument("--from-csv", type=Path,
                         default=DATA_DIR / "watchlists" / "watchlist_latest.csv",
                         help="Path to watchlist CSV (default: watchlist_latest.csv)")
+    parser.add_argument("--vault-dir",
+                        default=None,
+                        help="Vault directory for Docker deployments (default: app vault)")
     args = parser.parse_args()
 
     # Resolve symbols: CLI arg > CSV > nothing
@@ -378,6 +381,7 @@ if __name__ == "__main__":
         print("     py -3 trading_agent\\live_event_loop.py --watchlist AAPL,TSLA --secret")
     elif args.secret:
         from alpaca_connector import get_secret_from_kay
+        vault_dir = args.vault_dir
         lock_file = DATA_DIR / ".live_loop.lock"
         import os
         # Guard: refuse to double-start
@@ -393,7 +397,7 @@ if __name__ == "__main__":
         # Write PID so crash detection works next time
         lock_file.write_text(str(os.getpid()))
         try:
-            secret = get_secret_from_kay()
+            secret = get_secret_from_kay(vault_dir=vault_dir)
             start_live_loop(symbols, secret)
         finally:
             lock_file.unlink(missing_ok=True)  # always clean up on exit

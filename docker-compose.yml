@@ -1,0 +1,80 @@
+# docker-compose.yml — Kay's Trading Agent Stack
+# Deploy via Portainer: paste this + fill in .env variables
+#
+# Portainer setup:
+#   Stacks → Add stack → GitHub (or Editor mode) → paste docker-compose.yml
+#   Then set environment variables in Portainer's "Environment variables" section
+#   (Portainer stores them encrypted and passes them to docker-compose)
+#
+# Or use .env file locally:
+#   cp .env.example .env
+#   # edit .env with your credentials
+#   docker compose up -d
+
+services:
+  trading-agent:
+    image: kay/trading-agent:latest
+    container_name: trading-agent
+    restart: unless-stopped
+
+    # Environment variables — set in Portainer stack config
+    # (NEVER commit real values to git)
+    environment:
+      - TZ=Europe/Berlin
+
+      # ── Alpaca ──────────────────────────────────────────────────────────────
+      # Paper trading API keys from https://app.alpaca.markets/
+      - ALPACA_API_KEY=${ALPACA_API_KEY}
+      - ALPACA_SECRET_KEY=${ALPACA_SECRET_KEY}
+
+      # ── Telegram ───────────────────────────────────────────────────────────
+      # Bot token from @BotFather
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+
+      # ── LLM ─────────────────────────────────────────────────────────────────
+      # MiniMax API key for Bull/Bear debate
+      - MINIMAX_API_KEY=${MINIMAX_API_KEY}
+
+      # ── Optional ────────────────────────────────────────────────────────────
+      # TradingView webhook secret (verify incoming alerts)
+      - TV_WEBHOOK_SECRET=${TV_WEBHOOK_SECRET:-}
+
+    # Persist state across restarts — maps host folder to container vault
+    volumes:
+      # Vault: encrypted credentials (host only, gitignored)
+      - ./vault:/app/vault:ro
+
+      # Data: positions, signals, logs, watchlists
+      - ./data:/app/data
+
+      # Dashboard static files
+      - ./dashboard/static:/app/dashboard/static:ro
+
+      # Local models (Whisper) if present
+      - ./models:/app/models:ro
+
+    ports:
+      - "5050:5050"   # Dashboard
+
+    # Health check — dashboard must respond
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5050/api/state')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+    # Resource limits (NAS-friendly)
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 512M
+
+    # Logging — rotate daily, keep 7 days
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "7"
