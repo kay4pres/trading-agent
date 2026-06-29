@@ -1,0 +1,349 @@
+# Intro to My Day Trading Strategies.mp4
+# Transcribed: 2026-06-29T21:26:43.261433
+# Duration: 28.9 minutes
+# Model: faster-whisper tiny
+
+[00:00:00] Okay, so we're going to go ahead and jump in here with chapter one and part one intro to my day trading strategies
+[00:00:08] Welcome to strategies and scaling. This is
+[00:00:11] Going to be an exciting class for you guys to go through during this class. I have made every effort to
+[00:00:19] Download everything that's in my brain about trading and put it on to these slides and articulate it to you
+[00:00:27] This is a full-lang training and I don't hold anything back. It's a lot to learn and
+[00:00:35] I encourage you to re-watch sections of the class that are complex that cover some really detailed stuff
+[00:00:42] Watch it a couple times. It's it's a lot to take in
+[00:00:45] But also, this is the thing that's really cool
+[00:00:48] The first time you watch the class and then you're in the chat room and you're listening to my calm commentary
+[00:00:54] The things I'm saying are going to start clicking. They're going to start making more sense and if you go back and you re-watch the class
+[00:00:59] You're going to hear things you didn't hear the first time people say this when they listen to Taylor Swift's album
+[00:01:04] They're like, you know when I listen to it a second time I heard things
+[00:01:07] I didn't hear the first time. So it's a lot like that, but you know what?
+[00:01:10] Maybe even a little bit deeper. Okay, so let's go ahead here and
+[00:01:16] Jump in a couple housekeeping items. I want to make sure that you have watched every chapter of day trading the basics
+[00:01:22] It is a prerequisite for this class. I try not to repeat myself too much
+[00:01:27] Obviously in day trading the basics. I'm laying out all of in quite literal terms the basic concepts of trading and
+[00:01:36] In day trading strategies and scaling we dive deeper on all of those concepts
+[00:01:42] So the way I kind of like to think of it is in day trading the basics
+[00:01:46] I'm setting the foundation by touching on, you know, each of the key points that you need to understand in order to trade
+[00:01:55] I'm introducing each of those concepts each of those topics and in strategies in scaling we start adding the depth around them
+[00:02:04] So this is where we're going to come back to the same concept, but we're going to start to add more depth
+[00:02:10] And this is where we sort of build a solid foundation
+[00:02:14] I made the mistake in the past of trying to teach classes where I would start with topic one in the basics and I would just spend like three hours on this topic
+[00:02:24] And then people would be like, my goodness, I I don't even want to continue on to number two
+[00:02:30] And so it seems it's better to introduce everything high level
+[00:02:35] Keep it keep it light and then kind of come back around for another pass where we add more context
+[00:02:41] We add more detail. So we're going to kind of keep doing that as we go through this class and and so as we do that
+[00:02:49] Your knowledge is just going to grow and you're going to feel I think a sense of
+[00:02:55] Confidence as I come back to something and you're like, oh, yeah, I know about that
+[00:03:00] So I hope that you watched most of day trading the basics
+[00:03:03] I understand that there may be a couple of sections that you skimmed over a little bit maybe order entry things things that you might already be quite familiar with and that's fine
+[00:03:11] But as long as you got through them up the the majority of it, I think that's important and especially chapter 15
+[00:03:18] Part one where I was sharing with you the trading plan for how I want you to trade for three months using a simulator before you put real money on the line
+[00:03:26] We'll talk about that again a little bit in a few minutes
+[00:03:29] Step two I encourage you to log in in the chat room as often as possible
+[00:03:33] So you can watch me trading and so you can be fully immersed in this community of
+[00:03:37] Traders we've got a community here with really supportive traders. They're really passionate
+[00:03:43] They love being part of this, you know, part of the market and part of this larger community of active traders and
+[00:03:50] They're very I think generally very kind people that we have in this community
+[00:03:56] And part of that is intentional because you know, I'm not marketing to you know
+[00:04:02] I'm not doing the fancy cars and the girls in the bikinis and getting this kind of like
+[00:04:07] You know, I don't know if I know it's bro like very high testosterone kind of a male energy going on here
+[00:04:15] We try to keep this community really family friendly and my kids are sometimes watching over my shoulder
+[00:04:20] They're listening to me while I'm streaming so
+[00:04:23] We try this is a professional community and the more time that you log in the more
+[00:04:29] You're gonna have to hear me speaking this language that you're learning because learning the language of the market is not
+[00:04:35] Completely different from learning a different language like friends or Spanish and obviously is you learn a language
+[00:04:41] If you can be surrounded by people speaking language, you're gonna pick up on it faster
+[00:04:46] Step three of course to begin using a trading simulator as soon as possible
+[00:04:49] Hopefully you already are because it's for me. I learned so much better by getting my hands, you know into it
+[00:04:57] That's just the way I learn
+[00:04:59] It would be hard for me to learn something like how to fly a plane because they wouldn't let me fly the plane until like, you know
+[00:05:05] Probably like the end, but I really learned best by getting my hands on things
+[00:05:09] I don't want to read the owner's manual. You know how to use I don't know a drill
+[00:05:14] I'd rather just start figuring it out myself
+[00:05:16] So that's me so and I think that's probably the way a lot of people learn
+[00:05:19] So I really don't want you to trade in real money and I don't want you to ever try to blindly follow me while I'm trading
+[00:05:25] I want you to take it slow, but please don't try to real money until you've completed the pre-trading checklist at the end of this course
+[00:05:34] Okay, and you shouldn't me or trade anyone for that matter
+[00:05:37] I mean me or trading is when you just blindly follow and some people will think oh well
+[00:05:41] And I've heard other people they some people send out text alerts and they'll say just follow me on these trades
+[00:05:47] And I really don't think that's a good practice at at at best
+[00:05:52] You make a little money and you're unfortunately 100% dependent on them
+[00:05:56] But it worst you lose money because you're always going to be behind them and that's really the more likely outcome
+[00:06:01] Just in terms of the the speed at which things are moving you've got to be able to think for yourself
+[00:06:06] So don't me or trade use certainly my broadcast as you're listening as the opportunity to understand what I'm doing
+[00:06:14] It is me demonstrating the strategies I teach in these classes here
+[00:06:19] I'm demonstrating it in real time, which is really awesome
+[00:06:23] So the chat room is a classroom, so use it as such and I really think that students who skip the classes
+[00:06:30] And then don't follow the rules the strategy, you know, they kind of rush through it and then sort of, you know
+[00:06:36] Only capture certain aspects, but miss some very critical pieces
+[00:06:41] Well end up trading the wrong stocks they end up trading real money before they're ready and they're more likely to fail
+[00:06:46] And then I don't want to do that happen, so please take it slow the market will be here point prove you can be profitable before trading real money
+[00:06:53] I sound like a broken record, but I can't say it enough times
+[00:06:56] I say it because it was a big mistake that I made when I got started
+[00:07:00] I put real money on the line a lost real money and it was devastated
+[00:07:03] So as I've already introduced to you the process of becoming a trader
+[00:07:06] It's a process of converting knowledge into skill
+[00:07:10] We can birth that knowledge into skill by practicing there's no substitute for practicing
+[00:07:15] It doesn't matter what you want to get good at you want to get good at shooting, you know a three point shot
+[00:07:21] You practice you want to get good at it. You're I don't know golf swing you practice
+[00:07:27] There's just no substitute for practice
+[00:07:29] Now obviously it helps when you have practice and you have some mentorship and you have guidance to point you into right direction
+[00:07:35] And you're getting that so now you just need to put the put in the time and start practicing
+[00:07:40] So through this course, we're going to be talking about risk management
+[00:07:44] We're going to talk about trading the right stocks each day. This is one of the
+[00:07:48] Rit when we went when I think about risk management
+[00:07:50] I think about okay every time I'm taking a trade
+[00:07:53] I'm I carry the risk of losing money. There's risk versus reward and one of the ways that I reduce risk is
+[00:08:00] By trading the right stocks if I start trading the wrong stocks and you're going to learn all about what that looks like if I start trading stocks are dominated by
+[00:08:08] Hydrating to trading algorithms. I'm going to lose money. So for me
+[00:08:13] Everything comes back to risk management choosing the right stocks. It's a it's a technique for managing risk
+[00:08:18] Building a watch list. It's technique for managing risk. It's keeping me focused studying in today and daily chart patterns for support and resistance
+[00:08:26] It's a way of managing my risk
+[00:08:28] Studying the level two learning how to read the tape learning how to execute orders quickly with hotkeys and hop up and that helps when you manage risk
+[00:08:36] The momentum is scalping strategies that you're going to learn these are strategies where I feel like I have less downside risk
+[00:08:43] And I have more upside potential
+[00:08:45] So those are the strategies that I'm in love with I've been trading them every day for more than a decade. I'm going to talk a lot about
+[00:08:51] The mindset of being a trader. We're going to talk about the psychology of success in the market
+[00:08:57] We're going to talk about business plans trading plans. We're going to talk about
+[00:09:01] Executing on those plans first in the simulator and then with real money now the basic trading plan that I gave to you during
+[00:09:08] Chapter 15 of day trading the basics is your starting point and as I said as we go through strategies and scaling
+[00:09:14] We're going to keep filling in more and more detail behind that until by the end
+[00:09:18] You're going to have a fully complete
+[00:09:21] Plan this is something that I'm so passionate about because I remember when I was in school
+[00:09:27] That I had
+[00:09:29] You know some of these classes where the teacher would say at the beginning of the class by the end of this class
+[00:09:35] You're going to have to write a 25 page paper and you'd be like oh
+[00:09:40] I can't believe it and they say but don't worry
+[00:09:43] We're doing it together and we're going to start today
+[00:09:46] We're going to start with choosing your topic you choose your topic and so I had I had a paper at one point when I was younger
+[00:09:53] And so I chose my topic and I was comparing
+[00:09:58] It doesn't really matter, but I was comparing modern
+[00:10:01] American architecture to modern European architecture and so I had my thesis
+[00:10:07] I was like this is what I'm going to write about and then the first assignment was to write the thesis and then the second assignment was to write your introductory
+[00:10:17] Paragraph and then the next month the you know the next assignment was to find three sources and then it was to write
+[00:10:26] You know brief summaries of those three sources and then it was to write, you know
+[00:10:31] thesis about each source and and before you knew it
+[00:10:35] All of a sudden the paper was written we did it piece by piece by piece and then by the end of the semester
+[00:10:41] We had 25 page paper now they walked us through it
+[00:10:45] So we would understand how to do that in the future so when we had a more advanced class and they say hey
+[00:10:50] You've got a right 25 page paper. We'd realize that it's not that overwhelming because you do it piece by piece
+[00:10:55] And so that's what we're going to do with the training plan. We're going to do it piece by piece
+[00:11:00] Then of course, we're going to talk a lot about trading psychology
+[00:11:03] We're covering from losses and building discipline and adopting the mindset of being aware and then we're going to get into some of the boring
+[00:11:10] But important stuff tax management retirement planning how to trade in retirement account
+[00:11:15] I'm going to be a huge advocate of this. I got to talk about a lot one of the things I love doing is trading in a retirement account
+[00:11:20] I'm going to teach you some techniques where you can actually trade into accounts at the same time
+[00:11:24] You could trade in taxable account to make money to pay bills today
+[00:11:28] You can also trade in a retirement account to see be saving money for the future
+[00:11:32] Which is awesome?
+[00:11:34] Okay, so that's the overview. That's the process becoming a trader and we're going to be spending the next
+[00:11:40] 20 chapters going through that process and it's going to be fun
+[00:11:43] So the simple steps to getting started or in the strategy
+[00:11:47] Prepare your trading plan
+[00:11:49] Proud you can trade it profitably go live starting with small size and then continue to scale up
+[00:11:54] That's it. That's the process
+[00:11:57] So my success. I'm going to say right now. It's not typical. In fact
+[00:12:02] It's not typical, but I will also say that it took me nearly 20 years
+[00:12:06] From when I opened my first account in 2001 before I crossed over a million dollars in trading profits
+[00:12:13] So I was in the market for a long time before I ever made my first million dollars now in fact that million dollars
+[00:12:20] I had
+[00:12:22] Reset my account in January of 2017 to
+[00:12:25] $583 and 15 cents and I did a small account challenge as you many of you have seen me do and you may have heard about this challenge because I've talked about it quite a bit
+[00:12:35] I suppose well known for it
+[00:12:37] over the course of
+[00:12:39] About 45 days. I grew the account to a hundred grand and once I'd grown the account to a hundred thousand dollars
+[00:12:45] I knew that I'd be able to turn it into a million dollars. It wasn't a matter of if it was a matter of when so for the rest of 2017
+[00:12:53] I kept growing the account. I finished 2017. This was December of 2017. I starved with
+[00:13:00] $583 and 15 cents by the end of 2017. I was at $335,000 dollars. Oops. I forgot the five
+[00:13:08] $335,000. That was 2017. In 2018, I made half a million, which meant my account was at about
+[00:13:16] $835,000 and in 2019 I crossed over one million. This is in 2019
+[00:13:22] and
+[00:13:23] What I
+[00:13:24] Could have never known at the time
+[00:13:27] Was that we were about to
+[00:13:30] Begin a bullmark at the likes of which I've never seen
+[00:13:34] So through the years my experience my skills kept improving and then I found myself with the right skills at the right time
+[00:13:41] To capitalize on the game stop short squeeze and I made more money than I could have ever imagined in
+[00:13:46] During that period of time and
+[00:13:49] Now my account is over $20 million in profit from that original starting balance of less than 600
+[00:13:55] So from less than 600 dollars to over 20 million
+[00:13:59] My results are not typical, but it didn't happen overnight. It took me a long time to get here
+[00:14:04] And my hope is that you're able to use all my experience and all my knowledge that I've tried to download from my brain and put into this class
+[00:14:11] To give you a really strong starting off point and that you know that you're learning from someone who's been in a trenches
+[00:14:19] Who's gone through tough times and who has figured out how to recover
+[00:14:25] So for those you guys that are struggling, I could share with you the techniques that I've used that have helped me rebuild
+[00:14:30] And I actually have that in the stand-alone class called trader rehab
+[00:14:33] But we'll talk about it here during stradges and scaling as well and you guys have access to trader rehab as part of your membership
+[00:14:40] So here's a question
+[00:14:42] How do you know when you've gotten it?
+[00:14:44] How do you know when you actually, you know are successful?
+[00:14:47] Well, they'll be a day where you realize that it's been a couple weeks since your last really big red day
+[00:14:52] And that you've actually had several weeks of consistent profitability and that's when you start to feel like you're a little bit out of the woods
+[00:14:59] And now you just have to keep your head down and keep going keep moving. I remember
+[00:15:05] With rock climbing. I had never really rock climbed before and then you know, I
+[00:15:11] Light rock climbing and I was nervous about getting up so high as scared and
+[00:15:17] So I kind of just said don't look down. Just keep one step one foot one hand just keep moving higher keep moving higher
+[00:15:25] and
+[00:15:27] The next thing you know all of a sudden you're like wow look, I did it and that's kind of the whole idea of the marathon
+[00:15:33] It's just small steps. It's all those small steps that add up. Remember when force gump like ran a jog across the country
+[00:15:41] You know he didn't know where he was going. He just started jogging and next thing you know you look up and it's like wow
+[00:15:45] Am I am am I am I am I in a cornfield now? How did I get here? I don't know, but but we're trading keep your head down
+[00:15:52] Keep grinding and don't don't look it don't just try not to look too much
+[00:15:57] Focus on the tasks that you need to do every single day to stay on track
+[00:16:03] Now when you have your first big red day, it'll scare you and you'll wonder where those last few weeks so those last few months just begin our luck
+[00:16:10] So what you want to do is you step back you reset and you're gonna rebuild and the way you're gonna
+[00:16:16] Do it is you're gonna look at the metrics that you generated during those few weeks
+[00:16:22] So even if you did everything if you did this
+[00:16:25] You would still say I'm the person you did this and I can do it again and that is literally happened to me more times
+[00:16:30] I could count it seemed like clockwork every six weeks
+[00:16:34] I would give back all my progress and so I had this long period of time
+[00:16:38] This very long period of time where I would be trading and my account would look like this progress back to break even
+[00:16:44] Progress back to break even progress back to break even and then oh, I'd go a little lower because I had to take a thousand dollars out of my account to pay some bills
+[00:16:51] And then progress and then back to break even progress back to break even and I've to take a little more money out
+[00:16:56] And it took a while before I went from being a break even trader here to actually making money
+[00:17:03] But the fact is you don't want to dismiss
+[00:17:07] What's going on here because here you are showing the little hints that you've got something that works
+[00:17:14] We just need to control those red days and I'm going to teach you how to do that
+[00:17:20] Okay, so as you know, I'm a volatility trader and I'm a momentum trader
+[00:17:24] I don't make money buying and selling and some buying and selling something of the same price
+[00:17:28] I make money buying something and having it going up go up 20, 30, 40%
+[00:17:32] So I'm a volatility trader. I'm a momentum trader
+[00:17:35] But we have to acknowledge that
+[00:17:38] volatility also
+[00:17:39] creates risk and so there is risk in the market and in order to have volatility
+[00:17:45] There needs to be an imbalance between supply and demand and this gets into sort of a philosophical conversation about
+[00:17:51] Where how is supply and demand created in the market and so we're going to go really deep into the elements of supply and the elements of demand and
+[00:17:59] How those come together in real time?
+[00:18:01] There's there's a number of different variables. They're fascinating and those result in what ultimately end up being
+[00:18:09] Some of these huge moves
+[00:18:10] So for me my momentum strategy. I mean, I could apply it to all price ranges
+[00:18:15] For me though, I focus on trading stocks between two and two and one
+[00:18:19] I like to trade stocks are moving up at least five to ten percent in the last few minutes
+[00:18:23] And I like to trade stocks with floats that are less than 20 million shares
+[00:18:27] That's my sweet spot and we'll talk about why that's the case as we go through this course
+[00:18:31] But for me my strategy is by high-sell higher. I'm using specific
+[00:18:36] Supporter resistance levels and inter-day chart patterns to manage my risk
+[00:18:40] So even though I'm buying high, it's still with a back stock. I use tight stops
+[00:18:45] And I utilize a dip trading and a scout trading strategy as needed to capitalize when we have a stock that's got a lot of volatility
+[00:18:53] And it's bouncing up and down very quickly
+[00:18:55] You'll learn about those subsets of the momentum strategy later on in the course
+[00:19:00] And then of course I increase my size once I have a profit cushion on the day
+[00:19:03] This is a scaling strategy that I'm going to share with you when we talk about risk management
+[00:19:07] It's been really key for me that I start each day with smaller size and then I increase as I go on
+[00:19:14] Now I know you guys who are trading using the trading plan from chapter 15
+[00:19:19] You're using 100 shares you're just using 100 shares on every trade and that's totally fine
+[00:19:23] You're not scaling in right now scaling in is a little bit more advanced. It's for you know
+[00:19:28] Once you've got a little bit of success, then you start kind of trying to
+[00:19:31] Become more efficient kind of fine-tune your strategy first
+[00:19:35] We just got to get the engine running which is trading, you know getting some water going through the pipes, et cetera
+[00:19:41] And hopefully make it a little bit of money. This is an example of a pretty nice momentum stock
+[00:19:46] You're going to see a lot of examples through this course one of the things that
+[00:19:51] You'll recognize as you'll see examples. You'll see live trading archives and
+[00:19:55] These are all case studies of the strategies that I trade and then you'll see the very precise entries
+[00:20:01] And exit how I get in how I get out and so these are all part of putting the pieces together and
+[00:20:06] All of this is based on my five pillars of stock selection knowing that this helps me manage risk and we're gonna get into it
+[00:20:14] In chapter three when we talk about stock selection, but just you know, just to get you off to a good start
+[00:20:19] I'll hide this for a second
+[00:20:21] Price percentage change today relative volume catalyst and float you probably heard me say it before already
+[00:20:27] So I won't go through all of them again right now because we're gonna go deeper into it
+[00:20:31] But this for me is is really fundamental to the way I trade if these changed my entire strategy would would change and that you know
+[00:20:41] It would not change for the better for me. I come to the market with a willingness to be aggressive and a confidence to be aggressive
+[00:20:48] Because I've got my strategy that supports it right. I've got my historical data that supports it
+[00:20:54] So for me, you know, coming to the table and
+[00:20:58] Aggressively trading momentum and something that's moving fast it requires precise entries
+[00:21:02] It definitely requires an ability to re-level to the time and sales. You got to be able to see the strength and weakness
+[00:21:07] Now some traders that adopt a small cap short selling strategy or even long
+[00:21:13] Large cap long or short strategy will find that there may be slower paste
+[00:21:18] But they could take longer to work and because they're slower pace
+[00:21:22] They're gonna expose themselves to more risk and if they decide to engage in short selling
+[00:21:26] They're exposing themselves to the risk of potentially an unlimited loss
+[00:21:30] When I look around at the traders in this community right here who have earned
+[00:21:37] Million dollar badges two million dollar badges even five hundred K badges
+[00:21:40] These are traders who are trading almost the exact same strategies
+[00:21:45] They're not short selling. They're not trading large caps sometimes
+[00:21:49] People get overwhelmed with how fast the stocks I'm trading move and I think I'd rather just do something slower
+[00:21:55] Like just wait for the stock to move and then short it when it comes back down or I'm just gonna trade large caps because they're slower
+[00:22:02] And then I ask well how many people do you see who are consistently or long periods of time making money day trading
+[00:22:11] Small caps to the short side or day trading large caps
+[00:22:16] And the answer is I've seen very few traders who've been able to verify to me with their broker statements over long periods of time
+[00:22:22] I'm very able to do it
+[00:22:23] So it makes me think that
+[00:22:27] Sometimes the solution
+[00:22:29] To feeling overwhelmed that these stocks are moving too quickly is not to abandon them and go switch to a different strategy that seems to have
+[00:22:38] Seems to be less popular, but instead to figure out are there ways that I can
+[00:22:44] Make this strategy work for me perhaps by focusing more on slower timeframes like the five-minute chart or perhaps by
+[00:22:53] Improving my ability to react to these fast moving stocks through practice and experience
+[00:22:58] So for me, I feel like I'm trading a sniper strategy
+[00:23:02] I've got it. I spend a lot of time waiting a lot of time being patient and then when I see a good opportunity boom
+[00:23:09] I strike and you guys are gonna hear me of course as I'm trading because I'm giving you all of this in real time
+[00:23:15] One of the things that I really want to emphasize
+[00:23:18] And I don't know why I have the number three there. I'll pop that up. Is the importance of finding your niche in the market?
+[00:23:24] We all have our niche, right? So for me
+[00:23:27] There's no question that I have a time of day where I make a lot of money
+[00:23:31] I've got a price range where I make a lot of money
+[00:23:33] I've got certain float range where I make a lot of money and it's possible that even within those large parameters
+[00:23:39] You'll find the subset where you do really well. You might be like wow
+[00:23:43] I do really well on stocks at a price between three dollars and five dollars if that's what your data is telling you
+[00:23:49] You want to lean in if your data is telling you
+[00:23:52] I don't do well on stocks between 15 and 20. Then you should put those completely to the side
+[00:23:57] Your data will give you these answers and that's why you guys start practicing and assimilator
+[00:24:02] Because that's why I'll start accumulating data
+[00:24:05] So ultimately, it's about being good at one strategy. If you can find one strategy that can be your bread and butter
+[00:24:12] Survive to your thrive just learn to tread water in the market keep your head above water if you could be good
+[00:24:17] It's just one set up with one strategy. You could be successful. You don't need to trade every day
+[00:24:22] You don't it's about quality over quantity and when you have a set up that you trust they are confident in
+[00:24:28] Then you'll take bigger size and even if it only shows up a couple times a week
+[00:24:33] Potentially you're going to trade it with bigger size and you'll do just fine
+[00:24:36] A lot traders get so fixated on I have to trade every single day and so if they don't see an a quality set up
+[00:24:43] They end up just reducing the quality standard and you know it happens they end up losing money and then they regret it
+[00:24:48] So I would encourage you to practice in the simulator for at least three months as soon as you start practicing the better off
+[00:24:53] You'll be
+[00:24:54] I'm just gonna
+[00:24:57] Just type it out just for people that don't know the acronym we sim I think it's probably most people know it's seven
+[00:25:02] But sim simulator for at least three months the student you start practicing the better off
+[00:25:06] You'll be this will I start testing the knowledge that you're gaining through this course and begin that hands-on process of converting that knowledge into a skill
+[00:25:15] So the trading plan
+[00:25:17] From day trading the basics is what I want you guys to utilize right now as you're getting started
+[00:25:21] This is this I think is just it's a really good starting point
+[00:25:24] And I want you to remember that profits are a byproduct of your process
+[00:25:29] Focus on the process the profits comes secondary
+[00:25:33] So by following a repeatable process you can reduce the emotions and trading
+[00:25:38] You're really just going step by step by step following the rules
+[00:25:42] So this is repeatable and you could write this down and you give it to someone else and they could follow it
+[00:25:46] And that's what we're doing that's really literally what I'm trying to do right here
+[00:25:49] I'm trying to give you the process so you can repeat it now the difference in
+[00:25:53] Results between you and I will be a factor of a number of different things your personal aptitude and
+[00:26:00] Coordination the tools you're using some of them are internal some of them are external
+[00:26:04] Your ability to follow the rules especially when things get tough
+[00:26:08] When things get tough you're in the red and emotions start coming out that's when it's really important that
+[00:26:15] You continue to have the discipline to follow the rules
+[00:26:18] So trading loss is commission software cost and education costs these are cost of doing business
+[00:26:23] They feel bigger when you've got a smaller account and when you're earlier on
+[00:26:28] But as we get further into the class we'll talk about
+[00:26:32] How as a self-employed trader. There are some things you could do to take advantage of
+[00:26:36] deductions and right off the cost of some of this equipment and
+[00:26:41] That being a self-employed trader means, you know, you're your business owner a small business owner
+[00:26:46] And business owners of all all types have periods where it's hot, it periods where it's cold
+[00:26:51] And so when it's hot, you want to put a little money away and save it for a rainy day and when it's cold, you know
+[00:26:57] You just kind of get through you back and down the hatches and you survive
+[00:27:00] That that's those are the ups and downs of being a business owner and of course the trade-off is working a nine to five job
+[00:27:06] Where you get the same paycheck every week and I know I for one would rather
+[00:27:11] I would never trade this for that. I just wanted I'm okay with the ups and the downs
+[00:27:16] As long as I can be living life on my own term for I'm my own boss
+[00:27:21] So the steps you can take today is to start tracking all your seven trades on a spreadsheet or you can use software like trader view
+[00:27:27] You guys know that I like all your simulated trades
+[00:27:31] I like trader view, but if you want to use different software, that's okay
+[00:27:34] Stop trading real money until you've proven profitability and I guess the only exception would be number one
+[00:27:39] If you're currently making money and you came to this course because you want it get better
+[00:27:43] Okay, well, and you're making money so good for you and then number two if you're someone who feels like you need to trade a real money to experience the emotions
+[00:27:51] And so you're trading with like 10 shares with real money just to experience the emotions
+[00:27:55] So if you're in that situation, then that's also okay
+[00:27:58] And if you have current trading history because you've been trading for a few months
+[00:28:02] import that trading history to a website like trader view so you could pull your stats and data mine that information
+[00:28:07] It's gonna be fascinating with my accuracy
+[00:28:10] What's my profit loss ratio how long are my whole hold times what types of stocks do I make money on and then number four
+[00:28:16] I'll say it again don't be a file or don't blindly follow me or anything or anyone else doesn't matter text alerts
+[00:28:24] You know reddit Twitter
+[00:28:27] Use your mind think about what you're doing. Okay, build your watch. Let's each day based on the five pillars of stock selection
+[00:28:33] Take the trades based on the strategies that you're learning if we are trading the same stocks in the same setups
+[00:28:39] That's confirmation. You're looking at the right stuff. That's okay. All right, so with that let's continue on here with
+[00:28:46] We're actually going to jump right into chapter two on risk management

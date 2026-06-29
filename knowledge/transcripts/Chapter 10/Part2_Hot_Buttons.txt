@@ -1,0 +1,127 @@
+# Chapter10-Part 2 Hot Buttons_audio.wav
+# Transcribed: 2026-06-29T21:22:10.520320
+# Duration: 10.5 minutes
+# Model: faster-whisper tiny
+
+[00:00:00] Okay, so we're going to go ahead and continue on here with part two on hot buttons.
+[00:00:05] Okay, so hot buttons essentially is what you get over at think or swim. These are buttons and they're hot buttons in the sense that you press the button and
+[00:00:14] Boom your order is going live to the market. So it's instantaneous. Now you could turn off auto-sand in which these are no longer hot buttons
+[00:00:24] They're just like order entry buttons
+[00:00:27] But most people would have them turned on and by having them on you could buy market
+[00:00:31] You know you could sell market you can get in and out very quickly and and this is definitely
+[00:00:37] Desireble is it as quick as pressing a hot key?
+[00:00:41] Sure, I suppose so if your hand is right here and you're keyboard, you know your mouse is right here
+[00:00:47] You could
+[00:00:49] You know, it's it's it's really kind of personal preference and so I actually would say that in my trading
+[00:00:55] I do use hop buttons to a certain extent the way I'm using them is more in my order entry window
+[00:01:02] Right down here on light speed where I'm clicking the buy button, which is a hop button and I'm clicking the cell button
+[00:01:09] So I consider it to be a hop button if it executes an order instantaneously and doesn't prompt another pop-up
+[00:01:16] So in this case, I can choose just like you saw it
+[00:01:21] Think or swim I could choose my orders my order size I choose a thousand shares and then you know
+[00:01:27] I go like this but light speed has something else which is kind of interesting
+[00:01:32] They actually have a window and I'm going to pull it up here and called hot buttons and so this is and I'm just going to
+[00:01:40] I'm going to back this up here just so we
+[00:01:44] Keep this a little simpler easier to see maybe all right
+[00:01:47] So I'll just hide this I'll hide this so
+[00:01:51] So these are my hot buttons here for light speed and how does the hop button work?
+[00:01:56] Well, you click on settings and what you can do is you can actually take any one of your hot keys and you can add it right here
+[00:02:04] So that's a hot key boom
+[00:02:06] So this one right here. I click the style on it
+[00:02:09] You choose the window. Let's see. Yeah, no, that's fine. Oh, so the button I could choose the buy to be green
+[00:02:15] So this is going to be a buy button and then I could do
+[00:02:19] We had that cell
+[00:02:22] cell full add that and that's going to be a red button
+[00:02:28] Right kind of like that. So now I click OK and all of a sudden I could go buy and buy
+[00:02:35] Well, I've hit my max position, but now I click cell full in a matter of position
+[00:02:39] So that's pretty cool
+[00:02:41] It it this you don't have to type in your shares and to sell you don't type in your shares. It's just a button
+[00:02:48] So you could set up all of your hot keys then if you wanted to as buttons that you just manually click with your mouse
+[00:02:58] I don't know I so I don't I don't personally use those
+[00:03:02] You could but I don't I have this order window here where I'll sometimes be watching a stock and I'll put my order
+[00:03:10] Kind of around where I think I want to be buying typically based on this price right here
+[00:03:17] Or maybe a couple cents above it. So I have my order there. It's ready to go and
+[00:03:23] Then I'm just waiting to click the buy button in the second that it looks good
+[00:03:26] So I do quite a bit of buying like this. I don't sell with this because I don't want to mess around with having to type in the exact shares
+[00:03:34] So I would say all of my selling is with a hot key and some of my buying is with a hot button and then some of it is with a hot key
+[00:03:44] So then over at we bull
+[00:03:48] You can create there's this turbo trader button or turbo trader widget right here where you can create
+[00:03:55] Hot keys in sort of a similar way or hot buttons. I should say and
+[00:03:59] You know, I think that that's cool
+[00:04:02] For some people it's handy you could just now click the button instead of using and remembering a hot key
+[00:04:09] I think for some people that are a bit more visual
+[00:04:12] It's easier, but if you put a sticker on your keyboard, then I don't know
+[00:04:17] I it look it it's whatever works for you, but as you can see from my trading and as you'll certainly see when you get into the live archives
+[00:04:25] I just personally don't use the hot buttons that much in my own trading
+[00:04:31] Again, it's it's not really about like what's right or wrong. It's kind of a personal preference
+[00:04:37] So I don't use them
+[00:04:40] You know on
+[00:04:42] Dastrater you just have this kind of window here, which are very simple buttons
+[00:04:48] Certainly as you've already seen light speed or not light speed
+[00:04:52] Think or swim
+[00:04:54] Certainly has their buttons
+[00:04:56] Which you could use and people do use actively for buying and selling and going flat during regular trading hours
+[00:05:03] Again, I don't prefer that over hot keys. I think it's a little clumsy the way they've set it up
+[00:05:08] And then in our sim we have some limited buttons and we've been discussing adding some additional ones down here
+[00:05:16] So you know, we've seen the use case where some people have asked for them and so we thought we'd add a few and so there'll be more of those in the future
+[00:05:24] I think but
+[00:05:26] It just doesn't seem to be the workflow that most traders are using
+[00:05:31] so I would say
+[00:05:35] Yeah, not to brush over hot buttons
+[00:05:37] But I would say are the best at this point with light speed because
+[00:05:45] You can you can customize the color of them to make it easier to notice. Oh, that's my buy. That's my sell
+[00:05:52] You know, or whatever whatever
+[00:05:54] And you can choose any one of your hot keys to turn into a button. So I do think that that's cool
+[00:06:00] You know, so and it might help
+[00:06:03] If you create some of those more obscure or complex hot keys
+[00:06:08] That are using dark pools or things like that that you could oh have it right there visually like oh yeah
+[00:06:13] I want to try to remember to use that. I could see a use case for that
+[00:06:18] But again, I've been trading for a long time and I haven't done it so I don't know maybe now that I say it
+[00:06:23] I should try it, but I probably won't
+[00:06:25] It's just gonna throw off my my workflow. I think if I did that so
+[00:06:31] You know, I I kind of don't want to fix I don't want to fix something that's not broken. You know
+[00:06:35] I just sort of stick with the way it is and I generally teach all of our students here
+[00:06:40] And members at warrior trading just the techniques that have worked so well for me
+[00:06:45] But I you know people sometimes say Ross why do you use this order entry window down here and not just press shift one
+[00:06:53] And so the reason for that is
+[00:06:56] When we have a stock that moves very quickly so in this case here
+[00:07:01] You know this went let's just say in the example you know from 605 to you know
+[00:07:08] Let's just say like eight dollars a share you know it's almost two dollars a share move and the moment you press shift one
+[00:07:16] How does shift one work
+[00:07:19] So remember shift one
+[00:07:22] Is buying X number of shares at X price at at 10 cents above the ask
+[00:07:30] So let's just say that you were slightly delayed behind real time market data
+[00:07:36] Maybe there was a little bit of a latency issue in the network or whatever you click buy shift one
+[00:07:42] And by the time your orders received by the market the price is already at eight dollars a share
+[00:07:48] Uh-oh
+[00:07:49] Then you're executing at eight dollars and oh plus ten cents and you're getting filled at the very top
+[00:07:55] Whereas if you had typed in
+[00:07:58] 605 in here and then click send you definitely wouldn't get filled any higher than 605
+[00:08:04] So for me I find that it's a little bit more helpful
+[00:08:10] And feels a little safer to execute orders
+[00:08:13] Especially during highly volatile hours of pre-market trading
+[00:08:17] Using initially my buy button, you know doing that that order entry window and again
+[00:08:25] You know that does have its risks. I could accidentally type in 10,000 shares where my hotkey is a thousand
+[00:08:31] So I you know, it's not that that's full proof exactly but
+[00:08:36] But anyways, it does work for me and it also gives me a chance to kind of think about you know
+[00:08:41] Okay, 14.05. That's kind of the spot that I like so I will do that
+[00:08:45] But also there are certainly times where a stock pops up and it instantly pops up. I look at it and I'm like okay
+[00:08:51] I've gone through my checklist
+[00:08:53] I this you know stock selection five pillars. I pull up a daily chart. I pull up the internet chart everything checks out
+[00:08:59] I don't have time and so boom shift one. I'm in and just like that. I'm in the position
+[00:09:04] It goes up to 14 14 25 14 50. I shift one again shift one again and I'm adding as it squeezes all the way up
+[00:09:11] to a 15 dollars a share and then I press Ctrl Z and I'm out of the trade
+[00:09:15] So there's certainly you know
+[00:09:18] Uncountable times where that's my workflow and that's fine, but you'll also notice in the live archives that
+[00:09:26] I like to use the buy button here when I have time to think about it
+[00:09:31] And then I'm kind of I guess I guess I'm hovering over the buy button here
+[00:09:38] with my thumb to get in
+[00:09:40] rather than hovering over the shift one key
+[00:09:44] To get in so
+[00:09:46] You know if you're hovering over the shift one key. That's fine, but I just I don't know I kind of like doing it
+[00:09:52] That way when I'm able to when there's time and so that essentially would be down here in our
+[00:09:58] Sim saying oh 230 and then just keeping your hand kind of right here
+[00:10:03] So it's like okay am I ready and then boom. I'm ready. I'm gonna jump in
+[00:10:07] I'm gonna add and I'm gonna add and I'm gonna add right and then okay it's squeezing up and boom
+[00:10:13] I'm all out and you jump back out and so that
+[00:10:16] That's kind of the way it tends to work best for me
+[00:10:20] Okay, so with that let's go ahead and continue in to the next section

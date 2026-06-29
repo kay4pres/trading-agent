@@ -1,0 +1,661 @@
+# Part 2 Daily Stock Types.mp4
+# Chapter 4: Daily Chart Patterns
+# Duration: 47 min | Segments: 5
+
+[00:00:00] So we're going to jump in here with Chapter 4 part 2 on daily stock types.
+[00:00:04] Now, when I first am alerted to a stock, it first comes to my attention.
+[00:00:09] The way I'm usually finding out about it, 9 out 10 times, is the stock is hitting one of my scanners.
+[00:00:15] So when the stock hits my scanner, whether it's the small cap high day,
+[00:00:18] mama, scanner, or at the top gain or scanner, that tells me how much the stock is up.
+[00:00:23] The name of the ticker, the price, the volume, the flow, and the relative volume.
+[00:00:28] Now, from that point right there, I can already get a sense of how interested I am in the stock.
+[00:00:34] If the price is too high, I probably won't even pull up the chart.
+[00:00:37] If the flow is too high, I won't even look at it.
+[00:00:39] This one here with a 263 million share float, I'm not even going to look at it.
+[00:00:44] This one here is 21 dollars a share, and probably won't look at it.
+[00:00:48] But this one here, that's $4.73 with a 900,000 share float, you know, that's, that's a good combination.
+[00:00:54] So then I pull it up, and the first thing I do is I check the daily chart.
+[00:00:58] And when I check the daily chart, I can pretty quickly tell the type of daily chart that we're working with.
+[00:01:04] And that's what I'm going to talk about in today's episode.
+[00:01:07] What are the different types of daily charts and how can we categorize them?
+[00:01:11] So I have noticed that certain types of daily charts have a lot more upside potential than others.
+[00:01:17] So if I can immediately recognize that this is one of those daily charts that has more upside potential,
+[00:01:22] I can kind of get my bearings oriented in that direction, or if I see that shoot.
+[00:01:27] This is the type of daily chart that's not going to work so well than I adjust my expectation in that direction.
+[00:01:34] So the first type of daily chart is breaking news day.
+[00:01:40] So this is a stock basically that is highly volatile 100% because it has breaking news today.
+[00:01:48] So this example right here is a stock that, you know, had very light volume, not interesting.
+[00:01:56] And then boom today is interesting, right?
+[00:01:59] There were not working with any daily chart patterns.
+[00:02:02] This wasn't a bull flag.
+[00:02:03] It wasn't a pullback pattern.
+[00:02:05] It was just a stock that was more or less going sideways had no interest.
+[00:02:09] And then suddenly has one billion shares of volume, that's incredible.
+[00:02:14] A billion shares of volume with a B.
+[00:02:17] And you know, it goes up whatever it was almost 1,000% from like 20 cents up to nearly $2 a share.
+[00:02:23] So this is the type of chart where it's a light volume, no interest stock.
+[00:02:32] It's sort of a no name stock, no one's paying attention to it.
+[00:02:34] And then all of a sudden, boom, big surprise move.
+[00:02:37] That is a good type of chart.
+[00:02:40] I like that.
+[00:02:41] That's in contrast to what I had mentioned in a part one of let's say in video.
+[00:02:48] And obviously in video's a large cap, it's not small cap.
+[00:02:51] But in video is not a breaking news type of daily chart.
+[00:02:55] You can hardly really see the breaking news days.
+[00:02:57] I mean, you see higher volume days here and there.
+[00:03:00] But for the most part, every day just trades on really high volume.
+[00:03:04] And that tells the story that this is a stock that has a cult following.
+[00:03:08] This is a stock that people are trading every single day.
+[00:03:11] This is a stock that no one pays attention to right here unless it has news on those days.
+[00:03:18] So that's our first stock type.
+[00:03:19] We're going to come back to it.
+[00:03:20] That's important.
+[00:03:21] So take note of that.
+[00:03:22] The second stock type is multi-day continuation.
+[00:03:27] So multi-day continuation is when the stock had breaking news on day one.
+[00:03:32] And what sometimes happens is they'll squeeze up and they'll come all the way back down.
+[00:03:36] We sometimes call this a round trip.
+[00:03:38] So the stock squeezes up nicely.
+[00:03:40] And then ends up coming all the way back down and finishing the day up 0%.
+[00:03:46] Or maybe it's even read on the day.
+[00:03:48] So, or maybe it's up a couple percent.
+[00:03:50] But it's basically a round trip.
+[00:03:51] So there is no day two of momentum.
+[00:03:55] Now the reason a stock will do a so-called round trip come all the way back down.
+[00:04:00] Is usually because there was the company was selling.
+[00:04:04] Insiders were selling or the news wasn't actually that strong.
+[00:04:08] And people sort of realized that as a day one not.
+[00:04:10] But multi-day continuation is when you have day one.
+[00:04:14] And then day two, this thing just keeps moving higher.
+[00:04:19] So this can even happen on a stock without news.
+[00:04:24] Where day one the stock just sort of kind of catches a bid.
+[00:04:27] Like people just keep kind of buying it and it grinds a little higher.
+[00:04:31] And maybe someone and some people traders who are shorting it get stuck.
+[00:04:35] And they're like, oh man, I'm short, but this thing isn't, you know, it's not unwinding.
+[00:04:39] So I don't know. And, you know, the next thing you know going into day two,
+[00:04:44] this thing just keeps going higher.
+[00:04:46] Now something that I mentioned during the last episode.
+[00:04:49] And so I'll mention it again here is the notable difference between large caps and small caps.
+[00:04:54] In that large caps often have a loyal following of traders and investors,
+[00:04:59] especially the household names like Tesla, Netflix, Apple, Google, Nvidia, etc.
+[00:05:04] When these stocks are forming some of the inter-day chart patterns that we'll talk about in chapter five
+[00:05:09] of this course, people take notice of the pattern.
+[00:05:11] And multi-day multiple days of continuation, people kind of keep buying the pullbacks,
+[00:05:17] they're looking for the patterns on the daily chart.
+[00:05:19] And these stocks just kind of can trend for days and even weeks, even months.
+[00:05:25] They just generally are trending up, especially if the overall market is bullish.
+[00:05:29] Small-cat companies aren't really like that. They don't have much of a loyal following.
+[00:05:33] They may trend a little bit with the overall market, but not really.
+[00:05:38] You know, that's the thing with the S&P 500, all the 500 companies that are part of the S&P,
+[00:05:44] they trade very closely together.
+[00:05:46] You know, when there's bad news in the overall market, they all kind of dip, when there's good news,
+[00:05:49] they all kind of go up. And there's some that underperform and some that outperform,
+[00:05:53] but they all kind of move quite closely together.
+[00:05:57] There's a few inverse relationships that some companies have, for instance,
+[00:06:01] when the cost of oil goes up, oil companies go up and airlines go down,
+[00:06:06] because it's going to cost them more money. So there are some inverse relationships, but
+[00:06:09] but generally we see that they sort of, they move together.
+[00:06:13] Even if they're moving in-verse, they're still tied together.
+[00:06:16] Whereas small caps are very independent in a lot of ways of the overall market,
+[00:06:21] which, on the one hand, can be good because we don't have to be in a bull market
+[00:06:25] in order to still see opportunities in the small cap market.
+[00:06:29] But on the other hand, it can be a little bit more challenging
+[00:06:34] because we are so reliant on these companies putting out good news.
+[00:06:39] And they're not putting out good news and we don't have really anything to trade.
+[00:06:42] So we need those caps. So, you know, as I've already mentioned, I don't spend a lot of time building
+[00:06:47] watch lists of daily setups for small caps because they just don't have the loyal following,
+[00:06:52] that will allow those set-ups to play out. So the only thing that all occasionally do is keep an eye
+[00:07:00] on recent big momentum stocks and be watching for continuation. So when we have, you know, day one of
+[00:07:06] a move, then I'm watching day two and sometimes day three and day four. So in those rare instances,
+[00:07:15] we may find that a stock that is a small cap will have a big day. So I'll just kind of draw it out
+[00:07:22] here. So it has a really big day. This is the daily candle. The next day it pushes a little bit higher.
+[00:07:28] And then it has like a day or two days of pullback. And it's still trading on pretty high volume.
+[00:07:35] It's still holding more than 50% of this initial move. And so the result is that
+[00:07:41] anyone who's shorting this is eventually realizing this thing's not going lower. And you can get a
+[00:07:47] purely technical breakout here, which is that first daily candle to make a new high. It only works.
+[00:07:54] When you have high volume here on day one and day two, and we're still holding this move.
+[00:08:00] And it's not super, super come. It does happen from time to time, but it's not the most common
+[00:08:07] pattern. So as a result, I really don't spend a lot of time scanning for that pattern, but what I will
+[00:08:14] do is on our scanners, I have a scan here specifically for continuation setups. And this is scanning
+[00:08:23] for stocks that have been really strong and have a big range over the last couple of weeks.
+[00:08:29] And so all sometimes glance at those, just to see if there's anything there, if the stock
+[00:08:34] is still holding up really well, it doesn't always tend to work, but there are times where it can.
+[00:08:41] In this case, the stock had news on day one right here, high volume, spiked up,
+[00:08:46] and then it kind of pulled back for a couple of days. In this case, it gave back almost all of the
+[00:08:50] gains. And then it kind of started to rally back up. And next thing you know, it was actually
+[00:08:56] breaking through the high of the initial day, even though it was on later volume. That's a very unusual
+[00:09:02] occurrence. We call that a day virgins. Typically, we would see the break through the high on high
+[00:09:07] volume. And this thing ended up going all the way higher here on later volume. So this is a continuation
+[00:09:15] stock. It just can keep going, after day after day. And so that was a very unique type of daily chart.
+[00:09:21] This day right here was our standard type one if we want to call it that type one, which is just
+[00:09:28] it was breaking news, breaking news on a no-name stock. And then here, this was continuation.
+[00:09:35] So more of type 2. This is continuation. A stock that just kind of keeps rallying multiple days
+[00:09:41] in a row. Then it pulls back and then suddenly it catches another big day. And then it pulls back
+[00:09:46] and then catches another big day. And it just kind of keeps pushing higher, pulls back and then
+[00:09:50] kind of keeps pushing higher. This, again, this is more indicative of price action during a
+[00:09:57] particularly strong market. I don't know what you'd do.
+[00:10:00] I gave her a carrot a few minutes ago, girl, come on, she loves carrots, but I don't think
+[00:10:07] that's a carrot bark, that's more of she thinks she hears something.
+[00:10:11] Anyways, so, again, this is just a stock that kept giving continuation, however, decline
+[00:10:18] and volume.
+[00:10:19] And so what I sometimes find is that stocks, usually I make the most on day one with high
+[00:10:26] volume, typically.
+[00:10:27] High volume is very liquid, I can get in, I can get out, it's very, that's just like
+[00:10:31] usually when I do the best.
+[00:10:33] And these subsequent days, that's moving higher with lighter volume is, the stock will
+[00:10:38] have bigger spreads with lighter volume, right?
+[00:10:41] And they're more likely to be choppy, they're just not as clean, and so it's more likely
+[00:10:46] to get caught in a false breakout, and the same was true with this setup here.
+[00:10:50] It moved, but as it got higher price, the spreads got bigger, the volume was lighter, and
+[00:10:55] so it just becomes a little bit difficult.
+[00:10:57] Whereas this first day here, even though the price was a little bit lower, arguably it
+[00:11:02] would have been a lot easier to trade on day one, and I often noticed that.
+[00:11:07] So this is a stock here where kind of had two days of sort of momentum, and then here,
+[00:11:12] we have that move where anyone who is still holding from day one and two are taking profit
+[00:11:18] and sells off.
+[00:11:19] Then it kind of holds this level, and suddenly catches a little bit of bid.
+[00:11:24] Now some traders, when you have a stock like this, that was really popular, let's say
+[00:11:29] on Monday.
+[00:11:30] Tuesday, Wednesday, Thursday, Friday, people are like, hey, remember this stock, it was
+[00:11:35] really strong on Monday, first daily camel to make a new high.
+[00:11:38] It's a daily setup.
+[00:11:40] And that is a daily setup, but on very light volume, doesn't usually resolve well unless
+[00:11:47] the market's really hot.
+[00:11:48] But then day two, it continues a little higher, day three again, it continues a little
+[00:11:51] higher.
+[00:11:52] I sit down and I see the stock is gapping up, but I can see it's a continuation setup.
+[00:11:57] I usually lower my expectations, if I'm going to be honest.
+[00:11:59] I don't usually do particularly well on those, unless we get to a point where they just
+[00:12:05] start really going parabolic and actually game stop from 2021 is an interesting example
+[00:12:12] because it had continuation, like day after day I kept moving higher, but those the first
+[00:12:19] couple weeks, I kept losing money on because it would move like a little higher and
+[00:12:23] then it would sort of fizzle out, then by the end of the day you'd be like, wow, I guess
+[00:12:27] it kind of held its gains.
+[00:12:29] Then the next day it would sort of push a little higher, but then sort of fizzle out, but
+[00:12:33] it just kept not rolling over.
+[00:12:37] And I found it very hard to time until finally some of the big short sellers start
+[00:12:41] to cover and that created a massive surge of buying power and a buying volume and then that's
+[00:12:48] when it became easier to trade.
+[00:12:50] So when you start to see the volume, if you start to see the volume increasing on a continuation
+[00:12:55] stock, then that's where I start to get more interested.
+[00:12:58] But the volume is decreasing, I usually am not so into it.
+[00:13:02] Another example here, big volume on day one here ends up having a large topping tail, so
+[00:13:07] that's bearish, goes to six cells off, and then it kind of slowly bounces back up, so
+[00:13:12] like traders are still trading it, but that to me is not as easy to trade.
+[00:13:17] Here day one and two, lighter volume, but held up pretty well, there was a topping tail
+[00:13:24] candle here, and this was actually an interesting one.
+[00:13:27] So on this stock, and there's two where this happened, I'm pretty sure this is the one,
+[00:13:35] if it's not the other one, but the charts are almost the same, so either way.
+[00:13:38] So what I believe happened here was this stock pulled away on this day, and this day
+[00:13:43] with no news, there was no news on it.
+[00:13:47] And so people kind of thought this weird, but some traders traded it, whatever, but
+[00:13:52] most people were all the cautious.
+[00:13:54] There was one short seller, they were running a firm, a small hedge fund, and they were
+[00:13:59] primarily short selling, and they took a short on this stock because they thought that
+[00:14:04] it had no business being up this high, it had no news.
+[00:14:07] And so evidently, they shorted a total of 750,000 shares, crazy, that's a huge position,
+[00:14:14] it has a low float too.
+[00:14:15] And so it starts to drop here, which is, you know, okay.
+[00:14:19] And then all of a sudden this day, it catches a bid and it starts to move up.
+[00:14:23] And I don't remember if this day the company put out breaking news, or what the situation
+[00:14:27] was, but all of a sudden it starts to pop up, and it goes from 20 to 25 to 30.
+[00:14:33] And so they were short, it was somewhere around $15 a share, so 750,000 share.
+[00:14:39] So that means every dollar a share of the stock went up, they were down, three cords
+[00:14:43] of a million dollars.
+[00:14:45] So when it went up $10, 25 dollars, they were down $7 million.
+[00:14:49] When it went up to $35, they were down 14 million.
+[00:14:52] When it went to $45 dollars, they were down 21 million, approximately.
+[00:14:57] And what happened was they were down so much that their broker locked their account and started
+[00:15:02] pressing the buy button to cover the position, because they had a margin call.
+[00:15:06] That means they were in debt to the broker.
+[00:15:08] Now they later, there was an issue, they later said the broker shouldn't have done
+[00:15:14] that, because we told them that we were going to put up more money.
+[00:15:17] We were going to meet the margin call, so they didn't need to liquidate the account.
+[00:15:20] We had more money, we were going to add it to hold the position.
+[00:15:22] And instead, the broker took over, covered their position, bought 750,000 shares on the
+[00:15:28] open market, and sent the stock all the way up to a high of $65 a share, resulting in
+[00:15:32] a massive multi-million dollar, tens of millions of dollars lost by this hedge fund.
+[00:15:40] And as retail traders, you and I, we were just, I mean, this was years ago, but we were
+[00:15:44] just sitting there watching this thing going higher, and on this day, we were just buying
+[00:15:47] the dips.
+[00:15:48] But what did we notice, the volume, the volume on this continuation day was so much higher
+[00:15:54] than the original day, so we knew something big was happening, and that's the thing
+[00:15:58] to pay attention to the volume.
+[00:16:00] So if you're going to trade continuation, stock type 2, pay attention to the volume.
+[00:16:05] Big move here, multi-day continuation, day one was great, day two was lighter volume,
+[00:16:10] ends up, you know, making a huge move, but those are just, those are difficult.
+[00:16:15] So then the third stock type is a recent big percentage mover.
+[00:16:21] So this is also, this is similar to continuation, it's a stock that's recently made a
+[00:16:26] big move, but has pulled back for a couple of days.
+[00:16:29] Actually, with continuation, we're talking about consecutive green days moving higher,
+[00:16:34] whereas on this pullback, this is where you had this big move here, it dropped down, and
+[00:16:40] then traders are buying that first daily candle to make a new high.
+[00:16:43] Now in this case, here, this is a $30 share stock.
+[00:16:46] And so, you know, if we're thinking about our day trading strategy, and of course, we're
+[00:16:52] going to get into a lot more depth when it comes to strategy.
+[00:16:55] But as a day trader, our goal is to produce profit consistently.
+[00:16:59] And one of the things I often say is, one trade a day is the small account way.
+[00:17:02] All you need to do is find 20 cents a share in the market and pull it out.
+[00:17:07] So 20 cents a share with a thousand shares is $200 bucks.
+[00:17:11] $200 a day is $50,000 a year.
+[00:17:13] Don't overcomplicate it, you don't need to take hundreds of trades a day, you know, it's
+[00:17:17] finding one really good set up, quality over quantity.
+[00:17:20] And so when you have a stock like this that got a lot of attention on day one, and was
+[00:17:25] the most obvious stock of the day, and is still holding its levels, more than 50 percent,
+[00:17:30] then there are traders who on this day will take a trade.
+[00:17:34] What are they looking for?
+[00:17:35] Short sellers who are shorting, hoping maybe this would unwind all the way back down,
+[00:17:40] to cover and bail out.
+[00:17:42] And long traders to jump in and hope for a second move higher, and maybe a retest all the
+[00:17:46] way to the high.
+[00:17:47] However, it's typically on later volume, so it's unlikely you get the move all the way
+[00:17:51] to the high, but you kind of at least get some short cover.
+[00:17:54] And so is this a setup buying the first daily candle to make a new high right there,
+[00:17:58] which you could dial into the penny that can give you 20 cents predictably?
+[00:18:02] And the answer is yes, as long as your entry on the one minute is not to extend it.
+[00:18:08] So sometimes by the time it comes to that level, the one minute has just gone straight
+[00:18:12] up.
+[00:18:13] So it hits that daily trigger, but you can't buy it there because it's too extended.
+[00:18:17] So it depends on the entry day pattern.
+[00:18:20] This, you know, stock type three recent big mover, I will pay attention to it, but
+[00:18:25] like continuation setups, they can be a little hit or miss.
+[00:18:30] Again, this was that same example in the continuation setup where we had that first day,
+[00:18:35] this is breaking news, then it pulls back, and then here it starts to rally.
+[00:18:39] That right there, however, is the first daily candle to make a new high.
+[00:18:43] And that definitely got some volume, then these are subsequent continuation days,
+[00:18:47] as it moves higher.
+[00:18:49] This right here is first daily candle to make a new high, sells off, and then bounces,
+[00:18:53] and it actually goes all the way back up here to nine, so that one didn't work out pretty
+[00:18:57] well.
+[00:18:58] Now, we noticed on this stock, the float's 900,000 shares.
+[00:19:01] So a super low float in the market that potentially was really frothy, you know, big momentum,
+[00:19:07] that setup's going to work.
+[00:19:08] It's another one.
+[00:19:09] Day one, stock type is daily chart, type one, so type one, right there, breaking news,
+[00:19:17] and then right here, first daily candle to make a new high, and then continuation, going
+[00:19:22] higher.
+[00:19:23] So you sort of have three stock types all at the same time here, type one, type two, and
+[00:19:27] type three.
+[00:19:28] And this right here is also something that will notice a stock that's been strong and
+[00:19:34] is still relatively holding its levels, right?
+[00:19:37] It was down here, it's still here, it has breaking news, traders are going to jump
+[00:19:41] in it a little bit faster because it has that history of making big moves, right?
+[00:19:45] That's what we were talking about in part one, with the history of making big moves.
+[00:19:48] Even though this candle was red, you know, it did come back up, but again, I'm like
+[00:19:52] our volume.
+[00:19:54] So this is an example of a big move here on day one.
+[00:19:58] This is a stock that also had a big-
+[00:20:00] move back here, so daily stock type T1 or type 1, type 1, and then right here is first daily
+[00:20:06] candle to make a new high, so that's our type 3, right? First daily candle to make a new
+[00:20:12] high and it pops up. This right here, breaking news, so that's our first, that's the stock
+[00:20:18] type on that day, makes a huge move, but then it sells off all day long. But because it has
+[00:20:24] such a huge range, that first daily candle to make a new high gives a pretty big bounce,
+[00:20:28] it kind of grinds a little higher, continuation for three days in a row, and then breaking
+[00:20:33] news, squeezes, and pushes all the way to a new high. That's pretty impressive. So again,
+[00:20:39] breaking news, first daily candle to make a new high, and then a couple days of continuation.
+[00:20:44] A lot of opportunities there. Daily breaking news right here, first daily candle to make
+[00:20:48] a new high, then it pulls back, first daily candle to make a new high, second time, maybe not super
+[00:20:55] trustworthy, a little bit of continuation, not a lot. Day one, very light volume, day
+[00:21:03] two, nice volume continuation, first daily candle to make a new high right here, and
+[00:21:09] then it sells off. This one, daily stock type, breaking news, pulls back, first daily
+[00:21:17] candle to make a new high, rejects, goes down, recent, you know, most stock, maybe
+[00:21:22] would breaking news, pops up, sells off, recent, almost stock with breaking news, pops up,
+[00:21:27] sells off, recent, almost stock with breaking news, pops up, this time it holds up a
+[00:21:31] little bit better. So big pops, whenever it has news, due to the fact of its recent history
+[00:21:38] of big gains, people like those. So, it's, it's, it's will history repeat itself. There's
+[00:21:43] the big move, and then here, that's that pop breaking news on that day, traders jumped
+[00:21:48] on it. I don't know if this was a continuation day, or if there was fresh news, but the
+[00:21:52] volume's pretty light, so I think it probably wasn't fresh news, it was probably continuation.
+[00:21:57] This right here is that first daily candle to make a new high after that first pop, and then
+[00:22:02] the pull back, and that spring back up. In, in markets, there are a little, well, I don't
+[00:22:10] want to say colder, but the thing with the first candle to make a new high is that, if there's
+[00:22:16] other better quality setups, then people usually trade those. But if there's nothing better,
+[00:22:22] then sort of for a lack of anything else, traders will end up taking the first daily candle to
+[00:22:27] make a new high. So, it's a type of setup that, you know, we'll see when the markets warm,
+[00:22:32] but not so hot that we're seeing just like a new stock with breaking news every day,
+[00:22:37] because since breaking news, type one is where I usually make the most money. If there's a new stock
+[00:22:44] with fresh news every day, then I'm just going to trade that setup, breaking news stocks,
+[00:22:49] every single day. And I won't be trading continuation. I won't be trading first daily candle
+[00:22:53] making a new high, because the first day with volume is always going to be almost always going
+[00:22:57] to be the biggest day. But, you know, if the markets are a little cooler, and we don't have
+[00:23:02] really big breaking news setups every day, then I may, you know, kind of lower my standard a
+[00:23:07] little bit and take some of these other trades. Breaking news day right there, big pop,
+[00:23:13] sort of pulls back, but bounces a little bit the next day, sells off technically for a
+[00:23:17] daily candle and making a new high, but it took like a week before it happened. Light volume
+[00:23:22] goes sideways, curls a little bit, pulls back, curls a little bit, pulls back, and then this day
+[00:23:28] had breaking news, and it put in another big move. Again, sort of day one pops up, then curls
+[00:23:37] on light volume, but traders jump on it, breaking news on this day, topping tail. I don't know if
+[00:23:43] this is breaking news, this was probably continuation, or first daily candle right there,
+[00:23:48] and then breaking news maybe again on this day. But a stock that had a low flow and every time
+[00:23:53] it popped up, traders kept going back to the well. And it was sort of for lack of anything else.
+[00:23:59] So now, the fourth daily stock type is a stock that has a recent reverse split. And typically
+[00:24:06] it's within the last month. Now again, I've got a scanner here that just searches for
+[00:24:11] recent reverse splits. Recent reverse splits and it gives us the data of the split so I can check it
+[00:24:16] can be very powerful. So a recent reverse split means the flow is now a fraction of what it was
+[00:24:23] prior to the split, and it's based on the ratio of the split. So typically after a reverse split,
+[00:24:29] the flow just gone down, the price has gone up so the company has regained compliance of being
+[00:24:33] above a dollar share, and the company will usually try to put out good news to get investors
+[00:24:37] to buy into the stock. However, the company often will follow up that good news a day or two later
+[00:24:44] with an offering to raise money. Secondary offering on the open market may be a private placement,
+[00:24:50] which would be better than a secondary offering because the private placement is going to an
+[00:24:54] institution and they bet the deals before they take them. So if they like the stock and company
+[00:25:00] enough to give them 30 million dollars, that's a bigger vote of confidence in the company
+[00:25:04] raising 30 million just by selling shares on the open market. But this also kind of speaks to
+[00:25:11] what we were talking about before, which is that a stock that does a reverse split had to do it
+[00:25:17] because the price had gotten so low. The price got low because the company's not performing well.
+[00:25:22] Do they have a lot of cash on the balance sheet? Probably not because of the flow does a million
+[00:25:28] shares, let's just say, and the price is two dollars a share, the market cap of this company is
+[00:25:34] two million dollars. So if they had 20 million on the balance sheet, then their balance sheet,
+[00:25:40] and they didn't have big liabilities, then their actual book value would be substantially
+[00:25:45] more than what the market is reflecting, and although that happens sometimes, it doesn't usually
+[00:25:50] happen because it's illogical. So now stocks can remain irrational and illogical, and this is true
+[00:25:57] longer than we can remain solvent. So we don't want to trade against what the market's telling us
+[00:26:01] if the market participants know something or think they know something about the future of the company.
+[00:26:06] But nonetheless, usually they do the reverse split, and then when the price starts going up,
+[00:26:11] they're going to start selling. So they're not going to let it go from $3 to $30 a share.
+[00:26:18] As soon as it gets up to six or seven, they're going to start selling and selling and selling.
+[00:26:22] They don't want to miss their window. So unfortunately, that is a real risk with trading stocks
+[00:26:30] that have had recent reverse splits. But on the other hand, usually you can get a couple of
+[00:26:36] good trades on day one when they have breaking news. They don't usually do the offering on the same
+[00:26:44] day that they have the breaking news. And usually if they put out the breaking news in the morning,
+[00:26:49] even if they do have the offering the same day, it's later that day. So if I'm trading in the
+[00:26:53] window between 7 a.m. and 10 a.m. let's say, I usually am pretty safe that I won't get caught in
+[00:27:01] a offering news headline, you know, on right in that moment. Now, it's also probably worth noting
+[00:27:10] and I may have already mentioned this, but I'll just say it again, that the news headline of the
+[00:27:15] company doing the offering just confirms what has already happened. So if we're trading the stock
+[00:27:21] and we keep seeing every time it comes to six it slams down. Every time it comes to six it slams down.
+[00:27:25] Like there's just someone dumping like a hundred thousand shares every time it goes to six dollars.
+[00:27:30] And then later we find out they did a secondary offering of raising, you know, selling five million
+[00:27:35] shares to six dollars. Then we're like, oh, well, that and that now we know exactly what was happening.
+[00:27:41] And let's say that, you know, it was dropping and dropping and dropping at six all day long.
+[00:27:45] And then it started doing it went lower and then started doing the same thing at four and then
+[00:27:49] it went lower and started doing the same thing at three. So then maybe they say they just
+[00:27:53] secondary offering in the average sale price was like, you know, $4.20. So now it's like,
+[00:27:59] okay, the price drops because they've diluted the value of the company. They've sold all these shares.
+[00:28:06] So that has the effect essentially, those share if the float was one million and now it's five
+[00:28:14] million, the market cap didn't go up times five overnight. So now the price has to come even lower
+[00:28:19] to reflect the market cap is really unchanged. They sold more shares but that doesn't increase the value
+[00:28:24] of the company except a little bit of cash on the balance sheet. But again, they sold them at a discount.
+[00:28:29] So when you sort of factor in all of these things, you realize that in the moment when you're trading,
+[00:28:36] if you're looking at the level two, you're looking at the time in sales and you're looking at the chart
+[00:28:41] and you keep seeing this thing as failing. It probably means the company is not letting it go higher
+[00:28:46] and they may be selling shares on the open market or maybe insider sales. And yes, in a day or two,
+[00:28:53] we may get the news headline that they've done the secondary offering. But if we can see in real
+[00:28:59] time that it's not working, then we should just leave it alone. On the other hand, if we have a
+[00:29:03] stock that's got a reverse split, reverse split, and this thing starts popping up and it starts
+[00:29:09] really squeezing, then what we know is that the Holy smokes, we've got something to work with,
+[00:29:16] and this is an example of a company that had a reverse split back here. So it's like two weeks prior
+[00:29:22] and then all of a sudden this thing starts squeezing up and the float on it was 573,000 shares.
+[00:29:28] It was a ridiculously low float. So where there's some short sellers who said, I'm going to start
+[00:29:33] shorting this thing, because I know the deal, it's a recent reverse split. It's a cheaper stock.
+[00:29:37] I mean, let's do the math. It's $2 a share with a half million share float. This company,
+[00:29:43] you could buy the whole company, the whole float for a million dollars. So this is not, you know,
+[00:29:51] it's very low value. It's probably going to go back down. They'll probably have to do another split.
+[00:29:55] So people say, I'm just going to short this. I'm going to short the pops. It's not a good company.
+[00:29:59] I'm in all this.
+[00:30:00] sudden, they put out the surprise you with the headline.
+[00:30:03] And the news headline was strong, and it went all the way up to $50 a share.
+[00:30:07] Yikes.
+[00:30:08] And there are shorts who lost millions of dollars on this because they got over
+[00:30:12] confident.
+[00:30:13] And so, in the moment, you know, we were able to trade, I was able to trade this
+[00:30:17] and I did quite well on it.
+[00:30:18] And I was just focusing on the fact that it's a recent reverse split, and the company
+[00:30:22] is letting it go higher.
+[00:30:24] They don't have to.
+[00:30:25] They could be selling, but they're not.
+[00:30:28] So, as it keeps going higher, anyone who's shorting against this strength thinking they
+[00:30:33] know better, they're trading, you know, based on their gut of what they think is going to
+[00:30:37] happen.
+[00:30:38] But they may hear be wrong, and I'm going to trade the ops.
+[00:30:42] I'm going to trade the direction that the stock is actually going right now.
+[00:30:46] I'm not going to overthink it.
+[00:30:47] If it's moving up, I'm trading it to the upside.
+[00:30:51] Reverse split back here, and then a squeeze right here.
+[00:30:53] Also, there's a couple weeks later, this thing goes from $45 a share to $160.
+[00:30:59] Wow.
+[00:31:00] That is insane.
+[00:31:02] That is crazy big.
+[00:31:04] I mean, that's a huge move.
+[00:31:06] So, you can see how quickly, and this flow is a million shares, how quickly, if you were
+[00:31:10] short, you could just get obliterated on this.
+[00:31:13] So, these are the type of stocks that, although they do carry risk, and, of course, we
+[00:31:16] know, day trading is risky, recent reverse splits can give us some pretty epic moves.
+[00:31:22] There's a recent reverse split from $2 to $20.
+[00:31:25] Now, this one gave the day one pop, the pull back, and then the day two.
+[00:31:29] Now, because day two have this much volume, or the first daily candle making you high,
+[00:31:34] they may have had a secondary headline that came out.
+[00:31:36] The reverse split is right there on the chart.
+[00:31:39] So now stock type is this four or five, is IPO days, initial public offering days.
+[00:31:45] So, the day the stock IPOs.
+[00:31:48] Now, trading IPOs is pretty risky, I probably, I would say, if we looked at all of my
+[00:31:56] lifetime trading profits, I would guess that less than 1% is from day one of an IPO.
+[00:32:02] I've made some good money on IPOs.
+[00:32:04] This is one that I traded this year and made about $35,000 on, but it's not a big contributor
+[00:32:10] to my profit.
+[00:32:11] I mean, there's only so many IPOs each year that are hyped up enough that they make
+[00:32:15] a big move.
+[00:32:16] This one went from $60 a share to 120 over the course of two days.
+[00:32:20] So, on the inter-day chart, and we'll get into inter-day chart patterns in chapter five,
+[00:32:25] there were all kinds of setups here.
+[00:32:27] ABCD patterns, pullbacks, head and shoulder patterns, and done it at that.
+[00:32:31] But on the daily chart, did we have any patterns?
+[00:32:34] Not really.
+[00:32:35] This was a daily type of chart, which is immediately recognizable as an IPO, because
+[00:32:41] there's no chart history.
+[00:32:43] We have, as boom, day one, we're trading right now.
+[00:32:46] And so, if we have no chart history, we have no resistance, we don't really have any support.
+[00:32:51] You know, it's just, which ways is this thing going to go?
+[00:32:54] And sometimes these IPOs will sell off pretty hard.
+[00:32:58] Often, right after the IPO, we do see a dip.
+[00:33:01] People that got assigned shares will sell and take profit.
+[00:33:04] They flip them.
+[00:33:06] Insiders are often restricted and have lockout periods that prevent them from selling within
+[00:33:11] the first 90 to 100 days, but that's not always true.
+[00:33:14] So sometimes they can sell right away.
+[00:33:18] And so here's an example of IPO day, big pop.
+[00:33:22] So traders jumping on it, high volume, it was moving, news, you know, just sort of classic
+[00:33:28] momentum trading.
+[00:33:29] It sells off.
+[00:33:30] Then it kind of bounces up, sells off, bounces up again.
+[00:33:34] So being the do-as-a-recent IPO, you know, this was sort of the low, that was support.
+[00:33:39] And traders were jumping on it, had a relatively low float, but remember, that float of
+[00:33:43] 6 million shares doesn't tell us how many of those shares are currently unable to sell.
+[00:33:49] So the actual tradable float might only be a quarter of that.
+[00:33:54] I mean, we don't know exactly.
+[00:33:56] We could look into filings and try to get a better idea, but ultimately, we don't know.
+[00:34:01] So if it's trading, a recent IPO is trading as if it's a 1 million share float, which
+[00:34:07] means bigger spreads, a little thinner, but also moving really fast, then I'm going to
+[00:34:12] make the assumption that that's closer to what the outstanding float really is.
+[00:34:17] The number of shares available to trade.
+[00:34:19] So sometimes we'll have a stock that's a recent IPO that's a 15, 20, 30, 40, 50 million
+[00:34:25] share float, but it's not trading like that, because all those shares are locked up.
+[00:34:30] So that's an important consideration.
+[00:34:33] Now, so here we get the IPO day one, and then day two, it goes way up here to 12 bucks,
+[00:34:38] then it comes all the way back down, comes back up, back down, sort of jump it around a
+[00:34:42] little bit, but on days of it has news, it gets a little bit of volume, and people are
+[00:34:46] excited to trade it.
+[00:34:47] Classic, kind of small cap IPO often, they sell off, but then this creates an interesting
+[00:34:55] setup, which is that if this curls up, it's all time high is right here.
+[00:34:59] So above that level, there's no resistance.
+[00:35:02] So here's that example, IPO's sells off, and then boom, all of a sudden goes from $2
+[00:35:08] to $5, and there's no upside resistance.
+[00:35:11] You can't draw any, you can't, there's nothing, you know, you could, this is the high.
+[00:35:16] You can't draw a sending, I mean, you could try to draw something there, but it's above
+[00:35:19] that.
+[00:35:20] There's nothing you could draw.
+[00:35:21] Now after these two days, you could draw something connecting the top of this candle,
+[00:35:25] the top of this candle, which could maybe, you know, have an effect in future days, but
+[00:35:29] that was it.
+[00:35:31] This one, red on day one, and then rallies back up, but notice that divergence in volume,
+[00:35:38] little tricky there, but at a price range where if the spreads were, you know, the spreads
+[00:35:43] were okay, I could have considered it.
+[00:35:45] This one, you know, sort of choppy, sells off, but, you know, potentially if it catches
+[00:35:52] some momentum and has some news, we could look for that curl back up towards the all-time
+[00:35:58] price.
+[00:36:00] Day one, big move from a low, like a dollar 50, which is crazy.
+[00:36:06] It's crazy to IPO that low, but in any case, low of a dollar 50 all the way up to $25,
+[00:36:12] then it sells off, but then in the coming weeks, it ends up making another move and it rallies
+[00:36:17] again.
+[00:36:18] And the fact that it had made such a big move in the past got traders a little more excited.
+[00:36:23] This right here is showing four time frames.
+[00:36:25] Our daily, our five minute, our one minute, and our ten second.
+[00:36:29] The daily showing all-time high was above this level, so now that's all-time highs.
+[00:36:35] And the intro day, five minutes showing it squeezing, kind of rallying up, however, it's
+[00:36:40] on very light volume.
+[00:36:41] And you can kind of see that, so it's not really easy to trade.
+[00:36:44] Now the next stock type is called blue sky.
+[00:36:47] Blue sky is when the stock is at all-time highs.
+[00:36:50] All-time highs is important to set up because there is no upside resistance.
+[00:36:57] On the one hand, when a stock is hitting, it's 52 week high, it's highest price in a year.
+[00:37:03] If that highest price in a year is not also blue sky, then you may just have people
+[00:37:07] that are selling.
+[00:37:08] And when you have stocks that have been around for a long time, yes, people often take
+[00:37:11] profit as they approach all-time highs.
+[00:37:13] That makes sense.
+[00:37:14] But when you have a stock that has very little history, like a recent IPO, then that all-time
+[00:37:20] high blue sky set up, you've got no upside resistance.
+[00:37:24] So that's where things can get excited.
+[00:37:26] So blue sky technically blue sky set up chart performs best when the stock is a somewhat
+[00:37:31] recent IPO, less than two years of trading history.
+[00:37:35] And so with that set up, there's no upside resistance, and we can get a nice move.
+[00:37:39] The only thing we worry about is potentially if the company is going to sell with a shelf
+[00:37:43] registration, which is the S3 filing in the SEC filings, or if there's insiders who are
+[00:37:49] going to take profit.
+[00:37:51] So on this stock, our all-time high was 450, and on this day it pops up, squeezes
+[00:37:56] up to 4, breaking news, has great volume coming in, pulls back, and then ends up rallying
+[00:38:01] all the way up to 6, and as soon as it broke over 4, 35 or whatever this is, we were
+[00:38:07] at all time highs.
+[00:38:08] So it was game time.
+[00:38:10] This was a really nice set up.
+[00:38:12] And on the inter-day chart, you can see this pop up, pull back, pop up, pull back, breaking
+[00:38:17] out, dipping down, breaking out, dipping down.
+[00:38:19] So it was pretty nice.
+[00:38:21] I don't remember if I have this as examples in Chapter 5, but it's not a bad pattern.
+[00:38:28] It's not bad.
+[00:38:29] Another blue sky set up, that was the all-time high there at 10, and then all of a sudden
+[00:38:33] the stock pops up here with news and goes from 4 to 6, 8, 10, 12, 14, 16, 18, and short
+[00:38:39] sellers are like this doesn't make sense, and it keeps going higher, there's no resistance.
+[00:38:43] The next day it holds up, pushes a little higher, and then reverses comes back down, bounces
+[00:38:48] first daily candle and making new high, sells off, bounces again here, maybe a daily candle,
+[00:38:54] people jumping in it for lack of anything else to trade, and then here if it had breaking
+[00:38:57] news, we could see another move back up, another blue sky set up here, that was our
+[00:39:03] all-time high right there, rallies up, rejects up, rejects, but those are on light volume.
+[00:39:08] And here we have breaking news, we go to 7 up to 8 to 9, and then this right here, if
+[00:39:14] we break over that level, we have a window up to 12, and then above 12, blue sky, all-time
+[00:39:21] high.
+[00:39:22] So here's another one, recent IPO, rallies very quickly, continuation, pulls back, squeezes
+[00:39:29] higher, pulls back, first daily candle making new high, continuation all the way back
+[00:39:34] through the highs, it doesn't really make sense, but, you know, I trade the price
+[00:39:39] action that's right in front of me, and if it's strong, then I'm going to try to ride
+[00:39:42] that momentum as long as I can't, I mean, that's kind of the idea.
+[00:39:47] Blue skies above that price there, this is sort of the low, not a very interesting chart,
+[00:39:52] but then up here gets to 15, and then as it breaks that level, on this day, now we're
+[00:39:57] looking at how close we are to all-time highs.
+[00:40:00] above 16, and we got a nice break and squeeze through that level.
+[00:40:05] This one has blue sky over $12.18, daily history of some red candles, so it would need
+[00:40:11] a pretty big headline there for it to get through that level, but if it could, that might
+[00:40:16] be something that we could work with, maybe.
+[00:40:20] Now yet another stock type are stocks, shares of companies that are foreign listed, and
+[00:40:26] specifically Chinese, small cap stocks.
+[00:40:29] There's a pretty well-established history at this point of seeing foreign listed companies
+[00:40:35] list their shares on the US market, and that's been around for a long time.
+[00:40:39] However, some of these foreign companies lack the same transparency of their US counterparts.
+[00:40:45] They may get audited, but the auditor that they use is not a US auditor, and it may
+[00:40:51] not be really on the up and up.
+[00:40:53] And we've seen a number of examples of some foreign companies that have taken advantage of
+[00:40:58] being listed on the US exchange.
+[00:41:00] They put out headlines that are not very legitimate.
+[00:41:05] Some of these companies are total shell companies.
+[00:41:07] They sell shares on the open market.
+[00:41:09] They say their flow is one thing, but it's actually another.
+[00:41:12] They say they've got all these audited financials, but they actually don't.
+[00:41:16] So these companies, some of them can get big percentage moves.
+[00:41:23] So this is one of the stocks, I believe this is a Chinese stock, and so I can't comment
+[00:41:26] specifically on this company and what headlines they had, because I don't quite recall.
+[00:41:31] But this is one where we went from $2 a share to $1,000 a share, and short sellers were
+[00:41:36] pulling their hair out.
+[00:41:37] They're like, this doesn't make any sense.
+[00:41:39] The math doesn't add up.
+[00:41:41] How is this possible?
+[00:41:42] I'm going to short it, and I'm going to keep adding, and oh my gosh, I'm broke.
+[00:41:47] I've lost everything.
+[00:41:48] It makes no sense.
+[00:41:50] And then you have a day like this, where it'll drop 90% in a single day.
+[00:41:55] And these stocks can just be extremely risky.
+[00:42:00] So this is true with, I mean, it's not true with all foreign listed companies.
+[00:42:06] There's a lot of foreign countries that they've got great companies and it's not a problem,
+[00:42:11] but then there are some bad actors out there.
+[00:42:13] And so this has been especially true with Chinese small cap stocks, and there's been
+[00:42:19] some effort to try to rein in this problem.
+[00:42:23] There's been some criminal actions against some of these companies and some of their
+[00:42:27] shareholders, but the stakes are kind of low, I think, for some of those people, because
+[00:42:33] they're not US residents, the US government doesn't have jurisdiction to go arrest someone
+[00:42:38] in China.
+[00:42:39] And so this just keeps happening.
+[00:42:41] And I think there will be a point where it stops happening, but this is an example
+[00:42:46] here where this stock went from $78 a share, and it just kept going higher, and shorts kept
+[00:42:52] adding.
+[00:42:53] They're like, this is going to be one of those stocks that drops 90% in one day.
+[00:42:56] And it did.
+[00:42:57] Look, it came all the way back down.
+[00:42:59] You can see it, but it went to $2,500 a share before it came back down.
+[00:43:04] And you just want to be able to afford to keep holding.
+[00:43:06] So, you know, it's, and the thing is, the reality with these types of stocks is that
+[00:43:11] the company let the stock go that high.
+[00:43:14] They may even help helping facilitate making it go that high by continuing to bid it up
+[00:43:19] or continue to put out news.
+[00:43:20] So they wanted shorts to get squeeze.
+[00:43:24] They wanted it to go higher, so they eventually could dump, and when they started dumping
+[00:43:27] they were dumping from a higher price.
+[00:43:29] Now, again, I can't say that specifically for the inside of the HKD, because I don't
+[00:43:33] know, specifically to story with this company, but these are the themes that we've seen
+[00:43:37] again and again and again.
+[00:43:39] Now, when we look at a stock, when we pull it up on our stock, quote, window, we can
+[00:43:43] see the country of origin for the company, HK, there is Hong Kong, CN is China.
+[00:43:50] So, SGS Singapore, those are a couple that we notice, C.A. is Canada, Canada is fine, you
+[00:43:57] know, European countries are fine, however, if you look at the companies, sometimes what
+[00:44:02] you'll notice is that they might say their Canadian or they might even say their, you know,
+[00:44:06] an American company, but when you actually look, it's a subsidiary of a foreign company.
+[00:44:13] And so then you've got a kind of look a little deeper.
+[00:44:15] And I only really do that if the price action becomes suspicious.
+[00:44:19] So when this stock drops from 12 to 11, I'm like, ah, kind of normal pull back, whatever.
+[00:44:24] But then when it goes all the way down to $2 a share, you're like, wait a second.
+[00:44:29] This is a little ridiculous.
+[00:44:31] But generally, the thing is, for me, I'll trade it.
+[00:44:37] If it's got momentum and it's moving higher, I'm just going to trade it on the upside
+[00:44:41] as it keeps going.
+[00:44:42] And if it turns around and it's not holding up anymore, then I get out.
+[00:44:46] I'm never going to be holding, you know, as it just drops more and more and more.
+[00:44:49] I just cut my losses.
+[00:44:51] But I think it's important not to underestimate how much some of these foreign listed
+[00:44:56] companies, how much some of them can drop because it can get really bad.
+[00:45:00] Okay.
+[00:45:01] So now I've gone over the different, the different daily stock types, which now has put
+[00:45:09] us in a great position where we can move on to chapter five, we're going to start breaking
+[00:45:13] down all of the inter day chart patterns.
+[00:45:15] The inter day chart patterns will occur on all of those different stock types.
+[00:45:19] Stocks with breaking news, stocks with multidate continuation, stocks with day one, first
+[00:45:24] can't let me make a new high, the IPOs, IPO day recent IPOs, the foreign list, the blue
+[00:45:29] sky, recent reverse split, all of those stock types, those are those are just the daily
+[00:45:34] stock types that are particularly interesting and are worth that are noteworthy.
+[00:45:38] So if we pull up our chart and we immediately see, oh, this is that stock type, okay, I'm
+[00:45:45] going to pay a little more attention to it.
+[00:45:46] If I pull it up and I see, oh, this is a stock that just sort of trades on like, you
+[00:45:50] know, four.
+[00:45:51] No, this is a stock that just kind of trades on higher volume always, it's going to take
+[00:45:56] a lot more for this to have high relative volume today.
+[00:46:00] We're probably not going to see a big imbalance between supply and demand.
+[00:46:03] There's going to be sellers who are ready to sell, you know, it's just probably not going
+[00:46:07] to work or you can pull up the chart and you're like, oh, this is one of those breaking
+[00:46:10] news stocks, this is something I should pay attention to, or this one maybe after two
+[00:46:15] days of going sideways, you know, pulling back could be first daily calendar making
+[00:46:19] new high and then maybe continuation.
+[00:46:21] So understanding the daily chart gives you context, big picture, which helps you understand,
+[00:46:28] you know, upside potential and some downside risk.
+[00:46:30] And then it's time to get on the interday chart and start looking for the actual
+[00:46:35] candlestick chart patterns that will help you establish, um, hopefully low risk entries
+[00:46:41] that have limited downside with a substantial amount of upside so you can justify taking
+[00:46:47] the position.
+[00:46:48] Okay.
+[00:46:49] So let's go ahead and jump in to chapter five.

@@ -1,0 +1,1116 @@
+# Part 8 Multi-Account Syncing.mp4
+# Transcribed: 2026-06-29T21:54:02.442474
+# Duration: 58.7 minutes
+# Model: faster-whisper tiny
+
+[00:00:01] All right, so we're going to go ahead and jump in here with chapter six part eight sinking trades across multiple accounts.
+[00:00:07] This is very interesting. It's something that I've seen done in the prop firms quite a lot.
+[00:00:14] Prop firms, for some reason, it's sort of an antiquated business model because you really don't need a prop firm in this day and age.
+[00:00:22] But for forex and futures trading, a lot of people need leverage, like 100 times leverage.
+[00:00:28] Because the only way to make money on the fluctuation in currencies is if you take a huge position and then that, you know, 10th of a percent change, you know, with a $100,000 position, could give you 500 bucks.
+[00:00:41] And so a lot of those prop firms allow you to create an account and you can actually create multiple accounts.
+[00:00:48] And so then you have three or four accounts that basically all mirror behind the first account.
+[00:00:55] And so in theory, if you make money, then you make money in three or four accounts.
+[00:01:01] If you lose you lose in three or four accounts. Why not just have one account with like $400,000 of buying power?
+[00:01:06] Well, it's harder to get approved for that.
+[00:01:08] So people will get approved for one account and then they'll just get approved for three more of the same buying power.
+[00:01:14] And then they multiply the trades across the three.
+[00:01:17] Okay, it seems like kind of a funny work around that's very specific to forex and futures trading.
+[00:01:23] But there is a case for using this technology or using this type of software.
+[00:01:31] In a equities account, specifically when it comes to growing a retirement account.
+[00:01:39] So let's just say you've got account number one, which is your main taxable account.
+[00:01:45] So your gains are taxable.
+[00:01:48] And that's fine. You use that to cover cost of living, whatever.
+[00:01:51] And then you set up a Roth IRA.
+[00:01:55] So you set up a Roth IRA.
+[00:01:58] And now what you could do, and I could do this over at light speed right now, for instance.
+[00:02:04] So if I pull up light speed, oh, you pull up any broker really.
+[00:02:09] But if I pull up light speed, there it is.
+[00:02:11] So I can tab between two accounts.
+[00:02:14] You can see here this is Ross Cam and this is Ross IRA.
+[00:02:18] The Ross IRA is my retirement account and Ross Cam is my taxable account.
+[00:02:22] And so I primarily trade in retirement account and I use the taxable account for doing demos with hot keys and things like that mostly in these classes.
+[00:02:30] And unfortunately, light speed does not currently offer the functionality where if I buy in one account, it'll automatically buy in the second account.
+[00:02:40] But wouldn't it be great if it did because then in theory, I want to buy a thousand shares.
+[00:02:47] You know, whatever, it doesn't matter.
+[00:02:49] I buy a thousand shares here.
+[00:02:50] And let's say, well, let's say the Roth IRA is smaller.
+[00:02:53] So let's say I do 500 shares in that account.
+[00:02:56] All right, well, that's fine.
+[00:02:57] Then what we would expect is that every day that I trade,
+[00:03:01] I make one X my daily goal here, and I make half of that here in this account.
+[00:03:08] Which would allow me slowly and steadily to begin growing my retirement account.
+[00:03:14] And it wouldn't take away from what I'm doing here because it happens automatically.
+[00:03:20] The problem with toggling between accounts, as you well know,
+[00:03:24] is these stocks are moving so quickly that the time it takes to toggle from account to account to be flipping back and forth is just not reasonable.
+[00:03:31] You can do the same thing with with finger swim.
+[00:03:34] So with finger swim, you come up here and you can toggle between these accounts.
+[00:03:37] So I've got cash accounts, I've got Roth account, I've got a margin account.
+[00:03:42] You know, I've used these during all the different small account challenges that you've seen me do.
+[00:03:46] So, you know, it's great that you can access them relatively quickly,
+[00:03:52] but it's not fast enough that you could really functionally day trade in multiple accounts at the same time.
+[00:04:00] So, in today's lesson, I'm going to teach you how to set up hotkeys using a specific piece of software that will allow you to execute the same trade across multiple accounts at the same time,
+[00:04:12] as long as they are with the same broker.
+[00:04:14] Not all brokers offer this functionality.
+[00:04:17] I should say, in fact, most do not offer it, not because they don't want you doing it,
+[00:04:21] but because they just haven't figured out how to do it.
+[00:04:24] The same reason Charles Schwab does not offer sophisticated hotkeys.
+[00:04:27] It's not with ill intent, it's just because they haven't gotten around to it.
+[00:04:31] But they should get around to it because, as you would, a stutally note, if you're an executive at one of these firms,
+[00:04:38] this increases trading volume.
+[00:04:41] More trading volume means more money for the broker.
+[00:04:44] So, yeah, they definitely are going to want to set this up.
+[00:04:47] So, I'm going to walk you through how to set up your hotkeys to execute the same trade across multiple accounts with same broker.
+[00:04:53] I'm going to share with you some results of my extended testing of this multi-account syncing,
+[00:04:58] which many of you have already watched me doing in mentor sessions and in the chat room,
+[00:05:03] but which I'll present to you here.
+[00:05:05] Okay.
+[00:05:06] So, let's talk about this.
+[00:05:09] brokers that allow syncing between multiple accounts.
+[00:05:12] There are a number of brokers that will allow you to trade in both your main account,
+[00:05:17] and your retirement account at the same time.
+[00:05:20] brokers will not typically allow you to create multiple accounts of the same type.
+[00:05:27] Probably because of that issue with forex and futures traders sort of taking advantage in having five margin accounts.
+[00:05:34] So, you can't usually do that, but you can create your main account,
+[00:05:39] which could be a cash account or a margin account, and then you could have your retirement account,
+[00:05:43] which could be either a Roth IRA or a traditional IRA.
+[00:05:47] And then your trades that you take will sync to both accounts simultaneously.
+[00:05:53] Now, what's important here is that while I shouldn't say the trades will sync,
+[00:06:01] the orders will sync.
+[00:06:03] That's an important distinction.
+[00:06:05] If you press the buy button into accounts at the same time,
+[00:06:08] we would expect that you would get filled at similar places,
+[00:06:12] but is it possible that the account that is second in line will always be a little bit behind?
+[00:06:18] Well, I mean, it is, it literally is behind,
+[00:06:21] and would that make a material difference in the execution price,
+[00:06:25] where in fact, because this accounts always behind,
+[00:06:28] it isn't able to do half as much.
+[00:06:30] Maybe it only does, you know, a third as much.
+[00:06:33] Well, I'll present my testing results with you,
+[00:06:36] so you can understand how it actually performed in the real world.
+[00:06:41] But in theory, you would, if not for some of those variables,
+[00:06:45] you would expect that your trades would more or less be the same across these accounts,
+[00:06:49] with the only difference being if you chose smaller share size,
+[00:06:53] or bigger share size in one account versus the other.
+[00:06:55] Now, as a word of caution, I'm going to tell you,
+[00:06:57] I'm not advocating that you risk your retirement account by day trading with it.
+[00:07:01] It's critical.
+[00:07:02] You first prove profitability in the simulator before going live,
+[00:07:05] and prove profitability with real money before syncing in a second account.
+[00:07:09] If you sync in a second account before you've made money,
+[00:07:12] you're just going to increase the speed at which you're losing money.
+[00:07:15] You don't want to do that, and you don't want to do that with your retirement account.
+[00:07:18] So by the time I'm thinking about syncing a retirement account to my main account,
+[00:07:23] I want to be in a position where I've already done well enough
+[00:07:27] that I've got a track record, I've got some consistency, I've got some confidence,
+[00:07:30] and where I could put some money into my retirement account
+[00:07:34] that I'm totally comfortable risking.
+[00:07:36] In other words, if I've already made $50,000 in my main account, for instance,
+[00:07:41] maybe I'm okay with putting 25,000 into a retirement account to practice trading,
+[00:07:45] you know, to test this out with, because it's kind of profit that I've already generated.
+[00:07:49] But don't get ahead of yourself here.
+[00:07:52] Again, one of the goals of this class is that I put everything on the table,
+[00:07:55] you might not use all of it, and that's fine.
+[00:07:57] This may not be relevant to some of our members that are in Canada
+[00:08:02] or in a different part of the world, because you may not have the same type of retirement account
+[00:08:05] options, but for those of you guys who find this interesting,
+[00:08:09] then it's here for you to utilize.
+[00:08:12] So syncing between multiple accounts requires third-party software,
+[00:08:17] and that software is called Dash Trader.
+[00:08:20] Dash Trader is a software company.
+[00:08:23] That's what they are.
+[00:08:24] They're not a broker, they are just a software company.
+[00:08:28] That's an important distinction.
+[00:08:31] They are trading software that can be used with dozens of different brokers.
+[00:08:37] It's not free, though.
+[00:08:38] They're a software company.
+[00:08:39] They need to make their money to cover the cost of this platform.
+[00:08:42] They don't make money on commissions, because they're not a broker,
+[00:08:44] or payment for order flow.
+[00:08:46] So the cost is around $200 a month for a software.
+[00:08:48] It's not free.
+[00:08:49] That's not super cheap either.
+[00:08:51] However, there's definitely some value in it.
+[00:08:54] So, again, Dash Trader, not a broker, they're a software company.
+[00:09:00] What they do is, they built trading software,
+[00:09:03] and they built it probably about 25 years ago,
+[00:09:06] and they license this software to smaller broker dealers,
+[00:09:09] who can't afford to build custom trading software for themselves.
+[00:09:13] So, certainly, we both think of Swim Trial Schwab, E-Trade,
+[00:09:18] Fidelity.
+[00:09:19] These big brokers, interactive brokers,
+[00:09:21] they spend millions and millions and millions of dollars building a software
+[00:09:25] that they make available to all of their customers,
+[00:09:28] which makes sense.
+[00:09:29] If they've got a million customers,
+[00:09:32] and they were paying $200 a month to Dash Trader,
+[00:09:35] that would be insane, right?
+[00:09:37] So, at a certain point, it just makes sense for them
+[00:09:40] to build their own software.
+[00:09:41] But if you're a smaller broker, and you have only,
+[00:09:44] I don't know, 100, or 200 active clients,
+[00:09:49] and maybe they're very active traders,
+[00:09:51] you wouldn't be making enough to justify building your own software.
+[00:09:55] And so, that's where Dash Trader steps in.
+[00:09:58] So, Dash Trader provides software,
+[00:10:00] and it's not just for brokers,
+[00:10:02] it can also be for institutions for a small hedge fund.
+[00:10:05] They need trading software for their traders at the desk.
+[00:10:08] They could use Dash Trader.
+[00:10:10] So, most of the smaller brokers
+[00:10:14] will offer Dash Trader, light speed offers Dash Trader.
+[00:10:17] You can use light speed and Dash Trader if you want.
+[00:10:20] A center point, guardian, they offer Dash Trader.
+[00:10:24] You can use it with ocean one securities.
+[00:10:26] You can use it with CMEG.
+[00:10:28] You can use it with cobertrading.
+[00:10:31] Most of the bow teak brokers that are really catering to day trading
+[00:10:35] offer Dash Trader.
+[00:10:37] Some of them offer multiple platforms,
+[00:10:39] three or four different platforms.
+[00:10:40] And they're all kind of similar to Dash Trader,
+[00:10:42] although Dash Trader is the one that has the multi-account syncing.
+[00:10:45] But what's interesting is that there are a few
+[00:10:49] of these retail brokers that also allow you to use Dash Trader,
+[00:10:54] including Charles Schwab for one and interactive brokers
+[00:10:57] for another, which is kind of interesting.
+[00:11:00] Because you would think that they would want all
+[00:11:03] their customers using their, you know, in-house software,
+[00:11:06] but you can go ahead and subscribe to Dash Trader
+[00:11:10] and you pay for it directly.
+[00:11:12] And then you just link it to your interactive brokers
+[00:11:14] or your Charles Schwab account.
+[00:11:16] And then essentially, Dash Trader
+[00:11:19] is like, is the interface that you trade with.
+[00:11:23] But at any time, you could of course open
+[00:11:25] think or swim or interact with brokers,
+[00:11:28] and you would see the trades appear there as well.
+[00:11:31] So it's almost like Dash Trader becomes like a interface,
+[00:11:35] like a skin, over think or swim.
+[00:11:37] So you're still seeing all the same stuff.
+[00:11:39] They're synced together, but you're able to execute your orders
+[00:11:42] with the software that, as you've already seen,
+[00:11:45] as I've demonstrated it a bit throughout this course
+[00:11:49] and they trade the basics.
+[00:11:50] It's more intuitive and it gives you the ability
+[00:11:53] to create custom hot keys and the customizer level
+[00:11:57] to exactly the way you'd like it.
+[00:11:59] So Charles Schwab and interactive brokers have
+[00:12:01] the two commission free brokers that offer this software
+[00:12:04] and then most direct access brokers
+[00:12:06] that also support IRA accounts offer Dash
+[00:12:10] and therefore would be candidates
+[00:12:12] for this multi-account sinking technique.
+[00:12:15] But there is a specific advantage
+[00:12:18] with Charles Schwab, which is the broker that I've been
+[00:12:20] testing this on.
+[00:12:21] What is it?
+[00:12:22] Would Charles Schwab, they publish
+[00:12:26] these quarterly execution quality reports
+[00:12:30] and they say that they offer seven times
+[00:12:34] the shares versus the displayed quote.
+[00:12:38] What does that mean?
+[00:12:39] Well, let's pull up a stock here and I'll show you.
+[00:12:43] So right now, KNRX has a displayed quote
+[00:12:47] of on the ask, 900 shares plus four plus four.
+[00:12:52] So you could see right now the ask
+[00:12:54] is generally showing about a thousand shares.
+[00:12:57] Okay, so if I were to buy five thousand shares right now,
+[00:13:02] would I get some slippage at light speed?
+[00:13:05] Now I might not because this has got 50 million shares
+[00:13:08] of volume and there's a pretty high likelihood
+[00:13:11] that there's some hidden orders on this stock.
+[00:13:14] Let's pull up a different ticker for a second.
+[00:13:17] Okay, so on this one, for instance, on this one,
+[00:13:21] you've got a 50 cent spread.
+[00:13:23] You've got a big spread and on the ask,
+[00:13:25] it only shows 100 shares, 200 shares.
+[00:13:28] So if I punched an order here for five thousand shares,
+[00:13:31] you better believe that I would get some slippage on that trade.
+[00:13:35] Now, I don't really want to take that trade to show you
+[00:13:38] that the cost could be 2500 bucks.
+[00:13:40] It's a 50 cent spread.
+[00:13:41] But what you know is that I would probably get some slippage.
+[00:13:44] So even with the sales with the thousand shares,
+[00:13:47] your best case scenario is that there could be in
+[00:13:50] between the spread, there could be a seller,
+[00:13:52] and you could maybe fill in between the spread.
+[00:13:54] I'll just do it for 2500 shares.
+[00:13:56] I'll do it for the sake of the class.
+[00:13:58] All right, it's for education.
+[00:13:59] So I'm going to click this, let's see what happens.
+[00:14:01] See how the price jumped up?
+[00:14:04] I didn't even fill the full order.
+[00:14:06] I only filled a thousand shares.
+[00:14:07] Now, let's just pull up for the sake of argument.
+[00:14:10] Let's just pull up, think or swim.
+[00:14:12] And let's see, think or swim.
+[00:14:14] We're going to pull up the same stock MLEC, MLEC.
+[00:14:18] So now we'll do 2500.
+[00:14:21] We did 2500, right?
+[00:14:22] So I'm going to do buy market right here.
+[00:14:25] Do they go through it?
+[00:14:28] Oh, you know what?
+[00:14:30] This might be a stock.
+[00:14:31] This is the think or swim is sort of notorious for this.
+[00:14:34] Right now, think or swim is probably blocking trading
+[00:14:37] security.
+[00:14:38] Let's see.
+[00:14:39] They're going to say, you've got to call in order to place the trade.
+[00:14:41] Yeah, I rejected.
+[00:14:42] You've got to call.
+[00:14:43] All right.
+[00:14:44] So I'm not a great example there.
+[00:14:45] That is a problem for what it's worth with think or swim.
+[00:14:48] But let's just say, so in any case, if it wasn't blocked,
+[00:14:54] because it's a foreign-listed security,
+[00:14:56] most likely I would be able to fill all 2500 shares right at 1750.
+[00:15:01] Because they offer seven times the amount of shares versus the display
+[00:15:06] on the screen.
+[00:15:07] And I know that's confusing.
+[00:15:08] How do they do that?
+[00:15:09] Where do those shares come from?
+[00:15:10] Those shares are because of payment for order flow.
+[00:15:14] Because of payment for order flow, they're able to the whole
+[00:15:19] sailor has an inventory of those shares in general.
+[00:15:26] So you've got you, you've got your broker, you've got the exchange up here.
+[00:15:31] Oops, sorry.
+[00:15:32] Exchange up here, and then you've got the hedge funds.
+[00:15:35] That are doing payment for order flow.
+[00:15:38] And so they're basically saying, we have seven times the average number of shares
+[00:15:43] versus what you can get on the market.
+[00:15:45] So you want to buy 10,000, but there's only 2,000 display on the market.
+[00:15:49] No problem.
+[00:15:50] We'll be able to give you that full 10,000 share order without slippage.
+[00:15:54] So send your order to us.
+[00:15:56] This is them trying to say, send more orders to us.
+[00:15:59] And the more people to do it, the more liquidity they have,
+[00:16:03] versus the regular market.
+[00:16:06] So I'm just going to take the loss on that, whatever.
+[00:16:08] It doesn't matter.
+[00:16:09] So anyways, so the reason this is important is because,
+[00:16:15] if you were going to be sinking to accounts,
+[00:16:18] then the problem you might have is that account too would always be behind.
+[00:16:24] So buy five k shares, buy five k shares.
+[00:16:29] If I was doing that with light speed,
+[00:16:31] that first order for just 1,000 shares didn't even get filled.
+[00:16:35] Not to mention if I have a second order behind it.
+[00:16:37] Now that was an example of a very thinly traded stock that doesn't have much volume right now,
+[00:16:41] but it would have been a problem.
+[00:16:43] Which, Schwab, in theory, I hypothesized that this would not be a problem
+[00:16:48] because of payment for order flow.
+[00:16:52] So even though in general, I think that there's a lot of disadvantages
+[00:16:56] to payment for order flow for retail traders.
+[00:16:59] This is an instance where there's a benefit.
+[00:17:03] You can buy more shares than are displayed in the market,
+[00:17:07] which means you could probably have account number two,
+[00:17:10] following behind account number one,
+[00:17:12] and they would end up having very similar performance.
+[00:17:16] At least that's the hypothesis.
+[00:17:18] So again, during this class,
+[00:17:20] I'm going to share with you the results of my test.
+[00:17:23] And long story short, it more or less proved to be correct.
+[00:17:27] I was able to scale and trade in the second account
+[00:17:32] with similar performance.
+[00:17:35] I'll be at a smaller share size,
+[00:17:37] but the percentages were similar.
+[00:17:39] Okay, so your first step would be to install DAS trader for Schwab.
+[00:17:44] And so if you went to the DAS trader website,
+[00:17:46] and again, as always, I'll just remind you,
+[00:17:48] I don't have any affiliate relationship with DAS trader
+[00:17:51] or with any of the brokers that I mentioned here.
+[00:17:54] So if you want to use them, use them if you don't.
+[00:17:56] It makes no difference to me.
+[00:17:58] I'm just sharing with you some of the tools that I've used
+[00:18:00] that I find helpful.
+[00:18:01] So you can subscribe directly on their website
+[00:18:04] to use it for interactive brokers,
+[00:18:06] and you can subscribe directly on the website
+[00:18:08] to use it for Schwab.
+[00:18:10] So when you subscribe directly on their website,
+[00:18:13] you end up paying a $200 a month.
+[00:18:17] It's a PayPal subscription.
+[00:18:19] It rebuilds every month.
+[00:18:21] And once you've paid, you get a link
+[00:18:24] where you can download the software.
+[00:18:26] You fill out your market data agreements.
+[00:18:31] And then you click this authorization,
+[00:18:33] and it's going to send you an authorization
+[00:18:35] over to interactive brokers.
+[00:18:37] They have the same thing on,
+[00:18:39] for DAS trader, for a Schwab,
+[00:18:42] where you sign up, you pay for the software,
+[00:18:45] you then do the authorization,
+[00:18:47] and it sends you over to Schwab's website
+[00:18:49] where you complete the authorization.
+[00:18:53] Okay.
+[00:18:54] So, oh, and then one of the things that you have to do
+[00:18:57] is after you pay the $200 a month for account number one,
+[00:19:00] you have to go down here,
+[00:19:01] and you have to add on additional user.
+[00:19:05] So they call it an IBM account with interactive brokers,
+[00:19:08] which Schwab is an additional,
+[00:19:09] I think they actually call it a TD account here.
+[00:19:12] Let's see, additional TD account right there.
+[00:19:15] So you could set that up,
+[00:19:17] you know, again,
+[00:19:19] which you would need to do.
+[00:19:20] So now it's $250 a month to have this up and running.
+[00:19:23] Okay.
+[00:19:24] So we'll back that up here,
+[00:19:25] I'll put that up there.
+[00:19:26] So you download the software,
+[00:19:28] and then you load a layout.
+[00:19:30] My saved layout is available.
+[00:19:33] All right.
+[00:19:34] So what you do is,
+[00:19:36] you, let's see,
+[00:19:37] do I show a screenshot?
+[00:19:38] No, I did.
+[00:19:39] So when you go in here,
+[00:19:41] you go to file,
+[00:19:42] when you first log in,
+[00:19:43] you go to load layout,
+[00:19:45] and then you load the layout that I've given you.
+[00:19:48] You can download it with our resources in our platform demos.
+[00:19:51] We have layouts for a bunch of different platforms.
+[00:19:53] So you can download my layout.
+[00:19:55] Then what you do when you log out is you click,
+[00:19:58] you log out and you save,
+[00:20:00] and you have to save the desktop as default.
+[00:20:03] And then when you load in,
+[00:20:04] log in the next day or whatever it is,
+[00:20:06] it'll reload the same layout.
+[00:20:08] So you have to save it as default when you log out.
+[00:20:11] So I'll just show you here.
+[00:20:12] So let's see.
+[00:20:14] So you go,
+[00:20:16] so you go open desktop,
+[00:20:18] just like this.
+[00:20:19] So this is the actual software.
+[00:20:20] So you open the default,
+[00:20:24] and then when you save it,
+[00:20:25] you save it as default.
+[00:20:27] Okay.
+[00:20:28] So now you've loaded your layout.
+[00:20:30] It's time to set up the hotkeys.
+[00:20:33] And by the way,
+[00:20:36] I think this sort of goes that side.
+[00:20:39] But when you first log in to task trader,
+[00:20:43] when you log in,
+[00:20:44] you would see,
+[00:20:45] once you've done the multi-account syncing,
+[00:20:48] you'd see from the dropdown here,
+[00:20:50] all your accounts available.
+[00:20:52] So that multi-account syncing,
+[00:20:54] once you've paid for tasks,
+[00:20:56] and then you've added the second account,
+[00:20:58] you go through,
+[00:21:00] you click the authorization button,
+[00:21:03] wherever it is,
+[00:21:04] let me put up.
+[00:21:05] You click the authorization button,
+[00:21:07] and you go over to,
+[00:21:09] to the Schwab,
+[00:21:13] and then you sign this agreement.
+[00:21:15] So this is the agreement,
+[00:21:16] this is what it looks like.
+[00:21:17] So it's trader,
+[00:21:18] API,
+[00:21:19] and user,
+[00:21:20] you click that,
+[00:21:21] you then click next,
+[00:21:22] and then it's going to give you a list of your accounts,
+[00:21:25] and you choose which accounts you want to sync,
+[00:21:28] and then you're good to go.
+[00:21:30] So I'm not going to put them up here,
+[00:21:32] because I've got the account number,
+[00:21:33] but you click continue,
+[00:21:34] and then you can log out of task and log in,
+[00:21:38] and you're synced,
+[00:21:40] just like that.
+[00:21:41] And you could take a test trade,
+[00:21:42] and you would see that same trade show up on both,
+[00:21:45] think or swim,
+[00:21:46] and dastrater at the same time.
+[00:21:48] All right, so now we set up our hotkeys
+[00:21:50] for the multi-account syncing.
+[00:21:52] So this is fairly straightforward.
+[00:21:54] I'm going to open up the hotkey window here from dastrater.
+[00:21:59] So let's see,
+[00:22:01] so you go to set up,
+[00:22:02] and you go to hotkeys.
+[00:22:04] So if I go here,
+[00:22:06] just go back.
+[00:22:08] So you go to set up right here,
+[00:22:10] and then you scroll down to hotkeys,
+[00:22:12] and then this is our hotkey window right here.
+[00:22:15] Okay.
+[00:22:16] So the way we set this up is,
+[00:22:19] if you already have hotkeys,
+[00:22:21] that's fine,
+[00:22:22] or you can add a new hotkey.
+[00:22:23] So I'm going to go add new hotkey.
+[00:22:25] And this is going to be by account 1 and 2.
+[00:22:29] And I'll just say 1,000 shares.
+[00:22:32] Okay, so what we're going to do here
+[00:22:34] is we're going to go to order script wizard.
+[00:22:36] And we're going to say buy.
+[00:22:38] We're going to say 1,000 shares.
+[00:22:40] The symbol will be whatever symbol is highlighted on the level 2 window.
+[00:22:43] The price will be the ask plus 10 cents.
+[00:22:46] Not doing anything fancy.
+[00:22:48] Account number 1,
+[00:22:49] route.
+[00:22:50] We're going to choose limit.
+[00:22:53] Time and force is day plus,
+[00:22:55] so I can do it pre-market.
+[00:22:56] None of this changes,
+[00:22:57] and we set it to load and send.
+[00:23:00] Build script.
+[00:23:01] Click once.
+[00:23:02] Click at a second time.
+[00:23:04] Build script.
+[00:23:05] Change this to account 2.
+[00:23:08] Change this.
+[00:23:09] Change this to shift 1.
+[00:23:10] Or I've already used shift 1.
+[00:23:12] Shift 0, whatever.
+[00:23:13] And you're done.
+[00:23:14] That's it.
+[00:23:15] That's it.
+[00:23:16] It's that simple.
+[00:23:18] Come in.
+[00:23:19] Now shift 1 or shift 0 is going to send.
+[00:23:22] It's 2 accounts at the same time.
+[00:23:23] Now we're going to add new items.
+[00:23:25] Cell.
+[00:23:26] Half.
+[00:23:27] Both accounts.
+[00:23:28] Okay.
+[00:23:29] So now we're going to go to order script wizard.
+[00:23:31] We're going to go to cell.
+[00:23:32] We're going to say position.
+[00:23:35] Times 50%.
+[00:23:39] Want to sell quarter.
+[00:23:40] Do 25%.
+[00:23:41] Want to sell three quarters.
+[00:23:42] Do it as you'd like.
+[00:23:44] Simple.
+[00:23:45] It's the stock we're already looking at.
+[00:23:46] Position.
+[00:23:47] Our price.
+[00:23:48] I just keep it simple.
+[00:23:49] I don't try to sell in the ask.
+[00:23:51] It just.
+[00:23:52] There's too much of a risk that I won't get filled.
+[00:23:54] I mean, I've got half position on one and not on the other.
+[00:23:57] And so I just do minus 10.
+[00:23:59] I sell on the bed.
+[00:24:00] I do it as a limit order.
+[00:24:02] I do time and force day plus.
+[00:24:05] And I do load and send.
+[00:24:07] I build the script twice.
+[00:24:09] This is for account number two.
+[00:24:11] Done.
+[00:24:12] Now this actually.
+[00:24:15] Let me make a note.
+[00:24:17] So.
+[00:24:18] I would recommend.
+[00:24:20] There's good.
+[00:24:21] Put this on control view for a now.
+[00:24:23] Give it.
+[00:24:24] So I'm going to go back on to this one.
+[00:24:27] And one thing that I will say.
+[00:24:29] Is that I did have some issues with this script.
+[00:24:33] Where one of my accounts did not have enough buying power.
+[00:24:37] And when you first set in this order, it doesn't know which account you're applying it to.
+[00:24:42] So you actually want to change the order of these commands to make the account to be the first one.
+[00:24:49] Like this.
+[00:24:51] That way it selects the account first and then chooses everything else.
+[00:24:56] So you want to do that really quickly.
+[00:24:58] So account one account to his first and then commit.
+[00:25:01] And then you want to do the same thing on the selling side.
+[00:25:03] So you want to say which account do you want to sell in first.
+[00:25:06] Right.
+[00:25:07] Account one.
+[00:25:08] Account two.
+[00:25:09] Otherwise.
+[00:25:10] It you could end up with.
+[00:25:12] It selling half.
+[00:25:14] I mean, if you have the same position as supposed.
+[00:25:16] It doesn't matter, but.
+[00:25:18] But it wasn't definitely a problem with buying and it could be a problem with selling as well.
+[00:25:21] So set it up like that.
+[00:25:23] And then I'm going to copy this.
+[00:25:25] I'm going to go commit.
+[00:25:26] I'm going to go add new item.
+[00:25:28] I'm going to paste it and I'll make this one for selling order position.
+[00:25:33] So selling.
+[00:25:36] We'll just do normally that to control X, but we'll just put it on another buy in there.
+[00:25:43] Control B for now.
+[00:25:45] So sell both half.
+[00:25:49] Commit.
+[00:25:50] And so you can see here.
+[00:25:52] And you could also if you wanted to.
+[00:25:54] You could say, oh, I want to do.
+[00:25:55] I want to copy paste this.
+[00:25:57] I want to do.
+[00:25:59] Add new item.
+[00:26:00] I'm going to do one for buying 2000 shares.
+[00:26:03] You know, 2000 shares or something like that.
+[00:26:05] So for the testing that I did, which I'll share with you in a minute.
+[00:26:08] I had the main account buying 3000 shares and the smaller account buying 1000 shares.
+[00:26:14] And I actually set up three accounts to really test to see whether or not I would get slippage or what the performance would be between these three accounts.
+[00:26:23] And so my hypothesis was that these two accounts would produce one third of the profit of the main account.
+[00:26:32] Or in other words, the main account would produce three times the profit is the two smaller accounts.
+[00:26:37] The two small accounts produced almost the exact same profit during my testing, almost the exact same profit.
+[00:26:46] And the third account or the first account was obviously bigger and did better.
+[00:26:51] But it didn't do three times better, which doesn't speak to this being an issue with small size.
+[00:26:57] But it speaks to with bigger size, getting to the point with a commission free broker of diminishing returns.
+[00:27:06] Right?
+[00:27:07] So no problem, 1000 shares, 2000 shares, but then you start to size up.
+[00:27:11] And even at 3000 shares, I was getting diminishing returns versus 1000 shares.
+[00:27:15] But I'm getting ahead of myself.
+[00:27:17] We're going to get into that in a moment.
+[00:27:19] So that's how you set it up.
+[00:27:21] And that's very straightforward.
+[00:27:25] So commit.
+[00:27:26] So now you've got one hockey for buying.
+[00:27:29] Or if you want to set up multiple share sizes, set up two or three hockey for buying.
+[00:27:33] And then two or three hockey for selling, selling half.
+[00:27:36] And then eventually you're going to want one for selling the full position.
+[00:27:40] Right?
+[00:27:41] So add new item and sell position and just take away that.
+[00:27:48] And there we go.
+[00:27:51] So full both accounts commit.
+[00:27:56] And now you're ready to begin executing the trades.
+[00:27:59] So let me show you, I'm going to show you a video of this demonstration.
+[00:28:04] Let's see where I put that.
+[00:28:08] So you can actually see how this plays out.
+[00:28:11] Okay.
+[00:28:13] So this is a video here where you can see, I set up the hockey pretty much the same way.
+[00:28:19] I didn't put the account number in the correct place, but that's okay.
+[00:28:23] For the sake of this testing, it wasn't an issue.
+[00:28:26] But for good sort of hygiene on the way you set up the code, the account should go first.
+[00:28:32] So let's see.
+[00:28:33] So let me go back.
+[00:28:35] All right.
+[00:28:36] So what I'm going to do here is I'm going to pull up forward as you can see right here.
+[00:28:39] And I'm going to press shift one.
+[00:28:41] And it sends the order.
+[00:28:43] Right?
+[00:28:44] Sends the order.
+[00:28:45] And it executes one and two.
+[00:28:50] You can see clearly one account is a little bit ahead of the other.
+[00:28:54] So I'm going to slow this down.
+[00:28:56] I'm going to back it up 10 seconds.
+[00:28:58] And you'll see how you just through the nature of one account being in front of the other.
+[00:29:05] You're going to get a little bit of this latency.
+[00:29:09] And that is my biggest finding with.
+[00:29:13] Think or swim in general.
+[00:29:15] This is not a dance trader problem.
+[00:29:17] This is a think or swim problem.
+[00:29:19] Think or swim is just a little slow.
+[00:29:22] All right.
+[00:29:24] So I'm going to click shift one.
+[00:29:26] And then we're going to watch the orders pop up in the order entry window.
+[00:29:30] And then we'll see the orders fill.
+[00:29:31] So they come up at the same time.
+[00:29:33] And then we fill one and two.
+[00:29:37] But they filled at the same price.
+[00:29:39] Both at $13.18 and 99.
+[00:29:42] So remember, this is because of payment for order flow.
+[00:29:45] You'll never see fills like that using a commission.
+[00:29:49] A direct access broker because you don't get payment for order flow fraction of the penny fills.
+[00:29:54] So I'm in there.
+[00:29:56] Both accounts.
+[00:29:57] A thousand shares.
+[00:29:59] And the next thing I'm going to do is I'm going to press sell half.
+[00:30:04] So let's see.
+[00:30:06] I think I might do it like a minute later.
+[00:30:08] I was fast forward this for a second.
+[00:30:10] Okay.
+[00:30:12] So then I create the hot key for selling half.
+[00:30:15] I come over here.
+[00:30:16] So I click on DAS trader.
+[00:30:20] You've got to have your level two window highlighted as you can see right here.
+[00:30:25] Both are showing the same PNL, $29.90.
+[00:30:32] I sell half, 500 shares of each one.
+[00:30:35] And I'm out both.
+[00:30:37] Notice.
+[00:30:38] One is down more than the other.
+[00:30:40] Hmm.
+[00:30:41] That's interesting.
+[00:30:42] I sold half.
+[00:30:43] So 500 shares still holding on both of them.
+[00:30:45] And then I'm going to sell half a second time.
+[00:30:51] So I'll speed up the video a little bit more.
+[00:30:56] So when I had done the testing with these sort of smaller orders,
+[00:31:02] I noticed a little bit more of a variance between the accounts.
+[00:31:08] And I thought that was odd.
+[00:31:10] They're the exact.
+[00:31:11] I mean, it's literally the same position.
+[00:31:13] Why was it the account one?
+[00:31:15] The one that filled first was actually slightly behind.
+[00:31:18] So from a percentage standpoint.
+[00:31:21] I mean, this is like a 20% difference between these two accounts.
+[00:31:24] Right?
+[00:31:25] Now right there, I showed another order that you could set up.
+[00:31:31] Called cancel all symbol before your cell order.
+[00:31:35] So if you put out multiple cell orders at the same time,
+[00:31:39] then you could get an issue with them not filling.
+[00:31:41] So I put it out cancel all symbol before your script.
+[00:31:45] You would cancel any orders that were out there that had not gotten filled.
+[00:31:49] Automatically.
+[00:31:50] So that's another thing that you could do with DAS trader if you wanted to do that.
+[00:31:54] So yeah, and these two trades here, one account is down $28.
+[00:31:58] And the other account is down $23.
+[00:32:01] And so I thought, that is definitely a bit of a divergence between these two accounts.
+[00:32:09] And why is that exactly?
+[00:32:12] And I wasn't really sure.
+[00:32:15] I couldn't exactly say, but it was something that I obviously noticed.
+[00:32:23] And I thought, well, maybe this won't work.
+[00:32:27] So here was the hypothesis that began my testing.
+[00:32:32] For Charles Schwab users specifically, I hypothesized that using a DAS trader integration
+[00:32:38] would allow doubling or even tripling of the profits by adding a second or third account to the hockey scripts
+[00:32:44] without meaningfully hurting performance in the primary account.
+[00:32:47] And this is because Schwab internalizes orders with a whole sailor using payment for order flow.
+[00:32:52] And offers seven times the liquidity versus displayed quote.
+[00:32:56] So therefore, orders should not compete against each other.
+[00:33:00] Nor should they trigger the predatory high frequency trading algorithms that cause slippage in the lit markets.
+[00:33:07] In other words, Schwab offers a competitive advantage specifically for multi-account syncing that would not be available
+[00:33:15] from direct access brokers that offer DAS trader.
+[00:33:18] And possibly not from interactive brokers either.
+[00:33:21] So I thought maybe there's something here that's special and unique to Schwab with DAS trader.
+[00:33:27] So how could I test the hypothesis?
+[00:33:30] I'd already been demonstrating using multi-account syncing for over a year.
+[00:33:34] I mean, you guys have seen this all the time when I'm running my broadcast.
+[00:33:37] I've got my DAS position window up there and I'm trading in both accounts.
+[00:33:41] But I wasn't doing it on sort of like a daily basis.
+[00:33:46] I would do it periodically.
+[00:33:47] There would be a stock that was really, really strong.
+[00:33:49] Or we were in a really hot market and I'd be like, okay, I'm going to today I'm going to take the trade also and DAS.
+[00:33:55] And let's just see what happens.
+[00:33:57] And then I would answer the questions people have about multi-account syncing and do the demonstration of a hotkeys and everything else.
+[00:34:03] So I was doing it periodically.
+[00:34:05] And I was finding in the periodic use that I would periodically have big winners because I was only trading on like the hottest days.
+[00:34:16] But if I was wrong, I would sometimes have a huge loss.
+[00:34:20] And some of the losses were pretty big because I would take a big position and I would be in both accounts.
+[00:34:26] And then when I tried to sell, the stock is tanking and I can't get filled.
+[00:34:31] I hit the bid and the bid drops.
+[00:34:33] I hit the bid again, the bid drops more.
+[00:34:35] And I'm just not able to get out of the position.
+[00:34:37] So, you know, in total I was like, alright, I don't know.
+[00:34:41] This feels like it works, but it's not, I don't know if it's really something that I don't know.
+[00:34:50] I'm not sure if I should prioritize that over my regular trading account with light speed.
+[00:34:55] But I decided to give it a fair test.
+[00:34:57] And I decided to do that because when I was teaching classes in the fall and doing these demonstrations,
+[00:35:03] I had a number of days doing the demonstrations where I was actually impressed that I was able to buy more shares.
+[00:35:11] At think or swim, then at light speed.
+[00:35:14] And I did not get as much slippage.
+[00:35:16] And again, the market was pretty hot, but I was impressed.
+[00:35:19] I was like, wow, this is almost like, I mean, there were days where my think or swim account was up more than my light speed account, which was shocking.
+[00:35:28] So, if my hypothesis was wrong, then the result of the test would be that the accounts would experience a strong variance in the results.
+[00:35:40] And if I'm right, then the accounts should produce profit roughly equal to the percentage of shares that were traded in the second account.
+[00:35:47] So, for example, if account 1 is 3,000 shares, account 2 is 1,000 shares, account 2 should produce 1, third of the profit of account 1.
+[00:35:54] Right, that makes sense.
+[00:35:55] Okay, so that was the hypothesis that I laid out and so the testing began.
+[00:35:59] Now, I had three Schwab accounts I had used during previous small account challenges in which you guys had seen me doing demonstrations with.
+[00:36:06] So, I already had them set up.
+[00:36:08] One was a main account and then I had my two cash accounts.
+[00:36:13] So, one main account where I could trade as much as I want, don't run on a cash, and then the other two were cash IRA accounts.
+[00:36:20] So, there were cash accounts, but they were Roth IRAs.
+[00:36:24] My plan was that I would fund the main account with $500,000, and I did that.
+[00:36:30] So, that was money that came out of my light speed account and went into the main account.
+[00:36:35] I already had the main account set up, but I did not have that much money in it.
+[00:36:37] So, my thinking there was that that would give me enough buying power to trade in it pretty much the same as I would trade in my light speed account.
+[00:36:44] And then it counts two and three were both set up with around $150 to $200,000.
+[00:36:51] But I had them both using the same amount of buying power, which was each one-third of what I used in account number one.
+[00:37:00] So, basically, we had account one, which was trading 3x, and account two and three, which were trading at 1x,
+[00:37:09] for every trade that I was taking.
+[00:37:11] So, if I bought 3,000 share, then there's 1,000, 1,000.
+[00:37:14] But if I bought 9,000 shares, because I did 3,000 times three, then these would be 9,000,
+[00:37:20] and this would be 3,000 and 3,000.
+[00:37:22] So, that makes sense.
+[00:37:25] And so, even though the buying power on these two were slightly different, the ratio or the percentage of how I set it up was the same.
+[00:37:35] Alright, so that began my testing.
+[00:37:38] Here was my initial concern.
+[00:37:41] My initial concern was that during some of the demonstrations I had done, there was a variance between the accounts,
+[00:37:47] like what you just saw, where one was $23 in the red and the other was $28 in the red.
+[00:37:52] And I had observed that, and I wondered why that was the case.
+[00:37:58] I wondered if it was because, you know, the first account to buy in sell would always get the best price.
+[00:38:05] So, then, with the second or third account, always be a little bit behind.
+[00:38:09] And I thought, if that were the case of potential solution moving forward would be that periodically I just reverse the order of the second or third account.
+[00:38:20] But if Charles Schwab truly offers seven times the liquidity versus the displayed price, then the others shouldn't compete against each other, unless I was buying too many shares.
+[00:38:29] So, you know, I did realize during some of my previous trades that maybe I had taken enough shares, I was getting slippage.
+[00:38:37] So, I speculated that maybe this technique of trading into accounts at the same time would work really well with 100 shares.
+[00:38:47] Maybe really well with 1000 shares, really well with 2000 shares, but at a certain point would perhaps start underperforming.
+[00:38:56] I wondered, again, speculating that's a possible concern.
+[00:39:00] So, the results, I hit the point diminishing returns, and I actually hit it pretty quickly, and that surprised me.
+[00:39:07] So, in account two and three, I traded with one third of buying power of account one, which means I would have expected main account one to have produced three times the profit
+[00:39:16] of accounts two and three, but main account one did not.
+[00:39:20] It produced only 1.7 times more profit.
+[00:39:25] So, you could look at this in two ways.
+[00:39:30] Either the two accounts that followed account one significantly overperformed, but that doesn't really make sense, or account one underperformed.
+[00:39:42] And some of this could be attributed to the test being imperfect.
+[00:39:45] You know, I'm buying and selling, and it's, you know, I'm doing the best I can, but it may not be a perfect scientific experiment exactly.
+[00:39:54] But I think what it indicates is that profitability is more efficient at lower share sizes, and at think or swim.
+[00:40:03] And with a lot of commission for brokers, you do get more price improvement with smaller share sizes.
+[00:40:09] I almost think it's a way they kind of, I don't know if it's intentional, but almost entice you to keep trading, where they make it almost easier for you to make money with smaller share size.
+[00:40:20] Because the total amount of money you're making isn't really that big of a deal anyway, maybe to them.
+[00:40:24] But then once you start trying to do this, we'd like 10,000 or 20,000 or 50,000 shares, they kind of say, now, well, now you're on your own.
+[00:40:31] You're either going to make money or you're not.
+[00:40:33] I'm not sure.
+[00:40:34] Another variable here is between hot markets and cold markets, which obviously is a factor.
+[00:40:41] So here were the results from account number one, over the course of about 30 days.
+[00:40:46] I produced a profit of $236,000, which was fantastic, a good profit.
+[00:40:53] And you could see, had some profit, went red, and then rallied up, sideways, rallied up, and then pulled back a little bit before ending right there.
+[00:41:01] This was account two, $138,000 a profit.
+[00:41:05] Also went red before rallying up, pulling back, and then finishing high.
+[00:41:09] Account three, $138,000 a profit, almost the exact same.
+[00:41:14] So account two and three were almost identical, which was, I was almost shocked that they were within like $350 each other.
+[00:41:21] They were so close.
+[00:41:23] And so that, so on the one hand, I was like, this is pretty interesting.
+[00:41:30] And there's no doubt that, you know, I did really well.
+[00:41:33] However, I didn't do as well as I didn't lean light speed.
+[00:41:38] And I was trading in light speed during this period, too.
+[00:41:41] And so as you guys saw, it light speed, I was doing better.
+[00:41:46] So here's my performance observation.
+[00:41:48] Charles Schwab executes orders substantially slower than light speed.
+[00:41:53] This is not new information.
+[00:41:55] You know, I've pulled it up before, but ranking the fastest brokers, the YouTube video that I did,
+[00:42:00] where I show you guys the execution speed of these different platforms.
+[00:42:05] So I'll just pull this up again for you here, and I'll show it to you.
+[00:42:08] So right here, we've got these are the different platforms.
+[00:42:13] This is light speed, execution speed right here.
+[00:42:16] This one is thinker swim.
+[00:42:18] So thinker swim goes all the way.
+[00:42:20] That one's thinker swim right there.
+[00:42:24] This is thinker swim.
+[00:42:25] So thinker swim takes like seven times longer to execute an order versus light speed.
+[00:42:31] And what, I mean, you could see that even in even in that little video that I showed you
+[00:42:36] of how long it took just for that order to fill.
+[00:42:39] So I'm going to pull that video back up here for one second.
+[00:42:42] There was it.
+[00:42:43] So the DAS demo.
+[00:42:46] All right, let me just search for it here.
+[00:42:50] DAS demo.
+[00:42:51] There it is.
+[00:42:53] So if I pull this up,
+[00:42:58] right here, this is around.
+[00:43:02] Yeah, this area.
+[00:43:04] So let's just back this up for one second.
+[00:43:07] So let's just look at how the latency on this order.
+[00:43:12] So, so right here, see.
+[00:43:15] I type in for it.
+[00:43:17] And then right, see.
+[00:43:21] Right there, I send the order.
+[00:43:23] So it's at 44.
+[00:43:24] The time here is 44.
+[00:43:26] 37 minutes left.
+[00:43:29] Let's, sorry, we're at six minutes six and 30 seconds.
+[00:43:32] One, two.
+[00:43:35] So minutes six and 32 seconds.
+[00:43:39] It's not, that's not perfect timing down to like the millisecond.
+[00:43:42] But you can see that that takes a second.
+[00:43:44] I do a trade over on forward right here.
+[00:43:48] I do shift one.
+[00:43:49] Instant.
+[00:43:52] Instant.
+[00:43:53] Those are instant orders.
+[00:43:55] There is no hesitating.
+[00:43:56] These orders are super, super fast.
+[00:43:59] Okay.
+[00:44:01] So that was a performance observation.
+[00:44:04] And so it left me feeling, sort of like,
+[00:44:08] trading with, this is how I felt in a really hot market.
+[00:44:15] And we were in a hot market when it did this test.
+[00:44:18] The hot market is a bit more forgiving for being sloppy.
+[00:44:21] I could chase my entries.
+[00:44:22] I could get in high.
+[00:44:23] I could sell higher.
+[00:44:24] I could take bigger size.
+[00:44:25] There's a lot of volume in the market.
+[00:44:27] So I could get good fills on a lot of the orders even at Schwab.
+[00:44:30] But in a colder market, that does not work well at all.
+[00:44:34] So trading with larger size at Schwab, even with dastrater,
+[00:44:38] I think should be reserved for really hot markets.
+[00:44:40] And colder markets, they're going to require more precise trading platforms,
+[00:44:44] or a smaller share size with a commission-free broker.
+[00:44:47] I mean, it's, it's something it's got to give.
+[00:44:49] And I just, I felt like I was clumsy.
+[00:44:53] So as many have observed during my morning broadcast,
+[00:44:57] when I'm demonstrating,
+[00:44:59] you could see that the orders, I mean,
+[00:45:02] sometimes it felt like, look, I mean,
+[00:45:04] it's like, where am I going to get filled?
+[00:45:06] I don't know.
+[00:45:07] I press the buy button now.
+[00:45:08] I have to wait a couple seconds to see where my order fills.
+[00:45:10] And some of the fills were good, and some of them were not so good.
+[00:45:13] And one of the things I did notice that I, that was,
+[00:45:16] that was nice is that I had some trades that I got in,
+[00:45:19] and I would be up 50 cents or a dollar a share,
+[00:45:22] and I wouldn't see a buyer on the bid.
+[00:45:25] There'd only be 100 shares on the bid.
+[00:45:27] But I'd press the sell button.
+[00:45:29] I'd sell 9,000 shares in the whole order filled.
+[00:45:32] That's cool.
+[00:45:33] I do that same thing at light speed, and I'm going to get slippage.
+[00:45:36] Usually selling on the bid doesn't work well at light speed.
+[00:45:39] But I think our swim, I think, again,
+[00:45:42] because of seven times the amount of liquidity
+[00:45:45] versus the national best bid or best offer,
+[00:45:47] you do get price improvement,
+[00:45:49] and there's just, there's more shares to match your order.
+[00:45:53] So that was nice.
+[00:45:55] Again, during a hot market.
+[00:45:58] But I just felt like I was slow.
+[00:46:01] I felt clumsy.
+[00:46:02] I didn't feel precise at all.
+[00:46:04] And so, it was like the market's so hot.
+[00:46:06] I can afford to be sloppy,
+[00:46:08] but it didn't feel like that is a great way to trade,
+[00:46:13] and it's not the fault of Dastrader.
+[00:46:16] It's a direct result of commission free routing,
+[00:46:18] and Charles Schwatt.
+[00:46:19] So, you know, I think that one of the challenges here
+[00:46:22] is that a lot of traders come into the market when it's hot,
+[00:46:25] and they'll use a broker like Weibo or Schwab,
+[00:46:28] and, you know, they might do well, as I found that I did really well.
+[00:46:31] And then the market starts to cool off.
+[00:46:33] There's less liquidity, you know, get good fills,
+[00:46:37] and all of a sudden, you start to see your performance
+[00:46:40] stuff for big time.
+[00:46:41] Or, you try to continue to scale up your trading,
+[00:46:45] and you hit that point of diminishing returns
+[00:46:47] where you just can't go any higher with that broker.
+[00:46:50] So, there's no question that direct access brokers are precise.
+[00:46:54] Super responsive, very fast, and I feel connected to the market.
+[00:46:58] I press the Buy button, I buy 5,000 shares,
+[00:47:01] I see the 5,000 shares for sale in the ask disappear, right?
+[00:47:05] And you can see that with MLEC, right?
+[00:47:09] So, you know, you've got 200 shares on the ask,
+[00:47:12] you press the Buy button, you just bought those shares, they're yours.
+[00:47:16] With, you know, with the commission free brokers,
+[00:47:19] it sometimes feels like you're trading an assimilator.
+[00:47:22] I feel like I'm not really connected to the market.
+[00:47:25] The orders, they kind of don't, they don't interact with the market.
+[00:47:30] So, this stock BATL right now, pull this up, BATL,
+[00:47:34] and where's this is the US company?
+[00:47:36] So, BATL, so I'll just, I'll do an order on this one.
+[00:47:39] So, let's see, so I'm going to click Buy,
+[00:47:41] and you can see my orders go right through on the tape, right there.
+[00:47:44] You see it go right through, it goes to 501, you know, whatever.
+[00:47:48] This is, I probably will make money on this,
+[00:47:50] it's just showing you kind of the way these orders work.
+[00:47:53] So, whatever, I take the last.
+[00:47:54] But let's go into think or swim.
+[00:47:56] You take that same trade on think or swim,
+[00:47:58] and again, doesn't matter if you're on
+[00:48:00] dastrater, or you're on,
+[00:48:03] where does think or swim?
+[00:48:05] Doesn't matter if you're on dastrater, or if you're on
+[00:48:08] the think or swim platform,
+[00:48:11] because when you're on think or swim,
+[00:48:13] and your orders are routing through there,
+[00:48:16] they're payment for orderful algorithm or whatever it is.
+[00:48:20] And you just, you don't see the interaction with the market.
+[00:48:24] You don't see your orders filling in the same way.
+[00:48:27] You can't, you just don't feel connected to the market.
+[00:48:30] And so for me, that, that was an issue.
+[00:48:35] So, I'll pull up for some reason think or swim crash.
+[00:48:39] I'll pull it back up in a second.
+[00:48:41] But going back to the original hypothesis,
+[00:48:44] I hypothesize that trial swab users specifically
+[00:48:47] using dastrater integration,
+[00:48:49] that it could allow doubling or even tripling a profit,
+[00:48:52] by adding a second or even a third account
+[00:48:54] to your hockey scripts,
+[00:48:56] and that it would not meaningfully hurt performance
+[00:49:00] in the primary account,
+[00:49:02] because swab internalizes orders with a whole sailor
+[00:49:04] and offers seven times liquidity versus a displayed price.
+[00:49:07] I hypothesize yours would not compete against each other,
+[00:49:10] and they would not trigger the high frequency trading algorithms
+[00:49:12] to cause slippage.
+[00:49:14] And I think that the conclusion is that this was correct.
+[00:49:18] Thanks to seven times moral liquidity,
+[00:49:20] and thanks to the dastrater platform,
+[00:49:22] I was able to successfully prove that I could signal
+[00:49:24] only two accounts, but actually three of similar size.
+[00:49:28] And they did not compete against each other.
+[00:49:31] Nor did they take away from the profit of the first account.
+[00:49:33] However, the biggest observation
+[00:49:35] was that the main account under performed,
+[00:49:38] despite using three times more buying power.
+[00:49:41] This is a function of slippage,
+[00:49:43] and I suspect it would have occurred regardless
+[00:49:45] of whether those additional accounts were sent,
+[00:49:47] because that first account was always first in line,
+[00:49:50] the second account were behind it.
+[00:49:52] So the first account suffered not because of the accounts two or three,
+[00:50:01] but because I had reached the point of diminishing returns,
+[00:50:05] which swab, which is interesting.
+[00:50:08] So for my trade today, I don't think Schwab really allows me
+[00:50:13] to trade at my full potential.
+[00:50:17] Yes, I could trade with two or three accounts,
+[00:50:20] all kind of dialed back a little bit.
+[00:50:23] Look, $138,000 in a month is great.
+[00:50:26] Doing that into accounts, $260,000, that's great.
+[00:50:28] With plus the other one, that's great.
+[00:50:31] But what's more important?
+[00:50:33] For me, it's more important to do really well
+[00:50:36] in one account than to have three accounts that are sort of all clumsy,
+[00:50:41] and sometimes have huge red dates,
+[00:50:43] because I can't get out when I need to get out.
+[00:50:46] So it just, to me, it didn't really,
+[00:50:49] it doesn't really make sense that it's something that I would do long term,
+[00:50:52] beyond doing some testing and demonstrating for you guys.
+[00:50:55] But I think it's no brainer for a trader that is already using Schwab
+[00:50:59] and doing it successfully to sink their main account with a smart account
+[00:51:02] to begin saving tax break.
+[00:51:05] And I think that for traders, generally trading,
+[00:51:10] you know, with not more than 5,000 share positions,
+[00:51:14] I think that there's a lot of potential to add that second account.
+[00:51:18] But as always, there's no point in adding a second account
+[00:51:21] if you're not already profitable in the first account.
+[00:51:23] And I think for experience traders, Schwab,
+[00:51:25] will reveal a point that diminishing returns faster,
+[00:51:28] much faster than direct access brokers.
+[00:51:32] So Guardian and Cobra, those are direct access brokers
+[00:51:35] that I understand offer multi-account syncing.
+[00:51:38] I haven't tested them yet.
+[00:51:40] You may deal, in those cases, with some slippage
+[00:51:43] as your orders are competing against each other,
+[00:51:46] because you're not getting the benefit of seven times
+[00:51:48] the liquidity versus the displayed markets.
+[00:51:51] So, you know, those might have their own drawbacks.
+[00:51:55] But in terms of broker suitability,
+[00:51:58] and I've said this before, and I'll say it again,
+[00:52:01] commission free brokers have a great value proposition
+[00:52:04] and they're great for smaller account traders.
+[00:52:06] And I think because they give good price improvement,
+[00:52:08] they make it a little easier for a smaller account trader
+[00:52:11] to do well.
+[00:52:12] You have no commission and you get price improvement.
+[00:52:14] That's a nice combination.
+[00:52:15] But then you get to a level where
+[00:52:18] unfortunately, I don't know if it's that they're intentionally
+[00:52:24] making it harder for you, or it's just that they're
+[00:52:27] the slowness of the order execution when you start doing bigger blocks
+[00:52:30] and the way they're algorithm works.
+[00:52:32] At a certain size, you start to find its less responsive.
+[00:52:36] I can't think of a great analogy for something else
+[00:52:38] that's kind of similar to this.
+[00:52:40] But, you know, I mean, obviously you don't
+[00:52:42] compete in the tour de France with training wheels on a huffy
+[00:52:46] bicycle.
+[00:52:47] You know, that's like a kind of a cheap bike you get at Walmart.
+[00:52:50] You know, at certain point, if you want to really scale up,
+[00:52:54] you've got to use the right tools.
+[00:52:56] So my feeling has been that commission free is kind of like this
+[00:53:01] and direct access is kind of like this.
+[00:53:04] And so direct access brokers don't really make sense
+[00:53:08] when you've got a really small account in some ways
+[00:53:11] because you are going to pay a disproportionate percentage
+[00:53:14] in fees with small size.
+[00:53:17] You've got monthly platform fees, you've got market data fees
+[00:53:20] and you've got commissions.
+[00:53:21] But you are using professional grade software.
+[00:53:24] And if you want to become professional trader,
+[00:53:27] it does make a lot of sense.
+[00:53:28] And maybe it's okay that in those first few months
+[00:53:31] your profits are a little bit lower
+[00:53:34] but, you know, you're in a position to scale.
+[00:53:37] On the other hand, you start out of the gates running
+[00:53:40] with weeble or think or swim potentially.
+[00:53:43] No commissions, nice price improvement.
+[00:53:45] You know, next thing you know, and it's funny,
+[00:53:48] but there's times I don't know if we'll be able to make it happen right now.
+[00:53:51] Sometimes it happens, sometimes it doesn't.
+[00:53:53] But you know, we pull up that stock BATL.
+[00:53:57] Sometimes we think or swim, you know, you click by market
+[00:54:01] and then, you know, a second later you click sell market
+[00:54:06] and all of a sudden, you know,
+[00:54:08] well, maybe another trader would have been down $12.
+[00:54:11] You're only down $6.
+[00:54:12] Sometimes it just kind of boggles my mind
+[00:54:15] how you click the buy button and a second later you're clicking the sell button
+[00:54:19] and you've got, you know, a $40 or $50 profit.
+[00:54:22] So, not happening at the moment
+[00:54:25] but this stock's also kind of going sideways.
+[00:54:27] It just seems like I think or swim makes it easier
+[00:54:30] when you've got a smart account for some reason.
+[00:54:33] And so, then, where's that point where,
+[00:54:37] all right, I got to make the switch.
+[00:54:39] So here, I mean, yeah, you'd make the switch right there
+[00:54:42] in this little drawing.
+[00:54:44] And what is this in terms of account size?
+[00:54:46] I don't know if account size is the bigger question
+[00:54:49] or if it's, you know, position size, you know, position size.
+[00:54:54] Once, and how fast you're trading.
+[00:54:56] I mean, I've known traders have made millions of dollars
+[00:54:58] which Schwab and will buy 100,000 share positions
+[00:55:02] but they're not doing it as quickly as I'm trying to.
+[00:55:05] They're not getting any getting out.
+[00:55:07] They buy, they hold for an hour than they sell.
+[00:55:09] So, if you're trading with more than 10, 15,000 shares,
+[00:55:13] I think you're going to find that you would make much more
+[00:55:17] over at a direct access broker even in spite of the commissions.
+[00:55:21] I mean, the commissions for me this year are actually right now
+[00:55:26] remarkably low.
+[00:55:27] I'll just share with you my year-to-day commissions.
+[00:55:34] So, I'm up right now year-to-day at around 500,000,
+[00:55:38] which is a good start to the year.
+[00:55:42] And my commissions right now year-to-date are $5700 plus 2000.
+[00:55:48] So there's $7,000.
+[00:55:50] $7,000 a commission's on $520,000 a profit.
+[00:55:56] Yeah, I'm not complaining about the commission.
+[00:55:59] So, if I was using Think or Swim, I'd this would be zero, right?
+[00:56:05] But I wouldn't have been able, I don't think there's any way.
+[00:56:09] There's any way.
+[00:56:10] And again, it's based on my opinion and what I've seen,
+[00:56:14] but I don't think there's any way I could have been moving in
+[00:56:16] and out of the market as fast as I was with Lightspeed.
+[00:56:20] And Speed Matters.
+[00:56:22] You know, when we're looking at some of these really impressive days,
+[00:56:26] it makes a huge difference.
+[00:56:27] So, I'm petitioning Lightspeed to enable the ability to trade
+[00:56:32] into accounts at the same time.
+[00:56:34] They don't have it yet.
+[00:56:35] I hope they do.
+[00:56:37] And, you know, it's possible that because of slippage,
+[00:56:42] that I wouldn't be able to just double my profits.
+[00:56:46] But I think for traders that are a little bit,
+[00:56:50] you know, earlier in their journey than I am,
+[00:56:53] there's a lot to be said for setting up multi-account syncing.
+[00:56:59] And, you know, if you're in the grind of $500 to $1,000 a day,
+[00:57:04] you know, trading $4,000 to maybe $8,000 shares,
+[00:57:08] I feel like that could work really well, you know,
+[00:57:13] with DAS and potentially think or swim.
+[00:57:16] If you're trading with $1,000,000 shares and you're using,
+[00:57:19] you know, Guardian or Cobra or one of the brokers that offers DAS
+[00:57:23] and offers IRAs, you know, that could work too.
+[00:57:28] So, as always, I put it on the table for you guys,
+[00:57:32] and this may not be something that's particularly useful
+[00:57:35] for where you're at right now, and that's okay.
+[00:57:37] Maybe it'll be a time where it is and you'll come back to it.
+[00:57:40] For me, you know, I don't still have DAS active on my computer
+[00:57:46] because I just kind of felt like it's a little bit of a distraction.
+[00:57:50] I did the test.
+[00:57:51] I've done a lot of demonstrations of it for you guys,
+[00:57:54] and now with this, I think it's, you know,
+[00:57:57] it just doesn't really make sense for where I'm at.
+[00:58:01] I just feel like I'll do better just focusing on one account
+[00:58:06] than trying to, you know, one really good account with a right tool.
+[00:58:11] It just makes more sense to me, I think.
+[00:58:14] Again, maybe I could be persuaded,
+[00:58:16] but I think it just for right now makes the most sense to do that for me.
+[00:58:19] But depending on where you're at, you might find this helpful.
+[00:58:22] So, if you do, I'm happy for that.
+[00:58:25] And as always, if you have questions,
+[00:58:27] you can feel free to bring them into the chat room
+[00:58:30] and into a mentor session.
+[00:58:32] Okay, so with that, we will continue on to the next section.

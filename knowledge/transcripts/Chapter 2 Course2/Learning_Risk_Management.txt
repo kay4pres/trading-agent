@@ -1,0 +1,1189 @@
+# Learning to Manage Your Risk.mp4
+# Transcribed: 2026-06-29T21:29:59.525609
+# Duration: 58.5 minutes
+# Model: faster-whisper tiny
+
+[00:00:00] Okay, so we're going to go ahead and jump in here with chapter two on risk management.
+[00:00:05] Traders think about risk gamblers think only about profits.
+[00:00:11] So we always have to be asking how much we're risking.
+[00:00:14] I don't know how many of you have seen the movie No Country for Old Men,
+[00:00:18] but if you remember the kind of, I don't know, that sort of mean guy goes into a gas station
+[00:00:25] and he flips the coin on the counter and he says,
+[00:00:28] you have to call it.
+[00:00:30] And the guy says, oh, you know, I can't call it.
+[00:00:33] I don't know what I stand again.
+[00:00:35] And he says, you have to call it anyways.
+[00:00:40] He's not a gambler, right?
+[00:00:43] I can't call it.
+[00:00:44] If I don't know what I stand again and what I stand to lose.
+[00:00:47] What am I putting up?
+[00:00:48] He asked, but.
+[00:00:50] And so.
+[00:00:52] So if that's helpful, if you've seen the movie, you know what I'm talking about.
+[00:00:56] But you have to know what you stand to gain.
+[00:01:00] And you have to know what you're risking.
+[00:01:02] Otherwise, there's no basis for the trade.
+[00:01:05] If you're thinking only about the profit, then you're not even thinking about the possibility
+[00:01:09] that this could go against you.
+[00:01:11] And that that's going to be a major problem right there.
+[00:01:14] So I think what a lot of you get our traders do is they end up jumping into a stock
+[00:01:18] thinking, oh, this thing looks awesome, it's squeezing up.
+[00:01:22] And then, you know, they jump in and they're just thinking, it could go here,
+[00:01:26] it could go here, it could go here, it could go here, it could go here.
+[00:01:28] And they're not even thinking about the possibility of what if it reverses
+[00:01:32] and how much they could lose.
+[00:01:35] So for that reason, you know, a lot of those traders end up blowing up accounts
+[00:01:41] and getting knocked out of the market.
+[00:01:43] And what I think is going on is they're inadvertently gambling with our account.
+[00:01:48] And, you know, this is a thing.
+[00:01:49] You can come into the market and if you want a gamble, you can gamble.
+[00:01:52] You can buy, you could sell, you could have zero strategy and you can gamble.
+[00:01:56] And no one's going to stock you.
+[00:01:58] Or you can come into the market and you can use your logical analytical mind and put together a strategy
+[00:02:04] where you can put the odds in your favor.
+[00:02:07] And then you're not gambling.
+[00:02:09] You're trading a strategy and producing profit.
+[00:02:13] So this is the way I think about risk.
+[00:02:17] We've got six different types of risk that I'm going to talk about in this chapter.
+[00:02:21] The obvious distance between your entry and your stop, where you're in and where you're going to get out at,
+[00:02:27] your exposure risk, float in volatility risk, halt risk, having a wrong mindset, which is a risk.
+[00:02:34] And then I'm going to share with you the scaling strategy that I use to minimize my red days,
+[00:02:39] which therefore reduces my drawdown risk.
+[00:02:43] So we're going to begin with number one, the distance between the entry and the stop price.
+[00:02:47] So another analogy, if you're trading a stock that is already up, you know, 200% on the day,
+[00:02:56] not impossible.
+[00:02:57] This happens all the time.
+[00:02:58] We have a stock that's popped up.
+[00:02:59] You know, pull back a little bit, popped up, pull back a little bit, popped up, pulled back for a while,
+[00:03:03] and sideways one side.
+[00:03:05] And then all of a sudden here, pops up again, and we're watching this little pull back.
+[00:03:10] So in this moment right here, we're potentially looking to buy something, and I notice a very primitive chart,
+[00:03:15] but we're potentially looking to buy something that's up 200% on the day.
+[00:03:20] So this to me would be almost like going rock climbing, but starting at the middle of the cliff.
+[00:03:30] You're starting up 200 feet off the ground.
+[00:03:32] So if you're going to start 200 feet off the ground, what are you doing to secure your risk?
+[00:03:38] You don't want your risk to be all the way back down to here, right?
+[00:03:42] That goes without saying.
+[00:03:44] So if you are rock climbing, and you are going to get in right here, this is me on the wall right here.
+[00:03:51] What am I going to do?
+[00:03:54] I'm going to have a rope, and that rope might have a little bit of slack, but I'm going to have a rope.
+[00:03:59] So if I fall, how low do I fall to right here, it's a back stock.
+[00:04:04] It's a safety net, and it's critical unless you're that one guy who does the free climbing.
+[00:04:08] But for everyone else, it's critical for survival.
+[00:04:11] You need to have a back stock.
+[00:04:14] Okay, so this is common sense in the real world for 99% of people out there.
+[00:04:19] But with trading, a lot of people don't think about that.
+[00:04:22] They get in, and they're just thinking that, you know, well, they're just not thinking about it at all.
+[00:04:27] That's the problem.
+[00:04:28] So what I want to do is I want to get you into the mindset of thinking about entry and risk.
+[00:04:39] Those are those two points.
+[00:04:40] Your entry point and your risk point.
+[00:04:42] Your risk is the difference between your entry and where you're going to sell it for a loss.
+[00:04:47] So once we get into specifically chapter five on interday chart patterns,
+[00:04:53] and then when we get into chapter seven and nine, we're going to start talking about these patterns in a lot of detail.
+[00:04:58] We're going to really understand exactly the price that risk is the correct price of the entry,
+[00:05:04] and then you can just calculate the difference.
+[00:05:06] If it's 15 cents, then now you know your risk is 15 cents.
+[00:05:10] So what do I stand to lose?
+[00:05:12] What am I putting up?
+[00:05:14] In this example, you're putting up 15 cents.
+[00:05:18] Okay.
+[00:05:19] Is that a good deal?
+[00:05:21] Well, we don't know.
+[00:05:22] Right?
+[00:05:23] Because now we only have half the equation.
+[00:05:25] What's our profit target?
+[00:05:27] So now we've got to look up.
+[00:05:30] Appetential profit targets.
+[00:05:32] So what we know we can do is traders is we can concretely control how much we're willing to risk.
+[00:05:39] We don't know how much stock will go up, but we know that if it goes down, this is where we will sell.
+[00:05:45] So that's something that is within our control, our max loss.
+[00:05:48] Whether it's a live stop order during regular trading hours or it's just a mental stop,
+[00:05:52] we know the point where we will sell for a loss.
+[00:05:55] What we're going to do here is we're actually going to kind of work backwards to figure out what our profit target needs to be in order to justify the trade.
+[00:06:05] So, and this all kind of ties in to the concept of capping your losses.
+[00:06:13] Imagine if all your losses were $10, but your winners were $90.
+[00:06:21] If you took 100 trades, even if you were wrong on 90 of them, 90 times 10 so you're down $900, but you have no, it was at 9 times 9.
+[00:06:34] So, but you get the idea.
+[00:06:35] Yeah, no, $900 on your loser.
+[00:06:37] But then you have those 10 winners.
+[00:06:39] Those 10 winners that are each 90 bucks at 10% accuracy, you'd be break even before commissions.
+[00:06:46] Even at only 10% accuracy.
+[00:06:49] If you're right 11% of time, you're profitable.
+[00:06:52] That's crazy.
+[00:06:54] And that's possible because you've kept your losses.
+[00:06:57] So, some of you right now might know your accuracy.
+[00:07:00] You might know, well, you know, Ross, I'm currently 45% accurate, but I'm 30% accurate.
+[00:07:05] And I would wager that you're probably not profitable.
+[00:07:09] As a result of your profit to loss ratio, the relationship between your winners and your losers.
+[00:07:14] So, if you cap your losers and keep them really, really small, then all of a sudden,
+[00:07:21] being right 30 or 40% of time, could actually work.
+[00:07:24] I'm not saying it would work, but it could work.
+[00:07:27] So, when you put yourself in the position where you've got really small losses, it makes it easier to be successful.
+[00:07:36] You're setting the bar lower.
+[00:07:38] I sometimes think about trading, like skiing to give you another analogy.
+[00:07:42] When you ski, you know you're going to fall.
+[00:07:44] Falling is inevitable.
+[00:07:46] In fact, if you don't fall, it means you're not pushing yourself hard enough.
+[00:07:49] I mean, especially if you're really trying to do it competitively.
+[00:07:52] So, you learn to fall in a controlled way and you take certain measures to make sure you don't get hurt.
+[00:07:59] You wear a helmet.
+[00:08:00] You try not to stare at the trees and aim at the trees.
+[00:08:03] And you fall in the snow and you're okay.
+[00:08:05] You get back up and you keep going.
+[00:08:07] You know, you can hurt your knees.
+[00:08:08] And there's things that happen, obviously, especially if you're skiing competitively.
+[00:08:12] But it's not about never falling.
+[00:08:15] If you try to be a skier who will never fall, it's probably just not the right sport.
+[00:08:21] So, this is why you typically wouldn't see like a 90-year-old going skiing, because falling is inevitable.
+[00:08:26] And they don't want to break their hip.
+[00:08:27] That's why they'll end up playing pickleball instead.
+[00:08:30] But let's just for the record.
+[00:08:32] Let's just put it on record that pickleball injuries are actually rising
+[00:08:36] at an astonishing rate because it's gaining in popularity.
+[00:08:41] And these older folks are tripping sometimes on shoelaces and they're falling.
+[00:08:46] So, you might think pickleball is actually a safe alternative.
+[00:08:50] And, you know, I want to rethink that one.
+[00:08:53] Okay, so let's get back on track.
+[00:08:54] You lost you for a second.
+[00:08:56] So, now we're back on track.
+[00:08:57] So, always know what you stand to lose.
+[00:09:00] If you don't know how much you're risking in a trade, you're asking for trouble.
+[00:09:04] So, always know your potential risk.
+[00:09:06] It's how we establish the value of taking a trade.
+[00:09:10] A trade is not a trade until it's been coupled with your max loss on the position and your profit potential.
+[00:09:17] Until you know those two things you are just gambling.
+[00:09:21] So, with the profit loss ratio, the profit loss ratio is the relationship of the winners versus the losers.
+[00:09:28] So, if you make $2 on average on your winners and you lose a dollar on average on your losers,
+[00:09:32] you have a profit loss ratio of 2 to 1.
+[00:09:35] Most successful day traders have a try to have a minimum profit loss ratio of 1 to 1,
+[00:09:40] which means they typically aim also to have a break even point of 50% accuracy.
+[00:09:45] And, most successful day traders are able to be above 50%.
+[00:09:49] Now, I do know some traders that trade slightly below 50%.
+[00:09:53] Like, 44, 46, 48%.
+[00:09:56] And, if they do, then they need that higher profit loss ratio to make up for it.
+[00:10:01] But, it's always a trade off.
+[00:10:03] And, this is something we'll talk about a little bit later in the course,
+[00:10:05] but I made a decision, actually I don't even know if it was a conscientious decision,
+[00:10:10] but I gravitated towards a strategy that has a much higher success rate
+[00:10:14] because for me, having high success rate helps build and maintain confidence.
+[00:10:20] And, being confident that mindset, headspace of confidence, is really important to winning.
+[00:10:26] When you come on to the court with confidence, you do well.
+[00:10:29] So, that's the thing, and when I go on to the court and play pickleball, again, some of these old folks,
+[00:10:34] the confidence, I mean, they can see it coming.
+[00:10:37] They're like, oh my god, call the ambulance now.
+[00:10:39] I'm definitely going to break a hit playing with this guy.
+[00:10:41] So, I just sweep the court with him, it's unbelievable.
+[00:10:44] But, confidence, it's just, for me, there are some people that trade this strategy
+[00:10:51] where they focus on home runs.
+[00:10:56] And so, they have low accuracy, but their average winners are really big.
+[00:11:02] And that can work if you can overcome the emotional downside that comes with being wrong
+[00:11:10] 70% of the time, because that's where I struggle.
+[00:11:14] And that's me, that's my personality.
+[00:11:17] But the strategy that you're going to learn for me is going to have high accuracy when I trade it.
+[00:11:22] The profit loss ratio is lower.
+[00:11:24] In a colder market, one to one is not uncommon, but I still maintain 65 to 70% accuracy.
+[00:11:30] In a hotter market, two to one, meaning my winners are double my losers,
+[00:11:35] and my accuracy can go up to 80% sometimes even higher.
+[00:11:38] When I do small count challenges, my accuracy is often between 85 and 90%.
+[00:11:43] Because when I'm doing a small count challenge, I move my quality standard up so high.
+[00:11:49] I'm literally only trading absolute best quality setups.
+[00:11:53] So, you know, so anyways, profit loss ratio and accuracy go hand-in-hand,
+[00:12:00] and you can choose which one to focus on.
+[00:12:03] I personally focus on accuracy, but the way it works is, you know,
+[00:12:08] it's, it's, it's not as hard to predict that the stock will go up 10 cents a share.
+[00:12:12] So, if you take profit every time it goes up 5 or 10 cents a share,
+[00:12:16] you will have high accuracy, but your winners become smaller.
+[00:12:20] Right? So, if you're focusing on high accuracy,
+[00:12:22] you're going to be a type of trader who takes profit off the table quickly.
+[00:12:25] And if you're focusing on high profit loss ratio,
+[00:12:27] you're not going to take those small winners.
+[00:12:30] And sometimes those winners will turn into loser,
+[00:12:33] which also is emotionally difficult for some people to deal with,
+[00:12:37] some people including myself.
+[00:12:40] So, in terms of target profit loss ratios, this is math.
+[00:12:44] This is just this, this statistics of how it works.
+[00:12:47] So, if your profit loss ratio is one to one,
+[00:12:51] you win a dollar and you make a dollar,
+[00:12:54] your accuracy needs to be 50% in order to break even.
+[00:12:57] So, this is your break even win rate.
+[00:12:59] So, if you risk $3 to make only $1,
+[00:13:02] you need to be right 75% of the time just to break even.
+[00:13:06] But if you risk $1 to make $3,
+[00:13:10] you only need to be right 25% of the time to break even.
+[00:13:13] Right? So, you know, if we look at my statistics right now,
+[00:13:17] I'll pull these up for you and pull it up on another monitor
+[00:13:21] and then I'll drag it over.
+[00:13:23] This year, you know, my metrics will change a little bit year to year,
+[00:13:27] depending on the strength of the market and stuff like that.
+[00:13:29] But right now, year to day, my profit loss ratio,
+[00:13:33] I believe it's close to two to one.
+[00:13:38] So, let's see, I'm going to take that off.
+[00:13:42] So, let's see what this is.
+[00:13:45] Okay, so we're just going to check this here.
+[00:13:54] So, currently sitting at 6.1 million,
+[00:13:57] accuracy 71.6% average winners are 3500.
+[00:14:02] So, am I average losers are 2000?
+[00:14:05] So, I'm not quite a two to one,
+[00:14:07] but I'm definitely better than one to one.
+[00:14:09] So, like 1.5 to one.
+[00:14:11] And, you know, this has been a pretty good year.
+[00:14:13] So, with this profit loss ratio
+[00:14:16] of 1.5 to one, you know, I could be down in this area.
+[00:14:23] I could be right probably 40% of the time
+[00:14:26] and break even or maybe make a little profit.
+[00:14:29] But because I'm right 71% of the time,
+[00:14:32] my profitability is coming here
+[00:14:34] because I'm able to maintain that high accuracy
+[00:14:37] and the strong profit loss ratio.
+[00:14:39] So, these are completely connected.
+[00:14:42] And they do, like I said, they trade off a little bit one
+[00:14:45] other depending on which one you're focusing on,
+[00:14:47] but they are connected.
+[00:14:48] So, now the question is,
+[00:14:50] how do you put statistics in your favor?
+[00:14:52] If this is kind of a career of statistics and odds,
+[00:14:56] there are ways that you can put those statistics in your favor.
+[00:15:00] So, you have a profit loss ratio
+[00:15:03] and an accuracy level that's easier to obtain.
+[00:15:06] And so, what I know is that if I can keep my losses
+[00:15:10] really, really small,
+[00:15:13] then it's easier for me to have it's easier for me to be profitable
+[00:15:17] because the profit loss ratio, because the losses are so tiny.
+[00:15:20] So, if I can keep the losses really, really small,
+[00:15:22] then even if my winners are only 5 cents,
+[00:15:24] I'm going to have a good profit loss ratio.
+[00:15:26] And that means I'll have a good profit loss ratio
+[00:15:28] and even if my accuracy is only 50%, I could still make money.
+[00:15:32] Alternatively, I could say, if I could focus on, you know,
+[00:15:35] having really high accuracy, 75% accuracy,
+[00:15:39] so every time I'm up, even if it's only 3 cents,
+[00:15:41] I sell and I take profit.
+[00:15:43] I just try to have winner after winner after winner.
+[00:15:45] I focus on really high quality setups
+[00:15:47] than your accuracy is high.
+[00:15:50] And even if your profit loss ratio is a little inverted,
+[00:15:52] because occasionally you take a slightly bigger loss,
+[00:15:55] it's okay, because you've got the high accuracy that makes up for it.
+[00:15:58] So, you just sort of orient yourself to which one you want to focus on.
+[00:16:02] Now personally, I'm a big believer in focusing on accuracy,
+[00:16:06] but we'll talk about that a little bit more
+[00:16:08] in a few minutes when we talk about the positive feedback loop.
+[00:16:11] So, I do think the two-to-one golden ratio is great with trading.
+[00:16:15] And for me, I rarely take a trade that doesn't give me at least the chance
+[00:16:20] to double what I'm risking.
+[00:16:22] Having said that, I think I'm eternally optimistic
+[00:16:25] because even though I'm looking for trades that give me the chance to double
+[00:16:29] what I'm risking, at the end of the day,
+[00:16:31] when we actually look at how much I make, I'm not quite doubling what I'm risking.
+[00:16:35] So, you know, I might be setting my intention,
+[00:16:40] which is good, you set your tension, but then the reality is I come up a little bit short.
+[00:16:44] But that's okay, because at least I have room for cushion there.
+[00:16:47] So, one of the reasons that I don't really like trading stocks below $1.50
+[00:16:51] is because getting even just head to 15 cents a profit is quite difficult.
+[00:16:55] That's a full nearly 10% move.
+[00:16:58] And it can be hard to keep stops as tight as 5 to 7 cents
+[00:17:01] to give you that two-to-one profit loss ratio.
+[00:17:04] Now, later in the course, we'll talk about micro-scalping.
+[00:17:09] We'll talk about payment for order flow brokers,
+[00:17:12] because brokers that offer payment for order flow
+[00:17:16] can give you the ability to jump in and out of stocks for almost break even,
+[00:17:23] which is kind of impressive.
+[00:17:26] You can't really do that with direct access brokers.
+[00:17:32] I'll just give you an example here.
+[00:17:34] So, we'll just do 100 shares here or four.
+[00:17:36] We'll just see.
+[00:17:37] So, I'm going to do shift one.
+[00:17:39] So, shift one, I got a 100 shares filled.
+[00:17:42] And you see how I got filled at 13.2153.
+[00:17:47] So, if I had bought this at my broker,
+[00:17:51] I would have filled at 1322, 1322 cents.
+[00:17:55] I would have filled directly on the ask.
+[00:17:57] So, with this broker, it's a commission-free broker,
+[00:18:00] I get to fill between the spread.
+[00:18:02] So, because I've filled in between the spread,
+[00:18:05] all of a sudden, it's easier to potentially get in and out break even.
+[00:18:08] Now, that same exact trade with a broker like light speed,
+[00:18:13] I would have lost one dollar on.
+[00:18:15] Because I, because brokers like light speed,
+[00:18:18] not only do you pay commission,
+[00:18:20] so I would have lost a dollar,
+[00:18:21] which is I would have bought 100 shares of 22.
+[00:18:23] I would have gotten filled at 21 on the exit.
+[00:18:26] But on top of that, I would have paid a commission.
+[00:18:28] So, commission-free brokers can give you a chance
+[00:18:32] to sort of get out a little bit faster
+[00:18:35] and set your break even stop,
+[00:18:37] which can be more forgiving as a beginner trader,
+[00:18:40] which is something that's kind of admirable.
+[00:18:44] So, like this stock here,
+[00:18:46] so shift one, I bought it 77,
+[00:18:48] and I'm back out.
+[00:18:50] So, this one actually,
+[00:18:51] well, the price moved up right when I got it.
+[00:18:53] So, I'm going to buy and then sell.
+[00:18:55] So, see right there that trade,
+[00:18:57] I bought it 77, and I sold it 76.
+[00:19:00] I don't get filled between the spread.
+[00:19:02] And we're going to go into this in a lot more detail later in the class,
+[00:19:05] but just to kind of show you.
+[00:19:06] So, same stock over here,
+[00:19:08] C-E-T-Y as a stock.
+[00:19:10] So, I'm just doing 100 shares by get to 1,000.
+[00:19:12] So, buy market.
+[00:19:14] So, I filled it 76 and a half-sets.
+[00:19:17] And then sell market.
+[00:19:19] So, again,
+[00:19:22] at light speed that same exact trade was a $10 loss.
+[00:19:26] Plus, I lost on commissions.
+[00:19:30] At thinker swim, I lost only $3.70.
+[00:19:33] Now, this is true with all commission free brokers.
+[00:19:36] And it's because of the way their orders are routed.
+[00:19:38] Well, we're going to get into that in a lot more detail.
+[00:19:40] But the reason I bring it up is because your choice of broker
+[00:19:43] can also be a determining factor
+[00:19:46] and how easy it is for you to get in an outbreak even,
+[00:19:49] which means you're sort of setting your set in this statistics
+[00:19:53] and make it easier to be successful.
+[00:19:55] That's what you're making a little bit harder.
+[00:19:57] One of the things that we'll talk about when we get into commission free brokers
+[00:20:01] is that commission free brokers.
+[00:20:05] So, with a broker like light speed, I'll just do light speed and red.
+[00:20:11] When you trade with really small size and break even trades,
+[00:20:15] you'll lose money.
+[00:20:16] But then you can make a lot more when you're trading with bigger size,
+[00:20:19] whereas with a broker like thinker swim,
+[00:20:22] you're break even point.
+[00:20:24] It's like a little bit more like this.
+[00:20:26] Like the account is sort of limited, how much can grow,
+[00:20:29] because you're limited when you start to take bigger size,
+[00:20:32] but it's more scalable for accounts with even like $1,000
+[00:20:37] with small size.
+[00:20:39] And part of that's because of the way the orders are routed
+[00:20:41] and part of that is because of commission free trading.
+[00:20:45] So, the other more sophisticated brokers,
+[00:20:48] like when does it make sense to switch?
+[00:20:50] Well, maybe like right here, right?
+[00:20:52] In this example, this would be the spot where you'd say,
+[00:20:54] okay, now thinker swims actually holding me back a little bit.
+[00:20:58] I should probably upgrade to one of the more professional brokers.
+[00:21:01] But as a beginner, if you start with one of the professional brokers,
+[00:21:04] you're going to end up taking in fact more risk.
+[00:21:07] And you're not intending to,
+[00:21:09] but it's just because of the dynamics of market structure,
+[00:21:12] the way the orders are sent to the market,
+[00:21:14] and what these brokers are really designed for.
+[00:21:17] So, a little bit of a tangent there and giving you a little bit of a hint
+[00:21:22] at some of the things that we're going to go into quite a bit of depth
+[00:21:25] on later in the class.
+[00:21:27] But nonetheless, regardless of which broker you use being successful,
+[00:21:31] means being a great loser.
+[00:21:33] I hate, we have a, where is that?
+[00:21:36] Hold on, let me find it.
+[00:21:38] I have a nice little picture that we made.
+[00:21:43] I think I saved it on my computer.
+[00:21:46] It's actually quite remarkable.
+[00:21:49] People are a pretty big fan of it.
+[00:21:52] So, you know, being, there it is.
+[00:21:55] Let me just open this file.
+[00:21:58] Okay, so this is, this is actually me.
+[00:22:02] Many of you guys don't know that I actually am.
+[00:22:05] I was, I was a ranked tennis player when I was younger.
+[00:22:10] I was, I played tennis competitively.
+[00:22:13] That is a wooden racket.
+[00:22:14] A lot of people don't really know my age, and I, of course, a lady.
+[00:22:18] A gentleman doesn't ask an lady and never tells.
+[00:22:20] Let's just put it that way.
+[00:22:22] So, but I was a ranked player.
+[00:22:25] Now, I grew up in a very rural area.
+[00:22:28] I was, but I was the best in my, I was the best in my neighborhood.
+[00:22:32] I was, I was better, let's just put it this way.
+[00:22:35] I was better than my sister.
+[00:22:37] Substantially, better than my sister.
+[00:22:40] Now, I wasn't better than my mom, or my dad, in fact.
+[00:22:44] But we were in different brackets, of course, because of age.
+[00:22:48] So, I didn't have to compete directly against them.
+[00:22:50] So, I, I said I was ranked number one in my bracket.
+[00:22:53] Well, technically, that's not true, because my sister is quite a lot younger than me.
+[00:22:57] Nonetheless, being a successful trader is about being a good loser.
+[00:23:02] And I am the world's best loser.
+[00:23:05] And you can see it right there.
+[00:23:06] It's on the cover of Sports Illustrated.
+[00:23:08] So, even though I'm wrong, 30% of the time, I still make money.
+[00:23:13] So, it's important to learn to be good at being wrong, to take lots of small losses.
+[00:23:20] So, just get your stops as tight as possible.
+[00:23:23] And, as long as you've got a tight stop, it makes it a lot easier to hit that two-to-one profit-lost ratio.
+[00:23:29] If you're only risking two cents, and you're using a commission-free broker,
+[00:23:33] which allows you to get in and out and split the penny,
+[00:23:36] then, if you make five cents, you've got a two-to-one profit-lost ratio.
+[00:23:40] And, you know, that starts to make a really big difference.
+[00:23:43] So, I've noticed a lot of traders who use commission-free brokers will have slightly lower accuracy,
+[00:23:51] because they bail out super, super quick, but it's okay because their losses are tiny.
+[00:23:58] So, they have really small losses.
+[00:24:01] So, even though the accuracy is a little lower, they've got a better profit-lost ratio.
+[00:24:04] So, again, these are the sort of two things that you deal with.
+[00:24:07] And, you know, as you're practicing and you're trading in the simulator,
+[00:24:10] you're going to notice what your metrics are.
+[00:24:12] So, as soon as for me, a set-up doesn't feel right, I bail out.
+[00:24:15] I call it the breakout or bail-out mentality.
+[00:24:17] Sometimes, it's self-rass small loss, and then I end up seeing the stock run.
+[00:24:21] Sometimes, I get back in, if there's a new set-up, if there's not, then it doesn't matter.
+[00:24:25] But, I have these rules, because they keep my accounts safe, and they help me reduce risk.
+[00:24:29] Remember, again, I'm a manager of risk.
+[00:24:32] So, breakout or bail-out.
+[00:24:34] The fact is, on my best trades, I'm profitable almost immediately.
+[00:24:38] I don't go red.
+[00:24:40] So, if I get into a trade, and I'm not profitable within the first two minutes, I bail-out.
+[00:24:45] It's either a breakout or bail-out situation.
+[00:24:47] Now, this strategy wouldn't work for long-term traders who sit with the loss.
+[00:24:52] It wouldn't work at all for people who are shorting, because you usually go red before you go green.
+[00:24:56] It wouldn't work as well for large caps, but for small caps and for my strategy, it does work really well.
+[00:25:01] So, now, through all of this, we've been talking primarily about setting hard stops,
+[00:25:06] capping our losses, right, that the form of risk here is number one, the distance between our entry and our max loss.
+[00:25:13] We haven't talked a lot about yet how to determine a profit target.
+[00:25:16] So, for right now, what I want you to use for your profit target is two X, what you're risking.
+[00:25:22] So, if you set your stop looking at the chart, and you're saying, I'm risking five cents, your profit target's 10.
+[00:25:27] And we're just going to leave it at that for right now.
+[00:25:29] Later, excuse me, we will lay your in what realistic profit targets actually look like,
+[00:25:35] but for right now, just set it as two to one.
+[00:25:38] And as I said before, profit loss ratios reflect your personal style of trading.
+[00:25:44] So, if you're a trader like myself that really wants to have a high level of accuracy,
+[00:25:49] because it boosts yourself confidence, then you'll have high accuracy in the lower profit loss ratio.
+[00:25:53] If you're someone that tends to say, I'm just going to kind of hold this thing.
+[00:25:57] Let's see if we get a home run. You're going to have lower accuracy, but you'll have a bigger profit loss ratio.
+[00:26:02] Now, in chapter three, we're going to talk about how stock selection for me is a form of risk management.
+[00:26:08] Because by choosing stronger stocks each day, I'm choosing stocks where I can reduce my risk of unnecessary losses.
+[00:26:15] When you trade low quality setups, you introduce the risk of taking a big loss, and it's just not worth it.
+[00:26:22] So, that second degree of risk management is done through stock selection.
+[00:26:27] Now, let's talk number two about exposure risk.
+[00:26:30] Okay, so when we talk about exposure risk, we're simply talking about the, it's just a formula.
+[00:26:36] It's the amount of money you have in the trade.
+[00:26:39] So, the share size times a dollar per share.
+[00:26:43] So, we're going to do a $1 stock times 5,000 shares, so your exposure risk is $5,000.
+[00:26:51] But then, how do we quantify the difference of exposure risk between holding a stock for one minute?
+[00:26:57] And holding a stock for 60 minutes, you know, for an hour.
+[00:27:02] Because clearly, those are different levels of exposure risk.
+[00:27:06] Now, it's not that you multiply it by 60, but to me, the longer I'm sitting with this exposure, the more risk I'm taking.
+[00:27:16] So, although I'm not sure exactly the formula for how to build it in there, what I know is that if I take a position where I'm putting a significant amount of money on the line,
+[00:27:26] but I'm only holding that position for five minutes, I feel like I can tolerate that.
+[00:27:31] But if I'm holding the position for an hour or for two hours, it makes me nervous.
+[00:27:38] And that's just the way it is. Now, part of that is because when I was first learning to trade, I had money that had gotten for my father after he passed away.
+[00:27:45] And that money that I had gotten, I was very emotionally attached to, and it wasn't a very big account.
+[00:27:53] And so to take some of the trades that I wanted to take, I needed to use leverage, right?
+[00:27:58] So, I was trading on leverage. Now, I was okay trading on leverage if I got in and got out within like two minutes.
+[00:28:04] Like in and out, boom, I'm done. Okay, dodged a bullet, but I wouldn't want to use leverage in just hold it for three or four hours.
+[00:28:11] There's no way. And I certainly couldn't hold it overnight. In fact, you're not allowed to hold overnight on leverage, typically, or you're restricted in how much you can use.
+[00:28:19] So, for me, that also kind of factored in to how I became such a quick sort of sniper breakout trader to focus on minimizing my exposure risk.
+[00:28:29] But again, we used stock selection to help manage the risk in that way as well, because certain types of asset classes and even certain stocks, the exposure risk will be higher,
+[00:28:38] because the price is higher. You know, a thousand shares of a stock and a hundred dollars shares a hundred grant.
+[00:28:43] So, you start putting, you know, a hundred thousand dollars into a trade, you're clearly taking more risks.
+[00:28:48] You start trading lower price stocks. You could buy ten thousand shares, and it's not even twenty thousand dollars.
+[00:28:53] So, you know, you can, you can sort of decide in that way, you know, what you're comfortable with.
+[00:29:00] And that'll be often the factor of your account size.
+[00:29:05] So, now moving along to the third type of risk, float in volatility.
+[00:29:10] So, this kind of like, uh, profit loss ratios and accuracy going sort of, you know, hand in hand, but also having a little bit of an inverse relationship.
+[00:29:19] With float in volatility, the lower the float, the higher the volatility.
+[00:29:24] The higher the float, the lower the volatility.
+[00:29:28] So, if you want low volatility, trade bank of America.
+[00:29:31] It's got a 10-12 billion share float.
+[00:29:34] And it stays on a day-day basis.
+[00:29:36] If you were to go to try to day trade it, it's not moving.
+[00:29:39] It's not, it basically goes sideways.
+[00:29:41] If you want volatility, you gotta go for the lower float.
+[00:29:44] Now, lower float, more volatility, but volatility also is risk.
+[00:29:49] Right? These are stocks that could go up 50% or down 50% in a single day.
+[00:29:54] You know, if it goes from three dollars to six bucks, it's up a hundred percent.
+[00:29:58] And then when it goes from six back down to three, it drops 50% off the high.
+[00:30:02] And that's not uncommon.
+[00:30:03] So, those, that's a lot of range. That's a lot of volatility.
+[00:30:06] So, we've got to be able to manage our risk.
+[00:30:08] Again, back to the rock climbing analogy.
+[00:30:10] We're starting halfway up the cliff.
+[00:30:12] If we're buying a stock, that's already up 50%.
+[00:30:14] And, you know, that has a 1 million share float.
+[00:30:17] And it could go up another, you know, 50 or 100%.
+[00:30:20] But it could also drop 20% in a matter of minutes, potentially.
+[00:30:25] So, if we're going to trade highly volatile stocks, which I'm going to,
+[00:30:29] because I'm seeking the reward that comes from that,
+[00:30:32] I have to recognize the risk and position accordingly.
+[00:30:35] Position accordingly in terms of share size,
+[00:30:37] and in terms of an honest assessment of what is the true difference between my entry and my max loss.
+[00:30:42] You could say I'm only going to risk one penny,
+[00:30:44] but then that may not be a realistic assessment of risk.
+[00:30:47] So, you've got to make an honest assessment of how much you're actually risking.
+[00:30:51] Once again, using stock selection to look at the right float,
+[00:30:55] to make the decision, and the price, the right float,
+[00:30:58] and the price to make the decision of is this level of risk I'm comfortable taking.
+[00:31:03] Now, you could say, for instance,
+[00:31:07] so another thing is when you have a lower float stock that has very light volume,
+[00:31:13] there's not a lot of trading interest, you'll have very big spreads.
+[00:31:17] And when you have really big spreads between the bid and the offer, that creates a lot of risk.
+[00:31:21] Because you might think I'll get in at five,
+[00:31:23] and I'll get out at four and ninety, but the bid is four fifty.
+[00:31:26] Now, of course, you would see that on the level two before you take the trade,
+[00:31:29] so you would know it has a fifty cent spread,
+[00:31:31] but nonetheless, when we're looking at the scanners, stock selection can help us with this,
+[00:31:35] because yes, we want volatility, so we want low float,
+[00:31:38] but we also need the liquidity, which is the volume that will allow us to get in and out.
+[00:31:44] So there's sort of a couple factors that play there.
+[00:31:47] Then the fourth element of risk is stock halts.
+[00:31:51] So stock halts present to risk because while you're in a halt,
+[00:31:54] you cannot buy and you cannot sell.
+[00:31:56] So now you start thinking about your exposure risk.
+[00:31:58] You're not thinking about, you know, oh, I'm, you know,
+[00:32:03] I'm going to, I mean at five, and I can get out at four ninety.
+[00:32:06] No, now you're like, I'm in at five,
+[00:32:09] and the stock is halted, and I can't get out.
+[00:32:13] How much do I own? I own ten thousand shares of five dollars.
+[00:32:16] That's fifty thousand bucks, and it's stuck.
+[00:32:18] I can't, I can't trade it, I can't move.
+[00:32:21] So obviously, we know that there's different types of halts in the market.
+[00:32:25] We've got halted pending news, and when a stock is halted pending news,
+[00:32:30] you have to wait till the news is released, and it can take hours.
+[00:32:34] Fortunately, most stocks do not get halted when news is released.
+[00:32:39] It's pretty rare.
+[00:32:41] 99% of the news headlines do not result in the stock getting halted,
+[00:32:45] which is good news, but it can happen from time to time.
+[00:32:48] So there are certain types of stocks where that risk is going to be a little bit higher.
+[00:32:52] What's an example of that?
+[00:32:54] A stock that's up 100% on no news is going to be at risk of getting halted pending news,
+[00:33:01] because we may suspect that it's up because someone leaked news.
+[00:33:07] So some people know there's news instead of the company has to halt the stock
+[00:33:11] to make an announcement about why the stock is up that much.
+[00:33:15] So when you're trading a stock that's up a lot with no news,
+[00:33:19] that's a risk factor that it could get halted.
+[00:33:21] And if the company halt to stock, and then they say, hey, there's actually no news.
+[00:33:27] Whatever people are talking about is not true, there's no news.
+[00:33:31] Then the stock usually opens and goes all the way back down.
+[00:33:35] So that's not good.
+[00:33:37] So that's something that we've got to be aware of with trading stocks with no news.
+[00:33:41] But so number one, we've got halts that are on news.
+[00:33:45] And then the type of halt that's more common that we see almost every day are circuit breaker halls.
+[00:33:51] These are volatility halts.
+[00:33:52] But remember, they only take place between 930 and 4PM.
+[00:33:56] We talked about halts during day trading the basics.
+[00:33:58] So these are types of halts that last for typically five minutes,
+[00:34:02] although they can last for 10 or 15 minutes depending on how much volume was behind the halt.
+[00:34:07] And what the resumption prices looking like.
+[00:34:10] You got to kind of get into a bit more detail than I think we need to go to here.
+[00:34:14] But we will talk about it during the momentum trading strategy chapter,
+[00:34:19] where I have a section talking specifically about trading in and out of halts.
+[00:34:23] So when we're talking about halts, we'll talk about exactly how to time them,
+[00:34:28] exactly where they're going to resume and sort of the approach.
+[00:34:31] But the fact is, if you're trading a stock that has risk of getting halted either on news or on a circuit breaker,
+[00:34:38] it does expose you to some degree of risk.
+[00:34:41] Once again, how do we control this?
+[00:34:44] Stock selection.
+[00:34:45] We choose to avoid stocks that are maybe up a lot with no news,
+[00:34:49] or we avoid stocks because we can see where their halt bands are.
+[00:34:52] And we recognize that we're going to be at risk of holding during a halt and perhaps we don't want to do that, which is fine.
+[00:34:58] Number five, there's a big risk with having a wrong mindset.
+[00:35:01] Successful traders share a lot in common.
+[00:35:03] They understand the market and in and out, they've got strategies that are time-tested,
+[00:35:07] and they possess very high levels of self-confidence.
+[00:35:10] Confidence becomes a mindset.
+[00:35:12] And beginner traders are especially susceptible to learning bad habits and getting played with poor self-confidence.
+[00:35:19] So unfortunately, a lot of these habits are the result of trading with emotion
+[00:35:24] and trading with real money before you've got a proven track record.
+[00:35:29] So you jump in with real money, you experience loss,
+[00:35:32] and then it begins this negative feedback loop.
+[00:35:34] So one of the things that I've learned is a leading cause of this is improper position sizing
+[00:35:40] with real money when you first get started.
+[00:35:42] Taking position sizes that are too big can be a recipe for disaster.
+[00:35:46] Big winners and big losers will trigger these unexpected emotional responses
+[00:35:51] that can quickly lead to emotionally impulsive trading.
+[00:35:54] So while you're learning, stick to 100 shares.
+[00:35:57] Proof consistency with small size before scaling up.
+[00:36:00] It's really the best way to do it.
+[00:36:02] And this makes it easier to avoid averaging down.
+[00:36:05] Seven, eight figure traders.
+[00:36:07] Sometimes I feel like they can buy anywhere,
+[00:36:09] and then just trade their way out of the position.
+[00:36:11] Because if it goes lower, they just add more.
+[00:36:14] And if it goes higher, they take profit.
+[00:36:17] So for me, averaging down is never been a good or safe strategy.
+[00:36:22] averaging down is when you add to a loser to bring down your cost basis.
+[00:36:26] And it's just not a good idea.
+[00:36:28] So it's not some issue getting the habit of doing.
+[00:36:30] It's much better just to cut your loss and move on to the next trade.
+[00:36:34] Now the fear of missing out.
+[00:36:36] We'll talk about this quite a bit when we get into trading psychology later in this class.
+[00:36:40] But we also talk about during day trading the basics.
+[00:36:43] Any time I see a big mover, and I missed a good entry,
+[00:36:46] or I pressed the buy button, but I didn't get filled.
+[00:36:49] It'll trigger that it to jump in and chase it.
+[00:36:51] I have a fear of missing out.
+[00:36:53] And I'm upset, I'm frustrated, undisappointed.
+[00:36:55] So it's really important to develop a sense of self-awareness regarding these emotions.
+[00:36:59] And one of the ways you can do it is by journaling while you're trading.
+[00:37:02] And writing, I'm feeling angry right now.
+[00:37:04] Putting a name behind that feeling helps you get better at spotting those caution flags.
+[00:37:10] Because those are your caution flags that are letting you know,
+[00:37:13] you might be getting close to hitting one of these triggers that could lead to a hijack.
+[00:37:18] Because once you've crossed that point of no return, it's really hard to get back.
+[00:37:22] So what we have to do is we have to be almost like a buy standard for foam mo in the market.
+[00:37:30] We want to watch foam mo in the market.
+[00:37:34] We want to watch how it fuels momentum,
+[00:37:37] but also how it results in these big flash crashes.
+[00:37:41] So if you can watch foam mo and you can see how traders are reacting to a motion,
+[00:37:47] then you can get into a position where you can predict where the emotions will come out.
+[00:37:52] And you can actually capitalize on it by trading these stocks.
+[00:37:55] You're experiencing heightened levels of emotion earlier in the run,
+[00:37:59] but knowing you have to get out before you overstay your welcome.
+[00:38:03] And so it can be a very fine line between capitalizing on foam mo and following victim to foam mo.
+[00:38:10] And certainly if you take a loss and then immediately you try to trade something else to recover that loss,
+[00:38:15] that's called revenge trading.
+[00:38:17] It's a natural response, but it's an emotional response.
+[00:38:20] It's almost a fight or flight response.
+[00:38:22] It's almost instinctual.
+[00:38:24] We experience loss and we immediately try to grab back what we just lost.
+[00:38:28] But unfortunately, it's from an emotional place, not that calm,
+[00:38:32] cool, collected, analytical, logical part of your brain.
+[00:38:36] So in order to alleviate the discomfort that the loss is created,
+[00:38:40] you're going to lower your quality standard and start throwing Hail Mary Passes,
+[00:38:44] just hoping for a winner, so you don't have to feel bad anymore.
+[00:38:47] And then that can go into full on emotional hijack.
+[00:38:50] And I had a day where I lost right here.
+[00:38:52] This is a video upload on YouTube.
+[00:38:54] $275,000 in one day.
+[00:38:57] I'm not going to say that I'm immune to this.
+[00:38:59] I'm not.
+[00:39:00] I'm human.
+[00:39:01] I've made mistakes too.
+[00:39:03] This is part of the deal of being a trader.
+[00:39:05] Some of the ways that I could have protected myself from this loss
+[00:39:09] was not leaving too much money in my account.
+[00:39:12] Having some hard limits on my account with my broker
+[00:39:15] to limit the number of positions I could take at once
+[00:39:18] and the number of shares that I could buy.
+[00:39:20] At that point, I was trading without really any guardrails.
+[00:39:23] This is a number of years ago.
+[00:39:25] And I thought that that was, I thought that I could do that.
+[00:39:27] And I learned that I'm not better than that.
+[00:39:30] I do have to keep those guardrails on my account.
+[00:39:33] So one of the nice things with some of the more sophisticated brokers
+[00:39:36] is that although they do cost a bit more money
+[00:39:38] and they're not good when you're first getting started
+[00:39:40] because of those costs that later on once you start scaling up
+[00:39:43] and you do have a six or seven or eight figure account,
+[00:39:46] they will work with you closely to put some parameters on your account
+[00:39:50] to help protect you from having red days.
+[00:39:53] They won't need to be a lifelong client.
+[00:39:55] So they really will work hard to help you stay in that really good head space.
+[00:40:00] So even if you have a day where you go red,
+[00:40:02] you're not giving back all your profits.
+[00:40:04] So you can try to finish every day in the green.
+[00:40:06] You have certain stops.
+[00:40:07] Like if I give back more than X amount, I'm done trading.
+[00:40:10] Or if I go red more than a certain amount of the day,
+[00:40:12] I'm done trading.
+[00:40:13] So now it takes a motion out of the equation.
+[00:40:16] In fact, you've essentially automated one of the most difficult parts
+[00:40:19] of trading, which is knowing when to walk away.
+[00:40:22] Now another big mistake that can cause emotional response
+[00:40:27] is when you compare yourself to others.
+[00:40:29] So it's important to remember on social media,
+[00:40:31] people put a very carefully curated image of themselves out there
+[00:40:34] of what they want people to see.
+[00:40:36] They're putting out selectively positive trades,
+[00:40:38] only posting the best while quietly sweeping the losses
+[00:40:41] under the carpet.
+[00:40:42] Some of these people are doing it because they have an ulterior motive.
+[00:40:45] Some of them are complete scammers.
+[00:40:47] You don't really know,
+[00:40:48] but some of these people got a lot of attention with their posts.
+[00:40:52] And so you may start seeing them,
+[00:40:54] and it can be tempted to fall into that trap of comparison.
+[00:40:57] And remember, it's a thief of joy.
+[00:40:59] If you are no longer grateful for the profit you have today,
+[00:41:02] then you've gotten yourself into the thinking of comparing yourself to others.
+[00:41:06] Keep your head down.
+[00:41:08] Be grateful for what you have today.
+[00:41:09] If you made a couple dollars today,
+[00:41:11] you've got more money in your pocket that you started the day with.
+[00:41:14] And in fact, if you're doing that consistently,
+[00:41:16] even if it is just five dollars a day,
+[00:41:18] you're doing something a lot of traders haven't figured out how to do.
+[00:41:21] And it's because a lot of traders end up getting in their own way.
+[00:41:24] They get in their own way.
+[00:41:25] They let emotions trip them up.
+[00:41:27] So here's the blessing in the curse of the market.
+[00:41:30] The curse of the market is that you could spend literally years
+[00:41:34] struggling to make 20 cents a day per share.
+[00:41:37] 20 cents per share with 100 shares is $20 a day.
+[00:41:40] Why would it take years to make $20 a day?
+[00:41:43] I mean, you could understand we take years to make a million dollars,
+[00:41:46] but a year is just a year,
+[00:41:47] years just to make $20 a day.
+[00:41:49] Why?
+[00:41:50] Because to make $20 a day consistently,
+[00:41:53] $20 a day consistently,
+[00:41:55] you know, approximately $100 a week,
+[00:41:57] $500 a month, $6,000 a year,
+[00:41:59] not a lot of money, maybe in grand scheme of things.
+[00:42:02] But in order to do that consistently,
+[00:42:04] day in and day out over the course of hundreds of days,
+[00:42:06] thousands of trades,
+[00:42:07] you need a strategy that is consistent.
+[00:42:10] And so here's the blessing of the market.
+[00:42:14] Once you are consistently making 20 cents a day with 100 shares,
+[00:42:18] 20 dollars a day.
+[00:42:19] From that point, you scale up from 20 a day,
+[00:42:22] from 100 shares a day to 150 to 200.
+[00:42:26] Now you're always done doing $40 a day.
+[00:42:28] Then you go from 400, from 200 shares to 400 to 800 to 1600.
+[00:42:32] And you start slowly.
+[00:42:33] Over the course of weeks and months,
+[00:42:35] increasing your share size.
+[00:42:36] I've done the interviews,
+[00:42:37] and you'll see them when you watch the interviews with
+[00:42:40] our bad soldiers here at Warrior Trading.
+[00:42:43] We've got one student who is averaging $15 a day.
+[00:42:47] And now he's doing six figures a year.
+[00:42:50] It started with exactly what I'm sharing with you.
+[00:42:53] Trading on Thinker Swim in his case,
+[00:42:55] commission free trading,
+[00:42:57] focusing on making a couple of dollars a day.
+[00:43:00] $3,4,5 a day,
+[00:43:01] and then eventually $8,10,
+[00:43:03] $15 a day,
+[00:43:04] really small size.
+[00:43:06] Slow and steady,
+[00:43:07] this is a marathon,
+[00:43:08] not a spring.
+[00:43:09] So what happens to a lot of beginner traders
+[00:43:13] is they find themselves in the negative feedback loop.
+[00:43:16] Again, with coming into the market,
+[00:43:18] because you heard about it on,
+[00:43:19] I don't know, Jim Cramer or CNBC,
+[00:43:21] you know,
+[00:43:22] Reddit, Twitter, whatever.
+[00:43:24] You know, you come in and you say,
+[00:43:26] I'm going to try to buy some stocks.
+[00:43:28] So you buy,
+[00:43:29] and maybe you have a little beginner's luck,
+[00:43:31] but that runs out pretty quickly.
+[00:43:33] And you end up losing.
+[00:43:35] And when you take a loss,
+[00:43:37] your immediate feeling is disappointment
+[00:43:39] in yourself, shame, frustration, anger,
+[00:43:42] especially when you're coming to the table with a bit of desperation.
+[00:43:45] Right?
+[00:43:46] Not from a place of abundance,
+[00:43:47] but from a bit of desperation.
+[00:43:48] And then from that emotion,
+[00:43:50] you increase the number of trades you take,
+[00:43:52] because you don't want to feel bad anymore.
+[00:43:54] And the best way to not feel bad anymore
+[00:43:55] is going to be to make money.
+[00:43:57] Right?
+[00:43:58] So now you're trading more,
+[00:43:59] but there's no conviction behind your strategy,
+[00:44:01] because you're not even,
+[00:44:02] there's not even a strategy,
+[00:44:04] so you end up losing even more.
+[00:44:05] And the emotions get even higher,
+[00:44:06] and it becomes a negative feedback loop.
+[00:44:08] So how do we break that?
+[00:44:10] It's about learning to be aggressive
+[00:44:12] at the right times,
+[00:44:13] and it's about it's striking while the iron's hot.
+[00:44:16] Being aggressive when you've got the right stock to trade.
+[00:44:19] So it's about understanding what the right stock
+[00:44:22] to trade actually looks like.
+[00:44:24] And that means focusing on a quality set-ups.
+[00:44:28] Now being from Vermont,
+[00:44:29] growing up around the maple syrup in the street,
+[00:44:31] the tricky thing about making maple syrup
+[00:44:33] is that you have a very small window in the spring
+[00:44:35] where you collect all the sap,
+[00:44:37] thousands and thousands of gallons,
+[00:44:39] and you boil it down to maybe just 50 or 100 gallons of syrup.
+[00:44:43] The ratio is that a good sugar maple tree
+[00:44:46] only has 2% sugar,
+[00:44:48] so you've got a boil off 98% of the water
+[00:44:51] to get down to the sugar.
+[00:44:52] And so these sugar houses are running all day long,
+[00:44:55] all night long,
+[00:44:56] and these guys are staying up,
+[00:44:57] they're pouring all nighters,
+[00:44:58] they're sleeping on a cot,
+[00:44:59] and you have a fire,
+[00:45:00] and they have this window.
+[00:45:02] And once that window is gone,
+[00:45:03] you've got to wait till next year.
+[00:45:05] Now there's a great story of Scott and Helen Nearing,
+[00:45:09] who were teachers in New York City
+[00:45:11] during the Great Depression,
+[00:45:13] and they moved up to Vermont,
+[00:45:15] very close to where my grandparents had a farm.
+[00:45:17] They moved up to Vermont,
+[00:45:19] and they decided to escape the city,
+[00:45:21] and they wrote a book called The Good Life
+[00:45:23] about living off the grid,
+[00:45:25] and what it was like.
+[00:45:26] Now this was in the 1930s,
+[00:45:28] so in that area in Vermont,
+[00:45:29] they didn't have refrigerators,
+[00:45:31] it was very, very primitive,
+[00:45:33] and they tried gardening,
+[00:45:35] they tried raising crops,
+[00:45:38] and they found that the soil was too rocky,
+[00:45:42] and try as hard as they could,
+[00:45:44] they couldn't grow a good crop,
+[00:45:46] and the season was too short,
+[00:45:48] if the winter comes early,
+[00:45:49] the frost comes early,
+[00:45:51] and so they recognized that
+[00:45:53] what a lot of the farmers were doing there,
+[00:45:55] they had livestock and they were raising,
+[00:45:58] and what they were doing to make a lot of money
+[00:46:00] was they were boiling maple syrup,
+[00:46:03] for about three, four weeks,
+[00:46:04] sometimes a little longer,
+[00:46:05] five, six weeks in the late winter,
+[00:46:07] early spring,
+[00:46:08] and so they started doing that too,
+[00:46:10] and they would work their butts off
+[00:46:12] for that short period,
+[00:46:13] and then they would make enough of this maple syrup
+[00:46:15] that they could trade it
+[00:46:16] for the other things that they needed,
+[00:46:17] for the entire rest of the year.
+[00:46:19] And I think about that,
+[00:46:21] with trading,
+[00:46:22] that when the market's hot,
+[00:46:23] the window is open,
+[00:46:24] and we've got to capitalize as quickly as we can on it.
+[00:46:27] And when it's cold,
+[00:46:28] we've got to take our foot off the gas.
+[00:46:30] And when I think a lot of traders end up doing
+[00:46:33] is they don't approach the market with this strategy, right?
+[00:46:36] I mean, you can't tap a sugar maple in August.
+[00:46:39] You can't tap it in the fall.
+[00:46:41] You can't tap it even in May
+[00:46:43] because what you get, the sap will not taste good.
+[00:46:46] You can't boil it into syrup.
+[00:46:47] There is a window.
+[00:46:48] And so you need to have strategy behind your effort
+[00:46:51] in order to actually get return from your effort.
+[00:46:53] I mean, you come into the market
+[00:46:55] and you have those early failures,
+[00:46:57] just like the nearing's had their early failure failures.
+[00:47:00] It can be varied discouraging.
+[00:47:01] You can be very disappointed.
+[00:47:03] And so you've got to look around it.
+[00:47:05] What's the strategy it's working for other people?
+[00:47:07] Now, for me, the strategy that's working really well
+[00:47:09] when it comes to mitigating risk
+[00:47:11] is by trading really high quality stocks.
+[00:47:13] I trade what I consider,
+[00:47:15] and again, quality based on my strategy.
+[00:47:17] I'm not saying these are blue chip companies
+[00:47:19] that are going to be the next Amazon or Netflix.
+[00:47:21] And they're not by any means.
+[00:47:22] But these are stocks that meet my quality standard,
+[00:47:25] which is that they have the potential
+[00:47:26] interdate to go up 50, 100% or even more.
+[00:47:29] Where they've got the liquidity where I can get in,
+[00:47:31] I can get out and I can grow my small account.
+[00:47:34] So, I want to be trading the most obvious stocks
+[00:47:37] in the market on any given day.
+[00:47:39] The leading number one percentage gainer.
+[00:47:41] And if I'm trading the leading number one percentage gainer,
+[00:47:43] I'm usually going to have a pretty good day.
+[00:47:45] So, if we look today,
+[00:47:47] I'll just pull up our scans again.
+[00:47:49] So, if we look today right now,
+[00:47:51] our leading gainer in the market is CETY.
+[00:47:55] And you may have noticed
+[00:47:57] that that was the one stock I traded today.
+[00:47:59] Now, although I only made a thousand dollars on it today,
+[00:48:02] it's got 169 million shares of volume.
+[00:48:05] I definitely traded the right stock.
+[00:48:07] I got in around $1.77.
+[00:48:09] It was earlier this morning,
+[00:48:10] and then it went higher without me.
+[00:48:12] And I had a couple reasons why I just didn't feel like
+[00:48:14] it was worth taking the rest.
+[00:48:16] The market felt a little too cold.
+[00:48:18] I was coming to the end of the window
+[00:48:19] where I typically make the most money.
+[00:48:21] But this is definitely an alignment with what I'm sharing
+[00:48:23] with you about these five pillars of stock selection.
+[00:48:25] This stock was a little cheaper.
+[00:48:27] That's also was a little bit of a risk on it.
+[00:48:29] But nonetheless, it was definitely the most obvious stock today.
+[00:48:32] So, we have to go back to our core strategy.
+[00:48:35] And, you know, if you don't yet have a core strategy,
+[00:48:37] well, of course, that's why you're here.
+[00:48:39] And so, you should be trading in the simulator.
+[00:48:41] So, the first step of risk management,
+[00:48:43] and the first step of creating a positive feedback loop,
+[00:48:46] is trading A quality stocks.
+[00:48:48] You trade A quality stocks.
+[00:48:50] You're going to have higher accuracy.
+[00:48:52] And you're actually going to eliminate some of those outlier losses
+[00:48:55] that were really big, so your profit loss ratio will improve.
+[00:48:58] Better profit loss ratio.
+[00:49:00] Better accuracy means more consistency.
+[00:49:02] More consistency, what does that mean?
+[00:49:04] That means more confidence.
+[00:49:06] You've got a strong track record.
+[00:49:08] You've got a strong track record.
+[00:49:10] You're going to take more positions.
+[00:49:12] You're going to take bigger share size.
+[00:49:14] You're going to feel like you're going to go comfortable taking that risk.
+[00:49:17] Because it's not really risk anymore at this point in the way it was before
+[00:49:21] because you have data to support why it's working.
+[00:49:24] And now you've got profitability.
+[00:49:26] And this is the positive feedback loop that successful traders find themselves on.
+[00:49:30] So, where does it begin?
+[00:49:31] It begins by trading A quality setups and focusing on accuracy.
+[00:49:35] It doesn't begin with profit loss ratio.
+[00:49:37] I'm not saying that's not important.
+[00:49:38] You've got to keep your stops tight, but it really begins
+[00:49:41] creating this feedback loop for yourself begins with accuracy.
+[00:49:45] So, now, I want to talk about number six, my daily scaling strategy.
+[00:49:49] I like to start each day with about a quarter size of my full size position
+[00:49:53] and use quarter size until I've built a cushion on the day
+[00:49:56] equal to approximately one quarter of my daily goal.
+[00:49:59] Once I have my cushion, I can begin taking a little bit more size
+[00:50:03] because any profit that I make, I'm using that initial cushion to take the risk.
+[00:50:10] Which means I'm no longer risking going red on the day.
+[00:50:13] I'm risking only going back to break even.
+[00:50:15] Which means, hey, if I traded all day long and I ended up break even,
+[00:50:19] I got the ball back, I can try again tomorrow.
+[00:50:22] But if I can take that trade, use the risk that I made from those first couple of trades,
+[00:50:27] I'm risking going break even, but if it works, I end up having a nice green day.
+[00:50:31] So, this, for me, what I realized was that, and then to finish that thought,
+[00:50:38] once I experienced my first size of a loss,
+[00:50:41] giving back more than 10% of my day in one trade,
+[00:50:44] then I like to reduce my size back down to protect the profit that I've got.
+[00:50:48] So, now, this is what my piano looks like.
+[00:50:52] Starting each day with smaller size, if I'm making money, I increase,
+[00:50:55] and then if I have a loss, then I kind of decrease and just stop.
+[00:50:59] And what do my red days look like?
+[00:51:01] My red days look like this, I start losing,
+[00:51:03] but I don't increase the loss, and then I just eventually stop.
+[00:51:07] You know what it used to look like for me?
+[00:51:09] What it used to look like is on a green day with full size.
+[00:51:12] I'd start and make a bunch on my first trade,
+[00:51:15] and then I just keep making money.
+[00:51:17] But on my red days, I would start and I would lose a lot on my first trade,
+[00:51:21] and then add a frustration, I would take bigger size on my second trade,
+[00:51:24] and I would lose more, and bigger size on my third trade,
+[00:51:27] and I'd lose even more.
+[00:51:28] And this was not okay for risk management,
+[00:51:31] because it was hurting my profit loss ratio,
+[00:51:33] and it was resulting in big average losers.
+[00:51:35] In fact, I actually have data to support why I made this decision
+[00:51:39] to adopt this scaling strategy.
+[00:51:41] So we put my metrics again here where they go.
+[00:51:45] What I did was, I compared my winners and my losers.
+[00:51:48] So we're going to just compare the winners and the losers
+[00:51:50] from before I implemented this change.
+[00:51:52] So we're going to do all winners on the left,
+[00:51:55] all losers on the right, and I'm going to do this.
+[00:51:57] We'll do year to date.
+[00:51:58] We're going to change this from 2022 to 2024,
+[00:52:01] and this will be the same from 2022 to 2024.
+[00:52:04] So about two year period here,
+[00:52:06] and what we're going to look at,
+[00:52:08] oh, actually, I'm on the wrong one.
+[00:52:10] But that's okay.
+[00:52:11] We'll look at this for a moment anyways.
+[00:52:12] So what you're going to see here is that my average winners
+[00:52:14] are only 10 cents per share,
+[00:52:16] and my average losers are 12 cents per share.
+[00:52:19] So I'm losing more on my losers than I'm making on my winners,
+[00:52:22] which means I've got an inverted profit loss ratio.
+[00:52:24] Let's just change this to year to date
+[00:52:26] before I show you the other report.
+[00:52:27] So we're going to change this to year to date.
+[00:52:29] Year to date.
+[00:52:30] My average winners are 18 cents.
+[00:52:32] My average losers are 15 cents.
+[00:52:34] Because of this change, I implemented regarding scaling.
+[00:52:37] So we actually wanted to look at win versus lost days.
+[00:52:39] I was looking at the wrong thing.
+[00:52:40] So we're going to look at 2022 to 2024.
+[00:52:43] And what you're going to see during this period is that
+[00:52:46] on my winning days,
+[00:52:48] I was up nearly 70% accuracy,
+[00:52:50] as you can see right here.
+[00:52:52] But on my losing days,
+[00:52:53] my accuracy was only about 50%.
+[00:52:55] In fact, I think if we looked at this from 2023 to 2024,
+[00:52:59] it's even lower.
+[00:53:00] Yeah, it's 46%.
+[00:53:02] And when I saw that,
+[00:53:04] I was like, dear,
+[00:53:05] Lord, I was like, I hope no one is looking over my shoulder.
+[00:53:08] And sees this.
+[00:53:09] This is humiliating.
+[00:53:11] 46%.
+[00:53:12] What was the point of getting a decade of experience
+[00:53:14] trading the markets every single day?
+[00:53:16] If I'm going to sit here on a red day and over trade,
+[00:53:18] like an idiot.
+[00:53:19] Right?
+[00:53:20] I'm over trading on days when the markets cold.
+[00:53:23] This is what I was noticing.
+[00:53:24] When the days I would trade the most aggressively,
+[00:53:27] was on my red days.
+[00:53:29] I would get frustrated.
+[00:53:30] I would revenge trade.
+[00:53:31] I would over trade.
+[00:53:32] I would take a ton of trades.
+[00:53:33] It would be on my red days.
+[00:53:35] And on my green days,
+[00:53:36] I would have a couple nice little trades.
+[00:53:37] I'd be green and I'd be out.
+[00:53:39] And I was like,
+[00:53:40] I mean, if anything,
+[00:53:41] I should trade more aggressively on my green days.
+[00:53:43] But why am I trading so aggressively on the red days?
+[00:53:45] And I said,
+[00:53:46] Is there a way that I could know sooner
+[00:53:48] that today is going to be a red day?
+[00:53:51] That's the question that I ask myself.
+[00:53:53] How can I know sooner
+[00:53:54] that today's going to be a red day?
+[00:53:56] And what I learned was that my red days
+[00:54:00] typically started
+[00:54:02] with the first trade going red.
+[00:54:04] And then they just snowballed from there.
+[00:54:07] So then I said,
+[00:54:08] Well, if my red days start like that,
+[00:54:10] what if on my first trade of the day,
+[00:54:14] I'd just take small size.
+[00:54:16] I'd take small size on the first trade of the day.
+[00:54:18] And if it's red,
+[00:54:19] then that right there,
+[00:54:20] caution flag is out.
+[00:54:21] Go slow for the rest of the day.
+[00:54:22] Stay with small size.
+[00:54:23] Don't size up.
+[00:54:24] And since I took small size on that first trade,
+[00:54:26] I'm red,
+[00:54:27] but I'm not really down that much.
+[00:54:29] So I don't get emotional.
+[00:54:30] I don't really care.
+[00:54:31] But if I'm green on the first trade,
+[00:54:33] oh, bomber,
+[00:54:34] I didn't make as much on the first trade.
+[00:54:35] No, see, that's okay.
+[00:54:36] Because on really hot days,
+[00:54:38] there's still a lot of opportunity.
+[00:54:40] So then I just take the next set up.
+[00:54:42] And I keep trading.
+[00:54:43] And the next thing you know,
+[00:54:44] I scale out my day,
+[00:54:45] and I'm doing really well.
+[00:54:46] So this was a really big epiphany for me.
+[00:54:49] And this was a change that I only made in 21 was it.
+[00:54:53] It was,
+[00:54:55] I think this was the summer of 2024.
+[00:54:58] Or was it,
+[00:55:00] yeah,
+[00:55:01] it was,
+[00:55:02] I think it was the summer of 2024 that I had this turning point.
+[00:55:06] So, you know,
+[00:55:08] it's a nonetheless.
+[00:55:09] This was really significant.
+[00:55:10] And so for me,
+[00:55:11] or was it 2025?
+[00:55:12] Gosh, now I can't remember.
+[00:55:13] Anyways,
+[00:55:14] it doesn't really matter.
+[00:55:15] The point is,
+[00:55:16] it took me a long time before having this epiphany,
+[00:55:19] which also goes to the point,
+[00:55:21] which as traders were always learning.
+[00:55:23] So I was listening to this interview
+[00:55:27] by a hedge fund manager.
+[00:55:29] And there's all kinds of different hedge funds out there,
+[00:55:31] but this was the type of hedge fund manager
+[00:55:33] that they're actively trading.
+[00:55:35] They're running,
+[00:55:37] they're running,
+[00:55:38] quant,
+[00:55:39] algorithms,
+[00:55:41] and they're a high frequency trading shop.
+[00:55:44] They just do high frequency trading.
+[00:55:46] And he said,
+[00:55:48] a question that we ask ourselves,
+[00:55:51] is,
+[00:55:52] can we play more when our edge is higher?
+[00:55:55] And I thought it was interesting.
+[00:55:56] He used the word play,
+[00:55:58] almost like it's a game.
+[00:56:00] But can we like tennis or something like that?
+[00:56:03] Can we play more when our edge is higher?
+[00:56:06] And can we play less when our edge is lower?
+[00:56:09] So when our edge is higher,
+[00:56:11] what does that look like?
+[00:56:12] When my accuracy level is above average,
+[00:56:15] I should trade more.
+[00:56:16] When my accuracy level is below average,
+[00:56:20] I should trade less.
+[00:56:21] When my profit loss ratio is above average,
+[00:56:23] I should trade more when it's below average,
+[00:56:25] I should trade less.
+[00:56:26] So if I could see in real time that I'm trading
+[00:56:30] with below average accuracy,
+[00:56:32] because I'm red on my first trade,
+[00:56:33] and I'm red on my second,
+[00:56:35] then even if I'm green on my third,
+[00:56:36] I'm still only at 33% accuracy.
+[00:56:38] This probably isn't a day that I should be aggressive.
+[00:56:41] Or on the other hand,
+[00:56:43] if I'm starting,
+[00:56:44] and I'm green on my first three trades,
+[00:56:46] I should probably trade more.
+[00:56:48] I'm at my accuracy 100%.
+[00:56:49] And in fact,
+[00:56:50] on my best days,
+[00:56:51] my accuracy usually will be on my really good days.
+[00:56:54] It'll be up around 80% average over all my green days.
+[00:56:58] Yeah, it was like 70% whatever.
+[00:57:00] But on really good days,
+[00:57:02] I won't have very many losers,
+[00:57:04] because the market is so strong.
+[00:57:05] And those are the days that I should dig deep
+[00:57:07] and really try to trade as hard as I can.
+[00:57:10] And as aggressive as I can.
+[00:57:11] Those are the days where it matters.
+[00:57:13] So I want you guys to think about that too.
+[00:57:15] Now, certainly in the simulator,
+[00:57:16] you just want to take a lot of trades.
+[00:57:17] You want to practice,
+[00:57:18] you want to gain experience,
+[00:57:19] but you're going to get a sense of when the market is hotter
+[00:57:22] and then when the market is a little bit cooler.
+[00:57:25] And oh, someone here in the classroom is saying
+[00:57:27] it was definitely 2024,
+[00:57:29] because I joined in 2024 and you're already doing it.
+[00:57:31] So, okay, so that was 24.
+[00:57:33] All right, so nonetheless.
+[00:57:35] Okay, so with that,
+[00:57:37] some steps you can take today to get better at managing risk.
+[00:57:40] Always ask yourself,
+[00:57:41] what's my stop before taking a trade?
+[00:57:42] Don't take a trade that doesn't have two to one
+[00:57:44] profit loss potential.
+[00:57:45] Check the flow of a stock, right?
+[00:57:47] Check the spread, of course.
+[00:57:48] Check the listing exchange,
+[00:57:50] MX, NIC NASDAQ.
+[00:57:52] We'll talk about why a little bit later
+[00:57:54] in stock selection, chapter 3.
+[00:57:56] Check the news,
+[00:57:57] know the hall bands,
+[00:57:58] and check yourself discipline.
+[00:58:00] Where are you coming to the market?
+[00:58:02] Where are you coming at the market
+[00:58:04] from today?
+[00:58:05] All right, so with that,
+[00:58:06] let's continue on here with the next section.

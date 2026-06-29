@@ -1,0 +1,1003 @@
+# Picking stocks P1_audio.wav
+# Transcribed: 2026-06-29T21:07:59.136907
+# Duration: 63.1 minutes
+# Model: faster-whisper tiny
+
+[00:00:01] Alright, so we're going to jump right in here with chapter two picking stocks for day trading.
+[00:00:08] Alright, so part, this is a multi-part chapter, and we're going to start with part one, large caps versus small caps versus penny stocks.
+[00:00:18] I want to help you understand how I've come to trade the type of stocks that I trade every single day.
+[00:00:25] So today's lesson, we're going to talk about why I trade stocks period, instead of perhaps forex, futures, cryptocurrency, et cetera, and the type of stocks that I trade.
+[00:00:35] Now, when people think about stock trading or being a trader, a lot of them are thinking about Dow Jones industrial average, right?
+[00:00:44] That's what you see on the news, the Dow Jones industrial average broke, you know, whatever.
+[00:00:50] The Dow Jones industrial average is an index of 30 large caps stocks, and the value is derived from the sum of one share of each stock in the index added together.
+[00:01:04] Now, as a fun fact, General Electric was among the companies on the original Dow Jones industrial average on May 26, 1896.
+[00:01:13] So you'll look at the Dow Jones chart since 1896, and I think this is a helpful perspective when we think about the stock market in general.
+[00:01:23] The stock market is a place where historically tremendous amounts of wealth have been created, especially over a long periods of time.
+[00:01:34] However, over a short periods of time tremendous amounts of wealth have been lost.
+[00:01:40] And so, of course, we look at 1929, the great depression, the stock market crash, and then the great depression that lasted through the 1930s.
+[00:01:49] And this was a 25 year recovery time.
+[00:01:52] But having said that, if you put money in the market right before the crash, those many of those companies continue to pay dividends through the great depression.
+[00:02:01] And then eventually, you did recoup your value.
+[00:02:04] So we've had periods in the market where we've had either sideways markets or a lost decade, like the 1970s, right here through the 1980s.
+[00:02:13] And then again, during the 2000s, right, during the 2007, 2008 financial crisis.
+[00:02:21] But the big picture has remained the same that the stock market trends up over a long periods of time.
+[00:02:29] You just got to have a long enough time horizon to see the recovery after the drops.
+[00:02:35] And then, of course, while we hear a lot about the Dow Jones industrial average, we also hear about the S&P 500.
+[00:02:41] And contrast to the Dow Jones industrial average, the S&P 500 tracks the market cap of 500 publicly traded companies, that's why they call it the S&P 500.
+[00:02:53] Because the S&P 500 tracks a larger group of stocks, it's considered a more accurate reflection of market strength than the Dow Jones industrial average.
+[00:03:05] This is also, I think in recent years, the S&P 500 has become more and more the focus and the Dow Jones industrial average is sort of fallen by the wayside, just in terms of what people sort of think of when they're thinking of stock market performance.
+[00:03:24] But nonetheless, this is the S&P 500 since 1900 here, showing this period from 1890, I guess, through 1918, a big strong bull market during the roaring 20s.
+[00:03:38] Then we had the Great Depression and then the recovery from the 1950s and 1970s, lost decades, stagnation here.
+[00:03:47] Then the Reagan era, tech boom, into the 2000s, a long period of prosperity here, that then resulted in another period of sort of sideways before things opened up through the pandemic.
+[00:04:03] So that's what I always thought about with the stock market.
+[00:04:09] And for those that are very new to trading, just to make sure we're all on the same page, publicly traded companies are what we're trading on the stock market.
+[00:04:20] In order to raise capital, many companies will sell shares on these public exchanges.
+[00:04:25] Once these shares are issued by the company during the initial public offering, they could be freely traded on the exchanges during market hours between traders.
+[00:04:34] So shareholders, if we're a shareholder and we buy shares of a stock, we benefit if the value of the share price increases over time or if the company is issuing dividends, which are distributions of profits, abortion of the profits that the company makes.
+[00:04:48] Many stocks listed are growth or highly speculative companies, which means they don't pay a dividend.
+[00:04:57] So you really only make money if the share price goes up, but they may also go down or even go bust and go bankrupt, which is something that happens.
+[00:05:09] So to a certain extent investing in growth companies or the more speculative companies is definitely higher risk than investing in the more established companies that are also typically part of the SAP 500 or the Dow Jones industrial average and pay a dividend.
+[00:05:30] So in total, there's only 500 companies in the SAP 500 and there's only 30 in the Dow Jones industrial average and there's thousands and thousands of stocks are listed on the exchange.
+[00:05:40] So the majority of stocks do not meet sort of the qualifications to be one of the top tier companies in the market.
+[00:05:50] Now, when it comes to the exchanges, there are hundreds of exchanges around the world, but I trade the US market and the stocks listed on the NASDAQ, the NYC and the NYC American exchanges.
+[00:06:03] So this is the three exchanges. Now, NYC American was formerly the American Stock Exchange, and then it was acquired by the NYC Stock Exchange, so now they call it NYC American.
+[00:06:12] Traders from all around the world come to trade the US market because of the volume, the volatility and the endless availability of tools and services offered for traders of the US market.
+[00:06:27] And some traders even have the benefit of a currency exchange where they make money in US dollars trading the US market and then they convert it back to their currency and benefit from the exchange rate.
+[00:06:40] So that's going to depend on where you live, but that's also something that a lot of people enjoy.
+[00:06:44] You might think, well, gosh, you know, I live in Europe, I don't trade one of the European markets, or I live in Australia, I'll trade the Australian market.
+[00:06:53] And what I've noticed over all the years that I've been trading is that we have so many traders that come to the US market specifically looking for the volatility and wanting to take advantage of all of the tools that are available for the US market.
+[00:07:09] For instance, our scanners, our charts, our news feed, the brokers that were used are all configured to receive data from stocks listed on NASDAQ, NYC and NYC American.
+[00:07:22] They're not receiving data for foreign exchanges for different stock markets.
+[00:07:29] So if you wanted to trade the market in Japan, you would then need a broker, a scanner, a news feed, you know, everything would have to be reconfigured for that market.
+[00:07:41] And a lot of the markets in other parts of the world are much more thinly traded, which means they don't have a lot of volume, which means there's not a lot of liquidity and if there's not a lot of liquidity, it's not easy to buy and sell.
+[00:07:55] The less people they're interested, the larger the spread is between the best buyer and the lowest price seller, which can come to a point where it's no longer really efficient to be even trying to day trade those markets.
+[00:08:09] They're just not moving quickly enough, whereas the US market has a lot of liquidity, a lot of volatility and then, therefore, it's very actively traded both by retail traders but also institutional traders.
+[00:08:24] So that's something to keep in mind as you're thinking about where you want to trade, because I'm sure most of you are thinking you're going to trade the US market and you're using our tools and everything else.
+[00:08:34] But some of you do live abroad and you may have to come to the conclusion that I just kind of like a stated, which is that the US market probably is better than trying to trade on your local exchange.
+[00:08:44] So the market hours for the US market, currently, are 4 a.m. to 930 a.m.
+[00:08:51] And pre-market, really we only see volatility here if they, the stock, if they have breaking news.
+[00:08:58] If a stock doesn't have breaking news, you usually don't see much volume between 4 a.m. and 930 a.m.
+[00:09:04] And then you've got regular trading hours from 930 a.m. to 4 p.m. Eastern and then you've got after hours from 4 p.m. to 8 p.m.
+[00:09:11] Most stocks have peak volume between 930 and 4 p.m. and volume is always higher in the morning and it dies down during the lunch hours.
+[00:09:20] And even from 11 a.m. till 2 p.m. we can have very light volume.
+[00:09:24] And then between 3 p.m. and 4 p.m. it starts to pick up a little bit going into the clothes.
+[00:09:30] Now after hours from 4 p.m. to 8 p.m. is when we sometimes see volatility because a lot of companies, especially big companies, you know, Netflix, Google Apple,
+[00:09:40] they usually release their earnings statements after hours, usually at 430 or at 5.
+[00:09:47] And so when those earnings are released, instantly traders are jumping on the stock, either buying it or selling it based on what the earnings are like.
+[00:09:56] Now there is some 24 hour trading that is allowed.
+[00:10:01] The regulators have allowed certain brokers to offer 24 hour trading, which is really interesting, but they only allow it on a select number of stocks.
+[00:10:12] So it is gaining some interest, but it's fairly limited.
+[00:10:18] Another thing that's kind of interesting is that we have a lot of stocks listed on the US market that are not US companies.
+[00:10:27] There's a lot of Chinese companies that list on the US market. There's a lot of Israeli companies that list on the US market.
+[00:10:33] There's a lot of European companies and Australian companies that list their stock on the US market, and they want to do that.
+[00:10:40] So their company can become of interest to all of the money that is in the US markets, not just US investors, but just that's kind of, it's like it's the place to list your stock if you are really wanting a lot of people to see it.
+[00:10:55] So for that reason, sometimes we'll see a stock that has a news headline at like 2 in the morning, or 11 o'clock at night.
+[00:11:06] And that's a very odd time for news to come out unless the company is an overseas company, in which case they just put it out during kind of business hours for them.
+[00:11:15] That happens. That's when that company is more likely to be volatile sort of at the beginning of the next session. Maybe that is 4 a.m.
+[00:11:23] Maybe it's 7 p.m. or whatever the time may happen to be.
+[00:11:28] So that's also a possible reason why a stock would have higher volume outside of regular trading hours, or potentially have a reason to move during the 24 hour market cycle that some brokers allow.
+[00:11:43] So for instance, when when roaring kitty came out and announced that he was back, that he was, you know, in, I guess back in game stop with this, you know, huge position.
+[00:11:57] He announced it on a Sunday at like 8 o'clock at night.
+[00:12:02] And so immediately the after hours 24 hour markets on Robinhood spiked it up 20% and then it froze at 20%.
+[00:12:10] I think Robinhood has or had at that time a rule that they would allow trading on these stocks 24 hours, but only up to a max of 20% above the closing price of the previous session and then not beyond that.
+[00:12:26] So it traded up to that level and then they didn't allow trading beyond it.
+[00:12:30] So you know, anyway, so we may see more exchanges or more brokers adopt 24 hour markets on limited stocks, but I don't think we'll, I think it'll be a while before we see it on all mark on stocks, you know, of all price ranges.
+[00:12:50] So that brings us to a market capitalization of stocks.
+[00:12:54] A lot of people think of the stock market and they're thinking of large cap stocks because they're thinking of apple and Tesla and, you know, Nvidia and Netflix Google, you know, face book meta, these big big companies and those are all large cap stocks.
+[00:13:11] The thing with large cap stocks is that generally they're not as volatile because they're much more mature companies, they've grown to scale.
+[00:13:20] They're not likely to go up or down 50% in one year, although it has happened with some of them, especially the tech stocks.
+[00:13:27] Generally large cap stocks are more stable whereas mid caps and small caps are more volatile.
+[00:13:35] A mid cap is considered a company with a market capitalization between 2 billion and 10 billion.
+[00:13:43] Small caps are between 100 million and 2 billion micro caps are 50 million to 100 million and nano caps are under 50 million.
+[00:13:55] So I typically would say that I'm trading, that I'm trading small caps, most people most people would say Ross is a small cap trader.
+[00:14:05] And, and they're right about that, however small caps kind of are a bucket that anything that's not a mid cap or a large cap, people will just say it's a small cap.
+[00:14:18] Technically small cap is between 100 million and 2 billion and there'll be times where we're trading trading nano or micro caps, but they kind of all end up being in the bucket of small caps.
+[00:14:29] I never say, oh, this is a nano cap, now this one's a micro cap, this one's a small cap.
+[00:14:34] I just think of all of them as small caps and generally I think of anything that's not a small cap as a large cap, but technically the mid caps are the ones that are kind of in the middle.
+[00:14:44] So really most traders are probably think of the tiers as being maybe two or three small caps and large caps or small caps and mid caps and large caps.
+[00:14:54] Now, when I started trading, I started with large caps.
+[00:15:00] The reason that I started with large caps was because in the early 2000s, this was around 2002, 2001 2002, oh my camera soft, I'll turn it up.
+[00:15:11] I thought I funded an account with a merit trade, at that time it was, it was a merit trade before they had merged with TD bank and became TD a merit trade.
+[00:15:22] So when I first opened my merit trade account, it was just a merit trade.
+[00:15:26] And I had the idea when I was in high school that I would fund an account with real money, it was about a thousand dollars.
+[00:15:32] And during the summer break, I started buying and selling shares of stocks and I wasn't day trading, but I was very interested in the market.
+[00:15:40] And the reason was I saw the potential that the market could generate wealth.
+[00:15:45] And during a semester that I had in the late 1990s during the dot com bubble, we had been partnered up.
+[00:15:51] We had a sort of a stock market club.
+[00:15:54] And I was part of my friend Cooper who lived in the neighborhood where I grew up in Vermont.
+[00:15:58] And we were buying shares of all these dot com companies.
+[00:16:01] And we got so excited, we were like, this is amazing.
+[00:16:04] And actually, at that time, I went to my local stock broker's office.
+[00:16:08] I called them.
+[00:16:09] And I said, it was Edward Jones, and they were on Western Avenue and Brad and Barbara Vermont.
+[00:16:14] And I called them and I said, I'd like to buy a hundred dollars of the American ski company.
+[00:16:20] I'm avid skier.
+[00:16:21] And I was like, this is, they always say, buy what you know.
+[00:16:24] So I said, I want to buy a hundred dollars and they said, well, son, that's going to be a problem.
+[00:16:29] We charge a commission of fifty dollars to buy and fifty dollars to sell.
+[00:16:32] Come back when you have more money.
+[00:16:34] And so I was like, shoot.
+[00:16:35] All right.
+[00:16:36] So when I had more money, a couple summers later, I had a thousand dollars.
+[00:16:40] And I funded that first account.
+[00:16:42] I must have had to do it with, I don't remember getting my parents permission or how it was set up exactly.
+[00:16:47] But it was an online trading account and I set it up.
+[00:16:50] And I bought shares of companies that I was familiar with.
+[00:16:55] My, my grandfather worked at Dartmouth College in the, in the placement office where he would help.
+[00:17:05] He graduated from Dartmouth College himself.
+[00:17:08] And he started working there in 1941.
+[00:17:13] He graduated from Dartmouth College himself.
+[00:17:17] And he started working there in, in 1941.
+[00:17:21] And he worked there until he died in 1970.
+[00:17:24] But he had at home on his desk these lighters that had the US steel logo on it.
+[00:17:34] And they had also bought, had something from American electric power.
+[00:17:40] And so I, I remember seeing those and looking up the companies and seeing that they were still around.
+[00:17:45] And so I bought some shares of US steel.
+[00:17:47] And I bought some shares of American electric power.
+[00:17:50] And I bought some shares of Exxon mobile and Pfizer and caterpillar.
+[00:17:53] You know, companies I was just sort of familiar with.
+[00:17:56] And so I invested the full thousand dollars.
+[00:17:58] And I had a ledger that I had this old ledger.
+[00:18:02] It was like a, you know, just a, like a little accounting book.
+[00:18:05] And I was tracking the reason I was buying these stocks with the price I was getting in at the date.
+[00:18:11] How much it was worth number of shares.
+[00:18:13] Because that's what I had done in our stock market club in the late 1990s.
+[00:18:17] So I was tracking all of these trades very, very, you know, diligently.
+[00:18:22] By the end of the summer, my account was unchanged.
+[00:18:25] Three months later, there was basically no change in value.
+[00:18:28] I was up or down a little bit, it was like 60, 70 dollars.
+[00:18:31] It was negligible.
+[00:18:32] And the reason was because the overall market hadn't really moved all that much.
+[00:18:37] I mean, it just, you know, so when you put a thousand dollars in or whatever it is,
+[00:18:42] you just don't end up getting much.
+[00:18:43] And of course, there are some fees and commissions on that too.
+[00:18:46] I might have lost 60 or 70 because of the fees and commissions.
+[00:18:49] Maybe that's what it was.
+[00:18:50] But in any case, that was kind of, that was when I first got started.
+[00:18:55] Nearly 25 years ago, just crazy.
+[00:18:58] Okay, so then, so I'm in high school.
+[00:19:02] And it must have been the next year.
+[00:19:06] My friend Ben, this is a picture of Ben right here.
+[00:19:09] This is, and that's me.
+[00:19:10] Right there is me.
+[00:19:11] That's, I mean, we're in our Cup Scout uniforms.
+[00:19:13] That's my friend Dan.
+[00:19:14] That's my other friend Guy.
+[00:19:15] And of course, I haven't talked to any of these fellows for years now.
+[00:19:20] But anyways, Ben made $16,000 on a penny stock in high school.
+[00:19:28] And I was inspired.
+[00:19:31] Now, I want you to imagine what a high schooler would do with $16,000.
+[00:19:36] He bought a, he had in his mom's basement.
+[00:19:40] He had a big screen TV.
+[00:19:41] He had an amazing sound system.
+[00:19:43] He had an arcade machine.
+[00:19:45] He got a niece, a used niece on Pathfinder, put a subwoofer in the back.
+[00:19:50] He was living large.
+[00:19:53] Now, he always regrets that he didn't sell.
+[00:19:56] They didn't hold longer.
+[00:19:57] They sold to soon.
+[00:19:58] He said, if he held longer, he would have made like $60,000 or something like that.
+[00:20:02] So he sold it to soon.
+[00:20:04] But, but that really inspired me.
+[00:20:07] Now, he got the idea to buy that penny stock from our friend David's father,
+[00:20:13] who was, I guess, dabbling a little bit in the stock market.
+[00:20:16] And just kind of mentioned it.
+[00:20:18] And so then Ben bought it.
+[00:20:20] And next thing, you know, he makes $16,000 on it.
+[00:20:23] So, so that for me was was inspiring.
+[00:20:27] So when I began day trading, and it wasn't for a few years later,
+[00:20:30] because I really didn't have the money to trade for quite a long time.
+[00:20:33] So in the interim, I graduated high school.
+[00:20:36] I started college.
+[00:20:38] And then when I was in the middle of a college,
+[00:20:41] my father was diagnosed with stage four lung cancer.
+[00:20:46] And so I ended up moving home and pumping gas at the Snoko Gas Station
+[00:20:52] and finishing up my credits at just the local community college of Vermont
+[00:20:57] and driving my dad to chemo and radiation and stuff like that.
+[00:21:02] And I didn't have any money.
+[00:21:04] I was completely broke at that time.
+[00:21:06] So trading was like a far away dream.
+[00:21:09] But I ended up having a girlfriend and moving down to New York City
+[00:21:15] with her.
+[00:21:16] She was going down.
+[00:21:17] She was someone I had known from Vermont,
+[00:21:19] but she was going down to school in New York.
+[00:21:21] And so we met during one of her breaks.
+[00:21:23] And then I decided to move down to New York with her.
+[00:21:25] And when I was down in New York, I started looking for a job.
+[00:21:27] And I applied to be an intern at a hedge fund.
+[00:21:31] And I got denied.
+[00:21:32] They told me I had no, I didn't have the work experience.
+[00:21:35] I was an unpaid internship.
+[00:21:37] I needed to get that worked up about it at this point.
+[00:21:39] It's water under the bridge.
+[00:21:41] I'll never get over it.
+[00:21:42] It's not water under the bridge.
+[00:21:43] But that's for another day.
+[00:21:45] Anyways.
+[00:21:46] So they turned me down and ended up getting an internship at a design firm.
+[00:21:53] And that was the other thing I was interested in.
+[00:21:56] Architecture and design.
+[00:21:58] So I worked there for several years.
+[00:22:00] And during that time, my father after he passed away,
+[00:22:05] I had gotten some money from him.
+[00:22:07] And I may have mentioned some of this in the last class.
+[00:22:10] I don't remember.
+[00:22:11] But anyways, I got $100,000 from him.
+[00:22:14] And my sister and I both got that.
+[00:22:16] But it wasn't until she turned 21 that the money was distributed to us.
+[00:22:20] And so I, when I first got that money,
+[00:22:24] I had a financial advisor.
+[00:22:26] And I said, yep, just invest it in the overall market.
+[00:22:30] And it lost money.
+[00:22:32] And I was like, this is dumb.
+[00:22:34] Because it not only lost money, but they were charging fees on the value of the account.
+[00:22:40] So I was kind of not impressed at all.
+[00:22:43] And I was getting stressed and burned out of the job that I had in New York.
+[00:22:48] I was starting to get these panic attacks.
+[00:22:51] Which I had struggled with in high school and even middle school.
+[00:22:55] And then it kind of gone away.
+[00:22:56] And then they came back.
+[00:22:57] And so I was like, oh my gosh, I got to move back to Vermont.
+[00:23:00] So I moved back to Vermont.
+[00:23:01] And that's when I said, you know, what am I going to do?
+[00:23:03] What am I going to do with my life here?
+[00:23:05] But I had a little bit of money from my father.
+[00:23:08] And I thought maybe I could use this to, you know,
+[00:23:11] Well, initially, I thought maybe I could use this to buy some,
+[00:23:14] a piece of real estate and become, you know, a landlord.
+[00:23:18] Maybe I could buy a, like, three or four apartment building.
+[00:23:21] And I would rent out three of the units.
+[00:23:23] I would live in one of them.
+[00:23:24] Something like that.
+[00:23:25] Because $100,000 is a good down payment.
+[00:23:27] But I tried to get a mortgage.
+[00:23:29] I couldn't get a mortgage because I didn't have a job.
+[00:23:31] The job I had in New York, I was a 1099.
+[00:23:33] I wasn't a W2 employee.
+[00:23:35] And then when I moved back, of course, I was unemployed.
+[00:23:37] So I couldn't get a mortgage.
+[00:23:39] And $100,000 wasn't enough to buy anything with cash.
+[00:23:43] So real estate was out.
+[00:23:46] I looked at some other things I could do.
+[00:23:48] I had a friend that was working at a ski area.
+[00:23:50] I thought maybe I would do that.
+[00:23:52] But I continued working part-time from Vermont.
+[00:23:56] I was one of the pioneers of remote work.
+[00:23:59] And I kept earning just a little bit of money.
+[00:24:04] And then I was looking into this trading thing.
+[00:24:07] And so eventually that work stopped and it was just trading.
+[00:24:11] And when I started trading, I did it as a New York's resolution.
+[00:24:15] I said, I'm going to start getting up every day.
+[00:24:18] You know, at 9 o'clock to look at the market and be ready for the market open at 930.
+[00:24:25] And I had a small account.
+[00:24:28] Well, so I put $5,000 into an E trade account from the money that I got from my father.
+[00:24:33] And I was thinking, all right, well, we'll start with that.
+[00:24:37] And I was looking for penny stocks.
+[00:24:39] So I started Googling penny stocks that I should buy.
+[00:24:43] You know, hot penny stocks.
+[00:24:44] It worked for Ben.
+[00:24:45] And that was in high school.
+[00:24:46] So I was like, it's going to work for me.
+[00:24:47] And he made 16,000 in one trade.
+[00:24:50] If I do that twice a year, three times a year, that's 50 grand a year.
+[00:24:53] And I knew he hadn't put a lot of money on the line.
+[00:24:55] So this is sort of what I was thinking.
+[00:24:57] My thought process was, if I could make a thousand dollars a week or five thousand a month,
+[00:25:02] I would be in pretty good shape.
+[00:25:04] So let's talk about the definition of penny stocks.
+[00:25:07] Because this is where my journey really began.
+[00:25:09] So officially, penny stocks are stocks under $3 a share,
+[00:25:12] which is a little confusing because obviously a stock at $2.50 is not literally a penny stock.
+[00:25:20] But regulators consider stocks under $3 to be a penny stock.
+[00:25:25] So by that definition, I do often even today trade penny stocks.
+[00:25:29] These stocks that are under $3 a share,
+[00:25:31] they do meet the listing requirements to be on the nice sea or the NASDAQ exchanges.
+[00:25:36] And with strong headlines can work their way up to the teens 20s or even higher.
+[00:25:41] We've seen it happen before.
+[00:25:43] But there is something that I learned early on that differentiates stocks under a dollar
+[00:25:48] from stocks over a dollar.
+[00:25:51] And this is the minimum tick difference.
+[00:25:55] So there's a rule that when a stock trades over one dollar a share,
+[00:26:01] the minimum tick is one penny.
+[00:26:04] So what's a tick?
+[00:26:05] A tick is the tightest spread.
+[00:26:08] And it's called the minimum tick.
+[00:26:10] Now in the late 1990s, when I was learning about the market,
+[00:26:14] the market was still traded in fractions,
+[00:26:17] which is kind of strange because no other exchange in the world was trading fractions.
+[00:26:25] So trading an eighth by a quarter by a quarter.
+[00:26:30] So 25 and a quarter by 25 and a half, right?
+[00:26:33] So this was very confusing.
+[00:26:36] And people felt that it was maybe preventing more foreign investment
+[00:26:40] because they'll have an understand frat.
+[00:26:42] Well, you know, what is this?
+[00:26:43] I mean, not that they're hard to understand, but just didn't make sense.
+[00:26:47] The thing is, at that time, I mean, I'll grab my whiteboard.
+[00:26:52] The tightest spread could be was, so you had a spread between, you know,
+[00:26:59] 21 and 22.
+[00:27:01] So this would be a course of one dollar spread.
+[00:27:04] That's a $1 spread right there.
+[00:27:06] Or you can have a 50 cents spread, right?
+[00:27:09] So 50 cents spread would be trading in half.
+[00:27:12] Or you have a 25 cents spread, right?
+[00:27:15] So you're trading in quarters.
+[00:27:16] So if you've got a 25 cents spread, you're trading in a quarter,
+[00:27:19] then you know, it's 21 by 21 25, which means if you wanted to buy a thousand shares,
+[00:27:26] you're getting in at 21 25 right here.
+[00:27:31] And if you wanted to turn around and sell it right away on the bid,
+[00:27:34] you're already down 250 bucks in the spread.
+[00:27:37] And you know, who makes money on the spread, it's the market makers.
+[00:27:41] So now you could go down to an eighth,
+[00:27:44] which was 12.5 cents, 12 and a half cents,
+[00:27:48] and eighth down here.
+[00:27:50] And the tightest a spread could be was a 16th,
+[00:27:54] which is six and a quarter cents.
+[00:27:56] So six point two five cents.
+[00:27:59] That was the tightest a spread could ever be on the stock.
+[00:28:02] Prior to decimalization.
+[00:28:05] So decimalization, which was a big transition in the market,
+[00:28:09] was when we went from trading in fractions
+[00:28:12] to trading in cents per share.
+[00:28:15] But market makers hated this,
+[00:28:18] because they make money between the spread.
+[00:28:21] What a market maker does is when someone says,
+[00:28:25] I want to sell, they say, okay, I'll buy your shares from you.
+[00:28:28] Now, then when someone comes to buy, they say,
+[00:28:31] oh, yeah, I've got some shares I'll sell you.
+[00:28:33] And so they get compensated for the risk of holding the stock
+[00:28:37] by profiting on the spread.
+[00:28:39] So in other words, they're essentially engaging in,
+[00:28:43] it's kind of like arbitrage.
+[00:28:46] They're buying, knowing that it'll be worth more later,
+[00:28:50] probably, to someone else.
+[00:28:52] So they buy, they hold, and then they just wait
+[00:28:55] until someone comes along.
+[00:28:57] So they're just sort of in the middle there,
+[00:28:59] and they get paid, they get compensated
+[00:29:02] with a profit of the spread.
+[00:29:04] So these market makers and they're called market makers
+[00:29:07] on Nasdaq when they work on the floor.
+[00:29:09] And in New New York Stock Exchange,
+[00:29:11] they're called specialists.
+[00:29:12] So these specialists make money on the floor
+[00:29:16] historically when someone comes and buys
+[00:29:18] and they get the profit on the spread.
+[00:29:20] So all of a sudden, decimalization,
+[00:29:22] the spread goes from six and a quarter cents
+[00:29:26] down to one cent.
+[00:29:27] You know, on a 10,000-share order,
+[00:29:29] they're going for making 600 bucks
+[00:29:31] to making only 100 if it's a one cent spread.
+[00:29:34] So for a while, they try to keep the spreads bigger.
+[00:29:39] And there was some regulatory fines around
+[00:29:43] these market makers colluding to keep spreads bigger
+[00:29:46] for each other, never to go to eighths,
+[00:29:48] only to keep it at quarters, to keep the spreads big
+[00:29:50] so they could make more money.
+[00:29:51] They kind of have like an unwritten agreement,
+[00:29:53] never to cut the spread.
+[00:29:54] But eventually competition and regulators stop that.
+[00:29:58] And so people cut the spread tighter and tighter
+[00:30:00] and tighter until they're all the way down
+[00:30:02] to a one cent spread.
+[00:30:03] If market makers want to fight with each other
+[00:30:06] and make more money, they're going to make tighter spreads.
+[00:30:08] So that's what ended up happening.
+[00:30:11] And I remember when I bought in 2019,
+[00:30:16] I bought a Mercedes,
+[00:30:18] and I went to a dealer in New Jersey to buy it
+[00:30:23] because I knew I wanted to get the new G-wagon.
+[00:30:26] That was exactly what I wanted.
+[00:30:28] And so that was the color I wanted.
+[00:30:30] It was down there in New Jersey.
+[00:30:31] So I went and bought it.
+[00:30:32] And the guy I bought it from asked me what I do
+[00:30:34] and I said, I'm a trader.
+[00:30:37] And he said, oh, I used to be a market maker.
+[00:30:40] And I was like, oh, really.
+[00:30:43] And I knew that, and he said,
+[00:30:45] I was a market maker until decimalization.
+[00:30:48] That was the end for me.
+[00:30:50] And there were a lot of market makers that lost their jobs during that
+[00:30:53] because the market became more efficient.
+[00:30:55] And instead of us giving our profit to market makers,
+[00:30:58] we got to keep that profit for ourselves.
+[00:31:00] So things changed.
+[00:31:02] And anyways, so now he's selling cars.
+[00:31:05] But that's fine.
+[00:31:06] I'm sure he makes decent money doing that anyways.
+[00:31:09] So nonetheless, so decimalization.
+[00:31:13] Now we've come to just accept that stocks are traded in pennies.
+[00:31:17] Not in fractions of a dollar.
+[00:31:19] But decimalization did create some rules.
+[00:31:22] And one of the rules was that any stock over one dollar a share
+[00:31:26] will trade with a minimum spread of one penny,
+[00:31:28] which means you can't trade in half a penny.
+[00:31:31] So this stock right here.
+[00:31:33] By the way, if you've never seen a window like this, don't worry.
+[00:31:36] Because I'll teach you how to use these windows.
+[00:31:38] And what all of this means a little bit later in this course.
+[00:31:42] This is called a level two window,
+[00:31:44] and it's showing the depth of the market.
+[00:31:46] And what's showing us right now is this stock is being quoted
+[00:31:49] at a 117 that's a buyer who wants to buy at 117.
+[00:31:53] And this is a seller.
+[00:31:54] These are actually a lot of sellers who are selling all at one
+[00:31:57] 18.
+[00:31:58] In this case, we have more sellers at 118 than we have buyers here.
+[00:32:02] But that's fine.
+[00:32:03] So the spread is one penny.
+[00:32:06] If you bought 10,000 shares at 118 and turned around and sold it right away,
+[00:32:10] you would lose one penny.
+[00:32:11] And that'd be a hundred dollars on 10,000 shares.
+[00:32:14] So you have a very tight spread here.
+[00:32:16] So any stock over a dollar trades the one cents spread.
+[00:32:20] So what that means, and this will seem like I'm saying the obvious,
+[00:32:24] but I'm saying it for a very important reason,
+[00:32:26] is that if a stock goes from one dollar to a dollar 10,
+[00:32:32] it has to go to a dollar one, a dollar two,
+[00:32:36] dollar three, dollar four, dollar five you see where I'm going,
+[00:32:40] dollar six, seven, eight, nine, and then you're at a dollar 10.
+[00:32:44] So how many increments is that?
+[00:32:46] It's 10.
+[00:32:47] You've got 10 increments for a stock to go from one dollar to a dollar 10.
+[00:32:53] So how many increments do you think it takes for a stock to go from 90 cents a share to one dollar?
+[00:32:58] 10, right?
+[00:33:01] You're wrong.
+[00:33:02] It's a thousand.
+[00:33:04] So it's a thousand because anything below a dollar trades down to the one,
+[00:33:11] one hundred of a penny, which is unbelievable.
+[00:33:16] So what that means is that if you're looking at something trading below a dollar a share
+[00:33:21] as you can see right here, you actually have four decimal places out,
+[00:33:26] 47 and 14th of a penny by 47 and one, 19th of a penny.
+[00:33:36] So what that means is that for a stock to go from 90 cents to a dollar in theory,
+[00:33:43] there could be as many as one thousand price increments.
+[00:33:47] But to go from a dollar to a dollar 10 are only 10 price increments.
+[00:33:52] So do you think a stock moves faster between 90 cents in a dollar or between a dollar and a dollar 10?
+[00:33:58] They'll move faster between a dollar and a dollar 10 because there's fewer price increments.
+[00:34:04] So what typically, now most stocks don't actually trade all the way down to the one hundredth of a penny,
+[00:34:13] every single one hundredth that they go up, usually stocks,
+[00:34:17] although they could trade that tightly, do not.
+[00:34:21] So similarly, I could pull up a stock right now on my level two window for,
+[00:34:27] this is my actual trading account.
+[00:34:30] So this stock right here, which has no volume,
+[00:34:33] is currently showing a spread of 1046 by 1088.
+[00:34:38] So you've got a 44 cents spread on this, right?
+[00:34:42] This stock has no volume, no one's really trading it, it's got a big spread.
+[00:34:47] You look at Ford and Ford is typically traded with eight million shares of volume and has a one cents spread,
+[00:34:53] right?
+[00:34:54] Or you look at a PLM, which is trading down to the one hundredth of a penny, right?
+[00:35:01] So seven one by seven three.
+[00:35:03] So this one is pretty, it's got 124 million shares of volume.
+[00:35:06] So depending on the stock you look at,
+[00:35:09] the spreads can get tighter or they can get wider.
+[00:35:13] And we're going to talk about that quite a bit because looking at the spreads is part of the decision for
+[00:35:18] partaking a trade.
+[00:35:20] But I don't want to get too far into that right now because we will cover that in more detail.
+[00:35:24] But what I do want you to understand is that there is a significant difference between a stock trading
+[00:35:30] between ninety cents and a dollar and above a dollar.
+[00:35:33] And so when I first started trading, of course I had no idea about this.
+[00:35:38] I didn't even realize I had no idea there was a difference between these types of stocks.
+[00:35:43] And so naturally I was trading cheap penny stocks because I just thought, well, that's all I could afford.
+[00:35:49] But a lot of those penny stocks were moving very slowly.
+[00:35:53] So I would get in and I would just be sitting in a holding and they wouldn't be going anywhere.
+[00:35:59] Now, something that is worth noting is that the New York Stock Exchange requires all companies to keep their stock above
+[00:36:06] one dollar a share.
+[00:36:09] So if a stock falls below a dollar a share, the company will have a certain amount of time
+[00:36:13] to get the stock back above a dollar before they risk a trading suspension and getting
+[00:36:18] delisted from the exchanges.
+[00:36:21] But the way this works is that if a company trades below a dollar and this one right here
+[00:36:28] APLM is a NASDAQ listed company, it's trading below a dollar.
+[00:36:32] They get a delisting notice, which gives them 180 days to get their stock back above a dollar.
+[00:36:38] And then they can appeal that decision of delisting and get another 180 days.
+[00:36:43] Now, these regulations are subject to change.
+[00:36:46] They may change in time.
+[00:36:48] But right now, as a result, will still see stocks listed on NASDAQ and NYC that are below a dollar.
+[00:36:56] Even though they kind of shouldn't be there, we do see it and that's just, that's just the way it is.
+[00:37:04] However, one of the ways that these stocks will get their price share price back up above a dollar
+[00:37:10] is by doing what's called a reverse split.
+[00:37:13] So if you're familiar with stocks splits, the way a stock split works is, let's say you have a company
+[00:37:20] that's trading at $700 a share.
+[00:37:22] They're trading at $700 a share, and they have a float of, let's say, one million shares.
+[00:37:30] So when they did their IPO, they sold float, by the way, term, we'll keep coming back to this.
+[00:37:37] We'll talk about it more, but float is the number of shares available to trade.
+[00:37:41] So when the company did their IPO, they sold a million shares and the stock is currently trading at 700 a share.
+[00:37:47] And the company says, well, 700 shares to expensive retail traders can't afford our stock.
+[00:37:53] Let's do a seven to one stock split.
+[00:37:56] So the next day, you log in and the stock is trading at $100 a share, and you're thinking, oh my gosh, what happened overnight?
+[00:38:03] But if you're holding 1,000 shares of it at 700, that'd be $700,000.
+[00:38:09] Now it's $100 a share, but you're holding 7,000 shares.
+[00:38:14] And the float has gone up to 7 million shares.
+[00:38:17] So the market cap is still the same.
+[00:38:20] The market cap is unchanged, 700 million, 700 million, but the number of shares and the price changes.
+[00:38:27] So this is a technique commonly used by large cap companies like Tesla and Nvidia and Apple
+[00:38:33] to keep their price from getting too expensive.
+[00:38:35] Now, Berkshire Hathaway has notoriously never done a stock split, and their stock price is outrageously expensive.
+[00:38:42] But in any case, most companies do stock splits.
+[00:38:46] Now, there's something called a reverse stock split.
+[00:38:50] A reverse stock split is a method to move the price up if the price is too low.
+[00:38:56] So now, let's say you have a stock that's trading at, let's say it's 70 cents a share.
+[00:39:02] It's trading at 70 cents a share, and you've gotten your deal listing notice.
+[00:39:06] So you're like, oh boy, and let's say the float is 7 million shares.
+[00:39:10] All right, so 7 times 7, so it's a 4.9 million million dollar cap market cap.
+[00:39:16] This company's worth very, very little.
+[00:39:19] All right, so, but that's fine, and it is what it is.
+[00:39:21] So this is the float.
+[00:39:23] So the next company decides to do a reverse stock split.
+[00:39:27] And let's just say they do 10 to 1.
+[00:39:29] They do a 10 to 1 split, and well, actually, let's just do 7 to 1 to keep the numbers easier.
+[00:39:34] So they do a 7 to 1 split.
+[00:39:36] And so the next day, if you were holding 10,000 shares of this at 70 cents,
+[00:39:43] the next day you log in and let's see.
+[00:39:46] So it's trading at $4.90.
+[00:39:50] Is that right?
+[00:39:51] And you'd be holding 1,000 shares.
+[00:39:56] And the float is now gone from 7 million to 1 million.
+[00:40:01] It would have been a lot easier if I just done the dollar share.
+[00:40:05] So now the price is $4.90 a share.
+[00:40:08] So it's above the one dollar minimum.
+[00:40:11] The float has gone down, the number of shares have gone down,
+[00:40:14] but the market cap is still the same, right, 4.9 million, 4.9 million.
+[00:40:18] So market cap is unchanged, but the price is moved.
+[00:40:21] So this is a reverse stock split, reverse split is what we might call it,
+[00:40:27] in contrast to a traditional split.
+[00:40:30] And so this is a term that we're going to keep coming back to because a lot of companies do
+[00:40:34] stocks splits, reverse stocks splits, and traditional stocks splits.
+[00:40:38] And what we see with a lot of penny stocks is that the only way for them to remain listed on the NASDAQ
+[00:40:44] nice exchange is for their stock to get back above a dollar within a limited period of time.
+[00:40:50] So how could they do that?
+[00:40:51] They could be a better company.
+[00:40:53] They could put out great news, which they can't lie about.
+[00:40:55] So they have to actually do better, or they could just do a stock split.
+[00:41:01] When they do a stock split, the number of shares goes down.
+[00:41:05] And what this means is that the level of supply has gone down because float,
+[00:41:10] the number of shares is the supply.
+[00:41:13] We're going to talk a lot about an imbalance between supply and demand.
+[00:41:19] We'll talk about the characteristics of high demand and where that comes from,
+[00:41:22] but supply is always going to be the number of shares or the float.
+[00:41:27] So reverse splits have the effect of reducing the supply,
+[00:41:31] which is going to be important in some of the later chapters.
+[00:41:35] Okay.
+[00:41:36] So a traditional penny stock is a stock trading between one cent and 99 cents, right?
+[00:41:42] They trade in increments of 100, the 100th of a penny,
+[00:41:46] but they can continue to trade at least above one penny.
+[00:41:49] We often see traditional penny stocks are still nice and NASDAQ listed.
+[00:41:53] These companies either may not have received a deal listing notice yet,
+[00:41:56] or they're working to take steps to get the price back above a dollar.
+[00:41:59] And they usually don't have an issue doing that.
+[00:42:01] There is some conversation that regulators want to take away the ability for companies
+[00:42:07] to do back-to-back reverse splits, and that they feel that maybe that shouldn't be allowed.
+[00:42:13] So that may change in the future, but in any case right now it continues.
+[00:42:18] So this is what most traditional penny stocks will look like,
+[00:42:21] trading 45 cents down to the fifth of a penny,
+[00:42:25] 46 by 99, 99th of a penny.
+[00:42:29] So a little bit of a bigger spread on that, almost a penny a share.
+[00:42:32] This one's got a larger spread right here, but of course, no volume.
+[00:42:36] So these are traditional penny stocks.
+[00:42:38] Sub penny stocks and tripped zero stocks do not trade on NASDAQ and NYC exchanges.
+[00:42:44] So if a stock is not able to maintain a minimum price of a dollar,
+[00:42:47] they can get delisted, right? They have the hundred eight days to do that.
+[00:42:50] If they can't maintain a minimum price of a one penny, they get delisted,
+[00:42:55] and they move to the OTC markets.
+[00:42:57] So OTC markets are the over-the-counter market,
+[00:43:01] and they have stocks of all price ranges.
+[00:43:03] They have expensive stocks, they have cheap stocks,
+[00:43:05] but they don't have a minimum.
+[00:43:07] So what would be the actual minimum?
+[00:43:10] Well, I guess 100th of a penny would be the lowest.
+[00:43:16] A price could possibly go.
+[00:43:19] That's the very, very lowest.
+[00:43:21] That is the bottom of the market.
+[00:43:24] 100th of a penny.
+[00:43:25] It's called a tripped zero stock, because there's three zeros, triple zero.
+[00:43:28] Tripped zero stock.
+[00:43:30] So unfortunately, and we'll talk about it in just a second.
+[00:43:34] So, all right, so let's go.
+[00:43:36] So the OTC has different market tiers.
+[00:43:38] They have OTC best market, OTC venture market,
+[00:43:40] and then the pink sheet market.
+[00:43:42] You may have heard of pink sheets,
+[00:43:44] because pink sheets are the stocks that are most prone
+[00:43:49] for use in pump and dump schemes.
+[00:43:52] A lot of pink sheet, I don't wanna say a lot of,
+[00:43:55] because I'm just a generalization,
+[00:43:57] but it's been in the past that a lot of pink sheet stocks.
+[00:44:00] Many pink sheet stocks are their ownership is very vague,
+[00:44:05] owned by shell companies out of Panama.
+[00:44:09] The true owners are unknown.
+[00:44:13] They don't have to report financial statements,
+[00:44:17] so there's not a lot of reporting.
+[00:44:19] And these companies can just be shell companies used as a vehicle
+[00:44:23] for moving money, essentially.
+[00:44:25] Now, of course, regulators try to crack down on that
+[00:44:29] as much as they can, and they have done a lot to crack down on that,
+[00:44:32] but it is still something that happens.
+[00:44:34] Now, when I first started trading,
+[00:44:36] I had no idea there was even a difference between OTC and Nasdaq
+[00:44:40] or pink sheets, I didn't know any of that.
+[00:44:43] So this is stuff that is important to know.
+[00:44:46] Generally speaking, you won't see me trading OTC markets,
+[00:44:49] because it's just, I just find it right now
+[00:44:53] to be too risky and not worth it.
+[00:44:55] Maybe that'll change in the future,
+[00:44:56] but at this point, I don't trade the OTC markets.
+[00:44:59] So, oops, let's just jump this back into full screen.
+[00:45:02] Now, the OTC best market would be stocks
+[00:45:06] that do have higher financial standards
+[00:45:08] and must demonstrate compliance and multiple fronts.
+[00:45:10] OTC venture market companies have to be at least one penny
+[00:45:13] a share and cannot be in bankruptcy.
+[00:45:16] Now, they also have listing and no reporting requirements.
+[00:45:19] And the pink sheets can be stocks that are in bankruptcy.
+[00:45:22] So, if a Nasdaq listed company goes into bankruptcy,
+[00:45:25] it immediately gets deleted and becomes a pink sheet stock
+[00:45:28] on the OTC market.
+[00:45:29] Now, subpenny stocks that trade below one cent
+[00:45:32] are priced between one tenth of a penny
+[00:45:36] and nine tenths of a penny.
+[00:45:40] These are the subpenny stocks.
+[00:45:42] This is what it looks like on the level two.
+[00:45:44] This has zero volume.
+[00:45:46] I just tried to find a stock just to show you what it looked like
+[00:45:48] on the level two.
+[00:45:49] They're basically not tradable.
+[00:45:52] However, sometimes you'll see a stock like this will
+[00:45:56] when you start Googling, you know,
+[00:45:59] hot penny stocks to buy,
+[00:46:01] they'll be promoting these types of subpenny stocks.
+[00:46:05] And same with trip zero stocks.
+[00:46:07] So, the trip zero stocks are priced with three zeros.
+[00:46:09] They're priced between zero zero zero one and zero zero zero nine.
+[00:46:13] So, there's only 10 increments down there.
+[00:46:16] And this is what they look like.
+[00:46:18] It's kind of crazy because if someone buys 100 million shares,
+[00:46:23] it's $10,000 worth.
+[00:46:25] They're buying $10,000 worth of stock.
+[00:46:27] But if it goes, let's say it's a shell company
+[00:46:30] that was created with this intention.
+[00:46:33] And let's say the people that are on the inside
+[00:46:36] basically own the shares at zero,
+[00:46:39] because they created the company.
+[00:46:41] Then I don't know what this company is.
+[00:46:43] This is just an example.
+[00:46:44] I'm not speaking to this one specifically,
+[00:46:46] but let's just say a shell company is created.
+[00:46:49] They create, you know,
+[00:46:51] a billion shares or whatever it is.
+[00:46:53] And then they start putting out a pump and dump campaign,
+[00:46:56] which we see across Facebook and Twitter,
+[00:47:00] you know, what's at messages, text messages,
+[00:47:03] a lot of these that we've seen in recent years
+[00:47:06] have been run by organized criminal organizations
+[00:47:10] that are overseas.
+[00:47:12] The people sending these messages.
+[00:47:14] I mean, I'll even sometimes get these messages.
+[00:47:16] I'll see them on our YouTube channel.
+[00:47:19] These imposters will come out and they'll start,
+[00:47:21] you know, trying to get people to contact them.
+[00:47:23] So I'll just put this out as a PSA
+[00:47:25] that we don't ever send what's at messages
+[00:47:29] for more of your trading, okay?
+[00:47:31] We only communicate through our verified accounts
+[00:47:34] and we're not in the habit of sending messages
+[00:47:37] and we will never tell you to buy a penny stock
+[00:47:39] or to buy a cryptocurrency.
+[00:47:41] That's not something we do.
+[00:47:42] And we would never ask you to send us money
+[00:47:44] just to put that out there.
+[00:47:46] In case you hadn't already heard
+[00:47:48] that public service announcement for me.
+[00:47:50] But unfortunately, the way it works
+[00:47:53] is if they own 100 million shares
+[00:47:55] and pump this stock up to, you know,
+[00:47:58] from 100th of a penny to a tenth of a penny,
+[00:48:01] they're up 100 grand.
+[00:48:03] Right?
+[00:48:04] They could be up a million dollars
+[00:48:05] if they did that with a billion shares.
+[00:48:07] So that's why these can be used
+[00:48:10] as vehicles for that type of activity.
+[00:48:13] So I had to find my niche in the market
+[00:48:16] and I also had to avoid some of the landmines
+[00:48:18] in the market.
+[00:48:19] And I fell into some of these schemes myself
+[00:48:21] where I lost money.
+[00:48:22] I bought it and not knowing the difference
+[00:48:24] I thought, oh, this is a penny stock.
+[00:48:26] These emails are coming out.
+[00:48:27] I guess it's going to go higher
+[00:48:28] in the next thing.
+[00:48:29] You know, I'm stuck in the dump.
+[00:48:31] So I learned that you can trade
+[00:48:34] some of these stocks that are being pumped up
+[00:48:38] and there are times where we might trade a stock
+[00:48:40] and we don't even know that it's being used as a pump.
+[00:48:44] We just see that it's on the scanners.
+[00:48:46] It's moving up and maybe it even has nips.
+[00:48:48] So it's fine to trade it
+[00:48:50] but you just have to know when to get out
+[00:48:53] and not to overstay your welcome.
+[00:48:55] And for what it's worth,
+[00:48:57] you could even say that some of the bubbles
+[00:48:59] in the financial markets that we see
+[00:49:01] you go back to the, you know,
+[00:49:03] the tulip bubble from forever ago.
+[00:49:05] It was that a pump.
+[00:49:07] Oh, you know, not really.
+[00:49:08] You look at the price of Tesla
+[00:49:10] during the pandemic.
+[00:49:11] You look at the price of Bitcoin.
+[00:49:14] Some of these bubbles.
+[00:49:15] You can trade these bubbles
+[00:49:17] and you just have to manage your risk
+[00:49:19] and no one to get out.
+[00:49:20] That's the most important thing.
+[00:49:22] You don't want to be a bad holder.
+[00:49:24] However, there are areas of the market
+[00:49:26] that are extremely high risk
+[00:49:28] for the type of activity
+[00:49:30] that is most likely going to wipe you out
+[00:49:33] if you try to make a living
+[00:49:35] trading those types of stocks.
+[00:49:36] So you really have to be thoughtful about it.
+[00:49:38] So what I found was that by primarily,
+[00:49:41] primarily trading stocks over a dollar
+[00:49:43] and always trading stocks that are nicely
+[00:49:45] and NASDAQ listed
+[00:49:46] with perhaps the exception of
+[00:49:49] something like American Airlines.
+[00:49:51] When they went into bankruptcy,
+[00:49:53] they were on the pink sheets
+[00:49:54] or hurts.
+[00:49:55] When hurts was in bankruptcy,
+[00:49:57] they were on the pink sheets.
+[00:49:58] They were in the OTC market.
+[00:49:59] But it was still very,
+[00:50:00] thickly traded,
+[00:50:02] Freddie Mac,
+[00:50:04] Freddie Mac, the,
+[00:50:06] the mortgage company
+[00:50:08] was trading on the OTC market.
+[00:50:10] So there are times where
+[00:50:12] there's an exception,
+[00:50:13] but generally speaking,
+[00:50:14] by focusing on nicely NASDAQ listed stocks
+[00:50:16] and primarily trading stocks over a dollar.
+[00:50:19] I don't have to deal with the one
+[00:50:20] 100th of a penny spread.
+[00:50:22] And I generally find it safe
+[00:50:23] for to trade stocks above a dollar
+[00:50:25] and stocks are listed on NASDAQ
+[00:50:26] and nicely.
+[00:50:27] Because these stocks,
+[00:50:28] the owners,
+[00:50:30] the owners of the company
+[00:50:32] are,
+[00:50:33] it's public knowledge.
+[00:50:34] These aren't these hidden shell companies,
+[00:50:36] you know,
+[00:50:37] that you'll hear about
+[00:50:38] and like the Panama papers or whatever.
+[00:50:40] You know,
+[00:50:41] these are real,
+[00:50:42] these are real companies.
+[00:50:43] Now,
+[00:50:44] they might,
+[00:50:45] they might not all be great
+[00:50:46] and they might not be great.
+[00:50:47] I think some of the real
+[00:50:48] companies that are oversees
+[00:50:50] are still a little bit tricky.
+[00:50:53] I think specifically
+[00:50:54] of some of the Chinese
+[00:50:55] small caps stocks that we've seen,
+[00:50:57] and we'll talk about that more as we go
+[00:50:59] further into the classes,
+[00:51:00] but,
+[00:51:01] you know,
+[00:51:02] it,
+[00:51:03] in general,
+[00:51:04] I find it to be safer so,
+[00:51:05] so I'm,
+[00:51:09] mostly trading NASDAQ,
+[00:51:11] nicely stocks,
+[00:51:12] priced above a dollar.
+[00:51:13] Sometimes under a dollar,
+[00:51:14] but usually above a dollar.
+[00:51:15] see greater imbalances between supply and demand.
+[00:51:18] And we see larger percentage moves than we'd ever see on a large cap stock like Exxon Mobile
+[00:51:23] Caterpillar or Pfizer.
+[00:51:25] So let's go back when I was getting started and I have a $5,000 account and I have a
+[00:51:30] goal of trying to make $1,000 a week.
+[00:51:34] That's 25% of you account each week, 20% that's big account growth each week.
+[00:51:41] So how are you going to go your account 20% a week?
+[00:51:45] That's not easy.
+[00:51:46] Now, I have found that while it's not easy, there is a niche that I have, and a strategy
+[00:51:51] that I have that is allowed me to do it.
+[00:51:54] And it's not by trading stocks that are $50 a share of $50 a share of stock to make 10%
+[00:52:00] it's got to go up to $55.
+[00:52:02] A $5 stock to make 10% only needs to go to $5.50.
+[00:52:07] Now, technically, a 50 cent stock only needs to go to $55.
+[00:52:11] So you do see big percentage moves, but we know that to go from 50 to 55 cents, how
+[00:52:18] many increments of prices that it's $500, right?
+[00:52:21] It's $100 of a penny times five pennies.
+[00:52:25] So it's $500 increments, whereas from $55.50 or $5 to $5.50, sorry, is 50 increments.
+[00:52:35] So usually I find this easier to obtain than this.
+[00:52:39] In my experience, but anyways, so I also will say that trying to get 50 cents a share
+[00:52:51] or 10% out of every trade is not what I'm aiming for.
+[00:52:55] I'm not trying to get 10% on every trade.
+[00:52:58] It'll happen on some trades, but generally speaking, what I realized was that if I set the
+[00:53:03] goal really low to even just 10 cents a day, if I could get 10 cents a day, this is what
+[00:53:10] I thought to myself, 10 cents a day with 100 shares, that's $100, sorry, it's a
+[00:53:17] 10 bucks.
+[00:53:18] But with a thousand shares, it's a hundred bucks.
+[00:53:22] And with 2,000 shares, it's $200.
+[00:53:26] $200 a day, that's not bad, 10 cents, with 4,000 shares, it's $400, 10 cents is $400.
+[00:53:35] You do 10,000 shares, 10 cents is a thousand bucks.
+[00:53:39] Now I looked at my metrics, and what I saw was that over, that was about 8 years of trading,
+[00:53:44] I was averaging 16 cents on my winners, and I was doing it with 10,000 shares.
+[00:53:50] So how big were my winners?
+[00:53:52] $1,600.
+[00:53:54] You do that three or four times a day, you've got a $4,600 green day, 16 cents a day.
+[00:54:00] That could be the difference between success and failure.
+[00:54:04] So here's the thing that's really cool.
+[00:54:07] It is a heck of a lot easier to find 16 cents of profit per day than to find, let's say,
+[00:54:14] $1,60 per share of profit per day, 16 cents.
+[00:54:20] All you have to do is try to find a stock that you think has a potential to go up 16
+[00:54:24] cents a share.
+[00:54:26] So how are we going to do it?
+[00:54:28] Well, we're going to look for stocks that have the potential to have a massive imbalance
+[00:54:35] between supply and demand.
+[00:54:38] This is a stock that went from $0.50 to $1.15.
+[00:54:42] I made $11,000 on it.
+[00:54:45] It goes up 100%.
+[00:54:46] Why did this stock go up 100%?
+[00:54:48] It had breaking news.
+[00:54:49] And on this day, this stock was one of our leading percentage gainers in the entire market.
+[00:54:55] It had a reason to move.
+[00:54:57] And there were opportunities in here to capture 16 cents a share.
+[00:55:02] Pretty easily.
+[00:55:03] Now this was one right here from $0.80 up to $1.
+[00:55:07] And there were a couple others as the day went on.
+[00:55:09] There was also a nice one down here from $0.65 up to $0.78.
+[00:55:13] So there were a couple of opportunities here.
+[00:55:14] This had a big window.
+[00:55:15] One of the things I'll say is that you're never going to capture the bottom to the top.
+[00:55:20] That's not going to happen.
+[00:55:22] You'll capture a little piece of it, a little piece there and a little piece there.
+[00:55:25] And I'm going to show you through this course, the chart patterns I use to develop an
+[00:55:30] edge to understand where to buy with limited risk as limited as I can and where to sell.
+[00:55:36] So my exit indicators are.
+[00:55:37] So I use the chart to help me establish support and resistance and I take my trades based
+[00:55:41] on that chart.
+[00:55:42] Here's a stock that went from $2.50 to $10.80.
+[00:55:46] It's $24,000.
+[00:55:48] This is the one just from yesterday.
+[00:55:50] I just put this in here last night.
+[00:55:53] This went up 13 green candles in a row.
+[00:55:56] So finding 16 cents a share on something with this big of a window was not difficult for
+[00:56:01] me.
+[00:56:02] Here's another stock that went from $2 to $12 a share.
+[00:56:05] This was just last month, $45,000.
+[00:56:08] Now I'll say my results are not typical.
+[00:56:10] And I'm at a point where I've scaled my strategy to trading these with large positions.
+[00:56:15] But these are the types of stocks that we're going to be looking at.
+[00:56:18] All we're trying to do are find the opportunities for 16 cents a share, 10.15, 16 cents
+[00:56:25] a share.
+[00:56:26] So there's one right there.
+[00:56:27] There's one right there.
+[00:56:28] These are the pullback patterns that I'm going to be teaching about.
+[00:56:30] There's a big breakout there.
+[00:56:31] There's another one here.
+[00:56:32] There's another one here.
+[00:56:34] I want to teach you the times to trade these and the times to walk away.
+[00:56:38] So I don't trade in these areas.
+[00:56:39] This is a technical indicator I use that reminds me to walk away.
+[00:56:42] I focus on trading just in these blue boxes.
+[00:56:45] And there's a lot of rules that I have to follow in order to keep myself focused
+[00:56:49] on trading during these windows where we have peak opportunity.
+[00:56:53] So now you understand, I think, why I trade in the stock market, why I trade in the
+[00:56:59] US stock market, and how I've come to focus on sort of these stocks that are sometimes
+[00:57:05] called penny stocks, but are NASDAQ and NIC listed.
+[00:57:10] I could trade large caps, but I don't.
+[00:57:13] I suppose if in middle school that semester I had had been on forex trading, maybe
+[00:57:18] I would have been introduced to it and from the beginning, I would have gone that path.
+[00:57:22] But this is the path that I chose.
+[00:57:24] What I generally find is that people who struggle with trading small caps, and this
+[00:57:30] will be maybe an important moment to listen to none.
+[00:57:35] Sometimes I find that there are people out there who struggle trading small caps.
+[00:57:39] They'll say, these are too volatile.
+[00:57:41] They're moving too quickly, and they'll say, I need something a little slower.
+[00:57:45] And maybe they'll switch initially to large caps, or maybe they'll switch to trying
+[00:57:50] to short.
+[00:57:51] Usually when I see people who switch to shorting, they end up blowing up their account.
+[00:57:56] Because what you end up doing is you short stocks that go higher and higher and higher
+[00:57:59] and wait for the reversal, and that works and works until the one that keeps going
+[00:58:04] higher, like one of these, and destroys you, call the short squeeze and you get ruined.
+[00:58:09] We'll talk about short squeeze a little bit more coming soon.
+[00:58:14] But sometimes people will struggle with small caps, and they go to large caps.
+[00:58:16] They struggle with large caps, and they go to futures.
+[00:58:18] They struggle with futures, and then they go to forex.
+[00:58:20] They struggle with forex.
+[00:58:21] They go to options.
+[00:58:22] They struggle with options.
+[00:58:23] They go back to large caps.
+[00:58:24] And they're just jumping from strategist, strategist, strategist, what I would encourage
+[00:58:29] you to do is to look around and see, even in this community, what are the people who have
+[00:58:35] the biggest badges trading?
+[00:58:37] What are they doing?
+[00:58:38] And you're going to see that, predominantly, they are trading momentum to the long side,
+[00:58:44] on stocks, listen on NASDAQ and NIC, exactly the strategy that, of course, have taught
+[00:58:49] them.
+[00:58:50] And the strategy that I'm going to be sharing with you, it's better to continue focusing
+[00:58:55] on the strategy that other people are trading successfully than trying to trade something
+[00:59:01] that most people struggle or fail at.
+[00:59:04] What I have found is that trying to trade forex currencies, you are trading events that
+[00:59:10] are far beyond our ability to really understand.
+[00:59:14] Global politics, economic events, the ECB, the Federal Reserve, interest rates, you're
+[00:59:22] not going to have an edge.
+[00:59:23] Those are markets dominated by high frequency trading algorithms.
+[00:59:28] The best PhDs from MIT are going to work at hedge funds to try to figure out how to
+[00:59:34] create a code to print money from currency markets.
+[00:59:38] And the same is true with future markets, except they're also using weather and meteorologists.
+[00:59:41] The best meteorologists in the world, they could be helping predict, you know, when tornadoes,
+[00:59:47] but instead they're working for hedge funds to make money in the market.
+[00:59:50] So we've got to know our place, we've got to know our niche.
+[00:59:53] You try to trade large caps.
+[00:59:54] I just recently saw this story about a fellow who, but $8700,000 of Intel stock.
+[01:00:04] He had a lot of good reasons for why he bought it.
+[01:00:06] For a clock that same day, company lays off 11,000 employees, this is Intel, and drops
+[01:00:12] like 30% and he's down 200 grand instantly.
+[01:00:16] We just don't have the edge.
+[01:00:19] We're not, we're not going to Paris in the Hampton, you know, we don't, we're not getting
+[01:00:22] the inside scoop.
+[01:00:24] So we've got to trade what's right in front of us.
+[01:00:26] So for me, I'm a technical trader.
+[01:00:30] I'm focusing on trading stocks that are moving right now.
+[01:00:34] I have an edge using these charts right here, using level two and following and trading
+[01:00:40] along with sentiment.
+[01:00:42] And that is where I have seen traders overall of my years, the traders who have made it,
+[01:00:48] they trade these types of stocks.
+[01:00:49] Now, they may have slight variations, and that's fine.
+[01:00:53] There's nothing wrong with that, but I really think this is the right stuff to be trading.
+[01:00:57] Some of the people that go to trade at pro firms and the pro firms says you have to
+[01:01:01] trade currency, you have to trade futures, you have to trade, you know,
+[01:01:04] large caps, they're doing that because they want to minimize the downside risk of
+[01:01:09] you losing 20% on a small cap stock.
+[01:01:12] But if we're going to think in reality, the type of stocks that make the big moves that
+[01:01:16] most traders are retail traders are going to want to focus on are the small cap stocks.
+[01:01:21] So this is the place to focus.
+[01:01:23] Okay.
+[01:01:23] Now, as a housekeeping item in the chat room, you can use what's called a cash tag.
+[01:01:29] So you put the dollar sign before the symbol.
+[01:01:31] And when you do that, it's going to pop up.
+[01:01:34] It's going to link the symbol, so it's, you can click on it and you can link it to your
+[01:01:38] charts.
+[01:01:39] So we do this when we're typing symbols in the chat room and on social media, people do
+[01:01:45] it as well.
+[01:01:46] But you don't use the dollar sign when you're typing in, when you're typing in right
+[01:01:49] here.
+[01:01:50] And what did I just do?
+[01:01:51] I accidentally just press the dollar sign and accidentally just bought a thousand shares
+[01:01:56] of the stock.
+[01:01:57] I'm going to sell it.
+[01:01:58] And I just make $3 a share that is unbelievable.
+[01:02:03] $3.58, an accidental win.
+[01:02:05] I was trying to, I forgot that my hot key.
+[01:02:08] That's my hot key.
+[01:02:09] That was a close call.
+[01:02:10] I got to be careful when you're trading with real money.
+[01:02:14] So I actually have a hot key there and remarkably just made $3.58.
+[01:02:20] That was pure luck because it could have gone the other way.
+[01:02:22] But nonetheless, cash tags are used in chat, but not when you type in your symbol.
+[01:02:30] When you type in here, you just type, you know, SPY and then press Enter and then that's
+[01:02:35] it.
+[01:02:36] All right.
+[01:02:37] So, and ticker symbols in the chat room always in caps.
+[01:02:41] So Ford, FGM, General Motors, back, Tesla, keep in the caps.
+[01:02:47] That's better.
+[01:02:48] And then don't use cap blocks on just general chat room combos because that's going
+[01:02:51] to be confusing for people because it's just, it's just hard to read.
+[01:02:55] Okay.
+[01:02:56] And so with that, we will continue on to chapter two, part two.

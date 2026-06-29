@@ -1,0 +1,555 @@
+# Picking stocks P3-What makes a strong stock_audio.wav
+# Transcribed: 2026-06-29T21:11:35.268607
+# Duration: 67.1 minutes
+# Model: faster-whisper tiny
+
+[00:00:01] All right, so we're going to go ahead and jump in here with chapter two part three.
+[00:00:06] This is of day trading the basics, of course.
+[00:00:08] And the title of this section is, what makes a strong stock?
+[00:00:14] So we're getting into stock selection and my goal with this chapter chapter three
+[00:00:21] is that you're going to finish this chapter with a really strong understanding of why I've come to trade stocks.
+[00:00:29] Why I choose small cap stocks out of all the stocks available and how on any given day,
+[00:00:35] I figure out which stock to actually trade.
+[00:00:39] One of the things that I want to emphasize is that I want you,
+[00:00:44] especially while you're trading in the simulator to focus on the process, not the profits.
+[00:00:50] Focus on following the same process that the other traders are following every single day,
+[00:00:56] especially those who have been doing this for a long time and who are finding some degree of success.
+[00:01:01] That's what you really want to pay attention to.
+[00:01:03] Because if you're following the exact same process,
+[00:01:06] that to me is laying a really solid foundation that you can build on.
+[00:01:11] Obviously right now in a simulator, you should be trading with smaller share size, right?
+[00:01:16] Because there's no reason to trade 10,000, 20,000 shares of a simulator.
+[00:01:21] It would give you a sort of false sense of confidence to trade with that kind of size.
+[00:01:25] And when you transition from sim to real money, you're not going to just all the sun start with real money with 10,000 share blocks.
+[00:01:32] That would be way too risky.
+[00:01:34] So the right way is to trade in the simulator with small size,
+[00:01:37] following the process that I trade every single day.
+[00:01:41] And as you start to see some success, that's when you begin to increase share size and trade more frequently.
+[00:01:47] So we're going to cover 10 topics in this chapter today or in this section of the chapter.
+[00:01:54] And these are going to help you understand the type of stocks that I trade.
+[00:02:00] And at the end, I'm going to present to you the five pillars of stock selection that I use every single day to determine whether or not I should take a trade.
+[00:02:10] And of course, every day that I'm streaming in the chat room, it is a case study.
+[00:02:14] It's an educational experience.
+[00:02:16] It is classroom in session demonstrating the process that I follow, the process that I teach and the strategies that I teach.
+[00:02:23] So today is another solid day sitting at 14,982 dollars and 14 cents.
+[00:02:30] And it shouldn't surprise you.
+[00:02:32] Once we get through the end of this chapter, why I chose the stocks that I chose.
+[00:02:37] CING is the one that I did the best on.
+[00:02:40] And that right now has 52 million shares of volume.
+[00:02:43] It has a price of $3.91.
+[00:02:46] It's up 111 percent.
+[00:02:48] It's got a float of 500,000 shares relative daily volume.
+[00:02:52] It's 1,465.
+[00:02:55] So we're going to learn a little bit more about all this in just a second.
+[00:02:58] All right. So we're going to start with number one.
+[00:03:01] We are hunters of volatility and managers of risk.
+[00:03:05] That is something that I've said for a long time.
+[00:03:08] We're looking for volatility.
+[00:03:10] Now, I think it goes without saying, but we don't make money buying a stock at $10 in selling it at $10.
+[00:03:16] So there are some stocks that you'll see that, you know,
+[00:03:20] basically I could do red and green just to make it accurate.
+[00:03:24] They basically trade like this.
+[00:03:28] It trade like this.
+[00:03:30] And we say this is a stock that's doing the barcode.
+[00:03:34] Because there's obviously nothing to trade when a stock is going sideways like that.
+[00:03:39] Let me see if I can find a decent example of one today that's giving us that barcode.
+[00:03:45] It's probably going to have to be a large cap stock.
+[00:03:48] Maybe Ford, if you zoom in on it, is going to be doing a bit of a barcode.
+[00:03:53] Certainly a bit of that.
+[00:03:56] You know, you could see it is moving around a little bit, but let's see.
+[00:04:00] Bank of America, it's gotten a little more expensive.
+[00:04:03] So that's got a little bit more range to it.
+[00:04:05] Essentially, you've got to find a stock that is extremely thickly traded and doesn't move at all.
+[00:04:12] And so we won't make money trading those types of stocks.
+[00:04:16] We as active traders profit from markets that are moving.
+[00:04:20] Again, whether it's commodities, options, penny stocks, cryptocurrency,
+[00:04:24] Forex, regular stocks, it doesn't matter, but we need that volatility.
+[00:04:29] So generally speaking, if a stock isn't one of the top percentage gainers in the market,
+[00:04:34] I'm not going to be interested on most days.
+[00:04:37] The leading percentage gainers will be in the range of 50 to 100%.
+[00:04:42] These are the stocks that I like to trade.
+[00:04:45] The reason they're up is typically because of a catalyst event.
+[00:04:49] And again, if we just look at today's trade as an example,
+[00:04:53] CING has news that came out this morning.
+[00:04:56] They've gotten, let's see, what was it?
+[00:04:59] I think it was a patent, sorry CING.
+[00:05:02] They've gotten a patent, which isn't one of my favorite headlines, but anyways,
+[00:05:06] issued European patent for lead asset for the treatment of ADHD.
+[00:05:11] So that was a headline.
+[00:05:13] And that sent this stock from $2 all the way up to $5 and 50 cents a share.
+[00:05:18] That right there is volatility.
+[00:05:20] And within that volatility is opportunity.
+[00:05:25] So let me pull the slides back up here.
+[00:05:27] There we go.
+[00:05:30] Now, I would, for me, my minimum threshold is that a stock has to be up at least 10%.
+[00:05:37] And when I was just recently pulled this report,
+[00:05:41] these are from my trades over approximately nine years of trading.
+[00:05:46] So it's not my entire career, but it's the last nine years or so.
+[00:05:50] And what you can see is that the bulk, the vast majority of my profit right here,
+[00:05:55] is on stocks are up 10%.
+[00:05:58] Now, I can kind of walk you through how I came to discover all of this.
+[00:06:03] But right now, you can see in my metrics,
+[00:06:06] they very clearly paint the picture of the strategy I trade every single day.
+[00:06:10] So 10% is the minimum.
+[00:06:13] If it's not, if a stock is not up at least 10%.
+[00:06:16] I'm not going to be interested in it.
+[00:06:18] So that's the minimum.
+[00:06:20] Now, you can see that there are a couple of exceptions to this.
+[00:06:23] When a stock is down more than 10%.
+[00:06:25] So this would be a slightly different strategy.
+[00:06:28] It's not the strategy I'm going to teach as the primary strategy that I think is sort of best for beginners.
+[00:06:34] This is a little bit more complex stuff here.
+[00:06:36] So I wouldn't worry about that right now.
+[00:06:38] Not where the bulk of my profit comes from anyways.
+[00:06:40] This is where we want to focus.
+[00:06:44] So the way we find these stocks that are moving is, of course, by using stock scanners.
+[00:06:50] Without scanners, we really, I really would be lost.
+[00:06:53] I would have no idea what is moving.
+[00:06:56] And in fact, when I started trading,
+[00:06:58] I didn't have stock scanners initially.
+[00:07:00] And it was really difficult to figure out which stocks I should trade on any given day.
+[00:07:06] So the hunt for volatility begins by understanding what we're even looking for.
+[00:07:12] Now we know already that I'm looking for stocks to up 10%.
+[00:07:18] Okay, so that's the minimum.
+[00:07:20] And the way I discovered that was by spending two years of trial and error trading a lot of different things.
+[00:07:26] And then looking back in hindsight and recognizing that, huh, that's interesting.
+[00:07:31] It seems like my biggest winners are on stocks to up more than 10%.
+[00:07:35] What if I only trade those and maybe that'll help me avoid some of the big losses that I'm taking on stocks that are more range bound?
+[00:07:43] And that was a subtle shift I had to make.
+[00:07:46] But I had to accumulate years of essentially trading data.
+[00:07:50] My own historical data before I was able to make that discovery.
+[00:07:53] Now, you don't have to do that because I've done that heavy lifting for you.
+[00:07:56] So we know that we're looking for stocks are up at least 10% on the day.
+[00:08:01] Okay, so now what we can do is we can tell the stock scanner.
+[00:08:07] Search for every stock in the entire market that's up 10%.
+[00:08:12] Let's just start with that.
+[00:08:13] And in fact, that's what this top gainer scanner is doing.
+[00:08:16] It is searching the entire US stock market for stocks that are up.
+[00:08:21] Now, it's actually, it doesn't cut it off at 10%.
+[00:08:24] There are some that are up only 9%.
+[00:08:27] And that's just the setting that we have.
+[00:08:29] I think that we set the cut off, I think maybe at 5%.
+[00:08:33] And the reason I did that was because occasionally you'll have a stock that has breaking news.
+[00:08:38] And it pops up and it's up 6%, 7%.
+[00:08:42] And if you're really early on it and it did just come out with news, it's probably going to be up 10%.
+[00:08:47] So I was okay with setting the threshold just a little lower.
+[00:08:50] So I could see things starting to come into my sort of sweet spot.
+[00:08:54] But anyways, you could see in the entire market of thousands and thousands of stocks,
+[00:08:58] you know, we maybe have today, I don't know, 10, 20, 30, maybe 40,
+[00:09:05] 5, 50, stocks that are up more than 10%.
+[00:09:09] It's not too many when you think about it.
+[00:09:11] It's really a very small percentage.
+[00:09:13] And so by setting this as our initial filter,
+[00:09:17] we have now taken the market from, I don't know,
+[00:09:21] 8,000 different securities you could trade.
+[00:09:24] And we've narrowed it down to 30.
+[00:09:27] Okay, that's good.
+[00:09:29] We're going to do better.
+[00:09:30] We're going to get it down to about 3 to 5.
+[00:09:32] But this is a good start.
+[00:09:34] Okay.
+[00:09:35] So I'm going to only pull my slides back up here.
+[00:09:38] There we go.
+[00:09:41] Now I'm going to show you how to use the scanners later in the course.
+[00:09:44] And I'm going to walk you through what each of the columns mean and each of the data points.
+[00:09:47] So if you don't already understand how you scanners don't worry,
+[00:09:50] we have a chapter dedicated to teaching you how to use them.
+[00:09:54] Number two, as active traders, we see fear as an opportunity.
+[00:10:00] So what does that mean?
+[00:10:01] Fear in the market takes many forms.
+[00:10:04] Many traders, including myself from time to time,
+[00:10:06] will experience the fear of missing out.
+[00:10:09] Phoma.
+[00:10:10] When we're seeing really big percentage gains.
+[00:10:15] And not just me, but you know, and others.
+[00:10:18] When we're seeing other traders doing really well,
+[00:10:21] sometimes we'll feel like we're missing out.
+[00:10:23] Right.
+[00:10:24] If you see a trader who says, oh, I'm up $75,000 today.
+[00:10:27] And you're red.
+[00:10:28] Or you're only up maybe $100.
+[00:10:30] You might feel a little phoma, a little frustration, a little disappointment.
+[00:10:34] When you see people saying, oh, yeah, I've been holding game stops since five dollars a share.
+[00:10:39] And I'm up 3 million bucks.
+[00:10:41] There's a little bit of phoma.
+[00:10:42] Oh, my gosh.
+[00:10:43] I missed the move.
+[00:10:44] But maybe it's not too late.
+[00:10:45] I'll jump in here.
+[00:10:46] And we saw that, of course, during the GameStop short squeeze.
+[00:10:49] We also saw during the pandemic on stocks like Tesla.
+[00:10:52] And in the 2023, 2024 on stocks like Nvidia,
+[00:10:57] people feel like they're missing out.
+[00:10:59] And so they start buying at higher and higher prices.
+[00:11:03] It's kind of, it's an interesting phenomenon.
+[00:11:05] And it occurs in all financial markets.
+[00:11:08] And this behavior can result in asset bubbles,
+[00:11:11] which are sort of fueled by the fear of missing out and greed.
+[00:11:14] And also it can cause panic crashes when people get scared
+[00:11:18] that they're into high and suddenly they're bailing out.
+[00:11:21] Both of these present opportunities for active traders
+[00:11:25] who are able to manage their emotions and trade proven strategies.
+[00:11:31] Trading is emotional.
+[00:11:34] You're going to have emotions when you have big winners or big losers.
+[00:11:37] So I don't expect you to be emotionless.
+[00:11:41] But the goal is that you get to a place where you can feel the emotion
+[00:11:46] and you can recognize that because I'm feeling this way,
+[00:11:50] angry, fearful, greedy, whatever the case says,
+[00:11:53] I should stop trading.
+[00:11:55] That requires a pretty high level of emotional intelligence
+[00:11:59] and self-awareness.
+[00:12:01] Not everyone has it right now.
+[00:12:03] And I didn't have it when I got started.
+[00:12:05] Most of you will probably be able to build up to a certain level of emotional intelligence.
+[00:12:10] But not everyone has the aptitude.
+[00:12:13] Traitors who are not able to recognize those emotions in themselves
+[00:12:16] and others will generally struggle in trade.
+[00:12:19] Because emotions are so present in the market.
+[00:12:24] So we capitalize on these opportunities.
+[00:12:27] We capitalize on the fear.
+[00:12:28] We capitalize on the greed.
+[00:12:29] In fact, we can capitalize on FOMO.
+[00:12:32] And this is a very fine line that we walk.
+[00:12:35] To capitalize on FOMO without falling victim to it ourselves.
+[00:12:40] So if a stock is exceptionally strong and it's just going higher and higher and higher,
+[00:12:45] think of something like GameStop.
+[00:12:47] Clearly, FOMO and greed are fueling the squeeze.
+[00:12:53] Does that mean you should not trade it?
+[00:12:55] Not necessarily.
+[00:12:57] It's volatile.
+[00:12:58] The volatility is an opportunity.
+[00:13:00] So how do you participate in the move while still staying grounded?
+[00:13:04] How do you capitalize on those emotions and trade the emotions present in the market
+[00:13:09] without succumbing to those emotions yourself?
+[00:13:12] My belief is that if you're following a repeatable process every single day
+[00:13:18] and it's a proven process, that is the ticket.
+[00:13:22] So now you're trading a strategy and the strategy calls for trading these types of stocks,
+[00:13:27] but only in certain areas.
+[00:13:29] You're not going to trade it all day long, necessarily.
+[00:13:32] There'll be certain pockets, certain windows where this trade and the stock is worthy of consideration.
+[00:13:38] And I'll teach you what those areas are.
+[00:13:41] There's technical indicators that I use that help me understand when I should trade, when I shouldn't trade,
+[00:13:45] there's certain chart patterns that also give me those same indicators.
+[00:13:49] And in fact, the better you get it reading charts and performing technical analysis,
+[00:13:54] what you're going to learn is that this truly is the language of the financial markets.
+[00:14:00] And learning the language, just like any other language that you might try to learn,
+[00:14:04] requires you to immerse yourself in the culture and the community of people that are speaking the language.
+[00:14:10] Everyone here speaks this language, which is going to help you certainly a lot is your learning.
+[00:14:16] And one of the other things that you're going to realize is that within these charts are very clear by and sell signals.
+[00:14:24] Your eye may not yet be trained to recognize them, but we're going to work on that.
+[00:14:29] And we're going to get into technical analysis in chapter five and quite a bit of depth.
+[00:14:34] So that's coming soon and I'm looking forward to it because that's going to be a substantial chapter.
+[00:14:40] Ultimately, as traders technical analysis is what we're doing every day.
+[00:14:44] We're analyzing charts and then of course we're analyzing sentiment, which is more of understanding the emotion in the market.
+[00:14:53] So when a stock is showing strength in the market as hot, high in volatility is absolutely to be expected.
+[00:15:00] And something that's also very interesting in hot markets when one stock is hot, a second third and fourth stock will be hot.
+[00:15:07] So it's sort of like, I tend to call it sympathy momentum, where the catalyst for one stock is that another stock in a similar sector or with a similar headline is also doing really well.
+[00:15:22] As other traders will call it themes. So we'll have themes in trading. So during the game stop short squeeze the theme was any stock that was like a legacy big box store that had high short interest was worth watching.
+[00:15:37] Right, so you had bedbathing beyond you had of course AMC game stop you had there are several others.
+[00:15:45] I'm thinking of there were a couple other legacy business models, but anyways, it doesn't matter. So you know that was sort of the theme.
+[00:15:52] But then during the early part of the pandemic, the theme was any companies that we're doing anything related to a COVID vaccine.
+[00:16:00] Right, COVID testing, COVID COVID that was that headline would send a stock up 50%.
+[00:16:07] In the last year, there's been a lot of AI headlines, anything with AI or in video boom that stocks up 25% and then we've had cycles where Chinese stocks are really popular.
+[00:16:17] So if it's Chinese, no matter what it does, that gets extra attention.
+[00:16:21] So we get these themes in the market and this is one of the reasons that I think it's so important to show up every single day because even though there are going to be some days where it's slow and I might say it's not worth my time.
+[00:16:33] If you're an active trader, you can't be above showing up every single day. Now, naturally, if you're still working, you've got other commitments, you're going to show up as much as you're able to.
+[00:16:43] But I don't think it's a good idea to say, oh, I'm only going to show up when the market's hot, and then I'm going to leave entirely when it's cold, because you're going to sort of lose the ability to have your sort of hand on the pulse of what's working right now.
+[00:16:55] What's the theme right now? Because it shifts very quickly and you want to make sure you're really in tune with that.
+[00:17:02] And, oh, here's a great example. This is serious satellite radio. This is the barcode. I knew I had a good example of this. That's the barcode. Of course, we wouldn't want to trade something like this. There's no foam on this stock. There's no greed. There's nothing. I mean, not to be, listen, I like satellite radio. You know, it's fine. I don't have any problem with it, but as a stock, it's not going anywhere. Not any time quickly. It's not a stock that we would consider for day trading.
+[00:17:30] Now, this on the other hand, and you've seen this example, I think already, this is the stock I made $45,000 on in one morning. Now, this is something that we can get interested in.
+[00:17:40] And using some of my technical indicators, I would trade it right in this area here. This, this is a green light zone. This is a red light zone would not trade that.
+[00:17:50] I would trade it again through about here, and then this goes back to the red light. And that's using this indicator down here in conjunction with watching the volume profile and the candlestick patterns.
+[00:18:02] This is a course where emotions start to come out. When a stock goes from 3 to 4 to 5 to 6 to 7, oh my gosh, I'm missing the move. I got a jump in on the next pullback. And I, listen, like I said, to tight rope.
+[00:18:12] Because I get that foam, too, when the market's hot, I'm thinking, I need to size up. I need to be more aggressive. I need to really try to capitalize on this opportunity.
+[00:18:20] And it's not, it's not wrong. You just have to be able to know when it is off the gas, when to slow down, when to cool off.
+[00:18:28] And that's something that we're going to talk a lot about.
+[00:18:32] So home runs versus base hits. This is a concept that I want to touch on because a lot of beginner traders get focused on trying to hit home runs, trying to like double their account.
+[00:18:44] You start with a $3,000 account, you're thinking, I just want to double this account and turn it to 6 grand.
+[00:18:49] And then double the 6 in turn into 12, double the 12 turn into 24, 5 trades later, I'll be at $50,000, but that's not a really good way to think about trading.
+[00:18:58] Because when you swing for home runs, you have a lot of strikeouts. And although there is some glory and certainly some adrenaline that comes with hitting a home run.
+[00:19:07] Realistically, what I have found is that most traders who try to swing for home runs take unnecessary levels of risk on each one of the trades they take that are sort of a swing at a home run.
+[00:19:20] And so they often occur a lot of unnecessary losses. And so what that looks like is, let's see, get my brown pen here. So what it looks like is, they'll have lots of sort of false starts where they take a trade, it's a swing in a miss, a swing in a miss, a swing in a miss, a swing in a miss, finally a home run.
+[00:19:44] Well, now I'm back to flat and a swing in a miss, a swing in a miss, a swing in a miss, another home run and a swing in a miss, a swing in a miss and then maybe another home run, you get a little big green.
+[00:19:53] Now, if you can get your accuracy better and you keep your losses tighter, you can start to move up more, but a lot of home run traders have really big swings in their piano, even if they're net positive, they still have these big swings they'll make $50,000, one week and then they'll lose it half of it the next week.
+[00:20:12] And then it'll make $75,000 and lose $50,000. And for me, I find that type of trading to be very emotional and just, it's very taxid, it's very stressful. What I would prefer and, you know, maybe you're not with me on this, but this is what I would prefer.
+[00:20:28] Rather than have a strategy that has the potential to 200% my account, let's just say, in a year, but I'm going to go through, you know, these swings that are going to be size like, you know, 40% drawdown from, you know, peak to low the pullback, what I would rather have, and this is just me personally, I would rather have a strategy is going to do, you know, 50 to 100% let's just say, but it's focused more on this.
+[00:20:58] Small incremental progress, maybe small draws and then right back up and then small draw and then right back up. So ultimately, I'm never drawing down more than maybe 10% off my all time highs.
+[00:21:14] And I think that is achievable with the momentum strategy that I trade as long as you have the discipline to follow the rules. So for my strategy, the way I've traded it, traded it, gosh, since I've, since I funded the small account challenge in 2017, even when I had my biggest single red day at that point that biggest single red day was a 3% drawdown approximately.
+[00:21:45] So it's like, it's just so negligible in the grand scheme of things and that's really important because that support to me constantly staying in a mindset where I feel really confident.
+[00:21:59] Once you have a drawdown, there's sort of a twofold punishment for the drawdown. On the one hand, you've lost money, whatever it is, 5,000, 10,000, 100,000 doesn't matter, 300,000, whatever it is, you've got the pain of losing the money.
+[00:22:13] But the second issue is that now you have the loss of confidence and it's hard to rebuild that confidence and momentum when you've had a big drawdown.
+[00:22:23] So if you've taken, you know, if you've had a stretch where you made a nice move up and then you've had a big drawdown like this, it takes a long time to get back to hold, right?
+[00:22:34] This could take six weeks, it could take six months, it could take a year longer. And during all of this time, you know, you're trying to sort of recoup and rebuild, you just know that you're sort of in the shadow of this loss.
+[00:22:47] And emotionally for a lot of traders that's really hard to do. Now it's not impossible, you can still do it. And what I the way I think about it, if you're already in the situation, I'll give you a tip.
+[00:22:56] The way I think about it is whatever happened in the past is gone, it's the history.
+[00:23:02] Here and now, if I continue to follow the process that I've been following for the last week for the last two weeks, if I follow that process, if I follow that strategy, then I've got the ticket and all I have to do is stay consistent and stay disciplined.
+[00:23:17] And it doesn't matter what I've lost in the past because now I have a strategy that's producing consistent profits.
+[00:23:25] And all about consistency. And you certainly see it in my trading, it's reflected in the strategy that I have, because one of the other things when you go for a home run is that sometimes usually traders who go for home runs have lower accuracy.
+[00:23:42] And the reason is they don't take profit when they're up 15 cents a share the way I might.
+[00:23:49] I'm taking profit until they're up 50 cents a share or a dollar a share or more. And so the issue with that is, I'm going to have a lot of 15 cent winners.
+[00:24:00] And a home run trader is going to be up 15 cents, they won't take profit that goes down turns into a loser.
+[00:24:06] So there's a lot of trades we might take the same exact trade and for me it's a small winner and for them it's a loser.
+[00:24:11] Actually my accuracy is going to get higher and it is higher. But the downside is that my average winners are also smaller.
+[00:24:19] But what you see in my P&L is that it's very consistent, just very consistent trending up small little red days small pullbacks and I'm recovering usually within one to two days back to all time highs.
+[00:24:31] And that's really important. So I think as a beginner, if you swing for home runs, you're going to risk blowing up your account.
+[00:24:37] I also would just say that there's fewer opportunities for home runs each day. If you're really looking for home runs, you're going to get a lot of strikeouts and the strikeout of course in baseball could just be three strikes throughout doesn't mean you swing at it, but just means you didn't see that home run opportunity.
+[00:24:55] Because if you're focusing on a 15 cent base hit, think about how many 15 cent base at opportunities are each day compared to how many 30% in one candle opportunities are.
+[00:25:07] There's a lot more base hit opportunities. So if this is your focus, you're going to get on base a lot.
+[00:25:13] And that's going to make you a better trader. It's going to give you a lot more experience.
+[00:25:17] Now, number four, the the the right stocks have an imbalance between supply and demand. Now, a home run is when investment vehicle goes 20 30% or more in one day.
+[00:25:32] And I like to trade stocks that have home run potential, which means the stock has a potential to go up 50% 100% or more.
+[00:25:40] But I'm not going to hold for the whole move. All I need to do is catch my little sliver, get in, get out, I've gotten, I've earned my little piece of the pie and that's enough for me.
+[00:25:51] I'll live to trade another day and I can do it again tomorrow.
+[00:25:54] And the better you get it trading, the more you'll go in for another small sliver, another small sliver, another small sliver.
+[00:25:59] And you may get to a point where you say, you know, I've got a cushion on the day. I'm going to take a little more risk on this trade and hold it a little longer.
+[00:26:05] And that's fine, but that's much more advanced from where probably any of you are right now.
+[00:26:10] So in a stock goes up, you know, 20 30% or more in one day, what creates the big move?
+[00:26:15] Ultimately, it's an incredible amount of demand. What creates the demand? We'll talk about that in a second.
+[00:26:21] But you have high demand. And then when that's combined with a limited amount of supply, that's when you get these really explosive moves.
+[00:26:30] So the supply side of this equation is the float. And it's important to remember that we're trading in a closed market.
+[00:26:36] So that means when we buy shares, we're buying from a seller, when we sell shares, we're selling to a buyer.
+[00:26:40] When a company does it's a initial public offering at IPO, they release a fixed number of shares on the open market.
+[00:26:47] Now as we already talked about that number can change, if a company does a stock split, a reverse split or a traditional stock split.
+[00:26:54] It can also change if a company does a share buy back or if a company does what's called a secondary offering where they sell more shares on the open market to raise more money.
+[00:27:03] That's always going to dilute the value of the stock because they're printing more shares.
+[00:27:08] But in any case, the supply side is the float. It's the number of shares available to trade.
+[00:27:14] And it's also worth being aware of the fact that when you have a float, let's say you have a stock that has a one million share flow.
+[00:27:23] Just to keep the numbers easy.
+[00:27:25] It's possible that, you know, a portion of that float 25% is held by insiders and 25% is held by institutions who have bought shares either through the IPO or through a private placement or whatever the case says.
+[00:27:41] And these are often people that are not going to be selling.
+[00:27:44] Well, institutions may, but the inside, I mean, they all could.
+[00:27:48] But usually it has the effect that the actual free float, the free float, which is the actual number of shares that are freely trading every day, it's usually much smaller than whatever the actual float is.
+[00:28:02] So we don't use free float as the number we're looking at because you'd have to go and get your insider and your institutional percentages and sometimes these are not updated really regularly.
+[00:28:14] So we just use the standard float, but it's worth knowing that sometimes you'll have a stock with a one million share float that's a lot more volatile than another stock with a one million share flow.
+[00:28:27] And these can be, these can be two factors that will affect the true supply within the float.
+[00:28:36] I hope that's, I hope that's easy to understand.
+[00:28:41] Okay, so now, so that's the supply side of the equation, back to the demand side.
+[00:28:46] So the demand is typically the result of breaking news.
+[00:28:50] We're going to talk about this in chapter four, the different types of breaking news that can create strong demand.
+[00:28:55] Demand can also be the result of a technical breakout, which we'll talk about more in chapter five.
+[00:29:01] But typically the strongest moves, they tend to be the result of breaking news.
+[00:29:07] The CING today breaking news on the European patent for treatment of ADHD, right?
+[00:29:13] That is a fundamental breaking news headline.
+[00:29:16] And the way it works is that news headline gets released by the company.
+[00:29:20] It hits the PR, the news wire, right?
+[00:29:23] So it hits the, the news feeds, and then these institutional traders, the brokers, the market makers, they use these algorithms that are searching the news feeds in real time.
+[00:29:35] So let's say a stock has a headline that comes out and the headline is, you know, buy out at $15 per share.
+[00:29:46] You know, it's going to happen.
+[00:29:49] The stock is instantly going to go to $15 a share.
+[00:29:52] If it's trading at $7 within one candle, it'll be at 15 instantaneously.
+[00:29:58] And this happens because of the algorithms, moving their orders in response to this news headline.
+[00:30:04] So it's really amazing how integrated these algorithms are with reading news and moving the price a stock in accordance with the headline they see.
+[00:30:13] Now as you can imagine, there have been instances where PR releases have been hacked.
+[00:30:21] And so false releases have been put out.
+[00:30:24] In fact, if you were called during Elon Musk's early takeover of Twitter, there was a tweet by, I guess, a thought to be verified pharmaceutical company, but it was a fake.
+[00:30:39] And they said, you know, they're going to make their diabetes drug free or something like that.
+[00:30:43] And the stock lost, you know, hundreds of millions of dollars in market cap as it dropped immediately on this news.
+[00:30:50] But, you know, that ended up not being real.
+[00:30:53] We've seen that with other companies too, where there's a headline that goes out.
+[00:30:56] But it's, it's very rare and of course it's, it is illegal.
+[00:31:00] So it doesn't happen very often, but the algos can get tricked.
+[00:31:06] So usually what I do is when a headline comes out, I look for that initial algos spike.
+[00:31:13] We call it an algos spike.
+[00:31:14] It's when the algorithm sort of spikes the price up with those initial bi orders.
+[00:31:18] So if we look even at the 10 second chart, very fast timeframe on this stock, pretty much this was the algos spike right here.
+[00:31:26] And it was pretty limited. And on stocks that have that are smaller market caps, there's going to be less algorithms that are focusing on trading the news on these types of stocks.
+[00:31:37] But the market makers do have to make the market.
+[00:31:40] We're going to talk about market makers a bit more as we get into the course.
+[00:31:44] But the market makers are the traders, the actual firms that are sitting on both the bid and the offer.
+[00:31:53] Now to give you a little bit of history on this, and if you recall, there's this book, right here, dark pools by Scott Patterson.
+[00:32:03] This tells the story of the rise of machine traders in the ringing in the US stock market.
+[00:32:07] It's a good book. It's worth listening to. It's entertaining. It's, it's not brand new. It's older book.
+[00:32:12] But anyways, he talks about in the, at the very beginning of digital, digitalization of an online trading.
+[00:32:23] You had the market makers, the NASDAQ market makers in the New York Stock Exchange specialist, and they were trading on the floor, right?
+[00:32:31] So if you wanted to buy and sell shares, you had to go to the floor, and then there was a flash crash in 1987.
+[00:32:38] The market tanks, and the problem was people were calling, hello, hello, I want to sell or hey, I want to buy market makers and specialists.
+[00:32:47] They weren't answering the phone. So regulators say, you know what, there needs to be a way that investors can buy and sell without having to go through you.
+[00:32:57] And so they created a, the so's system, and I can't remember what the acronym stands for, just off the top of my head.
+[00:33:09] So electronic, maybe someone in chat, a small order execution system, small order execution system, and so this is from this book right here.
+[00:33:23] So the so's, back to the video, a small execution system required market makers to post a bid of what they're willing to buy a stock for, and an offer of what they're willing to sell a stock for on this electronic system up to 100 shares.
+[00:33:43] I believe it was 100 shares, and that order had to be honored.
+[00:33:47] So this was the very beginning of these market makers having to go in in the computer and people pop up update the actual order as the price of the stock was moving.
+[00:33:57] And so we eventually got to a point where they automated the movement and updated these prices, so it maintained an alignment with the current trading price.
+[00:34:09] So what would happen is that they left an order there and it got stale because the price moved way higher way lower.
+[00:34:15] They still had to honor the price that they were displaying.
+[00:34:19] Today, market makers really take the form of electronic trading venues, these are institutional traders, and they're sitting on both the bid and the ask they're engaging an arbitrage.
+[00:34:31] You want to sell shares, they'll buy him from you. Someone wants to buy shares, they're going to go resell your shares to that person and they'll make a profit on the spread.
+[00:34:39] All right, we already talked about spreads in the first, I think it was chapter one of day trading the basics.
+[00:34:44] So they profit from the spread. Now the profit got a little smaller, a lot smaller with decimalization when that occurred.
+[00:34:51] So now all of this is really automated to high frequency trading algorithms that sort of move the price just based on all of this data that they're consuming.
+[00:35:01] Okay, so the fact, however, is that the goal of a market makers to be flat at the end of each day and so some stocks will have a lot more market makers that are trading the stock than others.
+[00:35:13] So Ford is a much more competitive market.
+[00:35:16] Now if I bought Ford right here on the bid, if I put an order to buy on the bid and I did 20,000 shares.
+[00:35:23] And I route that order through NASDAQ NASDAQ will actually pay me for placing that order on the bid.
+[00:35:31] It's called a rebate and they pay this rebate to encourage you to use their exchange.
+[00:35:37] But it's not when you do a market order and it's not when you buy and you're instantly getting filled.
+[00:35:43] It's only when you place an order and it has to sit and wait.
+[00:35:46] So just as an example, I'm going to switch to my, my margin account here just for a second.
+[00:35:51] So I'm going to show you what this looks like. So we'll move this down there. I'll move this up here. Okay, so Ford.
+[00:36:00] So right now I'm going to do, I'm not going to do 20,000 shares. I'm going to do one share. I'm going to put my order at 1043.
+[00:36:06] So see my orders right there on NASDAQ at 1043 and actually have to cancel it.
+[00:36:11] It can't be a hidden order. So you have to show the size that you want. So you place your order right there and I'm going to sit there.
+[00:36:17] My order is in line. I'm going to sit there and wait. But when I get filled the way I got a rebate is it's let's say 10,000 shares times 0.002.
+[00:36:29] So I would make $20. I would earn $20 if that order fills and that order did just fill. So since I filled one share, I earned.
+[00:36:39] Was it 20 cents? $2 for a thousand. No, I think it's two cents on one share. So anyways, I earned two cents. I'm rolling deep now.
+[00:36:50] So I put the order up at 44. I resell it and if that order sits there in weights, I have to sit and I have to wait.
+[00:36:58] But if it breaks 1044 and my order gets filled, I'll make another $20 selling it again on the ask.
+[00:37:06] So you can see how there's an incentive to be buying and selling buying and selling all day long. Now if you're thinking, oh, I should do this too.
+[00:37:15] Think again, it's not going to work for 99% of retail traders for a number of reasons. The first is that retail trading brokers don't give you that rebate commission free brokers don't pass that rebate on to you.
+[00:37:28] So that doesn't even work. If you use an institutional trading firm like the one that I'm using, you could earn the rebate, but remember, what's the risk?
+[00:37:37] Now I just I own this stock at 1043. So if this suddenly drops to 1034, I'm going to lose 10 cents a share 9 cents a share and what was the most I stood to gain 20 bucks.
+[00:37:52] It's not really worth it. Now, of course, there are stocks like Ford that trade in such a compressed range that there will be a lot of competition for people trying to make their 20 dollars.
+[00:38:04] And these high frequency trading algorithms are trading millions of shares a day.
+[00:38:09] So 10,000 shares is 20 bucks. 100,000 shares is 200 bucks. A million shares is $2,000. 10 million shares is $20,000.
+[00:38:16] So they're doing 2015, some of these firms do $15,000 a day or more on payment on not payment foreflow, on the Maker Take or Feast structure.
+[00:38:25] So they're using algorithms to buy and sell buy and sell across the bid and across the offer.
+[00:38:32] I hope I'm not losing you guys here. I didn't really need to get into this level of detail this early on. Usually I cover this.
+[00:38:39] I know we'll cover this more in the strategies in scaling portion of the course, but anyway, so so that something that result is that if we go back here.
+[00:38:50] So my order's going to sit here and you know, maybe it'll fill maybe it won't. I have to wait for the price to go up and my order's going to be kind of at the the back of the queue on this particular stock.
+[00:39:02] But when we're talking about the Algos spike stocks that are more thinly traded are going to have fewer market makers competing to make that 20 dollars on every 10,000 shares.
+[00:39:14] Because when you have a stock like GNLN, and you've got a 14 cents spread, the risk is just too high.
+[00:39:22] The, the, the tiny amount you would make on the shares and maybe potentially on the spread doesn't outweigh the downside risk.
+[00:39:30] So that's a stock that wouldn't have a lot of trading activity, WINT doesn't have a lot of trading activity. There's not a lot of market makers making the market for it.
+[00:39:38] IVP, same thing, not a lot of market makers are making the market for it. And that means in a way the stock is going to be a bit less competitive to trade for retail trader.
+[00:39:48] And it's also probably going to be, it's an indicator that the stock is going to be more volatile.
+[00:39:52] Now you could see I've been sitting here for quite a while. My order hasn't filled. It's just been sitting at 44 and now it's back to 42, right? So now the price has gone back down to 42.
+[00:40:02] So I'm just going to sell it here at 42 and take the, I guess, more or less, break even trade. Oh, actually that's interesting. Well, probably because it's just one share.
+[00:40:12] It filled at 43, which is sort of generous, but anyways, it's fine. It's one share. So break even trade, but you get the idea.
+[00:40:21] All right. So what I look for is that first Algo spike and then I look to see if retail traders jump on.
+[00:40:29] So, of course, the way I'm finding these stocks is by using the scanners.
+[00:40:33] The stock is going to hit the scanner as soon as it starts popping up because it's up 10%.
+[00:40:39] It's up 10% from the Algo spike. Now it hits the scanner. I'm looking at it and I'm going to begin to review the five pillars that we're going to talk about for stock selection.
+[00:40:47] And I'll share with you at the end of this chapter. So, um, sort of fine, strong setups. As we get into the advanced classes of strategies in scaling, I will be describing in detail the exact requirements for finding the strong setups, like exactly entry indicators where I'm buying where I'm selling.
+[00:41:05] These are all very depending on the strategy that we're trading at that moment, but the common characteristic will always be an imbalance between supply and demand fueled by the emotions of traders.
+[00:41:15] So, let's talk for a second about retail traders versus institutional traders. We can continue on this conversation.
+[00:41:21] Institutional traders are licensed by the SEC or Fynra. They're licensed by regulators. They're, it's a regulated position.
+[00:41:31] They work for banks, hedge funds, pension funds, and institutional traders will take positions based on orders from managers.
+[00:41:39] So, let's say, for instance, you have an investment advisor, you know, Edward Jones or whoever it is.
+[00:41:45] And you say, hey Edward Jones, I want you to buy 10,000 shares of Apple. The person who's actually going to buy that is going to be technically an institutional trader who is a licensed trader.
+[00:41:57] They would have their series seven or series 63 license. It allows them to trade other people's money. And, of course, they're underneath the umbrella of the firm that they work for.
+[00:42:07] So, those institutional traders, when they're given an order to take a position, you know, they'll just go take a position. They'll buy the position and they'll try to accumulate at the best price that they can.
+[00:42:19] So, usually, that's going to be near the volume weighted average price. The volume weighted average price is the equilibrium price for a stock on that particular day.
+[00:42:29] You're going to learn more about VWAP, volume weighted average price. It's the indicator that I use later on in this course.
+[00:42:35] But what it essentially means is that when stocks pull back to that equilibrium price, there's generally a good amount of buying support at that level.
+[00:42:45] Again, this is going to be more prevalent on large cap stocks like Apple and Facebook, whatever Google, than on a small cap stock.
+[00:42:52] Because on a small cap stock, you're not going to have a lot of Edward Jones investment advisors taking positions in the middle of day on a stock up 2300%.
+[00:43:00] So, this again kind of comes back to the concept that there are, there's sort of, everyone has their, their niche in the market.
+[00:43:09] And you've got retail traders, and then you've got institutional traders here.
+[00:43:16] And the types of stocks that we're trading are very different. These are going to be mid and large caps.
+[00:43:23] And also some of the, you know, the Fang stocks, Facebook, Apple, Amazon, Netflix and Google. You know, these really, you know, Nvidia, these really big big companies.
+[00:43:34] And then you've got retail traders who really don't have an edge trying to trade these.
+[00:43:39] One of the reasons is, you might pull up one of the Fang stocks and you're like, oh, okay, this looks interesting. I like it at this particular price. I think I'm going to get in here.
+[00:43:47] And then next thing you know, you know, Warren Buffett or Bill Akman come and dump 10 million shares on the open market, right?
+[00:43:53] And they're allowed to do that whenever they want, but that's going to completely ruin that pattern that you were trying to day trade.
+[00:43:58] So trying to day trade, these vehicles that are really primarily being used for long term investing, you're going to get chopped up.
+[00:44:05] You're going to get frustrated and the pad, they will not respect patterns because when these big institutional traders are getting in and out, they're not reading the same financial language that you and I are using.
+[00:44:16] They're looking at the fundamentals, they're taking direct orders from their boss or from a client that they have.
+[00:44:22] And so the order flow that's going through is going to be much more erratic and harder to read and harder predict to you're not going to have an edge.
+[00:44:31] Where do we have an edge as retail traders? We have an edge trading stocks that are experiencing high volatility and have high above average volume do typically to news.
+[00:44:54] This is where we're going to find our edge right in here so the game stop type stocks obviously high volume high average volume there was a catalyst right stocks that have a reason to make a move.
+[00:45:08] The institutional traders while maybe if this stock was a mid or large cap they would be trading it but if it's a small cap even if it's up a hundred percent it's not on their radar.
+[00:45:19] How many clients do they have that are investing in small cap companies for the long haul not many right so this sort of area that I trade, which is dominated by retail traders is kind of a little protected pocket away from some of the challenges that you would face.
+[00:45:37] If you were trying to trade these larger markets now it's not to say that there aren't some institutional traders that are involved in small caps.
+[00:45:46] The extent that they are involved is around institutional private banks doing underwriting for offerings helping these companies sell more shares doing these private placements.
+[00:46:03] And so there is definitely a trend that we'll talk about and when we get into fundamental analysis of some of these stocks being used by these kind of they're not they're not big institutions but they're you know these sort of smaller institutions in a way that that can sometimes feel a bit I don't know what the right word is but a bit unfair to retail traders like you and I.
+[00:46:30] But there's ways to detect when there's a higher likelihood that that's going to happen and we'll talk about that in a little bit.
+[00:46:36] So you have a group of institutional traders who work for these investment banks and they're buying and selling some hedge funds and some investment banks have actual trading desks where they have their own proprietary trading these are traders that are paid to trade the firms money and to make a money in the market not just trading for clients but actually trading the firms money.
+[00:46:55] Then you have institutions that specifically are engaging in high frequency trading they're hiring these incredible computer mathematician people to create these algorithms to manage them to change them to build them and everything else.
+[00:47:08] You have institutions that are focusing specifically on options trading they just do the options market you have institutions that just do the futures market just do currency markets.
+[00:47:18] You have any type of specialty you could imagine they have but the the institutional traders are dominating on the biggest markets because that's where there's the most opportunity for profit and the small cap markets and certainly the penny stock markets are are really not experiencing that level of institutional interest.
+[00:47:41] So let's talk about the importance of this concept high relative volume volume is the number of shares traded today relative volume is the number of shares traded today compared to what's normal for that stock this is very interesting.
+[00:48:01] So every stock if any stock you look at is going to have average volume over the last X number of days and it doesn't really matter if you're using 14 days or using 30 days.
+[00:48:15] Your average volume over the last period time as long as you're consistent with what you use.
+[00:48:21] You're going to see you know one stock is trading with average volume of 100,000 shares a day another stock's trading 10 million shares a day and so if the stock that trades 100,000 shares a day of average daily volume.
+[00:48:34] Tomorrow trades 1 million shares the ratio of relative volume is 10 it's 10 times higher than average this one we need to do 100 million shares to hit that 10 times ratio.
+[00:48:47] So it's not impossible but it's going to be harder and so if we look at the stock that I traded today interestingly this is a stock that had relative volume ratio right now it's 1113 and it will change throughout the day so it's 1113 times higher than average today right now it's got 56 million shares of volume and yesterday the stock traded 100,000 shares.
+[00:49:17] Holy smokes talk about an incredible imbalance between supply and demand that's occurred today out of nowhere it's been trading 100 to 100,000 shares of volume a day and then all of a sudden 56 million shares.
+[00:49:31] What creates that volume where's that come from it wouldn't be here for weren't for the news I mean again I'll say there are instances of technical breakouts there are some instances where a stock will go up quite a lot on no news and that's certain point.
+[00:49:45] We don't know if it's up because there's just someone out there that initially wanted to take a big position or if someone was you know short and was getting squeezed out or what the initial catalyst was but one something is moving I'm interested.
+[00:49:58] something that you'll learn about me is that I don't trade stocks that aren't moving so if a stock's not already up 10% I'm not going to be interested in it I need to see it moving and then I'm jumping on the momentum this is a very important.
+[00:50:15] You don't just look at a stock that's got zero volume and is doing absolutely nothing and say I think I'm just going to go ahead and buy this there's no reason to buy it there's not going to be a pattern I'd have to these are all on the high day moment scanner so they're not going to be great examples right now some of them may have volume but if a stock popped up and had zero volume.
+[00:50:35] It's not a 10% there's no reason to trade it and now there are people out there you know who are swing traders and who are buying to hold for several days who might have a stock that they've been watching for a while.
+[00:50:49] Let's say it's ATLX and then they'll say you know what I like this daily chart you know it's 850 down here and I think it's going to turn around I'm going to buy right here at 938 and maybe they take a position right there maybe it's a big position maybe it's even big enough that the stock pops up 1520 cents and let's say that person is also sends a text an email to 100,000 people and said hey I just bought the stock I like it for the move higher.
+[00:51:18] Then you're going to have more people that start to buy it and next thing you know the stock's up to 1050 to 1075 to 11 whatever it is and as long as that person is being transparent they're saying where they got in and they're not see no they didn't secretly accumulate a position beforehand they're just saying this is where I'm in at.
+[00:51:35] Then that's fine and we see that in the market all the time there's a lot of you know Jim Kramer a lot of other people that will put out those types of alerts so that can in some cases be a catalyst where the stock will start to move up and then just buy the very fact that now it's up 1520% other people are paying attention to it they're like why is the stock moving higher is maybe there is something here that's worth considering.
+[00:51:56] So there are some instances where we'll see a stock that moves and it's not totally clear what the catalyst is but if the stock is moving it's up and it's got that high relative volume then I'm interested the high relative volume is very important so instead of looking at total volume.
+[00:52:16] I like to look at the relative volume ratio how much higher is the volume today compared to what's average because that kind of tells me and helps me set the expectation of whether or not the stock is going to do something today that's above average.
+[00:52:29] To do something above average you need above average volume for that stock not for the total market but for that stock.
+[00:52:37] So for a stock to have five times 10 times 20 times relative volume it needs to have news so now this is an interesting metric this these are these are from my metrics these are on these are a little bit older I could actually grab some more updated metrics for you here.
+[00:52:53] So let's go in here we'll go to we'll clear that out yeah so we'll go to detail we'll go to price and volume so this is a different one I got to go to instrument I think so let's see okay so this is going to show.
+[00:53:14] This has a couple of interesting metrics here so this one is a performance by instrument gap so stock is gapping up I do better gapping up means it's opening higher today than it closed the previous day that's because of news overnight performance by instrument movement 10% that makes sense performance by the prior day relative volume and then performance by the relative volume over the last 50 days.
+[00:53:40] Look at this is very clear this is where I make money when the stock has 500 times higher volume than the 50 day average which we also just say is 5x 500 times 5x so it's 5x higher than the average that's where I make the most money now this right here is showing performance by prior day relative volume.
+[00:54:03] So what do you think this is about when the prior day relative volume it's 5x higher I do really well but I also do well when I'm doing 300 or 200 times higher than prior day or even when it's a little lower than prior day how would that work let me show you a good example.
+[00:54:22] So GNLN is the stock that we were trading yesterday and on Monday so I traded it on Monday had a good day it goes up 24,000 I traded it yesterday and made 10,000 or about 8,000 on it 10,000 on the day yesterday still had five times relative volume versus the 50 day average very high volume but.
+[00:54:48] It was and actually technically this was higher than the previous day but but it was it was lower than this day here so literally you know let's just let's just pretend I took the trade on this day here so what you would see is the stock was still five times higher than average but it was lower than the previous day and that will happen when you have a continuation set up.
+[00:55:10] So CRV this is a stock that made a move over several days and I kept trading it on the move up but the days progressively had sort of less volume than the day before but still five times higher than the 50 day average.
+[00:55:23] So usually it's the first day that gets the biggest volume and then the volume kind of starts to decline a little bit as traders maybe start to feel like all right you know I've.
+[00:55:34] I've traded this I don't know if I want to get in this high and so you kind of it kind of fades out so yeah so the metrics there are that I do the best on stocks that have.
+[00:55:47] Five times higher volume than the 50 day average so let's see we can grab a little screenshot of this so that's right there that's what we want to focus on okay so now.
+[00:56:01] Number seven is a former runner status and herd mentality and I'm just going to delete that and pop that in there so it's a more updated slide for you guys.
+[00:56:11] So those of you that print the PDFs all right so number seven herd mentality and former runner status stocks such as game stop are very susceptible to breaking news giving it a bigger than expected amount of volume and attention because the stock is known for making big moves.
+[00:56:33] Longer you trade the bed you'll get it recognizing familiar momentum stocks we often call them former most stocks or former runners it's a stock in the past one up 200 300% or did something really exciting now today it's got another fresh headline.
+[00:56:47] Usually the dynamics of the stock are similar the float maybe the same right so if it's been trading kind of on light volume for the last few months and then all of a sudden comes back it can come back with a big squeeze.
+[00:56:59] And this is another reason why it's helpful to be trading every single day because you start to build that internal library of these are momentum stocks.
+[00:57:10] So you sort of can take to approach as one is trading with or trading against the herd the herd so speak is the collective community of other traders out there.
+[00:57:20] I'm a trend trader which means I'm trading in the same direction as the collective herd of traders I find it easier to trade with the trend and with the herd so to speak then to try to trade against them now you've got people like.
+[00:57:32] You know Michael Burrie the big short who was shorting the housing market when everyone was still buying and you know he was right but he's also been someone who calls for a market crash like at like.
+[00:57:45] At least twice a year so he did get one good one you know but he's also gotten a lot wrong he he also was an early investor so long side and game stop I'm not criticizing him but.
+[00:57:57] I find it a lot easier to trade with the trend as long as you're managing your risk and you know when to get out most of the people trading the housing market we're not day trading it they were all bought in fully invested on leverage and just thought.
+[00:58:11] It's going to the moon and it's never turning around which is obviously a asset bubble.
+[00:58:16] So there are times when the herd is wrong and a stock will make a surprise reversal and usually those surprise reverses can be pretty dramatic because the herd didn't expect it they didn't see it coming.
+[00:58:25] But even in spite of that I still find that I do better trading with the trend and that's one of the reasons that.
+[00:58:31] I think on the one hand some people think trading can be very isolating you know you're maybe sitting alone in your little office wherever you have a setup.
+[00:58:39] But on the other hand it's very helpful to be part of a trading community so you can understand what other people are thinking and like it.
+[00:58:46] Sometimes I'll say hey I'm looking at the stock and people say I don't think so that doesn't look so great.
+[00:58:52] You know or other times someone will say I like this I like this and I see all these people saying they like it and I'm like okay maybe I should take this more seriously or you know pay pay more attention to it because clearly people are talking about it.
+[00:59:03] So I think it's helpful to be part of a community just to kind of get take the temperature of what other people are thinking about the market.
+[00:59:10] Great is technical analysis technical analysis is critical you have to do your technical analysis and that means you have to be able to understand what a strong daily chart and a strong interday chart look like.
+[00:59:21] This is a critical component to the stock selection process and deciding whether or not a stock is truly strong.
+[00:59:28] Of course we're going to discuss this extensively in chapter five and that's when I'll share with you what a strong daily chart looks like and what strong interday charts look like.
+[00:59:39] Sign the stock has to be obvious it has to be obvious to you it has to be obvious to all the other traders out there.
+[00:59:46] I do the best when I'm trading one of the top three leading percentage gainers in the market and so I'll I'll give you a trading plan.
+[00:59:53] That's going to be coming at the beginning of chapter one of strategies in scaling it'll be a trading plan that I want you to be following while you're going through the rest of the course and trading the simulator.
+[01:00:04] And it's going to involve trading the one of the top five leading percentage gainers each day these are the stocks are obvious and nearly all active traders will be watching them.
+[01:00:13] It's important to recognize that.
+[01:00:15] There's a real incentive that brokers have to encourage their clients to trade every single day all the brokers that engage in payment for order flow they make money the more you trade.
+[01:00:26] So when there's a stock that's up 50% 75% 100% what are they going to do they're going to fan the flames a little bit right they want to tell people hey look at the stock look at the stock they'll send out newsletter so send out watch list they'll send out scanners and they're telling people these are the top five biggest percentage gainers in the market today they want you to trade and so these stocks are going to get a lot more.
+[01:00:47] For airtime so to speak they're going to get into front of a lot more eyes and ultimately that means there's going to be more people trading them more people trading that means more volatility more volume more liquidity and that all is good for active trading.
+[01:01:01] So if the stock is not obvious it's going to lack relative volume it's going to lack total volume it's going to perform poorly so sometimes you might see someone call something out and it's got no volume it's not even the right float and it's just not even worth considering.
+[01:01:15] Number 10 is price for me a strong stock really shouldn't be 200 dollars a share right if you have.
+[01:01:24] A stock you have two stocks with the same headline one is 200 dollars and the other is to the cheaper stock will almost always get more attention from retail traders and it's going to have a bigger percentage gain.
+[01:01:34] It's easier for a two dollar stock to go up a hundred percent than a two hundred dollar stock so it's going to be at the top of the scans and you know all of a sudden that's going to create.
+[01:01:43] More attention for it so that's that's what we have to be paying attention to the cheaper stocks under 20 for sure now there will be times we've got a game stop or something else that's moving higher.
+[01:01:55] But those are the exception not the norm and we'll get my metrics and they reaffirm that the place where I'm doing the best is trading stocks generally speaking between let's see it's been well but under to under 20 but right here this is the sweet spot so between two and 20 a little bit above but you know 90% of the profit are within that range so that's the place to focus so these are the five pillars of stock selection number one is price.
+[01:02:25] So now we actually know what to tell the scanners to look for look for stocks between two and 20 or if you don't mind trading lower price stocks just say look for stocks under 10 or under 20 but this is the sweet spot.
+[01:02:39] Number two percentage change today look for stocks are up at least 10% versus yesterday's clothes these the stocks are again experiencing height and volatility there's typically a catalyst.
+[01:02:50] And when I run this scanner I'm going to sort by the leading percentage gainer so if there's one that's up 10% there's another it's up 90% the one that's up 90% we at the top of the scan.
+[01:03:01] Number three the stocks should have five times relative volume today at least it may have a hundred times or a thousand times it has to be at least five.
+[01:03:09] Number four it should have a catalyst a catalyst is type of news event that's driving the momentum we're going to talk about that in chapter four.
+[01:03:16] Number five I typically see much bigger gains on stocks with floats of under 20 million shares compared to over the lower the float the lower the supply and the greater the imbalance between supply and demand.
+[01:03:27] So now we put all of that all of those parameters into our scanner and we're starting to search the market for the type of stocks that are really good candidates from momentum.
+[01:03:37] So look at this these are our top gapers today and this is actually a scan that's not even adding the filters.
+[01:03:43] All we're looking right here are stocks up more than 10%.
+[01:03:46] This is willing to show me any float we've got a hundred twenty six million share float and twenty eight dollar stock.
+[01:03:52] My view on this and the reason I keep this scanner unfiltered is because I want to make sure I see the market as it truly is.
+[01:04:01] If I start to filter this and I take off you know the ones that are higher floats I might have a distorted view of the actual top leading percentage gainers each day.
+[01:04:11] So for this scan I leave it open.
+[01:04:14] But what you'll see is that almost always the top leading percentage gainers are going to fall within the five pillars that I've already shared with you.
+[01:04:20] Now this scanner here is going to have more much tighter filters.
+[01:04:25] There are some scans here that are for medium float for traders that like it they would that was requested so I built it out.
+[01:04:31] But most of these scans here are going to be lower float stocks these are all lower float stocks low float former Momo squeeze alert up 10% etc etc.
+[01:04:39] So you can go in here and you can of course add your you know well this I don't want to we'll talk about that more when we get to.
+[01:04:47] The scan the chapter on how to use stocks ganners, but now this is what we this is sort of our starting point these five pillars of stock selection.
+[01:04:56] And I'll tell you when I start day trading.
+[01:04:58] I didn't know how to find stocks I didn't know the first place to look which is why I was googling.
+[01:05:03] You know penny stocks to buy and if you google something like that all of the the sponsored posts are going to be these news letters that want to take your email.
+[01:05:13] And then they're going to start emailing you penny stocks to buy penny stocks to buy penny stocks to buy right and next thing you know you're getting caught in trading OTC stocks.
+[01:05:23] Or you're looking at these you know message boards Yahoo finance I mean the older days people just didn't have a better way of finding stocks to trade but today it's so much easier.
+[01:05:34] These scanners find the stocks and put them right in front of you.
+[01:05:38] Now what you have to do is be able to weed out the ones that are an alert on the scan but not really worth trading based on the analysis of chapter four fundamental analysis and chapter five technical analysis.
+[01:05:51] And then we get into the actual execution of the trade using level two time and sales order entry and again this whole class day trading the basics is about building the foundation.
+[01:06:02] Everything we're talking about we're going to cover and even more depth during day trading strategies and scaling my full length class but we're covering these concepts you understand the topic.
+[01:06:12] So now you understand of course an intro to momentum trading you understand why I choose the type of stocks I choose why I trade them and you understand.
+[01:06:22] Sorry, last time I thought there what do you understand now now I'm I'm all turned around and you understand what we were just talking about of course with.
+[01:06:32] High relative volume and using stocks canors right so so we're building on all of these concepts and we're going to keep expanding on them it's going to get bigger and bigger and bigger until you've got a solid foundation.
+[01:06:45] So with that why don't we take a five minute break I'm going to grab a drink and then I will come back and we will continue on with the next chapter chapter three chapter three is on opening and account all right we'll jump into that in just a moment.

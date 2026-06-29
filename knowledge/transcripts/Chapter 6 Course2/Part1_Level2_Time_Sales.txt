@@ -1,0 +1,1688 @@
+# Part 1 Level 2 and Time and Sales.mp4
+# Transcribed: 2026-06-29T21:34:17.414500
+# Duration: 75.3 minutes
+# Model: faster-whisper tiny
+
+[00:00:00] Welcome to Chapter 6 in this chapter. I'm going to teach you how to use Level 2,
+[00:00:05] how to read, market depth, how to use the time and sales window, which means
+[00:00:10] how to read the tape, and how to execute your orders using hot keys and hot buttons.
+[00:00:15] Here in Part 1, we're going to do a deep dive into Level 2 and the time and sales window.
+[00:00:21] Now, during day trading the basics, I already introduced these two concepts to you,
+[00:00:25] a Level 2 and time and sales, so they shouldn't be completely foreign.
+[00:00:29] Here we will do a little bit of a refresher of what you've already learned,
+[00:00:32] and then we're going to take it a step further.
+[00:00:34] So, what I can tell you is that I would not be able to trade my strategy
+[00:00:39] if it were not for using Level 2 market data. It really is that important.
+[00:00:44] I know there are some traders out there that can trade without Level 2 data,
+[00:00:48] and I would consider them not to be day traders.
+[00:00:50] Swing traders may be long-term, long-term day traders, perhaps.
+[00:00:54] Someone who's buying and or buying a position and holding it for hours.
+[00:00:58] In that case, the sort of momentary subtle cues that we see on the Level 2
+[00:01:04] carry less significance.
+[00:01:06] But when you're trading very quickly, you need that depth of market.
+[00:01:10] I'm going to give you an example.
+[00:01:12] Let's say, for instance, that we have a chart that we've pulled up that
+[00:01:16] is forming our traditional pullback pattern.
+[00:01:19] This pattern that we talked about during Chapter 5 that we like so much.
+[00:01:22] So, we have this nice pattern forming right here.
+[00:01:25] We have a little pullback, a little dip right here.
+[00:01:28] And let's just say, for the sake of argument,
+[00:01:31] that the price of the top of this candle is $2.40.
+[00:01:37] $2.40.
+[00:01:39] And the low of this candle is $2.30.
+[00:01:43] So, what we know is that we're waiting for potentially the first candle to make
+[00:01:47] you high.
+[00:01:48] Now, though, it's possible that this next candle goes lower.
+[00:01:52] And therefore, the trade is not initiated.
+[00:01:55] It's also possible that this next candle ends up going green.
+[00:02:00] It opens.
+[00:02:01] It squeezes, well, maybe.
+[00:02:03] Yeah, we're just going to go all the way up.
+[00:02:05] It squeezes up right here.
+[00:02:06] So, it's a nice big green candle.
+[00:02:08] And our entry would be at exactly $2.40.
+[00:02:11] But what it, thanks to using Level 2 market data,
+[00:02:16] we observed that at $2.40, there was a $100,000 share seller.
+[00:02:23] Now, the chart isn't going to display that seller.
+[00:02:26] The chart looks great.
+[00:02:27] The stock meets all five pillars, stock selection,
+[00:02:30] the daily charts, no problem.
+[00:02:32] Everything is good.
+[00:02:33] Except, there's some person out there,
+[00:02:36] with a $1,000 share seller order at $2.40.
+[00:02:39] Now, if you weren't looking at the Level 2, what would you do?
+[00:02:43] Well, I suppose you would be looking just at the candlestick chart,
+[00:02:46] and as soon as this came up to $2.40,
+[00:02:48] and you saw that green candle,
+[00:02:50] you would probably press the buy button.
+[00:02:52] And what would probably happen is the stock would be unable
+[00:02:55] to break through the seller,
+[00:02:57] and it would promptly drop back down.
+[00:02:59] And everyone else who bought right here would end up
+[00:03:02] selling and bailing out.
+[00:03:03] And short sellers would also take positions
+[00:03:05] because they would recognize this big order is bearish.
+[00:03:08] And so then this ends up dropping and failing,
+[00:03:11] and failing, and you take a loss.
+[00:03:13] That loss could have been avoided
+[00:03:15] if you were subscribing to Level 2 market data.
+[00:03:19] Now, we'll never have as much access to data
+[00:03:22] as institutional market makers, or these big hedge funds.
+[00:03:26] But there are some levels of data
+[00:03:28] that we do have access to,
+[00:03:30] and it will give us an edge.
+[00:03:33] So for that reason,
+[00:03:34] trading without Level 2 would be like,
+[00:03:37] I don't know what to say,
+[00:03:38] maybe like driving with your eyes closed.
+[00:03:40] But it would be darn near close.
+[00:03:42] It would be like driving looking just in the rear view mirror,
+[00:03:45] because remember candlestick charts are historical.
+[00:03:47] So yes, the historical, everything that's happened
+[00:03:50] gives us insight into what might happen,
+[00:03:53] but then there are some very critical elements
+[00:03:57] that the time and sales at the Level 2 specifically
+[00:03:59] are showing us that if you're not looking at it,
+[00:04:02] it feels like you're putting yourself
+[00:04:04] at an unnecessary disadvantage.
+[00:04:07] Okay, so here's the reality.
+[00:04:09] Learning to read Level 2
+[00:04:11] and truly becoming an expert at reading Level 2
+[00:04:14] takes practice, and I get it.
+[00:04:16] I remember a time when I was sitting down,
+[00:04:18] and I was actually looking at candlestick charts.
+[00:04:20] But I thought to myself, looking at a chart,
+[00:04:22] I don't see a gosh darn thing.
+[00:04:25] I don't see anything.
+[00:04:27] I felt like I was looking at sheet music.
+[00:04:30] And even though I love music,
+[00:04:32] and I played a little bit of some different instruments,
+[00:04:34] I've never learned how to read sheet music.
+[00:04:36] And so sheet music to me is a completely foreign language.
+[00:04:40] It means nothing.
+[00:04:41] I absolutely nothing.
+[00:04:43] And so when I was looking at these candlestick charts,
+[00:04:45] I felt like I was just looking at a foreign language.
+[00:04:47] I saw absolutely nothing.
+[00:04:49] And I get looking at the Level 2 window and seeing nothing.
+[00:04:52] Just being completely overwhelmed.
+[00:04:54] I see a ton of numbers.
+[00:04:56] I don't know where to look at the top of the bottom
+[00:04:58] of the left and the right in the middle.
+[00:05:00] Where do I even begin?
+[00:05:01] Well, I'm going to help you with all of that.
+[00:05:03] And I also want to reassure you.
+[00:05:06] That like anything else.
+[00:05:08] Learning something like Level 2 that is complicated.
+[00:05:11] The best way to do it is just to continue
+[00:05:13] each day making little strides,
+[00:05:16] little bits of progress.
+[00:05:18] It's not about learning at all overnight.
+[00:05:20] That didn't happen for me and it won't happen for you.
+[00:05:22] But the more you see examples of it,
+[00:05:25] the more you watch the Level 2 in the trading simulator,
+[00:05:28] the more you practice.
+[00:05:29] The better you'll get at recognizing these nuances.
+[00:05:32] And some of the things that I'm going to share with you today
+[00:05:34] and through Chapter 6, once you once you become aware of them,
+[00:05:38] they're impossible not to see.
+[00:05:40] Now, it's also important to remember that we're only looking at Level 2
+[00:05:45] on stocks that meet five pillars of stock selection.
+[00:05:48] These should be stocks that are really obvious.
+[00:05:50] So if you try, for example, to read the Level 2
+[00:05:53] on even on the S&P 500 or on an ETF,
+[00:05:58] what you're going to see?
+[00:06:00] All of the movement that you're going to see
+[00:06:02] will be the byproduct of high frequency trading algorithms.
+[00:06:06] Not real traders.
+[00:06:07] It's just computers.
+[00:06:09] So anything you see there is more or less meaningless.
+[00:06:13] It doesn't carry any weight.
+[00:06:15] Level 2 carries weight when a stock is up 50%.
+[00:06:19] 75% 100% and traders are trying to find that signal or that clue
+[00:06:24] of what's going to happen next.
+[00:06:26] That's when those big orders that are that may appear on the Level 2
+[00:06:30] carry some serious weight.
+[00:06:32] In other words, if a stock is going sideways,
+[00:06:35] it's already indecisive, and you're not going to get any big clues from the Level 2.
+[00:06:39] But when a stock is trending, it's moving up very quickly
+[00:06:42] or it's moving down very quickly, that's when Level 2 really matters.
+[00:06:46] So if you're taking breakout trades, if you're trying to jump in
+[00:06:49] out of the market quickly, you need Level 2.
+[00:06:51] Now, I've already talked about this, but during the period
+[00:06:54] time when I was learning how to trade.
+[00:06:55] So I funded my first account in 2001, so that was a long time ago.
+[00:06:59] But in those days, I wasn't day trading.
+[00:07:01] I was basically just buying positions of stocks I thought
+[00:07:04] would go up over the future.
+[00:07:06] Then that was sort of an extension of why I've been learning during
+[00:07:09] the late 1990s about these concepts of long-term investing.
+[00:07:13] Buying shares of strong companies, reading their balance sheet,
+[00:07:16] trying to become an investor.
+[00:07:18] This is kind of the, what is it?
+[00:07:20] It's the Benjamin Graham Intelligent Investor sort of mentality.
+[00:07:24] That didn't work very well for me because I only had a thousand
+[00:07:27] dollars to invest.
+[00:07:28] And, you know, I, in fact, was making more money that summer
+[00:07:30] mowing lawns.
+[00:07:31] So in any case, didn't make a big success at
+[00:07:35] trading at that time.
+[00:07:36] But then when I came back in the market.
+[00:07:38] For 2010 through 2019, that was a window in the market,
+[00:07:42] where if you had profit, you had to pay yourself.
+[00:07:45] And you had to be pretty aggressive, almost like a sniper
+[00:07:48] just to wait, wait in the tall grass for that one opportunity.
+[00:07:51] That canals to chart pattern.
+[00:07:53] It looks good.
+[00:07:54] You know, that stock that meets all five pillars.
+[00:07:56] And then the level two lines up.
+[00:07:58] And you jump in with two thousand shares.
+[00:08:00] It goes up 20 cents.
+[00:08:01] And you take that out as quick as you can.
+[00:08:02] You're a 400 bucks.
+[00:08:05] I avoided another day of having to go, you know, fill out
+[00:08:07] applications for a nine to five job.
+[00:08:09] I mean, it was really tough.
+[00:08:10] And part of that was because I was a beginner trader.
+[00:08:12] And so there was a lot of pressure.
+[00:08:14] But part of that was because the market in those days,
+[00:08:16] due to commissions, which were sometimes sized $10 per trade,
+[00:08:20] greatly reduced the volume.
+[00:08:22] So there wasn't as much liquidity.
+[00:08:24] So the moves weren't as big.
+[00:08:26] And when we would have them, they wouldn't be on as many shares.
+[00:08:29] So you had to be so precise.
+[00:08:32] And level two helped me be much more precise.
+[00:08:35] And it will help you be more precise as well.
+[00:08:37] Now, during day trading the basics,
+[00:08:39] I introduced these slides to you.
+[00:08:41] Walking you through level one market quotes and level two market quotes.
+[00:08:45] So I'll give you a refresher on this here just for a moment.
+[00:08:48] Now, different platforms vary a little bit
+[00:08:50] and how they present the data.
+[00:08:52] But there's quite a bit of standardization in market data.
+[00:08:55] At this point.
+[00:08:57] So on this view right here,
+[00:08:59] we have the ticker of a stock.
+[00:09:01] You type that in.
+[00:09:02] You press enter and it'll open and load the level two data for that stock.
+[00:09:05] We show the percentage gain of the day,
+[00:09:07] low of day, high of day,
+[00:09:09] the total volume abbreviated here at 16.7 million.
+[00:09:13] And then we see.
+[00:09:15] So this is our first row here of data about the stock.
+[00:09:19] And most level two windows will give you that data.
+[00:09:21] Now, the next rows of data down here,
+[00:09:24] are where we see the market maker, the price, the size,
+[00:09:28] and then the market maker price in size.
+[00:09:30] This is the bid on the left.
+[00:09:32] And then we've got the ask on the right.
+[00:09:34] So what I look at most closely is the price
+[00:09:37] and the size of the order.
+[00:09:39] So this is the highest price buyer.
+[00:09:41] And this is someone who could,
+[00:09:43] remember, they could go ahead and buy a $2.26.
+[00:09:47] But they're not.
+[00:09:48] That's kind of odd.
+[00:09:49] I mean, it's only a one penny difference.
+[00:09:51] Why are they not doing that?
+[00:09:52] You're going to learn why in just a second when you learn about market makers.
+[00:09:55] So we've got the bid.
+[00:09:57] We've got the ask and the difference between the two is called the spread.
+[00:10:00] In this case, we've got a one cents spread.
+[00:10:02] So this is the name or the acronym of either the ECN
+[00:10:08] or the market maker that is executing this order right here
+[00:10:11] for 6,700 shares.
+[00:10:13] Most brokers and most data providers do drop the zeros.
+[00:10:17] So these are in hundreds, 6,700, 1100.
+[00:10:21] Just to make it a little easier to read.
+[00:10:23] Because it's a lot of data, all condensed and a small window.
+[00:10:25] Now when it comes to order routing,
+[00:10:27] this is something that I'm going to actually dedicate an entire
+[00:10:30] section of chapter six to discussing
+[00:10:33] because it is incredibly interesting.
+[00:10:36] It's important to understand.
+[00:10:38] And what you're going to realize is that the plumbing of the market
+[00:10:42] in terms of how orders are executed,
+[00:10:44] how they're transmitted from you through your broker
+[00:10:47] and eventually to the market is very complex.
+[00:10:50] And it can vary substantially between different brokers.
+[00:10:54] So brokers are not the same and all of that
+[00:10:57] can have an effect on the quality of your execution price,
+[00:11:01] the speed of your execution.
+[00:11:03] And then ultimately those can affect your profitability.
+[00:11:06] So that's something that we're going to talk about in a lot more detail.
+[00:11:09] But I'm going to dedicate an entire section here in chapter six
+[00:11:13] to that topic.
+[00:11:14] So for right now, when we talk about the purpose of order routing,
+[00:11:18] I'll simply add on to what I already said during day train the basics,
+[00:11:22] which is that the market I think of as an island.
+[00:11:25] And we have to have a way to get there.
+[00:11:28] So if this is the market for general electric,
+[00:11:31] the stock, just for instance,
+[00:11:33] and this is you right here,
+[00:11:35] how do you execute this order?
+[00:11:37] It goes from you to your broker,
+[00:11:40] and then from your broker, presumably,
+[00:11:42] they send it somehow to the exchange,
+[00:11:45] and execute, and then the order comes back.
+[00:11:47] However, there's a lot of nuances in here,
+[00:11:50] and there's different paths that they can take.
+[00:11:52] Some of which you have control over,
+[00:11:54] depending on the broker you use.
+[00:11:56] And what you might learn is that there are certain bridges,
+[00:11:59] so to speak to the market,
+[00:12:00] they're super fast.
+[00:12:02] And you can use them,
+[00:12:03] but they're more expensive.
+[00:12:04] There's other bridges that are free,
+[00:12:06] but they're slow.
+[00:12:07] So you can choose how you route your orders.
+[00:12:10] And I think it's awesome that as retail traders,
+[00:12:12] we have some choice in the matter.
+[00:12:15] But not all brokers will give you as many choices.
+[00:12:19] So depending on the broker you use,
+[00:12:21] you may have more choices,
+[00:12:23] or you may have fewer choices.
+[00:12:25] Nonetheless, we need a method of executing our orders,
+[00:12:28] and when we're looking at the level two,
+[00:12:30] and even just level one data,
+[00:12:32] we can see right here very clearly,
+[00:12:34] this is the bridge,
+[00:12:36] so to speak,
+[00:12:37] that this order is coming in through Arkham.
+[00:12:40] What we don't know is behind that
+[00:12:43] behind this order who's actually executing it.
+[00:12:45] We don't know if it's a regular retail trader,
+[00:12:48] like you or I,
+[00:12:49] or perhaps if it's a market maker.
+[00:12:51] So when we see this acronym here for Arkham,
+[00:12:56] sometimes people say,
+[00:12:57] oh, there's a market maker sitting at $2.25.
+[00:13:01] Is this is Arkham a market maker?
+[00:13:04] Arkham is not a market maker.
+[00:13:06] Arkham is a bridge.
+[00:13:07] Market makers will use these bridges.
+[00:13:10] So what's the difference between an ECN and a market maker?
+[00:13:13] An ECN is the bridge.
+[00:13:16] It's the electronic communication network
+[00:13:18] that the order gets transmitted on.
+[00:13:20] And it's a proprietary network
+[00:13:22] that this organization has created
+[00:13:25] and they get paid to allow people to use their bridge.
+[00:13:29] Okay, so this is a bridge.
+[00:13:31] Both retail traders and market makers
+[00:13:34] can use the bridge.
+[00:13:36] So what is a market maker?
+[00:13:38] A market maker is a financial institution
+[00:13:42] that owns shares the stock
+[00:13:44] and provides liquidity to the market
+[00:13:47] by sitting on both the bid and the ask.
+[00:13:51] You and I can't do that.
+[00:13:52] If we put an order on the bid
+[00:13:54] and we also put an order on the ask,
+[00:13:55] it'll reject and say,
+[00:13:56] you can't cross your own order.
+[00:13:58] You can't sit simultaneously on the bid
+[00:14:00] and the ask,
+[00:14:01] but a market maker can.
+[00:14:03] They can be both a buyer and a seller at the same time.
+[00:14:06] This dates back really to the old days of the market
+[00:14:09] where we go way, way, way back.
+[00:14:12] And we think about turn of the century,
+[00:14:14] 1890s, 1900s, certainly the roaring 20s
+[00:14:17] when the market was crazy.
+[00:14:19] The way it worked is that if you wanted to execute an order,
+[00:14:22] you couldn't obviously use your iPhone.
+[00:14:25] They didn't exist, right?
+[00:14:27] It's crazy.
+[00:14:28] I don't know.
+[00:14:29] How do these people even get around?
+[00:14:30] I don't know.
+[00:14:31] But they manage one way or another.
+[00:14:33] And the way they would execute these orders
+[00:14:35] while a broker,
+[00:14:36] then the broker would call up their trader on the floor.
+[00:14:39] Their trader on the floor of the exchange would walk
+[00:14:42] to the actual market maker who is sitting at a post,
+[00:14:46] standing at a post.
+[00:14:47] And he was standing there saying,
+[00:14:49] I'm going to buy it and I'm going to sell.
+[00:14:51] And all day long, all they do is they buy and they sell,
+[00:14:53] they buy and they sell.
+[00:14:54] So I'm going to buy from you for a little less
+[00:14:56] and I'm going to sell you for a little more.
+[00:14:58] And they make a profit,
+[00:14:59] basically they scout.
+[00:15:01] So they're just buying, selling, buying, selling,
+[00:15:03] all they long.
+[00:15:04] They're kind of like scalpers.
+[00:15:05] And they just make a little bit of money on the difference
+[00:15:08] between what they pay for someone who's buying,
+[00:15:10] what they sell it for.
+[00:15:11] I mean, in a way, it's not different from
+[00:15:14] watching the little house on the prairie with the kids.
+[00:15:18] And the girls, the girls,
+[00:15:22] they went into the general store with their bundle of eggs.
+[00:15:25] And the moms like, yeah,
+[00:15:26] buy those, you know, four cents for a dozen or something like that.
+[00:15:29] And you know, she's going to turn around,
+[00:15:31] sell them for five cents on a dozen, right?
+[00:15:33] So she's the intermediary.
+[00:15:35] She's the market maker for the eggs, right?
+[00:15:37] So these specialists are really no different.
+[00:15:41] So what they're doing on New York Stock Exchange and YSE,
+[00:15:45] they're called specialists.
+[00:15:48] So, and then on NSDQ and SDQ,
+[00:15:51] they're called market makers.
+[00:15:53] So market makers and specialists,
+[00:15:55] but they have the same role.
+[00:15:57] And so what that market maker is doing
+[00:15:59] is all day long saying, here's my bid,
+[00:16:02] and here's my offer.
+[00:16:04] So let's say a stock is 15.
+[00:16:07] He says, I'll buy it for 15.
+[00:16:09] And here's my offer to sell at 15.
+[00:16:12] Wait a second, rolled up.
+[00:16:14] Remember, this is the old days.
+[00:16:16] They didn't trade in decimals.
+[00:16:18] In the old days, they trade in fractions.
+[00:16:20] So he might say 15 and a half.
+[00:16:23] And so his profit is 50 cents across the spread.
+[00:16:26] On, you know, 1000 shares, that's 500 bucks.
+[00:16:29] So they're just sitting there all day long, as a biter,
+[00:16:32] and as a seller buying, selling, buying, selling, selling.
+[00:16:34] Now we're going to talk about this in more detail in the section of a class
+[00:16:38] where I talk about market making because, you know,
+[00:16:41] in the 100 plus years since, there's been a lot of changes,
+[00:16:44] including decimalsation, where stocks now trade down to the penny.
+[00:16:48] Also, the development of high frequency trading algorithms used
+[00:16:52] to make the market, so market makers are no longer sitting manually
+[00:16:56] adjusting their buy and sell orders.
+[00:16:59] And the competition among these market makers has gotten really fierce
+[00:17:03] to the point where a lot of market makers got, you know,
+[00:17:07] squeezed out of the business, and only the ones with really
+[00:17:10] the most sophisticated algorithms have survived.
+[00:17:14] So we're going to get into a lot more depth in that,
+[00:17:16] but just to introduce that topic for you.
+[00:17:19] So other ECMs that you'll notice when you pull up level two data,
+[00:17:24] include NASDAQ, so NSDSD right there, bats, nice-y, edge.
+[00:17:32] These are all different ECMs.
+[00:17:35] Why would you use one over the other?
+[00:17:38] Primarily price, summer cheaper, summer more expensive, and speed.
+[00:17:42] And the ones that are more expensive are usually faster,
+[00:17:45] so they know they can command a higher price.
+[00:17:47] So, again, we're going to talk about order routing in its own chapter.
+[00:17:51] However, you know, whether or not you can route your orders,
+[00:17:55] it's going to be, you know, based on the broker that you're using.
+[00:17:59] Commission-free brokers don't give you much flexibility with order routing,
+[00:18:04] but that's the trade-off for commission-free trading.
+[00:18:07] So I like to have, I like platforms when your level two window has
+[00:18:13] an attached order entry window right here.
+[00:18:16] And I also like it when there's an attached time and sales window,
+[00:18:19] you can see all the quotes.
+[00:18:20] But in any case, I think you guys at this point should already be pretty familiar
+[00:18:24] with the order entry window.
+[00:18:25] Hopefully you've been practicing in our simulator.
+[00:18:27] But if not, just a quick walk through.
+[00:18:29] We've got our symbol up here in the top, enter your symbol, then press the enter button.
+[00:18:33] It'll pull up the level two.
+[00:18:35] Down here, you've got your account.
+[00:18:37] You can enter the number of shares you want to buy.
+[00:18:39] You can click on the ask, or you can click on the bid to change the price.
+[00:18:43] Once you click on that, you can click the up and down arrows,
+[00:18:46] or you could use the arrow key to move up and down.
+[00:18:48] And then you can click the buy button, and then that order gets sent to the market.
+[00:18:51] This is sending on the NASDAQ route, but in a simulator it doesn't make any difference.
+[00:18:56] But it is simulating what NASDAQ would look like.
+[00:18:59] So, and then if you wanted to sell short, you would just press the short button
+[00:19:03] instead of the buy button, and then you would initiate a short position.
+[00:19:06] So that's our order entry window.
+[00:19:08] And then level two market quotes are when we see not just the first row of data,
+[00:19:13] but we see everything down below.
+[00:19:16] And this to me is where it's really important,
+[00:19:18] because when we see that depth of market, this gives us a lot of context.
+[00:19:23] So right here, just looking at this, I can already see that,
+[00:19:26] interesting.
+[00:19:27] We've got four different buyers here at 225,
+[00:19:30] but we only have two sellers at 226.
+[00:19:33] So in terms of just looking visually at the balance, there's more buyers than sellers.
+[00:19:38] So more buyers and sellers is a bullish thing.
+[00:19:40] We like to see that.
+[00:19:41] And especially with this one order that 6700 shares,
+[00:19:44] that does send a little bit of a signal.
+[00:19:46] There's a little bit of buyer support at that level.
+[00:19:49] Bit support.
+[00:19:50] So for me, seeing the depth of market,
+[00:19:55] let's me understand how many buyers are lined up and interested in this.
+[00:20:00] How many sellers are also willing to get out.
+[00:20:02] So if we looked at Tesla right here, just as an example,
+[00:20:05] we've got level one data and then versus level two data.
+[00:20:09] So level one data shows us 27271 by 27295.
+[00:20:14] Both are showing 100 shares, both are on bats.
+[00:20:17] Again, we don't know if that's a market maker or, you know,
+[00:20:20] it's just two individual traders both using the same EECN.
+[00:20:24] But in any case, what we have here is a 24 cent spread
+[00:20:28] between the bid and the ask.
+[00:20:30] So, you know, the thousand shares is $240.
+[00:20:33] That's significant.
+[00:20:34] Now, when we open level two data,
+[00:20:36] we see that there's actually two sellers right there at the top.
+[00:20:40] So both are there for 100 shares.
+[00:20:42] There's one seller on the bid at 71.
+[00:20:45] And then the next seller is at 70.
+[00:20:47] Sorry, I'm sorry.
+[00:20:48] buyer.
+[00:20:49] There's one buyer at 71.
+[00:20:50] There's another at 70.
+[00:20:51] Next one's at 60.
+[00:20:52] The next one's at 59.
+[00:20:54] Then all the way down to 72 even.
+[00:20:57] And then all the way down to 71.83.
+[00:20:59] So, you know, if there was a big couple big sellers
+[00:21:02] that went through on this,
+[00:21:03] it could drop back down to $72 pretty quickly.
+[00:21:06] On the other hand here, would we go up to, you know,
+[00:21:09] 73, 50, or 74 pretty quickly?
+[00:21:12] It doesn't really look like it.
+[00:21:14] So it feels right now like it's a little heavier on the ask side.
+[00:21:18] And then when you combine that with the view of the time
+[00:21:21] and sales, what do we see it?
+[00:21:23] What are the actual transactions telling us?
+[00:21:25] The actual transactions going through the market right now are red.
+[00:21:28] They're selling.
+[00:21:30] So this depth of market paints a very different picture, perhaps.
+[00:21:34] Then just the candlestick chart alone would have given us.
+[00:21:38] Now when it comes to the color schemes,
+[00:21:40] I like using color schemes that make it very clear
+[00:21:44] and highlight the top tier of the market.
+[00:21:47] So the top best buyer and the top best seller,
+[00:21:51] everyone at that same price will be green.
+[00:21:54] So whether there's 10 or there's two, that's going to be green.
+[00:21:57] So this in acts independently from this side.
+[00:22:00] So if there's only one seller here,
+[00:22:02] then there'll only be one row of green.
+[00:22:05] And then the next seller for the rough is,
+[00:22:07] is the different color red and then yellow and then blue.
+[00:22:10] So I like this.
+[00:22:11] Some platforms just do a gradient where it just goes green
+[00:22:14] to light green, you know, or blue to light blue.
+[00:22:17] And I don't like that so much because I like to be able to
+[00:22:19] visually see how big is the support right here at the current price
+[00:22:24] or how big is the resistance right here at the current price.
+[00:22:27] So I like using the colors that make it very easy to see.
+[00:22:32] I know that some platforms, unfortunately,
+[00:22:34] don't give you that ability to customize.
+[00:22:37] And I wouldn't say that it's a deal breaker,
+[00:22:40] but if a platform, for instance,
+[00:22:43] didn't allow me to customize.
+[00:22:45] And additionally, the font was really, really small.
+[00:22:48] I feel like it would be hard for me to pick up on the subtle
+[00:22:51] hints and clues that I look for in level two.
+[00:22:55] And then that would take away some of my edge as a trader
+[00:22:59] that I've spent all these years developing.
+[00:23:02] So I do think the presentation of the data is important.
+[00:23:06] I don't know if I would say it's a deal breaker,
+[00:23:08] but it feels, it does feel pretty important.
+[00:23:10] And if I was looking at a platform that didn't give me the flexibility
+[00:23:13] to change the colors and to change the font,
+[00:23:15] to make it more visually, you know,
+[00:23:19] work for my strategy, then that would probably be an edge.
+[00:23:24] So one of the things that we'll talk about when we get into order routing
+[00:23:29] is the fact that we went through this change in the market
+[00:23:32] from trading infractions to trading in decimals.
+[00:23:35] And it began in the late 1990s.
+[00:23:38] So prior to that, trading was always done infractions,
+[00:23:41] and the smallest fraction was one eighth.
+[00:23:44] So that's a 12 and a half cent spread.
+[00:23:47] Then in, I think it was 1997 or 1998,
+[00:23:50] they allowed market makers to trade down to 1160.
+[00:23:55] Now, market makers didn't want to do this,
+[00:23:58] and many of them refused even quote 1160.
+[00:24:02] But nonetheless, that was an option.
+[00:24:05] You were allowed to.
+[00:24:06] And so 1160 by one eighth spread is six and a quarter cents.
+[00:24:12] So what that means is that the profitability for the market makers
+[00:24:15] getting smaller, because they only make six and a half cents.
+[00:24:18] There's six and a quarter cents across the spread
+[00:24:20] if it was trading that tight.
+[00:24:21] They didn't like that.
+[00:24:22] And then in 2001, the market adopted full decimalsation.
+[00:24:26] And when full decimalsation took place,
+[00:24:28] and spreads went down to potentially one cent.
+[00:24:31] Market makers, many of them couldn't justify making the market
+[00:24:36] with the risk that what if I'm picking the market
+[00:24:39] and only making one penny on these transactions,
+[00:24:42] and then selling the stock squeezes up 50 cents.
+[00:24:45] You know, that 50 cents squeeze,
+[00:24:47] and an instant wipes out all of these other trades I took.
+[00:24:50] I'm an imbalance in risk and reward.
+[00:24:52] And you know what, I'm not going to make the market anymore.
+[00:24:54] Or I'm not going to make the market on stocks or volatile.
+[00:24:57] I'm only going to make the market on stocks that are very consistent
+[00:25:00] and sort of steady, like, you know,
+[00:25:02] your S&P 500 companies that have been around forever,
+[00:25:05] and maybe not the new tech companies.
+[00:25:07] And so you sort of saw these market makers
+[00:25:09] fall into different camps of which types of stocks
+[00:25:11] they're willing to make the market on.
+[00:25:13] And the result today is that certain stocks are very thinly traded.
+[00:25:18] They typically are lower price stocks.
+[00:25:20] They typically have lower volumes anyways,
+[00:25:23] because now as many people are interested in buying or selling them,
+[00:25:26] and the market makers really don't make the market on these stocks very well
+[00:25:29] at all.
+[00:25:30] They just choose not to, because there's too much risk.
+[00:25:32] You have a stock that can go up 153% in one day.
+[00:25:35] How do you make the market on that?
+[00:25:37] Because here's the thing.
+[00:25:39] They're buying and selling all day long,
+[00:25:41] but what if all of a sudden a surge of people come in
+[00:25:43] and they're just buying, buying, buying?
+[00:25:45] Do they have to sell them shares?
+[00:25:47] If they're making the market, they're kind of supposed to.
+[00:25:49] So now they sell $100,000 worth or 100,000 shares,
+[00:25:53] let's say.
+[00:25:54] And the stock squeeze up a dollar share.
+[00:25:56] They're down 100 grand.
+[00:25:57] That wouldn't happen if they're making the market for four.
+[00:26:00] Right?
+[00:26:01] So you can see that these market makers,
+[00:26:04] some of them are going to be more conservative.
+[00:26:06] Well, I'm jeopardy on the mind.
+[00:26:07] They don't want to blow up their firm.
+[00:26:09] And so they're just not going to make the market for these stocks.
+[00:26:12] Or when the stock becomes too volatile,
+[00:26:14] they're going to stop making the market for them.
+[00:26:16] They're going to step off of them.
+[00:26:18] And so the result is that a lot of these lower price stocks
+[00:26:21] are very thinly traded,
+[00:26:23] which means they have bigger spreads.
+[00:26:25] Now, in the one hand,
+[00:26:26] when there's, if there's a bigger spread,
+[00:26:28] that does mean that the few market makers
+[00:26:30] are willing to take the risk,
+[00:26:31] can get compensated a little bit more
+[00:26:33] because the spread is larger.
+[00:26:35] The spreads get tight when there's more competition.
+[00:26:38] There's more competition when there's less risk.
+[00:26:40] More risk, bigger spreads,
+[00:26:42] but then less competition.
+[00:26:44] But nonetheless,
+[00:26:45] although the spreads are a little larger
+[00:26:47] and the market makers could make a little bit more money,
+[00:26:49] the risk is still very high when we have stocks
+[00:26:51] that are showing they can go up 200-300-500
+[00:26:53] even a thousand percent in one day.
+[00:26:55] So this is what the level two looks like
+[00:26:57] on a more thinly traded stock.
+[00:26:59] You've got a three cents spread.
+[00:27:00] It's a $4 stock and you've got a three cents spread.
+[00:27:02] It's not huge,
+[00:27:03] but it's a three cents spread.
+[00:27:05] And it has 20 million shares of volume.
+[00:27:07] It's not for a lack of volume.
+[00:27:09] It's because the market makers
+[00:27:10] not really making the market on it.
+[00:27:12] And so who is making the market
+[00:27:14] are individual retail traders who are just placing orders
+[00:27:17] to buy and placing orders to sell?
+[00:27:19] Now, of course,
+[00:27:20] every transaction is both abying the sell.
+[00:27:22] But some people would rather sell on the offer
+[00:27:25] and other people would rather buy on the bid.
+[00:27:27] In later in chapter six,
+[00:27:29] we're going to talk about the economic incentive
+[00:27:31] that you have to sell on the ask or to buy on the bid.
+[00:27:34] Because it is substantial
+[00:27:36] if you're a somewhat professional trader
+[00:27:38] using professional trading software,
+[00:27:40] you will earn money
+[00:27:42] if you buy on the bid and sell on the ask.
+[00:27:44] And you'll pay money if you buy on the ask
+[00:27:46] and sell on the bid.
+[00:27:48] Now personally, I buy on the ask
+[00:27:50] and then I also try to sell on the ask.
+[00:27:52] So it's kind of a wash.
+[00:27:54] It's slightly negative, but it's a wash.
+[00:27:57] So anyways, we'll get into that a little bit more.
+[00:28:00] So that's a thinly traded stock.
+[00:28:02] This is a thinly traded stock.
+[00:28:04] 10 million shares of volume with right here,
+[00:28:06] you know, a 7 cents spread.
+[00:28:08] So 647 by 654,
+[00:28:10] but we'll only one seller of 54.
+[00:28:12] And then it goes to 57, 58,
+[00:28:14] and then 68.
+[00:28:15] And this can move really quickly.
+[00:28:17] And you can see how volatile it's been.
+[00:28:19] From $5 all the way up here.
+[00:28:21] Now this stock doesn't happen to show
+[00:28:22] any super, super clear pattern.
+[00:28:24] But, you know, let's just say,
+[00:28:26] for instance, at this stock,
+[00:28:27] this was one that, you know,
+[00:28:29] we kind of pulled that example back up.
+[00:28:31] Let's just say that this is one that right now
+[00:28:33] was giving us this really nice pattern
+[00:28:35] was pulling back.
+[00:28:37] And so in this case,
+[00:28:38] let's say that this trigger
+[00:28:41] was 65, let's just say 65.
+[00:28:46] So when this candle opens down here
+[00:28:49] and it starts moving up,
+[00:28:50] what are we going to see it initially first?
+[00:28:52] The first thing that we're going to start seeing
+[00:28:54] is green on the tape.
+[00:28:56] So see how we have some green down there?
+[00:28:58] Those orders, that's the ticker tape.
+[00:29:01] Those are the actual orders that have gone through the market.
+[00:29:04] So what we're seeing is that right now,
+[00:29:06] and just ignore this chart,
+[00:29:07] pretend that this is the chart that we're looking at.
+[00:29:10] So we see some people are already stepping up to buy.
+[00:29:13] Now let's say the stock is up 87%.
+[00:29:15] You know, it's got a lot of volume.
+[00:29:17] We may say, you know what, shoot.
+[00:29:18] I'm seeing other people starting to buy.
+[00:29:21] I'm also seeing that yes, 655 is my trigger.
+[00:29:24] 654 is on the ask, and that's going to go straight to 657.
+[00:29:28] So what I might do in this instance
+[00:29:30] is I might go ahead and execute my order to buy
+[00:29:32] at 654 right here.
+[00:29:35] I'm getting in one penny early,
+[00:29:37] which means if this immediately rejected,
+[00:29:39] I might look back on the chart
+[00:29:40] if this goes red and think, well,
+[00:29:42] I never actually had the confirmation.
+[00:29:44] But on the other hand,
+[00:29:45] I'm getting in a little earlier.
+[00:29:47] You know, my stop is the low of this pullback.
+[00:29:49] So let's say that's, you know, 640.
+[00:29:52] So I'm risking 14 cents.
+[00:29:54] You know, can I make 2030 cents on this?
+[00:29:57] And if we get that squeeze here, back up to the high,
+[00:30:00] then boom, back up to 7, you know,
+[00:30:02] it could be a 4050 cent trade.
+[00:30:03] We'd be in great shape.
+[00:30:05] And so the level 2, in this case,
+[00:30:07] is there anything the level 2 is saying
+[00:30:09] that would give me pause?
+[00:30:11] I don't see a big cello order.
+[00:30:13] You know, I don't see a 100,000 share cell order.
+[00:30:16] The spread's not too big to be manageable.
+[00:30:19] And there's some green on the tape.
+[00:30:21] Okay, this is an example that looks, well, it's okay.
+[00:30:23] Now this one on the other hand is an example of
+[00:30:25] a thickly traded stock.
+[00:30:26] It's Bank of America.
+[00:30:27] So a lot of makers love a lot of
+[00:30:29] market makers love making the market on it.
+[00:30:31] They don't worry that the stock's going to go up 100%
+[00:30:33] in a day or go down 100% in a day.
+[00:30:35] They feel very safe making the market on this.
+[00:30:38] They make that, do they make as much money?
+[00:30:40] No.
+[00:30:41] But that's the whole deal.
+[00:30:43] You take more risk.
+[00:30:44] You can make more.
+[00:30:45] You take less risk.
+[00:30:46] You make less than this market.
+[00:30:47] Taking more risk could be the difference
+[00:30:49] between, you know, blowing up or being around for a while.
+[00:30:52] So here you've got, you know, total, it's, you know,
+[00:30:56] just a huge amounts of buyers.
+[00:30:58] These are 23,000 shares, 20,000 shares, 18,000 shares,
+[00:31:01] 9,000, 5,000, 3,000.
+[00:31:03] You know, just hundreds of thousands of dollars
+[00:31:05] were sitting on the bid to buy.
+[00:31:07] Now there's not as much sitting on the ask as it turns out.
+[00:31:10] So right now, this shows strong more strength on the bid
+[00:31:13] and less on the ask.
+[00:31:14] I wouldn't trade this, but this is very, this is a very common
+[00:31:17] level to see on a more thickly traded stock.
+[00:31:20] Unfortunately, this is what more thickly traded stocks
+[00:31:23] tend to look like.
+[00:31:24] They go sideways.
+[00:31:25] Now, this is great though for a market make
+[00:31:27] because they can buy a sell by sell all day long.
+[00:31:29] So who's buying?
+[00:31:30] Well, could be mutual funds, could be pension funds.
+[00:31:33] You know, these are well known companies.
+[00:31:35] They're traded very heavily in volume.
+[00:31:37] So they just, you know, trade all day long.
+[00:31:39] So, you know, they get bought and sold bought and sold
+[00:31:41] individual traders, you know, investors, whatever,
+[00:31:44] investment advisors buying for clients.
+[00:31:47] So they just, they trade, but they don't really move that much.
+[00:31:51] So what I look for in level two.
+[00:31:53] When I first pull up the level two,
+[00:31:55] this stock, the first thing I look at is the price,
+[00:31:58] the spread, and the size of this order.
+[00:32:00] Then I see the stocks up 53 percent.
+[00:32:02] I see the last couple orders were red,
+[00:32:04] but this is my biggest, this is my biggest roadblock here.
+[00:32:08] 27,000 share sell order.
+[00:32:10] It's only a four cent spread, but there's four orders on the ask.
+[00:32:13] There's only two on the bid.
+[00:32:15] There's 56,000 share buyer down here,
+[00:32:18] but he's not that close or she's not that close.
+[00:32:21] So in this moment right now,
+[00:32:22] I would not feel confident jumping in this.
+[00:32:24] So we check the spread, the number of market makers,
+[00:32:27] how close together the depth of market tiers are,
+[00:32:29] 90, 75, 72, 308, 33, 36, 38.
+[00:32:35] So nothing really big there,
+[00:32:37] and then I look for big bids or big ask,
+[00:32:40] and here we've got a big seller on the ask.
+[00:32:42] That's the problem that we're going to have with this one right here.
+[00:32:46] Now on the time and sales specifically,
+[00:32:48] what I'm looking at is the color of the print.
+[00:32:51] I don't really look at the size all that much.
+[00:32:54] Some people filter time and sales.
+[00:32:57] I don't like to filter data.
+[00:32:58] I like to see the data raw.
+[00:33:00] So I don't filter it.
+[00:33:02] Look, how significant is a 100-chair order.
+[00:33:05] You could argue it's not that significant,
+[00:33:07] but collectively, a thousand of them are,
+[00:33:10] and I just don't like the high data.
+[00:33:12] So I like to see it all.
+[00:33:13] And what I'm looking for are the orders in green,
+[00:33:17] but when I see orders in red,
+[00:33:19] that's telling me people are selling right now.
+[00:33:21] And maybe other people are thinking the same thing.
+[00:33:23] I'm thinking, which is that we've got a seller here,
+[00:33:25] maybe I should cut in front of them.
+[00:33:27] So I'm going to cut in front of this guy
+[00:33:29] and just dump my orders here at 291.
+[00:33:32] Now you might wonder, who's buying this at 291,
+[00:33:35] given there's a seller there?
+[00:33:37] And again, we don't know.
+[00:33:38] We don't know the answer to that question.
+[00:33:40] It might be a buyer who's not even using level two data.
+[00:33:42] They're just looking at the chart.
+[00:33:44] It might be a market maker who's sitting on the bed
+[00:33:46] and the offer.
+[00:33:47] We really, and to be fair,
+[00:33:51] it could be a market maker who actually wants to buy the stock
+[00:33:54] and is put up this big sell order
+[00:33:56] to attract people into selling,
+[00:33:57] so they can secretly accumulate their shares down here.
+[00:34:00] So we really don't know.
+[00:34:01] But in the moment, we see selling
+[00:34:03] and we see a big sell order right there.
+[00:34:05] So for me, that's enough to take my foot off the gas
+[00:34:08] and wait.
+[00:34:09] What I look for are big bursts of green.
+[00:34:12] And if you happen to see a big burst of green
+[00:34:14] and you see some 10,000 or 15,000 share orders,
+[00:34:17] then I notice that.
+[00:34:19] But I don't really care if the orders are small.
+[00:34:22] So the color of the print is the most important thing
+[00:34:24] that I look at.
+[00:34:25] Now, different platforms have different options
+[00:34:27] for how you can color your time and sales window.
+[00:34:30] You've got sometimes red, oops, let me back that up.
+[00:34:33] So you've got red, which would be
+[00:34:35] an order that occurs at the bid price.
+[00:34:38] Bright red would be an order
+[00:34:40] that occurred at the bid, but was so big
+[00:34:43] it pushed the bid down one cent,
+[00:34:45] or more, could be five cents.
+[00:34:47] Green is an order that occurs at the ass.
+[00:34:51] Bright green would be an order that was so big.
+[00:34:53] It took out the ass and moved the price up like one cent.
+[00:34:57] So if someone sends an order here for 45,000 shares,
+[00:35:00] they would buy up all these shares,
+[00:35:01] and the price would move up a couple cents to 30 away.
+[00:35:04] And that would appear bright green on the tape,
+[00:35:09] which would be good because we want to see that's very bullish.
+[00:35:12] White orders right here, sometimes gray,
+[00:35:15] sometimes black, depending on the theme of the platform.
+[00:35:17] Those are orders that occur between the spread of the stock.
+[00:35:21] So 291 by 295.
+[00:35:23] Orders can get matched between the spread.
+[00:35:25] That can happen for a number of reasons.
+[00:35:27] There can be hidden buyers or hidden sellers,
+[00:35:29] or it could be the commission free brokers
+[00:35:32] that the order executes between the spread.
+[00:35:35] It gets some price improvement, and then it gets reported to the tape.
+[00:35:38] And then orange orders are irregular.
+[00:35:41] Not all platforms show them,
+[00:35:43] but their orders that are occurring out of sequence,
+[00:35:46] which can happen.
+[00:35:47] Sometimes you'll have an order that executed earlier in the morning,
+[00:35:51] but then for whatever reason,
+[00:35:53] didn't get reported,
+[00:35:54] but then it gets reported later,
+[00:35:56] and it'll go through as orange because it's irregular.
+[00:35:59] All orders do have to get reported to the market,
+[00:36:01] even if they're late.
+[00:36:02] But sometimes some platforms will hide them actually.
+[00:36:07] Other platforms will display them in orange,
+[00:36:09] so you recognize it's an out of sequence order.
+[00:36:13] Now the transaction size is seeing large transaction sizes.
+[00:36:18] Does certainly signify that there's large buyers
+[00:36:21] stepping up to the plate.
+[00:36:22] However, a lot of smart routing will trade in dozens of small blocks.
+[00:36:27] So they'll break up the order,
+[00:36:29] instead of sending a 10,000 share block.
+[00:36:31] They'll break it into all of these tiny little 100 share blocks,
+[00:36:35] which is kind of silly, but it happens.
+[00:36:38] So just because you're not seeing big orders,
+[00:36:41] doesn't mean there aren't big buyers.
+[00:36:43] So yeah, a large transaction is nice to see,
+[00:36:45] a big block order, but not seeing it's not the end of the world.
+[00:36:48] And then those bursts of green,
+[00:36:50] you'll see tons of examples when we get into chapters,
+[00:36:53] seven, eight, nine, et cetera, of me trading.
+[00:36:56] Each of those chapters, I feature examples of the strategy,
+[00:37:01] the walkthrough, the entry, my max loss, profit target,
+[00:37:05] screenshots of the charts of trades I've taken,
+[00:37:08] and then I show you live trading archives of actual examples.
+[00:37:11] And so in those archives, you're going to see level two on my screen.
+[00:37:15] And you're going to see those big bursts of green,
+[00:37:17] those big bursts of red,
+[00:37:18] and you're going to watch to see how I react to them.
+[00:37:21] You're going to see me executing orders in response to that.
+[00:37:25] So checking for big bids or big offers in this case,
+[00:37:28] let's say, you know, the price is not the same as two different stocks.
+[00:37:32] But let's just say, for instance, that up here at that level,
+[00:37:36] we had a big buyer like this, or sorry, a big seller.
+[00:37:39] Then we would understand, well, yeah, I'm not surprised it rejected.
+[00:37:42] It came up to this level, and then there was a 30,000 share seller
+[00:37:45] right there at the top.
+[00:37:46] That's why it rejected, and it dropped back down.
+[00:37:49] Again, if you weren't using level two, you wouldn't have seen that.
+[00:37:52] So you would have been trading with your eyes closed,
+[00:37:54] which is not good.
+[00:37:55] So now I want to show you a few examples of some of these big orders getting bought up.
+[00:38:02] So let's see.
+[00:38:05] I've got a live example that I'm going to show you right here.
+[00:38:09] This one is going to be a 60,000 share seller right around the half dollar.
+[00:38:16] All right, so let's look at this.
+[00:38:18] So here, if we get oriented, we've got a stock of 66% right here.
+[00:38:23] It's moved from 220 up to 23240.
+[00:38:26] So there's 238 green on the tape.
+[00:38:28] So I'm going to pause this a little bit, and just kind of show you,
+[00:38:32] I mentioned some of the things I'm seeing.
+[00:38:34] So just even in these first couple seconds, I saw a bullish sentiment,
+[00:38:38] which was the burst of green on the tape around 240.
+[00:38:41] Right there, there was an order at 38 that bumped the stock up.
+[00:38:45] Then there's one at 39 and 40 that bumped it up a little bit more.
+[00:38:48] Or just going through it 40, then 44 pushes the price up.
+[00:38:51] 45 pushes it up.
+[00:38:53] There's 49.
+[00:38:54] We'll get the stack of sellers though at 49 and how big that stack is at 70.
+[00:38:59] That's a really big stack of sellers.
+[00:39:01] I call it a stack.
+[00:39:03] Call it something else I suppose if you want.
+[00:39:05] But it's just a big group of sellers all at the same price.
+[00:39:08] In any case, I got in at 49 anticipating the break through the half dollar.
+[00:39:14] So watching this here, 45 dips back down.
+[00:39:26] 47 green on the tape.
+[00:39:28] 50, 90,000 share sell order.
+[00:39:30] Yeah, he's got some big sell order.
+[00:39:32] It's a big order.
+[00:39:33] So 90, 679.
+[00:39:37] So it got bought up a little bit.
+[00:39:40] 70, 68.
+[00:39:44] So there's two ways to think about this.
+[00:39:47] 65, 66.
+[00:39:49] One way to think of it is that this is clearly resistance.
+[00:39:52] There's someone selling.
+[00:39:54] On the other hand, the stock is up a lot.
+[00:39:56] Let's say, for the sake of argument, this was our leading gainer in the entire market today.
+[00:40:01] A lot of people are watching it.
+[00:40:04] Let's say it's got a great daily chart.
+[00:40:05] Let's say the float, the news, everything's good.
+[00:40:07] So somebody's out there selling 50,000 shares.
+[00:40:10] But if people buy up all of those shares, that also communicates strength.
+[00:40:16] So when I'm seeing the green on the tape, what I'm seeing is that people are stepping up and buying those shares.
+[00:40:21] So it's 50 now.
+[00:40:23] They bought 40,000 of it.
+[00:40:28] So we come back up again, 48.
+[00:40:29] It's sort of dips down for a minute, 50.
+[00:40:32] And there might be some people who are shorting up here.
+[00:40:34] They're like, ah, it's not going to break.
+[00:40:35] I'm going to sell short.
+[00:40:36] There might be some people bailing out.
+[00:40:37] It's not going to break.
+[00:40:39] So there's a little burst of selling.
+[00:40:40] Some people bail out, dips down to 44.
+[00:40:43] Comes back up to 49 though.
+[00:40:45] More buying comes in, more green.
+[00:40:49] 47.
+[00:40:51] So if you were watching this stock just on the chart,
+[00:40:54] what you're looking at here is that, well, we're at all time high.
+[00:40:57] So maybe you'd be thinking, I'm going to buy this for a high day breakout,
+[00:41:00] but you don't understand why it's struggling here if you don't have the level two up, right?
+[00:41:06] So let's see what happens when it breaks.
+[00:41:11] If it breaks, 48, 44, 41, 38, 31, there we go.
+[00:41:17] See that speed, the way it speeds up there?
+[00:41:20] So think about this in terms of seconds.
+[00:41:23] How fast this is happening.
+[00:41:25] If you were waiting for your chart to break, you'll miss this move.
+[00:41:29] And look at how fast it popped to 70 and then to 60.
+[00:41:32] So I end up taking a little profit as it breaks over that level.
+[00:41:38] You know, this is the, this is the 2010's style of trading where, you know,
+[00:41:43] you've got a couple hundred dollars of profit.
+[00:41:45] You pay yourself.
+[00:41:46] You got, you got it.
+[00:41:48] And maybe there'll be another set up.
+[00:41:49] Maybe you can get back in.
+[00:41:50] It would have been nice if it went straight to 75 or 80,
+[00:41:52] but we knew that there was sellers stacked up there.
+[00:41:55] So now is it going to hold over 50?
+[00:41:57] There's a dip back down.
+[00:41:58] It flushes back down.
+[00:42:01] So people give up on it.
+[00:42:03] Not uncommon.
+[00:42:04] Some, you know, again, it depends.
+[00:42:07] So now you've got a chart that's got a little bit of false breakout and a high volume candle.
+[00:42:11] But in spite of that false breakout, I was still able to make money.
+[00:42:14] We talked about that a bit in chapter five.
+[00:42:16] How we cannot false breakouts.
+[00:42:17] And I can still make money because of this ad right here of using level two.
+[00:42:21] So using that level two data, that's a big big deal.
+[00:42:24] Okay.
+[00:42:25] So there's an example there of a big seller getting bought up.
+[00:42:28] This is a huge seller.
+[00:42:29] Okay.
+[00:42:30] But that one's probably too big.
+[00:42:32] That one, I might, I don't think I would even bother trying to take a trade on that one.
+[00:42:35] That's a huge seller.
+[00:42:37] That's unthinkably big.
+[00:42:38] All right.
+[00:42:39] So that one's no good.
+[00:42:40] Here we've got a big buyer at 60.
+[00:42:43] And big seller, big buyer.
+[00:42:45] We've got that big seller right there.
+[00:42:47] We've already seen that example.
+[00:42:48] So my eye is looking at the ask price.
+[00:42:52] And right there you've got a huge seller.
+[00:42:55] I mean, that is a massive seller at $10.
+[00:42:58] So, you know, is this thing going to be able to break through that level?
+[00:43:01] Probably not.
+[00:43:02] It's got 31 million shares of volume.
+[00:43:04] But somebody out there's trying to sell 650,000 shares.
+[00:43:09] And they're not hiding their order.
+[00:43:11] They could.
+[00:43:12] They're not.
+[00:43:13] Why?
+[00:43:14] We don't know.
+[00:43:15] We could speculate.
+[00:43:16] Maybe they don't have sophisticated.
+[00:43:17] Maybe they don't know how.
+[00:43:18] Maybe they want people to see it.
+[00:43:20] Maybe, you know, we just don't know.
+[00:43:22] We don't know.
+[00:43:23] But in any case, that's a huge seller order.
+[00:43:25] They probably just are selling and they don't care.
+[00:43:27] And it's just a really big order.
+[00:43:29] And that's going to be a problem.
+[00:43:30] So, I want you to test yourself.
+[00:43:33] I want you to spend some time whether it's looking at one of my live trading archives
+[00:43:37] or it's actually watching the real market.
+[00:43:39] I want you to try to draw a picture of a chart, a candlestick chart,
+[00:43:43] even if it's a line chart.
+[00:43:44] It can be primitive.
+[00:43:45] But try to draw a picture of a chart using just level two.
+[00:43:48] Don't and the time in sales.
+[00:43:50] Don't look at the chart.
+[00:43:51] And then go back and compare how good you are.
+[00:43:53] So, for me, when I'm trading, a lot of people are like,
+[00:43:57] Ross, are you looking at the chart?
+[00:43:59] And I'm not.
+[00:44:01] Because once I've gotten oriented, the chart for me,
+[00:44:05] it's like looking at a map.
+[00:44:07] I look at a map once.
+[00:44:09] It's burned in my brain.
+[00:44:10] I know how to get where I'm going.
+[00:44:11] I never need to look at that map again.
+[00:44:13] So, I never have to ask for directions.
+[00:44:15] By the way, for the record.
+[00:44:17] Looking at the chart, it's burned in my brain.
+[00:44:19] So, now I know this is the chart I'm working with here.
+[00:44:22] I know that.
+[00:44:25] So, now, I just have to watch the price.
+[00:44:27] I know the high of that candle.
+[00:44:29] The high was 55.
+[00:44:30] So, I can just watch the level two.
+[00:44:32] Now, maybe a minute later, I will go ahead and glance and see.
+[00:44:35] All right.
+[00:44:36] Well, you know, that candle actually.
+[00:44:38] The next candle was also red.
+[00:44:40] So, I better check the high of that candle.
+[00:44:42] Because, you know, I won't, I won't remember.
+[00:44:44] I won't know the high of that candle.
+[00:44:46] That's Sarah.
+[00:44:47] So, I do glance at the chart and roughly once a minute.
+[00:44:50] At a minimum, just to check the high of that candle.
+[00:44:54] And just to determine, okay.
+[00:44:55] So, what's my new potential entry point?
+[00:44:57] And then I'm back to staring at the level two.
+[00:44:59] So, I'm glancing at the chart and staring at the level two.
+[00:45:02] That's where my eyes.
+[00:45:04] And specifically, where I'm looking on the level two is right here.
+[00:45:09] I'm looking at the ask and I'm looking at the share size.
+[00:45:12] And I'm looking at the time and sales.
+[00:45:14] And what I want to see is green.
+[00:45:15] So, this is where I'm spending all of my time.
+[00:45:18] I glanced at the bid to check the spread and to check order sizes.
+[00:45:22] I glanced up at my chart wherever my chart is, right?
+[00:45:26] But this is where I'm focused right here.
+[00:45:28] Even when I'm in a trade, I might glance at my piano to see how much I'm up.
+[00:45:33] But I can do the math, roughly.
+[00:45:35] I know I'm either green or red.
+[00:45:37] You know, and I know how big my sizes.
+[00:45:39] So, I can get a sense of how much I'm up.
+[00:45:42] So, why you test yourself?
+[00:45:44] See, see what you can do reading just level two.
+[00:45:47] And now, maybe if you want, you can test yourself in one of these archives.
+[00:45:50] Okay, so let's watch one of these archives.
+[00:45:52] So, this is going to be an example of,
+[00:45:55] and I've got a couple of archives here that I'm going to show you.
+[00:45:58] And then we're going to talk about something that occurs at 8 a.m.
+[00:46:02] that you may have noticed.
+[00:46:03] At the top of the hour at 8 a.m.
+[00:46:05] We often see this burst of orders.
+[00:46:10] And the candlestick charts can get really kind of screwed up.
+[00:46:13] So, I'll show that to you in a moment.
+[00:46:17] Okay, so this is a screen recording that actually one of our members sent in.
+[00:46:23] I remember we had this stock that was moving higher.
+[00:46:26] So, to get oriented, stocks up with 123% with 6.4 million shares of volume.
+[00:46:32] You know, the candle pattern looks like it kind of popped up.
+[00:46:36] Pull back a couple of topping tails coming up towards five.
+[00:46:40] So, you know, sort of interesting there.
+[00:46:44] So, let's see.
+[00:46:48] And I believe what happens is we end up having a large cell order that pushes the price down.
+[00:46:53] So, let's see when that cell order comes out.
+[00:47:01] So, watching, again, my eye right here is on the ask.
+[00:47:04] And I can see the tape in my peripheral vision.
+[00:47:07] So, a little seller there popped up for a second glance to the buyer.
+[00:47:10] Oh, there we go.
+[00:47:11] Okay, big seller on the ask 100,000 shares on the ask right there.
+[00:47:14] Sorry, back to full screen.
+[00:47:16] 100,000 shares of 85.
+[00:47:18] Now, look at this.
+[00:47:21] This is very, this is fascinating.
+[00:47:23] So, look at those 100,000 shares.
+[00:47:25] They're at 86.
+[00:47:26] 100,000 shares and ask that.
+[00:47:28] And wait, the order just changed to 85.
+[00:47:35] Those shares are exactly the same, but now it's 85.
+[00:47:37] Now it's 84.
+[00:47:40] Now it's 83.
+[00:47:44] 81.
+[00:47:45] 79.
+[00:47:46] 78.
+[00:47:47] 77.
+[00:47:49] 76.
+[00:47:50] 73.
+[00:47:51] It's the same exact order.
+[00:47:53] 71.
+[00:47:54] 68.
+[00:47:55] So, what's happening there?
+[00:47:58] 67.
+[00:47:59] 66.
+[00:48:00] The charts clearly broken.
+[00:48:02] 63.
+[00:48:03] 61.
+[00:48:06] 86,000 shares.
+[00:48:08] 60.
+[00:48:09] 59.
+[00:48:10] So, somebody has a very large sell order and they're pushing the price down.
+[00:48:17] Now, right there, it looks like the order ends up getting all right there.
+[00:48:20] There's a burst of green and it gets bought up and it bounces back up to 60.
+[00:48:26] 4.
+[00:48:27] 65.
+[00:48:28] So, that order's gone.
+[00:48:30] What we don't know, however, at this point is, are they going to bring out another
+[00:48:34] 100,000 share sell order?
+[00:48:35] And we don't know who's putting out that order.
+[00:48:37] We don't know if it's, well, we can draw some conclusions.
+[00:48:44] That was a specific type of order that we'll talk about later in chapter 6.
+[00:48:50] It's an order called a pegged order.
+[00:48:53] And what that means is it's pegged and pinned to a particular price.
+[00:48:57] And in this case, the price is simply the ask price.
+[00:49:00] So, whatever the ask price is, that order stays there.
+[00:49:04] So, it's at 88.
+[00:49:05] And then someone undercuts them and puts an order at 86.
+[00:49:08] Their order moves automatically, because that's the new ask.
+[00:49:11] Someone undercuts it to 85, just immediately, 84.
+[00:49:15] So, it's not exactly an algorithm, but it's just an order type that will move the order as the ask price moves.
+[00:49:24] So, essentially, every time someone undercuts them, their order stays right at the top and it just pushes it down.
+[00:49:30] Some people call it a short wall, because it's something short sellers can use to try to suppress and push the price down.
+[00:49:36] It's very bearish.
+[00:49:38] And you cannot execute orders like that with a commission free broker.
+[00:49:42] It's just not an option.
+[00:49:43] They don't give you that order type.
+[00:49:45] So, it's not a probably, probably, it's not a retail trader.
+[00:49:50] It could be.
+[00:49:51] I mean, you can execute those orders with a more sophisticated broker.
+[00:49:54] So, it could be, but it's probably not.
+[00:49:57] So, then we would probably draw the conclusion that instead that might be an institutional trader selling.
+[00:50:04] And that institutional trader may be someone affiliated with a company,
+[00:50:09] maybe part of not offering, it may be someone that got warrants from the company,
+[00:50:13] years ago and is selling 100,000 of them.
+[00:50:16] We don't know exactly what it is, but I think we would be pretty safe to think that's an institutional trader.
+[00:50:22] Okay, so now here we have an example of a hidden seller.
+[00:50:27] A hidden seller.
+[00:50:29] Hmm, this is very interesting.
+[00:50:31] So, how do you detect a hidden seller?
+[00:50:35] So, what we've got going on here is the stock was halted.
+[00:50:41] It resumes.
+[00:50:42] And right at 29, I got in.
+[00:50:44] Thinking, if it breaks, 1029, we're going to squeeze.
+[00:50:47] But what I keep seeing is every time we come up to 1029,
+[00:50:51] there's just, it's like there's, it doesn't break.
+[00:50:54] And so, the way we can identify that there's a hidden seller is when you see green going through on the time and sales.
+[00:51:01] But the price doesn't move.
+[00:51:04] Now, if there's green going through on the time and sales,
+[00:51:07] if someone right now buys 10,000 shares, this order should disappear.
+[00:51:11] Right?
+[00:51:12] If someone buys 2,300 shares, that order should disappear.
+[00:51:14] If someone buys these, they should all disappear.
+[00:51:16] And then the price should go up at least one penny to 1030,
+[00:51:20] so if orders are going through the time and sales,
+[00:51:24] and we're seeing a lot of orders going through, sorry.
+[00:51:27] We're seeing a lot of orders going through the time and sales,
+[00:51:30] and the price is not moving up, then that's confusing.
+[00:51:35] So, right here, right now, we've got 27 million shares of all of you.
+[00:51:39] So, now it's 28 million, 500,000 shares.
+[00:51:44] Now we're coming up to 29 million shares of all of you.
+[00:51:50] So, see, right there, it should have broken 29.
+[00:51:55] And I added there because I thought it was going to break,
+[00:51:57] and then it didn't break, and I sold half my position.
+[00:52:04] So, what's happening at 29?
+[00:52:08] Well, what's likely happening is someone has a sell order.
+[00:52:11] Now, you can see here on my order entry window, this visible and hidden icon.
+[00:52:16] So, I can hide my orders.
+[00:52:18] You can't do that with most commissioned free brokers,
+[00:52:20] but you can do it with more sophisticated brokers.
+[00:52:22] So, I could put out an order for 100,000 shares and I could click hidden.
+[00:52:26] And you won't be able to see my order.
+[00:52:28] You won't be able to see it right here.
+[00:52:30] But it is there at 10, 29, for instance.
+[00:52:33] And so, every time people are buying,
+[00:52:35] they're accumulating a little bit of my order,
+[00:52:37] and it's getting a little smaller, a little smaller, a little smaller,
+[00:52:39] and eventually if people buy it all up, it'll break,
+[00:52:42] and then the price will go higher.
+[00:52:43] But I would be kind of holding back the price with that order.
+[00:52:46] So, the way we visualize that someone has put out order like that
+[00:52:50] is when we see lots of buying, but the price is not going higher.
+[00:52:53] Alternatively, we can visualize hidden buyers
+[00:52:58] when the price is selling off.
+[00:53:01] When there's a lot of start.
+[00:53:03] When there's a lot of selling going through, but the price isn't dropping.
+[00:53:06] So, someone's then accumulated.
+[00:53:09] So, we're back up to 29.
+[00:53:10] We failed to break again.
+[00:53:12] So, then we're going to drop.
+[00:53:16] I'm holding 7,000 shares.
+[00:53:18] I'm in a little higher than I'd probably like.
+[00:53:20] So, it dips back down to 93.
+[00:53:27] That's going to pop back up.
+[00:53:29] I put out a couple of profit order,
+[00:53:31] 1039, 1042, just to put them out there.
+[00:53:34] So, now I add on the dip.
+[00:53:40] This is a little aggressive.
+[00:53:42] But I did go ahead and add down there.
+[00:53:44] Look at that.
+[00:53:49] It's amazing.
+[00:53:50] I'm up 10,000 bucks.
+[00:53:52] Isn't that crazy?
+[00:53:55] That's crazy.
+[00:53:56] I mean, it makes me laugh just to look at it.
+[00:53:58] Because it's just amazing.
+[00:54:00] And there's no way I would have known to do that
+[00:54:04] if I hadn't been using the level 2.
+[00:54:06] So, I identified that there was a hidden seller.
+[00:54:09] It was at 1029.
+[00:54:11] We had a wall there at 1029.
+[00:54:13] We could see all of that buying,
+[00:54:15] but the price wasn't breaking.
+[00:54:17] So, we knew that there was a damn.
+[00:54:19] So, to speak.
+[00:54:20] And the way I think of it is, there's a damn.
+[00:54:22] And if this damn breaks,
+[00:54:24] we're going to have a massive move.
+[00:54:27] That's if it breaks.
+[00:54:29] It might not break.
+[00:54:30] We might keep getting people absorbing,
+[00:54:32] absorbing them, and eventually people just give up.
+[00:54:34] They're like, this thing is the wall is too big.
+[00:54:37] It won't come down.
+[00:54:38] You know, tear down that wall.
+[00:54:40] So, you know, here finally it breaks.
+[00:54:42] And we go from 1029 immediately to 11 dollars.
+[00:54:46] And it's just instant.
+[00:54:48] And I love those trades.
+[00:54:51] I take that trade all the time.
+[00:54:53] Because typically, if the stock is strong.
+[00:54:56] Yes, it's bearish that there's a hidden seller.
+[00:54:59] Okay, it is bearish.
+[00:55:00] But usually once we work through that seller,
+[00:55:03] once we break, we explode.
+[00:55:05] And so that's, I just know that pattern very well.
+[00:55:08] So that ends up being a really nice trade as it pops up.
+[00:55:11] So that right there,
+[00:55:13] a nice example of a little hidden, hidden seller.
+[00:55:19] Now, I'll show you another one here.
+[00:55:23] This one is not a hidden seller.
+[00:55:27] This one's, this one's a real seller.
+[00:55:30] And here, we're looking at,
+[00:55:33] so this is actually the example that I had that screenshot of.
+[00:55:36] This is going to be a 600,000 share seller.
+[00:55:38] So 600,000 share seller is going to block the way on this one.
+[00:55:43] So it comes up to 10.
+[00:55:46] And then all of a sudden 600,000 shares are right there.
+[00:55:49] And I bought, because I didn't see the order initially.
+[00:55:53] So I jumped in it and then when it came up there to 10,
+[00:55:56] I was like, oh my gosh, this is not good.
+[00:55:59] So it looks like maybe I do a dip trade on this.
+[00:56:03] Now this is right after the opening bell.
+[00:56:09] So this, again, speaks to what we talked about before,
+[00:56:12] which is that a lot of traders don't know how to execute orders
+[00:56:16] pre-market.
+[00:56:17] So someone might have had an order.
+[00:56:18] This is a stock, by the way,
+[00:56:20] that was like $2 a share and then it goes up to 10.
+[00:56:22] And someone just conveniently throws their order at 10 bucks.
+[00:56:25] Hey, 600,000 shares.
+[00:56:26] If I could get out at 10 one at the, you know, nine to five job
+[00:56:29] or probably some executive, but whatever.
+[00:56:32] That's cool.
+[00:56:33] So they just put out the good till cancel order.
+[00:56:35] You can't hide those orders and they're just sitting there.
+[00:56:38] And then it comes back up.
+[00:56:39] So now my cost basis is 9.78.
+[00:56:42] I'm not trying to get into trading strategy in this particular chapter.
+[00:56:46] So that's a dip trade.
+[00:56:48] But anyways, we come back up here.
+[00:56:50] We come back up towards 10 and 700,000 share of seller.
+[00:56:53] Now if it was able to break, that would be pretty significant,
+[00:56:57] but it's, it's not very likely.
+[00:56:59] Anyways, I sell the position I take my property.
+[00:57:01] So all out of that trade sold at 98.
+[00:57:05] So we had a big seller there.
+[00:57:07] Now, this is going to be an example here where we have a big seller,
+[00:57:11] but it does get bought up.
+[00:57:13] So big seller on the level two.
+[00:57:15] So it's just a question of how big is a seller and can, you know,
+[00:57:19] are there enough buyers to send it through that level?
+[00:57:22] Now, if the candlestick chart is particularly strong,
+[00:57:25] that's going to help.
+[00:57:26] So right here, I'm not sure if this is the seller I was referring to,
+[00:57:29] but I'm seeing a ton of volume on this.
+[00:57:33] Granted, it's only a 40% it's not a huge gain,
+[00:57:36] but 27 million shares of volume.
+[00:57:38] There's a seller at the half dollar there at 250.
+[00:57:40] So that kind of a big seller there.
+[00:57:44] And yeah, looks like I just did like a quick scalp through the half dollar
+[00:57:47] whole dollar.
+[00:57:48] So basically jumped in quickly at 48, 6000 shares.
+[00:57:55] There's a seller at 50, but it snaps through that level.
+[00:57:58] So do you notice this is sort of that accumulation right there?
+[00:58:03] And then it goes.
+[00:58:05] I love seeing that.
+[00:58:06] I love seeing that accumulation and then the snap.
+[00:58:09] And usually as soon as it snaps, I'm looking to take profit.
+[00:58:12] Sometimes it snaps and it goes up a dollar a share.
+[00:58:15] Like you saw in that one example.
+[00:58:16] Sometimes it snaps and it goes up five cents a share.
+[00:58:19] So we don't always know how much it's going to pop,
+[00:58:21] but when it snaps through that level,
+[00:58:23] that's where I really like to take a little profit off the table
+[00:58:26] and pay myself.
+[00:58:27] So let's see.
+[00:58:30] Now we're going to have an example here of a 53,000 share seller.
+[00:58:34] And this is just, this is really just introducing you to
+[00:58:40] some of the live trading archives that you're going to see a ton of
+[00:58:44] as we go deeper into certainly in the next chapter,
+[00:58:47] you know chapter seven and then chapter eight.
+[00:58:50] We're going to be spending a lot of time in the archives
+[00:58:53] where I show you these examples.
+[00:58:55] So that's why I wanted to teach you, you know,
+[00:58:58] prior to getting into those chapters.
+[00:58:59] So you know what I'm talking about.
+[00:59:01] You know what to look for.
+[00:59:02] So here on S fun, this, this is the ticker.
+[00:59:05] We're going to see a big seller.
+[00:59:07] It is a Chinese company.
+[00:59:08] It is easy to borrow.
+[00:59:09] It's only up 7% on the day.
+[00:59:11] 1.2 million shares of volume.
+[00:59:13] 53,000 share seller.
+[00:59:15] Look at that stack.
+[00:59:16] Right?
+[00:59:17] That expression that I mentioned.
+[00:59:18] Stack.
+[00:59:19] Big stacks of sellers.
+[00:59:20] In fact, you know what I'm going to do is I'm going to grab a screen
+[00:59:23] shot of this.
+[00:59:24] Grab a screen shot right here.
+[00:59:28] And I'm just going to make a slide and make the note of stacks
+[00:59:32] of sellers.
+[00:59:33] Because that is definitely something that I look for.
+[00:59:36] So let's see.
+[00:59:38] We'll back that up.
+[00:59:41] So then the next.
+[00:59:43] Let's see.
+[00:59:46] Check for big asks.
+[00:59:48] Yep.
+[00:59:49] Okay.
+[00:59:52] So the next live trading archive.
+[00:59:54] I'm going to pull up here for you guys.
+[00:59:56] Let's see.
+[00:59:57] We've got big sellers getting bought up there.
+[01:00:00] We've got that one.
+[01:00:01] We've got that one.
+[01:00:02] Here we've got a 26,000 share seller.
+[01:00:05] Okay.
+[01:00:06] So let's look at this guy.
+[01:00:13] So 26,000 share seller on car.
+[01:00:15] So CRB.
+[01:00:16] I see a 25,000 share seller right there at 1180.
+[01:00:19] It's a little ways away.
+[01:00:20] But I can see it there at 1180.
+[01:00:22] So now it's like, all right.
+[01:00:23] That, you know, is that going to be a problem?
+[01:00:26] You know, and I worry that it could be a problem.
+[01:00:30] So that was just showing you kind of that little clip of there's that big
+[01:00:36] seller stacked up there.
+[01:00:39] And is that going to be a problem?
+[01:00:52] All right.
+[01:00:53] So now let me pull up the next example for you.
+[01:00:58] Let's do.
+[01:01:00] So a big break of a big seller at 10.
+[01:01:04] Let's see if this one looks like.
+[01:01:10] So here we've got a 30,000 share seller at 10 dollars.
+[01:01:13] We'd say that's big, especially considering it's only got 1.3 million shares of volume.
+[01:01:23] So are we going to be able to break that level?
+[01:01:25] That's the question.
+[01:01:26] So 20,000 shares.
+[01:01:34] The volume is like this pause.
+[01:01:38] The volume is going to say it's very light.
+[01:01:40] So look at, well look at that.
+[01:01:42] Look at that snap.
+[01:01:43] So we'll back that up again.
+[01:01:46] 30,000.
+[01:01:47] So 990, 998.
+[01:01:56] And there's 26, 21, 20, 15, 12, 5, and it goes.
+[01:02:03] Another 5,000, 9,000 shares at 05.
+[01:02:06] And then it goes straight to 53.
+[01:02:09] That's an example of an all the way to 71.
+[01:02:11] This is definitely an example of a more thinly traded stock.
+[01:02:14] Now we can see this is a stock that's day one of the IPO.
+[01:02:17] So that's our daily chart type.
+[01:02:19] Day one of an IPO.
+[01:02:20] You know I mean the fact is IPO's can be very volatile.
+[01:02:26] However we don't typically see a lot of market makers that want to make the market on these IPO.
+[01:02:33] Day one of an IPO is just an area where there's a lot of risk.
+[01:02:37] So you see bigger spreads.
+[01:02:38] You don't see as much liquidity.
+[01:02:40] And then that's going to mean a more risk for the market maker.
+[01:02:42] Potentially more profit if we are right.
+[01:02:45] So this goes up to 72 here.
+[01:02:47] But look at the 40 cents spread.
+[01:02:49] No one's really making the market on.
+[01:02:51] So you know big spreads.
+[01:02:53] That creates more risk for us as a retail trader if we wanted to get in up here.
+[01:02:57] Now the spread wasn't as bad when it was below 10.
+[01:03:00] But now for whatever reason traders are a little more cautious.
+[01:03:04] Maybe to buy it up here.
+[01:03:05] It makes sense.
+[01:03:06] It just broke 10 very quickly.
+[01:03:08] So there's not as many people buying it.
+[01:03:10] There's some people selling hoping to get out up here, which is logical.
+[01:03:14] But the bids aren't holding it up enough.
+[01:03:18] So now a few people sell right on the tape and it drops to 18.
+[01:03:22] 1080.
+[01:03:23] So you can see on this how quickly it could go the wrong direction on you.
+[01:03:29] So 10.
+[01:03:30] 20 right now.
+[01:03:32] Now 10.
+[01:03:33] 50.
+[01:03:34] Some green on the tape.
+[01:03:37] 10.
+[01:03:38] 10.
+[01:03:39] 99.
+[01:03:40] So we talked about circuit breaker halts during day trading the basics.
+[01:03:46] So how much higher does it go?
+[01:03:55] I'm wondering, is this going to be strong enough to halt?
+[01:03:58] I sort of don't think it will be.
+[01:04:00] But we'll see.
+[01:04:01] So there's a 20,000 share seller now up there at 11.
+[01:04:05] And then the halt levels of $11 and 10 cents.
+[01:04:09] But you know, on the other hand, it's blue sky.
+[01:04:11] It's day one of an IPO.
+[01:04:13] Who's really selling?
+[01:04:14] The only people.
+[01:04:15] I mean, I guess you have some insiders.
+[01:04:17] Maybe if they're not locked out.
+[01:04:19] You have some people that got assigned shares.
+[01:04:22] Maybe.
+[01:04:29] So it's holding in this area.
+[01:04:31] Now the fact is if we looked at our one minute chart.
+[01:04:34] We had a micro pull back or a flat.
+[01:04:36] We had a flat top breakout.
+[01:04:37] That was the first set if we talked about in chapter five right there for the break of 10.
+[01:04:41] This is not.
+[01:04:42] This has not been.
+[01:04:43] There's no setup right here.
+[01:04:44] I suppose a micro pull back there on the 10 second chart but would have been high risk.
+[01:04:48] So the only actual real one minute setup on this has been the entry of 10.
+[01:04:53] And now we're up at 10.
+[01:04:56] 20.
+[01:04:58] Wow.
+[01:04:59] And now.
+[01:05:00] I'm sorry 11.
+[01:05:01] And now 11.
+[01:05:02] 40 is the new halt level.
+[01:05:08] Amazing.
+[01:05:10] So, you know, this one.
+[01:05:12] How much higher does it go?
+[01:05:13] Just kind of keeps grinding higher.
+[01:05:14] We can sort of fast forward a little bit.
+[01:05:16] halt levels moved up to 11.
+[01:05:17] 50.
+[01:05:18] One.
+[01:05:19] There's a seller at 11.
+[01:05:22] Seller at 11.
+[01:05:23] 50.
+[01:05:24] Right.
+[01:05:26] And then look at that.
+[01:05:27] See that's the thing.
+[01:05:28] Right there.
+[01:05:29] All of a sudden the spread opens up in a big way.
+[01:05:32] 1031 by 1106.
+[01:05:35] People are not feeling safe buying it.
+[01:05:37] That's what that's telling us.
+[01:05:38] They're obviously some people have bought it.
+[01:05:40] But generally people are not feeling super safe buying it.
+[01:05:43] So we'll back out of these a couple live archives.
+[01:05:46] So let's see.
+[01:05:47] We've got that one.
+[01:05:48] And then I've got another one for you here.
+[01:05:50] So this one is a big seller on AVGR.
+[01:05:55] So AVGR is our ticker right there on the top top right.
+[01:05:59] So let's see what this one gives us.
+[01:06:02] So 60,000 share of seller at two.
+[01:06:10] It's up to 55%.
+[01:06:11] So is it going to break?
+[01:06:13] All right.
+[01:06:14] We've got that big seller at two.
+[01:06:15] But now people are selling and kind of bailing out.
+[01:06:18] So it's not breaking that level.
+[01:06:20] So it was not able to break.
+[01:06:21] All right.
+[01:06:22] So now I'm going to show you an example of a big buyer walking up the price.
+[01:06:29] This is interesting.
+[01:06:30] Let's see if I'm able to look.
+[01:06:34] There's the level two.
+[01:06:36] So here we've got a buyer.
+[01:06:37] Where is the buyer?
+[01:06:39] So this stock right now is up to 370%.
+[01:06:46] Wow.
+[01:06:47] It's a big move.
+[01:06:49] And we keep dipping down.
+[01:06:51] I keep seeing the buyer right there.
+[01:06:53] So because I use top of book.
+[01:06:57] The orders will.
+[01:07:01] They will appear when they are at the top of that order book.
+[01:07:05] But then when there's another order that's higher up in price.
+[01:07:08] The order below won't show.
+[01:07:10] If you subscribe to Nasdaq total view, you will see all the orders.
+[01:07:14] And so this order of 40,000 shares that kind of appears in disappears is.
+[01:07:19] It's not actually appearing in disappearing.
+[01:07:21] It's because I'm subscribing to top of book.
+[01:07:24] And so this order's on backs.
+[01:07:26] Looks like yeah.
+[01:07:27] This order's on backs.
+[01:07:28] So when another order comes up on backs.
+[01:07:31] That's a little higher.
+[01:07:32] I see that one at the top.
+[01:07:35] This is actually, this is clearly a buyer.
+[01:07:38] Is it a hidden buyer?
+[01:07:40] Not really.
+[01:07:41] I mean, you can see how big their position is.
+[01:07:44] But it could be an iceberg where they have a much larger position that we're not seeing.
+[01:07:49] Because even though they're selling.
+[01:07:51] That's where it looks hidden to me.
+[01:07:53] That's, that's to me as a hidden buyer.
+[01:07:55] Because even though they're selling, the price doesn't drop.
+[01:07:58] So hidden buyers can be identified just like a hidden seller can.
+[01:08:04] And we, you know, we like to see the hidden buyers.
+[01:08:07] We like to see that because that tells us that clearly,
+[01:08:10] you know, there's some strong momentum on this.
+[01:08:13] So they're accumulating down there at 13.
+[01:08:18] And then it dips down.
+[01:08:23] So I don't remember if the hidden buyer ends up coming back.
+[01:08:26] So let's see if they come back.
+[01:08:35] Sometimes what will happen is if you see there they're back.
+[01:08:38] If you have, if they're trying to get liquidity, they'll buy, buy, buy, buy, buy.
+[01:08:44] They'll profit up.
+[01:08:46] And then people get really confident.
+[01:08:48] And then they pull their orders away.
+[01:08:50] Then the price drops.
+[01:08:52] People sell.
+[01:08:53] And then they're actually accumulating that drop.
+[01:08:56] And then they bring it right back up, right back up.
+[01:08:58] And then they pull out.
+[01:08:59] And then then drops.
+[01:09:00] And then they come right back up.
+[01:09:02] Bring it back up.
+[01:09:03] And then they pull their orders back off the book.
+[01:09:05] And then it drops.
+[01:09:06] And so they keep doing that.
+[01:09:07] And each time they do that, they create more liquidity.
+[01:09:10] Because people buy the dip, sort of with them.
+[01:09:13] Short, short.
+[01:09:14] And then they get pushed out.
+[01:09:16] Long stop out.
+[01:09:18] Right.
+[01:09:19] So you get this increased liquidity.
+[01:09:21] More volume means more buying for them.
+[01:09:24] Now this is, this is not obviously the characteristic hidden cellar,
+[01:09:30] where it's a hidden cellar that is unloading the stock.
+[01:09:34] A hidden cellar unloading the stock is often either the company,
+[01:09:37] doing a secondary offering or an institution selling warrants,
+[01:09:41] selling because they own warrants.
+[01:09:43] So they're just selling on the open market.
+[01:09:45] And then they have the warrants that they'll exercise with the company,
+[01:09:48] which gives them the shares so that they're able to do that.
+[01:09:51] So this is different.
+[01:09:54] This is a hidden buyer.
+[01:09:56] So someone is accumulating a position.
+[01:09:59] So that is much more bullish.
+[01:10:02] I mean, of course, than a hidden cellar.
+[01:10:05] And you also have to ask a question of who's, who's doing this acquisition?
+[01:10:09] Who's buying all these shares?
+[01:10:11] You know, what is, what do they know that I don't know?
+[01:10:14] And they're buying at 376.
+[01:10:17] Okay. Well, let's, let's think it out.
+[01:10:20] What could be happening behind these orders?
+[01:10:23] It's possible.
+[01:10:25] It's theoretically possible that someone had a huge short position on this.
+[01:10:34] It's possible and they're trying to unwind that short position.
+[01:10:37] So these buyers are then buying to cover and they're actually taking a loss.
+[01:10:42] In a way, I hate to say it, but that might be the most probable scenario
+[01:10:47] that someone's trying to cover a loss because it's hard to imagine someone buying
+[01:10:52] and initiating a new position on this stock that's up 308%.
+[01:10:58] How could they possibly buy that many shares at this price in their right mind?
+[01:11:04] You know, that's just, it's not logical.
+[01:11:07] This is where you should be selling.
+[01:11:09] So I, I would, again, this is where there's a degree of speculation.
+[01:11:15] We just don't know.
+[01:11:17] We can, you know, we can kind of put the pieces together as best as we can,
+[01:11:21] based on what we know about the company, what we know about, you know,
+[01:11:24] just behavior in general.
+[01:11:27] And in this case, I don't know.
+[01:11:30] It feels like there might be a huge short that's stuck
+[01:11:37] and they're covering and they're buying on the bit.
+[01:11:40] But look at that.
+[01:11:41] They're all of a sudden they stopped buying
+[01:11:43] and they're no longer providing support in the stock tanks.
+[01:11:46] I don't think, I don't think it's plausible that that person buying,
+[01:11:54] that that, that the order there was just there to entice people to buy.
+[01:11:59] You could argue that a trader and, you know, one of these firms,
+[01:12:03] the sort of, you know, hedge funds or whatever,
+[01:12:07] could put out a big buy order.
+[01:12:09] And by putting out that big buy order,
+[01:12:11] they're trying to entice other market participants to buy the stock.
+[01:12:17] And at the same time, they're going to try to sell the stock short.
+[01:12:21] So, into all that buying, they're actually shorting shorting shorting shorting shorting.
+[01:12:25] But I don't think that's what was going on here in this specific instance,
+[01:12:29] because in this specific instance, those by-orders were actually executed.
+[01:12:33] So now, if they're buying and they're shorting,
+[01:12:36] that's, don't see how that's going to work.
+[01:12:38] So, you know, sometimes, I think the longer that you're in the market,
+[01:12:44] the more you'll hear, you know, about different things that have happened
+[01:12:49] with, oh, there was a short that got, you know, squeeze.
+[01:12:51] They were short, the 700,000 shares.
+[01:12:53] Or, oh, there was this, you know, of course, the game stop short,
+[01:12:57] and all the firms that lost money then.
+[01:12:59] And then you hear an interview with, you know,
+[01:13:02] Goldman Sachs trader, or a Morgan Stanley trader,
+[01:13:07] who says, oh, yeah, we used to, you know, naked short sell stocks every day.
+[01:13:11] You know, we broke their rules every day.
+[01:13:13] We didn't care.
+[01:13:14] You know, if we were getting paid, we did it.
+[01:13:17] And then you're like, okay, interesting.
+[01:13:20] So, you know, I've been, I've been at this for long enough
+[01:13:24] that I've heard all these stories and, you know, seen all these different examples.
+[01:13:28] So, it's given me additional kind of insight,
+[01:13:31] which I think helps, you know, when I speculate on what's going on,
+[01:13:35] you know, it's based on all of that, you know, I've seen.
+[01:13:39] But at the end of the day, we never really know.
+[01:13:42] So, so anyways, so I showed you all of those live archives.
+[01:13:46] Just to give you more flavor of the types of things we look at on level two.
+[01:13:50] And again, what I just can't stress enough is the importance
+[01:13:54] for you to draw the connection between what's happening on the level two
+[01:13:59] and the time and sales there.
+[01:14:03] So, again, if I just, if I end the chart, they're interconnected.
+[01:14:08] So, just, again, just to pull this up, imagine if you didn't look at this at all.
+[01:14:12] This is hidden right here.
+[01:14:14] So, I'm just going to scribble it so you can't even see it.
+[01:14:17] So, if you were just looking at just the prices,
+[01:14:20] it's very confusing why they're moving so much.
+[01:14:24] Like, why is this moving so much?
+[01:14:26] I don't understand.
+[01:14:28] And the reason it's moving is because actual orders are going through that are buying
+[01:14:33] these orders and selling these orders.
+[01:14:36] And then when you look at the actual chart,
+[01:14:38] the chart is just recording all the transactions that went through.
+[01:14:42] So, remember, the time and sales is the data source for the chart
+[01:14:46] and orders that execute, that go through time and sales.
+[01:14:49] If they're market orders, they're just executing it market prices.
+[01:14:52] But, when they execute a market price, if you do a market order for 50,000 shares,
+[01:14:57] you're going to be buying all of these sell orders that are right here
+[01:15:00] and the price is going to go up.
+[01:15:01] So, those market orders interact with the market,
+[01:15:04] every order interacts with the market.
+[01:15:06] Okay, so with that, let's continue on to the next section of chapter six.
+[01:15:10] Thank you very much.

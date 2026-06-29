@@ -1,0 +1,504 @@
+# Chapter10-Part 1 Hot Keys_audio.wav
+# Transcribed: 2026-06-29T21:21:44.862279
+# Duration: 39.7 minutes
+# Model: faster-whisper tiny
+
+[00:00:00] All right, so we're going to jump in here chapter 10 part one on hotkeys in part two will be on hot buttons
+[00:00:08] So hotkeys are essential for
+[00:00:12] Actively and rapidly trading in the market if you do not have hotkeys set up
+[00:00:18] You're just going to trade too slowly. It's as simple as that and so one of the biggest
+[00:00:24] Criteria that I look for in a broker of course fast order execution is important
+[00:00:30] But hotkeys are critical. So let's just say for example
+[00:00:34] You could have a broker that has fast order execution
+[00:00:39] But if they don't have hotkeys, it'll make it very difficult for you to rapidly enter your order
+[00:00:46] So the time you spend fumbling to type in the shares that you want and then
+[00:00:52] The price that you want and then using your mouse to scroll over to the send button
+[00:00:56] That's going to negate any of the fast execution speed that you're getting. So
+[00:01:02] That's one of the reasons that I would argue that some of the brokers that do execute orders fairly quickly
+[00:01:08] But lack hotkeys are still not suitable for day trading in fact
+[00:01:13] You would be better off using a broker that has hotkeys even if the execution was a little bit slower
+[00:01:19] Because with the hotkeys you can rapidly get in and out at exactly the spot that you want and that's one of the reasons that we
+[00:01:26] Actually scored as well as it did on my broker comparison sheet not because the execution speed itself is so fast
+[00:01:35] But because of the hotkeys so again, you know, you guys can check out the broker comparison sheet
+[00:01:41] As you'd like we've talked about that quite a bit, but it's just
+[00:01:45] Something that I think is worth noting so across different platforms
+[00:01:51] You can set up essentially the same hotkeys, but the way you build them will be slightly different
+[00:01:58] So I think this is one of these things that once you understand
+[00:02:03] What you're trying to achieve then once when you open your broker platform and you go into the settings
+[00:02:10] You can see the way in which you achieve it through that platform
+[00:02:14] So as always in the deep dive platform demos
+[00:02:18] I walk you through all the nuances of each of the different platforms that I've done a demo on and there's
+[00:02:25] Probably a dozen or maybe more that I've done this with but for the sake of today's class what I think I'll do
+[00:02:32] Perhaps as introduce hotkeys using
+[00:02:36] Well, I could use we both right here. I've already got this up and maybe I'll show you on the thing or swim platform
+[00:02:43] I could show you on-dastrater and I can show you on
+[00:02:48] Let's see light speed certainly and I can show you on the warrior's sim as well
+[00:02:54] And now I'll get you I think a pretty good start
+[00:02:56] So I'm going to move this up here just for a second and then that'll be out of our way
+[00:03:00] So let's see get logged in there
+[00:03:03] So why don't we begin first I'm going to jump on the whiteboard and I'm just going to kind of map out for you
+[00:03:11] The type of hotkey or the ones that I think are the most essential
+[00:03:16] This again is a basic introduction to hotkeys
+[00:03:20] It's this is not intended to teach you every different
+[00:03:24] Hotkey combination or some of the more complex ones. I'm going to save that for for future
+[00:03:29] But there's a couple of essential hotkeys that you need as you're getting started and these are the ones that are also available on our simulator
+[00:03:37] So the first one is buying the second one is selling and the third one is
+[00:03:46] Cancel orders
+[00:03:49] So all right, so number one for buying so what you already know about the way I trade is that when we have that picture perfect pattern
+[00:03:58] Let's see
+[00:03:59] We've got our first candle spiking up right here
+[00:04:03] We've got a breaking news catalyst
+[00:04:05] We're looking for this little pullback right down here and right down here. We're watching, you know for that first candle to make a new high
+[00:04:13] Right, that's going to be our entry spot
+[00:04:16] Okay, so the way I'm a buyer is not by buying on the bid
+[00:04:21] You guys know that I'm going to be buying against the ask price
+[00:04:26] So the way this order's going to get set up is it's buy it's a buy order
+[00:04:32] I'm going to then choose my shares
+[00:04:36] So you could do a hundred you could you do a hundred thousand whatever it is your shares and then for price
+[00:04:43] I'm going to do ask
+[00:04:47] plus
+[00:04:48] Ten cents. Okay, so if you recall from when I was giving you the demonstration on level two and the order entry window
+[00:04:55] If I do ask plus ten cents and one of this up here just so you can see this a little bit better
+[00:05:02] In the case of this particular stock
+[00:05:05] Ask is
+[00:05:06] 116 let's do this for a hundred shares and we're going to go up to
+[00:05:11] 126 I'm actually going to switch to my
+[00:05:15] My other account here, which I use more just for testing
+[00:05:18] All right, so in this case if I press this button right now to buy what's going to happen my order will execute instantaneously
+[00:05:25] well
+[00:05:26] So that's a bad example
+[00:05:28] one of the issues here in this case is that
+[00:05:32] They're a 22 X Q to medially, so you can see now I'm in one hundred shares
+[00:05:38] It is worth noting that if your order is more than 10% above the current price
+[00:05:44] It will get rejected so on cheaper stocks
+[00:05:48] It's easier to be 10% above the current price because it's only a dollar a share so 11 cents technically above the current price would be a problem
+[00:05:55] I since I don't usually trade cheaper stocks
+[00:05:57] This is not a problem. I run into very often, so kind of inconvenient that you saw right there, but it's none the less
+[00:06:02] It is something you would deal with with the penny stocks, but with higher price stocks
+[00:06:06] you would rarely have your offset
+[00:06:08] That would be a 10% above the current price and so what you just saw me use there is an offset
+[00:06:17] Ask plus 10 that's an offset, so I'm gonna buy X number shares at a price of ask plus 10 cents
+[00:06:26] Right, okay, so this is all making sense ask plus 10 cents and then the time and force
+[00:06:34] so I'm gonna do
+[00:06:36] Time in force
+[00:06:39] For me is day
+[00:06:41] plus because I want this order to work at all times of the day and night
+[00:06:46] This is not just a pre-market order, it's not just an after-hour order. It's all-time
+[00:06:51] This is a will work no matter what and then I could choose my market
+[00:06:59] So we could choose our market now for some of you
+[00:07:04] This will just be
+[00:07:06] Sort of like auto or
+[00:07:09] Smart if you're using think or swim for instance
+[00:07:13] With light speed, I can choose NSDQ. I could choose and it has stack as my market and then under type
+[00:07:21] Order type
+[00:07:22] We would choose that this is a limit order
+[00:07:24] So we're stipulating a limit on it and that's gonna be the limit price right there and then of course
+[00:07:29] You would have things like account number, which your broker may or may not include in the hockey and
+[00:07:35] Then the final is
+[00:07:37] That this is an order that's gonna send
+[00:07:40] So that's the action
+[00:07:43] Okay, so how does that look to actually put that into a script? I'll show you all right
+[00:07:49] So why don't we start first with
+[00:07:51] Weebles since we've already got that one up and Weeble is probably the most intuitive
+[00:07:55] Which makes it nice now again whether or not you want to use Weeble is certainly up to you
+[00:08:01] You could use whichever platform you want, but I'm just gonna show you I'm just gonna demonstrate with Weeble all right
+[00:08:05] so I've got to enter my
+[00:08:09] Verification number there. Okay, so now we're gonna go to hotkeys and we're gonna go to
+[00:08:15] Settings
+[00:08:17] I'm gonna go to trade and I'm gonna click hotkeys settings and for this example
+[00:08:22] I'm just gonna create a new hotkey create a customized button
+[00:08:25] all right, so button is going to be
+[00:08:30] By order and create. I'll just do a hundred shares
+[00:08:36] Okay, so the strategy it's a single order not a one cancels other order
+[00:08:42] It's not a complex order. It's just a single hotkey order
+[00:08:44] Which is what we're introducing here during day train the basics. It's a limit order. That's the order type not market not stop
+[00:08:51] It's a limit order the quantity. I'm gonna choose the hundred shares the limit price
+[00:08:57] I'm not gonna do the limit price of a of last price. I'm gonna choose the ask price
+[00:09:03] I'm then gonna do the offset how much do I want my limit above or below the ask?
+[00:09:09] So in this case, I want to push it above the ask by ten cents. There we go
+[00:09:14] Time and force day and that's the option they give you day or good till cancel
+[00:09:19] It's gonna be a day order extended hours. Yes, it's not stop loss
+[00:09:25] So I don't have to do anything there. The only thing I have to do now is assign it a key
+[00:09:30] So I'm gonna assign it the key here. I can just do shift
+[00:09:35] A shift one is already taken. So but I'll just I'll replace it. So shift one and I'm actually gonna do it for a hundred for ten shares
+[00:09:42] Okay, shift one ten shares click done
+[00:09:46] All right, so now I come over here to Ford and if I press shift one
+[00:09:50] It's gonna send my order up now. Let's see
+[00:09:54] I feel like I do have sufficient I don't have a lot of money in this account, but ten shares 13 now
+[00:10:00] It's actually insufficient buying power. All right, so in any case. This is just a account that I've used for demonstration
+[00:10:05] But nonetheless, you saw how it tried to execute the order. So if we go back in there to hot keys
+[00:10:12] Let's see
+[00:10:14] Hot key settings
+[00:10:16] We're gonna go back here to this. We'll just do it for one share. It'll be fine
+[00:10:22] All right, so one share and I'm gonna click shift one
+[00:10:27] So when I press shift it automatically kind of shows you what possible hot keys you have here
+[00:10:33] So I'm gonna do shift one and it just wants me to confirm because my accounts below the pattern day trade or rule
+[00:10:39] That I'm not gonna try to day trade this so I'm gonna go ahead and send it and now my order has been executed
+[00:10:44] So is
+[00:10:46] We bull the fastest broker out there. It's not the fastest broker out there, but the hot keys are
+[00:10:52] Excellent, they are very easy to set up. So that's our hot key for buying on weeble. So let's back up weeble and now let's pull up
+[00:11:02] Light speed right here light's be trading. Okay, so for light's be trading. I'm gonna press this little widget right here
+[00:11:09] You can press any of the widgets to pull up the same settings menu. I'm gonna go to custom order and I'm gonna go create new
+[00:11:17] new by order and so for this one you can see this is a little less intuitive than weeble
+[00:11:25] But it works nonetheless. So we'll do a hundred. Oh, sorry. We're gonna do market and SDQ NASDAQ
+[00:11:31] I could do ed jacks. I could do arca. I could do bats
+[00:11:36] But I'm just gonna choose NASDAQ as I've discussed NASDAQ
+[00:11:40] Being the route the ECN that gets the most volume is most likely to be able to find a match for my order
+[00:11:48] So it's a buy order as we could see right here. It's a limit order in contrast to these other order types
+[00:11:55] It's a visible order you could make it a hidden order with light speed you can't do that with weeble
+[00:12:00] It's not even an option but visible is fine. It doesn't matter and then through
+[00:12:06] Instead of using the word offset they use through so I'm gonna do 0.10 for 10 cents. I'm gonna choose through the ask
+[00:12:15] I'm gonna change from tiers to quantity. I'm gonna choose a hundred shares
+[00:12:20] And this is when I have a position to close without a position to close. I'm still gonna choose a hundred shares
+[00:12:26] So if I don't have a position to close that means I don't have a position yet at all
+[00:12:31] So I definitely want the hot queue to work if I have a position to close
+[00:12:37] That means I already have an open position you could use a tier or something else
+[00:12:41] But I'm not gonna do that. That's gets things a little complicated. So then we click
+[00:12:46] Save and then we can go to the keyboard right here and
+[00:12:51] Under the keyboard I can go to
+[00:12:54] This is shift zero and then I scroll down to that new buy order
+[00:13:00] We're gonna put it right here. I click on it
+[00:13:03] I then click the zero. Do I want to use shift control or alt? I'm gonna use shift zero to buy
+[00:13:10] That's the order. I click map like that. I click okay, and now watch this shift zero
+[00:13:17] Oops, sorry, did I said the right one?
+[00:13:21] You know what so let me just get out of this position and now press shift zero. There it is
+[00:13:28] All right, so it's because I have a limit to only I'm not I have a limit to prevent me from trading in this account because all the gains are taxable
+[00:13:35] So I don't mind losing money in this account when I'm doing these demonstrations because it's technically a loss
+[00:13:41] So I can offset income. I don't need to trade in this account because it's taxable income in any case
+[00:13:46] So now I can exit and then I press shift zero
+[00:13:51] And just like that I'm in the trade instant very quick
+[00:13:55] Okay, we like that that's how we want orders to execute so now let's look at
+[00:14:02] Let's see let's pop out another let's let's look at
+[00:14:05] This is
+[00:14:08] Dastrater here. Okay, so for Dastrater. This is the next one up. So I'm gonna go to the top menu and click
+[00:14:15] Let's see so from the top menu. I'm just gonna click here set up and I'm gonna go down to hotkeys
+[00:14:23] All right, so now we're gonna be in the hot key window
+[00:14:25] Oops, it's on my other monitor. I'll bring it to right here and I'm gonna create a new hot key
+[00:14:30] so add new item
+[00:14:32] All right, so hot key this is going to be
+[00:14:36] Buy 100 shares now. This is kind of cool here you can go to the order script wizard
+[00:14:45] And it does feel like the software was built in like 1998. It's pretty dated but it's tried and true and it works
+[00:14:53] All right, so how do we set this up? We go to buy by side
+[00:14:58] We choose the number of shares you want to buy the symbol will be defaulted to whatever symbol you have highlighted right here
+[00:15:04] The price look at all these options
+[00:15:08] All right, so we're gonna go ask plus
+[00:15:11] Ten cents you choose your count number the route in other words the market
+[00:15:17] Well with I think our swimmer Charles Schwab you really can only use limit so
+[00:15:23] This is a little confusing because it's can this is saying like order type but in any case you can't change the destination the way you can here on
+[00:15:35] Light speed you don't have this drop down menu
+[00:15:38] So you're on a commission free broker. So this is what you get time and force
+[00:15:43] I use day plus right here day plus
+[00:15:47] Show quantity I leave that blank and then mode is load and send load and send means it will send your order
+[00:15:56] You build the script right there and then boom you're good to go the only thing you have to do is you add your count number
+[00:16:03] So this would be
+[00:16:05] Let's say so semicolon account
+[00:16:09] One for instance equals one so you just put your count number in there and then just like that this can go now for your hockey
+[00:16:17] You press the button you want it shift zero and now you're good to go
+[00:16:22] So now you've got your buy order
+[00:16:24] Okay, now let's jump over over to
+[00:16:28] The next platform which will be
+[00:16:31] Good old fashion think or swim
+[00:16:37] So with think or swim
+[00:16:40] I will tell you first of all that this is one of the least intuitive platforms
+[00:16:45] You'll ever use you this isn't new information to I've said this before
+[00:16:50] So unfortunately think or swim as a platform does not give you customizable hotkeys
+[00:16:59] They give you some
+[00:17:01] predefined buttons that you can essentially turn into a hotkeys. So let me just show you what that is you you go to the settings set up widget in the top corner
+[00:17:10] And when you're on the setup widget
+[00:17:13] You then click hotkeys right here
+[00:17:17] And so under active trader you click enable and these the hotkeys that you have buy market
+[00:17:25] sell market
+[00:17:26] Buy bid buy ask sell bid sell ask cancel and that's kind of it
+[00:17:32] So you're like well wait a second
+[00:17:34] How how do I choose my share size you know what about an offset 10 cents above the ask?
+[00:17:42] You know what about how do you do this and all our old friend Chuck would say
+[00:17:48] Don't ask stupid questions
+[00:17:50] You'll take what I'm willing to give you and you'll be happy with it
+[00:17:54] And so that's your answer you just don't have them
+[00:18:00] I have no idea why they just
+[00:18:02] In 20 years of having this platform never thought to make it more advanced unlike every other trading platform in the world
+[00:18:09] Okay, so again, this is a downside to using
+[00:18:14] Think or swim
+[00:18:16] What does that essentially mean well, so buy market shift one or buy ask
+[00:18:22] Basically all you can do right here
+[00:18:25] Let me just move this back down
+[00:18:27] So
+[00:18:30] Sorry, oh as I've as I've mentioned before this
+[00:18:35] It doesn't like to move across
+[00:18:38] Monitors there's no good reason for it at all it just is extremely stubborn with moving from monitor to monitor
+[00:18:46] All right, so it's halfway down
+[00:18:50] See if I can scroll it down more there it goes
+[00:18:53] All right, and then we'll see if we will accept this it accepted it
+[00:18:57] So the way it works here is if you want to buy one you have to type in the shares you want into this window right here
+[00:19:08] So now if I click buy ask it'll do a hundred shares. Let's switch to a stock that's got more volume
+[00:19:14] So if I click buy ask
+[00:19:16] I'm in right there 1407
+[00:19:19] So if I click my hockey shift one
+[00:19:22] It's gonna execute the order based on the number of shares that are already entered
+[00:19:27] Okay, so that works
+[00:19:29] Except well, let's just imagine a scenario here. What about a stock?
+[00:19:34] You know like MLEC just for instance that has very light volume and only has one seller there at eight 70
+[00:19:43] so
+[00:19:44] In light speed if I tried to buy here at eight 70
+[00:19:49] I would if I tried to buy 2000 shares
+[00:19:52] Most likely I would fill 1,400 the number of shares currently available and then the price is going to
+[00:19:59] Well, it's gonna be a problem. It's I'm in and now the price is gonna move up. So I'll just for the sake of
+[00:20:07] Giving you a full demonstration
+[00:20:09] GPH so I can exit that position
+[00:20:12] MLEC now if there's a hidden seller here I could fill potentially the full amount
+[00:20:18] Let's just see what happens. I'm gonna put my order at 75
+[00:20:22] Click buy and look at what happened the price moved up
+[00:20:25] Right and I didn't fill all of my order. I filled only 21 35 in terms of shares
+[00:20:32] See how that happened so
+[00:20:35] if
+[00:20:36] I didn't allow an offset I wouldn't have filled I certainly wouldn't have filled the whole thing now
+[00:20:42] On edge x it automatically cancel the rest of my order
+[00:20:46] So not that I want to do this, but I'll just just for the sake of argument
+[00:20:50] I'll do this at 90 right here. So if I press this right here
+[00:20:54] Oh, it's not gonna let me because I'm already it doesn't want me to add more shares
+[00:20:58] Okay, so the problem here is if I pull up the same ticker on
+[00:21:06] Think or swim here and I try to do 2000 shares and I click buy ask
+[00:21:13] Well, and now I have to sit here and I have to wait
+[00:21:17] So oh well, this is a stock number one that they're not even allowing you to trade because it's probably
+[00:21:22] A foreign listed security which is fine. It is what it is but the problem is if I clicked buy ask
+[00:21:28] My order would sit there at
+[00:21:30] 90 and
+[00:21:32] Or 88 and if the price moved higher my order wouldn't fill and
+[00:21:37] That's gonna be an issue. I don't want that to happen. I want if I want to get in I want my entire order to fill
+[00:21:44] And so likewise now I'm gonna turn around and try sell this
+[00:21:47] So I've got 21 35 shares
+[00:21:49] So if I click 62 what's gonna happen? How many shares am I gonna fill right?
+[00:21:58] So I'm still holding the rest
+[00:22:03] So I'm waiting I'm waiting I'm waiting I can't see the order I switched to NASDAQ
+[00:22:10] I'm still holding 16 97 I put the order and I'm waiting and waiting and waiting
+[00:22:18] Some shares are getting filled but for the most part I'm having to wait
+[00:22:22] So that's why I need the offset so I want to do 996 and I want to put my offset at 55 if I do that my order will be gone watch
+[00:22:33] Well even then it took a second because of the price dropped a little bit
+[00:22:38] So I need offsets to be able to fill
+[00:22:42] My entire position if I don't use offsets I will always get partial fills so in the case of a fast moving stock like this
+[00:22:52] This thing is moving really quickly. It's got breaking news the order buy
+[00:22:58] Ask is not going to work well for you your order will always get jumped over
+[00:23:05] So you'll get some shares filled on the ask but then the rest you won't get filled and then the stock's gonna go without you
+[00:23:11] So unfortunately as you can tell here
+[00:23:14] The figure swim is not going to be
+[00:23:17] Their hotkeys because they don't allow an offset
+[00:23:20] Are not going to be very good for for day trading. It's just the reality of the way it is
+[00:23:27] So okay, so that's
+[00:23:29] So now that's the figure swim
+[00:23:32] So then over on our simulator
+[00:23:35] We're still building out some additional hotkey functionality and so the way we decide to do this initially was
+[00:23:43] We essentially wanted to give you the ability to have the same hotkeys that I have
+[00:23:50] So if you click on the settings widget right here on your level two window
+[00:23:56] This is where you'll go in and you'll be able to see the way we've prescripted hotkeys
+[00:24:00] So we've already loaded a bunch of hotkeys for you like buy a thousand shares on the ask with a 5 cent offset
+[00:24:06] But you can go ahead and click let's see which one is it so
+[00:24:11] We go a new hotkey
+[00:24:14] So we'll say buy one share ask so we're gonna do buy ask mode shares
+[00:24:22] quantity one day plus limit order ask offset is let's see we're gonna do
+[00:24:29] Ten cents
+[00:24:31] All right, and I'm gonna set this to shift zero and it's enabled
+[00:24:36] All right, so this creates that simple hotkey which is what we wanted now if you want to add another you had another
+[00:24:42] Excitor extender okay, so then we'll close this out
+[00:24:47] See oh save changes
+[00:24:51] Okay, so close this out and then I'm gonna press
+[00:24:55] Let's see
+[00:24:57] You see I just added one share
+[00:24:59] So shift zero
+[00:25:01] Shift zero shift zero shift zero shift zero of now added five shares
+[00:25:06] All right
+[00:25:07] So those are let's see how many brokers was that light speed dash trader we bowl
+[00:25:13] Think or swim and the warrior some so those are five different platforms and what we've done is now
+[00:25:20] Walk you through your first hotkey, which is buying this is hotkey number one and what I would recommend doing
+[00:25:28] Is scripting your hotkey
+[00:25:30] to shift one shift one for me
+[00:25:34] It feels very intuitive just shift one I jump in and then I could do two three four to increase share size
+[00:25:41] One hundred two hundred three hundred four hundred you know a thousand two thousand three thousand four thousand five thousand as you like
+[00:25:48] And what I would recommend doing is taking and just this is the cheap and easy way but it works just fine
+[00:25:54] Is take a little sticky note and we're above a little piece of it and say you know one hundred shares right on it one hundred
+[00:26:02] And then take a little bit of scotch tape and pop that puppy right there on your one key
+[00:26:08] Boom just like that that is your first hotkey
+[00:26:11] Okay, that allows you to get in good. I'm glad you're in a position, but hold on
+[00:26:15] We do need to make sure you know how to get out of that position. So now I'm gonna teach you the second most important hockey
+[00:26:21] Well, I don't know they're not ordered in priority of importance. They're just ordered in
+[00:26:27] The way I think of them which is buying then selling and then cancel
+[00:26:35] Okay, so let's go back to the top
+[00:26:38] So back to weble so for the selling button how do we want to set this up
+[00:26:43] All right, so for weble and well, it doesn't matter which broker so this is gonna be a sell order
+[00:26:48] So we're gonna do sell and then shares
+[00:26:54] I'm gonna do entire position
+[00:26:57] Doesn't matter if I have a hundred and thirty five shares or five one share. I'm doing the entire position price
+[00:27:04] Is bid
+[00:27:06] Minus 10 cents allowing it off set below the bid
+[00:27:11] Time and force is still day plus
+[00:27:16] We're gonna do either depending on which broker you have NASDAQ or you're just gonna do your standard
+[00:27:24] This is I'm saying market, but this is route
+[00:27:27] Market slash route it's not a market order, but market route and then type oops
+[00:27:34] Is limit and then we're gonna send it for the action and of course add the account number. Okay, so now here
+[00:27:44] This is gonna be very quick
+[00:27:45] Unfortunately, I'm not allowed to sell because I just took that position and then I'll get my my my
+[00:27:51] Equity call, but nonetheless we'll go over to settings hotkey settings
+[00:27:56] trade
+[00:27:57] settings
+[00:27:59] New hotkey
+[00:28:02] sell
+[00:28:03] Oops
+[00:28:05] Position click sell
+[00:28:08] Create it's a single order type. It's a limit order. We're gonna do not quantity
+[00:28:15] We're gonna or not shares. We're gonna go to percentage and we're gonna type 100%
+[00:28:21] I'm gonna sell 100% in the position
+[00:28:24] Simple limit price. We're gonna go down here to bid
+[00:28:28] offset
+[00:28:29] We're gonna do let's see
+[00:28:31] 10 cents
+[00:28:33] oops, sorry minus 10 minus
+[00:28:36] Point 10 and then time and force day extended hours yes and then that's it and I like to map this to control Z
+[00:28:47] Control Z makes it really simple sell the whole position control Z
+[00:28:53] All right, so now that is done. Let's do the same thing over at light speed
+[00:28:58] Okay, so on light speed we're gonna go in here. We're gonna create a new hotkey
+[00:29:05] Cell full great new command
+[00:29:08] So we're gonna do a cell order
+[00:29:10] It's gonna be NSDQ. It's gonna be a limit order
+[00:29:14] We can make it hidden. It doesn't have to be visible
+[00:29:17] We're gonna do minus no 10 cents here
+[00:29:22] With light speed you don't have to go negative. They know
+[00:29:25] That when you're doing below the bid as a sell order. It's through is below it
+[00:29:30] quantity
+[00:29:31] 100 shares
+[00:29:34] quantity
+[00:29:35] 100 ups. I'm sorry quantity
+[00:29:38] is close out full position and
+[00:29:42] Without position to close I wouldn't use this key so I'm just gonna leave it at zero if I don't know a position to close and
+[00:29:48] I press this button. I want nothing to happen
+[00:29:51] So I'm gonna have it at zero. That's important. If you had it at a hundred then without a position to close
+[00:29:55] You would go short 100 shares. Don't want that to happen. So I'm gonna put it at zero
+[00:30:00] With a position to close
+[00:30:02] Full position. I could do half or quarter or three quarters, but I'm gonna do full position
+[00:30:07] And then again you save that then you go to your keyboard
+[00:30:11] you say Z and I'm gonna do
+[00:30:13] cell bid full
+[00:30:16] Which is the script that I already have for that same exact hockey
+[00:30:20] So now forward. I'm gonna jump in this shift one
+[00:30:23] So shift one execute my order. I bought at 14 dollars and four cents
+[00:30:28] Now I'm looking at it. Is it gonna go up to 14.05? Maybe it is. Maybe it's not. I'm ready to get out
+[00:30:34] Control Z
+[00:30:36] Out full position gone
+[00:30:39] This is how you trade quickly shift one control Z shift one control Z in and
+[00:30:45] Out in and out and so now
+[00:30:49] You're gonna harness the power of this platform and your keyboard to jump in at these apex pulling points to jump in and jump out
+[00:30:58] Get in and get out very quickly
+[00:31:00] That's what we want. We want speed
+[00:31:03] All right, so we've got light speed. We've got a we-ball
+[00:31:07] Dastrader. We're gonna go add new item
+[00:31:11] cell
+[00:31:12] full
+[00:31:13] position
+[00:31:14] All right, so order script
+[00:31:17] It's a cell side order
+[00:31:19] We're gonna do shares
+[00:31:21] Position but you could see how you could do position times point five
+[00:31:25] If you want it to but we're gonna just leave it at position
+[00:31:28] Symbol will be the symbol you're selected price. We're gonna do bid and we're not gonna go plus
+[00:31:34] We're gonna go minus
+[00:31:36] 10 cents choose your count
+[00:31:38] Choose your route which in this case will just be a limit order time and force is day plus
+[00:31:43] I leave that blank
+[00:31:44] This is load and send
+[00:31:47] Build script boom that's it said to control Z and now you can jump in and jump out shift one
+[00:31:54] Control Z
+[00:31:55] Easy
+[00:31:57] Well, it was easy until we got to our old friend think or swim and
+[00:32:05] Unfortunately here you cannot sell based on your position
+[00:32:10] So if I buy Ford we'll switch back to Ford here
+[00:32:13] So if I buy Ford
+[00:32:17] 100 shares so shift one shift one and I want to get out
+[00:32:22] What do I do? Well my hot key has the ability to sell bid as a hot key or sell market
+[00:32:31] But I can't choose my position
+[00:32:34] During pre-market hours you cannot during regular hours you can click this button flat and it'll exit your whole position for you
+[00:32:41] So you could click and go flat that's cool
+[00:32:44] But pre-market and after hours you can't because this sends a market order to get out
+[00:32:49] So pre-market you're pressing shift one shift one and you want to get out control Z
+[00:32:55] It's gonna sell the number of shares you have here
+[00:32:57] So the area where this is a problem is if you've been slowly accumulating you did shift one
+[00:33:03] Shift one a double then I triple and then I size up and now you're like oh shoot
+[00:33:09] Um, I want to get out of the whole thing
+[00:33:12] You'd have to go and
+[00:33:14] Greg there's no
+[00:33:16] 2000s and now you got a type shoot a type to wrong
+[00:33:20] Yeah, there's a right and
+[00:33:23] Then you can get out and it's clumsy and it's slow and it's not the way you want to do it
+[00:33:29] now back over to the warrior sim
+[00:33:33] Warrior sim again
+[00:33:35] same functionality that you would expect so at a hot key
+[00:33:39] You can click the edit button right here and begin
+[00:33:43] Scripting it so sell full position
+[00:33:46] So it's a sell order the shares are position 100%
+[00:33:51] Limit bid
+[00:33:54] Offset is minus point one zero
+[00:33:58] All right, and then we're gonna save changes
+[00:34:01] So boom now you can jump in now you can jump out so we're jumping in we're adding let's see
+[00:34:08] Oh, we got to make sure we're on our level two window
+[00:34:10] so adding more position to
+[00:34:15] 1,000 intent shares and then jumping out and I'm flat and I'm all out just like that
+[00:34:21] So that allows you to trade very quickly
+[00:34:25] Okay, so now we've got our two most important buttons buying and selling and I always think it's a good idea to have a cancel order button and
+[00:34:35] so this is shift
+[00:34:38] plus one
+[00:34:40] control
+[00:34:43] or command Z if you're on a Mac and this is a control or command Q to cancel an open order and this is a fairly simple script
+[00:34:55] With with most platforms you can do a cancel order script so we just back this up
+[00:35:01] They already have it as one of the action items on
+[00:35:06] The menu for
+[00:35:10] Think or swim here, so
+[00:35:13] Let's see cancel all and you just choose your hockey control queue you'll cancel all orders
+[00:35:19] For add a new item you can go to categories here in dash trader and go to
+[00:35:26] trade and then
+[00:35:29] Let's see cancel and do cancel all or cancel all just for the symbol that you're using
+[00:35:35] And then you double click that let's see or you click add and it'll add and then you just add this control queue
+[00:35:44] and boom your your key is done. It's added
+[00:35:47] We'll back that out back that out
+[00:35:50] Over on light speed it's similar in that regard
+[00:35:53] You can just go straight to your keyboard window and then cue cancel all for a stock
+[00:35:59] So you have your custom commands and then they already have predefined cancel commands
+[00:36:04] So you just choose cancel all for stock the stock that you're on and then boom you add that right there
+[00:36:11] We ball let's see
+[00:36:14] So over on we ball we go to hotkeys we go to settings and then trade hotkeys settings
+[00:36:22] Let's see
+[00:36:25] Cancel all orders cancel all for stocks
+[00:36:30] So or cancel all for single stock since I'm only taking one traded a time
+[00:36:35] It's not a big deal for me to cancel all but if you did have multiple stocks
+[00:36:39] He were into the same time and you had profit targets out you wouldn't want to cancel every single one of your sell orders across the board
+[00:36:46] You would just want to cancel the one specific to that stock which makes sense
+[00:36:52] Okay, so
+[00:36:54] So now at this point
+[00:36:56] You've got your three most important hotkeys buying selling and
+[00:37:01] Canceling orders and what I would do is I would put these on your keyboard and I would memorize them just our practicing shift one
+[00:37:09] Control z shift one control z cancel orders
+[00:37:11] You won't really have to cancel in this scenario very often because you're using offsets
+[00:37:17] But just practice really these two now once you get these dialed in then you can start layering on additional hotkeys
+[00:37:26] Maybe you do another one for selling half your position
+[00:37:29] Maybe you do another one for a different share size for stocks that are either higher priced or lower priced and so
+[00:37:35] You can get to the point where you can have if you'd like you know dozens of different hotkeys and at this point
+[00:37:41] I do I've got dozens of hotkeys on my keyboard
+[00:37:44] But I have so many that I forget them and that's that means you have too many
+[00:37:49] So there's a number of hotkeys that I don't end up using
+[00:37:53] They just I've set them up and at one time maybe I use them and then maybe they stop working sometimes
+[00:38:00] Especially with a broker like light speed they'll have custom routes and then they'll
+[00:38:05] Deactivate them, you know things change they have a new route that comes online and then that one goes away and so on and so forth
+[00:38:11] So it's these on and ends up that
+[00:38:16] Unless you're using it every day. It's very possible that hotkey
+[00:38:19] For a more obscure route or using a dark pool might end up
+[00:38:23] No longer existing and then you still have it on your keyboard
+[00:38:27] We're gonna get into the more advanced hotkeys including
+[00:38:31] Super smart orders and dark pool routing and all of that stuff in strategies and scaling
+[00:38:37] But for right now, I think this is a really solid introduction and I would encourage you to
+[00:38:42] Keep it simple because what you don't want to have happened is that moment of panic where all of a sudden you're in a trade
+[00:38:48] And you're like, um, what button do I press? I can't remember
+[00:38:53] And you know all of a sudden you're you're you're getting jammed up
+[00:38:57] So keep it simple. That's worked really well for me and
+[00:39:01] You know sometimes I get the sparkle, you know shiny objects syndrome where I'm like, oh, a new route. I'll test that
+[00:39:07] And I create the hotkey for it and then you know a week later
+[00:39:11] I forgot that I did it and now I've just got a sort of key that's on my computer that technically might work
+[00:39:17] But I never use it so keep it simple and probably stay in the habit of deleting hotkeys
+[00:39:23] You're not currently using okay, so with that we're gonna continue on to hot buttons hot buttons essentially is
+[00:39:31] Using a hot key in button form that you click instead of on the keyboard where you're pressing a key all right
+[00:39:37] So let's go ahead and jump into that

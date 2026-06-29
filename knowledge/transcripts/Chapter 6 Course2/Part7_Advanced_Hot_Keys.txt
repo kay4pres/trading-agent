@@ -1,0 +1,1593 @@
+# Part 7 Advanced Hot Keys and Hot Buttons.mp4
+# Transcribed: 2026-06-29T21:50:52.210227
+# Duration: 108.0 minutes
+# Model: faster-whisper tiny
+
+[00:00:01] Okay, so we're gonna continue on here with chapter six part seven. Now that you understand the advanced order types and advanced routes, which I covered in chapter six part six.
+[00:00:12] I'm gonna show you how to script them to your hotkeys.
+[00:00:16] So during day trading the basics, I taught you three basic hotkeys by cell and cancel orders. Those are the most important.
+[00:00:26] So when you're using the simulator and I'll just pull this up right here.
+[00:00:30] We said we set up shift one so you can buy. So shift one is gonna be your buy order, boom, your in.
+[00:00:37] Control Z is selling the full position, your out.
+[00:00:41] And if you put an order that was pending, you'd be able to cancel it with control Q. Those are our three basic hotkeys.
+[00:00:48] So and I walked you through how to set those up with a couple of different platforms.
+[00:00:52] So my thought was that although it's true that often I'm selling on the ask in the strength.
+[00:00:59] As a beginner trader, it's really better just to get comfortable with these simple hotkeys.
+[00:01:07] Buying ask selling bit allows you to easily get in and easily get out.
+[00:01:12] And are you losing a little bit between the spread, sure, but for the sake of practicing the simulator and getting comfortable, it's a good starting point.
+[00:01:20] So now how do we build from there? Well, likely you already have built from there a little bit. It wouldn't surprise me if you have.
+[00:01:28] So for instance, if I jump back on the whiteboard here, we had our hockey number one, which was buy.
+[00:01:37] And we did ask plus 10 cents to create an offset above the ask.
+[00:01:43] And then we did sell bid minus 10 cents.
+[00:01:49] And these were limit orders, right? So they work any time of the day or after hours pre-market, they work all day long.
+[00:01:56] And depending on which broker you're using, these may end up being routed through a smart route if you're using commission free broker.
+[00:02:05] Or it may be a direct route, such as NASDAQ, Ajax, for instance, if you're using a direct access broker.
+[00:02:12] And then number three was cancel. However, I had already indicated and this was going to be full position.
+[00:02:20] I already indicated that we might, you might be interested in creating a duplicate of this order except it's half position or maybe quarter position.
+[00:02:31] And in fact, you could also create a version that is sell ask with an offset or without.
+[00:02:38] And then again, for all of these full half quarter position.
+[00:02:42] And so if you did all of that, then all of a sudden you've got full half quarter.
+[00:02:48] You've got 1, 2, 3, 4, 5, 6 different hotkeys for selling and you still have one hockey for buying.
+[00:02:54] And this is going to be for, you know, 100 shares but you do whatever you want.
+[00:02:58] So then 200. So then 300. So this was going to be shift.
+[00:03:02] So this was shift 1, shift 2, and shift 3, right, for instance.
+[00:03:13] And then this would be control or command if you're on a Mac, Z.
+[00:03:19] And then control X, control plus X and control plus C for selling half and selling quarter positions.
+[00:03:30] So if you did all of that, now you've got 9 hotkeys plus you've got your cancel hockey.
+[00:03:36] And I would say these are still simple. These aren't advanced, they're not super complex.
+[00:03:42] They're simple enough to set up. So what I'm going to do first here is just a quick refresher.
+[00:03:49] I'm going to pull up, I'll pull up we both first because their platform is just so intuitive and easy to walk through.
+[00:03:58] So if I put we both right here, we'll go to our positions window or we'll go to the settings.
+[00:04:04] We'll go over to hotkeys down to go to settings and then we'll go over to trade right here as you could see.
+[00:04:12] And then I'm going to click on hotkeys settings. So we're going to go through this oops hotkey settings right there.
+[00:04:20] And I'm just going to walk you through quickly how to create these other hotkeys.
+[00:04:25] So the first one that we had created was, let's see, we had buy order 100 shares.
+[00:04:32] So this is the first one that we created during day trading the basics.
+[00:04:36] It was a buy order to buy, I think we said it one share, but you could set it 100 if you want.
+[00:04:41] I was buying at the ask with an offset 10 cents above the ask and that was going to accommodate potential slippage, right?
+[00:04:50] So if a stock was more thinly traded, you'd be able to get your entire order filled within the limit of 10 cents.
+[00:04:58] And that would probably work. Would it work with 10 shares? Absolutely, 100 certainly.
+[00:05:02] A thousand almost definitely 10,000 depends.
+[00:05:07] Some stocks that are more thinly traded, you might not fill 10,000 shares even with a 10 cent offset.
+[00:05:12] 100,000 shares, that really depends.
+[00:05:16] Yeah, probably not, but depends could be on a very thick trade stock.
+[00:05:21] So how many shares you can fill within your offset is a function of the liquidity of that particular instrument that you're looking at.
+[00:05:29] So in the case of SNSE, you've got a 74 cent spread right now, 26 by 2674.
+[00:05:36] That's a big spread.
+[00:05:37] Ford has a one cent spread.
+[00:05:39] So you could buy 100,000 shares of Ford.
+[00:05:41] It's got 26 million shares of all you.
+[00:05:43] It's thickly traded, no problem.
+[00:05:45] Don't even need a 10 cent offset to fill it.
+[00:05:48] But with SNSE, you certainly would need a big offset to fill that many shares.
+[00:05:52] Okay, so all you do here is you create one version for X number shares.
+[00:05:59] Then you say done.
+[00:06:00] And then you create a second version for the next number shares.
+[00:06:03] Ask plus 10, time and force extended hours.
+[00:06:07] Okay.
+[00:06:08] So then we did a hot key for selling full position.
+[00:06:12] There was a sell full position right here.
+[00:06:14] And we said, this is going to be control z.
+[00:06:17] It's a limit order to sell.
+[00:06:19] The quantity is 100%.
+[00:06:21] And we're selling 10 cents below the bid to accommodate a little bit of downward slippage.
+[00:06:26] And we're doing 100% of a position, time and force is day extended hours.
+[00:06:30] Yes.
+[00:06:31] And that's it.
+[00:06:32] So you save that.
+[00:06:33] And then you create a second order.
+[00:06:35] Back up here, you go to plus, you create a second sell order.
+[00:06:38] And you do everything the same except this is 50%.
+[00:06:41] And then you do another one, that's 25%.
+[00:06:44] Boom.
+[00:06:45] And then just like that, you're done.
+[00:06:47] So that's how you build out these additional hot keys.
+[00:06:51] You've got your template, which I walked you through in a bit more detail and a little bit more slowly.
+[00:06:56] I'm doing day trading the basics for a shift one to buy control z of the sell and then your cancel order.
+[00:07:01] And then you just build out a variation of these.
+[00:07:05] Now, the one order that I will show you here, which I didn't share with you during day trading the basics was the hot key to sell on the ask.
+[00:07:15] So we're going to go to settings again, trading hot key, sell ass half.
+[00:07:23] This would be for selling half into strength.
+[00:07:26] So we're going to create, and we're going to be a single limit order percentage is 50%.
+[00:07:33] We're going to use the ask price.
+[00:07:35] And now, here's a question, do I want to do an offset?
+[00:07:39] I'm going to leave it today, I'm going to add extended hours.
+[00:07:42] Well, let's bring back up for instance, SNSE.
+[00:07:46] So if I bring back up SNSE here, let's look there, let's find.
+[00:07:52] We can see 25, 75 by 26, 22.
+[00:07:57] So because it's more thinly traded and has bigger spreads, an offset may be advised.
+[00:08:04] And I'm going to open up, I'm going to switch over to my kind of, well, it's a real account, but anyways, it's my margin account.
+[00:08:13] And I'm going to take a couple trades here and show you how these hot keys work.
+[00:08:16] So first, I'm going to do one for buying 100 shares.
+[00:08:19] So I'm going to click buy right here and I fill the $26 and $15.
+[00:08:24] Okay, so now, if I put my order on the ask right there, I'm at 2628, right?
+[00:08:30] I canceled it, see how my orders there, and then I can cancel it.
+[00:08:35] So if I put my order there, I have to wait for someone to come and buy my shares.
+[00:08:40] Now, that's not going to be as much of a problem on a stock like forward because there's a one cent spread.
+[00:08:45] And in fact, because the spread is so tight, I might as well not try to trip over dollars to pick up a penny with a spread.
+[00:08:53] I might as well just sell on the bit.
+[00:08:55] But in this case with a bigger spread, I really do want to try to get out on the ask if I can.
+[00:09:00] So there's a couple different ways I could set up my hot key to sell on the ask.
+[00:09:05] One way is I sell on the ask with no offset, which is exactly what you're seeing.
+[00:09:10] And the other is where I sell on the ask and I say, I'm going to put out an offset.
+[00:09:14] So I'm actually going to do a five cent offset. My order is 2621.
+[00:09:19] So my order is actually tucked under there. Why can't you see it?
+[00:09:23] All right, let's go into the settings. Now, this is something you cannot do with we both.
+[00:09:29] So we're going to go down here to sell, ask, offset, full.
+[00:09:39] Maybe this one, this is the one. Okay, so we're doing NASDAQ through the route.
+[00:09:50] But my order is hidden. It's not visible. It's a hidden order.
+[00:09:55] So when it goes under the ask, no one can see it.
+[00:09:58] Now, if I click visible on this and we click OK, watch what happens now.
+[00:10:03] My order sucks under the ask. See that? See how it sucks under there?
+[00:10:10] Now, you could talk it under there, and that's fine, or you could have it hidden.
+[00:10:15] If your order is hidden, then what happens is if someone comes and tries to buy, they think they're going to get in at 2640.
+[00:10:24] And low and behold, they get filled at 2635 because they bought my shares.
+[00:10:30] And they're happy. They're like, hey, that's awesome. I got in five cents lower than I was expecting.
+[00:10:34] And I'm happy because I had a tray. And so my order, that order would go through on the time and sales in white,
+[00:10:41] because it went through between the spread.
+[00:10:44] And I get out of the better price, certainly then having to sell on the bid.
+[00:10:48] I don't get as good of a price as if I'd sold on the ask.
+[00:10:51] But the price is okay. I can tolerate it, right? I can work with it.
+[00:10:57] So we'll get that. So we'll put the order out there, 26. So here, I put the order at 2750, right there.
+[00:11:05] That'd be a full dollar share on this position. If my order gets filled, but that's an if, because it might not.
+[00:11:12] You know, people might not decide to buy it, so I cancel the order, and then it's off.
+[00:11:17] Okay, so you can't do hidden orders at any commission free broker.
+[00:11:23] It's just not an option. You can't do it. You can do the offset. You can say, I want to sell on the ask, and I want to do my offset minus five cents.
+[00:11:31] Oops, you could do your offset five cents, blow the ask the same as I did, but you can't hide your order.
+[00:11:36] You can only do that with direct access brokers.
+[00:11:39] So I could do it here on light speed, you could do it. You know, you can, well, adding direct access broker, but you can't do it with thicker swim, for instance.
+[00:11:49] Now, the interesting thing, however, with finger swim, is that you can set up a hot key if you wanted to, with desk trader to hide your shares.
+[00:11:59] It just disregards it with finger swim. So, so let's see, all right, so let's look at these hot keys again for a second.
+[00:12:08] All right, so we've got, which ones do we have already? We've got, I walk you through, had a buy on the ask, and had to create a couple different versions of that.
+[00:12:17] So that's pretty straightforward, that shouldn't be a problem.
+[00:12:20] Selling on the bid, this is the same, the only thing you're changing here is your position from full to half to quarter, and then selling on the ask.
+[00:12:29] So I gave you the first one, which is selling on the ask full, you know, no offset.
+[00:12:36] And so what I actually do for myself, and this does get a little complicated, but I set up my hot keys, where control, K, L, and semicolon sell on the ask.
+[00:12:51] I started with the L button to sell half and used L because by selling half on the ask, I'm adding liquidity to the market, so that reminded me L for liquidity.
+[00:13:01] And then that was the button, and then I added two buttons on either side of it for half and for quarter, for full and for quarter.
+[00:13:08] So anyway, so now I've got all three buttons here for selling on the ask.
+[00:13:11] If I press the all button and use those same keys, I'm selling on the ask using my 5% offset.
+[00:13:17] And honestly, I don't usually think to use it, because all of a sudden you can see that's three more hot keys on top of the nine we already had,
+[00:13:26] and not including the midpoint and the peg doors that we're going to get into later in this chapter or in this section.
+[00:13:32] So you get to a certain point where you've got so many hot keys you stop remembering what they all do, and you stop using them.
+[00:13:39] So in the case of selling on the ask, while you certainly could say, I want to have my order to sell on the ask, and I want to use a hidden order, and I want to use a 5% offset.
+[00:13:51] What you might find is that in reality a 5% offset, most of the time, could mean your order is actually hitting the bit.
+[00:14:00] If you use a 5% offset on forward, you're hitting the bit.
+[00:14:04] It's the same thing as hitting the bit, right?
+[00:14:06] So it's not actually accomplishing getting you a better price in that case.
+[00:14:11] So over in a dash trader, if you go to add new item, so we go add new item, and we say this is going to be sell ask.
+[00:14:23] We would go to the script wizard, and we would say sell position times 0.5 for instance, symbol will be the one that's highlighted on your level 2 window.
+[00:14:35] So the price is ask, and we're going to go minus 0.5, choose your count, the route, you don't really get options.
+[00:14:46] As you know, time and force is day plus, and you could say 0.
+[00:14:52] If you do 0, it's going to hide your shares.
+[00:14:55] If you're using a broker that allows it, but if you're using thicker swim, then it won't.
+[00:15:00] So think or swim basically just disregard that.
+[00:15:03] You can put it in there, but it doesn't do anything.
+[00:15:05] So now this is sell ask, half position, 5 cent offset, and that would work.
+[00:15:12] Maybe what would be more helpful would be like a 1 cent offset, so you're just shaving 1 cent underneath the ask,
+[00:15:21] and you just make that your default hot key.
+[00:15:24] Again, I'm not doing that, my sell ask hot key right here does not have an offset, it's just sell ask.
+[00:15:31] And then I have the second offset down here, which is on a separate hot key.
+[00:15:36] So if I do 1 cent offset here, I'm going to put this up and let's see control K.
+[00:15:43] Oh, it's a hidden order right now.
+[00:15:46] Oh, there we go, but I got filled.
+[00:15:48] All right, so jumped me out and it's 727.99.
+[00:15:54] So my order got, did get filled there, so someone bought it, and yeah, I don't know,
+[00:15:58] it's just been somewhere in there in my order got filled.
+[00:16:02] So in any case, all right, so where are we at now?
+[00:16:06] Let's get oriented.
+[00:16:07] So now I've walked you through going from day trading to basics with three hot keys,
+[00:16:13] all the way up potentially to nine hot keys, or maybe even as 10, including the cancel hockey,
+[00:16:20] or maybe even 12 or 13, if you're adding separate hot keys for bigger offsets.
+[00:16:24] It's only on the rare occasion that I'm trading a $20, $30 share stock that I need them.
+[00:16:30] So when I traded it this morning, I absolutely needed the advanced orders with offsets,
+[00:16:36] but also with the midpoint peg order and dark routing to be able to get in and out,
+[00:16:40] because this is a stock that is more thinly traded, and with bigger spreads, it can be harder to get in and out.
+[00:16:47] So let's get into how to script those hot keys.
+[00:16:52] So now we're going to step away from the commission free brokers.
+[00:16:57] We've gone about as far as we can go with them.
+[00:17:00] What you just saw with those nine to 12 hot keys is pretty much as far as you can go with commission free brokers.
+[00:17:07] Yeah, there's not much else I can add there.
+[00:17:10] And again, not that there's anything wrong with that.
+[00:17:13] I guess one step further is setting up multi-account syncing, which we'll talk about in another chapter,
+[00:17:19] which you could do with certain brokers.
+[00:17:21] But still all your hot keys are going to be fairly straightforward.
+[00:17:26] They're buying the ass, selling the bed, and you don't get advanced order routing.
+[00:17:30] So here's the way I think about it.
+[00:17:32] We sort of have a line here.
+[00:17:34] We've got the commission free brokers.
+[00:17:37] And of course, we have some of the, I don't know, just, I would say like,
+[00:17:46] maybe like the retail brokers that are not specialist.
+[00:17:52] You know, the kind of jack of all trades brokers.
+[00:17:54] And some of these are international and they charge commissions, but they're just not really specialized.
+[00:18:00] And then you have the more specialized brokers, including direct access.
+[00:18:08] And so for many of you guys, the commission free brokers,
+[00:18:13] the ability to fund an account with, you know, $2,000, for instance,
+[00:18:17] and have zero platform fees and no commissions.
+[00:18:20] And if you make $20, it's like free and clear.
+[00:18:23] That's $20 for you.
+[00:18:25] You know, that's a nice way to get started.
+[00:18:28] But I generally've kind of felt that at a certain point,
+[00:18:32] you're going to get kind of diminishing returns on commission free brokers.
+[00:18:36] And that's where you kind of want to step up to the more specialized brokers.
+[00:18:42] And on the flip side, specialized brokers are a little slower to help you get started
+[00:18:47] and why, because they do charge fees.
+[00:18:49] And so those fees take a disproportionate amount of profit
+[00:18:53] when you're only trading with small size.
+[00:18:55] And you don't really benefit from all of the advanced order types and routing options
+[00:19:00] that they give you when you're trading with less than 1,000 shares.
+[00:19:03] In fact, even less than 5,000 shares, arguably you don't get much of a benefit.
+[00:19:07] So, yes, you do get this later improvement in growth.
+[00:19:14] But early on, I think it's harder.
+[00:19:17] So, for that reason, I do see a great value in using a broker like weebel
+[00:19:22] as you're getting started enjoying commission free.
+[00:19:25] And then once you get to a point where you've had six months,
+[00:19:28] or maybe a year of producing some consistent profit,
+[00:19:31] and you're starting to hit that ceiling of share size
+[00:19:35] where you're starting to see slippage on your order.
+[00:19:38] That's when it's time to look at moving up to one of these bigger brokers
+[00:19:44] and making the leap.
+[00:19:46] So, everything I've taught you so far and shown you,
+[00:19:50] in terms of the 12 or so hotkeys, have been universal.
+[00:19:55] You can use them on both platforms, and now what we're going to get into is the stuff
+[00:19:59] that's really for the specialized direct access brokers.
+[00:20:02] So, one of my goals for teaching this class,
+[00:20:06] and really, you know, for the entire curriculum,
+[00:20:08] is that I put everything on the table for you.
+[00:20:10] Even if there are things that you don't need right now,
+[00:20:12] I'm putting it all on the table.
+[00:20:14] And that includes all of this information that I'm about to share with you
+[00:20:17] about more advanced order types and more advanced routes.
+[00:20:22] For some of you, you're going to say, look, Ross,
+[00:20:24] I don't need this right now.
+[00:20:25] I don't want to go too deep.
+[00:20:26] You know, I'm using a commission free broker,
+[00:20:28] or my broker doesn't offer these things,
+[00:20:30] and I'm just going to stick with simple, or hey,
+[00:20:32] I'm trading with a simulator right now,
+[00:20:34] so these things don't really matter for me at the moment anyways,
+[00:20:38] and that's fine.
+[00:20:39] Just know that there is this whole section of the class
+[00:20:42] that is going to do a really deep dive into advanced order types,
+[00:20:46] advanced routing, including dark pools,
+[00:20:49] and how to create hotkeys to utilize these different types of orders and routes.
+[00:20:55] And so, that's what we're going to do now.
+[00:20:57] And I'm going to use light speed as the platform
+[00:21:01] that I'm going to demonstrate all of this on,
+[00:21:03] because it's the platform that I've been using now for more than a decade.
+[00:21:06] Can you replicate a lot of the tools,
+[00:21:09] or sorry, a lot of the routes, hotkeys, and order types
+[00:21:13] with other direct access brokers, many of them you can,
+[00:21:17] but I'm going to demonstrate it on light speed.
+[00:21:20] So if you end up using a different direct access broker,
+[00:21:25] or a different specialized broker,
+[00:21:27] you'll probably have to just go through there.
+[00:21:30] You know, I would imagine they'll have getting started guides
+[00:21:34] and things like that that will walk you through
+[00:21:36] how to set up these order types.
+[00:21:38] So I've got the light speed website up right here.
+[00:21:40] I'll say it again.
+[00:21:41] I have no affiliate relationship with light speed.
+[00:21:43] So if you use them, it's great.
+[00:21:44] If you don't, I don't get paid by you guys using them.
+[00:21:47] I've got no relationship with them other than
+[00:21:49] they've been the platform I've used for the last 10 years
+[00:21:52] because they're good.
+[00:21:53] And they're not perfect, but they work really well.
+[00:21:56] And it's been a good fit for me.
+[00:21:58] So on their website, I'm going to go over to the support tab here
+[00:22:01] for, let's see, light speed trader set up.
+[00:22:05] And I'm going to open two different order entry documentation
+[00:22:09] when does here.
+[00:22:11] This one's going to be for orders to PDQ,
+[00:22:15] which is a dark pool.
+[00:22:17] And this is orders to night,
+[00:22:21] which is also a dark pool.
+[00:22:23] So these are two dark pools that we're going to use.
+[00:22:26] And I'm going to show you how to create your hotkeys
+[00:22:29] to capitalize, to utilize these two destinations.
+[00:22:34] So, and just to be clear,
+[00:22:38] when you use a commission free broker,
+[00:22:42] commission free, you know, your route is free.
+[00:22:49] Sometimes they call it smart.
+[00:22:51] But they choose how your order gets executed, right?
+[00:22:56] And that's where they're using the payment for order flow methodology,
+[00:22:59] or you call them made business relationship.
+[00:23:03] With, you know, direct access by default,
+[00:23:08] you're getting NASDAQ, and that's DQ.
+[00:23:12] You're getting Edge, let's see, sorry, Edge,
+[00:23:16] Edge, X, you're getting ARCA, and BATS,
+[00:23:20] and you get a few others.
+[00:23:22] And these are ECMs, ECMs, right?
+[00:23:26] So the electronic communication networks.
+[00:23:28] And so this is how you send your orders to the market.
+[00:23:31] But remember, each one of these market makers publishes
+[00:23:36] an order book.
+[00:23:37] And so, if I pull up the simulator here,
+[00:23:41] let's do it again, so I'll have it up.
+[00:23:46] Yeah, so if we pull this up,
+[00:23:48] so each one of these market, each one of these ECMs
+[00:23:54] publishes an order book of every order that's placed
+[00:23:58] through that exchange, essentially,
+[00:24:01] through that network.
+[00:24:03] And so, because these predatory,
+[00:24:06] high frequency trading algorithms,
+[00:24:08] subscribe to that data,
+[00:24:10] which you and I, as retail traders,
+[00:24:12] don't have full depth into,
+[00:24:14] they're able to see where all of our orders are placed,
+[00:24:16] including stop orders, and they can do stop hunting.
+[00:24:18] And they can see our orders that are coming in
+[00:24:20] to these different ECMs.
+[00:24:22] So, while this is still much faster than using Commission
+[00:24:26] free brokers for their smart routing,
+[00:24:29] there's another layer here,
+[00:24:31] which is, so these are the lit markets,
+[00:24:34] which means they've displayed an order book,
+[00:24:37] and then these are going to be the dark markets.
+[00:24:39] And the dark markets include, well, there's a lot of them.
+[00:24:43] And they, there's, these have a,
+[00:24:47] camera board, it was called, but anyways,
+[00:24:49] we've got night here,
+[00:24:51] they're a cross-finder.
+[00:24:53] What was cross-finder?
+[00:24:55] Sweets, cross-finder?
+[00:24:56] They have cross-finder,
+[00:24:58] which lights be no longer offers,
+[00:25:00] and they have PDQ, oops, PDQ,
+[00:25:03] and they have others that they have,
+[00:25:05] which I don't have access to.
+[00:25:07] But, so, as of right now,
+[00:25:09] the ones that we have access to on light speed,
+[00:25:13] include night, and PDQ.
+[00:25:15] So, these destinations do not publish an order book.
+[00:25:21] So, you can't, a predatory algorithm can't see
+[00:25:25] where people have their orders.
+[00:25:27] Big buyers, big sellers, you can't see them.
+[00:25:30] Now, if there is a big seller, and you want to buy,
+[00:25:33] you can send your order through night,
+[00:25:35] and if night can match it, your order will get matched,
+[00:25:37] and you'll get felt, and if they can't,
+[00:25:39] your order will sit there until maybe a match comes along,
+[00:25:41] but the predatory algorithm cannot see your orders.
+[00:25:45] And that means you're less likely to get front run
+[00:25:47] by those algorithms, who see your order coming in,
+[00:25:49] and move the market out of the way,
+[00:25:51] because they're making the market,
+[00:25:53] and the result is you getting slippage.
+[00:25:56] So, when you start getting more slippage,
+[00:25:58] that's when it's time to start thinking about using these dark pools.
+[00:26:03] And, you can use these dark pools
+[00:26:05] in the same way that you would use Nasdaq,
+[00:26:08] Ajax, Archer, or Bats,
+[00:26:10] which is, you just set that as your route,
+[00:26:12] and you're buying on the ask, plus 10 cents,
+[00:26:16] or you're selling on the bid, minus 10 cents.
+[00:26:19] That's fine.
+[00:26:20] So, you can just replace this ECN with this one here,
+[00:26:25] but I'll tell you something.
+[00:26:26] Generally, when I'm trading,
+[00:26:28] especially early in the morning,
+[00:26:30] when I'm trading a stock with breaking news,
+[00:26:32] usually these dark pools don't yet have
+[00:26:36] any people that are buying or selling these stocks.
+[00:26:39] And so, if you put your order here,
+[00:26:41] it'll just sit there, and you won't get filled.
+[00:26:44] Now, that doesn't happen with Nasdaq.
+[00:26:46] When you put an order here that's a marketable order,
+[00:26:48] your order will reroute to one of the other lit markets,
+[00:26:51] but that doesn't happen when you do a dark route.
+[00:26:53] So, when you do a dark route,
+[00:26:54] if they don't have any order, any liquidity,
+[00:26:57] your order will just sit there.
+[00:26:59] It will not fill.
+[00:27:00] And so, the natural problem there,
+[00:27:02] of course, is that you want to get in the stock,
+[00:27:05] and you can't get filled.
+[00:27:06] So, I actually don't tend to use these ECNs
+[00:27:11] for trying to buy,
+[00:27:13] especially a fast-moving stock.
+[00:27:15] And I don't typically use them
+[00:27:17] for just trying to sell on the bid
+[00:27:19] when I'm trying to bail out.
+[00:27:21] So, all of those hotkeys I already shared with you,
+[00:27:23] those I still use,
+[00:27:25] but then I have some advanced hotkeys I use,
+[00:27:28] very specific to,
+[00:27:31] well, that work really well with these two destinations.
+[00:27:36] And those are pegd orders.
+[00:27:39] But a very specific type of pegd order.
+[00:27:42] You've got orders that are pegd to the midpoint orders
+[00:27:45] that are pegd to the primary market
+[00:27:48] and orders that are pegd to the,
+[00:27:52] well, so the primary market,
+[00:27:55] whether the bid or the ask.
+[00:27:57] So, we'll just, I'll do an example here.
+[00:28:00] So, $26 by 2625,
+[00:28:04] which is a current spread on the stock.
+[00:28:06] So, this is the bid.
+[00:28:08] This is the ask.
+[00:28:10] And so, the midpoint right here is about 2612, right?
+[00:28:15] So, 2612, approximately.
+[00:28:17] That's our midpoint.
+[00:28:18] So, if I did an order, for instance,
+[00:28:24] to sell using one of these two routes,
+[00:28:28] say night or PDQ,
+[00:28:30] and I said midpoint,
+[00:28:33] what it'll do is it'll peg my order
+[00:28:37] to the midpoint right there.
+[00:28:39] And if the stock goes up to 2650, for instance,
+[00:28:44] or let's just say the stock goes down.
+[00:28:46] Let's say the stock goes down to 26 by 2575.
+[00:28:51] The midpoint goes down to 25,
+[00:28:55] you know, 87 or whatever it is.
+[00:28:59] So, the midpoint drops down here,
+[00:29:02] and as the midpoint drops down,
+[00:29:04] my order moves down with it.
+[00:29:06] So, the order is at the midpoint.
+[00:29:10] It's not at a specific price.
+[00:29:12] It's not at 2612.
+[00:29:14] It's at the midpoint of the spread.
+[00:29:16] So, whatever the midpoint is,
+[00:29:17] the midpoint goes up, the midpoint goes down,
+[00:29:19] my order is still there.
+[00:29:21] And it's remember it's on the dark pool.
+[00:29:23] So, I have a cell order there to sell at the midpoint.
+[00:29:27] And if there's anyone that wants to buy on that dark pool,
+[00:29:30] they can buy my shares.
+[00:29:32] And there, my order is just going to be constantly moving
+[00:29:35] between the midpoint.
+[00:29:37] What's the advantage here?
+[00:29:38] By having my order at the midpoint,
+[00:29:40] I do not have to hit the bit.
+[00:29:42] When I'm trading a stock that has a bigger spread,
+[00:29:45] like this one right here, 25 dollars by 2550.
+[00:29:48] And this is in the simulator.
+[00:29:51] But nonetheless, if I put my order here to buy,
+[00:29:56] if I get in, so I'll just jump in here.
+[00:30:00] So, I'm in at 2570, whatever.
+[00:30:02] And then I say, oh, I want to get out.
+[00:30:04] I put the order at 2590.
+[00:30:06] What I now have to do is I have to wait
+[00:30:08] for orders to go through at that price
+[00:30:11] in order for me to get filled.
+[00:30:12] Now, when you've got a one cent spread,
+[00:30:14] well, you could just hit the bit.
+[00:30:16] You take the one cent hit, doesn't matter.
+[00:30:18] You get out.
+[00:30:19] But in this case, when the spread is this big,
+[00:30:22] you know, 50, 50 cents,
+[00:30:25] this becomes a little bit of an issue to hit the bit.
+[00:30:28] And if I'm sitting on the ask and not getting filled,
+[00:30:31] then I'm kind of stuck.
+[00:30:33] And I feel like it's hard to get out.
+[00:30:35] I can hit the bit, going to hit the bit,
+[00:30:37] and hit it with a bigger order size,
+[00:30:41] those predatory algorithms are going to see that order.
+[00:30:43] They're going to pull their order back and it's going to flush.
+[00:30:46] And that's why I don't want to have happened.
+[00:30:48] This is not an issue with small size.
+[00:30:50] It's not as much of an issue with commission for brokers,
+[00:30:52] probably in general because of the way they create
+[00:30:55] or offer more liquidity than the current NBBO.
+[00:30:58] But it is an issue when you're trading with bigger size.
+[00:31:01] Once you start to scale up more.
+[00:31:03] So, by, so while selling on the ask is fine,
+[00:31:08] we've got a small share size and fine,
+[00:31:10] we've got a tighter spread even with big size.
+[00:31:13] And it's okay in a really, really strong market.
+[00:31:15] In a market where you've got a bigger spread and the stock.
+[00:31:18] You're not getting filled by putting your order on the ask.
+[00:31:21] You don't want to hit the bit.
+[00:31:23] So now what's the other option?
+[00:31:25] With commission free brokers and the more simple brokers,
+[00:31:27] there's not one.
+[00:31:29] But with some of these more complex order types
+[00:31:33] or more advanced order types,
+[00:31:36] using the midpoint we have an option.
+[00:31:38] So you could use the midpoint with certain ECNs,
+[00:31:43] ARCA, Edjects, NASDAQ,
+[00:31:45] some of them allow midpoint orders with direct access brokers.
+[00:31:49] Not all of them.
+[00:31:50] Some of them allow midpoint orders and peg orders,
+[00:31:53] but they don't allow them pre-market.
+[00:31:55] So that's not super helpful for pre-market action.
+[00:31:58] But the two dark pools that we're going to talk about,
+[00:32:02] night and PDQ, they do allow midpoint peg orders
+[00:32:07] and they allow them pre-market.
+[00:32:09] At least they have for the most part when I've been testing them.
+[00:32:12] With the exception of if a stock has lighter volume,
+[00:32:15] you might not get filled,
+[00:32:17] but the order is still accepted by the market
+[00:32:20] and sits there with the market.
+[00:32:23] So as we jump into,
+[00:32:27] so let's see.
+[00:32:29] So of the two dark pools, night and PDQ,
+[00:32:39] we're going to start with night.
+[00:32:43] Night has two primary ways that you can route orders through them.
+[00:32:49] One is called fan,
+[00:32:52] and the other is called covert.
+[00:32:54] So let's start by talking about fan.
+[00:32:59] Fan, sweeps, and posts orders,
+[00:33:02] both in displayed, which are lit markets,
+[00:33:05] and non-displayed, which are dark pools,
+[00:33:08] while recirculating to the destinations
+[00:33:10] where executions are taking place.
+[00:33:12] This gives you the highest likelihood of your order filling.
+[00:33:15] However, your order may just end up filling
+[00:33:17] on the displayed market over at Jack's or Nat Stack.
+[00:33:21] A covert order uses fans technology,
+[00:33:25] but this strategy is only for traders to desire to interact
+[00:33:28] with liquidity in non-displayed markets.
+[00:33:31] Particularly when the potential negative exposure
+[00:33:33] is a paramount importance.
+[00:33:35] It posts and fills orders in dark pools exclusively.
+[00:33:41] So covert is the one that's going to be a little bit more interesting
+[00:33:45] between the two.
+[00:33:46] That makes sense.
+[00:33:47] So now they give you instructions of how to actually set this up.
+[00:33:51] And it's fairly straightforward,
+[00:33:53] and I'm going to walk you through how to do it.
+[00:33:55] This is specific to light speed.
+[00:33:57] So this is not an order type that you would be able to use
+[00:34:00] necessarily with every broker.
+[00:34:03] Some of there are other brokers that I'm sure have set up
+[00:34:06] a relationship with night, but how you would set it up
+[00:34:09] would be a little bit different.
+[00:34:10] So these instructions are specific to night.
+[00:34:14] And so once we set them up,
+[00:34:16] you can choose to send your order on fan,
+[00:34:19] the fan order type here.
+[00:34:22] So again, this is going sort of a,
+[00:34:26] it's not like fan is a well-known order type.
+[00:34:31] It's a proprietary name that night uses
+[00:34:35] for how they're going to execute your order in the market.
+[00:34:39] And when you send your order with fan,
+[00:34:41] you can either have it be a pegd order at the market price,
+[00:34:45] a pegd order at the midpoint price,
+[00:34:48] or a pegd order at the prime market price.
+[00:34:51] And so I don't use these orders for buying,
+[00:34:55] but I do use them for selling.
+[00:34:57] And so the two orders I would be interested in doing
+[00:35:00] would be a peg market to basically bail out
+[00:35:03] or a peg midpoint to sell at the bid.
+[00:35:08] And so that's the one that we're going to look at right there,
+[00:35:10] the peg midpoint.
+[00:35:12] And then same with covert.
+[00:35:13] When you do the covert order,
+[00:35:15] you can either do essentially a market order,
+[00:35:17] or you could do a midpoint order,
+[00:35:19] or you could do the primary peg order.
+[00:35:21] And I'm going to use the midpoint order.
+[00:35:23] All right, so the next step here is to get this set up.
+[00:35:26] So I'm going to click the widget here
+[00:35:28] for my little order window.
+[00:35:30] And I have to go down,
+[00:35:32] and I have to add a market,
+[00:35:34] and I have to add a contract.
+[00:35:36] And so the market here is night.
+[00:35:38] Night is the market,
+[00:35:41] and the contract is what we're going to choose right here.
+[00:35:44] So we're going to do CVTN,
+[00:35:47] CVTN,
+[00:35:48] and that's for a neutral midpoint peg.
+[00:35:52] So a midpoint peg,
+[00:35:53] that means the order is going to be at the midpoint
+[00:35:55] between the bid and the ask.
+[00:35:57] And so SNSC is a perfect stock for us to test these orders on.
+[00:36:00] All right,
+[00:36:01] so now you add that,
+[00:36:03] you click add,
+[00:36:04] and you go down here,
+[00:36:05] and you'll see it's available right there.
+[00:36:07] All right,
+[00:36:08] so now click OK.
+[00:36:10] So now if you went to type,
+[00:36:12] you could go all the way down here
+[00:36:14] to CVTN right there.
+[00:36:16] And it chooses market,
+[00:36:17] and it chooses type.
+[00:36:19] So now let's say,
+[00:36:21] let's just say I buy this stock.
+[00:36:24] Well,
+[00:36:25] let's see what happens if I try to buy it.
+[00:36:27] Yeah, see that's nothing more.
+[00:36:29] I don't think it'll let me sell it that way either.
+[00:36:33] I'm going to go ahead and I'm just going to switch this back
+[00:36:36] for a second to limit.
+[00:36:38] And we're going to buy 100 shares of this.
+[00:36:41] Well, actually,
+[00:36:44] so we could try doing this peg,
+[00:36:50] and see if this fills.
+[00:36:52] So this is a primary peg on NASDAQ.
+[00:36:54] So my order right there is a buy order.
+[00:36:56] Oh, I got to put the price higher.
+[00:36:58] 27 dollars a share.
+[00:37:00] And my order is in between right now the spread.
+[00:37:03] So let's see where I get filled.
+[00:37:05] There's no order going through,
+[00:37:07] and it's on NASDAQ.
+[00:37:08] So I ended up getting filled there at 66.
+[00:37:11] Okay,
+[00:37:12] so I got there was a match.
+[00:37:13] So I got filled the 66.
+[00:37:15] Now if I want to turn around and sell,
+[00:37:17] I turn around and sell,
+[00:37:19] and I have to set and I have to wait.
+[00:37:21] Now I'm pretty sure this,
+[00:37:23] because this is the lit market,
+[00:37:25] I'm pretty sure this doesn't work pre-market,
+[00:37:28] but I'm not certain on that.
+[00:37:30] So,
+[00:37:31] but now let's go switch back to CBTN.
+[00:37:33] Alright, so CBTN is a midpoint to let me sell this.
+[00:37:36] Yeah.
+[00:37:37] So we're going to put the sell order at 26 dollars a share.
+[00:37:40] I'm going to click sell on CBTN.
+[00:37:42] And now my order is sitting on a dark pool,
+[00:37:45] and it just filled at the same price that I bought out,
+[00:37:48] which was 2666.
+[00:37:51] Now we're going to go to 27.
+[00:37:54] I'm going to click buy.
+[00:37:57] The order cannot be hidden.
+[00:37:58] It has to be visible.
+[00:38:00] So now my order is in between the spread.
+[00:38:02] Right here,
+[00:38:03] looking for a match,
+[00:38:04] and I filled it 2660.
+[00:38:06] Again, like I said,
+[00:38:07] I don't use this for buying,
+[00:38:09] because you see how it takes a little too long,
+[00:38:11] but I'm okay with using it for selling.
+[00:38:13] So I put the limit,
+[00:38:14] which is the least I'm willing to accept for the stock,
+[00:38:16] for the price.
+[00:38:17] I click sell.
+[00:38:18] I hope that was too low.
+[00:38:20] Sorry.
+[00:38:22] I click sell.
+[00:38:23] And let's see where I get filled.
+[00:38:24] I get filled right there at 2690.
+[00:38:27] So my order got filled on a dark pool
+[00:38:29] in between the spread.
+[00:38:31] So that's a midpoint order.
+[00:38:33] Okay, so I can click point and click down here.
+[00:38:35] That's a little inconvenient.
+[00:38:36] Can we set that up with a hot key?
+[00:38:38] Absolutely.
+[00:38:39] Let's do that.
+[00:38:40] All right, so we're going to go into settings here,
+[00:38:42] and we're going to go to custom order,
+[00:38:44] and we're going to do a new one for route.
+[00:38:47] And this is going to be dark pool cell.
+[00:38:51] Great new command.
+[00:38:52] Night,
+[00:38:55] CBTN.
+[00:38:56] We're going to do a midpoint peg.
+[00:38:58] It's a cell order.
+[00:39:00] We're going to do
+[00:39:02] bid 25 cents,
+[00:39:06] 50 cents.
+[00:39:07] I'm going to let it go well below the bid.
+[00:39:09] It's going to be a hidden order.
+[00:39:14] Now we might have to come back and check that,
+[00:39:16] but we're going to leave it a hidden for right now.
+[00:39:18] Close out is going to be full position.
+[00:39:20] We'll do half.
+[00:39:21] We'll do half that way.
+[00:39:22] We can test the hot key more times.
+[00:39:24] And with quantity, without a position to close,
+[00:39:26] we're going to go like that.
+[00:39:27] And we're going to map the key,
+[00:39:28] and I'm just going to put it on my G button here.
+[00:39:31] So control G.
+[00:39:32] We're going to put it on control G,
+[00:39:34] and this was where we call this cell.
+[00:39:39] I can really call it dark pool cell.
+[00:39:44] So dark pool cell.
+[00:39:48] So dark pool cell.
+[00:39:52] There we go.
+[00:39:53] Then we're going to go to G,
+[00:39:54] and we're going to set it to Shift and G.
+[00:39:57] Map.
+[00:39:58] Okay.
+[00:39:59] So now I'm going to buy,
+[00:40:01] I'll just set it to Level 2.
+[00:40:03] So I'm going to buy 100 shares here,
+[00:40:06] and we're just going to buy right on the ass.
+[00:40:09] And even there,
+[00:40:11] even there, I got filled slightly below the ass,
+[00:40:13] and why?
+[00:40:14] Because there was likely a hidden order.
+[00:40:16] So even on the lip markets,
+[00:40:18] you can sometimes fill between the spread.
+[00:40:20] And you don't need the midpoint to fill between the spread.
+[00:40:22] If there's a hidden buyer there, or a hidden seller.
+[00:40:24] All right.
+[00:40:25] So now we're going to do control G.
+[00:40:29] Let's see.
+[00:40:30] Control G.
+[00:40:31] Oh, I think I said to Shift G.
+[00:40:33] All right.
+[00:40:34] Shift G was what we quoted at.
+[00:40:36] And that went right out at 2630.
+[00:40:40] So basically went,
+[00:40:43] the order just went right out.
+[00:40:45] 2640, 2640.
+[00:40:48] So right now,
+[00:40:49] it seems like it's just going right out,
+[00:40:51] essentially at like the market price.
+[00:40:54] All right.
+[00:40:55] So let's try it again.
+[00:40:56] So we're going to buy 100 shares here.
+[00:41:01] So we're back in 100 shares.
+[00:41:03] 59.
+[00:41:04] Let's try the set order here.
+[00:41:06] We'll do 50, 2640.
+[00:41:10] Yeah.
+[00:41:11] So these orders are just filling immediately right now.
+[00:41:13] So at the moment,
+[00:41:14] what that means is there's some liquidity on the dark pool.
+[00:41:17] And these orders are filling instantaneously.
+[00:41:19] This one filled at 67.
+[00:41:21] I'm going to do Shift G.
+[00:41:24] Why is that one filling at 40?
+[00:41:26] 25.
+[00:41:28] Okay.
+[00:41:30] So now we got it.
+[00:41:31] Let's just go and check that out.
+[00:41:32] People are second.
+[00:41:33] All right.
+[00:41:34] So let's see.
+[00:41:35] So we're going to jump back in here dark pool.
+[00:41:37] So see.
+[00:41:42] This is why.
+[00:41:43] CVTN.
+[00:41:46] That was our problem.
+[00:41:47] You should have pointed that out to me when I was just doing this a second ago.
+[00:41:49] I wish that could have saved us a couple minutes.
+[00:41:52] All right.
+[00:41:53] So CVTN.
+[00:41:54] Let's try it now.
+[00:41:55] Midpoint.
+[00:41:57] It wasn't sending to the midpoint because we had the wrong contra.
+[00:42:01] And that's how important it is.
+[00:42:02] I mean, you've got to make sure you've got these right.
+[00:42:04] That's why we test them.
+[00:42:05] All right.
+[00:42:06] So Shift G.
+[00:42:07] Oh, I'm not in the position.
+[00:42:09] All right.
+[00:42:10] So we're going to go ahead and buy 100 shares.
+[00:42:12] And then I'll press Shift G.
+[00:42:13] And the order did sit for a second.
+[00:42:15] I filled at 78.
+[00:42:16] And then I filled at 92.
+[00:42:18] And then I filled at 90.
+[00:42:20] So you see how, what I like here with using this type of order is that I can sell without hitting the bid.
+[00:42:31] Why don't I want to hit the bid when you hit the bid?
+[00:42:37] If you're holding 10,000 shares and you want to sell half, you want to sell half, but you don't want to hurt your existing position,
+[00:42:44] which is the remaining 5,000 shares.
+[00:42:46] And if you hit the bid, you're going to send an order.
+[00:42:48] Through the market that's red on the tape.
+[00:42:51] Potentially bright red.
+[00:42:52] If you take out the bid by two or three cents with slippage.
+[00:42:55] And that communicates weakness to the market.
+[00:42:57] If you're in the stock and you like it, you don't want to communicate weakness.
+[00:43:01] And so what you instead would do is either sell on the ask and get the best price.
+[00:43:06] So fine, control, control K or control L.
+[00:43:09] Sell on the ask.
+[00:43:10] Put the order there.
+[00:43:11] Hit in visible.
+[00:43:12] It's up to you.
+[00:43:13] What if that order doesn't fill?
+[00:43:15] Then what can you do?
+[00:43:18] You cancel it.
+[00:43:19] You put the order out again.
+[00:43:20] It still doesn't fill.
+[00:43:22] You cancel it.
+[00:43:23] You put it out again.
+[00:43:24] And now you're only alternative with a traditional commission free broker would be to bail and hit the bid right there.
+[00:43:31] And in this case, if there's a match and there's a hidden buyer at 74,
+[00:43:35] maybe I get an improvement a little bit.
+[00:43:38] But typically the order is going to be red on the level two,
+[00:43:41] especially if you're trading with bigger size.
+[00:43:43] So with a mid point order, now you've got a little bit more flexibility.
+[00:43:48] With a mid point order, suddenly you can unwind this a little bit differently.
+[00:43:51] So let's just do, I'm just going to do, for example,
+[00:43:54] I'm going to show you what a mid point order would look like to buy here.
+[00:43:59] So see how I'm filling 33.
+[00:44:02] And now I've got to wait for people to sell.
+[00:44:06] So I've filled 100 shares.
+[00:44:08] And then my order gets canceled.
+[00:44:12] So I have restrictions on this account to prevent me from trading the stock.
+[00:44:16] Because I really don't want to trade too much of you.
+[00:44:19] All right, so it filled enough and then it cancel the rest of my order.
+[00:44:22] So now we're going to go shift G.
+[00:44:25] I sold half at 92.
+[00:44:27] Shift G.
+[00:44:28] Another half at 81.
+[00:44:30] Shift G.
+[00:44:31] Another half.
+[00:44:32] Shift G.
+[00:44:33] Another half.
+[00:44:34] And I'm out the rest.
+[00:44:35] Now, if I did that same order to buy on the lip market,
+[00:44:43] that same order would execute instantaneously.
+[00:44:46] But as we know, I would get slippage.
+[00:44:49] So if I click this right now at 39, well I fill the whole order.
+[00:44:53] Let's just see.
+[00:44:55] So I filled 300 shares and then the rest of the order didn't fill.
+[00:45:00] So I only filled 300 shares on the open market,
+[00:45:03] because I didn't allow it enough slippage.
+[00:45:05] And that was it.
+[00:45:06] So now I'm in just with 300 shares.
+[00:45:09] So at least here I could have gotten in faster if I'd given myself more offset.
+[00:45:15] So now if I got out on the open market, I'd probably get filled at 27.
+[00:45:19] If I press Shift G, the orders at the midpoint for 150 shares.
+[00:45:24] And I get filled at 27.8.
+[00:45:27] And my order doesn't go through red on the tape.
+[00:45:30] I sell another half, another half, another half,
+[00:45:35] and although the price is dropping a little bit, it's not dropping because my order is red.
+[00:45:39] That's not my order that's going through there.
+[00:45:41] That's someone else.
+[00:45:43] And then control Z for the rest.
+[00:45:45] So the first type of midpoint pegged order is using the dark pool.
+[00:45:53] Now as I said, you don't have to use a dark pool.
+[00:45:56] You can use the lip markets.
+[00:45:59] And there's some functionality to use lip markets.
+[00:46:04] Sorry, lip markets with pegged orders.
+[00:46:07] But it's a bit more limited.
+[00:46:12] So for instance, let's see.
+[00:46:16] I'm going to do an order here.
+[00:46:18] I'm going to buy 100 shares.
+[00:46:20] I'll put the buy at the order out there.
+[00:46:25] We'll see where we get filled.
+[00:46:27] So we're just buying on the dark pool just to try to get a little price improvement on order,
+[00:46:34] which is just for the sake of teaching you guys.
+[00:46:36] So now I'm going to put an order control p.
+[00:46:39] This is a, let me go in here actually.
+[00:46:42] So custom orders keyboard and p.
+[00:46:47] So p is edge x peg.
+[00:46:50] So we're going to go edge x cell peg, edge x cell peg.
+[00:47:02] We'll make it visible 25 cents a half position.
+[00:47:11] All right.
+[00:47:12] So now if I press control p, my order is going to be, well,
+[00:47:16] see, my order is small enough that it's actually not displaying.
+[00:47:19] But the idea here is that your order sits right at the ask price.
+[00:47:24] Now although it shows 2703, my order is at the ask price when you do peg to ask.
+[00:47:31] So I don't know if we could get this to, I don't think,
+[00:47:37] sorry, I don't think that I can get this to display.
+[00:47:41] Well, we could try switching it to NASDAQ.
+[00:47:43] We could go, we'll just see if we switch to NASDAQ.
+[00:47:45] Maybe we'll display a NASDAQ.
+[00:47:46] We'll try.
+[00:47:47] All right.
+[00:47:48] So we'll go to edge x.
+[00:47:50] Now this is the type of order that I had showed you previously in a live trading demo
+[00:47:55] that I don't like using because it to me feels inherently bearish to put a peg
+[00:48:04] order on the ask.
+[00:48:07] So I'm just going to sell the rest of this, shift g, shift g, shift g.
+[00:48:15] All right.
+[00:48:16] So we're out of the rest of that.
+[00:48:17] So now let's buy 500 shares and now I'm going to press control p.
+[00:48:22] So my order right now is on the ask.
+[00:48:24] It's not displaying, probably because the size is too small.
+[00:48:27] But I'm on the ask and my order automatically moves with the current market price.
+[00:48:34] So if the market's coming down, my order is still on the ask.
+[00:48:37] So whatever the ask price is, my order is joining the ask with everyone else.
+[00:48:43] So let me just cancel this for one second.
+[00:48:47] Let's just check to make sure.
+[00:48:50] I just want to make sure it was going through NASDAQ.
+[00:49:00] But I am surprised that it's not displaying the order.
+[00:49:03] I've seen peg orders display.
+[00:49:05] I just don't use these peg orders enough.
+[00:49:07] Oops.
+[00:49:08] That's not the one.
+[00:49:11] I think it might just be because my order size is too small.
+[00:49:17] Let's try doing full position.
+[00:49:19] Make it visible.
+[00:49:21] Try doing ARCA.
+[00:49:25] Save.
+[00:49:26] No.
+[00:49:29] It's not showing up there on the ask.
+[00:49:31] So in any case, I'm going on a little bit of a tangent here because you don't actually need to
+[00:49:40] set up this order because this isn't one that actually use.
+[00:49:46] Set order.
+[00:49:48] Full position.
+[00:49:49] Ask.
+[00:49:50] Yeah.
+[00:49:52] That's all.
+[00:49:53] That's all right.
+[00:49:54] So let's say ARCA.
+[00:49:57] Yeah.
+[00:49:58] That's at ARCA.
+[00:49:59] And then.
+[00:50:00] Yeah.
+[00:50:01] I don't know.
+[00:50:02] I'm not sure why it's not displaying the order.
+[00:50:04] Oh, it looks like the ARCA and the NASDAQ to those cancel.
+[00:50:10] No, I can't.
+[00:50:11] Anyway.
+[00:50:12] Anyways.
+[00:50:13] So the idea here is, oh gosh.
+[00:50:15] Look at this.
+[00:50:16] This stock has so much volatility in it.
+[00:50:17] But it's fine.
+[00:50:18] It doesn't matter.
+[00:50:19] So the idea with the peg order on the ask is that you put the order on the ask.
+[00:50:24] And as the ask drops down, your order drops down with it.
+[00:50:29] As long as you have enough offset in your order.
+[00:50:32] So let's see.
+[00:50:33] So we go to the edge x order.
+[00:50:37] And you can add, you know, 75 cents of offset.
+[00:50:41] The only thing you remember is that if you're trading a, like you can't, if you add too much offset, like $5 a share of offset, it's not going to work.
+[00:50:51] What's going to happen?
+[00:50:52] So I'll show you.
+[00:50:53] So I'm going to buy a hundred shares of this.
+[00:50:55] Do a hundred.
+[00:50:57] So buy a hundred shares here.
+[00:50:59] I press control P and it's going to reject the order because I'm too far outside the current market price.
+[00:51:05] So they said no, you can't do that.
+[00:51:07] You're too, you can't be that far outside current market price.
+[00:51:10] So then you got to go back in and you can set it to not more than 10% outside current market price.
+[00:51:16] So that's going to be a problem if you're trading stocks at a dollar a share because that's only 10 cents.
+[00:51:22] But if you're trading stocks between three dollars and up, you know, you could do as much as a 30 cents through.
+[00:51:28] And what that means is that the stock can drop 30 cents and your order will still be on the ask.
+[00:51:35] So right now my orders on the ask is 63.
+[00:51:39] If the ask drops down to 53, my order will automatically move with it.
+[00:51:44] So now the ask drop too much.
+[00:51:46] So I cancel and put the order again, 2620.
+[00:51:49] And the stock with a bigger range, I could do a dollar a share through.
+[00:51:53] I could have a bigger through on this one.
+[00:51:55] And as soon as the market ticks up, my order will get filled.
+[00:52:01] Remember what I had said about how retail orders are always last in line?
+[00:52:05] So I have to wait for the market to tick up one tick for my order to get filled.
+[00:52:10] But then it'll get filled.
+[00:52:11] I'll get filled on the first pop up.
+[00:52:13] So like right now, I've got a wait for an order to go through and green and then my order should get filled.
+[00:52:18] There it is.
+[00:52:19] So had to wait for the order to go to be green but then it fills.
+[00:52:25] Okay, so let's get oriented here for a second with what we've already covered.
+[00:52:29] We already talked about these order types.
+[00:52:32] And then we talked about the night order.
+[00:52:37] And we've been using CVTN.
+[00:52:42] CVTN being a midpoint peg order.
+[00:52:50] So it's pegged to the midpoint of a stock.
+[00:52:54] In between the bid and the ask is the midpoint of the spread.
+[00:52:57] And so you've got 1450 by 15.
+[00:53:01] So your midpoint is 1475.
+[00:53:05] But of course the midpoint is changing as the price is moving.
+[00:53:08] So your order continues to move as long as you gave it enough of a through.
+[00:53:12] It'll move down and it'll move up.
+[00:53:14] So a minus 25 cent through, your order will move down as the midpoint moves down to 1450
+[00:53:20] and it'll move up if the midpoint moves up.
+[00:53:22] And so that allows you to get filled in between the spread without your order hitting the bid.
+[00:53:27] So you don't fuel red on the time and sales.
+[00:53:30] Then we talked about doing the same thing with lit markets,
+[00:53:36] which you can do during certain market hours but not with every market.
+[00:53:41] Some markets don't allow them, some do.
+[00:53:43] And it's also sort of broker broker.
+[00:53:45] So that's something you can check with your individual broker.
+[00:53:49] And then we talked about peg orders on the ask.
+[00:53:53] So that peg order on the ask and how they push the price down.
+[00:53:58] So generally a peg order on the ask,
+[00:54:02] I interpret as being very bearish.
+[00:54:05] I don't like seeing it.
+[00:54:06] And so I wouldn't want to execute my orders using that order type in really any scenario.
+[00:54:12] So although I haven't set up, it's not an order type I use.
+[00:54:16] I demonstrate it but I don't like using it for my own trading because unfortunately,
+[00:54:20] it just communicates to much weakness in the market.
+[00:54:24] Now using light speeds, night, algo with fan is an interesting kind of happy medium.
+[00:54:33] Because with fan, if there's no match on the dark pool,
+[00:54:37] it'll just reroute your order to the lit market.
+[00:54:40] So it kind of is like, well, I'll try the dark pool and if I fill that's awesome and if not,
+[00:54:45] well, then I'll just go to the lit market, which I was going to have to do anyways.
+[00:54:49] So if you do that for the midpoint, the fan midpoint peg, I'll show you how to set that one up.
+[00:54:55] So again, we go back to the widget.
+[00:54:57] We've got to go night and then F-A-N-N add.
+[00:55:02] And then that's going to be down there.
+[00:55:04] Oops, I think I already had it on there.
+[00:55:06] So it's up there, right there.
+[00:55:08] All right, so we're going to say okay with that.
+[00:55:11] And now we can go to fan right here.
+[00:55:14] So if I click the buy button on this, let's see if it'll accept it with a hidden order.
+[00:55:19] So it's sitting right now in the open market.
+[00:55:23] 2680 and then my order filled partially at 2649.
+[00:55:28] Now let's try to sell 82 shares.
+[00:55:31] So we'll put the order down a little bit, we'll put the salt order out.
+[00:55:35] And my order fills instantly.
+[00:55:37] So did I fill on the lit market or did I fill on the dark market?
+[00:55:42] We don't know.
+[00:55:44] I mean, it filled instantly, but we don't really know.
+[00:55:47] And that's kind of the problem is then I'm thinking, am I adding latency by sending my order through this algo
+[00:55:55] when I'm not actually filling on the dark pool?
+[00:55:59] Because in that case, shouldn't I just send directly to the lit market?
+[00:56:04] So I don't buy using fan.
+[00:56:07] And I don't sell using fan either because I feel like if I'm just going to sell the direct open market,
+[00:56:13] I might as well just do that.
+[00:56:16] And again, because this sweeps and post orders in the displayed market,
+[00:56:21] it's showing your hands to the private target algorithms that are in the lit market.
+[00:56:25] So you're not saving yourself anything by using fan instead of using the regular market,
+[00:56:31] in my opinion, the regular lit market.
+[00:56:33] So again, I click the buy button here, it sits.
+[00:56:38] Are we going to execute?
+[00:56:42] Now we know if we sent this to the lit market, we would execute immediately.
+[00:56:45] So it is hesitating there, but that's because it's a midpoint order.
+[00:56:49] So if I did fan A, fan A is aggressive.
+[00:56:54] That's going to hit the market.
+[00:56:55] That should fill instantly.
+[00:56:56] Well, it won't, because let me just close that order.
+[00:57:00] So that will fill instantly.
+[00:57:02] Why?
+[00:57:03] Because fan A is a marketable order.
+[00:57:06] So it's going to buy at market price.
+[00:57:08] So that'll fill instantly when I buy,
+[00:57:11] and it'll also fill instantly when I sell.
+[00:57:14] But you're not going to get as good of a price, and you could create red on the tape,
+[00:57:18] and you could create green on the tape when you're buying because you're buying at market prices.
+[00:57:24] So fan A, aggressive.
+[00:57:28] You know, could you use that to buy instead of using Ajax or NASDAQ?
+[00:57:34] I just don't see the benefit to that.
+[00:57:37] I think if anything could slow down your order execution slightly,
+[00:57:41] and I don't want to do that on the buy side.
+[00:57:44] On the sell side, could I sell using fan?
+[00:57:47] Yeah, I could.
+[00:57:49] But I would rather try if I'm going to use the night algo.
+[00:57:53] And remember, you pay a routing fee, you know,
+[00:57:56] for these, for using night.
+[00:57:59] So night algo, you do pay a routing fee.
+[00:58:02] Night cover, the fee is right here.
+[00:58:04] And the night fan fee is right here.
+[00:58:06] So since you're paying fees, I'm kind of like,
+[00:58:08] might as well just use NASDAQ, right?
+[00:58:11] It's not like I'm getting a big benefit to using night.
+[00:58:16] It's just about trying to get better execution on your orders.
+[00:58:19] But I'm not sure that it helps with buying and selling when you're using fan.
+[00:58:23] So for that reason, right now I'm not using it.
+[00:58:25] Now again, maybe in the future, I'll test it out more,
+[00:58:27] and maybe I would try it, but as of late,
+[00:58:31] it's not the route that I've been using.
+[00:58:33] So I've just been using the cover.
+[00:58:35] And again, you could use CVTA.
+[00:58:39] And CVTA is a cell order is not the worst idea ever.
+[00:58:43] Why?
+[00:58:44] Because let's say you bought, let's, I'll just do a bigger position here.
+[00:58:48] I'll just see if it'll execute.
+[00:58:50] So to jump in with thousand shares, whatever.
+[00:58:54] So let's just say I have a thousand shares,
+[00:58:57] and I'm like, I want to get out of this,
+[00:58:59] but I don't want to hit the bit, right?
+[00:59:02] So with CVTA, with CVTA, and I can go with the midpoint.
+[00:59:07] We know that.
+[00:59:08] So CVTN, I do the midpoint order,
+[00:59:10] and my order is at the midpoint.
+[00:59:12] So I was filling at 2660.
+[00:59:14] With CVTA, I'm going to sell basically at the market price,
+[00:59:20] but I'm not selling in a way that the predatory algos
+[00:59:25] can see my order because I'm still using the dark pool.
+[00:59:29] And I fill the whole thing right there at 2650.
+[00:59:32] So, you know, so there is some advantage
+[00:59:36] to selling using CVTA as a bailout button.
+[00:59:40] Instead of using your standard selling on NASDAQ
+[00:59:45] where predatory algorithm will see your order coming in first.
+[00:59:49] Having said that, I don't typically use CVTA as my cell order
+[00:59:56] because sometimes, especially in pre-market,
+[00:59:59] on more thinly traded stocks, these orders will just set.
+[01:00:03] And there's no liquidity and they don't execute.
+[01:00:06] And if I need to get out and I'm trying to pull the rip cord
+[01:00:09] and get out, I can't have orders just sitting there.
+[01:00:12] That doesn't serve me any good.
+[01:00:14] So for me, when I'm in a position and I'm up quite a bit,
+[01:00:19] I'll try to sell with the midpoint pegged order.
+[01:00:21] I'll try to get out, it gives me a better price
+[01:00:23] and selling on the bed.
+[01:00:25] I'm okay with that.
+[01:00:26] But when it comes to, I need a bailout of this thing.
+[01:00:30] I'm using my standard control Z and selling
+[01:00:35] bid-10, and I'm selling on NASDAQ or Ajax.
+[01:00:40] You know, I just, I find that those are better.
+[01:00:43] But when I'm in the driver's seat and I can unwind
+[01:00:45] a little bit of the position for profit,
+[01:00:47] but I'm not getting filled on the ask,
+[01:00:49] possibly because the stock has a bigger spread
+[01:00:52] than the midpoint orders great.
+[01:00:54] Again, this all comes back to what type of stock are you trading?
+[01:00:57] If you're trading stocks that have bigger spreads or highly volatile,
+[01:01:00] then these midpoint orders and midpoint pegged orders,
+[01:01:03] or using offsets, can help you get out of the position.
+[01:01:07] Or potentially acquire a position
+[01:01:09] depending on what your goal is.
+[01:01:11] But it can help you get in and out with less slippage,
+[01:01:16] which obviously is desirable.
+[01:01:19] So, all right, so then, let's see.
+[01:01:22] So now, we've gone over the light speed night algo,
+[01:01:28] and they have a similar algo for PDQ.
+[01:01:32] So, light speed trader has connectivity to PDQ,
+[01:01:36] alternative trading system, liquidity seeking strategies.
+[01:01:39] It's a trading venue designed to emulate
+[01:01:42] the interaction of a traditional trading floor,
+[01:01:45] but in an electronic environment that maintains anonymity
+[01:01:48] and confidentiality of a typical dark pool.
+[01:01:51] It'll pause your order for up to 20 milliseconds
+[01:01:54] in an electronic algorithmic crowd
+[01:01:56] that will attempt across liquidity providers
+[01:01:59] and liquidity seekers.
+[01:02:00] They've got P-Mid,
+[01:02:02] which order pings multiple midpoint venues,
+[01:02:06] including PDQ's electronic crowd,
+[01:02:08] and then it posts in the dark.
+[01:02:10] Utilizing parallel posting,
+[01:02:12] where PDQ splits the order between multiple dark venues
+[01:02:15] and you are a cancel,
+[01:02:16] and replaces the destinations where liquidity is present,
+[01:02:19] or where there is liquidity.
+[01:02:21] Then they have the instant or kill cancel,
+[01:02:24] instant or cancel,
+[01:02:25] which attempts to fill a PDQ's electronic crowd
+[01:02:28] and select dark partners or it just cancels.
+[01:02:31] And then P-T-I-E,
+[01:02:34] order pings, PDQ custom,
+[01:02:36] eyes or a routing strategy,
+[01:02:38] by accessing lower cost venues
+[01:02:42] with guaranteed fill from marketable flow.
+[01:02:45] Non-marketable flow posts and dark venues.
+[01:02:48] So how do we set these ones up?
+[01:02:50] Same way as we did before.
+[01:02:52] We go into our settings widget right here.
+[01:02:54] We go into, we say PDQ-A
+[01:02:57] and then we choose the type P-Mid.
+[01:02:59] We're going to do P-Mid because that's the midpoint.
+[01:03:01] All right, so we're going to add the P-Mid.
+[01:03:03] Then we go to,
+[01:03:05] we do the same thing here.
+[01:03:06] We go down to P-Mid right there.
+[01:03:09] And we can say we want to buy 1000 shares on P-Mid.
+[01:03:13] So we'll just see what this does.
+[01:03:15] So I put the order out and I'm filling right now
+[01:03:17] at the midpoint at 2623.
+[01:03:21] I'll be it.
+[01:03:22] I'm filling slowly, right?
+[01:03:24] Now if I really wanted to get into the stock,
+[01:03:26] that's not the best way to get it.
+[01:03:28] So not super successful.
+[01:03:31] All right, so now what about getting out?
+[01:03:33] 79 shares.
+[01:03:34] Put the order down here.
+[01:03:36] I press the cell button.
+[01:03:37] And it fills immediately.
+[01:03:38] So there was a match to get me out.
+[01:03:40] There was more matches there.
+[01:03:43] I guess at that price.
+[01:03:45] But in any case when I was buying,
+[01:03:46] it was a little bit thinner.
+[01:03:48] And so you can use this again to get in and out between the spread.
+[01:03:51] So now, let's say, for instance,
+[01:03:54] I'm trading a stock pre-market.
+[01:03:56] And it has breaking news.
+[01:03:58] It starts popping up.
+[01:03:59] I jump in using my standard hotkeys,
+[01:04:01] buying on the ask, using NASDAQ,
+[01:04:03] adjacks, your typical lit markets.
+[01:04:06] I'm in.
+[01:04:07] I've seen a dollar share, a dollar 50 share.
+[01:04:09] And so I'm like, all right, you know what?
+[01:04:11] I want to take half off the table.
+[01:04:12] So I use my hotkey for, let's say,
+[01:04:15] the night algo using CBTM.
+[01:04:18] I sell half.
+[01:04:19] I try to sell half.
+[01:04:20] It's at the midpoint.
+[01:04:21] And you'll see it slowly filling.
+[01:04:23] And the price is changing.
+[01:04:25] Because the midpoint price is changing.
+[01:04:27] So I'm filling as it's moving around a little bit.
+[01:04:29] And I'm unwinding half the position.
+[01:04:31] And so I'm like, that's great.
+[01:04:33] I then add back.
+[01:04:34] I try to sell again.
+[01:04:36] And the order just sits there.
+[01:04:38] I fill 32 shares of a 5,000 share order.
+[01:04:41] And I'm like, okay, that's not good.
+[01:04:43] What do I do?
+[01:04:44] I cancel that order.
+[01:04:45] And I try sending it on payment instead.
+[01:04:48] Same logic.
+[01:04:50] And I see if I can get filled on payment.
+[01:04:52] And maybe the order sits there.
+[01:04:54] And it sits there.
+[01:04:55] And it sits there.
+[01:04:56] And there's no liquidity on payment either.
+[01:04:57] And so then what do I do?
+[01:04:59] Then I sell a NASDAQ.
+[01:05:00] I just switch and use the lit market.
+[01:05:04] And so what you can actually do if you want to.
+[01:05:07] And this gets a little bit complicated.
+[01:05:09] But you could set up a device known as a stream deck.
+[01:05:13] And so a stream deck.
+[01:05:14] I'll put it on the whiteboard here.
+[01:05:16] It looks like this.
+[01:05:18] And you can each one of these buttons can be a script.
+[01:05:21] And so I'll show you how we would do that.
+[01:05:23] So I'm going to pull up.
+[01:05:27] Let's see where a stream deck.
+[01:05:29] So I'm going to go to, let's see.
+[01:05:35] Just do, do, do.
+[01:05:38] Hang on.
+[01:05:39] It's going to be a little update here.
+[01:05:41] So we're going to do, there we go.
+[01:05:50] So we're going to go to multi-action switch.
+[01:05:55] Thank you.
+[01:05:56] This is the one I want.
+[01:05:57] Multi-action.
+[01:05:58] Let's just, let's check it.
+[01:06:00] Okay.
+[01:06:02] So hot key.
+[01:06:06] Dark route cell.
+[01:06:09] All right.
+[01:06:10] Now we're going to do hot key.
+[01:06:12] Number one.
+[01:06:15] And we could say cell, night, CV, TM.
+[01:06:21] And then the hot key was shift G, right?
+[01:06:25] And then we say second hot key.
+[01:06:28] Cell, PDQ.
+[01:06:33] And we were going to do P-Mid.
+[01:06:35] And then what was the hot key for P-Mid?
+[01:06:37] Let's go check it.
+[01:06:39] So P-Mid, keyboard.
+[01:06:42] I don't know if that fits down here.
+[01:06:46] So Alt, M, Alt, M.
+[01:06:49] All right.
+[01:06:50] So then we do, oops, over here.
+[01:06:52] So then we do Alt, M.
+[01:06:56] All right.
+[01:06:57] So now we're going to back this up.
+[01:07:00] And let's see.
+[01:07:02] And next, for some reason it's not loading on my actual device here.
+[01:07:14] Oh, you know what?
+[01:07:15] Is this not plugged in?
+[01:07:16] Let me plug it in.
+[01:07:17] So now it's plugged in.
+[01:07:24] And you can see this little button right there.
+[01:07:27] Okay.
+[01:07:28] So now what I'm going to do is jump back over here.
+[01:07:33] And let's see.
+[01:07:36] We're going to do, see if I can send 500 shares.
+[01:07:41] All right.
+[01:07:42] It fills some of it.
+[01:07:43] That's fine.
+[01:07:44] So now what we're going to do is we're going to press this button.
+[01:07:46] And it sends two hours at the same time.
+[01:07:48] So you technically want to go slightly ahead for whatever reason.
+[01:07:51] But just because the order of the keys.
+[01:07:53] So see how it's doing both of them.
+[01:07:58] And so, you know, could you, could you do that?
+[01:08:01] And the answer is, yeah, you could.
+[01:08:04] CBTR and Coda, which is the name they use for the P-Mid.
+[01:08:13] You know, so that's, again, does this get a little complicated?
+[01:08:17] Yeah, it does.
+[01:08:18] So now you want to buy a stock.
+[01:08:20] What do you do?
+[01:08:21] You still press shift 1 to get in.
+[01:08:22] That's fine.
+[01:08:23] And you want to get out.
+[01:08:24] Well, now when you're selling, you've got to have your stream deck right here.
+[01:08:29] Is all of this worth it?
+[01:08:31] Well, I think that's, you know, for you to decide if it's worth it.
+[01:08:34] I think it's worth it if you're trading with big enough positions that these orders allow you
+[01:08:41] to get in or specifically get out of the market without slippage.
+[01:08:46] Because that means you're capturing more profit.
+[01:08:49] And we get a lot of slippage on orders, which, you know, obviously happens with thinner markets.
+[01:08:55] Slippage, you know, 5, 10 cents a slippage on a 5,000 share orders.
+[01:08:59] 100 dollars a slippage.
+[01:09:01] So, you know, I get it.
+[01:09:03] You're using a commission for a broker.
+[01:09:05] Everything I'm talking about right now is kind of, you know, doesn't apply.
+[01:09:10] And you get a lot of benefits of commission free.
+[01:09:12] You save thousands of dollars a month.
+[01:09:14] You have no commissions.
+[01:09:15] It's great.
+[01:09:16] But you start trading with 10, 15, 20,000 shares.
+[01:09:19] And you're going to realize, wait a second, you know, I'm getting a lot of slippage on some of my orders.
+[01:09:24] And that's when you might want to think about using a direct access broker.
+[01:09:28] Just using a direct access broker by itself is going to be an improvement.
+[01:09:31] You start adding on some of these more complex order types using midpoint orders.
+[01:09:36] And you start using more complex routes, such as dark pools.
+[01:09:41] And that's where, you know, you can potentially do even better.
+[01:09:45] So, now back on the whiteboard, if we kind of go back here to basics.
+[01:09:54] So, we have shift 1, 2, and 3.
+[01:09:59] This is just ask plus 10.
+[01:10:04] And we're doing, you know, 1,000, 2,000, 3,000 shares, for instance.
+[01:10:09] And just NSDQ, keep a simple NSDQ and NSDQ.
+[01:10:17] And then we've got selling, those are her buying.
+[01:10:20] And then we've got selling.
+[01:10:22] And so, we had Control Z, X and C, for bid minus 10, for full, 1, 1, 1, 2, 1, quarter.
+[01:10:37] And again, using NASDQ as our route.
+[01:10:43] And then, we say, well, you know,
+[01:10:47] control l, k, and semicolon here for ask, and maybe you do minus 0.01, 0.01, 0.01, alright, so that's
+[01:11:03] easy. Again, 1, 1, 1, 2, 1, 4, right, so quarter. And again, these can all be on your
+[01:11:09] same route. And then you say, well, you know, maybe I want to have a dark route. So now you
+[01:11:16] do control d. And this might be half midpoint. And you're going to use, you could choose.
+[01:11:29] You could use a lit market or a dark market, right, you could choose either one, whichever
+[01:11:33] one you want. And depending on the functionality that you're broker offers, and a time
+[01:11:37] of that. But if you want to be able to do pre-market, you're probably going to want to use
+[01:11:40] the dark route. So you end up using the dark route. And then maybe you say, well, I'm going
+[01:11:45] to do another one, I'll just do control f. So it's next to the d. Also for half, also for mid.
+[01:11:52] And this one is, you know, pdq, whatever. And this one is night. So now you have these both
+[01:12:00] for selling half. And that kind of works. It's like sell half, sell half, sell half. And if
+[01:12:05] you've yet 5,000 shares, you do half and half, then you're only down to 1,250. If you sell the
+[01:12:10] last full position on the bid, that's not really that big of a deal. So, and on the other
+[01:12:15] hand, if you're selling half and the order doesn't fill, then you can always, you know, control
+[01:12:21] plus q, cancel open orders, and go and sell right on the bid. So as a beginner, day trading
+[01:12:29] to basics, three hot keys. Now, we're really starting to build these out. So you've got nine,
+[01:12:36] you've got 10, 11, just using halves. If you set these up for, I don't set them up for full.
+[01:12:43] But if you set it up for, you know, quarter, you know, you could have two hot keys for each one,
+[01:12:49] which if you're using a stream deck like this, you could set up a million of them and just
+[01:12:54] scripted to the button that you want. And then it doesn't really matter where in your keyboard,
+[01:12:58] you chose a really obscure key, but you just press the button and you're good to go. So that would be,
+[01:13:05] you know, that would be okay as well. My issue with the stream deck is I don't want to have another
+[01:13:10] thing I've got to bring with me every time I go on vacation. So I don't, you know, I've tried
+[01:13:15] using the stream deck before. Sometimes I can get into a flow where I'm like, all right, I guess
+[01:13:20] this is this works, it's right next to my keyboard. I'll use it just for like that one route, you know,
+[01:13:25] dark route, just for that one button. But then every time I travel, now I've got to bring this thing
+[01:13:30] with me, you know, it's, I don't know, I just, I just think it, I just keep it simple. So, you know,
+[01:13:37] pressing, so for me what I've been doing instead is, if I bring this back over here for a second,
+[01:13:46] let's see unplug that. So what I've been doing is I just keep everything on here. So shift,
+[01:13:53] you know, 1, 2, 3, 4, 5 for buying. Control Z, X, C for selling on the bid. Alt, Z, X, C, does,
+[01:14:04] it's a, this is also selling on the bid, but it's a bigger offset. So it allows like huge slippage,
+[01:14:11] which I only use for like a panic situation. I hate using that, but sometimes you have to, control K, L,
+[01:14:19] and semi colon selling on the ask. Alt, K, L, and semi colon selling on the ask with that 5
+[01:14:24] cent offset for stocks of bigger spread. Control M, N, N, and this button are selling on the
+[01:14:33] bid points, but I don't even remember which ones are rich. So I just sort of press them as I think
+[01:14:39] of, I just, oh, that one doesn't work that one doesn't work that one I send. And then Alt,
+[01:14:43] these ones are for selling on dark routes. P, P, mid, and CBTN. And so I've been able to
+[01:14:52] memorize that, but now that's what 3, let's see, so we've, well, you know, 5 plus 3, that's 8 plus
+[01:15:02] those is 11 plus these here brings us up to 14 plus these here bring us up to 17 plus these here
+[01:15:11] bring us up to 20 plus those bring us up to 23 plus control Q and then 24 and then profit target
+[01:15:18] hotkeys, which are very simple right here, control semi colon or whatever these two buttons are.
+[01:15:24] So like 26 hotkeys. I mean, that's as many letters as there are, you know, in the alphabet. So
+[01:15:30] can I really remember all of them? And the answer is no. And sometimes two weeks will go by and
+[01:15:35] I'll realize, wow, I haven't used a dark pull route in weeks. I almost completely forgot they even
+[01:15:41] exist, especially on a long weekend. I come back from a long weekend and I'm just back to my
+[01:15:46] three standard hotkeys. And it takes a couple days before I even remember, oh, you know,
+[01:15:51] you put something on Alt, and I know it's a little obscure, but there is a hotkey over there,
+[01:15:56] so what was that one again? And I just, I don't know, I find that to be a little annoying,
+[01:16:02] but I will say that in a really hot market when we're seeing huge volatility. And when I'm
+[01:16:07] trading at the very edge of my comfort zone in terms of share size, that when these orders become a
+[01:16:12] little bit more helpful. During cooler markets and with smaller size, during small count challenges,
+[01:16:18] don't matter, doesn't, don't need them, doesn't matter, keep it simple. So this is really a class
+[01:16:25] probably that you'll want to come back as a refresher on, you know, after you've had six months
+[01:16:31] or a year of trading, and you've been doing well, you've been making some money and maybe you want to
+[01:16:35] try to optimize your workflow a little bit. And so as I presented during gay trading the basics,
+[01:16:41] the whole idea this curriculum is that I sort of lay each of the pillars of the foundation of
+[01:16:47] trading and then we come back to them. So if I went into this level of detail during gay trading
+[01:16:52] the basics, I would have lost everyone 45 minutes ago. You know, so day trading the basics was,
+[01:16:58] let's walk through the basic hotkeys. Strages in scaling is like okay, let's come back to what
+[01:17:03] we already talked about, let's expand it, which we did. And now let's take a step further,
+[01:17:09] let's go even deeper. And so this kind of hits like, you know, the most nuanced, deepest level
+[01:17:15] that we get in terms of order routing and and then scripting those order types to hotkeys.
+[01:17:22] And even using more advanced, well, a stream deck isn't necessarily advanced, but it's just
+[01:17:27] something that people wouldn't necessarily think of. But the functionality to with one press of the button
+[01:17:34] have it execute in two orders at the same time. That's pretty interesting. That's pretty cool.
+[01:17:43] Again, you know, it's not for everyone. And it probably isn't for the majority of you right now today,
+[01:17:49] but my goal with teaching this class is I put everything on the table and there'll be a time
+[01:17:54] where it's suitable for you and you're going to want to pick it up and use that, you know,
+[01:17:58] information in your trading and there's times you say, okay, I'm glad you put it there. I'm going
+[01:18:02] to come back to that and I'm going to keep in my mind that that's stuff I know about and I'm
+[01:18:06] going to come back to it a little ways down the road. For right now, I'm going to keep it simple.
+[01:18:10] I'm going to use six hotkeys. I'm in the simulator anyways, so it doesn't matter, midpoint
+[01:18:15] stuff isn't going to work in the simulator. So I'm just going to keep it really simple right now.
+[01:18:20] And, you know, if you can make money with simple hotkeys, I mean, that this is more of
+[01:18:28] optimizing and improving efficiency. This is where you're getting smaller sort of diminishing
+[01:18:32] returns on these improvements. First, you got to get the engine running. First, you've got to make
+[01:18:37] sure you can actually follow the strategy, follow the rules and make money with just simple hotkeys.
+[01:18:42] You do that a few months in, you're trading with real money, a few more months in,
+[01:18:47] you start thinking about how can I, how can I improve my profits by like another eight or
+[01:18:51] 10% this month? You know, it's, and this is where these small changes of order routing and the
+[01:18:58] hotkeys you choose in the right market can start to help you with those smaller improvements.
+[01:19:05] So currently, light speed offers PDQ and night as I mentioned, these are subject to change.
+[01:19:11] They could drop one of them at any time. They could pick up a new one at any time. So,
+[01:19:16] and if they do, what will happen is I'll just come in one day and that hotkey won't work.
+[01:19:20] And then I'll take it off my keyboard and light speed'll say, oh, sorry, it doesn't work anymore.
+[01:19:25] But here's a new one and then the new one is available. You do, you do want to check your fees with these.
+[01:19:30] Some of them are cheaper than the lit markets, which is nice, but as you note, and probably saw
+[01:19:37] there's a little more latency there, they're a little slower. I'm okay with the slowness
+[01:19:43] selling when I'm already at a nice profit and I've got a big cushion, but I don't want slowness when I'm buying.
+[01:19:50] And so I need my panic button to just get me out, fast, fast, fast, and then a bad price,
+[01:19:55] but I just need to be out. And then I can add my orders. They're a little bit more
+[01:19:59] aggressive, we're trying to get me a good price and take a little longer.
+[01:20:03] And again, that's when you're getting really into that kind of subtle feel of the throttle.
+[01:20:08] Like, do I lean in a little bit more here? Do I use off a little bit?
+[01:20:13] And so, and yeah, as always, you could bring questions about this to the mentor sessions, not all of
+[01:20:22] the traders at Warrior and even the ones who have earned badges are using complex order types.
+[01:20:26] I'd argue most of them are not because many of them are using still commission-free brokers,
+[01:20:31] or even some of the offshore brokers, which don't offer complex order types. They're much more simple.
+[01:20:36] And it's not the difference between success and failure. It's just something that you can use to improve
+[01:20:43] efficiency a little bit if it makes sense in your broker-office.
+[01:20:47] All right, so we've dive pretty deep here and let me just jump back onto the slide. So
+[01:20:55] we talked about the primary peg into the bid, peg into the ask.
+[01:21:01] I didn't really actually highlight the peg on the bid order. It's just not one I already mentioned.
+[01:21:06] It's just not one that I use. So I sort of don't use that. Pag to the ask,
+[01:21:12] peg to the midpoint, and then I guess, yeah, well, no, so actually the primary peg order,
+[01:21:21] we did talk about that was selling. That was the CBTA order. That was CBTA
+[01:21:27] the aggressive midpoint order. So CBTA, where was it right down here, peg market, peg to primary market?
+[01:21:34] And it would be to the bid if you're selling on the bid. You could do a peg market to sell on the ask,
+[01:21:40] however, which holds your market up at the ask, but that's not the aggressive order. That's the passive.
+[01:21:46] That's where you're sitting in waiting, which I don't like to do in that form. So
+[01:21:52] so anyways, just to add a little clarity there, the the market, peg to the market.
+[01:21:59] So if you're selling and you're doing a market order, what's the market? You're selling at the bid.
+[01:22:04] If you're buying aggressive market order, you're buying at the ask. So peg into the market
+[01:22:10] based on the direction that you're going. A passive order is pegging the opposite way.
+[01:22:16] So if you're buying a sell with passive order, you're selling at the ask to get the best price.
+[01:22:23] If you want to buy as a passive order, you're buying at the bid to get the best price.
+[01:22:27] But these are the orders that are the slowest, and I don't find them to be helpful at all in my trading.
+[01:22:35] And then the midpoint is the one that's in the middle. So this is definitely one that I like,
+[01:22:39] and this is one that in theory, maybe I can get my head around a little bit more, but historically I haven't used.
+[01:22:45] And likewise, with CBTA and CBTA, again, the fan being the one that sends back out to the other market.
+[01:22:53] So peg to bid orders, peg to ask orders, depending on if you're buying or selling, the midpoint peg,
+[01:23:00] and then the super smart order, that's an advanced order type that is, at this point,
+[01:23:07] becoming a bit antiquated, unfortunately, because of predatory high frequency trading algorithms,
+[01:23:14] that cut in front of your orders. So the logic here was, if you're going to create a hot key to buy on the ask,
+[01:23:22] so let's say this hot key, for instance, buy on the ask at Jx, why don't I go and I duplicate this hot key,
+[01:23:30] so create clone, buy a thousand, and I'll do at Jx, right, and then I'll click save, and then I'll
+[01:23:40] clone it again, and I'll do ARCA, and I'll click save, and then we go over to the map,
+[01:23:48] and we said buy one, so then we're going to do clone here, and we'll do control two for that one.
+[01:23:55] So then we pull back up our stream deck, which I got to plug back in, and what we could do is we
+[01:24:03] could say, oh, how about this? How about instead of, let's see, so how about I really try to stay ahead
+[01:24:16] of those algorithms, and this is by 3K shares, and we're going to do hot key, and we're going to
+[01:24:28] first shift one, which is NSDQ, NASDAQ, and then we're going to do what was the second one,
+[01:24:35] I think we said it controlled two, controlled two for adjx, adjx, and then we're going to do the third one,
+[01:24:44] which was ARCA, right, control three, and oops, control three, control three, so now we do that,
+[01:24:52] we go back to here, and if I click that button there, I'll do it on forward, I guess,
+[01:24:58] switched my other count per second, so we'll do it on forward, so I'm going to click this button right
+[01:25:04] now, and that's interesting, why did it, it only sent it on one of them, do we not click save?
+[01:25:15] I thought we did control, but let's just double check the keyboard, oh, maybe I didn't click save,
+[01:25:22] okay, let's see, control one, and control two, okay, all right, so now we're going to press it again,
+[01:25:34] and there we go, so it sent, well that time it only sent two orders at the same time, it just sent three,
+[01:25:40] so one was, so let's see, it just sent three, what happened in the third one?
+[01:25:46] Oh, don't tell me here, give me a hard time here, now those are both right, 1,000, 1,000 shift one,
+[01:25:53] control one, control two, but you get the idea, and so the idea here was that what you would essentially
+[01:26:03] be doing is control, oh, we did it back, the wrong way, control one, what you would essentially
+[01:26:10] be doing is sending your orders at the same exact time, so you would be one step ahead, so I'm going
+[01:26:17] to press this again, and there, there you go, so you would be sending your order before the ECNs could
+[01:26:26] cut in front of you, that was the idea of a super smart order, because what we know is that when you
+[01:26:33] send your order, it's very possible that at the moment that you send your order,
+[01:26:37] NASDAQ for instance, so NSDQ might only have 1,000 shares per sale at what was this
+[01:26:48] 1406, and then, you know, ADJECS is up here at 1407 with another 1,000 shares, and so if you send your
+[01:27:00] order for 3,000 shares to NASDAQ, you fill 1,000 here, ADJECS is your order come through, and they cancel
+[01:27:08] their order, and they move it up to 3, 10, and then you fill the remaining 2,000 shares with an extra
+[01:27:15] force sense of slippage, because of the high frequency trading algorithm that cut in front of your order.
+[01:27:19] So, the idea was super smart orders was that if you send them at the same time, they'll be received
+[01:27:24] at the same time by each of these different venues, and they won't be able to front run you,
+[01:27:29] they won't be able to get in front of you, well, they can, they're faster, they're even faster,
+[01:27:34] and so in this case here, you could see even as I pressed that button, it's like 1, 2, 3,
+[01:27:44] it's too slow, so now we'll just use some of these hotkeys, so we're going to do shift G, and I
+[01:27:49] filled immediately, gone, right there, CRB2, so that was gone. We'll do P-Mid for 2000 here,
+[01:27:57] 1405, gone, very fast, but I'm filling at the market, right? I'm not getting any price improvement,
+[01:28:06] I'm filling right at the market, and then if I did, let's see if I did a midpoint peg,
+[01:28:13] well if I did a primary, well, no, we'll just do a midpoint peg on this here, it might order
+[01:28:23] as hanging, so, you know, is that mean my order's not going to execute at all? I don't know,
+[01:28:33] but it's just hanging there, what if I do the same one on edge x, it's hanging,
+[01:28:39] so ARK might not be accept, these might not be accepting these midpoint orders at all,
+[01:28:45] so then you just switch to a different one, P-Ty, that one went immediately, pretty much immediately,
+[01:28:53] and then 500 shares on the rest, so anyways, so the super smart orders,
+[01:29:02] at this point I wouldn't do them, I'm going to add a note, at this point I would not use these
+[01:29:10] with lit markets, however I would consider them with dark routes, ATSs, so that would be okay,
+[01:29:22] so what you could do if you wanted to is you could create a hot key to buy, you know, the first one is
+[01:29:31] CBTA, if you wanted to be aggressive for a thousand shares, so let's try to script that real quick,
+[01:29:38] so we're going to go into custom route CBTA buy, so we're going to do night, CBTA aggressive buy,
+[01:29:50] I'm going to go 10 cents, so I actually don't even have to do ask here, because it knows that it's aggressive,
+[01:29:58] but I'm going to do 10 cents here, visible, it's fine, I'll just do quantity a thousand shares,
+[01:30:05] all right, so now we're going to save that, we'll map that in a second, CBTA buy, and now we're going to do another one for
+[01:30:17] what was the aggressive P-Mid, PDQ, PDQ, so this one actually was the most aggressive was
+[01:30:35] P-Mid, guaranteed fill for marketable flow, guaranteed, we could try P-Ti, we'll try,
+[01:30:48] but first we'll just put this on shift is zero, CBTA, CBTA buy, we'll put that on shift is zero,
+[01:30:57] we'll just remember that, and we'll pull up our stream deck here, multi-action shift is zero,
+[01:31:16] and this was CBTA one case shares, all right, so put that down there for a second, now we'll go back
+[01:31:24] in here, let's just see, make sure we have P-Ti added already, and the PDQ P-Ti yep, so then we'll go to
+[01:31:31] custom, we'll go to route P-Ti buy, and oops, not custom route P-Ti buy, great new command,
+[01:31:45] so this is going to be P-Ti, and this was PDQ A, I think it was, yep PDQ A, P-Ti, it's a buy order,
+[01:31:57] we're going to do quantity 1,000 shares, quantity 1,000 shares, we'll do ask 0.10 cents to
+[01:32:08] map key, zero, oops, put on the zero, scroll down to P-Ti buy, it will do the second one, control zero,
+[01:32:23] okay, now we come down here, and we add one more hot key, T-I buy, and we were at control zero,
+[01:32:42] okay, so now we've got those two set up, this was shift zero, that's control zero back
+[01:32:48] it up, that's fine, dark buy, and then what we're going to do is we're going to come over here,
+[01:32:55] we're going to try pressing the button, and you can see I filled right there, they both went through
+[01:33:01] the same moment, so that bought on the dark pool, and you know, I mean, like I said, my problem
+[01:33:13] is when we have a stock with breaking news and it pops up, usually I don't see liquidity on the
+[01:33:20] dark pool to buy, usually when the news first comes out and they start ripping up, there's no liquidity
+[01:33:25] to buy, so you have to buy on the lid market, you have no choice, that's been my experience,
+[01:33:30] again I'll test this out some more, we'll see maybe, but in my experience, in when you're in that first
+[01:33:35] candle, the dark pools don't have liquidity, there's no orders there, they're empty, so those first trades
+[01:33:41] are on the lid market, and then once you've got some profit and you're looking to take profit,
+[01:33:46] more volumes come in, maybe you can get filled on dark pool, it's like 50, 50, sometimes you can,
+[01:33:52] sometimes you can, so you have the hot key, you get some filled, okay great, if not, well, all right,
+[01:33:57] well, I guess I just have to sell on the old fashioned way, and then that's what you did,
+[01:34:01] you sell the old fashioned way, and it's what it is. So later in the day, you know, if I was using
+[01:34:08] this hot key here, I could use it later in the day on the curl higher to buy, maybe with less
+[01:34:15] slippage, but I haven't thought to do that, you know, and I think this is one of these things of,
+[01:34:23] you can only keep so many things straight in your mind, you know, when you're taking these trades,
+[01:34:27] and before you start to get overwhelmed, you're like, I'm now I'm getting sort of like analysis
+[01:34:32] paralysis, how many hot keys do I have, which button do I press, and so I think that you want to
+[01:34:39] find the place where you can keep it simple. Simple for me is going to be more complicated than
+[01:34:47] it would be for a beginner, and you know, if you want to keep growing as a trader, you kind of keep
+[01:34:51] yourself right in the edge of your comfort zone, and you try to keep growing, and when the market
+[01:34:56] gets a little cold, and you'll, you know, a little frustrates, you pull back a little bit.
+[01:35:01] You come back off the edge, you go back in your comfort zone, that when it picks back up again,
+[01:35:05] you go back out to the edge, and that's where you'll probably see some nice growth.
+[01:35:10] Doesn't necessarily mean need to mean that you're trading with advanced hockey,
+[01:35:14] because you could be trading at the edge of your comfort zone just with share size,
+[01:35:17] and that would be fine as well. So, all right, we have now, and I'm going to press this button to
+[01:35:22] sell, let's see, and so that button there on the dark pool to sell right here, not execute.
+[01:35:31] These two orders to sell, they're just sitting there. I don't know what, I was able to buy on the dark
+[01:35:37] pool, but I can't sell on the dark pool. So, you know, it's, so there's, okay, I filled 300,
+[01:35:46] 500 shares, but if you want to get out, you know, this is not adequate, but you know what,
+[01:35:53] you know what, you know what, it's because those sell orders were going only for the midpoint,
+[01:36:00] they were not allowing the order to hit the bed, so it went through in light, mostly, that was why.
+[01:36:06] It wasn't allowing the order to go through the bed. So, this, to be more detailed,
+[01:36:12] hockey, dark routes sell midpoint, and I could create a copy of this, and have this one be, you know,
+[01:36:20] bit, and this is bailing on the bed, and just get out of that thing, and hit the bed, and then that's
+[01:36:26] where we would use CBTA and CB, yeah, CBTA for the aggressive, and P tie for the more aggressive.
+[01:36:33] So, while that covers hot keys, let's just touch briefly on hot buttons. So, with the buttons,
+[01:36:43] generally speaking, as I've mentioned, or I certainly mentioned it in day trading basics,
+[01:36:51] I don't really utilize buttons that much in my own trading, but you can, and when you start creating
+[01:36:59] these complex hot keys, like what I've just done, using buttons can be helpful. So, let me show you
+[01:37:06] what that would look like. All right, so I'm going to pull this up here, we'll back out,
+[01:37:12] I'll just back out of this for one second, so I'll move this up here. I'll minimize this,
+[01:37:17] minimize this, minimize this, minimize this. All right, so we've just created all of these buttons.
+[01:37:22] So, now let's go here to new, and we'll go down to hot buttons. Now, because some of them are on
+[01:37:30] kind of obscure hot keys, because we sort of ran out of keys on the keyboard, what we could do is we could
+[01:37:36] say, you know what, let's go ahead and add, sorry, let's go to settings here, and then CVT-A-Buy.
+[01:37:46] All right, so we'll add that, that's an aggressive buy using the dark route. So, if I go like that,
+[01:37:53] and I say, night buy, and I say dark, one-case shares, that's going to be a buy, but buy order
+[01:38:05] right there. Now, I could do another one for, let's see, P-Midsale, P-T-I-Buy, so this is going to be
+[01:38:16] P-D-Q-Buy, dark, one-k, I think I can't remember what that order is, but anyway, it doesn't matter.
+[01:38:25] We'll just leave it at buy, and then we'll set this one maybe at, you know, a slightly different
+[01:38:31] shade of green. We'll see what that looks like first. All right, so now I've got those two set up,
+[01:38:36] and then this one maybe we take off the one-k. All right, and then we say, well, sometimes I might not think
+[01:38:43] to press the P-Mid cell button, because we put it on a funny hockey, but why don't we add it over here,
+[01:38:49] P-Midsale, and so then we'll change the name of it to P-D-Q-Cell, dark, right? We'll make that one a red button
+[01:38:58] because it's a cell button, so we'll go like that, and then CBTA-Cell, right, don't we have one of those,
+[01:39:05] CBTA, you know, we want to do CBTA-Cell, Mid, not market, CBT, and CBTA, which one is it?
+[01:39:25] Maybe that's it. Anyway, it doesn't matter, we'll just pull out it, and so this would be
+[01:39:32] night cell dark. Okay, so just for example, you know, we had a couple of these here, and now
+[01:39:40] if you want to real quick, you're like, oh, I'm going to do, let's do this on four, click, right?
+[01:39:46] I just click it, and it sends it. I don't have to remember the hockey, I could just do a click.
+[01:39:51] I want to sell half on this dark route, and it's not going through, so that must be the midpoint.
+[01:39:57] This one looks like that's also on the midpoint because neither of those are selling, so then
+[01:40:03] okay, so then we say, all right, well, we need ones that are going to sell a faster, so let's see
+[01:40:08] where we have CBTA market, all right, so that's going to be, and then you can move it up or down,
+[01:40:14] move it up, so night cell dark market, all right, so let's try that. So click on that, and boom,
+[01:40:27] now we're starting to get out of that position, right? So that could be, that could be helpful.
+[01:40:34] If you're on light speed, or one of the other brokers that allows the buttons,
+[01:40:39] then you could script some of your obscure hotkeys, essentially, that you are not as likely to
+[01:40:46] remember pressing, because they're just on a funny key, and you could script to a button,
+[01:40:51] and then boom, you've got it right there. Now, is it the exact same as having the stream deck? No,
+[01:40:56] not exactly, it's not going to have multi-functionality, where it clicks two of the buttons at the same
+[01:41:02] time, but, you know, aside from that, it obviously could work, and you could just be clicking here,
+[01:41:10] you know, the ones as are appropriate, right? It looks like now these ones are,
+[01:41:16] you see these ones, I think, because they're at the midpoint, they only sometimes are working,
+[01:41:19] but anyway, so those are your dark buttons, or sorry, not dark buttons, those are your buttons,
+[01:41:24] and you can use them for the more complex order types if you want, for buying and selling.
+[01:41:30] That would be, to me, the logical way to do it, and the way these buttons work
+[01:41:37] is they work based on what's highlighted. So, if I go down here and click by dark,
+[01:41:46] well, it won't, so that wouldn't send it, it rejected it. Why?
+[01:41:50] Risk check failed, the offset was too high, because it's too cheap of a stock, but in any case,
+[01:41:55] this button pad will work for whichever level to window you have highlighted. So, you know,
+[01:42:01] you just kind of keep it in a neutral spot that's easy enough to see, and then you could be using
+[01:42:07] those for some of those orders. Okay, so with that, we have now done a deep dive into advanced
+[01:42:16] hot keys, advanced order types, showing you exactly how they work, advanced routes, showing you
+[01:42:21] how the different routes work with these different order types, and without a doubt, I've gone deeper
+[01:42:27] than, you know, maybe it's necessary for the majority of where you guys are at right now today,
+[01:42:32] but the whole idea here is that I'm going to put everything on the table, and if it's not
+[01:42:38] something you need right now, that's okay, you know it's here and you can come back to it when
+[01:42:42] the time is right. So, I hope all of you get to a point in your trading where you want to use a
+[01:42:48] direct access broker, where you recognize the value of really fast order execution, and where it
+[01:42:53] makes sense to use these more advanced order types and routes, but I understand that commission-free
+[01:43:00] has a good value proposition, especially when you're getting started. I think that's a great way
+[01:43:05] to get started. I think that, you know, these order types and routes are going to show a very
+[01:43:13] minimal improvement in execution and profitability when you're trading with small size, and so
+[01:43:20] you'll get a bigger return where it's actually worth spending the money on it once you scale up.
+[01:43:24] But for right now, you now have a really solid class that you can come back to whenever you want
+[01:43:31] to get better at setting up your hotkeys and your order types for these more advanced scenarios.
+[01:43:37] And with that, let's continue on to the next section of chapter six.

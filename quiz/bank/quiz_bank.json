@@ -926,5 +926,1829 @@
     "explanation": "3-month daily ATR can pick up massive single-day moves (e.g., SDOT: $10.51 ATR → 2× = $21 stop distance for a $13 stock). Intraday 5-min ATR captures today's actual volatility. For day trading, today's volatility is more relevant.",
     "difficulty": "hard",
     "source_rule": "brief.md (ATR backtest 2026-06-26)"
+  },
+  {
+    "id": "c1_ch2_001",
+    "chapter": "Day Trading Basics — Stock Picking",
+    "topic": "Catalyst News",
+    "question": "According to Ross, what is required for a high-probability day trade?",
+    "options": [
+      "A news catalyst combined with a strong technical setup.",
+      "Only technical analysis — catalysts are not important.",
+      "Only a news catalyst is needed.",
+      "A large account size."
+    ],
+    "correct": "A",
+    "explanation": "A news catalyst combined with a strong technical setup.",
+    "difficulty": "easy",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c1_ch2_002",
+    "chapter": "Day Trading Basics — Stock Picking",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch2_003",
+    "chapter": "Day Trading Basics — Stock Picking",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch2_004",
+    "chapter": "Day Trading Basics — Stock Picking",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch2_005",
+    "chapter": "Day Trading Basics — Stock Picking",
+    "topic": "Hot Keys",
+    "question": "What does SCR stand for in hot key terminology?",
+    "options": [
+      "Single Cancel Remaining.",
+      "Stop, Cancel, Reverse.",
+      "Send, Confirm, Route.",
+      "Scale, Close, Rest."
+    ],
+    "correct": "A",
+    "explanation": "Single Cancel Remaining.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch10_hot_keys.md"
+  },
+  {
+    "id": "c1_ch2_006",
+    "chapter": "Day Trading Basics — Stock Picking",
+    "topic": "Hot Keys",
+    "question": "What is the purpose of a 'reverse' hot key?",
+    "options": [
+      "Closes the current position and opens an opposite position simultaneously.",
+      "Reverses the stop-loss order.",
+      "Cancels all pending orders.",
+      "Changes the order from buy to sell."
+    ],
+    "correct": "A",
+    "explanation": "Closes the current position and opens an opposite position simultaneously.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch10_hot_keys.md"
+  },
+  {
+    "id": "c1_ch2_007",
+    "chapter": "Day Trading Basics — Stock Picking",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch2_008",
+    "chapter": "Day Trading Basics — Stock Picking",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch2_009",
+    "chapter": "Day Trading Basics — Stock Picking",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch2_010",
+    "chapter": "Day Trading Basics — Stock Picking",
+    "topic": "Hot Keys",
+    "question": "What does SCR stand for in hot key terminology?",
+    "options": [
+      "Single Cancel Remaining.",
+      "Stop, Cancel, Reverse.",
+      "Send, Confirm, Route.",
+      "Scale, Close, Rest."
+    ],
+    "correct": "A",
+    "explanation": "Single Cancel Remaining.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch10_hot_keys.md"
+  },
+  {
+    "id": "c1_ch2_011",
+    "chapter": "Day Trading Basics — Stock Picking",
+    "topic": "Catalyst News",
+    "question": "According to Ross, what is required for a high-probability day trade?",
+    "options": [
+      "A news catalyst combined with a strong technical setup.",
+      "Only technical analysis — catalysts are not important.",
+      "Only a news catalyst is needed.",
+      "A large account size."
+    ],
+    "correct": "A",
+    "explanation": "A news catalyst combined with a strong technical setup.",
+    "difficulty": "easy",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c1_ch2_012",
+    "chapter": "Day Trading Basics — Stock Picking",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch2_013",
+    "chapter": "Day Trading Basics — Stock Picking",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch2_014",
+    "chapter": "Day Trading Basics — Stock Picking",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch2_015",
+    "chapter": "Day Trading Basics — Stock Picking",
+    "topic": "Order Types",
+    "question": "What is the key difference between a market order and a limit order?",
+    "options": [
+      "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+      "A limit order guarantees execution but not price.",
+      "A market order is only used by professionals.",
+      "They are identical for day trading purposes."
+    ],
+    "correct": "A",
+    "explanation": "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c1_ch2_016",
+    "chapter": "Day Trading Basics — Stock Picking",
+    "topic": "Order Types",
+    "question": "A bracket order combines which three components?",
+    "options": [
+      "Entry order, take-profit limit, and stop-loss order.",
+      "Only entry and exit orders.",
+      "Two market orders.",
+      "A market order and a stop order."
+    ],
+    "correct": "A",
+    "explanation": "Entry order, take-profit limit, and stop-loss order.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c1_ch6_001",
+    "chapter": "Day Trading Basics — Trading Platform",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch6_002",
+    "chapter": "Day Trading Basics — Trading Platform",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch6_003",
+    "chapter": "Day Trading Basics — Trading Platform",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch6_004",
+    "chapter": "Day Trading Basics — Trading Platform",
+    "topic": "Order Types",
+    "question": "What is the key difference between a market order and a limit order?",
+    "options": [
+      "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+      "A limit order guarantees execution but not price.",
+      "A market order is only used by professionals.",
+      "They are identical for day trading purposes."
+    ],
+    "correct": "A",
+    "explanation": "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c1_ch6_005",
+    "chapter": "Day Trading Basics — Trading Platform",
+    "topic": "Order Types",
+    "question": "A bracket order combines which three components?",
+    "options": [
+      "Entry order, take-profit limit, and stop-loss order.",
+      "Only entry and exit orders.",
+      "Two market orders.",
+      "A market order and a stop order."
+    ],
+    "correct": "A",
+    "explanation": "Entry order, take-profit limit, and stop-loss order.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c1_ch6_006",
+    "chapter": "Day Trading Basics — Trading Platform",
+    "topic": "Hot Keys",
+    "question": "What does SCR stand for in hot key terminology?",
+    "options": [
+      "Single Cancel Remaining.",
+      "Stop, Cancel, Reverse.",
+      "Send, Confirm, Route.",
+      "Scale, Close, Rest."
+    ],
+    "correct": "A",
+    "explanation": "Single Cancel Remaining.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch10_hot_keys.md"
+  },
+  {
+    "id": "c1_ch7_001",
+    "chapter": "Day Trading Basics — Chapter 7",
+    "topic": "Catalyst News",
+    "question": "According to Ross, what is required for a high-probability day trade?",
+    "options": [
+      "A news catalyst combined with a strong technical setup.",
+      "Only technical analysis — catalysts are not important.",
+      "Only a news catalyst is needed.",
+      "A large account size."
+    ],
+    "correct": "A",
+    "explanation": "A news catalyst combined with a strong technical setup.",
+    "difficulty": "easy",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c1_ch7_002",
+    "chapter": "Day Trading Basics — Chapter 7",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch7_003",
+    "chapter": "Day Trading Basics — Chapter 7",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch7_004",
+    "chapter": "Day Trading Basics — Chapter 7",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch8_001",
+    "chapter": "Day Trading Basics — Chapter 8",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch8_002",
+    "chapter": "Day Trading Basics — Chapter 8",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch8_003",
+    "chapter": "Day Trading Basics — Chapter 8",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch8_004",
+    "chapter": "Day Trading Basics — Chapter 8",
+    "topic": "Order Types",
+    "question": "What is the key difference between a market order and a limit order?",
+    "options": [
+      "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+      "A limit order guarantees execution but not price.",
+      "A market order is only used by professionals.",
+      "They are identical for day trading purposes."
+    ],
+    "correct": "A",
+    "explanation": "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c1_ch8_005",
+    "chapter": "Day Trading Basics — Chapter 8",
+    "topic": "Order Types",
+    "question": "A bracket order combines which three components?",
+    "options": [
+      "Entry order, take-profit limit, and stop-loss order.",
+      "Only entry and exit orders.",
+      "Two market orders.",
+      "A market order and a stop order."
+    ],
+    "correct": "A",
+    "explanation": "Entry order, take-profit limit, and stop-loss order.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c1_ch8_006",
+    "chapter": "Day Trading Basics — Chapter 8",
+    "topic": "Hot Keys",
+    "question": "What does SCR stand for in hot key terminology?",
+    "options": [
+      "Single Cancel Remaining.",
+      "Stop, Cancel, Reverse.",
+      "Send, Confirm, Route.",
+      "Scale, Close, Rest."
+    ],
+    "correct": "A",
+    "explanation": "Single Cancel Remaining.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch10_hot_keys.md"
+  },
+  {
+    "id": "c1_ch9_001",
+    "chapter": "Day Trading Basics — Order Entry",
+    "topic": "Catalyst News",
+    "question": "According to Ross, what is required for a high-probability day trade?",
+    "options": [
+      "A news catalyst combined with a strong technical setup.",
+      "Only technical analysis — catalysts are not important.",
+      "Only a news catalyst is needed.",
+      "A large account size."
+    ],
+    "correct": "A",
+    "explanation": "A news catalyst combined with a strong technical setup.",
+    "difficulty": "easy",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c1_ch9_002",
+    "chapter": "Day Trading Basics — Order Entry",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch9_003",
+    "chapter": "Day Trading Basics — Order Entry",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch9_004",
+    "chapter": "Day Trading Basics — Order Entry",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch9_005",
+    "chapter": "Day Trading Basics — Order Entry",
+    "topic": "Order Types",
+    "question": "What is the key difference between a market order and a limit order?",
+    "options": [
+      "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+      "A limit order guarantees execution but not price.",
+      "A market order is only used by professionals.",
+      "They are identical for day trading purposes."
+    ],
+    "correct": "A",
+    "explanation": "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c1_ch9_006",
+    "chapter": "Day Trading Basics — Order Entry",
+    "topic": "Order Types",
+    "question": "A bracket order combines which three components?",
+    "options": [
+      "Entry order, take-profit limit, and stop-loss order.",
+      "Only entry and exit orders.",
+      "Two market orders.",
+      "A market order and a stop order."
+    ],
+    "correct": "A",
+    "explanation": "Entry order, take-profit limit, and stop-loss order.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c1_ch10_001",
+    "chapter": "Day Trading Basics — Hot Keys & Buttons",
+    "topic": "Catalyst News",
+    "question": "According to Ross, what is required for a high-probability day trade?",
+    "options": [
+      "A news catalyst combined with a strong technical setup.",
+      "Only technical analysis — catalysts are not important.",
+      "Only a news catalyst is needed.",
+      "A large account size."
+    ],
+    "correct": "A",
+    "explanation": "A news catalyst combined with a strong technical setup.",
+    "difficulty": "easy",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c1_ch10_002",
+    "chapter": "Day Trading Basics — Hot Keys & Buttons",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch10_003",
+    "chapter": "Day Trading Basics — Hot Keys & Buttons",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch10_004",
+    "chapter": "Day Trading Basics — Hot Keys & Buttons",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch10_005",
+    "chapter": "Day Trading Basics — Hot Keys & Buttons",
+    "topic": "Order Types",
+    "question": "What is the key difference between a market order and a limit order?",
+    "options": [
+      "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+      "A limit order guarantees execution but not price.",
+      "A market order is only used by professionals.",
+      "They are identical for day trading purposes."
+    ],
+    "correct": "A",
+    "explanation": "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c1_ch10_006",
+    "chapter": "Day Trading Basics — Hot Keys & Buttons",
+    "topic": "Order Types",
+    "question": "A bracket order combines which three components?",
+    "options": [
+      "Entry order, take-profit limit, and stop-loss order.",
+      "Only entry and exit orders.",
+      "Two market orders.",
+      "A market order and a stop order."
+    ],
+    "correct": "A",
+    "explanation": "Entry order, take-profit limit, and stop-loss order.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c1_ch10_007",
+    "chapter": "Day Trading Basics — Hot Keys & Buttons",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch10_008",
+    "chapter": "Day Trading Basics — Hot Keys & Buttons",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch10_009",
+    "chapter": "Day Trading Basics — Hot Keys & Buttons",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch10_010",
+    "chapter": "Day Trading Basics — Hot Keys & Buttons",
+    "topic": "Hot Keys",
+    "question": "What does SCR stand for in hot key terminology?",
+    "options": [
+      "Single Cancel Remaining.",
+      "Stop, Cancel, Reverse.",
+      "Send, Confirm, Route.",
+      "Scale, Close, Rest."
+    ],
+    "correct": "A",
+    "explanation": "Single Cancel Remaining.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch10_hot_keys.md"
+  },
+  {
+    "id": "c1_ch11_001",
+    "chapter": "Day Trading Basics — Stock Halts",
+    "topic": "Catalyst News",
+    "question": "According to Ross, what is required for a high-probability day trade?",
+    "options": [
+      "A news catalyst combined with a strong technical setup.",
+      "Only technical analysis — catalysts are not important.",
+      "Only a news catalyst is needed.",
+      "A large account size."
+    ],
+    "correct": "A",
+    "explanation": "A news catalyst combined with a strong technical setup.",
+    "difficulty": "easy",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c1_ch11_002",
+    "chapter": "Day Trading Basics — Stock Halts",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch11_003",
+    "chapter": "Day Trading Basics — Stock Halts",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch11_004",
+    "chapter": "Day Trading Basics — Stock Halts",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch11_005",
+    "chapter": "Day Trading Basics — Stock Halts",
+    "topic": "Order Types",
+    "question": "What is the key difference between a market order and a limit order?",
+    "options": [
+      "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+      "A limit order guarantees execution but not price.",
+      "A market order is only used by professionals.",
+      "They are identical for day trading purposes."
+    ],
+    "correct": "A",
+    "explanation": "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c1_ch11_006",
+    "chapter": "Day Trading Basics — Stock Halts",
+    "topic": "Order Types",
+    "question": "A bracket order combines which three components?",
+    "options": [
+      "Entry order, take-profit limit, and stop-loss order.",
+      "Only entry and exit orders.",
+      "Two market orders.",
+      "A market order and a stop order."
+    ],
+    "correct": "A",
+    "explanation": "Entry order, take-profit limit, and stop-loss order.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c2_ch1_001",
+    "chapter": "Day Trading Strategies — Intro",
+    "topic": "Catalyst News",
+    "question": "According to Ross, what is required for a high-probability day trade?",
+    "options": [
+      "A news catalyst combined with a strong technical setup.",
+      "Only technical analysis — catalysts are not important.",
+      "Only a news catalyst is needed.",
+      "A large account size."
+    ],
+    "correct": "A",
+    "explanation": "A news catalyst combined with a strong technical setup.",
+    "difficulty": "easy",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c2_ch1_002",
+    "chapter": "Day Trading Strategies — Intro",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch1_003",
+    "chapter": "Day Trading Strategies — Intro",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch1_004",
+    "chapter": "Day Trading Strategies — Intro",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch1_005",
+    "chapter": "Day Trading Strategies — Intro",
+    "topic": "Hot Keys",
+    "question": "What does SCR stand for in hot key terminology?",
+    "options": [
+      "Single Cancel Remaining.",
+      "Stop, Cancel, Reverse.",
+      "Send, Confirm, Route.",
+      "Scale, Close, Rest."
+    ],
+    "correct": "A",
+    "explanation": "Single Cancel Remaining.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch10_hot_keys.md"
+  },
+  {
+    "id": "c2_ch1_006",
+    "chapter": "Day Trading Strategies — Intro",
+    "topic": "Hot Keys",
+    "question": "What is the purpose of a 'reverse' hot key?",
+    "options": [
+      "Closes the current position and opens an opposite position simultaneously.",
+      "Reverses the stop-loss order.",
+      "Cancels all pending orders.",
+      "Changes the order from buy to sell."
+    ],
+    "correct": "A",
+    "explanation": "Closes the current position and opens an opposite position simultaneously.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch10_hot_keys.md"
+  },
+  {
+    "id": "c2_ch2_001",
+    "chapter": "Day Trading Strategies — Risk Management",
+    "topic": "Catalyst News",
+    "question": "According to Ross, what is required for a high-probability day trade?",
+    "options": [
+      "A news catalyst combined with a strong technical setup.",
+      "Only technical analysis — catalysts are not important.",
+      "Only a news catalyst is needed.",
+      "A large account size."
+    ],
+    "correct": "A",
+    "explanation": "A news catalyst combined with a strong technical setup.",
+    "difficulty": "easy",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c2_ch2_002",
+    "chapter": "Day Trading Strategies — Risk Management",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch2_003",
+    "chapter": "Day Trading Strategies — Risk Management",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch2_004",
+    "chapter": "Day Trading Strategies — Risk Management",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch2_005",
+    "chapter": "Day Trading Strategies — Risk Management",
+    "topic": "Order Types",
+    "question": "What is the key difference between a market order and a limit order?",
+    "options": [
+      "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+      "A limit order guarantees execution but not price.",
+      "A market order is only used by professionals.",
+      "They are identical for day trading purposes."
+    ],
+    "correct": "A",
+    "explanation": "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c2_ch2_006",
+    "chapter": "Day Trading Strategies — Risk Management",
+    "topic": "Order Types",
+    "question": "A bracket order combines which three components?",
+    "options": [
+      "Entry order, take-profit limit, and stop-loss order.",
+      "Only entry and exit orders.",
+      "Two market orders.",
+      "A market order and a stop order."
+    ],
+    "correct": "A",
+    "explanation": "Entry order, take-profit limit, and stop-loss order.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c2_ch6_001",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_002",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_003",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_004",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Order Types",
+    "question": "What is the key difference between a market order and a limit order?",
+    "options": [
+      "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+      "A limit order guarantees execution but not price.",
+      "A market order is only used by professionals.",
+      "They are identical for day trading purposes."
+    ],
+    "correct": "A",
+    "explanation": "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c2_ch6_005",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Order Types",
+    "question": "A bracket order combines which three components?",
+    "options": [
+      "Entry order, take-profit limit, and stop-loss order.",
+      "Only entry and exit orders.",
+      "Two market orders.",
+      "A market order and a stop order."
+    ],
+    "correct": "A",
+    "explanation": "Entry order, take-profit limit, and stop-loss order.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c2_ch6_006",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Hot Keys",
+    "question": "What does SCR stand for in hot key terminology?",
+    "options": [
+      "Single Cancel Remaining.",
+      "Stop, Cancel, Reverse.",
+      "Send, Confirm, Route.",
+      "Scale, Close, Rest."
+    ],
+    "correct": "A",
+    "explanation": "Single Cancel Remaining.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch10_hot_keys.md"
+  },
+  {
+    "id": "c2_ch6_007",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Hot Keys",
+    "question": "What is the purpose of a 'reverse' hot key?",
+    "options": [
+      "Closes the current position and opens an opposite position simultaneously.",
+      "Reverses the stop-loss order.",
+      "Cancels all pending orders.",
+      "Changes the order from buy to sell."
+    ],
+    "correct": "A",
+    "explanation": "Closes the current position and opens an opposite position simultaneously.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch10_hot_keys.md"
+  },
+  {
+    "id": "c2_ch6_008",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Stock Halts",
+    "question": "What is a T1 stock halt and how long does it last?",
+    "options": [
+      "A 5-minute automatic trading pause triggered by rapid price movement.",
+      "A 10-minute halt.",
+      "A 1-minute pause only.",
+      "A halt that only affects short sellers."
+    ],
+    "correct": "A",
+    "explanation": "A 5-minute automatic trading pause triggered by rapid price movement.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch11_stock_halts.md"
+  },
+  {
+    "id": "c2_ch6_009",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_010",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_011",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_012",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Hot Keys",
+    "question": "What does SCR stand for in hot key terminology?",
+    "options": [
+      "Single Cancel Remaining.",
+      "Stop, Cancel, Reverse.",
+      "Send, Confirm, Route.",
+      "Scale, Close, Rest."
+    ],
+    "correct": "A",
+    "explanation": "Single Cancel Remaining.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch10_hot_keys.md"
+  },
+  {
+    "id": "c2_ch6_013",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_014",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_015",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_016",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Order Types",
+    "question": "What is the key difference between a market order and a limit order?",
+    "options": [
+      "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+      "A limit order guarantees execution but not price.",
+      "A market order is only used by professionals.",
+      "They are identical for day trading purposes."
+    ],
+    "correct": "A",
+    "explanation": "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c2_ch6_017",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Catalyst News",
+    "question": "According to Ross, what is required for a high-probability day trade?",
+    "options": [
+      "A news catalyst combined with a strong technical setup.",
+      "Only technical analysis — catalysts are not important.",
+      "Only a news catalyst is needed.",
+      "A large account size."
+    ],
+    "correct": "A",
+    "explanation": "A news catalyst combined with a strong technical setup.",
+    "difficulty": "easy",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c2_ch6_018",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_019",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_020",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_021",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Order Types",
+    "question": "What is the key difference between a market order and a limit order?",
+    "options": [
+      "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+      "A limit order guarantees execution but not price.",
+      "A market order is only used by professionals.",
+      "They are identical for day trading purposes."
+    ],
+    "correct": "A",
+    "explanation": "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c2_ch6_022",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Order Types",
+    "question": "A bracket order combines which three components?",
+    "options": [
+      "Entry order, take-profit limit, and stop-loss order.",
+      "Only entry and exit orders.",
+      "Two market orders.",
+      "A market order and a stop order."
+    ],
+    "correct": "A",
+    "explanation": "Entry order, take-profit limit, and stop-loss order.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c2_ch6_023",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Hot Keys",
+    "question": "What does SCR stand for in hot key terminology?",
+    "options": [
+      "Single Cancel Remaining.",
+      "Stop, Cancel, Reverse.",
+      "Send, Confirm, Route.",
+      "Scale, Close, Rest."
+    ],
+    "correct": "A",
+    "explanation": "Single Cancel Remaining.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch10_hot_keys.md"
+  },
+  {
+    "id": "c2_ch6_024",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Hot Keys",
+    "question": "What is the purpose of a 'reverse' hot key?",
+    "options": [
+      "Closes the current position and opens an opposite position simultaneously.",
+      "Reverses the stop-loss order.",
+      "Cancels all pending orders.",
+      "Changes the order from buy to sell."
+    ],
+    "correct": "A",
+    "explanation": "Closes the current position and opens an opposite position simultaneously.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch10_hot_keys.md"
+  },
+  {
+    "id": "c2_ch6_025",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_026",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_027",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_028",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Order Types",
+    "question": "What is the key difference between a market order and a limit order?",
+    "options": [
+      "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+      "A limit order guarantees execution but not price.",
+      "A market order is only used by professionals.",
+      "They are identical for day trading purposes."
+    ],
+    "correct": "A",
+    "explanation": "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c2_ch6_029",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_030",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_031",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_032",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Order Types",
+    "question": "What is the key difference between a market order and a limit order?",
+    "options": [
+      "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+      "A limit order guarantees execution but not price.",
+      "A market order is only used by professionals.",
+      "They are identical for day trading purposes."
+    ],
+    "correct": "A",
+    "explanation": "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c2_ch6_033",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Order Types",
+    "question": "A bracket order combines which three components?",
+    "options": [
+      "Entry order, take-profit limit, and stop-loss order.",
+      "Only entry and exit orders.",
+      "Two market orders.",
+      "A market order and a stop order."
+    ],
+    "correct": "A",
+    "explanation": "Entry order, take-profit limit, and stop-loss order.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c2_ch6_034",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Hot Keys",
+    "question": "What does SCR stand for in hot key terminology?",
+    "options": [
+      "Single Cancel Remaining.",
+      "Stop, Cancel, Reverse.",
+      "Send, Confirm, Route.",
+      "Scale, Close, Rest."
+    ],
+    "correct": "A",
+    "explanation": "Single Cancel Remaining.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch10_hot_keys.md"
+  },
+  {
+    "id": "c2_ch6_035",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Catalyst News",
+    "question": "According to Ross, what is required for a high-probability day trade?",
+    "options": [
+      "A news catalyst combined with a strong technical setup.",
+      "Only technical analysis — catalysts are not important.",
+      "Only a news catalyst is needed.",
+      "A large account size."
+    ],
+    "correct": "A",
+    "explanation": "A news catalyst combined with a strong technical setup.",
+    "difficulty": "easy",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c2_ch6_036",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_037",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_038",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_039",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Order Types",
+    "question": "What is the key difference between a market order and a limit order?",
+    "options": [
+      "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+      "A limit order guarantees execution but not price.",
+      "A market order is only used by professionals.",
+      "They are identical for day trading purposes."
+    ],
+    "correct": "A",
+    "explanation": "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c2_ch6_040",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Order Types",
+    "question": "A bracket order combines which three components?",
+    "options": [
+      "Entry order, take-profit limit, and stop-loss order.",
+      "Only entry and exit orders.",
+      "Two market orders.",
+      "A market order and a stop order."
+    ],
+    "correct": "A",
+    "explanation": "Entry order, take-profit limit, and stop-loss order.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c2_ch6_041",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Hot Keys",
+    "question": "What does SCR stand for in hot key terminology?",
+    "options": [
+      "Single Cancel Remaining.",
+      "Stop, Cancel, Reverse.",
+      "Send, Confirm, Route.",
+      "Scale, Close, Rest."
+    ],
+    "correct": "A",
+    "explanation": "Single Cancel Remaining.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch10_hot_keys.md"
+  },
+  {
+    "id": "c2_ch6_042",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Hot Keys",
+    "question": "What is the purpose of a 'reverse' hot key?",
+    "options": [
+      "Closes the current position and opens an opposite position simultaneously.",
+      "Reverses the stop-loss order.",
+      "Cancels all pending orders.",
+      "Changes the order from buy to sell."
+    ],
+    "correct": "A",
+    "explanation": "Closes the current position and opens an opposite position simultaneously.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch10_hot_keys.md"
+  },
+  {
+    "id": "c2_ch6_043",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_044",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_045",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_046",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Order Types",
+    "question": "What is the key difference between a market order and a limit order?",
+    "options": [
+      "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+      "A limit order guarantees execution but not price.",
+      "A market order is only used by professionals.",
+      "They are identical for day trading purposes."
+    ],
+    "correct": "A",
+    "explanation": "A market order guarantees execution but not price; a limit order guarantees price but not execution.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c2_ch6_047",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Order Types",
+    "question": "A bracket order combines which three components?",
+    "options": [
+      "Entry order, take-profit limit, and stop-loss order.",
+      "Only entry and exit orders.",
+      "Two market orders.",
+      "A market order and a stop order."
+    ],
+    "correct": "A",
+    "explanation": "Entry order, take-profit limit, and stop-loss order.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch9_order_types.md"
+  },
+  {
+    "id": "c2_ch6_048",
+    "chapter": "Day Trading Strategies — Level 2 & Tape Reading",
+    "topic": "Hot Keys",
+    "question": "What does SCR stand for in hot key terminology?",
+    "options": [
+      "Single Cancel Remaining.",
+      "Stop, Cancel, Reverse.",
+      "Send, Confirm, Route.",
+      "Scale, Close, Rest."
+    ],
+    "correct": "A",
+    "explanation": "Single Cancel Remaining.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch10_hot_keys.md"
   }
 ]

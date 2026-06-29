@@ -1,0 +1,64 @@
+# Picking stocks P2-Long vs short selling_audio.wav
+# Transcribed: 2026-06-29T21:08:20.161372
+# Duration: 41.9 minutes
+# Model: faster-whisper tiny
+
+[00:00:03] Okay, so we're going to jump in here with chapter two, part two, long versus short.
+[00:00:10] So in the market, you can choose to trade either direction.
+[00:00:13] You can buy it on the long side and profit when stocks go up, and this is true, not just
+[00:00:17] with stocks, but with really anything.
+[00:00:19] You can buy and profit when things go up in value, or in the market, you can short, and
+[00:00:24] you profit when things decline in value.
+[00:00:28] So in today's lesson, I'm going to help clarify my sort of stance on short selling, and
+[00:00:35] help differentiate buying to the long side and the strategies associated with it versus
+[00:00:40] short selling strategies.
+[00:00:41] We're going to talk about the restrictions, the limitations of short selling, and certainly
+[00:00:45] some of the risks that you need to be aware of.
+[00:00:48] So I think that it goes without saying, but just to make sure we're on the same page, when you buy
+[00:00:54] 1,000 shares of a stock, you are a long biased trader, you're called a bull, you're a bull
+[00:01:01] in the market, a bull, and a bullish trader is a trader that wants to see the market go up,
+[00:01:05] a bear, and a bearish trader is a trader who wants to see the market go down.
+[00:01:10] So a bear market is a market that's declining, a bull market is a market that's rising.
+[00:01:15] So as a long biased trader, as a bull in the market, when you buy 1,000 shares,
+[00:01:19] you will make money when that stock goes higher, right?
+[00:01:23] And when you go long, let's think about this for a second.
+[00:01:26] So if you go long, you buy 1,000 shares of a stock at $3 a share.
+[00:01:34] All right, so you're in with $3,000 here.
+[00:01:38] What's the most you can lose?
+[00:01:40] The most you can lose is if the stock declines to 0, because then 1,000 shares times 0 is 0.
+[00:01:47] So that's the most that you can lose when you're trading at the long side.
+[00:01:50] It's the amount of money that you that you have in the position, your share size times the price.
+[00:01:55] Now, certainly if you were trading with an account and you were using a leverage or margin
+[00:02:01] and any of this was borrowed money, then that of course is factoring into your total losses.
+[00:02:07] But generally speaking, when you trade to the long side, the most you can lose is the amount of
+[00:02:12] money you've put into the trade. And so that helps us understand the max loss that we could
+[00:02:21] see on a trade, essentially. Now, trading the long side is the type of trading and investing I'm
+[00:02:28] doing 95% of the time. I buy stocks with the expectation and the hope that they will go up in price
+[00:02:37] and I will then see a profit. Occasionally, you will see me short and I do have some strategies
+[00:02:43] on short selling. They're a part of day trading strategies in scaling. We have a chapter dedicated
+[00:02:49] to short selling strategies, but I'm predominantly trading to the long side and there's a number of
+[00:02:54] reasons for that which I'm going to talk about as we go through this class. Now, to help you understand
+[00:02:58] how short selling works, I'm going to hide my video here so you can read the text on this page.
+[00:03:03] So shorting, traders who short a stock are selling shares and creating a negative share balance.
+[00:03:11] As you can see right here, this shows negative 100 shares. That means if they're short,
+[00:03:16] 200 shares, for example, they'll be holding a negative 200 share position as a negative balance.
+[00:03:22] Now, if you've never seen window like this before or any of these windows, don't worry,
+[00:03:26] because I'm going to teach you how to use all of these windows as we go further into the class.
+[00:03:30] But right now, I really just want to focus on the concept of creating that negative position.
+[00:03:35] So, if you are shorting a stock, you're going to see a negative position. Whereas, if you've
+[00:03:40] bought a stock, you're going to see a positive position. So, the way you create a negative position
+[00:03:47] is by borrowing shares. The concept of borrowing comes back to the fact that, let's say, this is
+[00:03:54] you right here. This is your broker right here and this is other traders right here. So, if you
+[00:04:07] want to buy a stock, then you place your buy order right here by and your broker is going to find
+[00:04:15] someone who's selling and you're going to buy the shares that they're selling. And this is where
+[00:04:19] you're connected on the market in your actual trading platforms. So, the broker is the intermediaries
+[00:04:25] intermediary that connects you to the market. And, in fact, probably a more accurate way to draw
+[00:04:32] this would be, there's a lot of different brokers, right, broker A, broker B, etc., etc., and then
+[00:04:40] they connect you to here. So, you sort of connect through this channel and this is the auction,
+[00:04:46] which is the actual market. That's the exchange. So, this is where you're buying and selling. Now,
+[00:04:51] if you want to sell, if you want to short a stock, you need to sell those shares. So, if you go
+[00:04:57] minus 100 shares, where do you get the shares from? You have to borrow them from someone who currently
+[00:05:04] owns 100 shares. So, if there's a trader over here who owns 100 shares of the stock, your broker
+[00:05:11] can say, hey, we want to borrow your shares and we're going to lend them out to someone who wants
+[00:05:16] to sell them on the market. You don't want to sell them right now. You want to hold them. So,
+[00:05:19] you keep holding them. But, while you're

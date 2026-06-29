@@ -1,0 +1,866 @@
+# 20260216-0957-32.4306224_audio.wav
+# Transcribed: 2026-06-29T21:16:53.230276
+# Duration: 42.5 minutes
+# Model: faster-whisper tiny
+
+[00:00:01] All right, so we're going to go ahead and jump in here with chapter eight, the level one market depth and your order entry window.
+[00:00:09] So, that's the topic for today's class, and I will be using, of course, my platform here or my trading platform is sort of an example of the order entry window and level one market data.
+[00:00:28] And I might also use, think our swim a little bit as well, but first we'll jump into our slide deck.
+[00:00:36] All right, so we're going to go full screen on this here.
+[00:00:40] So, let's start with a, hopefully, thorough explanation of level one market quotes.
+[00:00:48] Now, I know that when I started trading, I didn't even understand really that there was like a bid and an offer.
+[00:00:57] You know, I just sort of was like, this, this is the current price of the stock. What do you mean? There's a bid and an offer.
+[00:01:04] So, when we're looking at level one data, it's the top of the market, which is, in other words, the highest price buyer next to the lowest price seller, because after all the market is an auction.
+[00:01:20] Because when a company does its IPO, its IPO, it sells a limited number of shares on the market.
+[00:01:27] So, let's say it's a million shares in the IPO. There's a million shares available.
+[00:01:31] And during the IPO, what happens is the company sells all these shares.
+[00:01:37] And now, there's, of course, people that own them.
+[00:01:40] But immediately, some of the people that own them are happy to sell them.
+[00:01:44] And then they're saying, I want to sell this for, you know, $12.50.
+[00:01:49] And someone else is like, I can't wait to buy this stock. I'm ready to buy it.
+[00:01:53] But I won't pay up any more than $12.49.
+[00:01:57] And so now, you've got a line between the buyers and the sellers.
+[00:02:03] And so, level one data, level one, L1, is basically the top of the market.
+[00:02:12] The highest price buyer, the best buyer, and the best seller, the lowest price seller.
+[00:02:17] And in between the bid, so the buyers are the bid.
+[00:02:22] And the sellers are the ask, which I usually call it the ask, because they're asking, but they're also called the offer.
+[00:02:34] So the NBBO national best bid best offer is a set of regulations that dictate how orders have to be executed based on the current market prices.
+[00:02:47] And we'll talk about that a little bit more as we get into the strategies and scaling course.
+[00:02:50] But nonetheless, this is level one data right here.
+[00:02:53] And so in this case, we have a spread between the bid and the offer.
+[00:02:58] And the spread is one cent in this example.
+[00:03:01] Now, if the best bid was 45 or 44 or 1244, then we would have a six cents spread between the bid and the offer.
+[00:03:11] So when we pull up our trading software, this is typically what it's going to look like.
+[00:03:15] And I'll hide my video so you can see everything on this slide.
+[00:03:19] So the market one, well, sorry, level one market quotes.
+[00:03:22] Tell us the current price of the stock.
+[00:03:24] Oops, let me go back.
+[00:03:25] Gotta get my drawing tool out.
+[00:03:27] There we go.
+[00:03:29] So in the top corner, we've got the stock symbol and a stock symbol is anywhere from one to five characters.
+[00:03:35] Most stock symbols are between one and four.
+[00:03:38] Usually we don't see five character stock symbols, but every now and then we will, but not usually.
+[00:03:44] So Ford F for Ford GE for general electric AEP for American electric power.
+[00:03:51] TSLA for Tesla, right?
+[00:03:54] This is, this is something you're probably already familiar with, but the way it works is you enter the symbol right here.
+[00:04:01] You type it in and then you have to press the Enter key.
+[00:04:04] So it looks like I lost the last internet for a second there.
+[00:04:08] Let's see.
+[00:04:09] Is it back?
+[00:04:10] No, I'm going to have to log out and log back in.
+[00:04:12] That's okay.
+[00:04:13] All right, so I'll just log out, log right back in.
+[00:04:18] You know, I don't know why I've been having that little internet problem.
+[00:04:22] So I got a $33 winner in that account.
+[00:04:24] And one of the nice things with light speed and you could do this also with, with finger swim is in finger swim.
+[00:04:31] You can click here and then you can have multiple accounts all linked together to one login.
+[00:04:36] And you could do the same thing here. So I've got my main account, which usually I don't trade in because it's a taxable account.
+[00:04:42] But then sometimes I forget that I'm in it.
+[00:04:44] So then I switch to my retirement account.
+[00:04:48] So type in a stock.
+[00:04:53] And then nothing's going to happen to you press Enter.
+[00:04:56] S.P.Y. Enter.
+[00:04:59] T.S.L.A. Enter.
+[00:05:01] I.A. Enter.
+[00:05:03] F. Enter.
+[00:05:04] S.O.N.D. Enter.
+[00:05:06] All right, so you type in your ticker and then you press Enter.
+[00:05:10] So for those of you in the trading simulator, same workflow.
+[00:05:15] If you're using finger swim, same workflow.
+[00:05:18] So over on thicker swim, we go to trade and then F.S.L.A.R.
+[00:05:22] For solar, enter, S.O.N.D. Enter.
+[00:05:26] All right, so you type in your ticker in the corner of the order entry window and then press Enter.
+[00:05:32] Now, most platforms will show you some data here in this sort of top row.
+[00:05:38] And what this is showing you right now is the percentage change.
+[00:05:41] How much the stock is up?
+[00:05:43] This is showing you the open price and the high price or the high in the low.
+[00:05:48] So you're seeing different platforms will show different data here.
+[00:05:51] I'll show you how you can change your settings.
+[00:05:53] And this is showing the total amount of volume today.
+[00:05:56] It's kind of a funny that it's 16, 7, 9, 5k instead of just saying like 16.7 million.
+[00:06:04] But anyways, that's what it's doing.
+[00:06:07] So here in this platform, S.O.N.D.
+[00:06:11] It's, this has 1.9 million shares.
+[00:06:15] And then it's just a sort of they abbreviate.
+[00:06:18] They just sort of move the decimal point in, which is also kind of funny.
+[00:06:22] I mean, because they don't even really clearly say what it is.
+[00:06:27] I know what it is, but they don't clearly say.
+[00:06:30] So in light speed, you can actually go into your settings here, settings.
+[00:06:37] And you can change the information that's displayed right in this window.
+[00:06:42] So for instance, I have shares outstanding right here.
+[00:06:47] And that tells you it's not exactly the same as the float.
+[00:06:51] Because the number of shares a company has issued is not going to be the number of shares freely available in the float.
+[00:06:59] Some of those shares have not been sold by the company.
+[00:07:02] They've been authorized but not issued.
+[00:07:05] Some of them are tied up in warrants or are tied up with insiders.
+[00:07:14] So it can be a little deceiving because the shares outstanding.
+[00:07:18] It's always a bigger number than the float.
+[00:07:20] But they're usually fairly close.
+[00:07:23] So I find it helpful to see that right there shares outstanding.
+[00:07:26] Because I can kind of get a sense of all right.
+[00:07:28] You know, the second I pull it up, someone's like, hey, look at S.O.N.D.
+[00:07:31] I pull it up and I'm like, oh, 56 million outstanding.
+[00:07:33] Okay, well, that's not too bad.
+[00:07:35] And I can check the float and it's probably lower.
+[00:07:38] ZAPP shares outstanding 3.6.
+[00:07:40] Okay, all right, that's quite a bit lower.
+[00:07:42] S.M.F.L shares outstanding 13.
+[00:07:44] Right.
+[00:07:45] So it's again, it's not the same as float.
+[00:07:48] It's always going to be higher.
+[00:07:50] But when you see something like this, 618,000.
+[00:07:53] Okay.
+[00:07:54] Then the float's got to be ridiculously low.
+[00:07:56] So it's kind of a little bit of a ballpark.
+[00:07:58] And if I pull up a stock and it's like 1 billion or something,
+[00:08:04] then I'm also kind of like, mmm.
+[00:08:06] All right, that does a little high.
+[00:08:08] Maybe I should, you know, be a little more cautious on that.
+[00:08:11] It's just sort of a little bit of a gut check.
+[00:08:14] So anyways, I have shares outstanding volume, volume weight average price.
+[00:08:18] To be honest, I can get rid of that.
+[00:08:20] I never, I don't know.
+[00:08:22] I've never looked at it from there.
+[00:08:24] So the exchange and the percentage change on the day.
+[00:08:27] It's not very important.
+[00:08:28] And then these are some other things that you could add in here.
+[00:08:31] But, you know, short interest.
+[00:08:37] But the short interest is not always,
+[00:08:40] it's not always updated.
+[00:08:43] We'll see.
+[00:08:44] We'll see what it looks like on some of these.
+[00:08:46] Pretty market.
+[00:08:47] It's much just seeing if there's anything here.
+[00:08:52] See if that works on halts.
+[00:08:55] We'll see if we got a stock halts.
+[00:08:57] I don't know that it will with light speed.
+[00:08:59] So short interest is showing zero.
+[00:09:02] Okay.
+[00:09:03] Maybe I show it interest.
+[00:09:05] So it's not even, it seems like it's not even connected to data.
+[00:09:08] So you could just get rid of that.
+[00:09:10] Now again, depending on the platform you're using,
+[00:09:13] you may not have the ability to customize these as much as I do.
+[00:09:16] Overall, I think are swim for instance.
+[00:09:20] What you have is what you get.
+[00:09:22] So you've got, you know, you can see.
+[00:09:25] You've got some stuff here, some data,
+[00:09:28] but you've got the ask, the bid.
+[00:09:32] I guess this is how much it's up on the day.
+[00:09:35] So there's a little bit here, but not a lot.
+[00:09:40] And to be honest, in this layout, I probably wouldn't,
+[00:09:43] this is so small, 98%, 96%.
+[00:09:46] It's so small, it's hard to read.
+[00:09:48] So I probably wouldn't use it at all if I was using this account as for my primary account.
+[00:09:55] Okay.
+[00:09:56] So now we've got, so some of the data that's displayed here in the top,
+[00:10:01] which can be adjusted depending on the broker you're using.
+[00:10:05] So some will let you change it around, some won't,
+[00:10:07] but mostly what I look at is, of course, ticker symbol.
+[00:10:11] How much it's up or down, what the volume is,
+[00:10:14] and I'll check the market cap, or the share, sorry,
+[00:10:19] not the market cap, the share is outstanding.
+[00:10:22] And I'll check the exchange.
+[00:10:25] So we haven't talked about this a lot,
+[00:10:28] but what I think you already know, because we did,
+[00:10:31] we did definitely talk about this,
+[00:10:33] is that I am trading stocks that are NASDAQ,
+[00:10:37] NSDQ, NIC, and MX, which is also NIC MX,
+[00:10:42] because NIC bought the American Stock Exchange.
+[00:10:49] So I trade stocks are listed on these three markets.
+[00:10:54] Something that is interesting,
+[00:10:57] is that I typically find that my biggest winners
+[00:11:01] are on NASDAQ listed stocks.
+[00:11:04] It doesn't mean I won't trade NIC or MX listed stocks,
+[00:11:07] because I will, but an L also for what it's worth,
+[00:11:11] more stocks are listed on NASDAQ than on NIC and MX,
+[00:11:14] but sometimes I feel like there's something just a little
+[00:11:17] funny about how a NIC and an MX listed stock trade,
+[00:11:21] specifically in the level two and in the market makers.
+[00:11:24] So for that reason, I just have a little bit
+[00:11:29] of a preference towards a NASDAQ listed stock.
+[00:11:32] Again, I'm not saying I won't trade NIC listed stocks,
+[00:11:35] because I do on a fairly regular basis.
+[00:11:37] But during regular trading hours,
+[00:11:40] there's also something that you'll notice,
+[00:11:42] which is that there's no resumption quotes during halts.
+[00:11:52] So when a stock is halted,
+[00:11:57] and you're going to learn more about halts,
+[00:11:59] I think it's in chapter 11.
+[00:12:02] We're going to get into circuit breaker halts and how those work.
+[00:12:06] Yeah, it's chapter 11 of day trading at basics.
+[00:12:09] You're going to learn that sometimes stocks can get halted.
+[00:12:12] And there's a variety of reasons that a stock can get halted.
+[00:12:14] But when it's halted with a NASDAQ listed stock,
+[00:12:17] you can still see quotes for basically what people are willing
+[00:12:21] to buy and sell the stock for.
+[00:12:23] And since you can see the quotes,
+[00:12:25] you kind of know when it resumes trading,
+[00:12:27] what price it's going to resume at,
+[00:12:29] because you're seeing the current quote.
+[00:12:31] NIC and MX listed stocks do not display quotes,
+[00:12:34] while a stock is halted.
+[00:12:36] So as a result, when it's halted,
+[00:12:37] you see nothing, it's blank.
+[00:12:39] And that can be a little unsettling because you're like,
+[00:12:41] I have no idea where this is going to resume that.
+[00:12:44] So during regular trading hours,
+[00:12:46] I'm especially more cautious trading stocks that are nice
+[00:12:50] of your MX listed.
+[00:12:52] Okay.
+[00:12:53] So some brokers will show you the list.
+[00:12:57] Down at the bottom of this window.
+[00:12:59] So it might have at the bottom a Q for MX.
+[00:13:06] Sorry, a Q for NASDAQ,
+[00:13:08] or it's an X for MX, and NIC is maybe an N,
+[00:13:13] which is a little confusing,
+[00:13:15] but it's a Q for NASDAQ.
+[00:13:17] I think an N for NIC and an X for MX listed stock.
+[00:13:21] So sometimes it's a very subtle abbreviation,
+[00:13:24] but that is enough to know which exchange
+[00:13:26] that stock is listed on.
+[00:13:28] And then that's going to tell you whether or not
+[00:13:30] you'll see a resumption quotes
+[00:13:32] if the stock is getting halted.
+[00:13:35] Okay.
+[00:13:36] So now you understand everything that's on the top tier,
+[00:13:40] both in this screenshot that you see right here,
+[00:13:43] and also on the trading software that I'm using on a daily basis.
+[00:13:46] Now let's look at the second tier.
+[00:13:48] So on the second tier, we have the bid price.
+[00:13:51] The bid is the highest price buyer,
+[00:13:54] and since this is a buyer right now,
+[00:13:56] you can sell shares to a buyer instantaneously.
+[00:13:59] Someone is bidding to buy the stock at 225.
+[00:14:03] And remember, we trade in the closed market.
+[00:14:06] So someone is saying, I want to buy,
+[00:14:08] you can sell them your shares if you already own.
+[00:14:11] And the transaction then is complete between a buyer
+[00:14:14] and a seller, right?
+[00:14:16] So you have the transaction.
+[00:14:18] If someone is selling at 1250,
+[00:14:20] you can buy their shares, right?
+[00:14:22] And now the transactions complete.
+[00:14:24] There's a buyer matching to the seller.
+[00:14:26] So ultimately, the buyers are sitting on the bid waiting
+[00:14:29] for someone to come and sell them shares,
+[00:14:31] and sellers are waiting at the ask,
+[00:14:33] waiting for someone to come and buy their shares.
+[00:14:35] And they're being patient, they're waiting.
+[00:14:37] Why are they waiting instead of just instantly executing an order?
+[00:14:41] Well, that's a good question,
+[00:14:43] because as we know, if you see a stock,
+[00:14:45] and I'll switch over to my discount here,
+[00:14:48] just so I don't mess up my metrics.
+[00:14:51] So if you see a stock like this,
+[00:14:53] you could say, oh, I really want to buy this.
+[00:14:56] I'm going to put my order at 37.
+[00:14:58] And now you're just going to have to,
+[00:15:00] oh, why is it doing this?
+[00:15:01] Oh, it's because I logged out.
+[00:15:02] Anyways, it doesn't matter.
+[00:15:03] You could sit there and be like, I'm going to,
+[00:15:05] I want to buy this 37 and you just sit there
+[00:15:08] and you wait and you wait and wait.
+[00:15:09] Now, if you really want to get in at that price,
+[00:15:12] and you don't want to pay a penny higher than that,
+[00:15:14] then that is, that's the way to do it.
+[00:15:16] You just sit on the bid and you wait.
+[00:15:18] But as an active day trader,
+[00:15:20] when we see something that's moving,
+[00:15:22] and what did we have up REVB?
+[00:15:25] We see something moving.
+[00:15:26] I'm not usually going to want to wait
+[00:15:28] and just let my order sit there on the bid.
+[00:15:29] I'm going to go ahead and buy
+[00:15:31] and I'm going to buy from someone who's selling.
+[00:15:33] Well, why is the seller sitting there on the offer
+[00:15:36] instead just selling on the bid?
+[00:15:38] Sometimes, as we've talked about,
+[00:15:40] we'll see a lot of sellers
+[00:15:42] with their orders lined up around what levels.
+[00:15:46] Half dollars and whole dollars, right?
+[00:15:48] So not a lot of orders,
+[00:15:49] and then up towards three, a lot of orders.
+[00:15:51] The not a lot, then three, 50,
+[00:15:53] then not a lot, then four, then not a lot,
+[00:15:55] then four, 50, not a lot, and then five.
+[00:15:59] So five dollars, four, 50.
+[00:16:01] We know that traders often put orders
+[00:16:04] at these psychological levels
+[00:16:06] because they're just logical.
+[00:16:08] So people will put profit targets out at these orders
+[00:16:12] at these prices, and so those profit targets
+[00:16:15] would be sitting on the offer on the ask,
+[00:16:18] waiting for the price to come up to that level,
+[00:16:20] so they can get someone will buy their shares
+[00:16:22] and they sell for a profit.
+[00:16:24] Sometimes when the stock has been moving higher,
+[00:16:26] you'll have traders who are like,
+[00:16:28] oh boy, this thing's moving higher,
+[00:16:30] but if it pulls back down here to four,
+[00:16:33] I'd like to buy right here.
+[00:16:35] So maybe they put a buy order at four dollars on the bid,
+[00:16:38] right again around that psychological support level.
+[00:16:41] Maybe they put their order at like four or two.
+[00:16:43] If it holds four, I want to be in off that level,
+[00:16:46] and my max loss, let's just say, is 399.
+[00:16:49] As long as we hold psychological support,
+[00:16:51] I'm getting in here with a three cent stop.
+[00:16:53] So someone might put a buy order on the bid
+[00:16:55] and really want to try to get in as close as possible
+[00:16:58] to support because that means they have a tighter stop,
+[00:17:02] less risk.
+[00:17:03] Now all they have to do is make six cents up to four or eight,
+[00:17:07] and they've got a two-to-one profit loss ratio.
+[00:17:09] If this thing goes back to four, 50, they've got, you know,
+[00:17:12] 10 to one plus 15 to one profit loss ratio, it's terrific.
+[00:17:16] So there will be people that choose to place orders on the bid
+[00:17:21] to wait to get filled or place orders on the asked to wait to get filled.
+[00:17:24] And as we talked about with adding and removing liquidity,
+[00:17:28] there are also market makers who put orders on the bid to buy,
+[00:17:33] knowing that they'll collect the ECN rebate,
+[00:17:36] and they turn right around they put order on the asked to sell
+[00:17:39] and collect the rebate on the back side.
+[00:17:41] So they're getting the rebate both on the buy and on the sell.
+[00:17:44] So if we go back here, if they buy,
+[00:17:49] let's see they buy 1,000 shares at 1244,
+[00:17:52] they're going to make a $2 rebate.
+[00:17:56] And then they sell it at 1245,
+[00:18:01] one penny higher doesn't matter, just, it has to be at the ask.
+[00:18:05] So they would just put it right at the asked 1245,
+[00:18:08] then they'll make another $2 when they sell.
+[00:18:11] So now they've made $4 in rebates,
+[00:18:14] plus maybe a small profit between the bid and the offer,
+[00:18:17] and that could be, you know, $14 a profit there.
+[00:18:20] Now these market makers will do that a thousand times in a day,
+[00:18:23] and that's how they're making, you know, 15, 20, 30,000 dollars a day
+[00:18:27] from basically an algorithm that is just buying on the bid,
+[00:18:30] selling on the offer,
+[00:18:31] buying on the bid, selling on the offer all day long.
+[00:18:34] So if you want to go ahead and get filled immediately,
+[00:18:36] as I already showed you in the demonstrations yesterday,
+[00:18:38] you could just buy, you could put your order at the ask,
+[00:18:41] you click the buy button,
+[00:18:43] and boom, you're in instantaneously, right?
+[00:18:46] You get filled at 49, you're in.
+[00:18:48] You want to sell to the buyer here at 45,
+[00:18:51] boom, you press, you click,
+[00:18:53] what I can do is I can click the ask or click the bid
+[00:18:57] and my price will change.
+[00:18:59] So you see how the price changes,
+[00:19:01] and then you can always move it up or down with the up and down arrow,
+[00:19:04] click that sell button and boom you're out of the trade.
+[00:19:07] Now if you want to be patient, you say I want to get out of 50,
+[00:19:09] and I'm not taking a penny less than 50,
+[00:19:11] or I want to get out of 52.
+[00:19:13] I'm going to put my order at 52,
+[00:19:14] and I'm just going to be patient, I'm going to wait.
+[00:19:17] If the stock comes up to 52, I'll get filled,
+[00:19:19] someone will buy my share.
+[00:19:21] And if it doesn't go up to 52, then I don't get filled.
+[00:19:24] Now when you put a sell order out there at 52,
+[00:19:27] there is no way the price can go higher
+[00:19:31] without your order getting filled.
+[00:19:33] Because this is an auction,
+[00:19:35] and you are listed there as one of the people selling it 52.
+[00:19:38] So it could never go to 54,
+[00:19:40] and your order at 52 does not fill,
+[00:19:43] that would not be possible based on the rules
+[00:19:46] of how orders are handled at the market.
+[00:19:49] So if you put your order on the ask,
+[00:19:51] and the price goes above that,
+[00:19:53] your order will be,
+[00:19:55] has to have been bought up before the price could go higher.
+[00:19:59] Now if you put your order at 52 to sell 100,000 shares,
+[00:20:05] well, it could be printing 52,
+[00:20:08] but if it doesn't go to 53, then your order doesn't fill.
+[00:20:11] So it's possible that you'll have a accumulation
+[00:20:14] of people that'll buy some of your shares,
+[00:20:16] but not all of them, in which case you would have
+[00:20:18] what we would call a partial fill.
+[00:20:20] So we've got the bid on the left,
+[00:20:23] and we've got the ask on the right.
+[00:20:26] The ask price is the lowest price seller,
+[00:20:28] you can buy shares from the seller right now,
+[00:20:30] instantaneously,
+[00:20:31] because there's someone selling 1100 shares at this price.
+[00:20:35] Now let's see,
+[00:20:38] and of course the spread is the difference between the bid
+[00:20:41] and the offer.
+[00:20:42] So now we're going to look at this right here,
+[00:20:46] the number size.
+[00:20:48] You'll notice on almost all platforms,
+[00:20:51] that number is abbreviated,
+[00:20:53] so they drop two zeros,
+[00:20:55] which means when you're looking at this right here,
+[00:20:58] I'll just take a screenshot, so it freezes the screen.
+[00:21:01] This right here is the nine is 900.
+[00:21:06] The 158 is 15800, you have to add two zeros.
+[00:21:10] That's 5,200, that's 300, that's 200,
+[00:21:13] that's 300, that's 300, that's 100,
+[00:21:15] 300, 100, et cetera, et cetera.
+[00:21:17] So you see how they sort of stack up like that.
+[00:21:20] So if I go back here,
+[00:21:24] you just have to keep that in mind.
+[00:21:26] We see 67, that's really 6700.
+[00:21:29] Now some platforms may show the full number,
+[00:21:33] but most of them abbreviated,
+[00:21:35] you can see here,
+[00:21:36] think our swim of abbreviates it on the level two as well.
+[00:21:39] 51 is 5,100,
+[00:21:41] and then this is the volume
+[00:21:44] that's taken place at these prices,
+[00:21:48] I guess, evidently,
+[00:21:50] it's kind of interesting.
+[00:21:52] It's showing a little volume profile,
+[00:21:54] but that's something different.
+[00:21:57] Okay, and then in the maker column right here
+[00:22:01] is the market maker right here.
+[00:22:04] The market maker,
+[00:22:06] also known as the ECN or the route,
+[00:22:09] is the market where the order is coming through.
+[00:22:13] So I sometimes think of the,
+[00:22:16] of the market as an island,
+[00:22:18] and this is, this is the island, I'll redraw this.
+[00:22:21] So do this in blue.
+[00:22:25] So you've got this stock trading at 225 by 226.
+[00:22:32] So this right here is the island.
+[00:22:34] That's the auction.
+[00:22:37] Now, there's a lot of different paths
+[00:22:39] to get to the island.
+[00:22:41] Of course, you could use E-Trade,
+[00:22:43] AmeriTrade,
+[00:22:44] the Thicker Swim,
+[00:22:45] Charles Schwab,
+[00:22:46] you could use Fidelity, et cetera.
+[00:22:48] And as we know,
+[00:22:49] a lot of the orders through those commission-free brokers
+[00:22:52] will actually get filled
+[00:22:53] in their separate pool of liquidity here,
+[00:22:56] before even going to the market,
+[00:22:58] and they may not even go to the market.
+[00:23:00] So that was the sort of origins of these alternative trade
+[00:23:03] systems was back in the late 80s,
+[00:23:05] early 90s,
+[00:23:06] where these firms realized,
+[00:23:08] you know, this is the firm,
+[00:23:10] the broker,
+[00:23:11] they realized, well, geez,
+[00:23:12] we've got all these client-sending orders
+[00:23:14] through us to the market,
+[00:23:15] but sometimes they're buying and selling from each other.
+[00:23:18] We're paying a fee to send their order to the market,
+[00:23:21] what if we just fill their order internally?
+[00:23:24] So internal fill right here,
+[00:23:26] so your order first goes through the internal match,
+[00:23:29] and if it can match your order,
+[00:23:30] then you get your shares back in your order never goes to the market.
+[00:23:33] But if it doesn't,
+[00:23:34] then your order will route out to the market here.
+[00:23:37] Now brokers,
+[00:23:38] like the one that I'm using,
+[00:23:40] is called direct market access firm,
+[00:23:44] and so they give you direct market access.
+[00:23:46] Now there's some disagreement over this
+[00:23:50] because a lot of these firms will still pass your order
+[00:23:55] through an institution,
+[00:23:59] and then that institution goes and actually gets your shares
+[00:24:04] through the market,
+[00:24:05] so it's still not exactly direct.
+[00:24:08] In fact,
+[00:24:09] probably the only people that have true direct access
+[00:24:11] would be an actual institutional trader,
+[00:24:15] but in any case,
+[00:24:16] this is commission free brokers,
+[00:24:18] so commission free,
+[00:24:20] and then these are the ones that charge commission.
+[00:24:22] And with these brokers,
+[00:24:23] you can choose which path your order is going to take
+[00:24:27] to get to the market.
+[00:24:29] And so as we see here on our level one,
+[00:24:33] data,
+[00:24:34] the current market maker is on Arca,
+[00:24:36] Arca,
+[00:24:37] and what you'll see here,
+[00:24:39] if I pull this back up,
+[00:24:40] is oh,
+[00:24:41] our EVB's halted.
+[00:24:42] Okay, so this will be a good example
+[00:24:44] for the halt to the second.
+[00:24:46] But so NASDAQ is the market maker right here,
+[00:24:50] and they're all so on the ass,
+[00:24:52] great here.
+[00:24:53] And then there's Ajax,
+[00:24:54] there's Arca,
+[00:24:55] there's bats,
+[00:24:56] and I can actually choose which of those routes
+[00:24:58] I want to send my order through.
+[00:25:00] So if I see for instance that,
+[00:25:02] well,
+[00:25:03] the way I do it is I just know that NASDAQ
+[00:25:05] is the route that has the most volume.
+[00:25:07] So I just route all my orders through NASDAQ,
+[00:25:09] and it's just as simple as that.
+[00:25:11] And that is faster
+[00:25:14] to route through NASDAQ,
+[00:25:17] than the commission free brokers
+[00:25:19] that do this sort of internal routing,
+[00:25:21] and then get you your order back.
+[00:25:23] Because they've got to check their inventory,
+[00:25:25] and so they're going to fill the trade,
+[00:25:27] they're going to send it out,
+[00:25:29] what are they going to do,
+[00:25:30] and then they'll just fill it for you.
+[00:25:32] So it just adds a little bit of what we call latency,
+[00:25:35] and I'm just reiterating what we've already discussed.
+[00:25:39] Over here with the direct access broker,
+[00:25:41] you're just going to go instantly to the market.
+[00:25:43] So that's going to be a faster, a faster fill.
+[00:25:47] Now, I could use a limit right here,
+[00:25:51] LSPT,
+[00:25:52] this is the light speed route,
+[00:25:55] and it's a discounted route,
+[00:25:57] and this order will go through one of the wholesalers,
+[00:26:02] and it's cheaper because of that.
+[00:26:04] But I feel that the money I save,
+[00:26:06] I lose in speed and execution quality.
+[00:26:10] So I don't think it's actually a savings.
+[00:26:12] In net, so I don't use it.
+[00:26:15] All right.
+[00:26:16] So when we're looking at level one data,
+[00:26:18] you only see the top of the market right here.
+[00:26:20] Your current best buyer,
+[00:26:22] your current lowest price seller,
+[00:26:24] and sometimes they won't even show the market
+[00:26:26] that they're going through one.
+[00:26:27] Now, a lot of the market makers,
+[00:26:31] and the high frequency trading algorithms,
+[00:26:34] they have to use a route to get to the market as well.
+[00:26:37] Right? Now, some of them may have a custom,
+[00:26:40] very unique route,
+[00:26:41] but a lot of them will use the publicly available routes,
+[00:26:44] like NASDAQ, BAT, ARCA, Ajax, NYC, etc.
+[00:26:47] So just because you could see,
+[00:26:49] even though you've only got one, two, three, four, five, six different routes,
+[00:26:55] you know, and we could look at Apple,
+[00:26:58] millions of shares of volume are going through these routes,
+[00:27:01] because they're being shared by different traders.
+[00:27:03] And there's also,
+[00:27:07] so as part of the rules about,
+[00:27:14] so there's a couple of rules.
+[00:27:16] One is, let's see,
+[00:27:19] you've got the national bid best bid bid best offer,
+[00:27:23] and then let me pull up the setter dock for one second.
+[00:27:26] I'll just highlight this just for a quick second.
+[00:27:30] And while I pull up that dock,
+[00:27:32] you can see REVB right now has a H right here,
+[00:27:35] and there's no trade in going through.
+[00:27:37] So this is a stock that's currently halted,
+[00:27:40] but you can see it halted the last quote was at 308,
+[00:27:43] and it's showing $3.29,
+[00:27:45] as the resumption.
+[00:27:46] So because it's a NASDAQ listed stock,
+[00:27:48] we can see that resumption price.
+[00:27:50] So you can see this had really a nice kind of rally here.
+[00:27:54] It squeezed up here to this level.
+[00:27:56] Now, you're going to learn more about,
+[00:27:57] uh,
+[00:27:59] circuit breaker halts and the different types of halts in chapter 11,
+[00:28:02] but this is a halt that is due to volatility.
+[00:28:06] Volatility halts actually only take place during regular trading hours
+[00:28:12] from 9, 30 to 4 p.m.
+[00:28:14] So there's no halts pre-market,
+[00:28:16] which is why we'll sometimes pre-market see a stock go up,
+[00:28:20] 700% without halting once,
+[00:28:22] but during regular trading hours,
+[00:28:25] we will see circuit breaker halts.
+[00:28:29] So this is halted right now,
+[00:28:30] it's showing a 333 resumption,
+[00:28:33] and I'll just give it a second.
+[00:28:35] We've got 24 seconds to resumption.
+[00:28:37] These halts are 5 minutes long,
+[00:28:39] so currently it halted at 10, 20,
+[00:28:43] and 24 seconds based on my time in sales,
+[00:28:45] so it should resume now in about 10 seconds.
+[00:28:49] Now, some halts are 10 minutes long,
+[00:28:53] uh, and some are even 15,
+[00:28:55] but typically we watch at the 5 minute increment,
+[00:28:58] so watch right here,
+[00:29:00] so it's still halted,
+[00:29:03] that means this is going to be a 10 minute long halt.
+[00:29:05] And the reason it's a 10 minute long halt
+[00:29:07] is because it's actually showing a resumption
+[00:29:10] more than 10% above the price where it halted.
+[00:29:13] It halted at 308,
+[00:29:15] and now it's showing a 335 resumption.
+[00:29:18] So because the resumption is so high,
+[00:29:20] it's pausing the stock for a little bit longer
+[00:29:22] to give traders a little bit more time to decide what they want to do.
+[00:29:30] These are designed to limit volatility.
+[00:29:33] Now let me see,
+[00:29:34] I can't find this slide I'm looking for.
+[00:29:39] So there's a rule that was created.
+[00:29:43] Here it is,
+[00:29:46] all right, so I'm just going to pull this up for a second.
+[00:29:57] So we're going to get into this in a lot more detail
+[00:30:01] in the strategies in scale and course,
+[00:30:05] but there's a section here where we talk about
+[00:30:09] order types order routing,
+[00:30:11] and we talked about the market makers,
+[00:30:15] and they're high frequency trading algorithms that they use.
+[00:30:18] So one of the things that we've learned is that
+[00:30:21] when an order is routed to the market,
+[00:30:25] if you route your order through NASDAQ,
+[00:30:31] so you send it through NSDQ,
+[00:30:34] that's the path that you choose to get to the market.
+[00:30:37] What if, let's just say for instance,
+[00:30:39] you say, I want to buy a thousand shares.
+[00:30:42] And NASDAQ only has a thousand shares for sale at 228,
+[00:30:47] and that's DQ.
+[00:30:49] And here is ARCA.
+[00:30:52] What do you think would happen?
+[00:30:54] Do you just pay 228?
+[00:30:56] You pay two cents higher because you chose to route through NASDAQ?
+[00:30:59] Well, that's NASDAQ's best seller.
+[00:31:02] What actually would happen is they would reroute your order to ARCA.
+[00:31:10] So they would almost instantaneously see the best seller
+[00:31:14] is not NASDAQ's ARCA.
+[00:31:16] We have to get you the shares because the regulation requires
+[00:31:20] that you get filled at the current best bid or best offer.
+[00:31:26] So your order would actually get rerouted.
+[00:31:30] And so that is one argument where a more sophisticated trader
+[00:31:37] may decide if they only saw one market maker on the ASDAQ
+[00:31:42] to definitely route through NASDAQ,
+[00:31:45] whereas if you pull, and that's one of the reasons I like NASDAQ
+[00:31:48] because it's pretty much always right there.
+[00:31:50] If I was going to route through ARCA, for instance, ARCA is not here.
+[00:31:54] So I'm going to have my, it is occasionally the best,
+[00:31:57] but it's not always the best.
+[00:31:59] So if I routed through ARCA,
+[00:32:01] it would be frequently rerouting my order,
+[00:32:04] which again adds latency.
+[00:32:06] Again, this is probably a little bit more advanced
+[00:32:10] than as necessary right now.
+[00:32:12] So I don't want you to really get worked up about that.
+[00:32:16] I think for most beginner traders,
+[00:32:19] you're going to be trading the simulator
+[00:32:21] and you're routing doesn't matter anyways, because it's in the simulator.
+[00:32:24] If you're trading with a commission-free broker,
+[00:32:26] you don't have any choice and how your order is routed,
+[00:32:28] generally speaking.
+[00:32:29] A couple will give you choices,
+[00:32:31] but you generally don't have any choice.
+[00:32:33] So you don't have to worry about it all.
+[00:32:35] If you're using a direct access broker,
+[00:32:37] then I think using NASDAQ is the best
+[00:32:39] because they're almost always at the top of the book,
+[00:32:42] both on the bid and the offer.
+[00:32:44] If you use a more obscure route,
+[00:32:47] then your order is constantly going to get rerouted,
+[00:32:49] which adds latency to your fill-time.
+[00:32:51] But so that's why we want to be able to see
+[00:32:54] what the reason, sorry,
+[00:32:56] what the market maker is,
+[00:32:58] so we know which market maker should we be using.
+[00:33:02] I had to learn all this the hard way.
+[00:33:04] I used obscure market makers for a long time,
+[00:33:06] because they were cheaper,
+[00:33:08] and I thought I was saving money,
+[00:33:10] and then I learned I'm not saving money
+[00:33:12] because I'm actually losing on slippage
+[00:33:16] during the latency it takes to rerout my order.
+[00:33:18] So that's why I feel like
+[00:33:20] the price that I pay for direct routing
+[00:33:22] is made up for in better executions,
+[00:33:26] better fill-times.
+[00:33:28] Okay, so then we've gone over the market maker,
+[00:33:32] which is the ECN.
+[00:33:33] We've gone over the price we've gone over the share size.
+[00:33:36] The purpose of order routing is,
+[00:33:39] and this is going to reiterate what I've already said to you,
+[00:33:41] that the market is like an island.
+[00:33:43] You need a bridge to get to the island.
+[00:33:45] So in the market, there's many bridges,
+[00:33:47] and each of these bridges are an electronic pathway
+[00:33:50] to the market.
+[00:33:51] They're called ECNs or routes,
+[00:33:54] and market makers are the institutions
+[00:33:58] that make the market by sitting on both the bit
+[00:34:00] and the offer at the same time,
+[00:34:02] and they also use these same routes.
+[00:34:05] So sometimes when we are referring to a market maker,
+[00:34:09] it's this is a little confusing,
+[00:34:12] because it says maker right here,
+[00:34:14] and this is not technically a market maker,
+[00:34:17] because it's just a route.
+[00:34:19] A market maker could be using that route, right?
+[00:34:22] But a highway is a highway.
+[00:34:24] It could be being used by these institutional traders,
+[00:34:29] but it also could be a retail trader that's got the buy order right here.
+[00:34:33] So to distinguish a market maker from a retail trader,
+[00:34:40] just by looking at the route,
+[00:34:42] you really wouldn't be able to with the naked eye.
+[00:34:45] You'd kind of have to either be really dialed in
+[00:34:48] with the way the orders are moving.
+[00:34:52] You know, if you saw a pattern,
+[00:34:56] that might indicate, all right,
+[00:34:58] there's a pattern here where like at the top of the bottom of the hour
+[00:35:01] at kind of like time periods, orders are all changing.
+[00:35:04] But this would be very hard for a retail trader to detect.
+[00:35:07] So when it comes to ECNs or routes,
+[00:35:11] some are free, and some charge, a so-called toll.
+[00:35:15] The express lane would be the high speed routes,
+[00:35:17] and they often charge a small fee.
+[00:35:19] The free routes are often slower.
+[00:35:21] So we'll discuss this in a lot more detail in extensively,
+[00:35:25] really as part of day-training strategies in scaling,
+[00:35:28] because it is something that you will need to know about.
+[00:35:31] But for right now, I think it's,
+[00:35:33] in fact, more than enough that you understand just the fact that
+[00:35:37] these exist and beyond that,
+[00:35:41] I don't think you have to worry about it too much,
+[00:35:43] because as I said, for sim trading,
+[00:35:45] you don't need to get into custom routing,
+[00:35:48] and even trading proof of concept with a hundred shares
+[00:35:51] during your early, you know,
+[00:35:53] your early weeks and months,
+[00:35:54] you don't have to worry about that either.
+[00:35:56] And it looks like REVB resumed,
+[00:35:58] and then sold off,
+[00:36:00] so we can pull up the chart and just see what that looked like.
+[00:36:03] So it had a strong resumption here
+[00:36:06] in terms of resuming higher up in the 30s,
+[00:36:10] and then just immediately sold off.
+[00:36:12] People took profit.
+[00:36:13] So, probably not surprising considering
+[00:36:16] it was already up quite a bit.
+[00:36:19] And again, I seem to be getting ahead of myself
+[00:36:23] in the slides,
+[00:36:24] but the market maker versus the ECN,
+[00:36:26] so a true market maker is a financial institution
+[00:36:28] that owned shares the stock,
+[00:36:30] and provides liquidity to the market by sitting on both the bit
+[00:36:32] in the ass.
+[00:36:33] So they're actively buying and selling.
+[00:36:35] But some market makers do have their own custom route,
+[00:36:40] and so you would be able to easily distinguish them
+[00:36:42] by the route that they're using.
+[00:36:44] But as of late,
+[00:36:46] most market makers seem to be trying to disguise their,
+[00:36:51] you know,
+[00:36:53] their trading by going through the public routes.
+[00:36:58] So they buy and sell shares across the spread to turn a profit,
+[00:37:01] their compensation,
+[00:37:02] and that is their compensation for taking the risk of holding a stock.
+[00:37:06] So they also use high frequency trading algorithm
+[00:37:09] to generate this profit.
+[00:37:11] Okay, so now let's get into our order entry window.
+[00:37:16] Most platforms have the order entry window separate
+[00:37:20] from the level two,
+[00:37:22] and level one was the first tier,
+[00:37:24] level two is the second.
+[00:37:25] We're going to talk about level two more in an upcoming chapter.
+[00:37:29] This platform has the order entry window attached.
+[00:37:34] And you'll see down here the queue for NASDAQ.
+[00:37:37] ETV means the stock is easy to borrow,
+[00:37:40] and flat means you don't have currently an open position.
+[00:37:43] So the software that I'm using, light speed,
+[00:37:46] you can see it's a little bit different
+[00:37:48] in that this order entry window is completely separate.
+[00:37:52] You just line it up next to it,
+[00:37:54] and then you have to link the two windows together.
+[00:37:57] So you have to go into your widget,
+[00:37:59] and you have to choose to link it,
+[00:38:00] and you link it to this level two window.
+[00:38:03] And then when you update this,
+[00:38:05] automatically updates the symbol and the price.
+[00:38:08] And then you can choose in your settings
+[00:38:11] to not have it change the other things.
+[00:38:14] But like we changed this to Ajax,
+[00:38:16] we switched to Ford,
+[00:38:17] see it's not going to change because it doesn't update.
+[00:38:20] So if I manually chose to override my market,
+[00:38:23] it's going to stay based on that order entry window.
+[00:38:26] So in our order entry window,
+[00:38:28] we've got our symbol, right?
+[00:38:30] You've got your account.
+[00:38:32] Generally, you know, in this here,
+[00:38:35] that would be where the account number is.
+[00:38:38] Not all platforms have your account number in the order entry window,
+[00:38:41] but many do.
+[00:38:42] You've got your shares, the numbers shares you want to buy yourself.
+[00:38:45] Right there, that's 100.
+[00:38:47] You've got your exchange,
+[00:38:48] the route you want to use is send your order to the market.
+[00:38:50] In this case, it's NASDAQ.
+[00:38:52] You've got the type of order, which is either a day,
+[00:38:55] a good till canceled, extended order, or a stop order.
+[00:38:59] Remember that, especially for think or swim,
+[00:39:02] you have to change your time and force
+[00:39:05] to extend it if you're trading pre-market or after hours.
+[00:39:09] Day orders only work during regular trading hours.
+[00:39:12] As we saw on Weibo,
+[00:39:14] you can click extended hours,
+[00:39:17] and then the order will work on both.
+[00:39:19] And on light speed, it's the same way that a day order works
+[00:39:23] from 4 a.m. until 8 p.m.
+[00:39:26] Market day is only regular trading hours
+[00:39:28] and good till cancel is only regular trading hours.
+[00:39:31] And then these are timed orders,
+[00:39:33] which are not something that I use.
+[00:39:37] So you click your buy button to take a long position
+[00:39:40] or to cover a short position,
+[00:39:41] and you press the cell button to sell a long position
+[00:39:44] or to go short.
+[00:39:46] This platform actually has a short button as well.
+[00:39:49] Some do, but most just have buy or sell.
+[00:39:53] So let's see.
+[00:39:54] So I'll switch here in my other account to forward,
+[00:39:57] and I'll just show you, I can short,
+[00:40:00] oops, one share here.
+[00:40:02] So short one share, press the cell button,
+[00:40:04] and I'm short one share.
+[00:40:05] I've got my negative position.
+[00:40:07] I click the buy button, boom, buy one share.
+[00:40:10] And now something to be aware of is watch this.
+[00:40:12] I'm gonna short one share, oops.
+[00:40:15] I'm gonna short one share, and now I'm gonna buy two shares.
+[00:40:18] So what's gonna happen is I'm actually gonna flip
+[00:40:23] from short to long.
+[00:40:25] You see how that happened?
+[00:40:27] Now if I go four and sell, I will flip from long to short.
+[00:40:32] So you've got to be a little careful about flipping accidentally
+[00:40:37] from long to short.
+[00:40:39] That can happen easily, just by overselling the numbers shares you have.
+[00:40:44] As we said in the beginning of the course,
+[00:40:47] if you have a cash account, you are not allowed to short.
+[00:40:52] So if I switch to this account, for instance,
+[00:40:55] I press the cell button, it's gonna give me the rejection.
+[00:40:59] Short orders not allowed in a margin IRA.
+[00:41:02] So if I buy one share, and I put the cell order out
+[00:41:06] to sell two shares, it's gonna say again,
+[00:41:10] short orders not allowed in the IRA.
+[00:41:12] So it's not gonna let you accidentally go short.
+[00:41:16] You have to, it's just not possible.
+[00:41:19] And I think that that's actually better,
+[00:41:21] especially for beginner traders, to use a cash account
+[00:41:24] so you're not able to go short by accident.
+[00:41:27] But sometimes people will go short and they'll be like,
+[00:41:29] how do I get out?
+[00:41:30] And if you're short, you get out by pressing the buy button.
+[00:41:34] It's as simple as that.
+[00:41:37] So sell the short by to cover or go long.
+[00:41:41] Buy to go long, sell to get out of a long position.
+[00:41:45] All right, your level one market quotes there.
+[00:41:48] Oops, level one market quotes at the very top.
+[00:41:51] And then down below we've got the easy to borrow hard to borrow status.
+[00:41:55] So now what I want to do is go ahead and jump into
+[00:42:02] level two market data.
+[00:42:05] Level two market data, that gets exciting.
+[00:42:09] Level two is a lot of fun to read.
+[00:42:12] It takes, it takes a second to get good at it.
+[00:42:14] But once you get good at it,
+[00:42:16] it's gonna give you an edge in your trading.
+[00:42:19] So stick around.
+[00:42:21] We're gonna go ahead and jump in here with chapter nine on reading level two.

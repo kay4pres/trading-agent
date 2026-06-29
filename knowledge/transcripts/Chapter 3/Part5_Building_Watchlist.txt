@@ -1,0 +1,574 @@
+# Part 5 Building a Daily Watch List.mp4
+# Chapter 3: Stock Selection, Fundamental Analysis & Building a Watch List
+# Duration: 42 min | Segments: 5
+
+[00:00:01] All right, so we're gonna go ahead and jump in here chapter three part five building a daily watch list. Hey, this is fun
+[00:00:09] I do this literally every single day. So this is the easy part for me just to walk you through what my process is each day
+[00:00:16] I mean, I've I've built
+[00:00:20] Thousands of watch lists at this point. I mean 250 trading days in the year just last 10 years is 2,500 days
+[00:00:27] Every day ultimately I create some type of watch list. Now, sometimes traders will ask me
+[00:00:33] Ross how much time do you spend at night working on your watch list and the answer is not a lot
+[00:00:42] What I will do at night is I will pull up my phone and I'll check the after hours top gainers scanner. So let's see
+[00:00:51] If I go over here
+[00:00:53] Back into the platform so go over to after hours top gainer scanner right here
+[00:01:00] I will check this scan to see oh, you know, what was our big move after hours and I'll check it
+[00:01:06] You know seven clock eight o'clock just to see what was moving in the after hour session that will sometimes give me an idea of
+[00:01:14] What I could consider into the next day, but I will say that often times when you have a really big move
+[00:01:22] After hours by pre-market it's kind of like you've sort of missed the party
+[00:01:29] So like PLRZ is a perfect example of this that
+[00:01:33] Even though I traded today made a little bit on it this was this was the move right there
+[00:01:39] I mean that was incredible we love that and you know as we get into chapter
+[00:01:44] Six what in the more actually chapters
+[00:01:49] Let's see seven eight and nine we'll be talking about these pullbacks right here and I love that set up
+[00:01:56] And this one was really clean we'll break it down more in chapter five and today chart patterns those first pullbacks
+[00:02:02] But that was the clean move right there
+[00:02:04] That was the decent volume and then it sort of Petered out
+[00:02:08] And then this was overnight and then the next morning sort of pops up again here early
+[00:02:14] Then it kind of sells off and you know that was sort of it so
+[00:02:18] I really don't spend a ton of time putting together a real watch list other than just checking the gainers top gainer scanner
+[00:02:26] For after hours and also checking the top gainer scanner for for the day to see okay well what was the top gainer scanner today
+[00:02:34] PLR Z or I've already looked at that SMX is this something I should be looking at going into tomorrow
+[00:02:41] You know for continuation and
+[00:02:44] Usually the answer is no and why is that and because on the five pillars of stock selection
+[00:02:50] I really value high relative volume and day two is never is almost almost never higher volume than day one
+[00:03:01] When you have big volume on day one day two is almost always lighter because people feel like I missed the big move
+[00:03:08] And kind of the element of surprise is gone
+[00:03:11] And so usually day one is is better and if the markets really hot
+[00:03:16] I'm going to just trade day one every day on a new stock in a cooler market
+[00:03:22] We might not have a super hot stock every single day
+[00:03:26] So then the best opportunity could really be
+[00:03:30] You know a continuation a day to a continuation now for those you guys that trade all day long
+[00:03:37] This high day mama scanner runs from 4 a.m until 8 p.m
+[00:03:42] So anything that's moving including an after hours gainer is going to be on this scanner
+[00:03:46] And you certainly could trade it if you wanted to but and you can also you know pull up the scans either on your phone or on the computer
+[00:03:51] And just kind of scroll back at some of the recent alerts and see you know what had momentum
+[00:03:57] What was moving and you know is there anything that I should sort of pick up there
+[00:04:01] You know for building my watch list so I'm going to jump back out of here
+[00:04:06] We'll jump back over to the slide so step one of building the watch list is reviewing the gainers scanner
+[00:04:12] I review the top gainer scanner based on the following process
+[00:04:15] Number one, I checked the top 10 leading gainers. These are the pre-market stocks that are gapping up
+[00:04:22] And I checked the percentage gain I checked the price I checked the float I checked the relative volume and I checked the total volume
+[00:04:31] To decide which stocks are even worth reading the news on and then pulling up the chart for a deeper dive
+[00:04:37] Now being on you know East Coast time I'm waking up, you know usually between 6 and 630
+[00:04:46] And when I roll over and I pull up my phone check the time the first thing I do is I open day trade dash on my phone
+[00:04:53] And I check the scans and I don't even look at the charts all I'm looking the only thing that I'm looking at
+[00:05:00] When I first pull it up is is this scanner right here the top gainer scanner
+[00:05:04] So I'll just move everything over so that's all I'm looking at well, it's I'll put in the corner
+[00:05:09] So that's the only thing I'm looking at at 6 in the morning
+[00:05:12] I'm only looking at it with one eye open so one eyes closed one eyes open and I'm just do I even see anything here worth
+[00:05:18] Worthy of me opening my second eye for and when I look at this I would open both eyes real quick
+[00:05:25] And actually I would probably
+[00:05:27] Scoot right over to my office as quick as could be because I would see that we have two stocks up 100% with a sub 1 million share float
+[00:05:35] We've already got really decent volume which is fantastic and then what was the relative volume
+[00:05:41] So the relative volume on oh well then the relative volume is low on both of them so that would be like a little off, but the volume clearly and total is there so I would definitely come over
+[00:05:51] But if I sat down for instance and the scan looked like this
+[00:05:57] I would be like oh, or rather this is not good these are all 100 million share float stocks
+[00:06:03] You know minus that one that just popped in but these are all higher float stocks the percentage change is minimal
+[00:06:10] You know the prices I mean they're fine, but with these floats it's a no go so the first thing I would say that I look at is the float because if the float is too high I don't need to look I don't even need to look any further
+[00:06:24] So float first second is price
+[00:06:29] 2 to 20 right that's the that's the sweet spot
+[00:06:32] 117 dollars to expensive 20 cents a share to cheap so if the floats good but the price is wrong
+[00:06:39] It's still a no go it's a hard pass so I disregard that if the floats good and the price is okay
+[00:06:46] That I'm checking the percentage change and if it's only up you know
+[00:06:49] 8 or 12% then it's like
+[00:06:53] See this isn't really established is being up that much it's not that significant so then I'm not really that interested in it
+[00:07:01] So if it's up 75% a hundred percent then even though you could argue oh it's already made a big move
+[00:07:07] Yes, but but this is also significant because the very fact that it's up this much is going to attract more traders
+[00:07:13] So later in chapter six, I'm going to talk to you about this concept that companies let their stock go up
+[00:07:20] So how much a stock goes up to a certain extent is a factor of the company
+[00:07:27] They let their stocks go up. How do they let their stocks go up? We'll think about it
+[00:07:31] A lot of these companies as we know do reverse splits
+[00:07:35] Their stock ends up you know over a period of time declining in value
+[00:07:39] So you know declines in value declines in value then they do a reverse split right here after the reverse split
+[00:07:46] You know the stocks kind of going sideways whenever maybe it's even going a little lower
+[00:07:50] And then what do they often do they put out news a big exciting news catalyst
+[00:07:56] They're hoping everyone thinks it's big and exciting news catalyst and what will happen if it's good enough is the stock will squeeze up like this
+[00:08:03] Now what we know and what the company knows is that they're going to use the opportunity of the stock going up on high volume
+[00:08:13] These were all very light volume days known as paying attention to it the stock was too cheap
+[00:08:18] And then here it has like 30 million shares of volume in one day
+[00:08:22] So they're going to use this opportunity of the stock going up on high volume to do what?
+[00:08:27] Sell shares secondary offer it
+[00:08:31] But if they start selling shares the second it's up 10% is that going to work
+[00:08:37] It's not going to work because by the time it's up 10% there's not going to be enough volume
+[00:08:42] And people if they see even just 10% gain it's already running into big sellers they're not going to buy it
+[00:08:49] So they would actually be shooting themselves in the foot if they try to sell too soon
+[00:08:53] So they're going to let it go up
+[00:08:56] In fact a lot of them work with investment bankers and some of them will even do you know very I mean very aggressive PR campaigns
+[00:09:03] To try to get a lot of attention built up around the stock to try to get it up as much as possible
+[00:09:08] You know a second day in a row. Well case and point where we're looking at one right now that's at a hundred and fourteen dollars a share
+[00:09:15] Right and it started at five dollars back here
+[00:09:18] So let's just pull that one up just as a
+[00:09:21] You know is sort of a real-time example
+[00:09:24] So SMX right here hundred thirteen dollars a share what was this price status a couple days ago five bucks where was the reverse split back here?
+[00:09:32] Right
+[00:09:33] So the company is letting the stock go up. They're letting it go up a lot
+[00:09:38] This one's interesting because they don't usually let it go up this much
+[00:09:42] Sometimes what will happen is the let it go up a bit
+[00:09:44] Then they'll start selling they'll push the stock down short they're like, okay, here we go. It's over. They short really heavy and then the company stop selling
+[00:09:55] And then all of a sudden they put out another good news headline and it sends it up another leg and all the
+[00:10:00] shorts are scrambling what in the world we thought this was the offering and now it's
+[00:10:03] going higher and they don't necessarily tell you in real time they don't that they're doing
+[00:10:08] the offering you'll find out later but in real time all of a sudden the selling stops and
+[00:10:13] the price rips and now all those shorts are covering right they thought they were in control
+[00:10:18] they thought this was gonna fade all day and now it's going even higher if we look at the
+[00:10:22] headlines on this particular stock and I don't know this one you know really well other than
+[00:10:26] just we've been trading it so I can't speak to this company directly but what I do know is that
+[00:10:31] these are all the headlines that they're putting out they're putting out headlines like once an hour
+[00:10:37] these are headlines that are being put out by the company look at all these headlines this is kind
+[00:10:42] of unbelievable so they're really like fanning the flames they're trying to add fuel to the fire
+[00:10:49] I mean they want their stock to keep going higher the higher it goes the better it is for the company
+[00:10:55] because ultimately yes they will want to sell shares now right now if they sold you know a
+[00:11:01] million shares at a hundred dollars a share think about how much money they would raise that's
+[00:11:08] real money that goes on the balance sheet of this company now could they sell a million shares this
+[00:11:12] stock today the answer is no because why look at the volume it's only got 2.8 million shares of
+[00:11:18] volume they can't be 50% of the the selling volume so typically they'll be 15% at most when they're
+[00:11:25] doing these offerings direct offerings selling on the market that's what we saw with GameStop
+[00:11:29] GameStop they put out a shelf registration gave them the right to raise billions of dollars and I
+[00:11:36] think they sold 45 million shares so I'm getting into a little bit of a tangent here but it's important
+[00:11:42] GameStop now has a float of 450 million shares and you might not know this but when that short
+[00:11:48] squeeze began back in 2020 and 2021 the float was less than 50 million shares so they originally
+[00:11:55] had a float of 50 million shares that was the whole company and now the float is this is not a good
+[00:12:00] circle but the float has gotten so much bigger they've diluted the value by selling more shares
+[00:12:05] dumping them on the market and so yeah the company's backed out of 20 dollars a share but the float
+[00:12:12] is 450 million so now the market cap you know is the price times the float so the it's obviously
+[00:12:18] much larger but what what we know is that every time now when the stock was popping up the company
+[00:12:25] was selling shares so the company's single handedly prevented roaring kitty from making a billion dollars
+[00:12:32] remember when he was up a billion dollars on that trade and he was like we're gonna go all the way to
+[00:12:36] new highs the company said no no you're not because we're selling we're selling in front of you we're
+[00:12:44] selling 45 million shares I think it was 45 million shares on the open market and we're gonna
+[00:12:49] raise three billion dollars and they did it and they sold about 15% of the volume all day long
+[00:12:56] every day until they sold 45 million shares and then the news came out that they had sold and
+[00:13:02] raised that money on the open market so SMX you know will there be a point where the company
+[00:13:08] decides we want to sell shares you know I wouldn't shock me at all however one of the headlines
+[00:13:15] that this company happened to put out want to go back here to page two was that they got a 115
+[00:13:23] million dollar line of credit which is tied in with equity so the person that's gonna lend
+[00:13:28] that money will get shares in exchange so they kind of already got 115 million dollars or 11 million
+[00:13:35] dollars and they didn't have to sell directly on the open market so the investor that gave them that
+[00:13:40] money is is the one that's gonna have the shares so that is the person that we might have to worry
+[00:13:46] about selling they he initially gave 10 million dollars but what we don't know in that particular case
+[00:13:54] was the strike price and so let's see your tear of disclosure so oh this was the this was
+[00:14:04] about so that's not gonna be helpful but this headline here when we're you know getting into
+[00:14:10] the fundamental analysis of this company was they've gotten an initial convertible note of 11.5 million
+[00:14:17] dollars but it didn't say what the price was that he got what the value the shares are in exchange
+[00:14:24] for 11 million I mean if it was trading at 11 dollars a share you know 11 dollars and 50 cents
+[00:14:30] a share then the math is really easy right but if he got a discount of getting those shares
+[00:14:36] and 50 cents a share then for all we know he might have 20 million shares that he wants to sell
+[00:14:42] and if you had 20 million shares this is crazy if you had 20 million shares this thing at 50 cents
+[00:14:48] a share on paper wow that's a lot of money right I mean that's insane every dollar a share
+[00:14:57] this thing would go up you'd be up 20 million so 10 dollars a share is 200 million a hundred dollars
+[00:15:04] a share is two billion dollars whoa that's crazy and we've seen this happen we saw it happen
+[00:15:12] on B.M.N.R. earlier this year where they got a big stake a big private placement and the
+[00:15:19] person that put that money up on paper was worth billions on paper they were worth billions we saw
+[00:15:25] the same thing with aspect and so sometimes these companies you know put these deals together
+[00:15:31] with institutional investors the institutional trader institutional investor that they take the risk
+[00:15:37] they give them the check for 30 million bucks and they get the shares they discount
+[00:15:41] and then all of a sudden the market because of the combination of the supply demand just
+[00:15:46] explodes and so this one this person was up like four billion dollars overnight basically but
+[00:15:52] being up let's say this person's literally up 2 billion let's just say I don't think they got the
+[00:15:58] share to 50 cents a share but let's just say they got it 50 cents a share well the thing here is that
+[00:16:04] there's not enough liquidity to sell 20 million shares oh SMX there's not enough liquidity
+[00:16:10] so even if they wanted to sell those shares they they really wouldn't be able to so now all
+[00:16:14] of that is to say that when we have a stock that pops up on our scanner and we like it because it
+[00:16:19] meets all five pillars of stock selection right the price is good it's got the relative volume it's got
+[00:16:24] the percentage change it's got the news catalyst and the float is you know right where we want it
+[00:16:30] to be and especially when it's on the lower side that these companies often will let the stock
+[00:16:35] squeeze especially when the company has had the share price beaten up for a while they've done a
+[00:16:39] reverse split maybe another reverse split and now finally they have a chance to catch some momentum
+[00:16:46] they're going to let the stock run and they're really thoughtful about putting out the news they're
+[00:16:51] very strategic they're using a PR team when do we put out the news how do we get the most
+[00:16:56] benefit from these headlines and some of them are going to be tricky with the way they sort of
+[00:17:01] try to trap shorts and then push it even higher because here's a deal if this company needs
+[00:17:07] to raise money and let's just say they want to optimistically raise 50 million dollars they could
+[00:17:12] sell 10 million shares at five dollars each right here but in order to sell 10 million shares they're
+[00:17:19] going to need you know at least a hundred million shares of volume on this day that's a lot of
+[00:17:24] volume how are you going to get a hundred million shares of volume well if a stock squeezes up you know
+[00:17:29] 200 percent that's big percentage change and just being up that much by itself is going to attract
+[00:17:35] traders traders are going to see that in the going to be like I want a piece of this action and so
+[00:17:40] letting the stock go up is going to be part of it and then on the other hand if they let it go up
+[00:17:46] they don't sell on day one initial shorts get squeezed out on day two for continuation
+[00:17:52] and next thing you know it's it you know twenty five dollars a share it's twenty five dollars a share
+[00:17:56] all of a sudden they don't need to sell 10 million shares they only need to sell two million
+[00:18:02] shares they sell two million shares at you know obviously twenty five dollars a share
+[00:18:09] well now they've raised fifty million bucks and they only deluded the value of the company
+[00:18:14] with two million shares right versus ten so that that's better for the shareholders of the company
+[00:18:20] as well so now they raise the money but at a higher valuation and then that pushes honestly
+[00:18:25] if they raised at that high level that's such a vote of confidence that the stock often will
+[00:18:29] push a little bit higher and it's not very many shares to sell in the open market I mean of course
+[00:18:34] it depends on the flow but what I think what's important to recognize is that as retail traders
+[00:18:40] we're trading price action right we're trading what's right in front of us but there's all this
+[00:18:45] stuff going on behind the scenes with these companies that we don't know about and I kind of
+[00:18:49] think these companies are like these big big boats in the ocean you know these big sort of whales
+[00:18:56] if you want to call them whales and you know the way they're moving and the way the institutional
+[00:19:00] traders are kind of moving around the stock they've got kind of an agenda and a plan of where they're
+[00:19:05] going what it's going to do and we as the little guys in the market we're just kind of riding the
+[00:19:10] wake but man when you get a company that's going to let their stock go up a hundred and fifty percent
+[00:19:16] or two hundred percent or five hundred percent or a thousand percent from five dollars to you know
+[00:19:22] fifty dollars a share holy smokes that that's creating a pretty big wake and that's creating a
+[00:19:27] lot of opportunity for us now yes are the insiders potentially making billions of dollars while we're
+[00:19:32] making you know five hundred a day I don't care you know what if we're carving a little bit of
+[00:19:37] profit out of the day for ourselves we're doing a good job so we keep our head down we stay in our
+[00:19:41] lane and we keep doing okay so let's get back on the screen share here oops that's the way for
+[00:19:46] the the first thing that I'm looking at when I'm looking at these stocks when I'm pulling up
+[00:19:50] the scanner the first thing I'm looking at is what's the float what's the then number one float number
+[00:19:58] two price and then we start getting in
+[00:20:00] to, you know, more of the details of this.
+[00:20:02] Now, I could kind of, you know, check.
+[00:20:06] So I don't know that I need to do.
+[00:20:07] I'm not going to change it to the order,
+[00:20:09] because it doesn't really matter.
+[00:20:11] But what you need to know is that float is critical for sure.
+[00:20:14] As part of our five pillars, if the float's too high,
+[00:20:17] if we're not going to trade it.
+[00:20:18] If the price is not right, we're not going to trade it.
+[00:20:20] And at the relative volume isn't right,
+[00:20:22] in spite of the price and float, you know,
+[00:20:25] that's going to be a maybe.
+[00:20:26] And that's going to depend on how hot the market is
+[00:20:31] that we're in right now.
+[00:20:32] If we're in a really hot market,
+[00:20:34] then I may be willing to trade a stock
+[00:20:38] with slightly lower relative volume, you know,
+[00:20:43] that's going to be maybe.
+[00:20:44] So nonetheless, my first step while I'm still laying in bed
+[00:20:48] and thinking about all this stuff
+[00:20:49] is just looking at the scans here.
+[00:20:51] And I haven't even pulled up the charts.
+[00:20:54] I'm just looking at these numbers right here.
+[00:20:56] And this tells me alone whether or not I should proceed
+[00:21:00] to the next step.
+[00:21:01] So what's step two?
+[00:21:02] Step two is we identify the catalyst,
+[00:21:04] which we talked about already in chapter three here
+[00:21:07] when we did the deep dive into all the different catalyst.
+[00:21:10] Step two is, what is the catalyst that's driving the stock higher?
+[00:21:13] Based on all the news catalysts we understand,
+[00:21:15] how strong is this news catalyst?
+[00:21:19] How does it rank?
+[00:21:20] Now if the stock is up, 150%, it's the right price,
+[00:21:24] the right float has the relative volume,
+[00:21:25] the total, you know, the total volume's good,
+[00:21:28] but the headline is a buyout.
+[00:21:30] The company's been bought out, you know, $20 a share.
+[00:21:35] I don't even need to look at the stock chart.
+[00:21:37] I know it's not going to trade well.
+[00:21:38] What I know is that when a stock gets bought out,
+[00:21:41] what happens?
+[00:21:42] You guys looked at the example that I showed you
+[00:21:45] earlier in chapter three, it just trades sideways like this.
+[00:21:48] Because the buyout is $20 a share.
+[00:21:51] That's the value of the company.
+[00:21:52] There's no real speculating
+[00:21:54] what it's going to be worth.
+[00:21:55] It's been bought out.
+[00:21:56] So buyouts a stock could look good on the scanner,
+[00:22:00] but if it's a buyout, it's not going to work.
+[00:22:03] But assuming it's not a buyout, assuming that's not the catalyst,
+[00:22:07] then I proceed to the next step.
+[00:22:10] So step three is where I work on identifying a strong chart
+[00:22:14] versus a weak chart.
+[00:22:16] We're going to get into this in depth in chapter four.
+[00:22:19] Chapter four is where I start breaking down
+[00:22:22] the quality of daily charts.
+[00:22:23] So specifically, what I look for in the daily charts
+[00:22:26] and some of the red flags that I need to avoid.
+[00:22:30] Once I've identified the daily chart,
+[00:22:33] and for right now, we'll just keep it simple.
+[00:22:35] We like to see if the stock is either above the 200DMA,
+[00:22:38] or that if it's below it, it can go up at least 100%.
+[00:22:42] Before it hits the resistance of the 200DMA.
+[00:22:46] So 200DMA is really the only thing to check.
+[00:22:50] Well, check the 200DMA, and then secondly,
+[00:22:52] check to make sure there's not a recent history
+[00:22:54] of big red days, or big rejections.
+[00:22:57] When you have a stock that has a daily chart,
+[00:22:59] it just shows a ton of really big red days,
+[00:23:02] that always makes me a little cautious.
+[00:23:06] So if we pull this up here, we've looked at the daily chart.
+[00:23:10] So this stock, I wasn't worried about that.
+[00:23:13] This one, obviously, is just doing well.
+[00:23:15] But LGA gel, let's see, this one,
+[00:23:18] the some red days there, as you can see, right?
+[00:23:21] So history of some red days, ARTO, I remember on this one,
+[00:23:26] a couple of red days there, I can't think of any off the top of my head,
+[00:23:32] but I know that it'll be a bad chart.
+[00:23:34] But in any cases, you're kind of flipping through
+[00:23:37] and looking at the chart.
+[00:23:38] Does that have a history of those big red days?
+[00:23:40] And then, of course, on the daily chart,
+[00:23:42] you could check to see if it meets one of our,
+[00:23:45] if it has one of those types of daily chart catalysts
+[00:23:48] like being a recent reverse split,
+[00:23:51] or being a stock that is a recent IPO,
+[00:23:55] or is a blue sky setup.
+[00:23:57] Those are some of the daily chart patterns
+[00:24:01] that we know can give us some pretty big moves, right?
+[00:24:06] And we talked about that a little bit in chapter three,
+[00:24:10] part two, where we're getting into those different news
+[00:24:14] catalysts, but we'll get into it in more detail
+[00:24:16] when they break down the daily charts for you
+[00:24:18] and chapter four.
+[00:24:21] Okay, so step three, identifying strong versus weak daily charts.
+[00:24:27] And step four is where I begin to identify potential entry points,
+[00:24:30] and this is all going to be based on the intraday
+[00:24:32] chemistry chart patterns that I'll share with you in chapter five.
+[00:24:36] So for right now, probably the pattern that you're most familiar with
+[00:24:40] that you've seen me talk about quite a bit
+[00:24:42] is when we have a stock that's popped up
+[00:24:44] and then gives us, you know, one candle, two candles,
+[00:24:47] no matter, and there's given us this pullback here
+[00:24:50] and we're looking for the first candle to make a new high.
+[00:24:52] So as you guys are trading in the simulator,
+[00:24:55] you'll have the opportunity to start practicing,
+[00:24:58] trading some of these stocks that you're hearing me
+[00:25:00] provide commentary on during the live broadcast.
+[00:25:04] And then number five is when I pull up the level two.
+[00:25:07] So pulling up the level two is sort of the last thing I do
+[00:25:10] right before I'm about to execute the trade.
+[00:25:12] So I pull up the level two,
+[00:25:14] and this is where I can check easy to borrow, hard to borrow,
+[00:25:18] short-sale restriction, threshold list, right, margin requirements.
+[00:25:22] But I can also check the spread,
+[00:25:24] and I can see whether the buyers are stacked,
+[00:25:27] if there's many buyers on the bid,
+[00:25:29] or if there's many sellers on the ask,
+[00:25:31] or if it's a little bit more thinly traded.
+[00:25:33] And this again is something we're going to cover quite extensively
+[00:25:37] as we get into chapter six,
+[00:25:40] which is learning how to read level two,
+[00:25:42] understanding market makers,
+[00:25:44] the role that they play in the market,
+[00:25:45] and some other things on that same vein.
+[00:25:50] Now, something that I try to think about each day,
+[00:25:52] as I'm building my watch list,
+[00:25:55] going through from beginning with looking at the scanners
+[00:25:58] and the ideas that look the best from the five pillars,
+[00:26:01] checking the news, catalyst,
+[00:26:03] checking the daily chart, checking the intro day chart,
+[00:26:05] and then pulling up the level two.
+[00:26:06] I ask myself, what is obvious in the market today?
+[00:26:11] When we have a stock that's really obvious,
+[00:26:14] it usually performs better,
+[00:26:15] then when attention is dispersed.
+[00:26:19] So dispersed attention is when you've got,
+[00:26:22] you know, four or five stocks that people are all kind of trading.
+[00:26:26] I mean, they all have volume,
+[00:26:28] but none of them are really super,
+[00:26:32] none of them are perfect.
+[00:26:33] And so the result is that traders end up
+[00:26:38] having their volume dispersed among five stocks
+[00:26:40] instead of one, which means each one
+[00:26:42] has less volume versus if it was just one obvious stock
+[00:26:45] and that hurts the performance.
+[00:26:47] It ends up that none of them perform well.
+[00:26:50] So it's one of these things where we can either get one stock
+[00:26:53] that does really well or we get five stocks that do badly.
+[00:26:57] And but traders don't conscientiously make the decision of,
+[00:27:01] okay, you know, I'm not gonna trade something
+[00:27:04] that's, you know, maybe not as good
+[00:27:07] because there are a lot of traders
+[00:27:08] who want to trade every single day.
+[00:27:10] And if you don't have an A quality setup,
+[00:27:12] they'll just change the quality standard
+[00:27:14] and trade a B quality setup.
+[00:27:15] And if there's no B quality setups,
+[00:27:17] well, I guess today we're trading C quality setups.
+[00:27:19] I try to be a little bit better about saying,
+[00:27:22] if there's not something really good,
+[00:27:24] then I won't trade it all,
+[00:27:25] but even I sometimes fall into the pattern
+[00:27:27] of, you know, trading lower quality setups,
+[00:27:31] you know, sort of out of boredom.
+[00:27:33] So it's something I have to be careful of myself,
+[00:27:36] but some days when I sit down,
+[00:27:38] I'll recognize there's dispersed attention.
+[00:27:40] And one of the other things that I'll also notice
+[00:27:42] sometimes when I sit down is that the stock
+[00:27:45] that is the leading gainer may not be a stock
+[00:27:48] that I particularly like.
+[00:27:51] And there's nothing I could do about that.
+[00:27:52] It may just happen to be the case
+[00:27:54] that the number one leading gainer is too cheap.
+[00:27:57] It's a penny stock with 150 million shares of volume.
+[00:28:01] The relative volume is great.
+[00:28:02] The float is great, but it's a penny stock
+[00:28:03] and I don't usually trade those well.
+[00:28:05] I know that about myself,
+[00:28:07] and so, you know, it's the most obvious stock in the market,
+[00:28:10] but it doesn't fit well within my strategy.
+[00:28:13] Sometimes it's because of the price,
+[00:28:14] sometimes it's because of the float,
+[00:28:16] sometimes it's because of something else,
+[00:28:18] but those are the two most likely causes
+[00:28:20] where a stock is obvious, but I don't like it.
+[00:28:23] The price or the float.
+[00:28:25] Now, we all said to be careful
+[00:28:27] about traders shifting attention.
+[00:28:30] So traders can be very fickle,
+[00:28:31] and very quick to abandon one stock
+[00:28:33] and jump to another.
+[00:28:34] In fact, we had a pattern of this that was almost,
+[00:28:37] it was almost unbelievable.
+[00:28:41] The stock was squeezing up like this,
+[00:28:42] and then all of a sudden,
+[00:28:44] it knifes down right here,
+[00:28:45] and I was trading this one,
+[00:28:47] I had no idea what was going on,
+[00:28:48] and it's because another stock suddenly had breaking news
+[00:28:51] at the exact same second.
+[00:28:55] It was the same minute, the same minute time stamp,
+[00:28:58] and as this start popping up,
+[00:29:00] it might have even been a degree of algorithmic trade.
+[00:29:03] That all of a sudden we just saw this rapid shift over to here.
+[00:29:07] And so some traders end up getting caught holding the bag
+[00:29:10] on this one.
+[00:29:11] This one just was totally yesterday's news,
+[00:29:14] and everyone was now over here.
+[00:29:15] And then you better believe that all of a sudden,
+[00:29:18] the next news headline comes out,
+[00:29:20] and this one drops, and the next one's going up.
+[00:29:23] So you've got to be a little bit careful,
+[00:29:26] trading around the times of day,
+[00:29:28] that news traditionally comes out,
+[00:29:30] the top and bottom of the hours,
+[00:29:32] because it's possible that the stock you're trading
+[00:29:35] could go out of favor if something else comes up,
+[00:29:39] that's more exciting.
+[00:29:40] And that can definitely be frustrating.
+[00:29:45] So as the day goes on,
+[00:29:48] I can continue, of course, to add stocks to my watch list, right?
+[00:29:52] So with a watch list prepared at 7 a.m.,
+[00:29:56] those are the stocks that I already like
+[00:29:58] from the after-hours moves.
+[00:30:00] What is it again?
+[00:30:01] What's going on?
+[00:30:03] What's up?
+[00:30:05] I want to tell you what I want to tell you,
+[00:30:08] that I want to play all of this.
+[00:30:10] You might like to say,
+[00:30:12] like what?
+[00:30:17] You might not be having a bad idea,
+[00:30:18] but I just want to talk to you about the time
+[00:30:22] of the stock partner.
+[00:30:25] And I just want to share a series of things
+[00:30:00] you know, after our top gainers, even early early pre-market overnight momentum, but you know,
+[00:30:05] then starting at 7 am, there could be another stock that comes out with breaking news.
+[00:30:09] And so all of a sudden, that goes to the top of my list. And that's totally fine.
+[00:30:13] I'm willing to shift and focus on something else. So I'm watching Breaking News.
+[00:30:18] You know, top of bottom of the hour, we subscribe to Headline to News Services right here inside our
+[00:30:23] platform. So those news headlines come into the platform. You can see them right when you look up the
+[00:30:28] stock in the stock, quote, window, and you can also see the flame when a stock has breaking news.
+[00:30:34] So these flames are telling us that this stock has breaking news, except for this one, this one,
+[00:30:39] and this one. So now I click on it and then I look at see what's the headline, you know, on this particular
+[00:30:44] stock. Let's see what's going on. I think I might be frozen out here. I've got about 100 tabs over
+[00:30:51] right now. But in any case, you click on this, you check to see what the quote is and what the news
+[00:30:56] headline is and then you pull up the chart and you can kind of dive in and, you know, see what's
+[00:31:00] you see what's going on with it. So I'm always watching for news headlines, top in the bottom of the
+[00:31:06] hour, but occasionally a stock will hit my scanners and I realize, oh, you know, this one,
+[00:31:13] it's at 755, but the company put out news. It's an unusual time to put out news, but nonetheless,
+[00:31:20] the company put out news. So I guess I should pay attention to it, right? And so, you know, if I start
+[00:31:25] with a stock, it's scanner at 755, I'll pull it up. I'll start looking at it and then next
+[00:31:31] thing you know, you know, we're off and in a way we go. I think the big motto that I want you to
+[00:31:37] remember as we come to the end of the section here is to trade the best and leave the rest.
+[00:31:42] I really only want to consider a quality setups and a quality means the stock meets all five
+[00:31:48] pillars of stock selection. Hard to borrow, easy to borrow, don't really, I mean, that's not part of
+[00:31:54] the five pillars, but I do know that an easy to borrow stock, I'm less likely to trade on that first
+[00:31:59] spike. But, you know, we can have easy to borrow short squeezes, so it can work, but that's something
+[00:32:06] I think about, short sale restriction. That's something I think about. Some of those multiplying
+[00:32:11] factors like a recent reverse split, a blue sky set up, or a recent IPO, you know, or a stock that's
+[00:32:18] tied into the current theme of what's working, you know, that adds a little bit more juice. And then,
+[00:32:22] of course, just asking myself, what's the current sentiment in the market? Is this a hot market?
+[00:32:28] You know, where I'm performing really well, my average winners are higher, my profits are bigger,
+[00:32:33] because if it is, I should trade more aggressively. And if it's a cold market, I should trade a little
+[00:32:37] bit less. This goes without saying, it should go without saying, but a lot of beginner traders
+[00:32:44] end up trading based on their own feeling of how much they think they should make today,
+[00:32:51] not how much the market's willing to give you, and not the opportunities that the market is providing.
+[00:32:56] When the market is providing opportunities, I'm going to be really aggressive. And when my
+[00:33:01] profits and my performance are reflecting them doing well, I'm going to take it up, you know,
+[00:33:05] to the max. And then it's, there's going to be a shift. And that shift sometimes is a red day,
+[00:33:10] and I'm like, oh, all right, I overstayed my welcome a little bit, time to take my foot off the gas.
+[00:33:14] I got a bat. And then the hatches hungered down here. I'm going to have to dig myself out of the hole
+[00:33:19] for a day or two. But I just write that in there. I take my foot off the gas and I slow down.
+[00:33:24] And that is probably one of the biggest, biggest traits in myself that have allowed me to increase
+[00:33:34] how much I make each year. Because prior to being good at taking my foot off the gas, what would
+[00:33:38] happen is my P&L I'd call it a roller coaster. It would be much more like this. Yeah, you know,
+[00:33:44] generally be making money, but I'd have these big drawdowns. So at certain point it was like,
+[00:33:50] if I could stop these drawdowns by this much, you know, if I could have that much less losing,
+[00:33:56] then all of a sudden my P&L, you know, starts to look more like this. I don't know, it's not a great
+[00:34:02] graph, but it starts to go up a lot faster. And the drawdowns are minimal. And when I'm experiencing
+[00:34:07] a drawdowns for a very short period of time. And that also lends itself to me having higher levels
+[00:34:14] of self confidence, emotionally just feeling like more consistent. And that makes me feel better
+[00:34:22] about myself. So I personally, I would rather make $1,000 a day every single day than make 10,000
+[00:34:31] one day lose 5,000 the next. Even if at the end of the year we both met the same amount of money,
+[00:34:36] I would any day of the week, I would prefer to be the trader that's consistent. Now, I am pretty
+[00:34:42] consistent. And I also pretty consistently lock up 10, $15,000 a day. Sometimes quite a bit more than that.
+[00:34:48] But you know what, there's other traders. They're doing six figures and even seven figures in a day.
+[00:34:53] They'll make a million dollars in one day. And then they'll lose it on another day. So I've seen traders
+[00:34:58] who stay on the roller coaster, you know, all the way up to make and millions and losing millions.
+[00:35:02] And I've seen traders who focus on being consistent and just, you know, keeping their head down and grinding
+[00:35:10] and the traders that grind experience in my opinion a lot less stress. You know, they've got a lot more
+[00:35:15] conviction. They're strategy. When you have cold stretches, they're more tolerable. And when you have
+[00:35:20] hot stretches, you feel really good. Because whenever it starts to get hot, you know, you're not recovering from a drawdown.
+[00:35:26] You're just ready to start adding, you know, fresh profits. So, um, and remember, just because a stock is a
+[00:35:31] quality based on our criteria of stock selection alone doesn't guarantee that I'll trade it.
+[00:35:37] Or that if I do trade it, it'll perform well. I have to perform technical analysis,
+[00:35:40] report review in the candlestick charts. I've got to read the level two. You know, there's there's
+[00:35:45] more things that I have to do before I can commit to executing that trade. And so these are things
+[00:35:50] that you're going to be learning as you continue on through this entire course. So the first element of
+[00:35:56] risk management is, uh, well, I suppose the, I suppose the first element of risk management is just simply
+[00:36:03] understanding, uh, profit loss ratios. But, uh, one of the first elements that of risk management that I
+[00:36:10] wanted to present in this class is that by choosing strong stocks, you really are, uh, further reducing your
+[00:36:16] risk. If you choose to trade the highest risk OTC penny stocks, you're increasing your risk.
+[00:36:23] It goes without saying, but that's, that's the truth. So we're trying to find a balance where
+[00:36:28] we're trading stocks that have the potential to give good profit. But where we also feel like
+[00:36:33] when we get in, our max loss is, is determined. You know, and we're not exposing ourselves to a big
+[00:36:40] drawdown, focusing on high quality stocks, improves accuracy, that improves your profit loss ratio,
+[00:36:46] that improves your consistency. This is the beginning of that positive feedback loop, strong track
+[00:36:51] record, improves self confidence, trading with bigger share size. And this is how you really grow and
+[00:36:57] expand as a trader. So I like to think a stock selection as, um, a, uh, as a component of risk management.
+[00:37:05] And I suppose everything I share with you, um, you know, to a certain extent, it, it are components
+[00:37:10] of risk management, choosing strong daily charts, um, is risk management, choosing strong
+[00:37:15] intradate chart patterns, is risk management. So, um, you know, so managing, uh, so let's see,
+[00:37:24] uh, how could I re-word this, I gotta say in the first element, um, let's see, I, I, I manage
+[00:37:30] risk, I manage my risk by trading a quality stocks. And I'll just leave it with that. Um, and I,
+[00:37:41] I think you really, you can too. So, all right. Now with that, you should have a pretty good ability
+[00:37:49] each morning to sit down and to build a basic watch. Listen, 7 a.m. of stocks that meet the five pillars
+[00:37:56] and do some of these additional, um, you know, points of review, looking at the catalyst, a little bit
+[00:38:02] deeper, checking the daily chart, checking the intradate chart, and checking short interest, or no,
+[00:38:08] I'm sorry, short sale restriction. We'll talk about short interest later, uh, checking,
+[00:38:13] easy to borrow hard to borrow, threshold margin requirements, and so on and so forth.
+[00:38:17] So what I would encourage you guys to do is, um, is to start performing this, uh, kind of daily
+[00:38:24] routine of building a watch list and share in the room in a chat room with stocks that you like
+[00:38:28] and the reasons you like them because then that's going to give other traders a sense to, uh,
+[00:38:32] sort of the opportunity to give you feedback and tell you, yeah, no, you, yep, I like that too. Good
+[00:38:36] call, good call, or hey, did you check this? And then that gives you the chance to kind of
+[00:38:42] refine your ability to create a watch list. So, you know, and again, circle back to the thing that I
+[00:38:48] mentioned before, um, if we had, we can have a stock that meets all five pillars of stock selection,
+[00:38:54] but for reasons that are unknown to us, the company doesn't want to let the stock go higher.
+[00:39:01] They are just selling and selling and selling, and that does sometimes happen. It doesn't make a lot of
+[00:39:06] sense. It's, it's against the best interest of the company for them to be selling when the price is
+[00:39:12] only up 10%. You know, at a certain point, the stock simply being up 80% is its own catalyst. So if
+[00:39:20] a company just could be patient and let the stock keep going higher before immediately, you know,
+[00:39:27] selling, selling, selling, selling, then they have a better chance of increasing the total volume
+[00:39:32] in the name, increasing the liquidity, trapping potentially shorts, and having not just a big
+[00:39:38] move in one day, but potentially a multiple, a multi-day squeeze, like we've had on SMX,
+[00:39:45] which can literally be the opportunity for the company, and, you know, some of the insiders
+[00:39:51] and institutional traders associated with it to make tens of millions, hundreds of millions, even
+[00:39:56] potentially billions of dollars. It's unbelievable.
+[00:40:00] to think about it. But there's a lot of money that can be made and these companies really,
+[00:40:05] really do pay attention to that. They're putting out the headlines. They're sort of peppering
+[00:40:09] them out. They're paying attention to market cycles. They're paying attention to what
+[00:40:14] traders are jumping on. And they're trying to harness the collective sort of sentiment
+[00:40:19] of public markets to boost their stock price. And that's their fiduciary obligation to
+[00:40:24] shareholders within, of course, you know, the confines of the rules and regulations.
+[00:40:28] So when a stock is moving up, I often think that the company is letting it move up.
+[00:40:34] They want it moving up. They're letting it move up. And when a stock is being very difficult,
+[00:40:37] I think the company is not letting this go higher. There's for some reason they're not letting
+[00:40:42] it go higher. Now, even if you could say, well, it's just one really, really big short seller.
+[00:40:47] But typically, when you've got a stock that's got a good catalyst, traders that that trader will
+[00:40:51] get run over. And we've seen that happen a million times. So at the end of the day, there
+[00:40:56] are sort of greater forces at work. And we, as kind of the, you know, little fish in the market,
+[00:41:02] we ride in the wake of these whales and, you know, what's happening. But that can be the
+[00:41:07] opportunity. We're a good watch list to chip away at those, you know, 15, 20, a share winners
+[00:41:12] and over, you know, the grand scheme of things, the marathon that is being a trader,
+[00:41:18] it certainly does add up as you've seen in my trading. Okay, so with that, we can continue on
+[00:41:23] here to the next section.

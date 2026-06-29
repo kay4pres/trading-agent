@@ -1,0 +1,753 @@
+# Chapter 11 Stock Halts_audio.wav
+# Transcribed: 2026-06-29T21:25:14.604855
+# Duration: 75.5 minutes
+# Model: faster-whisper tiny
+
+[00:00:01] Alright, so we're going to go ahead and jump in here, chapter 11 on stock halts.
+[00:00:07] It's very important if you guys to understand how stock halts work.
+[00:00:10] They exist in the market, generally to protect investors and to help maintain some degree
+[00:00:20] of market stability.
+[00:00:23] So there's a number of different types of halts, and I'm going to walk you through what
+[00:00:26] those are here in this chapter.
+[00:00:28] Alright, so if we jump in, the most common stock halts are T1, they have a code, and it's
+[00:00:36] code T1, which means the stock is halted pending news.
+[00:00:42] And the second code that's very common that we see is halted T12, and the third is
+[00:00:47] code L U D P or L U L D, which is also sometimes called a volatility trading pause.
+[00:00:56] So these are probably the three most common types of halts that we see in the market.
+[00:01:02] So halt code T1 is when a company has halted pending the release of material news.
+[00:01:10] What's interesting about a T1 halt is that companies do not need to ask the exchanges
+[00:01:18] to halt trading in their stock in order to release news.
+[00:01:22] In fact, 99% of headlines that get released do not have a stock halted prior to the release.
+[00:01:29] So when companies put out earnings, when companies put out any type of catalyst, good
+[00:01:34] or bad, the news headline just gets released, and then the market immediately responds.
+[00:01:41] But in some instances, the companies will request that the exchange pause all trading in
+[00:01:48] the stock while the company puts out news.
+[00:01:51] And the company is more inclined to do this if the news is bad because they don't want
+[00:01:58] people to panic.
+[00:01:59] So basically they say we're going to put out news, but you're not allowed to trade the stock
+[00:02:04] for at least 30 minutes.
+[00:02:05] So read the news carefully.
+[00:02:08] And so they put out the headline, well first, the stock gets halted.
+[00:02:13] And when the stock gets halted, essentially, I have a ticker right here that's actually
+[00:02:18] currently halted.
+[00:02:19] So you can see what it looks like.
+[00:02:20] This has an H right here.
+[00:02:21] You see that H?
+[00:02:22] So this security is halted, which means you cannot trade it.
+[00:02:25] You cannot buy it.
+[00:02:26] You cannot sell it.
+[00:02:27] It is completely blocked from trading right now.
+[00:02:29] And so we'll talk about why this security is locked.
+[00:02:32] But if I put out an order here to buy, my order will just sit there.
+[00:02:36] Nothing happens.
+[00:02:37] My order cannot execute.
+[00:02:38] I can't sell the order.
+[00:02:40] The order's gone.
+[00:02:42] If you're already in, you want to get out.
+[00:02:43] You can't get out.
+[00:02:45] You just have to wait.
+[00:02:46] And that can feel a little bit scary.
+[00:02:49] And in fact, in 2021, during the GameStop short squeeze, GameStop was getting halted.
+[00:02:56] And people were very confused about what was happening.
+[00:02:58] And they were panicking.
+[00:02:59] They were trying to sell, they were trying to buy, they couldn't do anything, and they
+[00:03:03] didn't know what was happening.
+[00:03:05] And some people thought it was, you know, there was some ill motive.
+[00:03:08] There was something shady going on.
+[00:03:11] But circuit breaker halts, which we call this sometimes a circuit breaker halt right
+[00:03:16] here, the L-U-D-P-L-U-L-U-L-D circuit breaker halter volatility trading pods.
+[00:03:24] These are very common in the market.
+[00:03:26] And they do serve a purpose.
+[00:03:27] But if you don't know what they are, then it can be confusing when that occurs.
+[00:03:32] And I'll just pull up our simulator here.
+[00:03:35] So on the warrior's sim, you can see equity is halted.
+[00:03:39] You'll see that it's got a halt on it.
+[00:03:41] So in the case of the T1 halt, what happens?
+[00:03:46] What's the flow of how this happens?
+[00:03:49] So what happens is the company reaches out to the exchange and says we're going to release
+[00:03:54] news at this time.
+[00:03:56] And we'd like to have the stock halted until we've released the news.
+[00:04:00] And so the exchange says, OK, it's a little dramatic, but we understand.
+[00:04:03] We created this system so you can do that.
+[00:04:06] So fair enough.
+[00:04:08] So then the stock is halted.
+[00:04:11] And so the exchange actually stops trading entirely.
+[00:04:17] No one can buy, no one can sell.
+[00:04:19] All trading is paused.
+[00:04:21] And the security at that time will appear as I just showed you in the case of S and S-E,
+[00:04:28] or in the case of, well, yeah, that was the same one.
+[00:04:31] Where was it?
+[00:04:32] Right, where did that?
+[00:04:35] Oh, it was over here.
+[00:04:36] So it'll appear like this.
+[00:04:38] So what's happening right there is all the data vendors are receiving a code,
+[00:04:43] a specific halt code that the stock is halted.
+[00:04:46] And so that's why we're able to display this symbol halted.
+[00:04:50] So there's a code that's sent out and all trading is paused.
+[00:04:53] So then during that time, NASDAQ immediately updates their website.
+[00:04:59] And their website, if we go back to this here, SNSE right here, shows as T1.
+[00:05:07] So it's got a T1 reason code.
+[00:05:11] So this is the halt date.
+[00:05:12] That's the time.
+[00:05:13] That's the symbol.
+[00:05:14] That's the name of the company.
+[00:05:16] That's the exchange it's on.
+[00:05:17] NASDAQ, AMX, New York Stock Exchange.
+[00:05:20] The reason code.
+[00:05:22] And this was a T1 code.
+[00:05:24] T1 means halted pending news.
+[00:05:28] So if I put my mouse over that, you could see halted pending news, trading is halted
+[00:05:32] pending the release of material news.
+[00:05:36] And so then the company goes ahead and puts out their news headline.
+[00:05:39] So in this case, they put out the news headline five minutes after the stock was halted.
+[00:05:45] And the headline was that they had announced the announced the acquisition of another company,
+[00:05:49] and they'd receive a $200 million private placement.
+[00:05:52] OK.
+[00:05:53] So actually, that seems like a pretty decent headline.
+[00:05:57] So the headline gets released.
+[00:05:59] And now all market participants have a chance to read the headline, to think about it.
+[00:06:04] So now during that time, the stock is still halted.
+[00:06:09] So now we're kind of just sitting here twiddling our thumbs waiting for it to resume trading.
+[00:06:14] So then on the NASDAQ website, T2 means the news has begun the dissemination process through
+[00:06:22] regulation, FD compliant methods, which means the news has been published.
+[00:06:28] And then T3 is when they schedule the resumption time.
+[00:06:32] The news has been fully disseminated and NASDAQ has determined a or and or well.
+[00:06:37] So and it gives you the resumption time.
+[00:06:39] And then it tells you right here when trading will resume at 825 quotes will begin to resume.
+[00:06:46] So you'll be able to see quotes on your level two and at 830 the price will begin
+[00:06:51] trading again.
+[00:06:53] So T1, T2, and T3 are all related to halting pending news.
+[00:06:58] And a halt pending news can happen at any time of the day, any time of the night.
+[00:07:01] It's not exclusive to regular hours, it can occur during pre-market, it can occur at any
+[00:07:09] time.
+[00:07:10] So this is something to be aware of, any time a company can get halted pending news.
+[00:07:15] But the reality is, most times that we're trading, companies just release the news.
+[00:07:22] They don't halt the stock.
+[00:07:23] So the real reason is and this is sort of interesting is because the company is generally
+[00:07:29] fearful that people will interpret the news negatively and the stock will drop.
+[00:07:35] And so they want to release the news.
+[00:07:37] They want to give people a chance to think about it and digest it.
+[00:07:41] And then when the stock begins showing the quotes, which it did 825, you can already start
+[00:07:48] to see approximately what the new trading price is going to be.
+[00:07:52] Even though you can't trade it yet, you can start to see the quotes of the best bid
+[00:07:56] and the best sell or the NBBO.
+[00:07:59] And then when it resumes, you can begin trading.
+[00:08:03] And so it gives everyone a little bit of a moment, in this case, 30 minutes, to kind of
+[00:08:07] catch their breath and make a decision of, okay, how do I feel about this?
+[00:08:12] And how do other market participants feel about this?
+[00:08:15] And we could see in the case of this stock today that other market participants were
+[00:08:20] pretty excited about it because when they halted trading, the trading price, the previous
+[00:08:27] day was $7.50 or $8.00 and it resumed and went all the way to $30 a share.
+[00:08:34] So as it turned out, this was positive news.
+[00:08:37] And sometimes companies will halt their security for positive news as well.
+[00:08:42] It's just not as common.
+[00:08:44] So and that's generally a good thing because it's easier to trade without dealing with
+[00:08:49] calls.
+[00:08:51] Now in the strategy and scaling course, I have an entire chapter dedicated to the strategies
+[00:08:56] that I use specifically for trading stocks that are halted.
+[00:09:00] And so trading a stock that is halted, whether it's in the case of when the stock has
+[00:09:05] news, whether it's in the case of a volatility trading pause, which we'll talk about more
+[00:09:09] in a second, or it's even in the case of a stock IPOing for the first time.
+[00:09:15] It's never traded, never traded and then suddenly begins trading.
+[00:09:18] I can be a good opportunity to take some trades.
+[00:09:22] So there are some strategies that I have around that, but it's a lot easier to just
+[00:09:27] trade the moment the news comes out and not have to deal with halt levels.
+[00:09:32] So anyways, the first most common type of halt is the T1 halt, halted pending news.
+[00:09:41] And I would say that just for context, the way I would have found that stock that was
+[00:09:49] halted pending news would have been using the scanner.
+[00:09:52] We have a halt scanner in here that gives you the list of all the securities that are
+[00:09:56] halted.
+[00:09:57] So it's 755, SNSE was halted right here and then boom, we saw the news come out a few minutes
+[00:10:03] later.
+[00:10:04] So that was the catalyst right there and that's how we found the stock is using this
+[00:10:11] halt scanner.
+[00:10:12] So the halt scanner is helpful.
+[00:10:13] You don't have to be constantly refreshing the website over at NASDAQ.
+[00:10:17] We pull that data in, so you have it right here.
+[00:10:19] All right, so any time you see a stock is halted pending news or for whatever reason,
+[00:10:24] you could check to see what the headline is, whether it's bullish or bearish.
+[00:10:28] Okay, so that's number one, T1 and it includes T2 and T3.
+[00:10:33] The second type of halt is called a T12 and this is not a good thing.
+[00:10:38] T12 is when the SEC or the listing exchange has suspended trading in the stock and it's
+[00:10:46] typically due to an investigation or a request for more information from the company.
+[00:10:51] This is common if the exchange or regulators suspect fraud or suspect something that's
+[00:11:00] not right, maybe not all the way to fraud but something that's inappropriate going on
+[00:11:05] with the company.
+[00:11:06] And so at any time the exchange can halt trading of any security in the market and at that
+[00:11:12] time you can't buy it, you can't sell it.
+[00:11:14] So if you're in your stock, if you want to get in, you can't get in.
+[00:11:18] And some people were saying the exchange should halt trading of game stop, halt trading
+[00:11:25] of game stop, just stop it entirely, you know, pending the results of a multi-month-long
+[00:11:32] investigation, you really, you can't do that with a company as big as game stop.
+[00:11:40] Everyone who has tens of billions of dollars in total owning shares of that company
+[00:11:47] are just frozen out from trading it.
+[00:11:49] So we don't see it on big companies, but sometimes you will see it on really small companies,
+[00:11:55] especially for enlisted companies, small Chinese companies, companies from Singapore, sometimes
+[00:12:02] companies from Malaysia, companies from the Cayman Islands, these small companies that maybe
+[00:12:09] they start to look like it could be a shell company, maybe they don't really, you know,
+[00:12:13] it's the price action and what's going on with the insiders.
+[00:12:18] There's something that's, you know, sent up a red flag and the SEC or the listing exchange
+[00:12:23] has decided to suspend trading while they investigate.
+[00:12:26] The good news is you can usually tell, I can, at least, when a stock has a higher likelihood
+[00:12:32] of being halted by regulators and then I won't trade it, and so I'll walk you through
+[00:12:37] how I have come to learn that.
+[00:12:40] And then the third type of halt that's very common is the limit up limit down, which
+[00:12:47] is the LUDP or limit up limit down, circuit breaker, aka volatility trading pause.
+[00:12:53] So there's a couple different names for them, but they all essentially mean the same thing.
+[00:12:57] It's a volatility trading pause, and so what this means is that if a stock experiences
+[00:13:02] too much volatility trading is paused for a minimum of five minutes, and this is a mechanism
+[00:13:10] that was put into the market to help prevent flash crashes.
+[00:13:16] Hold on, I hear a dog scratching at the door, hang on a minute, sorry about that.
+[00:13:35] So as I think you know, in the 1930s, the short sale restriction was implemented, meaning
+[00:13:50] you couldn't short a stock on a down tick.
+[00:13:54] You could only short a stock on an up tick, so it only short a stock when it was popping
+[00:13:58] up.
+[00:13:59] Pull up the level two here, for instance, on whatever this stock.
+[00:14:06] If you wanted to short this, you couldn't short it at 2589.
+[00:14:10] You had to short it at 2625, and only get filled when someone buys your shares, which
+[00:14:17] means you're shorting when there's green going through the market because the stock
+[00:14:21] is actually popping up.
+[00:14:23] So that's considered an up tick, and it essentially prevents bare raids where aggressive
+[00:14:30] short sellers are hitting the bid aggressively, and pushing the stock down by selling
+[00:14:36] at the bid and taking out all the buyers they're sitting on the bid.
+[00:14:40] Now this stock right now does not have short sale restriction, so people are free to sell
+[00:14:44] in the bid if they want to, but certain conditions will trigger the short sale restriction.
+[00:14:49] So that was put into place in the 1930s.
+[00:14:52] With the advent of electronic trading, things became a little bit more primed for flash,
+[00:15:03] essentially instantaneous market drops because of algorithmic trading.
+[00:15:08] We're suddenly, and at one trader begins selling, another trader gets stopped out, another
+[00:15:15] trader gets stopped out, and all of a sudden you get this capitulation where it's dominoes.
+[00:15:20] And it drops, and so this stock here right now, SNSC is actually going into a halt going down.
+[00:15:26] See this red LULD, that's a halt level, and so the stock was not allowed to drop any further
+[00:15:34] than that price because of the volatility bands, and so that right there stopped this stock,
+[00:15:41] in this moment right now, from dropping all the way to say, you know, $19, 18, 17, 16,
+[00:15:48] 15, 14, how far would it drop, suddenly people get really panicked, it drops all the way to $8 a share,
+[00:15:53] now potentially it bounces back up, but that's not good for the market, to have stocks that drop
+[00:15:58] 90% in one candle, potentially. So the circuit breaker halts help put some guardrails or some
+[00:16:08] limits around volatility. However, there are some rules with these halts, which are interesting.
+[00:16:15] Circuit breaker halts, the stocks have different volatility bands, based on what the previous
+[00:16:23] day's closing price was. So, and different classes of securities also have different volatility
+[00:16:29] bands, and so it's not one size fits all with where a stock is going to get halted. Is it,
+[00:16:35] if it goes up 10% in less than five minutes, is it, if it goes up 20% to less than five minutes,
+[00:16:42] is it 40% and all of those can be true, depending on the stock, the circumstances, and the time of
+[00:16:47] day, the stock, the class, and the time of day. So, the good news is, as you saw with that,
+[00:16:55] and you could see it right here, L-U-L-D on this ticker, at 95 cents, and L-U-L-D right here to
+[00:17:02] dollar 42 cents, we can see on any ticker what the volatility bands are. That's the limit down
+[00:17:09] price, and that's the limit up price, which means if this stock suddenly squeezed instantaneously
+[00:17:15] nearly to that level, it would stop trading. And the trading would be halted for a period of five
+[00:17:21] minutes, which gives traders and the high frequency trading algorithms a chance to kind of
+[00:17:26] get oriented, what's going on, take a breath, and stop. And so, the ideas that it prevents flash
+[00:17:32] crashes. Okay, so let me, well, we'll leave this up here for right now, because we'll probably
+[00:17:38] come back to it. So, as I had already mentioned, while our scanners will show most
+[00:17:43] circuit breaker halts, to see more information you can visit the following sites, the New York
+[00:17:48] Stock Exchange has a web page that they update with current trading halts, and NASDAQ has a web page
+[00:17:53] that they update with current trading halts, which I had just shown you. So, I use the halt scanner
+[00:17:59] right here. However, I will pull up the NASDAQ scans or the NASDAQ halt website page periodically,
+[00:18:08] when I'm looking for the resumption quote time, that's not something that we have on our scans
+[00:18:13] as of right now. So, if I want to check to see what the resumption quote time is when it'll begin
+[00:18:19] trading, that's something that I will use that website to check. But I don't need to do that
+[00:18:25] when something is halted on a volatility trading pause, because volatility trading pause is
+[00:18:30] resumpt at predictable and predetermined increments of either five minutes, ten minutes, 15 minutes,
+[00:18:39] or at a five minute increment moving forward. And I'll explain why halts will sometimes be
+[00:18:45] longer and why some will sometimes be shorter. So, how do I know a stock is halted? Well,
+[00:18:50] you can see the H right there, as I already showed you, or if you're using our simulator,
+[00:18:54] you could see the equity halted, where was it? Let's see how I think it was up over on this one
+[00:19:03] yep, right here. So, we could see that this is halted yet again, SNSE. And this is not in common.
+[00:19:10] We will sometimes have stocks that are so volatile, they halt again and again and again and again,
+[00:19:15] again, all day long are getting halted. But it will be important for you to understand exactly
+[00:19:21] when halts take place, because there are times a day where there are no halts, which means a stock
+[00:19:27] could drop 90% in one candle, or it could go up 90% in one candle, without getting halted.
+[00:19:33] All right, so we can see that the stock is halted right on the level two window.
+[00:19:38] I will say however that not all brokers display that a stock is halted, and so that can be extremely
+[00:19:46] confusing. Let's just say, let's pull up, let's see, SNSE. So, oops, SNSE here.
+[00:19:54] So, on weeble right here, in this moment right now, it's not completely clear to me that the stock
+[00:20:03] is halted. You can see right there, it says halt. But if you didn't have that quote window up
+[00:20:08] on your level two, you would just see that there's not a lot of data. So, it's not as clear as it
+[00:20:13] could be. I mean, I like that they make this blue kind of like on brand, but I kind of think
+[00:20:20] make it obvious, like a caution flag. You know, you don't put, you know, make traffic cones gray
+[00:20:26] to make them on brand with a color of the concrete. You want them to stand out because something
+[00:20:30] important is going on, right? So, it's kind of the same thing here. Now, but in any case, so different
+[00:20:38] platforms, some are better and some are a little bit worse at clearly communicating that a stock
+[00:20:44] is halted, which can obviously cause some problems for you as a trader, because then you're sitting
+[00:20:52] there not understanding why you can't execute trades. So, when it comes to the resumption quotes,
+[00:21:00] while a stock is halted, some stocks show a quote of where it will resume trading. The current
+[00:21:08] best price, essentially, and some show absolutely nothing. Why is that? It depends on the
+[00:21:17] listing exchange. So, nicely an MX listed stocks show absolutely nothing when the stock is halted.
+[00:21:26] You can see the last price that went through, which would be on your level, on your time and sales,
+[00:21:31] that's your last quote. But that's all you see. You don't see a bid, you don't see an offer,
+[00:21:36] you see absolutely nothing at all. But on NASDAQ listed stocks, while the stock is halted,
+[00:21:44] they show a quote. And so, if SNSE gets halted again, I'll be able to show you. But in this case,
+[00:21:50] the stock was halted, and the last trading price was $11.87, but, and right now, it's showing a
+[00:21:57] resumption of $11.87. But let's say it was showing a resumption of $15 a share. Well, that is very
+[00:22:06] bullish. Suddenly, something has happened, that has made the stock go up $3 a share in terms of
+[00:22:12] what people are willing to pay while the stock was halted. That could happen because the company
+[00:22:18] put out news, and this is a T1 halt. But it could also happen, in the case of a volatility trading
+[00:22:23] pause, or a circuit breaker halt, where the stock squeezed up to the top of its volatility band,
+[00:22:29] was then halted for five minutes. And people want to buy it so badly that they're already
+[00:22:35] putting out orders to buy it when it resumes trading, and they're willing to get in at a higher price.
+[00:22:40] And so they start quoting or putting out a bid to buy it higher and higher and higher and higher.
+[00:22:45] And so while the stock is halted, traders and it was some brokers can still put their orders
+[00:22:53] in line to get filled on resumption. However, not all brokers except orders while a security is
+[00:23:01] halted. Typically, commission-free brokers do not accept orders while stocks are halted,
+[00:23:07] while direct access and more professional trading firms will accept orders while a stock is halted.
+[00:23:15] So at light speed, I can place an order while a stock is halted. So if I saw that the stock was halted,
+[00:23:21] and the resumption is 1187, and I want to get in, I could go and put an order at 1190.
+[00:23:26] Now, it's possible that my order at 1190 will buy these shares at 1187,
+[00:23:33] and he shares that are also at 1188 and 1189. And when I put my order out, it'll now show a
+[00:23:38] resumption of 1190. Because it's factoring in all of the orders that are out there. If I put
+[00:23:44] out my order and the resumption doesn't go up from 1187 to 1190, then that means there's enough
+[00:23:50] people selling at 1187 for me to fill all the shares that I want, which is kind of interesting.
+[00:23:56] So you can kind of get a sense if you put out an order while a stock is halted of how many
+[00:24:01] people are selling at a current price, just based on the number of shares you're buying. If you put
+[00:24:06] out the order to buy 10,000 shares, and it said 1190, and it doesn't go up even to 1188, then that
+[00:24:13] tells you that 1187, there is a seller for 10,000 shares. So while a stock is halted, essentially
+[00:24:20] what's happening behind the scenes is a queue is forming. There's a line of all the buyers and all
+[00:24:26] the sellers. And so the market is displaying a quote, which is the current, you know, some essentially
+[00:24:35] of all the buyers and then minus all the sellers, and is it now showing a quote that's slightly
+[00:24:41] higher than the price of stock halt to that, or is it slightly lower? Typically, when a stock is
+[00:24:48] halted on a volatility trading pause, well, it's of course because the stock went up very quickly,
+[00:24:54] right? So squeezed up all of a sudden, halt's right here, usually when a stock halt's going up,
+[00:25:00] it opens higher. And usually when a stock halt's going down, it drops, it halts, it usually opens
+[00:25:09] lower, and then continues selling off. I have seen instances where stocks will halt going up,
+[00:25:15] and then they open slightly lower. I've seen instances where stocks will halt going down and
+[00:25:20] they'll open slightly higher. It's not what you typically expect, but it can happen. So it's not a
+[00:25:25] hard set rule that a stock has to open higher if it halts going up. It can open it, you know,
+[00:25:30] whatever price is the market perceives is the fair value price, but typically when stocks halt
+[00:25:36] going up, they open higher. Okay, so let's now talk about how these halt levels are determined. And
+[00:25:42] as you can tell, this class is focused in quite a bit more on circuit breaker halts than on T1 or
+[00:25:50] T12 halts. And we will talk a bit more about what creates the risk of a T12 halts. T1 halts are
+[00:25:57] very straightforward. A company puts out news, the stock is halted, and then you have to wait
+[00:26:01] for it to resume. Circuit breaker halts are a little bit more complex than how they're calculated.
+[00:26:07] So this, and just before I jump on to the slide, explaining how these halts work and what the
+[00:26:16] bands are, circuit breaker and halts and volatility trading pauses are probably our favorite
+[00:26:22] type of halts as day traders. And when we have a large number of circuit breaker halts in one day,
+[00:26:27] that can be a good measure of how hot the market is. It means that a lot of stocks are hitting
+[00:26:34] volatility trading pauses because they're so volatile, but this is a good thing, generally.
+[00:26:39] Similarly, when a large number of stocks are making 50-100% moves, it's an indicator of a hot market.
+[00:26:45] Typically, those stocks will get halted multiple times as they're moving higher. So the first thing
+[00:26:51] to note is the period in which halts occur. So let's jump back on to the whiteboard here and think
+[00:27:01] about a couple aspects of the trading day. So we've got 24-hour markets, and we've got 4am to 930
+[00:27:10] to 4pm, which is after hours to 8pm, and then 24-hour markets after. So when do we have market orders?
+[00:27:19] Market orders are 930 to 4pm, but not pre-market and not after hours or 24-hour markets.
+[00:27:28] But about stop orders, same thing. So no, no, no, but yes, during regular trading hours.
+[00:27:35] And options as well, options trading. No, no, no, no. So what this all means
+[00:27:45] is that the time we are most likely to see a flash crash would actually be between the
+[00:27:53] hours of 930 to 4pm. We also have good till cancel orders during this time frame. And the reason is
+[00:28:01] because if we have a stock, and we're going to turn this around here. So if we have a stock that
+[00:28:10] rallied up whatever, and then suddenly sells off and drops. During the hours of 930 to 4pm,
+[00:28:20] anyone who has a stock order down here, stop, stop, stop orders, those will all get executed.
+[00:28:30] So if suddenly, and remember when they execute, typically people set them up as a market order.
+[00:28:34] So if someone presses this sell button here, let's say sell 100,000 shares market order.
+[00:28:41] They do a market order, and that big market order by itself sends the stock down 15 and sends a
+[00:28:46] share. It takes out this stop order. And let's say this person had a 50,000 share stop order.
+[00:28:52] So then that takes out this stop order. Let's say this is 100,000 share stop order. And then that
+[00:28:56] takes out this one. Let's say that was a 250,000 share order. And you can see how all of a sudden
+[00:29:02] the algorithms are almost capitulating, creating this massive sell off. And this is some of these
+[00:29:09] are from actual live orders, but some of this is also from algorithmic trading. Now what we also
+[00:29:15] know about high frequency trading algorithms, and we talked about this when we were covering stock
+[00:29:22] selection. I'll just pull up a second whiteboard here. I'll put this one to the side.
+[00:29:26] So when we're talking about stock selection, let's see stock selection. We are talking about,
+[00:29:36] so we're going to do H, oops, H, F, T, and then retail. So for retail traders, as a retail trader,
+[00:29:44] we have our five pillars of stock selection. We've got price being ideally between two and
+[00:29:52] 20. We've got percentage change up at least 10%, more is better. We've got relative volume of
+[00:29:58] five x. We've got a news catalyst, and then we've got the float of under 20 million shares,
+[00:30:05] but of course lower is better. And so this is searching for volatility. But what we know
+[00:30:10] high frequency trading algorithms are looking for are stocks that are very thickly traded. So price
+[00:30:16] is going to be higher. Volatility is lower. This is, I'll just put it to you there. Volatility
+[00:30:25] is lower. So under, under 3%. Relative volume lower, right? Probably like under two.
+[00:30:36] No news. And high float. So what these companies are doing, and these companies, I'm referring
+[00:30:46] to the market makers, the institutional trading firms, is they're looking for a stock, not like
+[00:30:53] SNSE. No, no, no, no, no. They're looking for a stock, like Ford, with 14 million shares of volume,
+[00:30:59] where they can buy and sell and buy and sell all day long, right? So if I pull up, let's see,
+[00:31:05] I'm going to pull up Ford over here in my think or swim account. This is going to be commissioned
+[00:31:12] free on think or swim, of course. So if I type in Ford, right here we've got Ford, I do 5,000 shares.
+[00:31:19] So I click 5,000 shares by market. I'm in right there, and then you click sell market. And so it's a
+[00:31:27] small loss. And remember, who made money on that order? That $23.50, who made the money on that order?
+[00:31:37] It was a high frequency trading algorithm, who's always there to match your order. They buy
+[00:31:42] when you want to sell, they sell when you want to buy. So they're capitalizing on the arbitrage
+[00:31:47] of always being there, ready to make the trade for someone like me that wants to take a trade.
+[00:31:53] So they make a profit on that. And they want to be buying and selling a million shares all day long
+[00:32:00] to make $10,000. Just one penny, you know, that was 5,000 shares. You do that on 50,000 shares,
+[00:32:05] it's 200 bucks. You do it on 500,000 shares, it's 2,000 bucks, right? They just want to do that
+[00:32:10] all day long, buying, selling, buying, selling, selling. And so they're looking for those types of
+[00:32:16] stocks. However, the second a stock begins to experience too much volatility. What happens to the
+[00:32:22] market makers? They're nowhere to be seen. So it's an illusion and it's, I think, incorrect when
+[00:32:31] they say that they, so trying to think about the best way to articulate this, they say that
+[00:32:40] the benefit that they serve to the market is that they create liquidity. Because they're always
+[00:32:45] there. Anytime you want to buy Ford, they're there to sell to you. And so you're paying
+[00:32:51] probably a better, you're getting a better price for Ford because there's always someone
+[00:32:55] there to match your order. And that's true in a market going sideways. But in a volatile market,
+[00:33:02] these institutional trading firms turn off their market making algorithms because the risk profile
+[00:33:08] no longer is matching the reward. And so all of a sudden they go offline. And so when stocks
+[00:33:15] begin to experience height and volatility, the market makers disappear. So then suddenly, when we
+[00:33:20] have a stock experiencing this type of move where it's dropping very quickly, the market makers
+[00:33:25] are going. They're not making the market. They're not buying the stock as it's dropping. And so now
+[00:33:31] you have less liquidity in the market. And so suddenly, you can get these really rapid drops
+[00:33:38] and there have been instances of flash crashes where individual securities or even the market
+[00:33:44] across the board lost billions of dollars of value in a matter of minutes because of this type
+[00:33:50] of capitulation. This type of rapid snowball that took place. And so the market introduced
+[00:33:56] circuit breaker holes. And so they said, every stock, every single stock is going to have these
+[00:34:02] invisible bands. And if the stock goes up to that band or it goes down to that band and it stays
+[00:34:10] at that price for 15 seconds, trading will be halted for a minimum of five minutes. And it's
+[00:34:17] called a circuit breaker halt because it happens automatically. It's not someone pressing the
+[00:34:21] halt button. It's completely automated. So every stock right now has these volatility bands
+[00:34:28] that exist around the price at all times. And we can see them right here on the level two
+[00:34:34] because we highlighted with LULD. So LULD right now, the limit up limit down level is 2570 going up
+[00:34:41] and 2103 going down. Right. There's 2570. So we're right in the halt level going up. And that's
+[00:34:50] stopping the stock from going higher. It cannot trade above that price until that price moves.
+[00:34:55] Now naturally, as the stock moves, these bands are all so moving. Right. So it gets a little
+[00:35:03] complicated, but it's kind of, it's kind of cold away once you sort of figure out how it works.
+[00:35:08] So over on, on weeble, they show you the limit up limit down level. Right there, 2596,
+[00:35:14] showing you the limit up level. So the limit up move, just a smidge. Think or swim, they don't show
+[00:35:20] it to you. You can't see limit up limit down levels. They don't, it's just not available. They
+[00:35:26] don't show it. So you can't see it at all. Some brokers do, some brokers don't. In my broker
+[00:35:32] comparison sheet, one of the points that I talk about is whether or not you can see those levels.
+[00:35:40] Because in my opinion, they're critical as an active trader, you need to be able to see where the
+[00:35:46] hot bands are. So we need level two. We'd like to have one of the sophisticated trading platforms.
+[00:35:53] Hot keys are critical. Hot keys with our offsets are critical. So you can offset above the
+[00:35:58] ask or below the bid so you get your full limit order filled. Hot keys with a percentage of
+[00:36:03] position. So you can sell based on 50% of your position. And then hot levels and resumption quotes.
+[00:36:10] So a lot of these brokers show them, but trade station, no, not currently, Schwab with
+[00:36:16] each right, nope. Interactive brokers, IBKR, nope. So fidelity, nope. Robinhood legend, nope.
+[00:36:22] So again, this is subject to change by the time some of you guys are watching this class,
+[00:36:26] it may be that some of the ones that we're going to know have up to their game. But as it stands
+[00:36:31] right now, this is another element where not all brokers are created equally. Okay, so I digress
+[00:36:37] for a moment. So let's talk about these volatility bands and how they are calculated. So
+[00:36:44] I'd love to meet the people that come up with these things because while they're well-intentioned,
+[00:36:49] as you're going to see in a moment, they can be completely illogical. Okay, so a tier one security,
+[00:36:55] which is going to be an S&P 500 stock. They have a halt band that is 5%. So 5% up, 5% down.
+[00:37:09] So that means 5% above the current reference price or 5% below it is the hall band. So the
+[00:37:15] bands are 10% apart basically. 5 up and 5 down from the midpoint. And we'll talk about how the
+[00:37:21] reference point is calculated in a moment. But just from the reference point, 5% up or 5% down
+[00:37:27] are the volatility bands on a tier one security. We don't really trade tier one securities very
+[00:37:33] often, almost never in fact. We're usually trading tier two securities. Those are your typical
+[00:37:40] small cap company. Tier two securities that close the previous day above $3. During regular market
+[00:37:46] hours from 9.30 until 4pm have a 10% band. So 10% up or 10% down from the reference price.
+[00:37:58] So that means, so let's see. I'll draw this out so it's nice and visual here.
+[00:38:05] All right, so we'll have a candle going up, candle going up, candle going up. All right, so we're going
+[00:38:12] to do, let's see. So these are tier one and it's 5%. Okay, but the next one right here is tier two
+[00:38:34] and it's 10% and then the next one is going to be tier two under, it's actually between 75
+[00:38:48] and $3 a share and that's 20%. And then you've got one more here, which is T2 under 75 cents
+[00:39:04] and it is 15 cents or let's see. So it's 15 cents or 75% whichever is closer. Okay, this
+[00:39:17] gets a little confusing. But again, if you pull up a stock and it's a tier two, then you won't see
+[00:39:25] any of the other bands. It's just the tier two ones because it falls within this threshold right here.
+[00:39:31] So the thing that's interesting is that these volatility bands, as I had previously mentioned,
+[00:39:40] do not exist pre-market or after hours or in 24 hour markets. They are only from 9.30 a.m.
+[00:39:48] Until well, 335 p.m. for some securities or 4 p.m. for other securities. And so between 335 and 4 p.m.
+[00:40:02] Some of them have the volatility bands doubled. So you can see here from 335 to 4 p.m.
+[00:40:11] Whatever the volatility band is, is doubled. So right here, for instance, it goes from 20% to 40%.
+[00:40:20] From 5% to 10%. It's confusing. It's an unusual sort of system. And so I'm going to show you a real
+[00:40:34] world example that we've actually seen. Let me see if I digress. I don't think I have a screenshot of it,
+[00:40:38] but no, I don't. But I'll show you a real world example. So we had a stock with two different stocks.
+[00:40:49] So stock number one, previous day, closed at 70 cents a share. So because it closed at 70 cents per share,
+[00:41:00] what's the volatility band going to be? So it's tier two security below 75 cents. It's going to be the
+[00:41:06] lesser of 15 cents or 75%. Okay. So the next day the stock has news. It squeezes up to $2.50
+[00:41:16] and 50 cents, which is a huge move. Where are the halts? It's 15 cents. So the halts up on this one
+[00:41:25] would be 265 and the halts down would be 235. All right. Now we've got another scenario here
+[00:41:34] of a stock that opened the previous day at $2. And is now at $2.50. So it closed the previous
+[00:41:46] day at $2.00. So because it closed the previous day at $2.00 between 75 cents and $2.00,
+[00:41:52] its volatility band is 20%. Okay. So 250 times 20%. The halts up on this one is $3.00. The halts down
+[00:42:05] is $2.00. That's confusing. They are the same price stock. They're the same price stock,
+[00:42:14] but they have different halts bands because the previous day is closed. So I can tell you that
+[00:42:22] I rarely trade stocks that were below 75 cents on the previous day because the halts bands are too
+[00:42:30] close together. The stock will halt too quickly and I don't like being in halts like back to
+[00:42:37] back to back being up only 10 cents, 15 cents before being in a halt. My profit target is to try to
+[00:42:42] make 20 cents a share. And I can't even make that before I get caught in a halt and then have
+[00:42:47] to wait five minutes for the resumption. So generally speaking, lower price stocks below 75 cents
+[00:42:54] from the previous close, I would not trade between the hours of 930 and 4pm.
+[00:43:01] Pre-market? There's no halts. So I could trade a pre-market if I want to. After hours I could trade
+[00:43:07] after hours. But from 934pm, these ones, I'm not going to trade. Stocks between 75 cents and $3.
+[00:43:15] That's fine. The halts bands, so these ones were 15 cents. This is 20%. That's fine. That's great,
+[00:43:22] and then above $3. 3 and up at 10%. That's fine. I can work with that. A $7 stock. So you have a stock
+[00:43:30] for instance at $7. The halts band going up would be 770 and the halts band going down to
+[00:43:36] be 630. That's enough range that I can make my 20 cents a share even during regular trading hours.
+[00:43:42] But as you can obviously tell, one way to avoid ever having to think about circuit breaker halts
+[00:43:49] would be just to trade pre-market in after hours because they don't exist. You would still
+[00:43:55] have to potentially deal with T1 halts and perhaps T12 but you would never have to deal with
+[00:44:00] circuit breaker halts. Now, when I first started trading, there was very little trading volume
+[00:44:07] in the pre-market session so I was always trading during regular trading hours and I was a custom
+[00:44:11] deal with halt levels. As the years have gone by, we've seen more and more volume move into the
+[00:44:15] pre-market session because that's when companies are putting it up breaking news and they don't
+[00:44:21] typically halt the stock in order to put out the news. But because they put out the breaking news
+[00:44:26] and there's no halts, when we look at some of these screenshots of big P&Ls that I've had,
+[00:44:34] these are stocks that did not halt. So we'll just pull this up for one second here because they
+[00:44:42] were pre-market. So some of these big moves, this is a move from $4 up to $6, $7, 50% move,
+[00:44:51] no halts, it's pre-market. So this is where you can get a really rapid short squeeze as shorts
+[00:44:59] get panicked and cover and there's no halts to protect them. There's no halts to stop trading
+[00:45:06] to give them a second to kind of recalibrate. So in a matter of 15, 20, 30 seconds a stock could just
+[00:45:12] surge higher. This one from $8 to $20 a share. This one right here from $450 to $8.59, I mean these
+[00:45:20] happened so fast, shorts don't have time and there's no halts to save them. So like on the other hand,
+[00:45:27] we could have a drop. We could have a rapid drop from $35 back down to $22 on this pullback
+[00:45:32] and there's no halts to protect us. So we've got to be mindful of that but as long as we're
+[00:45:37] focusing on stocks and meet our five pillars of stock selection, they've got a good catalyst,
+[00:45:41] it's an obvious stock, then I feel like the odds are stronger in my favor than not.
+[00:45:48] So this is now, so you should now have a pretty good understanding of how the volatility bands
+[00:45:55] are calculated with the knowledge that the previous day's closing price is going to determine
+[00:46:02] what the band threshold is and that time of day makes a difference. 930 to 335 PM, we have the
+[00:46:10] bands as they are, but between 335 and 4 PM the bands get bigger. So sometimes you'll see a lower price
+[00:46:16] stock like a 70 cent from previous day close stock that's been holding up all day and then suddenly
+[00:46:22] right at 335, it starts to pull away because the volatility bands open up and they allow the
+[00:46:29] stock to move faster before it comes into its next halt, which is interesting. Okay, so now let's
+[00:46:36] talk about how the reference price is calculated. So the reference price, which is that price right
+[00:46:45] in the middle, do I still have this one? Right. So the reference price is not the last price.
+[00:46:51] No, no, no, no. The reference price, they must have gotten someone from trial Schwab to Health
+[00:46:56] the reference price is the average price over the last five minutes. So they take the average
+[00:47:02] price over the last five minutes. So you know all those candles average and so the average price
+[00:47:09] over the last five minutes. How often does the reference price update? Approximately every 30 seconds.
+[00:47:16] So in fact, the halt levels don't look like this. The halt levels are the same for 30 seconds
+[00:47:23] and then they jump up and then they jump up and then they jump up and then they jump up if the stock
+[00:47:27] is moving higher. The band stays the same for 30 seconds but then keeps moving up. So it's not
+[00:47:34] aligned. It's actually like that and I guess you could connect it like a staircase if you want to.
+[00:47:39] But it just jumps up every 30 seconds. So if we look at this in real time here, we'll pull up
+[00:47:46] SNSE. SNSE is probably going to be a decent example because the stock has enough volatility. So
+[00:47:52] it's 1026 here and the halt band is it so $28.43. It's not moved. The price is not moving quite as
+[00:48:02] much as it needs to move a little bit more in order for the halt bands to change because the average
+[00:48:09] price over the last five minutes needs to change enough for the price change. But we'll see if it does.
+[00:48:15] So the reference price is a calculation of the average price over the last five minutes. And
+[00:48:23] it's as simple as that. So the reference price is constantly being updated and every time it updates
+[00:48:30] the halt levels change. So what can sometimes happen is you're watching a stock and you're even
+[00:48:35] trading a stock and it's very close to that halt level and then because the stock has been moving
+[00:48:41] higher, the price is at the high end of its five minute range and so then when the reference point
+[00:48:47] gets updated the reference price is higher. So then the halt band is a little bit higher from
+[00:48:53] that reference price. Now in this case this stock's not moving quite enough so the reference price
+[00:48:59] isn't changing. It's kind of remaining basically sideways here for these 30 second increments. So
+[00:49:05] there it goes. So there we got a little bit of an update. So 2814 so the reference price came down a little
+[00:49:10] bit and so the halt level came down a little bit. $28.14 and the halt down went down.
+[00:49:18] A little bit to $23 in two sets. So approximately every 30 seconds or so these halt bands
+[00:49:26] are updating based on the reference point updating. And so one of the things that I will notice is
+[00:49:34] during regular trading hours like I said we'll have a stock sometimes where the price action
+[00:49:40] almost is chasing that upper halt band. So the halt band just came down a little bit more to
+[00:49:47] $27.83. So it's chasing that upper halt band where we kind of creep up to the halt band
+[00:49:54] and then we can't go any higher because it'll either halt and it's halted for five minutes.
+[00:49:59] And so people will sell that take profit. Now everyone wants to hold a stock during the halt.
+[00:50:04] So they take a little profit off the table and then it dips down. And then it sort of pulls back
+[00:50:09] for a second sort of goes slower and then the halt level moves up and it jumps right up to that level
+[00:50:14] and then it kind of pulls back again for a second. I know this should be red but you get the
+[00:50:16] idea. Then it pops up again and it dips down for a second and then it pops up again and then
+[00:50:22] if it can hold at this price for 15 seconds. Right at that price then at that point the stock
+[00:50:29] will officially be halted on a volatility trading pause or a circuit breaker. All right so let's go
+[00:50:37] back to the slide deck here. So once the stock is halted and I will show you let me
+[00:50:44] let me give you a quick example. You already saw one example but I'll show you another one here.
+[00:50:49] I'm going to just show you a quick little example of a stock that ends up getting halted.
+[00:50:56] So let's see. All right so oh there it is. All right so let me see if I can increase the quality
+[00:51:05] this a little bit. Maybe not. All right in any case. So the halt band is right here at 1244
+[00:51:15] and so as the stock comes up to that halt band we now start the timer 15 seconds 15 14 13 12 11 and
+[00:51:25] see how it's stacked up there all those buyers. So it's probably going to halt 11 10 9 8 7 6
+[00:51:37] 5 4 3 2 1 right so and now it's halted and so now it's going to be halted for five minutes
+[00:51:48] and so for the period of five minutes we can't trade it at all. However we can see the quote
+[00:51:55] and so we can look at the quote and right there let's back that up. So we halted at 11
+[00:52:00] dollars and 44 cents which was the last price and we're now showing a resumption quote of 12
+[00:52:06] dollars and 28 cents that is bullish that's a big gap essentially that's occurring which means
+[00:52:14] people are so excited about this stock they're willing to pay a higher price and maybe some
+[00:52:18] shorts are trying to get out and trying to cover and so here we go. So it resumes trading
+[00:52:26] and how do we know what time it's going to resume trading? Well we look at the time of the last quote
+[00:52:32] right here and then we add five minutes. Now this resumed at the 10 minute mark not at the five
+[00:52:37] minute mark. So halts are in five minute increments when we have a stock that is halted going up
+[00:52:44] for instance at 9 44 and 4 seconds. The first possible resumption time will be no sooner than five
+[00:52:51] minutes so 9 49 and 4 seconds to the exact second. Now it's not a bad idea to go onto your clock
+[00:53:00] this is something that I noticed traders sometimes have a problem with. Pull up your clock and
+[00:53:06] make sure you set your time automatically and every now and then every now and then I have to click
+[00:53:13] sync now so it'll tell me the last time I synced my clock so I sync now and it resinks. Every now
+[00:53:20] and then my clock will get a little out of sync with with market and you want to make sure you
+[00:53:24] can re sync that. So just right click your date and time on on Windows machine down in the bottom
+[00:53:30] corner just to make sure you're setting automatically. So in any case when I'm using light speed
+[00:53:37] I have the actual second right here the clock. So now I know the halt time because I could see
+[00:53:45] the quote of the last order that went through the very last order before the halt and then I just
+[00:53:50] add five minutes to that and watch for the countdown as it gets closer. So the first halt will be
+[00:53:57] at five minutes. However if the stock is showing during a halt a significant imbalance which means
+[00:54:05] it's going to open a lot higher than the halt it will be halted for another five minutes and so
+[00:54:15] the basically what's occurring here is you've got a stock that halted up let's say for instance
+[00:54:23] we have a stock that halted up at at five dollars a share and the previous days closed was above
+[00:54:31] three dollars so we're doing 10 percent halt bands. So we halted up at five. If we show
+[00:54:36] resumption of five forty five we'll go ahead and resume at the five minute increment. No problem.
+[00:54:43] However if we show a resumption of six dollars then what's happening is the stock is already jumping
+[00:54:51] over a second halt band even while it's halted because the halt band was five fifty or
+[00:54:58] so from five to five fifty so it's already breaking through a second halt band so now it's halted
+[00:55:04] for essentially another five minutes so the halt just continues to the ten minute mark and if
+[00:55:09] it suddenly starts showing seven dollars or seven fifty you know or eight then it could end up being
+[00:55:16] you know fifteen minutes twenty minutes we've seen our long halt because the stock is showing
+[00:55:22] such a huge resumption and I've even seen instances and I showed you guys some examples where
+[00:55:27] stock halted up at you know halted up at twenty dollars a share and then with showing a resumption
+[00:55:33] of a hundred and seventy five dollars a share. So when do the stock resume there's not enough five
+[00:55:39] minutes in the day so when does it resume four p.m. Because after hours there are no halt.
+[00:55:47] So it resumed all the way at four p.m. which is crazy. So if you were in that trade while it ended
+[00:55:52] up being a huge winner you had to be sitting by your computer waiting for the resumption knowing
+[00:55:58] that at any time it could resume at any time it could resume because suddenly there could be
+[00:56:03] a match, a seller could come in and boom the match is created and so the stock resumes trading.
+[00:56:09] Or you just have to keep waiting and waiting until four p.m. So sometimes although we don't see that
+[00:56:17] like on a daily basis by any means we do see halt that go longer than five minutes frequently.
+[00:56:23] So a five minute long halt typical ten minute long halt usually means we're going to get a
+[00:56:27] bigger resumption fifteen minute long halt usually means we get a bigger resumption but you know
+[00:56:32] what's interesting and this gets a little shady is sometimes sometimes a stock will be near the
+[00:56:40] five minute resumption and all of a sudden so what we're so basically back to that example five
+[00:56:46] dollars and the resumption is showing five forty five and halted at nine forty five and so the
+[00:56:54] resumption would be nine fifty and then all of a sudden at nine forty nine and forty seconds
+[00:57:02] it shows for a second resumption of six dollars and forty five cents. How does that happen?
+[00:57:08] Someone out there put out a hundred thousand share by order at you know six fifty and they took out
+[00:57:14] all the sellers and so what happens is the stock is halted for another five minutes and then immediately
+[00:57:22] once that next five minute window is begun they cancel their order and it comes right back down to five
+[00:57:28] forty five. Now the problem with this is it's extended the halt time for what purpose.
+[00:57:35] Typically this is actually a short seller and they put out that order knowing the stock wouldn't
+[00:57:42] resume their order would not fill but they would have more time to try to find shares to borrow
+[00:57:49] for locating. So it gives their broker another five minutes to find them shares so they can
+[00:57:54] short it on the resumption. So games like that did we see that with GameStop? Absolutely. Do we
+[00:58:01] see it on small cap stocks? Sometimes I mean it's not impossible you could see it on any stock really
+[00:58:07] but on on stocks where big money is heavily short you're going to see those games coming out
+[00:58:14] and that gets a little more nuanced and we're going to talk about those sort of nuanced
+[00:58:20] details of things to spot on level two as we get deeper into the curriculum. But for right now
+[00:58:29] I'll just leave it that sometimes we will see that the resumption is about to resume with the five
+[00:58:34] minute mark the resumption price jumps up it becomes a ten minute long halt and then the price comes
+[00:58:40] back down. Then you get to the ten minute mark where it's about to resume and once again the price
+[00:58:44] spikes up to like $15 it's halted now for 15 minutes and then the order gets canceled and it
+[00:58:49] comes back down and so it's like they kind of are keeping the stock halted and if you keep a stock
+[00:58:56] halted long enough I suppose shorts win because people give up people lose interest they're like
+[00:59:01] I don't want to I don't want to sit here and watch this anymore right I've got better things to do
+[00:59:07] and so that can be an issue as well. Now that distinctive halting appearance is when the orders
+[00:59:16] are stacked up right at that level because they cannot go higher so the halt level puts a limit
+[00:59:23] and it's actually across it's the exact same price that's the highest the price can go and it's
+[00:59:27] trading at that price and it's being blocked from going any higher and so when you have a huge stack
+[00:59:33] of buyers there and it holds for 15 seconds then we get the halt. When it's a thinner kind of
+[00:59:39] book it's only like two orders then what could happen is you could have you know potentially one
+[00:59:47] one big seller right there one big seller takes out these buyers and if it drops down that 15
+[00:59:57] second timer has to reset so it has to stay at this level for 15 seconds if the price drops down
+[01:00:06] for you know even even just a second that 15 second timer does restart. However a lot of people
+[01:00:14] will try to buy right into a halt going up because typically as I mentioned halts that halt up
+[01:00:20] open higher so buying right into the halt going up not uncommon at all is a strategy you just
+[01:00:26] I if the stock's already halted several times and a row going up I've got to be careful and the
+[01:00:31] other thing I have to be careful of is a false halt so oops I'm going to get logged out of this or
+[01:00:36] something so a false halt occurs when a stock is about to halt going up and then all of a sudden
+[01:00:45] it drops back down so let me just back this up here for one second so this is the distinctive
+[01:00:51] halting appearance where you're sort of pin there and then the false halt is when it's
+[01:00:59] nicely pinned and then all of a sudden a huge sell order goes through these guys all disappear
+[01:01:04] because someone sold them the shares they were trying to buy were down to just one left tons of
+[01:01:09] selling and people panic dump and all of a sudden the price drops and I've seen stocks go from the
+[01:01:16] halt to up and then panic all the way to the halt down which is pretty crazy usually what happens
+[01:01:22] though is that panic create a dip I buy the dip and it comes back up and so usually I can get a nice
+[01:01:31] I can still get a nice trade on that so all right so let's see so typically stocks are
+[01:01:37] all going up open higher so halting up opening higher halting up opening higher halting up
+[01:01:44] so we got one two three four halts up and then the reversal back down so you've got to be careful
+[01:01:51] because when they halt going up when they pull back they usually halt coming back down and so if they
+[01:01:56] halt coming down they also usually gap lower and then this halted twice or four times going up
+[01:02:02] and then it halted twice coming back down that's not uncommon at all so back to back halt so you've
+[01:02:08] got to be careful with these not to get caught holding too high because then you can really get in a
+[01:02:13] jam this is a stock that goes from 6 to 7 to 8 to 9 to 10 and sometimes we'll see
+[01:02:20] as these stocks are moving higher a divergence where as the price goes higher the volume actually
+[01:02:26] starts declining and the reason is because the stock opens and immediately goes into another halt
+[01:02:33] and so it's only open for like 15 seconds so there's not a lot of time for it to accumulate volume
+[01:02:40] and shorts often fear this because this is where they can get squeezed really hard
+[01:02:47] and they cannot get out because there's no one selling shares when the stock opens immediately
+[01:02:53] goes higher why would you sell right so no one selling so they can't get out and that's where
+[01:02:58] all of a sudden we get this rapid squeeze so again going back to kind of the initial
+[01:03:04] intentions of this rule really preventing flash crashes we still do see from time to time
+[01:03:11] stocks that will halt multiple times going down and so yes they're halted for five minutes they
+[01:03:16] resume they go lower they're halted again they resume they go lower and the challenge is while the
+[01:03:21] stock is halted you can't do anything and then you have only 15 20 seconds to execute a trade
+[01:03:26] before another halt and so in some ways it feels like it actually makes things worse
+[01:03:32] but you know it's just what it is so now as you already know between the New York Stock Exchange
+[01:03:40] including AMX and the NASDAQ Exchange they're a little different in how they treat halted
+[01:03:46] number one NASDAQ shows you resumption quotes the New York Stock Exchange and AMX do not
+[01:03:53] also the New York Stock Exchange has not been afraid to halt stocks that are up significantly
+[01:03:59] like 300% with no news so when a stock is up 2,300% with no news and it's on the New York Stock
+[01:04:07] Exchange they will halt the stock on a T1 halt so they halt the stock on news then they go
+[01:04:14] ask the company to provide a headline to tell people what's going on with their stock that's kind
+[01:04:21] of funny NASDAQ rarely does it I've seen them do it but it's very rare so between these two
+[01:04:27] exchanges the New York Stock Exchange has kind of a low has a I don't know their compliance or their
+[01:04:33] kind of you know enforcement is much stricter than NASDAQ so if I see a stock that's up a lot on
+[01:04:41] no news I mean it's it's volatility I'm happy to trade it but if it's on the New York Stock Exchange
+[01:04:47] I get a little nervous so when it's up more than 300% with no news I get a little nervous
+[01:04:52] so this is a stock BDR that was listed on the New York Stock Exchange it goes up
+[01:04:59] over let's see from a dollar 50 up to 350 up you know a huge move you know from the previous
+[01:05:05] days close you know at least 100% but probably higher than that and so then the New York Stock Exchange
+[01:05:12] halted trading they said no more trading in this security that's it it's paused and they said
+[01:05:16] company put out a headline so the company says okay and they put out this standard boiler
+[01:05:24] plate headline that their attorneys review the company doesn't know of any reason why the stock is up
+[01:05:30] there's no material developments or change in circumstances so then the news is released
+[01:05:35] goes to T2 release in the news T3 they schedule the resumption time and now any glimmer of hope
+[01:05:42] that there was a rumor you know there was something there was news but people just you know
+[01:05:47] hadn't been released yet is gone and the stock opens 50% lower from 340 it resumes down here
+[01:05:54] now generally speaking these T12 halts when they occur occur during regular trading hours more
+[01:06:01] often than during pre-market but I have seen them I have seen them during pre-market but they're just
+[01:06:06] not it's common this is another example of a stock that was up from 80 90 cents all the way up to
+[01:06:12] $2.80 and then halt right here by the regulators T1 and the company is forced to provide a
+[01:06:19] comment and they said while the company says not normally common a market activity it's aware it's
+[01:06:24] not aware of any undisclosed material change and so the stock ends up opening lower I've also
+[01:06:30] noticed that NYC New York Stock Exchange is much more likely to do this on stocks where the previous
+[01:06:40] days trading price was below $1 share they're more likely to do it on penny stocks this one
+[01:06:48] RHE went from about a $1.50 share to 16 dollars in one day no news ends up dropping down on a
+[01:06:56] circuit breaker halt so it had a lot of circuit breaker halt circuit breaker circuit breaker so
+[01:07:01] like one two three four five and then a halt down and then while it was on a circuit breaker halt
+[01:07:08] going down the code changed from circuit breaker halt to T1 so the regulator stepped in the
+[01:07:16] exchange stepped in and said nope that's it this is halted pending news company tell us what's
+[01:07:22] going on and then the company puts out the headline and the stock drops this is the same story
+[01:07:28] same thing happened here so company puts out news stock drops so you know this is you know the this
+[01:07:37] now however what we also see from time to time is that we have the the regulator will initially
+[01:07:48] do a T1 halt so they halt pending news but the company doesn't issue a response so the stock stays
+[01:07:56] halted and at that point it changes from T1 to T12 other times the stock is just immediately halted
+[01:08:04] on a T12 and so this is a somewhat recent example of a T12 so this is a stock that is a recent
+[01:08:13] list to the exchange within the last 90 days and then in one day here goes from a low of $8 a share
+[01:08:22] all the way up to 150 and the next day hits a high of $355 a share and the exchange said no
+[01:08:31] tell us what's going on and so they put the stock on a T12 halt and there's no trading and it's
+[01:08:36] been halted now for two weeks three weeks and sometimes these stocks when they're halted like this
+[01:08:44] if they find out that it's a shell company with no real business operations it will not they won't
+[01:08:49] allow it to resume what does that mean for all the traders they're stuck in it so unfortunately
+[01:08:56] that there's nothing you could do the company will sometimes resume on the OTC market
+[01:09:01] and it'll be back at like two or three dollars a share so you might be able to get a little bit
+[01:09:06] back out but you're not getting much back out so it's scary it's scary situation okay so how can we
+[01:09:12] avoid T12's T12's really worst case scenario we can avoid T12's by avoiding trading a stock
+[01:09:22] up more than 300% with no news that's the most cut and dry way when a stock is up 50%
+[01:09:31] 100% on no news that's still within the realm of this is a technical breakout that could work
+[01:09:36] once it's up 300% 400% with no news starting at risky it is starting at risky so if you just
+[01:09:44] focused on trading stocks with news catalysts you would almost entirely eliminate T12 halt risk
+[01:09:52] however we do see times or stocks go up without news and they do provide good opportunities so
+[01:09:57] I have kind of two rules of thumb one don't over stay or welcome get in get out get green don't
+[01:10:04] over stay or welcome if it's moving it doesn't have news but it's moving quickly going up 100%
+[01:10:09] 200% 300% even a 400% I might still trade on the front side of the move but I don't over stay
+[01:10:14] my welcome so that means I'm done pre-market I'm not over trading it during regular trading hours
+[01:10:19] and I'm not going to hold those stocks during halts because those halts could turn into T1 or even
+[01:10:25] to a T12 so I'm just going to get in get out be really quick about it and asking myself is this a
+[01:10:34] stock that is a foreign listed company is this a stock that has a higher likelihood of getting
+[01:10:38] halted in which case you know I should maybe just keep my hands free of it and leave it alone
+[01:10:46] and that's worked well for me over the years a couple other examples here this one went from
+[01:10:52] four dollars on nicene your stock exchange all the way up to thirty eight dollars a share
+[01:10:57] resumes back down at twelve they turned the circuit breaker halt into a T1 pending news
+[01:11:03] didn't turn into a T12 but turned into a T1 so usually T1 halts are like 30 minutes
+[01:11:09] sometimes a couple hours if they have to wait for the company to give them news
+[01:11:13] T12 halts can last for days at the sort of low end but weeks and months at the long end
+[01:11:20] and if you were a short seller remember this if you were a short seller and you borrowed shares
+[01:11:25] and you're holding the stock short you still have to pay your locate fees every day while the stock
+[01:11:31] is halted so if it eventually resumes at a dollar but you had to pay borrowing fees for six months
+[01:11:40] not you you know that that I don't know that doesn't feel like a great situation
+[01:11:45] so just something to be aware of there okay so now I'm going to show you this live archive again
+[01:11:51] we'll jump back into this one just so you could take a little peek at it and then let's see where is it
+[01:11:58] just had it here on one of my monitors got a lot of pop outs so here we're showing a
+[01:12:04] 12 dollar 28 cent resumption okay so we resume and we resume we'll just back that up for one second
+[01:12:12] we'll just back this whole thing up okay so on this stock I ended up in this stock first was halted at
+[01:12:19] 10 dollars and sorry nine dollars and 52 cents apologies that this resolutions a little bit low
+[01:12:26] and the resumption is showing 10 52 10 42 sorry so it resumes it's up 135 percent
+[01:12:34] and I am fully a strategy here called dip and rip and so as soon as it resumes trading
+[01:12:41] and we're watching the resumption I already have my hand on the buy button for a 10,000 share order
+[01:12:46] I'm I'm ready to jump in this thing and so right there I punch it I'm in 20,000 shares
+[01:12:54] it goes up to 1144 and it halts up all right so it's not halted yet but it's starting to get a
+[01:13:02] little thicker there are the way it's stacked up and now there's like 70,000 shares on the bid 80,000
+[01:13:07] it's gonna halt up so it halts up and now I've got a wait for the resumption okay so now I sit
+[01:13:15] I wait for the resumption and it's gonna be five minutes so this this five minutes by the way
+[01:13:21] does give me some time to do a little bit of my own due diligence I can go check the news headlines I
+[01:13:26] could check the filings you know as I'd like if I wanted you know dig deeper I certainly could but
+[01:13:33] you know just for the time being I had that just kind of getting oriented so it ends up showing a
+[01:13:38] $12 27 cent resumption which is great I'm in at $11 dollars a share with 20,000 shares so this is terrific
+[01:13:44] so now I'm watching the resumption I put another order I'm ready to go looking for a squeeze into
+[01:13:49] another halt I'm thinking that we're gonna get a short squeeze on this so right now we've got about
+[01:13:55] three seconds left to resumption on the 10-minute long halt so right here we resume and I end up taking
+[01:14:04] a little profit off the table it sort of dips for a second and then it squeezes all the way up to 1334 and
+[01:14:09] I take more of it off the table up here is it oh it's thinning out see that's a false halt it thinned
+[01:14:15] out and then right away comes back up and so these are the sort of things you pay attention to when
+[01:14:22] stocks are halting again if you trade pre-market 7-AM to 930 you don't have to have to worry about
+[01:14:28] circuit breaker halts but if you start trading during regular hours and certain markets definitely
+[01:14:32] call for it you will want to know how these work so and I'll also just mention that as we get into
+[01:14:40] strategies and scaling I will discuss strategies specific to trading stocks are halted doing dips on
+[01:14:47] halts down doing dip and rip on a halt going up with a ton of live trading archives so there's
+[01:14:53] going to be more to come on that it's not my bread and butter strategy it's not the number one
+[01:14:57] strategy that's my favorite so it's not the primary focus of day trading the basics but but certainly
+[01:15:04] it's good to understand halt because the strategy that I am going to teach you at the end of this
+[01:15:09] class here or course day trading the basics you could trade around halts and that that could work just
+[01:15:16] fine okay so with that we're going to continue on to the next section

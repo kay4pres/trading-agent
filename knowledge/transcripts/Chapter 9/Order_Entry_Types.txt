@@ -1,0 +1,1153 @@
+# Chapter 9 Order Entry Window and Popular Order Types_audio.wav
+# Transcribed: 2026-06-29T21:20:06.036616
+# Duration: 63.8 minutes
+# Model: faster-whisper tiny
+
+[00:00:00] Right, so we're going to go ahead and jump in here in this chapter, I'm going to walk you through how to use the order entry window while you're trading and I'm going to walk you through the different order types that are popular among active traders.
+[00:00:12] So at every broker, you obviously have the ability to enter your orders. Now the order entry windows vary a little bit from broker to broker. So some platforms have order entry windows that are very easy to use others are a little bit more complex.
+[00:00:29] I'm going to pull up a couple examples of different order entry windows for this class. You could see these are a little windows are getting a little funny, but you can see here light speed on the left and then we've got dash trader on the right. I can also pull up we both so we can compare with we both order entry window, which takes up a lot more space, but in any event this chapter is about teaching you how to enter your orders and making sure you
+[00:00:59] understand the different settings. So something that trips up a lot of beginner traders is that certain depending on how you
+[00:01:10] select these different from these different drop downs, what you might find is that your order, you'll send it and nothing happens. And that's incredibly frustrating. You're trying to buy a stock or worse, you're in a stock, you're trying to sell and your order is not going through.
+[00:01:24] And you're like, is it my broker? What's the issue? And usually it's because one of these settings is not correct.
+[00:01:30] Certain orders only work during certain times of day. So if you're using an order type that doesn't work during the time of day you're trying to use it, it just the order won't get placed.
+[00:01:43] And brokers are not very good at telling you why your order is not being placed. That's incredibly frustrating.
+[00:01:49] So you place an order. It doesn't go through. And they don't tell you why it's not going through. So you're just left there twiddling your thumbs trying to figure out what do I do.
+[00:01:56] And if you're already in a position, you're trying to sell your, you know, when you've got profit, you want to lock it up. And when you can't, you're incredibly frustrated.
+[00:02:04] So that will hopefully not be you after going through this chapter. And as always, what we're doing is we're working towards that goal that by the end of day trading the basics, you have a strategy that you can be an implementing in your own trading.
+[00:02:18] As always, in the simulator before trading a real money. And so, of course, we have to understand stock selection. We've got to understand fundamental analysis, technical analysis, but understanding how the platforms work and how these different windows function is an important part.
+[00:02:34] So this is a little bit of training on the software, but also a little bit of training on how these different order types work in the market.
+[00:02:44] Okay, so we're going to begin here with the three most popular order types, which are market orders, limit orders, and stop orders. This is a window right here from light speed trading.
+[00:02:58] And so, a pull-up light speed here on a monitor. So this is what light speed. It's just a blown up version of this window right here. So if I click right here under type, it gives me a drop down where I can select different order types.
+[00:03:11] And you can see there's actually a lot of different order types that you can use at light speed. Now, some brokers don't have very many order types at all. Some brokers have two options.
+[00:03:22] Three options. Market order, limit order, and stop order. And so I'm going to cover those three basic ones because they are the most common.
+[00:03:30] And then, in strategies in scaling, we dive a little bit deeper into some of the more advanced and complex order types that you can use at some of the more sophisticated brokers.
+[00:03:41] But they're not available at every broker. So let's go ahead and jump in. Let's start with the explanation of the difference between a market order and a limit order.
+[00:03:51] Some of you may already be familiar with this, but for others, it's brand new.
+[00:03:54] A market order will execute immediately at market prices. So if you ever heard the joke of going to a restaurant, and you see something that's market price.
+[00:04:05] Oh, that's a little scary. You don't exactly know what the price is. The lobsters at market prices, that $100 at $200. I don't know. That's true with the market. If you buy something at market price, technically you're saying, give me the shares at any price.
+[00:04:23] Now, the market makers and a brokers have an obligation to give you the NBBO, the national best bid or best offer execution on your order.
+[00:04:37] However, if we pull up, let's see, we'll pull up forward here just for the sake of argument.
+[00:04:43] So in the case of Ford right now, if I did a market order to buy 5,000 shares, what price would you expect that the shares would get filled out?
+[00:04:53] In the case of Ford, and I'll just do 100 shares and no reason to turn more commissions than necessary.
+[00:04:58] If I do this order right here, and we're going to switch from limit to market, I'm going to execute immediately at current market price, which is 1368.
+[00:05:08] So that's the order, that's the price that my shares are filled out. Now, they could have filled at 69, 771, 72, 73, 74, 75.
+[00:05:16] And I bet if I had done an order for 300,000 shares, it would have done that. Why?
+[00:05:22] Well, how many shares are for sale at this current market price? And we can see that, and this is going to get into reading the level 2.
+[00:05:30] But we can see that based on the number of shares that are available right here, and you always add 200.
+[00:05:36] So 28, this is 28,200 shares. This is 8,500 shares, this is 4,200 shares, and so on and so forth.
+[00:05:45] They just drop the 200, just to make it easier to read, to not take up more space. Now, not all platforms do that.
+[00:05:52] If we pull up weeble here, let's see, now I can't even remember if weeble does it or not. No weeble does not.
+[00:06:00] So they're actually going ahead and showing you 31,000 shares, 627,000 shares, 8,100 shares. They're going to show you the exact number of shares they're available.
+[00:06:11] And that's fine. Some platforms will, most platforms, will go ahead and abbreviate it.
+[00:06:18] So if I press sell, we would expect that I would sell at the market. And since there's a buyer here at 1366, I would most likely sell to that buyer.
+[00:06:28] And you could see my order got filled there at 13 dollars and 66 cents.
+[00:06:33] So most traders would not use a market order. Why not? Market orders are so quick. Well, there's a couple reasons.
+[00:06:41] The first reason is that a market order can result in a substantial amount of slippage.
+[00:06:48] So if you were trading a highly volatile security, let's say like SMX here.
+[00:06:54] Now, if you do 50 shares of a market order on this, click buy. I'm going to fill it 68.
+[00:07:00] I click, but all of a sudden it's now 77. Now if I click sell, I'm going to fill probably at 58.
+[00:07:06] Click sell. I fill the little bit between the spread. Every now and then that happens. That's nice.
+[00:07:11] But if you do 5,000 shares of this, what's going to happen? Let's say I'm not going to do it.
+[00:07:17] We really money. But let's say you did like 50,000 shares. And you clicked market order to buy.
+[00:07:22] What you've done is you've told the broker buy me 50,000 shares and I don't care the price.
+[00:07:28] But how many shares are for sale on this stock?
+[00:07:31] 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100.
+[00:07:39] So that's from 1580 all the way up to 1685. So in order by 50, 50,000 shares, what do you think would happen with the price?
+[00:07:47] The price would go up because your order is so big. You're buying everyone who's selling.
+[00:07:52] That's called slippage. The difference between the current price when you send the order and the price that you get filled at.
+[00:07:59] And I've seen people who are typically doing 50 shares and then they accidentally have a cat that walks over their keyboard.
+[00:08:07] They type a huge number. They press the buy button and all of a sudden the stock squeezes up.
+[00:08:13] But only for a second. And it usually comes right back down.
+[00:08:17] And so all of a sudden, you're deep into the red. So retail traders generally should not use market orders because they are too risky.
+[00:08:27] But you know what's interesting is a lot of traders who are over at Charles Schwab do use market orders specifically on the thinker swim platform.
+[00:08:37] Why do they use them specifically on the thinker swim platform?
+[00:08:41] Because on the thinker swim platform, they don't have the customized hot keys to make it easy to use limit orders.
+[00:08:49] So let me show you what I mean by that.
+[00:08:51] All right. So let me back this up. So now that you have an explanation of market orders, let's talk about the alternative, which is a limit order.
+[00:09:01] A limit order is an order where you stipulate the most that you're willing to pay for the stock.
+[00:09:10] So a limit order to buy five cents above the current ask price will execute immediately upon sending the order.
+[00:09:20] But you will not pay any higher than the highest price that you put is your limit.
+[00:09:26] So this means if you press it and the stock suddenly spiked up, you might not get your whole order filled.
+[00:09:32] But in my opinion, this is better than getting filled at a much higher price than expected.
+[00:09:38] So if we go back here to this ticker SMX, right now you've got to spread the difference between the bid and the ask of about five cents.
+[00:09:48] 1584 by 1589.
+[00:09:50] But there's not a lot of volume and there's not a lot of buyers.
+[00:09:53] And even just there with about 500 shares that went through, it dropped from 1584 down to 1570.
+[00:09:59] And so if I placed an order on this for 1000 shares and I did 89 and I did it as a limit order.
+[00:10:06] Although it's possible that I could fill my whole order at 89,
+[00:10:10] if in fact there are some sellers that are out there that are not displayed on the level two and that can be the case.
+[00:10:18] What is most likely to happen is that I would fill only 100 shares and then the price would move up to 1590 or 1591.
+[00:10:28] And the rest of my order would just be sitting there waiting for someone to maybe come and sell me shares.
+[00:10:34] So this however is desirable because if on the other hand I, you know, if on the other hand I filled the full 1000 shares, but at a higher price,
+[00:10:45] that's going to throw off the risk to reward ratio on the trade, right?
+[00:10:50] So if we jump onto the whiteboard here, if we think about our classic first pullback pattern, we get a big green candle,
+[00:10:58] and then we get first candle that pulls back here, a second candle that pulls back,
+[00:11:03] while this is happening, what are we doing? We're watching the highs and the lows of these candles, right?
+[00:11:07] So let's say this candle's a doji and then this next candle starts to go green.
+[00:11:11] And so as it pops up right here, we want to be a buyer right there.
+[00:11:17] So let's say that's 15 dollars and 89 cents.
+[00:11:21] We want to be in a 1581, not 1615, not 1625, but with a market order potentially,
+[00:11:31] we could get filled way up at those prices, especially if you press the buy button for a really big, a big share size.
+[00:11:38] So we like to use limit orders instead of market orders.
+[00:11:44] So let me show you an example of a couple of different limit orders.
+[00:11:49] So again, if I go ahead on this and I say, I want to get in right here, I'm going to put the limit at, let's say I put the limit at 72,
+[00:11:58] 70, I'll put it at 50 and 70. I put the buy button here and my order is now sitting and I have to wait for someone to come and sell me shares.
+[00:12:06] I have to wait and wait and wait.
+[00:12:09] So I'm saying I want to buy this at 1570, but that's lower than the current price.
+[00:12:15] So that's a limit order. I'm saying that's the most that I'm willing to pay.
+[00:12:19] All right, what if I cancel that order? What if I say I'd be willing to pay 1595, 1610?
+[00:12:25] Well in that case, if I place this order for one share, what will happen?
+[00:12:29] My order will execute immediately, and I'll fill it the current price, but I would not fill a penny higher than 16.
+[00:12:37] So if it goes to 16 dollars and 10 cents, my order wouldn't fill.
+[00:12:41] Just like it was sitting down there at 1570, my order will just sit there and I'll have to wait and wait and wait.
+[00:12:48] Until usually eventually, I would just cancel the order and I would give up, which is, you know, in that instance, that would be the right decision just to cancel the order and give up.
+[00:12:57] Because if it's not, I don't want to get filled as it comes back down.
+[00:13:01] I'm trying to buy the breakout for the first calendar to make a new high, right? I don't want to fill as it's dropping back down.
+[00:13:06] So sometimes people get a little confused about limit orders, and they'll think that a limit order should do almost the exact opposite.
+[00:13:16] It's saying, instead of, this is the most I'm willing to pay for the stock, you're saying, this is the price where I want to buy.
+[00:13:24] And so that is not how a limit order works.
+[00:13:28] A limit order is a buy order, and you're saying the most, you're stipulating the most you're willing to pay to get in,
+[00:13:35] or the least you'll accept to sell when you get out.
+[00:13:39] So the second you execute the order, if your price is above the current price of the market, your order, like right now, will fill instantaneously.
+[00:13:48] Or if I turn around and I sell two shares down here at 1585 or 1580, my order will execute instantly, and my shares are gone.
+[00:13:59] So limit orders execute immediately when the price of your limit is either above or below the current market price.
+[00:14:08] Now in my trading personally, I don't put orders down here at like 1540, just to wait for it to come down.
+[00:14:16] That's not the way my trading works.
+[00:14:18] You already know that I'm focusing on apex points.
+[00:14:21] So at this moment right here, when I want to get in, I want to get in right away.
+[00:14:26] So I can't put my order in sitting, waiting, waiting, waiting.
+[00:14:29] This is the moment of truth, and when this setup works, it immediately goes.
+[00:14:34] So I'm going to be buying with a limit order, and I'm going to use what's called an offset slightly above the ask price.
+[00:14:43] This is the ask price. The offset means the order is offset.
+[00:14:47] The limit is offset slightly above the ask price by five cents, for instance, like that.
+[00:14:54] So a limit order to buy could be immediately executed as long as your price is above.
+[00:15:01] If the price is below, then it's going to sit, and it's going to wait, and it's going to wait.
+[00:15:05] Limit orders work any time of the day. They work in 24-hour markets, they work in the pre-market, they work during regular hours, they work after hours.
+[00:15:13] So they're the most universal order type to use.
+[00:15:16] You don't have to change your order type because oh, all of a sudden it's 930 and this order's not available.
+[00:15:21] You can use limit orders anytime of the day, which is great.
+[00:15:25] Market orders on the other hand, well that's not exactly the case.
+[00:15:29] So let's just outline again, regular versus extended trading hours.
+[00:15:33] Regular hours are from 934pm, 4am to 930 is pre-market, 4pm to 8pm is after hours, and 8pm to 4am are the 24-hour markets.
+[00:15:44] So, market orders only work during the regular trading hours.
+[00:15:50] Okay, so all of a sudden we've got the 24-hour markets, then we've got 4am to 930.
+[00:15:59] To 4pm to 8pm to 24 hours.
+[00:16:04] So this is the only time when market orders work, and the rest of the time they don't work.
+[00:16:11] So it kind of makes sense in a way if you're an active trader, not to rely on an order type that only works during one window of the day,
+[00:16:21] because if you set up all of your hotkeys, your order scripts to use this order type,
+[00:16:27] then when you try to place that order anytime in the other parts of the day after hours or pre-market, your order won't work.
+[00:16:35] It'll just sit there, it'll just sit and wait and wait and wait, and you won't understand why it's not working,
+[00:16:41] because your broker doesn't communicate that to you.
+[00:16:44] So you're just going to be sitting there waiting for the order execute and wondering what in the world is going on.
+[00:16:49] Now jumping back over to think or swim, as I was mentioning before, with think or swim, here's one of the big challenges.
+[00:16:57] We've got a stock here, forward, whatever.
+[00:17:00] You want to get in it, and you can click buy market, and you can click sell market.
+[00:17:06] Alright, well that's easy enough, so you can buy market and you can sell market.
+[00:17:11] Well, what about limit orders?
+[00:17:14] They don't let you do the offset right here, because they actually don't have anywhere where you can enter the price.
+[00:17:22] See how I have this little window here where I can say, oh, I want to get in this at 1595.
+[00:17:27] You pull up that same stock here, SMX, you want to get in at 1595.
+[00:17:32] You could go here, and you could write, you could press the control or command button, and then you could click here.
+[00:17:40] But that's the only thing you could do, it's pointing and clicking.
+[00:17:43] And unfortunately, pointing and clicking and scrolling like this is very clumsy when you're trying to trade.
+[00:17:49] You're trying to go back and forth between the charts, and then you've got to come over here.
+[00:17:52] You've got to remember, you only can click on this column right here, not in this one, not over here.
+[00:17:57] It can only be right in the middle one, or right in this one, and then which price am I clicking on?
+[00:18:02] It's just, it's not a convenient way to trade.
+[00:18:06] So for that reason, most traders who use think are swim during regular trading hours just click by market or sell market.
+[00:18:13] And I would argue that that's by design because that actually is going to give them the right to give you more slippage on your order.
+[00:18:20] That's more profit for the hedge funds who are filling all of that order flow.
+[00:18:25] So the more market orders that people are executing, the more money they will make.
+[00:18:30] So yes, you could click by ask right here.
+[00:18:33] But in the case of a stock like SMX, if you wanted to get in with, let's say 20,000 shares.
+[00:18:39] By ask isn't going to get you in there. There's only 100 shares for sale.
+[00:18:44] So you would have to click by ask, like 20 times, and each time you click at the ask price moves up a penny.
+[00:18:51] That's not an effective way to get in.
+[00:18:53] Because every time you do that, your order's just going to start stacking up.
+[00:18:56] You'll run out of buying power.
+[00:18:58] God forbid someone comes and executes a huge sell order. They'll take out all your buys and now you're in with 60,000 shares.
+[00:19:04] So you wouldn't want to do it that way.
+[00:19:06] What you would want to do is you would want to buy 20,000 shares.
+[00:19:10] So put the order at 16 dollars and eight cents or whatever.
+[00:19:13] 16 dollars and ten cents. Give it a little offset.
+[00:19:16] And then you send it.
+[00:19:18] And you allow yourself up to eight cents a slippage.
+[00:19:21] And you would say that's acceptable.
+[00:19:23] And when you press the buy button immediately, that goes right to the market and they try to get your shares.
+[00:19:27] So this is the preferable way to enter an order.
+[00:19:30] You could do the same thing here at the ask trader, right?
+[00:19:33] You type in the ticker.
+[00:19:34] You say, oh, I want to buy this. This is how many shares.
+[00:19:36] And this is the most I'm willing to pay.
+[00:19:38] So that's the price I'm going to put in.
+[00:19:40] Can you switch this to a limit order or from a limit to a market?
+[00:19:43] You can.
+[00:19:44] Okay, switch it to a stop order.
+[00:19:45] Yeah, we'll talk about those in a moment.
+[00:19:46] But you don't want to do that.
+[00:19:48] You want to leave it on a limit order.
+[00:19:49] This is one of the ways that we manage our risk.
+[00:19:52] Because if you suddenly get filled with a really bad price, it's going to be a problem.
+[00:19:55] So this is another reason that think or swim is just sort of a subpar platform for day trading.
+[00:20:00] Now, do market orders make a difference when you're buying and selling to hold for several weeks.
+[00:20:05] Maybe not.
+[00:20:07] But if you're trading with big positions, market makers, high frequency trading algorithms,
+[00:20:12] and these institutional trading firms will take advantage of your order.
+[00:20:17] Because they can see your order coming into the market.
+[00:20:20] They can see that you're saying you want to buy this big position.
+[00:20:24] And you'll pay any price.
+[00:20:26] And what they'll do is they'll actually cut in front of your order.
+[00:20:29] They see you coming.
+[00:20:30] They see this, you know, big dumb trader coming.
+[00:20:33] I'm not trying to be mean.
+[00:20:34] But this is what they think.
+[00:20:35] And this is the hedge fund.
+[00:20:36] They see this big dumb money trader coming.
+[00:20:38] And he's, or she's going to throw,
+[00:20:41] it has, you know, big water money says,
+[00:20:43] I want 20,000 shares and I'll pay any price.
+[00:20:46] And so they cut right in front of your order, they buy.
+[00:20:48] And then they sell, they then turn around and sell you the shares that they just bought for a friend.
+[00:20:53] And they're allowed to do that because they don't have a fiduciary obligation to you.
+[00:20:59] And so, unfortunately, and they have an advantage that you don't have,
+[00:21:02] which is these institutional trading firms have access to your data so they can see your order coming.
+[00:21:07] It feels unfair, and it is unfair.
+[00:21:10] But this is the reality of the market.
+[00:21:12] So market orders are not the right type of order,
+[00:21:16] and yet a lot of platforms, not only highlight them,
+[00:21:20] they conveniently kind of dissuade you from using other order types or make it more difficult for you to use other order types,
+[00:21:27] because it's not in their interest for you to use them.
+[00:21:30] Now, over on weball right here, you'll see you can easily choose between a limit order or a market order.
+[00:21:36] Right? So you can just select, select between the two.
+[00:21:39] When you choose market order, you can't stipulate the price.
+[00:21:42] When you choose limit order, you can choose the limit price.
+[00:21:45] Right? That makes sense. The price goes away because when you say market,
+[00:21:48] you're just getting in at market price. So it's any old price,
+[00:21:51] and you might get a good price, or you might get a bad price, you'll probably get a bad price.
+[00:21:55] But it's market price.
+[00:21:58] Okay, so now if we jump back over here,
+[00:22:01] so now you know the regular hours and you know the versus the pre-market after hours and twenty-four hour markets.
+[00:22:07] So during, so during the regular trading hours right here,
+[00:22:15] you can use market orders. So sorry, market orders are allowed,
+[00:22:20] and then they're not allowed after hours or twenty-four hours.
+[00:22:25] Okay, what about stop orders?
+[00:22:28] Stop orders also are allowed between 930 and 4PM,
+[00:22:32] and they're not allowed pre-market after hours or in twenty-four hour markets.
+[00:22:36] Isn't that interesting?
+[00:22:39] So this is a challenge because when we're looking at potentially taking a trade,
+[00:22:43] for instance, this setup right here, we're saying, oh, I'm a buyer at 1589,
+[00:22:47] what's my max loss? It's the low of that candle. So let's say that's 1575.
+[00:22:52] So there's a couple different ways that you can cut this loss.
+[00:22:56] One is by setting a stop order, and I'll show you exactly how that works,
+[00:23:01] and the other is by just manually pressing the cell button when you don't want to be in it anymore.
+[00:23:06] Since a lot of my trading is pre-market, I have to manually press the cell button.
+[00:23:10] I cannot rely on stop orders from my broker.
+[00:23:14] However, even when I trade during regular hours, I still don't use stop orders from my broker.
+[00:23:19] All right, so let's put an order out here for, let's see if we can find a stock that's just a smidge more active right now.
+[00:23:25] Let's see, jzxin.
+[00:23:28] All right, so this stock is a little bit more active, jzxin.
+[00:23:33] All right, so I'm going to buy 100 shares of this at 32 right here,
+[00:23:38] so I'm in at 32, and I'm going to set a stop order at 31.
+[00:23:44] And I'll put it at 30.
+[00:23:47] So the way this stop order works is if an order goes through at $2.30,
+[00:23:54] on the time and sales right here.
+[00:23:57] If an order goes through at $2.30, it will trigger my order to execute.
+[00:24:03] And this is a cell order.
+[00:24:05] So that means if we see 232 break, my cell order is going to execute automatically.
+[00:24:11] But it is a market order.
+[00:24:14] So it'll execute as a market order and it'll get me out of the trade right away.
+[00:24:18] Where will I actually fill?
+[00:24:20] In reality, I'll probably fill at 229.
+[00:24:23] I might even fill a little lower at 228.
+[00:24:25] Now, if I had a big position with a lot of shares, I might fill even lower than that.
+[00:24:30] With 100 shares, I probably won't get much slippage.
+[00:24:32] So slippage, again, being the difference between where you expect to get out,
+[00:24:36] where you send the order and where you actually get filled.
+[00:24:39] So a stop order is nice because I could set this stop here at $2.30.
+[00:24:43] I could walk away from my computer, and if the stock suddenly drops to 230,
+[00:24:47] my order will execute and I will get taken out of the trade.
+[00:24:51] However, the stop orders don't work after hours, and they don't work in 24-hour markets.
+[00:24:57] So if the stock dropped after hours,
+[00:25:00] it dropped in 24-hour markets.
+[00:25:03] My order would still be sitting there.
+[00:25:06] If I had said it as a good till cancel order.
+[00:25:10] I'll talk about good till cancel orders in a moment.
+[00:25:14] So for right now, as we sit here, this is a nice back stop.
+[00:25:20] I've got a nice level of protection here, knowing that if suddenly the stock drops,
+[00:25:24] I don't have to be staring at my computer screen, it will get me out of the trade.
+[00:25:28] That's a great piece of mind, but it only works during certain times of day.
+[00:25:34] Unfortunately, because of that, it's not going to be effective
+[00:25:38] pre-market or after hours.
+[00:25:40] So you could have a stock, for instance, that you hold from all day long,
+[00:25:46] and then at 430 p.m. after hours, suddenly the stock drops to a dollar a share,
+[00:25:53] and you're still sitting there holding the shares.
+[00:25:56] Your stock orders out, but it's not filling.
+[00:25:58] Okay, so here we go.
+[00:25:59] So now we've got 30 on the bid, and our first order went through right there,
+[00:26:02] was 100 shares at 30, and it took out my order.
+[00:26:05] I executed it $2.30.
+[00:26:07] That's a stock order.
+[00:26:08] Now, I can also do what's called a buy stock.
+[00:26:10] So if I was short the stock, for instance, I'm not short the stock.
+[00:26:13] But if I was short the stock, I could use a stock order just the same to cover.
+[00:26:16] So I'm going to put my buy stock at $2.33.
+[00:26:19] So how would this work?
+[00:26:21] It means the second $2.33 goes through on the time and sales.
+[00:26:26] My order will execute as a buy order to buy me these shares.
+[00:26:32] Now, could you do this on a breakout stock, for instance?
+[00:26:36] Could you do this right here where you say, oh, I know I want to get in at 1589.
+[00:26:41] I'm going to do a buy stock at 1589, and as soon as 1589 breaks, my order will execute.
+[00:26:48] You could do that.
+[00:26:49] You absolutely could, in theory, but there's a reason that I wouldn't.
+[00:26:53] The reason that I wouldn't is because when we get into level 2 and time and sales,
+[00:26:58] I'm going to teach you how I use this feed right here to interpret strength or weakness in a stock,
+[00:27:04] based on the amount of buyers I see, based on the amount of sellers I see,
+[00:27:08] based on the quotes I'm seeing that are going through the market.
+[00:27:11] And so I don't want to preemptively put an order out to buy.
+[00:27:15] I want to, in the actual moment, make the game day moment decision that this is where I'm going to pull the trigger
+[00:27:22] and I'm going to send the order.
+[00:27:24] So for me, I would never use a buy stock order to initiate a new position.
+[00:27:29] If I was a short seller, could I use it to exit a bad position, click the buy,
+[00:27:34] and say, if it breaks over 230, get me out of the trade, and I could.
+[00:27:38] But again, since you can only use these orders during pre-market,
+[00:27:43] I'm sorry, during regular hours, there have no used pre-market or after hours.
+[00:27:47] So I just wouldn't be in the habit of using them because the times I'm typically trading they wouldn't work.
+[00:27:53] So right now, let's see, where's my, oh, did I, so did that just execute?
+[00:28:02] Let's see, what was the time?
+[00:28:04] That was 25?
+[00:28:05] Yeah, so that did just execute an order to buy right there at 29.
+[00:28:09] So now I can flip back through and I can say stop order is now, I'll put it at 29,
+[00:28:14] and if an order goes through at 29, there we go.
+[00:28:17] One order went through at 29, my shares are sold.
+[00:28:21] So you can see how these stop orders work, and you could see why they're appealing to traders in theory.
+[00:28:29] But generally, when traders are using stop orders, the order that triggers becomes a market order,
+[00:28:36] which then, again, is favorable to the broker, to the high frequency trading algorithms, not to you.
+[00:28:42] Having said that, you do have stop limit orders.
+[00:28:45] A stop limit order is where you say, this is my stop price.
+[00:28:50] So I'm going to do a buy stop at 30, and my limit is 32.
+[00:28:54] So if I do that, then if I did this for 100,000 shares, let's say,
+[00:28:59] I would be capping the amount of slippage that I could get.
+[00:29:03] Again, though, this is only a valid order between 930 and 4PM.
+[00:29:09] So I don't use it in my trading, I've never relied on them.
+[00:29:13] And I don't think it's really something that does make sense for high speed trading in the fashion that I'm doing, right?
+[00:29:21] So that was a limit order that went through.
+[00:29:23] So rather than being a market order, it was a limit order.
+[00:29:26] So order got filled there, and I could do the same thing back here.
+[00:29:30] I'm going to sell at 29, and the bottom of my limit is 28.
+[00:29:34] Oh, we got to go down to 27 and 28.
+[00:29:37] So now I've got a stop order at 28.
+[00:29:41] So if we see an order that goes through on 28, on the time and sales right through here,
+[00:29:45] then that would trigger my order to execute.
+[00:29:47] Just because $28 is on the bid, that won't execute the order.
+[00:29:51] An actual order has to go through the market.
+[00:29:55] So again, in my opinion, it's important that you understand how stop order is work,
+[00:30:03] and there we go, that's stop order executed.
+[00:30:07] But realistically, in my experience, it's just, they're not something that are helpful for me.
+[00:30:19] And I understand there's a little bit of a contradiction there,
+[00:30:22] because some people will say, well, you know, Ross,
+[00:30:27] isn't using a stop order one of the best ways you could mitigate your risk, right?
+[00:30:31] You buy a position and you immediately set a stop.
+[00:30:34] And I would say, on the one hand that makes a lot of sense on the other hand,
+[00:30:40] there's something that's important to know.
+[00:30:44] Just as I shared with you those high frequency trading algorithms and those institutional traders,
+[00:30:49] can see that big dumb money order coming for, to buy 20,000 shares.
+[00:30:54] You know what they can also see?
+[00:30:56] They can see every single stop order that's alive in the market,
+[00:31:01] placed by retail traders.
+[00:31:03] All right, so now imagine that everyone is placed their stop order down here at 1575.
+[00:31:10] And there's, you know, 150,000 shares of stop orders right down there.
+[00:31:15] If a market maker knew that,
+[00:31:17] would they be so inclined to use their own sell orders to after letting the stock pop up,
+[00:31:24] push it down just for a second so they could buy all of those shares,
+[00:31:31] and then let it come back up, especially on a stock that had breaking news.
+[00:31:36] And then you're out of the trade, and they are in the trade.
+[00:31:40] And that's exactly what happens, and it's called stop hunting.
+[00:31:46] So unfortunately, because of this practice of stop hunting,
+[00:31:50] which again is unfair, that they can see data that we can't see,
+[00:31:54] and that they can take advantage of it,
+[00:31:56] because they don't have a fiduciary obligation to us,
+[00:31:58] even though it feels unfair, it is unfair.
+[00:32:00] This is the structure of the market.
+[00:32:02] Who do you think lobbyists to have all of these rules be in place?
+[00:32:05] It's not retail traders like you and I, we don't have the money to do it.
+[00:32:08] It's the big money traders.
+[00:32:09] So even though it can feel frustrating,
+[00:32:12] if there are some aspects of the market where, you know,
+[00:32:15] big money, smart money, whatever you want to call it,
+[00:32:17] will have an inherent advantage that will never realize.
+[00:32:21] There is a window for us, and a pocket of safety in the market.
+[00:32:25] We certainly saw it on GameStop.
+[00:32:27] Big money lost on that.
+[00:32:28] They lost $10 billion, and retail traders won.
+[00:32:31] Not all, of course, but a lot of retail traders won.
+[00:32:34] And on any given day, when you've got a stock, even like this one here,
+[00:32:37] that's up 67% in one day, you know,
+[00:32:40] we've got stocks have this level of volatility.
+[00:32:43] This is where we have our advantage.
+[00:32:45] Trading stocks have high relative volume.
+[00:32:48] Trading stocks have a catalyst.
+[00:32:50] Trading stocks are priced so low that most high frequency trading algorithms
+[00:32:54] and most market makers and institutional traders
+[00:32:57] aren't going to be really that interested in the company.
+[00:32:59] So that's going to be our edge.
+[00:33:01] But when we try to trade stocks during their wheelhouse,
+[00:33:05] while that's when you're going to get run over
+[00:33:08] and you're going to get caught up in the tricks they play,
+[00:33:11] and it's going to be really frustrating.
+[00:33:13] Okay, so let's see.
+[00:33:16] So we've talked about, well, let me just hide this for a second.
+[00:33:18] So we've talked about buy stock orders.
+[00:33:21] We've talked about sell stock orders,
+[00:33:23] and we've talked about as market orgs or limit orders,
+[00:33:26] and we'll talk about trailing stocks here just for a moment.
+[00:33:29] Now, I also don't use these in my trading,
+[00:33:31] but what a trailing stock would do is it would be an order
+[00:33:35] where you would say, for instance, I'm buying.
+[00:33:39] I'm not with a stock, but I'm buying.
+[00:33:41] You're in the stock with a thousand shares,
+[00:33:43] and then you sent a minus 10 cent trailing stock.
+[00:33:48] And it's a really cool idea.
+[00:33:50] The way it works is that as the price goes up,
+[00:33:54] 10 cents below the current high is where you get taken out.
+[00:33:58] So if it goes from 1589 to 1599 to 1615 to 1625,
+[00:34:03] you're still holding.
+[00:34:04] But if it drops from 1625 down,
+[00:34:07] 10 cents, you're going to get out of your position at $16.15.
+[00:34:12] So it keeps you in as long as possible in theory.
+[00:34:17] But the problem is, and you'll see this when we get into live trading archives,
+[00:34:21] you'll sometimes have stocks like this
+[00:34:23] that even though they're going up, they might dip 15 cents,
+[00:34:25] and then push higher and dip 15 cents and push higher.
+[00:34:28] So you could get stopped out prematurely, right?
+[00:34:30] You set your trailing stop to tight.
+[00:34:32] You get stopped out prematurely, and then it keeps going higher.
+[00:34:35] That's annoying.
+[00:34:36] You still have this issue where market makers can see,
+[00:34:39] and institutional traders can see that you've got trailing stops on it.
+[00:34:42] So they're going to be more incentivized to whip the stock up
+[00:34:45] and down a little bit more to knock you out,
+[00:34:47] so they can pick up your shares and let it go higher.
+[00:34:49] So that's a problem.
+[00:34:50] And then the third problem is that you'll always fill
+[00:34:53] when the price is dropping.
+[00:34:55] So if you're always selling, when everyone else is selling,
+[00:34:58] you're going to get bad prices, right?
+[00:35:01] Now I'm okay with buying kind of right at the apex point
+[00:35:04] where I think everyone else is buying,
+[00:35:06] but I want to try to sell into strength
+[00:35:09] and get out before there's an obvious exit indicator.
+[00:35:13] Because once there's an obvious exit indicator,
+[00:35:16] you're going to get a red candle,
+[00:35:17] and if you sell when everyone else is selling,
+[00:35:19] you're going to get some slippage on your order.
+[00:35:21] So this creates a little bit of a challenge
+[00:35:24] with a trailing stop, because you'll always be selling
+[00:35:27] when it's dipping down, right?
+[00:35:29] You'll always be selling when it's dipping down.
+[00:35:31] So what I would rather do is not use the trailing stop.
+[00:35:33] Instead use a limit order where I'll get into a stock
+[00:35:37] and we'll pull up that SMX again,
+[00:35:41] that one was had a little bit more range.
+[00:35:43] So we pull this up, so I'll get into this,
+[00:35:45] let's just say with one share.
+[00:35:47] And I'll click the, we're going to do a regular limit order.
+[00:35:50] So no stop orders, regular limit.
+[00:35:52] So we're going to get in there, one share.
+[00:35:54] And I'm going to say, I'm going to hold this as long as I can,
+[00:35:57] but when we come up here to 16 dollars and 18 cents,
+[00:35:59] I'm up six cents a share.
+[00:36:01] I'm going to go ahead and I'm going to put my order right there
+[00:36:03] to get out of the best price.
+[00:36:05] So see how that turned to yellow?
+[00:36:07] I have a live order right now at the market
+[00:36:09] at 16 dollars and 18 cents.
+[00:36:11] And so my order will sit there.
+[00:36:13] It's still there at 16 dollars and 18 cents.
+[00:36:15] It's a little hard to see with the yellow over yellow.
+[00:36:17] But it'll sit there and it'll sit there,
+[00:36:19] and if the stock squeezes up to that level again,
+[00:36:21] I'll get out.
+[00:36:22] Now typically a stock's removing higher.
+[00:36:24] I have a hockey that I press to sell right at the best price,
+[00:36:29] which is called the ask price.
+[00:36:31] So right now I'd be at a loss,
+[00:36:33] but I'll put my order at 16 dollars.
+[00:36:35] So now my orders at the ask at 16.
+[00:36:38] And if I'm selling as the stock is going higher,
+[00:36:41] then I get the benefit of getting the best price.
+[00:36:44] And I don't get any slipage on my order.
+[00:36:46] You get slipage on your order when you use an offset.
+[00:36:50] When you say I'll sell at 15,
+[00:36:53] I'm going to sell at 1584,
+[00:36:55] but I'll take as little as 1562 or 1584,
+[00:37:00] whatever, 74.
+[00:37:02] So when you start giving yourself 10 cents of offset,
+[00:37:05] that's where you start losing and slippage.
+[00:37:08] And so what most traders instead would do is,
+[00:37:11] yes, if you're going to buy on the ask,
+[00:37:13] because you want to get in something immediately,
+[00:37:15] that's fine, I do the same.
+[00:37:16] But then I also try to sell at the ask price up here.
+[00:37:19] To get the best exit.
+[00:37:22] So now I put my order up there.
+[00:37:24] This should be $16.10.
+[00:37:26] And if this went to 1620,
+[00:37:28] I could sell a little bit more,
+[00:37:29] sell a little bit more.
+[00:37:30] When we get into hotkeys,
+[00:37:32] what I'll teach you is how I'm actually making that happen,
+[00:37:35] just by pressing keys on my keyboard.
+[00:37:38] I'm not typing anything.
+[00:37:40] I can press just the keys on my keyboard.
+[00:37:42] Now if I buy another 50 shares,
+[00:37:44] I'll do 49, so the math is easy.
+[00:37:47] So now I'm in 50 shares here total.
+[00:37:50] So watch this.
+[00:37:51] That's in order to sell half, 25 shares.
+[00:37:54] That's in order to sell a quarter, 13 shares.
+[00:37:56] That's in order to sell the whole 50.
+[00:37:58] So depending on which order I want to press,
+[00:38:01] I'm like playing the keyboard here.
+[00:38:04] I could be a musician, maybe I could have been,
+[00:38:06] in another world.
+[00:38:08] So in any case,
+[00:38:12] the ability to place orders this quickly is incredible.
+[00:38:16] And you can't do that with most off-the-shelf
+[00:38:21] commission-free brokers.
+[00:38:24] You can with label.
+[00:38:26] They're pretty good.
+[00:38:27] Trade stations, okay.
+[00:38:28] Interactive brokers is so, so.
+[00:38:30] Think or swim, Charles Schwab.
+[00:38:32] You can't do it with them, as you know.
+[00:38:34] You could do it with Dastrater, right?
+[00:38:36] So in any case, just to sort of help you understand
+[00:38:41] the way I would typically be selling.
+[00:38:44] I'm not going to use a trailing stop instead.
+[00:38:46] I'm going to hold.
+[00:38:47] But as I'm in profit,
+[00:38:49] you'll see me put the order out to sell half.
+[00:38:51] And then I'll sell another half.
+[00:38:53] And then I'll sell another half until I'm all out of the trade.
+[00:38:57] Okay.
+[00:38:58] So now let's see.
+[00:39:00] Let me back this up.
+[00:39:02] So I'll hide this again.
+[00:39:07] So now we've gone over our stop orders.
+[00:39:10] Let's see.
+[00:39:12] We've got, right.
+[00:39:14] Talk for a moment about using live stop orders versus using mental stop orders.
+[00:39:19] You'll often hear me say,
+[00:39:21] I'm going to get in.
+[00:39:22] And I know this has gotten a little crazy.
+[00:39:24] You'll often hear me say, alright, I'm getting in here.
+[00:39:27] Let's see.
+[00:39:29] So I'm getting in.
+[00:39:30] We said 1589.
+[00:39:32] I think we said.
+[00:39:33] So getting in at 1589.
+[00:39:36] Stop is 1569.
+[00:39:41] So a 20 cent stop.
+[00:39:43] And sometimes we will say, well, Ross, wait a second.
+[00:39:46] It's pre-market.
+[00:39:47] How do you have a stop order out?
+[00:39:49] And what I'm really communicating is this is my max loss on the trade.
+[00:39:54] It doesn't need to be a live stop order for that to be my max loss.
+[00:40:00] But what it means is that I certainly need to make sure that I have the ability to sell
+[00:40:06] at the price that I want to get out.
+[00:40:08] And so of course I've set up a hotkey script to do exactly that.
+[00:40:12] So with the press of a button, I can exit my full position.
+[00:40:15] Doesn't matter how many shares I'm holding.
+[00:40:18] It automatically calculates it for me.
+[00:40:20] It sends my order.
+[00:40:22] And what type of order does it send?
+[00:40:24] Limit.
+[00:40:25] Sell.
+[00:40:27] Price is bid.
+[00:40:30] Minus.
+[00:40:31] Ten cents.
+[00:40:32] So that means if this starts to drop down.
+[00:40:36] When I see a dip down, I press that button.
+[00:40:38] And I'll be out of the trade right away.
+[00:40:40] Is it possible that I could get a little slippage?
+[00:40:43] That I press it at 1569.
+[00:40:46] And then minus 10 cents that my order executes at 1559.
+[00:40:49] It is possible.
+[00:40:51] Of course that would also be the case if I used a regular stop order.
+[00:40:54] And so what I would try to do is exit before my max loss is realized.
+[00:41:00] To accommodate the fact that there will likely be a little bit of slippage on my trade.
+[00:41:04] I don't hold until my max loss is hit.
+[00:41:07] I hold until I see a valid exit indicator.
+[00:41:10] But when I first get into a trade, I have to think about how much I'm willing to risk on the position if it fails instantly.
+[00:41:17] And so if it fails instantly, I'm saying 20 cents is my stop.
+[00:41:21] And it's not a live stop.
+[00:41:23] It's a mental stop.
+[00:41:24] My max loss where I will sell or stop out for a loss.
+[00:41:29] But the actual sell order would be, it could be a market order if that was your preference.
+[00:41:34] But for me it would be a limit order, not an actual stop order.
+[00:41:38] But it is worth noting that a mental stop order is only as good as the trader who is enforcing them.
+[00:41:43] So if you struggle with keeping losses tight and exiting positions, then using live stop orders may be better.
+[00:41:49] And I would say using stop orders is kind of like using training wheels.
+[00:41:54] It's okay as a beginner, it was small size.
+[00:41:56] It's about keeping you, keeping your risk in check.
+[00:41:59] Our market maker is going to stop on you for 50 share positions.
+[00:42:02] No, probably not.
+[00:42:04] But when you get to the scale of trading with 15, 20, 30, 40, 50,000 shares,
+[00:42:09] that's when you don't want to have those live stop orders out,
+[00:42:13] because you will see that market makers take advantage of you.
+[00:42:17] So there's kind of a line in the sand when I think it's okay.
+[00:42:20] And so it is fine to use as a beginner with small size.
+[00:42:23] But again, since they don't work pre-market 24 hours or after hours,
+[00:42:27] you may just not find the opportunity to utilize them as much.
+[00:42:31] So now let's talk a little bit about time and force.
+[00:42:35] So when we pull up a light speed here, you'll see that I've got my symbol.
+[00:42:40] I've got my shares, I've got my price, and I've got the market.
+[00:42:44] We'll talk about that in a second.
+[00:42:46] And then we've got the type, so limit, market, stop, stop, limit.
+[00:42:52] These, we get into these advanced order types and strategies and scaling.
+[00:42:57] So don't worry about that for now.
+[00:42:59] Order can be hidden visible or hidden, whichever you prefer.
+[00:43:03] I leave mine hidden by default.
+[00:43:05] And then the TIF right here is the time and force.
+[00:43:08] And so if I click on this, you'll see that there's a couple different times in force.
+[00:43:13] I could do day and a day in order at light speed works from the very beginning to the very end of the day,
+[00:43:20] including pre-market and after hours.
+[00:43:22] So a day order works always, a market day works only from 930 to 4PM.
+[00:43:28] But when you place the order, it is good till cancelled.
+[00:43:32] So in other words, let's just say from the sake of argument that I went ahead and I bought this here at 1589.
+[00:43:44] And I said, I'm just going to hold this position.
+[00:43:49] Let's just say, for whatever reason, you said, I'm going to hold this position overnight.
+[00:43:53] But I'm going to put a profit target of, well, let's say,
+[00:43:57] we'll get you two things. You could say, number one, I'm going to hold this overnight.
+[00:44:01] And I'm going to set stop order. I'll just set stop at 1550.
+[00:44:06] And it'll be a stop limit.
+[00:44:10] The offset could be, you know, the limit could be 1540.
+[00:44:15] And I'm just going to hold it in place.
+[00:44:17] The order is good till cancelled.
+[00:44:19] So here's the interesting thing.
+[00:44:21] Let's say over the rest of the afternoon, the stock moves a little higher.
+[00:44:25] And then after hours it starts to drop.
+[00:44:27] It goes down to 1540.
+[00:44:30] It goes down to 1530.
+[00:44:32] It goes down to 15, goes down to 14.
+[00:44:34] It goes to 13, 12, 11, whatever.
+[00:44:36] It goes way down.
+[00:44:38] Your order is still sitting there.
+[00:44:41] It's good to cancelled, but it doesn't work during the after hours session.
+[00:44:46] So now what happens?
+[00:44:48] The next morning, when does your order go into force?
+[00:44:51] 930 AM.
+[00:44:54] And because you put a limit of 15 dollars and 40 cents,
+[00:44:57] what's going to happen is your order will trigger.
+[00:44:59] And you're just going to have a sell order at 1540 to sell your whole position.
+[00:45:04] Well, the current stock is down here at $12 a share.
+[00:45:07] So you're at a huge loss.
+[00:45:09] And you didn't get out of the trade.
+[00:45:11] Your order is up there at 1540.
+[00:45:13] Now, alternatively, let's say I didn't use a limit.
+[00:45:16] I used a stop market.
+[00:45:18] Your order executes as a market order at 930.
+[00:45:21] And it sells you at $12 a share.
+[00:45:23] And you end up losing $3.89 per share.
+[00:45:26] It's a bad trade.
+[00:45:28] It's disappointing.
+[00:45:29] And you lost a lot more than you're planning on.
+[00:45:31] But your order did execute at the next session when that time and force order worked.
+[00:45:37] So one of the things I sometimes am concerned about is when we have a stock that was really strong
+[00:45:45] in the previous session that there may be some people that held it overnight and that their orders will execute right at the 930 opening bell.
+[00:45:55] So that's when your good till cancel orders will start executing.
+[00:45:59] So it's something to be aware of.
+[00:46:01] Sometimes at 930 a stock that was up quite a bit from the last couple days right at the 930 bell.
+[00:46:06] You'll see a big drop.
+[00:46:08] Of course that would be a red candle.
+[00:46:09] But you get the idea.
+[00:46:10] You'll see a big drop as all these good till cancel orders start executing.
+[00:46:14] Now they could be a stop order, but it also could be a profit target order, right?
+[00:46:18] So I could get an SMX right here with 50 shares, for instance.
+[00:46:22] And there we go.
+[00:46:24] So I'm in 50 shares and I could say I'm going to place a good till cancel order at $18 a share.
+[00:46:29] I'm going to press the sell order and I can log out of my platform.
+[00:46:33] I can leave for two weeks on vacation, whatever.
+[00:46:36] And when I come back, if the stock went up to 18, I'll get out.
+[00:46:40] But only if it went up to 18 during regular trading hours.
+[00:46:44] That could be infuriating.
+[00:46:46] Imagine it goes to $100 a share during after hours or pre-market.
+[00:46:50] And then by regular hours, it's back down at 15.
+[00:46:54] I missed the whole chance to take profit.
+[00:46:58] And there was nothing I could do.
+[00:47:00] It's crazy.
+[00:47:01] I had actual sell orders out there.
+[00:47:03] But they didn't work during that time of day.
+[00:47:07] Currently there are not orders that are good till cancel that work during pre-market.
+[00:47:13] So you would have to actually get up and place the order manually.
+[00:47:17] So the day order is at light speed that works any time of the day.
+[00:47:22] Over on, let's see, on Dash Trader, it's called day plus.
+[00:47:27] So a day plus order works all day long.
+[00:47:30] Good till cancel orders work just during market hours.
+[00:47:34] Then you have instant or cancel.
+[00:47:37] Then you've got fill or kill.
+[00:47:39] So the way I use these orders in my trading is there are certain types.
+[00:47:48] There are certain times where I want my order to execute right away.
+[00:47:55] And if it doesn't to cancel.
+[00:47:57] And so for instance, if I'm trading a stock that's moving really quickly,
+[00:48:01] I'd put out a couple by orders.
+[00:48:03] And then the stock jumps over them.
+[00:48:05] And I would be okay with those orders getting cancelled immediately if it didn't fill.
+[00:48:10] Having said that for me, it's not that difficult to go ahead and just press control cue and cancel all my orders.
+[00:48:20] So let's say I have a bunch of orders here at $14 a share.
+[00:48:25] What are we doing here?
+[00:48:27] Why is that order not going through?
+[00:48:29] So I have a lock on this account.
+[00:48:31] I'm not supposed to take a bunch of trades because it's my taxable account.
+[00:48:35] It's a reminder.
+[00:48:36] So I'm just going to put these down here.
+[00:48:39] So let's say I put out all these orders here.
+[00:48:41] They're sitting there.
+[00:48:43] So this would not work.
+[00:48:45] You can't just place orders like that and have them sit there.
+[00:48:48] If it's immediate or cancel.
+[00:48:51] Because then if it doesn't fill right away, it cancels.
+[00:48:54] And with fill or kill, which actually they don't have here,
+[00:48:58] with fill or kill, you either get your full order filled or you get nothing,
+[00:49:02] which I don't use either.
+[00:49:04] I don't find that helpful in my trading.
+[00:49:06] So in an effort to keep things simple,
+[00:49:08] I'm going to use the time and force of just day plus,
+[00:49:12] in this case day or day plus.
+[00:49:14] And I'm not going to complicate things.
+[00:49:16] Now, it is annoying because if you're using,
+[00:49:19] if you're using finger swim,
+[00:49:23] day, you've got to start switching these around to extended hours.
+[00:49:28] So traders often get tripped up here because they're trading during extended hours,
+[00:49:34] or they're trading in the pre-market,
+[00:49:37] and their order types aren't working.
+[00:49:39] So if your order is just sitting there,
+[00:49:41] that's one of the first things to check.
+[00:49:43] Make sure you're not sending a market order
+[00:49:44] and make sure you've adjusted your time and force
+[00:49:46] to allow for pre-market,
+[00:49:48] and you're not locked on a regular trading hours only time and force.
+[00:49:54] Now, this third window right here,
+[00:49:57] drop down, is the market.
+[00:49:59] And the market is where you choose
+[00:50:02] which destination you want to send your order to.
+[00:50:06] So if you recall in,
+[00:50:09] let's see, I think it was,
+[00:50:11] which chapter was a chapter two.
+[00:50:13] Where I was talking with you about different brokers,
+[00:50:15] we talked about the difference between payment for order flow,
+[00:50:20] and commission free brokers versus direct access brokers.
+[00:50:24] So with a direct access broker,
+[00:50:27] you can choose all of these different destinations.
+[00:50:30] You could say, I want to send my order to NSDQ.
+[00:50:33] I want to send my order to NYSC.
+[00:50:35] I want to send my order to BAT to EdgeX to,
+[00:50:39] let's see, what's another one.
+[00:50:41] BATs, EdgeX, NYC.
+[00:50:44] Yeah, those are pretty much the primary ones.
+[00:50:47] And you could do that, or if you're using a,
+[00:50:51] what we would call, you know,
+[00:50:53] more kind of retail-oriented broker,
+[00:50:56] then your only option is going to be to use their default.
+[00:51:01] So here, you can see,
+[00:51:03] I don't even have a choice to choose the route.
+[00:51:06] You could choose the route here.
+[00:51:08] Well, actually, I say that,
+[00:51:11] but it's under here.
+[00:51:14] So you can, you can choose ARCA.
+[00:51:16] Oh, that was another one, ARCA.
+[00:51:18] Or you can choose INET.
+[00:51:20] So ARCA and INET are ones that you could choose here.
+[00:51:24] And these are limit orders, in this case.
+[00:51:26] But with light speed, for instance,
+[00:51:29] I can choose to use,
+[00:51:31] I could choose to use a market order,
+[00:51:34] and I could choose to use an ATHDAQ.
+[00:51:36] It doesn't have to be a limit.
+[00:51:37] These are two separate choices.
+[00:51:39] It's not a fault of DASTrader.
+[00:51:41] DASTrader is just using what's available
+[00:51:45] from that broker.
+[00:51:47] So if the broker doesn't give them a lot of options,
+[00:51:49] then they just provide what's available.
+[00:51:51] Light speed gives you more options.
+[00:51:53] So over here,
+[00:51:54] you can see you don't have those options,
+[00:51:56] which is really frustrating.
+[00:51:58] Now, let's see.
+[00:51:59] I'm going to take up AutoCent for one second.
+[00:52:02] So if we click on,
+[00:52:03] if we look at this right here,
+[00:52:05] they've got this order confirmation here.
+[00:52:08] Let's see.
+[00:52:10] There is a way to remember how to do it.
+[00:52:17] Yeah, I thought it was down here.
+[00:52:24] There is a way that you can choose your route,
+[00:52:30] but for some reason,
+[00:52:32] I'm struggling to remember exactly where it is.
+[00:52:35] So order type,
+[00:52:37] market, limit stop,
+[00:52:39] trailing stop, stop limit trailing stop, right?
+[00:52:42] In the exchange,
+[00:52:43] they default choose best.
+[00:52:46] It's not best for you,
+[00:52:48] it's best for them.
+[00:52:49] But you do get commission free with that route.
+[00:52:52] If you use ARCA or NASDAQ,
+[00:52:54] you have to pay commissions on those direct routes.
+[00:52:57] And they're not going to be faster,
+[00:52:59] really,
+[00:53:00] because they're using the same underlying infrastructure
+[00:53:02] of Think or Swim.
+[00:53:04] So no one uses Think or Swim
+[00:53:06] and then chooses ARCA or NASDAQ
+[00:53:08] because it kind of defeats the whole purpose.
+[00:53:09] If you want to use Direct Access broker,
+[00:53:11] you use a Direct Access broker.
+[00:53:13] And for everyone else,
+[00:53:15] you're at Think or Swim
+[00:53:16] because you want commission free,
+[00:53:17] so you stick with commission free.
+[00:53:19] So anyway,
+[00:53:21] so when it comes to market type
+[00:53:23] with Direct Access brokers,
+[00:53:25] you could choose NASDAQ,
+[00:53:26] NYC,
+[00:53:27] Bats,
+[00:53:28] Ajax,
+[00:53:29] ARCA,
+[00:53:30] or you could choose smart.
+[00:53:31] Now,
+[00:53:32] I don't like using the smart order type,
+[00:53:34] smart route,
+[00:53:35] or smart destination,
+[00:53:36] because I generally don't think it's smart
+[00:53:38] for us as retail traders.
+[00:53:40] That's what's in the best interest of the broker.
+[00:53:42] They often will give you discount commissions
+[00:53:44] with smart,
+[00:53:45] but I don't care about the discount commission.
+[00:53:48] I want fast execution.
+[00:53:50] So this market,
+[00:53:52] and I guess I could say
+[00:53:55] market type
+[00:53:57] slash route destination,
+[00:54:02] is how your order gets sent
+[00:54:04] to the exchange.
+[00:54:06] And it either is going to go
+[00:54:08] in Direct Access,
+[00:54:10] which you've got the choice to choose,
+[00:54:11] which one you want to use,
+[00:54:12] or it's going to go through
+[00:54:14] payment for order flow,
+[00:54:15] which is,
+[00:54:16] again,
+[00:54:17] going to be commission free,
+[00:54:18] but not as,
+[00:54:19] as good for you.
+[00:54:20] So,
+[00:54:21] for I like using NASDAQ,
+[00:54:23] and that's because NASDAQ
+[00:54:24] gets the most order flow,
+[00:54:26] so your order is most likely
+[00:54:28] to find a match faster
+[00:54:30] when using NASDAQ.
+[00:54:31] If I use some of these other
+[00:54:33] slightly more obscure routes,
+[00:54:35] the odds of finding an instant match
+[00:54:38] aren't as high,
+[00:54:39] and because of the
+[00:54:41] reg and MS,
+[00:54:42] and BBO rules,
+[00:54:44] if a destination
+[00:54:46] doesn't have shares for you,
+[00:54:48] they have to reroute it
+[00:54:49] to the destination that does.
+[00:54:50] So, for instance,
+[00:54:51] right here,
+[00:54:52] we see bats
+[00:54:53] is on the Ask at 1598.
+[00:54:54] So, if I send my order
+[00:54:56] here through NASDAQ,
+[00:54:58] at NASDAQ is at 16.
+[00:55:00] So, do I get filled
+[00:55:01] to 16?
+[00:55:02] Or do I get filled to 1598?
+[00:55:04] And the answer is,
+[00:55:05] I get filled to 1598,
+[00:55:06] and an instant NASDAQ reroute
+[00:55:08] my order to bats.
+[00:55:10] So,
+[00:55:12] that's fine,
+[00:55:13] but that reroute
+[00:55:14] and does take,
+[00:55:15] you know,
+[00:55:16] it adds a little bit of
+[00:55:17] potentially
+[00:55:18] and see to your order.
+[00:55:19] In this case,
+[00:55:20] not really noticeable,
+[00:55:21] probably not a big deal,
+[00:55:22] with small order size.
+[00:55:24] Fine.
+[00:55:25] But if you start trading
+[00:55:26] with bigger positions,
+[00:55:27] you may notice it.
+[00:55:29] And for me,
+[00:55:31] I find that,
+[00:55:32] when I am trading aggressively
+[00:55:34] on a stock that's really fast moving,
+[00:55:36] you'll almost always see NASDAQ,
+[00:55:38] has an order at the top of the book.
+[00:55:40] Right now,
+[00:55:41] this is a sort of less actively
+[00:55:43] trade stock,
+[00:55:44] so we don't see NASDAQ here at the moment,
+[00:55:46] but I think if we were looking at something
+[00:55:47] that had a bit more volume,
+[00:55:48] we probably would.
+[00:55:49] Jay-ZXN is going to have NASDAQ there.
+[00:55:51] Just because Ark is at the top,
+[00:55:53] doesn't,
+[00:55:54] that just means they have
+[00:55:55] the biggest order.
+[00:55:56] That's all that means.
+[00:55:57] It doesn't mean that they're
+[00:55:58] the best route.
+[00:55:59] Now, when you're using
+[00:56:01] these types of brokers,
+[00:56:03] let's see,
+[00:56:04] I'll pull up the light speed,
+[00:56:05] routing fees.
+[00:56:07] That charge that give you direct access,
+[00:56:10] you are also going to pay for it.
+[00:56:13] So your charge,
+[00:56:15] based on each share that you execute.
+[00:56:18] Now, we get into this in a lot more detail
+[00:56:20] and strategies in scaling.
+[00:56:21] For the sake of day trading the basics,
+[00:56:23] since you're trading the simulator,
+[00:56:25] this is kind of not an important point of conversation,
+[00:56:29] but just so you know,
+[00:56:31] you do pay
+[00:56:33] to use these routes.
+[00:56:35] And as I had drawn for you in Chapter 2,
+[00:56:39] this is the traditional relationship
+[00:56:41] where it's you,
+[00:56:43] it's the broker,
+[00:56:45] and then the exchange here,
+[00:56:47] and you pay a fee,
+[00:56:50] and so it's 0.003,
+[00:56:52] so it's going to be 30 bucks
+[00:56:53] for 10,000 shares,
+[00:56:55] and that gets passed back to you.
+[00:56:58] But you get very fast execution,
+[00:57:00] or you send your order through to the hedge funds
+[00:57:03] that your broker has a relationship with,
+[00:57:06] and you have commission free.
+[00:57:08] There's no commission,
+[00:57:09] but the hedge fund is essentially scalping
+[00:57:12] a little bit of profit off of your order.
+[00:57:15] So what that means,
+[00:57:17] what are the downsides for you?
+[00:57:19] It's free,
+[00:57:22] but latency.
+[00:57:25] So there's more time to execute your order,
+[00:57:28] because it's going over here.
+[00:57:29] They fill it internally,
+[00:57:30] and then they send it back.
+[00:57:32] Number two,
+[00:57:33] there's,
+[00:57:34] I suppose,
+[00:57:36] so there's some risk with execution,
+[00:57:40] oops, execution price.
+[00:57:43] And this is a little bit of,
+[00:57:45] there's some debate over this.
+[00:57:48] My argument is that,
+[00:57:50] because your order is taking longer,
+[00:57:52] your execution price will suffer.
+[00:57:54] What they're saying is that,
+[00:57:57] they actually based on when they receive your order,
+[00:58:00] they check the NBBO,
+[00:58:02] and they give you a slight improvement on that price,
+[00:58:06] even if it's just by a fraction of a penny,
+[00:58:08] which again,
+[00:58:10] 10,000 shares might be 10 bucks.
+[00:58:12] But they give you a fraction of a penny,
+[00:58:14] a price improvement.
+[00:58:15] However,
+[00:58:17] my feeling is that if you had gotten filled at the same time,
+[00:58:21] so if we had two traders,
+[00:58:23] one at light speed,
+[00:58:24] and one at thinker swim,
+[00:58:25] we both send the order at the same time.
+[00:58:27] I fill 10,000 shares at,
+[00:58:30] you know,
+[00:58:31] 10 dollars and one cent,
+[00:58:33] and then,
+[00:58:34] because your order takes a little longer,
+[00:58:36] by the time you fill,
+[00:58:37] you're filling the 10,000 shares at 10 dollars,
+[00:58:39] and four,
+[00:58:41] zero,
+[00:58:42] four, nine cents.
+[00:58:43] So they're like,
+[00:58:44] oh well,
+[00:58:45] you got,
+[00:58:46] you know,
+[00:58:47] one tenth of a penny,
+[00:58:48] a price improvement versus 10,
+[00:58:49] oh five.
+[00:58:50] Yeah, I guess,
+[00:58:51] but you're in three,
+[00:58:53] four cents higher than me,
+[00:58:54] which a 10,000 shares is 400 bucks.
+[00:58:56] So that feels like,
+[00:58:57] when you're using commission-free brokers,
+[00:58:59] and,
+[00:59:00] you know,
+[00:59:01] you're trading with small size,
+[00:59:02] it's fine,
+[00:59:03] not as big of a deal,
+[00:59:04] but when you start scaling up to bigger size,
+[00:59:07] that's when I worry that it's going to be a problem.
+[00:59:10] Now,
+[00:59:11] when we talk in more depth,
+[00:59:13] in stradges and scaling,
+[00:59:15] there is an advantage with some commission-free brokers,
+[00:59:18] including finger swim,
+[00:59:19] that they advertise that they offer seven times
+[00:59:22] the amount of liquidity
+[00:59:24] that is displayed on the open market.
+[00:59:27] And so SMX,
+[00:59:28] well,
+[00:59:29] let's see,
+[00:59:30] so SMX for right now shows only 200 shares for sale,
+[00:59:34] right there.
+[00:59:35] So if I buy,
+[00:59:36] and we'll just,
+[00:59:37] I'll sell this,
+[00:59:38] I'm just going to buy 500 shares,
+[00:59:39] unless you see where I get filled.
+[00:59:41] So 15,
+[00:59:42] 16,09,
+[00:59:43] we're going to do the order.
+[00:59:44] So I filled at 16,07,
+[00:59:46] 500 shares.
+[00:59:48] Okay,
+[00:59:49] now let's see,
+[00:59:50] let's just go over here for one second.
+[00:59:52] SMX,
+[00:59:53] cancel this,
+[00:59:54] delete,
+[00:59:56] cancel.
+[00:59:57] So,
+[00:59:58] what I'm going to do over here,
+[01:00:00] how many shares are currently displayed.
+[01:00:04] So,
+[01:00:05] right now,
+[01:00:06] I'm going to lose money on this trade,
+[01:00:08] and I'm going to do it just,
+[01:00:09] so you can see what happens.
+[01:00:10] So it shows 16,12,
+[01:00:11] it shows 100 shares.
+[01:00:12] So if I click buy market,
+[01:00:13] let's see what I get filled at.
+[01:00:17] Oh, that's interesting.
+[01:00:18] So they're actually not even allowed.
+[01:00:19] Okay,
+[01:00:20] let's switch to different stock.
+[01:00:22] E,
+[01:00:24] and V,
+[01:00:25] this one's a little bit more expensive.
+[01:00:27] Now,
+[01:00:28] I'm going to just sell that.
+[01:00:29] And, oh no,
+[01:00:30] see,
+[01:00:31] actually,
+[01:00:32] I think this one's a problem too.
+[01:00:34] Well,
+[01:00:35] so maybe we don't have a good,
+[01:00:36] a good example right now.
+[01:00:38] This one's pretty stacked.
+[01:00:41] Terry and G,
+[01:00:43] that one's too cheap.
+[01:00:44] That's not going to work.
+[01:00:45] FGL.
+[01:00:46] This one,
+[01:00:47] I would guess this one might not be.
+[01:00:49] I think our swim tends to block trading
+[01:00:52] in some of these highly volatile securities.
+[01:00:54] You can,
+[01:00:55] you can do it a wave or,
+[01:00:57] but,
+[01:00:58] anyways,
+[01:00:59] I'm just going to see if they even allow trading on this.
+[01:01:01] I'm going to put my order for 91.
+[01:01:03] Yes,
+[01:01:04] he says opening transactions must be placed with a broker cost.
+[01:01:07] So in any case,
+[01:01:09] all of that was going to show you that my,
+[01:01:12] my guess is that if I've tried to buy 5,000 shares at 1499,
+[01:01:16] for instance,
+[01:01:17] that I would probably fill all of them at 1499.
+[01:01:20] Because,
+[01:01:21] I think our swim advertisers,
+[01:01:24] that they offer seven times the shares,
+[01:01:29] versus the quoted,
+[01:01:31] the displayed quote.
+[01:01:32] This is the displayed quote.
+[01:01:34] So they're offering seven times that,
+[01:01:36] because of the way they do wholesale,
+[01:01:38] the way the hedge fund works to fill your order.
+[01:01:41] So that is a potential advantage
+[01:01:44] to using these brokers,
+[01:01:46] but I'm not convinced that it outweighs
+[01:01:49] the cost associated with latency.
+[01:01:53] So again,
+[01:01:54] I don't want to go too,
+[01:01:55] too deep on routing.
+[01:01:57] We've talked about it a little bit in general terms.
+[01:02:00] For the sake of trading the simulator,
+[01:02:01] it's not something you really have to worry about,
+[01:02:03] but in chapter six of Strages in Scaling,
+[01:02:05] we do dive into this in quite a bit of depth,
+[01:02:09] and I really pull back the curtain on how this whole system operates.
+[01:02:12] And some of the more advanced order types that I use
+[01:02:15] to try to stay one step ahead of the predatory algos
+[01:02:19] that try to front run large orders,
+[01:02:21] and my orders at times are large.
+[01:02:23] So I've got to be a little bit more mindful about it.
+[01:02:25] But as a trader with smaller size,
+[01:02:28] kind of breaking the ice,
+[01:02:30] this is probably deeper than we already need to go,
+[01:02:33] right?
+[01:02:34] You're using weed bowl,
+[01:02:35] you're using trade station interactive brokers.
+[01:02:38] You're trading 500 shares.
+[01:02:40] You're trading a thousand shares.
+[01:02:41] It's fine.
+[01:02:42] It's not going to be a big issue.
+[01:02:43] You start trading 10,000 shares.
+[01:02:45] Well, then let's talk about it.
+[01:02:47] So for right now,
+[01:02:48] if we just back this up here,
+[01:02:51] understanding the time and force is important,
+[01:02:55] because you will notice that if you've got the wrong time and force set,
+[01:02:58] your order will not execute.
+[01:03:00] Understand a difference between live stop orders and mental stops.
+[01:03:03] That's important.
+[01:03:04] You'll use mostly mental stops in the simulator.
+[01:03:07] It's important to understand the different type of stop orders,
+[01:03:10] by stop, cell stop, trailing stop,
+[01:03:13] and how to use either stop limit or stop market order.
+[01:03:16] You know extended hours.
+[01:03:17] We've already talked about that,
+[01:03:19] and you understand the difference now between these popular
+[01:03:21] order types of market versus limit orders.
+[01:03:24] This puts you in a really good position.
+[01:03:26] And now,
+[01:03:27] we've scratched the surface and gone a little deeper on
+[01:03:31] routing destinations and the different market types that you can use
+[01:03:35] to send your order out to the market.
+[01:03:38] And so that's going to add a little food for thought for the future.

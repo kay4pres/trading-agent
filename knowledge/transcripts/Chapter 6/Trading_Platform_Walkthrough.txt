@@ -1,0 +1,290 @@
+# Ch6-Trading-Platform-Walk-Through_audio.wav
+# Transcribed: 2026-06-29T21:13:45.928400
+# Duration: 44.1 minutes
+# Model: faster-whisper tiny
+
+[00:00:01] Okay, so we're going to go ahead and jump in here with chapter six, the trading platform walk through this section of the class is really exciting for me
+[00:00:09] Because this is where we get to start to get into kind of the nitty gritty of how to set up your trading software to maximize on your ability to capitalize on these opportunities
+[00:00:21] Because the software is the tool that basically obviously connects you to the market and it's easy to underestimate
+[00:00:30] How important it is to get the settings right on this tool when you set it up the right way you've got your workflow
+[00:00:36] You've got your your hotkeys the the the layout just the color spectrum all of that makes it so you can make decisions quickly and as active traders
+[00:00:47] That's exactly what we want to be able to do so this is also as we continue on with chapter six, seven eight and nine
+[00:00:53] We're going to be what I'm going to walk you through how to use this software how I lay it out and I'm also really excited because soon
+[00:00:59] We're going to get into level two and tape reading which is again one of those kind of nitty gritty things
+[00:01:05] But super important for your ability to see those entry indicators and those exit indicators before other traders because you'll see it on the level two before you see it on the candlestick chart
+[00:01:18] So all of chapter five was technical analysis and that was some really important stuff building your foundation to be able to understand the charts
+[00:01:27] Have a read those candlestick patterns the individual candlestick shapes the multi candlestick patterns and they're very important in terms of establishing context for the current price action right now
+[00:01:39] But once you've established context and you're sort of developing a bias like okay I want to buy this for the next leg up
+[00:01:46] Then that's when you've got to actually get into the software to be executing those trades
+[00:01:52] And that's where tape reading level two hockey's understanding how all that work is going to come to play all right, so we're going to get started here
+[00:02:00] And this trading platform walk through is sort of broken up into a couple chapters as I go through sort of section by section of the software and we're just going to start kind of with the top which is with your account information your balance is your buying power positions window and your opening closed orders window
+[00:02:19] So this is going to give you a good a good understanding of basically sort of level set how I use the software and you know, of course, if you want to make some adjustments to what's comfortable for you by all means you should do what works
+[00:02:34] But I think this is going to be a really good starting point for you.
+[00:02:37] Alright, now I will also say it's important to make sure you size the platform to the strategy that you're trading right so for those of you who maybe are using a mobile app
+[00:02:50] I'm going to say you're over here if you're trading on a mobile app this is the Robinhood trader this is the Reddit trader it's it's hard for you to win the tour to France with this little guy
+[00:03:03] When when you've got someone else over here on well I guess it's not sort of front on a mountain bike but you get the idea so I want to make sure you're using the right tools and I'm not trying to discount Robinhood is a broker entirely because if you are using Robinhood and you're using it on your desktop that's certainly is a lot better than being just on your mobile app on a phone.
+[00:03:23] But if I'm going to be honest when I look at all the traders that were you're trading who have ever earned a hundred k badge a 500 k badge a million dollar badge or higher.
+[00:03:34] They're not using mobile apps they're trading on desktop software they're taking it seriously.
+[00:03:41] They've got you know their main computer maybe one or two external monitors and some of them of course have more.
+[00:03:47] But you need to kind of think of this as a business and make sure you're using the right tools the right equipment for the performance that you're looking for.
+[00:03:57] Okay, so if you're currently using a one of these types of and mobile apps I'd like to get you at least to hear and if we can get you up to hear that will be better.
+[00:04:07] But naturally as we analyze the pros and cons of the different brokers which we talked about in chapter I think was chapter three.
+[00:04:15] You want to it's good that you guys have a lot choices you've got commission free brokers you've got brokers that do charge commission you've got international brokers you've got you know there's just there's so many choices and that's good you want to have choices.
+[00:04:29] So you may right now decide to use a commission free broker which might be sort of in between these two because there's a lot traders to do really well with commission free brokers.
+[00:04:40] But they're also not institutional level trading brokers you know they're not for really people trying to move millions of dollars in and out of the market relatively quickly.
+[00:04:52] You know you can do well in this area and and I'll say you probably could do okay down here as long as you really had a good a good sense of.
+[00:05:03] How to manage risk and which stocks you want to trade and which ones you want to avoid completely.
+[00:05:09] Okay, so I'm going to walk you through how to read the account info window whether you're using a simulator you're using production I'm going to walk you through a couple different platforms here so I'm going to jump out of this for a second.
+[00:05:24] And I'm going to pull up two platforms kind of side by side and we'll compare the two so on the left here I'm going to put my the software that I've been using for a long time which is light speed trading and on the right I'll use I'll have thinker swim.
+[00:05:45] Okay, so thinker swim oops I'm going to hide this for a second thinker swim since I haven't taken any trades here I'm going to have to go and just buy something just with like one share whatever.
+[00:05:59] Two shares, so I'll just do buy ask and then I'll go sell ask okay so little 42 cent trade okay so that's fine this is things very volatile right now anyway so now if we go over here when you first log in this is where you're going to see your positions on I think or swim.
+[00:06:25] But we'll look at look at light speed first so the way I have this set up you can go light speed has a account balances window which I don't really use it's your account summary window it just shows you the total amount of profit that you have and you're starting balance coming into today.
+[00:06:47] Max and your day buying power honestly that's not even correct.
+[00:06:53] Unless it's the max and your day buying power I used but I don't even think that's correct so I'm not sure what that is but.
+[00:07:01] It'll tell you the amount of buying power that you have it'll tell but just this account that I'm in right now is a retirement account so my cash balance is also the amount of buying power I have I do not have leverage.
+[00:07:15] In our retirement account if you have leverage if you've got a regular $25,000 account for times leverage then you're buying power will be $100,000 for instance so this will show you sort of the basic details of your account and you can see the same thing if you went into let's see so I'm going to just.
+[00:07:36] To do the privacy so it'll show you a 30,000 dollars in the account so that's my account balance and this is also a retirement account so I do not have any leverage in this account so just a regular regular margin settlement margin only.
+[00:07:53] Now once once you log in for me I guess I don't know this is just the way I've kind of been I don't really I don't use this at all this isn't this isn't a helpful window for me I understand for some people you really want to keep a close sign your account balance so you know if that's important to you then you can you know you can do that and you might be able to go into settings here and you can change some of things are included so.
+[00:08:23] It looks like it shows you your buying power let's say equity so if we add equity that one went to the bottom so we're going to move it to the top like that we're going to click save yeah that's not correct so maybe that's that's a different I was trying to see what account balance would be overnight buying power.
+[00:08:57] Start of day me is okay anyways you could move this around if you want but for the most part I'm I don't personally use this window and I don't use it in and think or swim either you could use it and you know pay attention to it but for the most part I just have that turned off and I don't even see what my.
+[00:09:18] my piano is and I don't find it helpful to see my piano on the year course I don't really use think or swim but I still don't find it helpful to see that it's just like not necessary to me so account summary that's going to be kind of up to you if you feel it's necessary but no doubt your positions windows going to be important.
+[00:09:36] So for me the way I have this laid out is I've got symbol position size my cost basis my open piano my realized piano and that's all I have I go into the settings and this was important to me.
+[00:09:52] Let's see under display start sorry under style I went in here and I chose aerial bold 12 if you if you showed me my piano in a different font I would notice I'd be like what are you doing this is not this is not look right so you know I I'm very particular that in all platforms I want an aerial bold 12 that's what it has to be.
+[00:10:21] I can see it easily this is just like super super helpful so aerial bold 12 done all right so I saved that and you can add more columns if you want to add more columns but this for me is really all.
+[00:10:37] This is all that I need right so if I take a position and I'll just you know by well I'll buy something I've already traded before so I'm not adding another ticker to my piano.
+[00:10:49] AUD so I'll just buy you know one share this so one share there bought it so now what you're going to see right here is I'm going to have my piano right it's going to be an open piano and right now it's a small loss but when I'm in the trade I can see how much I'm up and how much I'm down.
+[00:11:08] So the way my workflow is that once I'm logged in I'm trading at Westock I like I'm watching my eye is right here most of the time.
+[00:11:17] So remember this is my trading monitor and then I have right above it this monitor here so this same ticker would be on here and I'm looking at this and then back down at my level two and then this and my level two and when I'm looking for is all right.
+[00:11:35] I got dialed in on this pattern perhaps looking for first one minute candle to make a new high or something like that right I'm kind of that's what I'm focusing on so I'm looking at that and then right here that's where I'm watching and I'm expecting as that candle makes a new high to see volume coming in.
+[00:11:53] And so as I see that volume coming in I see the green on the tape and this is the long tape here when I see that green that's going to tell me okay I'm going to go ahead and jump in.
+[00:12:03] So then I get in I see the green moving higher so I'm like this is great and then say maybe I'm I'm going to put my order on the ask.
+[00:12:11] So my order right now is on the ask at one twenty two and you can see I have an active order right here to sell one share one twenty two my order got filled as the price moved up with the green on the tape and I booked a profit to sense a share.
+[00:12:27] So you know I'm that that's a small trade but you know that's kind of the way that's the way it works and so over here I want to be able to very quickly see how many shares of my holding.
+[00:12:41] My average cost how much am I up or down right here my realized PNL you know once I sell a position it's going to change from open PNL to realize PNL because now I've sold.
+[00:12:53] But you know if I see I have a huge open PNL that's also going to be a reason for me to think all right I should probably take a little off the table and and sell some but at the same time if there's not a valid exit indicator.
+[00:13:06] Just because my PNL is big doesn't mean I have to sell right if the stock is strong and it's moving higher.
+[00:13:12] Let it keep squeezing maybe take a little off the table if you really want to but you want to try to capture as much as you can from those winners.
+[00:13:19] So we don't want to cap our winners but we do want to cap our losers so if I'm in a position and it's going down and I see this negative 500 negative 700 then I'm just going to bail out immediately.
+[00:13:30] And it's very easy for me to see what my average price is how many shares I'm holding and then what's the level two here there's a 10,000 share buyer on the bid 120 I could sell 10,000 shares to them right there if I was in a 10,000 share position so that's going to make me feel comfortable jumping out.
+[00:13:47] Now the tape is from top to bottom so the newest quotes are at the very top and the older ones are down here.
+[00:13:57] However some platforms if you click it it'll flip it others you have to go into the settings to flip it but it should read from top to bottom so the newest quote is right here.
+[00:14:10] And the reason that's important is because you've got your level two right here and I want to be keeping my eye right here because when you've got 10,000 share seller here if you see 10,000 shares a buying go through right here that seller's good disappear so these are really connected.
+[00:14:26] There's a relationship between the level two and the time and sales we're going to get into that more when we get into tapering.
+[00:14:31] So this is how I have this set up now something that I've done in the past which isn't a bad idea is.
+[00:14:38] I will actually move this column over like that and I'll do that so I can focus not on how much I'm up or down on the day but just on each individual trade.
+[00:14:50] That can be extremely helpful for a trader who's dealing with kind of the emotions of being red or even the emotions that come with being green.
+[00:15:00] So you could hide your piano like that you could also just take a little sticky note which I'll sometimes do so I'll just grab a stick note and I'll just put it right over that that section of my screen.
+[00:15:12] And I'll just leave it there like that and then I can lift it up if I need to see you know if I want to check but I sort of hide it for myself.
+[00:15:19] I've talked to a lot of traders who have said hiding their piano for them was a real game changer and I've had periods where I've done it as well.
+[00:15:27] And when I do it I'll hide my piano so I'm not seeing it at all I'm just trading I'm just focusing on doing the best I can and then I get to a point where I say you know what I feel like I'm kind of done you know the last couple trades.
+[00:15:41] I sort of have a sense they weren't that great of course I saw my open piano so I know how much I was up or down I have a guess of where I'm at but I'm not getting fixated on the number right sometimes you get fixated on the number and what ends up happening.
+[00:15:55] is jump on the whiteboard here let's say you know you've been trading all morning and you got yourself this happened to me yesterday I got myself you know green green green green green green green up 21,000 and then you know over stay my welcome a little bit lost 2000 off the top and another 2000 I was at 17,000 and I kept feeling like.
+[00:16:19] Son of a gun sure do missed that for a grand that I had about five minutes ago I'd really like to get back to up 21,000 it was really hard for me to get this number out of my head and this is very common you're not the only one to experience this so now all of a sudden the cup.
+[00:16:38] is half full or three quarters full whatever it is but you're you're really visualizing it and thinking about it as what is missing that used to be there and so if you're someone that struggles with that I would encourage you to try hiding your piano while you're trading and.
+[00:16:55] you may still recognize okay I'm down obviously I know I had a loss on that last trade but you're not tying yourself to a number you know you're not getting fixated on all right I need to make back $3,000 or you know in the case of someone getting started with smaller size maybe it's 300 or whatever the case.
+[00:17:15] I think that that is a great technique you just focus on trading and then you have the sense that things are slowing down and you stop not because of a number but because.
+[00:17:27] sentiment feels like it's cooling off it doesn't feel like it's as hot as it was before and then this is what I do at that point I'll do the big reveal I'll say okay where are you at and I look at it and I'm going to tell you nine at a 10 times I do that I look at it and I'm like nice work.
+[00:17:45] and I give myself a pat on the back and I feel good about that number really it's like and now I'm not thinking about is oh well I I know I had this but now I only have this I'm just like nice work 13,459 dollars that's great was I up 15 grand maybe but I didn't know I didn't see that number so I'm not anchoring.
+[00:18:07] to a number and now trying to stretch back to that number so I think that is really valuable again it's tough because I always say I don't want you to trade your piano right I don't want you focusing just on the number I want you to focus on the process because ultimately.
+[00:18:27] profit or a by product of following a consistent process that is repeatable that you can repeat every single day if you're doing it consistently you're doing it the right way you're following the rules the profits will come.
+[00:18:41] so getting fixate on how much you're up or down each day is sort of a wrong way to look at it if anything you should get fixated on.
+[00:18:48] finding the strongest stock to trade right now today because that's if you follow that process that's where you're going to find the most success.
+[00:18:57] but on the other hand we are we can't completely disconnect ourselves from the fact that we have a goal of producing a little bit of profit and.
+[00:19:08] a measurement of success at least to a start extent is is in your metrics of how much you're making and how much you lose it.
+[00:19:15] so you do want to be able to check in each day and be like where am I at you know my green and my red if you're red 10 days in a row you've got to recognize that and make some changes because that's not going to be sustainable.
+[00:19:26] so I think a good compromise is to not look at your piano until you're ready to be done and then once you look at it you can't trade anymore because now you know.
+[00:19:37] so that's kind of the one important thing is once you look at your piano you have to be done trading for the day you've got to take it off the table and say alright nice work i'm green i'll live to trade another day and that's it so that's something that i think is is really helpful now of course.
+[00:19:55] you know right now that i have this sort of initial goal each day of first hitting a thousand dollars a profit and so i am looking at my piano fairly closely my trading right now because i'm thinking about that first thousand dollars building that cushion.
+[00:20:11] starting to scale up so i'm at a point now where i do look at that piano you know fairly closely and i kind of consider it to be.
+[00:20:20] the thermometer of you know how well i'm performing today and how hot the market is today and when that number is bigger i'm like okay the time it that is a reflection of how well i'm doing and i've got to respond to that and be more aggressive.
+[00:20:33] but i think i'm also to point where it's a little easier for me to separate some of the emotion that comes with looking at that piano.
+[00:20:42] not entirely easy i still feel the emotion but i'm better at not acting on it now over with i think or swim.
+[00:20:49] i have to say that their platform is isn't it's not as intuitive it really isn't.
+[00:20:55] you can go into settings here i would take away mark i find mark to be incredibly distracting it's not helpful for me so i would remove mark i would remove mark change now i'm not using this for really trading so.
+[00:21:08] you never know and then i'll take a trade but we've got quantity we've got trade price and then the other ones are standard so this is this is basically the same thing right here alright so we've got this the stock you trade the number shares and the price and they're they're inverted but that's fine you you get the idea so we can move this over just a little bit get it kind of lined up.
+[00:21:31] so this is how this is about how i would play this out so that way and what i would do is i would actually pop out and detach this window right here and i would keep it kind of in one spot right on the side.
+[00:21:47] so you can see what your positions are and what's really important is that you can see you're working orders and your field orders so i'll show you a little bit more about that in a second now when i'm actually trading with.
+[00:22:00] i'm using or think or swim i'm using the trade and the active trader button here so or this is an active trader tab and what i like about this is you've got these hot buttons you could buy ask sell bid right sell market buy market sell market flat and cancel these are all the orders that i'm using when i'm actually.
+[00:22:20] executing trades and think or swim but the problem with this here is that it's only showing you your p and l on the one stock that you're trading at that moment it's not showing you if you've traded 10 other stocks anything about those and also is not clearly showing you your orders now i'll say that but at the same time if we put an order down here.
+[00:22:47] you will see you know that you've got this limit order here so it kind of shows you that you've got an open order but for me it's not as visual as what i need so.
+[00:23:00] the way i've set up so let me just jump back into the slides for a second.
+[00:23:05] okay so do do do do do do okay so so i've walked you through that and now walk you through the positions window.
+[00:23:13] now most brokers by the way calculate your average as first in first out so this is something i have to cover so what that means is that if you buy.
+[00:23:25] at five fifty and you add at six dollars you'll have it and you add you know a thousand shares a thousand shares you'll have two thousand shares and what's your average price.
+[00:23:36] five seventy five but what some what some brokers will do is when you sell.
+[00:23:44] at let's say six twenty five what it's going to do is it's going to sell the shares you bought five fifty six twenty five for plus seventy five cents a profit.
+[00:23:55] and now your cost basis is going to change to six dollars and it's going to show the only have a thousand shares left but you're at six.
+[00:24:04] so if you sell the rest the rest sell at let's say six twenty five as well.
+[00:24:09] there up twenty five cents so rather than being up fifty cents on the full two thousand shares it sells your first chunk your first block first.
+[00:24:20] and then it sells your second one second so it sells them in these sort of this sort of funny way.
+[00:24:26] now I I understand that you know think or swim and most of these brokers are going to do that.
+[00:24:33] light speed does not do that with light speed it's interesting because when your piano is being calculated right here.
+[00:24:46] then you sell your open piano and as you sell is based on the average cost basis.
+[00:24:54] so if you by a thousand five you sell and are five fifty if your average is five seventy five and you sell and scale out five six twenty five.
+[00:25:03] your average cost basis doesn't change as you as you start selling.
+[00:25:11] accounting. So that could be why, but I don't even think that I have that enrolled on my IRA account
+[00:25:22] because it's a Roth IRA. There's no tax on it. So I think this is just the way it works with them.
+[00:25:27] Now, now I'm a curiosity. Now I'm kind of curious about I think or swim when it comes to a Roth IRA.
+[00:25:33] This is just an issue with a cash account or Roth IRA. So let's go ahead and buy market one share.
+[00:25:38] Oh, come on. So we've got a change time and four. So by market one share, so what's my average cost?
+[00:25:44] It's 1270 right now. So now we've got to wait a few minutes and then we'll come back
+[00:25:49] when the price is different and I'll add another share and then we'll we'll see how it handles the sell orders.
+[00:25:59] Okay, so we'll let that sit for a second. So the way I do the positions window and think or swim
+[00:26:05] is we've got this position window right here and I pop it out. That way right here I can see
+[00:26:13] if I have any working orders very clearly, if I have any fill orders, I can see those very clearly
+[00:26:18] and then I can be trading on this monitor right here. So it's a little clunky. In fact, the way I
+[00:26:26] actually do it is if I am really going to trade with think or swim for real, I create two tabs here
+[00:26:32] and then this one will enter a symbol for TGL, just for example. And I'm going to set this one up the
+[00:26:39] same way. So I've got my level two down here and so I kind of have these look exactly the same.
+[00:26:51] I'll tap that down and I'll go into settings and I'll sort of match up these buttons to be exactly
+[00:26:58] that same way. Actually, let's see, I wonder if I can, no, that's wondering if I could save it,
+[00:27:10] but that's a layout, but it doesn't look like I can. So none of the less, so I would do it like that
+[00:27:15] and then I would have link this stock in yellow, this stock is in green and then I could be watching
+[00:27:20] two stocks at the same time and kind of do it like that. So then over here let's just say I've got
+[00:27:27] whatever Pepsi doesn't matter. So one share of Pepsi by market, so we've got to turn auto
+[00:27:34] send on by market. So now we've got one share of Pepsi and now you see I've got these two positions
+[00:27:40] right here in my PNL. What I don't like about think or swim is you don't have the ability to
+[00:27:47] customize like this font to me is too small. I want to be able to see a little bit more clearly
+[00:27:52] what my average price is. You know what my PNL is over here. So you end up having to use this
+[00:27:58] window to do it. You could just tell that think or swim's a little clunkier. It's just not
+[00:28:03] quite as dialed in. Now there are some third party integrations that some people will use.
+[00:28:09] So they're essentially using software that looks a little more like this to execute their orders
+[00:28:14] with think or swim. But I don't usually like doing that kind of thing because when you create,
+[00:28:21] when you use a third party, if you're in the middle of a trade and all of a sudden the connections
+[00:28:26] lost, you're totally screwed. And I mean, and I traded a level where I'm taking you know on a big
+[00:28:33] position 25,000 shares, 35,000 shares. I mean, these are big positions. If I'm offline for five minutes,
+[00:28:41] if I'm offline for 20 minutes because I've got to call someone or email someone,
+[00:28:46] I could lose 25 grand. So it's just like it's too much for me. So just using the standard
+[00:28:53] think or swim, I think is fine. And you just kind of make the best of it. There are these third
+[00:28:58] party integrations that some people use, but I just don't think it's necessary or helpful.
+[00:29:03] Okay. So now let's look at TTP for a second. So I'm going to add one more share of TTP.
+[00:29:08] So now my average has gone down to 1235. So now let's see what happens when I sell my first
+[00:29:15] single share. My average is now changed as 1201. Do you see how it's sold the first shares first?
+[00:29:25] And now we'll sell the last one. So do you see how that happened? We could do the same thing here.
+[00:29:31] We'll buy one more share. So average cost went from 74, 21 to 74, 26. Now we'll sell market,
+[00:29:39] average cost is now 74, 31. Now average cost is flat. So if I do this same thing on light speed,
+[00:29:49] I'll buy one share here. And then we've got to wait a few minutes for the price to change,
+[00:29:56] but you'll see my cost space is 1205 right now. Okay. So, so that's another thing that's
+[00:30:05] a little bit tough. Now the reason that I really like having this pop out window here
+[00:30:11] is because if I have an order down here to buy, I do not want to walk away from my computer
+[00:30:18] with a buy order that I'm not aware of. I've done that before and it is not good. You don't want
+[00:30:26] to come back and see that you're holding 4,000 shares of a stock because you forgot to cancel your
+[00:30:31] sell order. So by having your working orders up here, you can see it anytime if you've got an order
+[00:30:38] there. Now you can use your hotkey to press Control Q and cancel that order. So Control Q
+[00:30:44] cancels the order and the order's gone. That's by going up to your settings up here, application
+[00:30:49] settings, and then setting up your hotkeys. I have another chapter where we're going to talk about
+[00:30:54] has set those up so that's coming soon. So don't worry about that. All right. So, so I think it's important
+[00:31:00] to have your work more as in field orders here. Your field orders, again, this isn't the way I
+[00:31:07] like to view it. You're seeing a lot of really unnecessary stuff here. I already know it's a stock.
+[00:31:12] I don't need to see that. I can see it's a sell. It's red. The quantity, I need that. The position
+[00:31:17] to open to close, that's not helpful either. So unfortunately they don't make it super easy to
+[00:31:23] customize this area. I don't know why. You could do this, but I don't like that either because
+[00:31:30] it's, it's not as easy to read. So it ends up being a little bit, you get used to what you're
+[00:31:37] used to and that's fine. Strike price, not relevant, expiration, not relevant. We're talking stock,
+[00:31:41] not options. Well, let me shrink that one anymore. The price, and then that was the price I got
+[00:31:49] filled. That's the net price. And then this is the order type. So I keep this, just like that's
+[00:31:58] then I have my positions when to just like that. And I can see very clear that my quantity is zero.
+[00:32:03] All orders are canceled. And at that point I'm comfortable logging out of the platform for the day.
+[00:32:08] All right. So over on, and this is getting into your open close, completed active orders window.
+[00:32:20] So in this area here on light speed, I do it a little differently. Light speed, I like
+[00:32:27] because it's, I can customize it a little bit more. So I'll add one more shared 18. So now my average
+[00:32:34] cost is 1210. And now we're going to sell, just put an order, well it doesn't matter. We'll sell
+[00:32:43] there. See my average cost doesn't change when I sell. It's just the average cost. So once I close
+[00:32:51] the position, it moved TTNP ticker moved, but I usually sort it by biggest gain like that.
+[00:33:02] All right. So on the active order side, I don't think our swim, I'll put an order here at just a dollar.
+[00:33:10] So you see how this is the time, the symbol, the price, the buy side, once again, don't really need that.
+[00:33:16] And then the quantity. This is really helpful for me because this is showing me very clearly
+[00:33:22] I have an open order. I need to be able to see that. But most of the time, I can actually have
+[00:33:27] this window be pretty small because most of the time, I don't really have, there's not too many orders
+[00:33:32] that are even up there. Right? What do I usually have up here? One order? How many orders do I ever
+[00:33:38] have at one time? So if I buy this down here, let's just say at 69, what all sometimes do is I'll
+[00:33:46] use my hot key to put out a profit target order. So actually that key is not working right now because
+[00:33:55] think our swim is tying it up. I'll leave think our swim open for the time being. So I have my hot
+[00:34:03] key order to sell at 69. So my order sits there on the ask, while I wait for someone to come and buy
+[00:34:09] my shares at 69. So I have to sit and I have to wait. Now earlier in the class or in the course,
+[00:34:15] when we were talking about adding liquidity and removing liquidity, and we talked about those
+[00:34:19] rebates you get. You don't get those rebates at a commission free broker, like think our swim,
+[00:34:24] but at this broker, I do. Do you see how it says add liquidity? I got one share for adding liquidity
+[00:34:30] right there. This one down here, I got some shares for adding liquidity. So you get you get paid for adding
+[00:34:37] liquidity. So actually, I do have right here, I can scroll over and I can see that's how many shares I
+[00:34:45] added liquidity on today, 45,000 shares. So 45,000 shares times 0.002 90 bucks. So I actually made
+[00:34:58] back $90 in ECN rebates, which is nice. However, I also traded 214,000 shares. So 214 or 215,000 shares
+[00:35:16] minus 45,000 shares means I removed liquidity on 170,000 shares times 0.003 is you know,
+[00:35:28] $475 or something like that. So I paid for 75 minus 90. I'm still at a pocket, you know,
+[00:35:38] $385 or whatever it is. This is just rough numbers, but you get the idea. So I, whenever I sell
+[00:35:46] on the ask, when I'm selling on the ask, I get the rebate for adding liquidity to the market.
+[00:35:52] I'm adding liquidity to the market and putting it in order out there. And that means if someone
+[00:35:56] else wants to buy, they can buy shares from me. So in any case, when I put my order on the ask,
+[00:36:03] I want to see very clearly that I've got an order sitting there. And we don't have a,
+[00:36:08] I'll do it on AUUD. I don't mind on this one. So I'll do 1,000 shares on this. I'm going to buy,
+[00:36:15] I'll put the order on the bid to buy. So see how the order is sitting there on the bid to buy 1,000
+[00:36:20] shares. So it sits there on the bid and now the price moved up. So I got nothing filled on that order.
+[00:36:27] So I can move the order up one more. This is why I don't try to buy on the bid, by the way,
+[00:36:32] because your order just sits there and you wait. If you want to buy something, you just go ahead and
+[00:36:36] in my opinion, buy on the ask. But if you're in something and you have profit,
+[00:36:42] you can afford to wait a minute to get the best price when you sell it. Usually that's how I
+[00:36:47] feel about it. So as I sit here with my buy order, it's 1,000 shares, and it's possible that someone
+[00:36:53] could come and sell 50 shares. And I'll fill 50 out of 1,000. And then I'll fill another 100.
+[00:36:59] And then I'll fill another 200. And so those orders will sometimes fill slowly. And I'll see
+[00:37:04] I'm getting what I call a partial fill. My order is filling, but it's filling slowly. So I'm still
+[00:37:11] sort of slowly sitting here and waiting. Now this is a great example of a order where I would get the
+[00:37:17] rebate for adding liquidity. I'm being patient. My order is sitting there on the book. But if I don't
+[00:37:21] want to be patient and I just want to buy boom, just like that, I buy and I just filled right there
+[00:37:27] a thousand shares. Now the price has gone up as it turns out. I can sell here on the ask at
+[00:37:33] 122. And if I get out at 122, if there's more buyers, then I'll be able to make one penny,
+[00:37:41] which isn't really super significant. But I'll see that my order is sitting here on the offer.
+[00:37:47] And that conversation from before about rebates, it costs 0.003 to take. And you get a rebate of
+[00:37:58] 0.002 to add. And the 0.001 is the the market maker fee. That's the fee that they charge that
+[00:38:08] they basically get net. So they walk away with profit no matter what. But you do pay more for taking.
+[00:38:16] So, you know, with a broker, oh, looks like my order got filled at 122. And see how it says added liquidity
+[00:38:21] 1,000 shares. So that means on that order I made, so we'll do the math. So 1,000 shares
+[00:38:30] times 0.003 cost $3. It cost me $3 to buy on the ask. But I made $2 in the rebate plus two or whatever.
+[00:38:43] And then of course I made $10 on the trade. So ends up netting me minus $1. And so I'm at $9.
+[00:38:51] Now remember the broker that I charge are used also charges $1 commission to buy or sell each time you
+[00:39:00] press the ticket. So in this case, I'm net $7 after all the fees. So on a trade where I only make one
+[00:39:08] penny a share. My fees and commissions are 30%. Yikes. But if I had just made 10 cents a share,
+[00:39:18] these fees don't change. These fees don't change. So then I would have had $100 a profit minus the
+[00:39:25] $3 in fees. So my commissions would only be 3%. So in other words, you can tell that when you're
+[00:39:34] trading with a broker that charges fees and commissions, there's not a lot of incentive to buy and sell
+[00:39:40] something for one penny a share of profit. You're going to be, I mean, you're not splitting the
+[00:39:45] profit with your broker, but it's darn close. So you know, trading a penny stock at 20 cents
+[00:39:52] and you go, it goes up to 22 cents. Yeah, it's a 10% return, but it's only two cents a share.
+[00:39:57] It's just not quite worth it. So the base fee at light speed is I might be $4.50 a share. For
+[00:40:06] warrior, for members of warrior trading, whenever our members have emailed and asked them,
+[00:40:11] they've given discount commissions down to $2.95 per trade. So they already give you a discount
+[00:40:18] if you're, you know, sort of part of the warrior trading community. Typically, they do. So usually you
+[00:40:23] could ask for that and you would get that discount. Now, because I've been trading with them since
+[00:40:29] 2017 and I do so much trading, I went to them and said, hey, can you give me a bigger discount?
+[00:40:37] And then they reduced it to $2 and then a couple years later I said, hey, can I get another
+[00:40:41] discount they reduced it to a dollar? So, you know, for that reason, it's just, you know, if you're
+[00:40:48] if you're a good customer and you do a trading, then it's fine. So look at how many trades I took today.
+[00:40:54] Oh, wait, it actually doesn't show. So let me do the trade count.
+[00:40:59] Trade count add. So today, I have 128 tickets. All right. So 128 dollars is what they made
+[00:41:07] off of me today. Now the ECN fees, they might get a kick back on that. I'm not sure how that works,
+[00:41:12] but but they at least made $128 on me and today was kind of a slow day if I'm going to be honest.
+[00:41:21] So, you know, if they're averaging $200 per day from me in commissions, that's $50,000 a year.
+[00:41:30] They're doing pretty well. So they're willing to, you know, maybe they have a day a goal of what
+[00:41:36] they want to make each day per customer in order for it to be, to be worth it.
+[00:41:43] Okay. So anyways, so those are my active orders. And then yeah, on my cancel or executed orders,
+[00:41:50] you'll see the time, the symbol, the price, and that's the price that I got filled that. So if I
+[00:41:57] put an order down here to buy one share, you know, it's, it's going to sit there. It's going to
+[00:42:04] wait. Let's see, I'll put an order at $13 to buy. So my order goes through a $12.09. Why to go through a
+[00:42:12] $12.09 and press the order at $13? Well, because it's a limit order and I said that's the most
+[00:42:16] time willing to pay. It's 13. So it just fills me at the current price. And then, of course,
+[00:42:23] I can turn around and sell. So this price right here is showing the actual price that I got in that.
+[00:42:27] And the actual price that got out of, adding liquidity, removing liquidity and quantity. And that
+[00:42:32] for me is what I need. This is exactly how I like it. I don't need anything more than that.
+[00:42:37] So, but it is very important to have active orders separated from cancel and executed orders. You
+[00:42:43] could do that in here by unclicking active. You just unclick it and just show cancel and executed.
+[00:42:51] Boom, that's all. And then this one, the only one we have highlighted is active. Just like that.
+[00:42:58] And so that's now a pretty thorough walk through of my positions window.
+[00:43:02] My active orders window, my executed orders and canceled orders window. And added a little bit of,
+[00:43:09] just, you know, adding a little bit more context around adding, removing liquidity and how I'm kind of
+[00:43:14] executing those orders and using the level two. But we're going to continue on that discussion
+[00:43:20] because in the next chapter in chapter seven, I'm going to walk you through all of the different
+[00:43:27] order types. And you can see there's a lot of different order types that you can use. I'm going to walk
+[00:43:31] through the different routes. I'm going to walk you through the different times and force.
+[00:43:35] You're going to know how to place all of your trades right here. And after we get through chapter
+[00:43:41] seven, we're going to start getting into some exciting stuff. We're going to get into chapter eight,
+[00:43:47] which is level one, data and then chapter nine, which is how to read a level two. So, we've got
+[00:43:53] some really exciting stuff coming next. All right. So, let's go ahead and continue on with chapter seven.

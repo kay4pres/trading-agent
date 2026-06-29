@@ -1,0 +1,776 @@
+# Part 1 Daily Chart Patterns.mp4
+# Chapter 4: Daily Chart Patterns
+# Duration: 57 min | Segments: 6
+
+[00:00:00] Right, so we're going to jump in here with Chapter 4 Part 1 on daily chart patterns, and we're going to begin more or less where we left off in day trading the basics.
+[00:00:09] During Chapter 5 of day trading the basics, I presented the anatomy of a strong daily chart.
+[00:00:15] And I gave you this exact slide, which was a checklist of some of the characteristics that I tend to notice the stocks they make the most money on have on their daily chart.
+[00:00:26] We're going to order this common denominator of elements that are present on the daily charts of the stocks that I do really well on.
+[00:00:34] And so we're going to dive a bit deeper into these elements in today's chapter, in this part one of Chapter 4.
+[00:00:42] Okay, so, and I'll hide my video so you can see this a little bit better.
+[00:00:46] So, number one, it is a fact that the stocks that make the biggest moves on the daily chart tend to have large gaps,
+[00:00:55] or windows where they don't have any resistance. What when a stock is moving, because there's a strong inter-day catalyst like breaking news,
+[00:01:04] the reference point that we get of, well, how high can this go is based on areas on the daily chart where there was previously resistance.
+[00:01:13] So when a stock has a large gap or a large window, with essentially no resistance, that allows for potentially quite a lot of upside, which we really like.
+[00:01:24] So one of the things that we look for on the daily chart are areas with gaps and windows.
+[00:01:29] We also like to confirm that the stock is not approaching any obvious resistance level. This can be a gap or window potentially,
+[00:01:37] the bottom of a gap or window can be resistance, but resistance can also take the form of trend lines that are horizontal,
+[00:01:44] but also ascending or descending coming back down.
+[00:01:50] And I'm going to show you examples of all of this into this class.
+[00:01:53] And number three, the price should either be above the 200 exponential moving average.
+[00:01:57] Or if it's below it, it should have a lot of room to come up to it before it hits that resistance point.
+[00:02:02] Remember, the 200 EMA is a significant support and resistance level on the daily chart.
+[00:02:08] Number four, typically, we want to see that the stock is above its 90 EMA for a long bias and above the 20 EMA.
+[00:02:16] There are instances where we'll have a stock that potentially, you know, had at some point, you know, made a nice move up.
+[00:02:25] But then it sold off quite a bit.
+[00:02:27] And it sold off quite a bit, came all the way down here sort of bottomed out.
+[00:02:31] And if we looked at our moving averages, we just sort of grabbed this.
+[00:02:35] We might see that it's actually below those moving averages.
+[00:02:39] So that means if we have news today and it pops up, you know, not only maybe do we have the resistance of the 200 moving average here,
+[00:02:46] but we might also have the resistance of shorter time frames such as the nine, which tend to, you know, trade a little bit a little bit closer.
+[00:02:55] So if we've got that upside resistance, you know, that is going to create a problem for us.
+[00:03:01] So we like to check, not just the 200 moving average, but also the shorter time frames.
+[00:03:06] Now in a perfect world, the stock has not recently had a big sell off, so it's already trending either flat or slightly up,
+[00:03:15] which means it will be above those short moving averages like the nine and the 20.
+[00:03:19] Now, or reminder, just because a daily chart looks good does not mean that I'll buy that stock.
+[00:03:27] The catalyst for the news is, and this is on an intraday level is what creates the volume and the volatility.
+[00:03:34] The chart gives us context.
+[00:03:37] The chart is a historical record of where the stock has been, and so that gives us context and insight into potential areas of support or resistance.
+[00:03:48] For six, today's volume should be significantly higher than average, which means we have high relative volume.
+[00:03:56] The volume today relative to what's normal for that stock.
+[00:04:00] And the number seven, oh, hi, my video again.
+[00:04:03] A stock having a history of making big moves can be a nice bonus, but it's not required.
+[00:04:08] Now, inversely, we want to make sure that the stock does not have a history of, you know, big rejections or big failures.
+[00:04:17] So if we go back and we see on the daily chart, a lot of huge red candles, you know, then that's also that's part of the history of that stock and that's going to give us some context that, and this is a, you know, a stock that maybe is a little bit tricky that we've got to be a bit more careful on.
+[00:04:31] Now, there is something here that I should point out at the beginning of this chapter.
+[00:04:35] There is a distinct absence of one criteria on here that may surprise you, or maybe you didn't notice it, but this is the, this is what's not here.
+[00:04:45] You did not see me saying that we need to have a very specific candlestick chart pattern on our daily chart.
+[00:04:53] That's not something that I'm looking for.
+[00:04:55] So familiar candlestick chart patterns that you may already recognize first candle making new high full flags, flat top breakouts, flat bottom break downs, ABCD patterns, head and shoulders patterns.
+[00:05:06] We're going to talk about all of those as we get into chapter five on interday chart patterns.
+[00:05:11] But I don't look for those very specific ingredient chart patterns on the daily timeframe.
+[00:05:17] And the reason is because of the fact that I am primarily trading volatility.
+[00:05:24] That really is the basis of my strategy.
+[00:05:26] I'm trading volatility.
+[00:05:28] I'm trading breaking news.
+[00:05:29] And so the daily charts, basically what we're looking at is this is the current historical daily chart.
+[00:05:36] It's had ups, downs, whatever.
+[00:05:39] And then today, out of nowhere, we have 50 million shares of all you because there's breaking news.
+[00:05:44] So it's not like we are working with the last 10 days.
+[00:05:48] A nice, perfect bowl flag was forming or an ABCD pattern or anything else.
+[00:05:52] So we're not looking for specific recognizable chart patterns on the daily chart to establish an entry.
+[00:05:59] There are traders who will look for that on stocks that have very loyal followings like Nvidia and Tesla,
+[00:06:05] Netflix, Google, Apple, whatever.
+[00:06:06] We could talk about those a little bit later.
+[00:06:08] But for small cap traders and for traders who are focusing on trading volatility and trading breaking news,
+[00:06:14] what we look for on the daily chart is the reason that the stock will stop moving higher.
+[00:06:20] So if it starts squeezing up, that's awesome.
+[00:06:23] How high can it go?
+[00:06:25] And so these are all tied in with trying to understand where is resistance.
+[00:06:31] What is the next level of resistance?
+[00:06:33] And how much room do we have until we hit that resistance?
+[00:06:36] So that's what this chapter is all about.
+[00:06:39] And then in chapter five, we're going to get into those individual candlestick chart patterns that we look for on the
+[00:06:45] intraday chart to help us establish low risk entries where we have what we perceive as more upside than downside risk.
+[00:06:54] So as we jump in here to chapter four part one,
+[00:06:58] I want to remind you not to worry too much about building watch lists.
+[00:07:02] There are some traders that I see spending a lot of time each night building a watch list,
+[00:07:08] scanning just through daily charts.
+[00:07:11] And this to me is not particularly helpful, especially in the small cap market.
+[00:07:17] But it's not especially helpful in the large cap market either.
+[00:07:20] But I'll talk about that more a little bit later.
+[00:07:22] In the small cap market, you could have a fantastic daily chart.
+[00:07:27] But if nobody's watching it, nobody's paying attention.
+[00:07:31] The stock will not resolve.
+[00:07:33] The resolution of a pattern comes because people see the pattern.
+[00:07:38] And they recognize that it represents a low risk opportunity to buy a stock with a lot of upside potential.
+[00:07:45] So if a stock has a very loyal following like Tesla, for instance, or maybe in video,
+[00:07:51] then there will be a lot of people watching daily charts pat daily chart patterns forming.
+[00:07:56] And you know, potentially they would buy into those which would help create that resolution.
+[00:08:00] But when you have a small cap stock that doesn't have a loyal following,
+[00:08:03] you're not going to see good resolution on daily patterns.
+[00:08:06] Unless you have a fresh breaking news catalyst.
+[00:08:09] So what we know about daily charts and specifically with small cap stocks,
+[00:08:14] which are at the stocks I like to trade because for me the best for percentage growth for growing small accounts.
+[00:08:20] What we know is that these are companies that tend to trade on relatively light volume.
+[00:08:28] And then they have a catalyst.
+[00:08:30] And when that catalyst comes out boom, that stock can squeeze like crazy.
+[00:08:35] In other words, a really strong intraday catalyst can override a bad daily chart.
+[00:08:43] Now, if the daily chart is absolutely horrendous,
+[00:08:46] it's going to be pretty hard to override it with a good catalyst.
+[00:08:49] But listen, imagine a small cap company has a catalyst like Elon Musk is taking a 25% stake in the business.
+[00:08:55] You know, that's such a strong catalyst that it doesn't matter what is happened in the past.
+[00:09:00] It's all about the future, right?
+[00:09:02] So there are certain instances where you will see a daily chart that looks terrible.
+[00:09:07] And yet the stock keeps going higher.
+[00:09:09] And that's only possible when the catalyst is really, really strong.
+[00:09:12] So instead of spending your time analyzing daily charts and building extensive watchless of daily charts,
+[00:09:19] I would spend your time reviewing trades you've taken or reviewing my live trading archives of trades I've taken
+[00:09:25] because that's going to be just a much better use of your time.
+[00:09:28] Really, that's where you're going to gain more experience.
+[00:09:31] That will help prepare you for the next trades that you take.
+[00:09:36] And just again, as a further reminder, criteria for a good daily chart
+[00:09:40] should only be applied to stocks that already meet what we've discussed in chapter three of being the right stocks to trade.
+[00:09:46] Stocks that meet all five pillars of stock selection.
+[00:09:49] Spending your time looking at a stock, this is daily chart that doesn't meet our five pillars of stock selection is more or less a waste of time.
+[00:09:56] So checking daily gaps in windows, this is, these are,
+[00:10:00] slides that I shared with you during day trading the basics, the rules of charting and reading
+[00:10:05] charting from right to left. So when I discuss the rules of charting, I share with you that
+[00:10:10] we read charts from most recent to historical, which means from right to left. And what we're
+[00:10:17] looking for are nearby areas of support or resistance, and you cannot skip candles. A large candle
+[00:10:26] will block or create a shadow of any price action that came behind it that came before it.
+[00:10:33] So we always look for obvious patterns and obvious support and resistance levels. If it's
+[00:10:37] obvious to you, it's obvious to the naked eye, it's going to be obvious to other traders.
+[00:10:41] If it's very obscure, if it's sort of abstract, people aren't going to see it, and it's not going to
+[00:10:46] be very valid. The validity comes from a level being tested multiple times, and then the
+[00:10:52] more times people see it tested, the more they recognize, ooh, this is a level of resistance,
+[00:10:57] or this is a level of support. So we always look at the price action around these psychological
+[00:11:03] areas of support and resistance. And it's very common that we will see stocks come up to half
+[00:11:09] dollars or whole dollars, because commonly people will put orders around those levels just because
+[00:11:16] if they've been in a position for a while, they'll say, you know, I want to take profit on this,
+[00:11:19] and so what am I going to sell? I'll sell it five bucks. I'll sell it 10 bucks. And so all of a
+[00:11:24] sudden, we see all these orders clustered around these sort of psychological areas of half dollars and
+[00:11:29] four dollars. And then, of course, we look for gaps and windows, which I'm going to show you more
+[00:11:34] about in just a moment. The gap or windows should be large, meaning that it's about two times
+[00:11:38] the size of an average candlestick. You could use average true range if you want to, but just eyeball,
+[00:11:44] it should be a bigger than average. In order for a gap or window to be significant, it should be
+[00:11:49] larger than an average candlestick for that stock. Gaps can only be formed when a stock opens.
+[00:11:56] Higher or lower than it closed the previous day, whereas windows can be another word for gaps.
+[00:12:01] Sometimes people will call a gap or window. But a window can be created in the body of a very
+[00:12:08] large candle. Now, I'm going to show you examples of all of this. So we can rewind back to this slide
+[00:12:14] if you want to as we're going forward, just a sort of a refresher. And then when it comes to
+[00:12:19] reading charts, we read from right to left, because the present action of today is here,
+[00:12:25] and then we look backwards to the left at historical price action. So for instance, it's worth noting
+[00:12:32] that if three months ago a stock had resistance at around $10, but it's now trading at 12 to 14,
+[00:12:39] then that resistance of 10 is no longer significant because we broke above it. We would instead
+[00:12:43] focus on the resistance up around the current price of 14. Now, as we come back down, we wouldn't
+[00:12:49] look at $10 from three months ago because the fact that the stock has rallied up here, even though
+[00:12:56] it's coming back down, we're not looking at an area of resistance that was perhaps in that area right
+[00:13:01] there, because the stock already showed it can hold above it. So now as it comes back down,
+[00:13:06] we're looking at areas in this sort of price range where maybe there was a bottoming tail,
+[00:13:12] or there was some support around a half-dollar whole dollar before the next leg higher.
+[00:13:16] I think this will make more sense when we get some actual charts up on the screen.
+[00:13:20] Now a trigger, I'll often say I'm watching a certain price, there's a potential trigger here.
+[00:13:26] And a trigger is the price where a window or a gap begins. It's the price to the penny,
+[00:13:34] where you think a massive breakout could occur. So it is essentially a level of resistance or support.
+[00:13:42] And if the price is able to break through it, that is significant. So it should be obvious.
+[00:13:49] So when a stock has a big gap on the daily chart, we can draw trend lines that show us the top
+[00:13:54] and the bottom of that gap, and then we can see very clearly to the penny, this is the bottom
+[00:13:59] of the gap, this is the top of the gap. So when we come in to the gap, we expect volume
+[00:14:04] because there's this large area on the chart where there's no supporter resistance. So we would
+[00:14:08] expect to see volume pick up. So we would call that line, that price, to the penny, a trigger.
+[00:14:15] And again, you don't want to overcomplicate it because it should be obvious. And as you
+[00:14:19] look at the charts that I'm about to show you, it will be quite obvious. Now, I'll just jump
+[00:14:24] back into the slide deck here. So in the next slide, I asked a question, what's the difference
+[00:14:29] between a trigger versus resistance? And this trigger is resistance and can be a point of resistance.
+[00:14:38] But a true trigger, what makes it more significant, is that if the price breaks,
+[00:14:45] something important is going to happen. So if we have a stock that just has multiple levels of resistance,
+[00:14:51] and there aren't gaps in there aren't windows, then breaking any of those resistance points doesn't
+[00:14:56] really mean anything. So we don't really think of it as a trigger. It doesn't carry much weight. Whereas
+[00:15:01] if you've got a resistance point at $10, but there's a gap above 10 that goes all the way to 14,
+[00:15:07] then you've got a 4 point gap there, and that break of 10 is therefore a trigger that gets us
+[00:15:12] into the gap, which then gives us potentially a lot of room $4 a share. Okay, so now we're looking
+[00:15:18] at a chart. This is going to start making more sense as we got some charts here. So we've got this
+[00:15:23] stock here, which has two big green days in a row. So we had breaking news that you can see right here,
+[00:15:27] and then we had day two of continuation. So what this means is that the stock was so strong on day one,
+[00:15:34] it continued higher on day two. So on day one, when I first sat down right here, how do I
+[00:15:40] analyze this chart? Now you'll see there's no 200 moving average on it, and it's because the 200
+[00:15:45] moving average is so high up. It's way up here that we can't even see it. So that's good in a way.
+[00:15:51] We have no resistance nearby. So then we look at our nine moving average, which is in gray,
+[00:15:56] and we were clearly gapping above it on this day right here. And we have the 20 moving average,
+[00:16:01] which is in this sort of blue color, and we were above that as well. So we're above the nine,
+[00:16:05] we're above the 20, and we've got lots of room to the 200. So then what do we look for in terms of
+[00:16:11] potential resistance? Well, generally what I'm going to do here is I'm going to look to the left,
+[00:16:17] and then we're just going to kind of look up. And I might notice this line right here, that
+[00:16:21] candle wick right there, and this candle wick right there. And because those two are sort of at the
+[00:16:26] same price, I might draw my trend line on my chart, you know, right across here. And then that comes
+[00:16:32] over to about here. And on this second day, I might have said, we might have resistance here,
+[00:16:36] which also corresponds to about 450 psychological resistance. So on day one, none of these levels
+[00:16:43] are really significant. None of them are triggers. They don't open up to a gap or a big window.
+[00:16:49] But above this level here where we have the double top, we get into sort of this small candle,
+[00:16:55] and then this high here, which makes it feel like above this area, we've got room up to about here.
+[00:17:01] So from 450 up to about 550. And then we look over there, and if we break that level, there's
+[00:17:07] the high, this candle, the high of this candle, and then above that, we've got room to the high
+[00:17:11] of this candle, and then above that we've got a big window. So remember this right here is a window.
+[00:17:18] It's formed by the body, including the tail of a candle. We always go from the very bottom of
+[00:17:23] the tail to the top of the tail, so it's the entire candle. So this level right around here is certainly
+[00:17:30] a trigger, and that gives us room up to 750. Again, psychological resistance around the half dollar,
+[00:17:37] not surprising that on this day it came up to the half dollar, and then that was the high.
+[00:17:42] Now we could potentially draw a descending resistance trend line sort of around this area.
+[00:17:49] But I would worry that it might not be super obvious. You know, you can sort of visualize that,
+[00:17:56] but I don't know if it's quite obvious enough, so I probably wouldn't. Probably on this chart,
+[00:18:00] the horizontal level here, possible horizontal level here, possible horizontal level here,
+[00:18:06] and here, and these are small little triggers, maybe little resistance there,
+[00:18:10] little resistance there, and then a trigger right there. Then another trigger here that I already drew
+[00:18:15] from 750 up to 7.95 here, and then again, we keep looking to the left and up. So now we're
+[00:18:22] looking right here, little small little trigger there that gives you room to there, and then that gives
+[00:18:28] you room up to up there. Now it's a certain point we don't need to keep going to the left because
+[00:18:33] we're probably not going to make that big of a move, but if we do, we can always open up the chart
+[00:18:38] and look a little bit further back. And really, when a stock is moving like this, sometimes we're
+[00:18:43] going back a couple weeks, a couple months, sometimes we're going back a couple of years.
+[00:18:47] And so then a question that I asked myself is, on the candle that we're considering to be resistance,
+[00:18:52] how much volume took place on it? And this tells a very interesting story. So see the volume here is
+[00:18:59] basically nothing relative to the volume here. So now this, this really gives us some insight that
+[00:19:07] although this was a big candle visually, it's a huge candle because it occurred on such light
+[00:19:13] volume. It's unlikely that there are still a lot of traders who own it up in these areas and
+[00:19:21] have been unable to get out because when we look at this area of resistance, we think two two things.
+[00:19:25] Number one, resistance just because it's the high that candle, that's where that candle stopped,
+[00:19:29] but also resistance because anyone potentially who owned on this day may be and bought to
+[00:19:36] high may want to sell as we kind of come back up. Which that's one of the reasons that gaps
+[00:19:41] can be a little stronger than windows because on a window because it traded through this area,
+[00:19:46] we don't know where in this area someone may still be holding. So we get above that, we start getting
+[00:19:51] a little bit higher, but then the volume paints a different picture. Now at the volume on this
+[00:19:55] candle is way up here, then you're like, okay, well, they're all-
+[00:20:00] lot of people that traded that day and there may be some people out there that are holding
+[00:20:04] really significant positions that are bag holders, they're underwater and they're going to be happy
+[00:20:09] to get out as we come back up today, therefore that's going to create upside resistance around
+[00:20:14] these same levels. Because this is where people may place an order and it could be a good till
+[00:20:19] canceled order just to sell at $6. And this is most likely if they're a bag holder, you know,
+[00:20:25] I'm going to speculate that it may be a more novice investor. So if they're a novice investor
+[00:20:30] that doesn't have as much experience, they may not even be trading full-time. So they might have bought
+[00:20:34] this position on their phone, $10,000 shares, let's say it's $6. And they were at work and then
+[00:20:39] they come back later that day and they're like, oh my gosh, that red thread was wrong. Now I'm down,
+[00:20:45] you know, 5,000 bucks. Well, I'll just hold it till it comes back up and I'll just set my cell order
+[00:20:50] at $6. And they keep going about their business, whatever. And then a couple months later, right?
+[00:20:55] It comes back up to that level and we're looking at the level two, we're trading and we're like,
+[00:21:00] gosh darn it, there's a cell order at $6. You know, $10,000 shares. Okay, maybe that's not that big
+[00:21:05] of an order. But you get the idea. And that order is created because of this, you know, previous
+[00:21:10] candle. So this is where the chart is giving us the context and helping us sort of understand,
+[00:21:16] you know, potentially what might be going on here. Where could we see some sellers where,
+[00:21:21] you know, might we see levels of resistance? So the horizontal levels are one of the first things
+[00:21:26] that we look at as we're starting to kind of get into, you know, potentially looking at gaps and
+[00:21:32] windows. So this is a chart here where, you know, we kind of rallied on day one and then the next day
+[00:21:39] we sold off and then we rallied back up and then we sold off. And I think this also paints a very
+[00:21:45] interesting picture where the stock moves a little bit on day one and then people take profit on
+[00:21:51] day two. Then it moves a little bit here and then people take profit as it comes back down.
+[00:21:56] So there's this concept of continuation where a stock is strong in day one and then that
+[00:22:02] contained that strength continues in today too. And while that can work really well,
+[00:22:07] because there are, you know, some novice traders out there that will just buy a position on their
+[00:22:12] phone or whatever and hold it for a few days. If they just log in randomly and they're up the next day,
+[00:22:16] they're going to sell and take profit. So I can sometimes get a little hesitant about that second day
+[00:22:22] continuation in terms of worrying that we're unfortunately going to have selling, especially like
+[00:22:29] after the opening bell, which is when the good till cancel orders work. For those of you guys that
+[00:22:35] aren't, I think I've probably already discussed this, but I hope I have. But in any case, just as
+[00:22:41] a quick refresher. So we know that market hours, of course, are from 4 a.m. 4 a.m. to 8 p.m.
+[00:22:53] Right? But 930 to 4 p.m. is regular trading hours. And during this area, during this window, we have
+[00:23:00] market orders. We have stop orders. We have options trading as well, options trading. And we have
+[00:23:10] halts, circuit breaker halts. But we don't have any of that after 4 p.m. or before 930. So here,
+[00:23:17] the only way you can trade are with limit orders. Which is fine. But if you put out a good till
+[00:23:25] cancel order, these orders only work between 930 and 4 p.m. So when you have a stock that has
+[00:23:31] continuation, or has a previous candle in the past, that was a higher volume day, like maybe
+[00:23:38] this candle, then we might worry that after the 930 opening bell, there could be people that
+[00:23:44] start to take profit. So maybe they put their good to cancel order out, and then executes,
+[00:23:50] you know, the following after the 930 opening bell. Anytime after that, the price hits that level.
+[00:23:56] So in this case, I would say resistance. These two highs connect the tread line there, the blue one.
+[00:24:04] So we've got that level. And then we look to the left, nothing really there, not much there,
+[00:24:09] and then the high right there. Double top because there was a high of this candle in this candle,
+[00:24:14] maybe. So we draw a little line there. And then this one, double top here and here and here,
+[00:24:19] triple top, actually. So usually when I'm drawing these lines, they feel fairly obvious. I feel
+[00:24:25] like I'm just pointing out what most likely other people are already looking at and can easily see.
+[00:24:30] And then back in these areas, this had such light volume that it just doesn't feel super
+[00:24:36] super significant. So I don't really bother drawing the lines, especially when we're talking about,
+[00:24:41] you know, on a day like this, 120 million shares of volume. It's just so much volume. It can easily
+[00:24:47] overcome, you know, any little blips of sellers that are, you know, holding from this area,
+[00:24:52] that are going to be taking profit. So we check our horizontal resistance levels. We look for our
+[00:24:58] gaps in windows. And this is an example of a nice daily chart. And you might sort of think, wait a second,
+[00:25:05] how is this a nice daily chart? Well, it wouldn't be a nice daily chart if you bought it right here
+[00:25:10] and you've been holding it the whole time. It's a nice daily chart when you look at it here because
+[00:25:15] I look at this as, we're at rock, we don't, you know, I mean, how much further down can it go?
+[00:25:20] I mean, it could go to zero. But realistically, we really just write off of the low. So if,
+[00:25:27] you know, on today's date, we had breaking news. And it was a good catalyst, then what is our
+[00:25:33] upside? I feel like we've got more upside than downside, in this case. And that's something that I
+[00:25:37] really like about a lot of these small cap stocks is that when I look at the charts, I think, boy,
+[00:25:41] you know, they've been selling off for a long time. And if they start to curl with some good news,
+[00:25:45] they start to move up. There's more upside than downside. So here, the 200 moving averages at 350.
+[00:25:51] Okay, so that's obvious level right there. But we also have this big gap. So the stock on this
+[00:25:57] day closed high, but then the next day opened very low. Most likely they had some type of bad news
+[00:26:04] that came out overnight. There's a number of different types of headlines that could come out
+[00:26:08] that would have resulted in that type of drop. But nonetheless, there was bad news that came out
+[00:26:12] and that creates a huge gap on the chart. And it just wipes out everyone right here that might
+[00:26:17] have been holding. And then there's high volume on this day right here. That volume is created by
+[00:26:21] people who just bail out. They're just cutting their losses. And maybe some people who are adding
+[00:26:26] to the position hoping for a curl back up in the future. So we have this long period going sideways.
+[00:26:31] And then right here, if all of a sudden we've got some news and it pops up, we're looking at the
+[00:26:35] high of this candle. And that is a trigger because that's the beginning of the gap. And then we have
+[00:26:40] gap all the way up to over $7. So is there anything that would stop us from going straight to 7?
+[00:26:45] And the only thing we can see is that 200 moving average right there about 350. Now this stock
+[00:26:50] has a 15 million share float. It's not the lowest float we've ever seen. It would probably
+[00:26:56] be a bit uncommon to see it actually fill the gap in one day, unless it had absolutely fantastic news.
+[00:27:03] This one, however, the float is 730,000 shares, and it's filled the gap. So you can see the chart
+[00:27:09] does have this bigger green candle back here with pretty high volume. Then it's sold off,
+[00:27:13] giving back all of those gains. And then here, overnight, bad news, the next day, it's way back
+[00:27:18] down at $2. My guess in this instance is that this was probably a company that was secondary offering.
+[00:27:25] It popped up. They probably did the offering on the day. I had the high volume. And then they announced
+[00:27:29] it on this day. And then that caused the stock to drop. It goes sideways here for a little bit.
+[00:27:34] And then all of a sudden, it sort of added nowhere pops back up. So maybe the company puts out
+[00:27:38] another news, had line in people were like, wow, this thing is amazing. Looks good. I'm shocked.
+[00:27:44] And so you'll look at the chart. And you've got the high of this candle at $2.75. Is that resistance
+[00:27:49] for is it a trigger? You know the answer? It's a trigger because it gives us room all the way up to
+[00:27:54] here for 11. So that's a big gap. It's not a window. It's a gap. It was a gap formed on the chart
+[00:28:00] right here. Now a window would be the difference from here to here. That is a window. That's formed
+[00:28:06] by the body, including the candle wick of that candle. So another example here, we're a stock
+[00:28:12] higher volume red candle back there. Might be some back holders. Green candle here, but on
+[00:28:17] lighter volume, it sells off. It goes sideways here. They end up doing a stock split. There's also
+[00:28:22] some bad news. And that starts to curl back up. So if all of a sudden and looks the flow
+[00:28:27] 1.3 million shares, right? If we have breaking news, the trigger is 6.11 and that gives us
+[00:28:33] room all the way up to 226. The 200 moving average is like $40 a share. So we've got lots of
+[00:28:39] room in the 200. So this is the type of stock that it and it's in it. If we have breaking news,
+[00:28:44] it's worth watching. Now is this a stock worth putting on your watch list?
+[00:28:49] Probably not, because it could get news, but the news might not even be good. So ultimately,
+[00:28:55] you know, I wouldn't probably pay a lot of attention to it unless on the day, you know, that I sat
+[00:29:01] down, we saw it was the leading gap or because I had a breaking news headline. Okay, so now there's
+[00:29:08] another example here of a good daily chart. So a stock that's rallied up, then had bad news dropped,
+[00:29:15] but now has a gap, a big gap on the daily chart. And in this case, I called it a window.
+[00:29:21] Again, you can, there's sort of interchangeable, but officially this was a gap. So the gap here
+[00:29:27] begins at 1556 and goes all the way up to 1821. So that's a nice gap and it is a former momentum
+[00:29:34] stock. A stock that has a history of, you know, having had some big moves in the past. So that's
+[00:29:39] good to see. Here's another one where we've got a gap. So stock sold off, gaps down here,
+[00:29:46] going sideways. And now there's a gap from 547 all the way up to 1709. So that's a nice big gap.
+[00:29:54] Yes, we do have the nine, sorry, the the nine moving averages down here. We're above that. We've got the
+[00:30:00] 200, I'm sorry, the 20 moving average right there.
+[00:30:02] On this chart, and this is an older chart,
+[00:30:04] it looks like I had the 50 moving average.
+[00:30:07] Some traders will use the 50 and the 100.
+[00:30:10] Sometimes I'll test them out
+[00:30:11] and see if I feel like they're helping me,
+[00:30:12] but then I usually take them off
+[00:30:14] just to clean up my charts a bit more.
+[00:30:17] So another gap here, this is a big gap from 323
+[00:30:21] all the way up to 5, sorry, 858.
+[00:30:24] And we've got the 200 moving average right there at 540.
+[00:30:27] So that's going to be sort of obvious resistance.
+[00:30:29] Now again, you've got the 50 moving average down there.
+[00:30:32] You've got the 20, you've got the 9.
+[00:30:34] So this needs a catalyst, but if I had a catalyst
+[00:30:37] and it could break over this high here of 323,
+[00:30:40] then we get into this nice gap.
+[00:30:42] So that could be a good spot.
+[00:30:44] This is an example of gap fill.
+[00:30:47] So we had the gap down right here.
+[00:30:49] And we have a gap from this line here of 381 up to 655.
+[00:30:55] And on this day here, it's got breaking news.
+[00:30:57] A lot of volume, it squeezes up.
+[00:31:00] And the first target probably was the high of this candle
+[00:31:03] because that by itself was already several dollars a share.
+[00:31:06] And when we hit that level, although it's a trigger,
+[00:31:09] it also wouldn't have been impossible for this to do
+[00:31:12] a double top here just because that was already
+[00:31:14] such a big move coming back up.
+[00:31:16] So it could have done double top and then dropped back down.
+[00:31:19] But it helped.
+[00:31:21] And once it got above 381 and it was into this gap,
+[00:31:24] there was no resistance until this level here of 655.
+[00:31:27] We like seeing that.
+[00:31:29] All right, now this is an example of a stock that
+[00:31:31] had a big move back here, then it gives it back.
+[00:31:34] And so now you've got this window from about 7, sorry,
+[00:31:38] 877 all the way up to 1950 right here.
+[00:31:42] So if we can get above that level, we've got room.
+[00:31:45] But we've already had a really big green candle.
+[00:31:48] Is the new strong enough that we're going to be able
+[00:31:50] to get above 87, hold above that level and move higher, not sure.
+[00:31:55] But we are above the 200 moving average.
+[00:31:57] We're above the 9 in the 20.
+[00:31:59] We've got a good catalyst and it is a former Momo stock.
+[00:32:03] It would just be nice if it didn't have that big red candle
+[00:32:05] there because now there might be some bag holders
+[00:32:08] because that's, this is actually a window.
+[00:32:10] I'm sorry, if I didn't say that.
+[00:32:12] This is a window, not a gap.
+[00:32:13] So this is a window and so we may have some resistance here
+[00:32:17] as we come back up, right, from people
+[00:32:19] that are holding the stock from that big red day.
+[00:32:22] So it could work, but probably, most likely,
+[00:32:26] we're going to come up to 877, that's going to be resistance.
+[00:32:29] And then maybe in a few days, if there's another headline,
+[00:32:32] we can get a little bit higher.
+[00:32:35] This is another interesting chart.
+[00:32:38] You do have a little history of some red candles back here.
+[00:32:41] But then they're sort of overshadowed
+[00:32:43] by this bigger green candle.
+[00:32:45] It was under the 200 moving average for a long time,
+[00:32:47] and then right here at broke that critical level.
+[00:32:50] So we broke through the 200.
+[00:32:53] So what would have happened is that pre-market, this popped up,
+[00:32:55] and it must have come up to the 200 in the pre-market session,
+[00:32:59] and then was able to break through it.
+[00:33:00] It ends up going all the way up to $50 a share.
+[00:33:04] That's an impressive move.
+[00:33:05] That's really solid.
+[00:33:06] So, and in this case, we have some windows over here.
+[00:33:09] Windows up there.
+[00:33:11] We don't really have, well, there was a gap back here,
+[00:33:14] but remember, that's negated
+[00:33:16] because this price action filled it.
+[00:33:18] So we can't skip over and say, oh, there was a gap back here,
+[00:33:21] and we can apply that, you know, in this area,
+[00:33:23] you can't because of the shadow theory.
+[00:33:25] So all this price action casts a shadow backwards.
+[00:33:29] So we can't, we disregard all of this back here.
+[00:33:32] I mean, we may acknowledge the high volume candles,
+[00:33:35] just to see the trend of the stock,
+[00:33:37] but that gap has been filled by price action.
+[00:33:42] This is an example of,
+[00:33:44] not as good of a daily chart.
+[00:33:45] So here you have a gap, as you can see,
+[00:33:49] but if we pull this up right now,
+[00:33:51] I would say we're right under the 200 moving average,
+[00:33:53] it's probably gonna be resistance.
+[00:33:55] We'll have lighter volume today.
+[00:33:56] So it was decent down here.
+[00:33:59] You had room above 329, but at this point,
+[00:34:02] right now, at this moment, we're right underneath resistance.
+[00:34:07] You know, look, if the news was really strong
+[00:34:10] and we could break and hold above this level,
+[00:34:12] we've got room up to $850, but day two,
+[00:34:16] I don't think it's gonna be able to do it.
+[00:34:17] Probably not gonna work.
+[00:34:19] This one here, unfortunately,
+[00:34:21] the 200 moving average is too close.
+[00:34:23] See how it's at 344?
+[00:34:25] It's only, it's not even 10% away.
+[00:34:28] We're gonna run into resistance.
+[00:34:30] Now, there's a window here from 349 up to 433
+[00:34:33] in that area, and then there's a gap right here,
+[00:34:37] but, you know, I mean, if we get a lot of volume maybe,
+[00:34:42] but it feels sort of a little lackluster.
+[00:34:45] This one, higher volume red candles,
+[00:34:48] you can see here, now it's gonna be a chart
+[00:34:50] rejected off the 200, tried to break it,
+[00:34:52] but then came back and was below it.
+[00:34:54] So now, it's like, we just know it's gonna resist
+[00:34:57] since at that 200.
+[00:34:58] So it's not something that we'd probably be able
+[00:35:00] to trust, unfortunately.
+[00:35:03] This is another poor daily chart.
+[00:35:04] We're underneath the 9, we're underneath the 20,
+[00:35:06] we're underneath the 50, we're underneath the 200.
+[00:35:09] We would have to get quite a ways higher
+[00:35:11] in order for this to start to feel a little bit more bullish.
+[00:35:14] It's just not set up well.
+[00:35:16] This one, you know, you've got this gap here
+[00:35:20] from 497 to 867, but it's below it's moving averages.
+[00:35:25] The gap down was recent enough and big enough
+[00:35:28] that the moving averages are still above the current price.
+[00:35:31] So that's gonna create some upside resistance.
+[00:35:34] The gap is nice, and then you've got room up to the 200.
+[00:35:37] Potentially, if you could fill that gap,
+[00:35:40] gives you sort of a window, but it's formed by a red candle.
+[00:35:43] So, you know, it could work,
+[00:35:45] but we'd have to check the flowed on it
+[00:35:47] and check the catalyst.
+[00:35:48] And ultimately, you know, of course,
+[00:35:49] check the inter-day price action.
+[00:35:50] As we know, if we have really strong inter-day price action,
+[00:35:53] you know, these can work, but if we don't,
+[00:35:55] and that's gonna be a problem.
+[00:35:57] All right, so now, what does this chart tell you?
+[00:35:59] What do you think about this one?
+[00:36:00] This chart to me, resistance at the moving averages,
+[00:36:03] all of them all the way up.
+[00:36:05] The 9, the 20, the 50, the 200,
+[00:36:07] there's just way too much resistance.
+[00:36:09] There are no big gaps, really.
+[00:36:11] There's no big windows.
+[00:36:12] I mean, there's a small window here,
+[00:36:13] but it's not that significant.
+[00:36:15] It just doesn't have the look.
+[00:36:18] I know what about this one.
+[00:36:19] Okay, so in this case, and this is a stock SNSCNI
+[00:36:24] that I thought on this particular day,
+[00:36:27] had more interest on social media.
+[00:36:30] And so I was concerned that this might mean
+[00:36:32] there's more amateur traders looking at it.
+[00:36:35] And so on this day, I added this dotted line right here,
+[00:36:39] which is the 200 moving average,
+[00:36:41] but it's the simple moving average,
+[00:36:43] not the exponential.
+[00:36:44] I thought, you know, sometimes we get our traders
+[00:36:46] they'll put on the simple,
+[00:36:48] if their platform has it by default,
+[00:36:50] and they might see this as resistance.
+[00:36:52] So the 200 EMA is up here at 10, lots of room,
+[00:36:55] but I just thought I would double check
+[00:36:57] the position of the EMA, the SMA,
+[00:37:01] and I could see that it was right there.
+[00:37:03] Nonetheless, this is a recent reverse split,
+[00:37:05] which we'll talk more about.
+[00:37:06] It's got a lot of room here up to the 200,
+[00:37:08] and a decent amount of room up to the simple 200.
+[00:37:11] So that's a strong daily chart.
+[00:37:13] It's a stock, also, that's had very light volume.
+[00:37:17] I mean, this is 200,000 shares.
+[00:37:20] So if today, it has even just 10 million shares of volume.
+[00:37:25] The relative volume ratio is gonna be like
+[00:37:27] 20 times higher than average,
+[00:37:29] and that is when things can get excited.
+[00:37:31] This is another strong daily chart.
+[00:37:33] So curling here, starting to gain a little bit of momentum,
+[00:37:36] lighter volume, lots of room up to the 200.
+[00:37:39] We're above the nine, we're above the 20.
+[00:37:40] It's a nice clean chart.
+[00:37:42] This one here, okay, so reverse split,
+[00:37:45] we're down a little bit, but if we pop up here with news,
+[00:37:48] we've got a lot of room above the 20,
+[00:37:50] up to the simple, and then up to the exponential,
+[00:37:53] a lot of room.
+[00:37:54] It's the catalyst that we need, but the float,
+[00:37:56] one million share of float, so very low float.
+[00:37:59] That's this one right here.
+[00:38:01] So this is the type of stock that, you know,
+[00:38:03] if we sat down and it was already up at like 525,
+[00:38:06] you know, it had already popped up a little,
+[00:38:08] I'd be looking for that first pullback
+[00:38:10] on the intraday chart for the move up towards the 200.
+[00:38:14] Again, I would look at the simple moving average,
+[00:38:17] but unless I thought the stock had a high level
+[00:38:21] of retail kind of amateur trading from Reddit
+[00:38:25] or something like that, I wouldn't worry about it too much.
+[00:38:28] Now this one, we're above the EMA, the 200 EMA.
+[00:38:33] So now we're above the 200 EMA,
+[00:38:35] we look to the left, do we have any gaps or windows?
+[00:38:38] No gaps because we're up higher, a little window,
+[00:38:40] you know, up to here and here, a little resistance may be there,
+[00:38:44] but if we're above that,
+[00:38:45] so I would say it looks like resistance up around 450.
+[00:38:48] So if we can get above that 450 level,
+[00:38:50] then we've got nice room up to 5, 550, back up towards 6.
+[00:38:54] So we would say this one's sort of curling.
+[00:38:56] The interesting thing is that it's moving
+[00:38:58] on somewhat lighter volume,
+[00:39:00] so what we would really need is, you know,
+[00:39:02] here, today, a catalyst to send it,
+[00:39:06] but there'd be no real resistance,
+[00:39:07] so we had that catalyst that could work really well.
+[00:39:10] So I checked the position, so of course,
+[00:39:12] looking at these charts right here,
+[00:39:14] we're looking at the position of the 200 moving average,
+[00:39:16] we're also looking for gaps and windows, right?
+[00:39:18] So we want to make sure we check for gaps and windows
+[00:39:21] and we check the position of the moving averages.
+[00:39:23] On the daily chart, the first moving average
+[00:39:25] would always check is the 200, yeah, man.
+[00:39:27] Then I check the shorter timeframes,
+[00:39:29] including the 20 and the 9.
+[00:39:30] Some traders utilize the 50 or the 100 personally.
+[00:39:33] I don't, except for the sort of, you know, rare,
+[00:39:35] and since we're all put it on,
+[00:39:37] or in some of the older charts, I had it on,
+[00:39:39] and then I decided to clean up my charts,
+[00:39:40] so I switched to a new platform and I didn't add it back.
+[00:39:43] So some traders also, as I mentioned,
+[00:39:46] you utilize simple moving averages,
+[00:39:47] and this can be an issue as they'll interpret
+[00:39:50] a different level of potential resistance.
+[00:39:53] So imagine if we have, imagine you're driving,
+[00:39:57] and there's two different stop signs.
+[00:39:59] You know, one is blue, and...
+[00:40:00] one is red. And you're like, well, I always knew to use the red stop side, but this
+[00:40:04] one's blue. And there's a whole group of people that have been going to driving school
+[00:40:08] and they only use blue stop sides. So now, the rules of the road are getting a little confused.
+[00:40:14] We have people stopping in different places. And that's what different moving averages create,
+[00:40:18] simple versus exponential. People are going to see resistance at different places and then
+[00:40:23] trade based on those areas. So it's not that significant if the majority of traders are using
+[00:40:29] exponential moving averages. But if you start having larger and larger groups of traders,
+[00:40:33] more amateur traders, using simple moving averages, then it can be an issue. So on a stock
+[00:40:39] like GameStop, a meme stock, we need to be thinking about what the amateur traders are seeing.
+[00:40:44] And I consider myself not to be an amateur trader, but doing this for a long time. I'm still a retail
+[00:40:49] trader. So, you know, Citadel and all those, you know, big investment firms, they think we're all
+[00:40:55] done money. They grouped us together. But I think I'm okay. So I'm done money, but I'm on the little
+[00:41:01] bit of the smarter side because I've been doing it for a while and I've found a way to pull
+[00:41:05] profit out consistently. And then you've got the other retail traders that are very, very new
+[00:41:09] that aren't there yet. So for that reason, I do feel that it's worth at times popping on that
+[00:41:16] simple moving average and just taking a peek. So we've done our cross-check, using some airplane
+[00:41:23] terminology here, cross-check, I'll call. So we have done our check for gaps and windows. And when we're
+[00:41:32] looking at gaps and windows, we're obviously checking position and moving averages. I mean,
+[00:41:37] we do all of it at once, essentially. But just to very, you know, sort of specifically note it,
+[00:41:44] we check our EMAs. We know we're going to have resistance at the 200. Right? You've seen a lot of these
+[00:41:49] examples because I showed many of these to you during the starter class. So resistance at the 200,
+[00:41:54] resistance at the 200, and then gaps and windows. Do we have gaps? Do we have windows? And this is
+[00:41:59] how we start breaking down a chart to determine the context to understand the context and then
+[00:42:05] what's the sentiment behind this chart? What's it telling me? Now I look at a chart like this and I
+[00:42:09] think it looks decent. It's above the 200 moving average. It was below it, you know, for a period,
+[00:42:14] but then it was able to get above it. That's awesome. High volume day right here, green, big candle,
+[00:42:18] squeezes up, pulls back. I have no problem with that chart. I think it looks good. This one also looks
+[00:42:24] good. We broke above the 200. We love that. We love to see when a stock can break above the 200
+[00:42:29] moving average. That's a good sign. It's bullish. So then we check ascending and descending,
+[00:42:36] supporter resistance levels. Now these can be a little bit more subjective. Now everyone's going to
+[00:42:40] draw them the same way. And so if it's not obvious to you, just sort of with a naked eye,
+[00:42:46] this probably not obvious enough that it's even worth drawing here. And one of the things that
+[00:42:50] I'll say can be challenging with drawing these trend lines is that a subtle change in the way you
+[00:42:56] draw it can result in a fairly substantial change in the trend line. So we'll just look at this for
+[00:43:02] instance. So here, you know, let's say I think, oh, I'm going to draw the trend line, you know,
+[00:43:08] to the top of this candle. So if I do that, it connects right here at $50. But what if I said,
+[00:43:14] well, no, I'm not doing that. That's crazy. I'm drawing it here. Well, now it's connecting over here
+[00:43:18] at like $60, right? Or, you know, what if you said, no, it should have been like this. That's more accurate.
+[00:43:24] Well, now it's down at $37. So the way you change it, you know, has can have very significant effects
+[00:43:31] further down the line. So that can be a little bit of a challenge. It doesn't mean you shouldn't
+[00:43:38] draw a sending and descending support in resistance levels. But just ask yourself, is it obvious?
+[00:43:44] And I'd say that's pretty obvious, right? So now if this pops up here, I'm going to be thinking about
+[00:43:49] that level. And this is valid on entry day charts as well. We're going to talk about that in chapter five.
+[00:43:54] But on daily charts, you know, look, this to me is pretty obvious. Drawing the trend line,
+[00:44:01] I do that for the benefit really generally for you guys, but you can draw the trend line.
+[00:44:08] And if you switch your time frame after you draw the trend line from the five minute,
+[00:44:13] from the daily back to the five minute to the one minute, then that trend line will be on your
+[00:44:17] intraday chart. And you'll see where it is. A lot of platforms also allow you to click the trend line.
+[00:44:22] And then you could press copy and you could actually paste it to an intraday time frame. If you have
+[00:44:28] separate charts, which is fine. So drawing this one, oh, this was connecting back here. So then
+[00:44:36] that create that long trend to here. And then this one was connecting here and here, which create
+[00:44:42] that long trend line up to here. So now we've got sort of two trend lines, x marks the spot. So
+[00:44:49] but that's not actually where you're going to find gold unless you know that that's the place
+[00:44:53] you're going to sell and take profit, which would have been probably the best idea.
+[00:44:58] Here, this one's pretty steep. When you have a really steep trend line like this, you know,
+[00:45:05] I'm not always sure if they don't usually stay around for long because they just start getting
+[00:45:10] so high the price as time moves forward, just go beyond it. But you could see maybe that's going to
+[00:45:16] be support right there. So, you know, potentially, you know, something to look at. This one,
+[00:45:24] so connecting this trend line, this and high with this high, then projects forward and we see
+[00:45:30] resistance right here. This is an intraday chart, but it crosses multiple days from day one to day two.
+[00:45:35] So this one's easier to see on the five minute chart. This one also crossing multiple days.
+[00:45:40] Continuation stocks often have issues here with ascending resistance. And if you don't have
+[00:45:46] that trend line on or you're super zoomed into right here, you might not see it. And then you're
+[00:45:52] buying up here and then you're buying again up here and you're like, why isn't this working?
+[00:45:55] So sometimes you guys do amount to get that perspective. So then the next thing we want to do is
+[00:46:01] we want to check for the history of possible rejections or history of big moves. If a stock has a
+[00:46:06] well-established history of failing, people kind of give up on it. They just assume that every time
+[00:46:12] it pops it'll fail. Short gets aggressive, longs get fearful. It's poor sentiment. The pattern
+[00:46:17] continues until the stock maybe eventually makes a surprise move and just keeps going higher and
+[00:46:22] higher and short gets squeezed, but it's kind of rare. It's just not what you would expect. So
+[00:46:27] what's more common is that when you've got a well-established history of failing, it keeps failing.
+[00:46:31] And on the other hand, the stock with a well-established history of making big moves
+[00:46:35] is something that traders will gravitate towards. You know, they'll see that and nothing
+[00:46:40] boy. You know, this is something that I should sort of pay attention to. You know, this is a stock that's
+[00:46:44] got a history of putting in some pretty big green candles. Maybe it's going to do it again today,
+[00:46:50] perhaps history will repeat itself. So traders are eternally optimistic. This is a stock with a
+[00:46:55] history of rejections, right? So rejection, rejection, rejection. We know it has that history. So what did we
+[00:47:02] expect today? Did we really expect anything different? We shouldn't have. We shouldn't expect anything
+[00:47:07] different. It's got the history of rejections. You can see it right here the plane is day. History of
+[00:47:11] rejections is a terrible daily chart because of that history. Now yes, it's above the 200 moving average.
+[00:47:17] And so, you know, we don't really have any big gaps or windows, but how do we overcome this history?
+[00:47:24] It would have to be with a fantastic catalyst, like just, you know, something that really changes the whole
+[00:47:31] game. Again, a terrible daily chart because of this history. So yes, you've got room up to the 200.
+[00:47:38] You even have some windows here, but they're formed by big red candles. So it's going to be very hard to
+[00:47:43] trust. Absent a phenomenal catalyst. So these are the histories. These are stocks that you pull it up.
+[00:47:50] You'll get that chart. And that's the context. The chart is telling you a story. And so, from that,
+[00:47:56] you know, we have a conclusion that we, I think, can pretty safely draw for what we should expect
+[00:48:00] of it today. So history of rejections. And then additionally resistance down here,
+[00:48:06] it's just not going to be worth it. You know, history of rejections. It's below the 200.
+[00:48:12] It's not going to be worth it. History of rejections. Now this one, all time high is 12 18.
+[00:48:17] But, you know, so it's technically, you know, if we got above that level, there is no upside resistance
+[00:48:25] because that is literally the all time high of the stock, a somewhat recent IPO. So it would
+[00:48:30] need to have fantastic news and have such high volume that it overtakes all of the volume from
+[00:48:35] these candles and can eliminate anyone that's still holding the bag from those days. Is it possible?
+[00:48:41] It's possible. Same story with this one, all time high. But it's going to take a lot of volume.
+[00:48:46] So where's that volume going to come from? The stock having phenomenal news. So if we have really
+[00:48:51] good news, you know, that would be our best case scenario. And then this is these are examples
+[00:48:57] of the history of big moves. So this is a stock that now, you know, you see it and it's like,
+[00:49:02] okay, look at these big high volume candles. You know, this is a stock that if it comes back up here,
+[00:49:08] you know, we might think, yeah, we're looking for a move back to 750 and it's shown in the past.
+[00:49:12] It could be strong. Long traders are going to be a little more confident. Short sellers are going
+[00:49:16] to be a little more conservative, a little bit more cautious. And that can sort of swing the dynamic
+[00:49:21] in the control from the buyer, from the sellers back to the buyers. So right now the sellers are
+[00:49:26] in control, but the leg volume sell it. So if you have a news catalyst and boom, a nice pop,
+[00:49:31] that could work. This is a stock with a history of a big move back here, but there is a red candle there.
+[00:49:36] Nonetheless, it's still holding up relatively well. It's $60 a share. It's a little too expensive at
+[00:49:41] this point. But, you know, let's say it has some good headlines, or they do a stock split.
+[00:49:46] The price gets a little cheaper. You would see that, you know, this is a stock that, you know,
+[00:49:50] it has made big moves before. Maybe it could do it again with the right catalyst. Big moves in the past.
+[00:49:56] Maybe it could do it again with the right catalyst. So we had this-
+[00:50:00] big move here, it sold off, but then I had another big move here, and another big move
+[00:50:04] here.
+[00:50:05] So this stock, in spite of this candle here, which note was on light volume, shows that
+[00:50:10] it has a willingness and an ability to make big moves.
+[00:50:14] Something that I could probably comment on in another area of the class that I think is interesting
+[00:50:22] is some companies I would argue allow their stock to really open up, and others don't.
+[00:50:32] And you might think, what does a company have anything to do with how much a stock pops
+[00:50:35] up?
+[00:50:36] Well, a lot of these small cap companies have shelf registrations, and they work with investment
+[00:50:40] bankers, and those bankers basically have a block of shares that they're allowed to sell
+[00:50:48] on behalf of the company into the open market at any time.
+[00:50:52] So when are they going to do it?
+[00:50:54] They probably wouldn't do it on a day when the stock has no volume, they probably wouldn't
+[00:50:56] do it on a day when the stock is selling off, because it'll just push the price lower.
+[00:51:00] Now, they would do it on a day the stock is moving up.
+[00:51:02] So if you have a company that has a shelf registration and is working with investment banker
+[00:51:07] that is a bit more aggressive, they may sell very quickly into any pops.
+[00:51:11] And so now they're really limiting the upside.
+[00:51:14] They're like, look, any time the stock goes above, let's say $8 a share, we're selling.
+[00:51:18] And then we'll see very clear resistance at this level.
+[00:51:21] And then there's other companies that either don't have those shelf registrations or they do,
+[00:51:25] but they're not tapping it, or they're just working with a different investment banker that's
+[00:51:28] not quite so aggressive.
+[00:51:30] And so without that additional upside resistance, the stock is really able to move away,
+[00:51:36] which I think can be very impressive.
+[00:51:39] We don't see it every day that stocks will go up $20, $30 a share.
+[00:51:43] But when we do, it's clear that there's a huge imbalance between supply and demand, and
+[00:51:50] that is at least in part, because there's an absence of insiders dumping the stock.
+[00:51:56] So when insiders are selling, or the company is selling with a shelf registration S3,
+[00:52:02] that's when we sometimes see selling.
+[00:52:04] So that's when we sometimes see this resistance, so it's, they're not allowing it to
+[00:52:09] really open them.
+[00:52:10] GameStop is a great example of this.
+[00:52:13] In 2024, when Roaring Kitty came back and GameStop started to move up, the company sold
+[00:52:19] shares right into that move.
+[00:52:21] They raised billions of dollars.
+[00:52:23] If they hadn't done that, imagine how much higher the stock would have gone.
+[00:52:26] So they didn't allow the stock to go up too high.
+[00:52:28] Now, some companies also want to allow their stock to go down too low.
+[00:52:31] They'll do share buybacks to profit up.
+[00:52:34] But that's not very common with small cap companies, because they usually don't have the money
+[00:52:38] to do share buybacks.
+[00:52:40] So then the next check that we want to do on our checklist is to check the volume and
+[00:52:44] previous sessions, and today's relative volume.
+[00:52:47] So low volume and previous sessions means that if today, we have a strong news catalyst.
+[00:52:53] The relative volume ratio will be very high.
+[00:52:56] And that creates the larger imbalance between supply and demand.
+[00:52:59] If, on the other hand, we've had high volume and previous sessions, there are maybe
+[00:53:03] a lot of traders who will happily sell today as the stock pops up, right?
+[00:53:07] That's the issue with continuation, multiple multi-day continuation.
+[00:53:11] So light volume indicates there likely aren't a lot of backholders or recent investors
+[00:53:15] who are looking to take quick profits.
+[00:53:17] It reduces up side selling and therefore increases that potential.
+[00:53:21] It gives us something that we would probably refer to as a surprise move.
+[00:53:25] So we get this sort of big surprise squeeze.
+[00:53:28] So this stock, for instance, had 9,000 shares of volume on the day before breaking news.
+[00:53:33] Then it had 100 million shares of volume.
+[00:53:36] So there were not backholders.
+[00:53:38] There was nobody holding the stock, no one cared about it.
+[00:53:40] And then the stock goes from a dollar a share to like 20 bucks.
+[00:53:44] It's incredible.
+[00:53:45] A huge move.
+[00:53:46] It caught everyone off guard.
+[00:53:47] This stock had 240,000 shares of volume.
+[00:53:50] Then the next day has breaking news and has 50 million shares of volume.
+[00:53:54] That's insane.
+[00:53:55] That's huge.
+[00:53:56] This stock had 26,000 shares of volume, the prior day before the news, and then has 70 million
+[00:54:01] shares of volume, and gave two days of back-to-back continuation and momentum higher.
+[00:54:06] And we're not backholders or people that we're holding it and creating upside resistance.
+[00:54:11] And in these cases, the company wasn't selling either.
+[00:54:14] Now this one, 38,000 shares of volume on the prior day and then 48 million shares on the
+[00:54:19] next day.
+[00:54:20] And this big squeeze from $2 up to $4.80.
+[00:54:23] So these big imbalances are, this is something that we really pay a lot of attention
+[00:54:29] to.
+[00:54:30] This one, 26,000 shares of volume and then breaking news and all of a sudden the stock goes
+[00:54:34] from, this is BMNR that we'll talk about before, but over the course of a few days
+[00:54:38] it goes to 160 bucks.
+[00:54:39] It's incredible.
+[00:54:41] Amazing.
+[00:54:42] Now high volume in the prior day session creates greater risk of profit taking and selling.
+[00:54:46] Right?
+[00:54:47] There's just people that are going to say I'm going to take profit.
+[00:54:49] So look at this, SGBX, millions of shares of volume, let's see, this was specifically
+[00:54:55] on this day.
+[00:54:56] Millions of shares of volume and then on the next day it just sells off.
+[00:55:00] It sells off.
+[00:55:01] Anyone who is holding on this day ends up taking profit here and it sells off.
+[00:55:05] Anyone who bought on this day, because the volume started to pick up, took profit on the
+[00:55:09] next day.
+[00:55:10] So this is the pattern that we see, unfortunately, these stocks and it's also true with
+[00:55:14] large caps.
+[00:55:16] In video, 100 million shares of volume on the day prior to coming out with earnings.
+[00:55:21] And then the earnings comes out and it sells off all day long, people take profit.
+[00:55:25] So unfortunately when you have high volume on previous days it just creates this upside
+[00:55:31] resistance.
+[00:55:32] Typically.
+[00:55:33] Okay, so now we're going to jump over to Chapter 4 Part 2 on Daily Stock Types.

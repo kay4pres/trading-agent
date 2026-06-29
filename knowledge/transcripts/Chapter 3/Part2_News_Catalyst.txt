@@ -1,0 +1,1466 @@
+# Part 2 How to Understand the News Catalyst.mp4
+# Chapter 3: Stock Selection, Fundamental Analysis & Building a Watch List
+# Transcribed: 2026-06-26
+# Duration: 120 min | Segments: 12
+# Model: faster-whisper tiny
+
+[00:00:01] Okay, so we're gonna get started here with chapter 3 part 2.
+[00:00:05] How to understand the news catalyst.
+[00:00:08] So what I'm gonna do here is I'm gonna walk you through the most common headlines that I see on, you know,
+[00:00:15] maybe not, I don't see every single one every single day, but I see these headlines frequently enough that it's important for you to understand the meaning behind them.
+[00:00:24] It can be a little difficult, especially as if you're gonna trade or to interpret news headlines.
+[00:00:29] You know, you read it and you're like, I don't know, is that good? Is it bad? And so I'll let you in on a little secret. Tard for me too.
+[00:00:37] In fact, at one point I subscribed to this news service that I can't remember how much it was. It was hundreds of dollars a month. It was very expensive at the time.
+[00:00:44] Certainly it was for me, but even now it's still be expensive.
+[00:00:47] Maybe with inflation, it's a thousand dollars a month now. Who knows?
+[00:00:50] But in any case, they would put out headlines so fast and I would get the headline, I'd type in the ticker and wouldn't be doing anything.
+[00:00:58] And I'd be like, well, I don't know what to do. Is this good news? Is it bad news? I don't know.
+[00:01:03] And then all of a sudden, you see this stock starts to start jumping, you'd be like, oh, okay, or it starts to drop, you'd be like, oh, okay.
+[00:01:09] So, in fact, I'm not smart enough, and I'm gonna admit this.
+[00:01:14] Generally, the majority of the time, to read a headline and to know exactly what's gonna happen, because here's the thing.
+[00:01:22] You can have a headline that reads great, but if you don't know that company very well, you might not realize that they put out almost the same exact headline three weeks ago.
+[00:01:34] You know, that this was just a restating, a previously announced thing, whatever, previously announced contract or previously announced investment or whatever it is.
+[00:01:44] And this is very common that companies will rehash their news as part of kind of a PR public relations campaign.
+[00:01:52] You know, to keep interest in their stock, it's their obligation to shareholders, they don't want, you know, people to forget about us.
+[00:01:59] So, it can be very difficult in real time. Unless you know that company inside and out, to really truly know that this headline is good, before seeing a market reaction.
+[00:02:10] Now there are a couple of headlines that you could probably argue you could read and be like, yeah, that's definitely good. Let's say for instance, there's a headline that, you know,
+[00:02:20] I don't know, some huge super famous investor has taken a 25% stake.
+[00:02:25] That's a sound that would be a pretty good headline.
+[00:02:28] Although, you know, just for the sake of argument, we have seen, you know, before, and this happened right after Elon Musk acquired Twitter,
+[00:02:38] a lot of so-called, you know, verified accounts posting market news, but it was fake.
+[00:02:46] And so the market would react. There was a news headline of some big pharmaceutical company.
+[00:02:52] It was a fake profile, but it was verified and it said, we decided to make, you know, all of our drugs free.
+[00:03:00] So the price of the stock plummeted, and then, you know, the company was scrambling, and they were like, that's not even our verified account.
+[00:03:09] You know, we just lost billions of dollars in our market cap. What's going on? And so, you know, it.
+[00:03:17] So that, and that, and that's, that's pretty rare. That's, that's very rare, but it has happened before.
+[00:03:23] So ultimately, this is actually going to come back to the same thing that we said in our last class.
+[00:03:31] Rice action is everything. Stocks can be irrational. The news might not sound great, but the stock goes up.
+[00:03:39] The news might sound terrible, but the stock goes up. The stock might have a shelf registration.
+[00:03:44] They might have warrants, but the price keeps going higher. And this is the really dangerous thing about forming too strong, but bias and thinking that you know something everyone else doesn't.
+[00:03:54] This, I will tell you, I'm going to tell this to you, between you and me.
+[00:03:58] And I'm not, you know, trying to throw anyone out of the bus. But I see a lot of contrarian traders and even investors that think they know better.
+[00:04:09] There's a big investor that you probably heard of, if I said his name, who predicted the financial crisis in 2008, the housing bubble.
+[00:04:18] He's also predicted about 27 of the last three recessions. This guy is really great at predicting that the market's going to crash, and he's been right a couple times.
+[00:04:28] But man, he is just, he always thinks that he's, like, one step ahead, but it seems like the majority of the time he's actually wrong.
+[00:04:39] And you know what, it's got to be incredibly frustrated for him because he really believes in his thesis.
+[00:04:46] And yet, the market is irrational. It doesn't make sense that AI stocks are going up this much. It doesn't make sense that Tesla was valued at what it was valued at.
+[00:04:56] Remember when Amazon, when Jeff Bezos went on, I think it was David Letterman or something like that, and David Letterman was like, so your company is worth X amount of money.
+[00:05:06] But you lose money every year, and he's like, yeah, that's right. And it was true. His company was not making money based on their quarterly and annual earnings.
+[00:05:16] And yet it was Jay Leno. Thank you. And yet it was valued. The company was valued at an astronomical amount. It was trading in a very high PE ratio. That can happen.
+[00:05:25] Because the market prices are stock, not just on its today's operations, but the markets believe of what the company will do in the future.
+[00:05:35] And that's been, of course, you know, the big thing would Tesla as well as, well, yeah, it's so much more than just a car company.
+[00:05:42] Because it does all these other things, and that's why it's valued so much more than the car company. You know, but at the same time.
+[00:05:49] We, in the small cap world, you know, we'll see stocks where a short seller might argue. The company has a poor balance sheet.
+[00:05:57] You know, it's, it's not well capitalized. They're not producing profit. The stock is up. They are going to do a shelf registration.
+[00:06:06] You know, they are going to do a secondary offering. They're going to tap the shelf registration.
+[00:06:10] And they just start shorting and shorting and shorting it. And then next thing, you know, the stock's up a hundred percent.
+[00:06:17] And it's, it has three or four exploit rotation. And now, you know, the cost to borrow is surging up.
+[00:06:25] So the ability to add to a short position is becoming more difficult. The inventory of available shorts, the utilization is going up.
+[00:06:32] So the even existence of more shares to short is becoming limited. And now, the short sellers up against the ropes.
+[00:06:39] What do I do? Do I just hold? I can't add anymore. And then at what point do you just have to cut it?
+[00:06:45] Because if you're, if you're short at $4, let's just say for the sake of argument, you know, your shortest stock down here at four.
+[00:06:54] And then it goes up to eight. You know, you could double your position. Your cost basis comes to six.
+[00:07:00] And if it pulls back, you know, you can unwind the position. If you've got a big enough account, you can unwind the position. You could trade out of it.
+[00:07:08] And this is true. If you've got a big enough account, you can trade your way out of almost anything. I don't do that.
+[00:07:13] And, you know, but some people will. And so then it goes to 16. And it goes to 32. Let's just say.
+[00:07:20] But if you're not able to add more shares, how are you going to, how are you going to, how are you going to dig yourself out of this whole being short at four?
+[00:07:27] If you can't add more shares, your only hope is that it comes all the way back to four.
+[00:07:32] If you could add more shares and a ton more at 32, then maybe it comes back around to 25, you can get out break even.
+[00:07:38] Now this is not a good strategy, just, you know, buy your way out of a trade. And eventually, you're going to, I mean,
+[00:07:45] I mean, I imagine almost all of us here would hit the point where your account would be able to do it. Now someone like Elon Musk,
+[00:07:52] who's a billionaire, could just keep adding more money and they eventually could, I suppose.
+[00:07:56] But also, you know, people tried to do that on GameStop and they lost billions of dollars.
+[00:08:02] So there is a point even there where you just can't keep adding.
+[00:08:06] So, so I just want to reiterate that regardless of, you know, kind of regardless of everything else,
+[00:08:16] the news headline, the presence of warrants, a shelf registration, we have to trade the price action.
+[00:08:22] We have to trade the trend and it's a heck of a lot easier to trade in the same direction that, you know,
+[00:08:29] the train is going, then to try to predict when it's going to reverse because if you're wrong, you're just going to get run over.
+[00:08:35] And then you're only hope is that you somehow are able to unwind this thing and it might not happen.
+[00:08:42] So, there, in my, the last thing I said here is, don't overthink it.
+[00:08:47] Look, if the price is going up and this thing is trading cleanly, ride that momentum.
+[00:08:52] If the price is starting to stall out and it's not working anymore, walk away.
+[00:08:56] Is it stalling out because of, you know, these potential fundamental issues with the balance sheet with shelf registration of warrants,
+[00:09:03] maybe, maybe it's just short sellers.
+[00:09:07] We just, we ultimately don't know, we speculate, but if the price is clean, it's moving quickly, we're interested.
+[00:09:14] If it's not, we're out.
+[00:09:16] Now, having said that, I would be doing you a disservice if I didn't explain all of the variables behind the scenes.
+[00:09:23] If I just said, listen, guys, don't overcomplicate the price actions, everything.
+[00:09:28] I think that that would be, I don't think that that would be meeting the standard that I've set for myself,
+[00:09:34] which is to share with you everything I know.
+[00:09:36] So, I'm going to share these things with you, and we're going to go through all the different news headlines,
+[00:09:39] but, you know, like I said, you could have a news headline that doesn't really seem that great,
+[00:09:43] but the thing, man, it just keeps going.
+[00:09:45] So, when it comes to watching for breaking news, breaking news is typically released,
+[00:09:50] at predictable times, including at the top and the bottom of the hour.
+[00:09:53] The company's PR team schedules these headlines to get released.
+[00:09:57] So, basically, it's scheduled to publish at,
+[00:10:00] you know, this time. As I mentioned, as I have mentioned in previous episodes, we have a lot of foreign listed companies on the US market and so foreign listed companies may put out news on US market
+[00:10:13] hour times or they may put out news based on their own time zone. So Australian companies, many of which are listed on the US exchange,
+[00:10:20] because the US exchange is more volatile and attracts more buyers than Australian exchanges and same with European companies,
+[00:10:28] they may put out news headlines that are outside of our market hours. So anything that occurs between 8 p.m.
+[00:10:37] and 4 a.m. has the potential, you know, of course, out being outside of our hours to not get a reaction until the next session, which begins at 4 a.m.
+[00:10:48] But you also have some companies that could put out headlines at 4 a.m. It's a little unusual, but it could happen.
+[00:10:54] So, 4 a.m. 4.35, 5.36, 6.37, 7.38, 8.39.
+[00:11:02] When we look at the distribution of my trades, I'm almost certain I've showed this to you, but I'll show it to you again here.
+[00:11:09] When we look at the distribution of my trades, and we look at the time of day, and then we broke it down into 15 minute time increments.
+[00:11:19] We notice that the distribution of the trades, this is the quantity of the trades, and this is the profits.
+[00:11:25] But the quantity was 7 a.m. quite a lot, and so 7 a.m. we know is, of course, typically when I'm sitting down right now,
+[00:11:34] but it's also when most retail traders go online, so any news that occurred overnight and prior to 7 a.m. people begin reacting at 7 a.m.
+[00:11:45] So, there's a surge of trading, and as you can see, a pretty significant amount of profit from me right between 6.45 and 7.15.
+[00:11:52] So, that's in response to usually news that was out earlier overnight.
+[00:11:57] 7.30, not a lot of trades, definitely some profit there, news at 7.30, but not a ton.
+[00:12:04] 8 a.m., a lot of trades there, and a pretty decent amount of profit.
+[00:12:08] 8.15, not as much, 8.30, another little boost.
+[00:12:12] 8.45, not as much, but I'm usually still trading something that was hot from from 8 or 8 30 at that time as we had closer to 9.
+[00:12:21] 9 a.m. again, another surge of trading, I'm breaking news, and I do really well at 9.
+[00:12:26] 9.15, a little bit less, and then 9.30, this is when I'm trading stocks with this is where we have the traditional gap and go strategy where I'm trading stocks right at the open.
+[00:12:38] However, as you can see, although it's where I have my peak number of trades, it's not where I have my peak profit.
+[00:12:43] The peak is at 9 a.m., so you might argue based on these metrics that I should trade more at 9 a.m., which is when I'm actually producing the most profit.
+[00:12:52] Not that I should forget about 9.30, but trade more at 9, and maybe even trade more at 7 a.m., because I seem to do quite well at 7 a.m. as well.
+[00:13:01] So, you know, these are the types of things you can see in your data, but in any case, this is not, you know, you might just be like, oh, is that just a coincidence, but it's actually, it's a byproduct of a new cycle.
+[00:13:12] So, trading when breaking news is coming out.
+[00:13:15] So now, I'm going to share with you these different news catalysts.
+[00:13:18] I have 17 here, that we're going to go over and I'll hide my video again.
+[00:13:22] Some of these are going to go over very quickly, and others will spend a few more minutes really getting into the weeds on.
+[00:13:29] So, let's start at the top, number one, technical.
+[00:13:33] So, technical is actually known news.
+[00:13:37] So, this is, this is, I'm just going to begin with this.
+[00:13:40] A technical breakout is when a stock is moving up.
+[00:13:44] It's a catalyst, because the stock is moving up, and it's a purely technical catalyst.
+[00:13:48] It's not breaking news.
+[00:13:50] These can be surprisingly strong, and I think they can be surprisingly strong.
+[00:13:56] Because of that example I shared with you of that short seller who took a huge position on a stock that was up with no news.
+[00:14:02] You know, he just thought, it doesn't make any sense.
+[00:14:05] It's up, he was right, he didn't make any sense, but there was something going on behind the scenes he obviously wasn't aware of.
+[00:14:12] And then he ended up putting himself in a position where he was exposed.
+[00:14:15] He had a huge short position.
+[00:14:17] The price kept going higher, and it was really hard for him to unwind it.
+[00:14:20] So much so that his broker took over and he got a margin call.
+[00:14:23] So, a technical breakout is often when a stock has been weak for a long time,
+[00:14:29] and then suddenly starts to break out of consolidation and sort of curl off the low.
+[00:14:34] Other times a technical breakout can be when a stock has been strong,
+[00:14:39] but it's pulled back for a few days, and then is beginning to trend higher again,
+[00:14:44] which is more of a traditional, well, it's up a candlestick chart pattern that we will trade quite a bit.
+[00:14:50] I've already learned about it in day trading the basic, because it's that first pullback pattern.
+[00:14:54] So that first pullback pattern, which I like so much on the intraday charts,
+[00:14:58] you know, can also occur on daily charts.
+[00:15:00] It's not my absolute favorite, and I'll give you a chance to guess why.
+[00:15:06] So this day, even if it wasn't news, the first day it makes a big move,
+[00:15:11] usually has the highest volume.
+[00:15:13] Day two usually slightly declining volume, and then here the volume goes down a little bit lower.
+[00:15:18] Well, I didn't line this up very well, but I think you get the idea.
+[00:15:21] So what would be my concern with trading it right here?
+[00:15:25] My concern is that the relative volume is typically pretty low,
+[00:15:32] because it's usually the first day that has the most volume,
+[00:15:36] and unless there's a news catalyst, the technical catalyst alone isn't usually enough to give us a ton of volume.
+[00:15:45] I mean, like I said, it can work, and sometimes it surprises us,
+[00:15:48] because someone gets caught short, and it doesn't make sense,
+[00:15:51] but I usually don't have super high expectations that this is going to work really, really well.
+[00:15:56] We call it the first daily kingdom to make a new high.
+[00:15:59] The times it works the best is when there's an absence of anything better to trade.
+[00:16:04] So for that reason, people are like, well, this is decent daily chart.
+[00:16:08] It made a big move a couple days ago, maybe we got another big move.
+[00:16:11] When this move was like 400%, and a lot of people are trading it and paying attention to it,
+[00:16:17] this will do better.
+[00:16:18] If this move is only 40%, then this probably isn't going to be enough.
+[00:16:23] If this move was only 10%, you're not going to have much of a whole unit at all.
+[00:16:27] So any of the colder market, technical breakouts, when there's already quite a lot of kind of headwind,
+[00:16:34] just from the markets being colder, they just don't tend to work quite as well.
+[00:16:39] So, you know, but then we also have to factor in, well, so there's a couple things.
+[00:16:46] So number one, like I said, we never know if there's a big short seller who might take one of these positions
+[00:16:52] on his technical breakout and end up getting stuck short.
+[00:16:55] We also don't know initially what causes the breakout.
+[00:16:58] There could be a few deep pocket traders, those traders with big accounts,
+[00:17:02] who are covering a short position they've had for a while or maybe acquiring a position.
+[00:17:06] For all we know, in three days we're going to get a headline that Roaring Kitty has bought,
+[00:17:11] you know, a 1 million share position on the stock.
+[00:17:13] And then we're like, oh, I guess he was the buyer.
+[00:17:16] We don't know.
+[00:17:17] We have no idea.
+[00:17:18] But what we do know is that the stock is popping up.
+[00:17:20] It's moving higher.
+[00:17:21] And if it meets our five pillars of stock selection,
+[00:17:24] minus one, because it doesn't have breaking news,
+[00:17:27] but it meets all the four pillars quite well, you know, that it can work.
+[00:17:33] So, you know, it's, I don't totally dismiss a technical breakout with no news.
+[00:17:40] But remember if a stock is up 50-100% with no news,
+[00:17:44] it could be risky.
+[00:17:45] The company may be inclined just to take advantage and sell on the open market,
+[00:17:49] especially if their balance sheet isn't that great.
+[00:17:51] Short sellers will probably inherently be a bit more aggressive.
+[00:17:55] So we might want to double check to see how much is it to short.
+[00:18:00] Is the stock on short sale restriction?
+[00:18:03] You know, what's the utilization of the available shares out there?
+[00:18:07] And then we also have to remember that when a stock is up 50-100% or more,
+[00:18:12] and really more like 300% or 400% would know news,
+[00:18:15] if it's a nice, see, or an MX listed stock,
+[00:18:18] there is the risk that the company could haul shares of the stock.
+[00:18:23] And then you can't trade it at all, it's, because it's stock until
+[00:18:27] the company puts out news to account for why they speculate for the stock is moving.
+[00:18:32] And typically they say, we don't comment on volatility in the market.
+[00:18:36] We have no news to account for this move.
+[00:18:39] And the stock goes back down, because that's confirmed.
+[00:18:42] This isn't like there was news that got leaked and some people know about it.
+[00:18:46] Again, there could still be this situation of roaring Katie or someone else taking a big position,
+[00:18:50] you know, some other big investor, whatever.
+[00:18:52] But, you know, we don't know.
+[00:18:55] There was a stock, I remember a number of years ago, DRYS.
+[00:18:58] This was one of the stocks.
+[00:19:00] I think at the time, it was one of the biggest moves that I had seen.
+[00:19:04] One for about $2 a share to 114 was zero headlines.
+[00:19:09] There was zero news, and it was incredible.
+[00:19:12] I was sort of like, I was on the sidelines just blown away by how high it was going.
+[00:19:17] I could just kind of understand it.
+[00:19:20] So, you know, technical breakout like this, a stock that kind of is grinding without a real catalyst.
+[00:19:25] And then, you know, next day, it kind of surges even a little bit higher.
+[00:19:29] It's sort of a continuation setup, which we'll talk about in chapter four.
+[00:19:33] But it's also this just kind of technical breakout.
+[00:19:36] Now, it's got 4.6 million shares, relatively low flow.
+[00:19:40] The price is a little higher in this case, but, you know, just the right circumstances in the market.
+[00:19:45] Now, one of the catalysts that we'll talk about towards the end of this section here, chapter three part two,
+[00:19:52] is the current market sentiment, the quality of the market, and the current theme.
+[00:20:00] Because if the stock fits within the current theme,
+[00:20:02] even if there's no news whatsoever,
+[00:20:04] just being in that same sector or similar price
+[00:20:07] or whatever the case might be for the theme,
+[00:20:09] can be an important consideration.
+[00:20:12] And then the stock potentially just benefiting
+[00:20:16] from the overall trend in the market
+[00:20:18] that we're in a hot market can be a factor.
+[00:20:21] OK, so if number one is technical known news,
+[00:20:26] then we should probably, since this chapter,
+[00:20:28] was really talking about catalyst.
+[00:20:29] We should probably get into news.
+[00:20:31] Again, a technical breakout is a form of catalyst,
+[00:20:34] especially if the stock is up 50%.
+[00:20:36] Just being up 50% by itself becomes its own catalyst.
+[00:20:41] So I suppose that's kind of the reality
+[00:20:44] is that the very fact that stock is up 50, 7,500%
+[00:20:49] is its own catalyst.
+[00:20:50] Because it's going to make the stock
+[00:20:52] one of the most obvious stocks in the market,
+[00:20:54] if not the leading gainer of the day, one of the top,
+[00:20:57] people are going to notice it.
+[00:20:58] So even if there's no news other than that,
+[00:21:01] being up that much to catalyst that will draw in volume,
+[00:21:05] draw in attention and create opportunities.
+[00:21:07] But of course, I do prefer and most of the time that I'm trading,
+[00:21:11] we actually have a true news catalyst.
+[00:21:13] So the first true news catalyst that we're going to talk about
+[00:21:16] is earnings.
+[00:21:17] So when the stock announces its quarterly or annual earnings,
+[00:21:20] those reports can be a big deal.
+[00:21:22] All publicly trade companies are required
+[00:21:24] to file these earnings.
+[00:21:26] However, some companies will file that their earnings
+[00:21:29] are going to be delayed for one reason or another,
+[00:21:32] and they don't get published.
+[00:21:34] They have period of time and there's
+[00:21:37] extenuating circumstances when this is deemed acceptable
+[00:21:41] by the market, by the exchanges.
+[00:21:43] But some companies will abuse this a little bit.
+[00:21:45] And so you end up having long periods
+[00:21:48] where you aren't seeing any financials being reported.
+[00:21:52] Another problem with most small cap companies
+[00:21:55] is that usually their earnings are not very good.
+[00:21:57] Biotech companies usually do not make money.
+[00:22:00] These are essentially publicly,
+[00:22:03] but well, I don't want to say public funded.
+[00:22:05] Now it almost sounds like, well,
+[00:22:06] but they're funded by the public markets
+[00:22:11] in that people buy shares of these biotech companies,
+[00:22:14] hoping that the company ends up researching and developing
+[00:22:17] some new drug.
+[00:22:19] If they do, then the shareholders all benefit.
+[00:22:21] If they don't, then the company,
+[00:22:23] during this whole period of time,
+[00:22:24] they're just losing money.
+[00:22:25] They're just spending money.
+[00:22:26] They have no profit.
+[00:22:27] So then they do a secondary offering
+[00:22:30] where they sell more shares onto the market
+[00:22:32] to willing investors who are willing to say, yeah,
+[00:22:35] okay, they didn't do it the first round of investing,
+[00:22:38] a financing, but maybe a second round,
+[00:22:40] and I still believe in it.
+[00:22:42] And then they do it three times, four times, five times, 10 times.
+[00:22:45] So there are CEOs of companies that have been publicly traded
+[00:22:48] that just sort of are riding the coat tails in a way.
+[00:22:52] I don't know if that's the best way to say it,
+[00:22:53] but of the public markets,
+[00:22:56] just people putting money into it,
+[00:22:58] and these companies never make money.
+[00:23:00] The CEOs still get paid, they've got their salary.
+[00:23:04] They've got employees, but the companies doing R&D
+[00:23:08] and they're not actually producing a product of profit.
+[00:23:13] And so they have bad earnings.
+[00:23:16] So if you expect that most small caps had bad earnings,
+[00:23:20] after all, if they had really good earnings,
+[00:23:21] they wouldn't be small caps.
+[00:23:22] If they were one of these fantastically profitable companies
+[00:23:26] or a company that people really believed in the future,
+[00:23:29] it would be price much higher.
+[00:23:30] So we typically expect that earnings
+[00:23:33] are gonna be kind of a non-event with small caps,
+[00:23:36] they'll be bad, and that doesn't surprise anyone.
+[00:23:39] If they're good, that can be outright shocking.
+[00:23:42] So if the earnings results are in line with expectations,
+[00:23:49] then with a positive or negative, they're often a non-event.
+[00:23:51] And with large cap companies,
+[00:23:53] large cap companies have a lot of financial analysts,
+[00:23:58] essentially making predictions
+[00:24:01] of what they think these companies will report.
+[00:24:04] They're looking at competitive companies
+[00:24:07] in the similar sector, right?
+[00:24:09] So Walmart reports its earnings,
+[00:24:11] and then everyone's thinking,
+[00:24:12] okay, well, it's target gonna be in line with Walmart,
+[00:24:15] you know, what is target's performance been,
+[00:24:17] that it had a da.
+[00:24:18] I mean, there's people that talk about,
+[00:24:20] you know, actually standing in the parking lot
+[00:24:22] with like a little clicker, like,
+[00:24:23] oh, they're doing like, you know, 100 people an hour.
+[00:24:27] Okay, that's above average.
+[00:24:28] I mean, it's like, they look, if you can predict it,
+[00:24:32] that's not inside your trading.
+[00:24:34] That is you trying to, I guess,
+[00:24:37] beyond the ground doing your research,
+[00:24:38] and that I suppose, you know,
+[00:24:41] would give you an advantage if you were right,
+[00:24:43] but with small cap companies, they don't have that analyst coverage.
+[00:24:47] They have almost no analyst coverage, them.
+[00:24:49] So there's not really a lot of hype
+[00:24:53] about what the earnings are gonna do.
+[00:24:55] So they often, for small cap companies, are a non-events.
+[00:24:59] Unless they're good, but the thing is sometimes they're good.
+[00:25:02] They'll say, our earnings are up 400% year over year.
+[00:25:06] Last year, they made 100 grand this year,
+[00:25:07] they made 400 grand.
+[00:25:09] It's like, okay, they, they've,
+[00:25:12] someone very carefully crafted that headline
+[00:25:14] to sound super juicy.
+[00:25:16] It's hoping that people wouldn't really actually read
+[00:25:18] the whole filing, because when you read the whole thing,
+[00:25:22] you realize it's actually not that substantial.
+[00:25:25] Now, if you happen to be interested in trading volatility
+[00:25:29] on higher price stocks, earnings can be a great catalyst,
+[00:25:32] but they can also, it's a gamble to buy before earnings,
+[00:25:37] because you have no idea if they'll be good or bad.
+[00:25:39] Unless, you know, it's ultimately an educated guess.
+[00:25:43] And that educated guess could be based on a lot
+[00:25:45] of intuition and, you know, standing outside and parking a lot
+[00:25:48] and did it so, you know, you could say it's not gambling
+[00:25:53] in that instance, but for most retail traders,
+[00:25:56] buying a stock before earnings is not a recommended
+[00:26:00] or advisable approach, it's very, very risky.
+[00:26:03] So for me, I trade volatility,
+[00:26:06] and that means I trade the reaction to news.
+[00:26:09] So the news begins and then it comes out
+[00:26:12] and then the reaction takes place,
+[00:26:14] and that's what creates the volatility,
+[00:26:15] so that's where I'm trading.
+[00:26:18] And just also just as a side note,
+[00:26:20] earnings can be bad in the sense that the company is losing money,
+[00:26:23] but if they're losing substantially less
+[00:26:25] than they were in the previous year,
+[00:26:26] investors could look at those results positively.
+[00:26:28] So this again speaks the fact that it can be really difficult
+[00:26:31] just to read the headline and then draw the conclusion.
+[00:26:35] It would actually be kind of a funny little quiz
+[00:26:38] to put you guys through to give you a headline
+[00:26:41] and then have you predict if the chart goes up or down,
+[00:26:45] because you'll see some that look awesome,
+[00:26:46] the chart goes down, you'll see some that read terribly
+[00:26:48] and the chart goes up.
+[00:26:49] I mean, of course, there's some that sound good
+[00:26:52] and the chart goes up, but we also have this unpredictability
+[00:26:56] to a certain extent.
+[00:26:57] So the next type of news catalyst
+[00:26:59] and I'll hide my video again here is FDA
+[00:27:04] or clinical trial announcements.
+[00:27:06] This is obviously specific for pharmaceutical,
+[00:27:08] biotech companies, but it's active traders.
+[00:27:11] These companies can be some of the best.
+[00:27:14] These are stocks that can go from zero to hero overnight
+[00:27:17] when successful clinical trials,
+[00:27:20] you know, on experimental treatments are announced.
+[00:27:23] So they can be extremely volatile.
+[00:27:25] In other words, you can have big wins or you can have big losses.
+[00:27:29] These companies, if they're doing clinical trials
+[00:27:32] and they have a failure, you know,
+[00:27:34] patients start dying during a trial.
+[00:27:37] The stock can drop 80% overnight.
+[00:27:39] I've seen it happen.
+[00:27:41] So there's a couple of different ways
+[00:27:44] that we can read these headlines.
+[00:27:47] You know, if a company is a little bit more advanced
+[00:27:52] in their trials and they're at a point
+[00:27:55] where they're actually seeking guidance from the FDA
+[00:27:58] or trying to seek approval from the FDA,
+[00:28:01] the positive FDA announcement,
+[00:28:02] such as FDA approval for a new drug,
+[00:28:05] is a really big deal.
+[00:28:07] Because a headline like that
+[00:28:09] can put the company in a position where they can either
+[00:28:12] go into manufacturing or they can license
+[00:28:14] or sell that drug to one of the big pharmaceutical companies
+[00:28:17] and it's worth obviously a lot more
+[00:28:20] when it has FDA approval.
+[00:28:23] Similarly, sometimes a drug getting insurance approval
+[00:28:27] can be a big headline.
+[00:28:28] Because that makes the potential to market it,
+[00:28:31] you know, to ordinary people much higher
+[00:28:33] which would increase its profitability.
+[00:28:35] So you could have a drug that gets insurance approval
+[00:28:39] and they put the out that headline.
+[00:28:41] Certainly the weight loss drugs like, you know,
+[00:28:46] we'll go V and I don't know all of them.
+[00:28:51] But all of those different drugs,
+[00:28:53] those have been really popular
+[00:28:54] and insurance coverage or lack of insurance coverage
+[00:28:58] can be a very significant factor
+[00:29:02] in whether or not pharmaceutical companies
+[00:29:05] can be profitable salad those drugs.
+[00:29:07] I have a note here that headline
+[00:29:09] such as a company getting a fast track designation
+[00:29:12] is not typically as significant.
+[00:29:15] This is an interesting one.
+[00:29:17] They get the fast track designation from the FDA,
+[00:29:20] but often it feels like that's not a super significant headline.
+[00:29:25] I'm also, I'll note with the pharmaceutical companies
+[00:29:29] and biotech companies and medical equipment companies
+[00:29:31] getting a patent is not usually a really great headline.
+[00:29:38] I'll show you actually an example of one from today.
+[00:29:41] This stock SPRC had a headline to acquire patents
+[00:29:45] for medical innovation or for innovative medical
+[00:29:48] andoscopy systems and you see the initial pop up,
+[00:29:52] but then it just kind of unwinds.
+[00:29:54] I mean, it's still up in the 25% on the day,
+[00:29:57] but it's not going up, you know, a thousand.
+[00:30:00] That's not doing anything really, really exciting.
+[00:30:04] So we'll talk more about that when we get in the patents and trademarks, but yeah, so FDA
+[00:30:09] announcements are good, but also FDA announcements could be bad, if a company, I don't know,
+[00:30:16] you know, if there's a situation, we don't see this very often, but if the FDA is taking
+[00:30:21] action against a company, but we don't usually see that with small caps, because usually
+[00:30:27] the small caps when they're really volatile is when is in the lead up to getting a drug approved.
+[00:30:33] So phase one clinical trials, there's different types of headlines that we see.
+[00:30:39] Sometimes we'll see a headline like, you know, company has enrolled three patients in phase
+[00:30:45] one clinical trials.
+[00:30:47] Okay, and, you know, like, okay, so you're starting clinical trials.
+[00:30:51] Is that going to send the stock up to 100%, not usually, it wouldn't.
+[00:30:56] Now they finish phase one clinical trials with positive results.
+[00:31:00] Oh, okay, that's interesting, but there are only three patients in the trial for instance,
+[00:31:04] like it's very small.
+[00:31:05] Then that also kind of, you know, has some well, how significant is that?
+[00:31:11] So we see these kind of different scenarios where often phase one is not,
+[00:31:21] not generating super big moves.
+[00:31:24] Unless the market's really hot, really frothy, and we've had other biotech stocks
+[00:31:29] have been doing really well, phase one, not always the best.
+[00:31:33] Phase two, a little better, oops, and then phase three, even better.
+[00:31:37] So, you know, when we get a headline like phase three clinical trials are really positive,
+[00:31:43] and, you know, you read the headline and it's for, you know, a specific type of drug
+[00:31:48] that is, I don't know, for breast cancer or something that, you know, people are like,
+[00:31:53] oh, that's a big deal, that's going to affect a lot of people if this thing works.
+[00:31:57] Then those, that can be when things go really well.
+[00:32:01] So I do, I definitely pay attention, and I try to read the headline a little bit,
+[00:32:06] but, um, but ultimately, again, focus on the price action.
+[00:32:10] So this is a biotech clinical stage, biotech company, so they're doing clinical trials.
+[00:32:16] They're spending a lot of money as a lot of these companies, well, but this ended up going from,
+[00:32:21] like, $2 a share all the way up to 12 bucks.
+[00:32:24] So, 500, 600% move?
+[00:32:26] Yeah, that's awesome.
+[00:32:28] That, I mean, that's a stock, I can really sync my teeth into.
+[00:32:31] And there were a lot of opportunities.
+[00:32:33] We're obviously going to get much further, you know, into technical analysis, chapter four,
+[00:32:38] daily charts, chapter five, and related chart patterns.
+[00:32:41] Then chapter six, I need to teach you how to read level two, market data,
+[00:32:44] and now prepare you for going into chapter 70 and nine, where we start getting pretty deep into
+[00:32:49] strategy development, which is going to be, you know, entry and exit indicators and everything else.
+[00:32:56] But definitely, you know, a clinical stage biotech company with a low flow, 600,000 share flow,
+[00:33:02] a great headline, that can be a big deal.
+[00:33:05] But, you know, it's, interestingly, not a big deal for most traders.
+[00:33:10] Biodes.
+[00:33:11] When a company has a buyout, this can be really tricky.
+[00:33:15] So, when a stock announces that they are buying another company, the stock often,
+[00:33:22] doing the buying, will go down because investors fear the expense, the acquisition,
+[00:33:27] and the loss of efficiency during the time of transition, will hurt profitability.
+[00:33:32] A company that is being bought out will usually trade it exactly the buyout price.
+[00:33:37] So, imagine this, you got a buyout offer for $10 a share.
+[00:33:41] And you put out the news, the shareholders have approved, or board directors have approved
+[00:33:45] the buyout at $10 a share.
+[00:33:47] So, what's the value of the company now?
+[00:33:50] It's going to trade at $10 a share.
+[00:33:53] Why would it trade any higher?
+[00:33:55] It wouldn't make any sense, too.
+[00:33:57] Why would it trade any lower?
+[00:33:58] It wouldn't really make any sense there.
+[00:33:59] Now, I will share something that gets a little bit kind of nuance.
+[00:34:03] So, sometimes we'll have a stock where the buyout is $10.
+[00:34:08] Okay.
+[00:34:09] And so, you figure a trade exactly at $10, but it doesn't.
+[00:34:12] And let me just show you an example here.
+[00:34:15] This might be a good example here.
+[00:34:17] So, this may be an example where the buyout was either $9.50 or $10 a share.
+[00:34:22] So, it was certainly higher than the current price.
+[00:34:26] So, why, you can see it's trading basically sideways.
+[00:34:28] But why is it trading at $9.34?
+[00:34:30] And let's just say it at $9.50.
+[00:34:34] So, what we have there is a spread of essentially $16.
+[00:34:39] That's the delta.
+[00:34:41] So, this one was $9.50.
+[00:34:45] So, $9.50 and $9.34.
+[00:34:47] So, we've got a $16 spread here.
+[00:34:50] So, you could buy this stock right now at $9.34.
+[00:34:57] And hold it until the buyout goes through.
+[00:35:01] And you'll get $9.50 on $10,000 shares at $1600.
+[00:35:06] Now, granted, $10,000 shares would cost $25,000 or $93,000.
+[00:35:11] But, so, it's only $1.5%, but, you know, if this took a couple months,
+[00:35:18] for the buyout to finally go through and for your cash to get back to you,
+[00:35:21] you would make $1600.
+[00:35:23] Pretty low risk, right?
+[00:35:25] Well, then why isn't it trading right at $9.50?
+[00:35:28] Well, there is some risk.
+[00:35:30] There's some risk that the buyout might not go through.
+[00:35:33] That's always possible that something will fall apart,
+[00:35:36] whether it may be a regulatory, you know,
+[00:35:39] and to trust monopoly stuff of that.
+[00:35:41] For some reason, they won't go through from regulatory perspective.
+[00:35:44] For some reason, it might not go through from, you know,
+[00:35:46] just the deal falls apart.
+[00:35:48] And so, where was this trading before the news?
+[00:35:52] This was trading, well, we can't even see how low it was,
+[00:35:55] lower than $5 a share.
+[00:35:57] So, then, okay, this is where we have a problem with risk and reward.
+[00:36:02] So, your max loss on this, or not even, you,
+[00:36:06] it's not even your max loss, your most realistic stop loss
+[00:36:11] is going to be back down below $5.
+[00:36:15] So, now, you're risking $4 and 34 cents a share,
+[00:36:20] even more than that, though, in this case.
+[00:36:22] We just don't know exactly how much more,
+[00:36:24] to make $16.
+[00:36:27] Would you take that trade?
+[00:36:29] Even if you're right, 90% of the time,
+[00:36:31] that downside loss is way too significant.
+[00:36:34] Now, if this was a large cap stock,
+[00:36:38] there would be things that we could do to hedge,
+[00:36:40] where you could take this,
+[00:36:42] but then you could buy puts for $9.
+[00:36:46] Let's say.
+[00:36:47] So, then, what you'd actually be risking is $34 cents,
+[00:36:50] because you now own the right to short the stock at $9.
+[00:36:54] But, remember, you're going to pay for a premium
+[00:36:59] for that option contract.
+[00:37:01] This gets complicated.
+[00:37:02] So, that's going to eat in to the $34 cents of profit,
+[00:37:06] or sorry, the $16 cents of profit that you stand again.
+[00:37:09] In fact, the price of this option
+[00:37:11] will probably be greater than $16 cents.
+[00:37:14] So, realistically, it just doesn't work.
+[00:37:18] So, most people wouldn't end up doing that.
+[00:37:21] So, yes, it is trading slightly below the buy-out price,
+[00:37:25] but most people who, no, look,
+[00:37:29] I have traders all the time to ask the question,
+[00:37:31] why don't I just buy it right here at $9.34,
+[00:37:33] and I'll get $9.50 in a couple weeks, or whatever.
+[00:37:36] Yeah.
+[00:37:37] But, if it doesn't work out,
+[00:37:40] it's going to fail pretty, pretty epicly.
+[00:37:43] And it does tie up that money for a period of time.
+[00:37:46] So, now with mergers and buy-out agreements,
+[00:37:49] shareholders at the dissolving company,
+[00:37:52] will sometimes get a combination of stock
+[00:37:54] in the new company plus cash.
+[00:37:57] So, it can be a little bit of a funny price,
+[00:38:01] and sometimes it can take the market a few minutes,
+[00:38:05] like 15, 20 minutes for people to digest
+[00:38:08] and even for the algorithms to figure out
+[00:38:10] what this price should be packed at,
+[00:38:13] it's not always cut and dry.
+[00:38:16] And sometimes there's a merger agreement,
+[00:38:19] but prices haven't been clearly articulated at all,
+[00:38:22] and so you do have some volatility that remains.
+[00:38:25] But, generally speaking, buy-outs and mergers
+[00:38:29] aren't going to work.
+[00:38:31] Some also buy-outs and mergers have certain conditions
+[00:38:34] or milestones that can increase the cash amount,
+[00:38:36] but for the buy-out,
+[00:38:37] but those are variables, of course,
+[00:38:39] are unknown whether or not they'll be met,
+[00:38:42] and it just is not an intraday catalyst
+[00:38:45] that's going to really give us any opportunity,
+[00:38:48] so it's not something that we would typically trade.
+[00:38:50] All right, so this is our buy-out example,
+[00:38:52] as I already showed you,
+[00:38:53] and now, number five, stock splits.
+[00:38:56] So, a traditional stock split
+[00:38:58] are generally good news for large-cap companies,
+[00:39:00] Apple Tesla, Nvidia,
+[00:39:02] the company does a stock split,
+[00:39:04] and usually, as soon as the split is announced,
+[00:39:07] the price starts going higher.
+[00:39:09] Why?
+[00:39:10] Because the split means the stock will now be affordable
+[00:39:13] to people like us.
+[00:39:15] The so-called dummies in the market,
+[00:39:17] who will buy anything that's moving.
+[00:39:19] So, when Nvidia announced that they were going to go stock split,
+[00:39:22] the price starts going higher, same with Tesla.
+[00:39:24] Because even though with Tesla,
+[00:39:26] it was very expensive at that time,
+[00:39:28] they knew once the stock is down around $100 a share,
+[00:39:31] ordinary people are going to be easier for them
+[00:39:35] to acquire a position, even just one share.
+[00:39:37] You know, when one shares at the house in bucks,
+[00:39:39] it ends up pricing people out.
+[00:39:41] Yes, you can now do fractional shares,
+[00:39:43] and so it's a little different maybe than it was,
+[00:39:45] but even still, traditional stock splits
+[00:39:48] are generally good for these companies.
+[00:39:51] Even though the flow goes higher with this split,
+[00:39:54] that doesn't really matter,
+[00:39:55] the market cap doesn't change,
+[00:39:56] but the price becomes more attractive
+[00:39:58] to ordinary investors.
+[00:40:00] reverse stocks blitz, however, are typically non-events the day that the company, the
+[00:40:08] day of company announced it. So they make the announcement and usually nothing happens.
+[00:40:13] Even the day the reverse split takes effect, we usually don't see an increase in volume.
+[00:40:19] We do sometimes see a drop in stock price a little bit and I think that's because there's
+[00:40:25] this issue with fractional shares being forced to sell. They have kind of like rounding
+[00:40:29] issues when they do splits and it's complex but it can force some people out of the position.
+[00:40:38] So sometimes on the first day of reverse split we actually see the stock goes down in price.
+[00:40:44] So the time that I'm interested in trading a stock that has reverse split is not the
+[00:40:49] day the split is announced or the day the split takes place. It's going to be usually
+[00:40:54] a few days or a few weeks later when the company is putting out that breaking news headline
+[00:40:59] and beginning that classic cycle of, you know, a lot of PR around the stock to try to boost
+[00:41:05] the price up potentially to do an offering. But remember they're going to let the stock
+[00:41:11] go up because they can't do an offering. They're not going to get an volume if it only
+[00:41:15] goes up 5% or 10%. So they're going to put out the news and they're going to let it go
+[00:41:19] up. They're going to let it ride. So they're going to take out they're not going to be selling
+[00:41:24] into the move right away. They're going to let it go and then once it gets up really
+[00:41:27] high, attracts a ton of volume and is, you know, really liquid. That's when they're going
+[00:41:33] to be more likely to start selling. So if we look at this stock today for instance, SPRC
+[00:41:39] sure, but AMBR. AMBR right now has 75 million shares of volume. Hey, do you know what that
+[00:41:46] candles called? What's that candle called? That one right there. That candle is a jack
+[00:41:53] night. You're going to learn more about those as we continue on in the class. In chapter
+[00:41:59] five, I have a chat, I have a subset of chapter five dedicated to the jackknife and I have
+[00:42:04] a trading strategy where I trade jackknife's. But this is both a simultaneous bulltrap
+[00:42:10] and a bear trap driven by high frequency trading algorithms and market makers who see where
+[00:42:17] the stops are and look at all the liquidity generated in that candle. So, you know, this
+[00:42:22] is one of those examples where it's later in the day, you've got a lot of volume. So
+[00:42:28] I traded this stock this morning, but you know where I traded it right in here. This is when
+[00:42:33] it was moving and then once it's going sideways, this is where it feels like the company
+[00:42:38] put on the brakes and said, nope, we're not letting it go any higher and that was the end. So
+[00:42:45] I'll just hide this again. So when it comes to stock splits, I don't typically trade traditional
+[00:42:51] stock splits because I'm not trading large cap stocks. But with the reverse stock splits,
+[00:42:55] I'm really only trading them usually a few days or a few weeks later when they come out with
+[00:42:59] news. So when we get into chapter four, one of the stock types that we're going to talk about,
+[00:43:03] the daily stock type, the daily condition is when we have a reverse split. Now Daniel, why would
+[00:43:09] a company, and to answer your question, not want their price just to go up sort of indefinitely
+[00:43:15] higher. Well, there's a reality that the stock can only really go up so high. There's just
+[00:43:21] going to be a certain point where the price gets too high and where people are no longer going to
+[00:43:26] keep trading it because people will feel like they can't manage risk. So usually when we have these
+[00:43:31] stocks that increase in volume, they go up, sorry, I'm going to start up a little higher. So this
+[00:43:38] will be the volume board on here. Usually day one, high volume, day two, later volume, day three,
+[00:43:45] even as these candles sometimes get bigger, the volume goes down because the price is so much higher.
+[00:43:52] So there's sort of a sweet spot, just there's a sweet spot for us, there's sort of a sweet
+[00:43:55] spot for these companies as well when the stock is trading on like 100 million shares of volume.
+[00:44:00] You know, when you've got a lot of liquidity. So it's sort of, it's all sort of a little game of like
+[00:44:05] how much can the stock go up, you know, before it gets too expensive and volume declines.
+[00:44:11] How we need it to be cheap enough that people are still trading it. And when they start getting
+[00:44:17] expensive, the volume goes down. Now obviously, you can say, well, sure, but if it goes to $50
+[00:44:21] a share, you know, versus $5 a share, they only have to sell one, you know, 10, 10% of the amount of
+[00:44:27] volume to make the same amount of money. And while that is true, we just don't usually see them go
+[00:44:33] that high. I think that it's just, it happens occasionally, you know, and we have had stocks actually
+[00:44:40] a number in the past year that have gone into the 50s, which is, which is great to see, but historically,
+[00:44:47] it hasn't been as common. So I think it just has to do with the fact that there's a sweet spot there
+[00:44:53] where the stock is up enough that it's obvious and then it's like it's time to start selling.
+[00:45:01] Because if you miss that window, you know, later in the day the volume declines or if you hope that's
+[00:45:07] going to continue in the day too, but then another stock pops up that's more exciting than your
+[00:45:13] windows mess. So it's just, it's this kind of like, you know, trying to stay ahead of the next
+[00:45:19] other, because there's a last small cap company, isn't there's a lot of different underwriters in
+[00:45:22] their competing. And a lot of these underwriters also, I mean, they take on multiple companies,
+[00:45:26] so they kind of work with one company to sell shares and they've got another one. And so,
+[00:45:30] you know, there's kind of a system they have with this. And to a certain extent, these, these underwriters
+[00:45:38] while they work for the company, they're also motivated just as sort of like a real estate agent
+[00:45:43] as in a way to get the deal done to earn their commission. Get the deal done as quick as they
+[00:45:47] can earn the commission and go on to the next one. You know, they're trying to get a little bit of
+[00:45:52] a better price for the company and, you know, it's get the deal done. Sell the shares, move on to the next one.
+[00:45:59] And so that's not to throw realtors under the bus here, but, you know, they work, who do they
+[00:46:05] really work for, you know? So anyways, stock split days versus news days. So this was,
+[00:46:13] this was Tesla on a day where they announced the stock split here, and then the price rallies,
+[00:46:19] then here they announced the stock split, and I'm sorry, I'm sorry. They announced the stock split
+[00:46:25] earlier. It rallied and then into the split, the day of the split people actually took profit.
+[00:46:31] And that was the same here. We were rallying into the split and then I think it was the
+[00:46:35] day of the split here that the price sold off. So it was the news of the split on the large cap
+[00:46:40] stocks that got people excited and buying it up, anticipating all these retail traders so we're
+[00:46:46] going to come into it. But then when the split actually took place. So here again, they're announced
+[00:46:51] in the split. You get this rally going into the split, and then the split takes place, and then it
+[00:46:56] comes back down. So that's something to be aware of. All right, number six, news, and sorry, number six,
+[00:47:03] news item, analyst price target. So when a stock is priced at $3, and they're respected so
+[00:47:10] called respected the analyst comes out, a target of $18. It is something that gets investors and
+[00:47:16] traders a little bit excited. But 90% of the time, it's not respected analysts that put out price
+[00:47:22] targets on small cap companies. In fact, this is really funny. You know who usually is putting out
+[00:47:28] the price target on the small cap companies? It's the same investment bankers that are running
+[00:47:35] the secondary offerings. Seems like a conflict of interest. But we see that all the time. Some of
+[00:47:41] these investment bankers that even run, you know, I mean, very, you know, sophisticated promotional
+[00:47:48] campaigns for these companies. I mean, they look, I don't want to knock them too much. I mean,
+[00:47:52] you've got small cap companies, some of them that are really doing good things. They're biotech
+[00:47:55] stocks. They're trying to come out, come up with great, you know, great curious for terrible diseases
+[00:48:02] and, you know, that they need market awareness campaigns. But, you know, then there's also just
+[00:48:08] this, you know, reality here where sometimes you scratch your head, you're like, wait a second.
+[00:48:14] I know the name of that investment bank because yesterday they did a secondary offering on this other
+[00:48:19] stock. And then you look at the stock that they're putting out the price target on. And then usually
+[00:48:24] when those stocks, when we're going to talk about this in a moment, usually if when they have a
+[00:48:29] shelf registration, a lot of times they'll mention the underwriter who's helping facilitate it.
+[00:48:33] So then it sort of all ties right back together. But, you know, at the same time, you know, many of
+[00:48:41] many of these guys, you know, and the analysts that are on the floor, on the sort of speak on
+[00:48:48] the floor, no one's on the real floor, the exchange anymore. But some of these people, you know,
+[00:48:53] do their due diligence on the company, they put together their report and they believe in it.
+[00:48:58] And so, you know, you take it for what it's worth. Sometimes an analyst price target can
+[00:49:06] add a little fuel to the fire by itself as a standalone catalyst. It's not usually significant enough
+[00:49:14] unless it's a, unless it's a pretty big respect to the analyst.
+[00:49:21] Number seven, activist investor position. So an announcement that somebody has taken a position
+[00:49:27] can be significant if that person or the company has taken the position is considered an activist
+[00:49:32] investor. So Bill Akman, for example, with person square, he's guy's own hedge fund multi-billion
+[00:49:37] dollar hedge fund assets under management. He's very, you know, not the biggest hedge fund in the world,
+[00:49:41] but he's big. And if he takes a position in the company, he takes a very large position in the company.
+[00:49:48] And what he typically tries to do, he's done this in a number of instances, is he tries to
+[00:49:54] petition actively petition the board of directors, you know, to make changes to the company.
+[00:50:00] Based on what he thinks is going to be in the best interest of the company's long-term value for shareholders, and he's a shareholder
+[00:50:05] And these companies usually will pay attention to a
+[00:50:08] Billionaire who's taking a big stake in their company. Sometimes they'll even give them a seat on the board of directors if their stake is big enough
+[00:50:15] So now they can work from the inside now
+[00:50:18] It's not inside or trading because they've taken a stake. They own the company. They're not, you know
+[00:50:23] Buying and selling based on the things they're learning. They're holding it until they achieve their angle and they're allowed to do that
+[00:50:29] So what a big well-known activist investor takes a position that can be significant
+[00:50:34] It can also cause conflict in the company because the company doesn't always like this. They're like oh, brother
+[00:50:40] Now we've got this big shot. He's going to come in here and tell us how he he or she thinks we should run the company
+[00:50:45] So it's not always a good thing, but it is something that can create volatility in the stock price
+[00:50:51] Game stop obviously roaring kitty coming in and saying that he's taken a stake
+[00:50:56] We had this happen of course a couple times when he first took his original stake and then when he came back
+[00:51:02] Two years later or three years later and said he was back in with you know millions of shares
+[00:51:07] So
+[00:51:08] He's not exactly an activist investor, but he is a significant investor and so it it does definitely generate a significant amount of attention
+[00:51:18] Number eight new orders
+[00:51:20] Contracts deals and partnerships. So headlines such as a company getting a large contract a new deal
+[00:51:26] Something like that it can be a big deal no pun intended
+[00:51:29] Any time we see a small cap stock get a partnership or a deal with a big company that could be huge news
+[00:51:36] So a small let's say we've got a small cap
+[00:51:40] Technology company that has this software for managing you know shipping and stuff like that
+[00:51:45] It's you know for e-commerce and they get a deal with apple
+[00:51:51] That is huge in fact it's so big that you might speculate the apple is just gonna buy the entire company
+[00:51:57] I mean why even do the deal with a company that big but still getting their foot in the door with a big company like that is a big deal
+[00:52:04] So the thing here is that
+[00:52:08] Over the years because these you know PR companies that work with publicly traded
+[00:52:16] Organizations companies because they know that these kind of associations can be really positive for the stock price
+[00:52:23] They they try actively to make them happen and so some of them can be very legit and some of them are not a significant like you know
+[00:52:34] Partnering with Walmart to get in stores, but it's like you know some like little I don't know one of those little
+[00:52:41] Things that they have in the checkout aisle that's like a a lighter or like a gum packet like it is that really
+[00:52:48] I you know it feels like that might not be as significant and then even worse
+[00:52:54] Some of these some of these companies will put out headlines like partnered with Amazon and
+[00:53:00] Then you read the headline and it's like yep
+[00:53:01] We just opened our Amazon show a shop and it's like, well, is that really a partnership partnered with Nvidia?
+[00:53:07] Well, we just installed in video chips in our desktop computers at the office, so it's a partnership
+[00:53:13] I happen in video chip in my computer. Did I have do I have a partnership with Nvidia? I guess so
+[00:53:18] So this is again where the headline can sound really good, but then you actually start reading it
+[00:53:24] It's not that good and so the problem here is that initially this is gonna trick high frequency trading algorithms
+[00:53:31] So the algorithm is gonna see Amazon partnership and the stock is gonna go straight up and then it's gonna be like we launched our own store
+[00:53:40] And the stock can come right back down
+[00:53:42] So you have to be careful. So when we talk about Algo spikes which we'll get into later in the curriculum
+[00:53:48] when we have the initial spike
+[00:53:50] what I really look for is
+[00:53:52] Can
+[00:53:53] actual organic price hold
+[00:53:56] Organic trading volume hold this price because if it can
+[00:54:00] Then we look for the next like higher, but if immediately it reverses then that's usually when I think that this is actually not a
+[00:54:09] Super significant headline and it probably is something that I should actually disregard
+[00:54:14] Okay, so that's number eight
+[00:54:16] And and also I guess I'll add to it a deal with the government can also be pretty big the government, you know rights big checks
+[00:54:23] So government contractors, you know can do well
+[00:54:26] But there was a period of time. I remember you know in between administrations where there's speculation of well
+[00:54:32] What if the next administration cancels that contract? You know, so that can be a
+[00:54:37] challenge in that regard
+[00:54:40] Let's see breaking news date 30 was this oh, so this is a breaking news date 30 and it must have been a
+[00:54:46] New contract I didn't grab the actual headline, but anyways it goes from a dollar sixty to the you know three bucks
+[00:54:52] So you have the initial spike how goes spike market sort of pulls back for a second and then it keeps going higher
+[00:54:58] So we're good this one initial algos spike a little pull back and then we rally back up to the high
+[00:55:04] Good not quite as easy this one initial algos spike high volume selling and now it's a partnership with Bokeswagon
+[00:55:13] Digital sales and service to better support Volkswagen insurance business way a second
+[00:55:17] I don't even know what this part is so you know now
+[00:55:21] It's sort of confused is this just maybe one specific dealership
+[00:55:28] You know, I don't know I'm not sure, but the volume here tells the story
+[00:55:33] We're gonna talk about this a lot volume profile. I want you to memorize that phrase volume profile
+[00:55:40] If you didn't even look at the chart on this you only look to the volume bars
+[00:55:45] What would you predict?
+[00:55:48] You could do this you could do this on any stock you can pull up the stock. Let's see. I'll just pull up my charts again
+[00:55:53] You pull up the stock you double click the volume pane and you just look at the volume just look at the volume
+[00:55:58] Don't get anything else
+[00:56:00] So
+[00:56:01] Let's look at this one. Let's just see just looking at the volume
+[00:56:06] Pop high volume selling. Obviously this one looks like it moved up a bit
+[00:56:10] What about this one?
+[00:56:12] High volume selling back there
+[00:56:15] Okay, so just looking at the volume
+[00:56:17] It tells the story and when you see a lot of high volume red candles
+[00:56:21] What we're seeing is that there's more selling. There's more distribution and there is accumulation and we want to see accumulation
+[00:56:28] We want to see the price is going up high volume rejection high volume rejection
+[00:56:33] So then we unclick that and what is it? Tell us high volume rejection high volume sell off, right?
+[00:56:39] So when we pull up a chart and we see this volume profile
+[00:56:44] It's very important. It's very important to recognize that immediately
+[00:56:47] Now when this first spiked up here it pushed higher and then immediately change something it will also talk about is paying attention to the time
+[00:56:55] So if this is a one minute chart
+[00:56:58] Then there was a moment where this candle was green the open was at this the top right here and it was straight up green
+[00:57:06] So right there in fact
+[00:57:08] It was a micro pullback at 340. I'm getting a little ahead of ourselves, but if you just let's just bear with me for a second
+[00:57:14] And then know that I'm going to fill in a lot more details on this as we get further in the course
+[00:57:18] So it popped up to here then it pulled back
+[00:57:21] Then it surged up right here because we and we know that because there's a topic tail candle and we know the open is at the top of the body of the red candle
+[00:57:28] So this was a big green candle and it's very likely that I would have gotten in this potentially for the break on this micro pullback
+[00:57:35] So I might have had an entry and it went up to 390 and then it obviously came back down
+[00:57:40] And if it'd come back down to break even I would have gotten out and by the time this candle closed
+[00:57:45] Right, so we're actually looking at the time stamp we can see the time stamp on our charts
+[00:57:49] So pull the charts back up here for a second
+[00:57:51] So we'll get the time stamp here
+[00:57:56] So we've got 20 seconds left on this candle right so we watch how many seconds are left on the one minute candle
+[00:58:03] 15 seconds left
+[00:58:05] So right now this candle is green, but it could still go red if there's a burst of selling right now
+[00:58:10] It could go red
+[00:58:12] 52 53 54 55
+[00:58:15] 56
+[00:58:16] Now if a short seller said I want this candle to be red they could they could punch a big red or they could put
+[00:58:22] They could punch a base sell order right there and then all of a sudden nose died that candle
+[00:58:26] So sometimes we'll see a stock is forming a nice little pullback and then all of a sudden boom
+[00:58:31] You got a rejection right before the candle closes
+[00:58:34] And then that sort of ruins the chart
+[00:58:37] So this is the top of the war between buyers and sellers
+[00:58:40] Anyway, so not to get too much on tangent, but
+[00:58:43] Then this goes red the candle closes high volume red candle uh oh and then the next one of course
+[00:58:49] Again, it just continues
+[00:58:52] In this case here initial algos spike and then it reverses so in fact that news was not good
+[00:58:59] The stock ends up going down. I mean look it was at 540 initially pops up to 660 and then dumps
+[00:59:06] High volume selling and then it just continues to unwind it goes red on the dead
+[00:59:12] Okay number nine secondary offerings
+[00:59:15] So typically a secondary offering is not the type of headline that we like to see as a lawn bias trader
+[00:59:19] It means the company selling more shares of the open on the open market to the open market
+[00:59:23] Which is deluding the value of a stock to raise money
+[00:59:27] Now I will say that there are a few exceptions and maybe I'll have you try to guess what those exceptions might be
+[00:59:35] Just as I'm kind of walking you through this
+[00:59:37] So
+[00:59:38] We've already talked a bit about the secondary offering cycle and when we get into
+[00:59:44] Chapter three part three on fundamental analysis
+[00:59:46] I'm gonna walk you through ahead and check for shelf registrations
+[00:59:49] But let's look at this for a second. So here we have a stock that has a secondary offering price
+[00:59:56] at four dollars and 35 cents so in it
+[01:00:00] This case here is a 3.2 million dollar registered direct offering priced at the market
+[01:00:06] so they sold it on the open market and their average price was $4.35.
+[01:00:12] We got the news when the stock was all the way up at $14.
+[01:00:16] And so look at this drop.
+[01:00:18] It dropped from 14 down to 690 in a heartbeat and where do you think it's going to go down
+[01:00:23] to?
+[01:00:24] Probably around 4.35, usually close to it.
+[01:00:29] Sometimes not always in a hotter market, it might be able to hold a little higher.
+[01:00:33] Sometimes it goes a little lower because you know, in the float on this one, well it's
+[01:00:39] so the float is 1.2 million shares.
+[01:00:44] So we had a 1.2 million share float on this, 1.2 million shares.
+[01:00:48] This was the float.
+[01:00:50] And then what they did was they raised $3.2 million.
+[01:00:54] So 3.2 million dollars and they sold it.
+[01:00:57] What price?
+[01:00:58] $4.35.
+[01:01:00] So if they sold a million shares at $4.35, they would have raised $4.35 million.
+[01:01:06] So they ended up selling like 700 shares, 700,000 shares, oh, 800,000 shares, right?
+[01:01:12] So 800,000 shares they sold.
+[01:01:14] So now what's going to happen to the float?
+[01:01:16] Well now they just added on, well I guess it's not quite that big, but they added on
+[01:01:20] an additional 800,000 shares.
+[01:01:23] Now the float is 2 million, right?
+[01:01:27] So they've expanded the float, which essentially has diluted the value of these pre-existing
+[01:01:32] shareholders.
+[01:01:33] They now own a smaller percentage of the float.
+[01:01:37] So if there was just one shareholder who owned the full 1.2 million, they'd be like,
+[01:01:42] wait a second, you just took me from being a full owner of the whole thing.
+[01:01:46] And now I'm owning 60% not a cool.
+[01:01:51] You brought in another person at this price, but that's not cool.
+[01:01:56] So unfortunately, any form of dilution where increasing the number of shares is going to
+[01:02:02] be negative from that very kind of linear perspective.
+[01:02:11] But what if, just for the sake of argument, what if they did that
+[01:02:16] secondary offering at $16 a share, and even if they raised a million dollars, let's
+[01:02:24] say they sold a million shares at $16 a share.
+[01:02:29] Yes, the float goes up, but this new investor valued it at 60.
+[01:02:35] That's actually really bullish, and the price would most likely go higher.
+[01:02:40] And what we also know is that this investor who's in now at 16, they can't tail, take
+[01:02:46] profit until this thing goes up to 20 or 30, whereas the investor who just got in, well,
+[01:02:51] if this would, so it depends on, if this is a direct offering, then they sold on the open
+[01:02:54] market.
+[01:02:55] But sometimes they do an offering to an accredited investor, so they sell shares directly
+[01:03:01] to an investor at a discount, and then depending on the terms that agreement, the investor
+[01:03:05] could potentially come in and sell those shares right on the open market right away.
+[01:03:09] And what some investors would do, which I don't know if they're supposed to do, but
+[01:03:12] some of them would short the stock, knowing that they have the right to exercise essentially
+[01:03:16] to get these shares at 435, so they're going to profit from the difference, and they've
+[01:03:20] created basically a box around their position.
+[01:03:23] So they're short at 14, and they bought, they already owned shares at 435.
+[01:03:29] So now it doesn't matter how much the stock goes up and down, because they're going to
+[01:03:32] still profit from that difference, because they're short and the cover.
+[01:03:36] So the only time a secondary offering can be interpreted as bullish is when the offering
+[01:03:44] price is pretty high relative to the current trading price, it may be and or the number
+[01:03:51] of shares is very small.
+[01:03:53] If they only raise like $100,000, but they almost never do that.
+[01:03:57] So this is an example here, secondary offering price immediately drops from 5, and it's
+[01:04:02] an Algo drop.
+[01:04:03] The Algo is immediately see it and it's instantaneous drop.
+[01:04:06] They sold up and raised $4.8 million by selling $1.3 million shares.
+[01:04:12] So this is going to have the effect of raising the float.
+[01:04:15] And notice this company is HC Wayne right.
+[01:04:19] So when we get into fundamental analysis, I'll show you how to search for a company like
+[01:04:22] that to see if that company is involved, you know, just as an example, is that company involved
+[01:04:26] with other underwriting of other companies, other secondary offerings.
+[01:04:30] There's another secondary offering, price drops from $4 all the way down to like $1,000,
+[01:04:35] almost a dollar, 70% drop in an instant.
+[01:04:39] Now notice this drop here, regular trading hours, this drop here, regular trading hours,
+[01:04:46] this drop here, regular trading hours, another secondary offering from 2 down to 87 cents.
+[01:04:52] It's more common that we see these announced during regular trading hours versus pre-market,
+[01:04:58] I'm not sure why.
+[01:05:00] The secondary offering right there, dropping, back down.
+[01:05:03] Now this is one where it squeezed up and then like on the same day it comes back down.
+[01:05:09] That's not as common, it's more common that they weigh a couple of days.
+[01:05:13] This one here, rallying up, rallying up, and then offering and look at how it popped up
+[01:05:19] and then dumped, that's so frustrating.
+[01:05:21] So they announced $15 million, wow, okay, so in this case, this one we read into it.
+[01:05:30] In this case, they entered a definitive agreement with several institutional and accredited investors
+[01:05:37] for the purchase and sale the company's common stock of $4 and 75 cents a share.
+[01:05:42] So it was trading at 7, so getting in at 475 obviously feels like a discount, right?
+[01:05:48] Now this one that we read, now we didn't have the headlines attached, but we knew those were offerings.
+[01:05:53] This one was also with institutional and accredited investors.
+[01:05:58] But when we first read that headline, we don't know exactly what that means or who's behind that.
+[01:06:04] Here's another one, raising $25 million, wow, so entering into a purchase agreement
+[01:06:10] with two institutional investors for a registered direct offering of $25 million, and this
+[01:06:18] also being a Chinese company, you don't know, but it makes you wonder, this stock literally
+[01:06:23] won't, and this is insane, you guys, from $50 a share to $60 to $70, all we have to $150.
+[01:06:29] In this one, they let it go, so what we don't know, and what we can only speculate is,
+[01:06:37] did they sell, short, before the news came out?
+[01:06:41] Because I mean, you hate to think it, but look at that, from $180 all the way down to 16
+[01:06:48] bucks, would have been an epic short, I don't know, we don't know.
+[01:06:53] These things do happen, but we don't know.
+[01:06:57] Here's an example of a secondary offering, this is a live trading archive, so let me pull
+[01:07:01] up this video for you and we can watch it, it's going to be painful to watch, so before
+[01:07:07] warned if you're squeamish about this type of stuff, it's going to be hard, okay, so this
+[01:07:15] with GTP, GTP, okay, so it's up 70% 5.3 million shares of volume, this is actually
+[01:07:26] at 915, it's just before the opening valve, and look at how fast this thing drops, there
+[01:07:35] it goes, there it goes, yikes, pops up for a moment, so the initial pop, you guys will
+[01:07:45] learn this when you get later into the course, I like doing dip trades, the biggest risk
+[01:07:50] is doing a dip trade when there's breaking news, because this is not somewhere that I want
+[01:07:54] to do a dip trade, but sometimes in the moment you can't, sometimes in the moment you're
+[01:07:59] not sure when the drop is this big, if it is breaking news, or if it's just a flash,
+[01:08:05] kind of, you know, stop orders, well, see this is pretty market, so there's no stop orders,
+[01:08:10] so a dip this big doesn't really make sense, okay, so let's go back here, so it's currently
+[01:08:14] trading at 1367, this is our level 2 window, when we get into chapter 6 you're going to learn
+[01:08:19] how to read the level 2 here, so if this is a little, you know, a lot going on at first,
+[01:08:24] well what we've got here are the bids, these are the buyers, we've got the ask, these are the
+[01:08:28] sellers, and then we've got our time in sales, which is showing the quote, the record of every
+[01:08:34] order that's gone through the market, and then this is our chart here in the corner, so I wasn't
+[01:08:39] currently in the trade, I'd made money on earlier, but there wasn't a setup here, so I was just
+[01:08:43] sitting tight, so current time is 914 and 52 seconds, currently nobody knows what's about to happen,
+[01:08:52] it drops right there a little bit, 5758, so let's look at the first order, I'm going to just
+[01:09:00] pause it really quick and unpause it 59, so we're still just holding out here and then right there,
+[01:09:09] that is a high frequency trading algorithm, there is no way a retail trader could
+[01:09:15] ever respond that fast, so the first algo has hit the bid, they have pulled any of their buy orders
+[01:09:23] and they are executing sell orders as fast as they can to other retail traders who have not yet
+[01:09:29] canceled their order, we're going to just keep going really quick, so now there's some more sell
+[01:09:34] orders going through, more sell orders are 21, these are still high frequency trading algorithms,
+[01:09:39] and there's a burst that goes through right there, they're chasing it a little bit, but they're
+[01:09:43] still doing okay, now they're going on different routes, these algorithms use the same routes
+[01:09:47] that we use, they have some of their own, but they can use the same ones as we use, so now you're
+[01:09:52] having actual retail traders beginning to sell in panic as well, they're like, oh my gosh what's
+[01:09:57] and some are just a deer in the headlights, they're not
+[01:10:00] sure what's happening. You know, is this why's it dropping? They haven't even seen the news yet.
+[01:10:04] So we're just pausing and unpausing. So it sort of holds there at 12 and there might be some
+[01:10:10] people that are buying this dip. They're like, oh, I don't know. This is a big drop. It'll probably
+[01:10:14] bounce back up or I'm going to average down. But then when they sell, more market makers clear out
+[01:10:20] their buy orders. So now all of a sudden, there's a lot less buyers that are in the market.
+[01:10:27] Because the market makers have, they already saw this headline. They took their buy orders away.
+[01:10:32] They shorted the stock and they're letting retail traders just sell and get unimaginable slippage.
+[01:10:39] You put your sell order for 12. You get filled 1150. You put the next sell order 1150. You get
+[01:10:44] filled at 1060. Why would a market maker buy this? They already know there's an offering.
+[01:10:50] They're not going to buy it. They're canceling their order. If they bought it,
+[01:10:54] they're going to end up long the stock at $10 a share. They don't want it at $10 a share.
+[01:10:58] So they cancel all their orders. Remember, the role of the market maker, they're sitting,
+[01:11:04] making the market. They're sitting on the bid and they're sitting on the offer. They're an
+[01:11:09] intermediary. So anytime someone wants to buy, they're there to sell you shares. Any time someone wants
+[01:11:15] to sell, they're there to buy you shares. And just like in the old days, they profit because
+[01:11:19] when they buy, they buy it for a lower price than they resell it for. But when the market
+[01:11:25] is very volatile, they say, no, I don't want to trade this. I don't want to buy this at all.
+[01:11:29] Now, this is all in the old days done by an actual person on the four of the exchange called a
+[01:11:36] market maker or a specialist in the case of the New York Stock Exchange. And they were sitting there
+[01:11:41] at their post on the floor, making the market. And if you wanted to buy or sell shares, you had to
+[01:11:45] go to that market maker. They made the market for those specific stocks. Today, market
+[01:11:50] makers still exist. They're giant financial institutions that are making the market by sitting
+[01:11:54] on the bid and the offer. But they're using high frequency trading algorithms to maintain the bid
+[01:12:00] and the offer to adjust the spread in real time. And they're competing, of course, with other
+[01:12:05] market makers. But they're also, you know, they've got these risk models where when something
+[01:12:09] like this happens and something starts dropping, they pull back all their orders. We're going to get into
+[01:12:14] this in a lot more detail in chapter six. When we talk about level two and we talk about how orders
+[01:12:19] are routed and we talk about market making, but just to kind of plant the seed. So, here's a good news.
+[01:12:26] We can trade. So, how do I phrase this? We always want to trade in the same direction that the
+[01:12:33] market makers go in. So, in this case, it's short. And I don't trade to the short side typically.
+[01:12:38] You could, if you wanted to, but I don't prefer to for a number of reasons which we can talk
+[01:12:42] about more and I've already talked about. But so, in this case, I'm just not going to trade it all.
+[01:12:47] But you do not want to trade against the market maker. And generally, you don't want to trade against the
+[01:12:51] trend. So, it goes down to 1019, then to 10, then to 978, then to 910. This, look, guys, this is what's
+[01:12:58] crazy. This stock currently has 5.4 million shares of volume, but it dropped from $10 to 930
+[01:13:07] on how many shares of volume is this? It's like a thousand shares, 2,000, 3,000 shares.
+[01:13:14] How does this stock with 5 million shares of volume drop a dollar share on 2,000 shares?
+[01:13:19] Because the buyers are gone. They're not here. Okay. So, now we're going to watch this here.
+[01:13:28] It's going to drop a little bit more. So, then it pops back up to 10. So, some people come in
+[01:13:34] and it pops back up for a second. So, now we're back to 850. And some people are trading in here.
+[01:13:45] You know, buying and selling, maybe trying to figure out what the heck happened to averaging down,
+[01:13:50] some dip traders coming in, some short sellers covering. And then another wave of selling here comes
+[01:13:55] in. As it breaks the load down there, 770, 750. It goes right down there to another load. So,
+[01:14:03] you know, so this is, so obviously when a stock comes out really bad news, it can drop quickly.
+[01:14:11] On the other hand, it probably would have been a good idea for me to include an example of a stock
+[01:14:16] squeezing up on really good news. Because we've seen stocks that have done exactly this in reverse,
+[01:14:22] where the candle goes from $7 to $14. And it is unbelievable. And of course, we love that.
+[01:14:28] So, you know, what I'm kind of saying, I don't like about the market makers here,
+[01:14:33] on the other hand, when it's going in my direction, I'm okay with it. So,
+[01:14:38] this is all part of the dynamics of the market. When we have breaking news, market makers,
+[01:14:43] who, on the surface, appear to provide liquidity by buying and selling. In fact,
+[01:14:50] do not, they actually amplify volatility in the market. Because they create the illusion that there's
+[01:14:54] a lot of liquidity, but then when things start to get to volatile, they can pull their orders away.
+[01:14:59] And then they let the stock squeeze. Now, again, there could be market makers that are going to
+[01:15:03] come and sell into that squeeze, but there could be short sellers that sell into it. But when things
+[01:15:08] start to get really volatile, we can see things move incredibly quickly, even on relatively light
+[01:15:16] volume. And it can be an opportunity to make some good money trading. So, just obviously,
+[01:15:23] this is just something to be aware, but especially as it pertains to when bad news comes out,
+[01:15:28] especially in the instance when, you know, it's not just bad news came out, this no one was
+[01:15:33] trading it, and then bad news came out. It's all these people were in it, and it was up 70%
+[01:15:38] on 5 million shares of volume, and then it drops in an instant. And when it drops, it's like,
+[01:15:46] it drops so fast because of the way the high frequency trading algorithms pull back their orders,
+[01:15:53] and actually go short the stock to ride that momentum. So, if you're curious about the risk of
+[01:15:58] a company actually following through with an offering, you can look at the earnings statement
+[01:16:02] to check the profit loss in the balance sheet. Most of these companies do have shelf registrations.
+[01:16:08] So, they file the shelf registration, they have it listed, it's automatic. But what you could do is
+[01:16:15] you could check the balance sheet, you could check the profit loss statement, you could check
+[01:16:19] the underwriters to see if the underwriters, they're listed on the shelf registration,
+[01:16:24] are associated with companies that you can look back at their chart and see these big red candles,
+[01:16:29] these big red rejections, because if that's the case, then they are very inclined that it's
+[01:16:34] going to happen again here. And then I could be cautious over staying my welcome.
+[01:16:40] Usually, these stocks have a period when you get a really nice move. They let the stock go up.
+[01:16:47] And then, once it starts going sideways, you start having higher volume, you might start seeing
+[01:16:52] jackknives. You start seeing more of these false breakouts. That could be them selling right then and there.
+[01:16:57] We don't know. We could also be one of the institutions that have warrants selling shares. We don't
+[01:17:03] know, but when we start seeing that sideways price action, it's not clean anymore, then I'm done trading
+[01:17:08] it. And so to me, it's actually pretty rare that the offering news drops in the middle of the
+[01:17:16] first or second pullback within 15, 20, 30 minutes of the stock having breaking news. That's, that
+[01:17:23] that is very rare, which is why, again, knock on wood, I've been fortunate in all of these years
+[01:17:29] not to be caught in a stock that has had an offering while I've been in the trade. Because I'm
+[01:17:33] focusing on breaking news, trading the stock, that volatility, and really trading generally the first,
+[01:17:38] the first hour of the breaking news. Because after the first hour, yes, sometimes the stocks will
+[01:17:42] continue higher, but oftentimes after that first big move, it just sort of either they're not
+[01:17:52] letting it go higher or buyers start to feel nervous if this thing is just to extend it and
+[01:17:58] people start to kind of take their foot off the gas a little bit. Okay, number 10, breaking news type
+[01:18:06] is the private placement. A private placement is very interesting. It's a transaction that occurs
+[01:18:12] again between an institutional trading firm and a company. In this transaction, the company receives
+[01:18:18] capital and gives equity back to the institution at typically a discounted price. The discount price
+[01:18:26] can be a point of contention with existing shareholders because if it's lower than the current
+[01:18:30] market price, it devalues the stock. But even at the current market price, it's still devalues the stock.
+[01:18:37] So, it's a form of delusion, deluding the value for each shareholder by issuing more shares
+[01:18:42] directly without increasing market value. I've been putting some cash on the balance sheet.
+[01:18:47] And yet, these catalysts often tend to be bullish. Despite delusion, this is kind of odd.
+[01:18:56] So, how is that working? Why is it that a secondary offering is certainly bearish, but a
+[01:19:04] private placement can be bullish? So, there's a couple things about a private placement that
+[01:19:10] I think are significant. A lot of times secondary offerings are offerings that are
+[01:19:16] direct on the open market. So, it's an investment bank underwriting firm that selling shares
+[01:19:21] right on the open market, right into retail trading volume. So, it's not sophisticated traders
+[01:19:28] who are essentially buying and accumulating these positions, it's more novice amateur traders.
+[01:19:34] So, that's obviously not as desirable because now they've just dumped a lot of shares on the market.
+[01:19:41] They've raised money and it's just to novice people. But a private placement with a respected
+[01:19:51] institutional trading firm is a little different because that firm now has a very significant
+[01:20:00] invested interest in this company.
+[01:20:03] And usually, it's almost like an activist investor taking a stake.
+[01:20:10] Now usually, when this institutional trading firm gets shares, they're getting shares that
+[01:20:15] are part of the shares that are outstanding, not shares that are part of the flow.
+[01:20:21] So there's shares that have been reserved by the company to sell to investors, as needed,
+[01:20:26] but they haven't been sold on the open market, so they're not part of the flow.
+[01:20:30] Whereas when the company sells shares directly onto the open market, it is increasing the
+[01:20:35] flow in real time.
+[01:20:37] So when these institutional, so now at the same time, these are shares that are obviously
+[01:20:43] getting assigned to a company that will eventually sell them.
+[01:20:46] So they will eventually sell these shares, and they'll probably eventually get into the
+[01:20:50] become part of the flow.
+[01:20:51] That's not, they're probably, well, they're not going to be restricted as outside
+[01:20:57] outstanding shares forever.
+[01:20:59] But when they first get issued, they are.
+[01:21:01] And private placements can have terms attached, where this institution, yes, they got shares
+[01:21:07] a discount price, but they're now heavily invested in the company.
+[01:21:11] Sometimes to the tune of $30, $40,000,000,000, we've seen private placements that have been
+[01:21:16] 200, $300, $400,000,000,000,000,000.
+[01:21:19] So huge private placements.
+[01:21:22] Those are private placements, in fact, are so big that in a way, this institutional trading firm
+[01:21:28] is because of the shares they now get, which are directly tied to the sides of their investment,
+[01:21:33] they almost become a majority shareholder of the company.
+[01:21:37] It almost is that this company is now almost like a publicly traded shell of the
+[01:21:44] institutional trading firm, like an arm of it.
+[01:21:47] So now what is the institutional trading firm going to do?
+[01:21:50] What are they going to instruct the company to do with all that money they gave them?
+[01:21:54] Now if it's a biotech company, then they're obviously going to continue doing their research
+[01:21:59] in development and so on and so forth.
+[01:22:01] In the past few years, we've started to see institutional trading firms direct the company
+[01:22:07] to go make an investment in a highly speculative asset class such as cryptocurrency.
+[01:22:14] And so now this is really interesting.
+[01:22:15] You have a company that initially have a 5 million share of float and was trading at $5
+[01:22:23] a share.
+[01:22:24] So the market cap was $25 million dollars, that was a whole company, and then they received
+[01:22:29] a $200 million private placement which is insane by it from an institutional investor.
+[01:22:40] So now the market cap is going to go to $225 million, just well it's going to go to $225
+[01:22:45] million if they get $200 million shares of the dollar share, essentially.
+[01:22:51] Even though they're just but bear with me.
+[01:22:55] So now the company has $200 million on the balance sheet and the institution says
+[01:23:01] I want you to go buy Bitcoin with all of that money.
+[01:23:06] So now this company on their balance sheet is basically a holding company for Bitcoin.
+[01:23:13] It was previously a $25 million company selling widgets, whatever and that's now not
+[01:23:19] even the thing because this is their thing.
+[01:23:23] This huge private placement is their thing.
+[01:23:25] So it does happen that institutional investors will essentially acquire a public trade company,
+[01:23:35] change the name of the company and totally change their business, fire the CEO, everything
+[01:23:39] changes.
+[01:23:40] And sometimes the companies accept that they're like well we'll do the deal.
+[01:23:45] It's essentially an easy way for a company to become publicly traded.
+[01:23:51] So the institution can have a publicly traded win and that win is like Bitcoin investing
+[01:23:56] or whatever it might be.
+[01:23:58] And then other people that are interested investing in that very speculative asset can
+[01:24:01] do it by investing directly in this public trade company.
+[01:24:05] So this sort of feeds into AI, mania and crypto mania and these sort of big periods of
+[01:24:13] exuberance that we see in the market and that's when these things start happening.
+[01:24:17] Now private placements with biotech companies has always been a thing and that usually
+[01:24:22] still is a positive catalyst because the company that's investing really believes in, you
+[01:24:30] know, what this biotech company is doing.
+[01:24:32] They've done their due diligence.
+[01:24:34] They believe in them enough to write one big check for $30 million.
+[01:24:38] That's a significant investment.
+[01:24:41] When a company raises $30 million by selling shares all day long on the market into retail
+[01:24:47] trading volume, that doesn't speak to anyone vetting or doing the due diligence that
+[01:24:53] that company has something special.
+[01:24:55] That's just a company raising money.
+[01:24:57] That's all it is.
+[01:24:58] But when the company gets a private placement from a respected institutional trading firm and
+[01:25:04] that firm is obviously done their due diligence, that's a little different.
+[01:25:09] So that's when we can end up seeing some big moves.
+[01:25:12] So this is a private placement.
+[01:25:14] This is a $35 million private placement right here and so in this particular private
+[01:25:19] placement, there was $35 million and they bought the stock at $21.70 a share and that
+[01:25:28] is incredibly bullish because this stock down here you can see went from about, what is
+[01:25:33] this line, $3 a share up to four up to five up to six up to eight, pulled back, then it
+[01:25:39] goes up to 10, 12, 14, pulls back, goes up to 20, pulls back, goes up to four.
+[01:25:44] And he pulls back, goes up to 60, then the next day, we get the news, not that they've
+[01:25:51] done a secondary offering.
+[01:25:53] See, what do you think was happening right here when this dropped?
+[01:25:55] Short sellers were like the offerings coming.
+[01:25:57] Of course they're going to do an offering, they're they're doing all their due diligence
+[01:26:01] short sellers are like, they've got a bad balance sheet, they don't make money, they need
+[01:26:06] to raise money, they've got a shelf registration, they're going to sell, they're going
+[01:26:10] to sell, short it, short it, short it, short it, and then the company comes out with news,
+[01:26:16] they're not doing a secondary offering, they're not dumping shares on the open market,
+[01:26:21] they've got an institutional investor who's coming to the table with a check for $35 million
+[01:26:28] and all they want in exchange is an equal number of shares at $21.70 a share.
+[01:26:34] $21.70, even on a stock that was trading at $4 a week ago, that's crazy, so what do they
+[01:26:43] know?
+[01:26:44] They don't just write a check for $35 million, they know this company's got something
+[01:26:48] significant, right?
+[01:26:50] And so what happens next day?
+[01:26:52] The stock ends up squeezing up to $30, pulls back, goes up to 36, pulls back, goes up
+[01:26:56] to 40, short start covering, goes up to 50, goes up to 60, goes up to 70, pulls back,
+[01:27:01] grips here, almost up to $80 a share, and now you've just got huge volatility, and
+[01:27:06] this volatility, of course, is being amplified by the market makers, amplified by short
+[01:27:10] getting squeeze, amplified by longs jumping in, and then longs being in too high and
+[01:27:14] bailing out, and so now you've got all the emotion that comes when you've got a stock
+[01:27:19] up to 1,000% or more in a matter of days, a biotech stock with news, and a private
+[01:27:25] placement.
+[01:27:27] So again, private placement versus offerings.
+[01:27:30] So this is another private placement, this was $52,53 million, private placement.
+[01:27:34] Again, that's a lot of money, but they got checked for $53 million, and that is a huge
+[01:27:41] vote of confidence, and the stock kept going higher, it pulled back, kept going higher, pulled
+[01:27:46] back, kept going higher, pulled back, kept going higher, pulled back, little false breakout.
+[01:27:50] Again, something unusual about that, it was just, it was extended, the price action
+[01:27:55] was extended, and you can be shorting it in this price action, you're shorting against
+[01:27:59] the trend, but trying to short up ticks and cover on the dips, short, cover on the
+[01:28:03] dips, short double tops, covers it comes back down, I mean, you know, it's, I can understand
+[01:28:09] that sort of high risk strategy, to me it's easier just to trade with the trend, it's
+[01:28:13] obviously trending up, so I'd rather just buy dips, sell up here, buy the next dip,
+[01:28:17] and sell up here, that feels like, you know, you're just putting up your sale on a boat
+[01:28:21] and off you go, that's what momentum trading is, we're not fighting the trend, we're just
+[01:28:27] riding the waves, and if the company wants to let their stock go up and they're not doing
+[01:28:31] an offering, they can go up quite a lot, okay, so, and again, it's not, just to reiterate,
+[01:28:38] you can have a stock that has a private placement and then the stock underperforms, so,
+[01:28:44] you know, at the end of the day, price actions, everything, you can have a secondary offering
+[01:28:48] and the stock goes up, more like this is impossible, it makes no sense, but maybe
+[01:28:53] the shorts thought the price offering would be lower and then they have to cover and then
+[01:28:57] there's not enough liquidity for them to cover, you know, the volume is lighter, so there's
+[01:29:01] a lot of variables, you know, as we talked about in part one, so of chapter three, so now
+[01:29:07] 11, IPOs, so trading IPOs is popular among day traders, but it's fairly risky, I really
+[01:29:14] only trade hyped up IPOs like when Facebook now met a Twitter, you know, now it's
+[01:29:19] the listed or whatever private alibaba, snapchat, you know, big hyped up IPOs all trade,
+[01:29:26] they've got a ton of volume, it definitely makes sense to do it, so I'm okay with that,
+[01:29:32] but I'm not generally interested in trading small cap IPOs, they're not going to have
+[01:29:37] enough volume, there's not going to be hardly any market makers making the market on it
+[01:29:40] on day one, and so it'll drop in a heartbeat, it'll splash up, if you get it going the
+[01:29:46] right way, you can do all right, but it can be really risky.
+[01:29:50] Number 12, short interest, okay, so short interest stocks with high levels of short
+[01:29:55] interest can drop public attention, and that results in potential short squeezes, we were
+[01:30:00] Remember that, with GameStop, right, 2021, GameStop makes this incredible move.
+[01:30:04] It's got really high levels of short interest and the thing just absolutely exploded.
+[01:30:10] So we already talked during Gay Train the basics about the concept of short interest.
+[01:30:15] You've got to float, let's say it's a million shares.
+[01:30:17] If you've got 50% short interest, that means 500,000 shares are currently reported as
+[01:30:23] holding the stock short, which is, that's really significant.
+[01:30:27] I mean, that's a huge deal.
+[01:30:29] So anytime you have that high level of short interest, if it's 500,000 shares, and then today,
+[01:30:35] the stock is up, let's just say, come to take a market, that it has breaking news.
+[01:30:40] So it has breaking news and the stock squeezes up, let's just say 200%.
+[01:30:44] It has one of those candles where it goes from like $3 to $9.00, it just explodes, whatever.
+[01:30:49] So right, three to six would be up 100% and then six to nine to two hundred percent.
+[01:30:54] So it goes up 200% here and it does it remarkably only 200,000 shares of volume.
+[01:31:02] So yes, that's a very light volume candle, but it does happen to us.
+[01:31:07] And we know that what likely happened is the news came out.
+[01:31:11] Initial high frequency trading algorithms, execute by orders, other high frequency trading
+[01:31:15] algorithms cancel their orders and this thing starts ripping.
+[01:31:19] And all of a sudden, you've got this massive move.
+[01:31:21] So now it's pulling back just for a moment, right here, on light volume, maybe some
+[01:31:26] shorts are like, oh, I should try short this, but then they pull up their, their borrow
+[01:31:32] locate window and they realize it's either incredibly expensive to short it, like 20 cents
+[01:31:39] to share.
+[01:31:40] So reserving 10,000 shares would cost $2,000.
+[01:31:43] You're in the whole 2,000 bucks before you even take the trade.
+[01:31:45] That's not good.
+[01:31:46] Maybe it's even higher than that, or they realize that there's no shares available.
+[01:31:49] So it doesn't matter how bad they want to short it, the inventory is not available.
+[01:31:53] So they can't short it.
+[01:31:56] Long traders see this on our high-day momentum scanner that just popped up, and so we're
+[01:31:59] jumping in right here.
+[01:32:01] And boom, next thing you know, it's up 300 percent, and it's got now 400,000 shares of
+[01:32:06] volume.
+[01:32:07] And now some of these shorts, their broker, is seeing the P&L, you know, minus 100,000
+[01:32:13] shares, and their average cost is $3.
+[01:32:18] And it's at $9 a share, and they're literally down, you know, 600 grand here on this
+[01:32:24] thing, minus 600,000 dollars, and they only have, let's say, 700,000 in the account.
+[01:32:32] So now what happens is this account gets flagged right here.
+[01:32:37] It gets flagged, you know, with like, more risk, risk.
+[01:32:42] Securities up as much, it's moving, and so one of the actual traders that works at the
+[01:32:47] firm, whose managing risk, can see this account getting flagged for risk.
+[01:32:51] Now of course, these brokers also have auto-liquid A fund.
+[01:32:54] So if this actually ends up going up to 10, and they're down $700,000, the broker automatically
+[01:33:02] is going to say buy 100,000 shares, just for this one person.
+[01:33:09] This only has half a million shares of volume, and in order goes through to buy 100,000
+[01:33:13] shares, what do you think the market maker is going to do with it?
+[01:33:17] Do you think they're going to sell this person $100,000 shares?
+[01:33:21] Or do you think they're going to cancel their order?
+[01:33:24] Again, I'm going a little deeper here, but what's going to happen is the broker will
+[01:33:30] send order for 100,000 shares.
+[01:33:36] It'll arrive at the data center, data center number one, and when that order comes in, the
+[01:33:45] first high frequency trading algorithm is going to see it.
+[01:33:49] If they have an order posted for 1,000 shares, they have to sell them 1,000 shares, but
+[01:33:55] then they see the remaining 99,000 share order.
+[01:33:59] What they do instantly is they initiate a buy order to buy as many shares as they can, as
+[01:34:06] quickly as they can, from anyone who's selling, anywhere close to this current price, up
+[01:34:11] to whatever they allow is their offset of slippage, plus 10 cents, 15 cents, whatever
+[01:34:16] it is.
+[01:34:17] So now, the stock starts going up before this order has even executed info, because
+[01:34:24] of the high frequency trading algorithm.
+[01:34:26] So now, the next high frequency trading algorithm sees this order come in the next market.
+[01:34:31] So data center number two, the order gets rerouted to the second market maker.
+[01:34:36] One was on ARCO, the next one's on NASDAQ.
+[01:34:38] So it gets NASDAQ and they execute another 2,000 shares.
+[01:34:43] And then that market maker does the same thing.
+[01:34:45] If they have an already seen, I mean, they've already seen this come through, so they've
+[01:34:48] probably already moved their order up.
+[01:34:51] And in an instant, this thing is going to explode.
+[01:34:55] It's going to absolutely explode.
+[01:34:57] It's going to go not just $10 or not just $11.
+[01:35:01] This thing might go at $14 a share, $14 a share.
+[01:35:05] And now, I was sudden, this person's down $1.1 million.
+[01:35:11] They got $400,000 a slippage, potentially, on this type of trade, because it just absolutely
+[01:35:16] explodes.
+[01:35:18] And as retail traders, we're just riding the momentum.
+[01:35:22] Why not?
+[01:35:23] We see this thing squeezing, and we're thinking this, this is incredible.
+[01:35:28] It's up 300%, 400%, 500%, 600%, 800%, this thing is in stopping.
+[01:35:33] It's just, it's going straight up.
+[01:35:37] So when we get a straight up move like that, well, that's when I get pretty excited.
+[01:35:43] And do we get it every single day?
+[01:35:44] No, we don't get every single day.
+[01:35:46] But it can happen when we have high levels of short interest.
+[01:35:51] So here's the thing.
+[01:35:53] You could spend time going through a list of all the companies that have high levels of
+[01:35:58] short interest.
+[01:36:00] There's a, or text this website here, gives you a list.
+[01:36:03] You can go in and you go to the menu, under the menu, you can sort by market sentiment
+[01:36:09] or short interest here, stock data set, short interest, and then you can look at the
+[01:36:13] short scores.
+[01:36:14] And this is going to walk you through percentage short interest.
+[01:36:17] And it's not just percentage short interest, but it's also the cost to borrow the shares,
+[01:36:22] the number of shares available in the inventory, and everything else.
+[01:36:27] So if we sort this right now by short interest, right now they've got a stock that
+[01:36:32] shows reported 221% short interest.
+[01:36:35] And then they've got another one showing 66% short interest, another one at 49%, another
+[01:36:40] one at 47.
+[01:36:41] Now some of you are astutely saying, Ross, it's impossible to have 200% short interest.
+[01:36:48] If the flow to 5 million shares, the most number of shares you could hold short is 5 million
+[01:36:52] shares.
+[01:36:53] You're right.
+[01:36:54] Except, you're totally wrong, because the market figured out a way around that.
+[01:36:59] And what they figured out was that traders could actually take a short position, and then
+[01:37:04] lend their shares to another trader who's also going to take a short position.
+[01:37:09] So it's like, it doubles up on the short interest, which is really insane.
+[01:37:14] And that's exactly what happened with game stuff where the short interest became artificially
+[01:37:18] higher.
+[01:37:19] That's not to mention the fact that institutional traders can take on equity swaps, and
+[01:37:26] they can essentially take on these synthetic short positions where they're short, the
+[01:37:35] stock, but it's not real stock they're short.
+[01:37:40] So they'll lose real money because they've made a deal with the bank, basically, or with
+[01:37:44] another fund, another institutional investor.
+[01:37:48] So they'll lose real money if the thing goes up, but it's not going to actually, it's
+[01:37:55] not real shares that they're holding short.
+[01:37:58] So if they wanted to cover that position, they could buy real shares, and by buying real
+[01:38:03] shares, they've now created a hedge against their synthetic short.
+[01:38:06] I know.
+[01:38:07] This gets kind of complicated, and it's pretty crazy.
+[01:38:10] So right now, you'll notice a couple of the companies that are high up on this list are
+[01:38:13] hurts, rental cars, and Avis.
+[01:38:16] These are companies that it's tough.
+[01:38:18] I mean, their their their cat backs is so high, it costs so much money to buy all
+[01:38:24] these cars, and a lot of these companies spend a lot of money hurts specifically on Tesla's,
+[01:38:31] which they're having a hard time reselling, and people don't want to rent, because when
+[01:38:34] you rent an electric car and you're on vacation, now you've got to go figure out where
+[01:38:37] to charge it, and you got to sit and such a pain in the butt anyways.
+[01:38:41] So there's probably good reason why some of these are currently experiencing higher levels
+[01:38:47] of short interest, but nonetheless, I just wanted to share that with you, and what I want
+[01:38:54] to do actually here is I want to see if perhaps just maybe, just maybe we have an example
+[01:39:03] here of a, of a algo, a really good, well, I guess we'll call it an algo spike, but a
+[01:39:11] breaking news event, so here we have a stock, DWSN, so DWSN just popped up right here initially
+[01:39:19] on an algo spike, it's up 162% right here, 162% on just 300,000 shares of all of you,
+[01:39:30] so the total volume is light, the float is 6.5 million shares, so when it comes to float
+[01:39:35] rotation, we certainly don't have it yet, but look at that game, so it first pops up to
+[01:39:40] four, it dips down, and so I pulled up the ticker, it has, I'm looking at it right
+[01:39:47] here, DWSN, and now I'm seeing all this order flow going through, I'll have my video
+[01:39:55] here just so you can see it better, so I'm seeing all these orders going through, and I'm
+[01:39:59] way to see,
+[01:40:00] green on the tape. And right there I saw green on the tape, I'll back that up. And so I went ahead and jumped in. I jumped in because this for me was the first stock today that met all five pillars of stock selection. TMDE does not because the floats a little too high at 21 million shares.
+[01:40:18] It's up a lot, but the floats a little high. And in any case, it wasn't interested in it. It could have been a buy-out for all I know. I don't remember, but in any case, it wasn't interested in it.
+[01:40:29] So I was waiting here, I see some green coming through. So this tells me right now, other traders are jumping in. They're pulling the trigger.
+[01:40:38] I see more green that came through. There was a little burst of red just as I was buying, which is bad luck. I already sent my order, but look at Holy smokes. Do you just see that?
+[01:40:47] Look at this. It's at $3.29 right now. And now it shows $5.18 on the ask. So the market makers in this example have canceled their buy orders.
+[01:41:05] They've canceled their sellers. They may have even bought and immediately jumped long on this.
+[01:41:15] So now it's $5.18. Now it comes back down to $4. I take some profit off the table. I'm up $0.600.
+[01:41:20] So I'm like, that was crazy. And at that point, I don't know. That was an alga spike. I don't know if it's going to keep going higher. I'm not sure.
+[01:41:28] So you know, it's all the way, it hit $5 and now it's back at $3.80. So that's a little scary. So it's the right idea to pay myself.
+[01:41:40] And just like that, we're almost back to break even, which is, you know, well, not quite. I'm still green on it. My average is $350. Oh, look at this though. Now we're rallying back up.
+[01:41:54] So let's talk about relative volume for a moment. Yesterday's volume was basically zero.
+[01:42:00] Daily chart. We're above our 200 moving average. And our relative volume currently is 253,000 times higher than average. That's how low the volume typically is.
+[01:42:11] Now the short interest reported here is only showing 83,000 shares. So I don't think this is a stock that's actually going up on high short interest.
+[01:42:19] I'm showing it to you right now just because it's feels like a fitting spot to walk you through this. But I, this is really what I'm showing you here.
+[01:42:26] I'm demonstrating these high frequency trading algorithms. So I end up adding back right here.
+[01:42:32] We come back up to 450 and what I'm looking for is the breakthrough five and we go to 525 right here.
+[01:42:39] Now if we break 525, 540, 550. So the market makers have totally taken their sellers away. And as of right now I'm holding 24,000 shares.
+[01:42:52] And I'm almost a dollar a share. Almost a dollar a share. We're coming up to $6. I'm looking for the break of 6.
+[01:43:03] Because this is moving so quickly, I'm still adding because what I know is that these are the little windows where I can absolutely crush it.
+[01:43:13] So I take a little profit off the table. We end up having a red candle. We end up having a red candle on the 10 second chart.
+[01:43:20] And it pops up here a little high. It starts to pull back. So I take a little profit off the table. Now of course I'm giving you guys my live commentary the whole time I'm trading this.
+[01:43:27] I'm walking you through, you know, like, minute by minute, moment by moment. What I'm thinking.
+[01:43:34] So now I'm looking to add back to the break back over six. I put my order at 631. So right now you've got a lot of people trading this people buying selling retail traders.
+[01:43:55] I'm not sure about institutional traders. I missed that little break out there. I take a little profit.
+[01:43:59] I saw a little seller coming on the level 2. Kind of dips down again.
+[01:44:03] So I'm sitting up 31,000 on this right now as of right now. So it pulls back.
+[01:44:08] We're just going to fast forward a little bit. Oh my gosh. Oh my goodness. Oh my goodness. Here we go.
+[01:44:24] So guys, this is going to get pretty crazy. You're going to watch me make over $200,000.
+[01:44:30] You ready? Okay. So DWSN right here. I add back right up here as it comes up to the high. I literally add high debt.
+[01:44:44] So let's watch this. I add 25,000 shares and all of a sudden it spikes up. Now remember the high frequency trading algorithms are seeing these orders coming in and they're trying to front run me.
+[01:44:55] So even my orders contribute to it. All everyone's orders contribute because the market maker in the Algo sees it all.
+[01:45:01] So now we've got $8.50 on the ass. Now we've got $9 on the ass. Now we're looking for $9.50. There's $9.50 and I've already taken some profit off the table.
+[01:45:13] It's up $590. I'm up $81,000 with $61,000 open profit loss. It's going to break 10. It not only breaks 10. It goes to $11 a share.
+[01:45:28] I take some more profit off the table. Half holding now $6,000 shares. Rough 600%. So now we're having a little bit of a moment of pull back.
+[01:45:45] There's some early short sellers who probably got squeeze right there. They didn't expect this to go nearly that high. They might have been shorting it at $6.
+[01:45:53] They might have shorted 15,000 shares and just as quick as I'm up 150,000 they're down 150,000.
+[01:45:59] That is an unbelievable candle. I mean, really only a few of those years is fantastic. So I think, you know, what's what's just very interesting here to me is the degree to which.
+[01:46:14] How much a stock goes up? It can be controlled by the company and is a factor of these high frequency trading algorithms.
+[01:46:24] So, and ends up going higher. It goes up to $14. It keeps going higher. So this is one of those cases where the high frequency trading algorithms and the market makers are not willing.
+[01:46:36] Why would they have sold 100,000 shares to a buyer at $6? I mean, I wanted to buy 50,000 shares. They didn't sell it to me. I got slippage on my order.
+[01:46:45] If they had sold me 100,000 shares right here, I'm green, you know, by I'd be green $600,000. They'd be red $600,000. They can't do that.
+[01:46:55] And if they do end up getting in balance, they have to cover their position by buying it back, which would fuel only a bigger short squeeze.
+[01:47:01] And they can't hedge this position with options because this is a small cap stock. So all of a sudden the risk of making the market on these stocks becomes very high for them, which is why we see these types of moves more often than you think.
+[01:47:15] So, you know, that's one day and one day over $200,000. So I'm going to save that video. I'm going to put it up here. I'm going to try to remember not to reuse that one.
+[01:47:25] When I walk you through market makers a little bit later on, but maybe I, well, maybe I will. I don't, well, whatever, but anyways, I'll just, I'll put it aside there. It's definitely, it's definitely a pretty powerful example.
+[01:47:37] Okay, so now, number 13 patents and trademarks. Patents and trademarks, as I mentioned earlier, typically not a really good headline.
+[01:47:49] Typically a non event, occasionally I'll see them work, but I usually have low expectations for patent patents and trademarks. They're just, I don't know, I guess it's just the market doesn't receive them well.
+[01:48:02] So they, they, as a result, they don't work well. So yeah, so kind of disregard that one. Leave that one alone.
+[01:48:10] Number four and up list. So we sometimes see an up list where a stock will get up listed. Oh, sorry, we'll get up listed from the OTC market up to NASDAQ, nice year, MX and it's kind of like an IBA IPO.
+[01:48:22] It's the first opportunity for the stock to trade on the public markets or the more popular public markets. So it can work well.
+[01:48:30] Usually their volatile market makers aren't going to be really on top of these. So, you know, it's a headline that can work. I do like this, this headline.
+[01:48:40] But it doesn't happen all the time. There's only so many OTC stocks. They're good enough to get up listed. So we don't really see it happen all the time.
+[01:48:49] Fifteen mergers in acquisition. So when a company is acquiring another company, as I said before, the price will often go down as investors fear the financial burden and potential inefficiency issues that will take place during the transaction.
+[01:49:01] However, certain acquisitions that are deemed by the market to be materially significant can result in huge volatility.
+[01:49:08] So, it either does nothing or the stock sells off a little bit or it can work really well.
+[01:49:14] So, if I see a company that has that type of headline and we had one, it was not too long ago and that switched this GLTO and it switched 15 minute chart.
+[01:49:26] So, this one here currently sitting at $16 a share had news of an acquisition back here that they're acquiring another company.
+[01:49:36] So, this is going to be still existing as a company and on an Algo spike it went from $4 to $28 a share. Basically straight up on an Algo spike. Incredible.
+[01:49:46] It pulls back and then it rallies higher, pulls back, goes higher, goes higher the next day and it stayed up here at $16 a share.
+[01:49:54] Now, this one I was able to trade and was up about $65,000.
+[01:50:00] on that day. And I want to just check our news feed. I don't recall if they announced an offering.
+[01:50:11] They've got that acquisition back there. I don't see an offering.
+[01:50:19] So, notice of exempt offerings of securities, this is probably
+[01:50:23] the form D is going to be typically when insiders are getting shares. So, I'm, well, we'd
+[01:50:39] have to look through this. Oh, okay, that's $285 million. So, actually, that is pretty substantial.
+[01:50:51] That's come with such, okay. So, anyways, I don't have to get all into the weeds on this
+[01:50:56] just yet biotech stock. But that is interesting. So, they might end up, we might end up seeing
+[01:51:07] a headline about that. But in any case, in spite of that headline right there, the price is still
+[01:51:13] holding up quite well. So, anyways, so, mergers and acquisitions can end up working well. They
+[01:51:19] don't always, but they can. And the number 16, very important variable is market sentiment. So, this is
+[01:51:26] the single greatest multiplying factor. It's incredible that we can have the same stock
+[01:51:30] with the same exact headline on two different days that give us totally different reactions from
+[01:51:35] market participants. Our traders feeling you for it for the feeling fearful. When the market is hot,
+[01:51:41] we can see even the most mundane headlines result in large gains, especially when the stock meets
+[01:51:46] all other pillars of stock selection. So, in a hot market, with demand increased across the board,
+[01:51:52] stocks with lower levels of supply, low floats, experienced greater volatility, greater levels
+[01:51:57] of demand, and we can see big moves. So, this can be challenging for a beginner trader because
+[01:52:02] you might interpret a news headline to be really good, but in a colder market, it doesn't work.
+[01:52:08] Or you might interpret a news headline to not be very good, but in a hot market, it works just fine.
+[01:52:13] So, for that reason, again, you know, we trade the price action, but we pay attention to these
+[01:52:19] external factors, such as market sentiment. And then number 17 tying into this is the current theme.
+[01:52:25] What is the current theme? If it's biotech, then any biotech stock that has decent news is going
+[01:52:30] to react better. If it's AI, then any AI stocks with news is going to do better. If it's, you know,
+[01:52:35] some crazy bio-hazard situation, COVID, Ebola, and Pox, whatever, then stocks with those headlines will
+[01:52:42] do better. Solar oil, farm, biotech, tech, crypto, you know, it's a high-short interest,
+[01:52:49] and it's stock with high-short interest after GameStop was moving up. Chinese stocks sometimes
+[01:52:53] they become the flavor of the week. You know, it floats up under one million, recent reverse
+[01:52:57] splits, recent IPO. So, it's creating that profile. You know, what was our last really big move?
+[01:53:04] So, after we had that stock that I showed you the example of where I made $200,000, you better
+[01:53:09] I was trying to analyze everything there was to know about that company and also interpret
+[01:53:16] what do your traders collectively think about this company? What's their take? It's a biotech
+[01:53:22] company located where, float of what? What specifically are they doing? And how do I look for
+[01:53:30] the next stock that traders will say to themselves that looks like the next XYZ? Because that's
+[01:53:37] where we tend to get, you know, repeating patterns. The only thing to be aware of with that
+[01:53:42] is typically usually the first one gives us the biggest move in terms of like, just in terms
+[01:53:53] of like rate of change, you know, like plus 800%. Usually it gives us the biggest move because
+[01:53:58] shorts are completely caught off guard. They short into the move and they get smoked. And then the
+[01:54:03] second one, they're like, no, no, I'm not going to get fooled. But by not getting fooled,
+[01:54:07] they're also saying, I'm not going to short it at all. So, because no one's shorting it,
+[01:54:12] it still makes a really big move. Because it doesn't have those people that are holding it back
+[01:54:18] initially. So, it makes a really big move and then people, it's becomes a self-fulfilling
+[01:54:22] prophecy that because it's moving, people keep jumping in it. And because the last one went up
+[01:54:26] 800%, I'm expecting this one will go up 800%. So, when it gets up to 800%, you're like, okay, that's
+[01:54:32] the top. And then we start to see a couple that move up but they don't go up quite as much. And now
+[01:54:38] short start to come back in and they're like, okay, this theme is getting exhausted and then eventually
+[01:54:43] we see one that pops up and actually goes red because maybe the company decides to put out a
+[01:54:48] headline that's not very good. And then that's kind of the end of the theme and then it resets and
+[01:54:53] starts all over again. So, this is a very common cycle. Theme works really well. It's not always
+[01:54:59] that it's for three stocks or for eight or whatever. But you know, the theme works for a while
+[01:55:04] and then it kind of Peters out and then it just stops working. And so when it stops working,
+[01:55:09] it starts being a strong short but then you get that one where initially the shorts are like,
+[01:55:16] yeah, this one's garbage, it's not going to work. And then suddenly it surprises everyone and it
+[01:55:20] rips back up and then shorts are buying, longs are adding and that's just amplifying the volume
+[01:55:26] and then all of a sudden you've got, you know, a thousand percent moving one day type of thing. It just
+[01:55:31] becomes this incredible imbalance between supply and demand. So as we come to the end of this chapter
+[01:55:37] or in the end of this section here chapter three part two, just reminder as always,
+[01:55:42] trade the price action that's right in front of you and try to be careful about forming a bias
+[01:55:45] and try to be careful trading against the trend because with these stocks that trend can pick up
+[01:55:51] really, really fast and if you're on the wrong side it can be pretty scary. Okay, so with that
+[01:55:57] we're going to go ahead and jump in here to chapter three part three.
