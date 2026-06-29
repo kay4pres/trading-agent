@@ -232,17 +232,46 @@ def load_tradingview_csv(path: Path) -> List[Dict[str, Any]]:
     return rows
 
 
-def _find_latest_tv_csv() -> Optional[Path]:
-    """Find the most recent TradingView CSV export in the incoming folder."""
+def _find_latest_tv_csv(today: date = None) -> Optional[Path]:
+    """
+    Find the most recent TradingView CSV export in the incoming folder.
+    Only accepts files dated TODAY or yesterday (stale = >1 day old).
+    """
+    today = today or date.today()
     incoming = Path(r'E:\Me\TradingAgent\data\incoming')
     if not incoming.exists():
         return None
-    csvs = list(incoming.glob("*_????-??-??.csv"))
-    if not csvs:
-        csvs = list(incoming.glob("*.csv"))
-    if not csvs:
-        return None
-    return max(csvs, key=lambda p: p.stat().st_mtime)
+
+    # Try date-stamped files first (preferred format: Marvis-Kay_2026-06-29.csv)
+    csvs_dated = list(incoming.glob("*_????-??-??.csv"))
+    for csv in csvs_dated:
+        # Extract date from filename: Marvis-Kay_2026-06-29.csv → 2026-06-29
+        name = csv.stem
+        date_str = None
+        for part in reversed(name.split('_')):
+            if len(part) == 10 and part[4] == '-' and part[7] == '-':
+                date_str = part
+                break
+        if date_str:
+            try:
+                file_date = date.fromisoformat(date_str)
+                delta = (today - file_date).days
+                if 0 <= delta <= 1:  # today or yesterday only
+                    print(f"  [CSV] Auto-detected fresh TV export: {csv.name} ({delta} day(s) old)")
+                    return csv
+            except ValueError:
+                pass
+
+    # Fallback: any CSV modified within last 24h
+    cutoff = datetime.now().timestamp() - 86400
+    csvs_any = list(incoming.glob("*.csv"))
+    recent = [c for c in csvs_any if c.stat().st_mtime >= cutoff]
+    if recent:
+        latest = max(recent, key=lambda p: p.stat().st_mtime)
+        print(f"  [CSV] Using recent CSV (modified today): {latest.name}")
+        return latest
+
+    return None
 
 
 def run_screener(
@@ -255,12 +284,11 @@ def run_screener(
     """
     Main screener entry point.
 
-    Data priority:
-      1. TradingView Premium API (live, real-time) — if use_tv_api=True
-      2. TradingView CSV export (incoming folder)
-      3. TradingView CSV path override
-      4. Explicit symbols list
-      5. DEFAULT_UNIVERSE fallback
+    Data priority (highest first):
+      1. Explicit symbols list (--symbols arg) — always respected, skips stale CSV
+      2. TradingView Premium API (live, real-time) — if use_tv_api=True
+      3. TradingView CSV export (incoming folder or --tv-csv override)
+      4. DEFAULT_UNIVERSE fallback (last resort)
 
     Returns:
         ranked list of signal dicts
@@ -271,16 +299,21 @@ def run_screener(
     tv_rows = []      # list of dicts from TV source (CSV or API)
     symbol_list = []  # flat list of ticker strings
 
-    # Priority 1: TradingView Premium API
-    if use_tv_api:
+    # Priority 1: Explicit symbol list (never overridden by stale CSV)
+    if symbols:
+        symbol_list = symbols
+        print(f"  📊 Using explicit symbol list ({len(symbols)} symbols)")
+
+    # Priority 2: TradingView Premium API (live, real-time)
+    elif use_tv_api:
         tv_df = fetch_ross_universe()
         if not tv_df.empty:
             tv_rows = tv_to_signal_rows(tv_df)
             symbol_list = [r['symbol'] for r in tv_rows]
             print(f"  📊 TV Premium API: {len(tv_rows)} real-time setups")
 
-    # Priority 2: CSV export (only if TV API not used or failed)
-    if not tv_rows:
+    # Priority 3: CSV export (only when no explicit symbols AND TV API failed)
+    if not symbol_list and not tv_rows:
         if tv_export_path and tv_export_path.exists():
             print(f"  📊 Loading from TV export: {tv_export_path.name}")
             tv_rows = load_tradingview_csv(tv_export_path)
@@ -292,12 +325,7 @@ def run_screener(
                 tv_rows = load_tradingview_csv(auto_path)
                 symbol_list = [r['symbol'] for r in tv_rows]
 
-    # Priority 3: Explicit symbol list
-    if not tv_rows and symbols:
-        symbol_list = symbols
-        print(f"  📊 Using explicit symbol list ({len(symbols)} symbols)")
-
-    # Priority 4: Default universe
+    # Priority 4: Default universe (last resort)
     if not tv_rows and not symbol_list:
         symbol_list = DEFAULT_UNIVERSE
         print("  📊 Using default universe")
