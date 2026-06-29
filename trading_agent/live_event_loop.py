@@ -378,7 +378,24 @@ if __name__ == "__main__":
         print("     py -3 trading_agent\\live_event_loop.py --watchlist AAPL,TSLA --secret")
     elif args.secret:
         from alpaca_connector import get_secret_from_kay
-        secret = get_secret_from_kay()
-        start_live_loop(symbols, secret)
+        lock_file = DATA_DIR / ".live_loop.lock"
+        import os
+        # Guard: refuse to double-start
+        if lock_file.exists():
+            try:
+                pid = int(lock_file.read_text().strip())
+                os.kill(pid, 0)  # check if still alive
+                print(f"[LiveLoop] Already running (PID {pid}) — refusing to start again.")
+                print(f"           Stop it first, then restart.")
+                return
+            except (ValueError, OSError, ProcessLookupError):
+                pass  # stale lock, proceed normally
+        # Write PID so crash detection works next time
+        lock_file.write_text(str(os.getpid()))
+        try:
+            secret = get_secret_from_kay()
+            start_live_loop(symbols, secret)
+        finally:
+            lock_file.unlink(missing_ok=True)  # always clean up on exit
     else:
         parser.print_help()

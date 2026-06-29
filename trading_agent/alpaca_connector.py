@@ -58,17 +58,51 @@ def _read_api_key_from_vault() -> str:
     return result.stdout.strip()
 
 
+def _read_secret_from_vault() -> str | None:
+    """Read Alpaca secret from DPAPI vault. Returns None if not yet stored."""
+    vault_path = Path(__file__).parent.parent / "vault" / "alpaca_secret.enc"
+    if not vault_path.exists():
+        return None
+    ps_script = fr'''
+        $ErrorAction = 'Stop'
+        try {{
+            $secret = Get-Content '{vault_path}' -Raw -Encoding UTF8
+            $encrypted = [Convert]::FromBase64String($secret.Trim())
+            $decrypted = [System.Security.Cryptography.ProtectedData]::Unprotect(
+                $encrypted, $null,
+                [System.Security.Cryptography.DataProtectionScope]::CurrentUser
+            )
+            Write-Output ([System.Text.Encoding]::UTF8.GetString($decrypted))
+        }} catch {{
+            exit 1
+        }}
+    '''
+    result = subprocess.run(
+        ["powershell", "-ExecutionPolicy", "Bypass", "-Command", ps_script],
+        capture_output=True, text=True, timeout=15
+    )
+    if result.returncode != 0:
+        return None
+    return result.stdout.strip()
+
+
 def get_secret_from_kay() -> str:
     """
-    Prompt Kay for the Alpaca secret key via a separate visible PowerShell window.
-    Kay types it there — it never appears in logs or chat.
-    Uses Start-Process so the window opens regardless of shell interactivity.
+    Get the Alpaca secret key.
+    First checks vault/alpaca_secret.enc (DPAPI, no popup).
+    Falls back to InputBox popup if vault is empty.
     """
-    import tempfile
+    # Try vault first (auto-start path)
+    vault_secret = _read_secret_from_vault()
+    if vault_secret:
+        return vault_secret
+
+    # Fall back to interactive popup
+    import tempfile, os
     prompt_script = r"""
 Add-Type -AssemblyName Microsoft.VisualBasic
 $title = 'Alpaca Secret Key'
-$msg = 'Enter your Alpaca Secret Key (hidden):'
+$msg = 'Enter your Alpaca Secret Key:'
 $secret = [Microsoft.VisualBasic.Interaction]::InputBox($msg, $title, '')
 if ([string]::IsNullOrWhiteSpace($secret)) {
     Write-Error "No secret entered"
@@ -76,17 +110,14 @@ if ([string]::IsNullOrWhiteSpace($secret)) {
 }
 Write-Output $secret
 """
-    # Write to a temp .ps1 so we can run it visibly
     tmp = tempfile.NamedTemporaryFile(suffix=".ps1", delete=False, mode="w", encoding="utf-8")
     tmp.write(prompt_script)
     tmp.close()
 
-    # Run in a new visible window, wait for Kay to type
     result = subprocess.run(
         ["powershell", "-ExecutionPolicy", "Bypass", "-File", tmp.name],
         capture_output=True, text=True, timeout=60
     )
-    import os
     try:
         os.unlink(tmp.name)
     except Exception:
