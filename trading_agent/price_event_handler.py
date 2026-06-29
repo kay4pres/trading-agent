@@ -187,15 +187,61 @@ class PriceEventHandler:
                 )
 
     def _stream_loop(self):
-        """Runs in background thread — connects to Alpaca WebSocket."""
-        sys.path.insert(0, str(Path(__file__).parent))
-        from alpaca_connector import AlpacaData
+        """
+        Runs in background thread — starts alpaca_ws_subprocess.py,
+        reads JSON quotes from stdout, dispatches to trackers.
+        Completely isolated event loop — no asyncio conflicts.
+        """
+        import subprocess, json, queue, threading
 
-        data = AlpacaData(secret=self.secret)
-        data.stream_quotes(self.watchlist, self._on_quote)
+        from alpaca_connector import get_secret_from_kay, _read_api_key_from_vault
+
+        # Get credentials
+        sys.path.insert(0, str(Path(__file__).parent))
+        api_key = _read_api_key_from_vault()
+        secret = self.secret or get_secret_from_kay()
+
+        symbols_arg = ",".join(self.watchlist)
+        script = Path(__file__).parent / "alpaca_ws_subprocess.py"
+
+        proc = subprocess.Popen(
+            [sys.executable, str(script),
+             "--api-key", api_key,
+             "--secret", secret,
+             "--symbols", symbols_arg],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            bufsize=1,  # line buffered
+        )
+
+        print(f"[PriceEvent] Subprocess started (PID {proc.pid}), reading quotes...")
+
+        # Read lines from stdout in this thread
+        for raw_line in iter(proc.stdout.readline, ""):
+            if not raw_line:
+                break
+            line = raw_line.strip()
+            if not line or line.startswith("[WS]"):
+                continue  # skip status lines
+            try:
+                quote = json.loads(line)
+                self._on_quote(
+                    quote["symbol"],
+                    quote["bid"],
+                    quote["ask"],
+                    datetime.fromisoformat(quote["timestamp"]),
+                )
+            except (json.JSONDecodeError, KeyError, ValueError) as e:
+                print(f"[PriceEvent] Bad quote line: {e} — {line[:80]}")
+
+        proc.wait()
+        stderr = proc.stderr.read()
+        if proc.returncode != 0 and stderr:
+            print(f"[PriceEvent] Subprocess error: {stderr[:200]}")
 
     def start(self):
-        """Start the WebSocket handler in a background thread."""
+        """Start the WebSocket subprocess in a background thread."""
         self._running = True
         self._thread = threading.Thread(target=self._stream_loop, daemon=True)
         self._thread.start()

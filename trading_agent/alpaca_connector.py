@@ -207,24 +207,26 @@ class AlpacaData:
         """
         Stream live quotes for a list of symbols.
         callback(symbol, bid, ask, timestamp) is called on each update.
-
-        Usage:
-            def on_quote(sym, bid, ask, ts):
-                print(f"{sym}: bid={bid} ask={ask}")
-
-            data = AlpacaData(secret=secret)
-            data.stream_quotes(['AAPL', 'TSLA'], on_quote)
+        Uses nest_asyncio to allow asyncio.run() inside the Mavis daemon's
+        existing event loop without conflicts.
         """
-        wss = f"wss://stream.data.alpaca.markets/v2/iex"
-        stream = StockDataStream(api_key=self.api_key, secret_key=self.secret)
+        import asyncio
+        import nest_asyncio
+        nest_asyncio.apply()  # allow nested event loops
 
-        def handler(quote: Quote):
-            callback(quote.symbol, float(quote.bid_price), float(quote.ask_price), quote.timestamp)
+        async def _async_stream():
+            wss = "wss://stream.data.alpaca.markets/v2/iex"
+            stream = StockDataStream(api_key=self.api_key, secret_key=self.secret)
 
-        stream.subscribe_quotes(handler, *symbols)
+            async def handler(quote: Quote):
+                callback(quote.symbol, float(quote.bid_price),
+                         float(quote.ask_price), quote.timestamp)
 
-        print(f"[Alpaca WS] Connecting to {wss} for quotes: {symbols}")
-        stream.run()
+            stream.subscribe_quotes(handler, *symbols)
+            print(f"[Alpaca WS] Connecting to {wss} for quotes: {symbols}")
+            await stream.run()
+
+        asyncio.run(_async_stream())
 
 
 # ── CLI ─────────────────────────────────────────────────────────────────────────
