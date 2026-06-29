@@ -106,7 +106,7 @@ def ensure_api_key() -> str:
     if result.returncode != 0 or not result.stdout.strip():
         raise RuntimeError(
             "No key entered or setup failed. "
-            "Run: py -3 E:\\Me\\TradingAgent\\vault\\store_llm_key.ps1"
+            "Run: powershell -File E:\\Me\\TradingAgent\\vault\\store_llm_key.ps1"
         )
 
     VAULT_KEY.parent.mkdir(parents=True, exist_ok=True)
