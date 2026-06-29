@@ -387,7 +387,7 @@ if __name__ == "__main__":
                 os.kill(pid, 0)  # check if still alive
                 print(f"[LiveLoop] Already running (PID {pid}) — refusing to start again.")
                 print(f"           Stop it first, then restart.")
-                return
+                sys.exit(0)
             except (ValueError, OSError, ProcessLookupError):
                 pass  # stale lock, proceed normally
         # Write PID so crash detection works next time
