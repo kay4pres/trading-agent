@@ -16,7 +16,7 @@ LOG.write_text(f"=== ENTRYPOINT START {os.environ.get('TZ','?')} ===\n")
 
 def log(msg):
     print(msg, flush=True)
-    LOG.write_text(msg + "\n", attach=True)
+    LOG.write_text(msg + "\n")
 
 log(f"Working dir: {os.getcwd()}")
 log(f"PYTHONPATH: {os.environ.get('PYTHONPATH','not set')}")
