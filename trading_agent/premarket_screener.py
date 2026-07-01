@@ -30,6 +30,7 @@ if _DATA_ROOT:
     DATA_DIR      = Path(_DATA_ROOT)
 else:
     DATA_DIR      = Path(r'E:\Me\TradingAgent\data')
+DATA_DIR.mkdir(exist_ok=True)
 WATCHLIST_DIR = DATA_DIR / 'watchlists'
 WATCHLIST_DIR.mkdir(exist_ok=True)
 
