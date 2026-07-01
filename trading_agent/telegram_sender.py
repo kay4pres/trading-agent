@@ -86,8 +86,8 @@ def _api_request(method: str, payload: dict) -> Optional[dict]:
         )
         # Short timeout: fail fast so polling loops don't block for 30s
         # getUpdates with timeout=0 in payload should return instantly — this
-        # caps any TCP/DNS stall at 3s rather than letting urllib default ~60s
-        with urllib.request.urlopen(req, timeout=3) as resp:
+        # caps any TCP/DNS stall at 10s rather than letting urllib default ~60s
+        with urllib.request.urlopen(req, timeout=10) as resp:
             return json.loads(resp.read())
     except socket.timeout:
         # timeout=0 in getUpdates means Telegram returns immediately — if WE
