@@ -1,11 +1,11 @@
 # Pipeline Status
-## Updated: 2026-07-01 16:30 Berlin (UTC+2)
+## Updated: 2026-07-01 17:30 Berlin (UTC+2)
 
 ---
 
-## Overall Status: ⚠️ Running (degraded)
+## Overall Status: ⚠️ NAS Down — Scanner Running Locally
 
-Pipeline is functional but the Bull/Bear live loop is offline — see action item below.
+NAS (10.8.0.10) is unreachable — SSH port 22 closed. Dashboard container offline. Scanner running fine locally (17:15 scan ✅). Bull/Bear live loop still offline pending Alpaca secret.
 
 ---
 
@@ -13,13 +13,15 @@ Pipeline is functional but the Bull/Bear live loop is offline — see action ite
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| Dashboard (`/api/state`) | ✅ UP | Responding, last_scan 16:29 |
-| Fincept Connector | ✅ HEALTHY | AAPL/CTW/ILLR/MIMI returning live quotes |
+| NAS Host | ❌ DOWN | SSH port 22 closed, unreachable — likely sleeping/offline |
+| Dashboard (`/api/state`) | ❌ UNREACHABLE | Container can't be reached via http://10.8.0.10:5050 |
+| Fincept Connector | ✅ HEALTHY | Fallback to yfinance active, no quote errors |
+| Scanner Cron (15:30–21:00) | ✅ RAN | 17:15 scan complete, 29 signals, no quote errors |
+| Scanner Output (local) | ✅ FRESH | `signals_20260701_1715.json` — JEM + GVH gap data |
 | Richard Premarket | ✅ RAN | `watchlist_20260701.csv` saved at 14:02, 7 stocks |
-| Scanner Cron (15:30–21:00) | ✅ RUNNING | signals files every 30 min |
 | Bull/Bear Live Loop | ❌ OFFLINE | `alpaca_secret.enc` missing from vault |
 | Alpaca WebSocket Feed | ⚠️ BLOCKED | Can't start without secret |
-| TV Premium API | 🔍 UNKNOWN | Dashboard falls back to yfinance |
+| TV Premium API | 🔍 UNKNOWN | Dashboard offline, can't verify |
 
 ---
 
@@ -41,10 +43,9 @@ Pipeline is functional but the Bull/Bear live loop is offline — see action ite
 
 ## Bull/Bear Intraday Signals (from scanner)
 
-- **JEM**: Score 5/5, FIRST_PULLBACK pattern, RSI 58, +34% gap — confirmed on 2026-06-29
-- **GVH**: Score 4-5/5, FIRST_PULLBACK patterns — confirmed on 2026-06-30
-- 23 total historical signals in `signals_20260701_1631.json`
-- ⚠️ All signals are from previous trading days (yfinance intraday lag ~15 min; post-market = no new bars)
+- **29 signals found at 17:15** — all historical (2026-06-26/29/30). JEM (score 5) and GVH (score 5) ranked top.
+- ⚠️ **yfinance intraday staleness**: scanner shows bars from 2026-06-26–30, not today's. This is a known limitation — yfinance delays intraday data.
+- ⚠️ Bull/Bear live loop still offline — no event-driven alerts without Alpaca secret
 
 ---
 
@@ -55,6 +56,19 @@ Pipeline is functional but the Bull/Bear live loop is offline — see action ite
 ---
 
 ## Issues & Action Items
+
+### 🔴 Critical: NAS (10.8.0.10) Unreachable
+
+**Problem:** NAS is down — SSH port 22 is closed. Dashboard at http://10.8.0.10:5050 is unreachable.
+
+**Impact:**
+- Dashboard (`app.py`) is offline — Kay can't view signals in browser
+- Scanner is still running locally via cron (signals_20260701_1715.json ✅)
+- Bull/Bear live loop was running on NAS — also offline
+
+**Fix:** Wake the NAS (WOL or physically). Once it's back online, `docker ps` should show the dashboard container. SSH: `ssh admin@10.8.0.10` then `docker ps`.
+
+---
 
 ### 🔴 Critical: Alpaca Secret Missing — Live Loop Offline
 
@@ -115,7 +129,7 @@ get_quote('AAPL')   → price=293.30, change=+3.94 (+1.36%), vol=8.8M ✅
 get_batch_quotes(['MIMI','ILLR','CTW']) → all returning live data ✅
 ```
 
-No "quote error" found anywhere in the pipeline.
+**Checked 2026-07-01 17:30**: No "quote error" anywhere in scanner outputs (`signals_20260701_*.json`). `fincept_connector.py` is healthy — yfinance fallback working correctly. No fix needed.
 
 ---
 
@@ -124,7 +138,7 @@ No "quote error" found anywhere in the pipeline.
 | Cron | Schedule | Last Run | Status |
 |------|----------|----------|--------|
 | Richard premarket | 14:00 Mon–Fri | 14:02 today | ✅ |
-| Scan-market | 15:30–21:00 /30min | 16:30 | ✅ |
+| Scan-market | 15:30–21:00 /30min | 17:00 | ✅ |
 | PM-Agent | 14:00 Mon–Fri | — | — |
 
 ---
