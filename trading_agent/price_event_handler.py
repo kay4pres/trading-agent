@@ -28,6 +28,7 @@ Usage:
 """
 
 import json
+import os
 import sys
 import time
 import threading
@@ -35,7 +36,10 @@ from pathlib import Path
 from datetime import datetime, timezone, timedelta
 from typing import Callable, Optional
 
-DATA_DIR     = Path(r"E:\Me\TradingAgent\data")
+# Config — UTA/Docker: TRADING_DATA_DIR env var; Local: E:\Me\TradingAgent\data
+_DATA_ROOT = os.environ.get('TRADING_DATA_DIR', '').strip()
+DATA_DIR = Path(_DATA_ROOT) if _DATA_ROOT else Path(r'E:\Me\TradingAgent\data')
+DATA_DIR.mkdir(parents=True, exist_ok=True)
 POS_FILE     = DATA_DIR / "positions.json"
 RESULTS_FILE = DATA_DIR / "bull_bear_results.json"
 SIGNALS_FILE = DATA_DIR / "signals_live.json"

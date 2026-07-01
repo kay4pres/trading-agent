@@ -18,16 +18,19 @@ Mavis cron integration:
 """
 
 import json
+import os
 import sys
 import time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
-# ── Paths ───────────────────────────────────────────────────────────────────────
-DATA_DIR    = Path(r"E:\Me\TradingAgent\data")
-SIGNAL_IN   = DATA_DIR / "signals_live.json"
-DEBATE_OUT  = DATA_DIR / "bull_bear_results.json"
-AGENT_DIR   = Path(r"E:\Me\TradingAgent\trading_agent")
+# ── Paths — UTA/Docker: TRADING_DATA_DIR env var; Local: E:\Me\TradingAgent\data
+_DATA_ROOT = os.environ.get('TRADING_DATA_DIR', '').strip()
+DATA_DIR   = Path(_DATA_ROOT) if _DATA_ROOT else Path(r'E:\Me\TradingAgent\data')
+DATA_DIR.mkdir(parents=True, exist_ok=True)
+SIGNAL_IN  = DATA_DIR / "signals_live.json"
+DEBATE_OUT = DATA_DIR / "bull_bear_results.json"
+AGENT_DIR  = Path(__file__).parent.parent / "trading_agent"
 AMSTERDAM_TZ = timezone(timedelta(hours=2))
 
 sys.path.insert(0, str(AGENT_DIR))
@@ -35,6 +38,7 @@ from bull_bear_prompts import (
     BullBearSignal, build_bull_prompt, build_bear_prompt,
     build_rm_prompt, extract_score, extract_verdict
 )
+from cost_logger import log_debate
 
 
 def run_debate(sig: dict) -> dict:
@@ -63,21 +67,21 @@ def run_debate(sig: dict) -> dict:
 
     # ── LLM calls run inline in this Mavis session ──────────────────────────
     # Bull
-    bull_resp = _llm(
+    bull_resp, bull_usage = _llm(
         prompt=build_bull_prompt(s),
         system="You are Bull — a rigorous Ross Cameron day trading analyst.",
         label=f"{s.symbol} Bull"
     )
 
     # Bear
-    bear_resp = _llm(
+    bear_resp, bear_usage = _llm(
         prompt=build_bear_prompt(s),
         system="You are Bear — a skeptical Ross Cameron risk manager.",
         label=f"{s.symbol} Bear"
     )
 
     # Research Manager
-    rm_resp = _llm(
+    rm_resp, rm_usage = _llm(
         prompt=build_rm_prompt(s, bull_resp, bear_resp),
         system="You are the Research Manager — objective synthesizer.",
         label=f"{s.symbol} Research Manager"
@@ -85,6 +89,18 @@ def run_debate(sig: dict) -> dict:
 
     conviction = extract_score(rm_resp, "CONVICTION_SCORE")
     verdict = extract_verdict(rm_resp)
+
+    # ── Log cost ─────────────────────────────────────────────────────────────
+    total_cost = log_debate(
+        symbol=s.symbol,
+        calls=[
+            {"role": "Bull",            "usage": bull_usage},
+            {"role": "Bear",            "usage": bear_usage},
+            {"role": "Research Manager","usage": rm_usage},
+        ],
+        source="scan-market",
+    )
+    print(f"[Cost] {s.symbol} Bull/Bear debate: ${total_cost:.4f}")
 
     return {
         "symbol": s.symbol,
@@ -98,11 +114,13 @@ def run_debate(sig: dict) -> dict:
     }
 
 
-def _llm(prompt: str, system: str, label: str) -> str:
+def _llm(prompt: str, system: str, label: str) -> tuple[str, dict | None]:
     """
     Call the Mavis session's LLM inline.
+    Returns (text, usage_dict). usage_dict may be None if not available.
+
     Uses the 'mavis llm-call' skill which reads from the daemon's config.
-    Falls back to a direct HTTP call using the Mavis API key.
+    Falls back to a direct HTTP call using the Mavis API key (returns usage).
     """
     # Try the built-in llm_call.py script first
     LLM_CALLER = Path(r"C:\Users\Kay\.mavis\.builtin-skills\llm-call\scripts\llm_call.py")
@@ -117,19 +135,18 @@ def _llm(prompt: str, system: str, label: str) -> str:
             capture_output=True, text=True, timeout=60
         )
         if result.returncode == 0:
-            return result.stdout.strip()
-        # If 401, fall through to direct HTTP
+            return result.stdout.strip(), None  # no usage from llm_call.py path
         if "401" not in result.stderr and "token" not in result.stderr.lower():
             raise RuntimeError(result.stderr.strip())
-    except Exception as e:
+    except Exception:
         pass
 
-    # Fallback: direct HTTP call using Mavis API key from MiniMax config
+    # Fallback: direct HTTP call — returns (text, usage_dict)
     return _llm_direct(prompt, system)
 
 
-def _llm_direct(prompt: str, system: str) -> str:
-    """Direct HTTP call using MiniMax API from config."""
+def _llm_direct(prompt: str, system: str) -> tuple[str, dict | None]:
+    """Direct HTTP call using MiniMax API from config. Returns (text, usage_dict)."""
     import yaml, httpx
 
     config = yaml.safe_load(open(r"C:\Users\Kay\.minimax\config.yaml"))
@@ -161,7 +178,9 @@ def _llm_direct(prompt: str, system: str) -> str:
         raise RuntimeError(f"LLM direct call failed: {resp.status_code} {resp.text}")
 
     data = resp.json()
-    return data["choices"][0]["message"]["content"].strip()
+    usage = data.get("usage", None)
+    text  = data["choices"][0]["message"]["content"].strip()
+    return text, usage
 
 
 def main():

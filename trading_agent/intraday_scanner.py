@@ -6,10 +6,14 @@ import numpy as np
 from datetime import datetime, time
 from pathlib import Path
 import json
+import os
 
-DATA_DIR = Path(r'E:\Me\TradingAgent\data')
+# Config — UTA/Docker: TRADING_DATA_DIR env var; Local: E:\Me\TradingAgent\data
+_DATA_ROOT = os.environ.get('TRADING_DATA_DIR', '').strip()
+DATA_DIR = Path(_DATA_ROOT) if _DATA_ROOT else Path(r'E:\Me\TradingAgent\data')
+DATA_DIR.mkdir(parents=True, exist_ok=True)
 WATCHLIST_DIR = DATA_DIR / 'watchlists'
-DATA_DIR.mkdir(exist_ok=True)
+WATCHLIST_DIR.mkdir(parents=True, exist_ok=True)
 
 # === CONFIG ===
 
@@ -39,7 +43,7 @@ INTERVAL = '5m'
 LOOKBACK_PERIOD = '5d'  # Last 5 trading days
 
 # === POSITIONS GUARD — skip alerts on stocks we already hold ===
-POSITIONS_FILE = Path(r'E:\Me\TradingAgent\data\positions.json')
+POSITIONS_FILE = DATA_DIR / 'positions.json'
 
 def get_open_symbols():
     """Return set of symbols currently in an open position."""

@@ -14,6 +14,7 @@ Usage:
 
 import base64
 import json
+import os
 import subprocess
 import sys
 import tempfile
@@ -21,13 +22,14 @@ import time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
-# ── Paths ───────────────────────────────────────────────────────────────────────
-DATA_DIR     = Path(r"E:\Me\TradingAgent\data")
-SIGNAL_IN    = DATA_DIR / "signals_live.json"
-DEBATE_OUT   = DATA_DIR / "bull_bear_results.json"
-LLM_CALLER   = Path(r"C:\Users\Kay\.mavis\.builtin-skills\llm-call\scripts\llm_call.py")
-AGENT_DIR    = Path(r"E:\Me\TradingAgent\trading_agent")
-VAULT_DIR    = Path(r"E:\Me\TradingAgent\vault")
+# ── Paths — UTA/Docker: TRADING_DATA_DIR env var; Local: E:\Me\TradingAgent\data
+_DATA_ROOT = os.environ.get('TRADING_DATA_DIR', '').strip()
+DATA_DIR   = Path(_DATA_ROOT) if _DATA_ROOT else Path(r'E:\Me\TradingAgent\data')
+DATA_DIR.mkdir(parents=True, exist_ok=True)
+SIGNAL_IN  = DATA_DIR / "signals_live.json"
+DEBATE_OUT = DATA_DIR / "bull_bear_results.json"
+VAULT_DIR  = Path(r"E:\Me\TradingAgent\vault")
+AGENT_DIR  = Path(__file__).parent.parent / "trading_agent"
 VAULT_KEY    = VAULT_DIR / "llm_api_key.enc"
 VAULT_CONFIG = VAULT_DIR / "llm_config.yaml"
 AMSTERDAM_TZ = timezone(timedelta(hours=2))
@@ -37,6 +39,7 @@ from bull_bear_prompts import (
     BullBearSignal, build_bull_prompt, build_bear_prompt,
     build_rm_prompt, extract_score, extract_verdict
 )
+from trading_agent.cost_logger import log_debate
 
 
 # ── Vault: read DPAPI-encrypted API key ───────────────────────────────────────
@@ -216,6 +219,18 @@ def run_debate(sig: dict) -> dict:
 
     conviction = extract_score(rm_resp, "CONVICTION_SCORE")
     verdict = extract_verdict(rm_resp)
+
+    # Log cost (llm_call.py doesn't return usage → uses fallback estimates)
+    total_cost = log_debate(
+        symbol=s.symbol,
+        calls=[
+            {"role": "Bull",            "usage": None},
+            {"role": "Bear",            "usage": None},
+            {"role": "Research Manager","usage": None},
+        ],
+        source="standalone",
+    )
+    print(f"[Cost] {s.symbol} Bull/Bear debate: ${total_cost:.4f}")
 
     return {
         "symbol": s.symbol,
