@@ -78,16 +78,27 @@ def _api_request(method: str, payload: dict) -> Optional[dict]:
         return None
     url = f"{API_BASE}/bot{token}/{method}"
     try:
-        import urllib.request
+        import urllib.request, socket
         data = json.dumps(payload).encode('utf-8')
         req = urllib.request.Request(
             url, data=data,
             headers={'Content-Type': 'application/json'}
         )
-        with urllib.request.urlopen(req, timeout=10) as resp:
+        # Short timeout: fail fast so polling loops don't block for 30s
+        # getUpdates with timeout=0 in payload should return instantly — this
+        # caps any TCP/DNS stall at 3s rather than letting urllib default ~60s
+        with urllib.request.urlopen(req, timeout=3) as resp:
             return json.loads(resp.read())
+    except socket.timeout:
+        # timeout=0 in getUpdates means Telegram returns immediately — if WE
+        # hit a socket timeout here, Docker network is stalling. Log once.
+        print(f"[telegram] getUpdates socket timeout — Docker network may be slow")
+        return None
+    except urllib.error.HTTPError as e:
+        print(f"[telegram] HTTP {e.code} on {method}")
+        return None
     except Exception as e:
-        print(f"[telegram_sender] API error ({method}): {e}")
+        print(f"[telegram] API error ({method}): {e}")
         return None
 
 
@@ -594,16 +605,22 @@ def poll_callbacks(callback_handler=None):
     Background thread: polls Telegram for updates every 5s.
     - callback_query (button press) → callback_handler
     - text message /key commands from allowed chats
+    Uses exponential backoff on failures so Docker network stalls don't spam logs.
     """
     global _last_update_id
-    while not _stop_polling.wait(5):
+    backoff = 1  # seconds, doubles on each failure up to 60s
+
+    while not _stop_polling.wait(backoff):
+        backoff = 1  # reset on successful wait (no failure)
         try:
             updates = _api_request('getUpdates', {
                 'offset':  _last_update_id + 1,
-                'timeout': 0,   # non-blocking — returns immediately, no timeout errors
+                'timeout': 0,   # non-blocking — Telegram returns instantly
             })
             if not (updates and updates.get('ok')):
                 continue
+
+            backoff = 1  # reset backoff on success
 
             for upd in updates.get('result', []):
                 _last_update_id = upd.get('update_id', _last_update_id)
@@ -662,7 +679,7 @@ def poll_callbacks(callback_handler=None):
                     print(f"[telegram] Button: {action.upper()} {symbol}")
                     continue
 
-                # ── Text message (/key commands) ────────────────────────────────
+                # ── Text message (/key commands) ───────────────────────────────
                 msg = upd.get('message', {})
                 if not msg:
                     continue
@@ -748,7 +765,7 @@ def poll_callbacks(callback_handler=None):
 
         except Exception as e:
             print(f"[telegram poll] error: {e}")
-            time.sleep(5)
+            backoff = min(backoff * 2, 60)  # double backoff on failure, cap at 60s
 
 
 def start_polling(callback_handler=None):

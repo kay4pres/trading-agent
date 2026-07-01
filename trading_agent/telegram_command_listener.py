@@ -73,6 +73,7 @@ def quick_status(chat_id: str):
         msg = "⚠️ Could not reach dashboard at :5050 — PM-Agent will investigate"
     send_telegram(chat_id, msg)
 
+backoff = 1
 while True:
     try:
         # Non-blocking (timeout=0) — safe to run alongside dashboard's long-poll
@@ -81,11 +82,14 @@ while True:
             'timeout': 0,
         })
         if not (updates and updates.get('ok')):
-            time.sleep(1)
+            time.sleep(backoff)
+            backoff = min(backoff * 2, 60)
             continue
 
+        backoff = 1  # reset on success
+
         for upd in updates.get('result', []):
-            _last_update_id = max(_last_update_id, upd.get('update_id', _last_update_id))
+            _last_update_id = max(_last_update_id, upd.get('update_id', 0))
 
             msg = upd.get('message', {})
             if not msg:
@@ -129,4 +133,5 @@ while True:
 
     except Exception as e:
         print(f"[TelegramCmd] Error: {e}")
-        time.sleep(3)
+        time.sleep(min(backoff * 2, 60))
+        backoff = min(backoff * 2, 60)

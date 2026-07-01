@@ -16,7 +16,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         Flask flask-cors yfinance requests "python-telegram-bot>=20.7" croniter pandas numpy
 
 # Build argument: GIT_REF (defaults to main)
+# CACHEBUST date changes daily — forces fresh GitHub download every 24h
 ARG GIT_REF=main
+ARG CACHEBUST=20260701
 ADD https://github.com/kay4pres/trading-agent/archive/refs/heads/${GIT_REF}.zip /app/repo.zip
 RUN unzip /app/repo.zip \
     && mv /app/trading-agent-${GIT_REF}/* /app/ \
