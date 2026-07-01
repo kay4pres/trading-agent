@@ -10,7 +10,7 @@ Data flow:
   Finnhub / AlphaVantage ──► P4 Catalyst check (via news_providers.py)
 """
 
-import sys
+import os, sys
 from pathlib import Path
 from datetime import datetime, date
 from typing import List, Dict, Any, Optional
@@ -23,8 +23,14 @@ from news_providers      import get_company_news, score_catalyst
 from tradingview_connector import fetch_ross_universe, tv_to_signal_rows
 
 # ── Config ────────────────────────────────────────────────────────────────────
-DATA_DIR      = Path(r'E:\Me\TradingAgent\data')
-WATCHLIST_DIR = Path(r'E:\Me\TradingAgent\data\watchlists')
+# Docker: TRADING_DATA_DIR=/app/data → /app/data/watchlists
+# Local:  falls back to E:\Me\TradingAgent\data
+_DATA_ROOT = os.environ.get('TRADING_DATA_DIR')
+if _DATA_ROOT:
+    DATA_DIR      = Path(_DATA_ROOT)
+else:
+    DATA_DIR      = Path(r'E:\Me\TradingAgent\data')
+WATCHLIST_DIR = DATA_DIR / 'watchlists'
 WATCHLIST_DIR.mkdir(exist_ok=True)
 
 TODAY = date.today()

@@ -32,13 +32,20 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 # ── Config ─────────────────────────────────────────────────────────────────────
-DATA_DIR      = Path(r"E:\Me\TradingAgent\data")
-DEBATE_IN     = DATA_DIR / "bull_bear_results.json"   # written by Mavis cron
-SIGNAL_QUEUE  = DATA_DIR / "signals_live.json"         # written by live_event_loop
-POSITIONS_FILE = DATA_DIR / "positions.json"
-AMSTERDAM_TZ  = timezone(timedelta(hours=2))
+# UTA/Docker: --data-dir CLI arg or TRADING_DATA_DIR env var
+# Local:      falls back to E:\Me\TradingAgent\data
+import os as _os
+from pathlib import Path
+
+_DATA_DIR_RAW = _os.environ.get("TRADING_DATA_DIR") or _os.environ.get("DATA_DIR") or r"E:\Me\TradingAgent\data"
+DATA_DIR = Path(_DATA_DIR_RAW)
+
+DEBATE_IN       = DATA_DIR / "bull_bear_results.json"
+SIGNAL_QUEUE    = DATA_DIR / "signals_live.json"
+POSITIONS_FILE  = DATA_DIR / "positions.json"
+AMSTERDAM_TZ    = timezone(timedelta(hours=2))
 CONVICTION_THRESHOLD = 7.0
-POLL_INTERVAL = 15   # seconds between result checks and exit checks
+POLL_INTERVAL   = 15   # seconds between result checks and exit checks
 
 
 # ── Exit Handler ────────────────────────────────────────────────────────────────
@@ -352,13 +359,27 @@ if __name__ == "__main__":
                         help="Comma-separated symbols (overrides watchlist_latest.csv)")
     parser.add_argument("--secret", action="store_true",
                         help="Prompt for Alpaca secret key")
-    parser.add_argument("--from-csv", type=Path,
-                        default=DATA_DIR / "watchlists" / "watchlist_latest.csv",
-                        help="Path to watchlist CSV (default: watchlist_latest.csv)")
+    parser.add_argument("--from-csv", type=Path, default=None,
+                        help="Path to watchlist CSV (default: <data_dir>/watchlists/watchlist_latest.csv)")
     parser.add_argument("--vault-dir",
                         default=None,
                         help="Vault directory for Docker deployments (default: app vault)")
+    parser.add_argument("--data-dir",
+                        default=None,
+                        type=Path,
+                        help="Data directory (default: TRADING_DATA_DIR env var or E:\\Me\\TradingAgent\\data)")
     args = parser.parse_args()
+
+    # Override DATA_DIR if --data-dir was passed
+    if args.data_dir:
+        DATA_DIR = args.data_dir
+        DEBATE_IN      = DATA_DIR / "bull_bear_results.json"
+        SIGNAL_QUEUE   = DATA_DIR / "signals_live.json"
+        POSITIONS_FILE = DATA_DIR / "positions.json"
+
+    # Resolve --from-csv (lazy, after DATA_DIR is finalized)
+    if args.from_csv is None:
+        args.from_csv = DATA_DIR / "watchlists" / "watchlist_latest.csv"
 
     # Resolve symbols: CLI arg > CSV > nothing
     if args.watchlist:

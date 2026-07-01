@@ -75,7 +75,8 @@ except Exception as e:
 log("[INFO] Starting live_event_loop...")
 subprocess.Popen(
     [sys.executable, "-m", "trading_agent.live_event_loop",
-     "--vault-dir", str(VAULT_DIR)],
+     "--vault-dir", str(VAULT_DIR),
+     "--data-dir", "/app/data"],
     cwd="/app",
     stdout=open("/app/data/logs/live_loop.log", "a"),
     stderr=subprocess.STDOUT,
