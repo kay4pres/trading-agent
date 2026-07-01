@@ -25,11 +25,11 @@ from tradingview_connector import fetch_ross_universe, tv_to_signal_rows
 # ── Config ────────────────────────────────────────────────────────────────────
 # Docker: TRADING_DATA_DIR=/app/data → /app/data/watchlists
 # Local:  falls back to E:\Me\TradingAgent\data
-_DATA_ROOT = os.environ.get('TRADING_DATA_DIR')
+_DATA_ROOT = os.environ.get('TRADING_DATA_DIR', '').strip()
 if _DATA_ROOT:
-    DATA_DIR      = Path(_DATA_ROOT)
+    DATA_DIR = Path(_DATA_ROOT)
 else:
-    DATA_DIR      = Path(r'E:\Me\TradingAgent\data')
+    DATA_DIR = Path(r'E:\Me\TradingAgent\data')
 DATA_DIR.mkdir(exist_ok=True)
 WATCHLIST_DIR = DATA_DIR / 'watchlists'
 WATCHLIST_DIR.mkdir(exist_ok=True)
