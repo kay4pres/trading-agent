@@ -67,7 +67,7 @@ def _fallback_yfinance(args: List[str]) -> Dict[str, Any]:
                 "volume": info.last_volume or 0,
             }
         elif cmd == "batch_quotes":
-            return [_fallback_yfinance(["quote", s])["data"] if "error" not in _fallback_yfinance(["quote", s]) else {} for s in args[1:]]
+            return [_fallback_yfinance(["quote", s]) for s in args[1:]]
         elif cmd in ("historical", "historical_period"):
             period = args[2] if cmd == "historical_period" else "5d"
             interval = args[3] if cmd == "historical_period" else args[4] if len(args) > 4 else "5m"
@@ -116,7 +116,7 @@ def get_batch_quotes(symbols: List[str]) -> List[Dict[str, Any]]:
     if result.get("success"):
         return result.get("data", [])
     # Fallback: single quotes
-    return [get_quote(s)["data"] for s in symbols]
+    return [get_quote(s) for s in symbols]
 
 
 def get_historical(
