@@ -1,0 +1,815 @@
+# Chapter1. Becoming a Day Trader_audio.wav
+# Transcribed: 2026-07-01T21:08:36.463244
+# Duration: 59.4 minutes
+# Model: faster-whisper tiny
+# Segments: 37
+
+[00:00:00] your one of day trading the basics. So this is the curriculum here for day
+[00:00:05] training the basics. I'll hide my video just for one second. Of course day
+[00:00:09] training the basics is a per requisite for day trading strategies and scaling.
+[00:00:14] This is a class that's going to lay the foundation. And my goal is that by the end of
+[00:00:19] this class, you're going to be fully, fully immersed in trading in the simulator.
+[00:00:25] You're going to know how to use the simulator. How to use that trading software.
+[00:00:28] You're going to understand the basics of how to find strong stocks to trade,
+[00:00:32] where to get in, where to get out. You're not going to have the in-depth strategy that's
+[00:00:37] going to come in strategies and scaling, but you're going to have a solid foundation to build
+[00:00:42] off of. And that's what's important. So in today's lesson, I'm going to go over the seven
+[00:00:48] following topics, getting ready to go pro with a warrior pro membership, which will be upgrading to
+[00:00:54] strategies and scaling. That's the full length course. Number two, discussing the tools
+[00:00:59] required to day trade and number three, the equipment required to day trade. Number four,
+[00:01:04] we're going to talk about creating tax free income for the future, which I think is a very
+[00:01:08] interesting and important topic. Number five, we're going to talk about setting goals and targets.
+[00:01:14] Number six, we're going to talk about the leading causes of failure. And number seven,
+[00:01:18] we're going to try to find what success looks like for you. Okay, so number one,
+[00:01:24] getting ready to go pro with the warrior pro membership. So as I said, some of you guys are watching
+[00:01:29] this class right now as part of a warrior pro preview, part of our two-week trial. You may be a
+[00:01:35] warrior starter member, or you may be...
+[00:00:00] an older warrior plus member.
+[00:00:01] We've had a number of different memberships over the years.
+[00:00:04] At this point today, the primary membership that we have at warrior trading is our warrior
+[00:00:08] pro membership.
+[00:00:09] It includes access to day trading the basics and day trading, stradges and scaling.
+[00:00:16] So as you're going through this curriculum, I want to encourage you to watch every chapter.
+[00:00:23] I want to encourage you to log into the day trading chat room as often as possible to watch
+[00:00:27] me trading and to immerse yourself in the community of active traders.
+[00:00:32] One of the things I've learned over the years is that learning to trade is like learning
+[00:00:36] a new language, learning the language of technical analysis, truly.
+[00:00:40] It's a language of the financial markets that every active trader speaks and it's hard to learn
+[00:00:46] a new language if you're not fully immersed in a culture and a community of other people
+[00:00:51] who are speaking it as well.
+[00:00:53] So every day when you log in, you're going to see in the chat room people speaking
+[00:00:57] the language.
+[00:00:58] Using the terminology, the slang, the acronyms, etc, they're related to active trading.
+[00:01:05] Step three, I want you to begin using that trading simulator as soon as you feel comfortable
+[00:01:09] start testing the waters.
+[00:01:10] But there's really no such thing as too soon because it's a simulator.
+[00:01:15] It's a safe environment and I want you to practice to stradges your learning in a safe
+[00:01:20] environment.
+[00:01:21] I do not want you to become a trader who jumps in to this class or jumps into the
+[00:01:27] chat room and starts blindly following me or anyone else for that matter with real money.
+[00:01:33] The classroom, the chat room is an interactive experience where you get to look.
+[00:00:00] learn about my strategy.
+[00:00:02] It's not designed for you to blindly follow me.
+[00:00:05] That's not a recipe for long term success.
+[00:00:08] So what I want you to do is to use that simulator
+[00:00:11] and to practice in the simulator
+[00:00:14] until you've completed the pre-trading checklist
+[00:00:17] at the end of day trading strategies and scaling.
+[00:00:21] At that point, in chapter 14 of strategies and scaling,
+[00:00:24] you're going to be presented with a full trading plan.
+[00:00:28] That is the plan that I want you to follow
+[00:00:30] for at least one month in the simulator.
+[00:00:34] If you can achieve that in the simulator,
+[00:00:37] you will build a track record of metrics.
+[00:00:40] That track record is going to be a source
+[00:00:43] of confidence for you to flip the switch and go live.
+[00:00:47] Until you have that track record of success
+[00:00:49] in consistency, you have no business
+[00:00:51] putting real money into the market.
+[00:00:53] And I know that sounds rough and kind of harsh,
+[00:00:56] but that's the reality.
+[00:00:57] And it would have saved me tens of thousands of dollars
+[00:01:00] and unnecessary losses if I had just waited
+[00:01:03] until I first truly understood the strategy.
+[00:01:07] Now, some of you are going to come up
+[00:01:08] with excuses of why you're going to trade with real money anyways.
+[00:01:11] Maybe you've been trading for a while
+[00:01:12] and you have some experience and that could be valid.
+[00:01:14] Maybe you'll say, I really need to make money this month,
+[00:01:17] so I can't afford to wait.
+[00:01:19] That's not valid.
+[00:01:20] That's not a good reason to put real money
+[00:01:22] into the market too soon.
+[00:01:24] All right, so make sure you follow the right path.
+[00:01:27] Traders who skip steps in this learning curve
+[00:01:31] are going to be traders who end up making mistakes
+[00:01:33] and losing money.
+[00:01:34] Don't skip classes, don't skip steps, build.
+[00:00:00] the foundation. This right now is the hard work. You're doing it by being part of this
+[00:00:06] curriculum, being part of this community. This is you digging deep. And I'm going to be here
+[00:00:12] in the trenches side by side with you trading every single day. All right, so you're not doing
+[00:00:17] it alone. Now when it comes to day trading strategies, there are really two strategies you can choose
+[00:00:23] from. They're the strategies who, uh, traders who have a happy face over here, and then they're
+[00:00:28] the traders who are depressed over here, and they're crying. So they've got all these
+[00:00:32] tiers coming down their cheeks. You've got momentum traders, and you've got counter trend traders.
+[00:00:37] Why are counter trend traders so sad? They're sad because it's hard to predict when a stock is going
+[00:00:44] to reverse. To me, it's a heck of a lot easier to trade with the trend. So I am a trend trader.
+[00:00:53] I look for something that's trending and I trade the trend. That's called, that's momentum trading.
+[00:00:58] That's a definition of momentum trading. A counter trend trader, I'll pull up on the whiteboard
+[00:01:02] so you can kind of visualize this. It's going to be someone who's looking at a stock that's selling
+[00:01:08] off, going lower and lower and lower and lower, and is looking for that bounce, and they buy here.
+[00:01:13] And then naturally boom, they stop out, and it goes lower and lower and lower, but they don't sell
+[00:01:18] because the lower it goes, the more they feel that it's a good buy. So they add more to their
+[00:01:22] position down here. And maybe it turns around and they're right. But ultimately, they're swimming
+[00:01:27] against the current. They're trading against the trend. Now, you have traders who do this
+[00:01:32] both till long side and the short side. Traders who will see a stock squeezing up here and
+[00:01:37] rather than person.
+[00:00:00] anticipating in this move, they just wait for the reversal back down here.
+[00:00:04] And that's all fine and well until boom, you have that squeeze back up.
+[00:00:08] Now, if you recall, how much was it that short sellers lost on GameStop?
+[00:00:12] I believe it was $6.7 billion.
+[00:00:16] $6.7 billion was lost, shorting GameStop. That was just by Melvin Capital.
+[00:00:21] That was one hedge fund, an unthinkable amount of money.
+[00:00:25] So I want you to remember that when you are shorting stocks,
+[00:00:28] you have the risk of unlimited loss.
+[00:00:31] And most counter trend traders are the ones who are going to be shorting because they're shorting
+[00:00:35] something that's extended, looking for that reversal back down.
+[00:00:38] So be cautious with that strategy if you're considering it.
+[00:00:42] I think for beginner traders, especially a beginner trader using a cash account,
+[00:00:48] because when you're using cash account, you cannot trade to the short side at all.
+[00:00:51] We'll talk about that more in a moment or in an upcoming class.
+[00:00:55] But for most beginners, momentum trading is going to be a simpler way to get started.
+[00:01:00] That's what worked best for me.
+[00:01:02] And I think that there's good reason why it's going to be a better strategy for most beginners.
+[00:01:06] So I'm a momentum trader first and foremost.
+[00:01:10] And this is a great example of a momentum stock.
+[00:01:13] This is a day where I was up $45,000.
+[00:01:16] Our mind is always my results are not typical.
+[00:01:18] I've been doing this for a very long time.
+[00:01:20] So you shouldn't assume that you'll take this class and make $45,000 tomorrow.
+[00:01:24] But I do think it makes a heck of a lot of sense.
+[00:01:26] To learn from someone who is actually trading with real money every single day.
+[00:01:31] And it's proving that these strategies are battle tested.
+[00:01:34] So this is a window where I was trading and another window where I was...
+[00:00:00] trading and I didn't trade it in these areas here or in these areas here. You're going to
+[00:00:04] learn exactly why as we continue to go through this course. In fact, today's a day where I'm
+[00:00:09] sitting in a pretty nice position up 24,821 dollars and it is once again trading a momentum stock.
+[00:00:17] This is a stock that we had today. It had breaking news that came out at 830 and following
+[00:00:23] that breaking news which came out right there, the stock proceeded to have 13 green
+[00:00:28] camels in a row and went up 300%. From $2.50 all the way up to 3 to 4 to 5, 6, 7, 8, 9,
+[00:00:36] hit a high of $10.80 on believable. What a move. So these are the types of stocks that I'm going to
+[00:00:42] be focusing on trading and you're going to learn why I focus on this price range and why this
+[00:00:47] has been most profitable for me over the years as we continue on. So through day trading the basics
+[00:00:53] and strategy and scaling, you will learn why I focus on momentum trading. How I choose stocks the day
+[00:00:58] trend, how I find them in real time, how I manage risk, where I get in, where I get out,
+[00:01:02] exact entry and exit indicators, candlestick patterns, written strategies. You can download these,
+[00:01:08] you can print them out, you can use them. Of course, that's always insimulated before you put it
+[00:01:12] with real money. You can learn my back tested analytics. Over 25,000 trades that support
+[00:01:18] the strategies that I teach. This is an important for me to differentiate this curriculum
+[00:01:25] from many of the others out there. One of the reasons probably investor media ranked it as the
+[00:01:28] most comprehensive course is because it is extremely comprehensive. But this is also a course
+[00:01:34] that is the culmination of all-
+[00:00:00] all of my years of experience in the market with real money.
+[00:00:06] All right, how I use technical analysis
+[00:00:08] to give me an edge in trading,
+[00:00:10] you'll earn how I use market data,
+[00:00:11] level two in time and sales in my trading.
+[00:00:14] How I've set up my trading software
+[00:00:16] to empower me to trade quickly and efficiently,
+[00:00:19] how I manage emotions after big losses.
+[00:00:22] And I'll give you my business plan and trading plan,
+[00:00:25] which is really, it's been the roadmap for my success.
+[00:00:29] But we're going to start here with the basics.
+[00:00:32] And my theory here is that I'm going to introduce
+[00:00:36] essentially all of the concepts
+[00:00:38] that you're going to need to know to be a trader long term.
+[00:00:42] But I'm going to introduce them
+[00:00:44] in sort of the tip of the iceberg cliff notes level.
+[00:00:48] So you understand all the critical concepts.
+[00:00:50] These I want you to think of as pillars
+[00:00:53] to your foundation of learning how to trade.
+[00:00:56] So I'm going to introduce you to all of the pillars here.
+[00:00:59] These are the core concepts,
+[00:01:00] the core competencies that you will need to have
+[00:01:02] in order to start.
+[00:01:04] But then we're going to start doing
+[00:01:05] as we're going to start filling in the depth
+[00:01:07] and the relationship between each of these.
+[00:01:10] And this is what we'll be doing
+[00:01:11] as we continue to build on chapter after chapter.
+[00:01:15] So we'll keep coming back and revisiting similar topics,
+[00:01:18] but I'll continue to add more and more depth.
+[00:01:21] Until we get to the point where we have built a really solid
+[00:01:23] foundation, and that's what I want to see you build
+[00:01:26] the house of trading upon.
+[00:01:28] All right, so that'll be the front door.
+[00:01:30] Nice little window there.
+[00:01:31] I don't want to spend too much time on that.
+[00:01:32] OK.
+[00:01:35] So let's go ahead to the,
+[00:00:00] next slide. I always like to include this because it's something that was really meaningful
+[00:00:05] when we were received this award ranking from Investopedia, best comprehensive day trading course
+[00:00:13] by Investopedia. So now let's talk about number two, the tools required to day trade. I want
+[00:00:20] to make sure we're all on the same page here. So for charting, I'm using day trade dash. That's
+[00:00:26] my charting software, and I use that because, well, it's a software we've built,
+[00:00:30] but we also offer 10 second charts there and we filter out ADFN quotes in order to provide
+[00:00:35] clean charts. So I've been using these charts exclusively since we launched them, and I've been
+[00:00:40] very happy with them. For my scans, I also use day trade dash. So I'm using the same scanners
+[00:00:46] that you guys are using. I don't have extra scanners, I don't know, special scanners. I use the same
+[00:00:50] scanners that you guys have access to. And for the news, I'm using the API that's right into the day trade
+[00:00:56] dashboard platform. So my goal when I started building this in 2017 was to build the ultimate
+[00:01:03] dashboard for active traders. That was my goal. And originally, I thought that this would extend
+[00:01:10] all the way to this being a platform that people would use to trade with real money. Today,
+[00:01:18] I don't know if that's going to happen because of all of the sort of regulatory and compliance
+[00:01:23] hurdles to make a platform used with real money. But for right now, we're we've brought it up
+[00:01:30] to the level where you've got your charts, you've got your scanners, you've got your community,
+[00:01:33] you've got the broadcast, and you've got the sim trading, and it's all built into this.
+[00:00:00] ecosystem. The last step would be, you know, connecting it to real money, but it's a big hurdle,
+[00:00:04] and I don't know if that's something that we'll do right now. But nonetheless, even in my own
+[00:00:08] experience, I'm executing my platforms, I'm executing my orders over in a separate broker window.
+[00:00:16] So I use day trade dash for everything except for the actual order execution, and then on this
+[00:00:21] window down below, this is where I have my actual trade setup right here. So you'll learn more about
+[00:00:27] how that's set up, because I'm going to give you demos of all that stuff as we keep going.
+[00:00:31] For reporting, I'm using trader view for my metrics. No affiliate relationship there,
+[00:00:35] use them if you want. Don't use them if you don't want doesn't matter to me, really. But I like
+[00:00:39] them, and I've been using them since 2016. So I have almost a decade of trading history in there,
+[00:00:46] 16, 17, 18, 19, 20, 21, 22, 22, 22, 22, 22, 22. So anyways, you can import trades from our simulator
+[00:00:53] directly into trader view if you'd like, or for many other brokers as well. And for trading,
+[00:00:57] I've used a number of different brokers over the years. I've used each trade, I've used a
+[00:01:01] merit trade, I've used fidelity, I've used Charles Schwab, I've used a bunch of offshore brokers,
+[00:01:06] I've used interactive brokers, I'm currently using light speed trading. They catered institutional
+[00:01:11] traders, but also retail traders who want to trade with large positions and need advanced
+[00:01:17] order routing technology. Now, many of our members prefer using Charles Schwab and use
+[00:01:22] think or swim due to commission free trading. A lot of people use weibo because of commission
+[00:01:27] free trading and their trading platform. To a lesser extent, I'll see people who use fidelity or
+[00:01:33] trade. The some people use trades.
+[00:00:00] Interactive brokers to a lesser extent, but I'm sure within this community
+[00:00:05] Pretty much every broker in the world is represented by by someone in here
+[00:00:10] So you can always ask people if you have questions about brokers, which ones the best for Canadians?
+[00:00:14] Which ones the best for someone who's in Europe, et cetera, et cetera?
+[00:00:18] Now the equipment required to day trade
+[00:00:22] Well, I suppose it can range from fairly simple to a bit more complex. I
+[00:00:27] However, I have always used laptops. I love the flexibility and portability of a laptop
+[00:00:34] Now I'm not here to sell you a laptop, but when I first started trading I couldn't afford to travel
+[00:00:40] And so I used a laptop not just because it was portable and flexible
+[00:00:43] But because it was all that I had it was what I used and I liked it and it was easy and when I started to find success
+[00:00:50] I began to travel and I realized that I could actually trade from anywhere in the world as long as I had my laptop
+[00:00:55] And a stable internet connection and today with hotspots 5G hotspots with a starlink
+[00:01:02] I mean, it's incredible how fast the internet can be from almost everywhere
+[00:01:07] Anywhere on the planet
+[00:01:09] So eventually I bought a couple of portable travel monitors so that I can have more than just my laptop screen
+[00:01:14] At this point, I often spend a good portion of my year on my traveling trading station
+[00:01:18] But of course I still stream every single day. I'm still broadcasting. I'm still doing my thing
+[00:01:22] I'm just doing it from a different location
+[00:01:26] So this was one of my earlier trading stations right here these two these three these are all circa
+[00:01:33] 2000 let's see this was probably 2013 maybe
+[00:00:00] in 2012. This is a little bit earlier. So this was an old Mac laptop, another old Mac laptop,
+[00:00:08] and my first Lenovo computer was right there. That was the same trading station here, and this
+[00:00:13] featured a newer Lenovo computer. I think it was called the Y50. Lenovo gaming computer,
+[00:00:19] which I thought was nice. This is my traveling trading station as well. You can just see one
+[00:00:25] laptop, and two small USB monitors. The USB monitors, I use I'll share the name with you
+[00:00:32] in just a moment. These are some pictures of me trading in Europe, trading pool side, trading in
+[00:00:38] Positano, trading on a couch, trading in a 17th century type of villa here. Trading with my son,
+[00:00:47] he's, hey, multipurpose, he's using this monitor for watching the pop patrol, and I'm trading
+[00:00:53] on these monitors, trading in the Caribbean, trading with friends, trading in a van. There's a
+[00:01:01] sprinter van, a plumbers van, trading on an island, trading on an airport, trading on an airport,
+[00:01:08] trading on an airplane, trading on a boat. You can trade from just about anywhere in the world. So
+[00:01:13] to set up a basic trading station, you'll need the following components, a computer, some monitors,
+[00:01:18] mounts, and racks, and some miscellaneous equipment and cables. So when it comes to a laptop,
+[00:01:26] I still like Lenovo's a lot. They're usually arranging from $900 to $1200, but I'm not telling
+[00:01:32] you to go buy a laptop, because when I started trading, I was using a borrowed laptop that was-
+[00:00:00] basically worth nothing, and it was just fine.
+[00:00:02] It was fine for getting started.
+[00:00:03] It was enough.
+[00:00:04] So that worked for me.
+[00:00:06] But if you know, you are in the market for a new computer,
+[00:00:09] what I would look for is one that's got a solid state hard drive.
+[00:00:12] They're 16 to 32 gigabytes of RAM in a nice graphics card.
+[00:00:15] And usually any gaming computer,
+[00:00:18] a computer that's sufficient for gaming
+[00:00:20] will be more than enough for trading.
+[00:00:22] But I recommend no touch screens
+[00:00:24] and no glossy screens, because it hurts your eyes.
+[00:00:28] 15 or 17 inch monitors up to you.
+[00:00:30] Falcon trading computers,
+[00:00:32] Falcon trading systems is a company that makes computers
+[00:00:35] specifically for traders.
+[00:00:37] Their computers are a bit more expensive,
+[00:00:39] but what they have are a number of additional monitor outputs.
+[00:00:45] So you can connect more monitors to that machine,
+[00:00:49] which is kind of nice.
+[00:00:50] In fact, I now have a desktop computer,
+[00:00:53] which I use for streaming
+[00:00:55] and things like that when I'm at my home office.
+[00:00:57] And it has, I think it's 16 outputs.
+[00:01:00] So I could connect 16 external monitors to that thing,
+[00:01:04] which would be absolutely crazy.
+[00:01:06] That's overkill.
+[00:01:07] But what do you really need?
+[00:01:09] Well, I've been using these 24-inch Azuz monitors for many years.
+[00:01:14] They're about $133 each on Amazon.
+[00:01:17] They're pretty cheap.
+[00:01:18] And they're great.
+[00:01:19] I've been very happy with them.
+[00:01:20] So I've got six of them right here in this trading station.
+[00:01:24] So I've got one, two, three, four.
+[00:01:27] These are all related to trading.
+[00:01:28] And then these are for my chat room broadcasting,
+[00:01:32] YouTube and things like that.
+[00:01:33] So that's plenty.
+[00:01:36] I think two is, is,
+[00:00:00] good. I think having three screens is great. A laptop screen in two external monitors. I think it's just fine.
+[00:00:05] These are the portable USB monitors that I use. They're made by Azus. And I think they've been great.
+[00:00:11] I think they're a little cheaper now than they used to be. So something to consider. And when it comes
+[00:00:16] to monitor racks, I'm going to stand up here and say, get the one with elbows. These are the
+[00:00:25] elbows right here. And these are, these are so underrated, but incredibly important because
+[00:00:30] what I can't stand is when I see someone set up a trading station and they have a monitor here,
+[00:00:39] a monitor here, a monitor here, and here and here, because they're so spaced out. They're on a rack,
+[00:00:46] and you just see these big. This is ridiculous. Squeeze those monitors together. But the only
+[00:00:53] way to really get them squeezed in together is when you have a rack that has elbows. Because you
+[00:00:59] got to be able to kind of position them and move them in tight. So in the back, you've got these
+[00:01:03] elbows that connect to sort of this main pole. So that's the way I like to connect it. And then this
+[00:01:09] pole that goes down in the back right here sits in the back of your trading station on your desk right
+[00:01:15] there. And what I would recommend doing, if you don't already, is clamp that to the bottom of your desk.
+[00:01:20] Because the last thing you want to do is lean on your desk like that. And all of a sudden,
+[00:01:24] these monitors come crashing down on top of you, because I've had that happen before. So this looks,
+[00:01:30] this looks relatively stable. But if you get, if you go taller like this, and you have this one,
+[00:01:36] it's kind of pointed down a little bit.
+[00:00:00] but it starts to get top heavy and that can be a problem.
+[00:00:03] So again, I know that you're gonna probably
+[00:00:05] think I'm a salesman for these racks with elbows,
+[00:00:08] but I assure you I'm not.
+[00:00:10] I just am really passionate about elbows
+[00:00:13] on your multi-monitor racks.
+[00:00:16] And the miscellaneous equipment,
+[00:00:18] for some of you who have an older computer,
+[00:00:19] you're trying to make good use of it,
+[00:00:21] you can use these little adapters.
+[00:00:23] They're called Diamond, USB to HDMI adapters,
+[00:00:27] and it'll turn your USB hub into an HDMI port.
+[00:00:31] And then you can connect another computer monitor
+[00:00:33] right through that port.
+[00:00:35] So what I ended up doing was getting one of those USB hubs,
+[00:00:40] where you've got a hub here with 1, 2, 3, 4,
+[00:00:44] you know, 5, 6, 7, 8, 9, 10 ports.
+[00:00:47] And then you can connect all of these monitors
+[00:00:50] just through one USB port.
+[00:00:53] It's the 3.0 of the blue port.
+[00:00:55] So, or the 3, whatever.
+[00:00:57] So that's what I would suggest
+[00:00:58] if you're trying to make use of an older computer
+[00:01:01] that maybe otherwise doesn't have enough outputs for monitors.
+[00:01:06] I do like to use these little clips when I'm traveling.
+[00:01:09] Again, just like a handy little thing,
+[00:01:11] you can clip your phone, tablets, monitors to a laptop.
+[00:01:16] I think they're kind of nice.
+[00:01:17] And that's the hub that I was just talking about.
+[00:01:19] So I'd just like to go over this briefly
+[00:01:21] kind of the beginning of the class, just to make sure,
+[00:01:24] especially for some traders who are not quite sure
+[00:01:27] about how to get these things set up.
+[00:01:29] So hopefully that's a good walkthrough.
+[00:01:32] Now let's talk about number four.
+[00:01:33] This is a very interesting one.
+[00:01:34] Creating tax free income for the,
+[00:00:00] future. So, you might think, how is this related to day trading? But I assure you it is,
+[00:00:05] in the US, you can day trade in a regular account where you take out the profits right away.
+[00:00:11] In this account, you'll pay income tax. The income tax is a little bit less than what you would
+[00:00:16] pay if you worked a W2 job because you're not having the payroll taxes that come out for
+[00:00:23] Medicare, Medicaid, Social Security and things like that. So, you'll pay, but you will still
+[00:00:32] pay income tax because it's income. However, you can also trade and day trade in an individual
+[00:00:39] retirement account and I are right. And in these accounts, there is no income tax on the profit
+[00:00:46] you make. Now, if you're trading in a Roth IRA, there is no income tax on the profit and there
+[00:00:52] is no income tax on the distributions that you take when you are of retirement age. So, I think
+[00:01:01] that is incredibly powerful because there's not a lot of other jobs where you could be sitting here
+[00:01:07] all day long working and earning money completely tax-free. And it's something that you have an
+[00:01:14] opportunity to do. Now, this is, of course, specific to US traders, but for what it's worth
+[00:01:21] international traders may have similar accounts at their disposal. So, I think for this reason,
+[00:01:27] every trader should have a regular account for income, to cover your cost to living, that's fine.
+[00:01:32] And then, in IRA, account for growing tax-free profits. And you can switch from account to
+[00:00:00] account during the day. You know, you make the $200
+[00:00:03] whatever your daily goal is in the main account. And then anything after that
+[00:00:07] add it in the tax free account. Right. So for most brokers, they allow you to set up
+[00:00:13] both accounts. And you're going to have two at the same time. And you can usually
+[00:00:16] switch between them without logging out of the platform. You have a drop-down
+[00:00:20] and you just select the account that you want to trade it. So to train your
+[00:00:24] tax free account, you trade in your taxable account.
+[00:00:27] It's just to me, it seems like a no-brainer to do it. So trading in a tax free
+[00:00:33] account and reinvesting the day trading profits. In my opinion, you would be doing
+[00:00:36] yourself a huge disservice. If you don't reinvest some of your day trading
+[00:00:42] profits in order to capitalize on long-term growth. So I actively
+[00:00:47] day trade in my retirement account to grow it quickly. And then the
+[00:00:51] profit I make day trading, I reinvest for long-term growth. So here's the
+[00:00:56] idea. I understand compound interest. Right. Now, the way compound
+[00:01:03] interest works is that your account grows and as it grows in
+[00:01:08] earns interest, it's then going to earn interest on the money that earned
+[00:01:12] interest previously. So it's going to earn interest on interest on interest
+[00:01:15] and it starts compounding getting bigger and bigger and bigger and bigger.
+[00:01:18] And I have an amazing story thing that I share with you about this. So if I earned
+[00:01:23] $200 a day in my tax free account, I'll be saving and reinvesting
+[00:01:27] $50,000 a year. Now, this is incredible because in a Rafael R.A.
+[00:01:31] You could only contribute. I think it's $6,500 or maybe $7,000 per year.
+[00:00:00] So we would take you seven years to save $50,000 at the max contribution limit.
+[00:00:07] But if you contribute $7,000 and then you start trading in that,
+[00:00:11] trading that $7,000 and it grows and grows and grows,
+[00:00:14] you do another contribution in the next year.
+[00:00:16] You keep growing, you keep growing it.
+[00:00:18] Next thing you know, $200 a day, $50,000 a year.
+[00:00:21] If you do that for 10 years, you'll have say 500 grand.
+[00:00:24] Right, 500 grand. Totally tax-free.
+[00:00:28] But it will have grown to over $869,000,
+[00:00:32] thanks to dividends and compound interest.
+[00:00:35] That is huge.
+[00:00:37] If you do that for 20 years, you'll save $1 million,
+[00:00:40] but it'll be worth $2.7 million.
+[00:00:43] Thanks to interest and thanks to dividends, compound interest.
+[00:00:47] So the growth curve increases exponentially
+[00:00:50] as you begin earning compound interest on your earlier gains.
+[00:00:54] So the earlier you start, the more you'll have, this is the truth.
+[00:00:59] So when I reinvest a trading profits, what I do is I move them to lower risk
+[00:01:05] longer term investments.
+[00:01:07] Now this is something that I talk about extensively because I think it's so important
+[00:01:12] to think about learning to trade as holistic financial literacy.
+[00:01:20] Learning how to make smarter financial decisions for your future.
+[00:01:25] And day trading is one component of that.
+[00:01:29] So when I'm thinking about lower risk, kind of lower return buckets,
+[00:01:33] passive long-term investing with dividends.
+[00:01:37] Invest...
+[00:00:00] returning maybe five to 10 percent per year. Now, five to 10 percent per year might not
+[00:00:04] seem like a lot, but it's completely passive. You're doing nothing. So that five, that $50,000
+[00:00:11] a year. Now it's earning $2,500 to five grand a year just sitting there growing, doing nothing.
+[00:00:19] So in my high risk, high return bucket, I'm day trading. I can return a hundred percent in a year
+[00:00:25] or even in a month with relatively small accounts, and I've done this in the past.
+[00:00:29] Going from five hundred eighty three dollars to a hundred k and forty five days was
+[00:00:32] 17,000 percent return. From five eighty three to ten million was a one million seven hundred
+[00:00:39] thousand percent return, and that is audited. But it's also not scalable. I couldn't have taken
+[00:00:44] 500,000 in turn to into ten billion or whatever that ratio is. Because in order to do that,
+[00:00:50] I would have to be trading in an average position size of like seven million shares, and you just can't
+[00:00:56] do that. But you know what is scalable in the market is passive long term investing.
+[00:01:00] Because how much does Berkshire Hathaway have in dividend paying stocks? Some insane is it
+[00:01:07] over a trillion dollars? I don't know. It's a insane amount of money they have that they're investing.
+[00:01:11] So you can invest billions and billions at that five to ten percent level. When you're trying
+[00:01:17] to get the big returns, well, you could do that, but only with small accounts. So in the small
+[00:01:22] account, I'm growing, growing, growing, and I'm taking that money, and I'm putting it into the
+[00:01:26] lower, long term bucket of risk. And here's someone who really inspired me. He's my neighbor,
+[00:01:33] Mr. Reed. Now, a lot of people have talked and written about him. A few people could say that
+[00:00:00] He was their neighbor, but Ronald Reed grew up. Well, actually, I don't know if he, I think he grew up outside Browdbro.
+[00:00:06] But anyways, during my lifetime, he lived down the street from me in Browdbro Vermont.
+[00:00:11] And he died. This was in 2015 at the age of 92 years old.
+[00:00:15] And it was a shock when he donated $4 million to the hospital and another 4 million to the library.
+[00:00:25] He hit a mast an $8 million portfolio.
+[00:00:30] And he did it by taking his early paychecks over the course of his 92 year adult life.
+[00:00:37] The 92 year life is, you know, 70 plus year adult life.
+[00:00:40] He worked at the gas station as a mechanic and then he worked at the J.C. pennies.
+[00:00:45] And he took his paychecks and he bought shares of dividend paying stocks.
+[00:00:50] Wells Fargo, Proctor Gamble, Colgate, etc.
+[00:00:54] These are long-term holding to he bought.
+[00:00:57] And he just, what you do with these is the dividend.
+[00:01:01] You have it reinvest in the drip dividend reinvestment program.
+[00:01:04] So you reinvest the dividend.
+[00:01:06] And if you buy a stock and you hold it for 70 years, what's going to happen?
+[00:01:12] It's going to grow.
+[00:01:13] I mean, obviously, it's possible you could choose a stock that goes bankrupt and goes out of the market.
+[00:01:17] But he ended up choosing a lot of these very reliable long-term household name companies.
+[00:01:23] And although he never made six figures, you know, in his income, he just saved a little bit.
+[00:01:33] Right, a penny saved.
+[00:01:35] That's the same penny saves, penny earned.
+[00:01:37] He just kept saving.
+[00:00:00] little bit and a little bit and he lived very frugally. He did. His house, you would walk
+[00:00:05] by his house and he had these stacks of firewood all around the yard when he would drive
+[00:00:09] an old car like a Chevy Geo or Metro or whatever those were. There was really tiny, really
+[00:00:15] cheap cars and when he would see a tree had fallen down or a branch had fallen he would actually
+[00:00:19] get out of his car no matter where he was in town and he would pick it up and he would put the
+[00:00:22] wood in the back of his car and he would bring it home and he would stack it. So he he really
+[00:00:29] had this I don't know if it was from what his life was like living through the depression
+[00:00:37] you know or if that scarred him in some way or what it was but he really was a bit of a hoard
+[00:00:43] and he was hoarding money as well so some some one of a sad story in a way but but inspirational
+[00:00:51] in other in other ways so anyways Mr. Reed he never made $200,000 a year but $8 million by the age of
+[00:00:57] 92 so really quite impressive there all right so we'll go back into full screen.
+[00:01:04] Okay so moving profits from high risk to low risk most traders usually will keep anywhere from
+[00:01:08] 5000 to maybe 100,000 in their active trading accounts and then what do you do with that extra
+[00:01:14] profit right of course you could spend it you know cost a living that's fine pay some taxes on
+[00:01:20] what you spend but you know you could do that but you could also be trading in tax free account
+[00:01:24] and consistently reinvesting the profit and this is where I want to motivate you and get you excited about
+[00:01:30] the potential because trading is one of the few things that you can do to earn an incredible amount of money
+[00:00:00] tax free. And I've done that with my Roth IRA, and I'm, you know, I'm certainly not the only one, but I just think it's absolutely incredible.
+[00:00:07] So this was my goal when I got started with this Roth IRA. I thought to myself that I could actually potentially get to a point where I had moved from my,
+[00:00:21] for my, high, high risk bucket. So for my high risk bucket here, which is my day trading bucket. So this is day trading.
+[00:00:29] So I thought I could get to a point where I'd moved enough money for my high risk bucket to my low risk bucket that the low risk bucket would be so big right here, low risk.
+[00:00:37] But if I got this to, you know, let's say $5 million, $5 million, 10% in one year is 500 grand, $500,000.
+[00:00:47] That might be more than I could make in one year day trading. That's nearly $50,000 a month.
+[00:00:53] What if I could get this to, you know, to 10 million, 10% that's a million dollars in one year.
+[00:01:00] And I thought to myself that if I can consistently put away a little bit of money every single day, you know, into this low risk bucket, by earning some profit in the tax free account and then moving it over, that this is not a matter of if it's a matter of when.
+[00:01:18] And I think that is incredibly exciting. So this is something that I'm really motivated to share, you know, this with you because I think it's, that's the ultimate financial independence.
+[00:01:29] And it doesn't have to be that you're investing, by the way, in dividend paying stocks and things like that. You can use alternative and do it alternative investments in a direct self directed IRA.
+[00:00:00] you can invest in real estate, you can invest in other asset classes with self-directed
+[00:00:04] IRAs. You can invest in cryptocurrency and gold, silver, stuff like that. So you don't have
+[00:00:10] to be 100% concentrated in equities during the stock market and still be benefiting from growth.
+[00:00:15] You could buy land, you could, you could, you see a piece of land somewhere nearby, you know,
+[00:00:20] you could buy that. There's all these kinds of things that you could do with your Roth IRA.
+[00:00:26] So number four, here's a question for you. How much money do you need to live comfortably?
+[00:00:33] In other words, how much money would you need saved in a bank today to retire?
+[00:00:38] The answer is different for everyone. Depends on how old you are. Depends on what your
+[00:00:42] family circumstances are. Do you have kids? No kids. Do you live in a big city? Is it expensive?
+[00:00:47] So everyone's answer is unique. To their, his or her personal circumstances, but there are some
+[00:00:52] popular formulas that are used to find out this magic number. So one of them that's been around
+[00:00:58] for a long time is the rule of four percent. The rule four percent states that you can withdraw
+[00:01:02] four percent per year from an account invested in a stock market had an 80, 20 split of stocks,
+[00:01:08] equities, to bonds, without depleting the account. How is that possible? The average account growth
+[00:01:15] is 7 to 10 percent per year, historically based on historical rates of return. So when you take
+[00:01:20] four percent out, the account is still keeping up with inflation and not losing value. Now you may have
+[00:01:26] some years where the markets down you take out four percent, it goes down a little bit more,
+[00:01:30] but I have other years where the markets up quite a lot and taking out four percent is still less.
+[00:01:34] So the four percent rule says you can take four percent out of your account.
+[00:00:00] essentially indefinitely, which is really incredible.
+[00:00:03] So now, if you could take 4% out of your account,
+[00:00:08] that's the amount you could take out.
+[00:00:10] And now you say, well, I need 5,000 a month to live,
+[00:00:14] that's my cost of living.
+[00:00:15] Now maybe that's low, maybe that's high, I don't know.
+[00:00:17] Well, let's just say, so now you got to figure out,
+[00:00:19] well, wait a second, how do I get to this number?
+[00:00:23] What kind of math is this?
+[00:00:25] And now I've got to go back to school.
+[00:00:27] So the way we calculate this is,
+[00:00:29] you could use a rule of 300.
+[00:00:31] And that'll help you figure out the rule of 4%.
+[00:00:35] So the rule of 300 states that multiply your monthly expenses
+[00:00:39] by 300, and that's the amount of money you need to retire
+[00:00:43] to draw 4% off per year.
+[00:00:44] So $5,000 a month, $60,000 a year.
+[00:00:48] So $5,000 a month times 300 is 1.5 million
+[00:00:51] in savings to retire comfortably, 1.5 million times 4% 60,000.
+[00:00:56] So that's just an easy way to get to that number.
+[00:01:00] The people have been using because so many people
+[00:01:01] use this formula.
+[00:01:04] So all right, well, there's your number, 1.5 million,
+[00:01:07] if you're at $5,000 a month, now maybe you're higher, lower,
+[00:01:11] but this is how you come up with that number.
+[00:01:13] And I think it's important to come up with this number
+[00:01:15] so you have your goal post, right?
+[00:01:18] You know where you're headed.
+[00:01:20] This is where I want to get to.
+[00:01:21] This is a marathon, it's not sprint,
+[00:01:23] you're not going to get there overnight,
+[00:01:24] you're not going to get there, you may not get there by day trading.
+[00:01:26] You might get there to a combination of your salary.
+[00:01:29] You know, if you're 1099, you're freelancing,
+[00:01:32] you're a long-term investing strategy,
+[00:01:34] and maybe trading, I hope, will be some small component
+[00:01:37] of that, some people.
+[00:00:00] of that puzzle. But this is important to be thinking about these numbers. So,
+[00:00:06] and now begs a question of what does success look like for you? How much money do you really
+[00:00:11] need? Put away. How much is your cost to living? If you ran the numbers on that and you're like,
+[00:00:16] oh, I need $15 million to retire comfortably. Maybe that begs a question of whether or not
+[00:00:23] spending $50,000 a month is really the way you want to live your life. It's not for me to decide.
+[00:00:30] But you have to think about these things for yourself. So, what success looks like for you? So,
+[00:00:35] this is a Bloomberg article with source of trial, Schwab. What does wealth look like to you?
+[00:00:41] Americans long for lives that don't revolve around money, which makes sense. 60% of those
+[00:00:47] surveys say they live paycheck to paycheck. So, wealth is 28% say living stress free piece of mind.
+[00:00:56] Not feeling like you're, you know, can't afford things. Being able to buy what you want. So,
+[00:01:01] for me, being able to fill up the car with gas and get groceries and not really worry or think
+[00:01:06] about how much I'm spending there, that's nice stress that I don't have. And I don't want to take
+[00:01:11] that for granted. Being able to enjoy life's experiences, having lots of money, being charitable,
+[00:01:17] so pretty low on the list, having good health is our own important. And then there's some generational
+[00:01:21] differences. As people age, the definition of what it takes to be wealthy rises. So, being wealthy
+[00:01:26] average, people say having $2.4 million means you're wealthy. I mean, when I was young,
+[00:01:32] I thought if someone had a million dollars, they were wealthy. But that was many years ago.
+[00:00:00] So, you know, $2.4 million, $2.7 if you're a bit older
+[00:00:06] and you need more money for retirement at this current age.
+[00:00:09] Right now, a millennial, two million.
+[00:00:12] So again, I don't know what the answer is for you,
+[00:00:16] but it's something that I would encourage you to think about.
+[00:00:18] And this is another interesting perspective.
+[00:00:21] If you make a thousand dollars a day, trade it, right?
+[00:00:25] So if you're averaging a thousand dollars a day,
+[00:00:27] you're coming in each day and you're trading for maybe two hours, three hours.
+[00:00:31] Pulling a thousand dollars a day out of the market would be the equivalent of having
+[00:00:35] a $6.25 million retirement account.
+[00:00:38] That's just earning passive interest, right?
+[00:00:41] So, $6.25 million, pulling just that passive interest based on the rule of
+[00:00:46] the 4% is $250,000 a year, $250 trading days in a year,
+[00:00:51] so about a thousand dollars a day.
+[00:00:52] That's how it came to that number.
+[00:00:54] So, I think that that also emphasizes how our earning potential
+[00:01:02] our ability to earn money with our time is so much higher
+[00:01:07] than the ability to earn money on dividends and compound interest.
+[00:01:11] Dividendants and compound interest are, you know, four percent.
+[00:01:15] So, you know, a million dollars, 40 grand a year.
+[00:01:18] So that means if you're earning $40,000 a year,
+[00:01:21] you're like the equivalent of a million dollars.
+[00:01:24] Well, based if you put yourself into an investment and people are buying it for that interest,
+[00:01:29] yeah, I guess so.
+[00:01:30] So, I don't want you to undervalue what $200 a day, even just $200.
+[00:00:00] a day could be worth. And it's important to set the bar low to start small and work your way up.
+[00:00:06] But if you got to a point where you were making $500 a day, you know, there's other people who would
+[00:00:12] need to have $3 million in an investment account to be pulling $500 a day out consistently.
+[00:00:18] So you've got to be grateful for that. So if you're making that with a skill and you can do a tax
+[00:00:23] free and a tax defer to account or tax free account, that's pretty special. So I want you to be
+[00:00:28] smart and reinvest. All right. That's just, again, that's my opinion. But I think it's, I think it's a good opinion.
+[00:00:36] Once you're a profitable trader, if you get to that point, of course, I hope you do. But if you get to
+[00:00:39] that point, I would encourage you to reinvest as much your trading profits as you can until you've
+[00:00:43] saved up to your retirement goal. And then here's the amazing thing. Once you hit that number,
+[00:00:49] all the profits are icing on the cake. You're doing it because you genuinely enjoy it and you want to,
+[00:00:56] not because you have to. That is financial independence. You would be among the top one
+[00:01:01] percent if you get there. It's a big deal. So I encourage you to create your five year and 10 year
+[00:01:07] financial goals. Set your goals. Make your plan. Start looking at, how do I move towards this plan?
+[00:01:13] How do I go from A to B? So you have to understand current reality. You have to understand your
+[00:01:18] desired reality and make a plan of how to get there. And I want you to make decisions that are
+[00:01:23] in alignment with the long term goal. So let's say at age 40, you know, 30, 40 doesn't matter.
+[00:01:29] And you're making some good money trading. You say, you know what? I'll spend $4,000 a month on a
+[00:01:34] three year lease on a Ferrari because with the heck, I've been making 30-
+[00:00:00] a month day trading, and this is fun.
+[00:00:02] I've seen a lot of people do this by Lamborghini,
+[00:00:05] by Ferrari, you know, asked him
+[00:00:07] or whatever, Mazurati, something like that.
+[00:00:10] You know, usually, you know,
+[00:00:11] 2,500 to 4 grand a month in lease payments,
+[00:00:14] they usually take a pre-decent down payment.
+[00:00:17] That's $144,000 over three years.
+[00:00:20] Now, if you instead invested that in the market
+[00:00:22] and it returned 8% annually by 65,
+[00:00:25] you'd have nearly a million dollars.
+[00:00:27] So one of the things that I did is,
+[00:00:31] I decided to put $100,000 into a fund
+[00:00:35] for my kids for college.
+[00:00:37] And I made the decision at that time.
+[00:00:39] I said, you know, I could use this money
+[00:00:41] to do something special for me, you know,
+[00:00:44] the buy a car, something like that.
+[00:00:46] And I said, no, I'm not gonna do that.
+[00:00:49] I'm not gonna do that yet.
+[00:00:50] This was before even had kids,
+[00:00:52] but I knew I wanted to have kids.
+[00:00:53] So I put $100,000 away.
+[00:00:55] That account has more than doubled.
+[00:00:58] It's over $200,000 over $200,000 now.
+[00:01:00] I have kids now, they're aged three and five.
+[00:01:03] And by the time they're getting ready to go off to college,
+[00:01:06] I certainly hope that that account has grown to a level
+[00:01:09] that's gonna cover their entire cost of education.
+[00:01:12] Now, I could have bought a Ferrari or released a Ferrari
+[00:01:15] and that money has gone.
+[00:01:17] So what?
+[00:01:18] So I can keep up with appearances.
+[00:01:21] I think a lot of the people that are releasing those cars,
+[00:01:23] they look like they've got a lot of money,
+[00:01:24] but I don't think many of them do.
+[00:01:27] Now, I ended up at a certain point
+[00:01:30] getting to a place where I did have a little bit more money.
+[00:01:33] And I decided by some collectible cars.
+[00:01:36] A smart Ferrari, now that's a choice.
+[00:00:00] that aligns with long-term goals. I bought a Porsche 993. It was a super cup, club sport.
+[00:00:09] I let's see, it was a club sport. I at one point I had seven or eight horses. I can't even remember
+[00:00:15] now. And I bought them because I knew that they would hold their value. So those were decisions
+[00:00:22] that were in alignment with my long-term goals. Now they may still have been somewhat, you know,
+[00:00:28] I mean, it was something I was really interested in at the time. And not so much now. I still have
+[00:00:33] one Porsche. But, you know, I don't, it's anyways. It's just to encourage you to make decisions that
+[00:00:41] are in alignment with your long-term goals. And that you can be creative. If you really like artwork,
+[00:00:46] you can buy collectible artwork. If you really like cars, you can buy collectible cars. There's things
+[00:00:49] you can do that you might not think of initially. But you have to have the resolve to stick with your
+[00:00:54] plans. And this is true in trading as well, right? You have to resist the urge to go least that brand
+[00:01:04] new whatever, as soon as it comes out. You've got to be able to have discipline. So many of us make
+[00:01:11] short-term financial decisions that are inconsistent with long-term goals. For making any big financial
+[00:01:16] decisions, it's important to analyze how it fits in with your long-term goals of self-sufficiency
+[00:01:20] and financial independence. So I think you're already realizing that this class is really going to
+[00:01:26] try to give you a holistic view and it's going to share with you my philosophy on financial independence,
+[00:01:34] on becoming successful financially wealthy.
+[00:00:00] independent. A lot of what I share with you comes from a bit of, I guess I would say,
+[00:00:10] generational trauma that came out of the Great Depression. This is a book that was
+[00:00:15] published and I think it was around the turn of the century. Practical guide to the selection
+[00:00:22] management of the small farm and it was actually first published in 1935 during the Great Depression.
+[00:00:29] I, my family, on my mother's side, lost everything. Well her grandfather did, lost everything during
+[00:00:37] the Great Depression and that profoundly affected him. He was never the same after that and the way
+[00:00:43] he raised his children and the way he raised my mom was absolutely
+[00:00:51] influenced by that experience. And so as a result that's why they call generational trauma
+[00:00:56] because it's then my mom raised me and my sister in a very similar way to the way she'd been raised.
+[00:01:01] So it's important for me to share with you my philosophy on this because I think that it's a
+[00:01:08] contributing factor to why I have become as successful as I've been. Not just in trading, but also
+[00:01:15] with the way I've been able to grow our software, they trade to ask the way we've been able to grow
+[00:01:19] this community and the way I've been able to manage my long-term investments. So I hope to be
+[00:01:24] able to share some of those things with you as well. All right. So number six, why do traders fail?
+[00:01:28] You've got to understand that if the majority of people are failing, they're taking the pathilys
+[00:01:35] resistance and it results in failure. You've got to do something different.
+[00:00:00] Now, it doesn't matter if you want to become an Olympic athlete, you want to become a Hollywood star.
+[00:00:05] You're trying to do something that you want to become an MBA player, whatever.
+[00:00:08] You're trying to achieve something that most people won't find success in.
+[00:00:13] So I think it's important on the one hand to understand why most people fail.
+[00:00:17] Now, I hate to say, but if you're foreign to have feet tall, you're probably not going to make it to the NBA.
+[00:00:22] That's not your fault. It's just genetics, but that's the reality of basketball, right?
+[00:00:27] So, some of it is going to be out of your hands, but then, look at the people who do find success.
+[00:00:35] What was the path that they took? And if you studied the path of every successful trader, you would find several common denominators.
+[00:00:46] And you're going to learn those as we go through this course.
+[00:00:49] If we look at all the traders who fail, you will also find many common causes of failure.
+[00:00:56] So a lot of these traders who fail fail for one of two reasons.
+[00:01:01] And I think I'm in a pretty unique position to share this with you because, of course, I've been teaching trading for so long.
+[00:01:07] I've been running this community with all the comments I get on YouTube.
+[00:01:10] I see the full spectrum. I've seen traders who are some of the most successful traders in the market, both here in this community and out there in general.
+[00:01:17] And I've seen traders who have failed miserably. And I've always tried to understand why do people fail.
+[00:01:25] And is there anything that I can do to help them avoid that failure?
+[00:01:31] Someone who may have been destined to fail, was there anything I could have done to have, you know, averted?
+[00:00:00] that failure. And so what I'll share with you is that the leading number one cause of failure
+[00:00:07] are traders who trade without a strategy. If you do not have a strategy, you will not
+[00:00:15] find success as a trader. So I think that goes without saying. And so pretty much all of
+[00:00:21] you here right now should not fall into this group because through being part of this community
+[00:00:27] you're certainly going to learn the strategy that I'm trading. However, there's a lot
+[00:00:31] traders out there that you'll see on Reddit, you'll see them on social media who don't really
+[00:00:36] have a strategy. I just saw this terrible story of this fellow on Reddit who got 800 thousand dollars
+[00:00:42] from his grandmother and he bought 700 thousand dollars worth of Intel stock. At 4 p.m. that same
+[00:00:50] day Intel announces their laying off 11,000 people and the stock drops like 30%. And he's
+[00:00:55] instantly down 300 grand or 200 grand whatever it is instantly. And obviously it takes a lot of
+[00:01:05] conviction to put 90% of your net worth into one stock. But it's so easy for traders to be naive
+[00:01:12] about the market. We as retail traders do not have an edge when it comes to trying to pick stocks
+[00:01:21] for long term investing. Most of us don't. Now my father-in-law is a physician. He prescribes
+[00:01:27] medicine all the time of course. And there was a point where he said, you know, I really think that
+[00:01:32] can't remember if it was Gilliat or what the pharmaceutical company was. But
+[00:00:00] AstraZeneca, I can't remember, but was one of those pharmaceuticals. He said, you know, I really think this drug
+[00:00:04] are working on is going to be a big one. Because if it's successful, I'll probably be prescribing it to all my patients.
+[00:00:09] It's really a good drug. And so I thought, that's very interesting. That is someone whose entire career has given them a level of knowledge and expertise that
+[00:00:22] far exceeds the typical retail trader. And that could be for that person, their edge. Now you may have an edge in something that you know that can carry over into the market. But most of us don't.
+[00:00:36] And so when we try to pick an individual stock, we don't really know what these companies are doing. We're not going to cocktail parties in the Hamptons and getting the inside scoop from someone.
+[00:00:46] And hush, hush, wink, wink, the way a lot of those big money people do. You know, we're not there. So what edge do we really think we're going to have?
+[00:00:55] I think our best bet is to put money if we're going long term in the market into an index fund and let it ride, you know, not to try to do individual stock picking.
+[00:01:05] But a lot of retail traders will try. And I think they're more or less gambling. People that were buying game stock, people that were buying AMD, people that buying bedbathing beyond.
+[00:01:15] You know, they're trying to pick an individual stock and hit a little bit of a lottery ticket, lottery ticket is gambling. So that is people who are trading with a lack of strategy.
+[00:01:28] They're just shooting from the hip, buying a little of this, buying a little of that. Occasionally I've met people who have traded like that and I'll ask them, I'll say, well, what's your accuracy? And they're like, huh?
+[00:00:00] I'm like, what's your profit- loss ratio? They have no idea. They don't track any of their trades.
+[00:00:04] They see the balance on their account, but they're not monitoring it. If that's you,
+[00:00:08] then I'm going to speak directly to you right now and tell you, stop trading with real money,
+[00:00:13] put it on pause, because most likely you're just going to throw good money after that.
+[00:00:18] And practice in a simulator and start tracking your metrics and figure out your accuracy
+[00:00:23] of your profit- loss ratio. You can export all of the trades you've already taken and analyze those
+[00:00:27] metrics, and I think you'll be surprised by what you find. You'll probably see
+[00:00:32] the average losers are bigger than your average winners, and you'll probably see your accuracy
+[00:00:36] isn't that great, especially if you're losing money. Okay, so let's assume that you guys all at this
+[00:00:44] point are going to be momentum traders. You're going to be actively trading a momentum strategy
+[00:00:49] that I've been trading for full time for more than a decade, and the traders in this community
+[00:00:54] have been trading for years and years and years and years. And in fact, momentum trading,
+[00:00:57] people who are trading it for generations, it's nothing new. People who have been trading it for
+[00:01:01] forever. Momentum trading is what people were doing from the very beginning of the market. A stock
+[00:01:07] is moving higher, they're buying it, they're jumping on that bandwagon. There's nothing wrong with that,
+[00:01:12] but there are very specific rules to how to trade momentum successfully and knock it,
+[00:01:16] caught holding something as it starts to reverse. And so the second leading cause of failure is an
+[00:01:22] inability to maintain the discipline required to follow the rules of the strategy.
+[00:01:29] And this is exactly why I can't guarantee that just because you watched this full class,
+[00:01:35] even if you watch every single class that you'll be a success.
+[00:00:00] accessible trader, because I don't know your personal aptitude.
+[00:00:04] I don't know your ability to have to make quick decisions,
+[00:00:08] your ability to have good hand-eye coordination
+[00:00:11] for actual physical trading, physical aptitudes, mental aptitudes.
+[00:00:15] And I don't know your emotional aptitude,
+[00:00:17] your ability in the face of frustration and disappointment
+[00:00:21] to stay calm, cool, collected.
+[00:00:23] These are the things that you need to bring to the table.
+[00:00:27] I will bring the roadmap.
+[00:00:28] You have to have the discipline to follow the roadmap.
+[00:00:32] And it's very hard, because there are moments in trading
+[00:00:35] where all of your instincts are going to tell you
+[00:00:38] to break the rules that I give you.
+[00:00:40] And it takes an incredible amount of discipline not to do it.
+[00:00:44] So secondary contributors to failure,
+[00:00:46] a disposition just not aligned with the risk-taking nature
+[00:00:48] of trading, you're not comfortable taking risk,
+[00:00:51] not having an aptitude for making quick decisions
+[00:00:53] and using computer software.
+[00:00:55] Maybe using the incorrect equipment,
+[00:00:57] trying to trade on the mobile app instead of using
+[00:00:59] an actual desktop software, computer software.
+[00:01:02] And inability to concentrate, absorb and retain new information.
+[00:01:07] A lack of emotional intelligence,
+[00:01:08] inability to recognize emotions in yourself
+[00:01:10] of fear, greed, anger, frustration,
+[00:01:13] or perhaps in others.
+[00:01:15] Because ultimately, being able to have a really good read
+[00:01:17] on the market is to some extent emotional intelligence.
+[00:01:22] So some people say trading is half skill, half psychology,
+[00:01:27] half mental.
+[00:01:28] I mean, it's just a saying,
+[00:01:29] because there's really no way of knowing what it is.
+[00:01:32] And it's going to be different for different people.
+[00:01:34] There's no question that you can't trade without a strategy.
+[00:00:00] there are skills involved with having a strategy, but discipline, it's very important.
+[00:00:06] Okay, so I want you to really soak that in because you're trying to do something that most people
+[00:00:11] don't succeed at. So you've got to do things differently from what most people do.
+[00:00:17] I think the right way to learn is to find a successful trader that you want to be like,
+[00:00:21] this is your inspiration. Now, if I was going to open a coffee shop, I would find a successful
+[00:00:25] coffee shop and try to learn everything about how they run their business. Why they set it up in
+[00:00:29] the location they set it up, you know what what they sell, what their prices are,
+[00:00:33] everything. I would even try to work there for a little while. I'm trying to learn everything I
+[00:00:36] could unless the same with learning a strategy. You want to learn everything you can about my strategy.
+[00:00:42] And I'm very transparent. I'm going to put it on this table for you and share it with you.
+[00:00:46] Step two, learn the strategy. Step three, practice the strategy and assimilator. Step four,
+[00:00:51] switch to real money. Only after you've graduated through chapter 14 of
+[00:00:56] strategies and scaling trading plan. And then, of course, step five is scaling up. So
+[00:01:02] setting your definition of success is important. And so I'll ask you what success and trading
+[00:01:07] means to you. How much money do you want to be making per day per month per year? And are you
+[00:01:13] prepared for the reality that in the first three to six months of following the trading plan that
+[00:01:17] I've prepared for you, you will not be earning any significant profit? I'm not going to tell
+[00:01:22] you what you want to hear. I know there's other people out there that will tell you, subscribe to
+[00:01:26] this service and we'll send you text and email alerts and you'll start making money right away.
+[00:01:30] But, come on, that's not real. That doesn't work. It's not that easy. If you really want to do this for a
+[00:00:00] time you have to put in the hard work. So if you're willing to do that I'm here and I'm willing
+[00:00:06] to help you and I'm willing to support you. So the first three to six months of the trading plan
+[00:00:10] is trading in the simulator and proving through proof of concept that you know what you're doing
+[00:00:14] and then continuing that with small share size with real money to prove that your metrics in the
+[00:00:19] same translate to trading real money. And if they do it's only at that time that you flip the
+[00:00:24] switch and start to size up. So having the discipline to follow the path laid out for you
+[00:00:29] is very important. Your first year honestly is about survival. It's keeping your head above water.
+[00:00:35] Right? Thrive till you survive. Survive till you thrive.
+[00:00:41] Treadwater. Keep your head above water. That's what's about. Avoid blow ups. Avoid taking on
+[00:00:45] necessary losses. And do everything you can to prevent big losses. And I'll share all the techniques that
+[00:00:50] I do use in my own trading to prevent them for myself. Not that they don't still happen occasionally.
+[00:00:55] What's about having it is few and far between as possible. As certain point,
+[00:01:00] learning to survive will teach you how to thrive because you'll be learning what not to do.
+[00:01:07] So the longer you survive in the market and you keep your head above water,
+[00:01:11] I think that really goes a long ways. So I want you to dedicate yourself to the path to success.
+[00:01:20] Now again there's no guarantee but I want you to dedicate yourself to trading
+[00:01:24] in a simulator. And not putting real money on the line until you prove and you can make money for at least a month
+[00:01:29] in a simulator environment. Those of you who are already trading real money and you've got some success
+[00:01:34] under your belt, some consistency. I would still encourage you while you're learning.
+[00:00:00] in a new strategy, a trade with really, really small size or go back to a simulator.
+[00:00:04] And you've got to ask yourself, how am I going to approach this new endeavor of learning
+[00:00:08] how to trade? There will be times that we frustrated, exhausted, confused, but be forgiving
+[00:00:14] towards yourself because you're working to learn something that is not easy. But the rewards
+[00:00:19] for those who find success are significant. So this is chapter one of day trading the basics.
+[00:00:27] We're going to go ahead and jump into the next section right now.

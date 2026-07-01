@@ -19,21 +19,23 @@ SKIP_CHAPTERS = {"Chapter5_Course1", "Chapter5_Course2",
 
 # ── Chapters to process ──────────────────────────────────────────────────────
 CHAPTERS = [
-    ("Chapter 2", "C1 Ch2", "Day Trading Basics — Stock Picking"),
-    ("Chapter 6", "C1 Ch6", "Day Trading Basics — Trading Platform"),
-    ("Chapter 7", "C1 Ch7", "Day Trading Basics — Chapter 7"),
-    ("Chapter 8", "C1 Ch8", "Day Trading Basics — Chapter 8"),
-    ("Chapter 9", "C1 Ch9", "Day Trading Basics — Order Entry"),
-    ("Chapter 10", "C1 Ch10", "Day Trading Basics — Hot Keys & Buttons"),
-    ("Chapter 11", "C1 Ch11", "Day Trading Basics — Stock Halts"),
-    ("Chapter 1 Course2", "C2 Ch1", "Day Trading Strategies — Intro"),
-    ("Chapter 2 Course2", "C2 Ch2", "Day Trading Strategies — Risk Management"),
-    ("Chapter 6 Course2", "C2 Ch6", "Day Trading Strategies — Level 2 & Tape Reading"),
+    ("Chapter 1", "C1 Ch1", "Day Trading Basics — Becoming a Day Trader"),
 ]
 
 
 # ── Keyword-based rules extraction ───────────────────────────────────────────
 RULES_KEYWORDS = {
+    "day_trading_intro": ["day trading", "warrior pro", "simulator", "chat room", "immersion",
+                          "curriculum", "basics", "strategies and scaling", "prerequisite"],
+    "tools_required": ["direct access", "margin account", "broker", "routing", "pattern day trader",
+                       "PDT", "day trading buying power", "market order", "limit order"],
+    "tax_free_income": ["Roth IRA", "tax free", "retirement account", "403b", "contribution",
+                        "compound", "tax advantage"],
+    "goal_setting": ["goal", "target", "objective", "milestone", "track record", "benchmark"],
+    "causes_of_failure": ["failure", "overtrade", "emotion", "revenge trade", "fear", "greed",
+                          "chasing", "impatience", "lack of discipline"],
+    "success_definition": ["success", "consistency", "discipline", "skill", "learning",
+                           "improve", "track record"],
     "catalyst_news": ["catalyst", "news catalyst", "earnings", "FDA approval", "contract",
                       "partnership", "upgrade", "downgrade", "short squeeze", "news catalyst"],
     "gap_patterns": ["gap up", "gap down", "gapped", "fill the gap", "at the open",
@@ -63,6 +65,12 @@ RULES_KEYWORDS = {
 }
 
 RULES_TEMPLATES = {
+    "day_trading_intro": "## Day Trading The Basics — Introduction\n- Day Trading The Basics is the prerequisite for Strategies and Scaling.\n- Ross: 'Immerse yourself in the trading community — learning to trade is like learning a new language.'\n- Use the simulator from day one — it's a safe environment to practice before risking real capital.\n",
+    "tools_required": "## Tools & Equipment Required for Day Trading\n- Direct access broker with margin account and SMART/IES routing.\n- PDT Rule: >$25,000 equity required to day trade freely.\n- Minimum hardware: dual monitors, stable internet, reliable power backup.\n",
+    "tax_free_income": "## Tax-Free Income (Retirement Accounts for Traders)\n- Roth IRA: contribute after-tax dollars, grow tax-free, withdraw tax-free.\n- Use a tax-advantaged account for position trades; day trading in Roth has no tax consequences.\n",
+    "goal_setting": "## Setting Goals and Targets\n- Set specific, measurable goals before each trading session.\n- Ross: 'Track your progress against benchmarks — what gets measured gets managed.'\n",
+    "causes_of_failure": "## Leading Causes of Failure for New Traders\n- Overtrading, emotional trading, revenge trading, and lack of discipline.\n- Ross: 'Do NOT trade live until you have proven yourself in the simulator.'\n- Chasing stocks, FOMO, and ignoring risk management are top killers.\n",
+    "success_definition": "## What Success Looks Like\n- Consistent profitability over time, disciplined execution, and continuous learning.\n- Ross: 'Success is a track record of disciplined trading, not a single big win.'\n",
     "catalyst_news": "## News Catalysts\n- Catalysts drive initial volatility and volume spikes.\n- Ross: 'Technical catalyst alone isn't usually enough — need news catalyst too.'\n",
     "gap_patterns": "## Gap Patterns\n- Gap up/down patterns: partial gap vs full gap; partial gaps are more tradeable.\n- Opening range consolidation: stock rests before continuation.\n",
     "volume_patterns": "## Volume Analysis\n- Relative Volume (RV): look for 5x+ above average.\n- Volume confirmation required for breakouts.\n",
@@ -139,6 +147,84 @@ def generate_quiz_from_transcript(txt_path: Path, chapter_label: str, chapter_ta
     questions = []
     # Use templates to generate questions based on what was found
     question_templates = {
+        "day_trading_intro": [
+            ("What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+             ["Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+              "Only tools and equipment.",
+              "Only scanner setup and stock picking.",
+              "Only risk management and position sizing."],
+             "medium", "c1_ch1_intro.md"),
+            ("According to Ross, why is immersing yourself in the trading community important?",
+             ["Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+              "You need friends to trade with.",
+              "It's not important at all.",
+              "The community will trade for you."],
+             "easy", "c1_ch1_intro.md"),
+            ("What is Ross's stance on using the trading simulator before going live?",
+             ["Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+              "Never use the simulator.",
+              "Only use it after 6 months of studying.",
+              "The simulator is the same as live trading."],
+             "easy", "c1_ch1_intro.md"),
+            ("According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+             ["Day Trading The Basics.",
+              "Risk Management.",
+              "Technical Analysis.",
+              "There is no prerequisite."],
+             "easy", "c1_ch1_intro.md"),
+        ],
+        "tools_required": [
+            ("What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+             ["$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+              "$10,000; any single day trade triggers PDT.",
+              "$5,000; weekly trades trigger PDT.",
+              "$50,000; 10 day trades per month triggers PDT."],
+             "medium", "c1_ch1_intro.md"),
+            ("What type of trading account is typically required for day trading?",
+             ["A margin account with direct access routing to exchanges.",
+              "A standard cash account only.",
+              "A retirement account (IRA/401k).",
+              "A savings account."],
+             "easy", "c1_ch1_intro.md"),
+        ],
+        "tax_free_income": [
+            ("What tax-advantaged retirement account does Ross recommend for traders, and what is the main benefit?",
+             ["Roth IRA; contributions are taxed now but grows and withdrawals are tax-free.",
+              "Traditional IRA; deductions now, taxed at withdrawal.",
+              "401k; employer-matched contributions.",
+              "Standard brokerage; same tax treatment as trading."],
+             "medium", "c1_ch1_intro.md"),
+        ],
+        "goal_setting": [
+            ("Why does Ross emphasize setting specific, measurable trading goals?",
+             ["Goals create structure, accountability, and a benchmark to measure progress against.",
+              "Goals are not important for trading.",
+              "Goals will guarantee profitability.",
+              "Only beginners need goals."],
+             "easy", "c1_ch1_intro.md"),
+        ],
+        "causes_of_failure": [
+            ("What are the leading causes of failure for new day traders according to Ross?",
+             ["Lack of education, emotional trading, poor risk management, and overtrading.",
+              "Using a good computer.",
+              "Watching too many YouTube videos.",
+              "Having too much money."],
+             "medium", "c1_ch1_intro.md"),
+            ("What does Ross say about trading with real money before building a track record in the simulator?",
+             ["Do NOT trade live until you have demonstrated consistent profitability in the simulator.",
+              "It's fine to jump in with real money immediately.",
+              "Use $100 to learn faster.",
+              "Simulator results don't matter."],
+             "easy", "c1_ch1_intro.md"),
+        ],
+        "success_definition": [
+            ("What does success look like for a day trader, according to this chapter?",
+             ["Consistent profitability over time, disciplined risk management, and continuous learning.",
+              "Making as much money as possible in one trade.",
+              "Never taking a losing trade.",
+              "Copying another trader's every move."],
+             "easy", "c1_ch1_intro.md"),
+        ],
         "order_types": [
             ("What is the key difference between a market order and a limit order?",
              ["A market order guarantees execution but not price; a limit order guarantees price but not execution.",
@@ -317,7 +403,7 @@ def generate_quiz_from_transcript(txt_path: Path, chapter_label: str, chapter_ta
 
 def main():
     print(f"\n{'='*60}")
-    print(f"RULES EXTRACTION + QUIZ GENERATION — 2026-06-29")
+    print(f"RULES EXTRACTION + QUIZ GENERATION — 2026-07-01 Evening Sprint")
     print(f"{'='*60}\n")
 
     quiz_bank = load_quiz_bank()
@@ -347,7 +433,7 @@ def main():
                 rules_lines = [
                     f"# {chapter_label} — Extracted Rules",
                     f"# Source: {txt_file.name}",
-                    f"# Date: 2026-06-29",
+                    f"# Date: 2026-07-01",
                     "",
                     "## RULES EXTRACTED FROM TRANSCRIPT (preliminary)",
                     ""

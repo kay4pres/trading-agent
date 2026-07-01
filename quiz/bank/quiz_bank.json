@@ -2750,5 +2750,101 @@
     "explanation": "Single Cancel Remaining.",
     "difficulty": "medium",
     "source_rule": "c1_ch10_hot_keys.md"
+  },
+  {
+    "id": "c1_ch1_001",
+    "chapter": "Day Trading Basics — Becoming a Day Trader",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch1_002",
+    "chapter": "Day Trading Basics — Becoming a Day Trader",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch1_003",
+    "chapter": "Day Trading Basics — Becoming a Day Trader",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch1_004",
+    "chapter": "Day Trading Basics — Becoming a Day Trader",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch1_005",
+    "chapter": "Day Trading Basics — Becoming a Day Trader",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch1_006",
+    "chapter": "Day Trading Basics — Becoming a Day Trader",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
   }
 ]
