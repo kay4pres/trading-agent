@@ -732,6 +732,53 @@ def webhook_tradingview():
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
+# PM-AGENT WEBHOOK — fires when /pm check/status is sent via Telegram
+# ═══════════════════════════════════════════════════════════════════════════════
+
+@app.route('/pm-webhook', methods=['POST'])
+def pm_webhook():
+    """
+    Called by telegram_command_listener.py when Kay sends /pm check or /pm status.
+    Writes a trigger file that PM-Agent's polling loop picks up.
+    """
+    try:
+        data = request.get_json(force=True) or {}
+    except Exception:
+        data = {}
+    cmd = data.get('command', 'check')
+    triggered_by = data.get('triggered_by', 'telegram')
+
+    import json, time
+    trigger_file = DATA_DIR / '.pm_trigger'
+    trigger_file.write_text(json.dumps({
+        'command': cmd,
+        'triggered_by': triggered_by,
+        'triggered_at': time.strftime('%Y-%m-%d %H:%M:%S'),
+    }))
+    print(f"[PM-Webhook] PM-Agent triggered: /pm {cmd} by {triggered_by}")
+    return jsonify({'ok': True, 'triggered': cmd}), 200
+
+
+@app.route('/api/pm-poll', methods=['GET'])
+def api_pm_poll():
+    """
+    PM-Agent polls this endpoint to check if it needs to run.
+    Returns the trigger file contents and clears it (one-shot).
+    GET /api/pm-poll → {command, triggered_by, triggered_at} or {empty: true}
+    """
+    import json
+    trigger_file = DATA_DIR / '.pm_trigger'
+    if trigger_file.exists():
+        try:
+            content = json.loads(trigger_file.read_text())
+            trigger_file.unlink()  # clear after reading — one-shot
+            return jsonify(content)
+        except Exception:
+            return jsonify({'empty': True})
+    return jsonify({'empty': True})
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
 # STARTUP
 # ═══════════════════════════════════════════════════════════════════════════════
 

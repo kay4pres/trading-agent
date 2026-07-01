@@ -496,6 +496,19 @@ def _reply_to_chat(chat_id: str, text: str):
     })
 
 
+def _call_pm_webhook(command: str, chat_id: str):
+    """Fire the PM-Agent webhook via the local dashboard."""
+    try:
+        import requests
+        requests.post(
+            "http://localhost:5050/pm-webhook",
+            json={"command": command, "triggered_by": chat_id},
+            timeout=5,
+        )
+    except Exception:
+        pass  # non-critical — PM-Agent falls back to polling
+
+
 def _handle_approve(chat_id: str, symbol: str):
     """Handle /approve SYMBOL — open position and notify Kay."""
     signals_file = Path(r'E:\Me\TradingAgent\data\signals_live.json')
@@ -660,6 +673,19 @@ def poll_callbacks(callback_handler=None):
                 print(f"[telegram] Text msg from {chat_id}: {text[:60]}")
 
                 if chat_id not in _ALLOWED_CHATS:
+                    continue
+
+                if text.startswith('/pm '):
+                    parts = text.split()
+                    cmd = parts[1].lower() if len(parts) >= 2 else ''
+                    if cmd == 'check':
+                        _reply_to_chat(chat_id, "🔍 PM-Agent pipeline check triggered")
+                        _call_pm_webhook('check', chat_id)
+                    elif cmd == 'status':
+                        _reply_to_chat(chat_id, "📊 PM-Agent status check triggered")
+                        _call_pm_webhook('status', chat_id)
+                    else:
+                        _reply_to_chat(chat_id, "Usage: `/pm check` | `/pm status`")
                     continue
 
                 if not text.startswith('/key'):
