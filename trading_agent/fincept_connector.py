@@ -113,8 +113,12 @@ def get_quote(symbol: str) -> Dict[str, Any]:
 def get_batch_quotes(symbols: List[str]) -> List[Dict[str, Any]]:
     """Live quotes for multiple symbols in one call."""
     result = _run(["batch_quotes"] + symbols)
+    # Fincept can return a raw list for batch_quotes — handle both cases
+    if isinstance(result, list):
+        return [q for q in result if isinstance(q, dict)]
     if result.get("success"):
-        return result.get("data", [])
+        data = result.get("data", [])
+        return [q for q in data if isinstance(q, dict)]
     # Fallback: single quotes
     return [get_quote(s) for s in symbols]
 
