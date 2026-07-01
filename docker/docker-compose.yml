@@ -1,0 +1,53 @@
+# docker-compose.yml — Kay's Trading Agent (NAS / Portainer)
+#
+# Build & deploy via Portainer:
+#   1. Images → Build a new image
+#      - Name: nas:5000/trading-agent:latest
+#      - Dockerfile: paste from docker/Dockerfile
+#      - Build args (optional): GIT_REF=main (or a git tag like v2026-07-01)
+#
+#   2. Containers → Add container
+#      - Image: nas:5000/trading-agent:latest
+#      - Always pull: yes
+#      - Restart: unless-stopped
+#      - Publish all exposed ports: yes
+#      - Volumes:
+#        - /app/vault   → Bind → /data/compose/1/vault (Writable)
+#        - /app/data    → Bind → /data/compose/1/data  (Writable)
+#      - Env vars:
+#        - ALPACA_API_KEY       = <your key>
+#        - ALPACA_SECRET_KEY    = <your secret>
+#        - TELEGRAM_BOT_TOKEN   = <your bot token>
+#        - MINIMAX_API_KEY     = <your MiniMax key>
+#        - TV_WEBHOOK_SECRET    = <optional>
+#
+# Rebuild (after code changes):
+#   1. GitHub: make repo public temporarily
+#   2. Portainer Images → Build → same name → Build
+#   3. GitHub: make repo private again
+#   4. Container: recreate from new image
+#
+# Image tags:
+#   nas:5000/trading-agent:latest  — always points to latest build
+#   nas:5000/trading-agent:YYYY-MM-DD — date-tagged for rollback
+
+services:
+  trading-agent:
+    image: nas:5000/trading-agent:latest
+    container_name: trading-agent
+    restart: unless-stopped
+
+    environment:
+      - TZ=Europe/Berlin
+      - ALPACA_API_KEY=${ALPACA_API_KEY}
+      - ALPACA_SECRET_KEY=${ALPACA_SECRET_KEY}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - MINIMAX_API_KEY=${MINIMAX_API_KEY}
+      - TV_WEBHOOK_SECRET=${TV_WEBHOOK_SECRET:-}
+
+    volumes:
+      - /data/compose/1/vault:/app/vault
+      - /data/compose/1/data:/app/data
+
+    ports:
+      - "5050:5050"
