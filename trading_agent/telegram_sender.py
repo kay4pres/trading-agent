@@ -28,12 +28,30 @@ _last_update_id = 0
 
 
 def _get_token() -> Optional[str]:
-    """Decrypt PowerShell SecureString via PowerShell subprocess."""
+    """
+    Get Telegram bot token. Priority:
+    1. TELEGRAM_BOT_TOKEN env var (Docker / NAS deployment)
+    2. Vault file /app/vault/TELEGRAM_BOT_TOKEN.env (written by entrypoint.py)
+    3. DPAPI vault file (Windows local deployment)
+    """
+    # Priority 1: env var (Docker path)
+    env_token = os.environ.get('TELEGRAM_BOT_TOKEN')
+    if env_token:
+        return env_token
+
+    # Priority 2: vault file written by entrypoint.py
+    vault_file = Path('/app/vault/TELEGRAM_BOT_TOKEN.env')
+    if vault_file.exists():
+        try:
+            return vault_file.read_text(encoding='utf-8').strip()
+        except Exception:
+            pass
+
+    # Priority 3: DPAPI vault file (Windows local deployment)
     try:
         raw = TOKEN_PATH.read_text(encoding='utf-8')
     except Exception:
         return None
-    # Strip UTF-8 BOM if present (PowerShell 5.1 adds BOM with -Encoding UTF8)
     if raw.startswith('\ufeff'):
         raw = raw[1:]
     ps = (
@@ -647,9 +665,11 @@ def poll_callbacks(callback_handler=None):
                 if not text.startswith('/key'):
                     # ── /approve SYMBOL ─────────────────────────────────────────
                     if text.startswith('/approve'):
+                        # Strip @botname suffix if present (e.g. /approve@Marvless01_bot)
+                        cmd = text.split()[0].split('@')[0]
                         parts = text.split()
                         if len(parts) < 2:
-                            _reply_to_chat(chat_id, "Usage: `/approve SOFI`")
+                            _reply_to_chat(chat_id, "Usage: `/approve SYMBOL`")
                             continue
                         symbol = parts[1].upper().strip()
                         _handle_approve(chat_id, symbol)
@@ -657,9 +677,10 @@ def poll_callbacks(callback_handler=None):
 
                     # ── /deny SYMBOL ───────────────────────────────────────────
                     if text.startswith('/deny'):
+                        cmd = text.split()[0].split('@')[0]
                         parts = text.split()
                         if len(parts) < 2:
-                            _reply_to_chat(chat_id, "Usage: `/deny SOFI`")
+                            _reply_to_chat(chat_id, "Usage: `/deny SYMBOL`")
                             continue
                         symbol = parts[1].upper().strip()
                         _handle_deny(chat_id, symbol)
