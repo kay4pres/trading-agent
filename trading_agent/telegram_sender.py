@@ -587,7 +587,7 @@ def poll_callbacks(callback_handler=None):
         try:
             updates = _api_request('getUpdates', {
                 'offset':  _last_update_id + 1,
-                'timeout': 25,
+                'timeout': 0,   # non-blocking — returns immediately, no timeout errors
             })
             if not (updates and updates.get('ok')):
                 continue
