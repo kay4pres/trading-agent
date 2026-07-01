@@ -338,9 +338,6 @@ def run_scan(min_score=2.5, symbols=None):
     results.sort(key=lambda x: x['total_score'], reverse=True)
     return [r for r in results if r['total_score'] >= min_score]
 
-    results.sort(key=lambda x: x['total_score'], reverse=True)
-    return results
-
 
 # Track symbols we've already alerted today (avoid spamming same signal)
 _alerted_today: set = set()
