@@ -18,7 +18,7 @@
 
 services:
   trading-agent:
-    image: kay/trading-agent:latest
+    image: nas:5000/trading-agent:latest
     container_name: trading-agent
     restart: unless-stopped
 
