@@ -872,6 +872,80 @@ def webhook_tradingview():
 # PM-AGENT WEBHOOK — fires when /pm check/status is sent via Telegram
 # ═══════════════════════════════════════════════════════════════════════════════
 
+@app.route('/api/debug/load-watchlist', methods=['POST'])
+def api_debug_load_watchlist():
+    """
+    Debug endpoint: write watchlist CSV directly into the container and reload.
+    POST /api/debug/load-watchlist
+    Body: {"symbols": [{"symbol":"ICU","price":4.86,"gap_pct":32.4,"rel_vol":6.6,"float_m":4.0,"total_score":2.5,"news_summary":"..."}]}
+    Writes to /app/data/watchlists/watchlist_YYYYMMDD.csv and reloads state.
+    """
+    import csv as csv_mod, io
+    try:
+        data = request.get_json(force=True) or {}
+    except Exception:
+        return jsonify({'error': 'invalid json'}), 400
+
+    symbols = data.get('symbols', [])
+    if not symbols:
+        return jsonify({'error': 'no symbols provided'}), 400
+
+    today_str = berlin_now().strftime('%Y%m%d')
+    watchlist_dir = DATA_DIR / 'watchlists'
+    watchlist_dir.mkdir(parents=True, exist_ok=True)
+    csv_path = watchlist_dir / f'watchlist_{today_str}.csv'
+    latest_path = DATA_DIR / 'watchlist_latest.csv'
+
+    # Write CSV
+    with open(csv_path, 'w', newline='', encoding='utf-8') as f:
+        writer = csv_mod.DictWriter(f, fieldnames=[
+            'symbol','short_name','price','gap_pct','rel_vol','float_m',
+            'total_score','p4_catalyst','news_summary'
+        ])
+        writer.writeheader()
+        for s in symbols:
+            writer.writerow({
+                'symbol':       s.get('symbol', ''),
+                'short_name':   s.get('short_name', ''),
+                'price':        s.get('price', 0),
+                'gap_pct':      s.get('gap_pct', 0),
+                'rel_vol':      s.get('rel_vol', 0),
+                'float_m':     s.get('float_m', 0),
+                'total_score':  s.get('total_score', 0),
+                'p4_catalyst':  s.get('p4_catalyst', 0),
+                'news_summary': s.get('news_summary', ''),
+            })
+
+    # Also write watchlist_latest.csv
+    with open(latest_path, 'w', newline='', encoding='utf-8') as f:
+        writer = csv_mod.DictWriter(f, fieldnames=[
+            'symbol','short_name','price','gap_pct','rel_vol','float_m',
+            'total_score','p4_catalyst','news_summary'
+        ])
+        writer.writeheader()
+        for s in symbols:
+            writer.writerow({
+                'symbol':       s.get('symbol', ''),
+                'short_name':   s.get('short_name', ''),
+                'price':        s.get('price', 0),
+                'gap_pct':      s.get('gap_pct', 0),
+                'rel_vol':      s.get('rel_vol', 0),
+                'float_m':     s.get('float_m', 0),
+                'total_score':  s.get('total_score', 0),
+                'p4_catalyst':  s.get('p4_catalyst', 0),
+                'news_summary': s.get('news_summary', ''),
+            })
+
+    # Reload state
+    premarket = load_premarket_watchlist()
+    if premarket:
+        state['watchlist'] = premarket
+        state['signals']   = premarket
+    state['last_scan'] = berlin_now().strftime('%H:%M')
+    print(f"[debug] Loaded {len(symbols)} watchlist symbols from debug endpoint")
+    return jsonify({'ok': True, 'loaded': len(symbols), 'path': str(csv_path)})
+
+
 @app.route('/pm-webhook', methods=['POST'])
 def pm_webhook():
     """
@@ -923,10 +997,18 @@ if __name__ == '__main__':
     # Load saved decisions
     state['decisions'] = load_decisions()
 
-    # Run initial scan
-    print("Running initial scan...")
-    state['signals']   = run_scan(min_score=2.5)
-    state['watchlist'] = state['signals']
+    # Load premarket watchlist from Richard's CSV first (before running scan)
+    print("Loading premarket watchlist...")
+    premarket = load_premarket_watchlist()
+    if premarket:
+        state['watchlist'] = premarket
+        state['signals']   = premarket
+        print(f"[dashboard] Initial watchlist: {len(premarket)} symbols loaded from CSV")
+    else:
+        print("[dashboard] No premarket CSV found — running scan...")
+        state['signals']   = run_scan(min_score=2.5)
+        state['watchlist'] = state['signals']
+
     state['last_scan'] = berlin_now().strftime('%H:%M')
     state['mount_status'] = _check_mount_status()
 
