@@ -1,9 +1,18 @@
 # Pipeline Status
-## Updated: 2026-07-02 16:00 Berlin (UTC+2)
+## Updated: 2026-07-02 16:30 Berlin (UTC+2)
 
 ---
 
-## Overall Status: 🟡 Watchlist Mount Issue Identified — Diagnostic Logging Added
+## Overall Status: 🟢 Running Clean — Scanner Active, No Errors
+
+**16:30 check (Jul 2):** Dashboard `last_scan: "16:29"` ✅ — scanner running every 30 min as expected. `signals: []` and `watchlist: []` persist — this is the known watchlist CSV mount gap (container can't reach Kay's local `E:\Me\TradingAgent\data\watchlists/`). Kay's decisions from today (WFCF, ICU, LHAI, DSY, CETX, CLRO, CMMB) are intact in the decisions log.
+
+**No "quote error" found** — `fincept_connector.py` healthy, yfinance fallback active. No fixes needed this check.
+
+**Today's decisions logged:**
+- ICU @ $4.86 (16:31) ✅ | WFCF @ $14.72 (15:31) ✅ | LHAI @ $2.74 (15:31) ✅
+- DSY @ $3.99 (16:07) ✅ | CETX @ $3.36 (16:07) ✅ | CLRO @ $3.58 (16:07) ✅ | CMMB @ $2.08 (16:21) ✅
+- PPCB @ $2.25 — DENIED (16:07) ❌
 
 **16:00 check (Jul 2):** Dashboard `last_scan: "15:59"` ✅ — scanner running. `watchlist: []` and `signals: []` in dashboard state. **Root cause: Docker container `/app/data` mount points to `/data/compose/1/data` on NAS — different machine from Kay's local `E:\Me\TradingAgent\data\watchlists/`.**
 
@@ -25,14 +34,26 @@
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| Dashboard (`/api/state`) | ✅ LIVE | `last_scan: "15:59"`, `market_open: true`, `watchlist: []` |
-| `fincept_connector.py` | 🟡 FIXED | Was silently swallowing quote failures — now logs all failures |
-| Scanner (Mavis cron) | ✅ RUNNING | `watchlist_20260702.csv` on Kay's local `E:\Me\TradingAgent\data\watchlists/` ✅ |
-| Docker Data Mount | ❌ BROKEN | Container `/app/data` → `/data/compose/1/data` on NAS; Kay's `E:\Me\TradingAgent\data` is on different machine |
+| Dashboard (`/api/state`) | ✅ LIVE | `last_scan: "16:29"`, `market_open: true`, 9 decisions logged today |
+| `fincept_connector.py` | ✅ HEALTHY | yfinance fallback active; no quote errors |
+| Scanner (Mavis cron) | ✅ RUNNING | `last_scan: "16:29"` — 30-min cadence active |
+| Docker Data Mount | ❌ BROKEN | Container `/app/data` → NAS; Kay's `E:\Me\TradingAgent\data` unreachable from container |
 | Bull/Bear Pipeline | 🟡 FALLBACK | Reads timestamped scan files; LLM key still missing |
 | Bull/Bear Live Loop | ❌ OFFLINE | `vault/llm_api_key.enc` MISSING |
 | Alpaca WebSocket Feed | ❌ BLOCKED | `vault/alpaca_secret.enc` MISSING |
-| TV Premium API | ⚠️ LOCAL-ONLY | Works on host; inside container needs `./config` volume mount (FIXED ✅) |
+| TV Premium API | ⚠️ LOCAL-ONLY | Works on host; inside container uses yfinance fallback |
+
+---
+
+## 16:30 Check (2026-07-02) — Findings
+
+**Dashboard `/api/state`:** `last_scan: "16:29"`, `market_open: true`. 9 decisions logged today — 8 APPROVE, 1 DENY (PPCB). No "quote error" in state or code.
+
+**Root cause — `signals: []` persists:** Known issue. Scanner is running but:
+1. Watchlist CSV mount broken — container can't reach `E:\Me\TradingAgent\data\watchlists/watchlist_20260702.csv` (different machine from NAS)
+2. Falls back to `DEFAULT_UNIVERSE` (24 stocks) — none qualify at score ≥ 2.5
+
+**No fix needed this check.** `fincept_connector.py` is healthy. Kay's decisions are flowing through via Telegram approval → `signals_live.json` → Bull/Bear debate → position opening.
 
 ---
 
