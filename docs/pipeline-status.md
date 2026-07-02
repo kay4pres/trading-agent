@@ -1,17 +1,23 @@
 # Pipeline Status
-## Updated: 2026-07-02 15:30 Berlin (UTC+2)
+## Updated: 2026-07-02 16:00 Berlin (UTC+2)
 
 ---
 
-## Overall Status: 🟡 Bull/Bear Fix Pushed — Dashboard Healthy
+## Overall Status: 🟡 Watchlist Mount Issue Identified — Diagnostic Logging Added
 
-**15:30 check (Jul 2):** Dashboard `last_scan: "15:33"` ✅ — scanner is running, cron pipeline healthy. Kay approved ICU/WFCF/LHAI via Telegram at 15:31.
+**16:00 check (Jul 2):** Dashboard `last_scan: "15:59"` ✅ — scanner running. `watchlist: []` and `signals: []` in dashboard state. **Root cause: Docker container `/app/data` mount points to `/data/compose/1/data` on NAS — different machine from Kay's local `E:\Me\TradingAgent\data\watchlists/`.**
 
-**Issue found & fixed:** `scan_market_bull_bear.py` and `bull_bear_runner.py` only read `signals_live.json`. Today that file doesn't exist (live_event_loop offline — Alpaca secret missing). Scanner writes timestamped `signals_YYYYMMDD_HHMM.json` instead — Bull/Bear never picked them up.
+**Issue identified:** `fincept_connector.py` was silently swallowing quote failures (returned `{"success": False}` without logging). Combined with the watchlist CSV mount mismatch → scanner returned zero signals. No `quote error` visible in dashboard because the error was silently caught.
 
-**Fix pushed in `90a2a62` (dev):** Both scripts now fall back to the latest `signals_YYYYMMDD_HHMM.json` when `signals_live.json` is absent. Auto-converts scanner format (ticker→symbol, ranked_signals array) to Bull/Bear format. Pushed to GitHub `dev` and Gitea `dev`.
+**Fix pushed in `b6b14eb` (dev):**
+1. `fincept_connector.py`: Added `logging.INFO` when Fincept unavailable, when yfinance fallback fails, and per-batch quote diagnostics (shows `N/M returned valid quotes`)
+2. `dashboard/app.py`: Added `_check_mount_status()` diagnostic, `/api/mount-status` endpoint, and container startup warning when watchlist CSV not found
 
-**No container rebuild needed** — this is a host-side script fix. Next Bull/Bear cron run (15:45) will use the fallback.
+**Action required — Portainer volume fix (Kay must do):**
+- Docker container's `/app/data` is mounted to `/data/compose/1/data` on NAS
+- Richard's Mavis cron writes watchlist to `E:\Me\TradingAgent\data\watchlists/` on Kay's Windows machine
+- **Fix:** Add a Portainer volume mount: `E:\Me\TradingAgent\data` → `/app/data` (or sync via a network path the NAS can reach)
+- After fix: check `http://10.8.0.10:5050/api/mount-status` — should return `"status": "ok"`
 
 ---
 
@@ -19,13 +25,32 @@
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| Dashboard (`/api/state`) | ✅ LIVE | `last_scan: "15:33"` — scanner running, Kay approving via Telegram |
-| `fincept_connector.py` | ✅ HEALTHY | yfinance fallback working, no quote errors |
-| Scanner (Mavis cron) | ✅ RUNNING | `signals_20260702_1500.json` with 7 gap stocks (ICU, WFCF, LHAI, TC, RGC, SOC, TONX) |
-| Bull/Bear Pipeline | 🟡 FIXED | Now reads timestamped scan files as fallback; LLM key still missing (runs inline Mavis) |
-| Bull/Bear Live Loop | ❌ OFFLINE | `vault/llm_api_key.enc` still MISSING — event-driven loop blocked |
-| Alpaca WebSocket Feed | ❌ BLOCKED | `vault/alpaca_secret.enc` still MISSING — live_event_loop offline |
+| Dashboard (`/api/state`) | ✅ LIVE | `last_scan: "15:59"`, `market_open: true`, `watchlist: []` |
+| `fincept_connector.py` | 🟡 FIXED | Was silently swallowing quote failures — now logs all failures |
+| Scanner (Mavis cron) | ✅ RUNNING | `watchlist_20260702.csv` on Kay's local `E:\Me\TradingAgent\data\watchlists/` ✅ |
+| Docker Data Mount | ❌ BROKEN | Container `/app/data` → `/data/compose/1/data` on NAS; Kay's `E:\Me\TradingAgent\data` is on different machine |
+| Bull/Bear Pipeline | 🟡 FALLBACK | Reads timestamped scan files; LLM key still missing |
+| Bull/Bear Live Loop | ❌ OFFLINE | `vault/llm_api_key.enc` MISSING |
+| Alpaca WebSocket Feed | ❌ BLOCKED | `vault/alpaca_secret.enc` MISSING |
 | TV Premium API | ⚠️ LOCAL-ONLY | Works on host; inside container needs `./config` volume mount (FIXED ✅) |
+
+---
+
+## 16:00 Check (2026-07-02) — Findings & Fix
+
+**Dashboard `/api/state`:** `last_scan: "15:59"`, `watchlist: []`, `signals: []`. Kay's decisions intact (ICU/WFCF/LHAI APPROVE).
+
+**Root cause — dual failure:**
+1. **Watchlist CSV mount mismatch:** Docker container on NAS can't reach Kay's local `E:\Me\TradingAgent\data\watchlists/watchlist_20260702.csv` — different machine
+2. **Silent yfinance failure:** `fincept_connector._run()` catches exceptions and returns `{"success": False}` without logging — `get_batch_quotes()` returns `[]` silently, all `DEFAULT_UNIVERSE` symbols skipped at line 364 (`if not q.get('price'): continue`)
+
+**Fix (`b6b14eb`):**
+- `fincept_connector.py`: `logger.info()` when Fincept unavailable + yfinance fallback fails; per-batch quote count logged (`N/M returned valid quotes`)
+- `dashboard/app.py`: `_check_mount_status()` function + `/api/mount-status` endpoint; startup warning if watchlist CSV missing; diagnostic logs listing all checked paths
+
+**Pushed:** GitHub `dev` + Gitea `dev`. **Container rebuild required** for new logging to appear in container stdout.
+
+**Next step:** Kay needs to fix Portainer volume mount — add `E:\Me\TradingAgent\data` → `/app/data` in Portainer container config. Check `http://10.8.0.10:5050/api/mount-status` after fix.
 
 ---
 
