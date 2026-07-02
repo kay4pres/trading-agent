@@ -20,6 +20,11 @@ SKIP_CHAPTERS = {"Chapter5_Course1", "Chapter5_Course2",
 # ── Chapters to process ──────────────────────────────────────────────────────
 CHAPTERS = [
     ("Chapter 1", "C1 Ch1", "Day Trading Basics — Becoming a Day Trader"),
+    # C2 Ch7: all 12 parts live as flat .txt files in Chapter 7/
+    # chapter_dir = directory containing .txt files
+    # chapter_tag = prefix for rules output filenames
+    # chapter_label = console display
+    ("Chapter 7", "c2_ch7", "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)"),
 ]
 
 
