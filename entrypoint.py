@@ -56,7 +56,7 @@ crontab = """TZ=Europe/Berlin
 30,45 15 * * 1-5 cd /app && python -m scripts.scan_market_bull_bear >> /app/data/logs/scan.log 2>&1
 0,15,30,45 16-20 * * 1-5 cd /app && python -m scripts.scan_market_bull_bear >> /app/data/logs/scan.log 2>&1
 0,15,30,45 21 * * 1-5 cd /app && python -m scripts.scan_market_bull_bear >> /app/data/logs/scan.log 2>&1
-0 21 * * 1-5 cd /app && python -m trading_agent.process_new_chapters >> /app/data/logs/transcribe.log 2>&1
+0 21 * * 1-5 TRADING_DATA_DIR=/app/data RAW_DIR=/app/knowledge/raw TRANSCRIPT_DIR=/app/knowledge/transcripts cd /app && python -m trading_agent.process_new_chapters >> /app/data/logs/transcribe.log 2>&1
 """
 try:
     subprocess.run(["crontab", "-"], input=crontab.encode(), check=True)

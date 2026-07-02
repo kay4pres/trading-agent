@@ -90,6 +90,9 @@ def transcribe_file(source: Path, output: Path, seg_dir: Path,
         with open(output, "w", encoding="utf-8") as f:
             f.write(f"# Segments: {len(segments)}\n# Transcribed: {datetime.now().isoformat()}\n\n")
             f.write("\n".join(all_lines))
+        # Clean up WAV segments to free disk space
+        shutil.rmtree(seg_dir, ignore_errors=True)
+        print(f"  Cleaned up {len(segments)} segment files")
     else:
         print("  Loading model...")
         start = datetime.now()
@@ -113,7 +116,8 @@ def transcribe_file(source: Path, output: Path, seg_dir: Path,
 
 # ── C2 Chapter 7: Momentum Trading Part 1 — Long Technical Setups ─────────────
 # 12 lessons covering Ross Cameron momentum entry setups (Pullbacks, HOD, ABCD, etc.)
-# Seg dirs on Z: (911 GB free) to avoid C: disk pressure
+# Seg dirs on E: (95 GB free) — WAV segments cleaned up after each file
+# NOTE: If running via Docker cron, mount ./knowledge:/app/knowledge in docker-compose
 C7_DIR = C2_DIR / "Chapter 7 Momentum Trading, Part 1 - Long Technical Setups"
 
 C2_CH7_TARGETS = [
@@ -121,84 +125,84 @@ C2_CH7_TARGETS = [
     {
         "source": C7_DIR / "Ch1-Part2 The 1st and 2nd Pullbacks.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part2_First_Second_Pullbacks.txt",
-        "seg": Path(r"Z:/_c2_ch7_p2_segs"),
+        "seg": BASE / "_c2_ch7_p2_segs",
         "desc": "C2 Ch7 P2 — 1st and 2nd Pullbacks",
         "size_mb": 2809,
     },
     {
         "source": C7_DIR / "Ch1-Part3 Micro Pullback Setup.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part3_Micro_Pullback.txt",
-        "seg": Path(r"Z:/_c2_ch7_p3_segs"),
+        "seg": BASE / "_c2_ch7_p3_segs"),
         "desc": "C2 Ch7 P3 — Micro Pullback Setup",
         "size_mb": 1581,
     },
     {
         "source": C7_DIR / "Ch1Part5 HOD Breakout Setup.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part5_HOD_Breakout.txt",
-        "seg": Path(r"Z:/_c2_ch7_p5_segs"),
+        "seg": BASE / "_c2_ch7_p5_segs"),
         "desc": "C2 Ch7 P5 — HOD Breakout Setup",
         "size_mb": 1242,
     },
     {
         "source": C7_DIR / "CH1-Part6 ABCD Setup.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part6_ABCD.txt",
-        "seg": Path(r"Z:/_c2_ch7_p6_segs"),
+        "seg": BASE / "_c2_ch7_p6_segs"),
         "desc": "C2 Ch7 P6 — ABCD Setup",
         "size_mb": 1587,
     },
     {
         "source": C7_DIR / "Ch1-Part7 Moving Average Pullback Setup.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part7_MA_Pullback.txt",
-        "seg": Path(r"Z:/_c2_ch7_p7_segs"),
+        "seg": BASE / "_c2_ch7_p7_segs"),
         "desc": "C2 Ch7 P7 — Moving Average Pullback",
         "size_mb": 891,
     },
     {
         "source": C7_DIR / "Ch1-Part8 Cup and Handle Setup.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part8_Cup_Handle.txt",
-        "seg": Path(r"Z:/_c2_ch7_p8_segs"),
+        "seg": BASE / "_c2_ch7_p8_segs"),
         "desc": "C2 Ch7 P8 — Cup and Handle Setup",
         "size_mb": 699,
     },
     {
         "source": C7_DIR / "Ch1-Part9 Head and Shoulders Setup.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part9_Head_Shoulders.txt",
-        "seg": Path(r"Z:/_c2_ch7_p9_segs"),
+        "seg": BASE / "_c2_ch7_p9_segs"),
         "desc": "C2 Ch7 P9 — Head and Shoulders Setup",
         "size_mb": 1031,
     },
     {
         "source": C7_DIR / "Ch1-Part10 Break of Pivot Setup.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part10_Break_Pivot.txt",
-        "seg": Path(r"Z:/_c2_ch7_p10_segs"),
+        "seg": BASE / "_c2_ch7_p10_segs"),
         "desc": "C2 Ch7 P10 — Break of Pivot Setup",
         "size_mb": 1197,
     },
     {
         "source": C7_DIR / "Ch1-Part11 Break Of Vwap Setup.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part11_Break_VWAP.txt",
-        "seg": Path(r"Z:/_c2_ch7_p11_segs"),
+        "seg": BASE / "_c2_ch7_p11_segs"),
         "desc": "C2 Ch7 P11 — Break of VWAP Setup",
         "size_mb": 2309,
     },
     {
         "source": C7_DIR / "Ch1-Part12 Trading In And Out Of Halts.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part12_Trading_Halts.txt",
-        "seg": Path(r"Z:/_c2_ch7_p12_segs"),
+        "seg": BASE / "_c2_ch7_p12_segs"),
         "desc": "C2 Ch7 P12 — Trading In/Out of Halts",
         "size_mb": 2573,
     },
     {
         "source": C7_DIR / "Ch1-Part1 Intro to Momo.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part1_Intro_Momentum.txt",
-        "seg": Path(r"Z:/_c2_ch7_p1_segs"),
+        "seg": BASE / "_c2_ch7_p1_segs"),
         "desc": "C2 Ch7 P1 — Intro to Momentum",
         "size_mb": 3192,
     },
     {
         "source": C7_DIR / "Ch1-Part4 The Half- & Whole-Dollar Setup.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part4_Half_Whole_Dollar.txt",
-        "seg": Path(r"Z:/_c2_ch7_p4_segs"),
+        "seg": BASE / "_c2_ch7_p4_segs"),
         "desc": "C2 Ch7 P4 — Half & Whole Dollar Setup",
         "size_mb": 2358,
     },

@@ -53,6 +53,9 @@ services:
       # Local models (Whisper) if present
       - ./models:/app/models:ro
 
+      # Knowledge base: raw course videos + transcripts (for cron transcription)
+      - ./knowledge:/app/knowledge:ro
+
     ports:
       - "5050:5050"   # Dashboard
 
