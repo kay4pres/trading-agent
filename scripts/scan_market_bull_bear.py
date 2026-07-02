@@ -1,20 +1,16 @@
 r"""
 scan_market_bull_bear.py
-========================
+=======================
 Called by the Mavis scan-market cron session (which has the real LLM API key).
 
 This script:
-  1. Reads pending signals from signals_live.json
+  1. Reads pending signals — primary: signals_live.json (event-driven queue),
+     fallback: latest signals_YYYYMMDD_HHMM.json (timestamped scanner output)
   2. Runs Bull/Bear/Research Manager debate using the Mavis session's LLM
   3. Writes results to bull_bear_results.json
 
 The debate runs inside this session — NOT in a subprocess — so it uses the
 real API key from the Mavis daemon, not a placeholder config.
-
-Mavis cron integration:
-  In the scan-market cron prompt, add:
-    "Also run: py -3 E:\Me\TradingAgent\scripts\scan_market_bull_bear.py"
-    Check for output — if signals were debated, note the verdict.
 """
 
 import json
@@ -221,18 +217,76 @@ def _llm_direct(prompt: str, system: str) -> tuple[str, dict | None]:
     return text, usage
 
 
+def _load_signals() -> list:
+    """
+    Load signals from the pipeline.
+    Priority:
+      1. signals_live.json  — event-driven queue from live_event_loop.py
+      2. Latest signals_YYYYMMDD_HHMM.json — timestamped scan output from
+         intraday_scanner.py (Mavis cron or dashboard scan_thread)
+    """
+    # ── Primary: event-driven queue ───────────────────────────────────────────
+    if SIGNAL_IN.exists():
+        with open(SIGNAL_IN, encoding="utf-8") as f:
+            raw = json.load(f)
+        if isinstance(raw, list):
+            return raw
+        return [raw]
+
+    # ── Fallback: latest timestamped scan file ────────────────────────────────
+    today_str = datetime.now(AMSTERDAM_TZ).strftime('%Y%m%d')
+    candidates = sorted(
+        DATA_DIR.glob(f'signals_{today_str}_*.json'),
+        key=lambda p: p.stat().st_mtime,
+        reverse=True
+    )
+    if not candidates:
+        return []
+
+    latest = candidates[0]
+    print(f"[ScanMarket] signals_live.json not found — falling back to {latest.name}")
+
+    with open(latest, encoding="utf-8") as f:
+        scan_data = json.load(f)
+
+    # intraday_scanner.py writes { run_time, gap_stocks, total_signals, ranked_signals }
+    ranked = scan_data.get("ranked_signals", [])
+    # Convert scanner format → Bull/Bear format (ticker → symbol)
+    converted = []
+    for s in ranked:
+        converted.append({
+            "symbol":              s.get("ticker", s.get("symbol", "?")),
+            "price":               s.get("price", 0),
+            "today_close":         s.get("price", 0),
+            "yesterday_close":      s.get("price", 0) / (1 + (s.get("gap_pct", 0) / 100)),
+            "gap_pct":             s.get("gap_pct", 0),
+            "float_m":             s.get("float_m", 0),
+            "rel_vol":             s.get("volume_ratio", s.get("rel_vol", 0)),
+            "rsi":                 s.get("rsi", 50),
+            "score":               s.get("score", 0),
+            "target":              round(s.get("price", 0) + 0.20, 2),
+            "stop":                round(s.get("price", 0) - 0.10, 2),
+            "qty":                 100,
+            "intraday_high":       s.get("intraday_high", 0),
+            "pullback_dollar":     s.get("pullback_dollar", 0),
+            "pullback_atr_ratio":  s.get("pullback_atr_ratio", 0),
+            "news":                f"Scanner pullback signal (score={s.get('score',0)}, "
+                                    f"gap={s.get('gap_pct',0)}%, "
+                                    f"ATR ratio={s.get('pullback_atr_ratio',0):.1f})",
+            "debated":             False,
+        })
+    return converted
+
+
 def main():
     print(f"[ScanMarket BullBear] {datetime.now(AMSTERDAM_TZ).strftime('%H:%M:%S')} — "
           f"Checking for pending signals...")
 
-    if not SIGNAL_IN.exists():
-        print("[ScanMarket BullBear] No signals_live.json found")
+    signals = _load_signals()
+    if not signals:
+        print("[ScanMarket BullBear] No signals found (signals_live.json absent, "
+              "no timestamped scan files today)")
         return
-
-    with open(SIGNAL_IN, encoding="utf-8") as f:
-        signals = json.load(f)
-    if not isinstance(signals, list):
-        signals = [signals]
 
     pending = [s for s in signals if not s.get("debated", False)]
     if not pending:
@@ -268,13 +322,14 @@ def main():
         with open(DEBATE_OUT, "w", encoding="utf-8") as f:
             json.dump({"debates": all_results}, f, indent=2, default=str)
 
-        # Mark signals as debated
+        # Mark signals as debated in signals_live.json if it exists
         debated = {r["signal"]["symbol"] for r in results}
-        for sig in signals:
-            if sig.get("symbol", "").upper() in {s.upper() for s in debated}:
-                sig["debated"] = True
-        with open(SIGNAL_IN, "w", encoding="utf-8") as f:
-            json.dump(signals, f, indent=2, default=str)
+        if SIGNAL_IN.exists():
+            for sig in signals:
+                if sig.get("symbol", "").upper() in {s.upper() for s in debated}:
+                    sig["debated"] = True
+            with open(SIGNAL_IN, "w", encoding="utf-8") as f:
+                json.dump(signals, f, indent=2, default=str)
 
         print(f"[ScanMarket BullBear] Done — {len(results)} result(s) → {DEBATE_OUT}")
     else:
