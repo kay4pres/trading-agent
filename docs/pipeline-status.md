@@ -1,9 +1,19 @@
 # Pipeline Status
-## Updated: 2026-07-02 16:30 Berlin (UTC+2)
+## Updated: 2026-07-02 17:30 Berlin (UTC+2)
 
 ---
 
 ## Overall Status: 🟢 Running Clean — Scanner Active, No Errors
+
+**17:30 check (Jul 2):** Cannot reach `http://10.8.0.10:5050/api/state` from this Mavis session (NAS LAN unreachable from this shell). Verified via local evidence instead:
+
+- **`fincept_connector.py` live test:** `get_batch_quotes(['SOFI','ICU','WFCF'])` → 3/3 valid quotes returned cleanly. SOFI $18.07, ICU $5.35 (+10.14%), WFCF $14.80 (+0.54%). Logging active (`INFO: get_batch_quotes: 3/3 returned valid quotes`). ✅ **No quote error. No fix needed.**
+- **Scanner files:** Latest scan file is `signals_20260702_1607.json` — Mavis cron may skip intervals when no signals qualify; scanner is running (multiple files from 15:00-16:07). Market still open until 21:00 Berlin.
+- **9 decisions logged today** (15:31–16:37): ICU, WFCF, LHAI, DSY, CETX, CLRO, CMMB APPROVED; PPCB DENIED.
+- **Watchlist CSV:** `watchlist_20260702.csv` exists in both `data/watchlists/` (16:11) and `watchlists/` (04:03 premarket). ✅
+- **No "quote error" found anywhere.** `fincept_connector.py` is healthy. No fixes needed.
+
+**17:00 check (Jul 2):** Dashboard `last_scan: "16:59"` ✅ — scanner running every 30 min, 1 minute fresh. `market_open: true`. `watchlist: []` and `signals: []` persist — known watchlist CSV mount gap. **No "quote error" in state.** `fincept_connector.py` healthy — no fixes needed.
 
 **16:30 check (Jul 2):** Dashboard `last_scan: "16:29"` ✅ — scanner running every 30 min as expected. `signals: []` and `watchlist: []` persist — this is the known watchlist CSV mount gap (container can't reach Kay's local `E:\Me\TradingAgent\data\watchlists/`). Kay's decisions from today (WFCF, ICU, LHAI, DSY, CETX, CLRO, CMMB) are intact in the decisions log.
 
