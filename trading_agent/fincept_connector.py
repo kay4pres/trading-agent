@@ -12,10 +12,19 @@ Our scripts (Ross's rules) apply the strategy on top.
 """
 
 import json
+import logging
 import subprocess
 import sys
 from datetime import datetime, date
 from typing import List, Optional, Dict, Any
+
+# Set up module logger so failures are visible in container logs
+logger = logging.getLogger(__name__)
+if not logger.handlers:
+    _h = logging.StreamHandler()
+    _h.setFormatter(logging.Formatter('[%(name)s] %(levelname)s: %(message)s'))
+    logger.addHandler(_h)
+    logger.setLevel(logging.INFO)
 
 # Path to Fincept's yfinance wrapper script
 FINCEPT_YF = r"C:\Program Files\FinceptTerminal\scripts\yfinance_data.py"
@@ -31,7 +40,9 @@ def _run(args: List[str]) -> Dict[str, Any]:
             capture_output=True, text=True, timeout=60
         )
         if result.returncode != 0:
-            return {"success": False, "error": result.stderr.strip()}
+            stderr = result.stderr.strip()
+            logger.warning(f"Fincept script error (rc={result.returncode}): {stderr[:200]}")
+            return {"success": False, "error": stderr}
         raw = result.stdout.strip()
         if raw.startswith("{"):
             return json.loads(raw)
@@ -40,6 +51,7 @@ def _run(args: List[str]) -> Dict[str, Any]:
         else:
             return {"success": False, "error": f"Unexpected output: {raw[:200]}"}
     except FileNotFoundError:
+        logger.info(f"Fincept script not found ({FINCEPT_YF}), falling back to yfinance")
         return _fallback_yfinance(args)
     except subprocess.TimeoutExpired:
         return {"success": False, "error": "Timeout fetching data"}
@@ -92,6 +104,7 @@ def _fallback_yfinance(args: List[str]) -> Dict[str, Any]:
         else:
             return {"success": False, "error": f"Fallback not implemented for: {cmd}"}
     except Exception as e:
+        logger.warning(f"yfinance fallback failed for {cmd}/{sym}: {e}")
         return {"success": False, "error": f"Fallback failed: {e}"}
 
 
@@ -107,7 +120,11 @@ def get_quote(symbol: str) -> Dict[str, Any]:
         return result.get("data", result)
     # Try fallback
     fb = _fallback_yfinance(["quote", symbol])
-    return fb if isinstance(fb, dict) and "symbol" in fb else fb.get("data", fb)
+    if isinstance(fb, dict) and "symbol" in fb and fb.get("price"):
+        return fb
+    err = fb.get("error", "unknown") if isinstance(fb, dict) else str(fb)
+    logger.warning(f"get_quote({symbol}): all sources failed — {err}")
+    return fb if isinstance(fb, dict) else {"symbol": symbol.upper(), "price": 0, "error": err}
 
 
 def get_batch_quotes(symbols: List[str]) -> List[Dict[str, Any]]:
@@ -115,12 +132,20 @@ def get_batch_quotes(symbols: List[str]) -> List[Dict[str, Any]]:
     result = _run(["batch_quotes"] + symbols)
     # Fincept can return a raw list for batch_quotes — handle both cases
     if isinstance(result, list):
-        return [q for q in result if isinstance(q, dict)]
+        valid = [q for q in result if isinstance(q, dict) and q.get("price")]
+        logger.info(f"get_batch_quotes: {len(valid)}/{len(symbols)} returned valid quotes")
+        return valid
     if result.get("success"):
         data = result.get("data", [])
-        return [q for q in data if isinstance(q, dict)]
+        valid = [q for q in data if isinstance(q, dict) and q.get("price")]
+        logger.info(f"get_batch_quotes: {len(valid)}/{len(symbols)} returned valid quotes")
+        return valid
     # Fallback: single quotes
-    return [get_quote(s) for s in symbols]
+    logger.info(f"get_batch_quotes: falling back to individual quotes for {len(symbols)} symbols")
+    quotes = [get_quote(s) for s in symbols]
+    valid = [q for q in quotes if isinstance(q, dict) and q.get("price")]
+    logger.info(f"get_batch_quotes fallback: {len(valid)}/{len(symbols)} returned valid quotes")
+    return valid
 
 
 def get_historical(

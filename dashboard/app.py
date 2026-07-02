@@ -100,7 +100,38 @@ state = {
     'positions':     [],   # open positions from live_event_loop
     'trades':       [],   # closed trades from live_event_loop
     'bull_bear':     [],  # recent Bull/Bear verdicts
+    'mount_status': 'unknown',  # 'ok' | 'missing_data_dir' | 'missing_watchlist'
 }
+
+
+def _check_mount_status() -> str:
+    """
+    Check if the data directory and watchlist are accessible.
+    Returns a status string that surfaces Docker volume mount issues.
+    """
+    import os
+    if not DATA_DIR.exists():
+        return "missing_data_dir"
+    watchlist_dir = DATA_DIR / 'watchlists'
+    if not watchlist_dir.exists():
+        return "missing_watchlist_dir"
+    today_str = date.today().strftime('%Y%m%d')
+    csv_path = watchlist_dir / f'watchlist_{today_str}.csv'
+    if not csv_path.exists():
+        return "missing_today_watchlist"
+    return "ok"
+
+
+# Startup check — log mount status so container logs are diagnostic
+_mount_status = _check_mount_status()
+if _mount_status != "ok":
+    print(f"[dashboard] ⚠ DATA_DIR mount issue: {_mount_status}")
+    print(f"[dashboard]   DATA_DIR        = {DATA_DIR} (exists={DATA_DIR.exists()})")
+    print(f"[dashboard]   PREMARKET_DIR   = {PREMARKET_DIR} (exists={PREMARKET_DIR.exists() if PREMARKET_DIR.exists() else False})")
+    print(f"[dashboard]   NOTE: Richard's Mavis cron writes to E:\\Me\\TradingAgent\\data\\watchlists/")
+    print(f"[dashboard]   Docker container needs that path mounted to /app/data — check Portainer volume config")
+else:
+    print(f"[dashboard] ✓ DATA_DIR mount OK: {DATA_DIR}")
 
 
 def berlin_now():
@@ -220,6 +251,16 @@ def _load_watchlist_csv() -> List[Dict[str, Any]]:
         Path(r'E:\Me\TradingAgent\data\watchlists') / f'watchlist_{today_str}.csv',
         DATA_DIR / f'watchlist_{today_str}.csv',
     ]
+    found_any = any(p.exists() for p in candidates)
+    if not found_any:
+        print(f"[scanner] ⚠ No watchlist CSV found for today ({today_str}). Checked:")
+        for p in candidates:
+            print(f"         - {p} (exists={p.exists()})")
+        print(f"         DATA_DIR={DATA_DIR}  PREMARKET_DIR={PREMARKET_DIR}")
+        print(f"         ⚠ Docker volume mount may be misconfigured — container can't see watchlist CSV.")
+        print(f"         ⚠ Richard's Mavis cron writes to E:\\Me\\TradingAgent\\data\\watchlists/ on Kay's local machine.")
+        print(f"         ⚠ Fix: mount Kay's E:\\Me\\TradingAgent\\data to /app/data in Portainer container config.")
+
     for path in candidates:
         if path.exists():
             try:
@@ -449,6 +490,7 @@ def scan_thread():
                 state['watchlist']  = signals
                 state['last_scan']  = berlin_now().strftime('%H:%M')
                 state['market_open'] = True
+                state['mount_status'] = _check_mount_status()
 
                 # Fire Telegram alert for new top signals (score >= 3.5, not yet alerted)
                 for sig in signals:
@@ -587,6 +629,23 @@ def api_state():
         'positions':    state['positions'],
         'trades':      state['trades'],
         'bull_bear':   state['bull_bear'],
+        'mount_status': state['mount_status'],
+    })
+
+
+@app.route('/api/mount-status')
+def api_mount_status():
+    """Return Docker volume mount diagnostic — helps debug watchlist CSV not found issues."""
+    status = _check_mount_status()
+    state['mount_status'] = status
+    return jsonify({
+        'status': status,
+        'data_dir': str(DATA_DIR),
+        'data_dir_exists': DATA_DIR.exists(),
+        'watchlist_dir': str(PREMARKET_DIR),
+        'watchlist_dir_exists': PREMARKET_DIR.exists(),
+        'today_csv': str(PREMARKET_DIR / f'watchlist_{date.today().strftime("%Y%m%d")}.csv'),
+        'today_csv_exists': (PREMARKET_DIR / f'watchlist_{date.today().strftime("%Y%m%d")}.csv').exists(),
     })
 
 
@@ -869,6 +928,7 @@ if __name__ == '__main__':
     state['signals']   = run_scan(min_score=2.5)
     state['watchlist'] = state['signals']
     state['last_scan'] = berlin_now().strftime('%H:%M')
+    state['mount_status'] = _check_mount_status()
 
     # Start background scanner thread
     t = threading.Thread(target=scan_thread, daemon=True)
