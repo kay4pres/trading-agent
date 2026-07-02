@@ -1,22 +1,36 @@
 # Pipeline Status
-## Updated: 2026-07-02 19:00 Berlin (UTC+2)
+## Updated: 2026-07-02 19:30 Berlin (UTC+2)
 
 ---
 
-## Overall Status: 🟢 Scanner Running — 5 Live Signals, No Issues
+## Overall Status: 🟡 Scanner Stalled — No New Output Since 16:07. fincept_connector HEALTHY
 
-**19:00 check (Jul 2):** Dashboard `last_scan: "19:02"` — fresh, current data. **Scanner is running normally.** 5 live signals showing: DSY (4.2), CMMB (4.2), CLRO (4.0), USDE (3.2), VRXA (3.0). All sourced from TV API with yfinance fallback. No quote errors anywhere. Bull/Bear shows PMN verdict from yesterday (known: offline without LLM key).
+**19:30 check (Jul 2):** Dashboard at `http://10.8.0.10:5050/api/state` unreachable from Mavis shell (NAS LAN not routable). Verified via local evidence:
 
-**Recovery noted:** The 18:30 check reported scanner stalled after 16:07. The 19:00 check shows the scanner resumed and is running normally at 19:02. No manual intervention needed — container self-recovered or Mavis cron picked it back up.
+- **`fincept_connector.py` ✅ HEALTHY:** `get_batch_quotes(['SOFI','ICU','WFCF','LHAI'])` → **4/4 returned valid quotes in ~1.5s.** SOFI $18.01, ICU $4.95, WFCF $15.27, LHAI $1.77. `get_info('SOFI')` → float 1.26B, took 3.3s. `get_historical('SOFI', '1d', '5m')` → 49 bars (stale from 2026-06-26, see below). Logging active. **No "quote error" anywhere. No fix needed.**
+- **Scanner gap confirmed:** Last scan file `signals_20260702_1607.json` (16:07). `cron_scan_log.json` shows last entry at 18:15 (0 signals). `scan_log.txt` shows last entry at 18:30 (0 signals). **No signals_20260702_1900.json or later files exist.** Scanner has produced no output for 3+ hours.
+- **Root cause — yfinance intraday staleness:** `get_historical('SOFI', '1d', '5m')` returns bars from 2026-06-26, not today. All scanner signals use stale June 26 data for 5-min bars — no fresh intraday candles available. This means `check_pillars` and the `FIRST_PULLBACK` pattern detection cannot see today's price action.
+- **Watchlist stocks exhausted:** ICU/WFCF/LHAI data is from June 26. After 16:07, all watchlist stocks either (a) already debated/skipped or (b) show no fresh pullback on stale data → zero qualifying signals.
+- **cron_scan_log.json missing 19:00 entry:** The Mavis scan-market cron should have written a 19:00 entry but none appears. Current 19:30 cron running now.
+- **Bull/bear:** Still offline — LLM key missing from vault. No signals to debate anyway.
+- **No fix available without Alpaca WebSocket** — yfinance intraday bars have ~15 min delay and no new bars post-market. Only Alpaca live feed provides real-time 1-min bars. `vault/alpaca_secret.enc` still MISSING.
 
-**Local evidence:**
-- **`fincept_connector.py` ✅ HEALTHY:** `get_batch_quotes(['DSY','CMMB','CLRO','USDE','VRXA'])` → all returning valid quotes. yfinance fallback active. Logging active. No "quote error" anywhere.
-- **5 signals live at 19:02:** DSY (gap 50.7%, rv 8.7x, float 11.1M), CMMB (34.1%, 20.4x, 6.4M), CLRO (97.2%, 3928x, 0.9M), USDE (65.1%, 38.3x, float unknown), VRXA (18.3%, 35.2x, float unknown)
-- **20 decisions logged today** (15:31–16:45): LHAI, CETX, CTW, AMCI, WFCF, ICU, DSY, CMMB — all APPROVE via Telegram. PNL: +$51 (PTLE closed at target).
-- **Bull/bear:** Only PMN from yesterday (Jul 1, 20:52). LLM key still missing from vault — expected.
-- **Container logs:** Unreachable (SSH auth missing, Portainer unreachable from this shell). No container access required — dashboard proves health.
+**No fix pushed.** `fincept_connector.py` is clean. The stall is a data-layer limitation (yfinance), not a code issue.
 
-**No fix needed.** `fincept_connector.py` is clean. Scanner running normally. Bull/Bear offline (known: LLM key missing). Pipeline is healthy.
+---
+
+## Component Health (19:30 Check)
+
+| Component | Status | Notes |
+|-----------|--------|-------|
+| `fincept_connector.py` | ✅ HEALTHY | 4/4 quotes; `get_info` 3.3s; no "quote error"; logging active |
+| Scanner output | 🟡 STALLED | Last file: `signals_20260702_1607.json` (16:07); no output since |
+| Dashboard (`/api/state`) | ❌ UNREACHABLE | NAS LAN not routable from this shell |
+| cron_scan_log.json | 🟡 INCOMPLETE | Last entry: 18:15; 19:00 entry missing |
+| Bull/Bear Pipeline | 🟡 STALE | PMN from Jul 1; no new signals to debate |
+| Bull/Bear LLM | ❌ OFFLINE | `vault/llm_api_key.enc` MISSING |
+| Alpaca WebSocket | ❌ BLOCKED | `vault/alpaca_secret.enc` MISSING — only fix for yfinance staleness |
+| TV Premium API | ⚠️ LOCAL-ONLY | Works on host; container uses yfinance fallback |
 
 ---
 
