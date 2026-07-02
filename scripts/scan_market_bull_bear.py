@@ -145,14 +145,52 @@ def _llm(prompt: str, system: str, label: str) -> tuple[str, dict | None]:
     return _llm_direct(prompt, system)
 
 
+def _decrypt_vault_key(encoded_b64: str) -> str:
+    """Decrypt a base64-encoded DPAPI blob via PowerShell subprocess. Returns plaintext."""
+    import tempfile, secrets, subprocess
+    token = secrets.token_hex(4)
+    in_path  = Path(tempfile.gettempdir()) / f"vault_in_{token}.txt"
+    out_path = Path(tempfile.gettempdir()) / f"vault_out_{token}.txt"
+    in_path.write_text(encoded_b64, encoding="utf-8")
+    ps = (
+        f"$b64 = Get-Content '{in_path}' -Raw; "
+        f"$encrypted = [Convert]::FromBase64String($b64.Trim()); "
+        f"$decrypted = [System.Security.Cryptography.ProtectedData]::Unprotect("
+        f"$encrypted, $null, [System.Security.Cryptography.DataProtectionScope]::CurrentUser); "
+        f"[System.IO.File]::WriteAllBytes('{out_path}', $decrypted)"
+    )
+    r = subprocess.run(["powershell", "-NoProfile", "-Command", ps],
+                       capture_output=True, text=True, timeout=15)
+    if r.returncode != 0:
+        raise RuntimeError(f"DPAPI decrypt failed: {r.stderr}")
+    plaintext = out_path.read_bytes().decode("utf-8")
+    in_path.unlink(missing_ok=True)
+    out_path.unlink(missing_ok=True)
+    return plaintext
+
+
 def _llm_direct(prompt: str, system: str) -> tuple[str, dict | None]:
-    """Direct HTTP call using MiniMax API from config. Returns (text, usage_dict)."""
+    """Direct HTTP call using MiniMax API from vault. Returns (text, usage_dict)."""
     import yaml, httpx
 
-    config = yaml.safe_load(open(r"C:\Users\Kay\.minimax\config.yaml"))
-    provider = config.get("provider", {}).get("minimax", {})
-    api_key = provider.get("options", {}).get("apiKey", "")
-    base_url = provider.get("options", {}).get("baseURL", "https://agent.minimax.io/mavis/api/v1/llm/v1")
+    VAULT_DIR = Path(r"E:\Me\TradingAgent\vault")
+    VAULT_KEY = VAULT_DIR / "llm_api_key.enc"
+
+    # 1. Get base URL from vault config
+    vault_cfg_path = VAULT_DIR / "llm_config.yaml"
+    if vault_cfg_path.exists():
+        vault_cfg = yaml.safe_load(vault_cfg_path.read_text(encoding="utf-8"))
+        base_url = vault_cfg.get("provider", {}).get("minimax", {}).get("options", {}).get(
+            "baseURL", "https://api.minimax.io/v1"
+        )
+    else:
+        base_url = "https://api.minimax.io/v1"
+
+    # 2. Decrypt API key from vault via DPAPI
+    if not VAULT_KEY.exists():
+        raise RuntimeError("No LLM API key in vault — run vault/store_llm_key.ps1 to store it")
+    encoded = VAULT_KEY.read_text(encoding="utf-8").strip()
+    api_key = _decrypt_vault_key(encoded)
 
     if not api_key or api_key == "sk-xxx":
         raise RuntimeError("No LLM API key available in config.yaml")

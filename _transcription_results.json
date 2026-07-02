@@ -1,28 +1,20 @@
 {
-  "total": 20,
-  "passed": 20,
+  "total": 12,
+  "passed": 12,
   "failed": 0,
   "results": {
-    "C1 Ch2 P1 — Picking Stocks": true,
-    "C1 Ch2 P2 — Long vs Short Selling": true,
-    "C1 Ch2 P3 — What Makes a Strong Stock": true,
-    "C1 Ch6 — Trading Platform Walk-Through": true,
-    "C1 Ch7": true,
-    "C1 Ch8": true,
-    "C1 Ch9 — Order Entry & Order Types": true,
-    "C1 Ch10 P1 — Hot Keys": true,
-    "C1 Ch10 P2 — Hot Buttons": true,
-    "C1 Ch11 — Stock Halts": true,
-    "C2 Ch1 — Intro to Day Trading Strategies": true,
-    "C2 Ch2 — Learning to Manage Your Risk": true,
-    "C2 Ch6 P1 — Level 2 & Time & Sales": true,
-    "C2 Ch6 P2 — ADFN Prints": true,
-    "C2 Ch6 P3 — Circuit Breaker Halts": true,
-    "C2 Ch6 P4 — Market Makers": true,
-    "C2 Ch6 P5 — PFOF vs Direct Access": true,
-    "C2 Ch6 P6 — Order Routing & Liquidity": true,
-    "C2 Ch6 P7 — Advanced Hot Keys & Buttons": true,
-    "C2 Ch6 P8 — Multi-Account Syncing": true
+    "C2 Ch7 P2 — 1st and 2nd Pullbacks": true,
+    "C2 Ch7 P3 — Micro Pullback Setup": true,
+    "C2 Ch7 P5 — HOD Breakout Setup": true,
+    "C2 Ch7 P6 — ABCD Setup": true,
+    "C2 Ch7 P7 — Moving Average Pullback": true,
+    "C2 Ch7 P8 — Cup and Handle Setup": true,
+    "C2 Ch7 P9 — Head and Shoulders Setup": true,
+    "C2 Ch7 P10 — Break of Pivot Setup": true,
+    "C2 Ch7 P11 — Break of VWAP Setup": true,
+    "C2 Ch7 P12 — Trading In/Out of Halts": true,
+    "C2 Ch7 P1 — Intro to Momentum": true,
+    "C2 Ch7 P4 — Half & Whole Dollar Setup": true
   },
-  "timestamp": "2026-06-29T21:54:02.453707"
+  "timestamp": "2026-07-02T11:23:14.439732"
 }

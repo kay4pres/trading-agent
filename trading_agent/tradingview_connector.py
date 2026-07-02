@@ -15,7 +15,14 @@ from typing import List, Dict, Any, Optional
 import sys
 
 # ── Token decryption ────────────────────────────────────────────────────────────
-TOKEN_PATH = Path(r'E:\Me\TradingAgent\config\tv_session.enc')
+# Priority: Docker mount (/app/config) → Kay's host machine (E:\Me\TradingAgent\)
+_TOKEN_PATHS = [
+    # Docker container mount (./config:/app/config in docker-compose)
+    Path('/app/config/tv_session.enc'),
+    # Kay's Windows host machine
+    Path(r'E:\Me\TradingAgent\config\tv_session.enc'),
+]
+TOKEN_PATH = next((p for p in _TOKEN_PATHS if p.exists()), _TOKEN_PATHS[0])
 
 
 def _read_token() -> Optional[str]:

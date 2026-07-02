@@ -1,14 +1,19 @@
 # docker-compose.yml — Kay's Trading Agent Stack
-# Deploy via Portainer: paste this + fill in .env variables
+# Deploy via Portainer: paste this + fill in secrets
 #
 # Portainer setup:
-#   Stacks → Add stack → GitHub (or Editor mode) → paste docker-compose.yml
-#   Then set environment variables in Portainer's "Environment variables" section
-#   (Portainer stores them encrypted and passes them to docker-compose)
+#   Stacks → Add stack → paste docker-compose.yml
+#   CRITICAL: secrets must be added via Portainer → Docker → Secrets
+#   BEFORE adding the stack, create these secrets in Portainer:
+#     Name: trading_agent_alpaca_api_key    | Value: <your Alpaca API key>
+#     Name: trading_agent_alpaca_secret    | Value: <your Alpaca secret key>
+#     Name: trading_agent_telegram_token    | Value: <your Telegram bot token>
+#     Name: trading_agent_minimax_key      | Value: <your MiniMax API key>
+#   Then in the stack editor, reference: ${TRADING_AGENT_ALPACA_API_KEY}
+#   (Portainer passes secrets as env vars — still encrypted, never in git)
 #
-# Or use .env file locally:
+# Local dev:
 #   cp .env.example .env
-#   # edit .env with your credentials
 #   docker compose up -d
 
 services:
@@ -55,6 +60,10 @@ services:
 
       # Knowledge base: raw course videos + transcripts (for cron transcription)
       - ./knowledge:/app/knowledge:ro
+
+      # Config: TradingView session cookie (for TV Premium API inside container)
+      # Also expose fincept/finnhub/alphavantage keys if needed
+      - ./config:/app/config:ro
 
     ports:
       - "5050:5050"   # Dashboard

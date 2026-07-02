@@ -7,6 +7,7 @@ Serves the live dashboard, runs scanner, handles decisions.
 import os, json, sys, threading, time
 from pathlib import Path
 from datetime import datetime, date
+from typing import List, Dict, Any
 from flask import Flask, jsonify, request, render_template
 from flask_cors import CORS
 from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeoutError
@@ -37,11 +38,22 @@ PREMARKET_DIR  = DATA_DIR / 'watchlists'
 
 
 def load_premarket_watchlist():
-    """Load today's premarket watchlist if it exists."""
+    """
+    Load today's premarket watchlist if it exists.
+    Checks multiple paths: Docker /app/data mount (NAS), and the local
+    E:\\Me\\TradingAgent\\data path (used by Mavis cron on Kay's machine).
+    """
     today = date.today().strftime('%Y%m%d')
     candidates = [
+        # Docker /app/data/watchlists/ (NAS mount — used by Portainer/NAS deployment)
         PREMARKET_DIR / f'watchlist_{today}.csv',
+        # Fallback: same path as Mavis cron on Kay's host machine
         DATA_DIR / 'watchlists' / f'watchlist_{today}.csv',
+        # Explicit Kay host path (E:\Me\TradingAgent\data — used when docker-compose
+        # resolves ./data relative to E:\Me\TradingAgent\)
+        Path(r'E:\Me\TradingAgent\data\watchlists') / f'watchlist_{today}.csv',
+        # Also check root-level watchlist CSV (written by some scanner runs)
+        DATA_DIR / f'watchlist_{today}.csv',
     ]
     for path in candidates:
         if path.exists():
@@ -195,10 +207,66 @@ def load_trading_engine_state():
 # SCANNER
 # ═══════════════════════════════════════════════════════════════════════════════
 
+def _load_watchlist_csv() -> List[Dict[str, Any]]:
+    """
+    Load gap stocks from Richard's premarket watchlist CSV.
+    This is the primary fallback when TV Premium API is unavailable inside the container.
+    Checks both the Docker /app/data mount and Kay's host path.
+    """
+    today_str = date.today().strftime('%Y%m%d')
+    candidates = [
+        DATA_DIR / 'watchlists' / f'watchlist_{today_str}.csv',
+        PREMARKET_DIR / f'watchlist_{today_str}.csv',
+        Path(r'E:\Me\TradingAgent\data\watchlists') / f'watchlist_{today_str}.csv',
+        DATA_DIR / f'watchlist_{today_str}.csv',
+    ]
+    for path in candidates:
+        if path.exists():
+            try:
+                import csv as csv_mod
+                rows = []
+                with open(path, 'r', encoding='utf-8') as f:
+                    reader = csv_mod.DictReader(f)
+                    for row in reader:
+                        sym = row.get('symbol', '').strip() or row.get('Symbol', '').strip()
+                        if not sym:
+                            continue
+                        try:
+                            rows.append({
+                                'symbol':       sym,
+                                'short_name':   row.get('short_name', sym),
+                                'price':        float(row.get('price') or 0),
+                                'gap_pct':      float(row.get('gap_pct') or 0),
+                                'rel_vol':      float(row.get('rel_vol') or 0),
+                                'float_m':      float(row.get('float_m') or 0),
+                                'total_score':  float(row.get('total_score') or 0),
+                                'p4_catalyst':  float(row.get('p4_catalyst') or 0),
+                                'news_summary':  row.get('news_summary', ''),
+                                'risk_flags':   [],
+                                'pillars':      {},
+                                'source':       'premarket_csv',
+                                'decided':       False,
+                                'decision':      None,
+                                'scan_time':     today_str,
+                            })
+                        except (ValueError, TypeError):
+                            continue
+                if rows:
+                    rows.sort(key=lambda x: x['total_score'], reverse=True)
+                    print(f"[scanner] Loaded {len(rows)} signals from watchlist CSV: {path.name}")
+                    return rows
+            except Exception as e:
+                print(f"[scanner] Failed to read watchlist CSV {path}: {e}")
+    return []
+
+
 def run_scan(min_score=2.5, symbols=None):
     """
     Run the Five Pillars scanner on all symbols.
-    Data source: TradingView Premium API (real-time) first, fallback to yfinance.
+    Data source priority:
+      1. TradingView Premium API (real-time) — if TV session mounted in container
+      2. Richard's premarket watchlist CSV (from Mavis cron on host machine)
+      3. yfinance with DEFAULT_UNIVERSE (last resort)
     Returns ranked signals.
     """
     today_str = berlin_now().strftime('%Y-%m-%d %H:%M')
@@ -211,8 +279,15 @@ def run_scan(min_score=2.5, symbols=None):
             tv_rows = tv_to_signal_rows(tv_df)
             print(f"[scanner] TV Premium: {len(tv_rows)} real-time setups")
 
-    # ── Step 2: Fallback to yfinance with explicit symbols ───────────────────
-    if not tv_rows:
+    # ── Step 2: Fallback to premarket watchlist CSV (from Richard's cron) ─────
+    # This is the key fallback for the Docker container — Richard's watchlist
+    # is written to E:\Me\TradingAgent\data\watchlists\ by the Mavis cron.
+    watchlist_signals: List[Dict[str, Any]] = []
+    if not tv_rows and symbols is None:
+        watchlist_signals = _load_watchlist_csv()
+
+    # ── Step 3: Last resort — yfinance with DEFAULT_UNIVERSE ─────────────────
+    if not tv_rows and not watchlist_signals:
         if symbols is None:
             symbols = DEFAULT_UNIVERSE
         quotes_raw = {}
@@ -224,12 +299,15 @@ def run_scan(min_score=2.5, symbols=None):
                     quotes_raw[sym] = q
         except Exception as e:
             print(f"[scanner] quote error: {e}")
+            # Still return watchlist signals even if yfinance fails
+            if watchlist_signals:
+                return [r for r in watchlist_signals if r['total_score'] >= min_score]
             return []
 
-    # ── Step 3: Score each symbol ──────────────────────────────────────────────
-    results = []
+    # ── Step 4: Score each symbol ──────────────────────────────────────────────
+    results: List[Dict[str, Any]] = []
 
-    # 3a: Score TV rows directly (price/gap already enriched from TV)
+    # 4a: Score TV rows directly (price/gap already enriched from TV)
     for row in tv_rows:
         sym = row['symbol']
         price = row['price']
@@ -278,7 +356,7 @@ def run_scan(min_score=2.5, symbols=None):
             'source':       'tv_api',
         })
 
-    # 3b: Score yfinance fallback symbols
+    # 4b: Score yfinance fallback symbols (DEFAULT_UNIVERSE path)
     for sym in (symbols or []):
         if tv_rows and sym in [r['symbol'] for r in tv_rows]:
             continue  # already scored via TV
@@ -333,6 +411,11 @@ def run_scan(min_score=2.5, symbols=None):
             'decision':     None,
             'source':       'yfinance',
         })
+
+    # 4c: Append watchlist CSV signals (already scored by Richard)
+    for sig in watchlist_signals:
+        if sig['symbol'] not in [r['symbol'] for r in results]:
+            results.append(sig)
 
     # Sort by score
     results.sort(key=lambda x: x['total_score'], reverse=True)
