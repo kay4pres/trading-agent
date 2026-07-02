@@ -41,23 +41,57 @@ def format_ts(seconds: float) -> str:
     return f"{h:02d}:{m:02d}:{s:02d}"
 
 
-def segment_file(path: Path, seg_dir: Path, max_mb: int = SEG_SIZE_MB) -> list[Path]:
-    """Split audio/video into chunks using ffmpeg."""
+def extract_audio(source: Path, wav_out: Path) -> bool:
+    """Extract audio track from MP4/video as a single WAV (1-2s for a full file).
+    Then segment that WAV — much faster than re-decoding video per chunk."""
+    try:
+        r = subprocess.run([
+            "ffmpeg", "-v", "error", "-i", str(source),
+            "-ac", "1", "-ar", "16000", "-acodec", "pcm_s16le",
+            str(wav_out), "-y"
+        ], capture_output=True, text=True, timeout=60)
+        if wav_out.exists() and wav_out.stat().st_size > 100_000:
+            return True
+        print(f"  ffmpeg failed: {r.stderr.strip()[:200]}")
+        return False
+    except Exception as e:
+        print(f"  extract_audio error: {e}")
+        return False
+
+
+def segment_wav(wav_path: Path, seg_dir: Path, max_mb: int = SEG_SIZE_MB) -> list[Path]:
+    """Split a WAV file into chunks using ffmpeg — fast since it's already audio."""
     seg_dir.mkdir(parents=True, exist_ok=True)
-    duration = get_duration(path)
+    duration = get_duration(wav_path)
     max_seconds = int((max_mb / 11) * 60)
     segments, idx = [], 0
     for start in range(0, int(duration), max_seconds):
         seg_path = seg_dir / f"seg_{idx:02d}.wav"
-        subprocess.run([
-            "ffmpeg", "-y", "-ss", str(start), "-i", str(path),
-            "-t", str(max_seconds), "-ac", "1", "-ar", "16000",
-            "-acodec", "pcm_s16le", "-fs", f"{max_mb}M", str(seg_path)
-        ], capture_output=True)
+        r = subprocess.run([
+            "ffmpeg", "-v", "error", "-ss", str(start), "-i", str(wav_path),
+            "-t", str(max_seconds), "-acodec", "pcm_s16le",
+            "-fs", f"{max_mb}M", str(seg_path), "-y"
+        ], capture_output=True, text=True)
         if seg_path.exists() and seg_path.stat().st_size > 50000:
             segments.append(seg_path)
             idx += 1
     print(f"  Segmented into {len(segments)} parts")
+    return segments
+
+
+def segment_file(path: Path, seg_dir: Path, max_mb: int = SEG_SIZE_MB) -> list[Path]:
+    """Split audio/video into chunks — now extracts full audio first, then segments."""
+    # Step 1: extract full audio to temp WAV
+    tmp_wav = seg_dir / "_full_audio.wav"
+    seg_dir.mkdir(parents=True, exist_ok=True)
+    print(f"  Extracting audio track...")
+    if not extract_audio(path, tmp_wav):
+        return []
+    print(f"  Audio extracted: {tmp_wav.stat().st_size/1e6:.0f}MB")
+    # Step 2: segment the WAV (fast — already audio)
+    segments = segment_wav(tmp_wav, seg_dir, max_mb)
+    # Clean up temp WAV
+    tmp_wav.unlink(missing_ok=True)
     return segments
 
 
@@ -132,77 +166,77 @@ C2_CH7_TARGETS = [
     {
         "source": C7_DIR / "Ch1-Part3 Micro Pullback Setup.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part3_Micro_Pullback.txt",
-        "seg": BASE / "_c2_ch7_p3_segs"),
+        "seg": BASE / "_c2_ch7_p3_segs",
         "desc": "C2 Ch7 P3 — Micro Pullback Setup",
         "size_mb": 1581,
     },
     {
         "source": C7_DIR / "Ch1Part5 HOD Breakout Setup.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part5_HOD_Breakout.txt",
-        "seg": BASE / "_c2_ch7_p5_segs"),
+        "seg": BASE / "_c2_ch7_p5_segs",
         "desc": "C2 Ch7 P5 — HOD Breakout Setup",
         "size_mb": 1242,
     },
     {
         "source": C7_DIR / "CH1-Part6 ABCD Setup.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part6_ABCD.txt",
-        "seg": BASE / "_c2_ch7_p6_segs"),
+        "seg": BASE / "_c2_ch7_p6_segs",
         "desc": "C2 Ch7 P6 — ABCD Setup",
         "size_mb": 1587,
     },
     {
         "source": C7_DIR / "Ch1-Part7 Moving Average Pullback Setup.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part7_MA_Pullback.txt",
-        "seg": BASE / "_c2_ch7_p7_segs"),
+        "seg": BASE / "_c2_ch7_p7_segs",
         "desc": "C2 Ch7 P7 — Moving Average Pullback",
         "size_mb": 891,
     },
     {
         "source": C7_DIR / "Ch1-Part8 Cup and Handle Setup.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part8_Cup_Handle.txt",
-        "seg": BASE / "_c2_ch7_p8_segs"),
+        "seg": BASE / "_c2_ch7_p8_segs",
         "desc": "C2 Ch7 P8 — Cup and Handle Setup",
         "size_mb": 699,
     },
     {
         "source": C7_DIR / "Ch1-Part9 Head and Shoulders Setup.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part9_Head_Shoulders.txt",
-        "seg": BASE / "_c2_ch7_p9_segs"),
+        "seg": BASE / "_c2_ch7_p9_segs",
         "desc": "C2 Ch7 P9 — Head and Shoulders Setup",
         "size_mb": 1031,
     },
     {
         "source": C7_DIR / "Ch1-Part10 Break of Pivot Setup.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part10_Break_Pivot.txt",
-        "seg": BASE / "_c2_ch7_p10_segs"),
+        "seg": BASE / "_c2_ch7_p10_segs",
         "desc": "C2 Ch7 P10 — Break of Pivot Setup",
         "size_mb": 1197,
     },
     {
         "source": C7_DIR / "Ch1-Part11 Break Of Vwap Setup.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part11_Break_VWAP.txt",
-        "seg": BASE / "_c2_ch7_p11_segs"),
+        "seg": BASE / "_c2_ch7_p11_segs",
         "desc": "C2 Ch7 P11 — Break of VWAP Setup",
         "size_mb": 2309,
     },
     {
         "source": C7_DIR / "Ch1-Part12 Trading In And Out Of Halts.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part12_Trading_Halts.txt",
-        "seg": BASE / "_c2_ch7_p12_segs"),
+        "seg": BASE / "_c2_ch7_p12_segs",
         "desc": "C2 Ch7 P12 — Trading In/Out of Halts",
         "size_mb": 2573,
     },
     {
         "source": C7_DIR / "Ch1-Part1 Intro to Momo.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part1_Intro_Momentum.txt",
-        "seg": BASE / "_c2_ch7_p1_segs"),
+        "seg": BASE / "_c2_ch7_p1_segs",
         "desc": "C2 Ch7 P1 — Intro to Momentum",
         "size_mb": 3192,
     },
     {
         "source": C7_DIR / "Ch1-Part4 The Half- & Whole-Dollar Setup.mp4",
         "output": TRANSCRIPT_DIR / "Chapter 7" / "Part4_Half_Whole_Dollar.txt",
-        "seg": BASE / "_c2_ch7_p4_segs"),
+        "seg": BASE / "_c2_ch7_p4_segs",
         "desc": "C2 Ch7 P4 — Half & Whole Dollar Setup",
         "size_mb": 2358,
     },
