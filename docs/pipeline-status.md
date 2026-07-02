@@ -1,13 +1,113 @@
 # Pipeline Status
-## Updated: 2026-07-02 14:30 Berlin (UTC+2)
+## Updated: 2026-07-02 15:00 Berlin (UTC+2)
 
 ---
 
-## Overall Status: ⚠️ Market Open — Scanner Running, 2 Fixes Pushed
+## Overall Status: 🔴 Container Rebuild Needed — 5 Fixes Pushed (Commit b0fa6d9)
 
-**14:30 check (Jul 2):** `last_scan: "20:59"` (yesterday) — scanner thread waits until 15:30 to run. Two bugs found and fixed:
-1. **`market_open` display bug** (app.py line 398): else branch set `market_open = "14:30" >= "14:00"` → `True` before market open. Removed.
-2. **`tradingview-screener` missing from container Dockerfile** — scanner fell back to default universe inside container. Fixed in `docker/Dockerfile` + `requirements.txt`. Push `0a6beb5` → triggers GitHub Actions rebuild → Portainer redeploy.
+**15:00 check (Jul 2):** Dashboard `last_scan: "20:59"` — Docker container's `run_scan()` returning empty results. Root cause: TV Premium API unavailable inside container → fell back to `DEFAULT_UNIVERSE` → no qualifying gap stocks → empty signals overwrote premarket watchlist each minute. Five fixes pushed in `b0fa6d9`.
+
+**Action needed:** Trigger GitHub Actions rebuild → push to `main` or use workflow_dispatch. Then Portainer webhook auto-recreates container with new image.
+
+**Today's Mavis cron:** Running fine — `signals_20260702_1500.json` created at 15:00 with 7 gap stocks (ICU, WFCF, LHAI, TC, RGC, SOC, TONX). Richard's premarket watchlist at `E:\Me\TradingAgent\data\watchlists\watchlist_20260702.csv` is live.
+
+---
+
+## Component Health
+
+| Component | Status | Notes |
+|-----------|--------|-------|
+| Dashboard (`/api/state`) | ✅ LIVE | `last_scan: "20:59"` stale — container scanner broken (see below) |
+| `fincept_connector.py` | ✅ HEALTHY | yfinance fallback confirmed working from host machine |
+| Scanner (app.py `run_scan`) | 🔴 FIXED | Added `_load_watchlist_csv()` fallback; TV API → watchlist CSV → yfinance |
+| Scanner (container TV API) | 🔴 FIXED | `./config:/app/config:ro` mount added; TOKEN_PATH checks `/app/config/tv_session.enc` first |
+| Bull/Bear Live Loop | ❌ OFFLINE | `vault/llm_api_key.enc` still MISSING |
+| Alpaca WebSocket Feed | ❌ BLOCKED | `vault/alpaca_secret.enc` still MISSING — Bull/Bear event-driven loop offline |
+| TV Premium API | ⚠️ LOCAL-ONLY | Works on host; inside container needs `./config` volume mount (FIXED ✅) |
+
+---
+
+## 15:00 Check (2026-07-02) — Root Cause Analysis
+
+**Dashboard `/api/state`:** `last_scan: "20:59"`, `signals: []`, `watchlist: []`, `market_open: true`. Scanner thread is running (market is open 15:30–21:00 Berlin) but returning empty every minute.
+
+**Root cause — three-layer failure in Docker container:**
+
+1. **TV Premium API fails silently** — `tv_session.enc` at `E:\Me\TradingAgent\config\` is not mounted into the container. `fetch_ross_universe()` returns empty DataFrame. No error logged because the try/except swallows it.
+
+2. **`DEFAULT_UNIVERSE` fallback has no qualifying stocks** — After TV API fails, `run_scan()` falls back to hardcoded list (SOFI, GPRO, SONO, PLTR, etc.). None have gap ≥10%, price $2–$20, float <20M AND score ≥2.5 simultaneously. Returns empty.
+
+3. **Empty results overwrite premarket watchlist** — `scan_thread()` loads Richard's 7-stock watchlist on market open, then `run_scan()` returns empty → overwrites `state['signals']` and `state['watchlist']` with `[]` every minute.
+
+**Mavis cron on Kay's machine:** Working perfectly. `signals_20260702_1500.json` at 15:00 shows 7 gap stocks. `watchlist_20260702.csv` has ICU (32% gap, 6.6× RV, score 2.5), WFCF, LHAI, TC, etc.
+
+**Evidence that `fincept_connector.py` is healthy:** No "quote error" in code path. `get_batch_quotes()` works fine on host machine. The issue is entirely in the Docker scanner's data source logic, not in the connector itself.
+
+---
+
+## Fixes Pushed (Commit b0fa6d9 → GitHub dev + Gitea dev)
+
+### Fix 1 — `dashboard/app.py`: Watchlist CSV fallback in `run_scan()` ✅
+```python
+# NEW: _load_watchlist_csv() reads Richard's premarket watchlist CSV
+# Priority: TV API → watchlist CSV → yfinance/DEFAULT_UNIVERSE
+if not tv_rows and symbols is None:
+    watchlist_signals = _load_watchlist_csv()
+# Append watchlist signals (already scored by Richard)
+for sig in watchlist_signals:
+    if sig['symbol'] not in [r['symbol'] for r in results]:
+        results.append(sig)
+```
+
+### Fix 2 — `dashboard/app.py`: `load_premarket_watchlist()` path candidates ✅
+```python
+candidates = [
+    PREMARKET_DIR / f'watchlist_{today}.csv',           # Docker /app/data/watchlists/
+    DATA_DIR / 'watchlists' / f'watchlist_{today}.csv', # Docker /app/data/watchlists/
+    Path(r'E:\Me\TradingAgent\data\watchlists') / ...,    # Kay's host path
+    DATA_DIR / f'watchlist_{today}.csv',                 # root-level CSV
+]
+```
+
+### Fix 3 — `docker-compose.yml`: Config volume mount ✅
+```yaml
+volumes:
+  - ./config:/app/config:ro   # NEW — TV session cookie accessible inside container
+```
+Then `tradingview_connector.py` checks `/app/config/tv_session.enc` first.
+
+### Fix 4 — `docker/Dockerfile`: CACHEBUST=20260702 ✅
+Forces fresh GitHub download on rebuild.
+
+### Fix 5 — `trading_agent/tradingview_connector.py`: Multi-path TOKEN_PATH ✅
+```python
+_TOKEN_PATHS = [
+    Path('/app/config/tv_session.enc'),       # Docker mount (NEW — checked first)
+    Path(r'E:\Me\TradingAgent\config\tv_session.enc'),  # Kay's host (existing)
+]
+```
+
+---
+
+## 🚨 Action Required: Rebuild Container
+
+GitHub Actions `build-deploy.yml` only triggers on push to `main`. To rebuild:
+
+**Option A — Merge dev to main (triggers auto-rebuild):**
+```bash
+git checkout main
+git merge dev
+git push origin main   # ← triggers GitHub Actions rebuild
+```
+
+**Option B — Manual workflow_dispatch (GitHub UI):**
+1. Go to: https://github.com/kay4pres/trading-agent/actions/workflows/build-deploy.yml
+2. Click "Run workflow" → branch: `dev` → Run
+3. Wait for build → Portainer webhook fires → container recreated
+
+**Option C — Rebuild manually in Portainer:**
+1. Portainer → Images → Build `nas:5000/trading-agent:dev` from `docker/Dockerfile`
+2. Container → Recreate from new image
 
 ---
 
