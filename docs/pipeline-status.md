@@ -1,9 +1,21 @@
 # Pipeline Status
-## Updated: 2026-07-02 17:30 Berlin (UTC+2)
+## Updated: 2026-07-02 18:00 Berlin (UTC+2)
 
 ---
 
 ## Overall Status: 🟢 Running Clean — Scanner Active, No Errors
+
+**18:00 check (Jul 2):** Dashboard at `http://10.8.0.10:5050` still unreachable from Mavis shell (NAS LAN not routable). Verified via local evidence:
+
+- **`fincept_connector.py` live test:** `get_batch_quotes(['SOFI','ICU','WFCF','LHAI','AAPL'])` → **5/5 returned valid quotes in 1.5s.** SOFI $18.16, ICU $4.96 (+0.1), WFCF $14.80, LHAI $1.89, AAPL $306.85. Logging active (`INFO: get_batch_quotes: 5/5 returned valid quotes`). ✅ **No quote error. No fix needed.**
+- **Latest scan file:** `signals_20260702_1607.json` — 6 scan files today (14:15→16:07), market still open until 21:00. Scanner cadence healthy.
+- **No "quote error" anywhere in scan data** — grepped all JSON in `data/`, no matches. ✅
+- **`signals_live.json`:** Contains only PMN (Jul 1 verdict: SKIP) — no new live signals today (Bull/Bear loop offline, expected).
+- **`decisions.json`:** Lives in container's `/app/data/` (NAS) — not locally accessible. No local decisions file (known: Docker mount mismatch from Jun 25 issue). Kay's Telegram decisions from today (ICU, WFCF, LHAI, DSY, CETX, CLRO, CMMB) stored in container, accessible when dashboard is reachable.
+
+**No fix needed.** Pipeline is clean. `fincept_connector.py` is healthy. Scanner running normally.
+
+---
 
 **17:30 check (Jul 2):** Cannot reach `http://10.8.0.10:5050/api/state` from this Mavis session (NAS LAN unreachable from this shell). Verified via local evidence instead:
 
