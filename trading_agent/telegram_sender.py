@@ -26,6 +26,10 @@ _pending_signals: Dict[int, Dict[str, Any]] = {}
 # Last update_id processed (avoids duplicate processing)
 _last_update_id = 0
 
+# Rate-limit: only log Telegram network timeout once per 5 minutes
+_last_timeout_log: float = 0.0
+_TIMEOUT_LOG_INTERVAL: float = 300.0  # 5 minutes
+
 
 def _get_token() -> Optional[str]:
     """
@@ -91,8 +95,13 @@ def _api_request(method: str, payload: dict) -> Optional[dict]:
             return json.loads(resp.read())
     except socket.timeout:
         # timeout=0 in getUpdates means Telegram returns immediately — if WE
-        # hit a socket timeout here, Docker network is stalling. Log once.
-        print(f"[telegram] getUpdates socket timeout — Docker network may be slow")
+        # hit a socket timeout here, Docker network is stalling. Rate-limit
+        # the log to avoid spamming every 5s during market hours.
+        global _last_timeout_log
+        now = time.time()
+        if now - _last_timeout_log >= _TIMEOUT_LOG_INTERVAL:
+            print(f"[telegram] getUpdates socket timeout — Docker network may be slow (will retry)")
+            _last_timeout_log = now
         return None
     except urllib.error.HTTPError as e:
         print(f"[telegram] HTTP {e.code} on {method}")

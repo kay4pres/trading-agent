@@ -14,13 +14,16 @@ Token cost: ~4 LLM calls per debate (~0.01 USD)
 Triggered only on high-confidence Richard signals (score ≥ 4.5)
 """
 
-import json, sys
+import json, os, sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import Optional
 
-# ── Config ────────────────────────────────────────────────────────────────────
-POSITIONS_FILE = Path(r'E:\Me\TradingAgent\data\positions.json')
+# ── Config — UTA/Docker: TRADING_DATA_DIR env var; Local: E:\Me\TradingAgent\data
+_DATA_ROOT = os.environ.get('TRADING_DATA_DIR', '').strip()
+DATA_DIR   = Path(_DATA_ROOT) if _DATA_ROOT else Path(r'E:\Me\TradingAgent\data')
+DATA_DIR.mkdir(parents=True, exist_ok=True)
+POSITIONS_FILE = DATA_DIR / 'positions.json'
 CONVICTION_THRESHOLD = 7.0   # Only open if conviction >= this
 MIN_SCORE_TO_DEBATE = 4.5   # Only debate signals this strong or stronger
 

@@ -3,7 +3,7 @@
 import yfinance as yf
 import pandas as pd
 import numpy as np
-from datetime import datetime, time
+from datetime import datetime, time, timedelta, timezone
 from pathlib import Path
 import json
 import os
@@ -84,36 +84,61 @@ def is_market_open():
 def get_gap_up_stocks():
     """
     Get stocks from watchlist that gapped up today OR are already running.
-    FIXED: The gap happened at open — we want stocks that are UP from yesterday
-    (they gapped, pulled back, and now might be ready for first pullback entry).
-    During market hours, we scan ALL stocks in watchlist.
+    FIXED: Use INTRADAY HIGH of today's session vs yesterday's daily close.
+    yfinance's "daily close" during market hours = current pullback level, not the gap.
+    Using intraday high captures the real gap-up even if price has pulled back.
     """
     stocks = []
     market_open_flag = is_market_open()
-    
+    today_actual = datetime.now().date()
+    yesterday = today_actual - timedelta(days=1)
+
     for ticker in WATCHLIST:
         try:
-            stock = yf.Ticker(ticker)
-            hist = stock.history(period='2d')
-            if len(hist) < 2:
+            # Get yesterday's daily close (the true reference for gap calculation)
+            daily = yf.download(ticker, period='3d', interval='1d', progress=False)
+            if isinstance(daily.columns, pd.MultiIndex):
+                daily.columns = daily.columns.get_level_values(0)
+            if len(daily) < 2:
                 continue
-            
-            today_close = hist['Close'].iloc[-1]
-            yesterday_close = hist['Close'].iloc[-2]
-            gap_pct = ((today_close - yesterday_close) / yesterday_close) * 100
-            
-            # Include if: (1) actively gapping NOW, OR (2) already up ≥5% from yesterday (gap happened)
+            # Find the bar closest to yesterday's date
+            daily = daily[daily.index.date <= today_actual]  # only today and earlier
+            if len(daily) < 2:
+                continue
+            yesterday_close = daily['Close'].iloc[-2]  # second-to-last daily bar
+
+            # Get today's intraday bars — use HIGH for gap detection (captures the real gap)
+            intraday = yf.download(ticker, period='5d', interval='5m', progress=False)
+            if isinstance(intraday.columns, pd.MultiIndex):
+                intraday.columns = intraday.columns.get_level_values(0)
+            if len(intraday) < 5:
+                continue
+
+            # Get today's intraday bars (yfinance labels today's session with today's date or yesterday)
+            today_intraday = intraday[intraday.index.date == today_actual]
+            if len(today_intraday) == 0:
+                # Fallback: use bars labeled as yesterday (yfinance quirk — today's session labeled as yesterday)
+                today_intraday = intraday[intraday.index.date == yesterday]
+            if len(today_intraday) == 0:
+                continue
+
+            # Use intraday HIGH as today's "gap price" — captures real gap even after pullback
+            today_gap_price = today_intraday['High'].max()
+            # Use intraday CLOSE as current price (where price is now after pullback)
+            today_close = today_intraday['Close'].iloc[-1]
+
+            gap_pct = ((today_gap_price - yesterday_close) / yesterday_close) * 100
+
             # During market hours: scan everything that's up from yesterday
             # Before market: only scan actual gap-ups
             if market_open_flag:
-                # Market is open — scan ALL stocks that are up from yesterday
                 if gap_pct >= INTRADAY_PARAMS['min_gap_pct']:
                     stocks.append({
                         'ticker': ticker,
                         'today_close': today_close,
                         'yesterday_close': yesterday_close,
                         'gap_pct': gap_pct,
-                        'status': 'GAP_UP' if market_open_flag else 'PRE_MARKET'
+                        'status': 'GAP_UP'
                     })
                 elif gap_pct >= 3.0:  # Also include moderately strong stocks
                     stocks.append({
@@ -135,7 +160,7 @@ def get_gap_up_stocks():
                     })
         except Exception as e:
             print(f'  ⚠ {ticker}: {e}')
-    
+
     return stocks
 
 def calculate_intraday_indicators(df):
@@ -275,6 +300,23 @@ def scan_intraday(ticker, gap_pct):
         if len(stock) < 30:
             return []
 
+        # === FRESHNESS GATE — skip if last bar is > 30 min old during market hours ===
+        # yfinance returns stale data during active trading; detect and skip silently
+        if len(stock) > 0:
+            last_bar_time = stock.index[-1]
+            # Normalize: yfinance bars are UTC, make both naive for comparison
+            if last_bar_time.tzinfo is not None:
+                last_bar_time = last_bar_time.replace(tzinfo=None)
+            now_utc = datetime.now(timezone.utc).replace(tzinfo=None)  # UTC naive, matches yfinance bar format
+            market_open_today = datetime.combine(now_utc.date(), time(14, 30))   # 14:30 UTC = 9:30 ET
+            market_close_today = datetime.combine(now_utc.date(), time(21, 0))    # 21:00 UTC = 4:00 ET
+            # Only enforce freshness gate during market hours
+            if market_open_today <= now_utc <= market_close_today:
+                age_minutes = (now_utc - last_bar_time).total_seconds() / 60
+                if age_minutes > 30:
+                    # Last bar is > 30 min old — likely yfinance cache lag, skip ticker
+                    return []
+
         stock = calculate_intraday_indicators(stock)
 
         signals = []
@@ -291,9 +333,16 @@ def scan_intraday(ticker, gap_pct):
                 if bar_idx < 10:
                     continue
 
-                # Today's bars for intraday high/low context
-                current_date = idx.date()
-                today_bars = stock[stock.index.date == current_date]
+                # yfinance labels the current session's bars with yesterday's date
+                # (e.g. July 2 trading session bars labeled as 07/01 until midnight ET crosses)
+                # Accept bars from today's calendar date OR yesterday's session
+                actual_today = datetime.now().date()
+                yesterday = actual_today - timedelta(days=1)
+                bar_cal_date = idx.date()
+                if bar_cal_date != actual_today and bar_cal_date != yesterday:
+                    continue
+                # Use the bar's labeled date for intraday high/low (consistent with yfinance)
+                today_bars = stock[stock.index.date == bar_cal_date]
 
                 if len(today_bars) == 0:
                     continue
