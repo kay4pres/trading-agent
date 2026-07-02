@@ -394,8 +394,6 @@ def scan_thread():
                 load_trading_engine_state()
             except Exception as e:
                 print(f"[scanner] error: {e}")
-        else:
-            state['market_open'] = berlin_now().strftime('%H:%M') >= '14:00'
         time.sleep(60)  # 1 min — also syncs positions/Bull-Bear
 
 
