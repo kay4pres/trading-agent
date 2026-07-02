@@ -31,54 +31,78 @@ _last_timeout_log: float = 0.0
 _TIMEOUT_LOG_INTERVAL: float = 300.0  # 5 minutes
 
 
+_token_cache: Optional[str] = None
+_token_logged_once: bool = False
+
+
 def _get_token() -> Optional[str]:
     """
     Get Telegram bot token. Priority:
     1. TELEGRAM_BOT_TOKEN env var (Docker / NAS deployment)
     2. Vault file /app/vault/TELEGRAM_BOT_TOKEN.env (written by entrypoint.py)
-    3. DPAPI vault file (Windows local deployment)
+    3. DPAPI vault file (Windows local deployment) -- SKIPPED in Docker (Linux)
     """
+    global _token_cache, _token_logged_once
+
+    if _token_cache is not None:
+        return _token_cache
+
     # Priority 1: env var (Docker path)
     env_token = os.environ.get('TELEGRAM_BOT_TOKEN')
     if env_token:
-        return env_token
+        _token_cache = env_token
+        return _token_cache
 
     # Priority 2: vault file written by entrypoint.py
     vault_file = Path('/app/vault/TELEGRAM_BOT_TOKEN.env')
     if vault_file.exists():
         try:
-            return vault_file.read_text(encoding='utf-8').strip()
+            token = vault_file.read_text(encoding='utf-8').strip()
+            if token:
+                _token_cache = token
+                return _token_cache
         except Exception:
             pass
 
-    # Priority 3: DPAPI vault file (Windows local deployment)
-    try:
-        raw = TOKEN_PATH.read_text(encoding='utf-8')
-    except Exception:
-        return None
-    if raw.startswith('\ufeff'):
-        raw = raw[1:]
-    ps = (
-        f"$b = '{raw.strip()}'; "
-        f"$s = ConvertTo-SecureString $b; "
-        f"[System.Runtime.InteropServices.Marshal]::PtrToStringAuto("
-        f"[System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($s))"
-    )
-    try:
-        result = subprocess.run(
-            ['powershell', '-Command', ps],
-            capture_output=True, text=True, timeout=15
+    # Priority 3: DPAPI vault -- SKIP in Docker (Linux)
+    # DPAPI is Windows-only and will fail silently in Docker
+    # Only try on Windows (sys.platform starts with 'win')
+    import sys as _sys
+    if _sys.platform.startswith('win') and TOKEN_PATH.exists():
+        try:
+            raw = TOKEN_PATH.read_text(encoding='utf-8')
+            if raw.startswith('\ufeff'):
+                raw = raw[1:]
+            ps = (
+                f"$b = '{raw.strip()}'; "
+                f"$s = ConvertTo-SecureString $b; "
+                f"[System.Runtime.InteropServices.Marshal]::PtrToStringAuto("
+                f"[System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($s))"
+            )
+            result = subprocess.run(
+                ['powershell', '-Command', ps],
+                capture_output=True, text=True, timeout=15
+            )
+            if result.returncode == 0:
+                _token_cache = result.stdout.strip()
+                return _token_cache
+        except Exception:
+            pass
+
+    if not _token_logged_once:
+        _token_logged_once = True
+        import logging
+        logging.getLogger('telegram_sender').warning(
+            "[telegram_sender] No Telegram token found. "
+            "Set TELEGRAM_BOT_TOKEN env var or /app/vault/TELEGRAM_BOT_TOKEN.env"
         )
-        return result.stdout.strip() if result.returncode == 0 else None
-    except Exception:
-        return None
+    return None
 
 
 def _api_request(method: str, payload: dict) -> Optional[dict]:
     """Make a Telegram Bot API call. Returns parsed JSON or None on failure."""
     token = _get_token()
     if not token:
-        print("[telegram_sender] ERROR: could not decrypt token")
         return None
     url = f"{API_BASE}/bot{token}/{method}"
     try:

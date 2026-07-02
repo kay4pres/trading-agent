@@ -22,48 +22,40 @@ services:
     container_name: trading-agent
     restart: unless-stopped
 
-    # Environment variables — set in Portainer stack config
-    # (NEVER commit real values to git)
+    # Environment variables — set in Portainer stack environment tab
+    # Or set directly below (uncomment and fill in for quick fix)
     environment:
       - TZ=Europe/Berlin
+
+      # ── Telegram (required for alerts) ──────────────────────────────────────
+      # Bot token from @BotFather
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
 
       # ── Alpaca ──────────────────────────────────────────────────────────────
       # Paper trading API keys from https://app.alpaca.markets/
       - ALPACA_API_KEY=${ALPACA_API_KEY}
       - ALPACA_SECRET_KEY=${ALPACA_SECRET_KEY}
 
-      # ── Telegram ───────────────────────────────────────────────────────────
-      # Bot token from @BotFather
-      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
-
       # ── LLM ─────────────────────────────────────────────────────────────────
       # MiniMax API key for Bull/Bear debate
       - MINIMAX_API_KEY=${MINIMAX_API_KEY}
 
       # ── Optional ────────────────────────────────────────────────────────────
-      # TradingView webhook secret (verify incoming alerts)
       - TV_WEBHOOK_SECRET=${TV_WEBHOOK_SECRET:-}
 
-    # Persist state across restarts — maps host folder to container vault
+    # Persist state across restarts — maps NAS Docker share to container
     volumes:
-      # Vault: encrypted credentials (host only, gitignored)
-      - ./vault:/app/vault:ro
+      # Vault: telegram token, TV session cookie, Alpaca keys
+      - /volume1/Docker:/app/vault:ro
 
       # Data: positions, signals, logs, watchlists
-      - ./data:/app/data
+      - /volume1/Docker:/app/data
 
       # Dashboard static files
-      - ./dashboard/static:/app/dashboard/static:ro
+      - /volume1/Docker/dashboard/static:/app/dashboard/static:ro
 
-      # Local models (Whisper) if present
-      - ./models:/app/models:ro
-
-      # Knowledge base: raw course videos + transcripts (for cron transcription)
-      - ./knowledge:/app/knowledge:ro
-
-      # Config: TradingView session cookie (for TV Premium API inside container)
-      # Also expose fincept/finnhub/alphavantage keys if needed
-      - ./config:/app/config:ro
+      # Knowledge base: transcripts, rules, course content
+      - /volume1/Docker/knowledge:/app/knowledge:ro
 
     ports:
       - "5050:5050"   # Dashboard
