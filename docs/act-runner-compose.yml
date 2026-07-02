@@ -1,0 +1,42 @@
+# Act Runner — Gitea Actions self-hosted runner
+# Runs on the NAS alongside Gitea. Needs Docker socket access to build images.
+#
+# Setup steps:
+#   1. Get runner registration token from Gitea:
+#      Gitea → Site Admin → Actions → Runners → New Runner
+#      OR via API: GET /api/v1/repos/trading/trading-agent/actions/runners/registration-token
+#
+#   2. Set GITEA_URL and RUNNER_TOKEN in this directory's .env:
+#      GITEA_URL=http://10.8.0.10:3000
+#      RUNNER_TOKEN=<token from step 1>
+#      GITEA_INSTANCE_CAPACITY=2
+#      GITEA_RUNNER_TOKEN=<same token>
+#
+#   3. Deploy via Portainer: Stacks → Add stack → name: "act-runner"
+#
+#   4. Verify: Gitea → Repo → Settings → Actions → Runners → should show "online"
+#
+# Key features:
+#   - Docker socket mounted: allows Docker-in-Docker for Kaniko builds
+#   - Named runner: "nas-act-runner"
+#   - Labels: self-hosted, linux, docker
+#   - Capacity: 2 concurrent jobs
+
+services:
+  act-runner:
+    image: gitea/act_runner:latest
+    container_name: act-runner
+    restart: unless-stopped
+    environment:
+      - GITEA_INSTANCE_URL=${GITEA_URL:-http://10.8.0.10:3000}
+      - GITEA_RUNNER_CAPACITY=${GITEA_INSTANCE_CAPACITY:-2}
+      - GITEA_RUNNER_NAME=nas-act-runner
+      - GITEA_RUNNER_LABELS=self-hosted,linux,docker
+      - GITEA_RUNNER_TOKEN=${GITEA_RUNNER_TOKEN}
+      - DOCKER_HOST=unix:///var/run/docker.sock
+      - GITEA_RUNNER_NO_REUSE=true
+    volumes:
+      - ./runner-data:/data
+      - /var/run/docker.sock:/var/run/docker.sock   # Docker socket for DinD
+    ports:
+      - "3030:3030"   # Runner debug port (optional)
