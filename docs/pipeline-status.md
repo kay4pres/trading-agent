@@ -1,15 +1,17 @@
 # Pipeline Status
-## Updated: 2026-07-02 15:00 Berlin (UTC+2)
+## Updated: 2026-07-02 15:30 Berlin (UTC+2)
 
 ---
 
-## Overall Status: 🔴 Container Rebuild Needed — 5 Fixes Pushed (Commit b0fa6d9)
+## Overall Status: 🟡 Bull/Bear Fix Pushed — Dashboard Healthy
 
-**15:00 check (Jul 2):** Dashboard `last_scan: "20:59"` — Docker container's `run_scan()` returning empty results. Root cause: TV Premium API unavailable inside container → fell back to `DEFAULT_UNIVERSE` → no qualifying gap stocks → empty signals overwrote premarket watchlist each minute. Five fixes pushed in `b0fa6d9`.
+**15:30 check (Jul 2):** Dashboard `last_scan: "15:33"` ✅ — scanner is running, cron pipeline healthy. Kay approved ICU/WFCF/LHAI via Telegram at 15:31.
 
-**Action needed:** Trigger GitHub Actions rebuild → push to `main` or use workflow_dispatch. Then Portainer webhook auto-recreates container with new image.
+**Issue found & fixed:** `scan_market_bull_bear.py` and `bull_bear_runner.py` only read `signals_live.json`. Today that file doesn't exist (live_event_loop offline — Alpaca secret missing). Scanner writes timestamped `signals_YYYYMMDD_HHMM.json` instead — Bull/Bear never picked them up.
 
-**Today's Mavis cron:** Running fine — `signals_20260702_1500.json` created at 15:00 with 7 gap stocks (ICU, WFCF, LHAI, TC, RGC, SOC, TONX). Richard's premarket watchlist at `E:\Me\TradingAgent\data\watchlists\watchlist_20260702.csv` is live.
+**Fix pushed in `90a2a62` (dev):** Both scripts now fall back to the latest `signals_YYYYMMDD_HHMM.json` when `signals_live.json` is absent. Auto-converts scanner format (ticker→symbol, ranked_signals array) to Bull/Bear format. Pushed to GitHub `dev` and Gitea `dev`.
+
+**No container rebuild needed** — this is a host-side script fix. Next Bull/Bear cron run (15:45) will use the fallback.
 
 ---
 
@@ -17,31 +19,31 @@
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| Dashboard (`/api/state`) | ✅ LIVE | `last_scan: "20:59"` stale — container scanner broken (see below) |
-| `fincept_connector.py` | ✅ HEALTHY | yfinance fallback confirmed working from host machine |
-| Scanner (app.py `run_scan`) | 🔴 FIXED | Added `_load_watchlist_csv()` fallback; TV API → watchlist CSV → yfinance |
-| Scanner (container TV API) | 🔴 FIXED | `./config:/app/config:ro` mount added; TOKEN_PATH checks `/app/config/tv_session.enc` first |
-| Bull/Bear Live Loop | ❌ OFFLINE | `vault/llm_api_key.enc` still MISSING |
-| Alpaca WebSocket Feed | ❌ BLOCKED | `vault/alpaca_secret.enc` still MISSING — Bull/Bear event-driven loop offline |
+| Dashboard (`/api/state`) | ✅ LIVE | `last_scan: "15:33"` — scanner running, Kay approving via Telegram |
+| `fincept_connector.py` | ✅ HEALTHY | yfinance fallback working, no quote errors |
+| Scanner (Mavis cron) | ✅ RUNNING | `signals_20260702_1500.json` with 7 gap stocks (ICU, WFCF, LHAI, TC, RGC, SOC, TONX) |
+| Bull/Bear Pipeline | 🟡 FIXED | Now reads timestamped scan files as fallback; LLM key still missing (runs inline Mavis) |
+| Bull/Bear Live Loop | ❌ OFFLINE | `vault/llm_api_key.enc` still MISSING — event-driven loop blocked |
+| Alpaca WebSocket Feed | ❌ BLOCKED | `vault/alpaca_secret.enc` still MISSING — live_event_loop offline |
 | TV Premium API | ⚠️ LOCAL-ONLY | Works on host; inside container needs `./config` volume mount (FIXED ✅) |
 
 ---
 
-## 15:00 Check (2026-07-02) — Root Cause Analysis
+## 15:30 Check (2026-07-02) — Findings & Fix
 
-**Dashboard `/api/state`:** `last_scan: "20:59"`, `signals: []`, `watchlist: []`, `market_open: true`. Scanner thread is running (market is open 15:30–21:00 Berlin) but returning empty every minute.
+**Dashboard `/api/state`:** `last_scan: "15:33"`, `market_open: true`. Kay approved ICU ($4.86), WFCF ($14.72), LHAI ($2.74) via Telegram at 15:31.
 
-**Root cause — three-layer failure in Docker container:**
+**No "quote error" found** — `fincept_connector.py` is healthy, yfinance fallback working.
 
-1. **TV Premium API fails silently** — `tv_session.enc` at `E:\Me\TradingAgent\config\` is not mounted into the container. `fetch_ross_universe()` returns empty DataFrame. No error logged because the try/except swallows it.
+**Root cause — Bull/Bear pipeline gap:**
+- `scan_market_bull_bear.py` only reads `signals_live.json`
+- Today `signals_live.json` does NOT exist (live_event_loop offline — Alpaca secret missing)
+- Scanner writes to timestamped `signals_YYYYMMDD_HHMM.json` files
+- Bull/Bear cron always returned "No signals found" → Kay manually approving via Telegram
 
-2. **`DEFAULT_UNIVERSE` fallback has no qualifying stocks** — After TV API fails, `run_scan()` falls back to hardcoded list (SOFI, GPRO, SONO, PLTR, etc.). None have gap ≥10%, price $2–$20, float <20M AND score ≥2.5 simultaneously. Returns empty.
+**Fix (`90a2a62`):** Both Bull/Bear scripts now fall back to latest `signals_YYYYMMDD_HHMM.json`. Auto-converts scanner's `ranked_signals` array (uses `ticker` field) to Bull/Bear format (`symbol` field). `signals_live.json` still written to when live_event_loop eventually comes online.
 
-3. **Empty results overwrite premarket watchlist** — `scan_thread()` loads Richard's 7-stock watchlist on market open, then `run_scan()` returns empty → overwrites `state['signals']` and `state['watchlist']` with `[]` every minute.
-
-**Mavis cron on Kay's machine:** Working perfectly. `signals_20260702_1500.json` at 15:00 shows 7 gap stocks. `watchlist_20260702.csv` has ICU (32% gap, 6.6× RV, score 2.5), WFCF, LHAI, TC, etc.
-
-**Evidence that `fincept_connector.py` is healthy:** No "quote error" in code path. `get_batch_quotes()` works fine on host machine. The issue is entirely in the Docker scanner's data source logic, not in the connector itself.
+**Pushed:** GitHub `dev` + Gitea `dev`. No container rebuild needed.
 
 ---
 
@@ -115,13 +117,14 @@ git push origin main   # ← triggers GitHub Actions rebuild
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| Dashboard (`/api/state`) | ✅ LIVE | Responding cleanly. `last_scan: "20:59"` from yesterday (expected — market just opened at 15:30) |
-| `fincept_connector.py` | ✅ HEALTHY | `get_batch_quotes(['SOFI','MIMI','ILLR'])` → 3 quotes, no errors |
-| Scanner (app.py `scan_thread`) | ✅ FIXED | `market_open` display bug removed — was showing `true` at 14:30 before market open |
-| Scanner (container TV API) | 🔴 FIXED | `tradingview-screener` added to `docker/Dockerfile` + `requirements.txt` — was missing, scanner fell back to default universe |
+| Dashboard (`/api/state`) | ✅ LIVE | `last_scan: "15:33"` — scanner running |
+| `fincept_connector.py` | ✅ HEALTHY | yfinance fallback confirmed working from host machine |
+| Scanner (app.py `run_scan`) | ✅ FIXED | `_load_watchlist_csv()` fallback active |
+| Scanner (container TV API) | 🔴 FIXED | `./config:/app/config:ro` mount + TOKEN_PATH fix |
+| Bull/Bear Pipeline | ✅ FIXED | Falls back to timestamped scan files when `signals_live.json` absent |
 | Bull/Bear Live Loop | ❌ OFFLINE | `vault/llm_api_key.enc` still MISSING |
 | Alpaca WebSocket Feed | ❌ BLOCKED | `vault/alpaca_secret.enc` still MISSING — Bull/Bear event-driven loop offline |
-| TV Premium API | ⚠️ LOCAL-ONLY | `tv_session.enc` on host not mounted into container — TV API works from local dev, not from container |
+| TV Premium API | ⚠️ LOCAL-ONLY | Works on host; inside container needs `./config` volume mount (FIXED ✅) |
 
 ---
 
