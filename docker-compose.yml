@@ -47,23 +47,23 @@ services:
     # Persist state across restarts — maps host folder to container vault
     volumes:
       # Vault: encrypted credentials (host only, gitignored)
-      - ./vault:/app/vault:ro
+      - /volume1/Docker/vault:/app/vault:rw
 
       # Data: positions, signals, logs, watchlists
-      - ./data:/app/data
+      - /volume1/Docker/data:/app/data
 
       # Dashboard static files
-      - ./dashboard/static:/app/dashboard/static:ro
+      - /volume1/Docker/dashboard/static:/app/dashboard/static:ro
 
       # Local models (Whisper) if present
-      - ./models:/app/models:ro
+      - /volume1/Docker/models:/app/models:ro
 
       # Knowledge base: raw course videos + transcripts (for cron transcription)
-      - ./knowledge:/app/knowledge:ro
+      - /volume1/Docker/knowledge:/app/knowledge:ro
 
       # Config: TradingView session cookie (for TV Premium API inside container)
       # Also expose fincept/finnhub/alphavantage keys if needed
-      - ./config:/app/config:ro
+      - /volume1/Docker/config:/app/config:ro
 
     ports:
       - "5050:5050"   # Dashboard
