@@ -1,5 +1,41 @@
 # Pipeline Status
-## Updated: 2026-07-03 15:00 Berlin (UTC+2)
+## Updated: 2026-07-03 16:00 Berlin (UTC+2)
+
+---
+
+## 16:00 Check (Jul 3) — Scanner Active ✅
+
+**Dashboard `/api/state`:** `last_scan: "15:59"`, `market_open: true`, `bull_bear: []`, `decisions: []`, `positions: []`, `pnl: 0.0`, `signals: []`, `watchlist: []`, `selected: null`, `mount_status: "missing_today_watchlist"`.
+
+**Everything is normal:**
+- `last_scan: "15:59"` — scanner fired on schedule, 1 minute fresh. NOT frozen.
+- `signals: []` + `watchlist: []` — known watchlist CSV mount gap (container can't reach Kay's local `E:\Me\TradingAgent\data/watchlists/`). Scanner falls back to `DEFAULT_UNIVERSE`, none qualifying at score ≥ 2.5. Normal.
+- `mount_status: "missing_today_watchlist"` — confirmed by `/api/mount-status`. Known pre-market gap. Not a code issue.
+- **`fincept_connector.py`:** No "quote error" in state. `FileNotFoundError` on hardcoded Windows Fincept path (`C:\Program Files\FinceptTerminal\scripts\yfinance_data.py`) correctly triggers yfinance fallback (lines 53–55). **No fix needed** — fallback is working cleanly. The hardcoded path is a known limitation but non-fatal.
+- **Known bug confirmed present but handled:** Line 30 of `fincept_connector.py` still has the hardcoded Windows Fincept path. Inside the Linux container this always raises `FileNotFoundError` → gracefully falls back to yfinance → scanner continues uninterrupted. Already documented in known-bugs backlog. No push needed this check.
+
+**fincept_connector.py status:** ✅ HEALTHY — no fix needed. Pipeline is clean. Next scan at 16:30.
+
+**No fix pushed.** Pipeline is clean.
+
+---
+
+## 15:30 Check (Jul 3) — Scanner Active ✅
+
+**Dashboard `/api/state`:** `last_scan: "15:30"`, `market_open: true`, `bull_bear: []`, `decisions: []`, `positions: []`, `pnl: 0.0`, `signals: []`, `watchlist: []`, `selected: null`.
+
+**Dashboard `/api/mount-status`:** `data_dir_exists: true`, `watchlist_dir_exists: true`, `today_csv_exists: false`. Today's watchlist CSV (`watchlist_20260703.csv`) is missing — known mount gap (container can't reach Kay's local `E:\Me\TradingAgent\data\watchlists/`).
+
+**Everything is normal:**
+- `last_scan: "15:30"` — scanner fired on schedule the moment market opened. Fresh and healthy.
+- `signals: []` + `watchlist: []` — no watchlist CSV mounted in container (known mount gap), scanner falls back to `DEFAULT_UNIVERSE` (24 stocks, none qualifying at score ≥ 2.5). Normal.
+- **`fincept_connector.py`:** No "quote error" in state. Scanner ran cleanly at 15:30. The hardcoded Windows Fincept path (`C:\Program Files\FinceptTerminal\`) correctly triggers `FileNotFoundError` → yfinance fallback (lines 53–55). No fix needed.
+- **`[scanner] quote error`** (app.py:342): this catch-all only fires if `get_batch_quotes()` raises an unhandled exception. Since the scanner ran at 15:30 with no error surfaced, yfinance fallback handled it cleanly.
+- `mount_status: "missing_today_watchlist"` — known pre-market gap. Richard's 14:00 cron writes to Kay's local path; container has no access. Not a code issue.
+
+**fincept_connector.py status:** ✅ HEALTHY — no fix needed. Pipeline is clean. Scanner resumes next slot at 16:00.
+
+**No fix pushed.** Pipeline is clean.
 
 ---
 
