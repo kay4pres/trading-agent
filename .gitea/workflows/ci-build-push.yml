@@ -2,7 +2,7 @@ name: CI — Lint, Build & Push
 
 on:
   push:
-    branches: [main, dev]
+    branches: [main, dev, uat]
   pull_request:
     branches: [main]
 
@@ -70,6 +70,19 @@ jobs:
             --file docker/Dockerfile \
             .
 
+      - name: Redeploy via Portainer API
+        run: |
+          # Get Portainer session cookie
+          COOKIE=$(curl -s -c - -X POST http://localhost:9000/api/auth \
+            -H 'Content-Type: application/json' \
+            -d '{"username":"${{ secrets.PORTAINER_USER }}","password":"${{ secrets.PORTAINER_PASS }}"}' \
+            | grep -oP 'portainer_session=\K[^;]+' || true)
+          # Redeploy stack 10 (trading-agent)
+          curl -s -X PUT http://localhost:9000/api/stacks/10 \
+            -H 'Content-Type: application/json' \
+            -H "Cookie: portainer_session=$COOKIE" \
+            -d '{"prune":true}' | grep -oP '"Status":\K[0-9]+' || echo "Redeploy triggered"
+
   # ── Job 3: Docker Build & Push (main branch) ───────────────────────────────
   build-main:
     name: Build & Push (main → nas:5000)
@@ -101,6 +114,47 @@ jobs:
             --cache-from type=registry,ref=nas:5000/trading-agent:main \
             --cache-to type=registry,ref=nas:5000/trading-agent:main \
             --build-arg GIT_REF=main \
+            --build-arg CACHEBUST=${{ github.sha }} \
+            --push \
+            --file docker/Dockerfile \
+            .
+
+      - name: Redeploy via Portainer API
+        run: |
+          COOKIE=$(curl -s -c - -X POST http://localhost:9000/api/auth \
+            -H 'Content-Type: application/json' \
+            -d '{"username":"${{ secrets.PORTAINER_USER }}","password":"${{ secrets.PORTAINER_PASS }}"}' \
+            | grep -oP 'portainer_session=\K[^;]+' || true)
+          curl -s -X PUT http://localhost:9000/api/stacks/10 \
+            -H 'Content-Type: application/json' \
+            -H "Cookie: portainer_session=$COOKIE" \
+            -d '{"prune":true}' | grep -oP '"Status":\K[0-9]+' || echo "Redeploy triggered"
+
+  # ── Job 4: Docker Build & Push (uat branch) ────────────────────────────────
+  build-uat:
+    name: Build & Push (uat → nas:5000)
+    runs-on: [self-hosted, linux, docker]
+    if: github.ref == 'refs/heads/uat'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Log in to NAS registry
+        run: |
+          echo "${{ secrets.NAS_REGISTRY_PASS }}" | docker login nas:5000 \
+            -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin
+
+      - name: Set up Docker Buildx
+        run: docker buildx create --use --name multiarch || docker buildx use multiarch
+
+      - name: Build and push (uat tag)
+        run: |
+          docker buildx build \
+            --platform linux/amd64 \
+            --tag nas:5000/trading-agent:uat \
+            --cache-from type=registry,ref=nas:5000/trading-agent:uat \
+            --cache-to type=registry,ref=nas:5000/trading-agent:uat \
+            --build-arg GIT_REF=uat \
             --build-arg CACHEBUST=${{ github.sha }} \
             --push \
             --file docker/Dockerfile \
