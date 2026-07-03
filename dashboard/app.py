@@ -8,7 +8,7 @@ import os, json, sys, threading, time
 from pathlib import Path
 from datetime import datetime, date
 from typing import List, Dict, Any
-from flask import Flask, jsonify, request, render_template
+from flask import Flask, jsonify, request, render_template, send_from_directory
 from flask_cors import CORS
 from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeoutError
 
@@ -22,9 +22,7 @@ from trading_agent.telegram_sender import (
     send_alert, send_signal_with_buttons, start_polling, _pending_signals
 )
 
-app = Flask(__name__,
-            template_folder=str(Path(__file__).parent / 'static'),
-            static_folder=str(Path(__file__).parent / 'static'))
+app = Flask(__name__, static_folder=str(Path(__file__).parent / 'static'))
 CORS(app)
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
@@ -612,8 +610,9 @@ def on_telegram_button(action: str, symbol: str = None, price: float = None, sco
 
 @app.route('/')
 def index():
-    """Serve the dashboard HTML."""
-    return render_template('dashboard.html')
+    """Serve the dashboard HTML from static folder."""
+    static_dir = Path(__file__).parent / 'static'
+    return send_from_directory(static_dir, 'dashboard.html')
 
 
 @app.route('/api/state')
