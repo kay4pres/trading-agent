@@ -1,0 +1,44 @@
+# docker-compose.yml — Gitea Self-Hosted Git Server (rootless)
+# Deploy via Portainer: Stacks → Add stack → Web editor → paste this file
+#
+# Official source: https://docs.gitea.com/installation/install-with-docker-rootless
+#
+# First-time setup:
+# 1. Portainer → Stacks → Add stack → name: "gitea" → Web editor → paste this
+# 2. Create → wait ~30s for container to start
+# 3. Open http://10.8.0.10:3000 → first-run wizard
+# 4. Wizard choices:
+#    - Database: SQLite3 (default, no extra container needed)
+#    - Domain: 10.8.0.10
+#    - HTTP Port: 3000
+#    - Root URL: http://10.8.0.10:3000
+#    - SSH Port: 2222
+#    - Create admin account
+# 5. In Gitea UI → Create new repo "trading-agent" (empty)
+# 6. On local PC:
+#      cd E:\Me\TradingAgent
+#      git remote set-url origin http://10.8.0.10:3000/your-user/trading-agent.git
+#      git push -u origin main
+
+services:
+  server:
+    image: docker.gitea.com/gitea:1.26.4-rootless
+    container_name: gitea
+    restart: always
+    environment:
+      - USER_UID=1000
+      - USER_GID=1000
+    volumes:
+      - gitea-data:/var/lib/gitea
+      - gitea-config:/etc/gitea
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - "3000:3000"   # Web UI
+      - "2222:2222"   # SSH git (use ssh://git@10.8.0.10:2222/...)
+
+volumes:
+  gitea-data:
+    driver: local
+  gitea-config:
+    driver: local

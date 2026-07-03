@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  trading-agent:
+    image: python:3.12-slim
+    container_name: trading-agent
+    restart: unless-stopped
+
+    environment:
+      - TZ=Europe/Berlin
+      - ALPACA_API_KEY=${ALPACA_API_KEY}
+      - ALPACA_SECRET_KEY=${ALPACA_SECRET_KEY}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - MINIMAX_API_KEY=${MINIMAX_API_KEY}
+
+    volumes:
+      - ./vault:/app/vault:ro
+      - ./data:/app/data
+
+    ports:
+      - "5050:5050"

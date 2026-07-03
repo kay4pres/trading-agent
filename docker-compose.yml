@@ -45,17 +45,25 @@ services:
 
     # Persist state across restarts — maps NAS Docker share to container
     volumes:
-      # Vault: telegram token, TV session cookie, Alpaca keys
-      - /volume1/Docker:/app/vault:ro
+      # Vault: encrypted credentials (host only, gitignored)
+      # MUST be :rw — entrypoint writes .env files to it
+      - /volume1/Docker/vault:/app/vault:rw
 
       # Data: positions, signals, logs, watchlists
-      - /volume1/Docker:/app/data
+      - /volume1/Docker/data:/app/data
 
       # Dashboard static files
       - /volume1/Docker/dashboard/static:/app/dashboard/static:ro
 
-      # Knowledge base: transcripts, rules, course content
+      # Local models (Whisper) if present
+      - /volume1/Docker/models:/app/models:ro
+
+      # Knowledge base: raw course videos + transcripts (for cron transcription)
       - /volume1/Docker/knowledge:/app/knowledge:ro
+
+      # Config: TradingView session cookie (for TV Premium API inside container)
+      # Also expose fincept/finnhub/alphavantage keys if needed
+      - /volume1/Docker/config:/app/config:ro
 
     ports:
       - "5050:5050"   # Dashboard
