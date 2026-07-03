@@ -1,5 +1,47 @@
 # Pipeline Status
-## Updated: 2026-07-03 16:00 Berlin (UTC+2)
+## Updated: 2026-07-03 16:30 Berlin (UTC+2)
+
+---
+
+## 16:30 Check (Jul 3) — ROOT CAUSE FOUND + FIX PUSHED 🔴→🟡
+
+**Dashboard `/api/state`:** `last_scan: "16:29"`, `market_open: true`, `watchlist: {}`, `signals: {}`, `positions: {}`, `bull_bear: {}`, `decisions: {}`, `mount_status: "missing_today_watchlist"`.
+
+**Diagnosis — SCANNER IS RUNNING but all cron jobs are FAILING:**
+
+```
+$ docker logs trading-agent --tail 100
+/bin/sh: 1: python: not found   ← repeated ~100x
+```
+
+**Root cause identified:** `entrypoint.py` crontab entries use `python` instead of `python3`. The Alpine Linux container has `python3` but no `python` symlink. Every cron job (Richard premarket, Bull/Bear scanner, transcription) silently fails.
+
+**Effects:**
+- `watchlist: {}` — Richard's premarket (14:00 Berlin) never ran → no watchlist today
+- `signals: {}` — Bull/Bear scanner cron failing since container started → zero signals
+- `mount_status: "missing_today_watchlist"` — consequence of missing watchlist CSV
+- `bull_bear: {}`, `decisions: {}` — all downstream from failed scanner
+
+**Fixes applied (`10c1f89` on Gitea `dev`):**
+1. `entrypoint.py` crontab: all `python` → `python3` (5 cron entries)
+2. `fincept_connector.py`: platform-aware path — only tries Windows Fincept path on `sys.platform == "win32"`, otherwise uses yfinance directly (no FileNotFoundError chain)
+
+**Container rebuild required** — `entrypoint.py` is baked into the Docker image, not a volume mount. Until rebuilt:
+- Scanner thread (dashboard app) is still running ✅
+- All cron jobs will continue to fail
+
+**How to rebuild:**
+- Option A: `git checkout main && git merge dev && git push origin main` (GitHub Actions auto-rebuilds → Portainer webhook redeploys)
+- Option B: Portainer UI → Stacks → trading-agent → Recreate (or "Update stack" to pull new image)
+- Option C: GitHub Actions → `build-deploy.yml` → Run workflow → branch: `dev`
+
+**fincept_connector.py:** Already had yfinance fallback — not the primary cause but fixed anyway. The Windows path was always triggering `FileNotFoundError` → yfinance fallback on every call. Now uses platform check at top of `_run()` so Linux containers skip Fincept entirely.
+
+**Pushed:** Gitea `dev` (commit `10c1f89`). GitHub push pending (container rebuild required first).
+
+---
+
+## 16:00 Check (Jul 3) — Scanner Active ✅
 
 ---
 
