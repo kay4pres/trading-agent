@@ -37,15 +37,17 @@ FINCEPT_YF = _FINCEPT_HOST  # keep for reference; actual path decided in _run()
 
 def _run(args: List[str]) -> Dict[str, Any]:
     """Run Fincept script, return parsed JSON. Falls back to yfinance directly."""
-    # Try Fincept only if running on Windows (host has Fincept Terminal installed)
+    # Always use yfinance in Docker/Linux — Fincept is a Windows-only desktop app
     fincept_path = None
-    if sys.platform == "win32":
+    try:
         import os
-        if os.path.exists(_FINCEPT_HOST):
+        # Only try Fincept if explicitly on Windows AND file exists
+        if sys.platform == "win32" and os.path.exists(_FINCEPT_HOST):
             fincept_path = _FINCEPT_HOST
+    except Exception:
+        pass  # Fall through to yfinance on any error
 
     if fincept_path is None:
-        logger.info(f"Fincept script not found on this platform, falling back to yfinance")
         return _fallback_yfinance(args)
 
     try:

@@ -22,7 +22,16 @@ from datetime import datetime, date, timedelta
 from pathlib import Path
 from typing import Optional, List, Dict, Any
 
-FINCEPT_YF = r"C:\Program Files\FinceptTerminal\scripts\yfinance_data.py"
+FINCEPT_YF = r"C:\Program Files\FinceptTerminal\scripts\yfinance_data.py"  # Windows only — unused in Docker
+
+
+def _in_docker() -> bool:
+    """Detect if running inside a Docker container."""
+    try:
+        with open("/proc/1/cgroup", "r") as f:
+            return "docker" in f.read().lower() or "/app" in __file__
+    except Exception:
+        return False
 TOKEN_DIR   = Path(r"E:\Me\TradingAgent\config")
 
 
@@ -167,18 +176,26 @@ def _alphavantage_news(symbol: str) -> List[Dict[str, Any]]:
 # ── Provider 3: Fincept/yfinance fallback ─────────────────────────────────────
 
 def _yfinance_news(symbol: str, count: int = 5) -> List[Dict[str, Any]]:
-    """Get news via Fincept's yfinance_data.py."""
-    try:
-        result = subprocess.run(
-            ['python', FINCEPT_YF, 'news', symbol, str(count)],
-            capture_output=True, text=True, timeout=30
-        )
-        if result.returncode == 0:
-            raw = result.stdout.strip()
-            if raw.startswith('['):
-                return json.loads(raw)
-    except Exception:
-        pass
+    """Get news via yfinance — Fincept is Windows-only, skip in Docker."""
+    # Skip Fincept in Docker — it's a Windows desktop app
+    if _in_docker():
+        fincept_available = False
+    else:
+        import os
+        fincept_available = os.path.exists(FINCEPT_YF)
+
+    if fincept_available:
+        try:
+            result = subprocess.run(
+                ['python', FINCEPT_YF, 'news', symbol, str(count)],
+                capture_output=True, text=True, timeout=30
+            )
+            if result.returncode == 0:
+                raw = result.stdout.strip()
+                if raw.startswith('['):
+                    return json.loads(raw)
+        except Exception:
+            pass
 
     # Direct yfinance fallback
     try:
