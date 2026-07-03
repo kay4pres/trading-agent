@@ -764,6 +764,13 @@ def poll_callbacks(callback_handler=None):
 
                     continue
 
+                # ── Fallback: reply to any text message ──────────────────────────
+                _reply_to_chat(chat_id,
+                    "👋 I'm running! Use `/pm status` for pipeline check, "
+                    "`/approve SYMBOL` or `/deny SYMBOL` for signals."
+                )
+                continue
+
                 # Parse: /key finnhub YOUR_KEY_HERE
                 parts = text.split(' ', 2)
                 if len(parts) < 3:
