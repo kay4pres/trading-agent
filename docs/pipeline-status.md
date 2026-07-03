@@ -1,5 +1,21 @@
 # Pipeline Status
-## Updated: 2026-07-03 14:30 Berlin (UTC+2)
+## Updated: 2026-07-03 15:00 Berlin (UTC+2)
+
+---
+
+## 15:00 Check (Jul 3) — Scanner Idle — Market Opens 15:30 ✅
+
+**Dashboard `/api/state`:** `last_scan: "13:02"`, `market_open: false`, `watchlist: []`, `signals: []`, `mount_status: "missing_today_watchlist"`.
+
+**Dashboard `/api/mount-status`:** `data_dir_exists: true`, `watchlist_dir_exists: true`, `today_csv_exists: false`. Normal pre-market.
+
+**Everything is normal:**
+- `market_open: false` — US market opens at **15:30 Berlin** (27 min from now). Cron schedule (`30,45 15 * * 1-5` + `0,15,30,45 16-20`) starts at 15:30.
+- `last_scan: "13:02"` — from Thursday's (Jul 2) last scan. Container has been running continuously since then. No scans run during pre-market (cron has no slots 13:00–15:00). This is normal.
+- `watchlist: []` + `mount_status: "missing_today_watchlist"` — no watchlist CSV for 2026-07-03 yet. Normal pre-market.
+- **`fincept_connector.py` live test:** `get_batch_quotes(['AAPL','SOFI','MIMI','ILLR'])` → **4/4 valid quotes in ~1.5s.** AAPL $308.63, SOFI $18.24, MIMI $2.25, ILLR $2.54. Historical bars: 78 bars, last from 2026-07-02 21:55 (yesterday). ✅ **No "quote error." No fix needed.**
+- **AAPL 5m bar staleness:** Bars from 2026-07-02 21:55 — yfinance intraday data is from yesterday's close. Not a blocker; scanner uses 5-min bars for pattern detection, and Bull/Bear pipeline will run fresh analysis at 15:30.
+- **No fix pushed.** Pipeline resumes at 15:30 when market opens.
 
 ---
 
