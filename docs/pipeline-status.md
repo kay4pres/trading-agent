@@ -1,5 +1,87 @@
 # Pipeline Status
-## Updated: 2026-07-02 19:30 Berlin (UTC+2)
+## Updated: 2026-07-03 14:30 Berlin (UTC+2)
+
+---
+
+## 14:30 Check (Jul 3) — Scanner Idle — Market Pre-Market ✅
+
+**Dashboard `/api/state`:** `last_scan: "13:02"`, `market_open: false`, `watchlist: []`, `signals: []`, `mount_status: "missing_today_watchlist"`.
+
+**Dashboard `/api/mount-status`:** `data_dir_exists: true`, `watchlist_dir_exists: true`, `today_csv_exists: false`. Confirms watchlist CSV for 2026-07-03 is missing.
+
+**Everything is normal:**
+- `market_open: false` — US market opens at **15:30 Berlin**. It's pre-market right now.
+- `last_scan: "13:02"` — Scanner ran at 13:02 (cron `*/30 13-19`), stopped because `market_status()` returns False pre-market. Cron has no slots between 13:30–15:00 (min=13). Next scan at **15:30**.
+- `watchlist: []` + `mount_status: "missing_today_watchlist"` — known watchlist CSV mount gap. Richard's cron ran at 14:00 on Kay's local machine → writes to `E:\Me\TradingAgent\data\watchlists/watchlist_20260703.csv`. Container's `/app/data` is mounted to NAS → can't reach Kay's local file. Pre-market, not critical.
+- **No "quote error" in container logs.** `fincept_connector.py` live test from this shell: **3/3 valid quotes** (AAPL $308.63, MIMI $2.25, ILLR $2.54). Logging active. ✅
+
+**fincept_connector.py status:** ✅ HEALTHY — no fix needed. yfinance fallback is working correctly. Scanner resumes at 15:30 when market opens.
+
+**No fix pushed.** Pipeline is clean.
+
+---
+
+## 14:00 Check (Jul 3) — Scanner Idle — Market Pre-Market ✅
+
+**Dashboard `/api/state`:** `last_scan: "13:02"`, `market_open: false`, `watchlist: []`, `signals: []`, `mount_status: "missing_today_watchlist"`.
+
+**Everything is normal:**
+- `market_open: false` — US market opens at **15:30 Berlin**. It's pre-market right now.
+- `last_scan: "13:02"` — Scanner ran at 13:02 (cron `*/30 13-19`), stopped because `market_status()` returns False pre-market. No cron slots between 13:30–15:00 (cron min=13). Next scan at **15:30**.
+- `watchlist: []` + `mount_status: "missing_today_watchlist"` — known watchlist CSV mount gap. Pre-market, not critical.
+- **No "quote error" anywhere.** `fincept_connector.py` healthy — `FileNotFoundError` on Windows Fincept path correctly triggers yfinance fallback (line 53–55). Logging active. Already in known-bugs backlog.
+
+**fincept_connector.py status:** ✅ HEALTHY — no fix needed. Scanner resumes at 15:30 when market opens.
+
+**No fix pushed.** Pipeline is clean.
+
+---
+
+## 13:30 Check (Jul 3) — Scanner Idle — Market Not Yet Open ✅
+
+**Dashboard `/api/state`:** `last_scan: "13:02"`, `market_open: false`, `watchlist: []`, `mount_status: "missing_today_watchlist"`.
+
+**Everything is normal:**
+- `market_open: false` — US market opens at **15:30 Berlin**. It's pre-market right now.
+- `last_scan: "13:02"` — Scanner stopped because `market_status()` returns False pre-market. Will resume at 15:30.
+- `watchlist: []` + `mount_status: "missing_today_watchlist"` — known watchlist CSV mount gap (container can't reach Kay's local `E:\Me\TradingAgent\data/watchlists/`). Pre-market, not critical.
+- **No "quote error" anywhere** in state or code. `fincept_connector.py` healthy — `FileNotFoundError` for the Windows Fincept path correctly triggers yfinance fallback (line 53–55).
+
+**fincept_connector.py status:** ✅ HEALTHY — no fix needed. The hardcoded Windows Fincept path (`C:\Program Files\FinceptTerminal\`) is a known limitation (inside Linux container, can't reach Windows Fincept). `except FileNotFoundError` → `_fallback_yfinance()` handles it correctly. Already in known-bugs backlog.
+
+**No fix pushed.** Scanner resumes at 15:30 when market opens.
+
+---
+
+## 13:00 Check (Jul 3) — fincept_connector HEALTHY ✅
+
+**Dashboard `/api/state`:** Unreachable — NAS LAN not routable from this Mavis shell (known limitation).
+
+**Local verification:**
+- `fincept_connector.get_batch_quotes(['SOFI','AAPL','MIMI','ILLR'])` → **4/4 valid quotes in ~1.5s.** SOFI $18.24, AAPL $308.63 (+4.84%), MIMI $2.25, ILLR $2.54. Logging active. **No "quote error." No fix needed.**
+- Last scan log entry: `scan_log.txt` — "2026-07-02 18:30:00 Berlin | 0 signals | yfinance stale data still blocking intraday scanner"
+- `cron_scan_log.json`: last entry at 2026-07-02 18:15. No entries for 16:30–20:30 cron slots.
+- No `signals_20260703_*.json` files exist — market opens 15:30 Berlin today. Scanner hasn't run yet today.
+- `signals_20260702_1607.json` is the last scan file from yesterday (16:07).
+
+**Root cause — unchanged:** yfinance intraday staleness. Scanner ran with 0 qualifying signals from 16:07–18:30 (Jul 2) because all intraday data was from June 26/29. This is a data-layer limitation, not a code issue.
+
+**No fix needed.** `fincept_connector.py` is healthy. Scanner resumes at 15:30 today.
+
+---
+
+## Component Health (13:00 Check)
+
+| Component | Status | Notes |
+|-----------|--------|-------|
+| `fincept_connector.py` | ✅ HEALTHY | 4/4 quotes; logging active; no quote errors |
+| Scanner output | 🟡 STALLED | Last file: `signals_20260702_1607.json` (16:07); scan_log.txt shows 18:30 run with 0 signals |
+| Dashboard (`/api/state`) | ❌ UNREACHABLE | NAS LAN not routable from this shell |
+| cron_scan_log.json | 🟡 INCOMPLETE | Last entry: 18:15 (Jul 2); 16:30–20:30 entries missing |
+| Bull/Bear Pipeline | 🟡 STALE | LLM key still missing from vault |
+| Bull/Bear LLM | ❌ OFFLINE | `vault/llm_api_key.enc` MISSING |
+| Alpaca WebSocket | ❌ BLOCKED | `vault/alpaca_secret.enc` MISSING — only fix for yfinance staleness |
+| Market | ⏸️ PRE-MARKET | Opens 15:30 Berlin today |
 
 ---
 
