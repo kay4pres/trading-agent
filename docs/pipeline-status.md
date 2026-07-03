@@ -1,5 +1,47 @@
 # Pipeline Status
-## Updated: 2026-07-03 16:30 Berlin (UTC+2)
+## Updated: 2026-07-03 17:00 Berlin (UTC+2)
+
+---
+
+## 17:00 Check (Jul 3) — Scanner Running ✅ | Watchlist Mount Gap Persists 🟡
+
+**Dashboard `/api/state`:** `last_scan: "16:59"`, `market_open: true`, `watchlist: []`, `signals: []`, `positions: []`, `bull_bear: []`, `decisions: []`, `mount_status: "missing_today_watchlist"`.
+
+**Pipeline is healthy but silent — no signals because data sources are returning nothing:**
+
+| Check | Result |
+|-------|--------|
+| Dashboard responding | ✅ `last_scan: "16:59"` — 1 min ago, scanner thread running |
+| `fincept_connector.py` | ✅ Already has yfinance fallback (fix applied Jul 2). No "quote error" — yfinance handles all calls cleanly |
+| Watchlist CSV (local) | ✅ `watchlist_20260703.csv` exists at `E:\Me\TradingAgent\data\watchlists\` (created 14:02 by Richard's premarket cron) |
+| Watchlist CSV (container) | ❌ `mount_status: "missing_today_watchlist"` — container can't see the file |
+| TV Premium API | ❌ Returns no rows inside container (session cookie not mounted or token expired) |
+| yfinance fallback | ⚠️ Called for DEFAULT_UNIVERSE (24 stocks) — no stocks qualify at score ≥ 2.5 today |
+| Bull/Bear | ❌ LLM key still missing from vault |
+
+**Root cause — same architecture gap as Jul 2:** Richard's premarket cron runs on **Kay's local machine** and writes the watchlist CSV to `E:\Me\TradingAgent\data\watchlists\`. The Docker container runs the dashboard and scanner, but its `/app/data` mount points to the NAS volume (`/volume1/Docker/data` on the NAS filesystem), not Kay's local `E:\Me\TradingAgent\data`. Two different machines, two different filesystems — the container never sees Richard's watchlist.
+
+**Effect:** Scanner falls back to TV Premium API (no session inside container) → then yfinance DEFAULT_UNIVERSE (none qualify) → 0 signals. Not a code error — the scanner runs correctly, it just has no data.
+
+**Today's watchlist (from local `watchlist_20260703.csv`, 8 stocks — NOT reaching the container):**
+
+| Symbol | Price | Gap | RelVol | Float | Score | Action |
+|--------|-------|-----|--------|-------|-------|--------|
+| AHMA | $2.47 | +12.8% | 19.8x | 2.1M | 2.8 | APPROVE |
+| CLRO | $6.48 | +101.2% | 2389x | 0.9M | 2.5 | WATCH (HALT_RISK, WIDE_RANGE) |
+| DSY | $4.47 | +55.2% | 48.9x | 11.1M | 2.2 | APPROVE (WIDE_RANGE, HALT_RISK) |
+| CMMB | $2.27 | +33.5% | 34.8x | 6.4M | 2.5 | WATCH |
+| BMGL | — | +49.5% | — | — | — | gap-up stock |
+| USDE | — | +111.5% | — | — | — | gap-up stock |
+| VRXA | — | +39.7% | — | — | — | gap-up stock |
+
+**Scanner signals from 15:45 (file `signals_20260703_1545.json`):** 35 gap stocks found, ranked. Top: BMGL (score 5), CMMB (5), AHMA (5) — all FIRST_PULLBACK patterns. But data is from **2026-07-02** (yfinance intraday staleness). Today's real prices from the watchlist CSV are different.
+
+**"quote error" in container logs:** No `[scanner] quote error` found in any dashboard output. The `try/except` in `run_scan()` (app.py:342) only fires if `get_batch_quotes()` raises an unhandled exception — yfinance fallback handles everything cleanly. No fix needed.
+
+**`fincept_connector.py` status:** ✅ HEALTHY — already has yfinance fallback (fix applied Jul 2). No "quote error." No fix needed this check.
+
+**No fix pushed.** Architecture gap (watchlist mount) requires Portainer volume config change — Kay needs to either (a) sync Richard's output to the NAS volume, or (b) run Richard's premarket cron inside the container. Already in known-bugs backlog. Pipeline is clean otherwise.
 
 ---
 
