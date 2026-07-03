@@ -27,16 +27,30 @@ if not logger.handlers:
     logger.setLevel(logging.INFO)
 
 # Path to Fincept's yfinance wrapper script
-FINCEPT_YF = r"C:\Program Files\FinceptTerminal\scripts\yfinance_data.py"
+# Try multiple locations — Windows host path, Linux container path, then skip
+_FINCEPT_HOST = r"C:\Program Files\FinceptTerminal\scripts\yfinance_data.py"
+_FINCEPT_CONTAINER = "/app/fincept/yfinance_data.py"
+FINCEPT_YF = _FINCEPT_HOST  # keep for reference; actual path decided in _run()
 
 
 # ─── Helpers ────────────────────────────────────────────────────────────────
 
 def _run(args: List[str]) -> Dict[str, Any]:
     """Run Fincept script, return parsed JSON. Falls back to yfinance directly."""
+    # Try Fincept only if running on Windows (host has Fincept Terminal installed)
+    fincept_path = None
+    if sys.platform == "win32":
+        import os
+        if os.path.exists(_FINCEPT_HOST):
+            fincept_path = _FINCEPT_HOST
+
+    if fincept_path is None:
+        logger.info(f"Fincept script not found on this platform, falling back to yfinance")
+        return _fallback_yfinance(args)
+
     try:
         result = subprocess.run(
-            [sys.executable, FINCEPT_YF] + args,
+            [sys.executable, fincept_path] + args,
             capture_output=True, text=True, timeout=60
         )
         if result.returncode != 0:
@@ -50,9 +64,6 @@ def _run(args: List[str]) -> Dict[str, Any]:
             return {"success": True, "data": json.loads(raw)}
         else:
             return {"success": False, "error": f"Unexpected output: {raw[:200]}"}
-    except FileNotFoundError:
-        logger.info(f"Fincept script not found ({FINCEPT_YF}), falling back to yfinance")
-        return _fallback_yfinance(args)
     except subprocess.TimeoutExpired:
         return {"success": False, "error": "Timeout fetching data"}
     except Exception as e:
