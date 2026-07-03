@@ -19,11 +19,20 @@ SKIP_CHAPTERS = {"Chapter5_Course1", "Chapter5_Course2",
 
 # ── Chapters to process ──────────────────────────────────────────────────────
 CHAPTERS = [
-    ("Chapter 1", "C1 Ch1", "Day Trading Basics — Becoming a Day Trader"),
-    # C2 Ch7: all 12 parts live as flat .txt files in Chapter 7/
-    # chapter_dir = directory containing .txt files
-    # chapter_tag = prefix for rules output filenames
-    # chapter_label = console display
+    # C1 — Day Trading The Basics
+    ("Chapter 1", "C1_Ch1", "C1 Ch1 — Becoming a Day Trader"),
+    ("Chapter 2", "C1_Ch2", "C1 Ch2 — Picking Stocks"),
+    ("Chapter 6", "C1_Ch6", "C1 Ch6 — Trading Platform Walkthrough"),
+    ("Chapter 7", "C1_Ch7", "C1 Ch7 — Momentum Trading Introduction"),
+    ("Chapter 8", "C1_Ch8", "C1 Ch8 — Momentum Trading Strategies"),
+    ("Chapter 9", "C1_Ch9", "C1 Ch9 — Order Entry Window and Popular Order Types"),
+    ("Chapter 10", "C1_Ch10", "C1 Ch10 — Hot Keys and Hot Buttons"),
+    ("Chapter 11", "C1_Ch11", "C1 Ch11 — Stock Halts"),
+    # C2 — Day Trading Strategies & Scaling
+    ("Chapter 1 Course2", "C2_Ch1", "C2 Ch1 — Intro to Day Trading Strategies"),
+    ("Chapter 2 Course2", "C2_Ch2", "C2 Ch2 — Learning Risk Management"),
+    ("Chapter 6 Course2", "C2_Ch6", "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)"),
+    # C2 Ch7 (12 parts) — already done in prior run
     ("Chapter 7", "c2_ch7", "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)"),
 ]
 
