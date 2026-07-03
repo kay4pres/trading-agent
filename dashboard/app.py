@@ -22,7 +22,9 @@ from trading_agent.telegram_sender import (
     send_alert, send_signal_with_buttons, start_polling, _pending_signals
 )
 
-app = Flask(__name__, template_folder='static', static_folder='static')
+app = Flask(__name__,
+            template_folder=str(Path(__file__).parent / 'static'),
+            static_folder=str(Path(__file__).parent / 'static'))
 CORS(app)
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
