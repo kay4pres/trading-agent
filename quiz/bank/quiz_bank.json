@@ -7870,5 +7870,197 @@
     "explanation": "Before entering the trade — never adjust mid-trade.",
     "difficulty": "easy",
     "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch7_069",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Core Principles",
+    "question": "What does Ross say is the most important skill for a new day trader?",
+    "options": [
+      "Risk management and discipline.",
+      "Trading with large size.",
+      "Chasing momentum.",
+      "Trading news catalysts only."
+    ],
+    "correct": "A",
+    "explanation": "Risk management and discipline.",
+    "difficulty": "easy",
+    "source_rule": "C1_Ch7_rules.md"
+  },
+  {
+    "id": "c1_ch7_070",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Core Principles",
+    "question": "According to this chapter, when should you begin using the simulator?",
+    "options": [
+      "As soon as you're comfortable — use it before risking real capital.",
+      "Only after 6 months of study.",
+      "Never use the simulator.",
+      "Only on weekends."
+    ],
+    "correct": "A",
+    "explanation": "As soon as you're comfortable — use it before risking real capital.",
+    "difficulty": "easy",
+    "source_rule": "C1_Ch7_rules.md"
+  },
+  {
+    "id": "c1_ch7_071",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Core Principles",
+    "question": "What is a key warning Ross gives about overtrading?",
+    "options": [
+      "Overtrading is one of the leading causes of failure for new traders.",
+      "Overtrading is fine in a cash account.",
+      "Overtrading only matters with large accounts.",
+      "Overtrading is not discussed."
+    ],
+    "correct": "A",
+    "explanation": "Overtrading is one of the leading causes of failure for new traders.",
+    "difficulty": "medium",
+    "source_rule": "C1_Ch7_rules.md"
+  },
+  {
+    "id": "c1_ch8_013",
+    "chapter": "C1 Ch8 — Momentum Trading Strategies",
+    "topic": "Core Principles",
+    "question": "What technical patterns does Ross emphasize for momentum trading?",
+    "options": [
+      "First pullback after a gap up, with volume confirmation.",
+      "Buying stocks at their all-time low.",
+      "Trading counter-trend at support.",
+      "Only trading after 3pm."
+    ],
+    "correct": "A",
+    "explanation": "First pullback after a gap up, with volume confirmation.",
+    "difficulty": "medium",
+    "source_rule": "C1_Ch8_rules.md"
+  },
+  {
+    "id": "c1_ch8_014",
+    "chapter": "C1 Ch8 — Momentum Trading Strategies",
+    "topic": "Core Principles",
+    "question": "What does Ross look for when identifying a momentum stock?",
+    "options": [
+      "Gap up on catalyst, low float, relative volume spike, and strong chart.",
+      "High price per share.",
+      "Low trading volume.",
+      "Stocks that gap down."
+    ],
+    "correct": "A",
+    "explanation": "Gap up on catalyst, low float, relative volume spike, and strong chart.",
+    "difficulty": "medium",
+    "source_rule": "C1_Ch8_rules.md"
+  },
+  {
+    "id": "c2_ch6_p7_001",
+    "chapter": "C2 Ch6 Part 7 — Advanced Hot Keys",
+    "topic": "Core Principles",
+    "question": "What does SCR stand for in hot key terminology?",
+    "options": [
+      "Single Cancel Remaining.",
+      "Stop, Cancel, Reverse.",
+      "Send, Confirm, Route.",
+      "Scale, Close, Rest."
+    ],
+    "correct": "A",
+    "explanation": "Single Cancel Remaining.",
+    "difficulty": "medium",
+    "source_rule": "C2_Ch6_P7_rules.md"
+  },
+  {
+    "id": "c2_ch6_p7_002",
+    "chapter": "C2 Ch6 Part 7 — Advanced Hot Keys",
+    "topic": "Core Principles",
+    "question": "What is the 'reverse' hot key used for?",
+    "options": [
+      "Closes the current position and opens an opposite position.",
+      "Reverses the stop-loss order.",
+      "Cancels all pending orders.",
+      "Changes limit order to market order."
+    ],
+    "correct": "A",
+    "explanation": "Closes the current position and opens an opposite position.",
+    "difficulty": "easy",
+    "source_rule": "C2_Ch6_P7_rules.md"
+  },
+  {
+    "id": "c2_ch6_p7_003",
+    "chapter": "C2 Ch6 Part 7 — Advanced Hot Keys",
+    "topic": "Core Principles",
+    "question": "What is the recommended approach to scaling out of a winning position?",
+    "options": [
+      "Take partial profits as the trade moves in your favor — reduce risk while letting winners run.",
+      "Add more size as it moves in your favor.",
+      "Never take partial profits.",
+      "Hold until the market close only."
+    ],
+    "correct": "A",
+    "explanation": "Take partial profits as the trade moves in your favor — reduce risk while letting winners run.",
+    "difficulty": "medium",
+    "source_rule": "C2_Ch6_P7_rules.md"
+  },
+  {
+    "id": "c2_ch6_p7_004",
+    "chapter": "C2 Ch6 Part 7 — Advanced Hot Keys",
+    "topic": "Core Principles",
+    "question": "What hot key combination helps avoid 'doubling up' on a losing trade?",
+    "options": [
+      "Use the reverse hot key to close and flip instead of averaging down.",
+      "Double your size on the next candle.",
+      "Keep adding to the losing position.",
+      "Cancel all orders and wait."
+    ],
+    "correct": "A",
+    "explanation": "Use the reverse hot key to close and flip instead of averaging down.",
+    "difficulty": "hard",
+    "source_rule": "C2_Ch6_P7_rules.md"
+  },
+  {
+    "id": "c2_ch6_p8_001",
+    "chapter": "C2 Ch6 Part 8 — Multi-Account Syncing",
+    "topic": "Core Principles",
+    "question": "What is the main risk of running multiple trading accounts simultaneously?",
+    "options": [
+      "Risk of duplicate fills causing over-concentration or margin violations.",
+      "Lower commissions.",
+      "Faster execution.",
+      "Tax benefits."
+    ],
+    "correct": "A",
+    "explanation": "Risk of duplicate fills causing over-concentration or margin violations.",
+    "difficulty": "medium",
+    "source_rule": "C2_Ch6_P8_rules.md"
+  },
+  {
+    "id": "c2_ch6_p8_002",
+    "chapter": "C2 Ch6 Part 8 — Multi-Account Syncing",
+    "topic": "Core Principles",
+    "question": "What does account syncing ensure across multiple platforms?",
+    "options": [
+      "Consistent fills, identical routing, and unified position management.",
+      "Different fills in each account.",
+      "Isolated risk per account.",
+      "Automatic profit transfers."
+    ],
+    "correct": "A",
+    "explanation": "Consistent fills, identical routing, and unified position management.",
+    "difficulty": "medium",
+    "source_rule": "C2_Ch6_P8_rules.md"
+  },
+  {
+    "id": "c2_ch6_p8_003",
+    "chapter": "C2 Ch6 Part 8 — Multi-Account Syncing",
+    "topic": "Core Principles",
+    "question": "Why might a trader use multi-account setup according to this chapter?",
+    "options": [
+      "To separate strategies (e.g., Roth IRA for long holds, margin for day trades).",
+      "To double every trade automatically.",
+      "To avoid PDT rule.",
+      "To get better pricing on every trade."
+    ],
+    "correct": "A",
+    "explanation": "To separate strategies (e.g., Roth IRA for long holds, margin for day trades).",
+    "difficulty": "easy",
+    "source_rule": "C2_Ch6_P8_rules.md"
   }
 ]

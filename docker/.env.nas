@@ -1,9 +1,9 @@
-# Environment variables for trading-agent NAS deployment
+﻿# Environment variables for trading-agent NAS deployment
 # Set via Portainer stack environment variables OR fill in values below
 # These override the ${VAR} references in docker-compose.yml
 
 # Telegram bot token (from E:\Me\TradingAgent\config\telegram_token.enc)
-TELEGRAM_BOT_TOKEN=8940612948:AAGGwuXwSumMGcrQVPKbqMkrLivd6kX3_Ss
+TELEGRAM_BOT_TOKEN=8940612948:AAFX4Qob5JovGtFA3c9oRZUBJQd2GQSlHBU
 
 # Optional - leave empty if not set
 ALPACA_API_KEY=
