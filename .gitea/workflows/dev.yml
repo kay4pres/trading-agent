@@ -11,11 +11,9 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone --bare https://${{ secrets.GITHUB_PAT }}@github.com/${{ github.repository }}.git /git-repo
-          cd /git-repo
-          git fetch --depth=1 origin dev
-          mkdir -p /repo
-          GIT_WORK_TREE=/repo git checkout -f ${{ github.sha }}
+          rm -rf /repo /git-repo 2>/dev/null || true
+          git clone --depth=1 --branch=dev https://github.com/trading/trading-agent.git /repo
+          cd /repo && git fetch origin dev && git checkout ${{ github.sha }}
 
       - name: Build
         run: |
