@@ -1,0 +1,18 @@
+name: 'Git Clone'
+description: 'Clone repository using raw git (no Node.js required)'
+runs:
+  using: ' composite '
+  steps:
+    - name: Clone repository
+      shell: bash
+      run: |
+        echo "Cloning ${{ github.repository }} into ${{ github.workspace }}"
+        git init ${{ github.workspace }}
+        git -C ${{ github.workspace }} remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@${{ github.server_url }}/${{ github.repository }}.git
+        git -C ${{ github.workspace }} config --global init.defaultBranch main
+        git -C ${{ github.workspace }} config --global user.email "ci@example.com"
+        git -C ${{ github.workspace }} config --global user.name "CI Bot"
+        git -C ${{ github.workspace }} fetch origin ${{ github.ref }}
+        git -C ${{ github.workspace }} checkout ${{ github.ref }} --force
+        echo "Clone complete. Contents:"
+        ls -la ${{ github.workspace }}
