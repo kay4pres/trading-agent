@@ -1,7 +1,5 @@
-# Part 2 ADFN Prints .mp4
-# Transcribed: 2026-06-29T21:34:34.295230
-# Duration: 5.7 minutes
-# Model: faster-whisper tiny
+# Segments: 4
+# Transcribed: 2026-07-06T21:11:11.231332
 
 [00:00:01] Okay, so now we're going to talk about chapter six part two ADFN prints.
 [00:00:06] These are delayed prints that you may see depending on what broker you're using or even
@@ -15,70 +13,54 @@
 [00:00:38] So with that, let's go ahead and talk about delayed prints on ADFN.
 [00:00:44] So what's going on?
 [00:00:45] ADF is the alternative display facility and it allows for late reporting of orders.
-[00:00:52] It's accessible to all fin remembers, so brokers, market makers, institutions and they
+[00:00:52] It's accessible to all Finn remembers, so brokers, market makers, institutions and they
 [00:00:59] can report trades with various conditions attached to them that don't adhere to the
 [00:01:04] NBBO.
 [00:01:05] You'll hear me talk more about NBBO later in this chapter.
 [00:01:08] It's the national best bid best offer and there's an obligation that brokers have and
-[00:01:16] the market makers that they employ and the wholesalers to fill your orders.
-[00:01:21] That orders have to be filled based on NBBO standards, a national best bid best offer.
+[00:01:16] the market makers that they employ and the wholesalers to fill your orders that orders
+[00:01:22] have to be filled based on NBBO standards of national best bid best offer.
 [00:01:27] So in order that goes through late, may not adhere to the current NBBO.
-[00:01:33] So for instance, the current price on Excel, right now, is 139 by 140 and we see an order
-[00:01:40] for 181 and it's green, and you're like, what is this?
-[00:01:45] Can I get out at 180, where are all these orders?
-[00:01:49] Look at all of them.
-[00:01:50] 181, 181, 188, 191 and look at the route.
-[00:01:54] They're all going through ADF.
-[00:01:56] Now there's some here that are not ADF and but a lot of these are ADF and orders.
-[00:02:01] So these are orders that went through at some point earlier in the day and they start
-[00:02:08] getting reported at ADF.
-[00:02:10] So ADF, ADF orders that went through don't report prior to ADF.
-[00:02:15] So right at ADF, the top of the hour, all of a sudden all of the orders that are on
-[00:02:20] the ADFN route or facility between 4am and ADF get posted to the tape.
-[00:02:28] And then after ADF, 815, 820, any old time when an ADFN order is reported to that facility,
-[00:02:38] it gets posted to the consolidated tape, but they're often out of sequence.
-[00:02:43] So if I see ADFN there, I know that it's out of sequence.
-[00:02:47] Now some brokers will let you filter out ADFN orders, which I think is helpful because
-[00:02:53] seeing an order that occurred hours before is absolutely no use.
-[00:02:58] You cannot interact with the order, you can't buy, you can't sell, it's just reporting
-[00:03:02] late.
-[00:03:03] So it serves us absolutely no purpose to see all these ADFN orders that have gone through.
-[00:03:10] I don't see any value of it.
-[00:03:12] So I'll show you this example of an ADFN order here, just so you can kind of see visually
-[00:03:17] what it looks like.
-[00:03:18] But we see them every day, and it's, you know, I just learned to ignore them.
-[00:03:22] So these are all those ADFN orders on Excel, but you can see, this makes it really hard
-[00:03:30] to read the tape, because now the tape is getting mixed with all of these delayed prints.
-[00:03:38] So it's really preferable if you use a market data vendor that either automatically
-[00:03:45] filters them out, since there are no use to us, or that gives you the option to filter
-[00:03:50] them.
-[00:03:51] So on the platform that I use, I can press this widget, it'll show me all of the different
-[00:03:56] market makers and ECNs, and I can uncheck ADFN, and then it doesn't display anymore.
-[00:04:02] So that's what I do.
-[00:04:03] So I hide it so I don't see it, because I don't find it helpful.
-[00:04:07] The problem is, because it is part of market data, a lot of charts will show them.
-[00:04:15] So this is what the chart looks like.
-[00:04:17] All of a sudden you have these candles where the price is spiking like crazy, because these
-[00:04:21] are orders that went through back here, when the price was actually at those levels.
-[00:04:26] So all of these orders went through back here, and now they're getting reported here, and
-[00:04:31] so the chart looks insane.
-[00:04:34] So for our software, obviously I'm day trading, and this is important to me.
-[00:04:40] So I told our developers, I said, you guys need to filter out these ADFN orders.
-[00:04:45] They're totally messing up the charts.
-[00:04:47] I can't see anything.
-[00:04:48] So we filter them out.
-[00:04:50] We filter them out.
-[00:04:51] You can't see them on the tape.
-[00:04:52] You can't see them on the charts.
-[00:04:54] It's clean, and that is preferable.
-[00:04:57] But not all brokers do that.
-[00:04:59] So this is a correct chart with the filter.
-[00:05:02] This is the incorrect chart without it.
-[00:05:03] So you'll see this.
-[00:05:05] That's another broker, and then these are our charts.
-[00:05:09] So much cleaner, right?
-[00:05:11] So that's preferable.
-[00:05:13] Now I asked my broker, I said, can you tell me more about these ADFN orders?
-[00:05:21] And they said, yeah, they say they're irregular trade, they're form you, this is something
-[00:05:27] we have on the back end.
-[00:05:28] Yeah, they're just irregular trades, but they can happen at any time.
+[00:01:33] So for instance, the current price on ExcelO right now is 139.
+[00:00:00] by 140, and we see an order for 181, and it's green, and you're like, what is this?
+[00:00:07] Can I get out at 180, where are all these orders?
+[00:00:11] Look at all of them, 181, 181, 188, 191, and look at the route.
+[00:00:16] They're all going through ADFN.
+[00:00:18] Now there's some here that are not ADFN, but a lot of these are ADFN orders.
+[00:00:23] So these are orders that went through, at some point earlier in the day, and they
+[00:00:29] start getting reported at ADFN.
+[00:00:32] So ADFF orders that went through don't report prior to ADF.
+[00:00:37] So right at ADFN, the top of the hour, all of a sudden, all of the orders that were on
+[00:00:42] the ADFN route or facility between 4 a.m. and ADFN get posted to the tape.
+[00:00:50] And then after ADFN, 815, 820, any old time, when an ADFN order is reported to that facility
+[00:00:59] it gets posted to the consolidated tape, but they're out of their often out of sequence.
+[00:01:05] So if I see ADFN there, I know that it's out of sequence.
+[00:01:09] Now some brokers will let you filter out ADFN orders, which I think is helpful because
+[00:01:15] seeing an order that would occur at hours before is absolutely no use.
+[00:01:20] You cannot interact with the order, you can't buy, you can't sell, it's just reporting late.
+[00:01:25] So it serves us absolutely no purpose to see all of these ADFN orders that have gone through.
+[00:01:32] I don't see any value of it.
+[00:01:34] So I'll show you this example of an ADFN order here just so you can kind of...
+[00:00:00] to see visually what it looks like, but we see them every day and it's, you know,
+[00:00:05] I just learned to ignore them. So these are all those ADFN orders on Excel. But you can see,
+[00:00:13] this makes it really hard to read the tape because now the tape is getting mixed with all
+[00:00:19] of these delayed prints. So it's really preferable. If you use a market data vendor that either
+[00:00:28] automatically filters them out, since they're of no use to us, or that gives you the option
+[00:00:33] to filter them. So on the platform that I use, I can press this widget, it'll show me all of the
+[00:00:39] different market makers and ECNs, and I can uncheck ADFN, and then it doesn't display any more.
+[00:00:46] So that's what I do. So I hide it so I don't see it because I don't find it helpful. The problem
+[00:00:52] is because it is part of market data, a lot of charts will show them. So this is what the chart
+[00:01:00] looks like. All of a sudden, you have these candles where the price is spiking like crazy
+[00:01:05] because these are orders that went through back here when the price was actually at those levels.
+[00:01:10] So all of these orders went through back here, and now they're getting reported here. And so the chart
+[00:01:17] looks insane. So for our software, obviously I'm day trading, and this is important to me.
+[00:01:24] So I told our developers, I said, you guys need to filter out these ADFN orders. They're
+[00:01:29] totally messing up the charts. I can't see anything. So we filter them out. We filter them out.
+[00:01:34] You can't see them on the tape. You can't see them on the chart.
+[00:00:00] It's clean and that is preferable, but not all brokers do that. So this is a correct chart with the filter
+[00:00:07] This is the incorrect chart without it. So you see this
+[00:00:11] That's you know another broker and then these are archers. So much cleaner, right? So that's that that's preferable
+[00:00:19] now I asked my
+[00:00:21] My broker I said can you tell me more about these you know ADF and orders and they said yeah
+[00:00:28] You know that they say they're irregular trade they're form you. This is something we had on the back end
+[00:00:34] Yeah, they're just irregular trades, but they can happen at any time

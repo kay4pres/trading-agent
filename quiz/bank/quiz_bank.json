@@ -8062,5 +8062,357 @@
     "explanation": "To separate strategies (e.g., Roth IRA for long holds, margin for day trades).",
     "difficulty": "easy",
     "source_rule": "C2_Ch6_P8_rules.md"
+  },
+  {
+    "id": "c1_ch2_part2_129",
+    "chapter": "C1 Ch2 Part 2 -- Long vs Short Selling",
+    "topic": "Core Principles",
+    "question": "What are the two directions you can trade in the market?",
+    "options": [
+      "C. Options and futures",
+      "B. Up and down only",
+      "D. Day and swing",
+      "A. Long (buy) and short (sell)"
+    ],
+    "correct": "A",
+    "explanation": "Long (buy) and short (sell)",
+    "difficulty": "Easy",
+    "source_rule": "c1_ch2_part2_rules.md"
+  },
+  {
+    "id": "c1_ch2_part2_129",
+    "chapter": "C1 Ch2 Part 2 -- Long vs Short Selling",
+    "topic": "Core Principles",
+    "question": "When you go long 1,000 shares at , what is the most you can lose?",
+    "options": [
+      "D. Your margin limit only",
+      "C. ",
+      "A. The full amount invested (,000)",
+      "B. Nothing, stocks always go up"
+    ],
+    "correct": "A",
+    "explanation": "The full amount invested (,000), if the stock goes to ",
+    "difficulty": "Easy",
+    "source_rule": "c1_ch2_part2_rules.md"
+  },
+  {
+    "id": "c1_ch2_part2_129",
+    "chapter": "C1 Ch2 Part 2 -- Long vs Short Selling",
+    "topic": "Core Principles",
+    "question": "What does short selling require that buying does not?",
+    "options": [
+      "B. More capital",
+      "D. Options approval",
+      "C. A different trading platform",
+      "A. Borrowing shares from your broker (locate)"
+    ],
+    "correct": "A",
+    "explanation": "Borrowing shares from your broker (locate)",
+    "difficulty": "Medium",
+    "source_rule": "c1_ch2_part2_rules.md"
+  },
+  {
+    "id": "c1_ch2_part2_129",
+    "chapter": "C1 Ch2 Part 2 -- Long vs Short Selling",
+    "topic": "Core Principles",
+    "question": "Why does Ross Cameron trade the long side 95% of the time?",
+    "options": [
+      "B. Fewer brokers offer shorting",
+      "C. It requires less capital",
+      "A. It is more profitable per trade",
+      "D. Long side has more volatility"
+    ],
+    "correct": "A",
+    "explanation": "Easier to manage, fewer restrictions, longer runway for winners",
+    "difficulty": "Medium",
+    "source_rule": "c1_ch2_part2_rules.md"
+  },
+  {
+    "id": "c1_ch2_part2_129",
+    "chapter": "C1 Ch2 Part 2 -- Long vs Short Selling",
+    "topic": "Core Principles",
+    "question": "What happens to a trader who is short a stock that rallies?",
+    "options": [
+      "B. They pay interest to the broker but keep the shares",
+      "C. Losses accumulate with theoretically unlimited upside risk",
+      "D. The broker automatically covers the position",
+      "A. Their losses are capped"
+    ],
+    "correct": "A",
+    "explanation": "They accumulate losses with theoretically unlimited upside risk",
+    "difficulty": "Hard",
+    "source_rule": "c1_ch2_part2_rules.md"
+  },
+  {
+    "id": "c1_ch2_part2_129",
+    "chapter": "C1 Ch2 Part 2 -- Long vs Short Selling",
+    "topic": "Core Principles",
+    "question": "What is a short locate and why is it important?",
+    "options": [
+      "B. A confirmation that shares are available to borrow",
+      "D. An SEC filing requirement",
+      "C. A stop loss for your short position",
+      "A. A limit order to buy shares back"
+    ],
+    "correct": "A",
+    "explanation": "A confirmation from your broker that shares are available to borrow for shorting",
+    "difficulty": "Hard",
+    "source_rule": "c1_ch2_part2_rules.md"
+  },
+  {
+    "id": "c2_ch6_p1_129",
+    "chapter": "C2 Ch6 Part 1 -- Level 2 Time and Sales",
+    "topic": "Core Principles",
+    "question": "What does Level 2 ( Depth of Market ) show you?",
+    "options": [
+      "C. The daily chart",
+      "B. All visible bid and ask prices from market makers and ECNs",
+      "A. Only the last trade price",
+      "D. Only your own orders"
+    ],
+    "correct": "A",
+    "explanation": "All visible bid and ask prices from market makers and ECNs",
+    "difficulty": "Easy",
+    "source_rule": "c2_ch6_p1_rules.md"
+  },
+  {
+    "id": "c2_ch6_p1_129",
+    "chapter": "C2 Ch6 Part 1 -- Level 2 Time and Sales",
+    "topic": "Core Principles",
+    "question": "What is the Time and Sales (Tape) window?",
+    "options": [
+      "B. A real-time log of every trade including price, size, and time",
+      "D. An order confirmation screen",
+      "A. A weekly summary report",
+      "C. A scanner for new stocks"
+    ],
+    "correct": "A",
+    "explanation": "A real-time log of every trade including price, size, and time",
+    "difficulty": "Easy",
+    "source_rule": "c2_ch6_p1_rules.md"
+  },
+  {
+    "id": "c2_ch6_p1_129",
+    "chapter": "C2 Ch6 Part 1 -- Level 2 Time and Sales",
+    "topic": "Core Principles",
+    "question": "What does a large block print on the tape typically indicate?",
+    "options": [
+      "A. Retail traders entering the market",
+      "C. The market is closed",
+      "B. Institutional activity that can move the stock",
+      "D. A short squeeze starting"
+    ],
+    "correct": "A",
+    "explanation": "Institutional activity, which can move the stock in the direction of the trade",
+    "difficulty": "Medium",
+    "source_rule": "c2_ch6_p1_rules.md"
+  },
+  {
+    "id": "c2_ch6_p1_129",
+    "chapter": "C2 Ch6 Part 1 -- Level 2 Time and Sales",
+    "topic": "Core Principles",
+    "question": "What does aggressive buying on the tape combined with rising Level 2 bids suggest?",
+    "options": [
+      "C. Strong momentum and likely continuation higher",
+      "D. Market makers are trapping retail traders",
+      "A. The stock is about to reverse",
+      "B. Weak momentum and a pullback coming"
+    ],
+    "correct": "A",
+    "explanation": "Strong momentum and likely continuation higher",
+    "difficulty": "Medium",
+    "source_rule": "c2_ch6_p1_rules.md"
+  },
+  {
+    "id": "c2_ch6_p1_129",
+    "chapter": "C2 Ch6 Part 1 -- Level 2 Time and Sales",
+    "topic": "Core Principles",
+    "question": "What is the difference between a market maker and an ECN in Level 2?",
+    "options": [
+      "C. ECNs only trade after hours",
+      "B. Market makers post quotes and profit from spreads; ECNs match orders electronically",
+      "D. Market makers cannot trade during news events",
+      "A. They are the same thing"
+    ],
+    "correct": "A",
+    "explanation": "Market makers post bid/ask quotes and profit from the spread; ECNs match buyer/seller orders electronically",
+    "difficulty": "Hard",
+    "source_rule": "c2_ch6_p1_rules.md"
+  },
+  {
+    "id": "c2_ch6_p1_129",
+    "chapter": "C2 Ch6 Part 1 -- Level 2 Time and Sales",
+    "topic": "Core Principles",
+    "question": "How can you use Level 2 to identify absorption?",
+    "options": [
+      "D. Absorption shows as a gap on the tape",
+      "C. By looking at the daily chart only",
+      "B. Large orders on one side while price stays flat = absorption",
+      "A. By counting the number of brokers shown"
+    ],
+    "correct": "A",
+    "explanation": "Watch for large orders sitting on one side of the book while the stock price stays flat, indicating the side is being absorbed",
+    "difficulty": "Hard",
+    "source_rule": "c2_ch6_p1_rules.md"
+  },
+  {
+    "id": "c2_ch6_p3_129",
+    "chapter": "C2 Ch6 Part 3 -- Circuit Breaker Halts",
+    "topic": "Core Principles",
+    "question": "What is a market-wide circuit breaker (MWCB)?",
+    "options": [
+      "D. A type of after-hours trading",
+      "B. An automatic halt triggered when the S&P drops a set percentage",
+      "A. A voluntary pause by traders",
+      "C. A limit order type"
+    ],
+    "correct": "A",
+    "explanation": "An automatic trading halt triggered by the exchanges when the S&P 500 drops a certain percentage",
+    "difficulty": "Easy",
+    "source_rule": "c2_ch6_p3_rules.md"
+  },
+  {
+    "id": "c2_ch6_p3_129",
+    "chapter": "C2 Ch6 Part 3 -- Circuit Breaker Halts",
+    "topic": "Core Principles",
+    "question": "What are Regulation SHO and the SSR (Short Sale Restriction)?",
+    "options": [
+      "C. Broker commission rules",
+      "D. Market opening procedures",
+      "B. Rules requiring locate and restricting downticking short sales",
+      "A. Tax regulations for short sellers"
+    ],
+    "correct": "A",
+    "explanation": "Rules requiring brokers to locate shares before shorting and restricting short selling on downticking stocks",
+    "difficulty": "Easy",
+    "source_rule": "c2_ch6_p3_rules.md"
+  },
+  {
+    "id": "c2_ch6_p3_129",
+    "chapter": "C2 Ch6 Part 3 -- Circuit Breaker Halts",
+    "topic": "Core Principles",
+    "question": "What happens to your open short position if a stock is halted?",
+    "options": [
+      "A. It is automatically closed at the halt price",
+      "B. The position remains open until trading resumes",
+      "D. Your broker covers it automatically",
+      "C. It converts to a long position"
+    ],
+    "correct": "A",
+    "explanation": "You cannot buy to cover during the halt; the position remains open until trading resumes",
+    "difficulty": "Medium",
+    "source_rule": "c2_ch6_p3_rules.md"
+  },
+  {
+    "id": "c2_ch6_p3_129",
+    "chapter": "C2 Ch6 Part 3 -- Circuit Breaker Halts",
+    "topic": "Core Principles",
+    "question": "What is a Limit Up / Limit Down (LULD) halt?",
+    "options": [
+      "D. A market maker tool",
+      "A. A daily price cap set by the SEC",
+      "C. A type of limit order",
+      "B. A pause when a stock moves too fast in a 5-minute window"
+    ],
+    "correct": "A",
+    "explanation": "A trading pause when a stock price moves too fast in either direction within a 5-minute window",
+    "difficulty": "Medium",
+    "source_rule": "c2_ch6_p3_rules.md"
+  },
+  {
+    "id": "c2_ch6_p3_129",
+    "chapter": "C2 Ch6 Part 3 -- Circuit Breaker Halts",
+    "topic": "Core Principles",
+    "question": "Under what conditions can a short sale be made on a downtick?",
+    "options": [
+      "B. Only if the stock is not on SSR or the short is at the previous price (uptick)",
+      "D. Only by market makers",
+      "C. Only during the first 5 minutes of trading",
+      "A. Anytime during market hours"
+    ],
+    "correct": "A",
+    "explanation": "Only if the stock is not on the SSR list or if the short is at the same price as the previous print ( uptick )",
+    "difficulty": "Hard",
+    "source_rule": "c2_ch6_p3_rules.md"
+  },
+  {
+    "id": "c2_ch6_p5_129",
+    "chapter": "C2 Ch6 Part 5 -- PFOF vs Direct Access",
+    "topic": "Core Principles",
+    "question": "What is Payment for Order Flow (PFOF)?",
+    "options": [
+      "B. Compensation from market makers for routing customer orders",
+      "D. A fee charged to market makers by exchanges",
+      "A. Brokers paying traders for their orders",
+      "C. A tax on high-frequency trading"
+    ],
+    "correct": "A",
+    "explanation": "Brokers receive compensation from market makers for routing customer orders to them",
+    "difficulty": "Easy",
+    "source_rule": "c2_ch6_p5_rules.md"
+  },
+  {
+    "id": "c2_ch6_p5_129",
+    "chapter": "C2 Ch6 Part 5 -- PFOF vs Direct Access",
+    "topic": "Core Principles",
+    "question": "Why do some brokers offer commission-free trading?",
+    "options": [
+      "D. Government subsidies",
+      "C. They have lower operating costs globally",
+      "B. They offset costs through PFOF from market makers",
+      "A. They are non-profit organizations"
+    ],
+    "correct": "A",
+    "explanation": "They offset costs by receiving payment for order flow from market makers",
+    "difficulty": "Easy",
+    "source_rule": "c2_ch6_p5_rules.md"
+  },
+  {
+    "id": "c2_ch6_p5_129",
+    "chapter": "C2 Ch6 Part 5 -- PFOF vs Direct Access",
+    "topic": "Core Principles",
+    "question": "What is the difference between a direct access broker and a standard broker?",
+    "options": [
+      "A. Direct access costs more per trade",
+      "B. Direct access routes to exchanges/ECNs; standard brokers internalize or smart-route",
+      "C. Standard brokers are faster",
+      "D. Direct access only trades after hours"
+    ],
+    "correct": "A",
+    "explanation": "Direct access routes orders directly to exchanges/ECNs; standard brokers use internalization or smart routing",
+    "difficulty": "Medium",
+    "source_rule": "c2_ch6_p5_rules.md"
+  },
+  {
+    "id": "c2_ch6_p5_129",
+    "chapter": "C2 Ch6 Part 5 -- PFOF vs Direct Access",
+    "topic": "Core Principles",
+    "question": "What is internalization in order routing?",
+    "options": [
+      "A. Orders are sent to multiple exchanges simultaneously",
+      "C. Orders are routed through a government network",
+      "D. Internalization is a type of market order",
+      "B. A broker fills orders using its own inventory without going to an exchange"
+    ],
+    "correct": "A",
+    "explanation": "When a broker fills customer orders using their own inventory without routing to an exchange",
+    "difficulty": "Medium",
+    "source_rule": "c2_ch6_p5_rules.md"
+  },
+  {
+    "id": "c2_ch6_p5_129",
+    "chapter": "C2 Ch6 Part 5 -- PFOF vs Direct Access",
+    "topic": "Core Principles",
+    "question": "How does PFOF potentially affect best execution?",
+    "options": [
+      "A. It guarantees the best price for every trade",
+      "D. Internalization always provides better fills",
+      "C. PFOF has no effect on execution quality",
+      "B. Orders may not always reach the best-priced venue since brokers are incentivized by PFOF payments"
+    ],
+    "correct": "A",
+    "explanation": "Orders may not always go to the venue with the best price since the broker is incentivized by payment, not price improvement",
+    "difficulty": "Hard",
+    "source_rule": "c2_ch6_p5_rules.md"
   }
 ]

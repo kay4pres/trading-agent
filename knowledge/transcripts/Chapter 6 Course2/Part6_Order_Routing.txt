@@ -1,652 +1,575 @@
-# Part 6 Order Routing, Order Types, and Adding Liquidity.mp4
-# Transcribed: 2026-06-29T21:44:55.339597
-# Duration: 43.6 minutes
-# Model: faster-whisper tiny
+# Segments: 27
+# Transcribed: 2026-07-06T21:22:15.363823
 
-[00:00:00] Head and jump in here with Chapter 6, Part 6 on order types, order routing, and the concepts of adding and removing liquidity, which is going to tie back into the maker take our fee structure that we talked about in market making.
-[00:00:13] Okay, so when we talked about what market makers do, and the advent of the digital electronic trading exchanges that we use today.
-[00:00:23] All right, so first, let's talk about traditional order types. These are the three basic order types that you could use to buy and sell shares.
-[00:00:30] The first are market orders. A market order, you can send to buy or sell shares, and you will get filled at market price in quotes.
-[00:00:39] This is your way of telling the broker to give you shares, and you don't really care what price.
-[00:00:43] It's typically not a good method for day traders, because the price we pay will directly impact how profitable the trade will be.
+[00:00:00] Head and jump in here with chapter six, part six on order types, order routing, and the concepts of adding and removing liquidity, which is going to tie back into the maker take our fee structure that we talked about in market maker.
+[00:00:13] Okay, so when we talked about what market makers do and the advent of the digital electronic trading exchanges that we use today.
+[00:00:23] All right, so first let's talk about traditional order types. These are the three basic order types that you could use to buy and sell shares.
+[00:00:30] The first are market orders. A market order you can send to buy or sell shares and you will get filled at market price in quotes.
+[00:00:39] This is your way of telling the broker to give you shares and you don't really care what price.
+[00:00:43] It's typically not a good method for day traders because the price we pay will directly impact how profitable the trade will be.
 [00:00:50] And when you get a bad fill, then that throws off your risk management for the trade.
 [00:00:55] If you end up getting filled substantially higher than you were expecting, that's going to be a problem.
-[00:00:59] And let's just say, you typo the order, and you meant to type 10,000 shares, but you typed 100,000 shares.
+[00:00:59] And let's just say you typo the order and you meant to type 10,000 shares, but you typed 100,000 shares.
 [00:01:07] And you clicked market order, said, and oh my goodness, you've just given the broker the right to fill you at any price 100,000 shares.
-[00:01:16] And on a thinly traded stock, what you're going to see is the price is going to go, whoop straight up, you're going to fill at the very top.
+[00:01:16] And on a thinly traded stock, what you're going to see is the price is going to go straight up. You're going to fill it at the very top.
 [00:01:24] It's going to come right back down. They took advantage of you. So that's a risk that you've got to be really careful of.
 [00:01:30] And so it's better to just, in my opinion, use limit orders.
-[00:01:34] Now, market orders are only available from 930 a.m. to 4 p.m. so you can't use them pre-market.
-[00:01:39] But a limit order you can use from 4 a.m. until 8 p.m.
-[00:01:42] And in contrast to a market order, a limit order does require you to put in a price.
-[00:01:47] That's the most you're willing to pay if you're buying, or the least you're willing to accept if you're selling.
-[00:01:52] So market orders are the type orders, sorry, limit orders are the type orders that I use, but unlike market orders, you have to enter the price.
-[00:02:01] Now, I understand that some traders want to make it easy and just click 1 button to buy and 1 button to sell.
-[00:02:06] And market orders at some brokers, you just say, market buy, market sell. And so it feels easier.
-[00:02:12] But you're going to get a worse execution price versus a limit order in most cases.
-[00:02:18] Now, the third type of order, which is the most common, are stop orders.
-[00:02:22] And stop orders are triggered when the stock crosses a certain price.
-[00:02:27] Sometimes people get confused about limit orders.
-[00:02:29] They think, well, I thought a limit order, you know, if I said my limit order is 501, then my order won't go through until 501.
-[00:02:36] Now, your order is going through to the market and the most you'll pay is 501.
-[00:02:42] So if it's currently trading at 490, you're going to get in right now, but you won't pay anything more than 501.
-[00:02:47] If you wanted to send an order to buy, but not execute until 501, that's a stop order.
-[00:02:53] It's a buy stop order.
-[00:02:55] However, stop orders don't work pre-market or after hours, so they only work during regular trading hours.
-[00:03:00] So a stop order fires when the stop price has triggered.
-[00:03:04] And when they fire, they can either send out as a market order or they can send out as a stop order.
-[00:03:10] So for me, I don't use stop orders at all.
-[00:03:13] I know that seems kind of crazy and there's risk involved with doing that, but you can't use them pre-market.
-[00:03:18] And then during regular trading hours, I don't like using them because most of my trades are so quick.
-[00:03:22] I worry about fumbling and having a cancel order before I send out another order, and so it's just easier for me not to use them.
-[00:03:29] Now, let's talk about some of the more advanced types of orders that are available.
-[00:03:33] These may not be available at most commission-free brokers.
-[00:03:37] So the three and actually there's four types of orders that you could send.
-[00:03:41] Number one is a primary peg order, primary peg order, against the bid.
-[00:03:48] So peg orders, and you saw an example of a peg order during the chapter one on chapter six part one on level two,
-[00:03:58] where I showed you the example of that order that was at a hundred thousand shares, and it was peg to the ask.
-[00:04:05] And so every time the ask moved, that peg order moved along with it.
-[00:04:10] So essentially that the price was coming down, every time someone tried to undercut it, the price came down.
-[00:04:17] A peg ask order is very common that if more sophisticated traders will use it to try to sell a position, however,
-[00:04:25] if it's not a hidden order, it's communicating to the market that there's a big seller.
-[00:04:32] And if it is a hidden order, it's still a pretty aggressive sell order.
-[00:04:37] I don't like using peg orders on the ask.
-[00:04:41] I just don't really like them.
-[00:04:43] I'm okay with using regular orders on the ask, but I just don't like a peg order because then the second the ask drops,
-[00:04:49] your order comes right down, and it feels like it's just pushing the price down.
-[00:04:55] And you know, it may even be possible that the algorithms, I'm sure it is possible that they can see that it's a peg order.
-[00:05:01] But I don't know if they take advantage of peg orders in this way by kind of undercutting them.
-[00:05:06] I'm not really sure, but I don't like using peg orders on the ask.
-[00:05:10] I also don't like using peg orders on the bit, either for buying or selling.
-[00:05:14] The third type of peg order is a midpoint peg order.
-[00:05:18] And the way that's going to work is it's going to peg your order to the midpoint between the spread.
-[00:05:25] So if you've got 10 cents spread, you're orderly peg at five cents, you know, right in between the bit and the ask.
-[00:05:31] And it automatically adjusts as the midpoint changes.
-[00:05:35] This is an order that I can be okay with using under certain circumstances.
-[00:05:40] If I'm not able to sell at the ask price, then I don't want to use a peg order on the ask.
-[00:05:46] I could use the midpoint peg, so my order is in between the spread.
-[00:05:50] The fourth type of order is called a super smart order.
-[00:05:54] And this allows you to send your order to multiple venues at the exact same time.
-[00:06:00] The idea is that you avoid the issue created inadvertently by rag and a mass of a market maker receiving your order,
-[00:06:08] rerouting to another, but the others already seeing that order came in by the time that it's come to them.
-[00:06:15] And then undercut you or cut in front of you.
-[00:06:18] So by sending an order to four or five different routes at the exact same second, they don't have the chance to cut in front of you.
-[00:06:27] At least that's the idea.
-[00:06:29] So now let's talk about the difference between order types and order routing.
-[00:06:34] So the order type is just the type of order.
-[00:06:37] Stop order, market order, limit order, peg order, or maybe a super smart order.
-[00:06:42] And a super smart order would typically be sending three or four or five limit orders all at the same time.
-[00:06:49] So it's really just a complex limit order.
-[00:06:51] An order route is the path that you choose to have your order get sent to the market.
-[00:06:59] So anytime you prepare an order, if you're using a direct access broker, you can select your route.
-[00:07:05] If you're using a commission free broker, you usually can't select your route.
-[00:07:09] The route is just predefined by their quote, smart routing.
-[00:07:12] So we've already talked about routing and how the market is like an island.
-[00:07:17] And all of the different networks that connect to the island are like bridges.
-[00:07:21] Some of them are free, some of them are more expensive.
-[00:07:24] Some of them are exclusive to certain brokers.
-[00:07:27] Some of them are dark pools.
-[00:07:29] They're hidden so you can't even really see what's going on on them.
-[00:07:32] So you've got all of these different routes that you could possibly choose, which gives you a lot of flexibility in your order, order routing.
-[00:07:39] Now smart routing is included with a lot of brokers.
-[00:07:42] And I usually think of smart routing as being smart for the broker, not for you.
-[00:07:47] Smart routing is usually discounted versus direct routing either by being totally free.
-[00:07:53] A commission free broker or even a broker like light speed offers discounted smart routing.
-[00:07:59] But I've never found their smart routes to be particularly good.
-[00:08:02] So even though I save some money, I feel like they must be making quite a bit more than I'm saving
-[00:08:07] because the executions are just not fast enough for me.
-[00:08:11] And they're not free.
-[00:08:12] It's not a free route.
-[00:08:13] It's just a discount route, but I'd rather pay a little more and have much better execution speed.
-[00:08:18] So that's what I did.
-[00:08:20] Unfortunately, the way the smart routing works is usually it's smart for the broker.
-[00:08:24] They've got some arrangement with that venue that gives them a kickback or whatever it is.
-[00:08:29] It may even essentially be payment for order flow.
-[00:08:32] And so it's not to your advantage to use those smart routes.
-[00:08:37] With direct access routing, you get to choose the ECN that you send your order through.
-[00:08:42] And of course, some are going to be more expensive than others.
-[00:08:45] Now we should talk for a moment about the difference between dark routes and lit routes.
-[00:08:51] So routes can either be lit or dark.
-[00:08:53] And when I say route, essentially I'm talking about venues, which are exchanges or alternative trading systems.
-[00:09:00] So a lit route or a lit venue is the exchange that you send in order to has an order book that is published.
-[00:09:09] And it's publicly available.
-[00:09:11] It becomes part of the level two.
-[00:09:13] So if you send your order through that venue, your order, if it's not a hidden order,
-[00:09:18] will we display to other market participants.
-[00:09:21] Okay, lit markets include Ajax, Nasdaq, Bats, Arka, they're very popular.
-[00:09:27] They're lit.
-[00:09:28] You either have an order book and your order can be displayed there or you can hide it.
-[00:09:32] A dark venue or a dark route means you're not using an exchange because exchange is don't allow dark,
-[00:09:38] like non public displays.
-[00:09:40] But you're instead using one of the alternative trading systems that does not have a public level two order book.
-[00:09:47] So they don't publish the public level two order book.
-[00:09:50] They just, they don't make it available.
-[00:09:52] So does not have, let me just fix that type of tab, a level two order book.
-[00:09:57] So the problem with dark routes and using dark pools in my experience is that they typically don't have enough liquidity
-[00:10:05] to fill my orders.
-[00:10:07] So you can always try to send an order to a dark pool.
-[00:10:11] It'll either execute immediately because they have a match or it won't.
-[00:10:15] And if it doesn't, then you just have to go choose a different route.
-[00:10:18] The problem is the time spent trying to ping that dark pool could be, you know, an opportunity cost that you could have taken profit just using one of the lit exchanges like Nasdaq Arka,
-[00:10:31] Ajax or Bats.
-[00:10:32] So I don't really actually never use currently dark routes to try to buy shares because I just assume I won't get filled.
-[00:10:41] I will occasionally try to use dark routes to sell positions if I'm up.
-[00:10:46] And I'm not feeling stressed.
-[00:10:48] I'm not feeling like I need to get out right away.
-[00:10:50] I'm up.
-[00:10:51] I'm okay.
-[00:10:52] Hey, I'll see you look.
-[00:10:53] Can I sell half to the dark route?
-[00:10:54] If my order gets filled, that's awesome.
-[00:10:57] Because if my order gets filled, my order will not get scout by a high frequency trading algorithm.
-[00:11:03] Basically, my order will just have an instant match.
-[00:11:05] The order will go through the time and sales.
-[00:11:07] It may be in white.
-[00:11:09] It may be in red if it's on the bed, but it'll be an instant match.
-[00:11:12] And it won't clear the order book.
-[00:11:14] What do I mean by clear the order book?
-[00:11:16] Well, if we have a bid.
-[00:11:18] Here of 550 and 10,000 shares.
-[00:11:22] And I sell 20,000.
-[00:11:24] This order's gone.
-[00:11:25] And the price is going to go down to the next buyer.
-[00:11:28] Let's say it's 545.
-[00:11:29] For another 10,000, that order's gone.
-[00:11:31] The price will drop to 540.
-[00:11:33] So my order, I'm going to get a little slippage.
-[00:11:35] And the price will drop down to the next buyer down here.
-[00:11:37] Whatever shares they're holding.
-[00:11:39] If I'm able to sell on a dark route, the full 20,000,
-[00:11:42] then I don't touch those orders that are sitting on the lid market.
-[00:11:46] And so the price doesn't drop down, because either because the algos cut in front of me
-[00:11:50] and took those orders away, or because I actually ended up hitting those orders.
-[00:11:54] So there are definitely advantages of using dark routes.
-[00:11:58] It's just like I said, I feel like the majority of the time I don't end up getting filled when I try to use them,
-[00:12:05] which I find to be a bit annoying.
-[00:12:07] Now I'll show you here.
-[00:12:08] Or actually I'll show you this in a moment.
-[00:12:10] So direct access versus commission free brokers.
-[00:12:13] We've already talked about this a bit with payment for order flow,
-[00:12:16] but commission free brokers offer generally a pretty limited number of different order types.
-[00:12:21] Usually you can't use pegged orders, but that's okay.
-[00:12:24] Most people don't use them anyways.
-[00:12:26] And they don't give you super smart orders either, but you, you know,
-[00:12:30] it's okay I suppose because you're trading with smaller size and probably doesn't matter.
-[00:12:35] So you basically get free commission and you get a smart route.
-[00:12:39] Sometimes you get generous fills, which is awesome.
-[00:12:42] And sometimes you can actually take much bigger size than what it appears is even available on the market.
-[00:12:47] But then other times you could get in and then you have a hard time getting back out.
-[00:12:51] So you have no problem getting filled, but then you can't get out, which is annoying.
-[00:12:55] We'll direct access brokers on the other hand.
-[00:12:57] They've offered services for decades to sophisticated traders.
-[00:13:00] They do charge commission.
-[00:13:02] They pass through those ECN fees that you're going to pay when you do the routing
-[00:13:07] when you're taking liquidity, which we'll talk about in a moment.
-[00:13:10] But the flexibility of having those different routes and the more sophisticated and advanced order types
-[00:13:15] is something that a lot of traders appreciate.
-[00:13:18] Speed, cost, execution price, these are just the variables that we're thinking about.
-[00:13:22] So when we're sending our orders to the market,
-[00:13:27] we have basically every time we send an order we're doing one of two things.
-[00:13:31] We're either adding liquidity or we're removing liquidity.
-[00:13:36] So adding liquidity to the market means you're improving market liquidity by adding shares to the order book.
-[00:13:44] So if you post an order and it does not fill instantaneously, then you're adding liquidity to the market.
-[00:13:52] Whether it's an order on the bid to buy or it's an order on the ask to sell.
-[00:13:56] If your order does not execute immediately, you are adding liquidity to the market.
-[00:14:01] However, if your order is a hidden order,
-[00:14:05] while you are adding liquidity, you don't get to collect the rebate.
-[00:14:09] You only get the rebate when your order is not only adding liquidity, but is also visible.
-[00:14:16] However, if it's a hidden order, you don't get collect the rebate, but you also don't pay a fee because you're not taking liquidity.
-[00:14:25] So it's just like a neutral trade, you pay nothing, but you also earn nothing.
-[00:14:30] So whenever I'm traded, when I buy on the ask, I'm taking from the market.
-[00:14:37] I'm taking liquidity.
-[00:14:39] There's someone that's on the ask selling and they get the rebate because they add liquidity by posting their order and I'm taking liquidity.
-[00:14:47] So remember with the way these commissions work, let's see, let me pull up the routing fees here for light speed.
-[00:14:55] So light speeds, routing fees here.
-[00:14:59] So these are always subject to change, but so we've got all these different routes.
-[00:15:04] LSPT, this is their smart route, and it costs 0.0015, whether you add liquidity or take liquidity, which is also kind of funny.
-[00:15:14] So they have a free route, but they make you pay even if you add liquidity.
-[00:15:17] It doesn't make sense. You use ARCA, and you get paid 20 bucks if you add liquidity on 10,000 shares.
-[00:15:24] You pay 30 bucks when you take liquidity. You go down here to add checks. You get 16 dollars for adding liquidity, a little bit less than ARCA, and you pay 30 dollars when you take liquidity.
-[00:15:36] What do we have here? ARCA, well that's the OTC market. I don't use OTC markets.
-[00:15:41] So when you add liquidity and you pay 29 dollars for taking liquidity, so you can see some of these are kind of competing a little bit.
-[00:15:54] NASDAQ, you earn a little less, only 15 dollars for adding liquidity, you pay 30 dollars for taking.
-[00:16:01] And so the difference, they get the pocket. That's the profit that they make, and they of course use that to maintain the exchanges.
-[00:16:08] So for me, when I'm buying on the ask, I'm taking liquidity from the market. So I am removing liquidity.
-[00:16:16] Any time you execute an order that is a marketable order, which means it executes instantly, you're taking liquidity away from the market.
-[00:16:24] So the direct access broker will pass through that ECN fee to you.
-[00:16:29] And what can be confusing is that you pay a commission to the broker, maybe it's a per share commission, maybe it's a per trade commission.
-[00:16:37] So my commission to light speed is per trade. So every trade I take, whether it's one share or a hundred thousand shares, I just pay the same amount of commission.
-[00:16:46] It's a per trade commission. However, the ECN fee is always based on per share, and it's a pass through fee that comes from the exchange that I send my order through.
-[00:16:57] And it can be costly. So let's say just for the sake of argument that there's a day where I trade a million shares of volume.
-[00:17:05] It's happened before. That's a lot of volume. But let's just say there was a stock that, you know, I kept buying and selling 50,000 shares of it.
-[00:17:13] You buy and sell once. That's a hundred thousand shares. So one trade around trips to a hundred thousand shares. I take 10 trades on that. I'm now up to a million shares.
-[00:17:21] So if I took liquidity on every order, which means every single order was a marketable order, I bought from the ask, and I sold on the bid executed instantly.
-[00:17:32] I'm going to pay 0.003. That is $3,000 in commissions. And that we don't shouldn't call it commissions. It's $3,000 in ECN fees to the exchange.
-[00:17:48] Here's the good news. When I buy, I buy the ask plus 10 cents. Usually that's my offset. So that means anytime I'm buying, I am taking liquidity.
-[00:18:00] So half of those orders were buy orders. That's 500,000 shares. So that's going to be 1,500 bucks.
-[00:18:06] However, on the selling, what I try to do is I try to sell on the ask. So if I post my order to sell on the ask, and I sell the 500,000 shares on the ask, which I'd like to be able to do.
-[00:18:20] And I can collect 0.002. So times 0.002, then I'm going to make $1,000, which means I'm net at a pocket 500 bucks.
-[00:18:32] Now let's just say on 10 trades with 50,000 shares each. On each of those trades, I made 10 cents. That's $5,000 per trade. So $5,000 per trade. So I'm up $50,000 on the day.
-[00:18:47] And my commission, in this example here, is how much? 500 bucks. 500 bucks is I'm sorry. Now the commission, that's the fee I paid for the routing.
-[00:18:56] And then for 10 trades, let's say I had 10 buy orders and 10 sell orders. $2 a trade over at light speed is, so what was it? 10, 20. So it's like 40 bucks.
-[00:19:07] So, but in terms of percentage, this is, this would be totally fine. The reality for me is that usually it's not 5050 buying half on the ask and selling half on the ask.
-[00:19:20] Usually for me, the reality is that yes, half is taking liquidity and that's when I'm buying.
-[00:19:28] And then when I'm selling, usually I'm able to sell about half on the ask to add liquidity and about half ends up having a sell on the bid or sell with an offset below the ask or with a hit and order. So I'm actually not collecting a rebate.
-[00:19:47] I'm not paying a fee, but I'm not collecting a rebate. So at the end of the day, I figure that it's not unusual for me on a typical high volume day for up to 10% of my profit to go to fees and commissions.
-[00:20:02] Now, if I'm up $50,000 and I end up paying 5,000 in fees and commissions, I'm okay with it. Certainly honestly feels like a lot.
-[00:20:11] And to be honest, I'm not sure that I've had very many days where I've spent that much money in fees and commissions, but I'm sure it has happened.
-[00:20:20] And so it's something that you definitely would compare against a commission for a broker, but could you trade with that kind of size of commission for broker?
-[00:20:29] And I think the answer is no. So traditional order types in terms of which ones add or removal liquidity, market orders always removal liquidity.
-[00:20:39] Again, it doesn't matter if you're with a commission for broker because you don't pay any fee for that.
-[00:20:43] But if you're using any direct access broker, you're going to pay the ECN fees on market orders.
-[00:20:49] Limit orders can be structured to remove liquidity or add liquidity.
-[00:20:53] Essentially, if it executes instantly, it's basically like a market order and you're taking from the market.
-[00:20:59] If it sits there and wait and wait and wait, then you're adding to the market.
-[00:21:03] And so you can collect the rebate if it's a non-hidden order.
-[00:21:07] Stop orders are always removing liquidity.
-[00:21:11] Pegged orders can add liquidity if they're not marketable.
-[00:21:15] So if it's a pegged order to sell on the ask or a pegged order to buy on the bid, you could be adding liquidity.
-[00:21:20] If it's a pegged order to sell at the midpoint, you're not going to be adding liquidity to the market.
-[00:21:25] Probably, but you might be a little bit.
-[00:21:30] But if your orders hidden, you won't collect any rebate for it.
-[00:21:34] So you can't factor that into collecting rebates.
-[00:21:37] Now, this is probably a good point where I should mention that I'm not focusing on trading to make the $20 on 10,000 shares.
-[00:21:45] That's not my primary, I'm not a market maker, right? That's not my goal.
-[00:21:50] So I'm aware of the fees that I pay and the rebates that I can earn.
-[00:21:54] And I try to be thoughtful about setting up my orders just to minimize that expense.
-[00:21:59] But at the same time, that's not my number one priority.
-[00:22:03] That would be like stepping over dollars to pick up pennies.
-[00:22:06] If I chose a route for instance that gave me a great rebate, but gave me terrible order execution that was incredibly slow,
-[00:22:14] it would completely negate the $20 that I made on the rebate.
-[00:22:18] It would not be worth it.
-[00:22:20] So I'm sharing all this with you because part of the goal of this class is that I'm sharing with you everything I know about the market.
-[00:22:26] And if some of this is not particularly helpful for you right now, that's okay.
-[00:22:30] Maybe it would be helpful for you at another time in your career when you get to a point of trading with bigger size or using a different broker.
-[00:22:35] But in any case, I'm just putting it all on the table so you're at least you understand it.
-[00:22:40] So when I'm trading, we have a stock that's very strong and I want to jump in, I need to buy on the ask.
-[00:22:45] If I put my order on the bid, I'm just going to sit there and wait for someone to sell me shares.
-[00:22:50] I won't get filled.
-[00:22:51] So here are my options for how to buy on the ask.
-[00:22:55] And let me just hide my video here just so you can read my camera so you can see it.
-[00:22:59] So my order is to buy on the ask.
-[00:23:01] Number one, I could use a market order.
-[00:23:03] There only works during regular market hours and I will get slippage.
-[00:23:06] But I could use a market order.
-[00:23:08] Number two, I could use a limit order at the ask.
-[00:23:11] So I say the ask is 550, I'm going to buy 5,000 shares at 550.
-[00:23:16] But I may not fill if my limit is 550 and the ask is 550.
-[00:23:21] Well, if there's, you know, again, the example bid and then ask 550, if there's 1,000 shares,
-[00:23:31] 545, 1,000 shares, if there's 1,000 shares here and I send my order by 5,000,
-[00:23:37] I'll fill a 1,000 and then what's going to happen is I'm going to be sitting on the bid at 550 with 4,000 shares.
-[00:23:43] So maybe if someone comes and sells me some shares, I could get filled the rest.
-[00:23:48] But otherwise now the price is going to bump up to 5, you know, 51 or 52,
-[00:23:53] wherever the next seller is.
-[00:23:55] Alternatively, if I had sent my limit order to buy,
-[00:23:58] using that offset of plus 10 cents, I've allowed some slippage, but not an unreasonable amount.
-[00:24:05] Now, 10 cents might be too much for you.
-[00:24:07] You could use less, but I like to use 10 cents.
-[00:24:09] And when I'm trading with larger positions, I do find that I need it.
-[00:24:13] Number four, I could send one of the super smart orders.
-[00:24:16] So that's going to send an order to multiple.
-[00:24:18] Then use at the same time to attempt to avoid the reg and MS issue of the market maker,
-[00:24:22] seeing my order come through and then scalping it.
-[00:24:26] But to be honest, I feel like the super smart order doesn't usually work that well.
-[00:24:31] I think they still see the order coming.
-[00:24:33] I don't know how they do it, but I think they still see it coming,
-[00:24:36] because I tend to actually get quite a last slippage on those orders.
-[00:24:39] So it's an option.
-[00:24:41] It might work better on certain stocks and others.
-[00:24:44] I'm not really sure.
-[00:24:45] Still, you know, the jury is still out on that.
-[00:24:48] Number five, I could attempt to send the order to a dark pool to buy.
-[00:24:52] But usually, I won't get filled.
-[00:24:55] So I could try, but then I'd probably just end up having to cancel the order and try again.
-[00:25:00] So generally, what I'm going to do is option number three,
-[00:25:04] limit order, ask plus 10 cents.
-[00:25:06] When we get into hot keys, I'll show you how to actually set up the script on that order.
-[00:25:10] And then when I'm selling, I like to sell into strength.
-[00:25:13] So when I'm scaling out of a trade, whether it's a winner or even if it's a loser,
-[00:25:17] I try to sell my shares on the ass to get the best price.
-[00:25:20] And I can earn a little bit of a rebate.
-[00:25:24] Selling on the ass forces buyers to come to me.
-[00:25:28] This increases the strength of the momentum.
-[00:25:31] Think about this.
-[00:25:32] This means that even though you're selling, you're not sending in order to the market
-[00:25:37] that's going to appear red on the time and sales.
-[00:25:40] Because if you do that, then isn't that going to inherently hurt your order?
-[00:25:44] Won't it inherently feed the algorithm that someone is selling?
-[00:25:49] And maybe they undercut it and they get a little slippage.
-[00:25:51] Or maybe they even try to short against your order.
-[00:25:53] I don't want to hurt my existing position.
-[00:25:55] I'm still holding a position.
-[00:25:57] So I want to sell into strength.
-[00:25:59] And and sell is little is possible on the bid because I don't want to feed that algorithm
-[00:26:05] that's going to see that weakness.
-[00:26:07] So if I sell on the ask, when the order gets filled, it will be green,
-[00:26:11] because the transaction occurred at the ask price.
-[00:26:14] When somebody else bought my shares or your shares.
-[00:26:18] That way you're not feeding the bids.
-[00:26:20] You're not indicating weakness to the market, which you don't want to do.
-[00:26:22] If you're holding 10,000 shares and you're scaling out 1,000 at a time,
-[00:26:26] every time you sell you don't want to hurt the rest of your position.
-[00:26:29] You want to try to get the best price.
-[00:26:31] And then that continues to support the momentum.
-[00:26:33] I know it's only one order, but still it's just, you don't want to feed the negative order
-[00:26:37] to the algorithm because it's just going to send that message that,
-[00:26:40] oh, someone doesn't like this and they're just willing to bail.
-[00:26:43] Now look, if I have to bail out of a trade because I'm wrong and it's not working,
-[00:26:47] I will sell on the bit.
-[00:26:49] But otherwise I try to sell on the ask.
-[00:26:51] And before I hit that bail out button, there are a couple other things I can do.
-[00:26:55] So let's first talk about the different ways that I can sell on the ask.
-[00:26:58] My options for selling on the ask and getting the best price include number one.
-[00:27:02] Limit order ask.
-[00:27:04] Hit an order.
-[00:27:05] That way I'm not showing the market how many shares I'm selling.
-[00:27:08] So you can't do that with a commission free broker.
-[00:27:11] You can do it with a direct access broker.
-[00:27:14] So limit order ask.
-[00:27:16] Hit an order.
-[00:27:17] Option two.
-[00:27:18] Cell order ask.
-[00:27:20] Pegd order.
-[00:27:21] Also hit it.
-[00:27:22] Pegd to the current ask.
-[00:27:24] Like I said, I don't find that these orders work very well.
-[00:27:27] In fact, I feel like they're inherently bearish when I see them and when I try to use them.
-[00:27:32] So I don't like using them.
-[00:27:34] Number three, post my order via a dark route and see if there's a match.
-[00:27:38] And if there's a match, awesome.
-[00:27:40] I got my order filled.
-[00:27:41] I don't have to hit the bid.
-[00:27:43] I don't have to, you know, sweep get a sweep where my order takes out the bid.
-[00:27:47] I just get filled right away.
-[00:27:49] And that's great.
-[00:27:50] But if I put the order on the ask on a dark route, I won't get filled right away.
-[00:27:55] I won't get filled unless there's someone that comes and buys my shares.
-[00:27:59] That no one can see that they're there.
-[00:28:01] But someone else using the dark route would have to execute the order.
-[00:28:05] But if I use the dark route to send the order in between the spread.
-[00:28:10] Maybe five cents below the ask or something like that.
-[00:28:13] Maybe at the midpoint of the spread.
-[00:28:15] Then maybe there's a match of a buyer that's sitting on the dark route.
-[00:28:20] Again, their order's not visible to the market.
-[00:28:22] So even if they're between the spread, no one can see it.
-[00:28:24] So I'm more likely to get a match if I sell closer to the bid than if I sell on the ask in instant match.
-[00:28:30] But it still may not happen.
-[00:28:32] And then the second way I can get out if I'm not able to fill on the ask.
-[00:28:36] And I still want to avoid hitting the bid.
-[00:28:38] I have two other choices or three other choices actually.
-[00:28:41] I can sell with an offset just below the ask using my offset key.
-[00:28:47] So if I use an offset, what I would do is I would sell ask minus two cents.
-[00:28:52] So it would be a, it would be basically a limit order.
-[00:28:57] Two cents below the ask and it's a hidden order.
-[00:29:00] So if you have a stock that has a five cents spread.
-[00:29:04] So we've got 50 by 55.
-[00:29:10] And I did my order at 53.
-[00:29:14] Essentially I'm just or 52.
-[00:29:17] Essentially I'm just under 53.
-[00:29:20] And we think we said two cents.
-[00:29:21] I'm just under the ask, but my order is hidden.
-[00:29:24] No one can see it.
-[00:29:25] So if someone tries to buy at 55, they'll actually get filled at 53.
-[00:29:30] And they'll be like, oh, that's great.
-[00:29:31] I got in a little cheaper than I want it.
-[00:29:33] So they're happy.
-[00:29:34] They got in at a better price.
-[00:29:36] And I got out.
-[00:29:37] And I didn't hurt the market.
-[00:29:38] That order will go through in white on the time and sales because it occurred between the spread.
-[00:29:44] Right?
-[00:29:45] So option number one, I can sell with an offset just below the ask price using the hidden order.
-[00:29:50] Ask minus one cent, minus two, minus five.
-[00:29:53] So by default, I don't use this order unless I'm trading a stock with a big spread, which is more common above
-[00:30:00] $15 a share in 20 and higher.
-[00:30:03] And I actually use five cents.
-[00:30:05] So I will occasionally use that order, but not very often.
-[00:30:08] Usually I just put my order on the ask.
-[00:30:10] And then if I don't get filled, then I can switch to either selling number two using a midpoint.
-[00:30:15] I could use the offset.
-[00:30:16] But if the stock has a tighter spread, then the offset could potentially put me below the bid, which then is basically a marketable order.
-[00:30:24] The midpoint, even if it's only a two cent spread, we'll put it sort of right between the spread.
-[00:30:29] So the midpoint pegged order will tie it right to the midpoint and it'll automatically adjust when the price goes up or down in the spread changes.
-[00:30:37] So I could use the midpoint pegged order.
-[00:30:39] Now not all.
-[00:30:42] So when you use a midpoint pegged order, just like when you use a limit order or a market order, you still can choose the destination.
-[00:30:49] You could still choose the route.
-[00:30:51] So you could do a pegged order with NASDAQ or you could do one with Arka, certain routes, however, don't allow pegged order.
-[00:30:58] It might be nice, or AMX.
-[00:31:01] I can't remember.
-[00:31:02] There's certain ones that don't allow it, so they'll just automatically rejected if you try to send it.
-[00:31:06] Again, we're going to get into how to actually set up these orders when we get into setting up hot keys.
-[00:31:11] I don't, you only use these with hot keys.
-[00:31:14] It's too cumbersome to try to set them up in your order entry window.
-[00:31:18] So I could sell using the midpoint pegged order.
-[00:31:20] That's an option.
-[00:31:21] Or number three, I could sell, try to sell using the dark route with a bigger offset or, again, at the midpoint, just to see if there's a match.
-[00:31:29] So if I've been unable to sell at the ask and I've been unable to sell with an offset, then at this point, I think we got an accept last resort.
-[00:31:38] I'm going to have to sell in the bit.
-[00:31:40] Now I could use a market order.
-[00:31:42] I never use a market order.
-[00:31:43] I could use one, but I never use one.
-[00:31:45] Number two, I could use a pegged order to sell in the bid, which would peg the order to the bid.
-[00:31:50] And I've tried those, and they don't work.
-[00:31:53] I don't know why, but it just doesn't work.
-[00:31:55] So maybe it just seems like the price goes lower and the order doesn't fill.
-[00:32:00] There's actually something that I haven't mentioned, but that is worth noting, which is that when you, it's about the order queue.
-[00:32:10] So when you put your order on the ask, what you'll notice is that you'll always be the last one to fill.
-[00:32:17] So it's like all these orders fill before you.
-[00:32:20] And then you fill right when the price moves up one penny.
-[00:32:23] And it's because, and this is super annoying.
-[00:32:26] But it's because these, uh, uh, high frequency trading algorithms have a way of adjusting the queue.
-[00:32:34] So they always keep themselves at the top.
-[00:32:37] It's incredibly annoying.
-[00:32:39] And so it's not first come first serve.
-[00:32:41] It's retail last smart money first.
-[00:32:45] And so you will notice that when you put your orders on the ask, your orders will always sell last.
-[00:32:52] But nonetheless, um, I'm still okay with that because at least I'm selling it a strength.
-[00:32:57] So, um, I'm just going to make a note here.
-[00:33:00] Ask orders, uh, go last.
-[00:33:04] This is due to the queue.
-[00:33:08] And the way HFTs can always keep their orders on the top of the order.
-[00:33:16] Who on the top of the top of the order book?
-[00:33:21] So, unfortunately, this is reality.
-[00:33:24] The ask orders go last.
-[00:33:26] Um, if you're retail.
-[00:33:28] So if you're a retail trader, how annoying.
-[00:33:32] But that's just the reality.
-[00:33:34] There's nothing we can do about it.
-[00:33:35] But it's still better than selling on the bid in my opinion.
-[00:33:38] But again, I will sell on the bid last resort.
-[00:33:41] And sometimes I'll also just sell on the bid when I'm like, I'm ready to get out.
-[00:33:45] I've been holding this for a while.
-[00:33:47] Um, it's my final position.
-[00:33:49] I had 10,000 shares.
-[00:33:51] Now I'm only down to a thousand.
-[00:33:52] And I'm just ready to get out and move on to do something else.
-[00:33:55] So I could do that.
-[00:33:57] And then, uh, so we've got the market order, the peg sell order.
-[00:34:01] Um, the limit order to sell with an offset below the bid.
-[00:34:04] So 10 cents below the bid.
-[00:34:06] And I make it some slippage on it.
-[00:34:08] As I mentioned with that 20,000 share position from last week.
-[00:34:11] Um, or number four, I can send multiple sell orders to several markets at the same time.
-[00:34:16] Attempting to do the super smart order and avoid the reg and the mess issue.
-[00:34:20] But to be honest, as I said, it doesn't seem effective.
-[00:34:23] I could also, I guess, number five.
-[00:34:26] Um, I could try to hit a dark pool.
-[00:34:29] Um, I'll add that here.
-[00:34:31] Um, try to sell to a dark pool.
-[00:34:36] But likely won't get filled.
-[00:34:39] I mean, it's just, I usually wouldn't get filled on that occasionally, I will.
-[00:34:43] But it's not, it's not a sure enough thing that I will get filled.
-[00:34:47] And I typically wouldn't want to risk it.
-[00:34:49] So I'm going to tell you the easiest thing for a beginner is just to have one button to buy
-[00:34:54] on the ask and one button to sell in the bid and not to over complicate it.
-[00:34:57] I mean, that's the truth.
-[00:34:59] It just makes it easy.
-[00:35:00] You buy on the ask.
-[00:35:01] You sell in the bid.
-[00:35:02] Life is easy.
-[00:35:03] Okay.
-[00:35:04] Two buttons.
-[00:35:05] That's all you need.
-[00:35:06] Now, you want to get a little fancy.
-[00:35:08] You have one button to buy on the ask.
-[00:35:10] You have one button to sell on the ask.
-[00:35:12] You have another button to sell in the bid.
-[00:35:14] Okay.
-[00:35:15] Now you've got three buttons.
-[00:35:16] Don't forget.
-[00:35:17] You need one button to cancel all open orders.
-[00:35:19] So now if you need a cancel the order on the ask to go and sell in the bid,
-[00:35:23] you've got to press that cancel button.
-[00:35:24] So now you've got four orders.
-[00:35:26] Now you say, well, I want to get a little fancier.
-[00:35:28] And if we looked at my keyboard right now, let's see.
-[00:35:32] Let me see if I could think about how many different orders I have.
-[00:35:35] We're of course going to get into this when we get into the next chapter on setting up
-[00:35:38] hotkeys.
-[00:35:39] So I have shift 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
-[00:35:43] That's for buying thousands of shares.
-[00:35:45] 1, 2, 3, 4, etc.
-[00:35:46] Then I have control K to sell my full position on the ask.
-[00:35:50] Control L to sell half position on the ask.
-[00:35:53] Control semicolon to sell quarter position on the ask.
-[00:35:57] This button is to sell quarter position on the ask visible order.
-[00:36:02] Not a hidden order.
-[00:36:03] I'll get a rebate for that.
-[00:36:05] So that's four hotkeys.
-[00:36:06] Then I have control Z, X and C to sell full half and quarter position on the bid.
-[00:36:13] Ten cents offset below the bid.
-[00:36:15] Then I have Alt, Z, X, C, selling full half and quarter super smart order.
-[00:36:22] Then I have control M for midpoint.
-[00:36:25] Control P for peg order.
-[00:36:28] Control this button and this button for profit targets.
-[00:36:31] Ten cents and 20 cents above the ask.
-[00:36:34] Then I have Alt M for midpoint on the dark route.
-[00:36:38] Alt here for another dark route.
-[00:36:40] Alt here.
-[00:36:41] This is selling half positions on other dark pools.
-[00:36:44] So this is basically dark pools on different routes just to see if they'll work.
-[00:36:48] Then I have control break even to put a stop at break even.
-[00:36:51] I have Alt B to use a peg order on the bid.
-[00:36:56] And then I have, there's a couple other hotkeys that I'm forgetting about.
-[00:37:02] And so to be honest, when I'm trading them at this point,
-[00:37:06] I know what all those keys do and I remember them.
-[00:37:09] But sometimes in the heat of the moment, I'm just smashing buttons.
-[00:37:12] And I don't even know which ones are going.
-[00:37:14] Just like, I gotta get out and I'm like boom, boom, boom.
-[00:37:17] Am I doing, I don't even know.
-[00:37:20] And some of the orders are to sell quarter or to sell half.
-[00:37:23] And so I might have multiple orders out at the same time.
-[00:37:26] I would be the worst guitar player.
-[00:37:28] When it's time for the solo, instead of actually playing it the right way,
-[00:37:31] I'm just like going crazy.
-[00:37:33] But the thing is, in the moment when we've got something moving and you know,
-[00:37:38] or I'm suddenly in a deep, heavy position and I'm like, holy smokes.
-[00:37:42] I need to start unwinding it.
-[00:37:44] You know, adrenaline starts to kick up a little bit.
-[00:37:47] Your heart starts pounding.
-[00:37:48] You've got a little tunnel vision.
-[00:37:49] And you're like, and you're just pressing whatever button you think is the right one.
-[00:37:56] And maybe all of a sudden you've got to notice order rejected.
-[00:37:59] And you're like, what's going on?
-[00:38:01] Order rejected.
-[00:38:02] And then you control Q to cancel all open orders.
-[00:38:05] You're canceling open orders and you're trying to send them again.
-[00:38:07] And it can get a little overwhelming, even for me.
-[00:38:10] So I'm a big fan of keeping it simple.
-[00:38:13] I think my layout is overcomplicated right now.
-[00:38:16] You know, I recently looked at my hot keys and realized there were several that were scripted.
-[00:38:20] I hadn't used an over a year.
-[00:38:22] And I was like, well, I might as well take those off.
-[00:38:25] So, you know, keep it simple, especially as a beginner.
-[00:38:29] But hot keys are important because they allow you to get in out of the market fast.
-[00:38:33] If you're fumbling, trying to, you know, type an order,
-[00:38:37] it's, it's going to slow you down, especially when you want to exit.
-[00:38:41] Getting in, you know, you can usually be able to more patient kind of thinking about it.
-[00:38:45] But then once you're in and you're green and you want to pay yourself,
-[00:38:49] you don't want to fumble in that moment.
-[00:38:51] That's when it really counts.
-[00:38:53] Okay, so now you've learned a ton about adding liquidity,
-[00:38:57] removing liquidity, different order types, different routing types.
-[00:39:02] And just to maybe one last note on the routing types.
-[00:39:05] Typically, I'm sending all my orders through NASDAQ or Ajx because they,
-[00:39:10] they have the most liquidity.
-[00:39:12] So I'll use ARCA.
-[00:39:14] I'll use Ajx and I'll use NASDAQ.
-[00:39:17] Most of these other ones I don't, I never use.
-[00:39:20] I think night is a dark pool.
-[00:39:22] This is a dark pool.
-[00:39:23] I try them periodically.
-[00:39:25] I don't usually get filled.
-[00:39:26] These ones I'm not sure about, at least I don't think I use them.
-[00:39:30] This is not the acronym that they go by though.
-[00:39:33] They go by a four character acronym like NYSE.
-[00:39:36] So they might have a name that I use, but I don't recall it.
-[00:39:40] Blue Ocean, this I don't use.
-[00:39:44] So, and yeah, those are the ones that they show available.
-[00:39:47] They do periodically add new ones, and then some they take offline,
-[00:39:50] so they change from time to time.
-[00:39:52] But to be honest, whether I use NASDAQ or ARCA or Ajx,
-[00:39:58] that's not really making a difference.
-[00:40:00] All of those, they're basically going to be the same.
-[00:40:03] The one thing that I could do, if I wanted to, is, you know,
-[00:40:07] I could pull up my, my level two.
-[00:40:10] And if I pulled up my level two, for instance,
-[00:40:12] we just sort of scroll away up here to when we're looking at level two.
-[00:40:16] If I pull up my level two and I see ARCA is selling right now,
-[00:40:20] I could send my order directly through ARCA.
-[00:40:22] So I could click ARCA, and then my route will change to ARCA,
-[00:40:26] and then I'm going to send the order straight to ARCA.
-[00:40:28] And they've got 3800 shares, and that would be my fastest fill.
-[00:40:32] The only problem is that if I did that to, like,
-[00:40:36] that's her fill X or NIC, and then I forgot to change it back,
-[00:40:41] those orders might be very slow under other circumstances.
-[00:40:46] So I've got to make sure, you know, if I choose one of those routes
-[00:40:50] that I also remember the next time, you know, to click a different one.
-[00:40:54] Ajx, ARCA, NASDAQ, I would choose those.
-[00:40:57] I wouldn't usually do AMX.
-[00:40:59] I don't tend to find, I find that one's pretty slow.
-[00:41:02] That's fine, yeah.
-[00:41:04] But AMX is slow, and NIC is usually slower.
-[00:41:07] So I rarely choose, I never choose those ones, but if it was the top of the book,
-[00:41:11] you know, I could look at that, and I could say, well, you know,
-[00:41:14] here, Ajx has 27,000 shares.
-[00:41:17] So if I send my order ARCA, think about what's going to happen.
-[00:41:21] I send my order ARCA, ARCA gets it, they give me 6,000 shares,
-[00:41:25] and they send the rest of my order to Ajx.
-[00:41:28] They might send it to NASDAQ first, who gives me 400,
-[00:41:31] and then they send it to Ajx.
-[00:41:33] But I eventually get to Ajx.
-[00:41:35] Now, if this order on Ajx is a retail trader, I'll buy from them,
-[00:41:39] because they're not going to see my order coming.
-[00:41:41] They're not going to cancel it.
-[00:41:42] But if it's a high frequency trading algorithm,
-[00:41:45] or one of these quant trading firms, then they're going to see my order come through.
-[00:41:49] They're going to jump out, and then I'm going to end up filling out a higher price,
-[00:41:53] and then their order is going to come back.
-[00:41:55] So there is some benefit with direct access brokers that you can click directly on the broker that's selling the shares,
-[00:42:02] or not the broker, but they're the route, and you can send directly to them.
-[00:42:06] Like I said, to take it or leave it,
-[00:42:10] I don't know that it actually makes a huge difference to do that.
-[00:42:14] I can't concretely say that that makes a huge difference.
-[00:42:18] Even with the orders rerouting, it's still incredibly fast with direct access brokers.
-[00:42:24] So I'm not really worried about that, but there's a couple of routes down here like these ones that I've never even heard.
-[00:42:30] I don't even know what these are.
-[00:42:32] So I don't even know if I clicked on it, my order might not even go through.
-[00:42:36] I don't think light speed even offers those routes.
-[00:42:39] So if I use one of those, my order might get rejected,
-[00:42:42] but if I send to Ajx, Ajx might know how to reroute to one of these.
-[00:42:47] So I kind of think it's probably okay that my hotkeys, for example,
-[00:42:51] are just standardized to NASDAQ or Ajx.
-[00:42:55] Every now and then on the trading platform, they'll say Ajx is having an issue route away, used different routes.
-[00:43:02] Or they'll say, Arc is having an issue route away.
-[00:43:05] So in any time that happens, I switch my hotkeys,
-[00:43:08] and if I save my layout, then my hotkeys end up being adjusted to the other one for a while.
-[00:43:14] But they're basically so similar, it really doesn't make a big difference.
-[00:43:19] Because all of that is going to be for me quite fast.
-[00:43:22] Okay, so now we can go ahead and jump into chapter six,
-[00:43:26] part seven on hotkeys and hot buttons.
-[00:43:30] Alright, let's keep going.
+[00:01:34] Now market orders are only available from 930 a.m. to 4 p.m. so you can't use it.
+[00:00:00] some pre-market, but a limit order you can use from 4 a.m. until 8 p.m. and in contrast
+[00:00:05] to a market order, a limit order does require you to put in a price. That's the most
+[00:00:09] you're willing to pay if you're buying or the least you're willing to accept if you're
+[00:00:13] selling. So, market orders are the type of orders, sorry, limit orders are the type
+[00:00:18] of orders that I use, but unlike market orders, you have to enter the price. Now, I understand
+[00:00:24] that some traders want to make it easy and just click one button to buy and one button to
+[00:00:28] sell and market orders at some brokers. You can just say, market buy, market sell and so
+[00:00:33] it feels easier, but you're going to get a worse execution price versus a limit order
+[00:00:38] in most cases. Now, the third type of order which is the most common are stop orders and
+[00:00:44] stop orders are triggered when the stock crosses a certain price. Sometimes people get confused
+[00:00:49] about limit orders. They think, well, I thought a limit order, you know, if I said my
+[00:00:53] limit order is 501, then my order won't go through till 501. No, your order is going
+[00:01:00] to, through to the market and the most you'll pay is 501. So, if it's currently trading
+[00:01:04] at 490, you're going to get in right now, but you won't pay anything more than 501.
+[00:01:09] If you wanted to send an order to buy, but not execute until 501, that's a stop order.
+[00:01:15] It's a buy stop order. However, stop orders don't work pre-market or after hours, so
+[00:01:20] they only work during regular trading hours. So, a stop order fires when the stop price
+[00:01:25] has triggered. And when they fire, they can either send out as a market order or they
+[00:01:30] can send out as a stop order. So, for me, I don't use stop orders at all. I know that
+[00:01:36] seems kind of crazy and there's risk involved with do-
+[00:00:00] that, but you can't use them pre-market, and then during regular trading hours, I don't
+[00:00:04] like using them because most of my trades are so quick, I worry about fumbling and having
+[00:00:08] a cancel in order before I send out another order, and so it's just easier for me not to
+[00:00:13] use them. Now let's talk about some of the more advanced types of orders that are available.
+[00:00:18] These may not be available at most commissioned free brokers. So the three, and actually there's
+[00:00:23] four types of orders that you could send. Number one is a primary peg order, primary peg order,
+[00:00:30] against the bid. So peg orders, and you saw an example of a peg order during the chapter one
+[00:00:38] on, or chapter six, part one on level two, where I showed you the example of that order that was at
+[00:00:45] a hundred thousand shares, and it was peg to the ask. And so every time the ask moved, that peg
+[00:00:51] order moved along with it. So essentially, that the price was coming down, every time someone
+[00:00:57] tried to undercut it, the price came down. A peg ask order is very common that it more
+[00:01:05] sophisticated traders will use it to try to sell a position. However, if it's not a hidden order,
+[00:01:11] it's communicating to the market that there's a big seller. Even if it is a hidden order,
+[00:01:17] it's still, it's a pretty aggressive sell order. I don't like using peg orders on the ask.
+[00:01:24] I just don't really like them. I'm okay with using regular orders on the ask, but I just don't
+[00:01:30] like a peg order because then the second ask drops, your order comes right down, and it feels like
+[00:01:35] it's just pushing the price down.
+[00:00:00] And, you know, it may even be possible that the algorithms, I'm sure they, it is possible
+[00:00:05] that they can see that it's a pegged order, but I don't know if they take advantage
+[00:00:08] of pegged orders in this way by kind of undercutting them, I'm not really sure, but
+[00:00:13] I don't like using pegged orders on the ass.
+[00:00:16] I also don't like using pegged orders on the bit, either for buying or selling.
+[00:00:20] The third type of pegged order is a midpoint pegged order, and the way that's going to work
+[00:00:26] is, it's going to peg your order to the midpoint between the spread.
+[00:00:31] So, if you've got 10 cents spread, you're orderably pegged, at 5 cents, you know, right
+[00:00:35] in between the bit and the, and the ask, and it automatically adjusts as the midpoint changes.
+[00:00:41] This is an order that I can be okay with using under certain circumstances.
+[00:00:46] If I'm not able to sell at the ask price, and I don't want to use a pegged order on the ask,
+[00:00:51] I could use the midpoint pegged, so my order is in between the spread.
+[00:00:56] The fourth type of order is called a super smart order, and this allows you to send your
+[00:01:02] order to multiple venues at the exact same time.
+[00:01:06] The idea is that you avoid the issue created inadvertently by rag and a mass of a market
+[00:01:12] maker receiving your order rerouting to another, but the others already seeing that order
+[00:01:18] came in by the time that it's come to them, and then undercut your cut in front of you.
+[00:01:23] So, by sending an order to four or five different routes at the exact same second, they don't have
+[00:01:31] the chance to cut in front of you. At least that's the idea. So, now let's talk about the difference
+[00:00:00] order types and order routing. So the order type is just the type of order. Stop order,
+[00:00:06] market order, limit order, pegd order, or maybe a super smart order. And a super smart
+[00:00:11] order would typically be sending three or four or five limit orders all at the same
+[00:00:16] time. So it's really just a complex limit order. An order route is the path that you choose
+[00:00:23] to have your order get sent to the market. So anytime you prepare an order, if you're using
+[00:00:29] a direct access broker, you can select your route. If you're using a commission free broker,
+[00:00:35] you usually can't select your route. So your route is just predefined by their quote,
+[00:00:39] smart routing. So we've already talked about routing and how the market is like an island,
+[00:00:44] and all of the different networks that connect to the island are like bridges. Some of them are
+[00:00:49] free. Some of them are more expensive. Some of them are exclusive to certain brokers. Some of them are
+[00:00:55] dark pools. They're hidden so you can't even really see what's going on on them. So you've got all
+[00:01:00] of these different routes that you could possibly choose, which gives you a lot of flexibility in your
+[00:01:04] order routing. Now smart routing is included with a lot of brokers. And I usually think of
+[00:01:11] smart routing as being smart for the broker, not for you. Smart routing is usually discounted
+[00:01:17] versus direct routing, either by being totally free a commission free broker or even a broker
+[00:01:23] like light speed offers discounted smart routing. But I've never found their smart routes to
+[00:01:29] be particularly good. So even though I saved some money, I feel like they must be making quite a bit
+[00:01:34] more than I'm saving because the executions are just not fast.
+[00:00:00] enough for me. And they're not free. It's not a free route. It's just a discount route,
+[00:00:05] but I'd rather pay a little more and have much better execution speed. So that's what I did.
+[00:00:10] Unfortunately, the way the smart routing works is usually it's smart for the broker. They've
+[00:00:15] got some arrangement with that venue that gives them a kickback or whatever it is. It may even
+[00:00:20] essentially be payment for order flow. And so it's not to your advantage to use those smart routes.
+[00:00:27] With direct access routing, you get to choose the ECN that you send your order through.
+[00:00:31] And of course, some are going to be more expensive than others. Now, we should talk for a moment
+[00:00:37] about the difference between dark routes and lit routes. So routes can either be lit or dark.
+[00:00:43] And when I say routes, I essentially am talking about venues, which are exchanges or alternative
+[00:00:49] trading systems. So a lit route or lit venue is the exchange that you send in order to
+[00:00:56] has an order book that is published. And it's publicly available. It becomes part of the level
+[00:01:02] too. So if you send your order through that venue, your order, if it's not a hidden order,
+[00:01:08] will be displayed to other market participants. Okay, lit markets include Ajax, Nasdaq,
+[00:01:14] Bats, Arka, they're very popular, they're lit. You either have an order book and your order can be
+[00:01:19] displayed there or you can hide it. A dark venue or a dark route means you're not using an
+[00:01:26] exchange because exchange is don't allow dark, like non public displays. But you're instead
+[00:01:30] using one of the alternative trading systems that does not have a public level too order book.
+[00:00:00] publish the public level to orderbook, they just, they don't make it available, so does
+[00:00:05] not have, let me just fix that type of app, a level to orderbook. So the problem with
+[00:00:11] dark routes and using dark pools in my experience is that they typically don't have
+[00:00:16] enough liquidity to fill my orders. So you can always try to send an order to a
+[00:00:22] dark pool, it'll either execute immediately because they have a match or it won't, and if
+[00:00:28] it doesn't, then you just have to go choose a different route. The problem is the time
+[00:00:32] spent trying to ping that dark pool could be, you know, an opportunity cost that you
+[00:00:38] could have taken profit just using one of the lit exchanges like Nasdaq, Arco, Ajax
+[00:00:43] or Bats. So I don't really actually never use currently dark routes to try to buy shares
+[00:00:51] because I just assume I won't get filled. I will occasionally try to use dark routes to
+[00:00:56] sell positions if I'm up and I'm not feeling stressed. I'm not feeling like I need to get
+[00:01:01] out right away. I'm up. I'm okay. Hey, I'll see you look. Can I sell half to the dark route?
+[00:01:07] If my order gets filled, that's awesome. Because if my order gets filled, my order will
+[00:01:12] not get scout by a high frequency trading algorithm. Basically, my order will just have an
+[00:01:17] instant match. The order will go through the time and sales. It may be in white. It may be
+[00:01:22] in red if it's on the bed, but it'll be an instant match and it won't clear the order book.
+[00:01:27] What do I mean by clear the order book? Well, if we have a bed, here of 550 and 10,000 shares,
+[00:01:34] and I sell 20,000, this order's been...
+[00:00:00] on and the price is going to go down to the next buyer let's say it's 545 for another
+[00:00:04] 10,000 that order's gone the price will drop to 540 so my order I'm going to get a little
+[00:00:09] slippage and the price will drop down to the next buyer down here whatever shares their
+[00:00:13] holding if I'm able to sell on a dark route the full 20,000 then I don't touch those orders
+[00:00:19] they're sitting on the lid market and so the price doesn't drop down because the out
+[00:00:23] either because the algos cut in front of me and took those orders away or because I actually
+[00:00:27] ended up hitting those orders so there are definitely advantages of using dark routes it's just
+[00:00:33] like I said I feel like the majority of the time I don't end up getting filled when I try to use them
+[00:00:39] which I find to be a bit annoying now I'll show you here actually I'll show you this in a moment
+[00:00:44] so direct access versus commission free brokers we've already talked about this a bit with payment
+[00:00:49] for order flow but commission free brokers offer generally a pretty limited number of different
+[00:00:54] order types usually you can't use pegged orders but that's okay most people don't use them anyways
+[00:01:00] and they don't give you super smart orders either but you you know it's okay I suppose because
+[00:01:06] you're trading with smaller size and it probably doesn't matter so you basically get
+[00:01:10] free commission and you get a smart route and sometimes you get generous fills which is awesome
+[00:01:15] and sometimes you could actually take much bigger size then what it appears is even available
+[00:01:20] on the market but then other times you could get in and then you have to have a hard time getting
+[00:01:24] back out so you have no problem getting filled but then you can't get out which is annoying
+[00:01:29] would direct access brokers on the other hand they've offered services for decades to
+[00:01:33] sophisticated traders they do charge commission they pass through those ECN
+[00:00:00] fees that you're going to pay when you do the routing when you're taking liquidity,
+[00:00:05] which we'll talk about in a moment.
+[00:00:06] But the flexibility of having those different routes and the more sophisticated and advanced
+[00:00:11] order types is something that a lot of traders appreciate.
+[00:00:14] Speed, cost, execution price, these are just the variables that we're thinking about.
+[00:00:19] So when we're sending our orders to the market, we have basically every time we send an
+[00:00:26] order we're doing one of two things.
+[00:00:27] We're either adding liquidity or we're removing liquidity.
+[00:00:32] So adding liquidity to the market means you're improving market liquidity by adding
+[00:00:38] shares to the order book.
+[00:00:41] So if you post an order and it does not fill instantaneously, then you're adding liquidity
+[00:00:47] to the market, whether it's an order on the bid to buy or it's an order on the ask to sell.
+[00:00:52] If your order does not execute immediately, you are adding liquidity to the market.
+[00:00:58] However, if your order is a hidden order, while you are adding liquidity, you don't
+[00:01:04] get to collect the rebate.
+[00:01:06] You only get the rebate when your order is not only adding liquidity, but is also visible.
+[00:01:13] However, if it's a hidden order, you don't get collect the rebate, but you also don't
+[00:01:18] pay a fee because you're not taking liquidity.
+[00:01:22] So it's just like a neutral trade, you pay nothing, but you also earn nothing.
+[00:01:27] So whenever I'm traded, when I buy on the ask, I'm taking from the market, I'm taking liquidity.
+[00:01:35] There's someone that's on the ask selling.
+[00:00:00] And they get the rebate because they add liquidity by posting their order, and I'm taking liquidity.
+[00:00:05] So remember with the way these commissions work, let's see, let me pull up the routing fees here for light speed.
+[00:00:13] So light speeds routing fees here, so these are always subject to change, but so we've got all these different routes.
+[00:00:21] This LSPT, this is their smart route, and it costs 0.0015, whether you add liquidity or take liquidity, which is also kind of funny.
+[00:00:32] So they have a free route, but they make you pay even if you add liquidity. It doesn't make sense.
+[00:00:36] You use ARCA, and you get paid 20 bucks if you add liquidity on 10,000 shares. You pay 30 bucks when you take liquidity.
+[00:00:44] You go down here to EDJECs, you get $16 for adding liquidity, a little bit less than ARCA, and you pay 30 dollars when you take liquidity.
+[00:00:53] What do we have here? ARCA, well that's the OTC market, I don't use OTC markets.
+[00:00:58] Night fan, this one, you earn 22 bucks for adding liquidity, and you pay 29 dollars for taking liquidity.
+[00:01:08] So you can see some of these are kind of competing a little bit, NASDAQ, you earn a little less, only 15 dollars for adding liquidity, you pay 30 dollars for taking.
+[00:01:18] And so the difference, they get the pocket, that's the profit that they make, and they of course use that to maintain the exchanges.
+[00:01:25] So for me, when I'm buying on the ask, I'm taking liquidity from the market, so I am removing liquidity.
+[00:01:33] Anytime you execute an order that is a marketable order,
+[00:00:00] which means it executes instantly, you're taking liquidity away from the market.
+[00:00:04] So the direct access broker will pass through that ECN fee to you.
+[00:00:09] And what can be confusing is that you pay a commission to the broker,
+[00:00:13] maybe it's a per share commission, maybe it's a per trade commission.
+[00:00:17] So my commission to light speed is per trade.
+[00:00:19] So every trade I take, whether it's one share or 100,000 shares,
+[00:00:23] I just pay the same amount of commission.
+[00:00:26] It's a per trade commission.
+[00:00:29] However, the ECN fee is always based on per share.
+[00:00:33] And it's a pass through fee that comes from the exchange that I send my order through.
+[00:00:37] And it can be costly.
+[00:00:39] So let's say just for the sake of argument,
+[00:00:41] that there's a day where I trade a million shares of volume.
+[00:00:46] It's happened before.
+[00:00:47] That's a lot of volume.
+[00:00:48] But let's just say there was a stock that, you know,
+[00:00:50] I kept buying and selling 50,000 shares of it.
+[00:00:53] You buy and sell one, that's 100,000 shares.
+[00:00:55] So one trade around trips to 100,000 shares.
+[00:00:58] I take 10 trades on that.
+[00:00:59] I'm now up to a million shares.
+[00:01:01] So if I took liquidity on every order,
+[00:01:04] which means every single order was a marketable order,
+[00:01:08] I bought from the ask and I sold on the bid, executed instantly.
+[00:01:12] I'm going to pay 0.003.
+[00:01:14] That is $3,000 in commissions.
+[00:01:20] And that, we don't should call it commissions.
+[00:01:23] It's $3,000 in ECM fees to the exchange.
+[00:01:28] Holy smokes.
+[00:01:29] Here's the good news.
+[00:01:30] When I buy, I buy at the ask plus 10 cents.
+[00:01:35] Usually that's my offset.
+[00:01:36] So that means anytime I'm,
+[00:00:00] I am taking liquidity.
+[00:00:02] So half of those orders were by orders,
+[00:00:04] that's 500,000 shares.
+[00:00:05] So that's going to be 1,500 bucks.
+[00:00:08] However, on the selling, what I try to do
+[00:00:12] is I try to sell on the ask.
+[00:00:14] So if I post my order to sell on the ask,
+[00:00:17] and I sell the 500,000 shares on the ask,
+[00:00:20] which I'd like to be able to do,
+[00:00:22] and I can collect 0.002.
+[00:00:26] So times 0.002,
+[00:00:28] then I'm going to make $1,000,
+[00:00:31] which means I'm net at a pocket 500 bucks.
+[00:00:34] Now let's just say on 10 trades,
+[00:00:36] with 50,000 shares each,
+[00:00:39] on each of those trades, I made 10 cents.
+[00:00:42] That's $5,000 per trade.
+[00:00:45] So $5,000 per trade.
+[00:00:47] So I'm up $50,000 on the day.
+[00:00:50] And my commission, in this example here,
+[00:00:52] is how much?
+[00:00:53] 500 bucks.
+[00:00:54] 500 bucks is, I'm sorry, now the commission,
+[00:00:56] that's the fee I paid for the routing.
+[00:00:59] And then for 10 trades, let's say I had 10 buy orders,
+[00:01:02] and 10 sell orders, $2 a trade,
+[00:01:04] over at light speed, is, so what was it?
+[00:01:07] 10, 20, so it's like 40 bucks.
+[00:01:09] So, but in terms of percentage,
+[00:01:12] this would be totally fine.
+[00:01:15] The reality for me is that usually it's not 50, 50,
+[00:01:19] buying half on the ask and selling half on the ask.
+[00:01:23] Usually for me, the reality is that, yes,
+[00:01:26] half is taking liquidity, and that's when I'm buying.
+[00:01:32] And then when I'm selling,
+[00:01:34] usually I'm able to sell about half on the ask.
+[00:00:00] to add liquidity and about half ends up having to sell on the bid or sell with an offset below the
+[00:00:07] ask or with a hidden order so I'm actually not collecting a rebate. I'm not paying a fee
+[00:00:13] but I'm not collecting a rebate. So at the end of the day I figure that it's not unusual for me
+[00:00:20] on a typical high volume day for up to 10% of my profit to go to fees and commissions. Now you know
+[00:00:28] if I'm up $50,000 and I end up paying 5,000 in fees and commissions I'm okay with it.
+[00:00:33] Certainly honestly feels like a lot and to be honest I'm not sure that I've had very many
+[00:00:39] days where I've spent that much money in fees and commissions but I'm sure it has happened and
+[00:00:45] and so it's something that you know that you definitely would compare against a commission for a
+[00:00:50] broker but could you trade with that kind of size or commission for your broker and I think the answer
+[00:00:55] so traditional order types in terms of which ones add or remove liquidity market orders always
+[00:01:02] remove liquidity. Again it doesn't matter if you're with a commission free broker because you don't
+[00:01:06] pay any fee for that but if you're using any direct access broker you're going to pay the
+[00:01:11] ECN fees on market orders. Limit orders can be structured to remove liquidity or add liquidity
+[00:01:17] essentially if it executes instantly it's basically like a market order and you're taking from the
+[00:01:23] market if it sits there and wait and wait and wait then you're adding to the market and so you get
+[00:01:28] you can collect the rebate if it's a non-hidden order. Stop orders are always removing liquidity
+[00:01:34] pegs orders can add liquidity
+[00:00:00] if they're not marketable.
+[00:00:01] So if it's a peg door to sell on the ask
+[00:00:03] or a peg door to buy on the bid,
+[00:00:05] you could be adding liquidity.
+[00:00:07] If it's a peg door to sell at the midpoint,
+[00:00:09] you're not gonna be adding liquidity to the market,
+[00:00:12] probably, but you might be a little bit.
+[00:00:16] But if your orders hit in,
+[00:00:17] you won't collect any rebate for it,
+[00:00:19] so you can't factor that in to collecting rebates.
+[00:00:22] Now, this is probably a good point
+[00:00:24] where I should mention that I'm not focusing on trading
+[00:00:29] to make the $20 on 10,000 shares.
+[00:00:32] That's not my primary, I'm not a market maker, right?
+[00:00:35] That's not my goal.
+[00:00:37] So I'm aware of the fees that I pay and the rebates
+[00:00:40] that I can earn, and I try to be thoughtful
+[00:00:43] about setting up my orders just to minimize that expense,
+[00:00:46] but at the same time, that's not my number one priority.
+[00:00:49] That would be like stepping over dollars to pick up pennies.
+[00:00:52] If I chose a route, for instance,
+[00:00:54] it gave me a great rebate, but gave me terrible
+[00:00:58] order execution that was incredibly slow,
+[00:01:01] it would completely negate the $20 that I made
+[00:01:04] on the rebate, it would not be worth it.
+[00:01:06] So I'm sharing all this with you
+[00:01:08] because part of the goal of this class
+[00:01:10] is that I'm sharing with you everything I know about the market.
+[00:01:13] And if some of this is not particularly helpful for you right now,
+[00:01:16] that's okay, maybe it would be helpful for you
+[00:01:18] at another time in your career when you get to a point
+[00:01:20] of trading with bigger size or using a different broker.
+[00:01:22] But in any case, I'm just putting it all on the table
+[00:01:24] so you're at least you understand it.
+[00:01:27] So when I'm trading, we have a stock that's very strong
+[00:01:30] and I want to jump in, I need to buy on the ask.
+[00:01:33] If I put my order on the bid,
+[00:01:35] I'm just gonna sit there and wait for someone to sell me shares.
+[00:01:37] I won't get it.
+[00:00:00] So here are my options for how to buy on the ask and let me just hide my video here
+[00:00:06] just so you can read my camera so you can see it. So my order is to buy on the ask.
+[00:00:10] Number one, I could use a market order. There only works during regular market
+[00:00:14] hours and I will get slippage. But I could use a market order. Number two, I could use a
+[00:00:18] limit order at the ask. So I say the ask is 550, I'm going to buy 5,000 shares
+[00:00:24] 50. But I may not fill if my limit is 550 and the ask is 550. Well, if there's,
+[00:00:30] you know, again, the example bid and then ask 550, if there's 1,000 shares, 545,
+[00:00:40] 1,000 shares. If there's 1,000 shares here and I send my order to buy 5,000, I'll fill
+[00:00:46] 1,000 and then what's going to happen is I'm going to be sitting on the bid at 550 with
+[00:00:50] 4,000 shares. So maybe if someone comes and sells me,
+[00:00:54] some shares, I could get filled the rest. But otherwise now the price is going to
+[00:00:58] bump up to 551 or 52, wherever the next seller is. Alternatively,
+[00:01:04] if I had sent my limit order to buy using that offset of
+[00:01:08] plus 10 cents, I've allowed some slippage but not an unreasonable amount. Now,
+[00:01:14] 10 cents might be too much for you. You could use less, but I like to use 10 cents
+[00:01:18] when I'm trading with larger positions, I do find that I need it. Number 4,
+[00:01:22] I could send one of the super smart orders. So that's going to send an order to
+[00:01:26] multiple venues at the same time to attempt to avoid the rag and MS issue
+[00:01:30] of the market maker, seeing my order coming through and then scalping it.
+[00:01:34] But to be honest, I feel like the super smart order.
+[00:00:00] Doesn't usually work that well. I think they still see the order coming. I don't know how they do it
+[00:00:04] But I think they still see it coming because I still I tend to actually get quite a last slippage on those orders
+[00:00:09] So it's an option might work better on certain stocks and others. I'm not really sure still
+[00:00:16] You know the jury is still out on that number five. I could attempt to send the order to a dark pool to buy
+[00:00:22] But usually I won't get filled so I could try
+[00:00:27] But then I'd probably just end up having to cancel the order and try again
+[00:00:30] So generally what I'm going to do is option number three
+[00:00:34] Limit order ask plus ten cents when we get into hot keys
+[00:00:37] I'll show you how to actually set up the script on that order and then when I'm selling I like to sell into strength
+[00:00:43] So when I'm scaling out of a trade whether to winner or even if it's a loser
+[00:00:47] I try to sell my shares on the ass to get the best price and I can earn a little bit of a rebate
+[00:00:53] selling on the ass forces buyers to come to me this increases the strength of the momentum
+[00:01:01] Think about this this means that even though you're selling
+[00:01:04] You're not sending in order to the market that's going to appear red on the time and sales
+[00:01:10] Because if you do that then isn't that going to inherently hurt your order?
+[00:01:14] won't it inherently feed the algorithm that someone is selling and maybe they undercut it and they get a little slippage
+[00:01:21] Or maybe they even try to short against your order. I don't want to hurt my existing position
+[00:01:25] I'm still holding a position
+[00:01:27] So I want to sell into strength and and sell as little as possible on the bid because I don't want to feed that
+[00:01:34] Algorithm that's going to see that weakness
+[00:00:00] So if I sell on the ask, when the order gets filled, it will be green, because the transaction
+[00:00:04] occurred at the ask price when somebody else bought my shares or your shares.
+[00:00:10] That way you're not feeding the bids, you're not indicating weakness to the market,
+[00:00:13] which you don't want to do.
+[00:00:14] If you're holding 10,000 shares and you're scaling out 1,000 to the time, every time
+[00:00:18] you sell, you don't want to hurt the rest of your position.
+[00:00:21] You want to try to get the best price, and then that continues to support the momentum.
+[00:00:25] I know it's only one order, but still, it's just, you don't want to feed the negative
+[00:00:29] order to the algorithm, because it's just going to send that message that, oh, someone
+[00:00:32] someone doesn't like this and they're just willing to bail.
+[00:00:35] Now look, if I have to bail out of a trade because I'm wrong and it's not working,
+[00:00:39] I will sell on the bit, but otherwise I try to sell on the ask.
+[00:00:42] And before I hit that bail out button, there are a couple other things I can do.
+[00:00:47] So let's first talk about the different ways that I can sell on the ask.
+[00:00:50] My options for selling on the ask and getting the best price include number one,
+[00:00:54] limit order, ask, hit an order that way I'm not showing the market how many shares I'm selling.
+[00:01:00] So you can't do that with a commission free broker, you can do it with a direct access broker.
+[00:01:06] So limit order, ask, hit an order.
+[00:01:09] Option two, sell order, ask, peg order, also hit an peg to the current ask.
+[00:01:16] Like I said, I don't find that these orders work very well.
+[00:01:19] In fact, I feel like they're inherently bearish when I see them and when I try to use them.
+[00:01:24] So I don't like using them.
+[00:01:25] Number three, post my order via a dark route and see if there's a match.
+[00:01:30] And if there's a match, awesome.
+[00:01:32] I got my order filled.
+[00:01:33] I don't have to hit the bed.
+[00:01:34] I don't have to, you know, sweep, get a sweep where my order...
+[00:00:00] takes out the bid I just get filled right away and that's great. But if I put the order
+[00:00:05] on the ask on a dark route I won't get filled right away. I won't get filled unless
+[00:00:11] there's someone that comes and buys my shares that no one can see that they're there but
+[00:00:15] someone else using the dark route would have to execute the order. But if I use the dark
+[00:00:20] route to send the order in between the spread maybe five cents below the ask or something like
+[00:00:26] that maybe at the midpoint of the spread then maybe there's a match of a buyer that's
+[00:00:32] sitting on the dark route. Again, their order is not visible to the market so even if
+[00:00:36] they're between the spread no one can see it. So I'm more likely to get a match if I sell
+[00:00:40] closer to the bid than if I sell on the ask in instant match but it still may not happen.
+[00:00:46] And then the second way I can get out if I'm not able to fill on the ask and I still want to
+[00:00:51] avoid hitting the bid I have two other choices or three other choices actually. I can sell with
+[00:00:56] an offset just below the ask using my offset key. So if I use an offset what I would do is I would
+[00:01:04] sell ask minus two cents. So it would be a it would be basically a limit order two cents below the
+[00:01:12] ask and it's a hidden order. So if you have a stock that has a five cents spread so we've got
+[00:01:20] 50 by 55 and I did my order at 53. Essentially I'm just or 52. Essentially I'm just
+[00:01:32] under 53. Do anything we said two cents. I'm just under the ask but my order
+[00:00:00] is hidden, no one can see it.
+[00:00:01] So if someone tries to buy at 55, they'll actually get filled at 53, and they'll
+[00:00:07] be like, oh, that's great.
+[00:00:08] I got in a little cheaper than I wanted.
+[00:00:10] So they're happy.
+[00:00:11] They got in at a better price, and I got out, and I didn't hurt the market.
+[00:00:14] That order will go through in white on the time and sales because it occurred between the
+[00:00:19] spread.
+[00:00:20] Right?
+[00:00:21] So option number one, I can sell with an offset just below the ask price using the
+[00:00:25] hidden order.
+[00:00:26] Ask minus one cent, minus two, minus five.
+[00:00:29] So by default, I don't use this order unless I'm trading a stock with a big spread, which
+[00:00:35] is more common above $15 a share in 20 and higher, and I actually use five cents.
+[00:00:41] So I will occasionally use that order, but not very often.
+[00:00:44] Usually I just put my order on the ask, and then if I don't get filled, then I can switch
+[00:00:48] to either selling number two, using a midpoint.
+[00:00:51] I could use the offset, but if the stock has a tighter spread, then the offset could potentially
+[00:00:57] put me below the bid, which then is basically a marketable order.
+[00:01:00] The midpoint, even if it's only a two cent spread, we'll put it right between the spread.
+[00:01:05] So the midpoint pegdorter will tie it right to the midpoint, and it'll automatically
+[00:01:10] adjust when the price goes up or down in the spread changes.
+[00:01:14] So I could use the midpoint pegdorter.
+[00:01:16] Now not all, so when you use a midpoint pegdorter, just like when you use a limit order
+[00:01:22] or a market order, you still can choose the destination.
+[00:01:26] You could still choose the route, so you could do a pegdorter with NASDAQ, or you could
+[00:01:30] do one with ARCA, certain routes, however, don't allow pegdorders.
+[00:01:35] It might be nice, or AMX, I can't remember.
+[00:00:00] So there's certain ones that don't allow it,
+[00:00:01] so they'll just automatically reject it
+[00:00:03] if you try to send it.
+[00:00:04] Again, we're gonna get into how to actually set up
+[00:00:06] these orders when we get into setting up hotkeys.
+[00:00:09] I don't, you only use these with hotkeys.
+[00:00:12] It's too cumbersome to try to set them up
+[00:00:14] in your order entry window.
+[00:00:16] So I could sell using the midpoint pegdorder,
+[00:00:18] that's an option, or number three,
+[00:00:20] I could sell, try to sell using the dark route
+[00:00:22] with a bigger offset or, again, at the midpoint,
+[00:00:25] just to see if there's a match.
+[00:00:27] So if I've been unable to sell at the ask,
+[00:00:30] and I've been able to sell with an offset,
+[00:00:33] then at this point, I think we got an accept last resort,
+[00:00:36] I'm gonna have to sell on the bit.
+[00:00:38] Now I could use a market order, I never use a market order.
+[00:00:41] I could use one, but I never use them.
+[00:00:44] Number two, I could use a pegdorder to sell on the bid,
+[00:00:47] which would peg the order to the bid,
+[00:00:49] and I've tried those, and they don't work.
+[00:00:51] I don't know why, but it just doesn't work.
+[00:00:53] So maybe it just seems like the price goes lower,
+[00:00:57] and the order doesn't fill.
+[00:00:58] There's actually something that I haven't mentioned,
+[00:01:03] but that is worth noting, which is that,
+[00:01:06] when it's about the order queue.
+[00:01:08] So when you put your order on the ask,
+[00:01:11] what you'll notice is that you'll always be
+[00:01:14] the last one to fill.
+[00:01:15] So it's like all these orders fill before you,
+[00:01:18] and then you fill right when the price moves up one penny.
+[00:01:22] And it's because, and this is super annoying,
+[00:01:24] but it's because these high frequency trading algorithms
+[00:01:30] have a way of adjusting the queue,
+[00:01:33] so they always keep themselves at the top.
+[00:01:36] It's incredibly annoying, and so it's...
+[00:00:00] not first come first serve, it's retail last smart money first. And so you will notice
+[00:00:06] that when you put your orders on the ask, your orders will always sell last, but none
+[00:00:12] the last, I'm still okay with that because at least I'm selling it a strength. So I'm just
+[00:00:18] going to make a note here, ask orders go last. This is due to the queue and the way HFTs can
+[00:00:32] always keep their orders on the top of the order, on the top of the order book. So unfortunately
+[00:00:43] this is reality, the ask orders go last, if you're retail. So if you're a retail trader,
+[00:00:52] how annoying. But that's just the reality, there's nothing we can do about it. It's still
+[00:00:56] better than selling on the bid in my opinion. But again, I will sell on the bid last resort. And
+[00:01:01] sometimes I'll also just sell on the bid when I'm like, I'm ready to get out. I've been holding this
+[00:01:06] for a while, it's my final position. I had 10,000 shares, now I'm only down to a thousand,
+[00:01:12] and I'm just ready to get out and move on to do something else. So I could do that. And then
+[00:01:18] so we've got the market order, the peg sell order, the limit order to sell with an offset
+[00:01:23] below the bid, so 10 cents below the bid, and I make it some slippage on it, as I mentioned with
+[00:01:29] that 20,000 share position from last week, or number four, I can send multiple sell orders to
+[00:01:34] several markets at the same time attempting to do the super smart order.
+[00:00:00] and avoid the reg, and a mess issue, but to be honest, as I said, it doesn't seem
+[00:00:05] effective. I could also, I guess, number five. I could try to hit a dark pool. I'll
+[00:00:12] add that here. Try to sell to a dark pool, but likely won't get filled. I mean, it's
+[00:00:22] just, I usually wouldn't get filled on that. Occasionally I will, but it's not, it's
+[00:00:27] not a sure enough thing that I will get filled, and I typically wouldn't want to risk
+[00:00:31] it. So I'm going to tell you the easiest thing for a beginner is just to have one
+[00:00:36] button to buy on the ask and one button to sell in the bid and not to overcomplicate it.
+[00:00:40] I mean, that's the truth. It just makes it easy. You buy on the ask, you sell in the
+[00:00:44] bid, life is easy. Okay, two buttons. That's all you need. Now you want to get a little
+[00:00:50] fancy. You have one button to buy on the ask. You have one button to sell on the ask. You have another
+[00:00:55] button to sell on the bid. Okay, now you've got three buttons. Don't forget, you need one
+[00:00:59] button to cancel all open orders. So now if you need to cancel the order on the ask to
+[00:01:04] go and sell on the bid, you've got to press that cancel button. So now you've got four orders.
+[00:01:08] Now you say, well, I want to get a little fancier. And if we looked at my keyboard right
+[00:01:12] now, let's see. Let me see if I could think about how many different orders I have. We're
+[00:01:17] of course going to get into this when we get into the next chapter on setting up hotkeys.
+[00:01:21] So I have shift 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. That's for buying thousands of shares.
+[00:01:27] 1, 2, 3, 4, etc. Then I have control K to sell my full position on the ask. Control L to sell
+[00:01:34] half position on the ask. Control semicolon to sell.
+[00:00:00] quarter position on the ass, this button is to sell quarter position on the
+[00:00:05] ass visible order, not a hidden order. I'll get a rebate for that. So that's
+[00:00:10] four hot keys. Then I have control Z, X and C to sell full half and quarter
+[00:00:16] position on the bid, 10 cent offset below the bid. Then I have Alt, Z, X, C, selling
+[00:00:23] full half and quarter, super smart order. Then I have control M for midpoint,
+[00:00:29] control P for peg order. Control this button and this button for profit
+[00:00:35] targets, 10 cents and 20 cents above the ass. Then I have Alt M for midpoint on
+[00:00:42] the dark route. Alt here for another dark route. Alt here, this is selling half
+[00:00:46] positions on other dark pools. So this is basically dark pools on different
+[00:00:51] routes just to see if they'll work. Then I have control break even to put a
+[00:00:54] stop at break even. I have Alt B to use a peg order on the bid. And then I have,
+[00:01:02] there's a couple other hot keys that I'm forgetting about. And so to be honest,
+[00:01:08] when I'm trading them at this point, I know what all those keys do and I
+[00:01:12] remember them, but sometimes in the heat of the moment, I'm just smashing buttons
+[00:01:16] and I didn't even know which ones are going. I just like, I got to get out and I'm
+[00:01:20] like boom, boom, boom, and I don't even know. And some of the orders are
+[00:01:25] to sell quarter or to sell half. And so I might have multiple orders out at
+[00:01:29] the same time. I would be the worst guitar player. When it's time for the
+[00:01:33] solo, instead of actually playing at the right way, I'm just like going crazy.
+[00:00:00] But the thing is, in the moment, when we've got something moving and, you know, or I'm suddenly in a deep, heavy position and I'm like, holy smokes, I need to start unwinding it, you know, adrenaline start to kick up a little bit, your heart starts pounding, you got a little tunnel vision and you're like,
+[00:00:16] I need to, and you're just pressing whatever button you think is the right one. And maybe all of a sudden, you get a notice order rejected and you're like, what's going on, order rejected.
+[00:00:29] And then, oh, control Q to cancel all open orders, you're canceling open orders and you're trying to send them again and it can, it can get a little overwhelming, even for me.
+[00:00:37] So, I'm a big fan of keeping it simple. I think my layout is over complicated right now. You know, I recently looked at my hot keys and realized there were several that were scripted that I hadn't used in over a year and I was like, well, I might as well take those off.
+[00:00:51] So, you know, keep it simple, especially as a beginner, but hot keys are important because they allow you to get in out of the market fast. If you're fumbling, trying to, you know, type an order, it's, it's going to slow you down, especially when you want to exit, getting in, you know, you can usually be able to more patient kind of thinking about it, but then once you're in and you're green and you want to pay yourself, you don't want to fumble in that moment. That's when it really counts.
+[00:01:19] Okay, so now you've learned a ton about adding liquidity, removing liquidity, different order types, different routing types, and just to maybe one last note on the routing types.
+[00:01:32] Typically, I'm sending all my orders through NASDAQ or EdgeX because they, they have the most.
+[00:00:00] liquidity. So I'll use ARCA, I'll use Ajax, and I'll use NASDAQ, and most of these other ones
+[00:00:06] I don't, I never use. I think night is a dark pool. This is a dark pool. I try them periodically,
+[00:00:13] I don't usually get filled. These ones I'm not sure about, at least I don't think I use them.
+[00:00:19] This is not the acronym that they go by, though. They go by a four character acronym, like NYSC.
+[00:00:25] So they might have a name that I use, but I don't recall it. Blue ocean, this I don't use.
+[00:00:33] And yeah, those are the ones that they show available. They do periodically add new ones,
+[00:00:37] and then some they take offline, so they change from time to time. But to be honest,
+[00:00:42] whether I use NASDAQ or ARCA or Ajax, that's not really making a difference. All of those,
+[00:00:49] they're basically going to be the same. The one thing that I could do, if I wanted to,
+[00:00:54] is, you know, I could pull up my, um, my level two, and if I pull up my level two, for instance,
+[00:01:00] we just sort of scroll away up here to, um, when we're looking at level two. If I pull up my level two,
+[00:01:05] and I see ARCA is selling right now, I could send my order directly through ARCA. So I could click
+[00:01:11] ARCA, and then my route will change to ARCA, and then I'm going to send the order straight to ARCA.
+[00:01:16] And they've got 3800 shares, and that would be my fastest fill. The only problem is that if I did
+[00:01:23] that to, like, bats or fill X or NIC, and then I forgot to change it back,
+[00:01:30] those orders might be very slow under other circumstances. So I've got to make sure, you know,
+[00:01:36] if I choose one of those,
+[00:00:00] routes that I also remember the next time, you know, to click a different one.
+[00:00:05] Ajax, Arca, NASDAQ. I would choose those. I wouldn't usually do AMX. I don't tend to find,
+[00:00:10] I find that one's pretty slow. That's fine, yeah. But AMX is slow and nice. He's usually
+[00:00:16] slower. So I rarely choose, I never choose those ones, but if it was the top of the book,
+[00:00:22] you know, I could look at that and I could say, well, you know, here, Ajax has 27,000
+[00:00:27] shares. So if I send my order to Arca, think about what's going to happen. I send my order
+[00:00:32] to Arca, Arca gets it. They give me 6,000 shares and they send the rest of my order to
+[00:00:38] Ajax. They might send, it's a NASDAQ first who gives me 400 and then they send it to Ajax.
+[00:00:43] But I, eventually, get to Ajax. Now, if this order on Ajax is a retail trader, I'll buy
+[00:00:49] from them because they're not going to see my order coming. They're not going to cancel it.
+[00:00:53] But if it's a higher frequency trading algorithm or one of these quant trading firms, then
+[00:00:57] they're going to see my order come through. They're going to jump out and then I'm going
+[00:01:02] to end up filling out a higher price and then their order is going to come back. So there
+[00:01:06] is some benefit. We direct access brokers that you can click directly on the broker that
+[00:01:11] selling the shares or the not the broker, but they're the route and you can send directly
+[00:01:15] to them. Like I said, it's to take it or leave it. I don't know that it actually makes
+[00:01:22] a huge difference to do that. I can't concretely say that that makes a huge difference.
+[00:01:29] Even with the orders rerouting, it's still incredibly fast with direct access brokers.
+[00:01:34] So I'm not really worried about that, but there's a couple of routes down here.
+[00:00:00] these ones that I've never even heard.
+[00:00:02] I don't even know what these are.
+[00:00:03] So I don't even know if I clicked on it,
+[00:00:06] my order might not even go through.
+[00:00:08] I'm not even, I've never, I don't think light speed
+[00:00:10] even offers those routes.
+[00:00:11] So if I use one of those, my order might get rejected.
+[00:00:14] But if I send to Ajax, Ajax might know how to reroute
+[00:00:17] to one of these.
+[00:00:19] So I kind of think it's probably OK
+[00:00:22] that my hotkeys, for example, are just standardized
+[00:00:25] to NASDAQ or Ajax every now and then on the trading
+[00:00:29] platform, they'll say, Ajax is having an issue route
+[00:00:33] away, used different routes.
+[00:00:34] Or they'll say, Arc is having an issue route away.
+[00:00:37] So in any time that happens, I switch my hotkeys.
+[00:00:40] And if I save my layout, then my hotkeys end up being
+[00:00:43] adjusted to the other one for a while.
+[00:00:46] But they're basically so similar.
+[00:00:48] It really doesn't make a big difference.
+[00:00:51] Because all of that is going to be for me quite fast.
+[00:00:54] OK.
+[00:00:54] So now we can go ahead and jump into chapter six, part seven
+[00:00:59] on hotkeys and hot buttons.
+[00:01:02] All right, let's keep going.

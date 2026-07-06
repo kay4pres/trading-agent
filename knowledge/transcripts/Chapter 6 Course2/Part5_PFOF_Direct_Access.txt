@@ -1,274 +1,317 @@
-# Part 5 PFOF vs Direct Access.mp4
-# Transcribed: 2026-06-29T21:42:32.053798
-# Duration: 22.9 minutes
-# Model: faster-whisper tiny
+# Segments: 14
+# Transcribed: 2026-07-06T21:16:54.625202
 
-[00:00:03] Okay, so we're going to go ahead and jump in here to chapter six part five and in this chapter in this section
-[00:00:08] I'm going to talk about payment for order flow with commission free brokers like
-[00:00:13] Charles Schwap think of swim Robin Hood we both fidelity each rate. I mean all of the commission free brokers
+[00:00:03] Okay, so we're gonna go ahead and jump in here to chapter six part five and in this chapter in this section
+[00:00:08] I'm gonna talk about payment for order flow with commission freebrokers like
+[00:00:13] Charles Schwab, think her swim Robin Hood we both fidelity each rate. I mean all of the commission freebrokers
 [00:00:19] They engage in payment for order flow and then we can pair that to direct access brokers now over the years
-[00:00:26] You've seen me use both commission free brokers when I've done small account challenges
+[00:00:26] You've seen me use both commission freebrokers when I've done small account challenges
 [00:00:30] And I'm raising money for charity and things like that. He've also seen me use direct access brokers
-[00:00:34] So I can speak with authority on my experiences between these two brokers and I want to share with you
-[00:00:40] First of all what payment for order flow is all about because it's really fascinating and it's something that is not
-[00:00:47] Offered in other countries. It's not allowed in Europe. It is allowed here in the United States
-[00:00:51] And that's what allows for commission free trading
-[00:00:53] So if you've noticed we bowl for instance in Canada you have to pay commissions
-[00:00:59] Brokers in Europe you have to pay commissions, but brokers here in the United States are free or they can be if they engage in payment for order flow
+[00:00:34] So I can speak with authority on my experiences between these two brokers
+[00:00:39] And I want to share with you first of all what payment for order flow is all about because it's really fascinating
+[00:00:45] And it's something that is not offered in other countries
+[00:00:48] It's not allowed in Europe. It is allowed here in the United States and that's what allows for commission free trading
+[00:00:53] So if you've noticed we bowl for instance in Canada, you have to pay commissions
+[00:00:59] Brokers in Europe. You have to pay commissions
+[00:01:02] But brokers here in the United States are free or they can be if they engage in payment for order flow
 [00:01:08] Now direct access brokers
 [00:01:10] Tend not to engage in payment for order flow
 [00:01:13] They instead give you direct access to the market and so you do slept a pay a commission there
-[00:01:18] So there's a trade off commission free order racked access, which is gonna charge you a commission
+[00:01:18] So there's a trade-off commission free or direct access, which is going to charge you a commission
 [00:01:22] So let's talk about what payment for order flow is all about
-[00:01:26] So basically, I'm gonna give you the scenario of how how this how I kind of came to understand it
-[00:01:33] You've got a big broker out there and they're they've got you know hundreds of thousands of clients are trading every single day
-[00:01:38] And what's happening prior to payment for order flow is you've got the broker here and
-[00:01:45] They're the clients orders are going to
-[00:01:48] The exchanges so they go to the exchange right here. They execute and then the order comes back
-[00:01:53] And so with the broker does for the customer
-[00:01:56] So you're the customer down here is they charge you a commission typically it was nine dollars and 95 cents per trade
-[00:02:03] I mean, this was standard in the 90s the 2000s it got you could negotiate a little lower
-[00:02:08] Maybe down to four dollars and 95 cents, but it was pretty expensive and so essentially when you send your order to the exchange
-[00:02:15] The broker have relationships with the exchanges so they did pay fees they paid fees
-[00:02:23] But they buried them inside the commission here. So you didn't really know exactly what the fee was
-[00:02:30] There was a fee, but you didn't really notice it and so your order went right to the exchange
-[00:02:35] And so in that during that period of time all orders for the most part went directly to the exchanges
-[00:02:40] So traders were trading against each other with each other on the open market and then
-[00:02:45] hedge fund over here. So this is hedge fund and we're gonna give him a
-[00:02:51] Smiley face and he's gonna be wearing a big top hat
-[00:02:54] He's got a huge top hat because he makes a ridiculous amount of money
-[00:02:58] So this hedge fund says hey hey hey hey hey
-[00:03:02] Wait one second, Mr. Broker. I give you a proposal. Why don't you send all of your order flow to me?
-[00:03:12] Forget about the exchanges. No, no, no. Send your order flow to me and I
-[00:03:17] I will execute the orders for all of your customers
-[00:03:21] Now I'm gonna execute them so well
-[00:03:23] I'm gonna execute them better than anyone has ever executed them. In fact I'll execute them so well
-[00:03:29] You don't have to pay me. I will pay you for the privilege
-[00:03:33] So now the hedge fund is paying can you imagine paying the broker here for your order flow?
-[00:03:41] That's where they came up with the name payment for order flow. It's very intuitive when you think about it
-[00:03:45] Logical so they pay them for the order flow and the hedge fund said here think about it this way
-[00:03:51] I
-[00:03:52] Can make money on all of this order flow. I can make so much money that I'm gonna share that profit with you as the broker
-[00:04:00] What is that gonna allow you to do?
-[00:04:02] Think about it this way. I'm gonna pay you which means you don't have to pay the exchanges anymore
-[00:04:08] Which means you don't have to charge your customers a commission now imagine now if you don't charge your customers a commission
-[00:04:15] What are they gonna be incentivized to do exactly trade more trade more means more money for me?
-[00:04:21] It means I'm gonna be able to buy myself a bigger top hat next year more money for me. Well, that means more money for you
-[00:04:28] Right so
-[00:04:30] Commission free traded begins and if again in 2019 in a huge way now the hedge fund says
-[00:04:38] We're gonna do something to keep this all on the up and up. It has to be fair because regulators are gonna say
-[00:04:44] Wait a second. This isn't fair. The hedge fund is trying to make money and
-[00:04:50] They're gonna give the customer a worse execution
-[00:04:54] It's gonna take longer to fill and they're gonna get a worse price when their order does get filled
-[00:04:59] So that's not okay, and the hedge fund says no no no
-[00:05:06] We're gonna give price improvement. Look at an example. Let's say Ford is trading at $10 and 1 cent by $10 and 2 cents
-[00:05:16] Now if your customer had gone and bought that order on the exchange as a market order
-[00:05:21] What would they pay?
-[00:05:23] 10.02 you would have bought at the ask right you that's how a market order works
-[00:05:27] You pay 10.02. So the hedge fund says I'm gonna do something a little different. I'm gonna give them that order
-[00:05:32] Just a fraction under 10.02. So what about I give them that order at 10.01.9
-[00:05:42] If I do that, then they actually got price improvement. They got a slightly better fill than they were expecting a 10th of a penny
-[00:05:50] Now a 10th of a penny on 10,000 shares. That's 10 dollars of price improvement. It's not nothing
-[00:05:58] Well, maybe we do
-[00:06:00] 0.10199
-[00:06:03] Maybe $10 was a little too much on 10,000 shares. Let's let's just give them a dollar. We'll give them a little price improvement
-[00:06:09] So the reality is the amount of price improvement will vary
-[00:06:13] But what you're getting is price improvement
-[00:06:18] So you get price improvement and then when you turn around to sell you say I want to sell
-[00:06:21] So what are you gonna get out at? You typically get out at 10.01 and they'll say we'll give you the shares at 10.01
-[00:06:28] 1. So you get a tiny bit of price improvement and they get the remaining 90%. So if they have
-[00:06:36] enough people executing orders internally here
-[00:06:40] Then essentially what they're doing is they're undercutting the overall market
-[00:06:44] But only by fractions of a penny. How are they even allowed to do that? Well, exchanges
-[00:06:50] are not allowed to have stocks quote at anything less than one cent spread
-[00:06:56] But alternative trading systems which are what these hedge funds and quant funds are using
-[00:07:01] They're allowed to split the penny into fractions
-[00:07:04] So they can cut the penny down. So if you execute orders using a commission free broker
-[00:07:09] You'll often notice your order is you know five dollars five point zero five one one one one
-[00:07:15] You know, it's it's way extended out sometimes four decimal points down to one hundredth of a penny
-[00:07:20] So splitting the penny is what has allowed them to make all of this money
-[00:07:25] Let's see my say yeah, well, okay, so you're getting a slightly better price when you buy
-[00:07:30] You get a slightly better price when you sell
-[00:07:33] I mean this sounds like a pretty good deal everyone wins who said but wait a second who is losing who who is losing on the steal?
-[00:07:42] You want to know who's losing? I think number one the most obvious answer and they're probably if they're watching this episode right now
-[00:07:49] They're screaming it. NASDAQ NASDAQ is losing. I'm losing oops NASDAQ. I'm losing. This is not fair NASDAQ is losing
-[00:07:57] Because these alternative trading systems are undercutting all of the order flow
-[00:08:01] So all the order flow used to go through NASDAQ and now
-[00:08:04] I don't know maybe 20% of it 30% of it is going through and the rest is going through these ATSs
-[00:08:10] But what's even worse is that each of these different funds have their own alternative trading systems
-[00:08:17] So if you for instance are trading at you know broker number one over here and you want to buy
-[00:08:23] 50,000 shares and I'm over on broker number three over here and I'm trying to sell 50,000 shares
-[00:08:30] We our two orders a shall never meet
-[00:08:34] We're not going to connect because the whole sailors are executing these orders are competing against each other
-[00:08:40] They're not going to connect so the market has become very fragmented here. It's segregated and what that has actually meant
-[00:08:48] To a certain extent is that as a retail trader you might get a worse execution on your order
-[00:08:54] You might not fill at as good of a price even if well if they say you get price improvement
-[00:09:00] But that's when they aggregate an average all of the orders that go through
-[00:09:05] So what about you know the orders that are not that are outside the average there's going to be periodic orders
-[00:09:11] That are far outside the average
-[00:09:14] So one of the things that I've noticed with commission fruit brokers is that sometimes I'll place the order to buy
-[00:09:19] 20,000 shares and I'll fill the whole order and I'm like that's incredible
-[00:09:24] Where did the shares come from? I can't even believe I got zero slippage. I got the whole thing filled in an instant with price improvement
-[00:09:32] And then other times I turn around and I try to sell and my order just sits there and I'm waiting and I'm waiting and I'm waiting
-[00:09:40] And the price is dropping and I'm not filling and then I cancel my order and I place it again
-[00:09:44] It's still not filling and I'm like what is going on right now?
-[00:09:47] I cancel again my order still doesn't fill and I end up getting smoked and so I've had both experiences happen and for me
-[00:09:55] When the latter experience happens, I get so frustrated that I become emotionally hijacked because I end up taking a loss
-[00:10:03] That was outside of my control that should not have happened and so because the downside of that
-[00:10:09] Happening for me is quite emotional enough setting. I prefer not to use payment for orderflow brokers when I trade the larger size because to me
-[00:10:17] It just doesn't feel worth now one of the things that it's important to know is
-[00:10:22] That this relationship of payment for orderflow is regulated. So the SEC requires
-[00:10:28] Rule 605 these brokers to file
-[00:10:31] Reports quarterly that
-[00:10:34] Disclose the quality of execution in terms of the price improvement that customers get and the execution time
-[00:10:41] now the only thing is that
-[00:10:44] Not all brokers are required to file these because
-[00:10:48] Certain brokers are not considered market centers and as such they don't publish these statistics
-[00:10:53] But other brokers are and they do so that can be a tricky but for instance trial Schwab
-[00:10:59] Does disclose their price improvement
-[00:11:02] They disclose 98% of orders had price improvement
-[00:11:05] Seven times shares versus displayed quote
-[00:11:08] So what that means is if the quote on the level two only showed a thousand shares that they're telling you that inside
-[00:11:15] Their wholesaler relationship they actually have seven times what's displayed
-[00:11:20] Which would explain why I might have magically filled 20,000 shares
-[00:11:24] I was only seeing maybe 5,000 displayed but five times seven 35,000
-[00:11:28] They were all there and I got the full order fill now the order execution is half of one second
-[00:11:34] This is actually relatively slow when it comes to day trade
-[00:11:39] So that's not super fast order execution
-[00:11:42] Fidelity they disclose
-[00:11:44] Investors can save an average of $24 and 30 cents on a 1000 share order in addition to commission free trade
-[00:11:53] Because of this relationship they have and they've got their 605 success
-[00:11:57] Reports they're available and then interactive brokers has theirs now Robinhood does not publish a
-[00:12:03] 605 report they're considered I believe they're considered a routing
-[00:12:08] broker not a
-[00:12:10] Market center so they don't just they don't disclose
-[00:12:14] But then each trade does and
-[00:12:16] They give you the price improvement the execution speed price improvement average adder above and BBO
-[00:12:23] Which again, I mean not for nothing but if you're a tenth of a cent above
-[00:12:28] Or below and BBO then technically you're better even though
-[00:12:33] The fund actually is collecting like 90% of that the hedge fund that's executing your order
-[00:12:37] So my feeling on payment for order flow
-[00:12:42] If you are trading with small share size you're a beginner trader you've trading the simulator and maybe you said
-[00:12:47] I like the simulator, but I want to put real money on the line. I want to feel be a motion
-[00:12:51] Then you may find that using a real broker that offers commission free trading and trading with even just 10 shares
-[00:12:58] allows you to kind of break the ice and begin to feel the emotions that come with trading with real money
-[00:13:04] and definitely
-[00:13:05] Commission free trading in that way is a benefit and using a broker like we bull that has a nice platform
-[00:13:11] You know it's hard it's hard to beat that
-[00:13:14] But what I've found in my experience is that once I scale up to trying to trade with 5,000
-[00:13:19] 20,000 30,000 shares is hit or miss I can get great fills and it could be fantastic and sometimes I get stuck and I'm like
-[00:13:29] This is very frustrating and I'm sure that there's buyers out there and I just can't sell them or I'm sure
-[00:13:34] There's sellers out there and I just can't buy from them because I'm restricted inside this pool
-[00:13:40] Now if I was using a direct access broker on the other hand, well, that's a little bit different
-[00:13:46] With a direct access broker if my order's not filling with one venue
-[00:13:51] I could just cancel the order and I could send to a different one just like that
-[00:13:56] So I have so much more flexibility now historically direct access brokers have had the advantage of offering
-[00:14:03] Discounted commissions that's been the case for forever compared to a full service broker
-[00:14:08] So a small broker they've always been able to undercut in terms of commissions
-[00:14:12] But in 2019 when everyone went commission free those brokers were like uh oh
-[00:14:17] Well we we did can't really go commission free
-[00:14:20] We're not doing payment for order flow. We don't have enough order flow that even if we did we would make enough money to run the whole business with that
-[00:14:26] So what's our competitive advantage and what they offer are
-[00:14:31] sophisticated trading platforms designed for
-[00:14:35] high speed and professional
-[00:14:36] Trading really professional traded they offer advanced order types they offer advanced order routing and
-[00:14:43] That's gonna be appealing to traders looking for super fast execution and excellent execution
-[00:14:49] Prices the flexibility to choose different venues and destinations for your routing the ability to route to dark pools
-[00:14:57] So a dark pool
-[00:15:00] is a market is is an alternative trading system and these
-[00:15:05] We're born out of the 1990s in the early 2000s when we had these predatory
-[00:15:11] Market-making algos that were just scalping everyone's trades and traders got frustrated and so some of these traders
-[00:15:20] We're able to create separate
-[00:15:23] Alternative trading systems essentially almost like a separate exchange
-[00:15:27] But these exchanges don't have a book. There's no level two
-[00:15:31] So basically they don't provide a level two
-[00:15:34] Nasdaq Nasdaq has a level two book so you can subscribe and it fills in on your level two window
-[00:15:39] Arka has a book edge has a book that has a book all these market makers have a book and you
-[00:15:45] Subscribe to all of them when you're subscribing to level two data. That's just part of level two data
-[00:15:50] But dark pools
-[00:15:52] They don't have a book they've got no book. So you can't see where anyone has an order to buy your cell
-[00:15:59] You can place an order and your order may match and if it does
-[00:16:04] Then you've got the order that goes during a time and sales. It may not match
-[00:16:08] But it's kind of anonymous in that way. Let's not really anonymous, but it's it's hidden
-[00:16:13] So you so you can't you don't see any orders that are displayed and so with a direct access
-[00:16:20] broker for instance, you could route to a dark pool. Now I'll tell you in my experience dark pools
-[00:16:25] Don't really work very well when you're trying to trade very quickly because they don't have enough liquidity
-[00:16:30] They don't usually have a match. They almost never have a match for my order
-[00:16:34] I mean, you know, look, sometimes they do I try it. I always you know
-[00:16:38] I have the hockey on my keyboards. I can try it, but I usually don't find that I get my full order filled
-[00:16:43] I usually get a partial fill and then I have to route to a different destination like Nasdaq or
-[00:16:48] Adj or Arka that have so much volume they can always match your orders. The only problem is you deal with the algos that are
-[00:16:57] Responding and moving out of the way when you send big orders into the market either as a buy order or a sell order
-[00:17:03] So in my experience I would say that
-[00:17:09] Retail for retail trading
-[00:17:12] Commission free commission free brokers are great up to you know
-[00:17:17] Kind of a certain point and then I feel like they're kind of inhibiting growth and if you want to keep growing
-[00:17:23] You need to use a direct access broker
-[00:17:26] But if you start using a direct access broker early
-[00:17:29] The problem is you might end up losing a little bit because of the cost
-[00:17:34] So yes, you will get faster execution, but you can't over-trade because you're paying for every trade you take
-[00:17:41] So you know, I think there's that this sort of a pro in pros and cons
-[00:17:44] So commission free is great for
-[00:17:47] Small accounts, small accounts right here
-[00:17:52] Large number of trades, so if you're someone that wants to take you know dozens and dozens or hundreds of trades a day
-[00:17:58] If you if you you know you're interested in payment for order flow
-[00:18:02] Scalping where you're jumping in jumping out and trying to profit on the 10th of a penny price improvement that you get
-[00:18:08] You do that with 10,000 shares you make 10 bucks
-[00:18:10] You do that 10 times over the course of the day you're up a hundred dollars
-[00:18:13] So you know if you've got a twenty five thousand dollar plus a count
-[00:18:17] You know, but you're trying to scalp just fractions of a penny
-[00:18:20] You could do that, you know with a commission free broker
-[00:18:23] You could not do that with a direct access broker your commissions would would kill out any of the profit you're making
-[00:18:29] And we're gonna get into all of that when we talk about strategies, but you know just to throw it out there
-[00:18:35] My guess is that many of you are happy with the broker you're at if it's Schwab you're happy with Schwab
-[00:18:41] Your orders are good enough the platform you've got in use to it. You're with we both whatever
-[00:18:46] But you know this is it's just important to know what you're using and to recognize that
-[00:18:51] There may be some limitations and but on the other hand there's limitations with direct access brokers as well
-[00:18:56] So you know over the years I've spent
-[00:18:59] Pretty consistently about 10% of my profit
-[00:19:02] It's gone to fees and commissions and you know so on a million dollars. That's a hundred thousand bucks
-[00:19:07] It's a lot of money, but on the other hand what I thought to myself is that
-[00:19:12] You know, let's just figure for a second. Let's just sort of do the math here
-[00:19:16] So let's figure that because of the way I'm routing my order
-[00:19:20] I don't get so called price
-[00:19:23] Improvement right? I don't get price improvement, you know, which might be one tenth of a penny
-[00:19:29] So on ten thousand shares I get ten dollars
-[00:19:33] But I get fast
-[00:19:36] Execution so that means when I send my order I get in very quickly and my argument is that
-[00:19:42] That could mean that I'm out of a position with an extra penny of profit or that I'm in a
-[00:19:48] penny earlier
-[00:19:49] Versus a commission free trader who's just a little bit slower because the the routing is slower
-[00:19:53] So I'm just gonna estimate that this actually saves me one pen
-[00:19:57] So one penny and this is look I'm gonna be honest. This is totally an estimate
-[00:20:02] But that would be a hundred bucks. So now all of a sudden that's a hundred dollars
-[00:20:07] In just one one ten thousand share trade
-[00:20:10] So if I traded a hundred thousand shares in one day that'd be a thousand bucks of
-[00:20:15] Essential improvement in execution
-[00:20:18] So a hundred thousand shares over here how much are you saving you're saving?
-[00:20:23] You know here a hundred bucks right because of the little bit of price improvement that you can
-[00:20:27] So I don't know I mean my feeling is that if I trade a hundred thousand shares and I make only two thousand dollars
-[00:20:35] Well, hmm shoot. I'm splitting half of it with a broker
-[00:20:39] Well, actually that's not true. I got some of it with a broker with price improvement, but a hundred thousand shares
-[00:20:44] So we got to do the math on the fees a hundred thousand shares times point zero zero three is
-[00:20:50] I'm gonna be three hundred bucks. So we're gonna spend three hundred dollars in fees right there on those orders
-[00:20:57] You know, so two thousand dollars minus three hundred and fees is seventeen hundred bucks
-[00:21:02] So but percentage wise that's more than ten percent. It's not insignificant
-[00:21:06] You know if I only made five hundred dollars or a thousand dollars, you know, then this the numbers start to not work
-[00:21:13] So if you were trading
-[00:21:15] Exclusively penny stocks really cheap stocks you could see that this type of fee would not work
-[00:21:22] You know, but if you're trading stocks that are more in the three to five eight ten dollar range
-[00:21:26] To me that fast execution. I feel like it's worth it and so my feeling and maybe I'm just justifying
-[00:21:32] You know all the money. I've spent in fees a commission, but my feeling is that
-[00:21:38] I've it's allowed me to make more than I would have made
-[00:21:42] Had I been using a commission pre broker especially on the days where I sized up to 40 or 50 thousand shares and you know
-[00:21:48] I was jumping in very quickly on a fast moving momentum stock
-[00:21:53] So speed for me is important execution speed is almost
-[00:22:00] It's almost more important than the price. I mean I don't want to get terrible slippage, but the speed is really important
-[00:22:06] When I want to get in I want to be in and when I want to get out I want to be out
-[00:22:10] That for me is is my priority and then the commission I'm willing to pay and I still think the execution
-[00:22:16] The actual quality of the execution price is still really good
-[00:22:19] So now you understand the the structure of payment for order flow how it works and you understand direct access brokers
-[00:22:27] And you make the decision for yourself of which one feels like the best fit and I support you either way
-[00:22:32] Because I can make the argument for either either side especially depending on where you're as trader
-[00:22:37] So you make the call and I'm behind you on it and now let's go ahead and jump into
-[00:22:42] Chapter six part six
+[00:01:26] So basically, I'm going to give you the scenario of how how this how I kind of came to understand it
+[00:01:32] You've got a big broker out there and there they've got you know hundreds of thousands of clients
+[00:00:00] are trading every single day. And what's happening prior to payment for order
+[00:00:03] flow is you've got the broker here and the clients orders are going to
+[00:00:09] the exchanges so they go to the exchange right here they execute and then the
+[00:00:15] order comes back. And so what the broker does for the customer so you're the
+[00:00:19] customer down here is they charge you a commission. Typically it was $9.95
+[00:00:24] per trade. I mean this was standard in the 90s the 2000s it got you could
+[00:00:29] negotiate a little lower maybe down to $4.95 but it was pretty expensive. And so
+[00:00:34] essentially when you send your order to the exchange the broker had relationships
+[00:00:39] with the exchanges so they did pay fees they paid fees but they buried them
+[00:00:47] inside the commission here so you didn't really know exactly what the fee was there
+[00:00:52] was a fee but you didn't really notice it. And so your order went right to
+[00:00:56] the exchange and so in that during that period of time all orders for the
+[00:01:00] most part went directly to the exchanges so traders were trading against each other
+[00:01:04] with each other on the open market. And then hedge fund over here so this is
+[00:01:09] hedge fund and we're going to give him a smiley face and he's going to be wearing a
+[00:01:16] big top hat. He's got a huge top hat because he makes a ridiculous amount of
+[00:01:19] money. So this hedge fund says hey hey hey hey hey hey wait one second Mr.
+[00:01:26] broker I give you a proposal why don't you send all of your order flow to me
+[00:01:33] forget about the exchanges. No, no, no, no.
+[00:00:00] order flow to me and I will execute the orders for all of your customers, and I'm going to execute
+[00:00:06] them so well. I'm going to execute them better than anyone has ever executed them. In fact,
+[00:00:11] I'll execute them so well, you don't have to pay me. I will pay you for the privilege. So now,
+[00:00:18] the hedge fund is paying, can you imagine, paying the broker here for your order flow?
+[00:00:25] That's where they came up with the name, payment for order flow. It's very intuitive when you think
+[00:00:29] about it, logical. So they pay them for the order flow. And the hedge fund said here,
+[00:00:34] think about it this way. I can make money on all of this order flow. I can make so much money
+[00:00:40] that I'm going to share that profit with you as the broker. What is that going to allow you to do?
+[00:00:46] Think about it this way. I'm going to pay you, which means you don't have to pay the exchanges anymore,
+[00:00:52] which means you don't have to charge your customers a commission. Now imagine now, if you don't charge
+[00:00:58] your customers a commission, what are they going to be incentivized to do? Exactly. Trade more.
+[00:01:03] Trade more means more money for me. It means I'm going to be able to buy myself a bigger top
+[00:01:08] hat next year. More money for me. Well, that means more money for you, right? So commission
+[00:01:14] free traded begins. And if you get in 2019 in a huge way. Now, the hedge fund says,
+[00:01:22] we're going to do something to keep this all on the up and up. It has to be fair,
+[00:01:26] because regulators are going to say, oh, wait a second, this isn't fair. The hedge fund is
+[00:01:32] trying to make money. And they're going to give the customer a worse exit.
+[00:00:00] It's going to take longer to fill and they're going to get a worse price when their order does get filled
+[00:00:05] So that's not okay and the hedge fund says no no no no no no
+[00:00:12] We're going to give price improvement. Look at an example. Let's say Ford is trading at ten dollars and one cent by ten dollars and two cents
+[00:00:22] Now if your customer had gone and bought that order on the exchange as a market order
+[00:00:27] What would they pay?
+[00:00:28] Ten oh two you would have bought at the ask right you that's how a market order works
+[00:00:33] You pay ten oh two so the hedge fund says I'm going to do something a little different
+[00:00:37] I'm going to give them that order just a fraction under ten oh two so what about?
+[00:00:43] I give them that order at ten oh one nine if I do that then they actually got price
+[00:00:51] Improvement they got a slightly better fill than they were expecting a tenth of a penny
+[00:00:56] Now a tenth of a penny on ten thousand shares that's ten dollars of price improvement
+[00:01:03] It's not nothing. Well, maybe we do point one zero one nine nine
+[00:01:09] Maybe ten dollars was a little too much on ten thousand shares. Let's let's just give them a dollar
+[00:01:13] We'll give them a little price improvement
+[00:01:15] So the reality is the amount of price improvement will vary
+[00:01:19] But what you're getting is price improvement
+[00:01:24] So you get price improvement and then when you turn around to sell you say I want to sell so what are you going to get out at?
+[00:01:29] You typically get out at ten oh one and they'll say we'll give you the shares at ten oh one one
+[00:01:35] So you get a tiny bit of price improvement
+[00:00:00] and they get the remaining 90%.
+[00:00:02] So if they have enough people executing orders internally here,
+[00:00:08] then essentially what they're doing
+[00:00:09] is they're undercutting the overall market,
+[00:00:12] but only by fractions of a penny.
+[00:00:15] How are they even allowed to do that?
+[00:00:17] Well, exchanges are not allowed to have stocks
+[00:00:20] quote at anything less than one sense spread.
+[00:00:24] But alternative trading systems,
+[00:00:26] which are what these hedge funds and quant funds are using,
+[00:00:30] they're allowed to split the penny into fractions.
+[00:00:33] So they can cut the penny down.
+[00:00:34] So if you execute orders using a commission free broker,
+[00:00:37] you'll often notice your order is, you know,
+[00:00:39] $5.05111.
+[00:00:44] You know, it's way extended out,
+[00:00:45] sometimes four decimal points down to 100th of a penny.
+[00:00:48] So splitting the penny is what has allowed them
+[00:00:51] to make all of this money.
+[00:00:53] And see, my say, yeah, well, okay,
+[00:00:56] so you're getting a slightly better price when you buy.
+[00:00:59] You get a slightly better price when you sell.
+[00:01:01] I mean, this sounds like a pretty good deal.
+[00:01:04] Everyone wins.
+[00:01:05] Who's it, but wait a second, who is losing?
+[00:01:08] Who is losing on the steel?
+[00:01:10] You want to know who's losing?
+[00:01:12] I think number one, the most obvious answer.
+[00:01:14] And they're probably, if they're watching this episode,
+[00:01:17] right now, they're screaming it.
+[00:01:18] NASDAQ, NASDAQ is losing.
+[00:01:20] I'm losing, oops, NASDAQ, I'm losing.
+[00:01:22] This is not fair.
+[00:01:23] NASDAQ is losing because these alternative trading systems
+[00:01:27] are undercutting all of the order flow.
+[00:01:29] So all the order flow used to go through NASDAQ.
+[00:01:31] And now, I don't know, maybe 20% of it, 30% of it
+[00:01:35] is going through, and the rest is going through these ATS.
+[00:00:00] But what's even worse is that each of these different funds have their own alternative trading systems.
+[00:00:07] So if you, for instance, are trading at, you know, broker number one over here, and you want to buy 50,000 shares.
+[00:00:15] And I'm over on broker number three over here.
+[00:00:18] And I'm trying to sell 50,000 shares.
+[00:00:21] We are two orders a shall never meet.
+[00:00:24] We're not going to connect because the whole sailors that are executing these orders are competing against each other.
+[00:00:30] They're not going to connect.
+[00:00:32] So the market has become very fragmented here.
+[00:00:35] It's segregated.
+[00:00:36] And what that has actually meant to a certain extent is that as a retail trader, you might get a worse execution on your order.
+[00:00:44] You might not fill at as good of a price.
+[00:00:47] Even if, well, if they say you get price improvement,
+[00:00:50] but that's when the aggregate and average all of the orders that go through.
+[00:00:55] So what about, you know, the orders that are not that are outside the average?
+[00:01:00] There's going to be periodic orders that are far outside the average.
+[00:01:04] So one of the things that I've noticed with commission free brokers is that sometimes I'll place the order to buy 20,000 shares
+[00:01:10] and I'll fill the whole order and I'm like, that's incredible.
+[00:01:14] Where did those shares come from?
+[00:01:16] I can't even believe it.
+[00:01:17] I got zero slippage.
+[00:01:18] I got the whole thing filled in an instant with price improvement.
+[00:01:22] And the other times, I turn around and I try to sell in my order just sits there.
+[00:01:27] And I'm waiting.
+[00:01:28] And I'm waiting.
+[00:01:29] And I'm waiting.
+[00:01:30] And the price is dropping.
+[00:01:31] And I'm not filling.
+[00:01:32] And then I cancel my order and I place it again.
+[00:01:34] And it's still not filling.
+[00:01:35] And I'm like, what is going on right now?
+[00:01:37] I cancel.
+[00:00:00] again, my order still doesn't fill and I end up getting smoked and so I've had both
+[00:00:05] experiences happen and for me when the latter experience happens I get so frustrated
+[00:00:12] that I become emotionally hijacked because I end up taking a loss that was outside
+[00:00:18] of my control that should not have happened and so because the downside of that happening
+[00:00:22] for me is quite emotional and upsetting, I prefer not to use payment for order flow
+[00:00:26] brokers when I trade a larger size because to me it just doesn't feel worth it.
+[00:00:31] Now one of the things that it's important to know is that this relationship of payment
+[00:00:35] for order flow is regulated, so the SEC requires rule 605, these brokers to file reports
+[00:00:44] quarterly that disclose the quality of execution in terms of the price improvement
+[00:00:50] customers get and the execution time. Now the only thing is that not all brokers are required
+[00:00:57] to file these because certain brokers are not considered market centers and as such
+[00:01:03] they don't publish these statistics, but other brokers are and they do, so that can be
+[00:01:07] little tricky. But for instance Charles Schwab does disclose their price improvement, they disclose
+[00:01:14] 98% of orders had price improvement, seven times shares versus displayed quote, so what that means is
+[00:01:21] if the quote on the level two only showed a thousand shares that they're telling you that inside
+[00:01:27] their wholesaler relationship they actually have seven times what's displayed, which would explain why
+[00:01:33] I might have magically filled 20,000 shares. I was only seeing maybe five thousand.
+[00:00:00] and displayed, but five times seven, 35,000.
+[00:00:03] They were all there, and I got the full order filled.
+[00:00:05] Now, the order execution is half of one second.
+[00:00:08] This is actually relatively slow when it comes to day trade.
+[00:00:13] So that's not super fast order execution.
+[00:00:16] Fidelity, they disclose investors can save an average of $24 and $30
+[00:00:22] cents on a 1,000 share order.
+[00:00:25] In addition to commission free trade, because of this
+[00:00:28] relationship they have, and they've got their 605,
+[00:00:30] 606 reports they're available.
+[00:00:32] And then interactive brokers has theirs.
+[00:00:35] Now Robinhood does not publish a 605 report.
+[00:00:39] They're considered a, I believe they're considered a routing broker,
+[00:00:43] not a market center.
+[00:00:45] So they don't disclose, but then each trade does,
+[00:00:50] and they give you the price improvement, the execution speed,
+[00:00:54] price improvement average, adder above and BBO.
+[00:00:57] Which again, I mean, not for nothing, but if you're a tenth of a
+[00:01:01] cent above or below and BBO, then technically you're better,
+[00:01:05] even though the fund actually is collecting like 90% of that,
+[00:01:10] the hedge fund, it's executing the order.
+[00:01:11] So my feeling on payment for order flow.
+[00:01:16] If you are trading with small share size,
+[00:01:18] you're a beginner trader.
+[00:01:19] You've trading the simulator, and maybe you said,
+[00:01:21] I like the simulator, but I want to put real money on the line.
+[00:01:23] I want to feel the emotion.
+[00:01:25] Then you may find that using a real broker
+[00:01:29] that offers commission free trading and trading with even just 10 shares,
+[00:01:32] allows you to kind of break the ice and begin to feel
+[00:01:36] the emotions that come with trading with real money.
+[00:00:00] And definitely commission free trading in that way is a benefit and using a broker like we bull that has a nice platform
+[00:00:07] You know, it's hard to it's hard to beat that
+[00:00:10] But what I've found in my experience is that once I scale up to trying to trade with 5,000 20,000 30,000 shares
+[00:00:18] It's hit or miss I can get great fills and it could be fantastic and sometimes I get stuck and I'm like
+[00:00:24] This is very frustrating and I'm sure that there's buyers out there
+[00:00:28] And I just can't sell them or I'm sure there's sellers out there
+[00:00:31] And I just can't buy from them because I'm restricted inside this pool now if I was using a direct access broker on the other hand
+[00:00:40] Well, that's a little bit different with a direct access broker if my order's not filling with one venue
+[00:00:47] I could just cancel the order and I could send to a different one just like that
+[00:00:51] So I have I have so much more flexibility
+[00:00:54] Now historically direct access brokers have had the advantage of offering discounted commissions
+[00:01:00] That's been the case for forever compared to a full service broker
+[00:01:04] So a small broker they've always been able to undercut in terms of commissions
+[00:01:08] But in 2019 when everyone went commission free those brokers were like
+[00:01:12] Uh-oh will we we did can't really go commission free
+[00:01:16] We're not doing payment for order flow
+[00:01:18] We don't have enough order flow that even if we did we would make enough money to run the whole business with that
+[00:01:22] So what's our competitive advantage and what they offer are
+[00:01:27] sophisticated trading platforms designed for
+[00:01:31] High-speed and professional trading really professional trade it they offer advanced order types they offer advanced
+[00:00:00] order routing, and that's going to be appealing to traders looking for super fast
+[00:00:04] execution and excellent execution prices. The flexibility to choose
+[00:00:10] different venues and destinations for your routing, the ability to route to
+[00:00:14] dark pools. So a dark pool is a market, is an alternative trading system, and these
+[00:00:22] were born out of the 1990s in the early 2000s when we had these predatory
+[00:00:29] market making algos that were just scalping everyone's trades, and traders got
+[00:00:36] frustrated. And so some of these traders were able to create separate alternative
+[00:00:42] trading systems, essentially almost like a separate exchange, but these exchanges
+[00:00:46] don't have a book. There's no level two. So basically they don't provide a
+[00:00:51] level two. Nasdaq, Nasdaq has a level two book, so you can subscribe and it
+[00:00:56] fills in on your level two window. Arka has a book. Edge has a book. That has
+[00:01:01] a book. All these market makers have a book, and you subscribe to all of them
+[00:01:04] when you're subscribing to level two data. That's just part of level two data.
+[00:01:07] But dark pools, they don't have a book. They've got no book. So you can't see
+[00:01:14] where anyone has an order to buy yourself. You can place an order, and your order
+[00:01:20] may match, and if it does, then you've got the order that goes during a time
+[00:01:24] sales. They may not match, but it's kind of anonymous in that way.
+[00:01:29] That's not really anonymous, but it's hidden. So you say you can't, you don't see
+[00:01:33] any orders that are displayed. And so with a direct axe.
+[00:00:00] broker, for instance, you could route to a dark pool. Now, I'll tell you, in my experience,
+[00:00:04] dark pools don't really work very well when you're trying to trade very quickly because they
+[00:00:08] don't have enough liquidity. They don't usually have a match. They almost never have a match
+[00:00:13] for my order. I mean, sometimes they do. I try it. I always, you know, I have the hockey on my
+[00:00:19] keyboards. I can try it, but I usually don't find that I get my foot order filled. I usually
+[00:00:24] get a partial fill, and then I have to route to a different destination. Like NASDAQ or
+[00:00:28] add your arca that have so much volume, they can always match your orders. The only problem is,
+[00:00:35] you deal with the algos that are responding and moving out of the way when you send big orders
+[00:00:40] into the market, either as a buy order or a sell order. So, in my experience, I would say that
+[00:00:49] retail, for retail trading, commission free, commission free brokers are great up to, you know,
+[00:00:57] kind of a certain point, and then I feel like they're kind of inhibiting growth. And if you
+[00:01:02] want to keep growing, you need to use a direct access broker. But if you start using a direct
+[00:01:07] access broker early, the problem is, you might end up losing a little bit because of the cost.
+[00:01:14] So, yes, you will get faster execution, but you can't overtrate because you're paying for every
+[00:01:19] trade you take. So, you know, I think there's that sort of a pro and pros and cons. So, commission
+[00:01:25] free is great for small accounts, small accounts right here, a large number of trades. So,
+[00:01:34] if you're someone that wants to take, you know, dozens and dozens or hundreds of trades a day.
+[00:00:00] If you have your interest in payment for order flow, the scalping where you're jumping
+[00:00:05] and jumping out and trying to profit on the 10th of a penny price improvement that you
+[00:00:10] get, you do that with 10,000 shares you make 10 bucks.
+[00:00:12] You do that 10 times over the course of the day, you're up $100.
+[00:00:16] So if you've got a $25,000 plus a count, but you're trying to scalp just fractions of a
+[00:00:22] penny, you could do that with a commission free broker.
+[00:00:25] You could not do that with a direct access broker.
+[00:00:28] Your commissions would kill out any of the profit you're making.
+[00:00:32] And we're going to get into all of that when we talk about strategies, but just to throw
+[00:00:36] it out there, my guess is that many of you are happy with the broker you're at.
+[00:00:41] If it's Schwab, you're happy with Schwab.
+[00:00:43] Your orders are good enough, the platform you've got and used to it.
+[00:00:46] If you're with Weibo, whatever, but it's just important to know what you're using and to
+[00:00:51] recognize that there may be some limitations.
+[00:00:55] But on the other hand, there's limitations with direct access brokers as well.
+[00:00:59] So over the years, I've spent pretty consistently about 10% of my profit.
+[00:01:05] It's gone to fees and commissions.
+[00:01:07] So on a million dollars, that's $100,000.
+[00:01:09] It's a lot of money, but on the other hand, what I've thought to myself is that, let's just
+[00:01:15] figure for a second, let's just sort of do the math here.
+[00:01:19] So let's figure that, because of the way I'm routing my order, I don't get so
+[00:01:23] called price improvement, right?
+[00:01:27] I don't get price improvement, you know, which might be one tenth of a penny.
+[00:01:31] So on 10,000 shares, I get $10.
+[00:01:35] But I get fast.
+[00:00:00] execution. So that means when I send my order I get in very quickly and my argument is that
+[00:00:06] that could mean that I'm out of a position with an extra penny of profit or that I'm in
+[00:00:12] a penny earlier versus a commission free trader who's just a little bit slower because the
+[00:00:16] the routing is slower. So I'm just going to estimate that this actually saves me one pen.
+[00:00:21] So one penny and this is, look, I'm going to be honest. This is totally an estimate but that would
+[00:00:26] be a hundred bucks. So now all of a sudden that's a hundred dollars in just one ten thousand
+[00:00:32] share trade. So if I traded a hundred thousand shares in one day that'd be a thousand bucks
+[00:00:38] of essential improvement in execution. So a hundred thousand shares over here how much are you saving?
+[00:00:46] You're saving, you know, here a hundred bucks, right, because of the little bit of price improvement
+[00:00:50] that you got. So I don't know. I mean my feeling is that if I trade a hundred thousand shares
+[00:00:56] and I make only two thousand dollars, well, hmm, shoot. I'm splitting half of it with a broker.
+[00:01:03] Well, actually that's not true. I got some of it with a broker with price improvement but a hundred
+[00:01:07] thousand shares, so we got to do the math on the fees. A hundred thousand shares times point zero zero
+[00:01:12] three is going to be three hundred bucks. So we're going to spend three hundred dollars in fees right there
+[00:01:19] on those orders. You know, so two thousand dollars minus three hundred and fees is seventeen hundred
+[00:01:25] bucks. So but percentage wise, that's more than ten percent. It's not insignificant. You know,
+[00:01:30] if I only made five hundred dollars or a thousand dollars, you know, then this the numbers start to
+[00:01:36] not work. So
+[00:00:00] So if you were trading exclusively penny stocks, really cheap stocks, you could see that
+[00:00:04] this type of fee would not work.
+[00:00:08] But if you're trading stocks that are more in the three to five, $8, $10 range, to me,
+[00:00:13] that fast execution, I feel like it's worth it.
+[00:00:16] And so my feeling, and maybe I'm just justifying, you know, all the money I've spent
+[00:00:20] in fees and commissions, but my feeling is that it's allowed me to make more than I
+[00:00:27] would have made, had I been using a commission free broker, especially on the days
+[00:00:31] where I sized up to 40 or 50,000 shares.
+[00:00:34] And, you know, I was jumping in very quickly on a fast moving momentum stock.
+[00:00:39] So speed for me is important, execution speed is almost, it's almost more important
+[00:00:47] than the price.
+[00:00:48] I mean, I don't want to get terrible slippage, but the speed is really important.
+[00:00:52] When I want to get in, I want to be in, and when I want to get out, I want to be out.
+[00:00:56] That for me is my priority.
+[00:00:58] And then the commission I'm willing to pay, and I still think the execution, the actual
+[00:01:03] quality of the execution price is still really good.
+[00:01:06] So now you understand the structure of payment for order flow, how it works, and you
+[00:01:11] understand direct access brokers, and you make the decision for yourself of which one feels
+[00:01:16] like the best fit.
+[00:01:17] And I support you either way, because I can make the argument for either side, especially
+[00:01:21] depending on where you're at as trader.
+[00:01:23] So you make the call, and I'm behind you on it.
+[00:01:26] And now let's go ahead and jump into chapter six, part six.

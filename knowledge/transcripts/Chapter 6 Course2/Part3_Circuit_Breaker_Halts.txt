@@ -1,161 +1,301 @@
-# Part 3 Circuit Breaker Halts.mp4
-# Transcribed: 2026-06-29T21:35:50.577627
-# Duration: 24.9 minutes
-# Model: faster-whisper tiny
+# Segments: 16
+# Transcribed: 2026-07-06T21:13:55.498873
 
-[00:00:00] So now we've talked about ADFN orders and the next thing I want to talk about, I just want to touch briefly on the distinctive appearance that a stock will have when it's about to be halted.
+[00:00:00] So now we've talked about ADFN orders, and the next thing I want to talk about, I just want to touch briefly on the distinctive appearance that a stock will have when it's about to be halted.
 [00:00:13] This is something that you will see many examples of when you get into chapter 7, 8 and 9.
 [00:00:21] You will see me trading stocks that get halted.
-[00:00:25] I don't have a problem with stocks getting halted. As you learned, when we first discussed circuit breaker halts, halts can occur at any time of the day between the hours of 930am and 4PM.
+[00:00:25] I don't have a problem with stocks getting halted, as you learned, when we first discussed circuit breaker halts, halts can occur at any time of the day between the hours of 9.30am and 4pm.
 [00:00:39] We do not have circuit breaker halts pre-market, we do not have them after hours.
 [00:00:44] So this distinctive halting appearance is something that you will only notice during regular trading hours.
-[00:00:52] So the halt level, now the halt code, is LULD, limit up, limit down. So on this platform right here, the price for the limit halt up is 470.
-[00:01:05] See LULD, now some platforms will allow you to highlight that market maker. It's not actually a market maker, it's just a signal, but you choose market maker and you say add a highlight on LULD, and then you get the highlight on it.
-[00:01:19] So it'll be bright red. So this is what I want you to see. See how the price squeezes up, and now it's like, it's like the price can't go higher.
-[00:01:30] What's going on? It just won't go higher. It's jammed. It's stuck. It's halted. That's what's happening. The stock is getting halted.
-[00:01:41] So the way the halt band's work is they actually prevent the stock from going higher. The stock is not allowed, it is not capable of going to a higher price
-[00:01:52] because of those halts. And so what happens is the stock will essentially be pinned at that level.
-[00:02:01] So the way the halt's work and you can go back, I think it was actually we did talk about halt at the beginning of this class as well, or this at the beginning of strategies in scale.
-[00:02:14] I could see halts up here. So I'll just pull this back up for one second for you.
-[00:02:19] So stock halts. So stock halts do present a risk because when you're in the halt you cannot buy yourself. So a tier one security, we don't typically trade tier one securities. Those are S&P 500 stocks.
-[00:02:32] So tier two securities price above $3 will halt. And this is when the previous close was above $3 very important. They will halt every 10%.
-[00:02:42] If this not every 10%. This, it's very nuanced. If the stock, if the stock squeezes up more than 10% versus the average price over the last five minutes, then the stock will halt.
-[00:02:55] And it'll halt for a period of a minimum of five minutes. Now during that halt while the stock is halted you can't buy yourself. People can put out orders and those orders will execute on the resumption.
-[00:03:06] Now a stock between 75 cents and $3 will halt every 20%. And the stock lower than 75 cents will halt either every 15 cents or 75 cents, 75% the lesser of the two.
-[00:03:21] So traditionally the 75 cents and under stocks end up halting every 15 cents.
-[00:03:27] So the way these halts work is when the stock comes up to the halt level and we'll watch, we're going to see another halt here in just a moment.
-[00:03:38] So this halt level looks like on MDGS is, oh it's right here at 756. So in order for the stock to be halted, the bid needs to stay at the halt price for 15 seconds. So we start the timer.
-[00:03:55] So we're going to come up here and right now the timer starts 15 seconds. See how it it tapped 56, but then it reset though it went back to 50 so the timer resets 49.
-[00:04:11] 56 for it now. So it has to hold here for 15 seconds. So if it holds here for 15 seconds the stock currently isn't halted, you can still sell. You can still sell here at 756. There's no problem.
-[00:04:25] But once it halts, then boom, there you go. You can't trade. So now the stock is halted and showing the 770 resumption.
-[00:04:33] Now one thing that I want to mention here is what happened while the stock is halted. So stock halted.
-[00:04:41] So while the stock is halted, we know that we cannot buy and we cannot sell. We won't get any orders executed.
-[00:04:49] However, we can place orders. So when this stock halted at 755 or 56, it halted immediately. So it went up was halted.
-[00:05:01] We stated that level for 15 seconds, right? 15 seconds at the bottom of the hallpan, but the top of the hallpan, it was halted. And then it immediately went to the stock was officially halted, showed 770.
-[00:05:12] So how did that happen? How did it start showing 770 right away? Well, as we went into the hall, there were all those people buying at 755.
-[00:05:22] Some of them may have been using market orders. So they're saying, I want to buy at 755.
-[00:05:27] And there may have been people that have sell orders out to sell this at 765, 775, 785, etc.
-[00:05:33] So as soon as it's halted, all of the orders that are out there basically go into, they go into essentially an auction.
-[00:05:41] So they're in a queue. So you've got your buyers, your bids, and you've got your offers.
-[00:05:46] So pretty much just like level two, except that this is all happening while the stock is halted.
-[00:05:51] And so what it starts showing us is the potential resumption price, which means that's the, I guess you would call it the imbalance.
-[00:06:01] It's a plus 15 cents. So we have a plus 15 cent imbalance here, and we're going to open 15 cents higher than we closed.
-[00:06:10] So imagine, for instance, if you pulled up the stock and you had been holding it for a while, and you're like, oh my gosh, this thing is up at 755.
-[00:06:21] I want to get out. You could place a sell order to sell, you say, I want to sell, and I want to sell 50,000 shares, and what price?
-[00:06:30] I don't care, $7. I'm happy to get out. So now all of a sudden, this might start showing a $7 resumption.
-[00:06:37] That would be a lower resumption, or alternatively, you could have someone here who's like, I shorted a 100,000 shares of the stock back at six bucks, and I'm going to get smoked.
-[00:06:47] Maybe their broker takes over and says, you have to buy back those shares. We're doing it for you. We got to buy, it's a market order for, it's a market order for 100,000 shares. We're putting it out there, and all of a sudden we start seeing, you know, an $8.70 resumption.
-[00:07:04] We've seen resumptions that have been huge. I mean, we literally had a stock once that halted up at $15 a share and resumed like $150 or $170. It was insane.
-[00:07:13] So it's not impossible for a stock to essentially gap during the halt. It's strange because suddenly it goes from 755, 770 or 780 or 8 or higher without trading.
-[00:07:28] But behind the scenes, there is this auction going on where you've got your buyers and you've got your sellers.
-[00:07:35] But remember, behind the scenes, are the algorithms traded, are the market makers traded? Well, maybe not.
-[00:07:42] So now everything is kind of offline, and what you have are just a very small number of people who are putting out orders.
-[00:07:48] Some brokers don't allow you to play orders while something's halted, but a lot of them do.
-[00:07:53] So you're placing order, it's going to be in a queue, and then upon resumption, it will execute.
-[00:07:59] So if this ends up resuming at $8, your order executes as a buy order 8 or a sell order at 8, whatever.
-[00:08:05] And then from that point, the stock goes back to kind of trading, you know, as it might.
-[00:08:11] Now during day trading the basics, we talked about the different halt levels of course. So tier 1 securities, tier 2 securities will start there.
-[00:08:21] If the previous day's close was above $3, it's, they halt every 10% from the average price over 5 minutes.
-[00:08:33] And this is kind of tricky because, let's say a stock goes from 3, you know, it's, I'm just going to do this in blue, whatever pulls back, goes up to 3, 25, goes up to 350, you know, like this.
-[00:08:44] So it goes up to 350 here, but it does it over the course of 20 minutes.
-[00:08:49] There's no halt. But if it, if it tried to do this within like 1 minute, it would stop at the average price over the last 5 minutes.
-[00:08:59] So if it's been trading sideways for 5 minutes, the average price is 3.
-[00:09:03] If it's been moving up to 3 slowly, the average price might be 2.90.
-[00:09:07] So now 2.90 plus 10% so 29 cents. So now we're looking at a halt up around 3.90.
-[00:09:15] So it's suddenly the squeeze right up to 3.90, then boom, that's our halt level. So essentially, we have these bands that are around the price for the limit up and then the limit down.
-[00:09:29] And if we drop to that level, quick enough, then, and we hold there for 15 seconds, then we halt.
-[00:09:35] Or if we pop up, quick enough, we hold for 15 seconds, then we halt.
-[00:09:39] And one of the things that I talked about, which is sort of fascinating, is that if a stock yesterday closed between 75 cents and $3, the halt ban is 20%.
-[00:09:50] But if that stock goes up 600%, you could literally have two stocks that are both trading at $3, but one yesterday closed at $2.99.
-[00:09:59] And the other closed at, you know, just say, $3, $3 exactly, and this one's going to halt up at $3.30.
-[00:10:06] And this one's going to halt up at $3.60, sorry, yeah, $3.60, because it's 20%.
-[00:10:12] Or it closed the previous day below 75 cents, and then the halt ban is going to be every 15 cents, which means that $3 stock is going to halt up at $3.15.
-[00:10:22] It's clearly, this is one of those examples where that was not the intention, they never probably, the people that came up with this rule probably never thought about this scenario right here.
-[00:10:33] But, you know, this is something that has been a byproduct and has occurred.
-[00:10:38] So, as these stocks are moving higher, we know that when stocks halt going up, there's obviously some really extreme momentum behind them.
-[00:10:50] And it's very common that they open and then they go into a second halt going up.
-[00:10:54] But after one or two halts going up, there's a high likelihood of a halt going down, sometimes a second halt going down.
-[00:11:01] And we've actually had stocks that basically trade all day long, halting.
-[00:11:05] They halt, because because the stock was below 75 cents in the previous day, they're just halting every 15 cents.
-[00:11:11] They're just constantly halting because their movement is too volatile for the current halt ban.
-[00:11:19] And it's, I find it to be almost impossible to trade those stocks.
-[00:11:23] So, as a result, on a stock like this, I might say, listen guys, my last window to trade it is going to be between like 9 and 930,
-[00:11:31] because once we have the opening bell and we start having circa breaker halts, it's going to become more or less untradable.
-[00:11:37] I don't want to only have 15, 20 cents before I'm stuck in a 5 in the long haul.
-[00:11:42] And although halts are typically 5 minutes, they can be longer.
-[00:11:47] So if a stock halts up at 7.56, and then starts showing a $10 resumption, it will be a long halt.
-[00:11:54] And there's a couple things going on here. The imbalance is so big that it's going to halt up, and it's already going to be an additional 10% higher.
-[00:12:04] So it's almost like it's automatically triggering another halt while it's halting, because it's gapping up so much.
-[00:12:11] So when we've had stocks that halt up at like 750, and show a resumption of like $20, they might end up being halted for hours before they resumed trade, which is really a pain.
-[00:12:21] And during that time, people are placing orders and canceling orders, and all of that's kind of affecting the imbalance and the price and where ultimately it's going to resume that.
-[00:12:32] So you know, I think one of the things that I definitely pay attention to when a stock is about to be halted is I look at that distinctive sort of pin appearance where you've got a huge stack of buyers and just one seller if it's halting up or if it's halting down you have a huge stack of sellers and then just like one buyer.
-[00:12:51] So even if you didn't subscribe or have access to the literal L-U-L-D levels, you can still sort of see the distinctive appearance of that halt as we approach that level.
-[00:13:04] But we know that the 15 second time or begins. So the 15 second time or begins, and if the stock, if enough people sell, then it can drop and then you essentially the whole 15 second time or has to reset.
-[00:13:19] And the average price of the stock over the last five minutes is automatically updating approximately every 30 seconds.
-[00:13:28] So that means the halt level 756 it holds up at this level and then it suddenly dips down for a second and then maybe three seconds later the halt level ends up adjusting to 775.
-[00:13:41] I say 375-70s anyways, 550s. Nonetheless, the halt level automatically adjusts because it's adjusting to be 10% above the average price over the last five minutes but that average keeps updating.
-[00:13:54] So what sometimes will happen is you'll have a stock that is sort of chasing the halt level and it's like it's trading kind of just under it, but each time the halt level moves up.
-[00:14:05] So well, actually the halt level is more of a stair step. So the halt level is moving up every 30 seconds and so the stock is kind of squeezing up and then pulls back and then the right up and then sort of pulls back.
-[00:14:16] And each time the halt level moves up it pushes higher.
-[00:14:20] Back actually have a strategy of trading that where we're sort of chasing the halt level. So the stock is basically pinned right here and we're waiting for the halt level to move up and moves up and immediately we go to here and then we're waiting and then we immediately go to there.
-[00:14:36] This is sort of funny though because why is the stock actually halting and usually it's because the stock is a little too expensive and the spreads are too big and the bid is not able to hold up at that level for long enough the 15 second, you know, timer to halt.
-[00:14:52] And so it keeps kind of testing that level and then dipping back down sort of testing that level again and then dipping back down.
-[00:15:01] So again, you're going to see a lot of examples of these trading halts in now of halts as we get into a strategy development, but but let's people can get that distinctive halting appearance and let's look at the resumption here on mdgs.
-[00:15:15] Now we're watching for the resumption. So we're watching the resumption it resumes and immediately shows 805.
-[00:15:25] Now it shows eight nine thousand share buyer on the bid. I'm pausing this just just to break it down really slowly. There's a buyer on the bid at eight.
-[00:15:33] It almost looked like a hidden buyer. Now we're up to eight fifty eight seventy nine eight sixty eight.
-[00:15:44] Now back to eight back to seven ninety four. So very volatile here. The next hot level up is ten o eight. The hot level down is sixty seventy two. So we're a little ways from any additional hot levels.
-[00:16:02] It ends up going up to nine, which is nice. So pushes a little higher and then kind of stalls out a little bit there. In any case nice little trade but but nonetheless that's that distinctive halting appearance that we look for.
-[00:16:19] So here's another example of the halting appearance. Okay, so let's see what we've got here.
-[00:16:28] So here we're looking at Wlmp. So let's back this up for a second. So the hot level is the hot level was looks like nine o nine is a hot level. So nine o nine is a hot level.
-[00:16:47] So we're coming up to this hot level here and we're waiting. You could still sell right now. You cannot buy but you can sell because there's a sell it. There's a buyer right there.
-[00:17:01] You can't you can't buy because you can't buy any higher than that price. So the highest price was nine o nine or two o nine.
-[00:17:10] Okay, now this is going to be an example of a false halt. So a false halt in a car when the stock is about to get halted.
-[00:17:19] But before the 15 seconds are up it resumes trading or it dips down and then all of a sudden we got a problem. So we'll watch this one here. Okay, so let's see.
-[00:17:33] So this is running. It looks like staff. Maybe. Oh, no, MS, MTSL. So MTSL is coming up here.
-[00:17:56] $3. It's up quite a bit. So let's see where's the whole level. The halt level is at 3.38 right down here. So it's a little ways away. So I got my order out to add to the position.
-[00:18:26] You don't confident on this one. Again, not to get into the details of the strategy just yet. So we come up to 330 332. So we're getting closer to that halt level, which is good. So there.
-[00:18:51] See that? So let's back this up. So we come back up there. We tap 38, 38 on the bid. So now the 15 second timer starts. Right. We've got 38 on the bid. So now we wait. Do we halt?
-[00:19:09] We look like we're going to halt here. We're look good. So I even try to add to the position. I put the buy order out. The only way I would be able to actually add to this position is if someone.
-[00:19:22] So I'm sitting on the bid as a buyer. So if someone else decides to sell, I might be able to fill a couple of shares. Maybe.
-[00:19:29] Usually, I don't try to do this at this point because if I do fill, then someone might be dumping too much size. And then we'll connect up happening is we end up having, you know, it ultimately is a flush like that.
-[00:19:42] And then I'm like, oh, yeah, now it's back to break even. You know, I was just up on this and now I'm break even. And now I'm right. That's super annoying.
-[00:19:53] So that was an example of a false halt. It, you know, it feels like it looks good. And then all of a sudden it sort of falls apart.
-[00:20:01] So that can happen. What ultimately happened right there was, you know, for whatever reason someone decided to, you know, to bail out.
-[00:20:11] And so it's interesting because look at all, there were so many buyers there, too. I mean, how many buyers did we have over over 60,000 shares.
-[00:20:19] And then boom, all of a sudden. And the thing is when you saw all those sell orders go through that clearly communicated, you know, this is, this is not a good situation, right.
-[00:20:30] So other people saw that and they're like, oh, oh, this is bad. This thing is this thing is going to drop. This is, this is not what we want to see.
-[00:20:39] So yeah, so the result in this case is that, you know, we end up having that fast drop. So if you were, if you were not using level two data, then you wouldn't have seen that those sellers start to kind of disappear, right.
-[00:20:57] You would have, you would have just, you would have seen that buyer. You wouldn't have seen anything. You would have just been looking at the chart and the chart looked fine and all was done.
-[00:21:05] And did. So by using level two, you could see there was that big buyer and then sellers starting to eat into it. And then it gets smaller, smaller, smaller.
-[00:21:12] And I, even I, well, I guess you could argue, I was sitting here looking at level two and I still didn't get out. I probably should have, but I don't know why I didn't.
-[00:21:21] And in any case, probably should have probably should have ended up turning a winner until lose or which wasn't so great.
-[00:21:29] So, um, okay, so now that gives you a good explanation on, um, on that distinctive halting appearance. And, you know, and I just, um, let's see. So, yeah, and then additional examples of level two.
-[00:21:46] So, as we continue on, um, I've got more than I want to talk about in chapter six here specifically about routing, order types, dark pools, adding liquidity, removing liquidity, some of these advanced orders.
-[00:22:01] So, we are going to get into all of that. But at this point, I think that you should have a pretty solid understanding of what level two is and what I look for on level two.
-[00:22:15] So, the first thing that happens, I pull up a stock hits the scanner. Let's think about that workflow. Stock hits the scanner.
-[00:22:22] I look at it without even looking at the chart and I can understand if it meets several of the pillars of stock selection.
-[00:22:27] Based on price, float, percentage change, relative volume, does it have news?
-[00:22:32] Now, I can check all of that without even looking at the chart. So, I check that, that checks out. I pull up the chart.
-[00:22:37] I check the daily chart, position of the 200 moving average. I look to see what type of daily chart it is. You know, is it type 1? Is it news? Is it IPOs?
-[00:22:44] It's a recent reverse split, recent IPOs. You know, what's the daily setup? What's the daily chart?
-[00:22:49] Looking, looking like, position of the 200, etc. Then, I switch to the intraday chart patterns, looking for, you know, what do we have here?
-[00:22:56] Typically, if the stock just hit my scanner, all we have is a huge green candle. So, then, it's okay. We've got to wait for pull back.
-[00:23:04] So, while we're waiting for the pull back, I'm pulling up my level 2 and that's where I begin to sort of layer in that additional data.
-[00:23:10] What is the spread? Do we have a big bid? Do we have big sellers? You know, what does the table look like?
-[00:23:15] Are we seeing a lot of buyers? You know, what's the flow? And, as I kind of absorb all of that data, now I'm watching this very closely.
-[00:23:24] So, I'm waiting for the pull back. I know that's the best shot for a good trade.
-[00:23:29] Is that this spikes up when we get a first pull back pattern. So, we get the first red candle. Awesome.
-[00:23:34] Second red candle. What's the high of that candle? Now, I'm starting to get dialed in with the price.
-[00:23:39] Things are starting to kind of fall into place. I'm getting my order ready. I've got my order entry window.
-[00:23:44] I've typed in the number of shares I want. I've got my hand on that hot key to buy. And, I'm ready to execute this trade.
-[00:23:51] And, all I'm looking for now is that signal on the level two. Either the spread may be starting to tighten up a little bit,
-[00:23:57] because there's a big buyer stepping up, or maybe some other orders going through the tape.
-[00:24:01] They're indicating other people are seeing what I'm seeing and I better jump in.
-[00:24:05] And, right there, boom, I execute the trade and I jump in.
-[00:24:09] So, as we go through chapters, seven, eight, nine, and we get further into the strategies and the live trading archives,
-[00:24:15] you're going to be, you're going to hear me articulating all of this, and it's just going to add more depth to your understanding of level two.
-[00:24:23] So, I hope this has been a very helpful, just to continue to build the foundation, but you're going to keep learning.
-[00:24:31] There's still more to learn, there's still more to observe, especially when you see a lot of these live trading archives and these examples.
-[00:24:38] So, with that, we're going to put this on the side here for now, and we're going to continue on to the next section of chapter six.
-[00:24:46] So, let's do that right now.
+[00:00:52] So the halt level, the halt code, is the LULD limit up, limit down.
+[00:00:58] So on this platform right here, the price for the limit halt up is 470C LULD.
+[00:01:06] Now some platforms will allow you to highlight that market maker.
+[00:01:11] It's not actually a market maker, it's just a signal, but you choose market maker, you say add a highlight on LULD, and then you get the highlight on it.
+[00:01:19] So it'll be bright red.
+[00:01:22] So this is what I want you to see.
+[00:01:24] See how the price squeeze is up, and now it's like the price can't go higher.
+[00:01:30] What's going on? It just won't go higher.
+[00:01:33] It's jammed.
+[00:01:36] It's stuck.
+[00:00:00] It's halting. That's what's happened. The stock is getting halting. So the way the
+[00:00:04] halt band's work is they actually prevent the stock from going higher. The stock is
+[00:00:10] not allowed. It is not capable of going to a higher price because of those halts.
+[00:00:16] And so what happens is the stock will essentially be pinned at that level. So the way the
+[00:00:25] halt's work and you can go back I think it was actually we did talk about halts at the
+[00:00:30] beginning of this class as well or this at the beginning of strategies in scale. I have I
+[00:00:37] could see halts up here. So I'll just pull this back up for one second for you. So stock halts.
+[00:00:45] So stock halts do present a risk because when you're in the halt you can not buy yourself. So
+[00:00:49] a tier one security we don't typically trade tier one securities. Those are S&P 500 stocks.
+[00:00:54] So tier two securities price above $3 will halt and this is when the previous close was above
+[00:01:00] $3. Very important. They will halt every 10%. If this not every 10%. It's very nuanced.
+[00:01:08] If the stock squeezes up more than 10%, the versus the average price over the last five minutes.
+[00:01:16] Then the stock will halt and it'll halt for a period of a minimum of five minutes.
+[00:01:21] Now during that halt while the stock is halted you can't buy yourself. People can put out orders
+[00:01:26] and those orders will execute on the resumption. Now a stock between 75 cents and $3 will halt
+[00:01:33] every 20%. And the stock lower than 75 cents will halt.
+[00:00:00] either every 15 cents or 75 cents, 75% the lesser of the two.
+[00:00:05] So traditionally, the 75 cents and under stocks end up halting every 15 cents.
+[00:00:12] So the way these halts work is when the stock comes up to the halt level,
+[00:00:19] and we'll watch, we're going to see another halt here in just a moment.
+[00:00:22] So this halt level looks like on MDGS is, oh, it's right here at 756.
+[00:00:28] So in order for the stock to be halted, the bid needs to stay at the halt price for 15 seconds.
+[00:00:38] So we start the timer.
+[00:00:41] So we're going to come up here and right now the timer starts 15 seconds.
+[00:00:48] See how it tapped 56, but then it reset, it went back to 50.
+[00:00:53] So the timer resets 49, 56 for it now.
+[00:00:58] So it has to hold here for 15 seconds.
+[00:01:01] So if it holds here for 15 seconds, the stock currently isn't halted.
+[00:01:05] You can still sell. You can still sell here at 756.
+[00:01:08] There's no problem.
+[00:01:09] But once it halts, then boom, there you go.
+[00:01:13] You can't trade.
+[00:01:14] So now the stock is halted and it's showing the 770 resumption.
+[00:01:17] Now one thing that I want to mention here is what happened while the stock is halted.
+[00:01:22] So stock halted.
+[00:01:25] All right, so while the stock is halted,
+[00:01:27] we know that we cannot buy and we cannot sell.
+[00:01:31] We won't get any orders executed.
+[00:01:33] However, we can place orders.
+[00:01:36] So when this stock halted at...
+[00:00:00] at 755 or 56 it halted immediately so it went up was halt stated that level for 15 seconds
+[00:00:09] right 15 seconds at the bottom of the hallpan for the top of the hallpan it was halted
+[00:00:14] and then immediately once the stock was officially halted showed 770 so how did that happen
+[00:00:20] how did it start showing 770 right away well as we went into the hall there were all
+[00:00:25] those people buying at 755 but some of them may have been using market orders so they're
+[00:00:31] saying I want to buy at 755 and there may have been people that have sell orders out to sell
+[00:00:36] this at 755 and 757 85 etc so as soon as it's halted all of the orders that are out there
+[00:00:43] basically go into they go into essentially an auction so they're in a queue so you've got your
+[00:00:50] buyers your bids and you've got your offers so pretty much just like level 2 except that this
+[00:00:56] is all happening while the stock is halted and so what it starts showing us is the potential
+[00:01:01] resumption price which means that's the I guess you would you would call it the imbalance it's
+[00:01:08] plus 15 cents so we have a plus 15 cent imbalance here and we're going to open 15 cents
+[00:01:15] higher than we close so imagine for instance if you pulled up the stock and you had
+[00:01:22] been holding it for a while and you're like oh my gosh this thing is up at 755 I want to
+[00:01:28] get out you could place a sell order to sell you say I want to sell and I want to sell you know
+[00:01:34] 50,000 shares and what price I don't care 7.0
+[00:00:00] I'm happy to get out. So now all of a sudden, this might start showing a $7
+[00:00:04] resumption. That would be a lower resumption. Or alternatively, you can have someone
+[00:00:09] here who's like, I shorted 100,000 shares of the stock back at six bucks and I'm
+[00:00:14] going to get smoked. Maybe their broker takes over and says, you have to buy
+[00:00:18] back those shares. We're doing it for you. We got to buy, it's a market order
+[00:00:21] for, it's a market order for 100,000 shares. We're putting it out there and all
+[00:00:26] a sudden, we start seeing, you know, an $8.70 resumption. We've seen resumptions
+[00:00:32] that have been huge. I mean, we literally had a stock once that halted up at $15
+[00:00:37] a share and resumed at like 150 or 170. It was insane. So it's not impossible for a
+[00:00:44] stock to essentially gap during the halt. It's strange because suddenly it goes
+[00:00:50] from $7.55, $7.70 or $7.80 or $8 or higher without trading. But behind the scenes,
+[00:00:58] there is this auction going on where you've got your buyers and you've got your sellers.
+[00:01:03] But remember, behind the scenes are the algorithms traded, are the market makers traded.
+[00:01:09] Well, maybe not. So now everything is kind of offline and what you have are just a very
+[00:01:14] small number of people who are putting out orders. Some brokers don't allow you to play
+[00:01:18] orders while something's halted. But a lot of them do. So you're placing your order.
+[00:01:22] It's going to be in a queue and then upon resumption, it'll execute. So if this ends up
+[00:01:28] resuming at $8, your order executes as a buy order 8 or a sell order at 8, whatever.
+[00:01:34] And then from that point, the stock goes back to kind of trading, you know, as it as it is.
+[00:00:00] might. Now during day training the basics we talked about the different
+[00:00:05] halt levels of course so tier one securities tier two securities will start
+[00:00:10] there. If the previous days closed as above three dollars it's they halt
+[00:00:16] every 10 percent from the average price over five minutes and this is kind of
+[00:00:23] tricky because let's say a stock goes from three you know I'm just gonna do this
+[00:00:29] in blue whatever pulls back those up to three twenty five goes up to three
+[00:00:32] fifty you know like this so it goes up to three fifty here but it does it
+[00:00:37] over the course of twenty minutes there's no halt but if it tried to do this
+[00:00:42] within like one minute it would stop at the average price over the last five
+[00:00:48] minutes so if it's been trading sideways for five minutes the average price is three
+[00:00:52] if it's been moving up to three slowly the average price might be two ninety so
+[00:00:57] now two ninety plus ten percent so twenty nine cents so now we're looking at a
+[00:01:02] halt up around three nineteen so suddenly the squeeze right up to three
+[00:01:07] nineteen then boom that's our halt level so essentially we have these bands
+[00:01:13] that are around the price for the limit up and then the limit the limit down
+[00:01:18] and if we drop to that level quick enough then and we hold there for fifteen
+[00:01:23] seconds then we halt or if we pop up quick enough we hold for fifteen seconds
+[00:01:27] then we halt and one of the things that I talked about which is sort of
+[00:01:32] fascinating is that if a stock yesterday closed between seventy five cents and
+[00:00:00] $3, the Hall Band is 20%, but if that stock goes up 600%, you could literally have
+[00:00:06] two stocks that are both trading at $3, but one yesterday closed at $2.99, and the other
+[00:00:12] closed at, you know, just say, $3 exactly, and this one's going to haul up at $3.30,
+[00:00:18] and this one's going to haul up at $3.60, sorry, yeah, $3.60, because it's 20%.
+[00:00:24] Or, it closed the previous day below 75 cents, and then the Hall Band's going to be every
+[00:00:29] $15, which means that $3 stock is going to haul up at $3.15.
+[00:00:33] It's clearly, this is one of those examples where that was not the intention.
+[00:00:40] They never probably, the people that came up with this rule probably never thought about this
+[00:00:44] scenario right here.
+[00:00:46] But, you know, this is something that has been a by-product and has occurred.
+[00:00:50] So, as these stocks are moving higher, we know that when stocks haul going up, there's
+[00:00:58] obviously some really extreme momentum behind them.
+[00:01:02] And it's very common that they open, and then they go into a second haul going up.
+[00:01:06] But after one or two halts going up, there's a high likelihood of a haul going down.
+[00:01:10] Sometimes a second haul going down.
+[00:01:12] And we've actually had stocks that basically trade all day long, halting.
+[00:01:16] They haul, because because the stock was below 75 cents in the previous day,
+[00:01:20] they're just halting every 15 cents.
+[00:01:22] They're just constantly halting, because their movement is too much,
+[00:01:26] because their movement is too volatile for the current haul payments.
+[00:01:32] And it's, I find it to be of almost impossible to trade those stocks.
+[00:01:36] So, as a result, honestly.
+[00:00:00] Stock like this I might say listen guys my last window to trade it is going to be between like nine and nine thirty because once we have the opening ball and we start having
+[00:00:08] Sturker breaker halts it's going to become more or less untradable. I don't want to only have 15 20 cents before I'm stuck in a five in the long haul and although halts are typically five minutes. They can be longer.
+[00:00:21] So if a stock halts up at seven fifty six and then starts showing a ten dollar resumption it will be a long haul.
+[00:00:28] And there's a couple things going on here. The imbalance is so big that it's going to halt up and it's already going to be an additional ten percent higher.
+[00:00:38] So it's almost like it's automatically triggering another halts while it's halting because it's gapping up so much.
+[00:00:45] So when we've had stocks at halts up at like seven fifty and show a resumption of like twenty dollars they might end up being halting for hours before they resume trade.
+[00:00:54] Which is really a pain and during that time people are placing orders and canceling orders and all of that's kind of affecting you know the the imbalance and the price and where ultimately it's going to resume.
+[00:01:05] So you know I think one of the things that that I definitely pay attention to when a stock is about to be halting is I look at that distinctive sort of pin appearance where you've got a huge stack of buyers and just one seller.
+[00:01:20] If it's halting up or if it's halting down you have a huge stack of sellers and then just like one buyer.
+[00:01:25] So even if you didn't subscribe or have access to the literal L U L D levels you can still sort of see the distinctive appearance of that halt as we approach that level.
+[00:00:00] But we know that the 15 second time our begins. So the 15 second time our begins and if the stock
+[00:00:07] If enough people sell then it can drop and then you essentially the whole 15 second time our has to reset and
+[00:00:15] The average price of the stock over the last five minutes is automatically updating
+[00:00:22] Approximately every 30 seconds. So that means the whole level 756 it holds up at this level and then it's
+[00:00:29] Sunley dips down for a second and then maybe three seconds later the whole level ends up adjusting to
+[00:00:36] 775
+[00:00:37] Is I say 376 570s anyways 550s nonetheless at the whole level automatically adjust because it's adjusting to be 10% above the average price
+[00:00:46] Over the last five minutes, but that average keeps updated
+[00:00:49] So what's sometimes will happen is you'll have a stock that is sort of chasing the halt level and
+[00:00:56] It's like it's trading kind of just under it, but each time the halt level moves up
+[00:01:00] But so well, actually the halt levels is more of a stair step
+[00:01:04] So the halt levels moving up, you know every 30 seconds and so the stock is kind of squeezing up and then pulls back and then the right up and then sort of pulls back
+[00:01:12] And each time the halt level moves up it pushes higher
+[00:01:15] In fact, I actually have a strategy of trading that where we're sort of chasing the halt level
+[00:01:21] So the stock is basically pinned right here and we're waiting for the halt level to move up and moves up and immediately we go to here
+[00:01:28] And then we're waiting and then we immediately go to there
+[00:01:31] This is sort of funny though because why is the stock actually halting and usually it's
+[00:00:00] because the stock is a little too expensive and the spreads are too big and the
+[00:00:03] bid is not able to hold up at that level for long enough, the 15 second
+[00:00:08] timer to halt. And so it keeps kind of testing that level and then dipping
+[00:00:13] back down, sort of testing that level again and then dipping back down. So again
+[00:00:19] you're going to see a lot of examples of these trading halts and now it
+[00:00:23] halts as we get into a strategy development. But let's people can get that
+[00:00:27] distinctive halting appearance and let's look at the resumption here on
+[00:00:30] MDGS. So now we're watching for the resumption. So we're watching the
+[00:00:38] resumption. It resumes and immediately shows 805. Now it's shows 8, 9,000 share
+[00:00:46] buyer on the bid. I'm pausing this just to break it down really slowly. There
+[00:00:50] is a buyer on the bid 8. It almost looks like a hidden buyer. Now we're up to
+[00:00:55] 8.50. 8.79. 8.68. Now back to 8 back to 7.94. So very volatile here. The
+[00:01:12] next halt level up is 10.08. The halt level down is 6.72. So we're a
+[00:01:16] little way as from any additional halt levels ends up going up to 9, which
+[00:01:22] is nice. So it pushes a little higher and then kind of stalls out a little bit
+[00:01:29] there. In any case nice little trade, but nonetheless that's that distinctive
+[00:01:34] halting appearance that we look for.
+[00:00:00] So here's another example of the halting appearance.
+[00:00:06] OK, so let's see what we've got here.
+[00:00:12] So here we're looking at WLMP.
+[00:00:15] So let's back this up for a second.
+[00:00:17] So the halt level is, the halt level looks like 909 is a halt level.
+[00:00:24] So 909 is a halt level.
+[00:00:28] So we're coming up to this halt level here and we're waiting.
+[00:00:35] You could still sell right now.
+[00:00:37] You cannot buy, but you can sell.
+[00:00:39] Because there's a sell, there's a buyer right there.
+[00:00:41] You can't buy because you can't buy any higher than that price.
+[00:00:46] So the highest price was 909 or 209.
+[00:00:50] OK, now this is going to be an example of a false halt.
+[00:00:54] So a false halt in the curve when the stock is about to get halted.
+[00:00:59] But before the 15 seconds are up, it resumes trading or it dips down.
+[00:01:05] And then all of a sudden we got a problem.
+[00:01:08] So we'll watch this one here.
+[00:01:10] OK, so let's see.
+[00:01:13] So this is running.
+[00:01:27] Looks like staff.
+[00:01:28] Maybe, oh no, MTSL.
+[00:01:31] So MTSL is coming up here.
+[00:01:34] $3.
+[00:00:00] So I've quite a bit, so let's see where's the whole level.
+[00:00:18] The whole level is at 338 right down here.
+[00:00:21] So it's a little ways away, so I've got my order out to add to the position,
+[00:00:28] feeling confident on this one.
+[00:00:32] Again, not to get into the details of the strategy just yet.
+[00:00:36] So we come up to 330, 332, so we're getting closer to that whole level, which is good.
+[00:00:52] So there, see that?
+[00:00:55] So let's back this up.
+[00:00:57] So we come back up there.
+[00:01:00] We tap 38, 38 on the bid, so now the 15 second time or starts, right?
+[00:01:06] We've got 38 on the bid, so now we wait.
+[00:01:09] Do we halt?
+[00:01:11] We look like we're going to halt here, we're look good.
+[00:01:15] So I even try to add to the position I put the buy order out.
+[00:01:18] The only way I would be able to actually add to this position is if someone,
+[00:01:24] so I'm sitting on the bid as a buyer.
+[00:01:26] So if someone else decides to sell, I might be able to fill a couple of shares.
+[00:01:30] Usually I don't try to do this at this point, because if I do fill,
+[00:01:35] then someone might be dumping too much.
+[00:00:00] And then we'll connect up happening is we end up having, you know, it ultimately is a flush like that, and then I'm like, uh-oh
+[00:00:09] Yikes, now it's back to break even. You know, I was just up on this and now I'm break even and now I'm right
+[00:00:16] That's super annoying
+[00:00:18] So that was an example of a false halt. It's you know, it feels like it looks good and then all of a sudden it sort of falls apart
+[00:00:26] So that can happen. What ultimately happened right there was
+[00:00:31] You know, for whatever reason someone decided to
+[00:00:34] You know to bail out and so it's interesting because look at all there were so many buyers there, too
+[00:00:40] I mean how many buyers did we have over over 60,000 shares and then boom all of a sudden and the thing is when you saw all those cell orders go through
+[00:00:50] That clearly communicated, you know, this is this is not a good situation right so other people saw that
+[00:00:56] And they're like, uh-oh, this is bad. This thing is this thing is gonna drop
+[00:01:01] This is this is not what we want to see
+[00:01:04] So yeah, so the result in this case is that, you know, we end up having that
+[00:01:10] That fast drop so if you were if you were not using level two data then you wouldn't have seen that those sellers
+[00:01:19] Start to kind of disappear, right you would have you would have just
+[00:01:23] You you would have seen that buyer you wouldn't have seen anything
+[00:01:27] You would have just been looking at the chart and the chart looked fine and all of a sudden did so by using level two
+[00:01:31] You could see there was that big buyer and then sellers starting to eat into it and then it gets smaller, smaller, smaller, and I
+[00:00:00] Even I, well, I guess you could argue,
+[00:00:01] I was sitting here looking at level two
+[00:00:03] and I still didn't get out.
+[00:00:04] I probably should have, but I don't know why I didn't.
+[00:00:08] In any case, probably should have.
+[00:00:11] Probably should have ended up turning a winner
+[00:00:13] until lose or which wasn't so great.
+[00:00:15] So, okay, so now that gives you a good explanation
+[00:00:20] on that distinctive halting appearance.
+[00:00:24] And, you know, and I just, let's see.
+[00:00:27] So, yeah, and then additional examples of level two.
+[00:00:32] So, as we continue on, I've got more than I want to talk
+[00:00:36] about in chapter six here, specifically about routing,
+[00:00:42] order types, dark pools, adding liquidity,
+[00:00:45] removing liquidity, some of these advanced orders.
+[00:00:47] So, we are going to get into all of that.
+[00:00:50] But, at this point, I think that you should have a pretty solid
+[00:00:54] understanding of what level two is
+[00:00:58] and what I look for on level two.
+[00:01:00] So, the first thing that happens, I pull up a stock hits the scanner.
+[00:01:05] Let's think about that workflow.
+[00:01:06] Stock hits the scanner.
+[00:01:08] I look at it without even looking at the chart
+[00:01:09] and I can understand if it meets several
+[00:01:11] of the pillars of stock selection.
+[00:01:12] Based on price, float, percentage change, relative volume,
+[00:01:16] does it have news?
+[00:01:18] Now, I can check all of that without even looking at the chart.
+[00:01:20] So, I check that, that checks out, I pull up the chart.
+[00:01:23] I check the daily chart,
+[00:01:24] position of the 200 moving average.
+[00:01:26] I look to see what type of daily chart it is.
+[00:01:28] You know, is it type one?
+[00:01:29] Is it news?
+[00:01:30] Is it IPOs?
+[00:01:31] Is it recent reverse split?
+[00:01:31] Recent IPOs?
+[00:01:32] You know, what's the daily setup?
+[00:01:34] What's the daily chart?
+[00:01:35] Looking, looking like, position of the 200, et cetera.
+[00:00:00] Then I switch to the intraday chart patterns, looking for, you know, what do we have here?
+[00:00:04] Typically, if the stock just hit my scanner, all we have is a huge green candle.
+[00:00:09] So then it's okay, we've got to wait for pullback. So while we're waiting for the pullback,
+[00:00:13] I'm pulling up my level two and that's where I begin to sort of layer in that additional data.
+[00:00:18] What is the spread? Do we have a big bid? Do we have big sellers?
+[00:00:21] You know, what is the tape look like? Are we seeing a lot of buyers? You know, what's the flow?
+[00:00:26] And as I kind of absorb all of that data, now I'm watching this very closely.
+[00:00:32] So I'm waiting for the pullback. I know that that's the best shot for a good trade.
+[00:00:37] Is that this spikes up when we get a first pullback pattern. So we get the first red candle. Awesome.
+[00:00:42] Second red candle. What's the high of that candle? Now I'm starting to get dialed in with the price.
+[00:00:47] Things are starting to kind of fall into place. I'm getting my order ready. I've got my order entry window.
+[00:00:53] I've typed in the number shares I want. I've got my hand on that hot key to buy.
+[00:00:57] And I'm ready to execute this trade. And all I'm looking for now is that signal on the level two.
+[00:01:02] Either the spread may be starting to tighten up a little bit because there's a big buyer stepping up.
+[00:01:07] Or maybe some other orders going through the tape. They're indicating other people are seeing what I'm seeing.
+[00:01:12] And I better jump in. And right there, boom, I execute the trade and I jump in.
+[00:01:17] So as we go through chapter 789 and we get further into the strategies and the live trading archives,
+[00:01:23] you're going to hear me articulating all of this and it's just going to add more depth to your understanding of level two.
+[00:01:31] So I hope this has been a very helpful just to continue to build the foundation.
+[00:00:00] going to keep learning. There's still more to learn, there's still more to observe, especially
+[00:00:04] when you see a lot of these live trading archives and these examples. So with that, we're
+[00:00:09] going to put this on the side here for now, and we're going to continue on to the next
+[00:00:14] section of chapter six. So let's do that right now.
