@@ -9,15 +9,19 @@ on:
 
 env:
   REGISTRY: nas:5000
+  GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
 
 jobs:
   lint:
     name: Lint & Format Check
     runs-on: [self-hosted, linux, docker]
+    container:
+      image: docker:cli
+      options: --privileged -v /var/run/docker.sock:/var/run/docker.sock
     steps:
       - name: Clone repository
         run: |
-          git clone --depth=1 http://kay:7b0ca81cda7a8499a31dd256b010ed524eadf493@10.8.0.10:3000/trading/trading-agent.git /workspace
+          git clone --depth=1 http://kay:${GITEA_TOKEN}@10.8.0.10:3000/trading/trading-agent.git /workspace
           cd /workspace && git fetch --depth=1 origin ${{ github.ref }} && git checkout ${{ github.sha }}
 
       - name: Python syntax check
@@ -30,7 +34,7 @@ jobs:
       - name: Flake8 lint
         run: |
           cd /workspace
-          pip3 install flake8 -q --break-system-packages 2>/dev/null
+          pip3 install flake8 -q --break-system-packages 2>/dev/null || pip install flake8 -q 2>/dev/null || true
           flake8 trading_agent/ dashboard/ scripts/ \
             --max-line-length=120 \
             --ignore=E501,W503,E402 \
@@ -40,10 +44,13 @@ jobs:
     name: Build & Push (dev)
     runs-on: [self-hosted, linux, docker]
     if: github.ref == 'refs/heads/dev'
+    container:
+      image: docker:cli
+      options: --privileged -v /var/run/docker.sock:/var/run/docker.sock
     steps:
       - name: Clone and checkout
         run: |
-          git clone --depth=1 --branch=dev http://kay:7b0ca81cda7a8499a31dd256b010ed524eadf493@10.8.0.10:3000/trading/trading-agent.git /build
+          git clone --depth=1 --branch=dev http://kay:${GITEA_TOKEN}@10.8.0.10:3000/trading/trading-agent.git /build
           cd /build && git fetch origin dev && git checkout ${{ github.sha }}
 
       - name: Build and push
@@ -67,10 +74,13 @@ jobs:
     name: Build & Push (main)
     runs-on: [self-hosted, linux, docker]
     if: github.ref == 'refs/heads/main'
+    container:
+      image: docker:cli
+      options: --privileged -v /var/run/docker.sock:/var/run/docker.sock
     steps:
       - name: Clone and checkout
         run: |
-          git clone --depth=1 --branch=main http://kay:7b0ca81cda7a8499a31dd256b010ed524eadf493@10.8.0.10:3000/trading/trading-agent.git /build
+          git clone --depth=1 --branch=main http://kay:${GITEA_TOKEN}@10.8.0.10:3000/trading/trading-agent.git /build
           cd /build && git fetch origin main && git checkout ${{ github.sha }}
 
       - name: Build and push
