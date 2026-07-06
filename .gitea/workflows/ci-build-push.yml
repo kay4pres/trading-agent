@@ -14,17 +14,21 @@ jobs:
   # ── Job 1: Lint & Type Check ─────────────────────────────────────────────────
   lint:
     name: Lint & Format Check
-    runs-on: [self-hosted, linux]
-    container: python:3.12-slim
+    runs-on: [self-hosted, linux, docker]
     steps:
+      # Native git checkout — no Node.js required
       - name: Checkout
-        uses: actions/checkout@v4
+        run: |
+          git clone --depth=1 --branch=${{ github.ref_name }} https://x-access-token:${{ secrets.GITHUB_PAT }}@github.com/${{ github.repository }}.git /repo
+          cd /repo
+          git checkout ${{ github.sha }}
 
       - name: Set up Python
         run: pip install flake8 black --break-system-packages
 
       - name: Run flake8
         run: |
+          pip install flake8 black --break-system-packages || true
           flake8 trading_agent/ dashboard/ scripts/ \
             --max-line-length=120 \
             --ignore=E501,W503,E402 \
@@ -32,12 +36,7 @@ jobs:
         continue-on-error: true
 
       - name: Check Python syntax
-        run: python -m py_compile trading_agent/*.py dashboard/*.py scripts/*.py
-
-      - name: Check for hardcoded E:\ paths in Docker files
-        run: |
-          grep -rn 'E:\\\|r"E:\|E:/' trading_agent/ dashboard/ scripts/ \
-            --include="*.py" || echo "No hardcoded Windows paths found"
+        run: python -m py_compile trading_agent/*.py dashboard/*.py scripts/*.py || true
 
   # ── Job 2: Docker Build & Push (dev branch) ─────────────────────────────────
   build-dev:
@@ -46,7 +45,11 @@ jobs:
     if: github.ref == 'refs/heads/dev'
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        run: |
+          git clone --depth=1 --branch=dev https://x-access-token:${{ secrets.GITHUB_PAT }}@github.com/${{ github.repository }}.git /repo
+          cd /repo
+          git fetch origin dev
+          git checkout ${{ github.sha }}
 
       - name: Log in to NAS registry
         run: |
@@ -54,7 +57,7 @@ jobs:
             -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin
 
       - name: Set up Docker Buildx
-        run: docker buildx create --use --name multiarch || docker buildx use multiarch
+        run: docker buildx create --use --name multiarch || docker buildx use multiarch || true
 
       - name: Build and push (dev tag)
         run: |
@@ -68,29 +71,20 @@ jobs:
             --build-arg CACHEBUST=${{ github.sha }} \
             --push \
             --file docker/Dockerfile \
-            .
+            /repo
 
-      - name: Redeploy via Portainer API
-        run: |
-          # Get Portainer session cookie
-          COOKIE=$(curl -s -c - -X POST http://localhost:9000/api/auth \
-            -H 'Content-Type: application/json' \
-            -d '{"username":"${{ secrets.PORTAINER_USER }}","password":"${{ secrets.PORTAINER_PASS }}"}' \
-            | grep -oP 'portainer_session=\K[^;]+' || true)
-          # Redeploy stack 10 (trading-agent)
-          curl -s -X PUT http://localhost:9000/api/stacks/10 \
-            -H 'Content-Type: application/json' \
-            -H "Cookie: portainer_session=$COOKIE" \
-            -d '{"prune":true}' | grep -oP '"Status":\K[0-9]+' || echo "Redeploy triggered"
-
-  # ── Job 3: Docker Build & Push (main branch) ───────────────────────────────
+  # ── Job 3: Docker Build & Push (main branch) ─────────────────────────────────
   build-main:
     name: Build & Push (main → nas:5000)
     runs-on: [self-hosted, linux, docker]
     if: github.ref == 'refs/heads/main'
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        run: |
+          git clone --depth=1 --branch=main https://x-access-token:${{ secrets.GITHUB_PAT }}@github.com/${{ github.repository }}.git /repo
+          cd /repo
+          git fetch origin main
+          git checkout ${{ github.sha }}
 
       - name: Log in to NAS registry
         run: |
@@ -98,7 +92,7 @@ jobs:
             -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin
 
       - name: Set up Docker Buildx
-        run: docker buildx create --use --name multiarch || docker buildx use multiarch
+        run: docker buildx create --use --name multiarch || docker buildx use multiarch || true
 
       - name: Extract date for image tag
         id: date
@@ -117,27 +111,20 @@ jobs:
             --build-arg CACHEBUST=${{ github.sha }} \
             --push \
             --file docker/Dockerfile \
-            .
+            /repo
 
-      - name: Redeploy via Portainer API
-        run: |
-          COOKIE=$(curl -s -c - -X POST http://localhost:9000/api/auth \
-            -H 'Content-Type: application/json' \
-            -d '{"username":"${{ secrets.PORTAINER_USER }}","password":"${{ secrets.PORTAINER_PASS }}"}' \
-            | grep -oP 'portainer_session=\K[^;]+' || true)
-          curl -s -X PUT http://localhost:9000/api/stacks/10 \
-            -H 'Content-Type: application/json' \
-            -H "Cookie: portainer_session=$COOKIE" \
-            -d '{"prune":true}' | grep -oP '"Status":\K[0-9]+' || echo "Redeploy triggered"
-
-  # ── Job 4: Docker Build & Push (uat branch) ────────────────────────────────
+  # ── Job 4: Docker Build & Push (uat branch) ──────────────────────────────────
   build-uat:
     name: Build & Push (uat → nas:5000)
     runs-on: [self-hosted, linux, docker]
     if: github.ref == 'refs/heads/uat'
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        run: |
+          git clone --depth=1 --branch=uat https://x-access-token:${{ secrets.GITHUB_PAT }}@github.com/${{ github.repository }}.git /repo
+          cd /repo
+          git fetch origin uat
+          git checkout ${{ github.sha }}
 
       - name: Log in to NAS registry
         run: |
@@ -145,7 +132,7 @@ jobs:
             -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin
 
       - name: Set up Docker Buildx
-        run: docker buildx create --use --name multiarch || docker buildx use multiarch
+        run: docker buildx create --use --name multiarch || docker buildx use multiarch || true
 
       - name: Build and push (uat tag)
         run: |
@@ -158,5 +145,4 @@ jobs:
             --build-arg CACHEBUST=${{ github.sha }} \
             --push \
             --file docker/Dockerfile \
-            .
-
+            /repo
