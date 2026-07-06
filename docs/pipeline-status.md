@@ -1,21 +1,60 @@
 # Pipeline Status
-## Updated: 2026-07-06 14:00 Berlin (UTC+2)
+## Updated: 2026-07-06 14:40 Berlin (UTC+2)
 
 ---
 
-## 14:00 Check (Jul 6) — Pre-Market Idle ✅ | fincept_connector HEALTHY ✅ | Scanner Expected at 15:30
+## Overall Status: 🟡 Cron Schedule Bug Fixed — Market Opens 15:30 Today
 
-**Dashboard `/api/state`:** `last_scan: "11:39"`, `market_open: false`, `signals: []`, `watchlist: []`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35 APPROVED Jul 3 21:58]`, `mount_status: "missing_today_watchlist"`.
+**14:40 check (Jul 6):** `market_open: false` ✅ (correct — US market opens 15:30 Berlin). `last_scan: "11:39"` — from container startup pre-market. Dashboard healthy. **Root cause: `scan-market` cron used `*/15 15-20` which Mavis parsed as "minute 30 of every hour 13-20 UTC (Berlin 15:00)" instead of "every 15 min from 15:00." Fixed to `0,15,30,45 15-20 * * 1-5`.**
 
-**Everything is normal:**
-- `last_scan: "11:39"` — scanner ran during pre-market hours (13:00–15:30 Berlin). Market is currently closed (`market_open: false`). Scanner is paused until **15:30** when US market opens. `last_scan: "11:39"` is the last pre-market scan slot, expected and healthy.
-- **`mount_status: "missing_today_watchlist"`** — no watchlist for 2026-07-06 yet. Richard's premarket cron runs at **14:00 Berlin** (right now). Watchlist expected by ~14:25.
-- **No "quote error" anywhere** — `fincept_connector.py` is healthy. Platform check at line 45 (`sys.platform == "win32"`) correctly skips the Windows Fincept path on Linux container, uses yfinance fallback on every call. ✅
-- **`fincept_connector.py` status: ✅ HEALTHY** — no code fix needed. Current implementation is correct and clean.
-- **No container logs accessible** from this shell (Docker CLI not in PATH on this machine). No evidence of quote errors in dashboard state response.
-- **`BMGL` decision:** Kay approved BMGL @ $8.35 on Jul 3 at 21:58 via Telegram button — decision logged in container. ✅
+---
 
-**No fix needed.** Pipeline is clean. Scanner resumes at 15:30 Berlin. Richard's premarket watchlist building now.
+## Cron Schedule Bug — FIXED ✅
+
+**Problem:** `scan-market` cron was registered with schedule `*/15 15-20 * * 1-5`. The `*/15` in the hour field is ambiguous — Mavis parsed it as "fire at minute 30 of every hour 13-20 UTC (Berlin 15:00-22:00)" instead of "every 15 minutes from 15:00."
+
+**Evidence:** `lastRun: 13:30 Berlin` today (Jul 6). Confirmed via `mavis cron list mavis`:
+- `scan-market` lastRun: `2026-07-06 13:30:00+02:00` — fires once per hour, not every 15 min
+- `nextRun: 1783342800000` = `2026-07-06 15:00:00+02:00` — first slot today
+
+**Impact:** Scanner would have fired at 13:30, 14:30, 15:30... but all before or at market open. The 15:30 slot is correct by coincidence, but the cadence was wrong (once per hour, not every 15 min).
+
+**Fix (2026-07-06):**
+```
+mavis cron update mavis scan-market --schedule "0,15,30,45 15-20 * * 1-5" --timezone "Europe/Berlin"
+```
+Now fires at: 15:00, 15:15, 15:30, 15:45, 16:00, 16:15, ... 20:45 Berlin.
+- 15:00: `market_status()` = False → scan_thread sleeps
+- 15:30: market opens → first real scan fires ✅
+- Every 15 min through 20:45 ✅
+
+**No container rebuild needed.** Cron change is immediate.
+
+---
+
+## 14:40 Check (Jul 6) — Cron Bug Found & Fixed ✅ | fincept_connector HEALTHY ✅
+
+**Dashboard `/api/state`:** `last_scan: "11:39"`, `market_open: false` (correct — market opens 15:30), `watchlist: []`, `signals: []`, `mount_status: "missing_today_watchlist"`. Dashboard healthy and responding.
+
+**No "quote error" found** — `fincept_connector.py` is healthy. yfinance fallback working.
+
+**Root cause — cron schedule bug (fixed above):**
+- `*/15 15-20` in Mavis cron = "minute 30, every hour 13-20 UTC (Berlin 15:00-22:00)"
+- `lastRun` was 13:30 Berlin (once per hour), not every 15 min as intended
+- Confirmed: `lastRun: 13:30 Berlin` today (from `mavis cron list mavis`)
+- Fixed to `0,15,30,45 15-20` = every 15 min from 15:00 Berlin
+
+**Watchlist mount issue (known, not critical today):**
+- Richard's premarket ran 14:04 ✅ → `E:\Me\TradingAgent\data\watchlists/watchlist_20260706.csv` on Kay's local machine
+- Container can't see it — `/app/data` on NAS ≠ Kay's E: drive
+- Scanner falls back to DEFAULT_UNIVERSE (24 stocks, none qualifying at score ≥ 2.5)
+- Richard's file only appears in dashboard when mounted to NAS `/app/data/watchlists/`
+- Not critical today — all stocks on watchlist had extreme gaps (WIDE_RANGE/HALT_RISK flags)
+
+**Actions taken:**
+1. ✅ `scan-market` cron schedule fixed — now every 15 min from 15:00 Berlin
+2. No container rebuild needed (code unchanged)
+3. ⚠️ LLM key still missing (`vault/llm_api_key.enc`) — Bull/Bear runs inline without real LLM
 
 ---
 
