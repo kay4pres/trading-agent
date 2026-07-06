@@ -38,6 +38,28 @@ TODAY = date.today()
 WATCHLIST_FILE = WATCHLIST_DIR / f"watchlist_{TODAY.strftime('%Y%m%d')}.csv"
 POSITIONS_FILE = DATA_DIR / 'positions.json'
 
+# ── NAS Z: share sync ─────────────────────────────────────────────────────────
+# The Docker container mounts /volume1/Docker/data (NAS) as /app/data.
+# Richard's Mavis cron writes to E:\Me\TradingAgent\data\ on Windows.
+# The Z: share (\\10.8.0.10\Home\backups) is mapped to the same NAS —
+# we sync Richard's output there so the container can see it.
+_NAS_Z_SHARE_DIR = Path(r'Z:\trading-agent-source\data\watchlists')
+
+def _sync_to_nas_share():
+    """Copy today's watchlist to the Z: share so the Docker container can read it."""
+    try:
+        _NAS_Z_SHARE_DIR.mkdir(parents=True, exist_ok=True)
+        today_str = TODAY.strftime('%Y%m%d')
+        for fname in [f'watchlist_{today_str}.csv', 'watchlist_latest.csv']:
+            src = WATCHLIST_DIR / fname
+            dst = _NAS_Z_SHARE_DIR / fname
+            if src.exists():
+                import shutil
+                shutil.copy2(src, dst)
+                print(f"  📡 synced {fname} -> Z: share")
+    except Exception as e:
+        print(f"  ⚠ NAS sync failed (container won't see watchlist): {e}")
+
 # ── Positions Guard ────────────────────────────────────────────────────────────
 def get_open_symbols():
     """Return set of symbols currently in an open position."""
@@ -515,6 +537,8 @@ if __name__ == '__main__':
             # Also write a stable "latest" alias for live_event_loop.py
             save_watchlist(results, WATCHLIST_DIR / "watchlist_latest.csv")
             print(f"  💾 watchlist_latest.csv")
+            # Sync to Z: share so Docker container can access it
+            _sync_to_nas_share()
     else:
         print("\n  No signals found above threshold.")
         print("  Try lowering --min-score or check data sources.")

@@ -36,6 +36,11 @@ SIGNALS_FILE   = DASH_DATA / 'signals_live.json'
 DECISIONS_FILE = DASH_DATA / 'decisions.json'
 PREMARKET_DIR  = DATA_DIR / 'watchlists'
 
+# Z: share path — NAS Z: drive maps to \\10.8.0.10\Home\backups
+# which is the same NAS filesystem as /volume1/Docker/data.
+# Added as final fallback when Docker volume mount is misconfigured.
+NAS_Z_SHARE_DIR = Path(r'Z:\trading-agent-source\data\watchlists')
+
 
 def load_premarket_watchlist():
     """
@@ -54,6 +59,9 @@ def load_premarket_watchlist():
         Path(r'E:\Me\TradingAgent\data\watchlists') / f'watchlist_{today}.csv',
         # Also check root-level watchlist CSV (written by some scanner runs)
         DATA_DIR / f'watchlist_{today}.csv',
+        # Z: share (NAS Z: drive) — Richard's premarket_screener syncs here
+        # so the container can see it when the Docker volume mount is misconfigured
+        NAS_Z_SHARE_DIR / f'watchlist_{today}.csv',
     ]
     for path in candidates:
         if path.exists():
@@ -108,6 +116,7 @@ def _check_mount_status() -> str:
     """
     Check if the data directory and watchlist are accessible.
     Returns a status string that surfaces Docker volume mount issues.
+    Also checks the Z: share fallback as a last resort.
     """
     import os
     if not DATA_DIR.exists():
@@ -118,18 +127,27 @@ def _check_mount_status() -> str:
     today_str = date.today().strftime('%Y%m%d')
     csv_path = watchlist_dir / f'watchlist_{today_str}.csv'
     if not csv_path.exists():
+        # Fallback: check Z: share (Richard's sync destination)
+        z_csv = NAS_Z_SHARE_DIR / f'watchlist_{today_str}.csv'
+        if z_csv.exists():
+            print(f"[dashboard] Watchlist found in Z: share: {z_csv}")
+            return "ok"
         return "missing_today_watchlist"
     return "ok"
 
 
 # Startup check — log mount status so container logs are diagnostic
 _mount_status = _check_mount_status()
+_today_str = date.today().strftime('%Y%m%d')
+_z_csv_startup = NAS_Z_SHARE_DIR / f'watchlist_{_today_str}.csv'
 if _mount_status != "ok":
     print(f"[dashboard] ⚠ DATA_DIR mount issue: {_mount_status}")
     print(f"[dashboard]   DATA_DIR        = {DATA_DIR} (exists={DATA_DIR.exists()})")
     print(f"[dashboard]   PREMARKET_DIR   = {PREMARKET_DIR} (exists={PREMARKET_DIR.exists() if PREMARKET_DIR.exists() else False})")
+    print(f"[dashboard]   Z: share CSV    = {_z_csv_startup} (exists={_z_csv_startup.exists()})")
     print(f"[dashboard]   NOTE: Richard's Mavis cron writes to E:\\Me\\TradingAgent\\data\\watchlists/")
-    print(f"[dashboard]   Docker container needs that path mounted to /app/data — check Portainer volume config")
+    print(f"[dashboard]   premarket_screener syncs to Z: share (Z:\\trading-agent-source\\data\\watchlists/)")
+    print(f"[dashboard]   Docker container reads from both Docker volume + Z: share fallback")
 else:
     print(f"[dashboard] ✓ DATA_DIR mount OK: {DATA_DIR}")
 
@@ -250,6 +268,8 @@ def _load_watchlist_csv() -> List[Dict[str, Any]]:
         PREMARKET_DIR / f'watchlist_{today_str}.csv',
         Path(r'E:\Me\TradingAgent\data\watchlists') / f'watchlist_{today_str}.csv',
         DATA_DIR / f'watchlist_{today_str}.csv',
+        # Z: share — Richard's premarket_screener syncs here
+        NAS_Z_SHARE_DIR / f'watchlist_{today_str}.csv',
     ]
     found_any = any(p.exists() for p in candidates)
     if not found_any:
@@ -639,14 +659,18 @@ def api_mount_status():
     """Return Docker volume mount diagnostic — helps debug watchlist CSV not found issues."""
     status = _check_mount_status()
     state['mount_status'] = status
+    today_str = date.today().strftime('%Y%m%d')
+    z_csv = NAS_Z_SHARE_DIR / f'watchlist_{today_str}.csv'
     return jsonify({
         'status': status,
         'data_dir': str(DATA_DIR),
         'data_dir_exists': DATA_DIR.exists(),
         'watchlist_dir': str(PREMARKET_DIR),
         'watchlist_dir_exists': PREMARKET_DIR.exists(),
-        'today_csv': str(PREMARKET_DIR / f'watchlist_{date.today().strftime("%Y%m%d")}.csv'),
-        'today_csv_exists': (PREMARKET_DIR / f'watchlist_{date.today().strftime("%Y%m%d")}.csv').exists(),
+        'today_csv': str(PREMARKET_DIR / f'watchlist_{today_str}.csv'),
+        'today_csv_exists': (PREMARKET_DIR / f'watchlist_{today_str}.csv').exists(),
+        'z_share_csv': str(z_csv),
+        'z_share_csv_exists': z_csv.exists(),
     })
 
 

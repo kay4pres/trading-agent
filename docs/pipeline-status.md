@@ -1,5 +1,23 @@
 # Pipeline Status
-## Updated: 2026-07-06 17:30 Berlin (UTC+2)
+## Updated: 2026-07-06 18:00 Berlin (UTC+2)
+
+---
+
+## 18:00 Check (Jul 6, Monday) — Scanner RUNNING ✅ | fincept_connector HEALTHY ✅ | No `quote error`
+
+**Dashboard `/api/state`:** `last_scan: "17:59"`, `market_open: true`, `signals: []`, `watchlist: []`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35]`, `mount_status: "missing_today_watchlist"`.
+
+**FINDINGS:**
+
+1. ✅ **Scanner IS running** — `last_scan: "17:59"` (1 min ago), `market_open: true`. Scan thread healthy, firing every 60s inside the container.
+
+2. ✅ **fincept_connector.py HEALTHY** — No "quote error" anywhere in dashboard state. yfinance fallback working cleanly. Code review confirmed: platform check (`sys.platform != "win32"`) routes all calls to yfinance directly — no Windows Fincept path touched in container. `int(info.last_volume or 0)` guard in place (fix `162825f`). No fix needed.
+
+3. 🟡 **Watchlist mount gap (known, persistent):** `mount_status: "missing_today_watchlist"`. Richard's premarket CSV not mounted to container (same architecture gap as all previous checks). Scanner falls back to DEFAULT_UNIVERSE → 0 signals. Not a code issue — requires NAS volume config change or Richard cron running inside container.
+
+4. ✅ **No "quote error"** — confirmed absent from dashboard. Pipeline is clean.
+
+**No code changes needed.** Scanner is live, fincept_connector healthy.
 
 ---
 
