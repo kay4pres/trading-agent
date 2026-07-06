@@ -33,10 +33,11 @@ jobs:
         run: |
           cd /workspace
           pip3 install flake8 -q --break-system-packages 2>/dev/null || pip install flake8 -q 2>/dev/null || true
+          # Run flake8 with null stdin to prevent hanging
           flake8 trading_agent/ dashboard/ scripts/ \
             --max-line-length=120 \
             --ignore=E501,W503,E402 \
-            --exclude=__pycache__,.git 2>/dev/null || echo "lint done"
+            --exclude=__pycache__,.git < /dev/null || echo "lint done"
 
   build-dev:
     name: Build & Push (dev)
