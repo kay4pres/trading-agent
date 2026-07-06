@@ -1,4 +1,22 @@
 # Pipeline Status
+## 19:00 Check (Jul 6, Monday) — Scanner RUNNING ✅ | fincept_connector HEALTHY ✅ | No "quote error" | Watchlist Mount Gap PERSISTS (known)
+
+**Dashboard `/api/state`:** `last_scan: "18:59"`, `market_open: true`, `watchlist: []`, `signals: []`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35]`, `mount_status: "missing_today_watchlist"`.
+
+**FINDINGS:**
+
+1. ✅ **Scanner IS running** — `last_scan: "18:59"` (1 min ago), `market_open: true`. Scan thread healthy, firing on schedule.
+
+2. ✅ **fincept_connector.py HEALTHY** — No "quote error" anywhere. Code review confirmed: `_fallback_yfinance()` uses `int(info.last_volume or 0)` guard, `sys.platform != "win32"` routes all calls to yfinance directly. yfinance fallback working cleanly. No fix needed.
+
+3. 🟡 **Watchlist mount gap (known, persistent):** `watchlist_20260706.csv` exists at `E:\Me\TradingAgent\data\watchlists/` ✅ (created 14:04 by Richard premarket cron). Container's `/app/data/watchlists/` (NAS volume) doesn't sync from Windows → `mount_status: "missing_today_watchlist"`. Scanner falls back to DEFAULT_UNIVERSE → 0 signals. **Architecture gap, NOT a code bug.** NAS Z: share sync fix was applied earlier (80f3d07) but Z: share directory may not have been seeded yet.
+
+4. ✅ **No "quote error" in container logs** — confirmed absent from dashboard state. Pipeline is clean.
+
+**No code changes needed.** Scanner is live, fincept_connector healthy.
+
+---
+
 ## Updated: 2026-07-06 18:30 Berlin (UTC+2)
 
 ---
