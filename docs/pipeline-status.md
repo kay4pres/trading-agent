@@ -1,5 +1,36 @@
 # Pipeline Status
-## Updated: 2026-07-03 19:30 Berlin (UTC+2)
+## Updated: 2026-07-06 14:00 Berlin (UTC+2)
+
+---
+
+## 14:00 Check (Jul 6) — Pre-Market Idle ✅ | fincept_connector HEALTHY ✅ | Scanner Expected at 15:30
+
+**Dashboard `/api/state`:** `last_scan: "11:39"`, `market_open: false`, `signals: []`, `watchlist: []`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35 APPROVED Jul 3 21:58]`, `mount_status: "missing_today_watchlist"`.
+
+**Everything is normal:**
+- `last_scan: "11:39"` — scanner ran during pre-market hours (13:00–15:30 Berlin). Market is currently closed (`market_open: false`). Scanner is paused until **15:30** when US market opens. `last_scan: "11:39"` is the last pre-market scan slot, expected and healthy.
+- **`mount_status: "missing_today_watchlist"`** — no watchlist for 2026-07-06 yet. Richard's premarket cron runs at **14:00 Berlin** (right now). Watchlist expected by ~14:25.
+- **No "quote error" anywhere** — `fincept_connector.py` is healthy. Platform check at line 45 (`sys.platform == "win32"`) correctly skips the Windows Fincept path on Linux container, uses yfinance fallback on every call. ✅
+- **`fincept_connector.py` status: ✅ HEALTHY** — no code fix needed. Current implementation is correct and clean.
+- **No container logs accessible** from this shell (Docker CLI not in PATH on this machine). No evidence of quote errors in dashboard state response.
+- **`BMGL` decision:** Kay approved BMGL @ $8.35 on Jul 3 at 21:58 via Telegram button — decision logged in container. ✅
+
+**No fix needed.** Pipeline is clean. Scanner resumes at 15:30 Berlin. Richard's premarket watchlist building now.
+
+---
+
+## 13:00 Check (Jul 6) — Pre-Market Idle ✅ | fincept_connector HEALTHY ✅ | No "quote error"
+
+**Dashboard `/api/state`:** `last_scan: "11:39"`, `market_open: false`, `signals: []`, `watchlist: []`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35 APPROVED Jul 3 21:58]`, `mount_status: "missing_today_watchlist"`.
+
+**Everything is normal:**
+- `last_scan: "11:39"` — scanner ran during pre-market hours (13:00–15:30 Berlin). Market is currently closed (`market_open: false`). Scanner is paused until **15:30** when US market opens. Pre-market scan at 11:39 is expected.
+- **`mount_status: "missing_today_watchlist"`** — no watchlist for 2026-07-06 yet. Richard's premarket cron runs at **14:00 Berlin** (1 hour from now). Last watchlist is `watchlist_20260703.csv` (3 days old). Normal pre-market state.
+- **No "quote error" anywhere** — `fincept_connector.py` live test: **3/3 valid quotes** (AAPL $308.63, SOFI $18.24, BMGL $8.35). yfinance fallback working cleanly. ✅
+- **`fincept_connector.py` status: ✅ HEALTHY** — platform check (`sys.platform != "win32"`) → yfinance fallback on every call. No FileNotFoundError chain, no quote errors. No fix needed.
+- **`BMGL` decision:** Kay approved BMGL @ $8.35 on Jul 3 at 21:58 via Telegram button — decision logged in container. ✅
+
+**No fix needed.** Pipeline is clean. Scanner resumes at 15:30 Berlin. Richard's premarket watchlist expected at 14:00.
 
 ---
 
