@@ -18,7 +18,7 @@ jobs:
     container: python:3.12-slim
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
         run: pip install flake8 black --break-system-packages
@@ -34,9 +34,9 @@ jobs:
       - name: Check Python syntax
         run: python -m py_compile trading_agent/*.py dashboard/*.py scripts/*.py
 
-      - name: Check for hardcoded E:\ paths in Docker files
+      - name: Check for hardcoded E:\\ paths in Docker files
         run: |
-          grep -rn 'E:\\\|r"E:\|E:/' trading_agent/ dashboard/ scripts/ \
+          grep -rn 'E:\\\\|r"E:\\'|E:/' trading_agent/ dashboard/ scripts/ \
             --include="*.py" || echo "No hardcoded Windows paths found"
 
   # ── Job 2: Docker Build & Push (dev branch) ─────────────────────────────────
@@ -44,9 +44,11 @@ jobs:
     name: Build & Push (dev → nas:5000)
     runs-on: [self-hosted, linux, docker]
     if: github.ref == 'refs/heads/dev'
+    container: docker:24-dind
+    options: --privileged
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Log in to NAS registry
         run: |
@@ -54,7 +56,8 @@ jobs:
             -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin
 
       - name: Set up Docker Buildx
-        run: docker buildx create --use --name multiarch || docker buildx use multiarch
+        run: |
+          docker buildx create --use --name multiarch || docker buildx use multiarch
 
       - name: Build and push (dev tag)
         run: |
@@ -75,9 +78,11 @@ jobs:
     name: Build & Push (main → nas:5000)
     runs-on: [self-hosted, linux, docker]
     if: github.ref == 'refs/heads/main'
+    container: docker:24-dind
+    options: --privileged
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Log in to NAS registry
         run: |
@@ -85,7 +90,8 @@ jobs:
             -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin
 
       - name: Set up Docker Buildx
-        run: docker buildx create --use --name multiarch || docker buildx use multiarch
+        run: |
+          docker buildx create --use --name multiarch || docker buildx use multiarch
 
       - name: Extract date for image tag
         id: date
@@ -105,4 +111,3 @@ jobs:
             --push \
             --file docker/Dockerfile \
             .
-
