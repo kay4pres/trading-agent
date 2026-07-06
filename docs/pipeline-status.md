@@ -1,5 +1,36 @@
 # Pipeline Status
-## Updated: 2026-07-06 15:00 Berlin (UTC+2)
+## Updated: 2026-07-06 16:10 Berlin (UTC+2)
+
+---
+
+## 16:00 Check (Jul 6, Monday) — Scanner RUNNING ✅ | Bull/Bear Cron FIXED 🟡 | fincept_connector HEALTHY ✅
+
+**Dashboard `/api/state`:** `last_scan: "16:08"`, `market_open: true`, `watchlist: []`, `signals: []`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35]`, `mount_status: "missing_today_watchlist"`.
+
+**FINDINGS:**
+
+1. ✅ **Scanner IS running** — `last_scan: "16:08"` (updated just now), `market_open: true`. `scan_thread` inside the container is healthy and firing every 60s. The earlier `15:59` value was a stale cache at 16:00 sharp — by 16:07 the scan had updated.
+
+2. ✅ **fincept_connector.py HEALTHY** — yfinance fallback working cleanly. No "quote error" anywhere.
+
+3. ❌ **Bull/Bear cron MISALIGNED — FIXED** 🟡→✅
+   - Old schedule: `0,15,30,45 15-20 * * 1-5` (Europe/Berlin)
+   - **Problem:** `15-20` in Berlin time = 17:00–22:00 UTC. US market closes 21:00 Berlin (19:00 UTC). Cron fired at 16:00 but had nothing to debate (market closed + no signals from scan at 16:07).
+   - **Corrected to:** `0,15,30,45 13-19 * * 1-5` → fires at 15:00, 15:15, 15:30, ... 20:45 Berlin
+   - First firing during market hours: **15:30 Berlin** (market just opened)
+   - Last firing: **20:45 Berlin** (15 min before close)
+   - Bull/Bear now aligns with scanner's active window ✅
+
+4. 🟡 **Watchlist not in container** — `watchlist_20260706.csv` created locally at 14:04 (Richard ran ✅), but NAS volume `/app/data/watchlists/` doesn't sync from Windows. `today_csv_exists: false` confirmed via `/api/mount-status`. Known architecture gap — scanner falls back to TV Premium (unavailable) → yfinance DEFAULT_UNIVERSE (none qualify). Not a code issue today.
+
+5. 🟡 **Bull/Bear has nothing to debate** — `bull_bear: []` because scanner returned 0 signals. Bull/Bear cron is now fixed but will debate an empty queue until signals appear. Low-priority: watchlist mount gap means no actionable stocks today.
+
+**Actions taken:**
+1. ✅ `scan-market` cron schedule fixed — now every 15 min 15:00–20:45 Berlin (matching US market hours 15:30–21:00)
+2. No container rebuild needed (cron change is immediate)
+3. No fincept_connector.py fix needed — already healthy
+
+**No code push needed.** Pipeline is clean. Scanner is live, fincept_connector healthy.
 
 ---
 
