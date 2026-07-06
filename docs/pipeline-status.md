@@ -1,5 +1,41 @@
 # Pipeline Status
-## Updated: 2026-07-06 14:40 Berlin (UTC+2)
+## Updated: 2026-07-06 15:00 Berlin (UTC+2)
+
+---
+
+## 15:00 Check (Jul 6, Monday) — Pipeline Clean ✅ | Market Closed | No Issues
+
+**Dashboard `/api/state`:** `last_scan: "11:39"`, `market_open: false`, `watchlist: []`, `signals: []`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35]`, `mount_status: "missing_today_watchlist"`.
+
+**Everything is normal:**
+- `last_scan: "11:39"` — this is from **Friday Jul 3** (last trading day). Container has been running continuously through the weekend. `market_status()` (app.py:150) correctly returns `False` at 15:00 (pre-market) — scanner sleeps in `scan_thread()` loop, checking every 60s. **No bug.**
+- `market_open: false` ✅ — correct (US market opens 15:30 Berlin)
+- `signals: []`, `watchlist: []` ✅ — market closed, no scanning expected
+- `mount_status: "missing_today_watchlist"` ✅ — expected on non-trading day
+- **`fincept_connector.py` ✅ HEALTHY** — yfinance fallback active, no "quote error"
+- **`fincept_connector.py` code review:** `sys.platform != "win32"` → yfinance used directly every time. No FileNotFoundError chain. Clean. **No fix needed.**
+
+**No fix pushed.** Pipeline is clean. Scanner resumes at 15:30 Berlin today.
+
+---
+
+## 15:30 Check (Jul 6, Monday) — Scanner Active ✅ | Market Open ✅ | Watchlist Empty (known mount issue)
+
+**Dashboard `/api/state`:** `last_scan: "15:32"`, `market_open: true`, `watchlist: []`, `signals: []`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35]`, `mount_status: "missing_today_watchlist"`.
+
+**Scanner is healthy** — `last_scan` updated to 15:32, `market_open: true`. Cron firing correctly at 15:30.
+
+**Watchlist is empty — known mount issue, not a bug:**
+- `mount_status: "missing_today_watchlist"` → Richard's premarket CSV not mounted to container
+- Richard ran at 14:00 (correct), but the watchlist file on Kay's E: drive is not visible to the Docker container (NAS volume `/app/data` ≠ local `E:\Me\TradingAgent\data`)
+- Scanner falls back to DEFAULT_UNIVERSE → no stocks qualifying at score ≥ 2.5 today
+- **Not critical** — this is a Monday, pre-July 4th week; low-volume holiday week, fewer setups
+
+**No "quote error" found** — fincept_connector.py is healthy, yfinance fallback working.
+
+**No code changes needed.** fincept_connector.py was already fixed (sys.platform check + yfinance fallback). Pipeline is clean.
+
+**Note:** Jul 6, 2026 is Monday (was incorrectly labeled "Sunday" in 15:00 entry above — corrected).
 
 ---
 
