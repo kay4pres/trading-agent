@@ -84,12 +84,13 @@ def _fallback_yfinance(args: List[str]) -> Dict[str, Any]:
             info = t.fast_info
             price = info.last_price or 0
             prev = info.previous_close or price
+            change = price - prev
             return {
                 "symbol": sym.upper(),
                 "price": round(price, 2),
-                "change": round(price - prev, 2),
-                "change_percent": round((price - prev) / prev * 100, 2) if prev else 0,
-                "volume": info.last_volume or 0,
+                "change": round(change, 2),
+                "change_percent": round(change / prev * 100, 2) if prev else 0,
+                "volume": int(info.last_volume or 0),
             }
         elif cmd == "batch_quotes":
             return [_fallback_yfinance(["quote", s]) for s in args[1:]]
