@@ -11,37 +11,34 @@ env:
   IMAGE_NAME: trading-agent
 
 jobs:
-  # ── Job 1: Lint (no Node.js — native git) ─────────────────────────────────
   lint:
     name: Lint & Format Check
     runs-on: [self-hosted, linux, docker]
     steps:
-      # Native git checkout — no Node.js required
       - name: Checkout
         run: |
           git clone --bare https://${{ secrets.GITHUB_PAT }}@github.com/${{ github.repository }}.git /git-repo
           cd /git-repo
           git fetch --depth=1 origin ${{ github.ref_name }}
-          GIT_WORK_TREE=/repo git checkout -b temp ${{ github.sha }}
+          mkdir -p /repo
+          GIT_WORK_TREE=/repo git checkout -f ${{ github.sha }}
 
       - name: Lint Python files
         run: |
-          pip install flake8 black --break-system-packages || true
+          pip install flake8 black --break-system-packages 2>/dev/null || true
           flake8 trading_agent/ dashboard/ scripts/ \
             --max-line-length=120 \
             --ignore=E501,W503,E402 \
             --exclude=__pycache__,.git 2>/dev/null || true
-        continue-on-error: true
 
       - name: Check Python syntax
         run: |
-          for f in /repo/trading_agent/*.py /repo/dashboard/*.py /repo/scripts/*.py; do
+          for f in /repo/trading_agent/*.py /repo/dashboard/*.py /repo/scripts/*.py 2>/dev/null; do
             python -m py_compile "$f" 2>/dev/null && echo "OK: $f" || echo "FAIL: $f"
           done || true
 
-  # ── Job 2: Docker Build & Push (dev branch) ─────────────────────────────────
   build-dev:
-    name: Build & Push (dev → nas:5000)
+    name: Build & Push (dev)
     runs-on: [self-hosted, linux, docker]
     if: github.ref == 'refs/heads/dev'
     needs: []
@@ -51,20 +48,17 @@ jobs:
           git clone --bare https://${{ secrets.GITHUB_PAT }}@github.com/${{ github.repository }}.git /git-repo
           cd /git-repo
           git fetch --depth=1 origin dev
-          GIT_WORK_TREE=/repo git checkout -b temp ${{ github.sha }}
+          mkdir -p /repo
+          GIT_WORK_TREE=/repo git checkout -f ${{ github.sha }}
 
       - name: Log in to NAS registry
         run: |
           echo "${{ secrets.NAS_REGISTRY_PASS }}" | docker login nas:5000 \
-            -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin
+            -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin || true
 
-      - name: Set up Docker Buildx
+      - name: Build and push
         run: |
-          docker buildx create --use --name multiarch 2>/dev/null || \
-          docker buildx use multiarch 2>/dev/null || true
-
-      - name: Build and push (dev tag)
-        run: |
+          docker buildx create --use --name multiarch 2>/dev/null || docker buildx use multiarch 2>/dev/null || true
           docker buildx build \
             --platform linux/amd64 \
             --tag nas:5000/trading-agent:dev \
@@ -77,9 +71,8 @@ jobs:
             --file /repo/docker/Dockerfile \
             /repo
 
-  # ── Job 3: Docker Build & Push (main branch) ─────────────────────────────────
   build-main:
-    name: Build & Push (main → nas:5000)
+    name: Build & Push (main)
     runs-on: [self-hosted, linux, docker]
     if: github.ref == 'refs/heads/main'
     needs: []
@@ -89,28 +82,20 @@ jobs:
           git clone --bare https://${{ secrets.GITHUB_PAT }}@github.com/${{ github.repository }}.git /git-repo
           cd /git-repo
           git fetch --depth=1 origin main
-          GIT_WORK_TREE=/repo git checkout -b temp ${{ github.sha }}
+          mkdir -p /repo
+          GIT_WORK_TREE=/repo git checkout -f ${{ github.sha }}
 
       - name: Log in to NAS registry
         run: |
           echo "${{ secrets.NAS_REGISTRY_PASS }}" | docker login nas:5000 \
-            -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin
+            -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin || true
 
-      - name: Set up Docker Buildx
+      - name: Build and push
         run: |
-          docker buildx create --use --name multiarch 2>/dev/null || \
-          docker buildx use multiarch 2>/dev/null || true
-
-      - name: Extract date for image tag
-        id: date
-        run: echo "DATE=$(date +%Y-%m-%d)" >> $GITHUB_OUTPUT
-
-      - name: Build and push (main tag)
-        run: |
+          docker buildx create --use --name multiarch 2>/dev/null || docker buildx use multiarch 2>/dev/null || true
           docker buildx build \
             --platform linux/amd64 \
             --tag nas:5000/trading-agent:main \
-            --tag nas:5000/trading-agent:${{ steps.date.outputs.DATE }} \
             --tag nas:5000/trading-agent:latest \
             --cache-from type=registry,ref=nas:5000/trading-agent:main \
             --cache-to type=registry,ref=nas:5000/trading-agent:main \
@@ -120,9 +105,8 @@ jobs:
             --file /repo/docker/Dockerfile \
             /repo
 
-  # ── Job 4: Docker Build & Push (uat branch) ──────────────────────────────────
   build-uat:
-    name: Build & Push (uat → nas:5000)
+    name: Build & Push (uat)
     runs-on: [self-hosted, linux, docker]
     if: github.ref == 'refs/heads/uat'
     needs: []
@@ -132,20 +116,17 @@ jobs:
           git clone --bare https://${{ secrets.GITHUB_PAT }}@github.com/${{ github.repository }}.git /git-repo
           cd /git-repo
           git fetch --depth=1 origin uat
-          GIT_WORK_TREE=/repo git checkout -b temp ${{ github.sha }}
+          mkdir -p /repo
+          GIT_WORK_TREE=/repo git checkout -f ${{ github.sha }}
 
       - name: Log in to NAS registry
         run: |
           echo "${{ secrets.NAS_REGISTRY_PASS }}" | docker login nas:5000 \
-            -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin
+            -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin || true
 
-      - name: Set up Docker Buildx
+      - name: Build and push
         run: |
-          docker buildx create --use --name multiarch 2>/dev/null || \
-          docker buildx use multiarch 2>/dev/null || true
-
-      - name: Build and push (uat tag)
-        run: |
+          docker buildx create --use --name multiarch 2>/dev/null || docker buildx use multiarch 2>/dev/null || true
           docker buildx build \
             --platform linux/amd64 \
             --tag nas:5000/trading-agent:uat \
