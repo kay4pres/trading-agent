@@ -11,7 +11,7 @@ env:
   IMAGE_NAME: trading-agent
 
 jobs:
-  # ── Job 1: Lint & Type Check ─────────────────────────────────────────────────
+  # ── Job 1: Lint (no Node.js — native git) ─────────────────────────────────
   lint:
     name: Lint & Format Check
     runs-on: [self-hosted, linux, docker]
@@ -19,37 +19,39 @@ jobs:
       # Native git checkout — no Node.js required
       - name: Checkout
         run: |
-          git clone --depth=1 --branch=${{ github.ref_name }} https://x-access-token:${{ secrets.GITHUB_PAT }}@github.com/${{ github.repository }}.git /repo
-          cd /repo
-          git checkout ${{ github.sha }}
+          git clone --bare https://${{ secrets.GITHUB_PAT }}@github.com/${{ github.repository }}.git /git-repo
+          cd /git-repo
+          git fetch --depth=1 origin ${{ github.ref_name }}
+          GIT_WORK_TREE=/repo git checkout -b temp ${{ github.sha }}
 
-      - name: Set up Python
-        run: pip install flake8 black --break-system-packages
-
-      - name: Run flake8
+      - name: Lint Python files
         run: |
           pip install flake8 black --break-system-packages || true
           flake8 trading_agent/ dashboard/ scripts/ \
             --max-line-length=120 \
             --ignore=E501,W503,E402 \
-            --exclude=__pycache__,.git || true
+            --exclude=__pycache__,.git 2>/dev/null || true
         continue-on-error: true
 
       - name: Check Python syntax
-        run: python -m py_compile trading_agent/*.py dashboard/*.py scripts/*.py || true
+        run: |
+          for f in /repo/trading_agent/*.py /repo/dashboard/*.py /repo/scripts/*.py; do
+            python -m py_compile "$f" 2>/dev/null && echo "OK: $f" || echo "FAIL: $f"
+          done || true
 
   # ── Job 2: Docker Build & Push (dev branch) ─────────────────────────────────
   build-dev:
     name: Build & Push (dev → nas:5000)
     runs-on: [self-hosted, linux, docker]
     if: github.ref == 'refs/heads/dev'
+    needs: []
     steps:
       - name: Checkout
         run: |
-          git clone --depth=1 --branch=dev https://x-access-token:${{ secrets.GITHUB_PAT }}@github.com/${{ github.repository }}.git /repo
-          cd /repo
-          git fetch origin dev
-          git checkout ${{ github.sha }}
+          git clone --bare https://${{ secrets.GITHUB_PAT }}@github.com/${{ github.repository }}.git /git-repo
+          cd /git-repo
+          git fetch --depth=1 origin dev
+          GIT_WORK_TREE=/repo git checkout -b temp ${{ github.sha }}
 
       - name: Log in to NAS registry
         run: |
@@ -57,7 +59,9 @@ jobs:
             -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin
 
       - name: Set up Docker Buildx
-        run: docker buildx create --use --name multiarch || docker buildx use multiarch || true
+        run: |
+          docker buildx create --use --name multiarch 2>/dev/null || \
+          docker buildx use multiarch 2>/dev/null || true
 
       - name: Build and push (dev tag)
         run: |
@@ -70,7 +74,7 @@ jobs:
             --build-arg GIT_REF=dev \
             --build-arg CACHEBUST=${{ github.sha }} \
             --push \
-            --file docker/Dockerfile \
+            --file /repo/docker/Dockerfile \
             /repo
 
   # ── Job 3: Docker Build & Push (main branch) ─────────────────────────────────
@@ -78,13 +82,14 @@ jobs:
     name: Build & Push (main → nas:5000)
     runs-on: [self-hosted, linux, docker]
     if: github.ref == 'refs/heads/main'
+    needs: []
     steps:
       - name: Checkout
         run: |
-          git clone --depth=1 --branch=main https://x-access-token:${{ secrets.GITHUB_PAT }}@github.com/${{ github.repository }}.git /repo
-          cd /repo
-          git fetch origin main
-          git checkout ${{ github.sha }}
+          git clone --bare https://${{ secrets.GITHUB_PAT }}@github.com/${{ github.repository }}.git /git-repo
+          cd /git-repo
+          git fetch --depth=1 origin main
+          GIT_WORK_TREE=/repo git checkout -b temp ${{ github.sha }}
 
       - name: Log in to NAS registry
         run: |
@@ -92,7 +97,9 @@ jobs:
             -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin
 
       - name: Set up Docker Buildx
-        run: docker buildx create --use --name multiarch || docker buildx use multiarch || true
+        run: |
+          docker buildx create --use --name multiarch 2>/dev/null || \
+          docker buildx use multiarch 2>/dev/null || true
 
       - name: Extract date for image tag
         id: date
@@ -110,7 +117,7 @@ jobs:
             --build-arg GIT_REF=main \
             --build-arg CACHEBUST=${{ github.sha }} \
             --push \
-            --file docker/Dockerfile \
+            --file /repo/docker/Dockerfile \
             /repo
 
   # ── Job 4: Docker Build & Push (uat branch) ──────────────────────────────────
@@ -118,13 +125,14 @@ jobs:
     name: Build & Push (uat → nas:5000)
     runs-on: [self-hosted, linux, docker]
     if: github.ref == 'refs/heads/uat'
+    needs: []
     steps:
       - name: Checkout
         run: |
-          git clone --depth=1 --branch=uat https://x-access-token:${{ secrets.GITHUB_PAT }}@github.com/${{ github.repository }}.git /repo
-          cd /repo
-          git fetch origin uat
-          git checkout ${{ github.sha }}
+          git clone --bare https://${{ secrets.GITHUB_PAT }}@github.com/${{ github.repository }}.git /git-repo
+          cd /git-repo
+          git fetch --depth=1 origin uat
+          GIT_WORK_TREE=/repo git checkout -b temp ${{ github.sha }}
 
       - name: Log in to NAS registry
         run: |
@@ -132,7 +140,9 @@ jobs:
             -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin
 
       - name: Set up Docker Buildx
-        run: docker buildx create --use --name multiarch || docker buildx use multiarch || true
+        run: |
+          docker buildx create --use --name multiarch 2>/dev/null || \
+          docker buildx use multiarch 2>/dev/null || true
 
       - name: Build and push (uat tag)
         run: |
@@ -144,5 +154,5 @@ jobs:
             --build-arg GIT_REF=uat \
             --build-arg CACHEBUST=${{ github.sha }} \
             --push \
-            --file docker/Dockerfile \
+            --file /repo/docker/Dockerfile \
             /repo
