@@ -20,7 +20,7 @@ jobs:
         run: |
           rm -rf /workspace
           git clone --depth=1 http://kay:${GITEA_TOKEN}@10.8.0.10:3000/trading/trading-agent.git /workspace
-          cd /workspace && git fetch --depth=1 origin ${{ github.ref }} && git checkout ${{ github.sha }}
+          cd /workspace && git fetch --depth=1 origin ${{ gitea.ref }} && git checkout ${{ gitea.sha }}
 
       - name: Python syntax check
         run: |
@@ -41,13 +41,13 @@ jobs:
   build-dev:
     name: Build & Push (dev)
     runs-on: [self-hosted, linux, docker]
-    if: github.ref == 'refs/heads/dev'
+    if: gitea.ref == 'refs/heads/dev'
     steps:
       - name: Clone and checkout
         run: |
           rm -rf /build
           git clone --depth=1 --branch=dev http://kay:${GITEA_TOKEN}@10.8.0.10:3000/trading/trading-agent.git /build
-          cd /build && git fetch origin dev && git checkout ${{ github.sha }}
+          cd /build && git fetch origin dev && git checkout ${{ gitea.sha }}
 
       - name: Build and push
         env:
@@ -69,13 +69,13 @@ jobs:
   build-main:
     name: Build & Push (main)
     runs-on: [self-hosted, linux, docker]
-    if: github.ref == 'refs/heads/main'
+    if: gitea.ref == 'refs/heads/main'
     steps:
       - name: Clone and checkout
         run: |
           rm -rf /build
           git clone --depth=1 --branch=main http://kay:${GITEA_TOKEN}@10.8.0.10:3000/trading/trading-agent.git /build
-          cd /build && git fetch origin main && git checkout ${{ github.sha }}
+          cd /build && git fetch origin main && git checkout ${{ gitea.sha }}
 
       - name: Build and push
         env:
