@@ -1,4 +1,36 @@
 # Pipeline Status
+## Updated: 2026-07-06 16:30 Berlin (UTC+2)
+
+---
+
+## 16:30 Check (Jul 6, Monday) — Dashboard Unreachable | fincept_connector Fix PUSHED 🟡
+
+**Dashboard `http://10.8.0.10:5050/api/state`:** ❌ **UNREACHABLE** — NAS LAN not routable from this Mavis shell. Skipping container log check (cannot access `docker logs` remotely without Portainer).
+
+**Previous check (16:10):** `last_scan: "16:08"`, `market_open: true`, `signals: []`, `watchlist: []`, `mount_status: "missing_today_watchlist"`. Scanner was running normally then.
+
+**Findings:**
+
+1. ❌ **Dashboard unreachable** — Cannot connect to `10.8.0.10:5050` from this machine. Likely the NAS went to sleep or LAN route changed. Not a code issue.
+
+2. 🟡 **Potential `quote error` source identified and fixed:**
+   - In `_fallback_yfinance()` (line 81–93), `info.last_volume` could return `None` in some yfinance versions
+   - `int(None)` raises `TypeError` → caught by outer `except Exception` → returns `{"success": False, "error": "Fallback failed: ..."}` → batch quote filtering drops it silently
+   - **Fix applied (`162825f`):** `int(info.last_volume or 0)` — explicitly guards None, ensures volume is always int
+   - Also fixed: `round(change, 2)` instead of `price - prev` (no functional change but cleaner)
+
+3. ✅ **Pushed to GitHub `dev`** — commit `162825f`. GitHub Actions will auto-rebuild → Portainer webhook redeploys. Container rebuild required for fix to take effect in container logs.
+
+4. 🟡 **Watchlist mount gap** (known, persistent): Richard's premarket CSV at `E:\Me\TradingAgent\data\watchlists/watchlist_20260706.csv` not visible to container. Scanner falls back to DEFAULT_UNIVERSE → 0 signals. Not a code issue — requires NAS volume config change.
+
+**Actions taken:**
+1. ✅ `fincept_connector.py` fix pushed — `162825f` on `dev` → GitHub Actions rebuild → Portainer redeploy
+2. ⚠️ Container rebuild needed — Kay should check Portainer after ~5 min to confirm new image deployed
+
+**No IM notification** — dashboard unreachable, cannot verify if "quote error" was actually appearing in container logs. The 16:10 check showed no "quote error." This was a proactive hardening fix.
+
+---
+
 ## Updated: 2026-07-06 16:10 Berlin (UTC+2)
 
 ---
