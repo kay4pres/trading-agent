@@ -1,0 +1,22 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: List files
+        run: ls -la
+
+      - name: Python version
+        run: python --version
+
+      - name: Docker info
+        run: docker --version
