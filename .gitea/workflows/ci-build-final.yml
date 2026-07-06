@@ -5,6 +5,7 @@ on:
     branches: [main, dev, uat]
   pull_request:
     branches: [main]
+  workflow_dispatch:
 
 env:
   REGISTRY: nas:5000
