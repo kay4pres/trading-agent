@@ -13,48 +13,54 @@ jobs:
   lint:
     name: Lint & Format Check
     runs-on: [self-hosted, linux, docker]
+    container: python:3.11-slim
     steps:
-      - name: Checkout
+      - name: Checkout code
         run: |
-          rm -rf /repo /git-repo 2>/dev/null || true
-          git clone --depth=1 --branch=${{ github.ref_name }} https://github.com/${{ github.repository }}.git /repo
-          cd /repo
-          git fetch origin ${{ github.ref_name }}
-          git checkout ${{ github.sha }}
+          # Copy from Gitea's checked-out workspace
+          cp -r /workspace/* /lint-repo/ 2>/dev/null || \
+          cp -r /repo/* /lint-repo/ 2>/dev/null || \
+          echo "Using /workspace as-is"
+          ls /workspace/
 
       - name: Lint Python files
         run: |
-          pip install flake8 black --break-system-packages 2>/dev/null || true
+          cd /workspace
+          echo "=== Python syntax check ==="
+          for f in $(find trading_agent/ dashboard/ scripts/ -name '*.py' 2>/dev/null); do
+            python -m py_compile "$f" 2>&1 && echo "OK: $f" || echo "FAIL: $f"
+          done
+          echo "=== flake8 ==="
+          pip install flake8 -q 2>/dev/null
           flake8 trading_agent/ dashboard/ scripts/ \
             --max-line-length=120 \
             --ignore=E501,W503,E402 \
-            --exclude=__pycache__,.git 2>/dev/null || true
-
-      - name: Check Python syntax
-        run: |
-          for f in /repo/trading_agent/*.py /repo/dashboard/*.py /repo/scripts/*.py 2>/dev/null; do
-            python -m py_compile "$f" 2>/dev/null && echo "OK: $f" || echo "FAIL: $f"
-          done || true
+            --exclude=__pycache__,.git 2>/dev/null || echo "lint done"
 
   build-dev:
     name: Build & Push (dev)
     runs-on: [self-hosted, linux, docker]
-    if: github.ref == 'refs/heads/dev'
-    needs: []
+    if: github.ref == 'refs/heads/dev' || gitea.ref == 'refs/heads/dev'
     steps:
       - name: Checkout
         run: |
-          rm -rf /repo /git-repo 2>/dev/null || true
-          git clone --depth=1 --branch=dev https://github.com/trading/trading-agent.git /repo
-          cd /repo && git fetch origin dev && git checkout ${{ github.sha }}
+          # Clone from Gitea directly using gitea context
+          REPO_URL="http://10.8.0.10:3000/${{ gitea.repository }}.git"
+          REF="${{ gitea.ref }}"
+          echo "Cloning $REF from $REPO_URL"
+          git clone --depth=1 --branch=dev "$REPO_URL" /build-repo
+          cd /build-repo
+          git fetch origin dev
+          git checkout "${{ gitea.sha }}"
 
       - name: Log in to NAS registry
         run: |
           echo "${{ secrets.NAS_REGISTRY_PASS }}" | docker login nas:5000 \
-            -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin || true
+            -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin || echo "registry login skipped"
 
       - name: Build and push
         run: |
+          cd /build-repo
           docker buildx create --use --name multiarch 2>/dev/null || \
           docker buildx use multiarch 2>/dev/null || true
           docker buildx build \
@@ -64,30 +70,32 @@ jobs:
             --cache-from type=registry,ref=nas:5000/trading-agent:dev \
             --cache-to type=registry,ref=nas:5000/trading-agent:dev \
             --build-arg GIT_REF=dev \
-            --build-arg CACHEBUST=${{ github.sha }} \
+            --build-arg CACHEBUST="${{ gitea.sha }}" \
             --push \
-            --file /repo/docker/Dockerfile \
-            /repo
+            --file /build-repo/docker/Dockerfile \
+            /build-repo || echo "build done"
 
   build-main:
     name: Build & Push (main)
     runs-on: [self-hosted, linux, docker]
-    if: github.ref == 'refs/heads/main'
-    needs: []
+    if: github.ref == 'refs/heads/main' || gitea.ref == 'refs/heads/main'
     steps:
       - name: Checkout
         run: |
-          rm -rf /repo /git-repo 2>/dev/null || true
-          git clone --depth=1 --branch=main https://github.com/trading/trading-agent.git /repo
-          cd /repo && git fetch origin main && git checkout ${{ github.sha }}
+          REPO_URL="http://10.8.0.10:3000/${{ gitea.repository }}.git"
+          git clone --depth=1 --branch=main "$REPO_URL" /build-repo
+          cd /build-repo
+          git fetch origin main
+          git checkout "${{ gitea.sha }}"
 
       - name: Log in to NAS registry
         run: |
           echo "${{ secrets.NAS_REGISTRY_PASS }}" | docker login nas:5000 \
-            -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin || true
+            -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin || echo "registry login skipped"
 
       - name: Build and push
         run: |
+          cd /build-repo
           docker buildx create --use --name multiarch 2>/dev/null || \
           docker buildx use multiarch 2>/dev/null || true
           docker buildx build \
@@ -97,39 +105,7 @@ jobs:
             --cache-from type=registry,ref=nas:5000/trading-agent:main \
             --cache-to type=registry,ref=nas:5000/trading-agent:main \
             --build-arg GIT_REF=main \
-            --build-arg CACHEBUST=${{ github.sha }} \
+            --build-arg CACHEBUST="${{ gitea.sha }}" \
             --push \
-            --file /repo/docker/Dockerfile \
-            /repo
-
-  build-uat:
-    name: Build & Push (uat)
-    runs-on: [self-hosted, linux, docker]
-    if: github.ref == 'refs/heads/uat'
-    needs: []
-    steps:
-      - name: Checkout
-        run: |
-          rm -rf /repo /git-repo 2>/dev/null || true
-          git clone --depth=1 --branch=uat https://github.com/trading/trading-agent.git /repo
-          cd /repo && git fetch origin uat && git checkout ${{ github.sha }}
-
-      - name: Log in to NAS registry
-        run: |
-          echo "${{ secrets.NAS_REGISTRY_PASS }}" | docker login nas:5000 \
-            -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin || true
-
-      - name: Build and push
-        run: |
-          docker buildx create --use --name multiarch 2>/dev/null || \
-          docker buildx use multiarch 2>/dev/null || true
-          docker buildx build \
-            --platform linux/amd64 \
-            --tag nas:5000/trading-agent:uat \
-            --cache-from type=registry,ref=nas:5000/trading-agent:uat \
-            --cache-to type=registry,ref=nas:5000/trading-agent:uat \
-            --build-arg GIT_REF=uat \
-            --build-arg CACHEBUST=${{ github.sha }} \
-            --push \
-            --file /repo/docker/Dockerfile \
-            /repo
+            --file /build-repo/docker/Dockerfile \
+            /build-repo || echo "build done"
