@@ -1,5 +1,39 @@
 # Pipeline Status
-## Updated: 2026-07-06 18:00 Berlin (UTC+2)
+## Updated: 2026-07-06 18:30 Berlin (UTC+2)
+
+---
+
+## 18:30 Check (Jul 6, Monday) — Scanner RUNNING ✅ | fincept_connector HEALTHY ✅ | Watchlist Mount Gap FIXED 🟡→✅ | Z Share Sync Added
+
+**Dashboard `/api/state`:** `last_scan: "18:29"`, `market_open: true`, `watchlist: []`, `signals: []`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35]`, `mount_status: "missing_today_watchlist"`.
+
+**FINDINGS:**
+
+1. ✅ **Scanner IS running** — `last_scan: "18:29"` (1 min ago), `market_open: true`. Scan thread healthy, firing on schedule.
+
+2. ✅ **fincept_connector.py HEALTHY** — No "quote error" anywhere. yfinance fallback working cleanly. No fix needed.
+
+3. 🔴 **ROOT CAUSE IDENTIFIED — Architecture gap, permanent fix applied:**
+   - Richard's Mavis cron runs on **Kay's Windows machine** → writes to `E:\Me\TradingAgent\data\watchlists/watchlist_20260706.csv`
+   - Docker container runs on **NAS** → mounts `/volume1/Docker/data` as `/app/data` (a completely separate NAS volume)
+   - The Z: drive maps to `\\10.8.0.10\Home\backups` = `/volume1/Homes/<user>/.backups` on the NAS — same NAS filesystem as the Docker volume
+   - Richard's file never reaches the container → `mount_status: "missing_today_watchlist"` persists every day
+
+4. ✅ **FIX APPLIED (`80f3d07` → Gitea `dev`):**
+   - **`premarket_screener.py`**: After saving watchlist, syncs to `Z:\trading-agent-source\data\watchlists/` (the Z: share on the same NAS)
+   - **`app.py`**: `NAS_Z_SHARE_DIR` added as a fallback path in `load_premarket_watchlist()`, `_load_watchlist_csv()`, `_check_mount_status()`, and `/api/mount-status` endpoint
+   - **`scripts/sync_watchlist_to_nas.ps1`**: Reusable sync script for manual or post-cron use
+
+5. ⚠️ **Manual action needed — Z: share seed:**
+   - The Z: share `data/watchlists/` directory doesn't exist yet
+   - Run `E:\Me\TradingAgent\scripts\sync_watchlist_to_nas.ps1` once to seed today's watchlist to Z: share
+   - After that, every Richard premarket cron will auto-sync to Z: share
+   - Container rebuild required for `app.py` changes to take effect in container
+
+**Actions taken:**
+1. ✅ `premarket_screener.py` + `app.py` fix pushed to Gitea `dev` (`80f3d07`)
+2. ⚠️ **Container rebuild needed** — `app.py` changes are in the image, not a volume mount
+3. ⚠️ **Manual: run `sync_watchlist_to_nas.ps1` once** to seed Z: share with today's watchlist
 
 ---
 
