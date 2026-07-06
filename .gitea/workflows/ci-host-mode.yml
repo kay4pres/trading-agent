@@ -18,6 +18,7 @@ jobs:
     steps:
       - name: Clone repository
         run: |
+          rm -rf /workspace
           git clone --depth=1 http://kay:${GITEA_TOKEN}@10.8.0.10:3000/trading/trading-agent.git /workspace
           cd /workspace && git fetch --depth=1 origin ${{ github.ref }} && git checkout ${{ github.sha }}
 
@@ -44,6 +45,7 @@ jobs:
     steps:
       - name: Clone and checkout
         run: |
+          rm -rf /build
           git clone --depth=1 --branch=dev http://kay:${GITEA_TOKEN}@10.8.0.10:3000/trading/trading-agent.git /build
           cd /build && git fetch origin dev && git checkout ${{ github.sha }}
 
@@ -52,7 +54,7 @@ jobs:
           NAS_REGISTRY_PASS: ${{ secrets.NAS_REGISTRY_PASS }}
           NAS_REGISTRY_USER: ${{ secrets.NAS_REGISTRY_USER }}
         run: |
-          echo "$NAS_REGISTRY_PASS" | docker login nas:5000 -u "$NAS_REGISTRY_USER" --password-stdin
+          docker login nas:5000 -u "$NAS_REGISTRY_USER" -p "$NAS_REGISTRY_PASS"
           cd /build
           docker buildx create --use --name multiarch 2>/dev/null || \
           docker buildx use multiarch 2>/dev/null || true
@@ -71,6 +73,7 @@ jobs:
     steps:
       - name: Clone and checkout
         run: |
+          rm -rf /build
           git clone --depth=1 --branch=main http://kay:${GITEA_TOKEN}@10.8.0.10:3000/trading/trading-agent.git /build
           cd /build && git fetch origin main && git checkout ${{ github.sha }}
 
@@ -79,7 +82,7 @@ jobs:
           NAS_REGISTRY_PASS: ${{ secrets.NAS_REGISTRY_PASS }}
           NAS_REGISTRY_USER: ${{ secrets.NAS_REGISTRY_USER }}
         run: |
-          echo "$NAS_REGISTRY_PASS" | docker login nas:5000 -u "$NAS_REGISTRY_USER" --password-stdin
+          docker login nas:5000 -u "$NAS_REGISTRY_USER" -p "$NAS_REGISTRY_PASS"
           cd /build
           docker buildx create --use --name multiarch 2>/dev/null || \
           docker buildx use multiarch 2>/dev/null || true
