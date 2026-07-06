@@ -13,15 +13,10 @@ jobs:
   lint:
     name: Lint & Format Check
     runs-on: [self-hosted, linux, docker]
-    env:
-      GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
     steps:
       - name: Clone repository
         run: |
-          export GIT_CONFIG_COUNT=1
-          export GIT_CONFIG_KEY_0="url.http://${GITEA_TOKEN}@10.8.0.10:3000/.insteadOf"
-          export GIT_CONFIG_VALUE_0="http://10.8.0.10:3000/"
-          git clone --depth=1 http://10.8.0.10:3000/trading/trading-agent.git /workspace
+          git clone --depth=1 http://kay:7b0ca81cda7a8499a31dd256b010ed524eadf493@10.8.0.10:3000/trading/trading-agent.git /workspace
           cd /workspace && git fetch --depth=1 origin ${{ github.ref }} && git checkout ${{ github.sha }}
 
       - name: Python syntax check
@@ -44,19 +39,18 @@ jobs:
     name: Build & Push (dev)
     runs-on: [self-hosted, linux, docker]
     if: github.ref == 'refs/heads/dev'
-    env:
-      GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
     steps:
       - name: Clone and checkout
         run: |
-          export GIT_CONFIG_COUNT=1
-          export GIT_CONFIG_KEY_0="url.http://${GITEA_TOKEN}@10.8.0.10:3000/.insteadOf"
-          export GIT_CONFIG_VALUE_0="http://10.8.0.10:3000/"
-          git clone --depth=1 --branch=dev http://10.8.0.10:3000/trading/trading-agent.git /build
+          git clone --depth=1 --branch=dev http://kay:7b0ca81cda7a8499a31dd256b010ed524eadf493@10.8.0.10:3000/trading/trading-agent.git /build
           cd /build && git fetch origin dev && git checkout ${{ github.sha }}
 
       - name: Build and push
+        env:
+          NAS_REGISTRY_PASS: ${{ secrets.NAS_REGISTRY_PASS }}
+          NAS_REGISTRY_USER: ${{ secrets.NAS_REGISTRY_USER }}
         run: |
+          echo "$NAS_REGISTRY_PASS" | docker login nas:5000 -u "$NAS_REGISTRY_USER" --password-stdin
           cd /build
           docker buildx create --use --name multiarch 2>/dev/null || \
           docker buildx use multiarch 2>/dev/null || true
@@ -66,25 +60,24 @@ jobs:
             --tag nas:5000/trading-agent:latest \
             --push \
             --file /build/docker/Dockerfile \
-            /build || echo "build done"
+            /build
 
   build-main:
     name: Build & Push (main)
     runs-on: [self-hosted, linux, docker]
     if: github.ref == 'refs/heads/main'
-    env:
-      GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
     steps:
       - name: Clone and checkout
         run: |
-          export GIT_CONFIG_COUNT=1
-          export GIT_CONFIG_KEY_0="url.http://${GITEA_TOKEN}@10.8.0.10:3000/.insteadOf"
-          export GIT_CONFIG_VALUE_0="http://10.8.0.10:3000/"
-          git clone --depth=1 --branch=main http://10.8.0.10:3000/trading/trading-agent.git /build
+          git clone --depth=1 --branch=main http://kay:7b0ca81cda7a8499a31dd256b010ed524eadf493@10.8.0.10:3000/trading/trading-agent.git /build
           cd /build && git fetch origin main && git checkout ${{ github.sha }}
 
       - name: Build and push
+        env:
+          NAS_REGISTRY_PASS: ${{ secrets.NAS_REGISTRY_PASS }}
+          NAS_REGISTRY_USER: ${{ secrets.NAS_REGISTRY_USER }}
         run: |
+          echo "$NAS_REGISTRY_PASS" | docker login nas:5000 -u "$NAS_REGISTRY_USER" --password-stdin
           cd /build
           docker buildx create --use --name multiarch 2>/dev/null || \
           docker buildx use multiarch 2>/dev/null || true
@@ -94,4 +87,4 @@ jobs:
             --tag nas:5000/trading-agent:latest \
             --push \
             --file /build/docker/Dockerfile \
-            /build || echo "build done"
+            /build
