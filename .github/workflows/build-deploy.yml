@@ -1,0 +1,59 @@
+﻿name: Build & Deploy to NAS
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:   # manual trigger
+
+env:
+  REGISTRY: nas:5000
+  IMAGE: nas:5000/trading-agent
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set cache-bust date
+        id: date
+        run: echo "CACHEBUST=$(date +%Y%m%d)" >> $GITHUB_OUTPUT
+
+      - name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.IMAGE }}
+          tags: |
+            latest
+            ${{ github.sha }}
+
+      - name: Docker login to NAS registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ secrets.NAS_REGISTRY_USER }}
+          password: ${{ secrets.NAS_REGISTRY_PASS }}
+
+      - name: Build and push with cache-bust
+        uses: docker/build-push-action@v5
+        with:
+          context: ./docker
+          file: ./docker/Dockerfile
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          build-args: |
+            GIT_REF=main
+            CACHEBUST=${{ steps.date.outputs.CACHEBUST }}
+          # Disable ALL build cache so GitHub always downloads fresh zip
+          no-cache: true
+
+      - name: Trigger Portainer webhook (recreate container from new image)
+        run: |
+          echo "Triggering Portainer rebuild..."
+          curl -s -X POST \
+            "${{ secrets.PORTAINER_WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            || echo "Webhook call failed (check PORTAINER_WEBHOOK_URL is set)"
