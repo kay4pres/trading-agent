@@ -1,34 +1,93 @@
-# Pipeline Status — 2026-07-07 16:00 (Berlin, UTC+2)
+# Pipeline Status — 2026-07-07 17:00 (Berlin, UTC+2)
 
 ## Dashboard State
 | Field | Value | Notes |
 |---|---|---|
-| `last_scan` | 16:00 | ✅ Scanner is live, updating every 60s |
+| `last_scan` | 16:59 | ✅ Scanner live, updating |
 | `market_open` | true | ✅ |
 | `watchlist` | 7 stocks | ✅ LHSW, PEW, SEER, WBX, SPHL, CRE, YDES |
 | `signals` | 7 signals | ✅ Today's signals showing |
 | `positions` | `[]` | No open positions |
-| `bull_bear` | `[]` | No debates yet |
-| `mount_status` | `ok` | ✅ Watchlist CSV visible to container |
-| `pillars` | ❌ **EMPTY** | ⚠️ `ca0ff79` fix committed but container not restarted |
+| `bull_bear` | `[]` | No debates today |
+| `mount_status` | `ok` | ✅ NAS volume mounted |
+| `pillars` | ❌ **EMPTY** | 🔴 Root cause found — see below |
 
-## Findings (16:00 check)
-- ✅ **Scanner alive** — `last_scan: "16:00"`, running every 60s
-- ✅ **No quote errors** — yfinance fallback in `fincept_connector.py` healthy; auto-detects Linux container and uses yfinance directly
-- ✅ **fincept_connector.py OK** — no fix needed; fallback is robust and handles the container environment correctly
-- ⚠️ **Pillars still empty** — `ca0ff79` fix committed but container not restarted; all 7 signals still show `pillars: {}`
+## Root Cause: `pillars: {}` Is NOT a fincept Issue
 
-## fincept_connector.py — Verdict: No Fix Needed
-The module correctly auto-detects Linux and uses yfinance directly — no "quote error" in dashboard state:
-```python
-if sys.platform == "win32" and os.path.exists(_FINCEPT_HOST):
-    fincept_path = _FINCEPT_HOST
-else:
-    return _fallback_yfinance(args)
+**The connector is healthy** — no "quote error" in container, `fincept_connector.py` correctly
+auto-detects Linux and falls back to yfinance. **fincept_connector.py needs NO fix.**
+
+The `pillars: {}` empty state has a different root cause:
+
+1. **`ca0ff79`** was committed at 15:33 today — adds `pillars_json` column to the watchlist CSV.
+   This is the correct fix. ✅
+2. **But `ca0ff79` is ONLY on local `dev` branch** — it was never pushed to `origin/main`.
+   The NAS Docker image pulls from GitHub `main`, which still has the OLD code.
+3. **Richard's premarket run at 14:00** generated `watchlist_20260707.csv` using the old
+   container code. The CSV has no `pillars_json` column, so dashboard reads `pillars: {}`.
+4. **GitHub Actions is BROKEN** — runs 7 & 8 both failed at step 5:
+   `"Docker login to NAS registry"` — `NAS_REGISTRY_USER`/`NAS_REGISTRY_PASS` secrets
+   are NOT set in GitHub Actions.
+
+## Code Status
+| Commit | Branch | In Docker? | Notes |
+|---|---|---|---|
+| `74054af` | `origin/main` (GitHub) | ✅ YES | Current deployed SHA |
+| `ca0ff79` | `dev` (local only) | ❌ NO | pillars_json fix — not on main |
+| `6984241` | `dev` (local only) | ❌ NO | docs commit |
+| `4802d46` | `dev` (local only) | ❌ NO | docs commit |
+
+## Deployment Path Is Blocked (Two Issues)
+
+### Issue 1: GitHub Actions NAS Login Failing
+**Since July 5** — all builds fail at "Docker login to NAS registry".
+`NAS_REGISTRY_USER` and `NAS_REGISTRY_PASS` secrets are not set in GitHub Actions.
+The `nas_build_and_deploy.sh` script also has hardcoded placeholders (`NAS_USERNAME`,
+`PORT_USERNAME`, `PORT_PASSWORD`) — needs real credentials.
+
+### Issue 2: `ca0ff79` Not on `origin/main`
+`dev` → `origin/main` push never happened. Docker keeps pulling stale SHA `74054af`.
+
+## What's Working
+- ✅ Dashboard alive on port 5050, `last_scan: 16:59`
+- ✅ `fincept_connector.py` auto-detects Linux, yfinance fallback healthy
+- ✅ 7 premarket signals loaded (LHSW, PEW, SEER, WBX, SPHL, CRE, YDES)
+- ✅ NAS volume mount OK
+- ✅ Telegram alerts wired
+- ✅ Scanner updating every 60s
+
+## Action Required (Priority Order)
+
+### 🔴 1. Fix GitHub Actions Secrets
+Go to: https://github.com/kay4pres/trading-agent/settings/secrets/actions
+Add (or verify):
+- `NAS_REGISTRY_USER` — username for `nas:5000` registry
+- `NAS_REGISTRY_PASS` — password for `nas:5000` registry
+- `PORTAINER_WEBHOOK_URL` — already added? (workflow has a webhook step too)
+
+### 🔴 2. Push `dev` to GitHub Main
+From `E:\Me\TradingAgent`:
+```powershell
+git checkout main
+git merge dev --no-edit
+git push origin main
 ```
+This pushes `ca0ff79` (pillars_json fix) + all pending commits to GitHub.
 
-## Action Required: Container Restart
-Portainer → Stacks → trading-agent → **Recreate container** to activate the `ca0ff79` pillars fix.
+### 🟡 3. Verify GitHub Actions Builds Successfully
+After pushing to main, watch: https://github.com/kay4pres/trading-agent/actions
+Run 9 should succeed and push to `nas:5000/trading-agent:latest`.
+
+### 🟡 4. Restart Container
+After GitHub Actions pushes new image, trigger Portainer webhook OR manually:
+Portainer → Containers → trading-agent → **Recreate**
+
+## Alternative: Build on NAS Directly (bypasses GitHub Actions)
+If GitHub Actions can't be fixed quickly, edit `E:\Me\TradingAgent\scripts\nas_build_and_deploy.sh`:
+1. Set `NAS_SSH_USER`, `NAS_HOST=10.8.0.10`
+2. Set `PORTAINER_USER`, `PORTAINER_PASS`
+3. Run: `bash E:\Me\TradingAgent\scripts\nas_build_and_deploy.sh`
+This pulls from Gitea, builds on the Synology, and restarts the container.
 
 ## Today's Signals (7 stocks, 2026-07-07 premarket)
 | Symbol | Price | Gap | RelVol | Float | Score | P4 |
@@ -42,24 +101,13 @@ Portainer → Stacks → trading-agent → **Recreate container** to activate th
 | YDES | $2.34 | +23% | 37.8× | 0.3M | 2.5 | 0.5 |
 
 ## Cron Health
-- `premarket-scan` (Richard 14:00 Berlin): ✅ Watchlist generated
-- `scan-market` (Mavis 15:30-21:00): ✅ Running every 15 min
-- `pipeline-check` (this session): ✅ Running at 16:00
-
-## What's Working
-- ✅ Dashboard alive on port 5050, updating every 60s
-- ✅ Scanner live (`last_scan: 16:00`)
-- ✅ fincept_connector / yfinance fallback healthy (no quote errors)
-- ✅ 7 signals from today's premarket watchlist
-- ✅ Docker volume mount OK
-- ✅ Telegram alerts wired
-
-## What's Fixed
-- ✅ **Pillars display bug** — fix committed to `dev` branch (`ca0ff79`)
+- `premarket-scan` (Richard 14:00 Berlin): ✅ Watchlist generated (missing pillars_json)
+- `scan-market` (Mavis 15:30–21:00): ✅ Running every 15 min
+- `pipeline-check` (this session): ✅ Running at 17:00
 
 ## What's Still Pending
-- ⏳ **Docker container restart** — needed for pillars fix to take effect
-- ⏳ GitHub push (network timeout from this machine — push from NAS shell)
-- ⏳ Bull/Bear LLM pipeline (LLM key not stored — Kay needs to run `vault/store_llm_key.ps1`)
-- ⏳ Trader agent — position tracking, deterministic exits, live price monitoring
+- 🔴 GitHub Actions NAS login fix (blocking ALL deployments)
+- 🔴 `dev` → `origin/main` push (ca0ff79 pillars_json not deployed)
+- ⏳ Bull/Bear LLM pipeline (LLM key not stored — Kay needs `vault/store_llm_key.ps1`)
+- ⏳ Trader agent — position tracking, deterministic exits
 - ⏳ Bull/Bear debate design — adapt TradingAgents pattern for Ross Cameron rules
