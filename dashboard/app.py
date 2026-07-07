@@ -75,18 +75,19 @@ def load_premarket_watchlist():
                         if not sym:
                             continue
                         rows.append({
-                            'symbol':     sym,
+                            'symbol':      sym,
                             'short_name': row.get('short_name', sym),
-                            'price':      float(row.get('price') or 0),
-                            'gap_pct':    float(row.get('gap_pct') or 0),
-                            'rel_vol':    float(row.get('rel_vol') or 0),
-                            'float_m':    float(row.get('float_m') or 0),
+                            'price':       float(row.get('price') or 0),
+                            'gap_pct':     float(row.get('gap_pct') or 0),
+                            'rel_vol':     float(row.get('rel_vol') or 0),
+                            'float_m':     float(row.get('float_m') or 0),
                             'total_score': float(row.get('total_score') or 0),
                             'p4_catalyst': float(row.get('p4_catalyst') or 0),
                             'news_summary': row.get('news_summary', ''),
                             'risk_flags': [],
-                            'pillars':    {},
-                            'source':     'premarket',
+                            # Deserialize P1-P5 scores from CSV (written by premarket_screener.save_watchlist)
+                            'pillars':     json.loads(row.get('pillars_json', '{}')) or {},
+                            'source':      'premarket',
                         })
                 if rows:
                     rows.sort(key=lambda x: x['total_score'], reverse=True)
@@ -304,7 +305,8 @@ def _load_watchlist_csv() -> List[Dict[str, Any]]:
                                 'p4_catalyst':  float(row.get('p4_catalyst') or 0),
                                 'news_summary':  row.get('news_summary', ''),
                                 'risk_flags':   [],
-                                'pillars':      {},
+                                # Deserialize P1-P5 scores from CSV (written by premarket_screener.save_watchlist)
+                                'pillars':      json.loads(row.get('pillars_json', '{}')) or {},
                                 'source':       'premarket_csv',
                                 'decided':       False,
                                 'decision':      None,

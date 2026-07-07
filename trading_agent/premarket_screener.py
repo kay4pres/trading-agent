@@ -511,11 +511,14 @@ def save_watchlist(results: List[Dict], path: Path):
             'symbol','short_name','price','gap_pct','rel_vol','float_m',
             'total_score','p2_gap','p3_rv','p4_catalyst',
             'news_summary','news_count','sentiment','news_provider',
-            'risk_flags','rejects','scan_time'
-        ])
+            'risk_flags','rejects','scan_time',
+            'pillars_json',  # JSON-serialized P1-P5 scores
+        ], extrasaction='ignore')
         w.writeheader()
         for r in results:
-            row = {k: v for k, v in r.items() if k not in ('pillars',)}
+            row = dict(r)
+            # Serialize pillars dict to JSON string so dashboard can deserialize it
+            row['pillars_json'] = json.dumps(row.get('pillars', {}))
             w.writerow(row)
     print(f"  💾 Saved: {path.name}")
 
