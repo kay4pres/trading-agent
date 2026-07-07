@@ -475,10 +475,74 @@ def run_scan(min_score=2.5, symbols=None):
             'source':       'yfinance',
         })
 
-    # 4c: Append watchlist CSV signals (already scored by Richard)
+    # 4c: Score watchlist CSV signals with Five Pillars (live scoring, not just CSV append)
+    # Fetch batch quotes + info for all watchlist symbols to avoid N individual calls
+    csv_symbols = [s['symbol'] for s in watchlist_signals
+                   if s['symbol'] not in [r['symbol'] for r in results]]
+    csv_quotes_raw: Dict[str, Any] = {}
+    if csv_symbols:
+        try:
+            raw_quotes = get_batch_quotes(csv_symbols)
+            for q in (raw_quotes if isinstance(raw_quotes, list) else []):
+                sym = q.get('symbol', '')
+                if sym:
+                    csv_quotes_raw[sym] = q
+        except Exception as e:
+            print(f"[scanner] CSV batch quotes failed: {e}")
+
+    scored_csv_count = 0
     for sig in watchlist_signals:
-        if sig['symbol'] not in [r['symbol'] for r in results]:
-            results.append(sig)
+        sym = sig['symbol']
+        if sym in [r['symbol'] for r in results]:
+            continue  # already scored via TV or yfinance path
+        # Score with live data if available, else fall back to CSV data
+        q = csv_quotes_raw.get(sym)
+        if q and q.get('price'):
+            try:
+                info = get_info(sym)
+            except Exception:
+                info = {}
+            try:
+                news_result = get_company_news(sym, count=10)
+            except Exception:
+                news_result = {'articles': [], 'recent_count': 0, 'top_headline': '',
+                               'provider': 'none', 'sentiment_score': 0, 'bullish_pct': 0}
+            pillars = check_pillars(q, info)
+            catalyst = score_catalyst(news_result)
+            pillars['P4_catalyst']   = catalyst['P4_catalyst']
+            pillars['news_summary']  = catalyst['news_summary']
+            pillars['news_count']    = catalyst['news_count']
+            pillars['news_provider'] = catalyst.get('news_provider', 'none')
+            total = pillars['score'] + catalyst['P4_catalyst']
+            scored = {
+                'symbol':       sym,
+                'short_name':   sig.get('short_name', ''),
+                'price':        round(q.get('price', sig.get('price', 0)), 2),
+                'gap_pct':      round(pillars['gap_pct'], 1),
+                'rel_vol':      round(pillars['rel_vol'], 1),
+                'float_m':      pillars.get('float_m'),
+                'total_score':  round(total, 1),
+                'pillars':      pillars['pillars'],
+                'p4_catalyst': round(catalyst['P4_catalyst'], 2),
+                'news_summary':  catalyst['news_summary'],
+                'news_count':    catalyst['news_count'],
+                'news_provider': catalyst.get('news_provider', 'none'),
+                'risk_flags':    pillars.get('risk_flags', []),
+                'scan_time':    today_str,
+                'decided':      False,
+                'decision':     None,
+                'source':       'csv_live',
+            }
+            if scored['total_score'] >= min_score:
+                results.append(scored)
+                scored_csv_count += 1
+        else:
+            # No live quote — append CSV signal as-is (fallback)
+            sig_copy = dict(sig)
+            sig_copy['source'] = 'premarket_csv'
+            results.append(sig_copy)
+    if scored_csv_count:
+        print(f"[scanner] Live-scored {scored_csv_count} CSV signals with Five Pillars")
 
     # Sort by score
     results.sort(key=lambda x: x['total_score'], reverse=True)
