@@ -50,6 +50,12 @@ services:
       - /volume1/Docker/vault:/app/vault:rw
 
       # Data: positions, signals, logs, watchlists
+      # BIND MOUNT — Portainer must resolve this host path before creating the container.
+      # Richard writes to Z:\trading-agent-source\data\watchlists\ on the Z: share.
+      # The Z: share (\\10.8.0.10\Home\backups) is NOT the same as /volume1/Docker/.
+      # DevOps: verify /volume1/Docker/data is a real directory on the Synology filesystem,
+      # OR update this to: /volume1/homes/backups/trading-agent-source/data:/app/data
+      # Container MUST be able to read E:\Me\TradingAgent\data\watchlists\ via this mount.
       - /volume1/Docker/data:/app/data
 
       # Dashboard static files

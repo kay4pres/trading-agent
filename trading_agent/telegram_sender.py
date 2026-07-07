@@ -53,12 +53,25 @@ def _get_token() -> Optional[str]:
         _token_cache = env_token
         return _token_cache
 
-    # Priority 2: vault file written by entrypoint.py
+    # Priority 2: vault file written by entrypoint.py (Docker/Linux path)
     vault_file = Path('/app/vault/TELEGRAM_BOT_TOKEN.env')
     if vault_file.exists():
         try:
             token = vault_file.read_text(encoding='utf-8').strip()
             if token:
+                _token_cache = token
+                return _token_cache
+        except Exception:
+            pass
+
+    # Priority 2b: Windows vault — E:\Me\TradingAgent\vault\TELEGRAM_BOT_TOKEN.env
+    vault_file_win = Path(r'E:\Me\TradingAgent\vault\TELEGRAM_BOT_TOKEN.env')
+    if vault_file_win.exists():
+        try:
+            content = vault_file_win.read_text(encoding='utf-8').strip()
+            # Format: TELEGRAM_BOT_TOKEN=...
+            token = content.split('=', 1)[-1].strip()
+            if token and ':' in token:
                 _token_cache = token
                 return _token_cache
         except Exception:
