@@ -1,4 +1,43 @@
 # Pipeline Status
+
+## 17:30 Check (Jul 7, Tuesday) — Scanner FRESH ✅ | Watchlist Mount OK ✅ | fincept_connector HEALTHY ✅ | No "quote error"
+
+**Dashboard `/api/state`:** `last_scan: "17:32"`, `berlin_time: "17:30"`, `market_open: true`, `signals: 7`, `watchlist: 7`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35]`, `mount_status: "ok"`.
+
+**7 signals live (from premarket_csv, `pillars: {}` = normal — Pillar scoring runs on intraday scanner only):**
+
+| Symbol | Score | Gap | RelVol | Float | Source |
+|--------|-------|-----|--------|-------|--------|
+| LHSW | 3.0 | +277.8% | 49.8x | 0.3M | premarket_csv |
+| PEW | 3.0 | +21.3% | 36.0x | 20.7M | premarket_csv |
+| SEER | 3.0 | +35.2% | 28.5x | 40.1M | premarket_csv |
+| WBX | 3.0 | +35.1% | 14.3x | 3.5M | premarket_csv |
+| SPHL | 2.8 | +15.6% | 146.3x | 1.0M | premarket_csv |
+| CRE | 2.8 | +10.4% | 21.8x | 1.1M | premarket_csv |
+| YDES | 2.5 | +23.2% | 37.8x | 0.3M | premarket_csv |
+
+**FINDINGS:**
+
+1. ✅ **Scanner FRESH — not frozen.** `last_scan: "17:32"` (2 min ago), `market_open: true`. Scan thread running on schedule, updated since the 15:15 recovery.
+
+2. ✅ **fincept_connector.py HEALTHY — all None guards confirmed in place:**
+   - `price or 0` ✅ (line 85)
+   - `prev or price` ✅ (line 86)
+   - `int(info.last_volume or 0)` ✅ (line 93) — prevents `int(None)` TypeError
+   - `round(change / prev * 100, 2) if prev else 0` ✅ (line 92) — div-by-zero guard
+   - `sys.platform != "win32"` fallback routing ✅ (lines 41-51) — Linux container always uses yfinance directly
+   - Windows Fincept Terminal IS installed at `C:\Program Files\FinceptTerminal\scripts\yfinance_data.py` (58KB) — irrelevant inside container
+
+3. ✅ **Watchlist Mount OK.** `/api/mount-status` returns `status: "ok"`, `today_csv: "/app/data/watchlists/watchlist_20260707.csv"`, `today_csv_exists: true`. Richard's premarket output is reaching the container — the Docker volume fix from Jul 7 15:15 is holding. Watchlist persisted for 2.5 hours.
+
+4. ✅ **No "quote error" anywhere.** Dashboard state contains no errors, no failed quote fields. yfinance is returning all 7 prices cleanly via `fast_info`. Container is healthy.
+
+5. ✅ **`pillars: {}` is NORMAL for premarket_csv source.** Five Pillar scoring runs on the intraday scanner (`run_scan()` → `check_pillars()`), not on premarket watchlist signals. Signals from `source: "premarket_csv"` have `pillars: {}` by design. Pillar scores update during live intraday scanning.
+
+**No code changes needed.** fincept_connector.py is clean, scanner is live, watchlist is mounted. Pipeline is fully operational.
+
+---
+
 ## 15:15 Check (Jul 7, Tuesday) — Scanner RECOVERED ✅ | Watchlist Mount ROOT CAUSE Found & Fixed ✅ | fincept_connector HEALTHY ✅
 
 **Dashboard `/api/state`:** `last_scan: "15:07"`, `berlin_time: "15:12"`, `market_open: true`, `signals: 11`, `watchlist: 11`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35]`, `mount_status: "ok"`.
