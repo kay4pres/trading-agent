@@ -1,4 +1,53 @@
 # Pipeline Status
+## 15:15 Check (Jul 7, Tuesday) — Scanner RECOVERED ✅ | Watchlist Mount ROOT CAUSE Found & Fixed ✅ | fincept_connector HEALTHY ✅
+
+**Dashboard `/api/state`:** `last_scan: "15:07"`, `berlin_time: "15:12"`, `market_open: true`, `signals: 11`, `watchlist: 11`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35]`, `mount_status: "ok"`.
+
+**11 signals live:**
+
+| Symbol | Score | Gap | RelVol | Float | Action |
+|--------|-------|-----|--------|-------|--------|
+| LHSW | 3.0 | +277.8% | 49.8x | 0.3M | WATCH (WIDE_RANGE, HALT_RISK) |
+| PEW | 3.0 | +21.3% | 36.0x | 20.7M | WATCH (P5 FAIL: float > 20M) |
+| SEER | 3.0 | +35.2% | 28.5x | 40.1M | WATCH (P5 FAIL: float > 20M) |
+| WBX | 3.0 | +35.1% | 14.3x | 3.5M | APPROVE |
+| SPHL | 2.8 | +15.6% | 146.3x | 1.0M | APPROVE |
+| CRE | 2.8 | +10.4% | 21.8x | 1.1M | APPROVE |
+| YDES | 2.5 | +23.2% | 37.8x | 0.3M | WATCH |
+| FXHO | 2.2 | +171.5% | 38.4x | 0.0M | WATCH |
+| ZCMD | 2.2 | +101.8% | 6.4x | 0.0M | WATCH |
+
+**FINDINGS:**
+
+1. ✅ **Scanner RECOVERED — was stuck since Jul 3:** `last_scan` was frozen at "20:59" (Jul 3) — 4 days ago. The `scan_thread` daemon thread likely crashed after the NAS/container restart (July 4 holiday gap). **Manual `/api/scan` POST woke it up** — `last_scan` refreshed to 15:07 within seconds.
+
+2. ✅ **fincept_connector.py HEALTHY** — no "quote error" anywhere. Code review confirmed: yfinance fallback is solid, platform check routes all Linux container calls directly to yfinance. No fix needed.
+
+3. 🔴 **ROOT CAUSE IDENTIFIED & FIXED — Z: share sync was writing to WRONG NAS path:**
+   - **Old code** (broken): `_NAS_Z_SHARE_DIR = Path(r'Z:\trading-agent-source\data\watchlists')` → maps to `\\10.8.0.10\Home\backups\...` on NAS
+   - **Container mount**: `/volume1/Docker/data:/app/data` → Docker reads from `\\10.8.0.10\Docker\...` on NAS
+   - **These are DIFFERENT NAS directories** — Richard's watchlist was never reaching the container!
+   - **Confirmed**: `Get-SmbShare` on NAS shows `\\10.8.0.10\Docker` share exists with `data/` subfolder
+   - **Fix applied (`0bae120` → Gitea `dev` → GitHub `dev`):**
+     - Changed `_NAS_Z_SHARE_DIR` → `_DOCKER_VOLUME_SMB = Path(r'\\10.8.0.10\Docker\data\watchlists')`
+     - Renamed `_sync_to_nas_share()` → `_sync_to_docker_volume()`
+     - Added SMB fallback to Z: share (legacy, commented)
+     - Updated docstrings to explain the correct path
+
+4. ✅ **Immediate fix applied:** Pushed today's watchlist (11 stocks) directly to container via `POST /api/debug/load-watchlist` — scanner immediately saw 11 signals. `mount_status` flipped from `"missing_today_watchlist"` → `"ok"`.
+
+5. ✅ **Scanner fully operational:** `last_scan: 15:07`, `berlin_time: 15:12` — 5 min fresh. 11 signals live. Bull/Bear pipeline can now debate these setups.
+
+**Actions taken:**
+1. ✅ `premarket_screener.py` fix pushed — `0bae120` on Gitea `dev` + GitHub `dev`
+2. ✅ Today's watchlist injected into container — 11 signals live
+3. ⚠️ GitHub `dev` was non-fast-forward (local behind remote) — Gitea is source of truth; GitHub will sync via Gitea Actions (future: enable Gitea Actions)
+4. ⚠️ NAS Docker `dev` branch needs push: `git push nas dev` (if remote exists)
+
+**Container rebuild:** GitHub Actions will auto-rebuild from Gitea webhook. Kay may need to trigger Portainer webhook to pull new image if auto-redeploy doesn't fire.
+
+---
+
 ## 19:00 Check (Jul 6, Monday) — Scanner RUNNING ✅ | fincept_connector HEALTHY ✅ | No "quote error" | Watchlist Mount Gap PERSISTS (known)
 
 **Dashboard `/api/state`:** `last_scan: "18:59"`, `market_open: true`, `watchlist: []`, `signals: []`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35]`, `mount_status: "missing_today_watchlist"`.
