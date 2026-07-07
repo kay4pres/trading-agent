@@ -114,6 +114,8 @@ def _fallback_yfinance(args: List[str]) -> Dict[str, Any]:
                 "averageVolume": info.get("averageVolume", 0),
                 "marketCap": info.get("marketCap", 0),
                 "shortName": info.get("shortName", ""),
+                # Used by check_pillars() to compute gap_pct when quote has no previous_close
+                "previousClose": info.get("regularMarketPreviousClose") or info.get("previousClose") or 0,
             }
         else:
             return {"success": False, "error": f"Fallback not implemented for: {cmd}"}

@@ -113,7 +113,16 @@ def check_pillars(quote: Dict, info: Dict) -> Dict[str, Any]:
     Returns dict with pillar scores and reject reasons.
     """
     price       = quote.get('price', 0)
-    prev_close  = quote.get('previous_close', price)
+    # Fallback chain: quote.previous_close (TV API) → info.previousClose (yfinance batch)
+    # → info.regularMarketPreviousClose → current price (last resort).
+    # Batch quotes from fincept_connector.get_batch_quotes() have no previous_close,
+    # so we MUST read it from the info dict that get_info() also returns.
+    prev_close  = (
+        quote.get('previous_close')
+        or info.get('previousClose')
+        or info.get('regularMarketPreviousClose')
+        or price
+    )
     gap_pct     = ((price - prev_close) / prev_close * 100) if prev_close else 0
     volume      = quote.get('volume', 0)
     high        = quote.get('high', price)
