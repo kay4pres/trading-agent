@@ -38,27 +38,46 @@ TODAY = date.today()
 WATCHLIST_FILE = WATCHLIST_DIR / f"watchlist_{TODAY.strftime('%Y%m%d')}.csv"
 POSITIONS_FILE = DATA_DIR / 'positions.json'
 
-# ── NAS Z: share sync ─────────────────────────────────────────────────────────
+# ── Docker volume sync ─────────────────────────────────────────────────────────
 # The Docker container mounts /volume1/Docker/data (NAS) as /app/data.
-# Richard's Mavis cron writes to E:\Me\TradingAgent\data\ on Windows.
-# The Z: share (\\10.8.0.10\Home\backups) is mapped to the same NAS —
-# we sync Richard's output there so the container can see it.
-_NAS_Z_SHARE_DIR = Path(r'Z:\trading-agent-source\data\watchlists')
+# Richard's Mavis cron runs on Kay's Windows machine.
+# We sync directly to the Docker volume SMB share so the container sees it.
+#
+# The Docker volume on NAS:  \\10.8.0.10\Docker\data  → container: /app/data
+# (CONFIRMED: Get-SmbShare on 10.8.0.10 exposes \\10.8.0.10\Docker as a share.
+#  /volume1/Docker/data maps to this share — verified 2026-07-07.)
+#
+# NOTE: Z: share (\\10.8.0.10\Home\backups) is a DIFFERENT directory on the NAS.
+# It is NOT the same as /volume1/Docker/ — do NOT use Z: for Docker volume sync.
+_DOCKER_VOLUME_SMB = Path(r'\\10.8.0.10\Docker\data\watchlists')
+_NAS_Z_SHARE_DIR   = Path(r'Z:\trading-agent-source\data\watchlists')  # legacy, keep for reference
 
-def _sync_to_nas_share():
-    """Copy today's watchlist to the Z: share so the Docker container can read it."""
+def _sync_to_docker_volume():
+    """Copy today's watchlist to the Docker volume SMB share so the container reads it."""
     try:
-        _NAS_Z_SHARE_DIR.mkdir(parents=True, exist_ok=True)
+        _DOCKER_VOLUME_SMB.mkdir(parents=True, exist_ok=True)
         today_str = TODAY.strftime('%Y%m%d')
         for fname in [f'watchlist_{today_str}.csv', 'watchlist_latest.csv']:
             src = WATCHLIST_DIR / fname
-            dst = _NAS_Z_SHARE_DIR / fname
+            dst = _DOCKER_VOLUME_SMB / fname
             if src.exists():
                 import shutil
                 shutil.copy2(src, dst)
-                print(f"  📡 synced {fname} -> Z: share")
+                print(f"  📡 synced {fname} -> Docker volume (\\10.8.0.10\\Docker\\data)")
     except Exception as e:
-        print(f"  ⚠ NAS sync failed (container won't see watchlist): {e}")
+        print(f"  ⚠ Docker volume sync failed (container won't see watchlist): {e}")
+        # Fallback: also try Z: share (legacy, different NAS path — may not work in container)
+        try:
+            _NAS_Z_SHARE_DIR.mkdir(parents=True, exist_ok=True)
+            for fname in [f'watchlist_{today_str}.csv', 'watchlist_latest.csv']:
+                src = WATCHLIST_DIR / fname
+                dst = _NAS_Z_SHARE_DIR / fname
+                if src.exists():
+                    import shutil
+                    shutil.copy2(src, dst)
+                    print(f"  📡 fallback synced {fname} -> Z: share (container may not see it)")
+        except Exception as e2:
+            print(f"  ⚠ Z: share fallback also failed: {e2}")
 
 # ── Positions Guard ────────────────────────────────────────────────────────────
 def get_open_symbols():
@@ -537,8 +556,8 @@ if __name__ == '__main__':
             # Also write a stable "latest" alias for live_event_loop.py
             save_watchlist(results, WATCHLIST_DIR / "watchlist_latest.csv")
             print(f"  💾 watchlist_latest.csv")
-            # Sync to Z: share so Docker container can access it
-            _sync_to_nas_share()
+            # Sync directly to Docker volume SMB share so the container reads it
+            _sync_to_docker_volume()
     else:
         print("\n  No signals found above threshold.")
         print("  Try lowering --min-score or check data sources.")
