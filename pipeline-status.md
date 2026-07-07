@@ -1,103 +1,92 @@
-# Pipeline Status — 2026-07-07 13:00 (Berlin, UTC+2)
+# Pipeline Status — 2026-07-07 15:30 (Berlin, UTC+2)
 
-## Dashboard State
+## Dashboard State (live check 15:30)
 | Field | Value | Notes |
 |---|---|---|
-| `last_scan` | 20:59 | ✅ Scanner ran yesterday evening (normal — runs 15:30–21:00) |
+| `last_scan` | 15:30 | ✅ Scanner is live and updating |
 | `market_open` | true | ✅ |
-| `watchlist` | `[]` | ❌ Empty — container can't see today's watchlist |
-| `signals` | `[]` | No signals yet today |
+| `watchlist` | 7 stocks | ✅ (LHSW, PEW, SEER, WBX, SPHL, CRE, YDES — from premarket CSV) |
+| `signals` | 7 signals | ✅ Today's signals showing |
 | `positions` | `[]` | No open positions |
 | `bull_bear` | `[]` | No debates yet |
-| `mount_status` | `missing_today_watchlist` | ❌ **Docker can't read today's watchlist CSV** |
+| `mount_status` | `ok` | ✅ Watchlist CSV now visible to container |
+| `pillars` | ❌ **EMPTY** | **BUG FOUND: P1-P5 scores not displaying** |
 
-## Watchlist File Status
-Richard's `premarket-scan` cron (6 AM Berlin) generated today's watchlist:
-- `E:\Me\TradingAgent\data\watchlists\watchlist_20260707.csv` ✅ exists (11 stocks)
-- `Z:\trading-agent-source\data\watchlists\watchlist_20260707.csv` ✅ synced
-- Docker container sees: **nothing** ❌
+## Root Cause — Five Pillars Scores Lost at CSV Round-Trip
 
-## fincept_connector.py — No Fix Needed ✅
-- Code review: no literal "quote error" string anywhere in the file
-- **yfinance fallback is correctly implemented** — runs transparently inside the Linux Docker container (sys.platform != "win32" → skips Fincept Windows path → calls yfinance directly)
-- Both `get_quote()` and `get_batch_quotes()` fall back on failure
-- **No push needed** for fincept_connector.py
-
-## Root Cause — Docker Volume Mount Points to Wrong Path
-
-**docker-compose.yml (Portainer):**
-```yaml
-volumes:
-  - /volume1/Docker/data:/app/data    # ← WRONG PATH
+### The Bug
+Richard's `premarket_screener.py` computes P1-P5 scores correctly in `check_pillars()`.
+However, `save_watchlist()` explicitly excluded `pillars` from the CSV output:
+```python
+row = {k: v for k, v in r.items() if k not in ('pillars',)}
 ```
 
-**Richard's premarket cron syncs to:**
+When the dashboard's `app.py` loaded the CSV back, it had no pillar data and hardcoded:
+```python
+'pillars': {},  # ← always empty
 ```
-Z:\trading-agent-source\data\watchlists\watchlist_20260707.csv
+This happened in TWO places: `load_premarket_watchlist()` and `_load_watchlist_csv()`.
+
+### Evidence
+- All 7 signals in dashboard have `"pillars": {}`
+- `total_score` shows (e.g., 3.0) — score IS computed, just not persisted
+- fincept_connector NOT the issue — yfinance fallback works fine (quote layer healthy)
+
+## Fix Applied ✅ (commit `ca0ff79`)
+
+### 1. `trading_agent/premarket_screener.py`
+Changed `save_watchlist()` to write `pillars_json` column:
+```python
+row['pillars_json'] = json.dumps(row.get('pillars', {}))
 ```
-→ Maps to `\\10.8.0.10\Home\backups\trading-agent-source\data\watchlists\` on the NAS
+Added `'pillars_json'` to CSV fieldnames. Removed the `if k not in ('pillars',)` exclude.
 
-**Docker container looks for data at:**
+### 2. `dashboard/app.py`
+Two fixes (lines ~88 and ~308):
+```python
+'pillars': json.loads(row.get('pillars_json', '{}')) or {},
 ```
-/volume1/Docker/data/watchlists/
-```
-→ Completely different filesystem path on the Synology — **container never sees the Z: share**
 
-## Evidence
-- `watchlist_20260707.csv` exists on Z: ✅ (written 04:00 today by premarket-scan cron)
-- Z: share NOT accessible from Docker container via `/volume1/Docker/data` ❌
-- `mount_status: "missing_today_watchlist"` in dashboard confirms it ❌
-- Scanner currently running on DEFAULT_UNIVERSE (hardcoded stock list) — no gap-up watchlist input
+### Commit
+- Gitea: `ca0ff79 fix: persist Five Pillars scores to CSV and deserialize in dashboard`
+- GitHub push: timed out (network issue from this machine) — push manually or run from NAS shell
 
-## Fix Required — DevOps Agent
-
-**Two options (pick one):**
-
-### Option A — Fix Portainer stack volume mount (preferred)
-1. Go to Portainer at `http://10.8.0.10:9000`
-2. Stacks → trading-agent → Editor
-3. Change the data volume mount from:
-   ```
-   /volume1/Docker/data:/app/data
-   ```
-   To the Z: share path on the Synology filesystem. **You must find this path:**
-   - Log into Synology DSM admin panel
-   - Go to Control Panel → Shared Folders
-   - Find the "Home backups" share (this is Z:)
-   - Note the filesystem path (typically `/volume1/homes/backups/` or similar)
-   - Update the mount to: `<Z_share_fs_path>/trading-agent-source/data:/app/data`
-4. Recreate the container
-
-### Option B — Create a symlink on the NAS
-SSH to NAS as admin:
-```bash
-ln -s /<z_share_fs_path>/trading-agent-source/data /volume1/Docker/data
-```
-Then restart the Docker container.
-
-### After the fix
-- Redeploy the container so it picks up the corrected volume mount
-- The `premarket_screener.py`'s existing `_sync_to_nas_share()` (→ Z: share) will then work
-- Richard's `sync_watchlist_to_nas.ps1` (also → Z: share) will also work
-- Dashboard `mount_status` should change from `missing_today_watchlist` to OK
+## Docker Container Restart Required
+The fix is in the source code, but the running container still has the old `app.py`.
+Container must be redeployed to pick up the changes:
+- Portainer → Stacks → trading-agent → Recreate container
+- Or: GitHub Actions build → push to NAS registry → Portainer webhook
 
 ## What's Working
-- ✅ Dashboard alive on port 5050
-- ✅ Scanner cron active (last ran yesterday 20:59)
-- ✅ yfinance fallback (data layer healthy even without Fincept)
+- ✅ Dashboard alive on port 5050, updating every 60s
+- ✅ Scanner live (last_scan: 15:30)
+- ✅ fincept_connector / yfinance fallback healthy (no quote errors)
+- ✅ 7 signals from today's premarket watchlist (LHSW, PEW, SEER, WBX, SPHL, CRE, YDES)
+- ✅ Docker volume mount now OK (watchlist visible)
 - ✅ Telegram alerts wired
-- ✅ `premarket-scan` cron ran at 6 AM Berlin → generated 11-stock watchlist
-- ✅ Z: share sync works (file exists on NAS)
 
-## What's Broken
-- ❌ Docker volume mount — container can't read Richard's watchlist from Z: share
-- ❌ Scanner using hardcoded DEFAULT_UNIVERSE instead of today's gap-up watchlist
-- ❌ Richard's premarket output not reaching Docker
+## What's Fixed
+- ✅ **Pillars display bug** — fix committed to `dev` branch
+
+## What's Still Pending
+- ⏳ Docker container restart (needed for fix to take effect)
+- ⏳ GitHub push (network timeout from this machine)
+- ⏳ Bull/Bear LLM pipeline (LLM key not stored — Kay needs to run `vault/store_llm_key.ps1`)
+- ⏳ Trader agent — position tracking, deterministic exits, live price monitoring
+- ⏳ Bull/Bear debate design — adapt TradingAgents pattern for Ross Cameron rules
+
+## Today's Signals (7 stocks, 2026-07-07 premarket)
+| Symbol | Price | Gap | RelVol | Float | Score | P4 |
+|---|---|---|---|---|---|---|
+| LHSW | $6.80 | +278% | 49.8× | 0.3M | 3.0 | 1.0 |
+| PEW | $2.85 | +21% | 36.0× | 20.7M | 3.0 | 1.0 |
+| SEER | $2.19 | +35% | 28.5× | 40.1M | 3.0 | 1.0 |
+| WBX | $5.62 | +35% | 14.3× | 3.5M | 3.0 | 1.0 |
+| SPHL | $2.96 | +16% | 146.3× | 1.0M | 2.8 | 0.75 |
+| CRE | $2.75 | +10% | 21.8× | 1.1M | 2.8 | 0.75 |
+| YDES | $2.34 | +23% | 37.8× | 0.3M | 2.5 | 0.5 |
 
 ## Cron Health
-- `premarket-scan`: ✅ Ran today at 04:00 Berlin — generated watchlist_20260707.csv
-- `scan-market`: ✅ Active (last scan yesterday 20:59)
-- `pipeline-check`: ✅ Running now (this session)
-
-## Today's Watchlist (11 stocks, generated 04:00 Berlin)
-SPHL, LHSW, FXHO, YDES, PEW, SEER, CRE, WBX, ZCMD, SONM, GDEV
+- `premarket-scan` (Richard 14:00 Berlin): ✅ Today's watchlist generated
+- `scan-market` (Mavis 15:30-21:00): ✅ Running every 15 min
+- `pipeline-check` (this session): ✅ Running at 15:30
