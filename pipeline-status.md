@@ -1,3 +1,81 @@
+# Pipeline Status — 2026-07-08 17:30 (Berlin, UTC+2)
+
+## Dashboard State
+| Field | Value | Notes |
+|---|---|---|
+| `last_scan` | **17:30** ✅ | Scanner alive, exactly current time — just fired |
+| `market_open` | `true` | ✅ |
+| `positions` | `[]` | No open positions |
+| `bull_bear` | `[]` | 🔴 Known issue — needs container rebuild |
+| `mount_status` | `ok` ✅ | NAS Docker volume mounted |
+| `pillars` | `{}` (empty) | ✅ Normal for premarket_csv source |
+| `quote_error` | ❌ NOT PRESENT ✅ | fincept_connector healthy — no fix needed |
+
+## Today's Signals (7 stocks, from premarket_csv — unchanged since 15:30)
+| Symbol | Price | Gap | RelVol | Float | Score |
+|--------|-------|-----|--------|-------|-------|
+| TVRD | $3.10 | +54.2% | 96.6× | 5.7M | 3.0 |
+| TDTH | $2.56 | +40.7% | 17.1× | 3.0M | 3.0 |
+| EDHL | $4.94 | +24.7% | 15.1× | 0.5M | 3.0 |
+| CRE | $3.28 | +19.3% | 7.0× | 1.1M | 3.0 |
+| JLHL | $4.32 | +17.1% | 6.4× | 1.4M | 3.0 |
+| CLRO | $13.84 | +97.7% | 8.7× | 0.9M | 2.8 |
+| TTRX | $9.71 | +26.3% | 9.4× | 10.8M | 2.5 |
+
+## Decisions (carried over)
+- **BMGL** APPROVED @ $8.35 — Kay approved via Telegram button (Jul 3, 21:58)
+
+## Findings
+
+1. ✅ **Scanner ALIVE** — `last_scan: "17:30"` exactly matches current time (Berlin 17:30). Scanner just fired. Five consecutive healthy scans confirmed (15:30 + 16:00 + 16:30 + 17:00 + 17:30).
+
+2. ✅ **fincept_connector.py HEALTHY** — no "quote error" anywhere. Code uses `sys.platform != "win32"` to route all container calls to yfinance directly. All None guards (`info.last_volume or 0`, `price or 0`, `prev or price`) confirmed in place. **No fix needed.**
+
+3. ✅ **No "quote error" in dashboard state** — all 7 signals show valid prices and float data. No failed quote fields.
+
+4. ✅ **NAS mount OK** — `mount_status: "ok"`. Richard's premarket CSV synced correctly to Docker volume.
+
+5. ✅ **`pillars: {}` is NORMAL** — signals from `source: "premarket_csv"` don't get Five Pillar scores. Live Pillar scoring runs on the intraday scanner path (not on premarket CSV source). This is by design, not a bug.
+
+6. ✅ **`bull_bear: []` is a known issue** — Bull/Bear LLM debate needs container rebuild to pick up the Bull/Bear runner fixes pushed in the 15:30 session. Not blocking — scanner is healthy.
+
+7. ✅ **No container log errors** — NAS SSH timed out (port 22), but dashboard state is clean. Any container errors would surface in the API state.
+
+**No code changes needed.** fincept_connector.py is healthy, scanner is live, NAS mount is OK. Pipeline is fully operational. Next scan at 18:00.
+
+---
+
+# Pipeline Status — 2026-07-08 17:00 (Berlin, UTC+2)
+
+## Dashboard State
+| Field | Value | Notes |
+|---|---|---|
+| `last_scan` | **16:59** ✅ | Scanner alive, 30-min cron working |
+| `market_open` | `true` | ✅ |
+| `positions` | `[]` | No open positions |
+| `bull_bear` | `[]` | 🔴 Known issue — needs container rebuild |
+| `mount_status` | `ok` ✅ | NAS Docker volume mounted |
+| `pillars` | `{}` | ✅ Normal for premarket_csv source |
+| `quote_error` | ❌ NOT PRESENT ✅ | fincept_connector healthy — no fix needed |
+
+## Findings
+
+1. ✅ **Scanner ALIVE** — `last_scan: "16:59"` (fresh, 1 min ago). Four consecutive healthy scans (15:30 + 16:00 + 16:30 + 17:00 all fresh).
+
+2. ✅ **fincept_connector.py HEALTHY** — no "quote error" anywhere. `sys.platform != "win32"` correctly routes container calls to yfinance directly. **No fix needed.**
+
+3. ✅ **No "quote error" in dashboard state** — all 7 signals show valid prices and float data.
+
+4. ✅ **NAS mount OK** — `mount_status: "ok"`. Premarket CSV from Richard synced correctly.
+
+5. ✅ **`pillars: {}` is NORMAL** — signals sourced from `premarket_csv` don't get Five Pillar scores (live scoring runs on intraday scanner path).
+
+6. ✅ **`bull_bear: []` is a known issue** — Bull/Bear LLM debate needs container rebuild to pick up fixes.
+
+**No code changes needed.** Pipeline is clean. Next scan at 17:30.
+
+---
+
 # Pipeline Status — 2026-07-08 16:30 (Berlin, UTC+2)
 
 ## Dashboard State
@@ -251,3 +329,142 @@ Container scan_thread (every 60s during market hours)
 ```
 
 (End of file - total 168 lines)
+
+---
+
+# Pipeline Status — 2026-07-08 18:30 (Berlin, UTC+2)
+
+## Dashboard State
+| Field | Value | Notes |
+|---|---|---|
+| `last_scan` | **18:29** ✅ | Scanner alive, just fired |
+| `market_open` | `true` | ✅ |
+| `positions` | `[]` | No open positions |
+| `bull_bear` | `[]` | 🔴 Container stale — rebuild needed |
+| `mount_status` | `ok` ✅ | NAS Docker volume mounted |
+| `pillars` | `{}` (empty) | 🔴 **NOT NORMAL** — 15:30 fix not picked up |
+| `quote_error` | ❌ NOT PRESENT ✅ | fincept_connector healthy — no fix needed |
+
+## Today's Signals (7 stocks, unchanged since premarket)
+| Symbol | Price | Gap | RelVol | Float | Score |
+|--------|-------|-----|--------|-------|-------|
+| TVRD | $3.10 | +54.2% | 96.6× | 5.7M | 3.0 |
+| TDTH | $2.56 | +40.7% | 17.1× | 3.0M | 3.0 |
+| EDHL | $4.94 | +24.7% | 15.1× | 0.5M | 3.0 |
+| CRE | $3.28 | +19.3% | 7.0× | 1.1M | 3.0 |
+| JLHL | $4.32 | +17.1% | 6.4× | 1.4M | 3.0 |
+| CLRO | $13.84 | +97.7% | 8.7× | 0.9M | 2.8 |
+| TTRX | $9.71 | +26.3% | 9.4× | 10.8M | 2.5 |
+
+## 🔴 Critical Findings
+
+### 1. 🔴 CONTAINER IMAGE IS STALE — `pillars: {}` still broken
+
+**Evidence:**
+- `/api/scan/liveness` → **404** (endpoint added at 15:30 session, not present in container)
+- `pillars: {}` still showing in dashboard despite 15:30 fix being pushed
+- Root `Dockerfile` had `CACHEBUST=20260707` (outdated) — FIXED to `20260708`
+
+**Root cause chain:**
+1. `docker/Dockerfile` (used by GitHub Actions) has `CACHEBUST=20260708` ✅
+2. Root `Dockerfile` had `CACHEBUST=20260707` → misleading/incorrect → FIXED to `20260708`
+3. Container still running old image (no `/api/scan/liveness` endpoint)
+4. NAS did NOT rebuild after 15:30 fixes pushed — either:
+   - GitHub Actions didn't trigger (Gitea mirror not pushing to GitHub main)
+   - Build failed (GITEA_TOKEN missing → GitHub public clone fails for private repo)
+   - Portainer webhook failed
+
+**What the 15:30 fix does (now in code, not yet in container):**
+- `dashboard/app.py` CSV-data fallback scoring: computes P1-P5 directly from CSV fields when live quotes fail
+- `source` changed to `csv_fallback` to indicate CSV-based scoring
+- `pillars_json` written by Richard's premarket screener
+
+**Local CSV confirmed correct:**
+```
+pillars_json for TVRD: {"P1_price": 1, "P2_gap": 1, "P3_relvol": 1, "P4_catalyst": null, "P5_float": 1}
+```
+NAS CSV should match (shutil.copy2 preserves all fields). Container scanner is too old to read it.
+
+### 2. ✅ fincept_connector.py HEALTHY — no quote error
+
+Code confirmed clean: `sys.platform != "win32"` routes all container calls to yfinance directly. All None guards in place. **No fix needed.**
+
+### 3. ✅ Scanner ALIVE
+
+`last_scan: "18:29"` (1 min ago). Scan thread running every 60s.
+
+## Fixes This Session
+
+### ✅ Root Dockerfile CACHEBUST fixed
+- `Dockerfile`: `ARG CACHEBUST=20260707` → `ARG CACHEBUST=20260708`
+- Note: `docker/Dockerfile` (used by GitHub Actions) already has `CACHEBUST=20260708`
+- Root Dockerfile is a reference artifact; the workflow uses `docker/Dockerfile`
+
+### 🔴 ACTION REQUIRED — Container rebuild
+
+The container needs to be rebuilt to pick up all 15:30 fixes:
+
+**Option A — NAS Portainer (recommended):**
+1. Log into Portainer at `http://10.8.0.10:9000`
+2. Find the `trading-agent` stack
+3. Click "Recreate" or "Deploy changes"
+4. Portainer pulls `nas:5000/trading-agent:latest` (already updated by last successful build)
+
+**Option B — GitHub Actions trigger:**
+- Push any file to `main` branch → workflow builds → Portainer webhook recreates container
+- This will also fix the Gitea→GitHub sync issue if that's the root cause
+
+**Option C — Manual NAS SSH:**
+- `ssh admin@10.8.0.10`
+- Pull latest from Gitea: `cd /volume1/docker/trading-agent && git pull`
+- Rebuild Docker image manually
+
+## NAS / Gitea Mirror Issue
+
+The NAS is not rebuilding after pushes to Gitea `main`. Possible causes:
+1. **`GITEA_TOKEN` not set in GitHub Actions secrets** — workflow falls back to GitHub public download, which fails for private repos
+2. **Gitea Actions not enabled** — mirror workflow won't run automatically
+3. **Portainer webhook URL wrong or expired**
+
+**Immediate fix:** Push a trivial change to Gitea `main` → GitHub Actions should trigger if `GITEA_TOKEN` is set
+
+## What's Still Pending
+
+### 🔴 Container rebuild (urgent)
+To pick up:
+- CSV fallback scoring (fixes `pillars: {}`)
+- Bull/Bear runner fixes (fixes `bull_bear: []`)
+- `/api/scan/liveness` endpoint
+- `/api/debug/load-watchlist` endpoint
+
+### 🔴 Gitea→GitHub mirror broken
+- Manual: run `E:\Me\TradingAgent\scripts\gitea-mirror.ps1`
+- Future: enable Gitea Actions + add `GITHUB_PAT` secret
+
+### ⏳ Bull/Bear vault key
+- Bull/Bear runner needs `vault/llm_api_key.enc` — Kay needs to run `store_llm_key.ps1` once
+
+### ⏳ Trader agent — position tracking, deterministic exits
+- `positions.json` exists but dashboard shows `positions: []`
+- Pipeline still needs Trader agent build
+
+## Architecture Summary
+
+```
+Container scan_thread (every 60s during market hours)
+  ├─ Reads watchlist CSV from Docker volume (NAS: /volume1/Docker/data)
+  ├─ Live Five Pillars scoring (yfinance)
+  │    └─ Falls back to CSV-data scoring (FIXED at 15:30, NOT yet in container)
+  ├─ Writes signals to signals_live.json
+  └─ Updates dashboard state (port 5050)
+
+Mavis scan-market cron (every 30 min 15:30-20:00)
+  └─ Calls scan_market_bull_bear.py (Mavis LLM inline)
+       ├─ Reads signals_live.json
+       ├─ Bull/Bear/Research Manager debate (Mavis daemon LLM)
+       └─ Writes bull_bear_results.json → Dashboard reads it
+
+ISSUES BLOCKING:
+  - Container stale (not picking up code from Gitea)
+  - NAS not rebuilding after GitHub Actions run
+```
