@@ -7,9 +7,9 @@ ENV PYTHONPATH=/app
 
 WORKDIR /app
 
-# Install system deps + Python packages
+# Install system deps + Python packages + git (for cloning)
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    cron tzdata unzip \
+    cron tzdata unzip git \
     && rm -rf /var/lib/apt/lists/* \
     && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime \
     && echo $TZ > /etc/timezone \
@@ -18,13 +18,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         tradingview-screener
 
 # Build argument: GIT_REF (defaults to main)
-# CACHEBUST date changes daily — forces fresh GitHub download every 24h
+# GITEA_TOKEN build arg: bearer token for authenticated clone from Gitea
 ARG GIT_REF=main
-ARG CACHEBUST=20260707
-ADD https://github.com/kay4pres/trading-agent/archive/refs/heads/${GIT_REF}.zip /app/repo.zip
-RUN unzip /app/repo.zip \
-    && mv /app/trading-agent-${GIT_REF}/* /app/ \
-    && rm -rf /app/repo.zip /app/trading-agent-${GIT_REF} \
+ARG GITEA_TOKEN=
+ENV GITEA_TOKEN=${GITEA_TOKEN}
+RUN git clone --depth=1 --branch=${GIT_REF} \
+    http://kay:${GITEA_TOKEN}@10.8.0.10:3000/kay/trading-agent.git /app \
+    && rm -rf /app/.git \
     && pip install --no-cache-dir --break-system-packages -r /app/requirements.txt \
     && chmod +x /app/entrypoint.py
 

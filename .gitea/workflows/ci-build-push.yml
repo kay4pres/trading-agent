@@ -9,6 +9,7 @@ on:
 env:
   REGISTRY: nas:5000
   IMAGE_NAME: trading-agent
+  GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
 
 jobs:
   # ── Job 1: Lint & Type Check ─────────────────────────────────────────────────
@@ -68,7 +69,7 @@ jobs:
             --cache-from type=registry,ref=nas:5000/trading-agent:dev \
             --cache-to type=registry,ref=nas:5000/trading-agent:dev \
             --build-arg GIT_REF=dev \
-            --build-arg CACHEBUST=${{ github.sha }} \
+            --build-arg GITEA_TOKEN=${{ env.GITEA_TOKEN }} \
             --push \
             --file docker/Dockerfile \
             .
@@ -107,7 +108,7 @@ jobs:
             --cache-from type=registry,ref=nas:5000/trading-agent:main \
             --cache-to type=registry,ref=nas:5000/trading-agent:main \
             --build-arg GIT_REF=main \
-            --build-arg CACHEBUST=${{ github.sha }} \
+            --build-arg GITEA_TOKEN=${{ env.GITEA_TOKEN }} \
             --push \
             --file docker/Dockerfile \
             .
