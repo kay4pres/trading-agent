@@ -52,13 +52,11 @@ for name in ["ALPACA_API_KEY", "ALPACA_SECRET_KEY", "TELEGRAM_BOT_TOKEN",
 
 # Write crontab
 # NOTE: premarket_screener.py and process_new_chapters.py are root-level files (not in trading_agent/ package)
-# scripts/scan_market_bull_bear.py IS inside scripts/ package (has __init__.py)
+# Bull/Bear is NOT in container crontab — Mavis runs it inline in its own scan-market cron session
+# (the Bull/Bear runner needs Kay's vault LLM key which is on the host, not in the container)
 crontab = """TZ=Europe/Berlin
-14 0 * * 1-5 cd /app && python premarket_screener.py >> /app/data/logs/richard.log 2>&1
-30,45 15 * * 1-5 cd /app && python -m scripts.scan_market_bull_bear >> /app/data/logs/scan.log 2>&1
-0,15,30,45 16-20 * * 1-5 cd /app && python -m scripts.scan_market_bull_bear >> /app/data/logs/scan.log 2>&1
-0,15,30,45 21 * * 1-5 cd /app && python -m scripts.scan_market_bull_bear >> /app/data/logs/scan.log 2>&1
-0 21 * * 1-5 TRADING_DATA_DIR=/app/data RAW_DIR=/app/knowledge/raw TRANSCRIPT_DIR=/app/knowledge/transcripts cd /app && python process_new_chapters.py >> /app/data/logs/transcribe.log 2>&1
+14 0 * * 1-5 cd /app && python3 premarket_screener.py >> /app/data/logs/richard.log 2>&1
+0 21 * * 1-5 TRADING_DATA_DIR=/app/data RAW_DIR=/app/knowledge/raw TRANSCRIPT_DIR=/app/knowledge/transcripts cd /app && python3 process_new_chapters.py >> /app/data/logs/transcribe.log 2>&1
 """
 try:
     subprocess.run(["crontab", "-"], input=crontab.encode(), check=True)

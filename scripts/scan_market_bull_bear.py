@@ -20,9 +20,23 @@ import time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
-# ── Paths — UTA/Docker: TRADING_DATA_DIR env var; Local: E:\Me\TradingAgent\data
+# ── Paths
+# Docker volume UNC share (SMB): \\10.8.0.10\Docker\data  → /app/data in container
+# Kay's local path: E:\Me\TradingAgent\data
+# When called from Mavis cron on Kay's host, use the Docker volume UNC so
+# results are visible to the container dashboard AND Kay's local machine.
+_DOCKER_VOLUME_UNC = Path(r'\\10.8.0.10\Docker\data')
+_LOCAL_DATA_DIR    = Path(r'E:\Me\TradingAgent\data')
+
 _DATA_ROOT = os.environ.get('TRADING_DATA_DIR', '').strip()
-DATA_DIR   = Path(_DATA_ROOT) if _DATA_ROOT else Path(r'E:\Me\TradingAgent\data')
+if _DATA_ROOT:
+    DATA_DIR = Path(_DATA_ROOT)
+elif _DOCKER_VOLUME_UNC.exists():
+    # Use Docker volume UNC — shared between container and Kay's host
+    DATA_DIR = _DOCKER_VOLUME_UNC
+else:
+    # Fallback to local path
+    DATA_DIR = _LOCAL_DATA_DIR
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 SIGNAL_IN  = DATA_DIR / "signals_live.json"
 DEBATE_OUT = DATA_DIR / "bull_bear_results.json"
@@ -112,13 +126,65 @@ def run_debate(sig: dict) -> dict:
 
 def _llm(prompt: str, system: str, label: str) -> tuple[str, dict | None]:
     """
-    Call the Mavis session's LLM inline.
+    Call the LLM for Bull/Bear debate.
+    Priority:
+      1. Mavis daemon inline LLM (when running from Mavis cron on Kay's machine)
+      2. Kay's vault DPAPI key (when vault key is accessible on host)
+      3. Container MINIMAX_API_KEY env var (Docker deployment)
     Returns (text, usage_dict). usage_dict may be None if not available.
-
-    Uses the 'mavis llm-call' skill which reads from the daemon's config.
-    Falls back to a direct HTTP call using the Mavis API key (returns usage).
     """
-    # Try the built-in llm_call.py script first
+    # ── Try Mavis daemon LLM via IPC socket ─────────────────────────────────
+    # When run from Mavis's scan-market cron, the Mavis daemon is on the same host.
+    # Use the daemon's LLM endpoint if available (avoids vault key dependency).
+    try:
+        import socket, threading
+
+        def _try_daemon_llm() -> tuple[str, dict] | None:
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            sock.settimeout(5)
+            try:
+                sock.connect(("127.0.0.1", 15321))
+                req = json.dumps({
+                    "jsonrpc": "2.0",
+                    "id": 1,
+                    "method": "llm.chat",
+                    "params": {
+                        "model": "MiniMax-M2.7",
+                        "messages": [
+                            {"role": "system", "content": system},
+                            {"role": "user", "content": prompt},
+                        ],
+                        "max_tokens": 400,
+                        "temperature": 0.3,
+                    }
+                }).encode() + b'\n'
+                sock.sendall(req)
+                sock.shutdown(socket.SHUT_WR)
+                chunks = []
+                while True:
+                    chunk = sock.recv(4096)
+                    if not chunk:
+                        break
+                    chunks.append(chunk)
+                resp = json.loads(b"".join(chunks).decode())
+                if "result" in resp:
+                    text = resp["result"].get("content", "")
+                    usage = resp["result"].get("usage", None)
+                    return text, usage
+            except Exception:
+                pass
+            finally:
+                sock.close()
+            return None
+
+        result = _try_daemon_llm()
+        if result:
+            print(f"[BullBear] {label} → Mavis daemon LLM")
+            return result
+    except Exception:
+        pass
+
+    # ── Try Kay's vault key (when running on Kay's Windows host) ─────────────
     LLM_CALLER = Path(r"C:\Users\Kay\.mavis\.builtin-skills\llm-call\scripts\llm_call.py")
     try:
         import subprocess
@@ -131,13 +197,14 @@ def _llm(prompt: str, system: str, label: str) -> tuple[str, dict | None]:
             capture_output=True, text=True, timeout=60
         )
         if result.returncode == 0:
-            return result.stdout.strip(), None  # no usage from llm_call.py path
+            print(f"[BullBear] {label} → llm_call.py")
+            return result.stdout.strip(), None
         if "401" not in result.stderr and "token" not in result.stderr.lower():
             raise RuntimeError(result.stderr.strip())
     except Exception:
         pass
 
-    # Fallback: direct HTTP call — returns (text, usage_dict)
+    # ── Fallback: direct HTTP call using vault key ────────────────────────────
     return _llm_direct(prompt, system)
 
 
@@ -166,30 +233,36 @@ def _decrypt_vault_key(encoded_b64: str) -> str:
 
 
 def _llm_direct(prompt: str, system: str) -> tuple[str, dict | None]:
-    """Direct HTTP call using MiniMax API from vault. Returns (text, usage_dict)."""
+    """Direct HTTP call using MiniMax API. Returns (text, usage_dict)."""
     import yaml, httpx
 
     VAULT_DIR = Path(r"E:\Me\TradingAgent\vault")
     VAULT_KEY = VAULT_DIR / "llm_api_key.enc"
 
-    # 1. Get base URL from vault config
-    vault_cfg_path = VAULT_DIR / "llm_config.yaml"
-    if vault_cfg_path.exists():
-        vault_cfg = yaml.safe_load(vault_cfg_path.read_text(encoding="utf-8"))
-        base_url = vault_cfg.get("provider", {}).get("minimax", {}).get("options", {}).get(
-            "baseURL", "https://api.minimax.io/v1"
-        )
-    else:
-        base_url = "https://api.minimax.io/v1"
+    # 1. Try MINIMAX_API_KEY env var first (set in Docker container vault)
+    api_key = os.environ.get("MINIMAX_API_KEY", "").strip()
+    base_url = "https://api.minimax.io/v1"
 
-    # 2. Decrypt API key from vault via DPAPI
-    if not VAULT_KEY.exists():
-        raise RuntimeError("No LLM API key in vault — run vault/store_llm_key.ps1 to store it")
-    encoded = VAULT_KEY.read_text(encoding="utf-8").strip()
-    api_key = _decrypt_vault_key(encoded)
+    # 2. If not in env, try Kay's vault (DPAPI-encrypted)
+    if not api_key:
+        vault_cfg_path = VAULT_DIR / "llm_config.yaml"
+        if vault_cfg_path.exists():
+            vault_cfg = yaml.safe_load(vault_cfg_path.read_text(encoding="utf-8"))
+            base_url = vault_cfg.get("provider", {}).get("minimax", {}).get("options", {}).get(
+                "baseURL", "https://api.minimax.io/v1"
+            )
+        if VAULT_KEY.exists():
+            try:
+                encoded = VAULT_KEY.read_text(encoding="utf-8").strip()
+                api_key = _decrypt_vault_key(encoded)
+            except Exception:
+                api_key = ""
 
     if not api_key or api_key == "sk-xxx":
-        raise RuntimeError("No LLM API key available in config.yaml")
+        raise RuntimeError(
+            "No LLM API key — set MINIMAX_API_KEY env var, "
+            "or run vault/store_llm_key.ps1 to store Kay's key"
+        )
 
     messages = [
         {"role": "system", "content": system},
@@ -308,30 +381,51 @@ def main():
             print(f"[ScanMarket BullBear] {sym} failed: {e}")
 
     if results:
-        # Append to existing results
+        # Append to existing results (try Docker volume first, then local fallback)
         existing = []
-        if DEBATE_OUT.exists():
-            try:
-                with open(DEBATE_OUT, encoding="utf-8") as f:
-                    existing = json.load(f).get("debates", [])
-            except Exception:
-                existing = []
+        for results_path in [DEBATE_OUT, _LOCAL_DATA_DIR / "bull_bear_results.json"]:
+            if results_path.exists():
+                try:
+                    with open(results_path, encoding="utf-8") as f:
+                        existing = json.load(f).get("debates", [])
+                    print(f"[ScanMarket BullBear] Loaded {len(existing)} existing results from {results_path}")
+                    break
+                except Exception:
+                    pass
 
         all_results = existing + results
         DEBATE_OUT.parent.mkdir(parents=True, exist_ok=True)
         with open(DEBATE_OUT, "w", encoding="utf-8") as f:
             json.dump({"debates": all_results}, f, indent=2, default=str)
+        print(f"[ScanMarket BullBear] Wrote {len(all_results)} results → {DEBATE_OUT}")
+
+        # Also sync to local path so Kay's host can see it
+        local_debate_out = _LOCAL_DATA_DIR / "bull_bear_results.json"
+        try:
+            local_debate_out.parent.mkdir(parents=True, exist_ok=True)
+            with open(local_debate_out, "w", encoding="utf-8") as f:
+                json.dump({"debates": all_results}, f, indent=2, default=str)
+            print(f"[ScanMarket BullBear] Synced to local: {local_debate_out}")
+        except Exception as e:
+            print(f"[ScanMarket BullBear] Local sync failed (non-critical): {e}")
 
         # Mark signals as debated in signals_live.json if it exists
         debated = {r["signal"]["symbol"] for r in results}
-        if SIGNAL_IN.exists():
-            for sig in signals:
-                if sig.get("symbol", "").upper() in {s.upper() for s in debated}:
-                    sig["debated"] = True
-            with open(SIGNAL_IN, "w", encoding="utf-8") as f:
-                json.dump(signals, f, indent=2, default=str)
+        for sig_path in [SIGNAL_IN, _LOCAL_DATA_DIR / "signals_live.json"]:
+            if sig_path.exists():
+                try:
+                    with open(sig_path, encoding="utf-8") as f:
+                        sigs = json.load(f)
+                    sigs = sigs if isinstance(sigs, list) else [sigs]
+                    for sig in sigs:
+                        if sig.get("symbol", "").upper() in {s.upper() for s in debated}:
+                            sig["debated"] = True
+                    with open(sig_path, "w", encoding="utf-8") as f:
+                        json.dump(sigs, f, indent=2, default=str)
+                except Exception:
+                    pass
 
-        print(f"[ScanMarket BullBear] Done — {len(results)} result(s) → {DEBATE_OUT}")
+        print(f"[ScanMarket BullBear] Done — {len(results)} new result(s)")
     else:
         print("[ScanMarket BullBear] No debates completed")
 

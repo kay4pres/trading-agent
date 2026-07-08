@@ -540,10 +540,59 @@ def run_scan(min_score=2.5, symbols=None):
                 results.append(scored)
                 scored_csv_count += 1
         else:
-            # No live quote — append CSV signal as-is (fallback)
-            sig_copy = dict(sig)
-            sig_copy['source'] = 'premarket_csv'
-            results.append(sig_copy)
+            # ── CSV-data fallback scoring ─────────────────────────────────────
+            # When live quotes fail (thinly traded / delisted symbols),
+            # compute pillar scores directly from CSV fields so dashboard shows data.
+            # P1: price $2-$20, P2: gap, P3: rel_vol, P5: float from CSV.
+            # P4: catalyst not available from CSV alone — skip or use CSV news_summary.
+            csv_price   = sig.get('price', 0)
+            csv_gap_pct = sig.get('gap_pct', 0)
+            csv_rv      = sig.get('rel_vol', 0)
+            csv_float   = sig.get('float_m', 0)
+
+            p1_score = 1.0 if 2 <= csv_price <= 20 else 0.0
+            p2_score = 1.0 if csv_gap_pct >= 10 else (0.5 if csv_gap_pct >= 5 else 0.0)
+            p3_score = 1.0 if csv_rv >= 5 else (0.5 if csv_rv >= 3 else 0.0)
+            p5_score = 1.0 if 0 < csv_float < 20 else (0.5 if csv_float == 0 else 0.0)
+            # P4: use CSV's p4_catalyst if available, else default to 0.5 (unknown)
+            p4_score = sig.get('p4_catalyst', 0.5)
+            csv_total = round(p1_score + p2_score + p3_score + p5_score + p4_score, 1)
+
+            pillars_out = {
+                'P1_price':   p1_score,
+                'P2_gap':     p2_score,
+                'P3_relvol':  p3_score,
+                'P4_catalyst': p4_score,
+                'P5_float':   p5_score,
+            }
+            csv_risk = []
+            if csv_gap_pct > 50:
+                csv_risk.append(f"HALT_RISK gap={csv_gap_pct:.0f}%")
+            if csv_float == 0:
+                csv_risk.append("UNKNOWN_FLOAT")
+
+            scored = {
+                'symbol':       sym,
+                'short_name':   sig.get('short_name', ''),
+                'price':        round(csv_price, 2),
+                'gap_pct':      round(csv_gap_pct, 1),
+                'rel_vol':      round(csv_rv, 1),
+                'float_m':      csv_float,
+                'total_score':  csv_total,
+                'pillars':      pillars_out,
+                'p4_catalyst': round(p4_score, 2),
+                'news_summary':  sig.get('news_summary', ''),
+                'news_count':    0,
+                'news_provider': 'csv_fallback',
+                'risk_flags':    csv_risk,
+                'scan_time':    today_str,
+                'decided':      False,
+                'decision':     None,
+                'source':       'csv_fallback',
+            }
+            if csv_total >= min_score:
+                results.append(scored)
+                scored_csv_count += 1
     if scored_csv_count:
         print(f"[scanner] Live-scored {scored_csv_count} CSV signals with Five Pillars")
 
@@ -611,6 +660,18 @@ def scan_thread():
                                 print(f"[scanner] Telegram alert failed: {te}")
 
                     print(f"[scanner] scanned {len(signals)} signals at {state['last_scan']}")
+
+                    # Write signals_live.json so Bull/Bear runner can pick up cron scan results.
+                    # Bull/Bear reads signals_live.json as primary input (event-driven pipeline
+                    # falls back to it when no streaming events fire, e.g. no Alpaca WS).
+                    try:
+                        signals_live_path = DATA_DIR / 'signals_live.json'
+                        signals_live_path.parent.mkdir(parents=True, exist_ok=True)
+                        with open(signals_live_path, 'w', encoding='utf-8') as f:
+                            json.dump(signals, f, indent=2, default=str)
+                        print(f"[scanner] wrote {len(signals)} signals to signals_live.json")
+                    except Exception as ew:
+                        print(f"[scanner] signals_live.json write failed: {ew}")
 
                     # Sync with live_event_loop pipeline
                     load_trading_engine_state()

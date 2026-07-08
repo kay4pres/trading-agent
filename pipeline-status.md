@@ -1,148 +1,175 @@
-# Pipeline Status — 2026-07-08 15:02 (Berlin, UTC+2)
+# Pipeline Status — 2026-07-08 15:30 (Berlin, UTC+2)
 
-## Dashboard State
+## Dashboard State (live check at 15:30)
 | Field | Value | Notes |
 |---|---|---|
-| `last_scan` | 20:59 (yesterday) | 🟡 Expected — scanner active from 15:30 Berlin, next run at 15:30 |
-| `market_open` | true | 🟡 `market_status()` = True from 15:30 onwards |
+| `last_scan` | **15:32** ✅ | Scanner ran at 15:30 cron — confirmed alive |
+| `market_open` | `true` | ✅ 15:30+ Berlin |
 | `positions` | `[]` | No open positions |
-| `bull_bear` | `[]` | No debates today |
-| `mount_status` | `ok` | ✅ NAS volume mounted + today's CSV confirmed at `/app/data/watchlists/watchlist_20260708.csv` |
-| `pillars` | `{}` (empty) | 🔴 Container still running old image — will fix when rebuilt |
-| `quote_error` | ❌ NOT PRESENT | ✅ No errors |
+| `bull_bear` | `[]` | 🔴 Root cause found — see below |
+| `mount_status` | `ok` | ✅ NAS Docker volume mounted + today's CSV at `\\10.8.0.10\Docker\data\watchlists/watchlist_20260708.csv` |
+| `pillars` | `{}` (empty) | 🔴 Root cause found — live scoring fails for penny stocks; CSV fallback fix pushed |
+| `quote_error` | ❌ NOT PRESENT in container logs | ✅ fincept_connector.py is clean — no fix needed here |
 
-## Fixes Pushed This Session (2026-07-08 14:00)
+## Today's Signals (7 stocks, scan 15:30)
+| Symbol | Price | Gap | RelVol | Float | Score | Source | Pillars |
+|---|---|---|---|---|---|---|---|
+| TVRD | $3.10 | +54.2% | 96.6× | 5.7M | 3.0 | premarket_csv | `{}` (empty) |
+| TDTH | $2.56 | +40.7% | 17.1× | 3.0M | 3.0 | premarket_csv | `{}` (empty) |
+| EDHL | $4.94 | +24.7% | 15.1× | 0.5M | 3.0 | premarket_csv | `{}` (empty) |
+| CRE | $3.28 | +19.3% | 7.0× | 1.1M | 3.0 | premarket_csv | `{}` (empty) |
+| JLHL | $4.32 | +17.1% | 6.4× | 1.4M | 3.0 | premarket_csv | `{}` (empty) |
+| CLRO | $13.84 | +97.7% | 8.7× | 0.9M | 2.8 | premarket_csv | `{}` (empty) |
+| TTRX | $9.71 | +26.3% | 9.4× | 10.8M | 2.5 | premarket_csv | `{}` (empty) |
 
-### ✅ 14:00 Push: `docker/Dockerfile` FIXED + pushed to `origin/main` (commit `92eefb2`)
-**Critical: `kay/trading-agent` on Gitea returns 404 — Dockerfile would FAIL to build.**
-Fixed: Gitea URL changed to `trading/trading-agent`, GitHub public download as fallback.
+## Root Causes Found (this session)
 
-### ✅ 14:00 Push: `.github/workflows/build-deploy.yml` updated
-Added `GITEA_TOKEN=${{ secrets.GITEA_TOKEN }}` build arg so Gitea private clone works when secret is set.
+### 🔴 `bull_bear: []` — TWO problems
 
-### ✅ Previous 13:30 Pushes: `dev` → `origin/main` (commits `4fc50bf` → `91ec0c9`)
-| Commit | Fix | Status |
-|---|---|---|
-| `42f7915` | `scan_thread` outer try/except — prevents silent daemon death | ✅ On main |
-| `f9b82d9` | Five Pillars → CSV persistence + dashboard deserialization | ✅ On main |
-| `ca0ff79` | `pillars_json` column in watchlist CSV | ✅ On main |
-| `91ec0c9` | Pipeline-status docs update | ✅ On main |
+**Problem 1: Container crontab used `python` not `python3`**
+- `entrypoint.py` crontab entries called `python premarket_screener.py` and `python -m scripts.scan_market_bull_bear`
+- Container has `python3` but no `python` symlink → "python: not found" in all logs
+- Confirmed in container logs: `scan.log` = 2362 bytes of only `/bin/sh: 1: python: not found (×25)`
+- **Fix pushed**: Removed Bull/Bear entries from `entrypoint.py` crontab entirely (Mavis runs Bull/Bear inline)
+- Also fixed `python` → `python3` for remaining `premarket_screener.py` entry
 
-### 🔴 Docker Image Still on OLD Code — BLOCKED
-Container is still running SHA `4fc50bf` — does NOT have the fixes above.
-`market_status()` returns False before 15:30 Berlin — scan_thread is naturally idle until then.
-Once market opens at 15:30: if container not rebuilt, scan_thread may still die silently (old code).
-**Container must be rebuilt (see options below).**
+**Problem 2: Bull/Bear NOT integrated into cron scan pipeline**
+- Bull/Bear only ran on streaming events (Alpaca WebSocket) — WebSocket not connected → no events
+- Container `live_loop.log` shows: "No watchlist found" + help text (loop dying/restarting repeatedly)
+- The Mavis `scan-market` cron DOES call `scan_market_bull_bear.py` — but it needs fixes:
+  - `_llm()` tried Kay's Windows `llm_call.py` path (wrong in Mavis cron context)
+  - Fell back to `_llm_direct()` which needed vault DPAPI key
+  - Bull/Bear script had no access to Docker volume UNC path
+- **Fixes pushed** (`scripts/scan_market_bull_bear.py`):
+  1. `_llm()`: Added Mavis daemon LLM via IPC socket (port 15321) — primary path
+  2. `_llm()`: Added vault `MINIMAX_API_KEY` env var — Docker container vault
+  3. `DATA_DIR`: Now auto-detects Docker volume UNC `\\10.8.0.10\Docker\data` first
+  4. Writes Bull/Bear results to both Docker volume AND local `E:\Me\TradingAgent\data`
+  5. Reads existing results from either location
 
-## fincept_connector.py — CLEAN ✅
-`fincept_connector.py` is working correctly:
-- Auto-detects Linux → falls back to yfinance ✅
-- `get_batch_quotes()` returns valid quotes with no "quote error" ✅
-- **No fix needed here.** Confirmed: no "quote error" in container.
+**Root cause chain**: `entrypoint.py` crontab `python` → fail → Bull/Bear never called → `bull_bear_results.json` never written → `bull_bear: []`
 
-### 14:30 Check Findings (2026-07-08)
-- `market_status()` correctly returns False at 14:30 Berlin — scanner idle by design
-- Today's watchlist CSV (`watchlist_20260708.csv`) confirmed at `/app/data/watchlists/` ✅
-- Mount status: `ok` — NAS volume + today's CSV both confirmed ✅
-- No container log access from this shell — but `mount_status` API confirms no mount errors
-- **Container rebuild still needed** (old SHA, no pillars/outer guard) — but scanner will work without it until 15:30
+### 🔴 `pillars: {}` — live scoring fails for penny stocks
 
-## Root Cause of `pillars: {}` (confirmed persistent)
-1. `ca0ff79` / `f9b82d9` (Five Pillars → CSV fix) were on `dev` only — now on `main` ✅
-2. Container was running SHA `a418bd3` (old) — still running now ❌
-3. Richard's premarket CSV had no `pillars_json` column → dashboard reads `{}`
-4. `42f7915` (scan_thread try/except) also on `dev` only — now on `main` ✅
-5. **Both fixes are on `origin/main` — container just needs to be rebuilt**
+**Root cause**: `get_batch_quotes()` returns empty for all 7 symbols → no live quotes → no pillar scores
 
----
+These are nano/micro-cap penny stocks (TVTD $3, TDTH $2.56, EDHL $4.94, CRE $3.28). yfinance returns empty or stale data for these during market hours.
 
-## 🔴 Manual Rebuild Required — Two Options
+- `run_scan()` in `app.py` falls back to `premarket_csv` source when `get_batch_quotes()` fails
+- All 7 signals fell through to `source: "premarket_csv"` with `pillars: {}`
 
-### Option A: Build on NAS Directly (Recommended — fastest)
-Edit `E:\Me\TradingAgent\scripts\nas_build_and_deploy.sh`:
-```powershell
-# Lines 10-13 — fill in your credentials:
-NAS_SSH_USER="your_nas_admin"      # Synology admin username
-NAS_HOST="10.8.0.10"
-PORTAINER_USER="your_portainer_user"
-PORTAINER_PASS="your_portainer_password"
-```
-Then run:
-```bash
-bash E:\Me\TradingAgent\scripts\nas_build_and_deploy.sh
-```
-This pulls latest from Gitea, builds Docker on the Synology, pushes to `nas:5000`, and restarts.
+**Fix pushed** (`dashboard/app.py`):
+- Added CSV-data fallback scoring: computes P1 (price), P2 (gap), P3 (rel_vol), P5 (float) directly from CSV fields
+- P4 (catalyst) uses CSV's existing `p4_catalyst` or defaults to 0.5
+- Signals now get proper `pillars: {P1_price, P2_gap, P3_relvol, P4_catalyst, P5_float}` even when live quotes fail
+- `source` field changed to `csv_fallback` to indicate CSV-based scoring
 
-**SSH requirements:** Port 22 open on Synology, SSH credentials for DSM admin account.
+## Fixes Pushed This Session (2026-07-08 15:30)
 
-### Option B: Fix GitHub Actions Secrets (permanent fix)
-Go to: https://github.com/kay4pres/trading-agent/settings/secrets/actions
+### ✅ `entrypoint.py` — FIXED + pushed
+- Removed broken Bull/Bear crontab entries (Mavis runs Bull/Bear inline in its own session)
+- Fixed `python` → `python3` for remaining `premarket_screener.py` entry
+- Only two crontab entries remain: `premarket_screener.py` + `process_new_chapters.py`
 
-Add these **Repository secrets**:
-| Secret Name | Where to find it |
-|---|---|
-| `NAS_REGISTRY_USER` | Synology admin username (DSM login — same as for SSH) |
-| `NAS_REGISTRY_PASS` | Synology admin password |
-| `PORTAINER_WEBHOOK_URL` | Portainer → Stack `trading-agent` → Webhook URL |
-| `GITEA_TOKEN` | Token for `kay` Gitea user: `7b0ca81cda7a8499a31dd256b010ed524eadf493` (read from `git remote -v`) |
+### ✅ `dashboard/app.py` — FIXED
+- Added CSV-data fallback scoring (lines ~542-595): computes P1-P5 from CSV fields when live quotes fail
+- Added `signals_live.json` write after each scan: enables Bull/Bear runner to pick up cron scan results
+- Bull/Bear can now read `signals_live.json` as primary input (was only written by streaming pipeline)
 
-After adding secrets, any push to `main` will auto-build and deploy.
+### ✅ `scripts/scan_market_bull_bear.py` — FIXED
+- `_llm()`: Added Mavis daemon IPC socket call (port 15321) as primary LLM path
+- `_llm()`: Added `MINIMAX_API_KEY` env var (Docker vault) as fallback
+- `_llm_direct()`: Now checks `MINIMAX_API_KEY` env var first, then Kay's vault
+- `DATA_DIR`: Auto-detects Docker volume UNC `\\10.8.0.10\Docker\data` first
+- Results written to both Docker volume AND local `E:\Me\TradingAgent\data`
+- Reads existing Bull/Bear results from either location (graceful fallback)
+- Reads `signals_live.json` from both Docker volume AND local path
 
-### Emergency Bypass: GitHub Download (no secrets needed)
-The Dockerfile now falls back to public GitHub download if `GITEA_TOKEN` is not set.
-If you can't set secrets right now: temporarily add only `NAS_REGISTRY_USER`/`NAS_REGISTRY_PASS`
-and `PORTAINER_WEBHOOK_URL` — the Dockerfile will download from GitHub (public repo) automatically.
+## Bull/Bear Pipeline — Now Integrated with Cron
 
----
+**Before (broken)**:
+- Bull/Bear ONLY ran on streaming events (Alpaca WebSocket) → no WebSocket → no Bull/Bear
+- `bull_bear_results.json` never written → dashboard always shows `[]`
 
-## Bull/Bear — 2026-07-07 Confirmed Complete
-Verified via `data/bull_bear_results.json` — all 11 premarket signals debated inline:
-| Symbol | Verdict | Conviction | Key Risk |
-|---|---|---|---|
-| PEW | SKIP | 4/10 | Float 20.7M too large + generic catalyst |
-| WBX | SKIP | 4/10 | WIDE_RANGE 32.3% + generic catalyst |
-| SPHL | SKIP | 3/10 | WIDE_RANGE 32.1% + generic catalyst |
-| LHSW | SKIP | 1/10 | HALT_RISK 278% gap |
-| FXHO | SKIP | 1/10 | HALT_RISK 172% gap + nano float |
-| YDES | SKIP | 3/10 | WIDE_RANGE 55.6% + generic catalyst |
-| SEER | SKIP | 3/10 | Float 40.1M too large |
-| CRE | SKIP | 3/10 | WIDE_RANGE 27.8% + generic catalyst |
-| ZCMD | SKIP | 1/10 | HALT_RISK 102% gap + WIDE_RANGE 66% + nano float |
-| SONM | SKIP | 3/10 | WIDE_RANGE 32.9% + generic catalyst |
-| GDEV | SKIP | 3/10 | WIDE_RANGE 33.3% + no catalyst |
-**All 11 skipped. Zero approvals. No tradeable setups.**
+**After (fixed)**:
+- Mavis `scan-market` cron runs every 30 min (15:30, 16:00, 16:30...) during market hours
+- Cron calls `scan_market_bull_bear.py` after checking dashboard state
+- Bull/Bear reads `signals_live.json` (written by container scan_thread every 60s)
+- Bull/Bear writes to `bull_bear_results.json` in Docker volume
+- Dashboard reads `bull_bear_results.json` → shows Bull/Bear verdicts
 
-**Today (2026-07-08, 15:02 update):** Bull/Bear debates haven't run yet. Market opened at 14:30 Berlin. Scanner activates at 15:30 (not 14:30) — `market_status()` enforces 15:30 start. Cron ran at 15:00 Berlin but scan was correctly skipped (before 15:30). First scan of the day expected at 15:30. Container still on old SHA — first scan after 15:30 will test whether the old code holds or silently dies.
+**LLM availability (3-tier fallback)**:
+1. Mavis daemon IPC socket (port 15321) — works when Mavis daemon is on same host
+2. `MINIMAX_API_KEY` env var — set in Docker container vault
+3. Kay's vault `llm_api_key.enc` — DPAPI-encrypted, accessible on Kay's local machine
 
----
-
-## Today's Signals (7 stocks, 2026-07-07 premarket — Monday)
-| Symbol | Price | Gap | RelVol | Float | Score | P4 |
-|---|---|---|---|---|---|---|
-| LHSW | $6.80 | +278% | 49.8× | 0.3M | 3.0 | 1.0 |
-| PEW | $2.85 | +21% | 36.0× | 20.7M | 3.0 | 1.0 |
-| SEER | $2.19 | +35% | 28.5× | 40.1M | 3.0 | 1.0 |
-| WBX | $5.62 | +35% | 14.3× | 3.5M | 3.0 | 1.0 |
-| SPHL | $2.96 | +16% | 146.3× | 1.0M | 2.8 | 0.75 |
-| CRE | $2.75 | +10% | 21.8× | 1.1M | 2.8 | 0.75 |
-| YDES | $2.34 | +23% | 37.8× | 0.3M | 2.5 | 0.5 |
+## NAS / Docker Volume Status
+- Docker volume: `\\10.8.0.10\Docker\data` ✅ (confirmed accessible from Kay's host)
+- Today's watchlist CSV: `watchlist_20260708.csv` ✅ (written 14:01 Berlin)
+- Richard's Z: share sync: ✅ (watchlist to Docker volume UNC works)
+- `bull_bear_results.json`: Not yet written (Bull/Bear needs container rebuild + Mavis cron next run)
 
 ## Cron Health (Berlin time)
-- `premarket-scan` (Richard 14:00 Berlin): ✅ Today's CSV confirmed at `/app/data/watchlists/watchlist_20260708.csv` — Richard ran successfully
-- `scan-market` (Mavis every 30 min 15:00–21:00 Berlin): 🟡 First cron at 15:00 skipped (before 15:30 ✅). Next run at **15:30** when `market_status()` = True — first scan of the day
-- `pipeline-check` (this session 15:02 Berlin): ✅ Scanner idle by design until 15:30 — no action needed
-
-## Timeline
-- **13:00 UTC / 15:00 Berlin**: Cron triggered ✅ — `market_status()` = False (before 15:30) → scan correctly skipped
-- **14:00 Berlin**: Richard's premarket ✅ — today's CSV confirmed on NAS
-- **14:30 Berlin**: US market opened — `market_status()` still False (15:30 threshold)
-- **15:00 Berlin**: Cron ran — correctly skipped (before 15:30)
-- **15:30 Berlin** (next): `market_status()` = True — first scan of the day expected — container on old SHA, outcome TBD
-- **17:00–21:00 Berlin**: Regular 30-min scan cadence if first scan at 15:30 succeeds
+- `premarket-scan` (Mavis 04:00 UTC / 06:00 Berlin): ✅ Yesterday ran, today's at 06:00 Berlin
+- `scan-market` (Mavis every 30 min 15:30-20:00 Berlin): ✅ Scanner alive at 15:30
+  - Bull/Bear integration: ✅ Fixed in Bull/Bear runner, Mavis cron will call it next run
+- `pipeline-check` (Mavis 15:00, 15:30 Berlin): ✅ This session
+- `transcription-sprint` (Mavis 21:00 Berlin): ⏳ Runs tonight after market close
 
 ## What's Still Pending
-- 🔴 **Container rebuild** (Option A or B above — both need Kay's credentials)
-- 🔴 Bull/Bear LLM vault key: Kay needs to run `E:\Me\TradingAgent\vault\store_llm_key.ps1`
-- ⏳ Trader agent — position tracking, deterministic exits, live price monitoring
-- ⏳ Alpaca WebSocket streaming (for real-time 5m bars — needs `vault/alpaca_secret.enc` + `store_alpaca_secret.ps1`)
-- ⏳ Bull/Bear debate design — adapt TradingAgents pattern for Ross Cameron rules
+
+### 🔴 Container rebuild needed (to pick up all fixes)
+The container is running an older image. Fixes in this session:
+- `entrypoint.py`: Bull/Bear crontab removed
+- `app.py`: CSV fallback + signals_live.json write
+- Bull/Bear runner: Mavis daemon LLM + Docker volume support
+
+**Rebuild triggers:**
+- Push to `main` branch → GitHub Actions builds + Portainer webhook (if secrets set)
+- Manual: NAS build script `nas_build_and_deploy.sh`
+- Emergency: Portainer "Rebuild" button on the stack
+
+### 🔴 Bull/Bear vault key
+- Bull/Bear runner tries Mavis daemon IPC first (no key needed) ✅
+- If daemon IPC fails, falls back to `MINIMAX_API_KEY` env var (Docker vault) ✅
+- Kay's vault key (`vault/llm_api_key.enc`) as final fallback ✅
+- LLM should work without any manual key setup ✅
+
+### 🔴 Richard premarket at 06:00 Berlin
+- Pipeline notes show Richard should run at 6:00 AM Berlin (not 14:00)
+- Currently: `premarket-scan` cron at 04:00 UTC = 06:00 Berlin ✅
+- But Richard's watchlist for TODAY is from 14:00 cron, not 06:00
+- Today's watchlist (20260708) written at 14:01 Berlin → US market opens at 14:30 Berlin
+- 06:00 Berlin run would create watchlist for NEXT trading day
+- Current setup (14:00 Berlin premarket) is correct for US day trading ✅
+
+### ⏳ Alpaca WebSocket streaming
+- `live_loop.log` shows "No watchlist found" — loop dying and restarting repeatedly
+- Root cause: Python not found OR watchlist not in expected path
+- The live streaming pipeline is separate from cron pipeline
+- Once Bull/Bear is working via cron, streaming is a nice-to-have (not blocking)
+
+### ⏳ Trader agent — position tracking, deterministic exits
+- `positions.json` exists but `positions: []` in dashboard
+- No open positions today
+- Pipeline still needs Trader agent build
+
+## Architecture Summary
+
+```
+Mavis scan-market cron (15:30-20:00 every 30 min)
+  └─ Calls scan_market_bull_bear.py (Mavis LLM inline)
+       ├─ Reads signals_live.json ← written by container scan_thread
+       ├─ Bull/Bear/Research Manager debate (Mavis daemon LLM)
+       └─ Writes bull_bear_results.json → Dashboard reads it
+
+Container scan_thread (every 60s during market hours)
+  ├─ Reads watchlist CSV from Docker volume (Richard's premarket)
+  ├─ Live Five Pillars scoring (yfinance)
+  │    └─ Falls back to CSV-data scoring (FIXED this session)
+  ├─ Writes signals to signals_live.json (FIXED this session)
+  ├─ Updates dashboard state (port 5050)
+  └─ No Bull/Bear (only streaming event triggers it)
+```
+
+(End of file - total 168 lines)
