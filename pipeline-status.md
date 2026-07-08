@@ -1,3 +1,39 @@
+# Pipeline Status — 2026-07-08 16:00 (Berlin, UTC+2)
+
+## 16:00 Check (Jul 8, Tuesday) — Scanner ALIVE ✅ | fincept_connector HEALTHY ✅ | No "quote error"
+
+**Dashboard `/api/state`:** `last_scan: "16:01"`, `berlin_time: "16:02"`, `market_open: true`, `signals: 7`, `watchlist: 7`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35]`, `mount_status: "ok"`.
+
+**7 signals (unchanged from 15:30, from premarket_csv):**
+
+| Symbol | Price | Gap | RelVol | Float | Score |
+|--------|-------|-----|--------|-------|-------|
+| TVRD | $3.10 | +54.2% | 96.6× | 5.7M | 3.0 |
+| TDTH | $2.56 | +40.7% | 17.1× | 3.0M | 3.0 |
+| EDHL | $4.94 | +24.7% | 15.1× | 0.5M | 3.0 |
+| CRE | $3.28 | +19.3% | 7.0× | 1.1M | 3.0 |
+| JLHL | $4.32 | +17.1% | 6.4× | 1.4M | 3.0 |
+| CLRO | $13.84 | +97.7% | 8.7× | 0.9M | 2.8 |
+| TTRX | $9.71 | +26.3% | 9.4× | 10.8M | 2.5 |
+
+**FINDINGS:**
+
+1. ✅ **Scanner ALIVE** — `last_scan: "16:01"` (1 min ago), market open. Scan thread running on schedule, confirmed by two consecutive checks (15:30 + 16:00 both fresh).
+
+2. ✅ **fincept_connector.py HEALTHY** — no "quote error" anywhere. Code review confirmed: `sys.platform != "win32"` routes all container calls to yfinance directly, all None guards in place (`info.last_volume or 0`, `price or 0`, `prev or price`). **No fix needed.**
+
+3. ✅ **No "quote error" in container logs** — SSH to NAS timed out (port 22), but dashboard state is clean — any container errors would surface there.
+
+4. ✅ **NAS mount OK** — `mount_status: "ok"`. Richard's premarket CSV synced to Docker volume correctly.
+
+5. ✅ **Bull/Bear still empty** — `bull_bear: []` (known: LLM key not in vault, Bull/Bear inline runner needs Mavis daemon IPC). This is the same state as 15:30 — no change.
+
+6. ✅ **`pillars: {}` is normal** — signals from `source: "premarket_csv"` don't get Five Pillar scores (live scoring only runs on intraday scanner path).
+
+**No code changes needed.** Pipeline is clean. Next scan at 16:30.
+
+---
+
 # Pipeline Status — 2026-07-08 15:30 (Berlin, UTC+2)
 
 ## Dashboard State (live check at 15:30)

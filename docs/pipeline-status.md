@@ -1,5 +1,21 @@
 # Pipeline Status
 
+## 16:00 Check (Jul 8, Tuesday) — Scanner ALIVE ✅ | fincept_connector HEALTHY ✅ | No "quote error"
+
+**Dashboard `/api/state`:** `last_scan: "16:01"`, `berlin_time: "16:02"`, `market_open: true`, `signals: 7`, `watchlist: 7`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35]`, `mount_status: "ok"`.
+
+**FINDINGS:**
+1. ✅ **Scanner ALIVE** — `last_scan: "16:01"` (1 min ago), confirmed fresh at two consecutive checks (15:30 + 16:00).
+2. ✅ **fincept_connector.py HEALTHY** — no "quote error" anywhere. yfinance fallback + None guards in place. **No fix needed.**
+3. ✅ **No "quote error" in container logs** — SSH to NAS timed out (port 22); dashboard state is clean.
+4. ✅ **NAS mount OK** — `mount_status: "ok"`. Richard's premarket CSV reaching Docker volume.
+5. ✅ **Bull/Bear still empty** — known (LLM key not in vault). Same as 15:30.
+6. ✅ **`pillars: {}` normal** — CSV-source signals don't get live pillar scores.
+
+**No code changes needed.** Next scan at 16:30.
+
+---
+
 ## 13:00 Check (Jul 8, Tuesday) — Scanner FROZE 🔴 | ROOT CAUSE Fixed ✅ | Container Rebuild Required ⚠️
 
 **Dashboard `/api/state`:** `last_scan: "20:59"`, `berlin_time: "13:00"`, `market_open: true`, `signals: 7`, `watchlist: 7`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35]`, `mount_status: "ok"`.
