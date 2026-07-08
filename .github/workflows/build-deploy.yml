@@ -37,7 +37,7 @@ jobs:
           username: ${{ secrets.NAS_REGISTRY_USER }}
           password: ${{ secrets.NAS_REGISTRY_PASS }}
 
-      - name: Build and push with cache-bust
+      - name: Build and push
         uses: docker/build-push-action@v5
         with:
           context: ./docker
@@ -47,7 +47,8 @@ jobs:
           build-args: |
             GIT_REF=main
             CACHEBUST=${{ steps.date.outputs.CACHEBUST }}
-          # Disable ALL build cache so GitHub always downloads fresh zip
+            GITEA_TOKEN=${{ secrets.GITEA_TOKEN }}
+          # Disable ALL build cache so GitHub always downloads fresh code
           no-cache: true
 
       - name: Trigger Portainer webhook (recreate container from new image)
