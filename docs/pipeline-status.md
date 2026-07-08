@@ -1,5 +1,37 @@
 # Pipeline Status
 
+## 13:00 Check (Jul 8, Tuesday) — Scanner FROZE 🔴 | ROOT CAUSE Fixed ✅ | Container Rebuild Required ⚠️
+
+**Dashboard `/api/state`:** `last_scan: "20:59"`, `berlin_time: "13:00"`, `market_open: true`, `signals: 7`, `watchlist: 7`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35]`, `mount_status: "ok"`.
+
+**All 7 signals are from yesterday** (`scan_time: "20260707"`). Scanner has NOT run today at all. Market opened at 15:30 (Jul 7 last scan was 20:59 — after hours). Scanner should have run every 60 seconds since 15:30 but didn't.
+
+**Root cause identified — SCAN THREAD SILENTLY DIED:**
+- `scan_thread()` is a `daemon=True` thread with NO outer exception handler
+- Any uncaught exception (network error, yfinance API glitch, OSError) silently kills the thread
+- Thread disappears — no log, no warning, no restart
+- Dashboard shows `market_open: true` (stale, never updated since 20:59)
+- `last_scan` frozen forever
+- `scan-market` Mavis cron fires every 15 min, but it calls a subprocess that may not wake the dead scanner
+
+**fix applied (`42f7915` → Gitea `dev` → GitHub Actions auto-rebuild → Portainer webhook redeploy):**
+
+1. **PERSISTENT OUTER TRY/EXCEPT** (`dashboard/app.py:scan_thread`): The entire `while True` loop is now wrapped in a persistent outer try/except. Any exception — including those escaping the inner try, KeyboardInterrupt, or OSErrors — is caught, logged with full traceback, and the loop restarts. The thread CANNOT silently die.
+
+2. **HEARTBEAT COUNTER** (`_scan_heartbeat`): Increments every 60s iteration. Every 60 iterations (~once per hour), logs: `[scanner] heartbeat #N — alive at HH:MM, market_open=True`. Makes thread liveness visible in container logs without API calls.
+
+3. **THREAD HANDLE + LIVENESS ENDPOINT** (`/api/scan/liveness` GET): Returns `{alive, last_scan, heartbeat, market_open, timestamp}`. If `thread.is_alive() == False`, auto-restarts the scanner thread and returns `alive: true`. The pipeline-check cron can now both diagnose AND fix frozen scanners in one call.
+
+4. **WATCHLIST MOUNT: Richard's premarket WORKED today** (`mount_status: "ok"`, `today_csv_exists: true`). Richard ran correctly — `watchlist_20260708.csv` is in the container. 7 signals loaded from it. Scanner would have scanned them if it was alive.
+
+**`fincept_connector.py` HEALTHY ✅** — no "quote error", no changes needed. Platform check routes all Linux calls to yfinance directly. All None guards in place.
+
+**Container rebuild required ⚠️** — GitHub Actions will auto-rebuild from Gitea `dev` push. Kay may need to trigger Portainer webhook to pull new image if auto-redeploy doesn't fire within 5 min.
+
+**No IM notification needed** — scanner fix is pushed, rebuild will pick it up automatically.
+
+---
+
 ## 17:30 Check (Jul 7, Tuesday) — Scanner FRESH ✅ | Watchlist Mount OK ✅ | fincept_connector HEALTHY ✅ | No "quote error"
 
 **Dashboard `/api/state`:** `last_scan: "17:32"`, `berlin_time: "17:30"`, `market_open: true`, `signals: 7`, `watchlist: 7`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35]`, `mount_status: "ok"`.

@@ -4,7 +4,7 @@ Kay's Day Trade Dashboard — Flask Backend
 Serves the live dashboard, runs scanner, handles decisions.
 """
 
-import os, json, sys, threading, time
+import os, json, sys, threading, time, traceback
 from pathlib import Path
 from datetime import datetime, date
 from typing import List, Dict, Any
@@ -111,6 +111,9 @@ state = {
     'bull_bear':     [],  # recent Bull/Bear verdicts
     'mount_status': 'unknown',  # 'ok' | 'missing_data_dir' | 'missing_watchlist'
 }
+
+# ── Thread handle for liveness monitoring ──────────────────────────────────────
+_scanner_thread: threading.Thread | None = None  # set after .start(), used by /api/scan/liveness
 
 
 def _check_mount_status() -> str:
@@ -554,57 +557,77 @@ _alerted_today: set = set()
 _last_alert_date: str = ''
 
 
+# Heartbeat counter — incremented every iteration, logged every 60 (≈ once per hour)
+_scan_heartbeat = 0
+
 def scan_thread():
-    """Background scanner — runs every 5 minutes during market hours."""
-    global _alerted_today, _last_alert_date
+    """
+    Background scanner — runs every 60s during market hours.
+    PERSISTENT OUTER TRY/EXCEPT: the daemon thread MUST NOT silently die.
+    Any uncaught exception is logged with full traceback and the loop restarts.
+    """
+    global _alerted_today, _last_alert_date, _scan_heartbeat
     while True:
-        if market_status():
-            today = berlin_now().strftime('%Y-%m-%d')
-            if today != _last_alert_date:
-                _alerted_today = set()
-                _last_alert_date = today
-                # Load premarket watchlist from Richard's morning scan
-                premarket = load_premarket_watchlist()
-                if premarket:
-                    state['watchlist'] = premarket
-                    state['signals']   = premarket  # renderWatchlist reads state.signals
-                    print(f"[scanner] Loaded {len(premarket)} premarket signals for {today}")
+        try:  # ── PERSISTENT OUTER GUARD: catches everything, never lets thread die ──
+            if market_status():
+                today = berlin_now().strftime('%Y-%m-%d')
+                if today != _last_alert_date:
+                    _alerted_today = set()
+                    _last_alert_date = today
+                    # Load premarket watchlist from Richard's morning scan
+                    premarket = load_premarket_watchlist()
+                    if premarket:
+                        state['watchlist'] = premarket
+                        state['signals']   = premarket
+                        print(f"[scanner] Loaded {len(premarket)} premarket signals for {today}")
 
-            try:
-                signals = run_scan(min_score=2.5)
-                state['signals']    = signals
-                state['watchlist']  = signals
-                state['last_scan']  = berlin_now().strftime('%H:%M')
-                state['market_open'] = True
-                state['mount_status'] = _check_mount_status()
+                try:
+                    signals = run_scan(min_score=2.5)
+                    state['signals']    = signals
+                    state['watchlist']  = signals
+                    state['last_scan']  = berlin_now().strftime('%H:%M')
+                    state['market_open'] = True
+                    state['mount_status'] = _check_mount_status()
 
-                # Fire Telegram alert for new top signals (score >= 3.5, not yet alerted)
-                for sig in signals:
-                    sym = sig['symbol']
-                    if sig['total_score'] >= 3.5 and sym not in _alerted_today:
-                        _alerted_today.add(sym)
-                        try:
-                            send_signal_with_buttons(
-                                symbol    = sig['symbol'],
-                                action    = 'BUY',
-                                price     = sig['price'],
-                                gap       = sig['gap_pct'],
-                                score     = sig['total_score'],
-                                rel_vol   = sig['rel_vol'],
-                                float_m   = sig.get('float_m') or 0,
-                                notes     = sig.get('news_summary', ''),
-                                risk_flags= sig.get('risk_flags', []),
-                            )
-                            print(f"[scanner] Telegram alert sent for {sym} score={sig['total_score']}")
-                        except Exception as te:
-                            print(f"[scanner] Telegram alert failed: {te}")
+                    # Fire Telegram alert for new top signals (score >= 3.5, not yet alerted)
+                    for sig in signals:
+                        sym = sig['symbol']
+                        if sig['total_score'] >= 3.5 and sym not in _alerted_today:
+                            _alerted_today.add(sym)
+                            try:
+                                send_signal_with_buttons(
+                                    symbol    = sig['symbol'],
+                                    action    = 'BUY',
+                                    price     = sig['price'],
+                                    gap       = sig['gap_pct'],
+                                    score     = sig['total_score'],
+                                    rel_vol   = sig['rel_vol'],
+                                    float_m   = sig.get('float_m') or 0,
+                                    notes     = sig.get('news_summary', ''),
+                                    risk_flags= sig.get('risk_flags', []),
+                                )
+                                print(f"[scanner] Telegram alert sent for {sym} score={sig['total_score']}")
+                            except Exception as te:
+                                print(f"[scanner] Telegram alert failed: {te}")
 
-                print(f"[scanner] scanned {len(signals)} signals at {state['last_scan']}")
+                    print(f"[scanner] scanned {len(signals)} signals at {state['last_scan']}")
 
-                # Sync with live_event_loop pipeline
-                load_trading_engine_state()
-            except Exception as e:
-                print(f"[scanner] error: {e}")
+                    # Sync with live_event_loop pipeline
+                    load_trading_engine_state()
+                except Exception as e:
+                    print(f"[scanner] scan error: {e}")
+
+            _scan_heartbeat += 1
+            if _scan_heartbeat % 60 == 0:
+                print(f"[scanner] heartbeat #{_scan_heartbeat} — alive at {berlin_now().strftime('%H:%M')}, market_open={market_status()}")
+
+        except Exception as e:
+            # CRITICAL: outer guard — catches ANYTHING that escapes the inner try
+            # including KeyboardInterrupt, OSErrors, etc. that would silently kill the thread
+            print(f"[scanner] FATAL — thread would have died. Restarting. Error: {e}")
+            traceback.print_exc()
+            time.sleep(5)  # brief backoff before retry
+
         time.sleep(60)  # 1 min — also syncs positions/Bull-Bear
 
 
@@ -750,6 +773,35 @@ def api_scan():
     state['watchlist'] = signals
     state['last_scan'] = berlin_now().strftime('%H:%M')
     return jsonify({'ok': True, 'count': len(signals)})
+
+
+@app.route('/api/scan/liveness')
+def api_scan_liveness():
+    """
+    Check if the scanner thread is alive and healthy.
+    Used by pipeline-check cron and Kay to diagnose frozen scanners.
+    Also wakes up the scanner if it was dead by starting a fresh thread.
+    """
+    global _scanner_thread
+    alive = _scanner_thread is not None and _scanner_thread.is_alive()
+    last_scan = state.get('last_scan')
+    heartbeat = _scan_heartbeat if '_scan_heartbeat' in globals() else -1
+    market = market_status()
+
+    # If thread is dead, restart it and warn
+    if not alive:
+        print(f"[dashboard] ⚠️ Scanner thread was dead! Restarting at {berlin_now().strftime('%H:%M:%S')}")
+        _scanner_thread = threading.Thread(target=scan_thread, daemon=True)
+        _scanner_thread.start()
+        alive = True  # it's alive now
+
+    return jsonify({
+        'alive':       alive,
+        'last_scan':   last_scan,
+        'heartbeat':   heartbeat,
+        'market_open': market,
+        'timestamp':   berlin_now().isoformat(),
+    })
 
 
 @app.route('/api/select/<symbol>')
@@ -1104,8 +1156,10 @@ if __name__ == '__main__':
     state['mount_status'] = _check_mount_status()
 
     # Start background scanner thread
-    t = threading.Thread(target=scan_thread, daemon=True)
-    t.start()
+    global _scanner_thread
+    _scanner_thread = threading.Thread(target=scan_thread, daemon=True)
+    _scanner_thread.start()
+    print(f"[dashboard] Scanner thread started — thread.is_alive()={_scanner_thread.is_alive()}")
 
     # Start Telegram polling thread (listens for button presses)
     start_polling(callback_handler=on_telegram_button)
