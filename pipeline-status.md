@@ -1,3 +1,67 @@
+# Pipeline Status — 2026-07-08 19:30 (Berlin, UTC+2)
+
+## Dashboard State
+| Field | Value | Notes |
+|---|---|---|
+| `last_scan` | **19:30** ✅ | Scanner alive, exactly current time |
+| `market_open` | `true` | ✅ |
+| `positions` | `[]` | No open positions |
+| `bull_bear` | `[]` | 🔴 Container stale — rebuild needed (known) |
+| `mount_status` | `ok` ✅ | NAS Docker volume mounted |
+| `pillars` | `{}` (empty) | 🔴 Container stale — rebuild needed (known) |
+| `quote_error` | ❌ NOT PRESENT ✅ | fincept_connector healthy — no fix needed |
+
+## Today's Signals (7 stocks, unchanged since premarket)
+| Symbol | Price | Gap | RelVol | Float | Score | Source |
+|--------|-------|-----|--------|-------|-------|--------|
+| TVRD | $3.10 | +54.2% | 96.6× | 5.7M | 3.0 | premarket_csv |
+| TDTH | $2.56 | +40.7% | 17.1× | 3.0M | 3.0 | premarket_csv |
+| EDHL | $4.94 | +24.7% | 15.1× | 0.5M | 3.0 | premarket_csv |
+| CRE | $3.28 | +19.3% | 7.0× | 1.1M | 3.0 | premarket_csv |
+| JLHL | $4.32 | +17.1% | 6.4× | 1.4M | 3.0 | premarket_csv |
+| CLRO | $13.84 | +97.7% | 8.7× | 0.9M | 2.8 | premarket_csv |
+| TTRX | $9.71 | +26.3% | 9.4× | 10.8M | 2.5 | premarket_csv |
+
+## Decisions
+- **BMGL** APPROVED @ $8.35 — Kay approved via Telegram button (Jul 3, 21:58)
+
+## Findings
+
+1. ✅ **Scanner ALIVE** — `last_scan: "19:30"` exactly matches current time (Berlin 19:30). Scan thread running, 10 consecutive healthy checks confirmed (15:30 through 19:30 all fresh).
+
+2. ✅ **fincept_connector.py HEALTHY — no fix needed**
+   - Code review (`trading_agent/fincept_connector.py`):
+     - `sys.platform == "win32"` correctly routes Docker/Linux calls to yfinance directly
+     - All None guards in place: `info.last_price or 0`, `prev or price`, `info.last_volume or 0`
+     - `"quote error"` string nowhere in code
+   - **No "quote error" anywhere in dashboard state** — all 7 signals show valid prices
+   - **No code changes required**
+
+3. ✅ **NAS mount OK** — `mount_status: "ok"`. Richard's premarket CSV synced correctly.
+
+4. 🔴 **`pillars: {}` PERSISTS — container stale (same as 17:30, 18:30)**
+   - 15:30 CSV fallback fix in `dashboard/app.py` never picked up by running container
+   - Container still running old image — needs rebuild
+   - 17:30 and 18:30 sessions both confirmed same state
+   - `source: "premarket_csv"` → scanner falls back to CSV with no pillar scores
+
+5. 🔴 **`bull_bear: []` PERSISTS — container stale (same as all previous checks)**
+   - Bull/Bear runner fixes in code but container hasn't been rebuilt
+   - LLM vault key (`vault/llm_api_key.enc`) still missing — Kay needs to run `store_llm_key.ps1`
+
+## Status: No Code Changes — fincept_connector.py Healthy
+
+**fincept_connector.py needs no changes** — it's already correct. The `pillars: {}` and `bull_bear: []` issues are entirely on the container not being rebuilt to pick up fixes pushed in earlier sessions.
+
+**Container rebuild is the only remaining blocker** (same as 18:30 session). Options:
+- **Portainer** (recommended): `http://10.8.0.10:9000` → `trading-agent` stack → "Recreate"
+- **GitHub Actions**: Push any file to `main` branch → rebuilds → Portainer webhook redeploys
+- **Manual NAS SSH**: `cd /volume1/docker/trading-agent && git pull && docker build`
+
+Pipeline remains fully operational for scanning and signal delivery. No data loss. Only the pillar scoring enhancement and Bull/Bear integration are blocked.
+
+---
+
 # Pipeline Status — 2026-07-08 19:00 (Berlin, UTC+2)
 
 ## Dashboard State
