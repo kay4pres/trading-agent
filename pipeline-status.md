@@ -1,3 +1,45 @@
+# Pipeline Status — 2026-07-08 16:30 (Berlin, UTC+2)
+
+## Dashboard State
+| Field | Value | Notes |
+|---|---|---|
+| `last_scan` | **16:30** ✅ | Scanner alive, 30-min cron working |
+| `market_open` | `true` | ✅ |
+| `positions` | `[]` | No open positions |
+| `bull_bear` | `[]` | 🔴 Known issue — needs container rebuild |
+| `mount_status` | `ok` ✅ | NAS Docker volume mounted |
+| `pillars` | `{}` | ✅ Normal for premarket_csv source |
+| `quote_error` | ❌ NOT PRESENT ✅ | fincept_connector healthy |
+
+## Signals (7 stocks, 2026-07-08 premarket CSV)
+| Symbol | Price | Gap | RelVol | Float | Score |
+|---|---|---|---|---|---|
+| TVRD | $3.10 | +54.2% | 96.6× | 5.7M | 3.0 |
+| TDTH | $2.56 | +40.7% | 17.1× | 3.0M | 3.0 |
+| EDHL | $4.94 | +24.7% | 15.1× | 0.5M | 3.0 |
+| CRE | $3.28 | +19.3% | 7.0× | 1.1M | 3.0 |
+| JLHL | $4.32 | +17.1% | 6.4× | 1.4M | 3.0 |
+| CLRO | $13.84 | +97.7% | 8.7× | 0.9M | 2.8 |
+| TTRX | $9.71 | +26.3% | 9.4× | 10.8M | 2.5 |
+
+## Findings
+
+1. ✅ **Scanner ALIVE** — `last_scan: "16:30"` (fresh), 7 signals present. Two consecutive healthy scans (15:30 + 16:00 + 16:30 all fresh).
+
+2. ✅ **fincept_connector.py HEALTHY** — no "quote error". Code correctly uses `sys.platform != "win32"` to route all container calls to yfinance directly. The known bug (hardcoded Windows path in Linux container) is only triggered if the Windows path check passes on a non-Windows platform — which it doesn't. **No fix needed.**
+
+3. ✅ **No "quote error" in dashboard state** — all 7 signals show valid prices and float data.
+
+4. ✅ **NAS mount OK** — `mount_status: "ok"`. Premarket CSV from Richard synced correctly.
+
+5. ✅ **`pillars: {}` is NORMAL** — signals sourced from `premarket_csv` don't get Five Pillar scores (live scoring runs on intraday scanner path). This is expected behavior, not a bug.
+
+6. ✅ **`bull_bear: []` is a known issue** — Bull/Bear LLM debate needs container rebuild to pick up fixes pushed in 15:30 session.
+
+**No code changes needed.** Pipeline is clean. Next scan at 17:00.
+
+---
+
 # Pipeline Status — 2026-07-08 16:00 (Berlin, UTC+2)
 
 ## 16:00 Check (Jul 8, Tuesday) — Scanner ALIVE ✅ | fincept_connector HEALTHY ✅ | No "quote error"
