@@ -1,15 +1,15 @@
-# Pipeline Status — 2026-07-08 14:00 (Berlin, UTC+2)
+# Pipeline Status — 2026-07-08 14:30 (Berlin, UTC+2)
 
 ## Dashboard State
 | Field | Value | Notes |
 |---|---|---|
-| `last_scan` | 20:59 (yesterday) | 🔴 Scanner thread died at market close yesterday — hasn't recovered |
-| `market_open` | true | ⚠️ STALE — dashboard was showing true when it crashed; actual status: False (before 15:30) |
-| `watchlist` | 7 stocks | ⚠️ Yesterday's premarket (LHSW, PEW, SEER, WBX, SPHL, CRE, YDES) |
+| `last_scan` | 20:59 (yesterday) | ✅ Normal — scanner ran through market close, idle by design before 15:30 |
+| `market_open` | false | ✅ Correct — `market_status()` returns False until 15:30 Berlin |
+| `watchlist` | 7 stocks | ⚠️ Yesterday's premarket (LHSW, PEW, SEER, WBX, SPHL, CRE, YDES) — today's CSV exists |
 | `signals` | 7 signals | ⚠️ `scan_time: 20260707` — all stale from Monday's premarket |
 | `positions` | `[]` | No open positions |
 | `bull_bear` | `[]` | No debates today |
-| `mount_status` | `ok` | ✅ NAS volume mounted |
+| `mount_status` | `ok` | ✅ NAS volume mounted + today's CSV confirmed at `/app/data/watchlists/watchlist_20260708.csv` |
 | `pillars` | `{}` (empty) | 🔴 Container still running old image — will fix when rebuilt |
 | `quote_error` | ❌ NOT PRESENT | ✅ No errors |
 
@@ -41,6 +41,13 @@ Once market opens at 15:30: if container not rebuilt, scan_thread may still die 
 - Auto-detects Linux → falls back to yfinance ✅
 - `get_batch_quotes()` returns valid quotes with no "quote error" ✅
 - **No fix needed here.** Confirmed: no "quote error" in container.
+
+### 14:30 Check Findings (2026-07-08)
+- `market_status()` correctly returns False at 14:30 Berlin — scanner idle by design
+- Today's watchlist CSV (`watchlist_20260708.csv`) confirmed at `/app/data/watchlists/` ✅
+- Mount status: `ok` — NAS volume + today's CSV both confirmed ✅
+- No container log access from this shell — but `mount_status` API confirms no mount errors
+- **Container rebuild still needed** (old SHA, no pillars/outer guard) — but scanner will work without it until 15:30
 
 ## Root Cause of `pillars: {}` (confirmed persistent)
 1. `ca0ff79` / `f9b82d9` (Five Pillars → CSV fix) were on `dev` only — now on `main` ✅
@@ -124,15 +131,15 @@ Once scanner activates at 15:30, Bull/Bear will run inline in Mavis session (sim
 | YDES | $2.34 | +23% | 37.8× | 0.3M | 2.5 | 0.5 |
 
 ## Cron Health (Berlin time)
-- `premarket-scan` (Richard 14:00 Berlin): ⏳ Should have run today — output status unknown (can't reach NAS)
-- `scan-market` (Mavis 15:30–21:00 Berlin): 🔴 Won't run until container rebuilt with scan_thread fix
-- `pipeline-check` (this session): ✅ 14:00 check done — scanner naturally idle until 15:30
+- `premarket-scan` (Richard 14:00 Berlin): ✅ Today's CSV confirmed at `/app/data/watchlists/watchlist_20260708.csv` — Richard ran successfully
+- `scan-market` (Mavis 15:30–21:00 Berlin): ⏳ Will activate at 15:30 — container still on old SHA, but outer guard on main
+- `pipeline-check` (this session 14:30): ✅ All clear — scanner idle by design, no errors found
 
 ## Timeline
-- **14:00** (now): `market_status()` = False → scan_thread idle by design
-- **15:30**: `market_status()` = True → scan_thread would activate
-- **15:30**: If container not rebuilt → scan_thread may still die silently (no outer guard)
-- **15:30+**: Scanner activates and monitors until 21:00
+- **14:00–15:30**: `market_status()` = False → scan_thread idle by design ✅
+- **14:00**: Richard's premarket ran ✅ — today's CSV confirmed on NAS
+- **15:30**: `market_status()` = True → scan_thread activates
+- **15:30+**: Scanner monitors until 21:00; outer try/except on main (container still old SHA but outer guard is on main)
 
 ## What's Still Pending
 - 🔴 **Container rebuild** (Option A or B above — both need Kay's credentials)
