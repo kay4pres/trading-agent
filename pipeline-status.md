@@ -1,12 +1,10 @@
-# Pipeline Status — 2026-07-08 14:30 (Berlin, UTC+2)
+# Pipeline Status — 2026-07-08 15:00 (Berlin, UTC+2)
 
 ## Dashboard State
 | Field | Value | Notes |
 |---|---|---|
-| `last_scan` | 20:59 (yesterday) | ✅ Normal — scanner ran through market close, idle by design before 15:30 |
-| `market_open` | false | ✅ Correct — `market_status()` returns False until 15:30 Berlin |
-| `watchlist` | 7 stocks | ⚠️ Yesterday's premarket (LHSW, PEW, SEER, WBX, SPHL, CRE, YDES) — today's CSV exists |
-| `signals` | 7 signals | ⚠️ `scan_time: 20260707` — all stale from Monday's premarket |
+| `last_scan` | 20:59 (yesterday) | 🔴 Scanner NOT recovering — market open 30 min, no new scan |
+| `market_open` | true | 🟡 Market opened at 14:30 Berlin — thread loop alive but scan is broken |
 | `positions` | `[]` | No open positions |
 | `bull_bear` | `[]` | No debates today |
 | `mount_status` | `ok` | ✅ NAS volume mounted + today's CSV confirmed at `/app/data/watchlists/watchlist_20260708.csv` |
@@ -114,8 +112,7 @@ Verified via `data/bull_bear_results.json` — all 11 premarket signals debated 
 | GDEV | SKIP | 3/10 | WIDE_RANGE 33.3% + no catalyst |
 **All 11 skipped. Zero approvals. No tradeable setups.**
 
-**Today (2026-07-08):** Bull/Bear debates haven't run yet — scanner inactive before 15:30.
-Once scanner activates at 15:30, Bull/Bear will run inline in Mavis session (simulated mode — LLM key not stored).
+**Today (2026-07-08, 15:00 update):** Bull/Bear debates haven't run yet. Market has been open since 14:30 Berlin. Scanner shows `market_open: true` but `last_scan` is frozen at 20:59 — scan thread loop running but scan itself is broken. Container still on old SHA.
 
 ---
 
@@ -132,14 +129,14 @@ Once scanner activates at 15:30, Bull/Bear will run inline in Mavis session (sim
 
 ## Cron Health (Berlin time)
 - `premarket-scan` (Richard 14:00 Berlin): ✅ Today's CSV confirmed at `/app/data/watchlists/watchlist_20260708.csv` — Richard ran successfully
-- `scan-market` (Mavis 15:30–21:00 Berlin): ⏳ Will activate at 15:30 — container still on old SHA, but outer guard on main
-- `pipeline-check` (this session 14:30): ✅ All clear — scanner idle by design, no errors found
+- `scan-market` (Mavis 15:30–21:00 Berlin): 🔴 Market open since 14:30 Berlin — scanner thread alive but `last_scan` frozen at 20:59 — scan broken
+- `pipeline-check` (this session 15:00): 🔴 Scanner NOT recovering — container still on old SHA, needs rebuild
 
 ## Timeline
-- **14:00–15:30**: `market_status()` = False → scan_thread idle by design ✅
+- **14:00–15:30**: `market_status()` = False → scan_thread idle ✅ (was correct)
 - **14:00**: Richard's premarket ran ✅ — today's CSV confirmed on NAS
-- **15:30**: `market_status()` = True → scan_thread activates
-- **15:30+**: Scanner monitors until 21:00; outer try/except on main (container still old SHA but outer guard is on main)
+- **14:30**: US market opened — `market_status()` = True
+- **15:00** (now): Scanner thread alive (`market_open: true`) but `last_scan` frozen — scan broken, needs container rebuild
 
 ## What's Still Pending
 - 🔴 **Container rebuild** (Option A or B above — both need Kay's credentials)
