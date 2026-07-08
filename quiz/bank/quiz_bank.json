@@ -8414,5 +8414,3941 @@
     "explanation": "Orders may not always go to the venue with the best price since the broker is incentivized by payment, not price improvement",
     "difficulty": "Hard",
     "source_rule": "c2_ch6_p5_rules.md"
+  },
+  {
+    "id": "c1_ch1_019",
+    "chapter": "C1 Ch1 — Becoming a Day Trader",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch1_020",
+    "chapter": "C1 Ch1 — Becoming a Day Trader",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch1_021",
+    "chapter": "C1 Ch1 — Becoming a Day Trader",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch1_022",
+    "chapter": "C1 Ch1 — Becoming a Day Trader",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch1_023",
+    "chapter": "C1 Ch1 — Becoming a Day Trader",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch1_024",
+    "chapter": "C1 Ch1 — Becoming a Day Trader",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_033",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_034",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_035",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_036",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_037",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_038",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_039",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_040",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_041",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_042",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_043",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_044",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_045",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_046",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_047",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_048",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_049",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_050",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_051",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch2_052",
+    "chapter": "C1 Ch2 — Picking Stocks",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch6_013",
+    "chapter": "C1 Ch6 — Trading Platform Walkthrough",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch6_014",
+    "chapter": "C1 Ch6 — Trading Platform Walkthrough",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch6_015",
+    "chapter": "C1 Ch6 — Trading Platform Walkthrough",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch6_016",
+    "chapter": "C1 Ch6 — Trading Platform Walkthrough",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch6_017",
+    "chapter": "C1 Ch6 — Trading Platform Walkthrough",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch6_018",
+    "chapter": "C1 Ch6 — Trading Platform Walkthrough",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_072",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_073",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_074",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_075",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_076",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_077",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_078",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_079",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_080",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_081",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_082",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_083",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_084",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_085",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_086",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_087",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_088",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_089",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_090",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_091",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_092",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_093",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_094",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_095",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_096",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_097",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_098",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_099",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_100",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_101",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_102",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Goal Setting",
+    "question": "Why does Ross emphasize setting specific, measurable trading goals?",
+    "options": [
+      "Goals create structure, accountability, and a benchmark to measure progress against.",
+      "Goals are not important for trading.",
+      "Goals will guarantee profitability.",
+      "Only beginners need goals."
+    ],
+    "correct": "A",
+    "explanation": "Goals create structure, accountability, and a benchmark to measure progress against.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_103",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Success Definition",
+    "question": "What does success look like for a day trader, according to this chapter?",
+    "options": [
+      "Consistent profitability over time, disciplined risk management, and continuous learning.",
+      "Making as much money as possible in one trade.",
+      "Never taking a losing trade.",
+      "Copying another trader's every move."
+    ],
+    "correct": "A",
+    "explanation": "Consistent profitability over time, disciplined risk management, and continuous learning.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_104",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_105",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_106",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_107",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_108",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_109",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_110",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_111",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_112",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Goal Setting",
+    "question": "Why does Ross emphasize setting specific, measurable trading goals?",
+    "options": [
+      "Goals create structure, accountability, and a benchmark to measure progress against.",
+      "Goals are not important for trading.",
+      "Goals will guarantee profitability.",
+      "Only beginners need goals."
+    ],
+    "correct": "A",
+    "explanation": "Goals create structure, accountability, and a benchmark to measure progress against.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_113",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Causes Of Failure",
+    "question": "What are the leading causes of failure for new day traders according to Ross?",
+    "options": [
+      "Lack of education, emotional trading, poor risk management, and overtrading.",
+      "Using a good computer.",
+      "Watching too many YouTube videos.",
+      "Having too much money."
+    ],
+    "correct": "A",
+    "explanation": "Lack of education, emotional trading, poor risk management, and overtrading.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_114",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Goal Setting",
+    "question": "Why does Ross emphasize setting specific, measurable trading goals?",
+    "options": [
+      "Goals create structure, accountability, and a benchmark to measure progress against.",
+      "Goals are not important for trading.",
+      "Goals will guarantee profitability.",
+      "Only beginners need goals."
+    ],
+    "correct": "A",
+    "explanation": "Goals create structure, accountability, and a benchmark to measure progress against.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_115",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Gap Patterns",
+    "question": "What is the difference between a partial gap and a full gap?",
+    "options": [
+      "Partial gap: stock doesn't fully clear the previous day's range; full gap: stock opens well beyond it.",
+      "They are the same thing.",
+      "Partial gaps are not tradeable.",
+      "Full gaps only happen on down days."
+    ],
+    "correct": "A",
+    "explanation": "Partial gap: stock doesn't fully clear the previous day's range; full gap: stock opens well beyond it.",
+    "difficulty": "medium",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c1_ch7_116",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch7_117",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch7_118",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Goal Setting",
+    "question": "Why does Ross emphasize setting specific, measurable trading goals?",
+    "options": [
+      "Goals create structure, accountability, and a benchmark to measure progress against.",
+      "Goals are not important for trading.",
+      "Goals will guarantee profitability.",
+      "Only beginners need goals."
+    ],
+    "correct": "A",
+    "explanation": "Goals create structure, accountability, and a benchmark to measure progress against.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_119",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Catalyst News",
+    "question": "According to Ross, what is required for a high-probability day trade?",
+    "options": [
+      "A news catalyst combined with a strong technical setup.",
+      "Only technical analysis — catalysts are not important.",
+      "Only a news catalyst is needed.",
+      "A large account size."
+    ],
+    "correct": "A",
+    "explanation": "A news catalyst combined with a strong technical setup.",
+    "difficulty": "easy",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c1_ch7_120",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Gap Patterns",
+    "question": "What is the difference between a partial gap and a full gap?",
+    "options": [
+      "Partial gap: stock doesn't fully clear the previous day's range; full gap: stock opens well beyond it.",
+      "They are the same thing.",
+      "Partial gaps are not tradeable.",
+      "Full gaps only happen on down days."
+    ],
+    "correct": "A",
+    "explanation": "Partial gap: stock doesn't fully clear the previous day's range; full gap: stock opens well beyond it.",
+    "difficulty": "medium",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c1_ch7_121",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch7_122",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch7_123",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch7_124",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Goal Setting",
+    "question": "Why does Ross emphasize setting specific, measurable trading goals?",
+    "options": [
+      "Goals create structure, accountability, and a benchmark to measure progress against.",
+      "Goals are not important for trading.",
+      "Goals will guarantee profitability.",
+      "Only beginners need goals."
+    ],
+    "correct": "A",
+    "explanation": "Goals create structure, accountability, and a benchmark to measure progress against.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_125",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch7_126",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch7_127",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch7_128",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Goal Setting",
+    "question": "Why does Ross emphasize setting specific, measurable trading goals?",
+    "options": [
+      "Goals create structure, accountability, and a benchmark to measure progress against.",
+      "Goals are not important for trading.",
+      "Goals will guarantee profitability.",
+      "Only beginners need goals."
+    ],
+    "correct": "A",
+    "explanation": "Goals create structure, accountability, and a benchmark to measure progress against.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_129",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Gap Patterns",
+    "question": "What is the difference between a partial gap and a full gap?",
+    "options": [
+      "Partial gap: stock doesn't fully clear the previous day's range; full gap: stock opens well beyond it.",
+      "They are the same thing.",
+      "Partial gaps are not tradeable.",
+      "Full gaps only happen on down days."
+    ],
+    "correct": "A",
+    "explanation": "Partial gap: stock doesn't fully clear the previous day's range; full gap: stock opens well beyond it.",
+    "difficulty": "medium",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c1_ch7_130",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch7_131",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch7_132",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Goal Setting",
+    "question": "Why does Ross emphasize setting specific, measurable trading goals?",
+    "options": [
+      "Goals create structure, accountability, and a benchmark to measure progress against.",
+      "Goals are not important for trading.",
+      "Goals will guarantee profitability.",
+      "Only beginners need goals."
+    ],
+    "correct": "A",
+    "explanation": "Goals create structure, accountability, and a benchmark to measure progress against.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch7_133",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Catalyst News",
+    "question": "According to Ross, what is required for a high-probability day trade?",
+    "options": [
+      "A news catalyst combined with a strong technical setup.",
+      "Only technical analysis — catalysts are not important.",
+      "Only a news catalyst is needed.",
+      "A large account size."
+    ],
+    "correct": "A",
+    "explanation": "A news catalyst combined with a strong technical setup.",
+    "difficulty": "easy",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c1_ch7_134",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch7_135",
+    "chapter": "C1 Ch7 — Momentum Trading Introduction",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch8_015",
+    "chapter": "C1 Ch8 — Momentum Trading Strategies",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch8_016",
+    "chapter": "C1 Ch8 — Momentum Trading Strategies",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch8_017",
+    "chapter": "C1 Ch8 — Momentum Trading Strategies",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch8_018",
+    "chapter": "C1 Ch8 — Momentum Trading Strategies",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch8_019",
+    "chapter": "C1 Ch8 — Momentum Trading Strategies",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch8_020",
+    "chapter": "C1 Ch8 — Momentum Trading Strategies",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch9_013",
+    "chapter": "C1 Ch9 — Order Entry Window and Popular Order Types",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch9_014",
+    "chapter": "C1 Ch9 — Order Entry Window and Popular Order Types",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch9_015",
+    "chapter": "C1 Ch9 — Order Entry Window and Popular Order Types",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch9_016",
+    "chapter": "C1 Ch9 — Order Entry Window and Popular Order Types",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch9_017",
+    "chapter": "C1 Ch9 — Order Entry Window and Popular Order Types",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch9_018",
+    "chapter": "C1 Ch9 — Order Entry Window and Popular Order Types",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch10_021",
+    "chapter": "C1 Ch10 — Hot Keys and Hot Buttons",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch10_022",
+    "chapter": "C1 Ch10 — Hot Keys and Hot Buttons",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch10_023",
+    "chapter": "C1 Ch10 — Hot Keys and Hot Buttons",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch10_024",
+    "chapter": "C1 Ch10 — Hot Keys and Hot Buttons",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch10_025",
+    "chapter": "C1 Ch10 — Hot Keys and Hot Buttons",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch10_026",
+    "chapter": "C1 Ch10 — Hot Keys and Hot Buttons",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch10_027",
+    "chapter": "C1 Ch10 — Hot Keys and Hot Buttons",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch10_028",
+    "chapter": "C1 Ch10 — Hot Keys and Hot Buttons",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch10_029",
+    "chapter": "C1 Ch10 — Hot Keys and Hot Buttons",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c1_ch10_030",
+    "chapter": "C1 Ch10 — Hot Keys and Hot Buttons",
+    "topic": "Hot Keys",
+    "question": "What does SCR stand for in hot key terminology?",
+    "options": [
+      "Single Cancel Remaining.",
+      "Stop, Cancel, Reverse.",
+      "Send, Confirm, Route.",
+      "Scale, Close, Rest."
+    ],
+    "correct": "A",
+    "explanation": "Single Cancel Remaining.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch10_hot_keys.md"
+  },
+  {
+    "id": "c1_ch11_013",
+    "chapter": "C1 Ch11 — Stock Halts",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch11_014",
+    "chapter": "C1 Ch11 — Stock Halts",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch11_015",
+    "chapter": "C1 Ch11 — Stock Halts",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch11_016",
+    "chapter": "C1 Ch11 — Stock Halts",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch11_017",
+    "chapter": "C1 Ch11 — Stock Halts",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c1_ch11_018",
+    "chapter": "C1 Ch11 — Stock Halts",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch1_013",
+    "chapter": "C2 Ch1 — Intro to Day Trading Strategies",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch1_014",
+    "chapter": "C2 Ch1 — Intro to Day Trading Strategies",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch1_015",
+    "chapter": "C2 Ch1 — Intro to Day Trading Strategies",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch1_016",
+    "chapter": "C2 Ch1 — Intro to Day Trading Strategies",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch1_017",
+    "chapter": "C2 Ch1 — Intro to Day Trading Strategies",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch1_018",
+    "chapter": "C2 Ch1 — Intro to Day Trading Strategies",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch2_013",
+    "chapter": "C2 Ch2 — Learning Risk Management",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch2_014",
+    "chapter": "C2 Ch2 — Learning Risk Management",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch2_015",
+    "chapter": "C2 Ch2 — Learning Risk Management",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch2_016",
+    "chapter": "C2 Ch2 — Learning Risk Management",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch2_017",
+    "chapter": "C2 Ch2 — Learning Risk Management",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch2_018",
+    "chapter": "C2 Ch2 — Learning Risk Management",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_097",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_098",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_099",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_100",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_101",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_102",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_103",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_104",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_105",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_106",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_107",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_108",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_109",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_110",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_111",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_112",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_113",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_114",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_115",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_116",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_117",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Goal Setting",
+    "question": "Why does Ross emphasize setting specific, measurable trading goals?",
+    "options": [
+      "Goals create structure, accountability, and a benchmark to measure progress against.",
+      "Goals are not important for trading.",
+      "Goals will guarantee profitability.",
+      "Only beginners need goals."
+    ],
+    "correct": "A",
+    "explanation": "Goals create structure, accountability, and a benchmark to measure progress against.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_118",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Causes Of Failure",
+    "question": "What are the leading causes of failure for new day traders according to Ross?",
+    "options": [
+      "Lack of education, emotional trading, poor risk management, and overtrading.",
+      "Using a good computer.",
+      "Watching too many YouTube videos.",
+      "Having too much money."
+    ],
+    "correct": "A",
+    "explanation": "Lack of education, emotional trading, poor risk management, and overtrading.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_119",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_120",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_121",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_122",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_123",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_124",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_125",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Goal Setting",
+    "question": "Why does Ross emphasize setting specific, measurable trading goals?",
+    "options": [
+      "Goals create structure, accountability, and a benchmark to measure progress against.",
+      "Goals are not important for trading.",
+      "Goals will guarantee profitability.",
+      "Only beginners need goals."
+    ],
+    "correct": "A",
+    "explanation": "Goals create structure, accountability, and a benchmark to measure progress against.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_126",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_127",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_128",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch6_129",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_130",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_131",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_132",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_133",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_134",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_135",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Goal Setting",
+    "question": "Why does Ross emphasize setting specific, measurable trading goals?",
+    "options": [
+      "Goals create structure, accountability, and a benchmark to measure progress against.",
+      "Goals are not important for trading.",
+      "Goals will guarantee profitability.",
+      "Only beginners need goals."
+    ],
+    "correct": "A",
+    "explanation": "Goals create structure, accountability, and a benchmark to measure progress against.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_136",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Causes Of Failure",
+    "question": "What are the leading causes of failure for new day traders according to Ross?",
+    "options": [
+      "Lack of education, emotional trading, poor risk management, and overtrading.",
+      "Using a good computer.",
+      "Watching too many YouTube videos.",
+      "Having too much money."
+    ],
+    "correct": "A",
+    "explanation": "Lack of education, emotional trading, poor risk management, and overtrading.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_137",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_138",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_139",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_140",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_141",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch6_142",
+    "chapter": "C2 Ch6 — Level 2, Tape Reading, and Hot Keys (8 parts)",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_129",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_130",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_131",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_132",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_133",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_134",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_135",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_136",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_137",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_138",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_139",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_140",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_141",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_142",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_143",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_144",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_145",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_146",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_147",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_148",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_149",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_150",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_151",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_152",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_153",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Tools Required",
+    "question": "What is the minimum account balance recommended to start day trading, and what pattern triggers PDT rules?",
+    "options": [
+      "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+      "$10,000; any single day trade triggers PDT.",
+      "$5,000; weekly trades trigger PDT.",
+      "$50,000; 10 day trades per month triggers PDT."
+    ],
+    "correct": "A",
+    "explanation": "$25,000 in equity; more than 3 day trades in 5 business days triggers PDT designation.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_154",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Tools Required",
+    "question": "What type of trading account is typically required for day trading?",
+    "options": [
+      "A margin account with direct access routing to exchanges.",
+      "A standard cash account only.",
+      "A retirement account (IRA/401k).",
+      "A savings account."
+    ],
+    "correct": "A",
+    "explanation": "A margin account with direct access routing to exchanges.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_155",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_156",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_157",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_158",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_159",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Goal Setting",
+    "question": "Why does Ross emphasize setting specific, measurable trading goals?",
+    "options": [
+      "Goals create structure, accountability, and a benchmark to measure progress against.",
+      "Goals are not important for trading.",
+      "Goals will guarantee profitability.",
+      "Only beginners need goals."
+    ],
+    "correct": "A",
+    "explanation": "Goals create structure, accountability, and a benchmark to measure progress against.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_160",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Success Definition",
+    "question": "What does success look like for a day trader, according to this chapter?",
+    "options": [
+      "Consistent profitability over time, disciplined risk management, and continuous learning.",
+      "Making as much money as possible in one trade.",
+      "Never taking a losing trade.",
+      "Copying another trader's every move."
+    ],
+    "correct": "A",
+    "explanation": "Consistent profitability over time, disciplined risk management, and continuous learning.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_161",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_162",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_163",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_164",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_165",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What are the 7 topics covered in Day Trading The Basics Chapter 1?",
+    "options": [
+      "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+      "Only tools and equipment.",
+      "Only scanner setup and stock picking.",
+      "Only risk management and position sizing."
+    ],
+    "correct": "A",
+    "explanation": "Getting ready to go pro with Warrior Pro, tools/equipment required, tax-free income, goals/targets, leading causes of failure, and what success looks like.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_166",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to Ross, why is immersing yourself in the trading community important?",
+    "options": [
+      "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+      "You need friends to trade with.",
+      "It's not important at all.",
+      "The community will trade for you."
+    ],
+    "correct": "A",
+    "explanation": "Learning to trade is like learning a new language — you need immersion in a community of people speaking it.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_167",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "What is Ross's stance on using the trading simulator before going live?",
+    "options": [
+      "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+      "Never use the simulator.",
+      "Only use it after 6 months of studying.",
+      "The simulator is the same as live trading."
+    ],
+    "correct": "A",
+    "explanation": "Start using the simulator as soon as you're comfortable — it's a safe environment to practice.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_168",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Day Trading Intro",
+    "question": "According to this chapter, what is the prerequisite course for Day Trading Strategies and Scaling?",
+    "options": [
+      "Day Trading The Basics.",
+      "Risk Management.",
+      "Technical Analysis.",
+      "There is no prerequisite."
+    ],
+    "correct": "A",
+    "explanation": "Day Trading The Basics.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_169",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Goal Setting",
+    "question": "Why does Ross emphasize setting specific, measurable trading goals?",
+    "options": [
+      "Goals create structure, accountability, and a benchmark to measure progress against.",
+      "Goals are not important for trading.",
+      "Goals will guarantee profitability.",
+      "Only beginners need goals."
+    ],
+    "correct": "A",
+    "explanation": "Goals create structure, accountability, and a benchmark to measure progress against.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_170",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Causes Of Failure",
+    "question": "What are the leading causes of failure for new day traders according to Ross?",
+    "options": [
+      "Lack of education, emotional trading, poor risk management, and overtrading.",
+      "Using a good computer.",
+      "Watching too many YouTube videos.",
+      "Having too much money."
+    ],
+    "correct": "A",
+    "explanation": "Lack of education, emotional trading, poor risk management, and overtrading.",
+    "difficulty": "medium",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_171",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Goal Setting",
+    "question": "Why does Ross emphasize setting specific, measurable trading goals?",
+    "options": [
+      "Goals create structure, accountability, and a benchmark to measure progress against.",
+      "Goals are not important for trading.",
+      "Goals will guarantee profitability.",
+      "Only beginners need goals."
+    ],
+    "correct": "A",
+    "explanation": "Goals create structure, accountability, and a benchmark to measure progress against.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_172",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Gap Patterns",
+    "question": "What is the difference between a partial gap and a full gap?",
+    "options": [
+      "Partial gap: stock doesn't fully clear the previous day's range; full gap: stock opens well beyond it.",
+      "They are the same thing.",
+      "Partial gaps are not tradeable.",
+      "Full gaps only happen on down days."
+    ],
+    "correct": "A",
+    "explanation": "Partial gap: stock doesn't fully clear the previous day's range; full gap: stock opens well beyond it.",
+    "difficulty": "medium",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c2_ch7_173",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch7_174",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch7_175",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Goal Setting",
+    "question": "Why does Ross emphasize setting specific, measurable trading goals?",
+    "options": [
+      "Goals create structure, accountability, and a benchmark to measure progress against.",
+      "Goals are not important for trading.",
+      "Goals will guarantee profitability.",
+      "Only beginners need goals."
+    ],
+    "correct": "A",
+    "explanation": "Goals create structure, accountability, and a benchmark to measure progress against.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_176",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Catalyst News",
+    "question": "According to Ross, what is required for a high-probability day trade?",
+    "options": [
+      "A news catalyst combined with a strong technical setup.",
+      "Only technical analysis — catalysts are not important.",
+      "Only a news catalyst is needed.",
+      "A large account size."
+    ],
+    "correct": "A",
+    "explanation": "A news catalyst combined with a strong technical setup.",
+    "difficulty": "easy",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c2_ch7_177",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Gap Patterns",
+    "question": "What is the difference between a partial gap and a full gap?",
+    "options": [
+      "Partial gap: stock doesn't fully clear the previous day's range; full gap: stock opens well beyond it.",
+      "They are the same thing.",
+      "Partial gaps are not tradeable.",
+      "Full gaps only happen on down days."
+    ],
+    "correct": "A",
+    "explanation": "Partial gap: stock doesn't fully clear the previous day's range; full gap: stock opens well beyond it.",
+    "difficulty": "medium",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c2_ch7_178",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch7_179",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch7_180",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch7_181",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Goal Setting",
+    "question": "Why does Ross emphasize setting specific, measurable trading goals?",
+    "options": [
+      "Goals create structure, accountability, and a benchmark to measure progress against.",
+      "Goals are not important for trading.",
+      "Goals will guarantee profitability.",
+      "Only beginners need goals."
+    ],
+    "correct": "A",
+    "explanation": "Goals create structure, accountability, and a benchmark to measure progress against.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_182",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch7_183",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch7_184",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Risk Management",
+    "question": "Why is the intraday 5-minute ATR preferred over 3-month daily ATR for day trades?",
+    "options": [
+      "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+      "5-minute ATR is always smaller.",
+      "Daily ATR cannot be used for day trading.",
+      "There is no difference between them."
+    ],
+    "correct": "A",
+    "explanation": "3-month daily ATR picks up massive historical moves that don't reflect today's volatility.",
+    "difficulty": "hard",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch7_185",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Goal Setting",
+    "question": "Why does Ross emphasize setting specific, measurable trading goals?",
+    "options": [
+      "Goals create structure, accountability, and a benchmark to measure progress against.",
+      "Goals are not important for trading.",
+      "Goals will guarantee profitability.",
+      "Only beginners need goals."
+    ],
+    "correct": "A",
+    "explanation": "Goals create structure, accountability, and a benchmark to measure progress against.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_186",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Gap Patterns",
+    "question": "What is the difference between a partial gap and a full gap?",
+    "options": [
+      "Partial gap: stock doesn't fully clear the previous day's range; full gap: stock opens well beyond it.",
+      "They are the same thing.",
+      "Partial gaps are not tradeable.",
+      "Full gaps only happen on down days."
+    ],
+    "correct": "A",
+    "explanation": "Partial gap: stock doesn't fully clear the previous day's range; full gap: stock opens well beyond it.",
+    "difficulty": "medium",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c2_ch7_187",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch7_188",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch7_189",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Goal Setting",
+    "question": "Why does Ross emphasize setting specific, measurable trading goals?",
+    "options": [
+      "Goals create structure, accountability, and a benchmark to measure progress against.",
+      "Goals are not important for trading.",
+      "Goals will guarantee profitability.",
+      "Only beginners need goals."
+    ],
+    "correct": "A",
+    "explanation": "Goals create structure, accountability, and a benchmark to measure progress against.",
+    "difficulty": "easy",
+    "source_rule": "c1_ch1_intro.md"
+  },
+  {
+    "id": "c2_ch7_190",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Catalyst News",
+    "question": "According to Ross, what is required for a high-probability day trade?",
+    "options": [
+      "A news catalyst combined with a strong technical setup.",
+      "Only technical analysis — catalysts are not important.",
+      "Only a news catalyst is needed.",
+      "A large account size."
+    ],
+    "correct": "A",
+    "explanation": "A news catalyst combined with a strong technical setup.",
+    "difficulty": "easy",
+    "source_rule": "c3_part2_news_catalyst_rules.md"
+  },
+  {
+    "id": "c2_ch7_191",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Risk Management",
+    "question": "What is Ross's rule for position scaling at the start of the trading day?",
+    "options": [
+      "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+      "Always start with full position size.",
+      "Start with 1/2 size.",
+      "Size is not important for day trading."
+    ],
+    "correct": "A",
+    "explanation": "Start at 1/4 size, add 1/4 more only if profitable, full size last.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch7_192",
+    "chapter": "C2 Ch7 Momentum Trading Part 1 — Long Technical Setups (12 parts)",
+    "topic": "Risk Management",
+    "question": "When should your maximum loss per trade be determined?",
+    "options": [
+      "Before entering the trade — never adjust mid-trade.",
+      "After the trade starts going against you.",
+      "At the end of the trading day.",
+      "Only if you are a beginner."
+    ],
+    "correct": "A",
+    "explanation": "Before entering the trade — never adjust mid-trade.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch2_risk_management.md"
   }
 ]
