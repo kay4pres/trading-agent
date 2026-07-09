@@ -695,6 +695,10 @@ def scan_thread():
             if _scan_heartbeat % 60 == 0:
                 print(f"[scanner] heartbeat #{_scan_heartbeat} — alive at {berlin_now().strftime('%H:%M')}, market_open={market_status()}")
 
+            # Always sync market_open — not just when market is open.
+            # Prevents stale True after market close (prev bug: only set inside if-block).
+            state['market_open'] = market_status()
+
         except Exception as e:
             # CRITICAL: outer guard — catches ANYTHING that escapes the inner try
             # including KeyboardInterrupt, OSErrors, etc. that would silently kill the thread
