@@ -575,6 +575,8 @@ def scan_thread():
                 #   (a) date just changed (new trading day), OR
                 #   (b) in-memory watchlist is empty AND today's CSV exists on disk
                 # This handles the case where container started before Richard's 14:00 cron sync.
+                # premarket is always defined in this scope — set to existing state['watchlist']
+                # if the reload condition above was skipped (date unchanged, watchlist non-empty)
                 if today != _last_alert_date or not state['watchlist']:
                     if today != _last_alert_date:
                         _alerted_today = set()
@@ -587,11 +589,28 @@ def scan_thread():
                     elif today != _last_alert_date:
                         # Only print "no CSV" on first load of the day (not every 60s)
                         print(f"[scanner] No premarket CSV found for {today} — will retry each cycle")
+                else:
+                    # Keep current state['watchlist'] as premarket fallback for the elif below
+                    premarket = list(state['watchlist'])
 
                 try:
                     signals = run_scan(min_score=2.5)
-                    state['signals']    = signals
-                    state['watchlist']  = signals
+                    if signals:
+                        # Live scanning produced scored signals — use those
+                        state['signals']   = signals
+                        state['watchlist'] = signals
+                    elif premarket:
+                        # run_scan() returned [] (TV empty, CSV signals all scored below
+                        # min_score, yfinance stale/missing). Preserve the premarket CSV
+                        # watchlist at their original scores so Kay can still see
+                        # today's candidates. Signals shown at CSV scores; no Telegram
+                        # alert fires (scores < 2.5 by definition here).
+                        state['watchlist'] = premarket
+                        state['signals']   = [s for s in premarket
+                                               if s.get('total_score', 0) >= 1.5]
+                        print(f"[scanner] run_scan empty — showing {len(state['signals'])} "
+                              f"premarket CSV signals at original scores "
+                              f"(scores: {[s['total_score'] for s in state['signals']]})")
                     state['last_scan']  = berlin_now().strftime('%H:%M')
                     state['market_open'] = True
                     state['mount_status'] = _check_mount_status()
