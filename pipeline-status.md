@@ -1,17 +1,27 @@
-# Pipeline Status — 2026-07-09 16:30 (Berlin, UTC+2)
+# Pipeline Status — 2026-07-09 17:30 (Berlin, UTC+2)
 
 ## Dashboard State
 | Field | Value | Notes |
 |---|---|---|
-| `last_scan` | **16:30** | ✅ Live — scanner running every 5 min |
+| `last_scan` | **17:30** | ✅ Live — scanner running every 60s |
 | `market_open` | `true` | ✅ Synced correctly (market open since 15:30) |
-| `watchlist` | 4 stocks | NVVE, IOTR, TVRD, ZTG (Jul 9 premarket @ 14:10) |
-| `signals` | **0** | ✅ Correctly rejecting all 4 (see below) |
-| `bull_bear` | `[]` | ⏳ No new debates — nothing to debate |
-| `mount_status` | `ok` | ✅ NAS volume mounted |
-| `pillars` | populated | ✅ Live P1–P5 scoring from today's CSV |
+| `watchlist` | `[]` | ✅ Empty by design — all 4 premarket stocks rejected by risk rules |
+| `signals` | **0** | ✅ Correct — no stocks met min_score=2.5 threshold today |
+| `bull_bear` | `[]` | ⏳ No new debates — nothing qualifying |
+| `mount_status` | `ok` | ✅ NAS volume mounted; today_csv EXISTS (`watchlist_20260709.csv`) |
+| `pillars` | populated | ✅ Live P1–P5 scoring active |
 
-## Why 0 Signals Today — NOT A Bug ✅
+## 17:30 Check — All Clear ✅
+
+Checked at 17:30 Berlin:
+- Dashboard API responding: ✅ (`last_scan: 17:30`)
+- No quote errors in connector: ✅ — `fincept_connector.py` yfinance fallback running cleanly
+- Mount status: ✅ `ok` — `today_csv_exists: true` confirms today's watchlist CSV is present
+- fincept_connector.py: ✅ No fix needed — already has proper Linux/yfinance fallback
+
+**fincept_connector.py is healthy** — yfinance fallback correctly handles Linux container environment (Fincept is Windows-only desktop app). No hardcoded Windows path errors in current code.
+
+## Why Empty Watchlist — NOT A Bug ✅ (persists at 17:30)
 
 All 4 watchlist stocks today were rejected by Ross Cameron risk rules:
 
@@ -34,10 +44,9 @@ All 4 watchlist stocks today were rejected by Ross Cameron risk rules:
 - LLM unavailable: `vault/llm_api_key.enc` still missing → debates run in simulated mode
 
 ## Actions
-- ✅ No fixes needed today — system working as designed
+- ✅ No fixes needed at 17:30 — system working as designed
 - 🟡 Bull/Bear LLM vault key still missing (`vault/llm_api_key.enc`)
-- ⏳ Richard premarket cron ran successfully today (14:10 Berlin) ✅
-- ⏳ Bull/Bear debate if any stock qualifies in next scan cycle
+- ⏳ Bull/Bear debate if any stock qualifies in next scan cycle (4 candidates all rejected)
 
 ---# Pipeline Status — 2026-07-08 14:00 (Berlin, UTC+2)
 
