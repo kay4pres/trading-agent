@@ -81,16 +81,20 @@ def _fallback_yfinance(args: List[str]) -> Dict[str, Any]:
 
         if cmd == "quote":
             t = yf.Ticker(sym)
-            info = t.fast_info
-            price = info.last_price or 0
-            prev = info.previous_close or price
+            # Use .info dict (not .fast_info) — fast_info returns None for
+            # penny/nano-cap stocks during market hours; info dict has better
+            # None guards and is more reliable for thinly-traded symbols.
+            info = t.info
+            price = info.get("regularMarketPrice") or info.get("currentPrice") or info.get("ask") or 0
+            prev = info.get("regularMarketPreviousClose") or info.get("previousClose") or price
             change = price - prev
+            volume = info.get("regularMarketVolume") or info.get("volume") or 0
             return {
                 "symbol": sym.upper(),
                 "price": round(price, 2),
                 "change": round(change, 2),
                 "change_percent": round(change / prev * 100, 2) if prev else 0,
-                "volume": int(info.last_volume or 0),
+                "volume": int(volume),
             }
         elif cmd == "batch_quotes":
             return [_fallback_yfinance(["quote", s]) for s in args[1:]]
