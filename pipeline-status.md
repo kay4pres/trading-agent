@@ -1,3 +1,41 @@
+# Pipeline Status — 2026-07-09 19:00 (Berlin, UTC+2)
+
+## Dashboard State
+| Field | Value | Notes |
+|---|---|---|
+| `last_scan` | **19:01** ✅ | Scanner alive, exactly current time |
+| `market_open` | `true` | ✅ |
+| `positions` | `[]` | No open positions |
+| `bull_bear` | `[]` | No debates today |
+| `signals` | `[]` | No signals triggered today |
+| `watchlist` | `[]` | No premarket watchlist loaded |
+| `mount_status` | `ok` ✅ | NAS Docker volume mounted |
+| `pnl` | `0.0` | No trades today |
+
+## Findings
+
+1. ✅ **Scanner ALIVE** — `last_scan: "19:01"` exactly matches current time (Berlin 19:00). Scan thread running. Scanner is healthy.
+
+2. ✅ **No "quote error"** — `"quote error"` not present in dashboard state or container logs.
+
+3. ✅ **fincept_connector.py HEALTHY — no fix needed**
+   - Already has correct yfinance fallback for Linux container
+   - `_fallback_yfinance()` uses `t.info` dict with `regularMarketPrice` / `currentPrice` / `ask` fallback chain
+   - All None guards in place: `price or 0`, `prev or price`, `volume or 0`
+   - **No code changes required.**
+
+4. ✅ **NAS mount OK** — `mount_status: "ok"`. Docker volume reachable.
+
+5. ✅ **`signals: []` — normal** — no stocks triggered Five Pillars scoring today, or Richard didn't run premarket. Not an error state.
+
+6. 🔴 **`bull_bear: []`** — persistent known issue (container stale, needs rebuild + LLM vault key). Scanner still alive — Bull/Bear is enhancement, not blocking.
+
+## Status: No Code Changes — Pipeline Healthy
+
+Everything looks good. No fixes needed. Container stale issues remain (Bull/Bear, CSV pillar scoring) but scanner itself is healthy and updating. Container rebuild still needed to pick up prior fixes — see 18:40 entry for rebuild options.
+
+---
+
 # Pipeline Status — 2026-07-09 18:40 (Berlin, UTC+2)
 
 ## Dashboard State
