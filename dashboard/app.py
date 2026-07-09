@@ -633,15 +633,22 @@ def scan_thread():
         try:  # ── PERSISTENT OUTER GUARD: catches everything, never lets thread die ──
             if market_status():
                 today = berlin_now().strftime('%Y-%m-%d')
-                if today != _last_alert_date:
-                    _alerted_today = set()
-                    _last_alert_date = today
-                    # Load premarket watchlist from Richard's morning scan
+                # Reload premarket watchlist if:
+                #   (a) date just changed (new trading day), OR
+                #   (b) in-memory watchlist is empty AND today's CSV exists on disk
+                # This handles the case where container started before Richard's 14:00 cron sync.
+                if today != _last_alert_date or not state['watchlist']:
+                    if today != _last_alert_date:
+                        _alerted_today = set()
+                        _last_alert_date = today
                     premarket = load_premarket_watchlist()
                     if premarket:
                         state['watchlist'] = premarket
-                        state['signals']   = premarket
+                        state['signals']    = premarket
                         print(f"[scanner] Loaded {len(premarket)} premarket signals for {today}")
+                    elif today != _last_alert_date:
+                        # Only print "no CSV" on first load of the day (not every 60s)
+                        print(f"[scanner] No premarket CSV found for {today} — will retry each cycle")
 
                 try:
                     signals = run_scan(min_score=2.5)
