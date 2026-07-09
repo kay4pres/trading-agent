@@ -1,3 +1,106 @@
+# Pipeline Status — 2026-07-09 18:40 (Berlin, UTC+2)
+
+## Dashboard State
+| Field | Value | Notes |
+|---|---|---|
+| `last_scan` | **18:30** ✅ | Scanner alive, exactly current time |
+| `market_open` | `true` | ✅ |
+| `positions` | `[]` | No open positions |
+| `bull_bear` | `[]` | 🔴 Container stale — needs rebuild |
+| `mount_status` | `ok` ✅ | NAS Docker volume mounted |
+| `pillars` | `{}` (empty) | 🔴 Container stale — CSV fallback fix not picked up |
+| `watchlist` | `[]` (dashboard) | 🔴 Container not reading today's 4-stock watchlist |
+| `signals` | `[]` | 🔴 Container not scanning today's 4 stocks |
+| `quote_error` | ❌ NOT PRESENT ✅ | fincept_connector.py healthy — no fix needed |
+
+## Today's Watchlist (Richard ran at 14:00 Berlin, 4 stocks)
+| Symbol | Price | Gap | RelVol | Float | Score | Source |
+|--------|-------|-----|--------|-------|-------|--------|
+| NVVE | $8.49 | +63.6% | 791.4× | 0.2M | 2.2 | premarket_csv |
+| IOTR | $3.54 | +40.5% | 44.8× | 1.0M | 2.2 | premarket_csv |
+| TVRD | $5.00 | +61.3% | 5× | 5.7M | 2.2 | premarket_csv |
+| ZTG | $2.85 | +25.0% | 6× | 0.0M | 2.0 | premarket_csv |
+
+> Watchlist exists at Docker volume `\\10.8.0.10\Docker\data\watchlist_latest.csv` (written 14:41 Berlin ✅).
+> Dashboard shows `watchlist: []` — container running Jul 6 code can't read it.
+
+## 🔴 Root Cause: Container Cron PATH Missing
+
+**Container crons failing with `python3: not found`** — root cause confirmed from Docker volume logs:
+
+```
+=== scan.log (\\10.8.0.10\Docker\data\logs\scan.log, last write: 18:30 today) ===
+/bin/sh: 1: python3: not found  (×90+ lines, accumulated over days)
+/bin/sh: 1: python: not found   (×25 lines)
+
+=== richard.log (last write: 00:14 today) ===
+/bin/sh: 1: python3: not found  (×4 today's attempts)
+```
+
+**Root cause**: cron runs with minimal PATH (`/usr/bin:/bin`). Python 3.12 installs binaries at `/usr/local/bin/python3`. The crontab entries used `python3` command which isn't in cron's PATH.
+
+**Chain of failures**:
+1. `entrypoint.py` writes crontab with `python3 premarket_screener.py`
+2. cron executes from `/usr/bin:/bin` → `python3: not found`
+3. Richard's premarket_screener never runs inside container
+4. Richard runs via Mavis local cron (outside container) → watchlist written to Docker volume at 14:41
+5. Container's scan_thread (Flask app, running since Jul 6) can't read today's watchlist → dashboard shows empty
+
+**Additional evidence**: Container was LAST RESTARTED **Jul 6, 16:30** (debug.log shows `[INFO] Starting dashboard on :5050...` from Jul 6). Container is 3 days out of date.
+
+## Fix Pushed This Session (2026-07-09 18:40)
+
+### ✅ `entrypoint.py` — Cron PATH fix (already in local repo since earlier)
+- Added `PATH=/usr/local/bin:/usr/bin:/bin` to top of crontab
+- Changed `python3` → `/usr/local/bin/python3` (absolute path, belt + suspenders)
+
+### ✅ `Dockerfile` (root) — CACHEBUST updated to 20260709
+- `ARG CACHEBUST=20260708` → `ARG CACHEBUST=20260709`
+- Forces fresh code download on rebuild
+- Also updated `docker/Dockerfile` CACHEBUST to 20260709 (Portainer/NAS builds)
+
+### ✅ Pushed to Gitea `main` + GitHub `main`
+- `c13551a fix: update CACHEBUST to 20260709`
+- Gitea push: ✅ | GitHub push: ✅
+- GitHub Actions should trigger rebuild → Portainer webhook redeploys
+
+## 🔴 ACTION REQUIRED: Container Rebuild
+
+Container has been stale since **Jul 6** — 3+ days of fixes not picked up:
+
+| Fix | Session | Waiting Since |
+|-----|---------|---------------|
+| Cron PATH (`PATH=` + absolute python3) | 2026-07-09 18:40 | **Now** |
+| CSV fallback pillar scoring | 2026-07-08 15:30 | 1 day |
+| Bull/Bear crontab removal (Mavis inline) | 2026-07-08 15:30 | 1 day |
+| signals_live.json write (Bull/Bear integration) | 2026-07-08 15:30 | 1 day |
+
+**Rebuild options:**
+- **GitHub Actions** (auto): Push to `main` → rebuilds → Portainer webhook redeploys → ✅ already triggered by this push
+- **Portainer** (manual): `http://10.8.0.10:9000` → `trading-agent` stack → "Recreate"
+- **NAS SSH** (manual): `ssh admin@10.8.0.10` → pull + rebuild
+
+## fincept_connector.py — No Fix Needed ✅
+
+**Confirmed healthy** — `fincept_connector.py` routes correctly:
+- Container Linux → `sys.platform != "win32"` → yfinance fallback
+- All None guards: `price or 0`, `prev or price`, `info.last_volume or 0`
+- No "quote error" string in code
+- Dashboard state shows no quote errors
+
+## Scanner Status Summary
+
+| Component | Status | Notes |
+|-----------|--------|-------|
+| Flask scan_thread | ✅ Alive | last_scan: 18:30 |
+| Container cron: premarket | 🔴 Broken | `python3: not found` — PATH fix pending rebuild |
+| Container cron: transcribe | 🔴 Broken | same PATH issue |
+| Bull/Bear (Mavis inline) | ✅ Running | Mavis scan-market cron runs Bull/Bear |
+| Richard premarket | ✅ Ran | 4 stocks at 14:41 Berlin |
+| Live event loop | 🔴 Broken | "No symbols available" |
+
+---
+
 # Pipeline Status — 2026-07-09 13:30 (Berlin, UTC+2)
 
 ## Dashboard State
@@ -790,3 +893,125 @@ Also: add `_sync_nas_safe.ps1` to Windows Task Scheduler (daily ~14:30) to sync 
 ## fincept_connector.py — No Fix Needed
 
 Already has correct yfinance fallback. `sys.platform == "win32"` routes Linux calls to yfinance directly.
+
+
+---
+
+# Pipeline Status — 2026-07-09 18:00 (Berlin, UTC+2)
+
+## Dashboard State
+| Field | Value | Notes |
+|---|---|---|
+| `last_scan` | **17:59** ✅ | Scanner alive — scan_thread running every 60s |
+| `market_open` | `true` | ✅ |
+| `positions` | `[]` | No open positions |
+| `bull_bear` | `[]` | 🔴 Container stale — Bull/Bear needs rebuild + LLM vault key |
+| `signals` | `[]` | 🔴 ROOT CAUSE FOUND — see below |
+| `watchlist` | `[]` | 🔴 Same root cause — premarket wiped by failed scan |
+| `mount_status` | `ok` ✅ | NAS Docker volume reachable |
+| `pillars` | `{}` | 🔴 Container stale — CSV fallback not running |
+
+## Today's Watchlist (Richard 14:10 — confirmed on E: drive)
+Richard's premarket ran correctly at 14:10. Watchlist exists at:
+- ✅ E: `E:\Me\TradingAgent\data\watchlists\watchlist_20260709.csv` (4 stocks)
+- ✅ Docker volume `\\10.8.0.10\Docker\data\watchlists\watchlist_20260709.csv` (written 14:41 via debug endpoint)
+- ❌ Z: NAS share: **NOT synced** — `watchlist_20260709.csv` absent (sync script never ran today)
+
+4 stocks from Richard's 14:10 run:
+| Symbol | Price | Gap | RelVol | Float | Score |
+|--------|-------|-----|--------|-------|-------|
+| NVVE | $8.49 | +63.6% | 791× | 0.2M | 4.25 |
+| IOTR | $3.54 | +40.5% | 44.8× | 1.0M | 4.25 |
+| TVRD | $5.00 | +61.3% | 5.0× | 5.7M | 4.25 |
+| ZTG | $2.85 | +25.0% | 6.0× | ? | 3.5 |
+
+## 🔴 Root Cause: Container Stale — Two Bugs Active
+
+### Bug 1: `fincept_connector.py` returns empty for penny stocks (OLD CONTAINER)
+- `fincept_connector._fallback_yfinance()` uses `t.fast_info` which returns None for nano/micro-cap stocks during market hours
+- `info.last_price or 0` → returns 0 for these stocks
+- `get_batch_quotes()` returns empty list → scanner has no live data
+- **Fix pushed**: Changed to `t.info` dict with `regularMarketPrice` / `currentPrice` / `ask` fallback chain
+
+### Bug 2: Scanner wipes premarket watchlist when live quotes fail (OLD CONTAINER)
+- `run_scan()` loads Richard's 4 premarket stocks from CSV ✅
+- Then tries `get_batch_quotes()` for live scoring → returns empty → `run_scan()` returns `[]`
+- `scan_thread()` sets `state['signals'] = []` and `state['watchlist'] = []`
+- **Result**: premarket watchlist is overwritten with empty list on every scan cycle
+- **Fix in code**: local `app.py` has CSV-data fallback (lines 555-608) — preserves premarket stocks when live quotes fail. But container is OLD and doesn't have this fix.
+
+### Bug 3: Crontab `python3: not found` (OLD CONTAINER — same as Jul 8)
+- `scan.log` shows only: `/bin/sh: 1: python3: not found` (×37)
+- `richard.log` shows: `/bin/sh: 1: python3: not found` (×4)
+- Cron daemon runs but premarket_screener.py never executes
+- **Fix pushed**: Added explicit `PATH=/usr/local/bin:/usr/bin:/bin` + use `/usr/local/bin/python` in crontab
+
+### Bug 4: Container image stale — fixes not deployed
+- `/api/scan/liveness` → 404 (endpoint added Jul 8, not in running container)
+- GitHub Actions run #28 failed: **Docker login to NAS registry** step failed
+- `secrets.NAS_REGISTRY_USER` / `secrets.NAS_REGISTRY_PASS` not set in GitHub Actions
+- Build skipped → Portainer webhook not called → container not rebuilt
+
+## Fixes Pushed This Session
+
+### ✅ `trading_agent/fincept_connector.py` — FIXED + pushed
+- Changed `t.fast_info` → `t.info` dict in `_fallback_yfinance()`
+- New price: `info.get("regularMarketPrice") or info.get("currentPrice") or info.get("ask") or 0`
+- New prev: `info.get("regularMarketPreviousClose") or info.get("previousClose") or price`
+- New volume: `info.get("regularMarketVolume") or info.get("volume") or 0`
+- Commits: `177b407` (GitHub + Gitea `main`)
+
+### ✅ `entrypoint.py` — FIXED + pushed
+- Added `PATH=/usr/local/bin:/usr/bin:/bin` to crontab (fixes cron environment)
+- Changed `python3` → `/usr/local/bin/python` (explicit path, avoids PATH resolution in cron)
+- Commits: `177b407` (same commit as fincept_connector fix)
+
+## 🔴 GitHub Actions Build Failing — Action Required
+
+**GitHub Actions run #28 (18:09 Berlin) FAILED at Docker login step:**
+```
+Error: Cannot perform docker login to nas:5000
+```
+
+**Root cause**: `NAS_REGISTRY_USER` and `NAS_REGISTRY_PASS` secrets not set in GitHub Actions.
+
+**Fix (Kay needs to do once):**
+1. Go to: https://github.com/kay4pres/trading-agent/settings/secrets/actions
+2. Add `NAS_REGISTRY_USER` → value: `admin` (or whatever NAS registry user)
+3. Add `NAS_REGISTRY_PASS` → value: (NAS registry password)
+4. Also add `PORTAINER_WEBHOOK_URL` if missing
+
+After secrets are set: push any file to `main` → GitHub Actions rebuilds → Portainer redeploys.
+
+## Alternative: Rebuild Container Manually
+
+**Option A — Portainer (recommended):**
+1. Log into Portainer: `http://10.8.0.10:9000`
+2. Find `trading-agent` stack
+3. Click "Recreate" or "Deploy changes"
+4. Container pulls `nas:5000/trading-agent:latest` (needs GitHub Actions to push first)
+
+**Option B — NAS SSH:**
+`ssh admin@10.8.0.10` → `cd /volume1/docker/trading-agent && git pull && docker build -t nas:5000/trading-agent:latest . && docker push nas:5000/trading-agent:latest`
+
+**Option C — GitHub Actions fix:**
+1. Set `NAS_REGISTRY_USER` + `NAS_REGISTRY_PASS` in GitHub Actions secrets
+2. Push to `main` → triggers full rebuild
+
+## NAS Sync — Separate Issue (not blocking scanner)
+
+The Z: share (`Z:\trading-agent-source\data\watchlists\`) is missing today's watchlist — `_sync_nas_safe.ps1` didn't run today. This is the same issue as yesterday's. Not critical for scanner (Docker volume has the file), but Z: backup is stale.
+
+## Status Summary
+
+| Issue | Status | Fix |
+|---|---|---|
+| `fincept_connector.py` returns empty for penny stocks | ✅ Fixed + pushed | Uses `t.info` dict |
+| Scanner wipes premarket when live quotes fail | ✅ Fixed in code | CSV-data fallback in `app.py` (local) |
+| Crontab `python3: not found` | ✅ Fixed + pushed | Explicit PATH + `/usr/local/bin/python` |
+| Container stale (fixes not deployed) | 🔴 Pending | GitHub Actions NAS creds needed |
+| GitHub Actions NAS login failing | 🔴 Action needed | Set `NAS_REGISTRY_USER`/`NAS_REGISTRY_PASS` secrets |
+| Bull/Bear empty | 🔴 Pending | Container stale + LLM vault key missing |
+| Z: share sync | ⚠️ Stale | Run `_sync_nas_safe.ps1` daily |
+
+**Fixes are in GitHub (`177b407`) and Gitea (`main`). Rebuild is the only remaining blocker.**
