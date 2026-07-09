@@ -1093,9 +1093,16 @@ def webhook_tradingview():
 def api_debug_load_watchlist():
     """
     Debug endpoint: write watchlist CSV directly into the container and reload.
+
     POST /api/debug/load-watchlist
-    Body: {"symbols": [{"symbol":"ICU","price":4.86,"gap_pct":32.4,"rel_vol":6.6,"float_m":4.0,"total_score":2.5,"news_summary":"..."}]}
+    Body: {"symbols": [{"symbol":"ICU","price":4.86,"gap_pct":32.4,"rel_vol":6.6,
+                        "float_m":4.0,"total_score":2.5,"p4_catalyst":0.5,
+                        "news_summary":"...","pillars_json":"{...}"}]}
     Writes to /app/data/watchlists/watchlist_YYYYMMDD.csv and reloads state.
+
+    All 18 fields are written so Richard's premarket format is preserved.
+    CSV fallback pillar scoring is applied after load so pillars are populated
+    even when pillars_json is absent from CSV.
     """
     import csv as csv_mod, io
     try:
@@ -1113,53 +1120,83 @@ def api_debug_load_watchlist():
     csv_path = watchlist_dir / f'watchlist_{today_str}.csv'
     latest_path = DATA_DIR / 'watchlist_latest.csv'
 
-    # Write CSV
-    with open(csv_path, 'w', newline='', encoding='utf-8') as f:
-        writer = csv_mod.DictWriter(f, fieldnames=[
-            'symbol','short_name','price','gap_pct','rel_vol','float_m',
-            'total_score','p4_catalyst','news_summary'
-        ])
-        writer.writeheader()
-        for s in symbols:
-            writer.writerow({
-                'symbol':       s.get('symbol', ''),
-                'short_name':   s.get('short_name', ''),
-                'price':        s.get('price', 0),
-                'gap_pct':      s.get('gap_pct', 0),
-                'rel_vol':      s.get('rel_vol', 0),
-                'float_m':     s.get('float_m', 0),
-                'total_score':  s.get('total_score', 0),
-                'p4_catalyst':  s.get('p4_catalyst', 0),
-                'news_summary': s.get('news_summary', ''),
-            })
+    # All 18 fields matching Richard's premarket_screener output
+    ALL_FIELDS = [
+        'symbol','short_name','price','gap_pct','rel_vol','float_m',
+        'total_score','p2_gap','p3_rv','p4_catalyst','news_summary',
+        'news_count','sentiment','news_provider','risk_flags','rejects',
+        'scan_time','pillars_json'
+    ]
 
-    # Also write watchlist_latest.csv
-    with open(latest_path, 'w', newline='', encoding='utf-8') as f:
-        writer = csv_mod.DictWriter(f, fieldnames=[
-            'symbol','short_name','price','gap_pct','rel_vol','float_m',
-            'total_score','p4_catalyst','news_summary'
-        ])
-        writer.writeheader()
-        for s in symbols:
-            writer.writerow({
-                'symbol':       s.get('symbol', ''),
-                'short_name':   s.get('short_name', ''),
-                'price':        s.get('price', 0),
-                'gap_pct':      s.get('gap_pct', 0),
-                'rel_vol':      s.get('rel_vol', 0),
-                'float_m':     s.get('float_m', 0),
-                'total_score':  s.get('total_score', 0),
-                'p4_catalyst':  s.get('p4_catalyst', 0),
-                'news_summary': s.get('news_summary', ''),
-            })
+    def write_csv(out_path):
+        with open(out_path, 'w', newline='', encoding='utf-8') as f:
+            writer = csv_mod.DictWriter(f, fieldnames=ALL_FIELDS, extrasaction='ignore')
+            writer.writeheader()
+            for s in symbols:
+                writer.writerow({
+                    'symbol':        s.get('symbol', ''),
+                    'short_name':    s.get('short_name', ''),
+                    'price':         s.get('price', 0),
+                    'gap_pct':       s.get('gap_pct', 0),
+                    'rel_vol':       s.get('rel_vol', 0),
+                    'float_m':       s.get('float_m', 0),
+                    'total_score':   s.get('total_score', 0),
+                    'p2_gap':        s.get('p2_gap', s.get('gap_pct', 0)),
+                    'p3_rv':         s.get('p3_rv', s.get('rel_vol', 0)),
+                    'p4_catalyst':   s.get('p4_catalyst', 0),
+                    'news_summary':  s.get('news_summary', ''),
+                    'news_count':    s.get('news_count', 0),
+                    'sentiment':     s.get('sentiment', 0),
+                    'news_provider': s.get('news_provider', 'csv'),
+                    'risk_flags':    s.get('risk_flags', '[]'),
+                    'rejects':       s.get('rejects', '[]'),
+                    'scan_time':     s.get('scan_time', today_str),
+                    'pillars_json':  s.get('pillars_json', ''),
+                })
 
-    # Reload state
+    write_csv(csv_path)
+    write_csv(latest_path)
+
+    # ── CSV fallback pillar scoring ────────────────────────────────────────────
+    # Compute P1-P5 from CSV fields when pillars_json is absent or empty.
+    # Mirror of the logic in run_scan() so load_premarket_watchlist() signals
+    # get proper pillar scores even without live quotes.
+    def _csv_pillar_scores(sig):
+        price  = sig.get('price', 0)
+        gap    = sig.get('gap_pct', 0)
+        rv     = sig.get('rel_vol', 0)
+        flt    = sig.get('float_m', 0)
+        p4_raw = sig.get('p4_catalyst', 0.5)
+        try:
+            existing = json.loads(sig.get('pillars_json') or '{}')
+            if existing:
+                return existing
+        except Exception:
+            pass
+        p1 = 1.0 if 2 <= price <= 20 else 0.0
+        p2 = 1.0 if gap >= 10 else (0.5 if gap >= 5 else 0.0)
+        p3 = 1.0 if rv >= 5 else (0.5 if rv >= 3 else 0.0)
+        p5 = 1.0 if 0 < flt < 20 else (0.5 if flt == 0 else 0.0)
+        p4 = float(p4_raw) if p4_raw else 0.5
+        return {
+            'P1_price':     p1,
+            'P2_gap':       p2,
+            'P3_relvol':    p3,
+            'P4_catalyst':  p4,
+            'P5_float':     p5,
+        }
+
+    # Reload and patch pillar scores
     premarket = load_premarket_watchlist()
+    for sig in premarket:
+        sig['pillars'] = _csv_pillar_scores(sig)
+        sig['decided']  = False
+        sig['decision'] = None
     if premarket:
         state['watchlist'] = premarket
         state['signals']   = premarket
     state['last_scan'] = berlin_now().strftime('%H:%M')
-    print(f"[debug] Loaded {len(symbols)} watchlist symbols from debug endpoint")
+    print(f"[debug] Loaded {len(symbols)} symbols — pillars patched from CSV fields")
     return jsonify({'ok': True, 'loaded': len(symbols), 'path': str(csv_path)})
 
 
