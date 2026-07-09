@@ -1,3 +1,47 @@
+# Pipeline Status — 2026-07-09 15:00 (Berlin, UTC+2)
+
+## Dashboard State
+| Field | Value | Notes |
+|---|---|---|
+| `last_scan` | 14:41 | 🟡 Pre-market scan — market opens 15:30 Berlin |
+| `market_open` | **true** | 🔴 STALE — bug: never resets to False after close (FIXED) |
+| `watchlist` | 4 stocks | NVVE, IOTR, TVRD, ZTG (Jul 8 premarket — stale) |
+| `signals` | 0 (manual scan) | Watchlist stocks not qualifying today — normal for thin Wed |
+| `bull_bear` | `[]` | 🔴 Ran at 15:00 against stale Jul 8 signals → no debate |
+| `mount_status` | `ok` | ✅ Today's watchlist CSV in container |
+| `pillars` | `{}` (empty) | Normal for premarket_csv source |
+
+## Two Bugs Found & Fixed — Container Rebuild Required ⚠️
+
+### Bug 1 — `market_open` Never Resets to `False` 🔴 → ✅ FIXED
+- **File:** `dashboard/app.py:scan_thread` (line ~589)
+- **Root cause:** `state['market_open'] = True` only set inside `if market_status()`. Never reset when market closes.
+- **Evidence:** Dashboard showed `market_open: true` at 15:05 Berlin (market opens 15:30). Stale from pre-market scan.
+- **Fix:** Added `state['market_open'] = market_status()` every iteration outside the if-block. ✅
+- **Commit:** `e0a0561` → Gitea `dev` → GitHub Actions auto-rebuild
+
+### Bug 2 — Bull/Bear Cron Reads Stale Signals 🔴 → ✅ FIXED
+- **File:** `scripts/bull_bear_runner.py:main()`
+- **Root cause:** Cron fires at 15:00 Berlin. Scan_thread writes fresh `signals_live.json` ~15:01 (market opens 15:30 → scan runs → writes). Bull/Bear reads yesterday's file.
+- **Evidence:** `bull_bear: []` — ran at 15:00 against Jul 8 signals (NVVE, IOTR, TVRD, ZTG). None qualified → empty results.
+- **Fix:** Added `_signals_are_fresh()` guard — skips if `signals_live.json` >5 min old. Prints skip message. ✅
+- **Commit:** `e0a0561` → Gitea `dev` → GitHub Actions auto-rebuild
+
+### fincept_connector.py: ✅ HEALTHY
+No "quote error" anywhere. yfinance fallback solid, None guards confirmed. No changes needed.
+
+## Scanner Status
+- `last_scan: 14:41` → pre-market scan from yesterday evening session. Scanner alive.
+- Manual `/api/scan` POST at 15:04 → 0 signals (watchlist stocks don't qualify today — normal).
+- Bull/Bear cron: fires every 30 min 15:00–20:45 Berlin. Freshness guard now prevents stale reads.
+
+## Actions
+- ✅ Both bugs fixed: `e0a0561` on Gitea `dev`
+- ⚠️ Container rebuild needed — GitHub Actions auto-rebuilds from Gitea `dev` push
+- No IM notification needed — rebuild picks fixes up automatically
+
+---
+
 # Pipeline Status — 2026-07-08 14:00 (Berlin, UTC+2)
 
 ## Dashboard State
