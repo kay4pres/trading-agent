@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Pull latest code from GitHub
 # CACHEBUST date must change to force a fresh download — update daily if needed
-ARG CACHEBUST=20260708
+ARG CACHEBUST=20260709
 ADD https://github.com/kay4pres/trading-agent/archive/refs/heads/main.zip?cachebust=${CACHEBUST} /app/repo.zip
 RUN unzip /app/repo.zip \
     && mv /app/trading-agent-main/* /app/ \
