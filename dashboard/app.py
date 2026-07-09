@@ -308,8 +308,21 @@ def _load_watchlist_csv() -> List[Dict[str, Any]]:
                                 'p4_catalyst':  float(row.get('p4_catalyst') or 0),
                                 'news_summary':  row.get('news_summary', ''),
                                 'risk_flags':   [],
-                                # Deserialize P1-P5 scores from CSV (written by premarket_screener.save_watchlist)
-                                'pillars':      json.loads(row.get('pillars_json', '{}')) or {},
+                                # Deserialize P1-P5 scores from CSV (written by premarket_screener.save_watchlist).
+                                # Handle: valid JSON string (fixed), Python dict string repr (legacy CSV bug),
+                                # already-a-dict (unlikely but safe), or empty.
+                                _pj_raw = row.get('pillars_json', '{}')
+                                try:
+                                    _pillars_val = json.loads(_pj_raw)
+                                except Exception:
+                                    # Legacy CSV bug: DictWriter wrote Python repr instead of JSON.
+                                    # Attempt ast.literal_eval as last resort.
+                                    try:
+                                        import ast
+                                        _pillars_val = ast.literal_eval(_pj_raw)
+                                    except Exception:
+                                        _pillars_val = {}
+                                'pillars': _pillars_val or {},
                                 'source':       'premarket_csv',
                                 'decided':       False,
                                 'decision':      None,

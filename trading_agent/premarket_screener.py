@@ -107,31 +107,44 @@ DEFAULT_UNIVERSE = [
 # FIVE PILLARS + COURSE 2 RISK RULES
 # ═══════════════════════════════════════════════════════════════════════════════
 
-def check_pillars(quote: Dict, info: Dict) -> Dict[str, Any]:
+def check_pillars(quote: Dict, info: Dict, catalyst_age_minutes: Optional[float] = None) -> Dict[str, Any]:
     """
-    Evaluate Five Pillars + Course 2 risk checks.
-    Returns dict with pillar scores and reject reasons.
+    Evaluate Five Pillars + Course 2 risk checks + Sweet Spot bonus scoring.
+
+    Args:
+        quote: Dict with price, volume, high, low, previous_close
+        info: Dict with averageVolume, floatShares, marketCap, previousClose, shortName
+        catalyst_age_minutes: Optional; if <= 60, awards +2 sweet spot catalyst freshness bonus.
+
+    Returns dict with:
+        - score: base Five Pillars score (0-5) PLUS sweet spot bonuses (can exceed 5)
+        - pillars: individual pillar results
+        - sweet_spot_score: count of sweet spot criteria met (0-5)
+        - sweet_spot_bonus: bonus points added (0-6)
+        - rejects, risk_flags, gap_pct, rel_vol, float_m, short_name
     """
-    price       = quote.get('price', 0)
+    price        = quote.get('price', 0)
     # Fallback chain: quote.previous_close (TV API) → info.previousClose (yfinance batch)
     # → info.regularMarketPreviousClose → current price (last resort).
     # Batch quotes from fincept_connector.get_batch_quotes() have no previous_close,
     # so we MUST read it from the info dict that get_info() also returns.
-    prev_close  = (
+    prev_close   = (
         quote.get('previous_close')
         or info.get('previousClose')
         or info.get('regularMarketPreviousClose')
         or price
     )
-    gap_pct     = ((price - prev_close) / prev_close * 100) if prev_close else 0
-    volume      = quote.get('volume', 0)
-    high        = quote.get('high', price)
-    low         = quote.get('low', price)
-    avg_volume  = info.get('averageVolume', 0)
-    rel_vol     = volume / avg_volume if avg_volume else 0
-    float_shares= info.get('floatShares', 0)
-    market_cap  = info.get('marketCap', 0)
-    short_name  = info.get('shortName', '')
+    gap_pct      = ((price - prev_close) / prev_close * 100) if prev_close else 0
+    volume       = quote.get('volume', 0)
+    high         = quote.get('high', price)
+    low          = quote.get('low', price)
+    avg_volume   = info.get('averageVolume', 0)
+    rel_vol      = volume / avg_volume if avg_volume else 0
+    float_shares = info.get('floatShares', 0)
+    market_cap   = info.get('marketCap', 0)
+    short_name   = info.get('shortName', '')
+    # % up today: intraday range from low (assumed yesterday close proxy) to current price
+    pct_up_today = ((high - low) / low * 100) if low and low > 0 else 0
 
     score     = 0
     pillars   = {}
@@ -206,15 +219,53 @@ def check_pillars(quote: Dict, info: Dict) -> Dict[str, Any]:
     if gap_pct > 50:
         risk_flags.append(f"HALT_RISK gap={gap_pct:.0f}%")
 
+    # ── Sweet Spot Bonuses (applied AFTER base pillar scoring — boosts rank, not pass/fail) ──
+    sweet_spot_score = 0
+    sweet_spot_bonus = 0
+    sweet_spots = []
+
+    # Bonus 1: price $5-$10 range (+1)
+    if 5.00 <= price <= 10.00:
+        sweet_spot_score += 1
+        sweet_spot_bonus += 1
+        sweet_spots.append('price_5_10')
+    # Bonus 2: float <= 5M (+1)
+    if 0 < float_shares <= 5_000_000:
+        sweet_spot_score += 1
+        sweet_spot_bonus += 1
+        sweet_spots.append('float_le_5M')
+    # Bonus 3: relative volume >= 10x (+1)
+    if rel_vol >= 10.0:
+        sweet_spot_score += 1
+        sweet_spot_bonus += 1
+        sweet_spots.append('rv_10x')
+    # Bonus 4: % up today >= 50% (+1)
+    if pct_up_today >= 50.0:
+        sweet_spot_score += 1
+        sweet_spot_bonus += 1
+        sweet_spots.append('pct_up_50')
+    # Bonus 5: catalyst news within 60 minutes (+2)
+    if catalyst_age_minutes is not None and catalyst_age_minutes <= 60:
+        sweet_spot_score += 1
+        sweet_spot_bonus += 2
+        sweet_spots.append('catalyst_fresh')
+
+    # Final score = base pillars (0-5) + sweet spot bonuses (0-6, max +6 with catalyst)
+    final_score = round(score + sweet_spot_bonus, 1)
+
     return {
-        'score':        score,
-        'pillars':      pillars,
-        'rejects':      rejects,
-        'risk_flags':   risk_flags,
-        'gap_pct':      round(gap_pct, 2),
-        'rel_vol':      round(rel_vol, 1),
-        'float_m':      round(float_shares / 1e6, 1) if float_shares else None,
-        'short_name':   short_name,
+        'score':           final_score,
+        'base_score':      score,          # raw Five Pillars score before bonuses
+        'sweet_spot_score': sweet_spot_score,  # how many sweet spot criteria met (0-5)
+        'sweet_spot_bonus': sweet_spot_bonus,  # bonus points awarded (0-6)
+        'sweet_spots':     sweet_spots,     # list of which bonuses fired
+        'pillars':         pillars,
+        'rejects':         rejects,
+        'risk_flags':      risk_flags,
+        'gap_pct':         round(gap_pct, 2),
+        'rel_vol':         round(rel_vol, 1),
+        'float_m':         round(float_shares / 1e6, 1) if float_shares else None,
+        'short_name':      short_name,
     }
 
 
@@ -512,6 +563,20 @@ def format_watchlist_row(r: Dict) -> str:
     )
 
 
+def _safe_serialize_pillars(pillars: Any) -> str:
+    """
+    Serialize pillars dict to a JSON string that app.py can deserialize.
+    Handles: None, dict, list, or already-serialized string.
+    """
+    if pillars is None:
+        return '{}'
+    if isinstance(pillars, str):
+        return pillars  # already serialized
+    if isinstance(pillars, dict):
+        return json.dumps(pillars)
+    return json.dumps({})
+
+
 def save_watchlist(results: List[Dict], path: Path):
     """Save ranked watchlist to CSV."""
     import csv
@@ -526,8 +591,17 @@ def save_watchlist(results: List[Dict], path: Path):
         w.writeheader()
         for r in results:
             row = dict(r)
-            # Serialize pillars dict to JSON string so dashboard can deserialize it
-            row['pillars_json'] = json.dumps(row.get('pillars', {}))
+            # row['pillars'] = full dict from check_pillars() with score/base_score/pillars sub-dict.
+            # row['pillars']['pillars'] = P1-P5 individual scores (what dashboard reads).
+            # Serialize carefully: DictWriter converts dict→str repr, which breaks json.loads().
+            # Fix: set pillars_json explicitly BEFORE DictWriter touches the row.
+            raw_pillars = row.get('pillars')
+            if isinstance(raw_pillars, dict) and 'pillars' in raw_pillars:
+                row['pillars_json'] = json.dumps(raw_pillars['pillars'])
+            else:
+                row['pillars_json'] = _safe_serialize_pillars(raw_pillars)
+            # Prevent DictWriter from mangling the pillars dict itself
+            row.pop('pillars', None)
             w.writerow(row)
     print(f"  💾 Saved: {path.name}")
 
