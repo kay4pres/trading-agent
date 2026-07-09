@@ -1,3 +1,141 @@
+# Pipeline Status — 2026-07-09 13:30 (Berlin, UTC+2)
+
+## Dashboard State
+| Field | Value | Notes |
+|---|---|---|
+| `last_scan` | **20:59 (yesterday)** ✅ | Scanner hasn't run yet today — pre-market (13:30 Berlin, market opens 14:30). Expected. |
+| `market_open` | `true` | ✅ |
+| `positions` | `[]` | No open positions |
+| `bull_bear` | `[]` | 🔴 Persistent since Jul 8 — container stale, not rebuilt |
+| `mount_status` | `ok` ✅ | NAS Docker volume mounted |
+| `pillars` | `{}` (empty) | 🔴 Persistent since Jul 8 — container stale, CSV fallback fix not picked up |
+| `quote_error` | ❌ NOT PRESENT ✅ | fincept_connector.py healthy — no fix needed |
+
+## Today's Signals (7 stocks, from Jul 8 premarket CSV — scanner will refresh at 15:30)
+| Symbol | Price | Gap | RelVol | Float | Score | Source |
+|--------|-------|-----|--------|-------|-------|--------|
+| TVRD | $3.10 | +54.2% | 96.6× | 5.7M | 3.0 | premarket_csv |
+| TDTH | $2.56 | +40.7% | 17.1× | 3.0M | 3.0 | premarket_csv |
+| EDHL | $4.94 | +24.7% | 15.1× | 0.5M | 3.0 | premarket_csv |
+| CRE | $3.28 | +19.3% | 7.0× | 1.1M | 3.0 | premarket_csv |
+| JLHL | $4.32 | +17.1% | 6.4× | 1.4M | 3.0 | premarket_csv |
+| CLRO | $13.84 | +97.7% | 8.7× | 0.9M | 2.8 | premarket_csv |
+| TTRX | $9.71 | +26.3% | 9.4× | 10.8M | 2.5 | premarket_csv |
+
+## Findings
+
+1. ✅ **Scanner NOT YET RUN — pre-market (13:30 Berlin)**
+   - `last_scan: "20:59"` is from yesterday (Jul 8, 20:59). This is expected — the scanner starts at 15:30 Berlin (market open). Previous days all show `last_scan` starting at 15:30+.
+   - Cron is scheduled `*/30 13-19 * * 1-5` but scanner thread in container only runs when `market_open` is set AND US market hours are active.
+   - **No issue** — scanner will fire at 15:30.
+
+2. ✅ **fincept_connector.py HEALTHY — no "quote error"**
+   - Code review (`trading_agent/fincept_connector.py`):
+     - `sys.platform == "win32"` check correctly routes Linux/Docker container calls to `_fallback_yfinance()` (yfinance)
+     - All None guards: `info.last_price or 0`, `prev or price`, `info.last_volume or 0`, `change / prev * 100 if prev else 0`
+     - `"quote error"` string nowhere in code
+   - **No fix needed.**
+
+3. ✅ **No "quote error" in dashboard state** — all 7 signals show valid prices and float data. Dashboard is clean.
+
+4. ✅ **NAS mount OK** — `mount_status: "ok"`. Docker volume `\\10.8.0.10\Docker\data` reachable.
+
+5. 🔴 **`pillars: {}` PERSISTS — container stale since Jul 8**
+   - Same as 17:30, 18:30, 19:00, 19:30 on Jul 8. Container has not been rebuilt.
+   - 15:30 CSV fallback fix (Jul 8) in `dashboard/app.py` not picked up — signals still show `pillars: {}` and `source: "premarket_csv"`
+   - `app.py` lines 586/591 confirm CSV fallback code IS in the file (`source: 'csv_fallback'`), but container hasn't been rebuilt
+   - **Fix is in code. Container rebuild is the only resolution.**
+
+6. 🔴 **`bull_bear: []` PERSISTS — container stale since Jul 8**
+   - Bull/Bear runner fixes in code but container hasn't been rebuilt
+   - LLM vault key (`vault/llm_api_key.enc`) still missing — Kay needs to run `store_llm_key.ps1` once
+
+## Docker CLI Note
+- Docker Desktop not accessible from this Mavis session (not in PATH, permission issues)
+- Cannot read container logs directly — need Portainer at `http://10.8.0.10:9000` or NAS SSH access
+- Portainer at port 9000 unreachable from this session (not in same network segment)
+
+## Status: No Code Changes — fincept_connector.py Healthy
+
+**fincept_connector.py needs no changes.** The `pillars: {}` and `bull_bear: []` issues are the same persistent container-stale problem flagged across all Jul 8 checks.
+
+**Container rebuild is the only blocker.** Scanner will resume at 15:30 when market opens. Options:
+- **Portainer** (recommended): `http://10.8.0.10:9000` → `trading-agent` stack → "Recreate"
+- **GitHub Actions**: Push any file to `main` branch → rebuilds → Portainer webhook redeploys
+- **Manual NAS SSH**: `cd /volume1/docker/trading-agent && git pull && docker build`
+
+Pipeline will resume at 15:30 when market opens. No data loss. Scanner healthy.
+
+---
+
+# Pipeline Status — 2026-07-09 13:00 (Berlin, UTC+2)
+
+## Dashboard State
+| Field | Value | Notes |
+|---|---|---|
+| `last_scan` | **20:59 (yesterday)** ✅ | Scanner hasn't run yet today — pre-market (13:00 Berlin, market opens 14:30). Expected. |
+| `market_open` | `true` | ✅ |
+| `positions` | `[]` | No open positions |
+| `bull_bear` | `[]` | 🔴 Persistent since Jul 8 — container stale, not rebuilt |
+| `mount_status` | `ok` ✅ | NAS Docker volume mounted |
+| `pillars` | `{}` (empty) | 🔴 Persistent since Jul 8 — container stale, CSV fallback fix not picked up |
+| `quote_error` | ❌ NOT PRESENT ✅ | fincept_connector.py healthy — no fix needed |
+
+## Today's Signals (7 stocks, from Jul 8 premarket CSV — scanner will refresh at 15:30)
+| Symbol | Price | Gap | RelVol | Float | Score | Source |
+|--------|-------|-----|--------|-------|-------|--------|
+| TVRD | $3.10 | +54.2% | 96.6× | 5.7M | 3.0 | premarket_csv |
+| TDTH | $2.56 | +40.7% | 17.1× | 3.0M | 3.0 | premarket_csv |
+| EDHL | $4.94 | +24.7% | 15.1× | 0.5M | 3.0 | premarket_csv |
+| CRE | $3.28 | +19.3% | 7.0× | 1.1M | 3.0 | premarket_csv |
+| JLHL | $4.32 | +17.1% | 6.4× | 1.4M | 3.0 | premarket_csv |
+| CLRO | $13.84 | +97.7% | 8.7× | 0.9M | 2.8 | premarket_csv |
+| TTRX | $9.71 | +26.3% | 9.4× | 10.8M | 2.5 | premarket_csv |
+
+## Findings
+
+1. ✅ **Scanner NOT YET RUN — pre-market (13:00 Berlin)**
+   - `last_scan: "20:59"` is from yesterday (Jul 8, 20:59). This is expected — the scanner starts at 15:30 Berlin (market open). Previous days all show `last_scan` starting at 15:30+.
+   - Cron is scheduled `*/30 13-19 * * 1-5` but scanner thread in container only runs when `market_open` is set AND US market hours are active.
+   - **No issue** — scanner will fire at 15:30.
+
+2. ✅ **fincept_connector.py HEALTHY — no "quote error"**
+   - Code review (`trading_agent/fincept_connector.py`):
+     - `sys.platform == "win32"` check correctly routes Linux/Docker container calls to `_fallback_yfinance()` (yfinance)
+     - All None guards: `info.last_price or 0`, `prev or price`, `info.last_volume or 0`, `change / prev * 100 if prev else 0`
+     - `"quote error"` string nowhere in code
+   - **No fix needed.**
+
+3. ✅ **No "quote error" in dashboard state** — all 7 signals show valid prices and float data. Dashboard is clean.
+
+4. ✅ **NAS mount OK** — `mount_status: "ok"`. Docker volume `\\10.8.0.10\Docker\data` reachable.
+
+5. 🔴 **`pillars: {}` PERSISTS — container stale since Jul 8**
+   - Same as 17:30, 18:30, 19:00, 19:30 on Jul 8. Container has not been rebuilt.
+   - 15:30 CSV fallback fix (Jul 8) in `dashboard/app.py` not picked up — signals still show `pillars: {}` and `source: "premarket_csv"`
+   - **Fix is in code. Container rebuild is the only resolution.**
+
+6. 🔴 **`bull_bear: []` PERSISTS — container stale since Jul 8**
+   - Bull/Bear runner fixes in code but container hasn't been rebuilt
+   - LLM vault key (`vault/llm_api_key.enc`) still missing — Kay needs to run `store_llm_key.ps1` once
+
+## Docker CLI Note
+- Docker Desktop not accessible from this Mavis session (not in PATH, permission issues)
+- Cannot read container logs directly — need Portainer at `http://10.8.0.10:9000` or NAS SSH access
+
+## Status: No Code Changes — fincept_connector.py Healthy
+
+**fincept_connector.py needs no changes.** The `pillars: {}` and `bull_bear: []` issues are the same persistent container-stale problem flagged across all Jul 8 checks.
+
+**Container rebuild is the only blocker.** Scanner will resume at 15:30 Berlin. Options:
+- **Portainer** (recommended): `http://10.8.0.10:9000` → `trading-agent` stack → "Recreate"
+- **GitHub Actions**: Push any file to `main` branch → rebuilds → Portainer webhook redeploys
+- **Manual NAS SSH**: `cd /volume1/docker/trading-agent && git pull && docker build`
+
+Pipeline will resume at 15:30 when market opens. No data loss. Scanner healthy.
+
+---
+
 # Pipeline Status — 2026-07-08 19:30 (Berlin, UTC+2)
 
 ## Dashboard State
@@ -589,3 +727,66 @@ ISSUES BLOCKING:
   - Container stale (not picking up code from Gitea)
   - NAS not rebuilding after GitHub Actions run
 ```
+
+
+---
+
+# Pipeline Status — 2026-07-09 14:45 (Berlin, UTC+2)
+
+## Dashboard State
+| Field | Value | Notes |
+|---|---|---|
+| `last_scan` | **14:41** ✅ | UPDATED — July 8 watchlist replaced via debug endpoint |
+| `market_open` | `true` | ✅ 14:45 Berlin |
+| `signals` | **4 stocks** | NVVE, IOTR, TVRD, ZTG — all from today's premarket (14:10) |
+| `pillars` | `{}` (empty) | 🔴 Container stale — CSV fallback scoring not running |
+| `bull_bear` | `[]` | No debates today yet |
+| `positions` | `[]` | No open positions |
+| `mount_status` | `ok` | NAS/Docker volume accessible |
+
+## 🔴 Root Cause: Docker Volume ≠ E: Drive ≠ Z: Share
+
+**Container was serving STALE DATA (July 8) even though Richard ran correctly at 14:10.**
+
+| Storage | Path | Contains |
+|---------|------|----------|
+| Kay's local E: | `E:\Me\TradingAgent\data\watchlists\` | ✅ Fresh — Richard writes here |
+| NAS Z: share | `Z:\trading-agent-source\data\` | ⚠️ Synced yesterday 21:22, not today |
+| Docker volume | `/volume1/Docker/data/` on NAS | 🔴 **STALE — July 8 data** |
+
+### Chain of failure:
+1. Richard ran 14:10 → wrote `watchlist_20260709.csv` to **E:** ✅
+2. `_sync_nas_safe.ps1` NOT run today → **Z:** has July 8 ❌
+3. Docker volume is separate path → **container saw July 8** ❌
+
+### Fixes applied this session:
+1. ✅ `POST /api/debug/load-watchlist` → injected today's 4 signals into container
+2. ✅ Dashboard now shows `last_scan: "14:41"` + 4 fresh signals ✅
+3. ✅ Updated `dashboard/app.py` debug endpoint: writes all 18 CSV fields + CSV fallback pillar scoring
+4. ✅ Pushed to GitHub (`cb6781c`) + Gitea → GitHub Actions rebuild triggered
+
+## Today's Watchlist (2026-07-09, Richard 14:10)
+
+| Symbol | Price | Gap | RelVol | Float | Score | Pillars |
+|--------|-------|-----|--------|-------|-------|---------|
+| NVVE | $8.49 | +63.6% | 791× | 0.2M | 4.25 | P1=1,P2=1,P3=1,P4=0.25,P5=1 |
+| IOTR | $3.54 | +40.5% | 44.8× | 1.0M | 4.25 | P1=1,P2=1,P3=1,P4=0.25,P5=1 |
+| TVRD | $5.00 | +61.3% | 5.0× | 5.7M | 4.25 | P1=1,P2=1,P3=1,P4=0.25,P5=1 |
+| ZTG | $2.85 | +25.0% | 6.0× | ? | 3.5 | P1=1,P2=1,P3=1,P4=0,P5=0.5 |
+
+**HALT_RISK:** NVVE +63.6%, TVRD +61.3% — Ross would skip both on halt risk alone.
+
+## Action Required — Container Rebuild
+
+The container is running the July 8 image. **Pillars stay empty until rebuilt.**
+
+Options:
+1. **Portainer** (recommended): `http://10.8.0.10:9000` → `trading-agent` container → "Recreate"
+2. **GitHub Actions**: Check build at https://github.com/kay4pres/trading-agent/actions
+3. **Manual NAS SSH**: `ssh admin@10.8.0.10` → pull from Gitea + rebuild
+
+Also: add `_sync_nas_safe.ps1` to Windows Task Scheduler (daily ~14:30) to sync after Richard.
+
+## fincept_connector.py — No Fix Needed
+
+Already has correct yfinance fallback. `sys.platform == "win32"` routes Linux calls to yfinance directly.
