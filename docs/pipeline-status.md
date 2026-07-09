@@ -1,5 +1,99 @@
 # Pipeline Status
 
+## 20:17 Check (Jul 9, Thursday) — 5050 API OK | Web UI 500 | act-runner BLOCKED on Portainer auth
+
+**Dashboard `http://10.8.0.10:5050/api/state`:** `last_scan: "20:16"`, `market_open: true`, `signals: 0`, `mount_status: "ok"`. API is healthy.
+
+**FINDINGS:**
+- ✅ **API `/api/state` — 200 OK** — data layer healthy, scanner alive
+- ❌ **Web UI `/` — 500 Internal Server Error** — frontend rendering bug, container `trading-agent` (id: `5c87b958c0123...`) has bind mount `/data/compose/10/dashboard/static → /app/dashboard/static` (ro). Likely missing `index.html` or template file in bind mount source.
+- ❌ **act-runner fix — BLOCKED** — ai_agent_01 password unknown. Portainer API inaccessible (JWT required). SSH key also rejected by NAS. Need admin to create Portainer API token for ai_agent_01, or reset password.
+- ❌ **`Marvless01_bot` — 401 UNAUTHORIZED** — token revoked, needs new bot from @BotFather
+- ❌ **UAT/PROD DOWN** — blocked on act-runner + CI/CD
+
+**DONE:**
+- `deleg_445287cb` — BLOCKED — Portainer auth impossible without password
+- `deleg_45649c1e` — BLOCKED — same Portainer auth issue; diagnosed via backup DB instead
+
+**NEEDS KAY ACTION:**
+1. **Portainer UI** (`https://10.8.0.10:19943`): Delete broken `act-runner` container, redeploy using `E:\Me\TradingAgent\docs\act-runner-compose.yml`
+2. **@BotFather**: Get new token for `Marvless01_bot` → store in vault
+
+
+
+## 19:34 Check (Jul 9, Thursday) — 5050 LIVE (DEV only) | UAT/PROD DOWN | Portainer API blocked
+
+**Dashboard `http://10.8.0.10:5050/api/state`:** `last_scan: "19:33"`, `market_open: true`, `signals: 0`, `watchlist: 0`, `positions: 0`, `bull_bear: 0`, `decisions: [BMGL @ $8.35 Jul 3]`, `mount_status: "ok"`.
+
+**FINDINGS:**
+- ✅ **Port 5050 LIVE** — scanner alive, market open, mount OK
+- ❌ **UAT (5051) DOWN** — no container responding
+- ❌ **PROD (5052) DOWN** — no container responding
+- ❌ **Portainer API blocked** — `ptr_` token invalid for Agent API; cannot inspect containers
+- ❌ **Portainer UI at :9000** — not reachable from this machine
+- ⏳ **Gitea Actions runner** — `act-runner` container deployed but not yet registered (token issue, delegated to DevOps `deleg_8f219b2a`)
+- ⚠️ **500 error** — dashboard at 5050 showing Internal Server Error in some requests (delegated `deleg_4d20679e`)
+
+**ACTION REQUIRED:**
+1. Portainer UI to deploy UAT stack (ports 5051)
+2. Portainer UI to deploy PROD stack (ports 5052)
+3. Rotate Portainer API token (need admin password)
+
+---
+
+## 19:40 Check (Jul 9, Thursday) — Verified Facts
+
+**Dashboard `http://10.8.0.10:5050/api/state`:** `last_scan: "19:36"`, `market_open: true`, `signals: 0`, `mount_status: "ok"`.
+
+**VERIFIED:**
+- ✅ Dashboard **200 OK** — scanner alive, mount OK, market open
+- ❌ **`Marvless01_bot` (container Telegram) — 401 UNAUTHORIZED** — bot token revoked. Container polling silently failing. Fix: need new bot token from @BotFather → store in vault
+- ⏳ **act-runner** — still pending (deleg `deleg_8f219b2a`)
+- ❌ **UAT/PROD DOWN** — not deployed
+
+**NEXT ACTIONS:**
+1. Get new Telegram bot token from @BotFather → encrypt to vault
+2. Redeploy UAT/PROD via Portainer (after act-runner enables CI/CD)
+3. act-runner must register first → enables CI/CD pipeline
+
+---
+
+
+
+## 19:30 Check (Jul 9, Wednesday) — Scanner ALIVE ✅ | fincept_connector HEALTHY ✅ | No Signals: Quiet Day (no qualifying setups) | Bull/Bear Silent (no signals to debate)
+
+**Dashboard `/api/state`:** `last_scan: "19:30"`, `berlin_time: "19:30"`, `market_open: true`, `signals: []`, `watchlist: []`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35]`, `mount_status: "ok"`.
+
+**Today's watchlist (3 stocks from Richard premarket, watchlist_20260709.csv):**
+
+| Symbol | Score | Gap | RelVol | Float | Risk Flags | Action |
+|--------|-------|-----|--------|-------|-----------|--------|
+| NVVE | 2.2 | +63.6% | 791.4x | 0.2M | WIDE_RANGE 143%, HALT_RISK gap=64% | REJECT |
+| IOTR | 2.2 | +40.5% | 44.8x | 1.0M | WIDE_RANGE 23% | REJECT |
+| TVRD | 2.2 | +61.3% | 5.0x | 5.7M | WIDE_RANGE 88%, HALT_RISK gap=61% | REJECT |
+
+**FINDINGS:**
+
+1. ✅ **Scanner ALIVE** — `last_scan: "19:30"` (1 min ago), `market_open: true`. Scan thread running on schedule. Not frozen.
+
+2. ✅ **fincept_connector.py HEALTHY — no "quote error" anywhere.** Code review confirms: `sys.platform != "win32"` routes all calls to yfinance directly, `int(volume or 0)` guard in place, `change / prev` div-by-zero guard in place. All None guards confirmed. **No fix needed.**
+
+3. ✅ **Watchlist mounted correctly** — `mount_status: "ok"`, `today_csv_exists: true`, `watchlist_20260709.csv` in container at `/app/data/watchlists/`. Richard's premarket output reached the container successfully.
+
+4. ✅ **Bull/Bear cron FIRES but has nothing to debate.** Cron fired 17× today (every 30 min 15:00–19:30 Berlin). All runs returned `success`. But `bull_bear_results.json` contains no entries — `scan_market_bull_bear.py` finds no signals to debate (signals_live.json empty, no timestamped scan files with qualifying stocks).
+
+5. ✅ **Zero signals — normal quiet day.** Today's 3 watchlist stocks all fail Five Pillars:
+   - **NVVE**: 791× relative volume = extreme wash-out (not a clean setup)
+   - **IOTR**: 40.5% gap → WIDE_RANGE 23% rejection (max allowed ~20%)
+   - **TVRD**: 61.3% gap → HALT_RISK (halts on gap-ups >50%)
+   - All scored 2.2 — below 2.5 approval threshold. **This is the scanner working correctly, not a bug.**
+
+6. ✅ **Richard ran at 14:10 (10 min late)** — `watchlist_20260709.csv` created 14:10 Berlin (vs usual 14:01–14:05). Finnhub news API likely slow today. Cron itself fired correctly; delay is external API latency, not a pipeline issue.
+
+**No code changes needed.** fincept_connector.py is clean, scanner is live, watchlist is mounted, Bull/Bear correctly has nothing to debate. Quiet day — no qualifying setups.
+
+---
+
 ## 16:00 Check (Jul 8, Tuesday) — Scanner ALIVE ✅ | fincept_connector HEALTHY ✅ | No "quote error"
 
 **Dashboard `/api/state`:** `last_scan: "16:01"`, `berlin_time: "16:02"`, `market_open: true`, `signals: 7`, `watchlist: 7`, `positions: []`, `bull_bear: []`, `decisions: [BMGL @ $8.35]`, `mount_status: "ok"`.

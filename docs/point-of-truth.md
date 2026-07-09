@@ -1,7 +1,48 @@
 # Point of Truth — Trading Agent Sprint
 **File:** `E:\Me\TradingAgent\docs\point-of-truth.md`
-**Updated:** 2026-07-08 17:00 Berlin
+|**Updated:** 2026-07-09
 **Read before ANY action. Always include path links in your reasoning.**
+
+---
+
+## Smarter Way Communication Rules (Mandatory)
+
+1. Work one step at a time.
+2. Each reply must contain exactly one actionable step.
+3. The step must be clear, practical, and written in plain language.
+4. After giving the step, stop and wait.
+5. Do not continue until Kay types `GO`.
+6. If Kay types `NOK`, report an error and give only one focused remediation step.
+7. Do not give long plans unless explicitly asked.
+8. Do not guess or assume facts not proven.
+9. Use deterministic evidence when needed.
+10. Never expose or request secrets.
+11. If something is not proven, say `NOK` and give the next safe verification step.
+12. Keep responses short and avoid token waste. Token conservation is a first-class requirement — see MoA §Token Conservation.
+
+---
+
+## Governance Loop (Mandatory Before Any Action)
+
+Before acting on any item, produce a PASS/NOK report:
+
+```
+PASS or NOK
+Short reason:
+MATCHES:
+DRIFTS:
+PARKED ITEMS:
+BLOCKERS:
+PROOF / EVIDENCE CHECK
+VERIFIED:
+ASSUMED:
+NOT CHECKED:
+NEXT SAFE STEP:
+```
+
+- Never call a fact VERIFIED unless there is current evidence.
+- Default to NOK when a step crosses an unapproved boundary.
+- Keep parked unless explicitly approved by Kay.
 
 ---
 
@@ -16,7 +57,7 @@ Before doing ANYTHING else in a new session:
    - Check `ai_memory.session_reflections` for session continuity
    - Check `ai_memory.reasoning_logs` for recent agent decisions
 4. **Read pipeline-status.md** — `E:\Me\TradingAgent\pipeline-status.md` (operational state)
-5. **Check Focalboard** — `http://10.8.0.10:9087/bzzy9qg1dabfutdsyb8us5r1x8r`
+5. **Check Hermes Kanban** — `hermes kanban ls`
 6. **Then act** — dispatch the correct agent, do NOT execute yourself
 
 ---
@@ -28,8 +69,8 @@ Before doing ANYTHING else in a new session:
 **Day 2 Deadline:** 2026-07-08 23:59 Berlin (~6 hours remaining)
 **Current Git Commit:** `47439ed` (pipeline-check docs commit)
 
-**Sprint Board:** `http://10.8.0.10:9087/bzzy9qg1dabfutdsyb8us5r1x8r`
-- Focalboard login unstable — may need manual login per session
+**Sprint Board:** Hermes Kanban — `hermes kanban ls`
+- All sprint tasks must be on the Hermes Kanban board
 
 ---
 
@@ -82,9 +123,8 @@ Before doing ANYTHING else in a new session:
 - **URL:** `http://10.8.0.10:3000`
 - **Runner:** `nas-act-runner` — ⛔ unregistered, fix delegated
 
-### Focalboard ⚠️
-- **URL:** `http://10.8.0.10:9087/bzzy9qg1dabfutdsyb8us5r1x8r`
-- **Login:** Unstable in automation — manual login may be needed per session
+### Hermes Kanban ✅
+- **Command:** `hermes kanban ls` — primary sprint board
 
 ---
 
@@ -128,22 +168,36 @@ Before doing ANYTHING else in a new session:
 | **Unified Schema (Living)** | `E:\Me\AI-Brain\projects\trading-agent\docs\UNIFIED_SCHEMA.html` |
 | **Orchestrator Arch (Living)** | `E:\Me\AI-Brain\projects\trading-agent\docs\orchestrator-architecture.html` |
 | **Ops Overview (Living)** | `E:\Me\AI-Brain\projects\trading-agent\docs\OPERATIONAL_OVERVIEW.html` |
-| **AgentsOrchestrator Personality** | `E:\Me\TradingAgent\docs\AgentsOrchestrator Agent Personality.md` |
-| **Vault** | `E:\Me\TradingAgent\vault\` |
+| **Orchestrator Guardrails** | `E:\\Me\\TradingAgent\\docs\\orchestrator-guardrails\\` |
+| **Orchestrator Contract (DB)** | `E:\\Me\\TradingAgent\\docs\\orchestrator-guardrails\\orchestrator-contract.md` |
+| **AI Roles** | `E:\\Me\\TradingAgent\\docs\\orchestrator-guardrails\\ai-roles.md` |
+| **Governance Loop** | `E:\\Me\\TradingAgent\\docs\\orchestrator-guardrails\\stakeholder-governance-loop.md` |
+| **Trading Agent Workflow** | `E:\\Me\\TradingAgent\\docs\\orchestrator-guardrails\\workflow.md` |
+| **System Architecture** | `E:\\Me\\TradingAgent\\docs\\orchestrator-guardrails\\architecture.md` |
+| **DB Handover** | `E:\\Me\\TradingAgent\\docs\\orchestrator-guardrails\\database-handover.md` |
+| **Env Variables** | `E:\\Me\\TradingAgent\\docs\\orchestrator-guardrails\\env-variables.md` |
+| **Trading Agent Backlog** | `E:\\Me\\TradingAgent\\docs\\orchestrator-guardrails\\trading-agent-backlog.md` |
+| **MoA (Models & Agents)** | `E:\\Me\\AI-Brain\\projects\\trading-agent\\docs\\AI-Brain_MoA.md` |
+| **Living HTML Docs** | `E:\\Me\\AI-Brain\\projects\\trading-agent\\docs\\` |
+| **Vault** | `E:\\Me\\TradingAgent\\vault\\` |
 | **ai_memory DB** | `mindgentic_dev@10.8.0.10:5432` (schema: ai_memory) |
-| **Focalboard Sprint Board** | `http://10.8.0.10:9087/bzzy9qg1dabfutdsyb8us5r1x8r` |
+| **Hermes Kanban (Sprint)** | `hermes kanban ls` |
 
 ---
 
-## Orchestrator Rules (from AgentsOrchestrator Personality)
+## Orchestrator Rules (from orchestrator-guardrails/)
 
-1. **READ this file FIRST** — before any action
-2. **Query ai_memory.tasks** — check task state before spawning agents
-3. **Dispatch, don't execute** — DevOps/Gitea/BullBear/Researcher are workers, not me
-4. **EvidenceQA before PASS** — no task is "done" without QA validation
-5. **Write back to ai_memory + STATUS.md** — after every agent completion
-6. **Strict quality gates** — 3 retry max, then escalate
-7. **Focalboard is the kanban** — all sprint tasks must be on the board
+1. **READ point-of-truth.md FIRST** — before any action
+2. **Apply Governance Loop** — produce PASS/NOK before any action
+3. **Smarter Way first** — one step, wait for GO
+4. **Query ai_memory.tasks** — check task state before spawning agents
+5. **Dispatch, don't execute** — DevOps/Gitea/BullBear/Researcher are workers, not me
+6. **EvidenceQA before PASS** — no task is "done" without QA validation
+7. **Write back to ai_memory + STATUS.md** — after every agent completion
+8. **Strict quality gates** — 3 retry max, then escalate
+9. **Hermes Kanban is the kanban** — all sprint tasks must be on the Hermes Kanban board
+10. **WireGuard VPN required** — always verify VPN active before DB connection
+11. **Never bypass stakeholder Done rule** — only Kay moves to done
 
 ---
 
