@@ -245,6 +245,21 @@ def run_debate(sig: dict) -> dict:
     }
 
 
+def _signals_are_fresh() -> bool:
+    """
+    Return True if signals_live.json was updated in the last 5 minutes.
+    Prevents debating stale data from yesterday's session when the market
+    just opened and the scan_thread hasn't run yet.
+    """
+    if not SIGNAL_IN.exists():
+        return False
+    age_seconds = time.time() - SIGNAL_IN.stat().st_mtime
+    if age_seconds > 300:  # 5 minutes
+        print(f"[BullBear] signals_live.json is {age_seconds:.0f}s old — skipping (scan not yet fresh)")
+        return False
+    return True
+
+
 def _load_signals() -> list:
     """
     Load signals from the pipeline.
@@ -306,6 +321,12 @@ def _load_signals() -> list:
 def main():
     print(f"[BullBear] {datetime.now(AMSTERDAM_TZ).strftime('%H:%M:%S')} — "
           f"Checking for pending signals...")
+
+    # Guard: don't debate stale signals (e.g. yesterday's file before first scan completes)
+    if not _signals_are_fresh():
+        print("[BullBear] Signals not fresh enough — skipping this run. "
+              "Will retry at next cron slot.")
+        return
 
     signals = _load_signals()
     if not signals:
