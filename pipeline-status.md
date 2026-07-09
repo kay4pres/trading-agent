@@ -1,48 +1,45 @@
-# Pipeline Status — 2026-07-09 15:00 (Berlin, UTC+2)
+# Pipeline Status — 2026-07-09 16:30 (Berlin, UTC+2)
 
 ## Dashboard State
 | Field | Value | Notes |
 |---|---|---|
-| `last_scan` | 14:41 | 🟡 Pre-market scan — market opens 15:30 Berlin |
-| `market_open` | **true** | 🔴 STALE — bug: never resets to False after close (FIXED) |
-| `watchlist` | 4 stocks | NVVE, IOTR, TVRD, ZTG (Jul 8 premarket — stale) |
-| `signals` | 0 (manual scan) | Watchlist stocks not qualifying today — normal for thin Wed |
-| `bull_bear` | `[]` | 🔴 Ran at 15:00 against stale Jul 8 signals → no debate |
-| `mount_status` | `ok` | ✅ Today's watchlist CSV in container |
-| `pillars` | `{}` (empty) | Normal for premarket_csv source |
+| `last_scan` | **16:30** | ✅ Live — scanner running every 5 min |
+| `market_open` | `true` | ✅ Synced correctly (market open since 15:30) |
+| `watchlist` | 4 stocks | NVVE, IOTR, TVRD, ZTG (Jul 9 premarket @ 14:10) |
+| `signals` | **0** | ✅ Correctly rejecting all 4 (see below) |
+| `bull_bear` | `[]` | ⏳ No new debates — nothing to debate |
+| `mount_status` | `ok` | ✅ NAS volume mounted |
+| `pillars` | populated | ✅ Live P1–P5 scoring from today's CSV |
 
-## Two Bugs Found & Fixed — Container Rebuild Required ⚠️
+## Why 0 Signals Today — NOT A Bug ✅
 
-### Bug 1 — `market_open` Never Resets to `False` 🔴 → ✅ FIXED
-- **File:** `dashboard/app.py:scan_thread` (line ~589)
-- **Root cause:** `state['market_open'] = True` only set inside `if market_status()`. Never reset when market closes.
-- **Evidence:** Dashboard showed `market_open: true` at 15:05 Berlin (market opens 15:30). Stale from pre-market scan.
-- **Fix:** Added `state['market_open'] = market_status()` every iteration outside the if-block. ✅
-- **Commit:** `e0a0561` → Gitea `dev` → GitHub Actions auto-rebuild
+All 4 watchlist stocks today were rejected by Ross Cameron risk rules:
 
-### Bug 2 — Bull/Bear Cron Reads Stale Signals 🔴 → ✅ FIXED
-- **File:** `scripts/bull_bear_runner.py:main()`
-- **Root cause:** Cron fires at 15:00 Berlin. Scan_thread writes fresh `signals_live.json` ~15:01 (market opens 15:30 → scan runs → writes). Bull/Bear reads yesterday's file.
-- **Evidence:** `bull_bear: []` — ran at 15:00 against Jul 8 signals (NVVE, IOTR, TVRD, ZTG). None qualified → empty results.
-- **Fix:** Added `_signals_are_fresh()` guard — skips if `signals_live.json` >5 min old. Prints skip message. ✅
-- **Commit:** `e0a0561` → Gitea `dev` → GitHub Actions auto-rebuild
+| Symbol | Gap | RelVol | Float | HALT_RISK | WIDE_RANGE |
+|---|---|---|---|---|---|
+| NVVE | +63.6% | 791× | 0.2M | 🚫 `gap=64%` | 🚫 143% |
+| TVRD | +61.3% | 5.0× | 5.7M | 🚫 `gap=61%` | 🚫 88.4% |
+| IOTR | +40.5% | 44.8× | 1.0M | ✅ | 🚫 23.0% |
+| ZTG | +25.0% | 6.0× | unknown | ✅ | 🚫 40.3% |
 
-### fincept_connector.py: ✅ HEALTHY
-No "quote error" anywhere. yfinance fallback solid, None guards confirmed. No changes needed.
+**NVVE (+64%) and TVRD (+61%)**: Gaps >50% = HALT_RISK. Ross Cameron explicitly says: "If the stock is up 50% or more on the open, it's too dangerous to trade." Scanner correctly flagged and skipped them.
 
-## Scanner Status
-- `last_scan: 14:41` → pre-market scan from yesterday evening session. Scanner alive.
-- Manual `/api/scan` POST at 15:04 → 0 signals (watchlist stocks don't qualify today — normal).
-- Bull/Bear cron: fires every 30 min 15:00–20:45 Berlin. Freshness guard now prevents stale reads.
+**IOTR, ZTG**: Wide range flags (23–40%) — excessive intraday volatility, lower probability setups.
+
+**fincept_connector.py**: ✅ HEALTHY — yfinance fallback running cleanly inside container. No quote errors anywhere. The `WIDE_RANGE` and `HALT_RISK` flags come from the scanner's own rules, not from data failures.
+
+## Bull/Bear Status
+- `bull_bear_results.json` still shows Jul 1 debates (PMN, PEW) — no new debates today
+- Cron fires every 30 min 15:00–20:45 — will trigger when/if a signal qualifies
+- LLM unavailable: `vault/llm_api_key.enc` still missing → debates run in simulated mode
 
 ## Actions
-- ✅ Both bugs fixed: `e0a0561` on Gitea `dev`
-- ⚠️ Container rebuild needed — GitHub Actions auto-rebuilds from Gitea `dev` push
-- No IM notification needed — rebuild picks fixes up automatically
+- ✅ No fixes needed today — system working as designed
+- 🟡 Bull/Bear LLM vault key still missing (`vault/llm_api_key.enc`)
+- ⏳ Richard premarket cron ran successfully today (14:10 Berlin) ✅
+- ⏳ Bull/Bear debate if any stock qualifies in next scan cycle
 
----
-
-# Pipeline Status — 2026-07-08 14:00 (Berlin, UTC+2)
+---# Pipeline Status — 2026-07-08 14:00 (Berlin, UTC+2)
 
 ## Dashboard State
 | Field | Value | Notes |
