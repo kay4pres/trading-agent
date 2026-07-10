@@ -15,6 +15,7 @@ import json
 import logging
 import subprocess
 import sys
+import pandas as pd
 from datetime import datetime, date
 from typing import List, Optional, Dict, Any
 
@@ -30,7 +31,7 @@ if not logger.handlers:
 # Try multiple locations — Windows host path, Linux container path, then skip
 _FINCEPT_HOST = r"C:\Program Files\FinceptTerminal\scripts\yfinance_data.py"
 _FINCEPT_CONTAINER = "/app/fincept/yfinance_data.py"
-FINCEPT_YF = _FINCEPT_HOST  # keep for reference; actual path decided in _run()
+FINCEPT_YF = _FINCEPT_CONTAINER  # keep for reference; actual path decided in _run()
 
 
 # ─── Helpers ────────────────────────────────────────────────────────────────
@@ -100,7 +101,7 @@ def _fallback_yfinance(args: List[str]) -> Dict[str, Any]:
             t = yf.Ticker(sym)
             df = t.history(period=period, interval=interval)
             return {"success": True, "data": [
-                {"timestamp": int(r.timestamp()), "open": round(r["Open"], 2),
+                {"timestamp": int(pd.Timestamp(r.name).timestamp() * 1000), "open": round(r["Open"], 2),
                  "high": round(r["High"], 2), "low": round(r["Low"], 2),
                  "close": round(r["Close"], 2), "volume": int(r["Volume"])}
                 for _, r in df.iterrows()
