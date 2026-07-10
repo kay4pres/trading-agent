@@ -12350,5 +12350,709 @@
     "explanation": "Before entering the trade — never adjust mid-trade.",
     "difficulty": "easy",
     "source_rule": "c2_ch2_risk_management.md"
+  },
+  {
+    "id": "c2_ch12_001",
+    "chapter": "C2 Ch12 — Stock Scanning / Day Trade Dash",
+    "topic": "Stock Scanning",
+    "question": "According to Ross, what percentage of his trades come from his scanner results?",
+    "options": [
+      "About 9 out of 10 trades hit one of his scanners.",
+      "Less than 10% — most are discretionary.",
+      "All trades come from one specific chart pattern.",
+      "He doesn't use scanners."
+    ],
+    "correct": "A",
+    "explanation": "About 9 out of 10 trades hit one of his scanners.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch12_scanning.md"
+  },
+  {
+    "id": "c2_ch12_002",
+    "chapter": "C2 Ch12 — Stock Scanning / Day Trade Dash",
+    "topic": "Stock Scanning",
+    "question": "What is the Day Trade Dash scanner primarily used for?",
+    "options": [
+      "Filtering stocks by float, gap %, relative volume, and price in real time.",
+      "Placing orders automatically.",
+      "Tracking your P&L throughout the day.",
+      "Posting trade ideas to social media."
+    ],
+    "correct": "A",
+    "explanation": "Filtering stocks by float, gap %, relative volume, and price in real time.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch12_scanning.md"
+  },
+  {
+    "id": "c2_ch12_003",
+    "chapter": "C2 Ch12 — Stock Scanning / Day Trade Dash",
+    "topic": "Scanner Filters",
+    "question": "What Relative Volume (RV) threshold does Ross typically look for in his scan?",
+    "options": [
+      "5x above average or higher.",
+      "Any positive volume is fine.",
+      "10x above average is the minimum.",
+      "1.5x is enough."
+    ],
+    "correct": "A",
+    "explanation": "5x above average or higher.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch12_filters.md"
+  },
+  {
+    "id": "c2_ch12_004",
+    "chapter": "C2 Ch12 — Stock Scanning / Day Trade Dash",
+    "topic": "Scanner Filters",
+    "question": "What is the typical price range Ross scans for in small-cap day trading?",
+    "options": [
+      "$1 to $20 per share.",
+      "Only stocks under $1.",
+      "Stocks above $100.",
+      "Price doesn't matter."
+    ],
+    "correct": "A",
+    "explanation": "$1 to $20 per share.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch12_filters.md"
+  },
+  {
+    "id": "c2_ch13_001",
+    "chapter": "C2 Ch13 — Trading Psychology, Discipline, Recovery",
+    "topic": "Stock Scanning",
+    "question": "According to Ross, what percentage of his trades come from his scanner results?",
+    "options": [
+      "About 9 out of 10 trades hit one of his scanners.",
+      "Less than 10% — most are discretionary.",
+      "All trades come from one specific chart pattern.",
+      "He doesn't use scanners."
+    ],
+    "correct": "A",
+    "explanation": "About 9 out of 10 trades hit one of his scanners.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch12_scanning.md"
+  },
+  {
+    "id": "c2_ch13_002",
+    "chapter": "C2 Ch13 — Trading Psychology, Discipline, Recovery",
+    "topic": "Stock Scanning",
+    "question": "What is the Day Trade Dash scanner primarily used for?",
+    "options": [
+      "Filtering stocks by float, gap %, relative volume, and price in real time.",
+      "Placing orders automatically.",
+      "Tracking your P&L throughout the day.",
+      "Posting trade ideas to social media."
+    ],
+    "correct": "A",
+    "explanation": "Filtering stocks by float, gap %, relative volume, and price in real time.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch12_scanning.md"
+  },
+  {
+    "id": "c2_ch13_003",
+    "chapter": "C2 Ch13 — Trading Psychology, Discipline, Recovery",
+    "topic": "Psychology Discipline",
+    "question": "What does Ross consider the biggest enemy of a day trader?",
+    "options": [
+      "The trader themselves — emotions, FOMO, and revenge trading.",
+      "Market makers.",
+      "High-frequency trading algorithms.",
+      "The news media."
+    ],
+    "correct": "A",
+    "explanation": "The trader themselves — emotions, FOMO, and revenge trading.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch13_psychology.md"
+  },
+  {
+    "id": "c2_ch13_004",
+    "chapter": "C2 Ch13 — Trading Psychology, Discipline, Recovery",
+    "topic": "Psychology Discipline",
+    "question": "After how many consecutive losses does Ross recommend stopping for the day?",
+    "options": [
+      "2-3 consecutive losses.",
+      "After the first loss.",
+      "10 consecutive losses.",
+      "Never stop on a loss."
+    ],
+    "correct": "A",
+    "explanation": "2-3 consecutive losses.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch13_psychology.md"
+  },
+  {
+    "id": "c2_ch13_005",
+    "chapter": "C2 Ch13 — Trading Psychology, Discipline, Recovery",
+    "topic": "Loss Recovery",
+    "question": "What is the most important rule after a significant trading loss?",
+    "options": [
+      "Step away, take a break, and review the trade before trading again.",
+      "Immediately double your position size to recover.",
+      "Switch to a different strategy on the spot.",
+      "Take revenge trades to 'win it back'."
+    ],
+    "correct": "A",
+    "explanation": "Step away, take a break, and review the trade before trading again.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch13_recovery.md"
+  },
+  {
+    "id": "c2_ch13_006",
+    "chapter": "C2 Ch13 — Trading Psychology, Discipline, Recovery",
+    "topic": "Consistency",
+    "question": "What does Ross mean by 'process over outcome'?",
+    "options": [
+      "Follow the trading plan and rules regardless of whether a trade wins or loses.",
+      "Always aim for the biggest possible profit.",
+      "Trade the same setup every day no matter what.",
+      "Process is irrelevant if the outcome is profit."
+    ],
+    "correct": "A",
+    "explanation": "Follow the trading plan and rules regardless of whether a trade wins or loses.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch13_consistency.md"
+  },
+  {
+    "id": "c2_ch14_001",
+    "chapter": "C2 Ch14 — Trading Plan & Strategy (Beginner)",
+    "topic": "Stock Scanning",
+    "question": "According to Ross, what percentage of his trades come from his scanner results?",
+    "options": [
+      "About 9 out of 10 trades hit one of his scanners.",
+      "Less than 10% — most are discretionary.",
+      "All trades come from one specific chart pattern.",
+      "He doesn't use scanners."
+    ],
+    "correct": "A",
+    "explanation": "About 9 out of 10 trades hit one of his scanners.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch12_scanning.md"
+  },
+  {
+    "id": "c2_ch14_002",
+    "chapter": "C2 Ch14 — Trading Plan & Strategy (Beginner)",
+    "topic": "Stock Scanning",
+    "question": "What is the Day Trade Dash scanner primarily used for?",
+    "options": [
+      "Filtering stocks by float, gap %, relative volume, and price in real time.",
+      "Placing orders automatically.",
+      "Tracking your P&L throughout the day.",
+      "Posting trade ideas to social media."
+    ],
+    "correct": "A",
+    "explanation": "Filtering stocks by float, gap %, relative volume, and price in real time.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch12_scanning.md"
+  },
+  {
+    "id": "c2_ch14_003",
+    "chapter": "C2 Ch14 — Trading Plan & Strategy (Beginner)",
+    "topic": "Scanner Filters",
+    "question": "What Relative Volume (RV) threshold does Ross typically look for in his scan?",
+    "options": [
+      "5x above average or higher.",
+      "Any positive volume is fine.",
+      "10x above average is the minimum.",
+      "1.5x is enough."
+    ],
+    "correct": "A",
+    "explanation": "5x above average or higher.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch12_filters.md"
+  },
+  {
+    "id": "c2_ch14_004",
+    "chapter": "C2 Ch14 — Trading Plan & Strategy (Beginner)",
+    "topic": "Scanner Filters",
+    "question": "What is the typical price range Ross scans for in small-cap day trading?",
+    "options": [
+      "$1 to $20 per share.",
+      "Only stocks under $1.",
+      "Stocks above $100.",
+      "Price doesn't matter."
+    ],
+    "correct": "A",
+    "explanation": "$1 to $20 per share.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch12_filters.md"
+  },
+  {
+    "id": "c2_ch14_005",
+    "chapter": "C2 Ch14 — Trading Plan & Strategy (Beginner)",
+    "topic": "Psychology Discipline",
+    "question": "What does Ross consider the biggest enemy of a day trader?",
+    "options": [
+      "The trader themselves — emotions, FOMO, and revenge trading.",
+      "Market makers.",
+      "High-frequency trading algorithms.",
+      "The news media."
+    ],
+    "correct": "A",
+    "explanation": "The trader themselves — emotions, FOMO, and revenge trading.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch13_psychology.md"
+  },
+  {
+    "id": "c2_ch14_006",
+    "chapter": "C2 Ch14 — Trading Plan & Strategy (Beginner)",
+    "topic": "Psychology Discipline",
+    "question": "After how many consecutive losses does Ross recommend stopping for the day?",
+    "options": [
+      "2-3 consecutive losses.",
+      "After the first loss.",
+      "10 consecutive losses.",
+      "Never stop on a loss."
+    ],
+    "correct": "A",
+    "explanation": "2-3 consecutive losses.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch13_psychology.md"
+  },
+  {
+    "id": "c2_ch14_007",
+    "chapter": "C2 Ch14 — Trading Plan & Strategy (Beginner)",
+    "topic": "Stock Scanning",
+    "question": "According to Ross, what percentage of his trades come from his scanner results?",
+    "options": [
+      "About 9 out of 10 trades hit one of his scanners.",
+      "Less than 10% — most are discretionary.",
+      "All trades come from one specific chart pattern.",
+      "He doesn't use scanners."
+    ],
+    "correct": "A",
+    "explanation": "About 9 out of 10 trades hit one of his scanners.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch12_scanning.md"
+  },
+  {
+    "id": "c2_ch14_008",
+    "chapter": "C2 Ch14 — Trading Plan & Strategy (Beginner)",
+    "topic": "Stock Scanning",
+    "question": "What is the Day Trade Dash scanner primarily used for?",
+    "options": [
+      "Filtering stocks by float, gap %, relative volume, and price in real time.",
+      "Placing orders automatically.",
+      "Tracking your P&L throughout the day.",
+      "Posting trade ideas to social media."
+    ],
+    "correct": "A",
+    "explanation": "Filtering stocks by float, gap %, relative volume, and price in real time.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch12_scanning.md"
+  },
+  {
+    "id": "c2_ch14_009",
+    "chapter": "C2 Ch14 — Trading Plan & Strategy (Beginner)",
+    "topic": "Scanner Filters",
+    "question": "What Relative Volume (RV) threshold does Ross typically look for in his scan?",
+    "options": [
+      "5x above average or higher.",
+      "Any positive volume is fine.",
+      "10x above average is the minimum.",
+      "1.5x is enough."
+    ],
+    "correct": "A",
+    "explanation": "5x above average or higher.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch12_filters.md"
+  },
+  {
+    "id": "c2_ch14_010",
+    "chapter": "C2 Ch14 — Trading Plan & Strategy (Beginner)",
+    "topic": "Scanner Filters",
+    "question": "What is the typical price range Ross scans for in small-cap day trading?",
+    "options": [
+      "$1 to $20 per share.",
+      "Only stocks under $1.",
+      "Stocks above $100.",
+      "Price doesn't matter."
+    ],
+    "correct": "A",
+    "explanation": "$1 to $20 per share.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch12_filters.md"
+  },
+  {
+    "id": "c2_ch14_011",
+    "chapter": "C2 Ch14 — Trading Plan & Strategy (Beginner)",
+    "topic": "Premarket Scan",
+    "question": "What time does Ross recommend starting the pre-market scan?",
+    "options": [
+      "4-7 AM ET, with a refined list by 8 AM ET.",
+      "Right at market open (9:30 AM).",
+      "The day before, after market close.",
+      "There is no pre-market scan."
+    ],
+    "correct": "A",
+    "explanation": "4-7 AM ET, with a refined list by 8 AM ET.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch12_premarket.md"
+  },
+  {
+    "id": "c2_ch14_012",
+    "chapter": "C2 Ch14 — Trading Plan & Strategy (Beginner)",
+    "topic": "Psychology Discipline",
+    "question": "What does Ross consider the biggest enemy of a day trader?",
+    "options": [
+      "The trader themselves — emotions, FOMO, and revenge trading.",
+      "Market makers.",
+      "High-frequency trading algorithms.",
+      "The news media."
+    ],
+    "correct": "A",
+    "explanation": "The trader themselves — emotions, FOMO, and revenge trading.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch13_psychology.md"
+  },
+  {
+    "id": "c2_ch15_001",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Stock Scanning",
+    "question": "According to Ross, what percentage of his trades come from his scanner results?",
+    "options": [
+      "About 9 out of 10 trades hit one of his scanners.",
+      "Less than 10% — most are discretionary.",
+      "All trades come from one specific chart pattern.",
+      "He doesn't use scanners."
+    ],
+    "correct": "A",
+    "explanation": "About 9 out of 10 trades hit one of his scanners.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch12_scanning.md"
+  },
+  {
+    "id": "c2_ch15_002",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Stock Scanning",
+    "question": "What is the Day Trade Dash scanner primarily used for?",
+    "options": [
+      "Filtering stocks by float, gap %, relative volume, and price in real time.",
+      "Placing orders automatically.",
+      "Tracking your P&L throughout the day.",
+      "Posting trade ideas to social media."
+    ],
+    "correct": "A",
+    "explanation": "Filtering stocks by float, gap %, relative volume, and price in real time.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch12_scanning.md"
+  },
+  {
+    "id": "c2_ch15_003",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Premarket Scan",
+    "question": "What time does Ross recommend starting the pre-market scan?",
+    "options": [
+      "4-7 AM ET, with a refined list by 8 AM ET.",
+      "Right at market open (9:30 AM).",
+      "The day before, after market close.",
+      "There is no pre-market scan."
+    ],
+    "correct": "A",
+    "explanation": "4-7 AM ET, with a refined list by 8 AM ET.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch12_premarket.md"
+  },
+  {
+    "id": "c2_ch15_004",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Psychology Discipline",
+    "question": "What does Ross consider the biggest enemy of a day trader?",
+    "options": [
+      "The trader themselves — emotions, FOMO, and revenge trading.",
+      "Market makers.",
+      "High-frequency trading algorithms.",
+      "The news media."
+    ],
+    "correct": "A",
+    "explanation": "The trader themselves — emotions, FOMO, and revenge trading.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch13_psychology.md"
+  },
+  {
+    "id": "c2_ch15_005",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Psychology Discipline",
+    "question": "After how many consecutive losses does Ross recommend stopping for the day?",
+    "options": [
+      "2-3 consecutive losses.",
+      "After the first loss.",
+      "10 consecutive losses.",
+      "Never stop on a loss."
+    ],
+    "correct": "A",
+    "explanation": "2-3 consecutive losses.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch13_psychology.md"
+  },
+  {
+    "id": "c2_ch15_006",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Loss Recovery",
+    "question": "What is the most important rule after a significant trading loss?",
+    "options": [
+      "Step away, take a break, and review the trade before trading again.",
+      "Immediately double your position size to recover.",
+      "Switch to a different strategy on the spot.",
+      "Take revenge trades to 'win it back'."
+    ],
+    "correct": "A",
+    "explanation": "Step away, take a break, and review the trade before trading again.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch13_recovery.md"
+  },
+  {
+    "id": "c2_ch15_007",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Psychology Discipline",
+    "question": "What does Ross consider the biggest enemy of a day trader?",
+    "options": [
+      "The trader themselves — emotions, FOMO, and revenge trading.",
+      "Market makers.",
+      "High-frequency trading algorithms.",
+      "The news media."
+    ],
+    "correct": "A",
+    "explanation": "The trader themselves — emotions, FOMO, and revenge trading.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch13_psychology.md"
+  },
+  {
+    "id": "c2_ch15_008",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Psychology Discipline",
+    "question": "After how many consecutive losses does Ross recommend stopping for the day?",
+    "options": [
+      "2-3 consecutive losses.",
+      "After the first loss.",
+      "10 consecutive losses.",
+      "Never stop on a loss."
+    ],
+    "correct": "A",
+    "explanation": "2-3 consecutive losses.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch13_psychology.md"
+  },
+  {
+    "id": "c2_ch15_009",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Loss Recovery",
+    "question": "What is the most important rule after a significant trading loss?",
+    "options": [
+      "Step away, take a break, and review the trade before trading again.",
+      "Immediately double your position size to recover.",
+      "Switch to a different strategy on the spot.",
+      "Take revenge trades to 'win it back'."
+    ],
+    "correct": "A",
+    "explanation": "Step away, take a break, and review the trade before trading again.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch13_recovery.md"
+  },
+  {
+    "id": "c2_ch15_010",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Consistency",
+    "question": "What does Ross mean by 'process over outcome'?",
+    "options": [
+      "Follow the trading plan and rules regardless of whether a trade wins or loses.",
+      "Always aim for the biggest possible profit.",
+      "Trade the same setup every day no matter what.",
+      "Process is irrelevant if the outcome is profit."
+    ],
+    "correct": "A",
+    "explanation": "Follow the trading plan and rules regardless of whether a trade wins or loses.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch13_consistency.md"
+  },
+  {
+    "id": "c2_ch15_011",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Psychology Discipline",
+    "question": "What does Ross consider the biggest enemy of a day trader?",
+    "options": [
+      "The trader themselves — emotions, FOMO, and revenge trading.",
+      "Market makers.",
+      "High-frequency trading algorithms.",
+      "The news media."
+    ],
+    "correct": "A",
+    "explanation": "The trader themselves — emotions, FOMO, and revenge trading.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch13_psychology.md"
+  },
+  {
+    "id": "c2_ch15_012",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Psychology Discipline",
+    "question": "After how many consecutive losses does Ross recommend stopping for the day?",
+    "options": [
+      "2-3 consecutive losses.",
+      "After the first loss.",
+      "10 consecutive losses.",
+      "Never stop on a loss."
+    ],
+    "correct": "A",
+    "explanation": "2-3 consecutive losses.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch13_psychology.md"
+  },
+  {
+    "id": "c2_ch15_013",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Loss Recovery",
+    "question": "What is the most important rule after a significant trading loss?",
+    "options": [
+      "Step away, take a break, and review the trade before trading again.",
+      "Immediately double your position size to recover.",
+      "Switch to a different strategy on the spot.",
+      "Take revenge trades to 'win it back'."
+    ],
+    "correct": "A",
+    "explanation": "Step away, take a break, and review the trade before trading again.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch13_recovery.md"
+  },
+  {
+    "id": "c2_ch15_014",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Consistency",
+    "question": "What does Ross mean by 'process over outcome'?",
+    "options": [
+      "Follow the trading plan and rules regardless of whether a trade wins or loses.",
+      "Always aim for the biggest possible profit.",
+      "Trade the same setup every day no matter what.",
+      "Process is irrelevant if the outcome is profit."
+    ],
+    "correct": "A",
+    "explanation": "Follow the trading plan and rules regardless of whether a trade wins or loses.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch13_consistency.md"
+  },
+  {
+    "id": "c2_ch15_015",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Trading Plan",
+    "question": "What are the key components of a trading plan?",
+    "options": [
+      "Entry rules, stop-loss, profit target, position size, and max daily loss.",
+      "Just a list of stocks to watch.",
+      "Only the times you will trade.",
+      "Only the broker you will use."
+    ],
+    "correct": "A",
+    "explanation": "Entry rules, stop-loss, profit target, position size, and max daily loss.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch14_plan.md"
+  },
+  {
+    "id": "c2_ch15_016",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Beginner Strategy",
+    "question": "What strategy does Ross recommend a beginner focus on first?",
+    "options": [
+      "The first pullback setup — simple, repeatable, well-defined entry and stop.",
+      "Reversal trading — complex but high reward.",
+      "Options trading — leverage and flexibility.",
+      "Whatever is trending on Twitter that day."
+    ],
+    "correct": "A",
+    "explanation": "The first pullback setup — simple, repeatable, well-defined entry and stop.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch14_beginner.md"
+  },
+  {
+    "id": "c2_ch15_017",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Beginner Strategy",
+    "question": "How many profitable trades in the simulator should a beginner aim for before going live?",
+    "options": [
+      "At least 30+ profitable trades with a 50%+ win rate.",
+      "Just 1 successful trade is enough.",
+      "100+ trades in a single day.",
+      "No simulator needed — just go live."
+    ],
+    "correct": "A",
+    "explanation": "At least 30+ profitable trades with a 50%+ win rate.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch14_beginner.md"
+  },
+  {
+    "id": "c2_ch15_018",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Real Money Timing",
+    "question": "According to Ross, when should a trader switch from simulator to real money?",
+    "options": [
+      "After 30+ profitable simulator trades with consistent positive P&L.",
+      "Whenever they feel emotionally ready.",
+      "On the first day of learning.",
+      "After depositing $25,000 into a broker account."
+    ],
+    "correct": "A",
+    "explanation": "After 30+ profitable simulator trades with consistent positive P&L.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch15_real_money.md"
+  },
+  {
+    "id": "c2_ch15_019",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Stock Scanning",
+    "question": "According to Ross, what percentage of his trades come from his scanner results?",
+    "options": [
+      "About 9 out of 10 trades hit one of his scanners.",
+      "Less than 10% — most are discretionary.",
+      "All trades come from one specific chart pattern.",
+      "He doesn't use scanners."
+    ],
+    "correct": "A",
+    "explanation": "About 9 out of 10 trades hit one of his scanners.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch12_scanning.md"
+  },
+  {
+    "id": "c2_ch15_020",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Stock Scanning",
+    "question": "What is the Day Trade Dash scanner primarily used for?",
+    "options": [
+      "Filtering stocks by float, gap %, relative volume, and price in real time.",
+      "Placing orders automatically.",
+      "Tracking your P&L throughout the day.",
+      "Posting trade ideas to social media."
+    ],
+    "correct": "A",
+    "explanation": "Filtering stocks by float, gap %, relative volume, and price in real time.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch12_scanning.md"
+  },
+  {
+    "id": "c2_ch15_021",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Psychology Discipline",
+    "question": "What does Ross consider the biggest enemy of a day trader?",
+    "options": [
+      "The trader themselves — emotions, FOMO, and revenge trading.",
+      "Market makers.",
+      "High-frequency trading algorithms.",
+      "The news media."
+    ],
+    "correct": "A",
+    "explanation": "The trader themselves — emotions, FOMO, and revenge trading.",
+    "difficulty": "easy",
+    "source_rule": "c2_ch13_psychology.md"
+  },
+  {
+    "id": "c2_ch15_022",
+    "chapter": "C2 Ch15 — When to Trade Real Money & Position Mgmt",
+    "topic": "Psychology Discipline",
+    "question": "After how many consecutive losses does Ross recommend stopping for the day?",
+    "options": [
+      "2-3 consecutive losses.",
+      "After the first loss.",
+      "10 consecutive losses.",
+      "Never stop on a loss."
+    ],
+    "correct": "A",
+    "explanation": "2-3 consecutive losses.",
+    "difficulty": "medium",
+    "source_rule": "c2_ch13_psychology.md"
   }
 ]
