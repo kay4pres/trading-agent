@@ -1,0 +1,96 @@
+name: CI — Lint, Build & Push
+
+on:
+  push:
+    branches: [main, dev, uat]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  REGISTRY: nas:5000
+  GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
+
+jobs:
+  lint:
+    name: Lint & Format Check
+    runs-on: [self-hosted, linux, docker]
+    steps:
+      - name: Clone repository
+        run: |
+          rm -rf /workspace
+          git clone --depth=1 http://kay:${GITEA_TOKEN}@10.8.0.10:3000/trading/trading-agent.git /workspace
+          cd /workspace && git fetch --depth=1 origin ${{ gitea.ref }} && git checkout ${{ gitea.sha }}
+
+      - name: Python syntax check
+        run: |
+          cd /workspace
+          for f in $(find trading_agent/ dashboard/ scripts/ -name '*.py' 2>/dev/null); do
+            python3 -m py_compile "$f" && echo "OK: $f" || echo "FAIL: $f"
+          done
+
+      - name: Flake8 lint
+        run: |
+          cd /workspace
+          pip3 install flake8 -q --break-system-packages 2>/dev/null || pip install flake8 -q 2>/dev/null || true
+          # Run flake8 with null stdin to prevent hanging
+          flake8 trading_agent/ dashboard/ scripts/ \
+            --max-line-length=120 \
+            --ignore=E501,W503,E402 \
+            --exclude=__pycache__,.git < /dev/null || echo "lint done"
+
+  build-dev:
+    name: Build & Push (dev)
+    runs-on: [self-hosted, linux, docker]
+    if: gitea.ref == 'refs/heads/dev'
+    steps:
+      - name: Clone and checkout
+        run: |
+          rm -rf /build
+          git clone --depth=1 --branch=dev http://kay:${GITEA_TOKEN}@10.8.0.10:3000/trading/trading-agent.git /build
+          cd /build && git fetch origin dev && git checkout ${{ gitea.sha }}
+
+      - name: Build and push
+        env:
+          NAS_REGISTRY_PASS: ${{ secrets.NAS_REGISTRY_PASS }}
+          NAS_REGISTRY_USER: ${{ secrets.NAS_REGISTRY_USER }}
+        run: |
+          docker login nas:5000 -u "$NAS_REGISTRY_USER" -p "$NAS_REGISTRY_PASS"
+          cd /build
+          docker buildx create --use --name multiarch 2>/dev/null || \
+          docker buildx use multiarch 2>/dev/null || true
+          docker buildx build \
+            --platform linux/amd64 \
+            --tag nas:5000/trading-agent:dev \
+            --tag nas:5000/trading-agent:latest \
+            --push \
+            --file /build/docker/Dockerfile \
+            /build
+
+  build-main:
+    name: Build & Push (main)
+    runs-on: [self-hosted, linux, docker]
+    if: gitea.ref == 'refs/heads/main'
+    steps:
+      - name: Clone and checkout
+        run: |
+          rm -rf /build
+          git clone --depth=1 --branch=main http://kay:${GITEA_TOKEN}@10.8.0.10:3000/trading/trading-agent.git /build
+          cd /build && git fetch origin main && git checkout ${{ gitea.sha }}
+
+      - name: Build and push
+        env:
+          NAS_REGISTRY_PASS: ${{ secrets.NAS_REGISTRY_PASS }}
+          NAS_REGISTRY_USER: ${{ secrets.NAS_REGISTRY_USER }}
+        run: |
+          docker login nas:5000 -u "$NAS_REGISTRY_USER" -p "$NAS_REGISTRY_PASS"
+          cd /build
+          docker buildx create --use --name multiarch 2>/dev/null || \
+          docker buildx use multiarch 2>/dev/null || true
+          docker buildx build \
+            --platform linux/amd64 \
+            --tag nas:5000/trading-agent:main \
+            --tag nas:5000/trading-agent:latest \
+            --push \
+            --file /build/docker/Dockerfile \
+            /build
