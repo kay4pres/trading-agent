@@ -12,6 +12,23 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import pandas as pd
 
+# ── Alpaca Trading ──────────────────────────────────────────────────────────────
+# Lazy import — alpaca-py may not be installed on all systems
+_alpaca_trading = None
+
+def _get_alpaca_trading():
+    global _alpaca_trading
+    if _alpaca_trading is None:
+        try:
+            from trading_agent.alpaca_connector import AlpacaTrading
+            _alpaca_trading = AlpacaTrading
+        except ImportError:
+            print("[WARN] alpaca-py not installed — Alpaca execution disabled (simulated mode)")
+            return None
+    return _alpaca_trading
+
+import traceback
+
 # Config
 POSITIONS_FILE = Path(r"E:\Me\TradingAgent\data\positions.json")
 DATA_DIR = Path(r"E:\Me\TradingAgent\data")
@@ -363,6 +380,30 @@ def open_position(symbol, direction, entry_price, quantity, target=None, stop=No
     )
     send_telegram(msg)
     print(f"[ENTRY] {symbol} {direction.upper()} @ ${entry_price:.2f} | T:{target} S:{stop} | ATR:{atr} | R:R:{rr:.1f}:1")
+
+    # ── Submit real order to Alpaca paper trading ───────────────────────────
+    try:
+        Alpaca = _get_alpaca_trading()
+        if Alpaca is not None:
+            # Map direction to order side: "long" → buy, "short" → sell
+            side = "buy" if direction.lower() == "long" else "sell"
+            result = Alpaca.submit_market_order(
+                symbol=symbol.upper(),
+                qty=quantity,
+                side=side,
+                dry_run=False,
+            )
+            print(f"[Alpaca] Order submitted: {result['order_id']} | {side.upper()} {quantity} {symbol}")
+            # Attach order_id to the position for audit trail
+            pos["broker_order_id"] = result["order_id"]
+            save_positions(state)
+        else:
+            print(f"[Alpaca] SIMULATED (alpaca-py unavailable) — no broker order sent")
+    except Exception as e:
+        # Best-effort: log the error but don't fail the position tracking
+        print(f"[Alpaca] Order submission failed: {e}")
+        print(f"[Alpaca] Position IS TRACKED locally — broker order needs manual check")
+
     return True
 
 def monitor_loop():
