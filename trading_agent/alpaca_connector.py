@@ -357,6 +357,131 @@ class AlpacaData:
         asyncio.run(_async_stream())
 
 
+# ── Alpaca Trading Client ──────────────────────────────────────────────────────
+
+try:
+    from alpaca.trading import TradingClient, MarketOrderRequest, OrderSide, TimeInForce
+    from alpaca.trading.enums import OrderType as AlpacaOrderType
+    ALPACA_TRADING_AVAILABLE = True
+except ImportError:
+    ALPACA_TRADING_AVAILABLE = False
+
+
+class AlpacaTrading:
+    """
+    Alpaca paper trading client — submits real orders via alpaca-py.
+
+    Reads ALPACA_API_KEY and ALPACA_SECRET_KEY from environment variables,
+    which are set by docker-compose from Portainer Docker Secrets.
+    Falls back to vault file written by entrypoint.py (ALPACA_SECRET_KEY.env).
+    """
+
+    _client: TradingClient | None = None
+
+    @classmethod
+    def get_client(cls) -> TradingClient:
+        if cls._client is not None:
+            return cls._client
+
+        if not ALPACA_TRADING_AVAILABLE:
+            raise ImportError("alpaca-py is not installed. Run: pip install alpaca-py")
+
+        api_key = os.environ.get("ALPACA_API_KEY")
+        secret  = os.environ.get("ALPACA_SECRET_KEY")
+
+        # Fallback: secret from vault file written by entrypoint
+        if not secret:
+            vault_dir = Path(__file__).parent.parent / "vault"
+            secret_path = vault_dir / "ALPACA_SECRET_KEY.env"
+            if secret_path.exists():
+                secret = secret_path.read_text(encoding="utf-8").strip()
+
+        if not api_key or not secret:
+            raise RuntimeError(
+                "Alpaca API keys not found. Set ALPACA_API_KEY and ALPACA_SECRET_KEY "
+                "in Docker Secrets / environment, or ensure vault/ALPACA_SECRET_KEY.env "
+                "is written by entrypoint.py"
+            )
+
+        cls._client = TradingClient(
+            api_key=api_key,
+            secret_key=secret,
+            paper=True,   # Always use paper trading
+        )
+        return cls._client
+
+    @classmethod
+    def submit_market_order(
+        cls,
+        symbol: str,
+        qty: int | float,
+        side: str,   # "buy" or "sell"
+        dry_run: bool = False,
+    ) -> dict:
+        """
+        Submit a market order to Alpaca paper trading.
+
+        Args:
+            symbol:    Ticker symbol, e.g. "AAPL"
+            qty:       Number of shares to buy/sell
+            side:      "buy" or "sell"
+            dry_run:   If True, log the order but do NOT submit to broker
+
+        Returns:
+            dict with keys: order_id, status, symbol, qty, side, submitted_at
+            Raises on failure.
+        """
+        if dry_run:
+            order_id = f"dry_run_{symbol}_{int(time.time())}"
+            print(f"[AlpacaTrading:DryRun] {side.upper()} {qty} {symbol} @ market")
+            return {
+                "order_id": order_id,
+                "status":   "dry_run",
+                "symbol":   symbol,
+                "qty":      qty,
+                "side":     side,
+                "submitted_at": datetime.now().isoformat(),
+            }
+
+        client = cls.get_client()
+
+        side_enum = OrderSide.BUY if side.lower() == "buy" else OrderSide.SELL
+
+        order = MarketOrderRequest(
+            symbol=symbol.upper(),
+            qty=qty,
+            side=side_enum,
+            time_in_force=TimeInForce.DAY,
+        )
+
+        submitted = client.submit_order(order)
+        print(
+            f"[AlpacaTrading] Submitted: {submitted.id} | "
+            f"{side.upper()} {qty} {symbol} | status={submitted.status}"
+        )
+        return {
+            "order_id":     submitted.id,
+            "status":       str(submitted.status),
+            "symbol":       submitted.symbol,
+            "qty":          float(submitted.qty),
+            "side":         side.lower(),
+            "submitted_at": submitted.submitted_at.isoformat()
+                           if submitted.submitted_at else datetime.now().isoformat(),
+        }
+
+    @classmethod
+    def get_account(cls) -> dict:
+        """Return paper account info."""
+        client = cls.get_client()
+        acct = client.get_account()
+        return {
+            "cash":          float(acct.cash),
+            "buying_power":  float(acct.buying_power),
+            "status":        str(acct.status),
+            "currency":      str(acct.currency),
+        }
+
+
 # ── CLI ─────────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":

@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && echo $TZ > /etc/timezone \
     && pip install --no-cache-dir --break-system-packages \
         Flask flask-cors yfinance requests "python-telegram-bot>=20.7" croniter pandas numpy \
-        tradingview-screener
+        tradingview-screener alpaca-py
 
 # ── Source of Truth ─────────────────────────────────────────────────────────
 # The workflow clones from Gitea (http://10.8.0.10:3000/trading/trading-agent.git)
