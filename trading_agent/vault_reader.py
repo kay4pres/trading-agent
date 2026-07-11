@@ -17,7 +17,7 @@ import json
 import socket
 from pathlib import Path
 
-VAULT_SCRIPT = Path(__file__).parent / "vault" / "read_db_config.ps1"
+VAULT_SCRIPT = Path("/app/vault/read_db_config.ps1")
 
 
 def get_db_config() -> dict:
@@ -39,7 +39,7 @@ def get_db_config() -> dict:
 
 def _get_password() -> str:
     """Read password from vault — returns string, never prints it."""
-    pw_script = Path(__file__).parent / "vault" / "read_password.ps1"
+    pw_script = Path("/app/vault/read_password.ps1")
     result = subprocess.run(
         ["powershell", "-ExecutionPolicy", "Bypass", "-File", str(pw_script)],
         capture_output=True, text=True, timeout=15
