@@ -33,6 +33,8 @@ _TIMEOUT_LOG_INTERVAL: float = 300.0  # 5 minutes
 
 _token_cache: Optional[str] = None
 _token_logged_once: bool = False
+_ops_token_cache: Optional[str] = None
+_ops_token_logged_once: bool = False
 
 
 def _get_token() -> Optional[str]:
@@ -112,6 +114,87 @@ def _get_token() -> Optional[str]:
     return None
 
 
+def _get_ops_token() -> Optional[str]:
+    """
+    Get the ops Telegram bot token (@Hendrika01_bot). Priority:
+    1. TELEGRAM_OPS_BOT_TOKEN env var (Docker / NAS deployment)
+    2. Vault file /app/vault/TELEGRAM_OPS_BOT_TOKEN.env (written by entrypoint.py)
+    3. DPAPI vault file (Windows local deployment)
+    """
+    global _ops_token_cache, _ops_token_logged_once
+
+    if _ops_token_cache is not None:
+        return _ops_token_cache
+
+    # Priority 1: env var (Docker path)
+    env_token = os.environ.get('TELEGRAM_OPS_BOT_TOKEN')
+    if env_token:
+        _ops_token_cache = env_token
+        return _ops_token_cache
+
+    # Priority 2: vault file written by entrypoint.py (Docker/Linux path)
+    vault_file = Path('/app/vault/TELEGRAM_OPS_BOT_TOKEN.env')
+    if vault_file.exists():
+        try:
+            token = vault_file.read_text(encoding='utf-8').strip()
+            if token:
+                _ops_token_cache = token
+                return _ops_token_cache
+        except Exception:
+            pass
+
+    # Priority 2b: Windows vault — E:\Me\TradingAgent\vault\TELEGRAM_OPS_BOT_TOKEN.env
+    vault_file_win = Path(r'E:\Me\TradingAgent\vault\TELEGRAM_OPS_BOT_TOKEN.env')
+    if vault_file_win.exists():
+        try:
+            content = vault_file_win.read_text(encoding='utf-8').strip()
+            token = content.split('=', 1)[-1].strip()
+            if token and ':' in token:
+                _ops_token_cache = token
+                return _ops_token_cache
+        except Exception:
+            pass
+
+    if not _ops_token_logged_once:
+        _ops_token_logged_once = True
+        import logging
+        logging.getLogger('telegram_sender').warning(
+            "[telegram_sender] No Telegram ops token found. "
+            "Set TELEGRAM_OPS_BOT_TOKEN env var or /app/vault/TELEGRAM_OPS_BOT_TOKEN.env"
+        )
+    return None
+
+
+def _ops_api_request(method: str, payload: dict) -> Optional[dict]:
+    """Make a Telegram Bot API call using the ops bot (@Hendrika01_bot)."""
+    token = _get_ops_token()
+    if not token:
+        return None
+    url = f"{API_BASE}/bot{token}/{method}"
+    try:
+        import urllib.request, socket
+        data = json.dumps(payload).encode('utf-8')
+        req = urllib.request.Request(
+            url, data=data,
+            headers={'Content-Type': 'application/json'}
+        )
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            return json.loads(resp.read())
+    except socket.timeout:
+        global _last_timeout_log
+        now = time.time()
+        if now - _last_timeout_log >= _TIMEOUT_LOG_INTERVAL:
+            print(f"[telegram ops] {method} socket timeout")
+            _last_timeout_log = now
+        return None
+    except urllib.error.HTTPError as e:
+        print(f"[telegram ops] HTTP {e.code} on {method}")
+        return None
+    except Exception as e:
+        print(f"[telegram ops] API error ({method}): {e}")
+        return None
+
+
 def _api_request(method: str, payload: dict) -> Optional[dict]:
     """Make a Telegram Bot API call. Returns parsed JSON or None on failure."""
     token = _get_token()
@@ -151,6 +234,16 @@ def _api_request(method: str, payload: dict) -> Optional[dict]:
 def send_message(text: str, parse_mode: str = 'Markdown') -> bool:
     """Send a plain text message to Kay's Telegram chat."""
     result = _api_request('sendMessage', {
+        'chat_id':    CHAT_ID,
+        'text':       text,
+        'parse_mode': parse_mode,
+    })
+    return result is not None and result.get('ok', False)
+
+
+def send_ops_message(text: str, parse_mode: str = 'Markdown') -> bool:
+    """Send a message via the ops bot (@Hendrika01_bot) to Kay's Telegram chat."""
+    result = _ops_api_request('sendMessage', {
         'chat_id':    CHAT_ID,
         'text':       text,
         'parse_mode': parse_mode,
