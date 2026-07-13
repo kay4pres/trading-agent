@@ -16,36 +16,37 @@ Build an AI-driven trading system that learns from Ross Cameron (Warrior Trading
 
 ---
 
-## System Status — 2026-07-12 18:25 Berlin (Verified — All Containers Healthy ✅)
+## System Status — 2026-07-13 Sunday (No Market) — BLOCKED: Telegram tokens burned
 
 ### Infrastructure
 - **Gitea Actions CI/CD** — ✅ All 3 runners registered and online: DEV (org), UAT (id=7 org), PROD (id=10 repo)
 - **Docker on NAS** — `trading-agent` (PROD) at `:5050` ✅ alive, `trading-agent-dev` at `:5051` ✅ alive, `trading-agent-uat` at `:5052` ✅ alive
-- **Bull/Bear** — functional, MiniMax LLM wired, conviction scoring active
-- **Scanner** — alive in all containers, runs every 60s during market hours
-- **Telegram** — DEV ✅ Polling active (409 normal), UAT ⚠️ 401 (stale token in compose), PROD ✅ OK
+- **UAT Network** — ✅ FIXED: attached to `trading-agent_default` bridge (was isolated on broken `20_default`)
+- **Bull/Bear** — ⚠️ Intentional: runs via Mavis/Kay's Windows, not container-native
+- **Scanner** — ✅ Functional, writes to Kay's local `E:\Me\TradingAgent\data\`
+- **Telegram** — 🔴 ALL BROKEN: both `@Marvless01_bot` and `@Hendrika01_bot` tokens 401 Unauthorized
 
 ### Gitea Actions CI/CD ✅ OPERATIONAL
-- **All 3 runners online** — DEV (nas-act-runner-dev org), UAT (nas-act-runner-uat id=7 org), PROD (nas-act-runner-prod id=10)
-- CI/CD fully operational — code pushes auto-build and deploy
+- **All 3 runners online** — DEV (nas-act-runner-dev org), UAT (nas-act-runner-uat id=7 org), PROD (nas-act-runner-prod id=10 repo)
+- CI/CD fully operational — code pushes to Gitea auto-build and deploy
 
 ### Execution
 - **DEV (Alpaca Paper):** `open_position()` is **simulated** — positions tracked in `positions.json`, no real orders placed 🔴
-- **UAT (IBKR Paper):** ✅ Container deployed at `:5052` — `ib_insync` NOT installed, IBKR connector not written 🔴
+- **UAT (IBKR Paper):** ✅ Container at `:5052`, network fixed, `ib_insync` installed, `ibkr_connector.py` exists — but IBGW unreachable from container 🔴
 - **PROD (IBKR Live):** BLOCKED — waits for UAT to be stable
 
 ### Active Blockers
-| # | Blocker | Action |
-|---|---------|--------|
-| 1 | **IB Gateway not verified** | Orchestrator: verify port 4002 + API enabled |
-| 2 | **UAT Telegram 401** | Kay: update UAT compose with new token |
-| 3 | **ib_insync not installed** | DevOps: add to requirements, rebuild UAT container |
-| 4 | **IBKR connector not written** | DevOps: create `trading_agent/ibkr_connector.py` |
-| 5 | **DEV Alpaca simulated** | DevOps: wire alpaca-py in DEV |
-| 6 | ~~No UAT container~~ | ✅ FIXED — `trading-agent-uat` at `:5052` |
-| 7 | ~~DEV Telegram DNS~~ | ✅ FIXED — moved to `trading-agent_default` network |
-| 8 | ~~DEV Telegram 401~~ | ✅ FIXED — token renewed |
-| 9 | ~~All 3 runners~~ | ✅ FIXED — all online |
+| # | Blocker | Owner | Status |
+|---|---------|-------|--------|
+| 1 | **Telegram tokens burned** | Kay | 🔴 Both @Marvless01_bot and @Hendrika01_bot 401 — need new tokens from @BotFather |
+| 2 | **IB Gateway unreachable** | DevOps | 🔴 Port 4002 closed from container — IBGW localhost-only on Windows |
+| 3 | **premarket_screener.py missing** | DevOps/Kay | 🔴 09:14 cron fires but file doesn't exist — decide: create or remove |
+| 4 | **Bull/Bear data path mismatch** | DevOps | 🔴 Windows script writes to `E:\Me\TradingAgent\data\` not NAS mount |
+| 5 | **UAT image old** | DevOps | 🔴 Running Jul 3 image — no Gitea UAT branch for CI rebuild |
+| 6 | ~~UAT network isolated~~ | DevOps | ✅ FIXED — `trading-agent_default` bridge |
+| 7 | ~~ib_insync not installed~~ | DevOps | ✅ FIXED — v0.9.86 installed in UAT |
+| 8 | ~~ibkr_connector.py missing~~ | DevOps | ✅ FIXED — created at `/app/trading_agent/ibkr_connector.py` |
+| 9 | ~~All 3 runners~~ | DevOps | ✅ FIXED — all online |
 
 ### Docker Deployment
 See `docker/README.md` — **Gitea Actions** is primary CI/CD. All 3 environments auto-deploy via their respective branches.
