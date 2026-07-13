@@ -30,6 +30,9 @@ services:
       # ── Telegram (required for alerts) ──────────────────────────────────────
       # Bot token from @BotFather
       - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      # Unique client ID for this environment — UAT uses 1, PROD uses 0.
+      # Prevents HTTP 409 when both containers poll the same bot token.
+      - TELEGRAM_CLIENT_ID=${TELEGRAM_CLIENT_ID:-0}
 
       # ── Alpaca ──────────────────────────────────────────────────────────────
       # Paper trading API keys from https://app.alpaca.markets/

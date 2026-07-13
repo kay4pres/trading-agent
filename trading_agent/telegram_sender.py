@@ -16,9 +16,10 @@ import json, subprocess, sys, os, time, threading
 from pathlib import Path
 from typing import Optional, Dict, Any
 
-TOKEN_PATH  = Path(r'E:\Me\TradingAgent\config\telegram_token.enc')
-CHAT_ID     = '-5581171035'   # Kay's Trading Team group
-API_BASE    = 'https://api.telegram.org'
+TOKEN_PATH         = Path(r'E:\Me\TradingAgent\config\telegram_token.enc')
+CHAT_ID            = '-5581171035'   # Kay's Trading Team group
+API_BASE           = 'https://api.telegram.org'
+TELEGRAM_CLIENT_ID = int(os.environ.get('TELEGRAM_CLIENT_ID', '0'))
 
 # In-memory store: message_id → signal dict (for button callback resolution)
 _pending_signals: Dict[int, Dict[str, Any]] = {}
@@ -229,6 +230,19 @@ def _api_request(method: str, payload: dict) -> Optional[dict]:
     except Exception as e:
         print(f"[telegram] API error ({method}): {e}")
         return None
+
+
+def _get_updates(offset: int, timeout: int = 0) -> Optional[dict]:
+    """
+    Call getUpdates with the TELEGRAM_CLIENT_ID injected.
+    This is the ONLY function that calls _api_request for getUpdates,
+    ensuring the clientId is always set and UAT/PROD never conflict.
+    """
+    return _api_request('getUpdates', {
+        'offset':     offset,
+        'timeout':    timeout,
+        'client_id':  TELEGRAM_CLIENT_ID,
+    })
 
 
 def send_message(text: str, parse_mode: str = 'Markdown') -> bool:
@@ -461,10 +475,7 @@ def _tollgate_polling_loop() -> None:
     while _tollgate_listener_running:
         try:
             # Use offset=_INBOX_LAST_ID+1 (same state as poll_inbox)
-            updates = _api_request('getUpdates', {
-                'offset':  _INBOX_LAST_ID + 1,
-                'timeout': 0,  # non-blocking — returns immediately
-            })
+            updates = _get_updates(_INBOX_LAST_ID + 1, timeout=0)
             if not (updates and updates.get('ok')):
                 time.sleep(2)
                 continue
@@ -752,10 +763,7 @@ def poll_callbacks(callback_handler=None):
     while not _stop_polling.wait(backoff):
         backoff = 1  # reset on successful wait (no failure)
         try:
-            updates = _api_request('getUpdates', {
-                'offset':  _last_update_id + 1,
-                'timeout': 0,   # non-blocking — Telegram returns instantly
-            })
+            updates = _get_updates(_last_update_id + 1, timeout=0)
             if not (updates and updates.get('ok')):
                 continue
 
@@ -942,10 +950,7 @@ def poll_inbox(tollgate_handler=None) -> list:
     """
     global _INBOX_LAST_ID
     try:
-        updates = _api_request('getUpdates', {
-            'offset':  _INBOX_LAST_ID + 1,
-            'timeout': 0,  # non-blocking
-        })
+        updates = _get_updates(_INBOX_LAST_ID + 1, timeout=0)
         if not (updates and updates.get('ok')):
             return []
         results = []
