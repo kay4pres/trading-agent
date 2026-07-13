@@ -1,0 +1,113 @@
+name: CI — UAT Build & Deploy
+
+on:
+  push:
+    branches: [uat]
+
+env:
+  REGISTRY: nas:5000
+  IMAGE_NAME: trading-agent-uat
+  GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
+
+jobs:
+  # ── Job 1: Lint & Type Check ─────────────────────────────────────────────────
+  lint:
+    name: Lint & Format Check
+    runs-on: [self-hosted, linux]
+    container: python:3.12-slim
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        run: pip install flake8 black --break-system-packages
+
+      - name: Run flake8
+        run: |
+          flake8 trading_agent/ dashboard/ scripts/ \
+            --max-line-length=120 \
+            --ignore=E501,W503,E402 \
+            --exclude=__pycache__,.git || true
+        continue-on-error: true
+
+      - name: Check Python syntax
+        run: python -m py_compile trading_agent/*.py dashboard/*.py scripts/*.py
+
+      - name: Check for hardcoded Windows paths in Docker files
+        run: |
+          grep -rn 'E:\\\\\|r"E:\\'|E:/' trading_agent/ dashboard/ scripts/ \
+            --include="*.py" || echo "No hardcoded Windows paths found"
+
+  # ── Job 2: Docker Build & Push (uat branch) ─────────────────────────────────
+  build-uat:
+    name: Build & Push (uat → nas:5000)
+    runs-on: [self-hosted, linux, docker]
+    container: docker:24-dind
+    options: --privileged
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Log in to NAS registry
+        run: |
+          echo "${{ secrets.NAS_REGISTRY_PASS }}" | docker login nas:5000 \
+            -u "${{ secrets.NAS_REGISTRY_USER }}" --password-stdin
+
+      - name: Set up Docker Buildx
+        run: |
+          docker buildx create --use --name multiarch || docker buildx use multiarch
+
+      - name: Extract date for image tag
+        id: date
+        run: echo "DATE=$(date +%Y-%m-%d)" >> $GITHUB_OUTPUT
+
+      - name: Build and push (uat tag)
+        run: |
+          docker buildx build \
+            --platform linux/amd64 \
+            --tag nas:5000/trading-agent:uat \
+            --tag nas:5000/trading-agent-uat:latest \
+            --cache-from type=registry,ref=nas:5000/trading-agent:uat \
+            --cache-to type=registry,ref=nas:5000/trading-agent:uat \
+            --build-arg GIT_REF=uat \
+            --build-arg GITEA_TOKEN=${{ env.GITEA_TOKEN }} \
+            --push \
+            --file docker/Dockerfile \
+            .
+
+  # ── Job 3: Deploy to UAT container on NAS ────────────────────────────────────
+  deploy-uat:
+    name: Deploy to UAT (port 5052)
+    runs-on: [self-hosted, linux]
+    needs: build-uat
+    steps:
+      - name: Deploy/Restart UAT container via SSH
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.NAS_HOST }}
+          username: ${{ secrets.NAS_SSH_USER }}
+          key: ${{ secrets.NAS_SSH_KEY }}
+          script: |
+            # Pull UAT image
+            docker pull nas:5000/trading-agent-uat:latest || true
+
+            # Stop + remove existing UAT container if it exists
+            docker rm -f trading-agent-uat 2>/dev/null || true
+
+            # Run new UAT container on port 5052
+            docker run -d \
+              --name trading-agent-uat \
+              --restart unless-stopped \
+              --publish 5052:5050 \
+              --env TZ=Europe/Berlin \
+              --env TRADING_DATA_DIR=/app/data \
+              --env ALPACA_API_KEY=${ALPACA_API_KEY} \
+              --env ALPACA_SECRET_KEY=${ALPACA_SECRET_KEY} \
+              --env TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN} \
+              --env MINIMAX_API_KEY=${MINIMAX_API_KEY} \
+              --env TV_WEBHOOK_SECRET=${TV_WEBHOOK_SECRET:-} \
+              --volume /data/compose/uat/vault:/app/vault \
+              --volume /data/compose/uat/data:/app/data \
+              nas:5000/trading-agent-uat:latest
+
+            echo "UAT container deployed on port 5052"
