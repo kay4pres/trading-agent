@@ -1,58 +1,70 @@
 # Docker Deployment Guide
 
-## Quick Start
-
-### Build the image (Portainer)
-
-1. Make GitHub repo **public** (Settings → Danger Zone → Change visibility)
-2. Portainer → **Images** → **Build a new image**
-   - **Name:** `nas:5000/trading-agent:latest`
-   - **Dockerfile:** paste contents of `Dockerfile` from this directory
-   - **Build args (optional):** `GIT_REF=main`
-3. Hit **Build the image**
-4. Immediately set GitHub repo back to **private**
-
-### Deploy the container (Portainer)
-
-**Containers** → **Add container**
-
-| Field | Value |
-|-------|-------|
-| Name | `trading-agent` |
-| Image | `nas:5000/trading-agent:latest` |
-| Always pull | ✅ |
-| Restart policy | `unless-stopped` |
-| Publish all exposed ports | ✅ |
-
-**Volumes (Bind, Writable):**
-| Container | Host |
-|----------|------|
-| `/app/vault` | `/data/compose/1/vault` |
-| `/app/data` | `/data/compose/1/data` |
-
-**Environment variables:**
-| Name | Value |
-|------|-------|
-| `ALPACA_API_KEY` | From Alpaca dashboard |
-| `ALPACA_SECRET_KEY` | From Alpaca dashboard |
-| `TELEGRAM_BOT_TOKEN` | From @BotFather |
-| `MINIMAX_API_KEY` | From platform.minimaxi.com |
-| `TV_WEBHOOK_SECRET` | Optional — for TV webhook verification |
-
-### Access
-
-- Dashboard: `http://<nas-ip>:5050`
-- WireGuard: `http://10.8.0.10:5050`
+**Updated:** 2026-07-13
 
 ---
 
+## CI/CD Pipeline (Gitea Actions — Primary)
+
+### How it works
+
+```
+Developer → Gitea (SOURCE OF TRUTH — no GitHub mirror)
+    ↓
+Gitea Actions (dev branch) → nas-act-runner-dev → Docker build → Portainer redeploy
+    ↓
+Gitea Actions (main branch) → nas-act-runner-prod → Docker build → Portainer
+```
+
+1. Developer pushes to Gitea `trading/trading-agent` (dev or main branch) — **this is the source of truth**
+2. **NO GitHub push needed** — Gitea Actions fires automatically on push
+3. **DEV:** Gitea Actions on `dev` branch → `nas-act-runner-dev` (DEV runner) → builds image → pushes to `nas:5000/trading-agent:latest` → Portainer webhook redeploys
+4. **PROD:** Gitea Actions on `main` branch → `nas-act-runner-prod` (PROD runner) → same pipeline
+5. **UAT:** Gitea Actions on `uat` branch → `nas-act-runner-uat` → builds `trading-agent-uat` image → Portainer stack redeploys
+
+### Key facts
+- **Gitea:** `http://10.8.0.10:3000`
+- **Gitea repo:** `trading/trading-agent` — source of truth (dev/main/uat branches)
+- **DEV runner:** `nas-act-runner-dev` — registered, stable ✅
+- **UAT runner:** `nas-act-runner-uat` — id=7, org-level ✅
+- **PROD runner:** `nas-act-runner-prod` — id=10, repo-level ✅
+- **Docker registry:** `nas:5000/trading-agent:latest`
+- **Image build:** Gitea Actions builds inside the act-runner, no local Docker needed
+
+### Triggering a rebuild (DEV)
+1. Push to `dev` branch on Gitea `trading/trading-agent`
+2. Gitea Actions fires automatically
+3. DEV runner builds + pushes image
+4. Portainer webhook redeploys container
+
+### UAT branch
+- UAT uses the `uat` branch on `trading/trading-agent`
+- UAT compose stack at Portainer (compose/11 or similar)
+- UAT container: `trading-agent-uat` at `:5052`
+
+### Manual rebuild (if webhook fails)
+1. Portainer → **Images** → Find `nas:5000/trading-agent:latest` → **Rebuild**
+2. Or via Gitea Actions UI: `http://10.8.0.10:3000` → repo → Actions → run workflow
+
+---
+
+## Manual Build (Portainer — fallback)
+
+**Only if Gitea Actions is down.**
+
+1. Portainer → **Images** → **Build a new image**
+   - **Name:** `nas:5000/trading-agent:latest`
+   - **Build method:** BuildKit inline
+   - **Dockerfile:** paste contents of `Dockerfile` from the `trading/trading-agent` Gitea repo (dev branch)
+   - **Build args (optional):** `GIT_REF=dev`
+2. Hit **Build the image**
+3. Recreate container from updated image via Portainer
+
 ## Rebuilding after code changes
 
-1. Commit + push changes to GitHub
-2. Make repo public
-3. Portainer **Images** → Find `nas:5000/trading-agent:latest` → **Rebuild** (same Dockerfile)
-4. Stop + recreate container from updated image
-5. Make repo private again
+1. Commit + push changes to Gitea `trading/trading-agent` (dev/main/uat branch as appropriate)
+2. Gitea Actions fires automatically — no manual rebuild needed
+3. If Gitea Actions is down: use Manual Build above
 
 ---
 

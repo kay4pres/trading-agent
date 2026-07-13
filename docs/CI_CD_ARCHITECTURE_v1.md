@@ -71,7 +71,7 @@ TELEGRAM_BOT_TOKEN.env    (plain text)
                          │ Portainer API calls
                          ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                   Portainer (localhost:9000)                      │
+│                   Portainer (10.8.0.10:19900)                      │
 │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐          │
 │  │  dev stack   │  │  uat stack   │  │  prod stack  │          │
 │  │  port 5050   │  │  port 5051   │  │  port 5052   │          │

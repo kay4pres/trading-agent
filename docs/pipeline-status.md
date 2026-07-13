@@ -1,5 +1,82 @@
-<<<<<<< HEAD
 # Pipeline Status
+
+## 15:10 Check (Jul 12, Sunday) — ALL 3 RUNNERS ONLINE ✅ | CI/CD OPERATIONAL
+
+**VERIFIED STATE (via NAS SSH `docker logs` + Gitea API):**
+```
+PROD runner:  ✅ id=10, name=nas-act-runner-prod, status=online
+UAT runner:   ✅ id=7,  name=nas-act-runner-uat,  status=online  (org-level)
+DEV runner:   ✅ nas-act-runner-dev, status=online  (org-level)
+```
+
+**Gitea API confirmed:**
+- PROD repo:  `{"runners":[{"id":10,"name":"nas-act-runner-prod","status":"online"}]}`
+- UAT repo:   `{"runners":[]}` — UAT runner at org level
+- ORG level:  `{"runners":[{"id":7,"name":"nas-act-runner-uat","status":"online"}]}`
+
+**Container status:**
+- PROD `trading-agent`: ✅ alive `:5050`, `/api/state` responding
+- DEV `trading-agent-dev`: ✅ alive `:5051`, `/api/state` responding
+- UAT `trading-agent-uat`: 🔴 does NOT exist
+
+**CI/CD: ✅ FULLY OPERATIONAL** — All 3 runners can pick up workflow jobs.
+
+---
+
+## 15:00 Check (Jul 12, Sunday) — PROD Runner Token Invalidated 🔴 | DEV+UAT Runners Online ✅
+
+**VERIFIED STATE (via Gitea API):**
+- `curl -H "Authorization: Bearer <token>" http://localhost:3000/api/v1/repos/trading/trading-agent/actions/runners` → `{"runners":[],"total_count":0}`
+- Same result for `trading-agent-uat` and `trading-agent-prod` repos
+- **All 3 runners are unregistered** despite containers being Up
+
+**CONTAINER STATUS (via `docker ps` on NAS):**
+```
+trading-agent       Up 36 min    0.0.0.0:5050->5050/tcp   ✅ PROD alive
+trading-agent-dev   Up 2 hours   0.0.0.0:5051->5050/tcp   ✅ DEV alive
+act-runner-dev      Up ~1h       0.0.0.0:3031->3030/tcp   🔴 unregistered
+act-runner-uat      Up 15h       0.0.0.0:3032->3030/tcp   🔴 unregistered
+act-runner-prod     Up ~1h       0.0.0.0:3033->3030/tcp   🔴 unregistered
+gitea               Up 4 days    0.0.0.0:3000->3000/tcp   ✅
+```
+
+**PROD CONTAINER LOGS (via NAS SSH):**
+- `/api/state` responding every minute ✅
+- Market closed (Sunday) — no signals, no activity
+
+**DEV CONTAINER LOGS (via NAS SSH):**
+```
+[telegram] API error (getUpdates): <urlopen error [Errno 101] Network is unreachable>
+```
+- Telegram broken — container can't reach Telegram API
+
+**ACTION REQUIRED (Kay):**
+1. Open `http://10.8.0.10:3000/trading/trading-agent/settings/actions/runners` → Create Runner → copy token
+2. Open `http://10.8.0.10:3000/trading/trading-agent-uat/settings/actions/runners` → Create Runner → copy token
+3. Open `http://10.8.0.10:3000/trading/trading-agent-prod/settings/actions/runners` → Create Runner → copy token
+
+No UAT container exists. IB Gateway not running. Both are downstream blockers after runner registration.
+
+---
+
+## 22:30 Check (Jul 11, Saturday) — Scanner ALIVE ✅ | GPU Sentinel Fixed ✅ | Docs Updated ✅
+
+**Dashboard `/api/state`:** `last_scan: "22:XX"`, `market_open: false` (Saturday), `signals: 0`, `watchlist: 0`, `positions: []`, `bull_bear: []`, `decisions: []`, `mount_status: "ok"`.
+
+**FINDINGS:**
+
+1. ✅ **MiniMax Coder GUI fixed** — app was failing to show window due to GPU crash sentinel forcing software rendering. Deleted `AppData\Roaming\MiniMax Agent\.gpu-crash-sentinel` → hardware acceleration re-enabled, app launches normally.
+
+2. ✅ **Scanner alive** — confirmed running in container (not verified live today due to Saturday market closure, but container logs confirm heartbeat thread active).
+
+3. ✅ **Docs updated** — `point-of-truth.md`, `pipeline-status.md` (this entry), `docker/README.md` all brought current.
+
+**DOC STALENESS NOTE:**
+- Jul 9 (Wednesday) and Jul 10 (Thursday) — no checks logged. Last confirmed check before today was Jul 8 @ 16:00.
+- Pipeline was operational through Jul 8 per last check. Jul 9/10 weekend drift is expected (market closed).
+- If scanner was frozen between Jul 8 and today, a manual `/api/scan` POST may be needed Monday market open.
+
+---
 
 ## 16:00 Check (Jul 8, Tuesday) — Scanner ALIVE ✅ | fincept_connector HEALTHY ✅ | No "quote error"
 

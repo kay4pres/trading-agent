@@ -120,7 +120,7 @@ Container has been stale since **Jul 6** — 3+ days of fixes not picked up:
 
 **Rebuild options:**
 - **GitHub Actions** (auto): Push to `main` → rebuilds → Portainer webhook redeploys → ✅ already triggered by this push
-- **Portainer** (manual): `http://10.8.0.10:9000` → `trading-agent` stack → "Recreate"
+- **Portainer** (manual): `http://10.8.0.10:19900` → `trading-agent` stack → "Recreate"
 - **NAS SSH** (manual): `ssh admin@10.8.0.10` → pull + rebuild
 
 ## fincept_connector.py — No Fix Needed ✅
@@ -198,7 +198,7 @@ Container has been stale since **Jul 6** — 3+ days of fixes not picked up:
 
 ## Docker CLI Note
 - Docker Desktop not accessible from this Mavis session (not in PATH, permission issues)
-- Cannot read container logs directly — need Portainer at `http://10.8.0.10:9000` or NAS SSH access
+- Cannot read container logs directly — need Portainer at `http://10.8.0.10:19900` or NAS SSH access
 - Portainer at port 9000 unreachable from this session (not in same network segment)
 
 ## Status: No Code Changes — fincept_connector.py Healthy
@@ -206,7 +206,7 @@ Container has been stale since **Jul 6** — 3+ days of fixes not picked up:
 **fincept_connector.py needs no changes.** The `pillars: {}` and `bull_bear: []` issues are the same persistent container-stale problem flagged across all Jul 8 checks.
 
 **Container rebuild is the only blocker.** Scanner will resume at 15:30 when market opens. Options:
-- **Portainer** (recommended): `http://10.8.0.10:9000` → `trading-agent` stack → "Recreate"
+- **Portainer** (recommended): `http://10.8.0.10:19900` → `trading-agent` stack → "Recreate"
 - **GitHub Actions**: Push any file to `main` branch → rebuilds → Portainer webhook redeploys
 - **Manual NAS SSH**: `cd /volume1/docker/trading-agent && git pull && docker build`
 
@@ -267,14 +267,14 @@ Pipeline will resume at 15:30 when market opens. No data loss. Scanner healthy.
 
 ## Docker CLI Note
 - Docker Desktop not accessible from this Mavis session (not in PATH, permission issues)
-- Cannot read container logs directly — need Portainer at `http://10.8.0.10:9000` or NAS SSH access
+- Cannot read container logs directly — need Portainer at `http://10.8.0.10:19900` or NAS SSH access
 
 ## Status: No Code Changes — fincept_connector.py Healthy
 
 **fincept_connector.py needs no changes.** The `pillars: {}` and `bull_bear: []` issues are the same persistent container-stale problem flagged across all Jul 8 checks.
 
 **Container rebuild is the only blocker.** Scanner will resume at 15:30 Berlin. Options:
-- **Portainer** (recommended): `http://10.8.0.10:9000` → `trading-agent` stack → "Recreate"
+- **Portainer** (recommended): `http://10.8.0.10:19900` → `trading-agent` stack → "Recreate"
 - **GitHub Actions**: Push any file to `main` branch → rebuilds → Portainer webhook redeploys
 - **Manual NAS SSH**: `cd /volume1/docker/trading-agent && git pull && docker build`
 
@@ -338,7 +338,7 @@ Pipeline will resume at 15:30 when market opens. No data loss. Scanner healthy.
 **fincept_connector.py needs no changes** — it's already correct. The `pillars: {}` and `bull_bear: []` issues are entirely on the container not being rebuilt to pick up fixes pushed in earlier sessions.
 
 **Container rebuild is the only remaining blocker** (same as 18:30 session). Options:
-- **Portainer** (recommended): `http://10.8.0.10:9000` → `trading-agent` stack → "Recreate"
+- **Portainer** (recommended): `http://10.8.0.10:19900` → `trading-agent` stack → "Recreate"
 - **GitHub Actions**: Push any file to `main` branch → rebuilds → Portainer webhook redeploys
 - **Manual NAS SSH**: `cd /volume1/docker/trading-agent && git pull && docker build`
 
@@ -395,7 +395,7 @@ Pipeline remains fully operational for scanning and signal delivery. No data los
 **fincept_connector.py needs no changes** — it's already correct. The `pillars: {}` issue is entirely on the container not being rebuilt to pick up the 15:30 `app.py` fix.
 
 **Container rebuild is the only remaining blocker.** Options:
-- **Portainer** (recommended): `http://10.8.0.10:9000` → `trading-agent` stack → "Recreate"
+- **Portainer** (recommended): `http://10.8.0.10:19900` → `trading-agent` stack → "Recreate"
 - **GitHub Actions**: Push any file to `main` branch → rebuilds → Portainer webhook redeploys
 - **Manual NAS SSH**: `cd /volume1/docker/trading-agent && git pull && docker build`
 
@@ -810,7 +810,7 @@ Code confirmed clean: `sys.platform != "win32"` routes all container calls to yf
 The container needs to be rebuilt to pick up all 15:30 fixes:
 
 **Option A — NAS Portainer (recommended):**
-1. Log into Portainer at `http://10.8.0.10:9000`
+1. Log into Portainer at `http://10.8.0.10:19900`
 2. Find the `trading-agent` stack
 3. Click "Recreate" or "Deploy changes"
 4. Portainer pulls `nas:5000/trading-agent:latest` (already updated by last successful build)
@@ -927,7 +927,7 @@ ISSUES BLOCKING:
 The container is running the July 8 image. **Pillars stay empty until rebuilt.**
 
 Options:
-1. **Portainer** (recommended): `http://10.8.0.10:9000` → `trading-agent` container → "Recreate"
+1. **Portainer** (recommended): `http://10.8.0.10:19900` → `trading-agent` container → "Recreate"
 2. **GitHub Actions**: Check build at https://github.com/kay4pres/trading-agent/actions
 3. **Manual NAS SSH**: `ssh admin@10.8.0.10` → pull from Gitea + rebuild
 
@@ -1029,7 +1029,7 @@ After secrets are set: push any file to `main` → GitHub Actions rebuilds → P
 ## Alternative: Rebuild Container Manually
 
 **Option A — Portainer (recommended):**
-1. Log into Portainer: `http://10.8.0.10:9000`
+1. Log into Portainer: `http://10.8.0.10:19900`
 2. Find `trading-agent` stack
 3. Click "Recreate" or "Deploy changes"
 4. Container pulls `nas:5000/trading-agent:latest` (needs GitHub Actions to push first)

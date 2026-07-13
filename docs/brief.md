@@ -11,8 +11,54 @@ Build an AI-driven trading system that learns from Ross Cameron (Warrior Trading
 4. **Autonomy** — system runs autonomously, Kay supervises
 5. **Product** — distill proven system for others
 
-**Deadline:** July 23, 2026 (24 days remaining).
+**Deadline:** July 23, 2026 (12 days remaining).
 **Capital:** €2,000 IB broker account.
+
+---
+
+## System Status — 2026-07-12 18:25 Berlin (Verified — All Containers Healthy ✅)
+
+### Infrastructure
+- **Gitea Actions CI/CD** — ✅ All 3 runners registered and online: DEV (org), UAT (id=7 org), PROD (id=10 repo)
+- **Docker on NAS** — `trading-agent` (PROD) at `:5050` ✅ alive, `trading-agent-dev` at `:5051` ✅ alive, `trading-agent-uat` at `:5052` ✅ alive
+- **Bull/Bear** — functional, MiniMax LLM wired, conviction scoring active
+- **Scanner** — alive in all containers, runs every 60s during market hours
+- **Telegram** — DEV ✅ Polling active (409 normal), UAT ⚠️ 401 (stale token in compose), PROD ✅ OK
+
+### Gitea Actions CI/CD ✅ OPERATIONAL
+- **All 3 runners online** — DEV (nas-act-runner-dev org), UAT (nas-act-runner-uat id=7 org), PROD (nas-act-runner-prod id=10)
+- CI/CD fully operational — code pushes auto-build and deploy
+
+### Execution
+- **DEV (Alpaca Paper):** `open_position()` is **simulated** — positions tracked in `positions.json`, no real orders placed 🔴
+- **UAT (IBKR Paper):** ✅ Container deployed at `:5052` — `ib_insync` NOT installed, IBKR connector not written 🔴
+- **PROD (IBKR Live):** BLOCKED — waits for UAT to be stable
+
+### Active Blockers
+| # | Blocker | Action |
+|---|---------|--------|
+| 1 | **IB Gateway not verified** | Orchestrator: verify port 4002 + API enabled |
+| 2 | **UAT Telegram 401** | Kay: update UAT compose with new token |
+| 3 | **ib_insync not installed** | DevOps: add to requirements, rebuild UAT container |
+| 4 | **IBKR connector not written** | DevOps: create `trading_agent/ibkr_connector.py` |
+| 5 | **DEV Alpaca simulated** | DevOps: wire alpaca-py in DEV |
+| 6 | ~~No UAT container~~ | ✅ FIXED — `trading-agent-uat` at `:5052` |
+| 7 | ~~DEV Telegram DNS~~ | ✅ FIXED — moved to `trading-agent_default` network |
+| 8 | ~~DEV Telegram 401~~ | ✅ FIXED — token renewed |
+| 9 | ~~All 3 runners~~ | ✅ FIXED — all online |
+
+### Docker Deployment
+See `docker/README.md` — **Gitea Actions** is primary CI/CD. All 3 environments auto-deploy via their respective branches.
+
+**Containers:**
+- `trading-agent` (PROD) at `:5050` ✅ alive
+- `trading-agent-dev` at `:5051` ✅ alive — Telegram polling active
+- `trading-agent-uat` at `:5052` ✅ alive — Telegram 401 (stale token), IBKR not wired
+
+**Runner containers:**
+- `act-runner-dev` `:3031` — ✅ Online (org-level)
+- `act-runner-uat` `:3032` — ✅ Online id=7 (org-level)
+- `act-runner-prod` `:3033` — ✅ Online id=10 (repo-level)
 
 ---
 
