@@ -1,7 +1,25 @@
 # Point of Truth — Trading Agent Sprint
 **File:** `C:\Users\Kay\repos\trading-agent\docs\point-of-truth.md`
-**Updated:** 2026-07-13 10:00 Berlin (late morning — PAUSED)
+**Updated:** 2026-07-20 18:35 Berlin (doc-sheriff sync after Day 3 work)
 **Read before ANY action. Always include path links in your reasoning.**
+
+## ⭐ Day 3 Handoff (2026-07-20)
+
+**Architecture v1.0 drafted — awaiting Kay ratification:**
+- `docs/ARCHITECTURE_v1.0.md` — DTD-replica, 6 planes, 10 of 24 scanners MVP, 10s bars, multi-position 1-3, 4 AM ET premarket, auto-trade phased (paper → €500 → €2K). 28 course citations + 13 [INFERRED — Kay sign-off]. Supersedes v0.1 + cockpit charter.
+- `tools/PLAN-ARCHITECTURE-V1-REVIEW.md` — SCOPE EXPANSION review. Approach B recommended. 13 open items for Kay override.
+- `tools/DAY-3-END-OF-DAY-2026-07-20.md` — full handoff doc.
+- `tools/kanban-stakeholder-view.html` — visual kanban for stakeholders.
+- `.hermes/plans/re-architecture-kanban.md` — synced: 5 Done, 3 Blocked on Kay, 4 Ready, 5+ Backlog.
+
+**3 items blocked on Kay:**
+1. REA-0.2 — TradingView tier (Plus/Premium/Ultimate)
+2. REA-0.3 — IBKR market data subs on DU1234567
+3. REA-1.2 — 45-min DTD screen-share
+
+**Once unblocked, Phase 2 (Data + Scanner MVP) starts.** ~1-2 weeks.
+
+**Pushed:** commits `089bd64` (7 files) + `a54fa2f` (EOD handoff) on `pipeline-builder/day-01-relay-extension`.
 
 ---
 

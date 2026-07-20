@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trading Agent — DTD-Replica Build · Stakeholder View</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fafafa;
+    --card: #ffffff;
+    --line: #e4e4e7;
+    --line-soft: #f4f4f5;
+    --ink: #18181b;
+    --ink-2: #3f3f46;
+    --muted: #71717a;
+    --emerald: #10b981;
+    --emerald-soft: #d1fae5;
+    --amber: #f59e0b;
+    --amber-soft: #fef3c7;
+    --rose: #f43f5e;
+    --rose-soft: #ffe4e6;
+    --indigo: #6366f1;
+    --indigo-soft: #e0e7ff;
+    --slate: #64748b;
+    --slate-soft: #f1f5f9;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Outfit', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 48px 32px 80px; }
+
+  /* Hero */
+  .hero { margin-bottom: 48px; }
+  .hero-eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .hero-eyebrow .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--emerald);
+    box-shadow: 0 0 0 4px var(--emerald-soft);
+  }
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin-bottom: 12px;
+  }
+  h1 .em { color: var(--emerald); font-style: italic; }
+  .hero-sub { font-size: 17px; color: var(--ink-2); max-width: 720px; }
+
+  /* Metrics row */
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin: 40px 0 32px;
+  }
+  .metric {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 20px;
+  }
+  .metric-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .metric-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1;
+  }
+  .metric-value .small { font-size: 16px; color: var(--muted); }
+  .metric-done { color: var(--emerald); }
+  .metric-blocked { color: var(--rose); }
+  .metric-ready { color: var(--amber); }
+  .metric-backlog { color: var(--slate); }
+  .metric-velocity { color: var(--indigo); }
+
+  /* Progress bar */
+  .progress-wrap {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 48px;
+  }
+  .progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 16px;
+  }
+  .progress-title { font-size: 14px; font-weight: 600; }
+  .progress-meta { font-size: 13px; color: var(--muted); font-family: 'JetBrains Mono', monospace; }
+  .progress-track {
+    height: 24px;
+    background: var(--line-soft);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+  }
+  .progress-seg {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .progress-seg.done { background: var(--emerald); }
+  .progress-seg.blocked { background: var(--rose); }
+  .progress-seg.ready { background: var(--amber); }
+  .progress-seg.backlog { background: var(--slate); }
+
+  /* Section */
+  .section { margin-bottom: 48px; }
+  .section-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
+  }
+  .section-head h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .section-head .count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    color: var(--muted);
+    padding: 4px 10px;
+    background: var(--slate-soft);
+    border-radius: 12px;
+  }
+
+  /* Card grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px;
+    transition: all 0.2s;
+    position: relative;
+  }
+  .card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px -2px rgba(0,0,0,0.06);
+  }
+  .card.status-done { border-left: 3px solid var(--emerald); }
+  .card.status-blocked { border-left: 3px solid var(--rose); }
+  .card.status-ready { border-left: 3px solid var(--amber); }
+  .card.status-backlog { border-left: 3px solid var(--slate); }
+
+  .card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+  }
+  .card-id {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  .card-pill {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 6px;
+  }
+  .pill-done { background: var(--emerald-soft); color: #047857; }
+  .pill-blocked { background: var(--rose-soft); color: #be123c; }
+  .pill-ready { background: var(--amber-soft); color: #b45309; }
+  .pill-backlog { background: var(--slate-soft); color: #475569; }
+
+  .card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .card-meta {
+    display: flex;
+    gap: 12px;
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
+  .card-meta span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .card-meta strong { color: var(--ink-2); font-weight: 500; }
+  .card-deliverable {
+    font-size: 13px;
+    color: var(--ink-2);
+    line-height: 1.5;
+    padding-top: 12px;
+    border-top: 1px dashed var(--line);
+  }
+  .card-deliverable .label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 4px;
+    display: block;
+  }
+  .card-cite {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--indigo);
+    margin-top: 8px;
+  }
+
+  /* Callout — what Kay picks up tomorrow */
+  .callout {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border: 1px solid #f59e0b;
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin: 48px 0;
+  }
+  .callout-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #92400e;
+    margin-bottom: 8px;
+  }
+  .callout h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #78350f;
+    margin-bottom: 16px;
+  }
+  .callout-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 24px;
+  }
+  .callout-list li {
+    font-size: 14px;
+    color: #78350f;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.4;
+  }
+  .callout-list li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #b45309;
+    border-radius: 50%;
+    margin-top: 7px;
+    flex-shrink: 0;
+  }
+
+  /* Phase timeline */
+  .timeline {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 28px 32px;
+  }
+  .timeline h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .phase-list {
+    list-style: none;
+    position: relative;
+  }
+  .phase-list::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: var(--line);
+  }
+  .phase-item {
+    position: relative;
+    padding: 0 0 24px 32px;
+  }
+  .phase-item:last-child { padding-bottom: 0; }
+  .phase-item::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid var(--slate);
+  }
+  .phase-item.current::before { border-color: var(--emerald); background: var(--emerald); }
+  .phase-item.upcoming::before { border-color: var(--amber); }
+  .phase-item h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .phase-item p {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .phase-item .meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--indigo);
+    margin-top: 4px;
+  }
+
+  /* Risk box */
+  .risk {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-top: 24px;
+  }
+  .risk h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .risk-item {
+    font-size: 13px;
+    color: var(--ink-2);
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--line);
+    line-height: 1.5;
+  }
+  .risk-item:last-child { border-bottom: none; }
+  .risk-item strong { color: var(--ink); font-weight: 600; }
+
+  /* Footer */
+  .foot {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  @media (max-width: 900px) {
+    .metrics { grid-template-columns: repeat(2, 1fr); }
+    .callout-list { grid-template-columns: 1fr; }
+    h1 { font-size: 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-eyebrow"><span class="dot"></span> Hermes orchestrator · synced 2026-07-20 18:35 Berlin</div>
+    <h1>Trading Agent <span class="em">DTD-replica</span> build — Day 3</h1>
+    <p class="hero-sub">Replacing v0.1 (alpha, 5-min polling, 1-position cap) with a phased live-trading architecture: 10s bars, multi-position 1-3, 4 AM ET premarket, auto-trade with €2K guardrails. 28 course citations on every decision.</p>
+  </div>
+
+  <!-- METRICS -->
+  <div class="metrics">
+    <div class="metric">
+      <div class="metric-label"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Done</div>
+      <div class="metric-value metric-done">5</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> Blocked on Kay</div>
+      <div class="metric-value metric-blocked">3</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polygon points="5 3 19 12 5 21 5 3"/></svg> Ready</div>
+      <div class="metric-value metric-ready">4</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg> Backlog</div>
+      <div class="metric-value metric-backlog">5+</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg> Velocity</div>
+      <div class="metric-value metric-velocity">5<span class="small">/day</span></div>
+    </div>
+  </div>
+
+  <!-- PROGRESS BAR -->
+  <div class="progress-wrap">
+    <div class="progress-header">
+      <span class="progress-title">Re-architecture progress (Day 3 of ~25)</span>
+      <span class="progress-meta">5 done · 3 blocked · 4 ready · 5+ backlog</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-seg done" style="width: 25%">5</div>
+      <div class="progress-seg blocked" style="width: 15%">3</div>
+      <div class="progress-seg ready" style="width: 20%">4</div>
+      <div class="progress-seg backlog" style="width: 40%">5+</div>
+    </div>
+  </div>
+
+  <!-- CALLOUT: KAY'S PICKUP -->
+  <div class="callout">
+    <div class="callout-label">Tomorrow's pickup — 3 blockers waiting on you</div>
+    <h3>REA-0.2 · REA-0.3 · REA-1.2</h3>
+    <ul class="callout-list">
+      <li><strong>REA-0.2</strong> — TradingView tier (Plus / Premium / Ultimate)? Determines 10s charts.</li>
+      <li><strong>REA-0.3</strong> — IBKR market data subscriptions on DU1234567? Determines L2 real-time vs delayed.</li>
+      <li><strong>REA-1.2</strong> — 45-min DTD screen-share. Confirms the 10 MVP scanners match actual DTD behavior.</li>
+      <li>Once unblocked, Phase 2 (Data + Scanner MVP) starts. Estimated 1-2 weeks.</li>
+      <li>8 critical questions in <code style="background: rgba(0,0,0,0.05); padding: 1px 6px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 12px;">docs/ARCHITECTURE_v1.0.md</code> §5 need your input.</li>
+      <li>13 open items in <code style="background: rgba(0,0,0,0.05); padding: 1px 6px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 12px;">tools/PLAN-ARCHITECTURE-V1-REVIEW.md</code> for your override (defaults applied).</li>
+    </ul>
+  </div>
+
+  <!-- DONE -->
+  <div class="section">
+    <div class="section-head">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--emerald)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      <h2>Done today</h2>
+      <span class="count">5</span>
+    </div>
+    <div class="grid">
+      <div class="card status-done">
+        <div class="card-head">
+          <span class="card-id">REA-1.3</span>
+          <span class="card-pill pill-done">Done</span>
+        </div>
+        <h3>First-principles architecture design</h3>
+        <div class="card-meta">
+          <span><strong>Owner:</strong> Hermes + Coder</span>
+          <span><strong>Type:</strong> Design doc</span>
+        </div>
+        <div class="card-deliverable">
+          <span class="label">Deliverable</span>
+          <code style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">docs/ARCHITECTURE_v1.0.md</code> — 6 planes, ~700 lines, 28 course citations + 13 [INFERRED]. Supersedes v0.1 + cockpit charter. Commit <code style="font-family: 'JetBrains Mono', monospace;">089bd64</code>.
+        </div>
+        <div class="card-cite">[C1.Ch5] [C1.Ch6.P1] [C1.Ch11] [C1.Ch12] [C1.Ch15] [C2.Ch2] [C3.P5]</div>
+      </div>
+
+      <div class="card status-done">
+        <div class="card-head">
+          <span class="card-id">REA-1.1</span>
+          <span class="card-pill pill-done">Done</span>
+        </div>
+        <h3>Course-grounded decisions sweep</h3>
+        <div class="card-meta">
+          <span><strong>Owner:</strong> Hermes</span>
+          <span><strong>Type:</strong> Research</span>
+        </div>
+        <div class="card-deliverable">
+          <span class="label">Deliverable</span>
+          28 course citations baked into <code style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">ARCHITECTURE_v1.0.md</code>. Each architectural decision cites ChXX or is marked <code style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">[INFERRED — Kay sign-off]</code>. 100% coverage.
+        </div>
+        <div class="card-cite">c3_part2, c3_part5, c4_part1, c4_part2, c5_intraday, c5_reading, c15_trading_plan, scanner_screener</div>
+      </div>
+
+      <div class="card status-done">
+        <div class="card-head">
+          <span class="card-id">REA-1.4</span>
+          <span class="card-pill pill-done">Done</span>
+        </div>
+        <h3>Choose real-time data path</h3>
+        <div class="card-meta">
+          <span><strong>Owner:</strong> Hermes</span>
+          <span><strong>Type:</strong> Decision</span>
+        </div>
+        <div class="card-deliverable">
+          <span class="label">Decision</span>
+          Approach B — IBKR consolidated tape primary (10s bars), TV paid secondary (scanner data), yfinance/Finnhub tertiary (fallback). Drives Phase 2.
+        </div>
+        <div class="card-cite">[C1.Ch6.P1] [INFERRED — Kay sign-off]</div>
+      </div>
+
+      <div class="card status-done">
+        <div class="card-head">
+          <span class="card-id">REA-0.1</span>
+          <span class="card-pill pill-done">Done</span>
+        </div>
+        <h3>Clarify Gstack + Headroom method</h3>
+        <div class="card-meta">
+          <span><strong>Owner:</strong> Hermes</span>
+          <span><strong>Type:</strong> Discovery</span>
+        </div>
+        <div class="card-deliverable">
+          <span class="label">Deliverable</span>
+          <code style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">tools/BASELINE-REPORT-2026-07-20.md</code> + 2 gstack skills ported to <code style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">tools/gstack-mavis-port/</code> (~35 KB). Ponytail persona adopted for NEW code only.
+        </div>
+      </div>
+
+      <div class="card status-done">
+        <div class="card-head">
+          <span class="card-id">REA-0.4</span>
+          <span class="card-pill pill-done">Done</span>
+        </div>
+        <h3>Alpaca data tier (deprecated path)</h3>
+        <div class="card-meta">
+          <span><strong>Owner:</strong> Hermes</span>
+          <span><strong>Type:</strong> Decision</span>
+        </div>
+        <div class="card-deliverable">
+          <span class="label">Decision</span>
+          v1.0 deprecates Alpaca WS in favor of IBKR. Alpaca remains as paper-mode fallback only. One broker = no reconciliation.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BLOCKED -->
+  <div class="section">
+    <div class="section-head">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--rose)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <h2>Blocked on Kay</h2>
+      <span class="count">3</span>
+    </div>
+    <div class="grid">
+      <div class="card status-blocked">
+        <div class="card-head">
+          <span class="card-id">REA-0.2</span>
+          <span class="card-pill pill-blocked">Blocked</span>
+        </div>
+        <h3>Verify TradingView tier</h3>
+        <div class="card-meta">
+          <span><strong>Owner:</strong> Kay</span>
+          <span><strong>Type:</strong> Decision</span>
+        </div>
+        <div class="card-deliverable">
+          <span class="label">Acceptance</span>
+          Tier confirmed (Essential / Plus / Premium / Ultimate) or redacted screenshot.
+        </div>
+        <div class="card-cite">Default: 1m bars from IBKR, 10s overlay only if TV Ultimate.</div>
+      </div>
+
+      <div class="card status-blocked">
+        <div class="card-head">
+          <span class="card-id">REA-0.3</span>
+          <span class="card-pill pill-blocked">Blocked</span>
+        </div>
+        <h3>Verify IBKR market data subs</h3>
+        <div class="card-meta">
+          <span><strong>Owner:</strong> Kay + IB Specialist</span>
+          <span><strong>Type:</strong> Verification</span>
+        </div>
+        <div class="card-deliverable">
+          <span class="label">Acceptance</span>
+          Confirmed whether NASDAQ TotalView + NYSE Open Book + IB News Feed are active on DU1234567.
+        </div>
+        <div class="card-cite">Default: assume delayed, plan to subscribe if not.</div>
+      </div>
+
+      <div class="card status-blocked">
+        <div class="card-head">
+          <span class="card-id">REA-1.2</span>
+          <span class="card-pill pill-blocked">Blocked</span>
+        </div>
+        <h3>DTD screen-share with Kay</h3>
+        <div class="card-meta">
+          <span><strong>Owner:</strong> Kay + Researcher</span>
+          <span><strong>Type:</strong> Research</span>
+        </div>
+        <div class="card-deliverable">
+          <span class="label">Deliverable</span>
+          <code style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">docs/dtd-walkthrough-2026-07-XX.md</code> — per-scanner filter values for all 24 DTD scanners. ~45 min screen-share.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- READY -->
+  <div class="section">
+    <div class="section-head">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+      <h2>Ready (unblock Kay → start)</h2>
+      <span class="count">4</span>
+    </div>
+    <div class="grid">
+      <div class="card status-ready">
+        <div class="card-head">
+          <span class="card-id">REA-2.1</span>
+          <span class="card-pill pill-ready">Ready</span>
+        </div>
+        <h3>IBGW relay extensions</h3>
+        <div class="card-meta">
+          <span><strong>Owner:</strong> Hermes + Coder</span>
+          <span><strong>Effort:</strong> ~1 week</span>
+        </div>
+        <div class="card-deliverable">
+          <span class="label">Deliverable</span>
+          Extend <code style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">scripts/ibgw_relay.py</code> with <code style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">/quote</code>, <code style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">/depth</code>, <code style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">/trades</code>, <code style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">/bars?interval=10s</code>, <code style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">/halt</code> endpoints + API key auth.
+        </div>
+      </div>
+
+      <div class="card status-ready">
+        <div class="card-head">
+          <span class="card-id">REA-2.2</span>
+          <span class="card-pill pill-ready">Ready</span>
+        </div>
+        <h3>Data plane module</h3>
+        <div class="card-meta">
+          <span><strong>Owner:</strong> Coder</span>
+          <span><strong>Effort:</strong> ~3-4 days</span>
+        </div>
+        <div class="card-deliverable">
+          <span class="label">Deliverable</span>
+          <code style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">trading_agent/data_plane/</code> (5 files: tv_screener, ibkr_quote, ibkr_bars, yfinance_fallback, cache).
+        </div>
+      </div>
+
+      <div class="card status-ready">
+        <div class="card-head">
+          <span class="card-id">REA-2.3</span>
+          <span class="card-pill pill-ready">Ready</span>
+        </div>
+        <h3>Scanner module (10 of 24 DTD)</h3>
+        <div class="card-meta">
+          <span><strong>Owner:</strong> Coder + Richard</span>
+          <span><strong>Effort:</strong> ~1 week</span>
+        </div>
+        <div class="card-deliverable">
+          <span class="label">Deliverable</span>
+          <code style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">trading_agent/scanner/</code> (6 files). 5 watch list + 5 alert = 10 of 24 DTD scanners for MVP.
+        </div>
+      </div>
+
+      <div class="card status-ready">
+        <div class="card-head">
+          <span class="card-id">REA-2.4</span>
+          <span class="card-pill pill-ready">Ready</span>
+        </div>
+        <h3>Paper-mode validation</h3>
+        <div class="card-meta">
+          <span><strong>Owner:</strong> Hermes + PM-Agent</span>
+          <span><strong>Effort:</strong> 5 trading days</span>
+        </div>
+        <div class="card-deliverable">
+          <span class="label">Deliverable</span>
+          5-day paper-mode observation. All 10 scanners fire, no crashes, dedup works. Logs in <code style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">data/scanner_runs/</code>.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BACKLOG -->
+  <div class="section">
+    <div class="section-head">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--slate)" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+      <h2>Backlog (Phase 3-9)</h2>
+      <span class="count">5+</span>
+    </div>
+    <div class="grid">
+      <div class="card status-backlog">
+        <div class="card-head">
+          <span class="card-id">REA-3.x</span>
+          <span class="card-pill pill-backlog">Backlog</span>
+        </div>
+        <h3>Decision + Execution MVP</h3>
+        <div class="card-meta">
+          <span><strong>Owner:</strong> Coder</span>
+          <span><strong>Phase:</strong> 3</span>
+        </div>
+        <div class="card-deliverable">
+          <span class="label">Deliverable</span>
+          3 modules: <code style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">decision/</code> (5 files), <code style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">execution/</code> (6 files), <code style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">guardrails/</code> (5 files). File locking for positions.json.
+        </div>
+      </div>
+
+      <div class="card status-backlog">
+        <div class="card-head">
+          <span class="card-id">REA-4.x</span>
+          <span class="card-pill pill-backlog">Backlog</span>
+        </div>
+        <h3>Dashboard rewrite</h3>
+        <div class="card-meta">
+          <span><strong>Owner:</strong> Coder</span>
+          <span><strong>Phase:</strong> 4</span>
+        </div>
+        <div class="card-deliverable">
+          <span class="label">Deliverable</span>
+          <code style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">dashboard/app.py</code> rewrite with 3 views (Live, Watch List, History). Kill switch + override. /api/health endpoint.
+        </div>
+      </div>
+
+      <div class="card status-backlog">
+        <div class="card-head">
+          <span class="card-id">REA-5.x</span>
+          <span class="card-pill pill-backlog">Backlog</span>
+        </div>
+        <h3>Paper month (1 month)</h3>
+        <div class="card-meta">
+          <span><strong>Owner:</strong> Hermes + PM-Agent</span>
+          <span><strong>Phase:</strong> 5</span>
+        </div>
+        <div class="card-deliverable">
+          <span class="label">Deliverable</span>
+          Full pipeline, paper mode. Daily P&L review. Weekly conviction accuracy. Iterate on scanner thresholds.
+        </div>
+      </div>
+
+      <div class="card status-backlog">
+        <div class="card-head">
+          <span class="card-id">REA-6.x</span>
+          <span class="card-pill pill-backlog">Backlog</span>
+        </div>
+        <h3>Live beta (paper → €500 → €2K)</h3>
+        <div class="card-meta">
+          <span><strong>Owner:</strong> Hermes + PM-Agent</span>
+          <span><strong>Phase:</strong> 6</span>
+        </div>
+        <div class="card-deliverable">
+          <span class="label">Deliverable</span>
+          Each phase: ≥60% win rate over 20 trades. All guardrails active. Daily P&L review with Kay.
+        </div>
+      </div>
+
+      <div class="card status-backlog">
+        <div class="card-head">
+          <span class="card-id">REA-7.x</span>
+          <span class="card-pill pill-backlog">Backlog</span>
+        </div>
+        <h3>Close remaining 14 scanners</h3>
+        <div class="card-meta">
+          <span><strong>Owner:</strong> Coder + Richard</span>
+          <span><strong>Phase:</strong> 7</span>
+        </div>
+        <div class="card-deliverable">
+          <span class="label">Deliverable</span>
+          Top Losers, Penny Stocks, IPO Movers, Earnings, Low Float Top Gainers, HOD Momentum, VWAP Reclaim, Resistance Breakouts, Float Rotation, Multi-Day Consolidations, Large Cap, Running Up. Full DTD parity.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHASE TIMELINE -->
+  <div class="timeline">
+    <h2>Build phases</h2>
+    <ol class="phase-list">
+      <li class="phase-item current">
+        <h4>Phase 0 — Tool baseline</h4>
+        <p>4 delivery tools cloned + smoke-tested. gstack Mavis port. Telegram diagnosed dead.</p>
+        <div class="meta">✅ Done 2026-07-20</div>
+      </li>
+      <li class="phase-item current">
+        <h4>Phase 1 — DTD-replica architecture</h4>
+        <p>6 planes, 10 of 24 scanners MVP, 10s bars, multi-position 1-3, 4 AM ET premarket, auto-trade phased.</p>
+        <div class="meta">✅ Done 2026-07-20 — Awaiting Kay ratification</div>
+      </li>
+      <li class="phase-item upcoming">
+        <h4>Phase 2 — Data + Scanner MVP</h4>
+        <p>IBGW relay extensions, data_plane module, scanner module (10 of 24 DTD). 5-day paper-mode validation.</p>
+        <div class="meta">~1-2 weeks · starts when Kay unblocks REA-0.2/0.3/1.2</div>
+      </li>
+      <li class="phase-item">
+        <h4>Phase 3 — Decision + Execution MVP</h4>
+        <p>Bull/Bear/RM pipeline, IBKR orders, ATR stops, tick monitoring, hard + soft guardrails.</p>
+        <div class="meta">~2-3 weeks</div>
+      </li>
+      <li class="phase-item">
+        <h4>Phase 4 — Dashboard rewrite</h4>
+        <p>3 views (Live, Watch List, History), kill switch, daily P&L digest, end-to-end browser test.</p>
+        <div class="meta">~1 week</div>
+      </li>
+      <li class="phase-item">
+        <h4>Phase 5 — Paper month</h4>
+        <p>Run full pipeline, paper mode. Daily P&L review. Weekly conviction accuracy. Tune thresholds.</p>
+        <div class="meta">~1 month</div>
+      </li>
+      <li class="phase-item">
+        <h4>Phase 6 — Live beta phased</h4>
+        <p>paper → €500 → €2K. Each phase ≥60% win rate over 20 trades. All guardrails active.</p>
+        <div class="meta">~3-4 months</div>
+      </li>
+      <li class="phase-item">
+        <h4>Phase 7 — Close remaining 14 scanners</h4>
+        <p>Full DTD parity. Each scanner gets its own subdoc + integration test.</p>
+        <div class="meta">Parallel with Phase 5+</div>
+      </li>
+    </ol>
+
+    <!-- RISK -->
+    <div class="risk">
+      <h3>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--rose)" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        Top 3 risks
+      </h3>
+      <div class="risk-item"><strong>1. Kay's 3 blockers</strong> all need his input. If he's away another day, Phase 2 stalls. Mitigation: defaults applied per ARCHITECTURE_v1.0 §5, Kay overrides tomorrow.</div>
+      <div class="risk-item"><strong>2. IBGW relay extensions</strong> untested at 10s cadence. Could hit performance walls. Mitigation: profile early in Phase 2, fall back to 1m if needed.</div>
+      <div class="risk-item"><strong>3. Conviction threshold ≥7</strong> is a guess. Could over-trade or under-trade. Mitigation: backtest on 30 days of historical signals in Phase 3.</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="foot">
+    <span>Source: <code style="font-family: 'JetBrains Mono', monospace;">.hermes/plans/re-architecture-kanban.md</code> · <code style="font-family: 'JetBrains Mono', monospace;">docs/ARCHITECTURE_v1.0.md</code></span>
+    <span>Hermes (Mavis Code) · 2026-07-20 18:35 Berlin</span>
+  </div>
+
+</div>
+</body>
+</html>
