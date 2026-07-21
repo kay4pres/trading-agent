@@ -11,42 +11,36 @@ Build an AI-driven trading system that learns from Ross Cameron (Warrior Trading
 4. **Autonomy** — system runs autonomously, Kay supervises
 5. **Product** — distill proven system for others
 
-**Deadline:** July 23, 2026 (12 days remaining).
-**Capital:** €2,000 IB broker account.
+**Deadline:** July 23, 2026 (9 days remaining).
+**Capital:** €2,000 IB CapTrader paper trading account.
 
 ---
 
-## System Status — 2026-07-13 Sunday (No Market) — BLOCKED: Telegram tokens burned
+## System Status — 2026-07-14 Tuesday — IBGW RELAY WORKING
 
 ### Infrastructure
-- **Gitea Actions CI/CD** — ✅ All 3 runners registered and online: DEV (org), UAT (id=7 org), PROD (id=10 repo)
-- **Docker on NAS** — `trading-agent` (PROD) at `:5050` ✅ alive, `trading-agent-dev` at `:5051` ✅ alive, `trading-agent-uat` at `:5052` ✅ alive
-- **UAT Network** — ✅ FIXED: attached to `trading-agent_default` bridge (was isolated on broken `20_default`)
-- **Bull/Bear** — ⚠️ Intentional: runs via Mavis/Kay's Windows, not container-native
-- **Scanner** — ✅ Functional, writes to Kay's local `E:\Me\TradingAgent\data\`
-- **Telegram** — 🔴 ALL BROKEN: both `@Marvless01_bot` and `@Hendrika01_bot` tokens 401 Unauthorized
+- **IBGW Relay**: ✅ WORKING at http://10.8.0.2:5055 (ibgw_relay.py on Windows Python 3.12 relay-venv)
+- **Container → IBGW**: ✅ WORKING via relay (UAT container calls http://10.8.0.2:5055)
+- **WireGuard VPN**: ✅ Active on Windows (10.8.0.2) and NAS (10.8.0.10)
+- **IBGW**: ✅ Running at 10.8.0.2:4002, logged into CapTrader paper trading
 
-### Gitea Actions CI/CD ✅ OPERATIONAL
-- **All 3 runners online** — DEV (nas-act-runner-dev org), UAT (nas-act-runner-uat id=7 org), PROD (nas-act-runner-prod id=10 repo)
-- CI/CD fully operational — code pushes to Gitea auto-build and deploy
+### What was fixed today:
+1. premarket_screener.py cron path → python3 trading_agent/premarket_screener.py + TRADING_DATA_DIR ✅
+2. Bull/Bear E:\ path removed → Path.home()/TradingAgent/data ✅
+3. UAT CI/CD pipeline created → uat branch + uat.yml workflow + ib_insync in Dockerfile ✅
+4. ib_insync installed in UAT container ✅
+5. ibgw_relay.py created → Windows relay via Python 3.12 relay-venv ✅
+
+### Remaining items:
+- Telegram: ✅ FIXED (tokens via BotFather)
+- IBGW direct (container→IBGW): ✅ FIXED via relay workaround
+- UAT → CapTrader paper trading: 🔴 TEST NEEDED (is paper trading account wired?)
+- PROD: 🔴 BLOCKED until UAT confirmed
 
 ### Execution
-- **DEV (Alpaca Paper):** `open_position()` is **simulated** — positions tracked in `positions.json`, no real orders placed 🔴
-- **UAT (IBKR Paper):** ✅ Container at `:5052`, network fixed, `ib_insync` installed, `ibkr_connector.py` exists — but IBGW unreachable from container 🔴
-- **PROD (IBKR Live):** BLOCKED — waits for UAT to be stable
-
-### Active Blockers
-| # | Blocker | Owner | Status |
-|---|---------|-------|--------|
-| 1 | **Telegram tokens burned** | Kay | 🔴 Both @Marvless01_bot and @Hendrika01_bot 401 — need new tokens from @BotFather |
-| 2 | **IB Gateway unreachable** | DevOps | 🔴 Port 4002 closed from container — IBGW localhost-only on Windows |
-| 3 | **premarket_screener.py missing** | DevOps/Kay | 🔴 09:14 cron fires but file doesn't exist — decide: create or remove |
-| 4 | **Bull/Bear data path mismatch** | DevOps | 🔴 Windows script writes to `E:\Me\TradingAgent\data\` not NAS mount |
-| 5 | **UAT image old** | DevOps | 🔴 Running Jul 3 image — no Gitea UAT branch for CI rebuild |
-| 6 | ~~UAT network isolated~~ | DevOps | ✅ FIXED — `trading-agent_default` bridge |
-| 7 | ~~ib_insync not installed~~ | DevOps | ✅ FIXED — v0.9.86 installed in UAT |
-| 8 | ~~ibkr_connector.py missing~~ | DevOps | ✅ FIXED — created at `/app/trading_agent/ibkr_connector.py` |
-| 9 | ~~All 3 runners~~ | DevOps | ✅ FIXED — all online |
+- **DEV (Alpaca Paper)**: ✅ Simulated, positions.json
+- **UAT (IB CapTrader Paper)**: ✅ IBGW relay working at 10.8.0.2:5055, needs first paper trade test
+- **PROD (IBKR Live)**: 🔴 BLOCKED
 
 ### Docker Deployment
 See `docker/README.md` — **Gitea Actions** is primary CI/CD. All 3 environments auto-deploy via their respective branches.

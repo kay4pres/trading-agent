@@ -21,12 +21,11 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 # ── Paths
-# Docker volume UNC share (SMB): \\10.8.0.10\Docker\data  → /app/data in container
-# Kay's local path: E:\Me\TradingAgent\data
-# When called from Mavis cron on Kay's host, use the Docker volume UNC so
-# results are visible to the container dashboard AND Kay's local machine.
+# Docker: TRADING_DATA_DIR env var is set to /app/data in the UAT container.
+# When running on Kay's Windows host (via Mavis cron), use the Docker volume UNC
+# so results are visible to the container dashboard AND Kay's local machine.
 _DOCKER_VOLUME_UNC = Path(r'\\10.8.0.10\Docker\data')
-_LOCAL_DATA_DIR    = Path(r'E:\Me\TradingAgent\data')
+_LOCAL_DATA_DIR    = Path.home() / 'TradingAgent' / 'data'
 
 _DATA_ROOT = os.environ.get('TRADING_DATA_DIR', '').strip()
 if _DATA_ROOT:
@@ -236,7 +235,7 @@ def _llm_direct(prompt: str, system: str) -> tuple[str, dict | None]:
     """Direct HTTP call using MiniMax API. Returns (text, usage_dict)."""
     import yaml, httpx
 
-    VAULT_DIR = Path(r"E:\Me\TradingAgent\vault")
+    VAULT_DIR = Path.home() / "TradingAgent" / "vault"
     VAULT_KEY = VAULT_DIR / "llm_api_key.enc"
 
     # 1. Try MINIMAX_API_KEY env var first (set in Docker container vault)

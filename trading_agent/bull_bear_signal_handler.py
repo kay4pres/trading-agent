@@ -20,9 +20,9 @@ import os
 import sys
 from pathlib import Path
 
-# Config — UTA/Docker: TRADING_DATA_DIR env var; Local: E:\Me\TradingAgent\data
+# Config — UTA/Docker: TRADING_DATA_DIR env var; Local: ~/TradingAgent/data
 _DATA_ROOT = os.environ.get('TRADING_DATA_DIR', '').strip()
-DATA_DIR = Path(_DATA_ROOT) if _DATA_ROOT else Path(r'E:\Me\TradingAgent\data')
+DATA_DIR = Path(_DATA_ROOT) if _DATA_ROOT else Path.home() / 'TradingAgent' / 'data'
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 POSITIONS_FILE = DATA_DIR / 'positions.json'
 DEBATE_RESULTS_FILE = DATA_DIR / 'bull_bear_results.json'
