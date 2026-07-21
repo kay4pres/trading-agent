@@ -101,24 +101,31 @@ The `.hermes/plans/momentum-decision-cockpit.md` charter was scoped for 8 watchl
 
 ### 2.2 Scanner plane
 
-**Contract:** Event-driven candidate generation. Two modes:
+**Contract:** Event-driven candidate generation. **DTD has 25 official scanners** (corrected from v2's 24 — DTD support doc `support.daytradedash.ai` is the canonical source). Two modes:
 - **Watch List Scanners (5 of 5 MVP)** — top-of-book leaderboards, refresh every 5 sec during market hours. Top 50 per scanner, sorted by composite score.
 - **Alert Scanners (5 of ~19 MVP)** — event-driven push notifications, debounced per symbol. Each alert carries: symbol, scanner_type, score, price, RV, float, gap %, catalyst, timestamp, entry_window_until.
 
-**MVP Top 10 (DTD-aligned):**
+**Audio-enabled priority tier (3 scanners DTD plays sound for — these are our highest-priority alerts):**
+1. HOD Momentum (small cap)
+2. HOD Momentum (large cap)
+3. Halt
+
+**MVP Top 10 (DTD-aligned, 10 of 25):**
 
 | # | Type | Scanner | DTD equivalent | Refresh | Course citation |
 |---|------|---------|----------------|---------|-----------------|
 | 1 | Watch | Top Gainers | "Top Gainers" | 5s | `[C1.Ch12]` |
 | 2 | Watch | Top Relative Volume | "Top Relative Volume" | 5s | `[C1.Ch12]`, `[c4_part2]` |
-| 3 | Watch | Small Cap High Day | "Small Cap High Momentum" | 5s | `[C1.Ch12]`, `[C4.Ch2.P1]` (small float = under 20M) |
+| 3 | Watch | Small Cap High Day | "Small Cap High Momentum" | 5s | `[C1.Ch12]`, `[C4.Ch2.P1]` (small float = under 10M, **corrected from 20M per Ross's own transcript + DTD support doc**) |
 | 4 | Watch | Pre-Market Gappers | "Pre-Market Gappers" | 60s (4-9 AM ET) | `[c3_part5_watchlist_rules.md]` (Ross's 6 AM pre-market scan) |
-| 5 | Watch | First Pullback Setups | DTD has it, hidden in their scanner suite | 10s (event-driven from bars) | `[C1.Ch5.intraday_patterns]`, `[C1.Ch6.P1]` |
+| 5 | Watch | First Pullback Setups | DTD pattern detector (NOT official scanner) | 10s (event-driven from bars) | `[C1.Ch5.intraday_patterns]`, `[C1.Ch6.P1]` |
 | 6 | Alert | Halt Status | "Halt" | event (IBGW field 293/294) | `[C1.Ch11]`, `[C2.Ch6.P3]` |
 | 7 | Alert | News Catalyst | "News Catalysts" | event (Finnhub + TV news) | `[c3_part2_news_catalyst_rules.md]` |
 | 8 | Alert | Squeeze Candidates | "Squeeze Candidates" | 60s (yfinance SI) | `[C1.Ch12]`, `[c3_part2]` (short squeeze) |
 | 9 | Alert | Reversals | "Reversals" | 10s (intraday) | `[c5_intraday_patterns_rules.md]` |
-| 10 | Alert | Bull Flag Breakouts | "Bull Flag Breakouts" | 10s (intraday) | `[c5_intraday_patterns_rules.md]` |
+| 10 | Alert | Bull Flag Breakouts | "Bull Flag Breakouts" (DTD pattern detector, NOT official scanner) | 10s (intraday) | `[c5_intraday_patterns_rules.md]` |
+
+**Reclassification note (post-merge 2026-07-21):** First Pullback Setups, Bull Flag Breakouts, VWAP Reclaim, and Resistance Breakouts are **NOT official DTD scanners** per `support.daytradedash.ai`. They are **pattern detectors** users apply on top of DTD candidate lists. They live in the **Decision plane** (entry timing) in our v1.0 arch, not the Scanner plane (candidate ID). See `docs/dtd-intel-refresh-2026-07-21.md` §11.2.
 
 **Phase 2 (close the 14 after MVP):** Top Losers, Top Penny Stocks, Top Large Cap, Top Recent IPOs Moving, Penny Stocks, Earnings Movers, Low Float Top Gainers, High of Day (HOD) Momentum, VWAP Reclaim, Resistance Breakouts, Float Rotation, Multi-Day Consolidations, Large Cap Momentum, Running Up. Each gets its own subdoc + 5s refresh interval.
 
@@ -295,7 +302,7 @@ The `.hermes/plans/momentum-decision-cockpit.md` charter was scoped for 8 watchl
 - **SSR (Short Sale Restriction):** no shorting on SSR days. Day-only. `[C1.Ch11]`.
 - **Wide-range bar:** if today's range > 2× ATR, skip — too volatile for our stops. `[C1.Ch5]`.
 - **Large-cap drift:** if symbol > $20 OR market cap > $2B, skip — not Ross's zone. `[C1.Ch2.P1]`, `[C4.Ch2.P1]`.
-- **Float check:** if float > 20M, skip — not small cap. `[C4.Ch2.P1]`.
+- **Float check:** if float > **10M**, skip — not small cap. `[C4.Ch2.P1]`. **Corrected from 20M per Ross's own transcript + DTD support doc** (v0.1 + v1.0 draft had 20M, but Ross explicitly uses <10M float for his small-cap strategy). See `docs/dtd-intel-refresh-2026-07-21.md` §11.1.
 - **End-of-day discipline:** close all positions at 21:00 Berlin (4 PM ET). No overnight holds in alpha. `[C1.Ch15]`.
 
 **Soft limits (warnings, not blocks):**
