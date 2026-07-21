@@ -1,0 +1,637 @@
+{
+    "version": "1.0",
+    "last_audit": "2026-07-21T16:30:00+02:00",
+    "sessions": [
+        {
+            "still_stale": [
+                {
+                    "doc": "trader_agent.py (v0.1 code)",
+                    "reason": "Float check still 20M - needs Python patch once Kay approves"
+                },
+                {
+                    "doc": "E:\\Me\\AI-Brain\\projects\\trading-agent\\docs\\*.html",
+                    "reason": "Not yet updated with re-arch status"
+                }
+            ],
+            "action": "Merged bg_f610f803 findings + patched ARCHITECTURE_v1.0.md with 3 critical corrections",
+            "fixed": [
+                {
+                    "doc": "ARCHITECTURE_v1.0.md",
+                    "action": "Float 20M → 10M (line 298)"
+                },
+                {
+                    "doc": "ARCHITECTURE_v1.0.md",
+                    "action": "Scanner count 24 → 25 (line 104); added 3-audio-enabled-priority-tier note (HOD Momo small/large + Halt)"
+                },
+                {
+                    "doc": "ARCHITECTURE_v1.0.md",
+                    "action": "Added reclassification note (line 126); marked First Pullback + Bull Flag as 'DTD pattern detector, NOT official scanner' in the table"
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\docs\\dtd-intel-refresh-2026-07-21.md",
+                    "action": "Appended §11 (merged findings from bg_f610f803) and §12 (updated action items). Total 49 KB."
+                },
+                {
+                    "doc": "gitea pipeline-builder/day-01-relay-extension",
+                    "action": "Pushed commit 040657b (2 files, 642 insertions, 216 deletions)"
+                }
+            ],
+            "new_docs_discovered": [
+                "E:\\Me\\TradingAgent\\docs\\dtd-intel-refresh-2026-07-21.md (49 KB after merge)"
+            ],
+            "date": "2026-07-21",
+            "lessons_learned": [
+                "v2 review INFERRED scanner list from marketing copy - actual DTD support doc says 25 scanners, with 4 'DTD scanners' (Bull Flag etc) being pattern overlays users apply, not official scanners",
+                "Ross Cameron's own transcript is the canonical source for filter values - his podcast + Bear Bull Traders PDF (Ross's sister site) have exact thresholds",
+                "DTD official support site is support.daytradedash.ai - go there first for canonical scanner list, not marketing pages",
+                "researcher-agent in-depth sweep caught 3 things the Mavis-direct web_search missed: float cutoff, scanner classification, 25 vs 24 count. Two-agent pattern works - quick Mavis pass + thorough agency-agents sweep = best coverage"
+            ],
+            "files_updated": [
+                "E:\\Me\\TradingAgent\\docs\\ARCHITECTURE_v1.0.md",
+                "E:\\Me\\TradingAgent\\docs\\dtd-intel-refresh-2026-07-21.md",
+                "E:\\Me\\TradingAgent\\docs\\.doc-sheriff-log.json"
+            ],
+            "session": "mavis-code-dtd-intel-refresh-merge-2026-07-21",
+            "drift_found": [
+                {
+                    "issue": "Float cutoff 20M was wrong - Ross transcript + DTD support doc both say 10M. v0.1 + v1.0 draft both had 20M (too loose).",
+                    "doc": "ARCHITECTURE_v1.0.md",
+                    "severity": "high"
+                },
+                {
+                    "issue": "Scanner count 24 vs 25 (DTD support doc canonical).",
+                    "doc": "ARCHITECTURE_v1.0.md",
+                    "severity": "low"
+                },
+                {
+                    "issue": "Bull Flag / First Pullback / VWAP Reclaim / Resistance Breakouts misclassified as DTD scanners - they are user-applied pattern detectors per DTD support doc. Should live in Decision plane, not Scanner plane.",
+                    "doc": "ARCHITECTURE_v1.0.md",
+                    "severity": "high"
+                }
+            ]
+        },
+        {
+            "still_stale": [
+                {
+                    "doc": "ARCHITECTURE_v1.0.md",
+                    "reason": "Filter threshold recommendations (section 7.4 of refresh) NOT YET APPLIED - waiting on Kay to accept/reject before editing v1.0"
+                },
+                {
+                    "doc": "Focalboard DevOps Sprint board",
+                    "reason": "API auth still browser-only, board state unverified programmatically"
+                }
+            ],
+            "action": "DTD competitive intel refresh - 30 min autonomous research via web_search + agency-agents/researcher spawn. Output: docs/dtd-intel-refresh-2026-07-21.md (17 KB, 21 URL sources cited).",
+            "fixed": [
+                {
+                    "doc": "E:\\Me\\TradingAgent\\docs\\dtd-intel-refresh-2026-07-21.md",
+                    "action": "Created - 10 of 24 MVP scanner filter values from community sources (BBT PDF + Reddit), competitor matrix (DAS, Sterling, Lightspeed, Cobra, Trade Ideas, Finviz, Unusual Whales), 2026 DTD pricing, user feedback themes, filter threshold recommendations, 4 open questions for Kay."
+                },
+                {
+                    "doc": "C:\\Users\\Kay\\repos\\trading-agent\\docs\\dtd-intel-refresh-2026-07-21.md",
+                    "action": "Mirrored + committed + pushed: e62969e"
+                }
+            ],
+            "new_docs_discovered": [
+                "E:\\Me\\TradingAgent\\docs\\dtd-intel-refresh-2026-07-21.md"
+            ],
+            "date": "2026-07-21",
+            "lessons_learned": [
+                "Bear Bull Traders PDF is a goldmine - 8 bull flag scanner strategies with exact filter values, publicly available. DTD 'secret sauce' is the integration, not the filters.",
+                "WallStreetZen validation: 'DTD doesn't offer anything over much cheaper alternatives, most notably TradingView' - confirms our build-on-TV approach.",
+                "Ross Cameron uses LightSpeed Trader as his broker, NOT DTD. DTD is research/chart UI only. Our moat is the full agent loop (scanner → decision → execution).",
+                "2026 FINRA PDT change: \\ floor gone Jun 4 2026, replaced with intraday margin. Kay's €2K plan now viable without PDT wait.",
+                "User feedback: cost sensitivity is real (multiple complaints about \\/mo). Our build is \\/mo TV Ultimate + \\ else - same range, much more depth.",
+                "DTD has no backtester. Opportunity for our v1.0 to lead on this."
+            ],
+            "files_updated": [
+                "E:\\Me\\TradingAgent\\docs\\dtd-intel-refresh-2026-07-21.md",
+                "E:\\Me\\TradingAgent\\docs\\.doc-sheriff-log.json"
+            ],
+            "session": "mavis-code-dtd-intel-refresh-2026-07-21",
+            "drift_found": [
+                {
+                    "issue": "Scanner filter values were placeholders (RV ≥ 5x for all scanners). Community values are 2x-3x with more granular price/float tiers. Not a doc drift, but a tuning gap that affects trading decision quality.",
+                    "doc": "ARCHITECTURE_v1.0.md",
+                    "severity": "medium"
+                },
+                {
+                    "issue": "Missing backtester from v1.0 scope. DTD has no backtester (gated by their build); our arch should ADD backtester as a v1.0 feature (user feedback from Reddit/YouTube confirms demand).",
+                    "doc": "ARCHITECTURE_v1.0.md",
+                    "severity": "medium"
+                },
+                {
+                    "issue": "Sub-1-min chart strategy assumed TV Ultimate tier. Now confirmed: DTD uses 1s/10s/15s/24s charts. Same requirement for our build. Open Q1 still pending Kay.",
+                    "doc": "ARCHITECTURE_v1.0.md",
+                    "severity": "low"
+                }
+            ]
+        },
+        {
+            "still_stale": [
+                {
+                    "doc": "E:\\Me\\AI-Brain\\projects\\trading-agent\\docs\\*.html",
+                    "reason": "Not yet updated with re-arch status. Pending Phase 2 kickoff."
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\docs\\pipeline-status.md",
+                    "reason": "Not yet updated. Will batch with first operational probe."
+                },
+                {
+                    "doc": "Focalboard DevOps Sprint board",
+                    "reason": "Status unknown as of 2026-07-21. Per Jul 8 ref, board was in browser localStorage only. Need to verify + recreate."
+                }
+            ],
+            "action": "Day 3 work re-anchored to operational path. Located doc-sheriff skill (Hermes-level, not local). Confirmed Focalboard URL. Path discipline re-established.",
+            "fixed": [
+                {
+                    "doc": "E:\\Me\\TradingAgent\\docs\\ARCHITECTURE_v1.0.md",
+                    "action": "Copied from C:\\Users\\Kay\\repos\\trading-agent\\docs\\"
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\tools\\PLAN-ARCHITECTURE-V1-REVIEW.md",
+                    "action": "Copied from C:\\ git mirror"
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\tools\\DAY-3-END-OF-DAY-2026-07-20.md",
+                    "action": "Copied from C:\\ git mirror"
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\tools\\DAY-2-END-OF-DAY-2026-07-20.md",
+                    "action": "Copied from C:\\ git mirror"
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\tools\\BASELINE-REPORT-2026-07-20.md",
+                    "action": "Copied from C:\\ git mirror"
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\tools\\kanban-stakeholder-view.html",
+                    "action": "Copied from C:\\ git mirror"
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\tools\\gstack-mavis-port\\*",
+                    "action": "Copied recursively from C:\\ git mirror"
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\docs\\brief.md",
+                    "action": "Appended re-architecture sprint section + path discipline warning"
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\docs\\point-of-truth.md",
+                    "action": "Updated timestamp + Day 3 handoff section + path discipline section + Focalboard status"
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\docs\\NEXT_SESSION_HANDOFF.md",
+                    "action": "Full rewrite with Day 3 recap + Day 4 work + open items + key paths"
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\docs\\.doc-sheriff-log.json",
+                    "action": "Appended this session"
+                }
+            ],
+            "new_docs_discovered": [
+                "E:\\Me\\TradingAgent\\docs\\ARCHITECTURE_v1.0.md",
+                "E:\\Me\\TradingAgent\\tools\\PLAN-ARCHITECTURE-V1-REVIEW.md",
+                "E:\\Me\\TradingAgent\\tools\\DAY-2-END-OF-DAY-2026-07-20.md",
+                "E:\\Me\\TradingAgent\\tools\\DAY-3-END-OF-DAY-2026-07-20.md",
+                "E:\\Me\\TradingAgent\\tools\\BASELINE-REPORT-2026-07-20.md",
+                "E:\\Me\\TradingAgent\\tools\\kanban-stakeholder-view.html",
+                "E:\\Me\\TradingAgent\\tools\\gstack-mavis-port\\plan-ceo-review.md",
+                "E:\\Me\\TradingAgent\\tools\\gstack-mavis-port\\review.md",
+                "E:\\Me\\TradingAgent\\tools\\gstack-mavis-port\\README.md"
+            ],
+            "date": "2026-07-21",
+            "lessons_learned": [
+                "Mavis Code agents default to C:\\Users\\Kay\\repos\\trading-agent\\ when working on trading-agent project (git clone root). Operational truth is E:\\Me\\TradingAgent\\. When delegating from Mavis, ALWAYS explicitly say 'write to E:\\Me\\TradingAgent\\ first' to avoid the path drift.",
+                "Doc-sheriff is a Hermes Desktop skill at C:\\Users\\Kay\\AppData\\Local\\hermes\\skills\\operations\\doc-sheriff\\SKILL.md. NOT a Mavis Code agent. Routes via Hermes orchestrator. Cannot be invoked from Mavis directly - need to bridge.",
+                "Focalboard is on the NAS at 10.8.0.10:9087 (container mindgentic-kanban, port 9087:8000). Auth via Ai_agent_01 + DPAPI password at vault/focalboard_password.enc. The DevOps Sprint board (bzzy9qg1dabfutdsyb8us5r1x8r) may be missing from cloud - was in localStorage as of Jul 8.",
+                "Multiple tools can be cloned but only used per the project's invocation pattern. ponytail/headroom/agency-agents/gstack were cloned to C:\\Users\\Kay\\repos\\trading-agent\\tools\\ but the project's source of truth for tools is E:\\Me\\TradingAgent\\tools\\. Mirror to E: for operational use.",
+                "MEMORY CORRECTION: 'doc-sheriff not built' from Day 3 night was wrong - it's a real Hermes-level skill. Lesson: when Kay references a Hermes role, trust him, do not check local Mavis agent list first."
+            ],
+            "files_updated": [
+                "E:\\Me\\TradingAgent\\docs\\ARCHITECTURE_v1.0.md",
+                "E:\\Me\\TradingAgent\\tools\\PLAN-ARCHITECTURE-V1-REVIEW.md",
+                "E:\\Me\\TradingAgent\\tools\\DAY-2-END-OF-DAY-2026-07-20.md",
+                "E:\\Me\\TradingAgent\\tools\\DAY-3-END-OF-DAY-2026-07-20.md",
+                "E:\\Me\\TradingAgent\\tools\\BASELINE-REPORT-2026-07-20.md",
+                "E:\\Me\\TradingAgent\\tools\\kanban-stakeholder-view.html",
+                "E:\\Me\\TradingAgent\\tools\\gstack-mavis-port\\plan-ceo-review.md",
+                "E:\\Me\\TradingAgent\\tools\\gstack-mavis-port\\review.md",
+                "E:\\Me\\TradingAgent\\tools\\gstack-mavis-port\\README.md",
+                "E:\\Me\\TradingAgent\\docs\\brief.md",
+                "E:\\Me\\TradingAgent\\docs\\point-of-truth.md",
+                "E:\\Me\\TradingAgent\\docs\\NEXT_SESSION_HANDOFF.md",
+                "E:\\Me\\TradingAgent\\docs\\.doc-sheriff-log.json"
+            ],
+            "session": "mavis-code-day-3-reanchor-2026-07-21",
+            "drift_found": [
+                {
+                    "issue": "Missing entirely from operational path. Day 3 (2026-07-20) Hermes wrote to C:\\Users\\Kay\\repos\\trading-agent\\docs\\ARCHITECTURE_v1.0.md only. Operational source of truth was E: drive (per doc-sheriff). Doc only existed in git mirror.",
+                    "doc": "E:\\Me\\TradingAgent\\docs\\ARCHITECTURE_v1.0.md",
+                    "severity": "critical"
+                },
+                {
+                    "issue": "Same as above - missing from operational path.",
+                    "doc": "E:\\Me\\TradingAgent\\tools\\PLAN-ARCHITECTURE-V1-REVIEW.md",
+                    "severity": "high"
+                },
+                {
+                    "issue": "Same as above - missing from operational path.",
+                    "doc": "E:\\Me\\TradingAgent\\tools\\DAY-3-END-OF-DAY-2026-07-20.md",
+                    "severity": "high"
+                },
+                {
+                    "issue": "Last updated 2026-07-08. 13 days stale. Day 3 sprint context not reflected.",
+                    "doc": "E:\\Me\\TradingAgent\\docs\\point-of-truth.md",
+                    "severity": "high"
+                },
+                {
+                    "issue": "Missing re-architecture sprint section. Status section showed Jun 29 state.",
+                    "doc": "E:\\Me\\TradingAgent\\docs\\brief.md",
+                    "severity": "high"
+                },
+                {
+                    "issue": "Last handoff was Jul 14. Day 3 work not reflected.",
+                    "doc": "E:\\Me\\TradingAgent\\docs\\NEXT_SESSION_HANDOFF.md",
+                    "severity": "high"
+                }
+            ]
+        },
+        {
+            "session": "doc-sheriff-telegram-healthcheck-2026-07-16",
+            "date": "2026-07-16",
+            "action": "Self-healing Telegram health check cron registered â€” job 11e2b601da5b, every 15 min, no-agent watchdog. Probes UAT + PROD @Marvless01_bot via getMe. Silent on success. Alerts route @Hendrika01_bot (primary) -> @Marvless01_bot (fallback) -> cron deliver (last resort).",
+            "files_updated": [
+                "E:\\Me\\TradingAgent\\docs\\brief.md",
+                "E:\\Me\\TradingAgent\\docs\\.doc-sheriff-log.json",
+                "C:\\Users\\Kay\\AppData\\Local\\hermes\\sessions\\handoff_jul16_telegram_fix.md"
+            ],
+            "drift_found": [],
+            "fixed": [
+                {
+                    "doc": "brief.md",
+                    "action": "Added 'Telegram Health Monitoring' section: cron ID 11e2b601da5b, schedule, alert routing, script locations, @Hendrika01_bot discovery location (DPAPI vault, not NAS)"
+                },
+                {
+                    "doc": ".doc-sheriff-log.json",
+                    "action": "Added telegram_healthcheck block with cron metadata; updated watched_failure_modes with Jul 16 lessons; added this session entry"
+                },
+                {
+                    "doc": "handoff_jul16_telegram_fix.md",
+                    "action": "Appended 'Jul 17 cron work' section summarizing healthcheck registration"
+                }
+            ],
+            "still_stale": [],
+            "lessons_learned": [
+                "@Hendrika01_bot token is in Windows DPAPI vault, not NAS vault dirs â€” agent searches must span both locations",
+                "hermes cron --deliver telegram:CHAT_ID routes through whichever bot is configured in ~/.hermes/.env (Hendrika01 in this setup)",
+                "agent overcalled 'script broken' when alert was actually its own TEST 5 verification send â€” important to read the agent's full report before panicking"
+            ]
+        },
+        {
+            "session": "doc-sheriff-telegram-fix-verified-2026-07-16",
+            "date": "2026-07-16",
+            "action": "Telegram FIXED â€” both UAT and PROD returning getMe ok:true with new token 8940612948:***",
+            "drift_found": [
+                {
+                    "doc": "brief.md",
+                    "issue": "Credentials section described Docker Secret as source of truth â€” Docker Secrets DO NOT work with standalone containers (only Swarm services). Root cause of all Telegram failures.",
+                    "severity": "critical"
+                },
+                {
+                    "doc": "trading-agent-ops/SKILL.md",
+                    "issue": "Docker Secret architecture documented but Docker Secrets cannot be read by standalone containers. Architecture was built on false premise.",
+                    "severity": "critical"
+                }
+            ],
+            "fixed": [
+                {
+                    "doc": "brief.md",
+                    "action": "Updated Telegram section: vault files on host are the actual source of truth. Docker Secrets are NOT read by standalone containers. New token 8940612948:*** confirmed working in both UAT and PROD."
+                },
+                {
+                    "doc": "trading-agent-ops/SKILL.md",
+                    "action": "Updated credentials section: Docker Secrets only work with Swarm services. Standalone containers use vault files as source of truth. New token confirmed working."
+                }
+            ],
+            "still_stale": [],
+            "lessons_learned": [
+                "Docker Secrets (docker secret create) only work with Swarm services (docker service create). UAT and PROD are standalone containers (docker run/compose) â€” they cannot read Swarm secrets via Docker socket API. read_docker_secret.py fails silently.",
+                "Vault files on host filesystem are the actual source of truth for standalone containers. Bind mount persists them across restarts.",
+                "Docker Swarm secrets cannot be read from inside standalone containers â€” architecture built on false premise.",
+                "PROD vault was ephemeral â€” vault dir missing on host meant container used writable layer (ephemeral). Created /volume1/Docker/PortainerCE/data/compose/10/vault/ to make it persistent.",
+                "UAT vault file had stale dead token â€” overwritten with new token via NAS Explorer in Portainer.",
+                "Restart picks up new vault file â€” confirmed working in both containers with getMe ok:true."
+            ]
+        },
+        {
+            "session": "doc-sheriff-prod-vault-telegram-2026-07-16",
+            "date": "2026-07-16",
+            "action": "CRITICAL: Both @Marvless01_bot tokens were DEAD (404 = bot DELETED). PROD vault missing on NAS. read_docker_secret.py missing from PROD. docker.sock mount missing from PROD compose.",
+            "drift_found": [
+                {
+                    "doc": "brief.md",
+                    "issue": "Credentials section: Docker Secret telegram_bot_tokenMarvless01bot claimed UAT token was live â€” actually BOTH UAT and PROD tokens were 404 (bot DELETED). stack.env still had hardcoded TELEGRAM_BOT_TOKEN=8940612948 (revoked/dead).",
+                    "severity": "critical"
+                },
+                {
+                    "doc": "trading-agent-ops/SKILL.md",
+                    "issue": "Credentials Map: telegram_bot_tokenMarvless01bot Docker Secret contained token 8951488228:AAEQ4TomWhQ.E8s9QC86r which was 404 (bot deleted). stack.env PROD token 8940612948 also 404 (bot deleted). Both bots were GONE from Telegram.",
+                    "severity": "critical"
+                },
+                {
+                    "doc": "PROD container vault on NAS",
+                    "issue": "/volume1/Docker/PortainerCE/data/compose/10/vault/ did NOT exist on host filesystem. Container was running with ephemeral vault (files in container writable layer, not from bind mount). Vault files (last modified Jul 13) would be LOST on container restart.",
+                    "severity": "critical"
+                },
+                {
+                    "doc": "PROD docker-compose.yml",
+                    "issue": "docker socket mount (/var/run/docker.sock) NOT present in compose. read_docker_secret.py NOT in compose volumes. The fix scripts (fix-prod-telegram.py/hermes-verify-fix-prod.sh) were created but NEVER EXECUTED.",
+                    "severity": "high"
+                }
+            ],
+            "fixed": [],
+            "still_stale": [],
+            "lessons_learned": [
+                "PROD vault missing on host: container running but vault dir doesn't exist on NAS = bind mount created empty dir in container's filesystem, not persistent vault. Vault files are ephemeral.",
+                "fix-prod-telegram.py and hermes-verify-fix-prod.sh were CREATED but NEVER EXECUTED. Scripts in temp/ are not deployed fixes."
+            ]
+        },
+        {
+            "session": "doc-sheriff-telegram-token-fix-2026-07-15",
+            "date": "2026-07-15",
+            "action": "Telegram token architecture rebuilt â€” Docker Secret as single source of truth",
+            "files_updated": [
+                "E:\\Me\\TradingAgent\\docs\\brief.md",
+                "C:\\Users\\Kay\\AppData\\Local\\hermes\\skills\\operations\\kay-session-learnings\\SKILL.md",
+                "C:\\Users\\Kay\\AppData\\Local\\hermes\\skills\\operations\\trading-agent-ops\\SKILL.md",
+                "C:\\Users\\Kay\\AppData\\Local\\hermes\\skills\\operations\\doc-sheriff\\SKILL.md"
+            ],
+            "drift_found": [
+                {
+                    "doc": "brief.md",
+                    "issue": "Credentials section claimed Telegram token was @BotFather / Portainer stack env var â€” actually fragmented across 13+ locations with no single source of truth",
+                    "severity": "high"
+                },
+                {
+                    "doc": "trading-agent-ops/SKILL.md",
+                    "issue": "Credentials Map showed TELEGRAM_BOT_TOKEN as Portainer stack env var (PROD) and hardcoded env var (UAT). Portainer REST API rotation steps were stale.",
+                    "severity": "high"
+                },
+                {
+                    "doc": "kay-session-learnings/SKILL.md",
+                    "issue": "Jul 15 session described @Marvless01_bot 401 failures â€” no documented resolution with new architecture",
+                    "severity": "medium"
+                },
+                {
+                    "doc": "doc-sheriff/SKILL.md",
+                    "issue": "Drift pattern 'Telegram token cross-contamination' was retired Jul 14 but didn't document the new Docker Secret architecture",
+                    "severity": "medium"
+                }
+            ],
+            "fixed": [
+                {
+                    "doc": "brief.md",
+                    "action": "Credentials section rewritten: Docker Secret telegram_bot_tokenMarvless01bot is single source of truth. Entrypoint reads secret -> writes /app/vault/TELEGRAM_BOT_TOKEN.env. One-command token update documented."
+                },
+                {
+                    "doc": "kay-session-learnings/SKILL.md",
+                    "action": "Added Jul 15 lesson: Telegram token fragmentation across 13+ locations. Docker Secret as master, entrypoint as distribution. General principle: consolidate secrets to single source of truth when >3 locations."
+                },
+                {
+                    "doc": "trading-agent-ops/SKILL.md",
+                    "action": "Replaced Credentials Map with new architecture: Docker Secret telegram_bot_tokenMarvless01bot for all envs. Replaced Portainer REST API rotation (retired) with Docker Secret rm+create pattern. Token rotation section now has one-command update."
+                },
+                {
+                    "doc": "doc-sheriff/SKILL.md",
+                    "action": "Updated 'Telegram token cross-contamination' drift pattern to reflect Docker Secret single source of truth. Added new 'Hardcoded tokens in compose files' drift pattern. Added Jul 15 lesson to Lessons Learned table."
+                }
+            ],
+            "still_stale": [],
+            "new_docs_discovered": [],
+            "lessons_learned": [
+                "Telegram token was fragmented across 13+ locations â€” no single source of truth caused 401 errors with no clear fix path",
+                "Docker Secret + entrypoint distribution = clean single-source-of-truth pattern for secrets that need to be in containers",
+                "When a secret appears in more than 3 locations, consolidate to a single source of truth with a distribution mechanism",
+                "compose files should never contain hardcoded secrets â€” use Docker Secrets + entrypoint distribution"
+            ]
+        },
+        {
+            "session": "hermes-20260713-1430",
+            "date": "2026-07-13",
+            "drift_found": [
+                {
+                    "doc": "pipeline-status.md",
+                    "issue": "missing Jul 12-13",
+                    "severity": "high"
+                },
+                {
+                    "doc": "brief.md",
+                    "issue": "content from Jun 29 vs actual Jul 13 state",
+                    "severity": "high"
+                }
+            ],
+            "fixed": [
+                {
+                    "doc": "brief.md",
+                    "action": "added Jul 13 system status section"
+                },
+                {
+                    "doc": "pipeline-status.md",
+                    "action": "prepended Jul 13 entry, removed conflict marker"
+                }
+            ],
+            "still_stale": [
+                {
+                    "doc": "AI-Brain HTML files",
+                    "reason": "no probe done â€” pending Kay approval"
+                }
+            ],
+            "new_docs_discovered": [],
+            "lessons_learned": [
+                "agent reported 'done' without updating docs â€” brief.md was 2 weeks stale",
+                "pipeline-status.md accumulated conflict markers when agents prepended"
+            ]
+        },
+        {
+            "fixed": [
+                {
+                    "doc": "E:\\Me\\TradingAgent\\tools\\oss-references\\other-ai-investing-system\\REVIEW.md",
+                    "action": "Created 17 KB review with adopt-3 / fork-3 / skip-7 / watch-4 verdict. Cross-referenced with ARCHITECTURE_v1.0.md. Course citations [A-1]..[F-3] + [INFERRED] items."
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\docs\\point-of-truth.md",
+                    "action": "Added Day 4 section documenting other-ai-investing-system review + arch v1.0 patch proposal (validation_plane, learning_plane, execution_plane guard, news_guard)"
+                }
+            ],
+            "lessons_learned": [
+                "House-vs-gambler framing: strategy is a plug-in, system has veto. Different mental model than ours (scanner-as-strategy + thin wrapper). Their pattern is COMPLEMENTARY, not replacement.",
+                "Adopt-3 / Fork-3 / Skip-7 / Watch-4 framework: cleanly separates what we can copy verbatim, what we port and rewrite, what we ignore, and what to defer.",
+                "execution-safety 4-step pipeline (mode → risk limits → typed confirm → audit log) is the exact gap in our execution plane. Two-lock pattern (env + per-call) is industry-proven (tastytrade).",
+                "trading-loop engine (19 KB numpy + stdlib, 5 tests) fills our closed-self-learning-loop gap. Keep/revert gate + one-variable-at-a-time + reverted_locks are the value.",
+                "news-guard maps instrument → currency → high-impact events. Free Forex Factory JSON + bundled CSV fallback. Maps exactly to our guardrails plane gap."
+            ],
+            "new_docs_discovered": [
+                "E:\\Me\\TradingAgent\\tools\\oss-references\\other-ai-investing-system\\REVIEW.md"
+            ],
+            "session": "mavis-code-day-4-oss-review-2026-07-21",
+            "date": "2026-07-21",
+            "drift_found": [],
+            "still_stale": []
+        },
+        {
+            "session": "mavis-code-day-4-oss-review-2026-07-21",
+            "date": "2026-07-21",
+            "drift_found": [],
+            "fixed": [
+                {
+                    "doc": "E:\\Me\\TradingAgent\\tools\\oss-references\\other-ai-investing-system\\REVIEW.md",
+                    "action": "Created 17 KB review with adopt-3 / fork-3 / skip-7 / watch-4 verdict. Cross-referenced with ARCHITECTURE_v1.0.md. Course citations [A-1]..[F-3] + [INFERRED] items."
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\docs\\point-of-truth.md",
+                    "action": "Added Day 4 section documenting other-ai-investing-system review + arch v1.0 patch proposal (validation_plane, learning_plane, execution_plane guard, news_guard)."
+                }
+            ],
+            "still_stale": [],
+            "new_docs_discovered": [
+                "E:\\Me\\TradingAgent\\tools\\oss-references\\other-ai-investing-system\\REVIEW.md"
+            ],
+            "lessons_learned": [
+                "House-vs-gambler framing: strategy is a plug-in, system has veto. Different mental model than ours (scanner-as-strategy + thin wrapper). Their pattern is COMPLEMENTARY, not replacement.",
+                "Adopt-3 / Fork-3 / Skip-7 / Watch-4 framework cleanly separates what we copy verbatim, port and rewrite, ignore, or defer.",
+                "execution-safety 4-step pipeline (mode → risk limits → typed confirm → audit log) is the exact gap in our execution plane. Two-lock pattern (env + per-call) is industry-proven (tastytrade).",
+                "trading-loop engine (19 KB numpy + stdlib, 5 tests) fills our closed-self-learning-loop gap. Keep/revert gate + one-variable-at-a-time + reverted_locks are the value.",
+                "news-guard maps instrument → currency → high-impact events. Free Forex Factory JSON + bundled CSV fallback. Maps exactly to our guardrails plane gap."
+            ]
+        },
+        {
+            "session": "mavis-code-day-4-oss-ports-2026-07-21",
+            "date": "2026-07-21",
+            "drift_found": [],
+            "fixed": [
+                {
+                    "doc": "E:\\Me\\TradingAgent\\trading_agent\\execution\\guard.py",
+                    "action": "Ported execution_safety.py (Lewis Jackson) — 4-step gate, IBKRLiveAdapter wrapper. 12 tests pass."
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\trading_agent\\data_plane\\news_guard\\news_guard.py",
+                    "action": "Ported news_guard.py + events.csv — NFP/FOMC/CPI blackout, INSTRUMENT_MAP extended with day-trading watchlist. 9 tests pass."
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\trading_agent\\risk\\pre_trade_gate.py",
+                    "action": "Ported risk-manager Mode #1 — 7 BLOCK conditions. Side mapper (buy/long/b/l -> long). 17 tests pass."
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\trading_agent\\data_plane\\regime\\markov_regime.py",
+                    "action": "Ported Markov regime detection (Roan @RohOnChain framework). 3-state (Bear/Sideways/Bull), signal in [-1, 1]. 9 tests pass."
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\trading_agent\\learning\\trading_loop\\engine.py",
+                    "action": "Ported trading_loop engine — 6-stage closed cadence, keep/revert gate, one-variable-at-a-time rule. 5 tests pass."
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\trading_agent\\learning\\trade_journal.py",
+                    "action": "Built trade_journal.py — positions.json -> CSV adapter. Extends schema with r_multiple, rule_compliance, session, setup. 17 tests pass."
+                }
+            ],
+            "still_stale": [
+                {
+                    "doc": "trader_agent.py",
+                    "reason": "open_position() not yet wired to call guard_order() + pre_trade_gate.evaluate() — pending Phase 2 integration"
+                },
+                {
+                    "doc": "positions.json schema",
+                    "reason": "Existing records lack journal fields (r_multiple, rule_compliance, session, setup) — old records continue to work, new records will get the extras via extend_position_schema()"
+                }
+            ],
+            "new_docs_discovered": [
+                "E:\\Me\\TradingAgent\\trading_agent\\execution\\guard.py",
+                "E:\\Me\\TradingAgent\\trading_agent\\execution\\__init__.py",
+                "E:\\Me\\TradingAgent\\trading_agent\\execution\\tests\\test_guard.py",
+                "E:\\Me\\TradingAgent\\trading_agent\\data_plane\\news_guard\\news_guard.py",
+                "E:\\Me\\TradingAgent\\trading_agent\\data_plane\\news_guard\\__init__.py",
+                "E:\\Me\\TradingAgent\\trading_agent\\data_plane\\news_guard\\events.csv",
+                "E:\\Me\\TradingAgent\\trading_agent\\data_plane\\news_guard\\tests\\test_news_guard.py",
+                "E:\\Me\\TradingAgent\\trading_agent\\data_plane\\regime\\markov_regime.py",
+                "E:\\Me\\TradingAgent\\trading_agent\\data_plane\\regime\\__init__.py",
+                "E:\\Me\\TradingAgent\\trading_agent\\data_plane\\regime\\tests\\test_regime.py",
+                "E:\\Me\\TradingAgent\\trading_agent\\risk\\pre_trade_gate.py",
+                "E:\\Me\\TradingAgent\\trading_agent\\risk\\__init__.py",
+                "E:\\Me\\TradingAgent\\trading_agent\\risk\\tests\\test_pre_trade_gate.py",
+                "E:\\Me\\TradingAgent\\trading_agent\\learning\\trade_journal.py",
+                "E:\\Me\\TradingAgent\\trading_agent\\learning\\__init__.py",
+                "E:\\Me\\TradingAgent\\trading_agent\\learning\\tests\\test_trade_journal.py",
+                "E:\\Me\\TradingAgent\\trading_agent\\learning\\trading_loop\\engine.py",
+                "E:\\Me\\TradingAgent\\trading_agent\\learning\\trading_loop\\run.py",
+                "E:\\Me\\TradingAgent\\trading_agent\\learning\\trading_loop\\__init__.py",
+                "E:\\Me\\TradingAgent\\trading_agent\\learning\\trading_loop\\tests\\test_trading_loop.py"
+            ],
+            "lessons_learned": [
+                "Lewis Jackson's 17-skill pack is a strong complementary upgrade: 5 modules ported in one session with 69 tests passing across 6 modules.",
+                "Author attribution is critical for forked code: each ported module has a clear header naming the upstream author (Lewis Jackson for execution/risk, Roan @RohOnChain for regime, Karpathy for autoresearch pattern).",
+                "Side-mapper helper (_normalize_side) is a small but valuable addition — upstream code uses different conventions ('buy'/'sell' vs 'long'/'short') and trader_agent.py uses 'long'/'short'.",
+                "Side-effects (timedelta_hours bug, infer_session timezone DST handling) only surface in tests. The infer_session test for midday (13:30 ET) caught a broken timezone conversion that ad-hoc testing would have missed.",
+                "Path discipline: write to E: drive first, mirror to C: drive for git. With 6 new modules this turn, the C: mirror would drift if not done carefully."
+            ]
+        }
+    ],
+    "registered_docs": [
+        "E:\\Me\\TradingAgent\\docs\\dtd-intel-refresh-2026-07-21.md",
+        "E:\\Me\\TradingAgent\\docs\\dtd-intel-refresh-2026-07-21.md",
+        "E:\\Me\\TradingAgent\\docs\\ARCHITECTURE_v1.0.md",
+        "E:\\Me\\TradingAgent\\tools\\PLAN-ARCHITECTURE-V1-REVIEW.md",
+        "E:\\Me\\TradingAgent\\tools\\DAY-2-END-OF-DAY-2026-07-20.md",
+        "E:\\Me\\TradingAgent\\tools\\DAY-3-END-OF-DAY-2026-07-20.md",
+        "E:\\Me\\TradingAgent\\tools\\BASELINE-REPORT-2026-07-20.md",
+        "E:\\Me\\TradingAgent\\tools\\kanban-stakeholder-view.html",
+        "E:\\Me\\TradingAgent\\tools\\gstack-mavis-port\\plan-ceo-review.md",
+        "E:\\Me\\TradingAgent\\tools\\gstack-mavis-port\\review.md",
+        "E:\\Me\\TradingAgent\\tools\\gstack-mavis-port\\README.md",
+        "E:\\Me\\TradingAgent\\docs\\brief.md",
+        "E:\\Me\\TradingAgent\\docs\\pipeline-status.md",
+        "E:\\Me\\TradingAgent\\docs\\point-of-truth.md",
+        "C:\\Users\\Kay\\AppData\\Local\\hermes\\skills\\operations\\trading-agent-ops\\SKILL.md",
+        "C:\\Users\\Kay\\AppData\\Local\\hermes\\skills\\operations\\living-documents\\SKILL.md",
+        "C:\\Users\\Kay\\AppData\\Local\\hermes\\skills\\operations\\kay-session-learnings\\SKILL.md",
+        "C:\\Users\\Kay\\AppData\\Local\\hermes\\skills\\operations\\nas-ssh-access\\SKILL.md",
+        "C:\\Users\\Kay\\AppData\\Local\\hermes\\skills\\operations\\doc-sheriff\\SKILL.md"
+    ],
+    "drift_patterns": [
+        "When research scope drifts, do Mavis-direct pass (fast) + agency-agents researcher-agent pass (thorough) - two-agent pattern catches more",
+        "Cost sensitivity to scanner subscriptions is a real user complaint - design our pricing comparison to highlight cost moat",
+        "Writes to C:\\Users\\Kay\\repos\\trading-agent\\ don't propagate to E:\\Me\\TradingAgent\\ operational truth - re-anchor required after every Mavis Code session",
+        "brief.md goes stale within 2 sessions of no updates",
+        "subagents claim 'done' without doc update",
+        "pipeline-status.md accumulates conflict markers when agents prepend",
+        "Stale registry paths",
+        "Gitea vs GitHub confusion",
+        "Telegram token burn",
+        "Runner token burn",
+        "Bull/Bear path mismatch"
+    ],
+    "watched_failure_modes": [
+        "Path discipline: Mavis Code defaults to C:\\ git clone, project truth is E:\\ drive (Jul 21)",
+        "Focalboard board may be missing from cloud - localStorage only (Jul 8, unverified since)",
+        "UAT repo empty of source files",
+        "DEV/UAT runner drops to 0",
+        "local-only files never pushed",
+        "system monitor bugs (IBGW, runner auth, container API)",
+        "probe results sanity check",
+        "Telegram token cross-contamination â€” Docker Secret single source of truth (Jul 15)",
+        "Hardcoded tokens in compose files (Jul 15)",
+        "Docker Secrets proposed as fix for standalone containers (Jul 16 â€” false premise, vault files are correct)",
+        "@Hendrika01_bot token search limited to NAS vault dirs (Jul 16 â€” token is actually in Windows DPAPI vault)"
+    ],
+    "telegram_healthcheck": {
+        "cron_job_id": "11e2b601da5b",
+        "schedule": "*/15 * * * *",
+        "registered": "2026-07-16T11:55:00+02:00",
+        "script": "telegram_healthcheck.sh",
+        "alert_bots": {
+            "primary": "@Hendrika01_bot (8951488228:AAGHeqsmh... â€” DPAPI vault)",
+            "fallback": "@Marvless01_bot (8940612948:AAGC... â€” DPAPI vault)"
+        },
+        "next_run": "2026-07-16T13:30:00+02:00"
+    }
+}
