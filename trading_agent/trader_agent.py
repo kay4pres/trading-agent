@@ -12,6 +12,73 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import pandas as pd
 
+# ── Pre-trade gate (Lewis Jackson's risk-manager Mode #1) ──────────────────
+# Adapts our existing open_position() to a hard pre-trade gate that BLOCKS
+# orders violating any of 7 conditions. The gate reads positions.json for
+# state, queries yfinance for the current market price, and delegates the
+# news-blackout check to news_guard. Lazy imports keep this module
+# importable even when the news/regime stack is offline.
+def _build_pre_trade_gate(symbol: str, direction: str, entry_price: float,
+                          stop, target, quantity: int):
+    """Construct a GateConfig for the proposed trade.
+
+    Returns a tuple (gate_cfg, news_guard_callable, current_market_price).
+    The news_guard callable is None if news_guard is unavailable; the gate
+    treats that as a soft pass (per pre_trade_gate design).
+    """
+    from trading_agent.risk.pre_trade_gate import GateConfig, DEFAULTS
+
+    # Live state: load current positions for max-positions and same-asset checks
+    try:
+        state = load_positions()
+        current_positions = state.get("positions", {}) or {}
+    except Exception:
+        current_positions = {}
+
+    # Live market price for stale-signal check
+    current_market_price = get_live_price(symbol)
+
+    # News guard callable (None = soft-pass; gate tolerates this)
+    news_guard_callable = None
+    try:
+        from trading_agent.data_plane.news_guard import evaluate as news_evaluate
+
+        def _ng(instrument, at, **kw):
+            before = kw.get("before_min", 30)
+            after = kw.get("after_min", 15)
+            return news_evaluate(
+                instrument, at, before_min=before, after_min=after, offline=True
+            )
+
+        news_guard_callable = _ng
+    except Exception as e:
+        print(f"[Gate] news_guard unavailable, treating as soft-pass: {e}")
+
+    # Allowlist: any ticker the system has traded before (from history) or
+    # the obvious day-trading universe. Empty = nothing allowed (fail-closed).
+    allowlist = list({
+        "AAPL", "MSFT", "NVDA", "AMD", "TSLA", "META", "AMZN", "GOOG",
+        "NFLX", "MIMI", "ILLR", "PTLE", "SOFI", "PLTR", "RIVN", "GME",
+        "AMC", "SMCI", "ARM", "AVGO", "COIN", "HOOD", "SPY", "QQQ", "IWM",
+    })
+    for p in current_positions.values():
+        if p.get("symbol"):
+            allowlist.append(p["symbol"].upper())
+
+    cfg = GateConfig(
+        account_equity=DEFAULTS["account_equity"],
+        daily_loss_pct=DEFAULTS["daily_loss_pct"],
+        max_open_positions=DEFAULTS["max_open_positions"],
+        max_risk_per_trade_pct=DEFAULTS["max_risk_per_trade_pct"],
+        min_rr_ratio=DEFAULTS["min_rr_ratio"],
+        stale_signal_pct=DEFAULTS["stale_signal_pct"],
+        current_positions=current_positions,
+        symbol_allowlist=allowlist,
+        current_market_price=current_market_price,
+        news_guard=news_guard_callable,
+    )
+    return cfg, news_guard_callable, current_market_price
+
 # ── Alpaca Trading ──────────────────────────────────────────────────────────────
 # Lazy import — alpaca-py may not be installed on all systems
 _alpaca_trading = None
@@ -251,7 +318,16 @@ def execute_exit(state, symbol, pos, reason, live_price):
 
 
 def _log_to_journal(symbol, pos, exit_price, reason, pnl, pnl_percent):
-    """Append closed trade to the trade journal."""
+    """Append closed trade to the trade journal.
+
+    Writes to BOTH:
+      1. memory_logger.log_trade() — the existing append-only journal
+      2. trade_journal.on_position_closed() — the engine-compatible CSV
+         (feeds the trading_loop self-learning cycle)
+
+    Both are best-effort: failures in one should not stop the other.
+    """
+    # 1. Existing append-only journal
     try:
         from memory_logger import log_trade
         log_trade({
@@ -271,6 +347,14 @@ def _log_to_journal(symbol, pos, exit_price, reason, pnl, pnl_percent):
         })
     except Exception as e:
         print(f"[Memory] Failed to log trade: {e}")
+
+    # 2. Engine-compatible CSV (feeds the trading_loop learning cycle)
+    try:
+        from trading_agent.learning.trade_journal import on_position_closed
+        ext = on_position_closed(pos)
+        print(f"[TradeJournal] Appended {symbol} -> r_multiple={ext.get('r_multiple', '?')}, session={ext.get('session', '?')}")
+    except Exception as e:
+        print(f"[TradeJournal] Failed to append: {e}")
 
 def check_two_min_rule(state, symbol, pos, live_price):
     """
@@ -297,6 +381,7 @@ def check_two_min_rule(state, symbol, pos, live_price):
         return False, None
     else:
         # Rule failed — price didn't make new high, exit now
+        print(f"[2MIN] {symbol} 2-MIN RULE TRIGGERED — price ${live_price:.2f} below entry ${pos['entry_price']:.2f} at 2-min mark — EXITING")
         return True, "2MIN_RULE"
 
 def open_position(symbol, direction, entry_price, quantity, target=None, stop=None,
@@ -311,9 +396,55 @@ def open_position(symbol, direction, entry_price, quantity, target=None, stop=No
         stop: if None, uses ATR-based calculation
         pullback_low: if provided, used as primary stop (Ross's rule)
         skip_if_bad_rr: if True (default), skips trade when 2:1 can't be maintained
+
+    Pre-trade gate (Lewis Jackson risk-manager Mode #1, 7 BLOCK conditions):
+        The first thing this function does is call `_build_pre_trade_gate()`
+        and `gate_or_block()`. If any of the 7 conditions fails, the trade
+        is BLOCKED and we return False BEFORE touching positions.json. This
+        replaces the older "advisory" check (just a Telegram warning) with
+        a hard gate.
     """
     if rules_applied is None:
         rules_applied = []
+
+    # ── PRE-TRADE GATE (blocks before any state mutation) ─────────────────
+    try:
+        from trading_agent.risk.pre_trade_gate import gate_or_block
+        # Pre-compute stop/target for the gate so R:R check is accurate.
+        # The gate needs concrete stop+target to evaluate R:R; if those
+        # weren't supplied, fall back to ATR-based calc below.
+        pre_stop = stop
+        pre_target = target
+        if pre_stop is None or pre_target is None:
+            calc_s, calc_t, _ = calc_stop_target(symbol, entry_price,
+                                                 pullback_low=pullback_low)
+            if pre_stop is None:
+                pre_stop = calc_s
+            if pre_target is None:
+                pre_target = calc_t
+        gate_cfg, _, _ = _build_pre_trade_gate(
+            symbol, direction, entry_price, pre_stop, pre_target, quantity
+        )
+        gate_result = gate_or_block(
+            symbol=symbol,
+            side=direction,
+            entry_price=entry_price,
+            stop=pre_stop,
+            target=pre_target,
+            quantity=quantity,
+            cfg=gate_cfg,
+        )
+        if not gate_result["passed"]:
+            msg = f"🚫 GATE BLOCKED: {symbol} {direction.upper()}\n{gate_result['reason']}"
+            print(f"[Gate] {msg}")
+            send_telegram(msg)
+            return False
+    except Exception as e:
+        # If the gate itself fails to build, fail closed — refuse the trade.
+        # This is asymmetric: a missing gate should NOT let a trade through.
+        print(f"[Gate] Pre-trade gate unavailable, BLOCKING for safety: {e}")
+        send_telegram(f"⚠️ GATE UNAVAILABLE: {symbol} — trade blocked for safety: {e}")
+        return False
 
     state = load_positions()
     if symbol in state["positions"]:
@@ -370,39 +501,94 @@ def open_position(symbol, direction, entry_price, quantity, target=None, stop=No
     save_positions(state)
 
     rr = (target - entry_price) / (entry_price - stop) if entry_price != stop else 0
+    atr_str = f"${atr:.4f}" if atr else "?"
     msg = (
         f"🚀 ENTRY: {symbol}\n"
         f"{direction.upper()} {quantity} shares @ ${entry_price:.2f}\n"
         f"Target: ${target:.2f} (+${target-entry_price:.2f})\n"
-        f"Stop: ${stop:.2f} (-${entry_price-stop:.2f}) | ATR: ${atr:.4f if atr else '?'}\n"
+        f"Stop: ${stop:.2f} (-${entry_price-stop:.2f}) | ATR: {atr_str}\n"
         f"R:R = {rr:.1f}:1 | Score: {signal_score:.1f}/5\n"
         f"{signal_type}"
     )
     send_telegram(msg)
     print(f"[ENTRY] {symbol} {direction.upper()} @ ${entry_price:.2f} | T:{target} S:{stop} | ATR:{atr} | R:R:{rr:.1f}:1")
 
-    # ── Submit real order to Alpaca paper trading ───────────────────────────
+    # ── Submit real order via execution-safety guard (Lewis Jackson pattern) ─
+    # The guard is paper-first by default: ALLOW_TRADING=1 must be set in the
+    # shell to arm live trading, AND a typed human confirmation token is
+    # required per live order. Until both are set, every order routes to paper.
     try:
-        Alpaca = _get_alpaca_trading()
-        if Alpaca is not None:
-            # Map direction to order side: "long" → buy, "short" → sell
-            side = "buy" if direction.lower() == "long" else "sell"
-            result = Alpaca.submit_market_order(
-                symbol=symbol.upper(),
-                qty=quantity,
-                side=side,
-                dry_run=False,
+        from trading_agent.execution.guard import (
+            Order as GuardOrder,
+            RiskProfile,
+            guard_order,
+            IBKRLiveAdapter,
+        )
+        side = "buy" if direction.lower() == "long" else "sell"
+        guard_order_obj = GuardOrder(
+            symbol=symbol.upper(),
+            side=side,
+            qty=quantity,
+            order_type="market",
+            price=entry_price,
+            stop=stop,
+            atr=atr,
+        )
+        # Risk profile sized for €2K paper-trading account.
+        risk_profile = RiskProfile(
+            account_equity=2_000.0,
+            max_risk_per_trade_pct=1.5,
+            max_daily_loss_pct=10.0,
+            max_position_notional=800.0,
+            min_stop_atr_mult=1.0,
+            symbol_allowlist=[symbol.upper()],
+        )
+        # If we have an IBGW relay running, route through it. Otherwise
+        # PaperAdapter (default) handles everything; no network, no risk.
+        try:
+            live_adapter = IBKRLiveAdapter(timeout=2.0)
+        except Exception:
+            live_adapter = None
+        guard_result = guard_order(
+            guard_order_obj,
+            risk_profile,
+            live=False,  # paper by default; flip to True only when armed
+            paper_adapter=None,
+            live_adapter=live_adapter,
+        )
+        decision = guard_result["routed"]
+        audit_id = guard_result.get("audit_id", "")
+        if decision == "blocked":
+            print(f"[Guard] Order BLOCKED at execution gate: {guard_result['reason']}")
+            send_telegram(
+                f"🚫 EXEC GUARD BLOCKED: {symbol} {side.upper()} {quantity}\n"
+                f"{guard_result['reason']}\naudit: {audit_id}"
             )
-            print(f"[Alpaca] Order submitted: {result['order_id']} | {side.upper()} {quantity} {symbol}")
-            # Attach order_id to the position for audit trail
-            pos["broker_order_id"] = result["order_id"]
+            # Don't unwind the local position — the user can review the
+            # block and the audit log. Position is tracked, no broker order.
+            pos["execution_decision"] = decision
+            pos["execution_audit_id"] = audit_id
+            pos["execution_reason"] = guard_result["reason"]
             save_positions(state)
-        else:
-            print(f"[Alpaca] SIMULATED (alpaca-py unavailable) — no broker order sent")
+            return True  # position is still tracked
+        elif decision == "paper":
+            print(f"[Guard] Routed to paper (audit: {audit_id})")
+            pos["execution_decision"] = decision
+            pos["execution_audit_id"] = audit_id
+        else:  # live
+            fill = guard_result.get("fill", {}) or {}
+            print(f"[Guard] LIVE order routed: {fill.get('message', '')} (audit: {audit_id})")
+            pos["execution_decision"] = decision
+            pos["execution_audit_id"] = audit_id
+            pos["broker_order_id"] = fill.get("order_id")
+        save_positions(state)
     except Exception as e:
-        # Best-effort: log the error but don't fail the position tracking
-        print(f"[Alpaca] Order submission failed: {e}")
-        print(f"[Alpaca] Position IS TRACKED locally — broker order needs manual check")
+        # Guard itself failed — log + best-effort continue. The local
+        # position is still tracked; broker order needs manual review.
+        print(f"[Guard] Execution guard unavailable: {e}")
+        print(f"[Guard] Position IS TRACKED locally — broker order needs manual check")
+        pos["execution_decision"] = "guard_unavailable"
+        save_positions(state)
 
     return True
 
