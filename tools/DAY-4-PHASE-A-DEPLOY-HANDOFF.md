@@ -34,18 +34,33 @@ Both `E:\` and `C:\Users\Kay\repos\trading-agent\` (git mirror) have the same fi
 
 ### Step 1 — Create the dev directory on the NAS
 
-Open an SSH session to the NAS (port 22, user `Ai_agent_01`, key in `E:\Me\TradingAgent\vault\Ai_agent_01_openssh.key`).
+**IMPORTANT: The chown form in the previous handoff was wrong.** I told you to use `chown -R Ai_agent:Ai_agent`, but on the NAS there is no user named `Ai_agent` — only `Ai_agent_01` (uid 1004). The correct form is `Ai_agent_01:users` (using the existing `users` group, gid 100).
+
+**Pre-fix: this was already done via delegation this morning.** The dir `/volume1/Docker/trading-agent-dev/` is already set up with `Ai_agent_01:users` ownership and the 7 subdirs (vault/, dashboard/, dashboard/static/, models/, knowledge/, config/, logs/) are all present. You can skip this step and go straight to Step 2.
+
+If you ever need to re-run it (e.g. on a different NAS or after a wipe):
 
 ```bash
-ssh nas-automation
-# Or: ssh -i "E:/Me/TradingAgent/vault/Ai_agent_01_openssh.key" Ai_agent_01@nas.local
+# SSH into the NAS
+ssh -i "E:/Me/TradingAgent/vault/Ai_agent_01_openssh.key" Ai_agent_01@10.8.0.10
 
-# Create the dev dir with the right ownership
-sudo mkdir -p /volume1/Docker/trading-agent-dev/{vault,dashboard/static,models,knowledge,config,logs}
-sudo chown -R Ai_agent:Ai_agent /volume1/Docker/trading-agent-dev
+# Create the dev dir (parent /volume1/Docker is 0777, so no sudo needed)
+mkdir -p /volume1/Docker/trading-agent-dev/vault
+mkdir -p /volume1/Docker/trading-agent-dev/dashboard/static
+mkdir -p /volume1/Docker/trading-agent-dev/models
+mkdir -p /volume1/Docker/trading-agent-dev/knowledge
+mkdir -p /volume1/Docker/trading-agent-dev/config
+mkdir -p /volume1/Docker/trading-agent-dev/logs
+
+# Correct chown: Ai_agent_01 user, users group (gid 100)
+chown -R Ai_agent_01:users /volume1/Docker/trading-agent-dev
+
+# Verify
 ls -la /volume1/Docker/trading-agent-dev
-# Should show: vault/, dashboard/, models/, knowledge/, config/, logs/ — all owned by Ai_agent
+# All subdirs should be owned by Ai_agent_01:users
 ```
+
+**Why this works:** Ai_agent_01 is in the `administrators` group (gid 999), which on ADM can chown without sudo. The UAT pattern (verified by reading `/volume1/Docker/trading-agent-uat`) uses `Ai_agent:users` which is the SAME as `Ai_agent_01:users` because `Ai_agent` is a login alias for `Ai_agent_01`. Direct chown with `Ai_agent_01:users` is the unambiguous form.
 
 ### Step 2 — Extract the source from gitea (no git needed on NAS)
 
