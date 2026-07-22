@@ -1,6 +1,6 @@
 {
     "version": "1.0",
-    "last_audit": "2026-07-21T16:30:00+02:00",
+    "last_audit": "2026-07-21T17:55:00+02:00",
     "sessions": [
         {
             "still_stale": [
@@ -573,6 +573,64 @@
                 "Side-mapper helper (_normalize_side) is a small but valuable addition — upstream code uses different conventions ('buy'/'sell' vs 'long'/'short') and trader_agent.py uses 'long'/'short'.",
                 "Side-effects (timedelta_hours bug, infer_session timezone DST handling) only surface in tests. The infer_session test for midday (13:30 ET) caught a broken timezone conversion that ad-hoc testing would have missed.",
                 "Path discipline: write to E: drive first, mirror to C: drive for git. With 6 new modules this turn, the C: mirror would drift if not done carefully."
+            ]
+        },
+        {
+            "session": "mavis-code-day-4-phase-a-dev-2026-07-21",
+            "date": "2026-07-21",
+            "drift_found": [],
+            "fixed": [
+                {
+                    "doc": "E:\\Me\\TradingAgent\\docker\\docker-compose.dev.yml",
+                    "action": "Created Dev compose: port 5060, /data/compose/2/{vault,data} volumes, ENV_TAG=dev, TRADER_FORCE_PAPER=1, IBGW_RELAY_URL=http://host.docker.internal:5000/order"
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\docker\\portainer-stack-dev.yml",
+                    "action": "Created Portainer stack file mirroring the compose (one-click deploy)"
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\smoke_e2e.py",
+                    "action": "Created 14KB 6-step end-to-end smoke test (unit tests + gate block + valid order + audit log + exit + journal + trading_loop cycle). All 6 pass locally."
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\dashboard\\app.py",
+                    "action": "Made dashboard port configurable via DASHBOARD_PORT env var (was hardcoded 5050). Dev uses 5060, Prod default 5050."
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\entrypoint.py",
+                    "action": "Passes DASHBOARD_PORT to dashboard; logs env_tag for traceability"
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\requirements.txt",
+                    "action": "Added pytest>=7.0.0 (required for smoke_e2e.py to run in container)"
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\.gitea\\workflows\\ci-build-push.yml",
+                    "action": "Updated trigger branches to include pipeline-builder/** and dev-rollout; updated if condition for build-dev job; added date-stamp tagging (:dev-YYYY-MM-DD)"
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\tools\\DAY-4-PHASE-A-DEPLOY-HANDOFF.md",
+                    "action": "Created 6KB deployment handoff doc with 4 deployment steps + 6 stop/go criteria + failure-mode runbook for Kay tomorrow"
+                }
+            ],
+            "still_stale": [
+                {
+                    "doc": "trading-agent container",
+                    "reason": "Dev container not yet deployed — waiting for Kay tomorrow morning"
+                }
+            ],
+            "new_docs_discovered": [
+                "E:\\Me\\TradingAgent\\docker\\docker-compose.dev.yml",
+                "E:\\Me\\TradingAgent\\docker\\portainer-stack-dev.yml",
+                "E:\\Me\\TradingAgent\\smoke_e2e.py",
+                "E:\\Me\\TradingAgent\\tools\\DAY-4-PHASE-A-DEPLOY-HANDOFF.md"
+            ],
+            "lessons_learned": [
+                "Phase A is a different problem from local dev: the container needs env-var-driven configuration (port, env_tag, paper mode lock). Hardcoded values like 5050 break multi-env support.",
+                "CI workflow's branch trigger list must match the actual development branches. The existing 'dev' branch had divergent history (ops-trader migration), so pushing our pipeline-builder/* as-is wouldn't trigger builds. Widening the trigger + making the if condition more flexible was necessary.",
+                "Date-stamping image tags (:dev-YYYY-MM-DD) is cheap insurance for rollback. Same approach used for Prod (main branch).",
+                "Smoke tests must work both locally and in container. Hardcoded /app in subprocess calls breaks Windows. Use PROJECT_ROOT = '/app' if exists else cwd for portability.",
+                "The Python charmap codec issue on Windows crashes emoji in print() — PYTHONIOENCODING=utf-8 in the subprocess env fixes it. Container is UTF-8 by default; this is a Windows-only quirk."
             ]
         }
     ],
