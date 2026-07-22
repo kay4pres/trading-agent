@@ -44,7 +44,8 @@ jobs:
   build-dev:
     name: Build & Push (dev → nas:5000)
     runs-on: [self-hosted, linux, docker]
-    if: github.ref == 'refs/heads/dev'
+    # Run on dev, dev-rollout, or any pipeline-builder/* branch
+    if: github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/dev-rollout' || startsWith(github.ref, 'refs/heads/pipeline-builder/')
     container: docker:24-dind
     options: --privileged
     steps:
