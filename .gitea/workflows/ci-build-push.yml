@@ -60,11 +60,16 @@ jobs:
         run: |
           docker buildx create --use --name multiarch || docker buildx use multiarch
 
+      - name: Extract date for image tag
+        id: date
+        run: echo "DATE=$(date +%Y-%m-%d)" >> $GITHUB_OUTPUT
+
       - name: Build and push (dev tag)
         run: |
           docker buildx build \
             --platform linux/amd64 \
             --tag nas:5000/trading-agent:dev \
+            --tag nas:5000/trading-agent:dev-${{ steps.date.outputs.DATE }} \
             --tag nas:5000/trading-agent:latest \
             --cache-from type=registry,ref=nas:5000/trading-agent:dev \
             --cache-to type=registry,ref=nas:5000/trading-agent:dev \

@@ -56,8 +56,8 @@ for name in ["ALPACA_API_KEY", "ALPACA_SECRET_KEY", "TELEGRAM_BOT_TOKEN",
 # (the Bull/Bear runner needs Kay's vault LLM key which is on the host, not in the container)
 crontab = """TZ=Europe/Berlin
 PATH=/usr/local/bin:/usr/bin:/bin
-14 0 * * 1-5 cd /app && python3 -m trading_agent.premarket_screener >> /app/data/logs/richard.log 2>&1
-0 21 * * 1-5 TRADING_DATA_DIR=/app/data RAW_DIR=/app/knowledge/raw TRANSCRIPT_DIR=/app/knowledge/transcripts cd /app && python3 process_new_chapters.py >> /app/data/logs/transcribe.log 2>&1
+14 0 * * 1-5 cd /app && /usr/local/bin/python premarket_screener.py >> /app/data/logs/richard.log 2>&1
+0 21 * * 1-5 TRADING_DATA_DIR=/app/data RAW_DIR=/app/knowledge/raw TRANSCRIPT_DIR=/app/knowledge/transcripts cd /app && /usr/local/bin/python process_new_chapters.py >> /app/data/logs/transcribe.log 2>&1
 """
 try:
     subprocess.run(["crontab", "-"], input=crontab.encode(), check=True)
@@ -85,7 +85,7 @@ subprocess.Popen(
 log("[INFO] live_event_loop running in background")
 
 # Run dashboard (foreground)
-log("[INFO] Starting dashboard on :5050...")
+log(f"[INFO] Starting dashboard on :{os.environ.get('DASHBOARD_PORT', '5050')}...")
 os.chdir("/app")
 sys.path.insert(0, "/app")
 os.environ["PYTHONPATH"] = "/app"

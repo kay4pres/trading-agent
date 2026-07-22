@@ -1,0 +1,50 @@
+version: "3.8"
+
+# Portainer stack — trading-agent-dev
+# Deploy via: Portainer → Stacks → Add stack → Upload file (this file)
+#   OR: Portainer → Stacks → Add stack → Repository (gitea URL + branch)
+#
+# What this deploys:
+#   * Container name: trading-agent-dev
+#   * Image: nas:5000/trading-agent:dev-2026-07-22 (date-stamped, NOT :latest)
+#   * Port: 5060 (Prod uses 5050)
+#   * Volumes: /data/compose/2/{vault,data} (separate from Prod's /data/compose/1)
+#   * Env: ENV_TAG=dev, TRADER_FORCE_PAPER=1, DASHBOARD_PORT=5060
+#
+# Required env vars (set in Portainer UI or .env file referenced by Portainer):
+#   ALPACA_API_KEY       Dev paper-trading key
+#   ALPACA_SECRET_KEY    Dev paper-trading secret
+#   MINIMAX_API_KEY     Dev LLM key
+#   TV_WEBHOOK_SECRET    Optional
+#
+# Verification after deploy:
+#   1. Container healthcheck: docker ps shows (healthy)
+#   2. Smoke e2e: docker exec trading-agent-dev python /app/smoke_e2e.py
+#   3. Dashboard: curl http://nas:5060/  (returns 200 + HTML)
+
+services:
+  trading-agent-dev:
+    image: nas:5000/trading-agent:dev-2026-07-22
+    container_name: trading-agent-dev
+    restart: unless-stopped
+
+    environment:
+      - TZ=Europe/Berlin
+      - ENV_TAG=dev
+      - TRADER_FORCE_PAPER=1
+      - DASHBOARD_PORT=5060
+      - TRADING_DATA_DIR=/app/data
+      - ALPACA_API_KEY=${ALPACA_API_KEY}
+      - ALPACA_SECRET_KEY=${ALPACA_SECRET_KEY}
+      - MINIMAX_API_KEY=${MINIMAX_API_KEY}
+      - TV_WEBHOOK_SECRET=${TV_WEBHOOK_SECRET:-}
+      # IBGW relay runs as a process on the NAS host (run_relay.bat).
+      # Inside this container, host.docker.internal resolves to the NAS host.
+      - IBGW_RELAY_URL=http://host.docker.internal:5000/order
+
+    volumes:
+      - /data/compose/2/vault:/app/vault
+      - /data/compose/2/data:/app/data
+
+    ports:
+      - "5060:5060"

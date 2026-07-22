@@ -23,5 +23,8 @@ numpy>=1.26.0
 # Alpaca trading execution
 alpaca-py>=7.0.0
 
+# Testing (Dev environment only — required for smoke_e2e.py)
+pytest>=7.0.0
+
 # Local model (Whisper)
 # faster-whisper is installed separately — see Dockerfile

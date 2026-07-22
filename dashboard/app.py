@@ -633,46 +633,20 @@ def scan_thread():
         try:  # ── PERSISTENT OUTER GUARD: catches everything, never lets thread die ──
             if market_status():
                 today = berlin_now().strftime('%Y-%m-%d')
-                # Reload premarket watchlist if:
-                #   (a) date just changed (new trading day), OR
-                #   (b) in-memory watchlist is empty AND today's CSV exists on disk
-                # This handles the case where container started before Richard's 14:00 cron sync.
-                # premarket is always defined in this scope — set to existing state['watchlist']
-                # if the reload condition above was skipped (date unchanged, watchlist non-empty)
-                if today != _last_alert_date or not state['watchlist']:
-                    if today != _last_alert_date:
-                        _alerted_today = set()
-                        _last_alert_date = today
+                if today != _last_alert_date:
+                    _alerted_today = set()
+                    _last_alert_date = today
+                    # Load premarket watchlist from Richard's morning scan
                     premarket = load_premarket_watchlist()
                     if premarket:
                         state['watchlist'] = premarket
-                        state['signals']    = premarket
+                        state['signals']   = premarket
                         print(f"[scanner] Loaded {len(premarket)} premarket signals for {today}")
-                    elif today != _last_alert_date:
-                        # Only print "no CSV" on first load of the day (not every 60s)
-                        print(f"[scanner] No premarket CSV found for {today} — will retry each cycle")
-                else:
-                    # Keep current state['watchlist'] as premarket fallback for the elif below
-                    premarket = list(state['watchlist'])
 
                 try:
                     signals = run_scan(min_score=2.5)
-                    if signals:
-                        # Live scanning produced scored signals — use those
-                        state['signals']   = signals
-                        state['watchlist'] = signals
-                    elif premarket:
-                        # run_scan() returned [] (TV empty, CSV signals all scored below
-                        # min_score, yfinance stale/missing). Preserve the premarket CSV
-                        # watchlist at their original scores so Kay can still see
-                        # today's candidates. Signals shown at CSV scores; no Telegram
-                        # alert fires (scores < 2.5 by definition here).
-                        state['watchlist'] = premarket
-                        state['signals']   = [s for s in premarket
-                                               if s.get('total_score', 0) >= 1.5]
-                        print(f"[scanner] run_scan empty — showing {len(state['signals'])} "
-                              f"premarket CSV signals at original scores "
-                              f"(scores: {[s['total_score'] for s in state['signals']]})")
+                    state['signals']    = signals
+                    state['watchlist']  = signals
                     state['last_scan']  = berlin_now().strftime('%H:%M')
                     state['market_open'] = True
                     state['mount_status'] = _check_mount_status()
@@ -720,10 +694,6 @@ def scan_thread():
             _scan_heartbeat += 1
             if _scan_heartbeat % 60 == 0:
                 print(f"[scanner] heartbeat #{_scan_heartbeat} — alive at {berlin_now().strftime('%H:%M')}, market_open={market_status()}")
-
-            # Always sync market_open — not just when market is open.
-            # Prevents stale True after market close (prev bug: only set inside if-block).
-            state['market_open'] = market_status()
 
         except Exception as e:
             # CRITICAL: outer guard — catches ANYTHING that escapes the inner try
@@ -1305,5 +1275,8 @@ if __name__ == '__main__':
     # Start Telegram polling thread (listens for button presses)
     start_polling(callback_handler=on_telegram_button)
 
-    print(f"Dashboard starting at http://localhost:5050")
-    app.run(host='0.0.0.0', port=5050, debug=False)
+    # Port: env var DASHBOARD_PORT overrides the default. Dev uses 5060, Prod 5050.
+    port = int(os.environ.get("DASHBOARD_PORT", "5050"))
+    env_tag = os.environ.get("ENV_TAG", "default")
+    print(f"Dashboard starting at http://localhost:{port} (env={env_tag})")
+    app.run(host='0.0.0.0', port=port, debug=False)
