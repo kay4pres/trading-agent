@@ -1,85 +1,73 @@
-# docker-compose.dev.yml — Kay's Trading Agent (Dev environment)
+# docker-compose.dev.yml — Trading Agent (Dev environment)
 #
-# Purpose: Dev environment on the NAS for the new 5-module build
-# (execution guard + news_guard + risk pre-trade gate + regime + learning loop).
+# Mirror of portainer-stack-dev.yml for `docker compose` CLI use.
+# Pattern matches the UAT compose at /volume1/Docker/trading-agent-uat/
+# (read it with: ssh nas 'cat /volume1/Docker/trading-agent-uat/docker-compose.yml').
 #
-# Differences from production compose:
-#   * Port: 5060 (Prod is 5050) — avoids collision
-#   * Volumes: /data/compose/2/{vault,data} — separate from Prod's /data/compose/1
-#   * Image tag: pinned to :dev-YYYY-MM-DD (NOT :latest) — known-good version
-#   * Env var ENV_TAG=dev — propagated to all log/audit paths for traceability
-#   * Env var TRADER_FORCE_PAPER=1 — locked to paper mode (live requires
-#     explicit env override at runtime, see execution_safety.audit_log_path())
+# Build the image first (see tools/DAY-4-PHASE-A-DEPLOY-HANDOFF.md):
+#   1. Extract source from gitea at the target commit (use git archive
+#      inside the gitea container — pattern documented in
+#      C:\Users\Kay\AppData\Local\hermes\skills\operations\trading-agent-ops\
+#      references\nas-docker-build-from-gitea-jul14.md)
+#   2. Build the image:
+#      docker build -t nas:5000/trading-agent:latest -f /tmp/dev-build/docker/Dockerfile /tmp/dev-build
+#   3. Push: docker push nas:5000/trading-agent:latest
 #
-# Build & deploy (via Portainer):
-#   1. Confirm :dev-2026-07-22 image exists in nas:5000 registry
-#      (built by .gitea/workflows/ci-build-push.yml on dev branch push)
-#   2. Containers → Add container:
-#      - Image: nas:5000/trading-agent:dev-2026-07-22
-#      - Always pull: yes
-#      - Restart: unless-stopped
-#      - Publish all exposed ports: yes
-#      - Volumes:
-#        - /app/vault   → /data/compose/2/vault  (Writable)
-#        - /app/data    → /data/compose/2/data   (Writable)
-#      - Env vars (Dev keys, paper-trading only):
-#        - TZ=Europe/Berlin
-#        - ENV_TAG=dev
-#        - TRADER_FORCE_PAPER=1
-#        - ALPACA_API_KEY, ALPACA_SECRET_KEY (Dev paper keys)
-#        - MINIMAX_API_KEY (Dev LLM key)
-#        - TV_WEBHOOK_SECRET (optional)
-#        - IBGW_RELAY_URL=http://host.docker.internal:5000/order
-#          (the relay runs as a process on the NAS host, not in a container)
-#      - Stack name: trading-agent-dev
-#   3. Verify: curl http://nas:5060/ returns dashboard (smoke test via HEALTHCHECK)
-#   4. Run smoke_e2e.py: docker exec trading-agent-dev python /app/smoke_e2e.py
-#
-# Stop/go criteria for moving to UAT:
-#   - All 75 unit tests pass inside container
-#   - IBGW relay smoke test passes (status:ok)
-#   - 1 end-to-end paper trade completes: gate -> audit -> position -> exit -> journal CSV
-#   - No errors in container logs
-#   - Vault is /data/compose/2/vault (NOT local)
-#   - Portainer stack name is trading-agent-dev (NOT trading-agent)
+# Deploy (after image is on the NAS):
+#   docker compose -f /volume1/Docker/trading-agent-dev/docker-compose.yml up -d
 
 services:
-  trading-agent-dev:
-    image: nas:5000/trading-agent:dev-2026-07-22
+  trading-agent:
+    image: nas:5000/trading-agent:latest
     container_name: trading-agent-dev
     restart: unless-stopped
 
     environment:
       - TZ=Europe/Berlin
-      - ENV_TAG=dev
+      - ENV_NAME=DEV
       - TRADER_FORCE_PAPER=1
       - DASHBOARD_PORT=5060
       - TRADING_DATA_DIR=/app/data
-      # Dev API keys (paper-trading only — never use for UAT/Prod)
       - ALPACA_API_KEY=${ALPACA_API_KEY}
       - ALPACA_SECRET_KEY=${ALPACA_SECRET_KEY}
       - MINIMAX_API_KEY=${MINIMAX_API_KEY}
       - TV_WEBHOOK_SECRET=${TV_WEBHOOK_SECRET:-}
-      # The IBGW relay runs as a NAS host process (run_relay.bat).
-      # Inside this container, host.docker.internal resolves to the NAS host.
       - IBGW_RELAY_URL=http://host.docker.internal:5000/order
 
     volumes:
-      - /data/compose/2/vault:/app/vault
-      - /data/compose/2/data:/app/data
+      - /volume1/Docker/trading-agent-dev/vault:/app/vault:rw
+      - /volume1/Docker/data:/app/data
+      - /volume1/Docker/trading-agent-dev/dashboard/static:/app/dashboard/static:ro
+      - /volume1/Docker/trading-agent-dev/models:/app/models:ro
+      - /volume1/Docker/trading-agent-dev/knowledge:/app/knowledge:ro
+      - /volume1/Docker/trading-agent-dev/config:/app/config:ro
 
     ports:
       - "5060:5060"
 
-    # Run an end-to-end smoke test on startup. The existing HEALTHCHECK runs
-    # smoke_test.py (basic health); smoke_e2e.py is a richer integration test
-    # that exercises the new gates and is invoked manually after deploy.
     healthcheck:
-      test: ["CMD", "python", "/app/smoke_test.py"]
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5060/')"]
       interval: 30s
       timeout: 10s
-      start_period: 30s
       retries: 3
+      start_period: 30s
 
-    # Optional: attach to a `trading-net` network if/when we add the IBGW relay
-    # container. For now, the relay runs on the host so we use host.docker.internal.
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 512M
+
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "7"
+
+    networks:
+      - trading-agent_default
+
+networks:
+  trading-agent_default:
+    external: true
