@@ -21,7 +21,9 @@ pandas>=2.0.0
 numpy>=1.26.0
 
 # Alpaca trading execution
-alpaca-py>=7.0.0
+# (was >=7.0.0 — typo, no such version. actual current is 0.43.5 per UAT container
+# and PyPI. floor at 0.40 for headroom.)
+alpaca-py>=0.40.0
 
 # Testing (Dev environment only — required for smoke_e2e.py)
 pytest>=7.0.0
