@@ -1,6 +1,6 @@
 # Point of Truth — Trading Agent Sprint
 **File:** `E:\Me\TradingAgent\docs\point-of-truth.md`
-**Updated:** 2026-07-21 15:45 Berlin (Day 4 — other-ai-investing-system review + DTD intel merge)
+**Updated:** 2026-07-21 17:50 Berlin (Day 4 EOD — Phase A complete, awaiting Kay sign-off)
 **Read before ANY action. Always include path links in your reasoning.**
 
 ---
@@ -68,6 +68,31 @@ Before doing ANYTHING else in a new session:
 **Course citations:** `[A-1]`, `[A-2]`, `[A-3]`, `[F-1]`, `[F-2]`, `[F-3]` in REVIEW.md. `[INFERRED — Kay sign-off]` on all adopt/fork items.
 
 **Critical missing piece (in our arch, filled by their trading-loop):** the closed self-learning loop with keep/revert gate. We have `knowledge/memory/trade_journal.md` plan but no mechanism. Their `trading-loop` engine (19 KB, numpy + stdlib, 5 tests) is the template.
+
+## Day 4 EOD — Phase A (Dev environment) complete, awaiting Kay deploy
+
+**Status:** Code shipped, CI build configured to auto-trigger. Tomorrow Kay deploys.
+
+**Files shipped today (Phase A):**
+- `E:\Me\TradingAgent\docker\docker-compose.dev.yml` (port 5060, separate vault+data)
+- `E:\Me\TradingAgent\docker\portainer-stack-dev.yml` (Portainer stack file)
+- `E:\Me\TradingAgent\smoke_e2e.py` (14KB, 6-step end-to-end test)
+- `E:\Me\TradingAgent\dashboard\app.py` (DASHBOARD_PORT env var)
+- `E:\Me\TradingAgent\entrypoint.py` (passes DASHBOARD_PORT)
+- `E:\Me\TradingAgent\requirements.txt` (added pytest>=7.0.0)
+- `E:\Me\TradingAgent\.gitea\workflows\ci-build-push.yml` (build on dev/dev-rollout/pipeline-builder/*)
+
+**Smoke test passes locally: 6/6 steps.**
+
+**What Kay does tomorrow (Phase A deploy):**
+1. Verify CI build ran (Portainer images or gitea actions)
+2. Deploy `docker/portainer-stack-dev.yml` via Portainer UI
+3. Set Dev API keys in Portainer env vars
+4. Run `docker exec trading-agent-dev python /app/smoke_e2e.py`
+5. Verify 6 stop/go criteria
+6. If all 6 pass: Phase A done. Move to UAT only after 3 blockers resolved.
+
+**Hand-off doc:** `E:\Me\TradingAgent\tools\DAY-4-PHASE-A-DEPLOY-HANDOFF.md`
 
 ## ⚠️ Critical: Path Discipline (re-discovered 2026-07-21)
 
