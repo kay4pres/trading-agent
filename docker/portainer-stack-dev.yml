@@ -39,11 +39,17 @@ services:
       - ALPACA_SECRET_KEY=${ALPACA_SECRET_KEY}
       - MINIMAX_API_KEY=${MINIMAX_API_KEY}
       - TV_WEBHOOK_SECRET=${TV_WEBHOOK_SECRET:-}
-      - IBGW_RELAY_URL=http://host.docker.internal:5000/order
+      # IBGW relay: use the NAS host IP directly. host.docker.internal
+      # does NOT resolve on this Docker setup (verified via fact-check 2026-07-22).
+      # The relay runs as a host process on 10.8.0.10:5000.
+      - IBGW_RELAY_URL=http://10.8.0.10:5000/order
 
     volumes:
       - /volume1/Docker/trading-agent-dev/vault:/app/vault:rw
-      - /volume1/Docker/data:/app/data
+      # CRITICAL: separate data dir from UAT. /volume1/Docker/data is a
+      # single shared directory — if Dev mounted it too, paper trades would
+      # overwrite UAT's positions.json, trade_journal.csv, etc.
+      - /volume1/Docker/data-dev:/app/data
       - /volume1/Docker/trading-agent-dev/dashboard/static:/app/dashboard/static:ro
       - /volume1/Docker/trading-agent-dev/models:/app/models:ro
       - /volume1/Docker/trading-agent-dev/knowledge:/app/knowledge:ro
@@ -53,7 +59,9 @@ services:
       - "5060:5060"
 
     healthcheck:
-      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5060/')"]
+      # Use the /api/state endpoint (matches UAT pattern, exercises the
+      # actual dashboard API rather than just static HTML).
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5060/api/state')"]
       interval: 30s
       timeout: 10s
       retries: 3

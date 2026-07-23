@@ -32,11 +32,13 @@ services:
       - ALPACA_SECRET_KEY=${ALPACA_SECRET_KEY}
       - MINIMAX_API_KEY=${MINIMAX_API_KEY}
       - TV_WEBHOOK_SECRET=${TV_WEBHOOK_SECRET:-}
-      - IBGW_RELAY_URL=http://host.docker.internal:5000/order
+      # IBGW relay: NAS host IP (host.docker.internal does NOT resolve on this Docker).
+      - IBGW_RELAY_URL=http://10.8.0.10:5000/order
 
     volumes:
       - /volume1/Docker/trading-agent-dev/vault:/app/vault:rw
-      - /volume1/Docker/data:/app/data
+      # CRITICAL: separate data dir from UAT (data leak prevention)
+      - /volume1/Docker/data-dev:/app/data
       - /volume1/Docker/trading-agent-dev/dashboard/static:/app/dashboard/static:ro
       - /volume1/Docker/trading-agent-dev/models:/app/models:ro
       - /volume1/Docker/trading-agent-dev/knowledge:/app/knowledge:ro
@@ -46,7 +48,7 @@ services:
       - "5060:5060"
 
     healthcheck:
-      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5060/')"]
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5060/api/state')"]
       interval: 30s
       timeout: 10s
       retries: 3
