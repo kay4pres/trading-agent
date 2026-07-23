@@ -113,7 +113,10 @@ state = {
 }
 
 # ── Thread handle for liveness monitoring ──────────────────────────────────────
-_scanner_thread: threading.Thread | None = None  # set after .start(), used by /api/scan/liveness
+# FIX 2026-07-23: removed the type annotation — `global _scanner_thread` in a
+# function conflicts with module-level annotated names in Python 3.6+ (PEP 526).
+# The runtime type is still threading.Thread | None; we just don't annotate it.
+_scanner_thread = None  # set after .start(), used by /api/scan/liveness
 
 
 def _check_mount_status() -> str:
@@ -297,6 +300,22 @@ def _load_watchlist_csv() -> List[Dict[str, Any]]:
                         if not sym:
                             continue
                         try:
+                            # Deserialize P1-P5 scores from CSV (written by premarket_screener.save_watchlist).
+                            # Handle: valid JSON string (fixed), Python dict string repr (legacy CSV bug),
+                            # already-a-dict (unlikely but safe), or empty.
+                            # FIX 2026-07-23: pulled out of the dict literal — having an assignment
+                            # + try/except inside a {...} dict literal is a SyntaxError in Python.
+                            _pj_raw = row.get('pillars_json', '{}')
+                            try:
+                                _pillars_val = json.loads(_pj_raw)
+                            except Exception:
+                                # Legacy CSV bug: DictWriter wrote Python repr instead of JSON.
+                                # Attempt ast.literal_eval as last resort.
+                                try:
+                                    import ast
+                                    _pillars_val = ast.literal_eval(_pj_raw)
+                                except Exception:
+                                    _pillars_val = {}
                             rows.append({
                                 'symbol':       sym,
                                 'short_name':   row.get('short_name', sym),
@@ -308,21 +327,7 @@ def _load_watchlist_csv() -> List[Dict[str, Any]]:
                                 'p4_catalyst':  float(row.get('p4_catalyst') or 0),
                                 'news_summary':  row.get('news_summary', ''),
                                 'risk_flags':   [],
-                                # Deserialize P1-P5 scores from CSV (written by premarket_screener.save_watchlist).
-                                # Handle: valid JSON string (fixed), Python dict string repr (legacy CSV bug),
-                                # already-a-dict (unlikely but safe), or empty.
-                                _pj_raw = row.get('pillars_json', '{}')
-                                try:
-                                    _pillars_val = json.loads(_pj_raw)
-                                except Exception:
-                                    # Legacy CSV bug: DictWriter wrote Python repr instead of JSON.
-                                    # Attempt ast.literal_eval as last resort.
-                                    try:
-                                        import ast
-                                        _pillars_val = ast.literal_eval(_pj_raw)
-                                    except Exception:
-                                        _pillars_val = {}
-                                'pillars': _pillars_val or {},
+                                'pillars':      _pillars_val or {},
                                 'source':       'premarket_csv',
                                 'decided':       False,
                                 'decision':      None,
@@ -1267,7 +1272,9 @@ if __name__ == '__main__':
     state['mount_status'] = _check_mount_status()
 
     # Start background scanner thread
-    global _scanner_thread
+    # FIX 2026-07-23: removed the `global` statement. This block is at module
+    # level (`if __name__ == '__main__':`), where `global` is a SyntaxError.
+    # The assignment is already module-level; no `global` needed.
     _scanner_thread = threading.Thread(target=scan_thread, daemon=True)
     _scanner_thread.start()
     print(f"[dashboard] Scanner thread started — thread.is_alive()={_scanner_thread.is_alive()}")
