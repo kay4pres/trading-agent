@@ -1,6 +1,6 @@
 {
     "version": "1.0",
-    "last_audit": "2026-07-21T17:55:00+02:00",
+    "last_audit": "2026-07-23T18:17:00+02:00",
     "sessions": [
         {
             "still_stale": [
@@ -631,6 +631,88 @@
                 "Date-stamping image tags (:dev-YYYY-MM-DD) is cheap insurance for rollback. Same approach used for Prod (main branch).",
                 "Smoke tests must work both locally and in container. Hardcoded /app in subprocess calls breaks Windows. Use PROJECT_ROOT = '/app' if exists else cwd for portability.",
                 "The Python charmap codec issue on Windows crashes emoji in print() — PYTHONIOENCODING=utf-8 in the subprocess env fixes it. Container is UTF-8 by default; this is a Windows-only quirk."
+            ]
+        },
+        {
+            "session": "mavis-code-day-4-phase-a-deploy-2026-07-23",
+            "date": "2026-07-23",
+            "action": "Phase A deployment via Portainer UI: created NAS dir, extracted source via git archive in gitea container, built image locally, deployed via 'Add container' (NOT Swarm), container running on port 5060 with 4G memory + 6 volume mounts. Smoke test 6/6 PASS.",
+            "drift_found": [
+                {
+                    "doc": "trading_agent/data_plane/news_guard/events.csv",
+                    "issue": "Extracted as 0 bytes via 'git archive | tar -xf -' in gitea container. Source on E: was correct (SHA256 verified). 5/75 news_guard tests failed with 'approve when expecting block'.",
+                    "severity": "high"
+                },
+                {
+                    "doc": "dashboard/app.py",
+                    "issue": "2 pre-existing syntax errors caught by fact-check before deploy: (1) line 314 _pj_raw + try/except inside dict literal, (2) line 1275 'global _scanner_thread' at module level in __main__ block, (3) line 116 'threading.Thread | None' annotation conflicts with 'global' (PEP 526).",
+                    "severity": "high"
+                },
+                {
+                    "doc": "requirements.txt",
+                    "issue": "alpaca-py>=7.0.0 is a typo (no such version). Actual is 0.43.5. Container build would have failed.",
+                    "severity": "medium"
+                }
+            ],
+            "fixed": [
+                {
+                    "doc": "trading_agent/data_plane/news_guard/events.csv (in container)",
+                    "action": "Wrote content in-container via 'docker exec trading-agent-dev python3 -c ...' — no rebuild needed. File went from 0 to 579 bytes (11 lines: header + 10 events)."
+                },
+                {
+                    "doc": "dashboard/app.py",
+                    "action": "3 syntax fixes: moved _pj_raw + try/except out of dict literal; removed 'global _scanner_thread' from __main__ block; removed PEP 526 annotation that conflicts with 'global'."
+                },
+                {
+                    "doc": "requirements.txt",
+                    "action": "Changed alpaca-py>=7.0.0 to >=0.40.0 (matches actual 0.43.5)."
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\tools\\DAY-4-PHASE-A-DEPLOY-HANDOFF.md",
+                    "action": "Updated with 6/6 PASS status + events.csv bug + workaround + investigation TODO."
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\docs\\point-of-truth.md",
+                    "action": "Updated timestamp to 2026-07-23 18:17 Berlin + added 'Day 4 Final Update — Phase A DEPLOYED' section with smoke results, container state, and 3 UAT blockers."
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\docs\\NEXT_SESSION_HANDOFF.md",
+                    "action": "Full rewrite: Day 4 final status (6/6 PASS) + 10 bugs found during deploy + Day 5 plan (Phase B/UAT kickoff) + 3 UAT blockers."
+                }
+            ],
+            "still_stale": [
+                {
+                    "doc": "E:\\Me\\AI-Brain\\projects\\trading-agent\\docs\\*.html",
+                    "reason": "Not yet updated with re-arch status — still applies from prior sessions"
+                },
+                {
+                    "doc": "E:\\Me\\TradingAgent\\docs\\pipeline-status.md",
+                    "reason": "Not yet updated with Day 4 deploy — pending when ops monitoring resumes"
+                },
+                {
+                    "doc": "Focalboard DevOps Sprint board",
+                    "reason": "API auth still browser-only, board state unverified programmatically"
+                }
+            ],
+            "new_docs_discovered": [],
+            "lessons_learned": [
+                "The 'git archive | tar -xf -' pipeline inside the gitea container (busybox tar) extracted small data files as 0 bytes. Root cause not confirmed but suspected CRLF/LF handling or gitea's git wrapper. Workaround: docker exec python3 -c to write content in-container. PREVENTION: add 'find /tmp/dev-build -size 0' pre-build check.",
+                "Always delegate fact-checks BEFORE claiming anything about file state / build status. The 2 pre-existing syntax errors in dashboard/app.py (lines 314 + 1275) would have made the container crash on startup. Caught by nas-ssh-access delegation, not by re-reading source files locally.",
+                "Stop ≠ Remove for containers. Stopped containers still hold their names. To free the name for a new container, must explicitly Remove (or rename). For clean slate, recommend 'stop + remove' or 'delete stack'.",
+                "Swarm services can't use local-only images (no 'container_name', services need registry digests). Use plain 'docker run' or Portainer 'Add container' UI for local images.",
+                "NAS /etc/docker/daemon.json doesn't exist — Docker uses all defaults. 'nas:5000' not in 127.0.0.0/8 insecure range → push fails. Workaround: build with local image, deploy via Portainer UI.",
+                "Chown form 'Ai_agent:Ai_agent' FAILS — no such user or group exists. Correct: 'Ai_agent_01:users'. Login alias 'Ai_agent' = real user Ai_agent_01.",
+                "DATA LEAK: /volume1/Docker/data is a single shared dir. Per-env data dirs (/volume1/Docker/data-dev, data-uat, data-prod) are required for isolation.",
+                "host.docker.internal doesn't resolve on this Docker setup (alpine getent empty). Use static IP IBGW_HOST=10.8.0.10 instead.",
+                "Healthcheck URL must be /api/state (not /) — matches UAT, exercises actual dashboard API rather than static HTML.",
+                "4G memory minimum for Dev container (2G OOM-killed). Dashboard imports 5+ heavy libs (tradingview-screener, ib_insync, alpaca-py, yfinance, etc.).",
+                "DASHBOARD_PORT env-var driven end-to-end (app.py:1279 reads it, entrypoint.py passes through). Per-env ports are host_port=container_port+offset (Dev uses 5060:5060 since env var is configurable)."
+            ],
+            "files_updated": [
+                "E:\\Me\\TradingAgent\\tools\\DAY-4-PHASE-A-DEPLOY-HANDOFF.md",
+                "E:\\Me\\TradingAgent\\docs\\point-of-truth.md",
+                "E:\\Me\\TradingAgent\\docs\\NEXT_SESSION_HANDOFF.md",
+                "E:\\Me\\TradingAgent\\docs\\.doc-sheriff-log.json"
             ]
         }
     ],

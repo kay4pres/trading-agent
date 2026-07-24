@@ -1,6 +1,57 @@
 # Phase A Build + Deploy — Step-by-Step for Kay
 
-**Updated 2026-07-22 09:00 Berlin** after fact-check delegation. The previous handoff was wrong in 3 places — this one is verified.
+**Updated 2026-07-23 18:17 Berlin** — Phase A smoke test **6/6 PASS** ✅. Dev environment is GREEN and ready for Kay sign-off.
+
+## Phase A Status (2026-07-23 18:17 Berlin)
+
+```
+[PASS] Step 1/6: 75/75 unit tests
+[PASS] Step 2/6: Pre-trade gate blocks over-positioned order
+[PASS] Step 3/6: Valid order paper-routed + audit_id persisted
+[PASS] Step 4/6: Audit log has decision + audit_id
+[PASS] Step 5/6: execute_exit() appends to trade_journal.csv
+[PASS] Step 6/6: trading_loop engine reads the journal
+
+SMOKE E2E PASSED — Dev environment is working
+```
+
+Container `trading-agent-dev` is running on port 5060, image `trading-agent-dev:2026-07-23` (sha `3ccfb094`, 367MB, built locally from commit `8f4bef6`). 4G memory limit (2G OOM-killed due to dashboard importing 5+ heavy libs). All 6 volume mounts active, 10 env vars set, restart=unless-stopped.
+
+**Next gate (UAT) is blocked on:** REA-0.2 (TV tier), REA-0.3 (IBKR market data subs on `DU1234567`), REA-1.2 (45-min DTD walkthrough).
+
+## Bug found during deploy — events.csv extracted as 0 bytes
+
+**Symptom:** Smoke test Step 1 failed with 5/75 tests (news_guard BLOCK-decision tests). `docker exec trading-agent-dev cat /app/trading_agent/data_plane/news_guard/events.csv` returned empty.
+
+**Root cause:** The `git archive ... | tar -xf -` pipeline inside the gitea container extracted `events.csv` (and possibly other small data files) as 0 bytes. Not yet root-caused — could be CRLF/LF handling on the busybox `tar`, or gitea's git wrapper stripping size, or something else. The CSV on E: is correct (SHA256 verified).
+
+**Workaround (in-container, no rebuild):**
+```bash
+docker exec trading-agent-dev python3 -c '
+content = """title,currency,impact,datetime
+US Non-Farm Payrolls,USD,High,2026-07-02T13:30:00+00:00
+US CPI y/y,USD,High,2026-07-14T12:30:00+00:00
+FOMC Statement & Rate Decision,USD,High,2026-07-29T18:00:00+00:00
+FOMC Press Conference,USD,High,2026-07-29T18:30:00+00:00
+ECB Main Refinancing Rate,EUR,High,2026-07-16T12:15:00+00:00
+ECB Press Conference,EUR,High,2026-07-16T12:45:00+00:00
+UK CPI y/y,GBP,High,2026-07-15T06:00:00+00:00
+BoE Official Bank Rate,GBP,High,2026-08-06T11:00:00+00:00
+US Non-Farm Payrolls,USD,High,2026-08-07T12:30:00+00:00
+US CPI y/y,USD,High,2026-08-12T12:30:00+00:00
+"""
+open("/app/trading_agent/data_plane/news_guard/events.csv", "w").write(content)
+print("WROTE", len(content), "bytes")
+'
+```
+
+**Open investigation (do this before next image build):**
+1. SHA256 events.csv on E: and inside the gitea container at `/tmp/dev-extract/` — does the file exist there with correct size?
+2. SHA256 inside `/tmp/dev-build/` after `docker cp` — same?
+3. Add a pre-build check: `find /tmp/dev-build -size 0 -name "*.csv" -o -size 0 -name "*.json"` before `docker build`
+4. Alternative: use a different extraction path. E.g. `git archive` on the Windows side via the git mirror, scp to NAS, then `docker build -f` from there
+
+**Pre-existing build updated 2026-07-22 09:00 Berlin** after fact-check delegation. The previous handoff was wrong in 3 places — that one is verified.
 
 ## Fact-check from this morning
 

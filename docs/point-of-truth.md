@@ -1,6 +1,6 @@
 # Point of Truth — Trading Agent Sprint
 **File:** `E:\Me\TradingAgent\docs\point-of-truth.md`
-**Updated:** 2026-07-21 17:50 Berlin (Day 4 EOD — Phase A complete, awaiting Kay sign-off)
+**Updated:** 2026-07-23 18:17 Berlin (Day 4 EOD — **Phase A GREEN: 6/6 smoke test PASS** ✅)
 **Read before ANY action. Always include path links in your reasoning.**
 
 ---
@@ -93,6 +93,37 @@ Before doing ANYTHING else in a new session:
 6. If all 6 pass: Phase A done. Move to UAT only after 3 blockers resolved.
 
 **Hand-off doc:** `E:\Me\TradingAgent\tools\DAY-4-PHASE-A-DEPLOY-HANDOFF.md`
+
+## Day 4 Final Update — Phase A DEPLOYED + SMOKE PASS (2026-07-23 18:17 Berlin)
+
+**Phase A status: GREEN ✅ — 6/6 smoke test PASS in container.**
+
+```
+[PASS] Step 1/6: 75/75 unit tests
+[PASS] Step 2/6: Pre-trade gate blocks over-positioned order
+[PASS] Step 3/6: Valid order paper-routed + audit_id persisted
+[PASS] Step 4/6: Audit log has decision + audit_id
+[PASS] Step 5/6: execute_exit() appends to trade_journal.csv
+[PASS] Step 6/6: trading_loop engine reads the journal
+```
+
+**Container:** `trading-agent-dev` running on port 5060, image `trading-agent-dev:2026-07-23` (sha `3ccfb094`, 367MB). 4G memory limit. All 6 volume mounts active, 10 env vars set, restart=unless-stopped.
+
+**Bug found + fixed during deploy:** `events.csv` extracted as 0 bytes via `git archive | tar` in the gitea container. Workaround: `docker exec ... python3 -c 'open(...).write(content)'` to write content in-container. Root cause still under investigation. **Next build must verify file sizes BEFORE `docker build`** — add a `find /tmp/dev-build -size 0` pre-flight check.
+
+**UAT blockers (3) — must resolve before Phase B:**
+1. REA-0.2 — TradingView tier (Plus/Premium/Ultimate)
+2. REA-0.3 — IBKR market data subs on `DU1234567`
+3. REA-1.2 — 45-min DTD walkthrough to confirm scanner filter values
+
+**Side issues tracked (not blockers):**
+- yfinance outbound from NAS container times out (30s) — fincept_connector fallback gets 20/24 quotes. Real scanner work in Phase B will need it. Ticket: `E:\Me\TradingAgent\docs\YFINANCE-EGRESS-2026-07-23.md`
+- 2 ghost act-runner containers flooding gitea with 500s. CI builds on `pipeline-builder/*` don't trigger. Workaround: manual Portainer build via `git archive` in gitea container.
+- `host.docker.internal` doesn't resolve in alpine getent. Use NAS host IP `10.8.0.10` instead.
+- Healthcheck URL is `/api/state` (not `/`) — matches UAT, exercises dashboard API.
+- DASHBOARD_PORT env-var driven end-to-end. 4G memory minimum for Dev (2G OOM-killed).
+
+**Full handoff doc:** `E:\Me\TradingAgent\tools\DAY-4-PHASE-A-DEPLOY-HANDOFF.md` (updated 2026-07-23 18:17).
 
 ## ⚠️ Critical: Path Discipline (re-discovered 2026-07-21)
 
